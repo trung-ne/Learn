@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "id": "ex_A1-U01-L01_001",
+  "lesson_id": "A1-U01-L01",
+  "title": "Choose the daily habit",
+  "exercise_type": "multiple_choice",
+  "cefr_level": "A1.1",
+  "difficulty": "easy",
+  "prompt_or_stimulus": "Choose the sentence about a daily habit.",
+  "test_vocabulary": ["vocab_en_coffee_001"],
+  "test_grammar": ["concept_present_simple"],
+  "answer_key": {
+    "answers": [
+      {
+        "answer_id": "answer_001",
+        "answer_text": "I drink coffee every morning.",
+        "explanation": "This uses the present simple for a habit.",
+        "is_primary": true
+      }
+    ]
+  },
+  "generation_metadata": {
+    "generator": "m0_fixture_generator",
+    "generator_version": "1.0",
+    "prompt_version": "m0_fixture_v1",
+    "generated_at": "2026-08-28T00:00:00Z",
+    "curriculum_version": "1.0",
+    "qa_status": "UNREVIEWED"
+  }
+}

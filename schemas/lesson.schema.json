@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/lesson.schema.json",
+  "title": "English Master lesson",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "id", "title", "unit_id", "lesson_number", "cefr_level", "duration_minutes", "objectives", "vocabulary_introduced", "grammar_introduced", "vocabulary_reviewed", "grammar_reviewed", "communicative_functions", "prerequisites", "content_sections", "exercises", "generation_metadata"],
+  "properties": {
+    "schema_version": {"$ref": "common.schema.json#/$defs/schemaVersion"},
+    "id": {"$ref": "common.schema.json#/$defs/lessonId"},
+    "title": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+    "unit_id": {"type": "string", "pattern": "^(A1|A2|B1|B2|C1|C2)-U[0-9]{2}$"},
+    "lesson_number": {"type": "integer", "minimum": 1},
+    "cefr_level": {"$ref": "common.schema.json#/$defs/cefrLevel"},
+    "duration_minutes": {"type": "integer", "minimum": 1},
+    "objectives": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "minItems": 1, "uniqueItems": true},
+    "vocabulary_introduced": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/vocabularySenseId"}, "uniqueItems": true},
+    "grammar_introduced": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/conceptId"}, "uniqueItems": true},
+    "vocabulary_reviewed": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/vocabularySenseId"}, "uniqueItems": true},
+    "grammar_reviewed": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/conceptId"}, "uniqueItems": true},
+    "communicative_functions": {"type": "array", "items": {"type": "string", "pattern": "^func_[a-z0-9]+(?:_[a-z0-9]+)*$"}, "uniqueItems": true},
+    "prerequisites": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/lessonId"}, "uniqueItems": true},
+    "content_sections": {"type": "array", "items": {"$ref": "#/$defs/contentSection"}, "minItems": 1},
+    "exercises": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/exerciseId"}, "uniqueItems": true},
+    "generation_metadata": {"$ref": "common.schema.json#/$defs/generationMetadata"}
+  },
+  "$defs": {
+    "contentSection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "section_type", "title", "body_text", "embedded_examples"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^section_[a-z0-9]+(?:_[a-z0-9]+)*$"},
+        "section_type": {"type": "string", "enum": ["vocabulary", "grammar", "listening", "reading", "dialogue", "explanation"]},
+        "title": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+        "body_text": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+        "embedded_examples": {"type": "array", "items": {"type": "string", "pattern": "^(concept_|vocab_).+"}, "uniqueItems": true}
+      }
+    }
+  }
+}

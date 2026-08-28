@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/exercise.schema.json",
+  "title": "English Master exercise",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "id", "lesson_id", "title", "exercise_type", "cefr_level", "difficulty", "prompt_or_stimulus", "test_vocabulary", "test_grammar", "answer_key", "generation_metadata"],
+  "properties": {
+    "schema_version": {"$ref": "common.schema.json#/$defs/schemaVersion"},
+    "id": {"$ref": "common.schema.json#/$defs/exerciseId"},
+    "lesson_id": {"$ref": "common.schema.json#/$defs/lessonId"},
+    "title": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+    "exercise_type": {"type": "string", "enum": ["multiple_choice", "fill_blank", "listening", "speaking", "writing", "matching", "free_response"]},
+    "cefr_level": {"$ref": "common.schema.json#/$defs/cefrLevel"},
+    "difficulty": {"type": "string", "enum": ["easy", "medium", "hard"]},
+    "prompt_or_stimulus": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+    "test_vocabulary": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/vocabularySenseId"}, "uniqueItems": true},
+    "test_grammar": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/conceptId"}, "uniqueItems": true},
+    "answer_key": {"$ref": "#/$defs/answerKey"},
+    "hints": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "uniqueItems": true},
+    "time_limit_seconds": {"type": "integer", "minimum": 1},
+    "generation_metadata": {"$ref": "common.schema.json#/$defs/generationMetadata"}
+  },
+  "$defs": {
+    "answerKey": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["answers"],
+      "properties": {
+        "answers": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/answer"},
+          "minItems": 1,
+          "contains": {"type": "object", "properties": {"is_primary": {"const": true}}, "required": ["is_primary"]}
+        },
+        "scoring_rubric": {"type": "string", "minLength": 1}
+      }
+    },
+    "answer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["answer_id", "answer_text", "explanation", "is_primary"],
+      "properties": {
+        "answer_id": {"type": "string", "pattern": "^answer_[0-9]{3}$"},
+        "answer_text": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+        "explanation": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+        "explanation_l1": {"type": "string", "minLength": 1},
+        "is_primary": {"type": "boolean"}
+      }
+    }
+  }
+}

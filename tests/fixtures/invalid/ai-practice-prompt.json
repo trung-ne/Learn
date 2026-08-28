@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "id": "prompt_speaking_daily_habit_001",
+  "prompt_type": "conversation",
+  "cefr_level": "A1.1",
+  "target_vocabulary": [],
+  "target_grammar": [],
+  "communicative_goal": "Describe one daily habit.",
+  "prompt_template": "Ask the learner about {{topic}}.",
+  "prompt_variables": ["{{topic}}"],
+  "system_role": "Supportive English conversation partner",
+  "evaluation_criteria": [],
+  "generation_metadata": {
+    "generator": "m0_fixture_generator",
+    "generator_version": "1.0",
+    "prompt_version": "m0_fixture_v1",
+    "generated_at": "2026-08-28T00:00:00Z",
+    "curriculum_version": "1.0",
+    "qa_status": "UNREVIEWED"
+  }
+}

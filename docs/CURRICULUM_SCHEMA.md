@@ -2,9 +2,7 @@
 
 ## Overview
 
-This document defines the data models and schemas for curriculum content in English Master.
-
-All schemas support JSON serialization and machine-readable validation.
+This document defines the conceptual models for curriculum content in English Master. The Draft 2020-12 files in `schemas/` are the single authoritative machine-readable definitions. For the six M0 core records, the descriptions below use the same field names as their schemas; all six additionally carry `schema_version`, shared generated-content fields are represented by `generation_metadata`, and externally sourced fields by `provenance`. Future model descriptions are conceptual until their schemas are introduced in their designated milestones.
 
 ---
 
@@ -40,7 +38,7 @@ Skill:
 
 ### Linguistic Concept
 
-A grammar rule, pronunciation pattern, or syntactic structure.
+A grammar rule, pronunciation pattern, syntactic structure, or phonological pattern. Grammar and pronunciation are `category` values of this single canonical concept model.
 
 ```yaml
 LinguisticConcept:
@@ -55,6 +53,7 @@ LinguisticConcept:
   introduced_in: string?          # Lesson ID where first introduced
   reviewed_in: string[]           # Lesson IDs where revisited
   rules: string[]?                # Grammatical or phonetic rules
+  provenance: Provenance?         # Required for externally sourced records
 ```
 
 ### Vocabulary Sense
@@ -63,7 +62,7 @@ A distinct meaning of a word.
 
 ```yaml
 VocabularySense:
-  id: string                      # e.g., "sense_run_001"
+  id: string                      # e.g., "vocab_en_run_001"
   word: string
   part_of_speech: string          # "noun" | "verb" | "adjective" | ...
   cefr_level: CEFR
@@ -75,13 +74,12 @@ VocabularySense:
   antonyms: string[]              # Words with opposite meanings
   collocations: string[]          # Common phrases (e.g., "run a business", "run a race")
   pronunciation_ipa: string?      # IPA notation
-  etymology: string?              # Word origin / etymology
-  register: string?               # "formal" | "informal" | "academic" | "colloquial"
+  register: string?               # "formal" | "informal" | "academic" | "colloquial" | "neutral"
   prerequisites: string[]         # Concepts that should be known
   related_senses: string[]        # Other senses of same word
   introduced_in: string?          # Lesson ID
   reviewed_in: string[]           # Lesson IDs
-  source_id: string?              # Source of this entry
+  provenance: Provenance?         # Required for externally sourced records
 ```
 
 ### Lexical Chunk
@@ -123,6 +121,40 @@ CommunicativeFunction:
   reviewed_in: string[]
 ```
 
+### Generation Metadata
+
+The required audit metadata on M0 generated records (lessons, exercises, and AI practice prompts).
+
+```yaml
+GenerationMetadata:
+  generator: string
+  generator_version: string
+  model: string?                  # When known
+  prompt_version: string
+  generated_at: datetime
+  curriculum_version: string
+  qa_status: ContentQaStatus
+  qa_notes: string?
+```
+
+### Provenance
+
+The metadata required whenever an M0 concept or vocabulary sense is externally sourced.
+
+```yaml
+Provenance:
+  source_id: string
+  source_name: string
+  source_url: uri
+  source_record_id: string
+  retrieved_at: datetime
+  retrieved_by: string
+  license: string
+  attribution: string
+  content_hash: sha256
+  ingestion_version: string
+```
+
 ### Lesson
 
 A unit of instruction.
@@ -144,10 +176,7 @@ Lesson:
   prerequisites: string[]         # Lesson IDs that should precede
   content_sections: ContentSection[]
   exercises: string[]             # Exercise IDs
-  source_id: string?              # If based on external material
-  created_at: datetime
-  generated_by: string?
-  qa_status: string               # "UNREVIEWED" | "APPROVED" | "REJECTED"
+  generation_metadata: GenerationMetadata # Generator and QA audit fields
 ```
 
 ### ContentSection
@@ -160,7 +189,6 @@ ContentSection:
   section_type: string            # "vocabulary" | "grammar" | "listening" | "reading" | "dialogue" | "explanation"
   title: string
   body_text: string               # Markdown or plain text
-  media: Media[]?                 # Audio, images, videos
   embedded_examples: string[]     # Concept/vocabulary IDs referenced
 ```
 
@@ -170,23 +198,19 @@ A practice activity.
 
 ```yaml
 Exercise:
-  id: string                      # e.g., "ex_A1_001"
+  id: string                      # e.g., "ex_A1-U01-L01_001"
   lesson_id: string
   title: string
   exercise_type: string           # "multiple_choice" | "fill_blank" | "listening" | "speaking" | "writing" | "matching" | "free_response"
   cefr_level: CEFR
   difficulty: string              # "easy" | "medium" | "hard"
   prompt_or_stimulus: string       # Instructions and content
-  media: Media[]?                 # Images, audio, video
   test_vocabulary: string[]       # Vocabulary IDs being tested
   test_grammar: string[]          # Concept IDs being tested
   answer_key: AnswerKey
   hints: string[]?
   time_limit_seconds: integer?
-  source_id: string?
-  created_at: datetime
-  generated_by: string?
-  qa_status: string
+  generation_metadata: GenerationMetadata # Generator and QA audit fields
 ```
 
 ### AnswerKey
@@ -195,7 +219,7 @@ Defines correct answers for an exercise.
 
 ```yaml
 AnswerKey:
-  answers: Answer[]               # One or more possible answers
+  answers: Answer[]               # One or more answers; at least one is primary
   scoring_rubric: string?         # How answers are scored
   
 Answer:
@@ -254,9 +278,7 @@ AIPracticePrompt:
   prompt_variables: string[]      # {{variables}} to substitute
   system_role: string             # Role of AI (teacher, conversational partner, etc.)
   evaluation_criteria: string[]   # How to evaluate learner output
-  model_version: string?          # e.g., "claude-3-5-sonnet"
-  created_at: datetime
-  qa_status: string
+  generation_metadata: GenerationMetadata # Generator and QA audit fields
 ```
 
 ### Media
@@ -313,11 +335,11 @@ All IDs are deterministic and reproducible.
 - **Vocabulary**: `vocab_{language_code}_{word}_{sense_number}`
   - Example: `vocab_en_run_001`, `vocab_en_run_002`
 
-- **Lesson**: `{CEFR}_{UNIT}_{LESSON}`
-  - Example: `A1_U01_L01`, `B2_U04_L03`
+- **Lesson**: `{CEFR}-{UNIT}-{LESSON}`
+  - Example: `A1-U01-L01`, `B2-U04-L03`
 
-- **Exercise**: `ex_{CEFR}_{UNIT}_{LESSON}_{EXERCISE_NUMBER}`
-  - Example: `ex_A1_U01_L01_001`, `ex_B1_U02_L01_002`
+- **Exercise**: `ex_{CEFR}-{UNIT}-{LESSON}_{EXERCISE_NUMBER}`
+  - Example: `ex_A1-U01-L01_001`, `ex_B1-U02-L01_002`
 
 - **Assessment**: `assess_{TYPE}_{VERSION}`
   - Example: `assess_placement_v1`, `assess_unit_test_A1_01`
@@ -328,9 +350,9 @@ IDs are stable across regenerations of the same content.
 
 ## JSON Schema
 
-All models should have corresponding JSON Schema definitions in `schemas/`.
+The six core M0 models have corresponding JSON Schema definitions in `schemas/`. Future models receive schemas in their designated implementation milestones.
 
-Example: `schemas/vocabulary_sense.json`
+Core schemas are `source.schema.json`, `concept.schema.json`, `vocabulary-sense.schema.json`, `lesson.schema.json`, `exercise.schema.json`, and `ai-practice-prompt.schema.json`; common definitions are in `common.schema.json`.
 
 Validation is performed at ingestion, generation, and storage.
 

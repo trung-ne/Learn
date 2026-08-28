@@ -1,0 +1,1 @@
+"""English Master validation foundation."""

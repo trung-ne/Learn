@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "id": "concept_present_simple",
+  "name": "Present simple statements",
+  "cefr_level": "A1.1",
+  "category": "grammar",
+  "description": "Use the present simple for habits.",
+  "examples": ["I drink coffee every morning."],
+  "prerequisites": [],
+  "related_concepts": [],
+  "reviewed_in": [],
+  "rules": ["Use a base verb with I, you, we, and they."]
+}

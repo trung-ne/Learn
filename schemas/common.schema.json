@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/common.schema.json",
+  "title": "English Master common definitions",
+  "$defs": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "nonEmptyString": {
+      "type": "string",
+      "minLength": 1
+    },
+    "cefrLevel": {
+      "type": "string",
+      "enum": ["A1.1", "A1.2", "A2.1", "A2.2", "B1.1", "B1.2", "B2.1", "B2.2", "C1.1", "C1.2", "C2.1", "C2.2"]
+    },
+    "isoDateTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "sourceStatus": {
+      "type": "string",
+      "enum": ["APPROVED", "REFERENCE_ONLY", "QUARANTINED", "REJECTED"]
+    },
+    "contentQaStatus": {
+      "type": "string",
+      "enum": ["UNREVIEWED", "IN_REVIEW", "NEEDS_REVISION", "REVISION_SUBMITTED", "APPROVED", "REJECTED", "ARCHIVED"]
+    },
+    "lessonId": {
+      "type": "string",
+      "pattern": "^(A1|A2|B1|B2|C1|C2)-U[0-9]{2}-L[0-9]{2}$"
+    },
+    "conceptId": {
+      "type": "string",
+      "pattern": "^concept_[a-z0-9]+(?:_[a-z0-9]+)*$"
+    },
+    "vocabularySenseId": {
+      "type": "string",
+      "pattern": "^vocab_[a-z]{2,3}_[a-z0-9]+(?:_[a-z0-9]+)*_[0-9]{3}$"
+    },
+    "exerciseId": {
+      "type": "string",
+      "pattern": "^ex_(A1|A2|B1|B2|C1|C2)-U[0-9]{2}-L[0-9]{2}_[0-9]{3}$"
+    },
+    "promptId": {
+      "type": "string",
+      "pattern": "^prompt_(listening|speaking|pronunciation|writing_tutor)_[a-z0-9]+(?:_[a-z0-9]+)*_[0-9]{3}$"
+    },
+    "sourceId": {
+      "type": "string",
+      "pattern": "^src_[a-z0-9]+(?:_[a-z0-9]+)*$"
+    },
+    "generationMetadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["generator", "generator_version", "prompt_version", "generated_at", "curriculum_version", "qa_status"],
+      "properties": {
+        "generator": {"$ref": "#/$defs/nonEmptyString"},
+        "generator_version": {"$ref": "#/$defs/nonEmptyString"},
+        "model": {"$ref": "#/$defs/nonEmptyString"},
+        "prompt_version": {"$ref": "#/$defs/nonEmptyString"},
+        "generated_at": {"$ref": "#/$defs/isoDateTime"},
+        "curriculum_version": {"$ref": "#/$defs/nonEmptyString"},
+        "qa_status": {"$ref": "#/$defs/contentQaStatus"},
+        "qa_notes": {"type": "string"}
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_id", "source_name", "source_url", "source_record_id", "retrieved_at", "retrieved_by", "license", "attribution", "content_hash", "ingestion_version"],
+      "properties": {
+        "source_id": {"$ref": "#/$defs/sourceId"},
+        "source_name": {"$ref": "#/$defs/nonEmptyString"},
+        "source_url": {"type": "string", "format": "uri"},
+        "source_record_id": {"$ref": "#/$defs/nonEmptyString"},
+        "retrieved_at": {"$ref": "#/$defs/isoDateTime"},
+        "retrieved_by": {"$ref": "#/$defs/nonEmptyString"},
+        "license": {"$ref": "#/$defs/nonEmptyString"},
+        "attribution": {"$ref": "#/$defs/nonEmptyString"},
+        "content_hash": {"type": "string", "pattern": "^[A-Fa-f0-9]{64}$"},
+        "ingestion_version": {"$ref": "#/$defs/nonEmptyString"}
+      }
+    }
+  }
+}

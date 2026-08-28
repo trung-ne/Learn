@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/vocabulary-sense.schema.json",
+  "title": "English Master vocabulary sense",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "id", "word", "part_of_speech", "cefr_level", "sense_number", "definition", "example_sentences", "synonyms", "antonyms", "collocations", "prerequisites", "related_senses", "reviewed_in"],
+  "properties": {
+    "schema_version": {"$ref": "common.schema.json#/$defs/schemaVersion"},
+    "id": {"$ref": "common.schema.json#/$defs/vocabularySenseId"},
+    "word": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+    "part_of_speech": {"type": "string", "enum": ["noun", "verb", "adjective", "adverb", "pronoun", "preposition", "conjunction", "determiner", "interjection", "other"]},
+    "cefr_level": {"$ref": "common.schema.json#/$defs/cefrLevel"},
+    "sense_number": {"type": "integer", "minimum": 1},
+    "definition": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+    "definition_l1": {"type": "string", "minLength": 1},
+    "example_sentences": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "minItems": 1, "uniqueItems": true},
+    "synonyms": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "uniqueItems": true},
+    "antonyms": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "uniqueItems": true},
+    "collocations": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "uniqueItems": true},
+    "pronunciation_ipa": {"type": "string", "minLength": 1},
+    "register": {"type": "string", "enum": ["formal", "informal", "academic", "colloquial", "neutral"]},
+    "prerequisites": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/conceptId"}, "uniqueItems": true},
+    "related_senses": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/vocabularySenseId"}, "uniqueItems": true},
+    "introduced_in": {"$ref": "common.schema.json#/$defs/lessonId"},
+    "reviewed_in": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/lessonId"}, "uniqueItems": true},
+    "provenance": {"$ref": "common.schema.json#/$defs/provenance"}
+  }
+}

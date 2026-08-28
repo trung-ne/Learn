@@ -33,7 +33,7 @@ Vietnamese explanations may enhance pedagogy where appropriate.
 - Data sourcing and licensing compliance
 - Exercise and assessment generation
 - AI prompt engineering for practice
-- Export in multiple formats (JSON, CSV, USDML, etc.)
+- Export in multiple formats (JSON, CSV, and a future LMS package format selected during export design)
 
 ### Out of Scope (Initially)
 
@@ -120,7 +120,7 @@ Curriculum Planning (M4)
   → Copyright ✓
   → Language Quality [Human]
     ↓
-[Status: APPROVED | NEEDS_REVISION | REJECTED]
+[Content status: UNREVIEWED | IN_REVIEW | NEEDS_REVISION | REVISION_SUBMITTED | APPROVED | REJECTED | ARCHIVED]
     ↓
 data/approved/[type]/
 ```
@@ -133,7 +133,7 @@ data/approved/
   → Multiple Exports:
      - JSON (API use)
      - CSV (data analysis)
-     - USDML (LMS compatibility)
+     - LMS package format (selected during export design)
      - Mobile format
      - Print format
 ```
@@ -208,7 +208,7 @@ data/approved/
 ### 10. Export Engine
 - JSON export
 - CSV export
-- USDML/IMS export
+- LMS package format (selected during export design)
 - Mobile-ready format
 - Print-friendly format
 
@@ -345,6 +345,8 @@ Each lesson contains:
 
 ### Transitions
 
+All generated content follows the content-review lifecycle. Source disposition remains separate: `APPROVED`, `REFERENCE_ONLY`, `QUARANTINED`, and `REJECTED` apply only to registered sources.
+
 ```
 UNREVIEWED  → IN_REVIEW  → APPROVED (if passes)
                         ↙
@@ -404,11 +406,11 @@ Content must pass before state change:
 
 All IDs are deterministic:
 
-- Lesson: CEFR_UNIT_LESSON (A1_U01_L01)
-- Concept: concept_{snake_case}
-- Vocabulary: vocab_en_{word}_{sense}
+- Lesson: CEFR-UNIT-LESSON (`A1-U01-L01`)
+- Concept: `concept_{snake_case}`
+- Vocabulary sense: `vocab_{language_code}_{word_slug}_{sense_number}` (for example, `vocab_en_run_001`)
 
-Regenerating same content produces same IDs.
+`word_slug` uses lowercase ASCII letters, digits, and single underscores; sense numbers are zero-padded to three digits. Regenerating the same content produces the same IDs.
 
 ### Versioning
 
@@ -425,19 +427,18 @@ Regenerating same content produces same IDs.
 - Every approval logged with reviewer, date, status
 - Every export logged with format, timestamp, content_hash
 
-### Reproducible Builds
+### Reproducible Build Requirements
+
+Deterministic transformations are reproducible from pinned inputs, tool versions, ordering rules, and serialization rules. Generated material is auditable and can be regenerated from retained model/provider identifiers, prompt version, parameters, input snapshots, and seeds when supported; it is not claimed to be byte-for-byte identical when a model does not provide deterministic generation.
+
+Future pipeline commands will be added in their respective milestones. M0 provides only the following validation commands:
 
 ```bash
-# Recreate curriculum from source
-python scripts/ingest.py --all
-python scripts/analyze.py --classify-cefr
-python scripts/plan_curriculum.py
-python scripts/generate.py --lessons --exercises --prompts
-python scripts/qa.py --all
-python scripts/export.py --all-formats
+python -m pytest
+python -m english_master.schema_validation --schema lesson tests/fixtures/valid/lesson.json
+# Expected to exit nonzero while reporting the invalid ID:
+python -m english_master.schema_validation --schema lesson tests/fixtures/invalid/lesson.json
 ```
-
-Result is byte-for-byte identical to previous run (deterministic generation).
 
 ---
 

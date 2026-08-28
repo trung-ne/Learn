@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "id": "A1-U01-L01",
+  "title": "Daily coffee habits",
+  "unit_id": "A1-U01",
+  "lesson_number": 1,
+  "cefr_level": "A1.1",
+  "duration_minutes": 10,
+  "objectives": ["Describe a daily habit."],
+  "vocabulary_introduced": ["vocab_en_coffee_001"],
+  "grammar_introduced": ["concept_present_simple"],
+  "vocabulary_reviewed": [],
+  "grammar_reviewed": [],
+  "communicative_functions": ["func_describe_habit"],
+  "prerequisites": [],
+  "content_sections": [
+    {
+      "id": "section_daily_habit",
+      "section_type": "explanation",
+      "title": "A daily habit",
+      "body_text": "I drink coffee every morning.",
+      "embedded_examples": ["concept_present_simple", "vocab_en_coffee_001"]
+    }
+  ],
+  "exercises": ["ex_A1-U01-L01_001"],
+  "generation_metadata": {
+    "generator": "m0_fixture_generator",
+    "generator_version": "1.0",
+    "prompt_version": "m0_fixture_v1",
+    "generated_at": "2026-08-28T00:00:00Z",
+    "curriculum_version": "1.0",
+    "qa_status": "UNREVIEWED"
+  }
+}

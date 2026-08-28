@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "id": "vocab_en_coffee_001",
+  "word": "coffee",
+  "part_of_speech": "noun",
+  "cefr_level": "A1.1",
+  "sense_number": 0,
+  "definition": "A dark drink made from roasted beans.",
+  "example_sentences": ["I drink coffee every morning."],
+  "synonyms": [],
+  "antonyms": [],
+  "collocations": ["drink coffee"],
+  "prerequisites": [],
+  "related_senses": [],
+  "reviewed_in": []
+}

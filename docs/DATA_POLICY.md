@@ -8,7 +8,7 @@ This document defines how external data is handled throughout the English Master
 
 ## Source Registration
 
-Every external data source must be registered before ingestion.
+Every external data source must be registered in `sources/` before ingestion.
 
 Registration includes:
 
@@ -16,8 +16,8 @@ Registration includes:
 - source_type: dataset | API | dump | crawlable | other
 - source_url: primary URL or homepage
 - status: APPROVED | REFERENCE_ONLY | QUARANTINED | REJECTED
-- license: identified license identifier
-- license_url: link to license text
+- license: identified license identifier; use `UNKNOWN` only while status is QUARANTINED
+- license_url: link to license text when the license is identified
 - terms_of_use: any specific ToS that apply
 - registered_at: date registered
 - registered_by: person or agent who registered
@@ -143,8 +143,8 @@ Content produced by the generator must retain:
 - prompt_version: version of prompt template
 - generated_at: ISO 8601 timestamp
 - curriculum_version: curriculum schema version used
-- QA_status: UNREVIEWED | IN_REVIEW | APPROVED | REJECTED
-- QA_notes: reviewer feedback
+- qa_status: UNREVIEWED | IN_REVIEW | NEEDS_REVISION | REVISION_SUBMITTED | APPROVED | REJECTED | ARCHIVED
+- qa_notes: reviewer feedback
 
 ### Example
 
@@ -157,8 +157,8 @@ Content produced by the generator must retain:
     "prompt_version": "ex_prompt_v2",
     "generated_at": "2026-08-28T11:00:00Z",
     "curriculum_version": "1.0",
-    "QA_status": "APPROVED",
-    "QA_notes": "Reviewed by human educator"
+    "qa_status": "APPROVED",
+    "qa_notes": "Reviewed by human educator"
   }
 }
 ```
@@ -168,6 +168,8 @@ Content produced by the generator must retain:
 ## Quarantine
 
 ### What Gets Quarantined
+
+Quarantined source metadata and review notes remain in `sources/`; future payloads remain separately stored in `data/quarantine/`. Neither may be used in approved materials or generated content until the source becomes `APPROVED`.
 
 - Content with unknown or unclear licensing
 - Sources that do not respond to permission inquiries

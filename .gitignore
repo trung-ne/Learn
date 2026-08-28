@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# Tests, coverage, and type checking
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.mypy_cache/
+.pyright/
+
+# Packaging
+build/
+dist/
+*.egg-info/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Raw source payloads are never committed by default.
+data/raw/*
+!data/raw/.gitkeep
+
+# Editor and operating-system files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Local agent worktrees
+.claude/worktrees/

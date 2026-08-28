@@ -319,19 +319,25 @@ Ingest → Schema Validate → Provenance Check → Copyright Check →
 
 ```
 Generate → Schema Validate → CEFR Check → Prerequisite Check → 
-  → Grammar/Lexical Check → Uniqueness Check → Language Quality Review → 
-  → Approve or Reject
+  → Grammar/Lexical Check → Uniqueness Check → Language Quality Review →
+  → Approve, reject, or request revision
 ```
 
 ---
 
-## QA Status Levels
+## Content Review Status Levels
+
+These statuses apply to generated content; they are distinct from source disposition statuses.
 
 - **UNREVIEWED**: Generated but not yet reviewed
 - **IN_REVIEW**: Currently being reviewed
-- **APPROVED**: Passed all applicable QA
 - **NEEDS_REVISION**: Failed QA; requires changes
+- **REVISION_SUBMITTED**: Revised content awaiting re-review
+- **APPROVED**: Passed all applicable QA
 - **REJECTED**: Failed QA; not salvageable
+- **ARCHIVED**: Superseded approved version retained for audit
+
+Permitted review flow is `UNREVIEWED → IN_REVIEW → APPROVED`, with `IN_REVIEW → NEEDS_REVISION → REVISION_SUBMITTED → IN_REVIEW` for repair and `IN_REVIEW → REJECTED` for unrecoverable content. Approved versions may become archived when superseded.
 
 ---
 

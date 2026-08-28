@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "id": "present-simple",
+  "name": "Present simple statements",
+  "cefr_level": "A1.1",
+  "category": "grammar",
+  "description": "Use the present simple for habits.",
+  "examples": ["I drink coffee every morning."],
+  "prerequisites": [],
+  "related_concepts": [],
+  "reviewed_in": []
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/concept.schema.json",
+  "title": "English Master linguistic concept",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "id", "name", "cefr_level", "category", "description", "examples", "prerequisites", "related_concepts", "reviewed_in"],
+  "properties": {
+    "schema_version": {"$ref": "common.schema.json#/$defs/schemaVersion"},
+    "id": {"$ref": "common.schema.json#/$defs/conceptId"},
+    "name": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+    "cefr_level": {"$ref": "common.schema.json#/$defs/cefrLevel"},
+    "category": {"type": "string", "enum": ["grammar", "pronunciation", "syntax", "phonology"]},
+    "description": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+    "examples": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "minItems": 1, "uniqueItems": true},
+    "prerequisites": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/conceptId"}, "uniqueItems": true},
+    "related_concepts": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/conceptId"}, "uniqueItems": true},
+    "introduced_in": {"$ref": "common.schema.json#/$defs/lessonId"},
+    "reviewed_in": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/lessonId"}, "uniqueItems": true},
+    "rules": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "minItems": 1, "uniqueItems": true},
+    "provenance": {"$ref": "common.schema.json#/$defs/provenance"}
+  }
+}

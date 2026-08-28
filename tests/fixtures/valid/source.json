@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "source_id": "src_synthetic_fixture",
+  "source_name": "Synthetic M0 Fixture",
+  "source_type": "other",
+  "source_url": "https://example.invalid/synthetic-source",
+  "status": "QUARANTINED",
+  "license": "Test-only; no external content",
+  "license_url": "https://example.invalid/license",
+  "terms_of_use": "Artificial fixture for schema tests only.",
+  "registered_at": "2026-08-28T00:00:00Z",
+  "registered_by": "m0_test_suite"
+}

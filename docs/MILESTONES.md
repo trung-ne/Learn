@@ -12,7 +12,7 @@ Milestones are executed sequentially. Do not begin the next milestone until the 
 
 ## M0 — Repository Bootstrap
 
-**Status**: Ready to execute
+**Status**: Complete (verified 2026-08-28)
 
 **Duration**: ~2-3 days
 
@@ -41,15 +41,15 @@ Do NOT crawl, download datasets, or generate curriculum.
 
 ### Acceptance Criteria
 
-- [ ] All specification documents exist and are complete
-- [ ] Schemas can be loaded and validated
-- [ ] Sample schema validation passes
-- [ ] Invalid sample validation fails correctly
-- [ ] pytest runs successfully
-- [ ] No external data has been downloaded
-- [ ] No curriculum has been generated
-- [ ] Tests document how to use schemas
-- [ ] README includes step-by-step setup
+- [x] All specification documents exist and are complete
+- [x] Schemas can be loaded and validated
+- [x] Sample schema validation passes
+- [x] Invalid sample validation fails correctly
+- [x] pytest runs successfully
+- [x] No external data has been downloaded
+- [x] No curriculum has been generated
+- [x] Tests document how to use schemas
+- [x] README includes step-by-step setup
 
 ### Next: M1
 
@@ -77,8 +77,8 @@ Do register sources and verify licensing.
 
 ### Deliverables
 
-1. data/sources/registry.json: complete list of approved sources
-2. data/sources/license_summary.md: summary of licensing terms
+1. sources/registry.json: complete list of approved sources
+2. sources/license_summary.md: summary of licensing terms
 3. Source documentation for each approved source
 4. Research notes on rejected sources (why rejected)
 5. Policy for quarantine review
@@ -428,7 +428,7 @@ Fix issues identified in M8:
 
 Package content for different modalities:
 
-1. Export to USDML (common learning standard)
+1. Export to a selected LMS package format
 2. Export to JSON/CSV for data scientists
 3. Create mobile-friendly format
 4. Create web-friendly format

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/ai-practice-prompt.schema.json",
+  "title": "English Master AI practice prompt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "id", "prompt_type", "cefr_level", "target_vocabulary", "target_grammar", "communicative_goal", "prompt_template", "prompt_variables", "system_role", "evaluation_criteria", "generation_metadata"],
+  "properties": {
+    "schema_version": {"$ref": "common.schema.json#/$defs/schemaVersion"},
+    "id": {"$ref": "common.schema.json#/$defs/promptId"},
+    "prompt_type": {"type": "string", "enum": ["listening", "speaking", "pronunciation", "writing_tutor"]},
+    "cefr_level": {"$ref": "common.schema.json#/$defs/cefrLevel"},
+    "target_vocabulary": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/vocabularySenseId"}, "uniqueItems": true},
+    "target_grammar": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/conceptId"}, "uniqueItems": true},
+    "communicative_goal": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+    "prompt_template": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+    "prompt_variables": {"type": "array", "items": {"type": "string", "pattern": "^\\{\\{[a-z][a-z0-9_]*\\}\\}$"}, "uniqueItems": true},
+    "system_role": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+    "evaluation_criteria": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "minItems": 1, "uniqueItems": true},
+    "generation_metadata": {"$ref": "common.schema.json#/$defs/generationMetadata"}
+  }
+}
