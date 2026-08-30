@@ -7,6 +7,10 @@
       "type": "string",
       "const": "1.0"
     },
+    "sourceSchemaVersion": {
+      "type": "string",
+      "const": "2.0"
+    },
     "nonEmptyString": {
       "type": "string",
       "minLength": 1
@@ -69,7 +73,7 @@
     "provenance": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["source_id", "source_name", "source_url", "source_record_id", "retrieved_at", "retrieved_by", "license", "attribution", "content_hash", "ingestion_version"],
+      "required": ["source_id", "source_name", "source_url", "source_record_id", "retrieved_at", "retrieved_by", "license", "license_url", "attribution", "content_hash", "ingestion_version"],
       "properties": {
         "source_id": {"$ref": "#/$defs/sourceId"},
         "source_name": {"$ref": "#/$defs/nonEmptyString"},
@@ -78,6 +82,7 @@
         "retrieved_at": {"$ref": "#/$defs/isoDateTime"},
         "retrieved_by": {"$ref": "#/$defs/nonEmptyString"},
         "license": {"$ref": "#/$defs/nonEmptyString"},
+        "license_url": {"type": "string", "format": "uri"},
         "attribution": {"$ref": "#/$defs/nonEmptyString"},
         "content_hash": {"type": "string", "pattern": "^[A-Fa-f0-9]{64}$"},
         "ingestion_version": {"$ref": "#/$defs/nonEmptyString"}

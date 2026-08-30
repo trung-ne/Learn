@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/source-registry.schema.json",
+  "title": "English Master source registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "sources"],
+  "properties": {
+    "schema_version": {"$ref": "common.schema.json#/$defs/schemaVersion"},
+    "sources": {
+      "type": "array",
+      "items": {"$ref": "source.schema.json"},
+      "minItems": 1
+    }
+  }
+}

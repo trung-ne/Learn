@@ -22,6 +22,7 @@ def test_all_schema_files_are_loaded_and_metaschema_valid(schemas: dict[str, dic
         "concept.schema.json",
         "exercise.schema.json",
         "lesson.schema.json",
+        "source-registry.schema.json",
         "source.schema.json",
         "vocabulary-sense.schema.json",
     ]

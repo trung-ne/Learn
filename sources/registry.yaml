@@ -1,0 +1,683 @@
+schema_version: "1.0"
+sources:
+  - schema_version: "2.0"
+    source_id: src_tatoeba_text
+    source_name: Tatoeba sentence corpus text
+    owner: Tatoeba Project
+    source_type: dataset
+    source_url: https://tatoeba.org/en/
+    description: >-
+      Individual Tatoeba text sentences only, used only when their record-level license,
+      author, sentence ID, and attribution data are retained.
+    content_types: [text, metadata]
+    access:
+      preferred_method: official_download
+      api_url: https://api.tatoeba.org/
+      dataset_url: https://tatoeba.org/en/downloads
+      crawl_allowed: false
+      download_allowed: true
+    license:
+      name: CC-BY-2.0-FR
+      url: https://creativecommons.org/licenses/by/2.0/fr/deed.en
+      reviewed_at: "2026-08-30T00:00:00Z"
+      notes: >-
+        Default sentence license; some records have a different compatible license. The
+        record-level license and contributor attribution control. Audio is excluded.
+    permissions: &open_text_permissions
+      reference_allowed: true
+      ingest_allowed: true
+      store_allowed: true
+      modify_allowed: true
+      redistribute_allowed: true
+      commercial_use_allowed: true
+    media_permissions:
+      text: &open_text
+        ingest_allowed: true
+        store_allowed: true
+        redistribute_allowed: true
+        transform_allowed: true
+        transcript_allowed: false
+        exercise_allowed: true
+        derived_redistribution_allowed: true
+      audio: &no_audio
+        download_allowed: false
+        store_allowed: false
+        clip_allowed: false
+        transform_allowed: false
+        transcript_allowed: false
+        timestamp_allowed: false
+        exercise_allowed: false
+        redistribute_allowed: false
+        derived_redistribution_allowed: false
+      video: &no_video
+        download_allowed: false
+        store_allowed: false
+        clip_allowed: false
+        audio_extraction_allowed: false
+        transcript_allowed: false
+        timestamp_allowed: false
+        exercise_allowed: false
+        redistribute_allowed: false
+        derived_redistribution_allowed: false
+    attribution: &tatoeba_attribution
+      required: true
+      format: "Sentence {source_record_id} by {author}, Tatoeba, {license_url}"
+      requirements: >-
+        Preserve sentence ID, contributor/author, source URL, record-level license,
+        attribution information, and an indication of modifications.
+    technical:
+      robots_notes: "Do not crawl pages; use the official API or official download exports."
+      rate_limit_notes: "Respect published API limits and do not bypass rate limiting."
+      official_api_available: true
+      official_dump_available: true
+    status: APPROVED
+    evidence:
+      - url: https://tatoeba.org/en/terms_of_use
+        description: "Current Tatoeba text license and attribution terms."
+        checked_at: "2026-08-30T00:00:00Z"
+      - url: https://tatoeba.org/en/downloads
+        description: "Official text-download and API access information."
+        checked_at: "2026-08-30T00:00:00Z"
+    registered_at: "2026-08-30T00:00:00Z"
+    registered_by: M1 source-governance review
+    reviewed_at: "2026-08-30T00:00:00Z"
+    review_notes: >-
+      Approved only for record-level text with complete attribution and license data.
+      Do not infer text rights from a related audio record or translation chain.
+
+  - schema_version: "2.0"
+    source_id: src_tatoeba_audio_cc_by_4
+    source_name: Tatoeba CC BY 4.0 audio recordings
+    owner: Tatoeba Project contributors
+    source_type: dataset
+    source_url: https://tatoeba.org/en/downloads
+    description: >-
+      Individual audio records whose official metadata explicitly identifies CC BY 4.0
+      and supplies the required attribution URL. The separately licensed sentence text
+      must be cleared independently before transcript or exercise redistribution.
+    content_types: [audio, metadata]
+    access:
+      preferred_method: official_download
+      api_url: https://api.tatoeba.org/
+      dataset_url: https://tatoeba.org/en/downloads
+      crawl_allowed: false
+      download_allowed: true
+    license:
+      name: CC-BY-4.0
+      url: https://creativecommons.org/licenses/by/4.0/legalcode.en
+      reviewed_at: "2026-08-30T00:00:00Z"
+      notes: "Approval excludes blank, unknown, NC, ND, and offsite-prohibited audio licenses."
+    permissions: &open_audio_permissions
+      reference_allowed: true
+      ingest_allowed: true
+      store_allowed: true
+      modify_allowed: true
+      redistribute_allowed: true
+      commercial_use_allowed: true
+    media_permissions:
+      text: *open_text
+      audio: &open_audio
+        download_allowed: true
+        store_allowed: true
+        clip_allowed: true
+        transform_allowed: true
+        transcript_allowed: true
+        timestamp_allowed: true
+        exercise_allowed: true
+        redistribute_allowed: true
+        derived_redistribution_allowed: true
+      video: *no_video
+    attribution:
+      required: true
+      format: "Audio {audio_id} by {author}, Tatoeba, CC BY 4.0, {attribution_url}"
+      requirements: >-
+        Retain audio ID, sentence ID, creator, attribution URL, license notice,
+        source link where practical, and modification notice. A transcript also needs
+        the linked sentence's independently verified text permission.
+    technical:
+      robots_notes: "Use official downloads or API only; do not crawl contributor pages."
+      rate_limit_notes: "Respect official API limits and use bulk exports only in a later approved ingestion run."
+      official_api_available: true
+      official_dump_available: true
+    status: APPROVED
+    evidence:
+      - url: https://tatoeba.org/en/downloads
+        description: "Official audio metadata fields include license and attribution URL."
+        checked_at: "2026-08-30T00:00:00Z"
+      - url: https://en.wiki.tatoeba.org/articles/show/choose-audio-license
+        description: "Official project guidance for contributor-specific audio licenses."
+        checked_at: "2026-08-30T00:00:00Z"
+    registered_at: "2026-08-30T00:00:00Z"
+    registered_by: M1 source-governance review
+    reviewed_at: "2026-08-30T00:00:00Z"
+    review_notes: "Approved only after an M2 record-level CC BY 4.0 and attribution check."
+
+  - schema_version: "2.0"
+    source_id: src_common_voice_scripted_speech
+    source_name: Mozilla Common Voice Scripted Speech releases
+    owner: Mozilla Foundation / Mozilla Data Collective
+    source_type: dataset
+    source_url: https://commonvoice.mozilla.org/en/datasets
+    description: >-
+      Specifically versioned Common Voice releases used for controlled computational
+      processing after acceptance of the release-specific Mozilla Data Collective terms.
+    content_types: [audio, transcript, metadata]
+    access:
+      preferred_method: official_api
+      api_url: https://datacollective.mozillafoundation.org/api-reference/docs
+      dataset_url: https://mozilladatacollective.com/
+      crawl_allowed: false
+      download_allowed: true
+    license:
+      name: CC0-1.0-WITH-MDC-TERMS
+      url: https://commonvoice.mozilla.org/en/terms
+      reviewed_at: "2026-08-30T00:00:00Z"
+      notes: >-
+        Dataset pages label releases CC0, but Mozilla Data Collective terms separately
+        prohibit re-hosting/re-sharing and speaker-identification attempts.
+    permissions:
+      reference_allowed: true
+      ingest_allowed: true
+      store_allowed: true
+      modify_allowed: true
+      redistribute_allowed: false
+      commercial_use_allowed: true
+    media_permissions:
+      text: &common_voice_text
+        ingest_allowed: false
+        store_allowed: true
+        redistribute_allowed: false
+        transform_allowed: false
+        transcript_allowed: false
+        exercise_allowed: false
+        derived_redistribution_allowed: false
+      audio: &common_voice_audio
+        download_allowed: true
+        store_allowed: true
+        clip_allowed: true
+        transform_allowed: true
+        transcript_allowed: true
+        timestamp_allowed: true
+        exercise_allowed: true
+        redistribute_allowed: false
+        derived_redistribution_allowed: false
+      video: *no_video
+    attribution:
+      required: false
+      format: null
+      requirements: >-
+        CC0 does not require attribution, but retain release ID, dataset URL, terms
+        version, language, and retrieval metadata for auditability.
+    technical:
+      robots_notes: "Use Mozilla Data Collective's authorized browser, API, or SDK route only."
+      rate_limit_notes: "Accept current release terms before access and respect all platform limits."
+      official_api_available: true
+      official_dump_available: false
+    status: APPROVED
+    evidence:
+      - url: https://commonvoice.mozilla.org/en/terms
+        description: "Official Common Voice legal terms and CC0 framing."
+        checked_at: "2026-08-30T00:00:00Z"
+      - url: https://mozilladatacollective.com/datasets/cmqim2hn800ssnr07gvmpcnwu
+        description: "Official English Scripted Speech 26.0 release page and no-rehosting conditions."
+        checked_at: "2026-08-30T00:00:00Z"
+    registered_at: "2026-08-30T00:00:00Z"
+    registered_by: M1 source-governance review
+    reviewed_at: "2026-08-30T00:00:00Z"
+    review_notes: >-
+      Original and derived redistribution are denied. Do not attempt speaker identification.
+      Distributable text derived from transcripts remains quarantined unless exact sentence provenance is cleared.
+
+  - schema_version: "2.0"
+    source_id: src_librivox_us_recordings
+    source_name: LibriVox public-domain recordings in the United States
+    owner: LibriVox volunteers
+    source_type: dataset
+    source_url: https://librivox.org/
+    description: >-
+      Official LibriVox recordings and catalog metadata only, in a United States-scoped
+      use lane. Underlying editions and translations require separate jurisdiction review.
+    content_types: [audio, metadata]
+    access:
+      preferred_method: official_api
+      api_url: https://librivox.org/api/info
+      dataset_url: https://librivox.org/search
+      crawl_allowed: false
+      download_allowed: true
+    license:
+      name: PUBLIC-DOMAIN-US
+      url: https://librivox.org/pages/public-domain/
+      reviewed_at: "2026-08-30T00:00:00Z"
+      notes: "LibriVox asserts public-domain status in the United States, not worldwide."
+    permissions: &us_public_domain_permissions
+      reference_allowed: true
+      ingest_allowed: true
+      store_allowed: true
+      modify_allowed: true
+      redistribute_allowed: true
+      commercial_use_allowed: true
+    media_permissions:
+      text: &us_text_limited
+        ingest_allowed: false
+        store_allowed: false
+        redistribute_allowed: false
+        transform_allowed: false
+        transcript_allowed: false
+        exercise_allowed: false
+        derived_redistribution_allowed: false
+      audio: *open_audio
+      video: *no_video
+    attribution:
+      required: false
+      format: null
+      requirements: "Credit and a LibriVox link are requested as a courtesy; preserve catalog provenance."
+    technical:
+      robots_notes: "Use the official API, catalog, feeds, or source-hosted files; never use an unofficial mirror."
+      rate_limit_notes: "Respect official API and host limits."
+      official_api_available: true
+      official_dump_available: false
+    status: APPROVED
+    evidence:
+      - url: https://librivox.org/pages/public-domain/
+        description: "Official statement that recordings are public domain in the United States."
+        checked_at: "2026-08-30T00:00:00Z"
+      - url: https://wiki.librivox.org/index.php/Recording_%26_Text_Policies
+        description: "Official recording and underlying-text policy distinction."
+        checked_at: "2026-08-30T00:00:00Z"
+    registered_at: "2026-08-30T00:00:00Z"
+    registered_by: M1 source-governance review
+    reviewed_at: "2026-08-30T00:00:00Z"
+    review_notes: >-
+      This approval is limited to U.S.-scoped recordings. Do not redistribute worldwide,
+      use a translation, or create distributable transcripts until item and jurisdiction clearance is recorded.
+
+  - schema_version: "2.0"
+    source_id: src_nasa_svs_plain_moon_video
+    source_name: NASA SVS Moon Phase and Libration plain video
+    owner: NASA Scientific Visualization Studio
+    source_type: other
+    source_url: https://svs.gsfc.nasa.gov/5587/
+    description: >-
+      The silent/plain Moon Phase and Libration 2026 video variants explicitly made
+      available by NASA SVS. Music-bearing variants and uncertain audio are excluded.
+    content_types: [video, metadata]
+    access:
+      preferred_method: official_download
+      api_url: null
+      dataset_url: https://svs.gsfc.nasa.gov/5587/
+      crawl_allowed: false
+      download_allowed: true
+    license:
+      name: NASA-MEDIA-US-GOVERNMENT
+      url: https://www.nasa.gov/nasa-brand-center/images-and-media/
+      reviewed_at: "2026-08-30T00:00:00Z"
+      notes: >-
+        NASA media is generally not copyrighted in the United States, subject to
+        asset-level third-party, endorsement, mark, and jurisdictional restrictions.
+    permissions:
+      reference_allowed: true
+      ingest_allowed: true
+      store_allowed: true
+      modify_allowed: true
+      redistribute_allowed: true
+      commercial_use_allowed: false
+    media_permissions:
+      text:
+        ingest_allowed: false
+        store_allowed: false
+        redistribute_allowed: false
+        transform_allowed: false
+        transcript_allowed: false
+        exercise_allowed: false
+        derived_redistribution_allowed: false
+      audio: *no_audio
+      video: &nasa_plain_video
+        download_allowed: true
+        store_allowed: true
+        clip_allowed: true
+        audio_extraction_allowed: false
+        transcript_allowed: false
+        timestamp_allowed: true
+        exercise_allowed: true
+        redistribute_allowed: true
+        derived_redistribution_allowed: true
+    attribution:
+      required: true
+      format: "Source: NASA Scientific Visualization Studio, NASA SVS ID 5587."
+      requirements: >-
+        Acknowledge NASA/SVS; do not imply endorsement; exclude music-bearing variants,
+        third-party material, insignia use, and promotional or merchandise uses.
+    technical:
+      robots_notes: "Use only the explicitly offered NASA SVS asset page and files."
+      rate_limit_notes: "Do not bulk-download variants; respect NASA host limits."
+      official_api_available: false
+      official_dump_available: false
+    status: APPROVED
+    evidence:
+      - url: https://svs.gsfc.nasa.gov/5587/
+        description: "Official NASA SVS page with plain-video variants and separate music-bearing variants."
+        checked_at: "2026-08-30T00:00:00Z"
+      - url: https://www.nasa.gov/nasa-brand-center/images-and-media/
+        description: "Current NASA images and media usage guidelines."
+        checked_at: "2026-08-30T00:00:00Z"
+    registered_at: "2026-08-30T00:00:00Z"
+    registered_by: M1 source-governance review
+    reviewed_at: "2026-08-30T00:00:00Z"
+    review_notes: >-
+      Approved as video-only. Audio extraction and transcript generation are blocked
+      because this governance scope excludes soundtrack use and narrated variants.
+
+  - schema_version: "2.0"
+    source_id: src_wiktionary_en_text
+    source_name: English Wiktionary official text dumps
+    owner: Wikimedia contributors
+    source_type: dump
+    source_url: https://dumps.wikimedia.org/enwiktionary/
+    description: >-
+      English Wiktionary textual page content from official dumps, with item-level
+      attribution, change indication, and ShareAlike obligations retained.
+    content_types: [text, metadata]
+    access:
+      preferred_method: official_dump
+      api_url: null
+      dataset_url: https://dumps.wikimedia.org/enwiktionary/latest/
+      crawl_allowed: false
+      download_allowed: true
+    license:
+      name: CC-BY-SA-4.0
+      url: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+      reviewed_at: "2026-08-30T00:00:00Z"
+      notes: "Text is generally CC BY-SA 4.0 and GFDL; page-specific exceptions and non-text media are excluded."
+    permissions: *open_text_permissions
+    media_permissions:
+      text: *open_text
+      audio: *no_audio
+      video: *no_video
+    attribution:
+      required: true
+      format: "Derived from English Wiktionary page {source_record_id}, CC BY-SA 4.0."
+      requirements: >-
+        Provide a page URL or equivalent author credit, identify changes, include the
+        license notice/link, and distribute adapted text under CC BY-SA 4.0 or later.
+    technical:
+      robots_notes: "Use official dump files only; do not scrape pages for bulk ingestion."
+      rate_limit_notes: "Use official dump publication cadence and do not bypass host controls."
+      official_api_available: false
+      official_dump_available: true
+    status: APPROVED
+    evidence:
+      - url: https://dumps.wikimedia.org/enwiktionary/latest/
+        description: "Official English Wiktionary dump publication listing."
+        checked_at: "2026-08-30T00:00:00Z"
+      - url: https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use
+        description: "Current Wikimedia text-reuse and attribution terms."
+        checked_at: "2026-08-30T00:00:00Z"
+    registered_at: "2026-08-30T00:00:00Z"
+    registered_by: M1 source-governance review
+    reviewed_at: "2026-08-30T00:00:00Z"
+    review_notes: "Approved only for text with complete CC BY-SA attribution and ShareAlike compliance."
+
+  - schema_version: "2.0"
+    source_id: src_cefr_companion_volume
+    source_name: Council of Europe CEFR Companion Volume
+    owner: Council of Europe
+    source_type: other
+    source_url: https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-companion-volume-and-its-language-versions
+    description: "Authoritative CEFR reference material for taxonomy and coverage analysis; not a corpus."
+    content_types: [text, metadata]
+    access:
+      preferred_method: manual_reference
+      api_url: null
+      dataset_url: null
+      crawl_allowed: false
+      download_allowed: true
+    license:
+      name: COE-PROPRIETARY-LIMITED-EXCERPT
+      url: https://www.coe.int/en/web/portal/copyright-licensing-permissions
+      reviewed_at: "2026-08-30T00:00:00Z"
+      notes: "Citation is allowed; excerpts and reproduction remain limited by publication and permissions terms."
+    permissions: &reference_permissions
+      reference_allowed: true
+      ingest_allowed: false
+      store_allowed: false
+      modify_allowed: false
+      redistribute_allowed: false
+      commercial_use_allowed: false
+    media_permissions:
+      text: &reference_text
+        ingest_allowed: false
+        store_allowed: false
+        redistribute_allowed: false
+        transform_allowed: false
+        transcript_allowed: false
+        exercise_allowed: false
+        derived_redistribution_allowed: false
+      audio: *no_audio
+      video: *no_video
+    attribution: &reference_attribution
+      required: true
+      format: "Council of Europe, CEFR Companion Volume."
+      requirements: "Cite and link to the official source; do not copy content into project materials without separate clearance."
+    technical: &reference_technical
+      robots_notes: "Reference manually or use authorized official downloads only; no crawling."
+      rate_limit_notes: "No automated collection is authorized by this governance record."
+      official_api_available: false
+      official_dump_available: false
+    status: REFERENCE_ONLY
+    evidence:
+      - url: https://rm.coe.int/common-european-framework-of-reference-for-languages-learning-teaching/16809ea0d4
+        description: "Official Companion Volume publication record and reproduction notice."
+        checked_at: "2026-08-30T00:00:00Z"
+      - url: https://www.coe.int/en/web/portal/copyright-licensing-permissions
+        description: "Council of Europe copyright, licensing, and permissions policy."
+        checked_at: "2026-08-30T00:00:00Z"
+    registered_at: "2026-08-30T00:00:00Z"
+    registered_by: M1 source-governance review
+    reviewed_at: "2026-08-30T00:00:00Z"
+    review_notes: "REFERENCE_ONLY. Limited excerpts do not authorize corpus extraction, descriptor-bank reproduction, or translation."
+
+  - schema_version: "2.0"
+    source_id: src_english_profile_evp
+    source_name: English Profile English Vocabulary Profile
+    owner: Cambridge University Press & Assessment / English Profile
+    source_type: other
+    source_url: https://englishprofile.org/?menu=english-vocabulary-profile
+    description: "Online English-level reference resource with unresolved reuse and automated-access permissions."
+    content_types: [text, metadata]
+    access:
+      preferred_method: manual_reference
+      api_url: null
+      dataset_url: null
+      crawl_allowed: false
+      download_allowed: false
+    license:
+      name: UNKNOWN
+      url: null
+      reviewed_at: "2026-08-30T00:00:00Z"
+      notes: "No current official bulk-extraction or redistribution permission was verified."
+    permissions: &quarantine_permissions
+      reference_allowed: true
+      ingest_allowed: false
+      store_allowed: false
+      modify_allowed: false
+      redistribute_allowed: false
+      commercial_use_allowed: false
+    media_permissions:
+      text: *reference_text
+      audio: *no_audio
+      video: *no_video
+    attribution: *reference_attribution
+    technical: *reference_technical
+    status: QUARANTINED
+    evidence:
+      - url: https://englishprofile.org/?menu=evp-terms-of-use
+        description: "Official EVP terms location; usable extraction/reuse permission was not verified."
+        checked_at: "2026-08-30T00:00:00Z"
+      - url: https://englishprofile.org/?menu=english-vocabulary-profile
+        description: "Official online profile resource page."
+        checked_at: "2026-08-30T00:00:00Z"
+    registered_at: "2026-08-30T00:00:00Z"
+    registered_by: M1 source-governance review
+    reviewed_at: "2026-08-30T00:00:00Z"
+    review_notes: "QUARANTINED because public access does not establish copying, API, dataset, or redistribution rights."
+
+  - schema_version: "2.0"
+    source_id: src_cambridge_public_specifications
+    source_name: Cambridge English public specifications and sample materials
+    owner: Cambridge University Press & Assessment
+    source_type: other
+    source_url: https://www.cambridgeenglish.org/exams-and-tests/qualifications/
+    description: "Public Cambridge examination specifications and preparation materials used only as exam-specific references."
+    content_types: [text, audio, video, metadata]
+    access:
+      preferred_method: manual_reference
+      api_url: null
+      dataset_url: null
+      crawl_allowed: false
+      download_allowed: true
+    license:
+      name: CAMBRIDGE-PROPRIETARY-PERSONAL-NONCOMMERCIAL
+      url: https://www.cambridge.org/legal/website-terms-of-use
+      reviewed_at: "2026-08-30T00:00:00Z"
+      notes: "Public download/access does not grant corpus extraction, adaptation, redistribution, or product use."
+    permissions: *reference_permissions
+    media_permissions:
+      text: *reference_text
+      audio: *no_audio
+      video: *no_video
+    attribution: *reference_attribution
+    technical: *reference_technical
+    status: REFERENCE_ONLY
+    evidence:
+      - url: https://support.cambridgeenglish.org/hc/en-gb/articles/11821760782610-Cambridge-English-Regulations
+        description: "Official Cambridge regulations and copyright position for examination materials."
+        checked_at: "2026-08-30T00:00:00Z"
+      - url: https://www.cambridge.org/legal/website-terms-of-use
+        description: "Current Cambridge website terms."
+        checked_at: "2026-08-30T00:00:00Z"
+    registered_at: "2026-08-30T00:00:00Z"
+    registered_by: M1 source-governance review
+    reviewed_at: "2026-08-30T00:00:00Z"
+    review_notes: "REFERENCE_ONLY. Do not treat free samples, printable pages, or exam alignment as a general content license."
+
+  - schema_version: "2.0"
+    source_id: src_british_council_public_resources
+    source_name: British Council public English-learning resources
+    owner: British Council
+    source_type: other
+    source_url: https://learnenglish.britishcouncil.org/
+    description: "Public British Council reference resources with item-specific and generally restrictive reuse rights."
+    content_types: [text, audio, video, transcript, metadata]
+    access:
+      preferred_method: manual_reference
+      api_url: null
+      dataset_url: null
+      crawl_allowed: false
+      download_allowed: false
+    license:
+      name: BRITISH-COUNCIL-ITEM-SPECIFIC
+      url: https://learnenglish.britishcouncil.org/legal
+      reviewed_at: "2026-08-30T00:00:00Z"
+      notes: "Some items may carry distinct licenses, but no source-wide ingestion license was verified."
+    permissions: *reference_permissions
+    media_permissions:
+      text: *reference_text
+      audio: *no_audio
+      video: *no_video
+    attribution: *reference_attribution
+    technical: *reference_technical
+    status: REFERENCE_ONLY
+    evidence:
+      - url: https://learnenglish.britishcouncil.org/legal
+        description: "Official LearnEnglish legal terms."
+        checked_at: "2026-08-30T00:00:00Z"
+      - url: https://learnenglishkids.britishcouncil.org/frequently-asked-questions
+        description: "Official resource-specific download and copyright limitations."
+        checked_at: "2026-08-30T00:00:00Z"
+    registered_at: "2026-08-30T00:00:00Z"
+    registered_by: M1 source-governance review
+    reviewed_at: "2026-08-30T00:00:00Z"
+    review_notes: "REFERENCE_ONLY unless a separately registered item carries an independently verified license."
+
+  - schema_version: "2.0"
+    source_id: src_voa_learning_english
+    source_name: VOA Learning English mixed-media pages
+    owner: Voice of America / U.S. Agency for Global Media
+    source_type: other
+    source_url: https://learningenglish.voanews.com/
+    description: >-
+      VOA Learning English pages may mix exclusively VOA-produced public-domain material
+      with agency, licensed, music, photograph, video, and other third-party components.
+    content_types: [text, audio, video, transcript, metadata]
+    access:
+      preferred_method: manual_reference
+      api_url: null
+      dataset_url: null
+      crawl_allowed: false
+      download_allowed: false
+    license:
+      name: UNKNOWN
+      url: null
+      reviewed_at: "2026-08-30T00:00:00Z"
+      notes: "No source-wide uniform license exists because rights are asset and component specific."
+    permissions: *quarantine_permissions
+    media_permissions:
+      text: *reference_text
+      audio: *no_audio
+      video: *no_video
+    attribution: *reference_attribution
+    technical: *reference_technical
+    status: QUARANTINED
+    evidence:
+      - url: https://learningenglish.voanews.com/p/6021.html
+        description: "Current VOA policy distinguishing exclusively produced material from third-party content."
+        checked_at: "2026-08-30T00:00:00Z"
+      - url: https://www.insidevoa.com/p/5719.html
+        description: "Official VOA usage-request and distribution policy."
+        checked_at: "2026-08-30T00:00:00Z"
+    registered_at: "2026-08-30T00:00:00Z"
+    registered_by: M1 source-governance review
+    reviewed_at: "2026-08-30T00:00:00Z"
+    review_notes: >-
+      QUARANTINED as a source-level corpus. A future asset-level record needs affirmative
+      proof that every retained component is exclusively VOA-produced and all distribution rules are met.
+
+  - schema_version: "2.0"
+    source_id: src_tatoeba_audio_unknown
+    source_name: Tatoeba audio without an offsite-use license
+    owner: Individual Tatoeba audio contributors
+    source_type: dataset
+    source_url: https://tatoeba.org/en/downloads
+    description: "Tatoeba audio records with a blank, unknown, or offsite-prohibited license field."
+    content_types: [audio, metadata]
+    access:
+      preferred_method: official_download
+      api_url: https://api.tatoeba.org/
+      dataset_url: https://tatoeba.org/en/downloads
+      crawl_allowed: false
+      download_allowed: false
+    license:
+      name: UNKNOWN
+      url: null
+      reviewed_at: "2026-08-30T00:00:00Z"
+      notes: "Official audio metadata may state that a recording cannot be reused outside Tatoeba."
+    permissions: *quarantine_permissions
+    media_permissions:
+      text: *reference_text
+      audio: *no_audio
+      video: *no_video
+    attribution: *reference_attribution
+    technical:
+      robots_notes: "Do not retrieve records for project use without an affirmative record-level license."
+      rate_limit_notes: "No project request is authorized for quarantined recordings."
+      official_api_available: true
+      official_dump_available: true
+    status: QUARANTINED
+    evidence:
+      - url: https://tatoeba.org/en/downloads
+        description: "Official download documentation describes record-level audio license and attribution fields."
+        checked_at: "2026-08-30T00:00:00Z"
+    registered_at: "2026-08-30T00:00:00Z"
+    registered_by: M1 source-governance review
+    reviewed_at: "2026-08-30T00:00:00Z"
+    review_notes: "QUARANTINED. Attribution is not a substitute for an affirmative offsite-use license."

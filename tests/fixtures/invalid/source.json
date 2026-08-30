@@ -1,13 +1,89 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "source_id": "src_synthetic_fixture",
-  "source_name": "Synthetic M0 Fixture",
+  "source_name": "Synthetic M1 Fixture",
+  "owner": "English Master test suite",
   "source_type": "other",
   "source_url": "https://example.invalid/synthetic-source",
+  "description": "Artificial metadata-only record used to validate source governance rules.",
+  "content_types": [
+    "text"
+  ],
+  "access": {
+    "preferred_method": "none",
+    "api_url": null,
+    "dataset_url": null,
+    "crawl_allowed": false,
+    "download_allowed": false
+  },
+  "license": {
+    "name": "TEST-ONLY",
+    "url": "https://example.invalid/license",
+    "reviewed_at": "2026-08-30T00:00:00Z",
+    "notes": "Invented fixture; it represents no external content."
+  },
+  "permissions": {
+    "reference_allowed": true,
+    "ingest_allowed": true,
+    "store_allowed": true,
+    "modify_allowed": true,
+    "redistribute_allowed": true,
+    "commercial_use_allowed": true
+  },
+  "media_permissions": {
+    "text": {
+      "ingest_allowed": true,
+      "store_allowed": true,
+      "redistribute_allowed": true,
+      "transform_allowed": true,
+      "transcript_allowed": false,
+      "exercise_allowed": true,
+      "derived_redistribution_allowed": true
+    },
+    "audio": {
+      "download_allowed": false,
+      "store_allowed": false,
+      "clip_allowed": false,
+      "transform_allowed": false,
+      "transcript_allowed": false,
+      "timestamp_allowed": false,
+      "exercise_allowed": false,
+      "redistribute_allowed": false,
+      "derived_redistribution_allowed": false
+    },
+    "video": {
+      "download_allowed": false,
+      "store_allowed": false,
+      "clip_allowed": false,
+      "audio_extraction_allowed": false,
+      "transcript_allowed": false,
+      "timestamp_allowed": false,
+      "exercise_allowed": false,
+      "redistribute_allowed": false,
+      "derived_redistribution_allowed": false
+    }
+  },
+  "attribution": {
+    "required": false,
+    "format": null,
+    "requirements": "No attribution applies because this is a synthetic fixture."
+  },
+  "technical": {
+    "robots_notes": "No network access is associated with this fixture.",
+    "rate_limit_notes": "No network access is associated with this fixture.",
+    "official_api_available": false,
+    "official_dump_available": false
+  },
   "status": "PENDING_APPROVAL",
-  "license": "Test-only; no external content",
-  "license_url": "https://example.invalid/license",
-  "terms_of_use": "Artificial fixture for schema tests only.",
-  "registered_at": "2026-08-28T00:00:00Z",
-  "registered_by": "m0_test_suite"
+  "evidence": [
+    {
+      "url": "https://example.invalid/source-governance-fixture",
+      "description": "Synthetic test evidence only; not an external source.",
+      "checked_at": "2026-08-30T00:00:00Z"
+    }
+  ],
+  "registered_at": "2026-08-30T00:00:00Z",
+  "registered_by": "m1_test_suite",
+  "reviewed_at": "2026-08-30T00:00:00Z",
+  "review_notes": "Approved only as an artificial schema-validation fixture."
 }

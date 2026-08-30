@@ -1,37 +1,201 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://english-master.local/schemas/source.schema.json",
-  "title": "English Master source registration",
+  "title": "English Master source governance record",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "source_id", "source_name", "source_type", "source_url", "status", "terms_of_use", "registered_at", "registered_by"],
+  "required": [
+    "schema_version",
+    "source_id",
+    "source_name",
+    "owner",
+    "source_type",
+    "source_url",
+    "description",
+    "content_types",
+    "access",
+    "license",
+    "permissions",
+    "media_permissions",
+    "attribution",
+    "technical",
+    "status",
+    "evidence",
+    "registered_at",
+    "registered_by",
+    "reviewed_at",
+    "review_notes"
+  ],
   "properties": {
-    "schema_version": {"$ref": "common.schema.json#/$defs/schemaVersion"},
+    "schema_version": {"$ref": "common.schema.json#/$defs/sourceSchemaVersion"},
     "source_id": {"$ref": "common.schema.json#/$defs/sourceId"},
     "source_name": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+    "owner": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
     "source_type": {"type": "string", "enum": ["dataset", "api", "dump", "crawlable", "other"]},
     "source_url": {"type": "string", "format": "uri"},
+    "description": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+    "content_types": {
+      "type": "array",
+      "items": {"type": "string", "enum": ["text", "audio", "video", "transcript", "metadata"]},
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "access": {"$ref": "#/$defs/access"},
+    "license": {"$ref": "#/$defs/license"},
+    "permissions": {"$ref": "#/$defs/permissions"},
+    "media_permissions": {"$ref": "#/$defs/mediaPermissions"},
+    "attribution": {"$ref": "#/$defs/attribution"},
+    "technical": {"$ref": "#/$defs/technical"},
     "status": {"$ref": "common.schema.json#/$defs/sourceStatus"},
-    "license": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
-    "license_url": {"type": "string", "format": "uri"},
-    "terms_of_use": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+    "evidence": {"type": "array", "items": {"$ref": "#/$defs/evidence"}, "minItems": 1, "uniqueItems": true},
     "registered_at": {"$ref": "common.schema.json#/$defs/isoDateTime"},
     "registered_by": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
-    "notes": {"type": "string"}
+    "reviewed_at": {"$ref": "common.schema.json#/$defs/isoDateTime"},
+    "review_notes": {"$ref": "common.schema.json#/$defs/nonEmptyString"}
   },
   "allOf": [
     {
       "if": {"properties": {"status": {"const": "QUARANTINED"}}, "required": ["status"]},
-      "then": {
-        "anyOf": [
-          {"properties": {"license": {"const": "UNKNOWN"}}, "required": ["license"]},
-          {"required": ["license", "license_url"]}
-        ]
-      },
       "else": {
-        "required": ["license", "license_url"],
-        "properties": {"license": {"not": {"const": "UNKNOWN"}}}
+        "properties": {
+          "license": {
+            "properties": {"name": {"not": {"const": "UNKNOWN"}}},
+            "required": ["name"]
+          }
+        }
       }
     }
-  ]
+  ],
+  "$defs": {
+    "access": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["preferred_method", "api_url", "dataset_url", "crawl_allowed", "download_allowed"],
+      "properties": {
+        "preferred_method": {"type": "string", "enum": ["official_api", "official_download", "official_dump", "manual_reference", "official_page", "none"]},
+        "api_url": {"type": ["string", "null"], "format": "uri"},
+        "dataset_url": {"type": ["string", "null"], "format": "uri"},
+        "crawl_allowed": {"type": "boolean"},
+        "download_allowed": {"type": "boolean"}
+      }
+    },
+    "license": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "url", "reviewed_at", "notes"],
+      "properties": {
+        "name": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+        "url": {"type": ["string", "null"], "format": "uri"},
+        "reviewed_at": {"$ref": "common.schema.json#/$defs/isoDateTime"},
+        "notes": {"$ref": "common.schema.json#/$defs/nonEmptyString"}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"name": {"const": "UNKNOWN"}}, "required": ["name"]},
+          "then": {"properties": {"url": {"type": "null"}}, "required": ["url"]},
+          "else": {"properties": {"url": {"type": "string", "format": "uri"}}, "required": ["url"]}
+        }
+      ]
+    },
+    "permissions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["reference_allowed", "ingest_allowed", "store_allowed", "modify_allowed", "redistribute_allowed", "commercial_use_allowed"],
+      "properties": {
+        "reference_allowed": {"type": "boolean"},
+        "ingest_allowed": {"type": "boolean"},
+        "store_allowed": {"type": "boolean"},
+        "modify_allowed": {"type": "boolean"},
+        "redistribute_allowed": {"type": "boolean"},
+        "commercial_use_allowed": {"type": "boolean"}
+      }
+    },
+    "mediaPermissions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["text", "audio", "video"],
+      "properties": {
+        "text": {"$ref": "#/$defs/textPermissions"},
+        "audio": {"$ref": "#/$defs/audioPermissions"},
+        "video": {"$ref": "#/$defs/videoPermissions"}
+      }
+    },
+    "textPermissions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ingest_allowed", "store_allowed", "redistribute_allowed", "transform_allowed", "transcript_allowed", "exercise_allowed", "derived_redistribution_allowed"],
+      "properties": {
+        "ingest_allowed": {"type": "boolean"},
+        "store_allowed": {"type": "boolean"},
+        "redistribute_allowed": {"type": "boolean"},
+        "transform_allowed": {"type": "boolean"},
+        "transcript_allowed": {"type": "boolean"},
+        "exercise_allowed": {"type": "boolean"},
+        "derived_redistribution_allowed": {"type": "boolean"}
+      }
+    },
+    "audioPermissions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["download_allowed", "store_allowed", "clip_allowed", "transform_allowed", "transcript_allowed", "timestamp_allowed", "exercise_allowed", "redistribute_allowed", "derived_redistribution_allowed"],
+      "properties": {
+        "download_allowed": {"type": "boolean"},
+        "store_allowed": {"type": "boolean"},
+        "clip_allowed": {"type": "boolean"},
+        "transform_allowed": {"type": "boolean"},
+        "transcript_allowed": {"type": "boolean"},
+        "timestamp_allowed": {"type": "boolean"},
+        "exercise_allowed": {"type": "boolean"},
+        "redistribute_allowed": {"type": "boolean"},
+        "derived_redistribution_allowed": {"type": "boolean"}
+      }
+    },
+    "videoPermissions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["download_allowed", "store_allowed", "clip_allowed", "audio_extraction_allowed", "transcript_allowed", "timestamp_allowed", "exercise_allowed", "redistribute_allowed", "derived_redistribution_allowed"],
+      "properties": {
+        "download_allowed": {"type": "boolean"},
+        "store_allowed": {"type": "boolean"},
+        "clip_allowed": {"type": "boolean"},
+        "audio_extraction_allowed": {"type": "boolean"},
+        "transcript_allowed": {"type": "boolean"},
+        "timestamp_allowed": {"type": "boolean"},
+        "exercise_allowed": {"type": "boolean"},
+        "redistribute_allowed": {"type": "boolean"},
+        "derived_redistribution_allowed": {"type": "boolean"}
+      }
+    },
+    "attribution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required", "format", "requirements"],
+      "properties": {
+        "required": {"type": "boolean"},
+        "format": {"type": ["string", "null"], "minLength": 1},
+        "requirements": {"$ref": "common.schema.json#/$defs/nonEmptyString"}
+      }
+    },
+    "technical": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["robots_notes", "rate_limit_notes", "official_api_available", "official_dump_available"],
+      "properties": {
+        "robots_notes": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+        "rate_limit_notes": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+        "official_api_available": {"type": "boolean"},
+        "official_dump_available": {"type": "boolean"}
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["url", "description", "checked_at"],
+      "properties": {
+        "url": {"type": "string", "format": "uri"},
+        "description": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+        "checked_at": {"$ref": "common.schema.json#/$defs/isoDateTime"}
+      }
+    }
+  }
 }
