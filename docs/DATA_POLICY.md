@@ -25,6 +25,14 @@ Registration includes:
 
 ---
 
+## Taxonomy references
+
+The M2 taxonomy in `curriculum/taxonomy/` contains original authored prototype records, not ingested source content. A `REFERENCE_ONLY` source may inform a taxonomy category or coverage claim through a citation and locator, but its wording, descriptors, examples, corpus, or media must not be copied. Taxonomy citations do not create provenance for an external payload and do not authorize ingestion, transformation, or redistribution.
+
+Taxonomy records must preserve the source ID, official evidence URL/locator, claim role, and confidence where applicable. Unknown or `QUARANTINED` sources cannot support an approved taxonomy claim. See [docs/CEFR_TAXONOMY.md](CEFR_TAXONOMY.md) and [sources/research_notes.md](../sources/research_notes.md).
+
+---
+
 ## License Handling
 
 ### Permitted Sources

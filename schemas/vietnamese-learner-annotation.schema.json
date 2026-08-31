@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/vietnamese-learner-annotation.schema.json",
+  "title": "English Master Vietnamese learner difficulty annotation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "target_type",
+    "target_id",
+    "category",
+    "annotation_kind",
+    "difficulty",
+    "description",
+    "evidence_or_reference",
+    "status"
+  ],
+  "properties": {
+    "id": {"type": "string", "pattern": "^vi_annotation_[a-z0-9]+(?:_[a-z0-9]+)*$"},
+    "target_type": {"type": "string", "enum": ["concept", "vocabulary_sense"]},
+    "target_id": {
+      "type": "string",
+      "pattern": "^(concept_[a-z0-9]+(?:_[a-z0-9]+)*|vocab_[a-z]{2,3}_[a-z0-9]+(?:_[a-z0-9]+)*_[0-9]{3})$"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "articles",
+        "tense",
+        "plural_endings",
+        "final_consonants",
+        "clusters",
+        "stress",
+        "prepositions",
+        "countability",
+        "collocations",
+        "literal_translation",
+        "other"
+      ]
+    },
+    "annotation_kind": {"type": "string", "enum": ["RESEARCH_CLAIM", "PEDAGOGICAL_OBSERVATION"]},
+    "difficulty": {"type": "string", "enum": ["LOW", "MEDIUM", "HIGH", "VARIABLE"]},
+    "description": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+    "teaching_response": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+    "evidence_or_reference": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "taxonomy-concept.schema.json#/$defs/evidenceReference"}
+    },
+    "status": {"$ref": "taxonomy-concept.schema.json#/$defs/taxonomyStatus"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"target_type": {"const": "concept"}}, "required": ["target_type"]},
+      "then": {"properties": {"target_id": {"$ref": "common.schema.json#/$defs/conceptId"}}},
+      "else": {"properties": {"target_id": {"$ref": "common.schema.json#/$defs/vocabularySenseId"}}}
+    },
+    {
+      "if": {"properties": {"annotation_kind": {"const": "RESEARCH_CLAIM"}}, "required": ["annotation_kind"]},
+      "then": {
+        "properties": {
+          "evidence_or_reference": {
+            "contains": {
+              "type": "object",
+              "properties": {"kind": {"const": "RESEARCH_CLAIM"}},
+              "required": ["kind"]
+            }
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "evidence_or_reference": {
+            "contains": {
+              "type": "object",
+              "properties": {"kind": {"const": "PEDAGOGICAL_OBSERVATION"}},
+              "required": ["kind"]
+            }
+          }
+        }
+      }
+    }
+  ]
+}

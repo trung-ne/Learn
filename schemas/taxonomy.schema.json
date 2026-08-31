@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/taxonomy.schema.json",
+  "title": "English Master M2 taxonomy collection",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "taxonomy_version", "cefr_model", "authorship", "concepts", "vocabulary_senses", "vietnamese_learner_annotations"],
+  "properties": {
+    "schema_version": {"$ref": "common.schema.json#/$defs/schemaVersion"},
+    "taxonomy_version": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+    "cefr_model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["framework", "internal_levels", "subdivision_notice"],
+      "properties": {
+        "framework": {"const": "CEFR"},
+        "internal_levels": {
+          "type": "array",
+          "prefixItems": [
+            {"const": "A1.1"}, {"const": "A1.2"}, {"const": "A2.1"}, {"const": "A2.2"},
+            {"const": "B1.1"}, {"const": "B1.2"}, {"const": "B2.1"}, {"const": "B2.2"},
+            {"const": "C1.1"}, {"const": "C1.2"}, {"const": "C2.1"}, {"const": "C2.2"}
+          ],
+          "items": false,
+          "minItems": 12,
+          "maxItems": 12
+        },
+        "subdivision_notice": {
+          "type": "string",
+          "pattern": "[Ii]nternal",
+          "minLength": 20
+        }
+      }
+    },
+    "authorship": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["content_origin", "external_content_copied"],
+      "properties": {
+        "content_origin": {"const": "ORIGINAL_AUTHORED_PROTOTYPE"},
+        "external_content_copied": {"const": false}
+      }
+    },
+    "concepts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "taxonomy-concept.schema.json"}
+    },
+    "vocabulary_senses": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "taxonomy-vocabulary-sense.schema.json"}
+    },
+    "vietnamese_learner_annotations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "vietnamese-learner-annotation.schema.json"}
+    }
+  }
+}

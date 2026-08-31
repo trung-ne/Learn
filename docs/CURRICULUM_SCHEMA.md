@@ -19,6 +19,53 @@ Supported levels:
 
 All CEFR assignments are explicit and independently validated.
 
+The `.1` and `.2` tiers are **internal curriculum subdivisions**. They are not official CEFR levels and must never be presented as such.
+
+---
+
+## M2 Taxonomy Collections
+
+The representative M2 knowledge model is stored in:
+
+- `curriculum/taxonomy/taxonomy.json` — concepts, vocabulary senses, and Vietnamese learner annotations.
+- `curriculum/taxonomy/coverage-matrix.json` — broad expected category coverage for each official CEFR band, expressed through internal range labels.
+
+The prototype is deliberately small. Its descriptions, examples, sequencing hypotheses, and coverage emphasis are original project-authored material. External URLs are citations for later review; no cited descriptor, dictionary definition, example, or research text is copied into the prototype.
+
+### Taxonomy Concept
+
+Every concept has `id`, `type`, `name`, `description`, `minimum_cefr`, `prerequisites`, typed `related_concepts`, `evidence_or_reference`, and `status`. Supported types are skills, grammar, collocations, lexical chunks, pronunciation, communicative functions, topics, discourse, pragmatics, and assessment capabilities. Prerequisites form a directed acyclic graph; related concepts are typed, non-ordering links.
+
+### Taxonomy Vocabulary Sense
+
+A vocabulary record identifies one sense, not merely a surface word. Its deterministic ID is derived from `language`, normalized `lemma`, and zero-padded `sense_number`. It separately records part of speech, definition, CEFR tier, collocations, chunks, original examples, concept prerequisites, and typed sense relationships.
+
+### Vietnamese Learner Annotation
+
+An annotation targets a known concept or vocabulary sense. `annotation_kind` distinguishes `RESEARCH_CLAIM` from `PEDAGOGICAL_OBSERVATION`, and matching evidence metadata is mandatory. Difficulty is explicitly variable when evidence does not justify a population-wide prediction. These annotations guide review and teaching responses; they do not label every Vietnamese learner.
+
+### Evidence and Status
+
+Evidence entries distinguish authoritative references, research claims, pedagogical observations, and original authored prototypes. Citation metadata does not grant permission to copy source content. All representative records remain `DRAFT` until independent linguistic and pedagogical review in later milestones.
+
+### Collection Validation
+
+JSON Schema checks record shape and valid CEFR values. Collection validation additionally checks:
+
+- unique concept, sense, and annotation IDs;
+- resolvable concept prerequisites and relationships;
+- an acyclic prerequisite graph;
+- deterministic vocabulary-sense identities and resolvable sense relationships;
+- resolvable annotation targets; and
+- one unique coverage row for every A1-C2 band.
+
+Run both committed collections through the offline CLI:
+
+```bash
+python -m english_master.schema_validation --schema taxonomy curriculum/taxonomy/taxonomy.json
+python -m english_master.schema_validation --schema coverage-matrix curriculum/taxonomy/coverage-matrix.json
+```
+
 ---
 
 ## Core Models

@@ -95,7 +95,48 @@ Do register sources and verify licensing.
 
 ---
 
-## M2 — Data Ingestion Pipeline
+## M2 — CEFR Taxonomy & Linguistic Knowledge Model
+
+**Status**: Complete (verified 2026-08-31)
+
+**Owner**: AI Agent + Human Review
+
+### Scope
+
+Build the machine-readable knowledge skeleton that will govern later classification and curriculum work. Model the supported internal CEFR subdivisions, language skills, linguistic and communicative dimensions, vocabulary senses, concept dependencies, Vietnamese learner annotations, and broad CEFR-band coverage.
+
+Do NOT download or ingest source payloads. Do NOT classify a corpus. Do NOT generate curriculum, lessons, exercises, or assessments.
+
+### Deliverables
+
+1. Strict schemas for taxonomy concepts, vocabulary senses, Vietnamese learner annotations, the taxonomy collection, and the coverage matrix
+2. A small original-authored representative taxonomy proving every required dimension
+3. An explicit notice that `.1` and `.2` tiers are internal subdivisions, not official CEFR levels
+4. A broad, confidence-marked coverage matrix without false precision
+5. Semantic validators for unique IDs, references, vocabulary-sense identity, and an acyclic prerequisite graph
+6. CLI support using the existing offline schema-validation command
+7. Tests for schemas, graph semantics, vocabulary integrity, annotations, matrix completeness, and CLI behavior
+
+### Acceptance Criteria
+
+- [x] Taxonomy schemas exist and resolve offline
+- [x] All 12 internal CEFR subdivisions are supported and accurately labeled as internal
+- [x] Required skills and linguistic dimensions have representative records
+- [x] Concept IDs and vocabulary-sense IDs are unique
+- [x] Prerequisites and relationships resolve
+- [x] The prerequisite graph is acyclic
+- [x] Vocabulary senses retain separate identities and CEFR assignments
+- [x] Vietnamese learner research claims and pedagogical observations are structurally distinguishable
+- [x] Broad CEFR coverage includes confidence and evidence metadata
+- [x] Prototype wording and examples are original; references are citations only
+- [x] No data was downloaded and no curriculum content was generated
+- [x] Tests pass
+
+### Next: M3
+
+---
+
+## M3 — Data Ingestion Pipeline
 
 **Estimated Duration**: ~1-2 weeks
 
@@ -136,11 +177,11 @@ Do NOT generate curriculum yet.
 - [ ] Errors are logged
 - [ ] Tests pass
 
-### Next: M3
+### Next: M4
 
 ---
 
-## M3 — Linguistic Analysis & CEFR Classification
+## M4 — Linguistic Analysis & CEFR Classification
 
 **Estimated Duration**: ~2-3 weeks
 
@@ -176,11 +217,11 @@ Classify ingested content by CEFR level.
 - [ ] Classifications are auditable
 - [ ] Tests show classifier behavior
 
-### Next: M4
+### Next: M5
 
 ---
 
-## M4 — Curriculum Architecture & Dependency Graph
+## M5 — Curriculum Architecture & Dependency Graph
 
 **Estimated Duration**: ~2 weeks
 
@@ -220,11 +261,11 @@ Do validate curriculum structure.
 - [ ] Structure supports ~1000 hours of learning
 - [ ] Lesson count and structure is reasonable
 
-### Next: M5
+### Next: M6
 
 ---
 
-## M5 — Lesson Generation
+## M6 — Lesson Generation
 
 **Estimated Duration**: ~2-3 weeks
 
@@ -234,8 +275,8 @@ Do validate curriculum structure.
 
 Generate lesson content:
 
-1. Use curriculum structure from M4
-2. Extract vocabulary and grammar from M3
+1. Use curriculum structure from M5
+2. Extract vocabulary and grammar from M4
 3. Generate lesson explanations
 4. Create lesson structure (sections, media references)
 5. Preserve provenance
@@ -264,11 +305,11 @@ Do validate lesson content.
 - [ ] Lessons include vocabulary/grammar references
 - [ ] QA report is complete
 
-### Next: M6
+### Next: M7
 
 ---
 
-## M6 — Exercise Generation
+## M7 — Exercise Generation
 
 **Estimated Duration**: ~3 weeks
 
@@ -311,11 +352,11 @@ Generate exercises for lessons:
 - [ ] CEFR levels appropriate
 - [ ] Exercises test correct vocabulary/grammar
 
-### Next: M7
+### Next: M8
 
 ---
 
-## M7 — AI Practice Prompt Generation
+## M8 — AI Practice Prompt Generation
 
 **Estimated Duration**: ~1-2 weeks
 
@@ -346,11 +387,11 @@ Create AI-driven practice prompts for:
 - [ ] Evaluation criteria are reasonable
 - [ ] Prompts can be used with Claude API
 
-### Next: M8
+### Next: M9
 
 ---
 
-## M8 — Independent QA
+## M9 — Independent QA
 
 **Estimated Duration**: ~2-4 weeks
 
@@ -382,11 +423,11 @@ Comprehensive QA review:
 - [ ] >90% of sample manual review passes
 - [ ] Revision queue is prioritized
 
-### Next: M9
+### Next: M10
 
 ---
 
-## M9 — Revision Cycle
+## M10 — Revision Cycle
 
 **Estimated Duration**: ~2-3 weeks
 
@@ -394,7 +435,7 @@ Comprehensive QA review:
 
 ### Scope
 
-Fix issues identified in M8:
+Fix issues identified in M9:
 
 1. Revise failed content
 2. Address QA feedback
@@ -414,11 +455,11 @@ Fix issues identified in M8:
 - [ ] Only critical unresolved issues remain
 - [ ] Revisions are auditable
 
-### Next: M10
+### Next: M11
 
 ---
 
-## M10 — Export & Packaging
+## M11 — Export & Packaging
 
 **Estimated Duration**: ~1 week
 
@@ -447,11 +488,11 @@ Package content for different modalities:
 - [ ] Data integrity preserved
 - [ ] Export commands are reproducible
 
-### Next: M11
+### Next: M12
 
 ---
 
-## M11 — Web Platform (Optional, Future)
+## M12 — Web Platform (Optional, Future)
 
 **Estimated Duration**: ~4-6 weeks
 
@@ -472,9 +513,11 @@ Build web UI for learners:
 
 This is future work. Core curriculum is production-ready before web platform.
 
+### Next: M13
+
 ---
 
-## M12 — Production Deployment
+## M13 — Production Deployment
 
 **Estimated Duration**: ~1-2 weeks
 
@@ -503,9 +546,9 @@ Deploy to production:
 
 **Total Estimated Timeline**: ~4-5 months
 
-**Core Milestones**: M0 - M10 (most important)
+**Core Milestones**: M0 - M11 (most important)
 
-**Future**: M11 - M12 (web platform and deployment)
+**Future**: M12 - M13 (web platform and deployment)
 
 Each milestone is a deliberate, auditable step toward a complete A1-C2 English learning system.
 

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/coverage-matrix.schema.json",
+  "title": "English Master M2 CEFR coverage matrix",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "matrix_version", "precision_notice", "rows"],
+  "properties": {
+    "schema_version": {"$ref": "common.schema.json#/$defs/schemaVersion"},
+    "matrix_version": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+    "precision_notice": {"type": "string", "minLength": 30},
+    "rows": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/coverageRow"}
+    }
+  },
+  "$defs": {
+    "coverageRow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["cefr_range", "expected_categories", "confidence", "evidence_or_reference"],
+      "properties": {
+        "cefr_range": {
+          "type": "string",
+          "enum": ["A1.1-A1.2", "A2.1-A2.2", "B1.1-B1.2", "B2.1-B2.2", "C1.1-C1.2", "C2.1-C2.2"]
+        },
+        "expected_categories": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": [
+              "listening", "speaking", "spoken_interaction", "reading", "writing", "mediation",
+              "grammar", "vocabulary_senses", "collocations", "lexical_chunks", "pronunciation",
+              "communicative_functions", "topics", "discourse", "pragmatics", "assessment_capabilities"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "emphasis": {
+          "type": "array",
+          "items": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+          "uniqueItems": true
+        },
+        "confidence": {"type": "string", "enum": ["LOW", "MEDIUM", "HIGH"]},
+        "evidence_or_reference": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "taxonomy-concept.schema.json#/$defs/evidenceReference"}
+        }
+      }
+    }
+  }
+}

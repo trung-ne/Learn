@@ -100,7 +100,7 @@ External Sources (Wikimedia, Dictionary APIs, Public Domain, CC-BY)
 ### Generation Phase
 
 ```
-Curriculum Planning (M4)
+Curriculum Planning (M5)
   → Lesson Structure (what content, what order)
   → Exercise Requirements (what to practice)
   → AI Prompts (what to generate)
@@ -267,14 +267,14 @@ Each lesson contains:
 
 ## Curriculum Lifecycle
 
-### Creation Phase (M4-M7)
+### Creation Phase (M5-M8)
 
 1. Curriculum structure designed (prerequisites, sequence)
 2. Lessons generated (content)
 3. Exercises generated (practice)
 4. Prompts generated (AI interaction)
 
-### QA Phase (M8-M9)
+### QA Phase (M9-M10)
 
 1. Automated QA (schema, CEFR, prerequisites)
 2. Linguistic QA (grammar, vocabulary, authenticity)
@@ -282,7 +282,7 @@ Each lesson contains:
 4. Copyright QA (license compliance, attribution)
 5. Revisions and approvals
 
-### Publishing Phase (M10)
+### Publishing Phase (M11)
 
 1. Approved content packaged
 2. Exported to multiple formats

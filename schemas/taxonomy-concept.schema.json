@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/taxonomy-concept.schema.json",
+  "title": "English Master M2 taxonomy concept",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "type",
+    "name",
+    "description",
+    "minimum_cefr",
+    "prerequisites",
+    "related_concepts",
+    "evidence_or_reference",
+    "status"
+  ],
+  "properties": {
+    "id": {"$ref": "common.schema.json#/$defs/conceptId"},
+    "type": {
+      "type": "string",
+      "enum": [
+        "skill",
+        "grammar",
+        "collocation",
+        "lexical_chunk",
+        "pronunciation",
+        "communicative_function",
+        "topic",
+        "discourse",
+        "pragmatics",
+        "assessment_capability"
+      ]
+    },
+    "subtype": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+    "name": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+    "description": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+    "minimum_cefr": {"$ref": "common.schema.json#/$defs/cefrLevel"},
+    "prerequisites": {
+      "type": "array",
+      "items": {"$ref": "common.schema.json#/$defs/conceptId"},
+      "uniqueItems": true
+    },
+    "related_concepts": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/conceptRelationship"},
+      "uniqueItems": true
+    },
+    "evidence_or_reference": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/evidenceReference"}
+    },
+    "status": {"$ref": "#/$defs/taxonomyStatus"}
+  },
+  "$defs": {
+    "taxonomyStatus": {
+      "type": "string",
+      "enum": ["DRAFT", "IN_REVIEW", "APPROVED", "DEPRECATED"]
+    },
+    "evidenceReference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "citation_url", "note"],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "AUTHORITATIVE_REFERENCE",
+            "RESEARCH_CLAIM",
+            "PEDAGOGICAL_OBSERVATION",
+            "AUTHORED_PROTOTYPE"
+          ]
+        },
+        "citation_url": {"type": "string", "format": "uri"},
+        "source_id": {"$ref": "common.schema.json#/$defs/sourceId"},
+        "note": {"$ref": "common.schema.json#/$defs/nonEmptyString"}
+      }
+    },
+    "conceptRelationship": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "target_id"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["supports", "contrasts_with", "applies_to", "component_of", "extends"]
+        },
+        "target_id": {"$ref": "common.schema.json#/$defs/conceptId"}
+      }
+    }
+  }
+}

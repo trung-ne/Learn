@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/taxonomy-vocabulary-sense.schema.json",
+  "title": "English Master M2 taxonomy vocabulary sense",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "language",
+    "lemma",
+    "part_of_speech",
+    "sense_number",
+    "definition",
+    "cefr",
+    "collocations",
+    "chunks",
+    "examples",
+    "relationships",
+    "prerequisites",
+    "evidence_or_reference",
+    "status"
+  ],
+  "properties": {
+    "id": {"$ref": "common.schema.json#/$defs/vocabularySenseId"},
+    "language": {"type": "string", "pattern": "^[a-z]{2,3}$"},
+    "lemma": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+    "part_of_speech": {
+      "type": "string",
+      "enum": ["noun", "verb", "adjective", "adverb", "pronoun", "preposition", "conjunction", "determiner", "interjection", "auxiliary", "numeral", "other"]
+    },
+    "sense_number": {"type": "integer", "minimum": 1, "maximum": 999},
+    "definition": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+    "cefr": {"$ref": "common.schema.json#/$defs/cefrLevel"},
+    "collocations": {
+      "type": "array",
+      "items": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+      "uniqueItems": true
+    },
+    "chunks": {
+      "type": "array",
+      "items": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+      "uniqueItems": true
+    },
+    "examples": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+      "uniqueItems": true
+    },
+    "relationships": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/senseRelationship"},
+      "uniqueItems": true
+    },
+    "prerequisites": {
+      "type": "array",
+      "items": {"$ref": "common.schema.json#/$defs/conceptId"},
+      "uniqueItems": true
+    },
+    "evidence_or_reference": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "taxonomy-concept.schema.json#/$defs/evidenceReference"}
+    },
+    "status": {"$ref": "taxonomy-concept.schema.json#/$defs/taxonomyStatus"}
+  },
+  "$defs": {
+    "senseRelationship": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "target_id"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["related_sense", "synonym", "antonym", "broader", "narrower"]
+        },
+        "target_id": {"$ref": "common.schema.json#/$defs/vocabularySenseId"}
+      }
+    }
+  }
+}

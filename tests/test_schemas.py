@@ -20,10 +20,15 @@ def test_all_schema_files_are_loaded_and_metaschema_valid(schemas: dict[str, dic
         "ai-practice-prompt.schema.json",
         "common.schema.json",
         "concept.schema.json",
+        "coverage-matrix.schema.json",
         "exercise.schema.json",
         "lesson.schema.json",
         "source-registry.schema.json",
         "source.schema.json",
+        "taxonomy-concept.schema.json",
+        "taxonomy-vocabulary-sense.schema.json",
+        "taxonomy.schema.json",
+        "vietnamese-learner-annotation.schema.json",
         "vocabulary-sense.schema.json",
     ]
     assert len(schemas) == len(files)

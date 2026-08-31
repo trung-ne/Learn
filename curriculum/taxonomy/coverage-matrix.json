@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "matrix_version": "20260831",
+  "precision_notice": "This prototype records broad category coverage by official CEFR band. It does not claim that the internal .1/.2 boundary or any exact teaching sequence is specified by CEFR.",
+  "rows": [
+    {
+      "cefr_range": "A1.1-A1.2",
+      "expected_categories": ["listening", "speaking", "spoken_interaction", "reading", "writing", "grammar", "vocabulary_senses", "collocations", "lexical_chunks", "pronunciation", "communicative_functions", "topics", "discourse", "pragmatics", "assessment_capabilities"],
+      "emphasis": ["Immediate personal contexts", "Short receptive and productive acts", "Foundational intelligibility"],
+      "confidence": "MEDIUM",
+      "evidence_or_reference": [{"kind": "AUTHORED_PROTOTYPE", "citation_url": "https://www.coe.int/en/web/common-european-framework-reference-languages", "source_id": "src_cefr_companion_volume", "note": "Broad project-authored coverage hypothesis informed by CEFR; no official descriptor or inventory is reproduced."}]
+    },
+    {
+      "cefr_range": "A2.1-A2.2",
+      "expected_categories": ["listening", "speaking", "spoken_interaction", "reading", "writing", "mediation", "grammar", "vocabulary_senses", "collocations", "lexical_chunks", "pronunciation", "communicative_functions", "topics", "discourse", "pragmatics", "assessment_capabilities"],
+      "emphasis": ["Routine social and transactional contexts", "Connected short messages", "Initial mediation tasks"],
+      "confidence": "MEDIUM",
+      "evidence_or_reference": [{"kind": "AUTHORED_PROTOTYPE", "citation_url": "https://www.coe.int/en/web/common-european-framework-reference-languages", "source_id": "src_cefr_companion_volume", "note": "Broad project-authored coverage hypothesis; exact internal subdivision placement remains unvalidated."}]
+    },
+    {
+      "cefr_range": "B1.1-B1.2",
+      "expected_categories": ["listening", "speaking", "spoken_interaction", "reading", "writing", "mediation", "grammar", "vocabulary_senses", "collocations", "lexical_chunks", "pronunciation", "communicative_functions", "topics", "discourse", "pragmatics", "assessment_capabilities"],
+      "emphasis": ["Sustained everyday communication", "Narration and explanation", "Greater connectedness"],
+      "confidence": "MEDIUM",
+      "evidence_or_reference": [{"kind": "AUTHORED_PROTOTYPE", "citation_url": "https://www.coe.int/en/web/common-european-framework-reference-languages", "source_id": "src_cefr_companion_volume", "note": "Broad project-authored coverage hypothesis rather than an official content list."}]
+    },
+    {
+      "cefr_range": "B2.1-B2.2",
+      "expected_categories": ["listening", "speaking", "spoken_interaction", "reading", "writing", "mediation", "grammar", "vocabulary_senses", "collocations", "lexical_chunks", "pronunciation", "communicative_functions", "topics", "discourse", "pragmatics", "assessment_capabilities"],
+      "emphasis": ["Detailed communication across familiar and specialized contexts", "Flexible interaction", "Discourse control"],
+      "confidence": "MEDIUM",
+      "evidence_or_reference": [{"kind": "AUTHORED_PROTOTYPE", "citation_url": "https://www.coe.int/en/web/common-european-framework-reference-languages", "source_id": "src_cefr_companion_volume", "note": "Broad project-authored coverage hypothesis rather than an official content list."}]
+    },
+    {
+      "cefr_range": "C1.1-C1.2",
+      "expected_categories": ["listening", "speaking", "spoken_interaction", "reading", "writing", "mediation", "grammar", "vocabulary_senses", "collocations", "lexical_chunks", "pronunciation", "communicative_functions", "topics", "discourse", "pragmatics", "assessment_capabilities"],
+      "emphasis": ["Precision and flexibility", "Complex discourse", "Context-sensitive pragmatic choices"],
+      "confidence": "MEDIUM",
+      "evidence_or_reference": [{"kind": "AUTHORED_PROTOTYPE", "citation_url": "https://www.coe.int/en/web/common-european-framework-reference-languages", "source_id": "src_cefr_companion_volume", "note": "Broad project-authored coverage hypothesis rather than an official content list."}]
+    },
+    {
+      "cefr_range": "C2.1-C2.2",
+      "expected_categories": ["listening", "speaking", "spoken_interaction", "reading", "writing", "mediation", "grammar", "vocabulary_senses", "collocations", "lexical_chunks", "pronunciation", "communicative_functions", "topics", "discourse", "pragmatics", "assessment_capabilities"],
+      "emphasis": ["Fine-grained interpretation", "Highly adaptive expression", "Nuanced mediation and pragmatic control"],
+      "confidence": "LOW",
+      "evidence_or_reference": [{"kind": "AUTHORED_PROTOTYPE", "citation_url": "https://www.coe.int/en/web/common-european-framework-reference-languages", "source_id": "src_cefr_companion_volume", "note": "High-level project hypothesis marked low confidence; no precise C2 content inventory is claimed."}]
+    }
+  ]
+}

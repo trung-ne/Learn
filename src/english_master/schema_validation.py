@@ -4,7 +4,9 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
+import unicodedata
 from collections.abc import Iterable
 from dataclasses import dataclass
 from pathlib import Path
@@ -23,6 +25,11 @@ SCHEMA_FILENAMES: dict[str, str] = {
     "lesson": "lesson.schema.json",
     "exercise": "exercise.schema.json",
     "ai-practice-prompt": "ai-practice-prompt.schema.json",
+    "taxonomy-concept": "taxonomy-concept.schema.json",
+    "taxonomy-vocabulary-sense": "taxonomy-vocabulary-sense.schema.json",
+    "vietnamese-learner-annotation": "vietnamese-learner-annotation.schema.json",
+    "taxonomy": "taxonomy.schema.json",
+    "coverage-matrix": "coverage-matrix.schema.json",
 }
 
 SOURCE_PERMISSION_PATHS: dict[str, tuple[str, ...]] = {
@@ -187,6 +194,334 @@ def _registry_duplicate_id_issues(instance: dict[str, Any]) -> list[ValidationIs
     return issues
 
 
+def _duplicate_id_issues(
+    records: Any, collection_path: str, id_field: str = "id"
+) -> list[ValidationIssue]:
+    if not isinstance(records, list):
+        return []
+
+    first_index_by_id: dict[str, int] = {}
+    issues: list[ValidationIssue] = []
+    for index, record in enumerate(records):
+        if not isinstance(record, dict):
+            continue
+        record_id = record.get(id_field)
+        if not isinstance(record_id, str):
+            continue
+        if record_id in first_index_by_id:
+            first_index = first_index_by_id[record_id]
+            issues.append(
+                ValidationIssue(
+                    instance_path=f"{collection_path}[{index}].{id_field}",
+                    message=(
+                        f"duplicate {id_field} {record_id!r}; first declared at "
+                        f"{collection_path}[{first_index}].{id_field}"
+                    ),
+                )
+            )
+        else:
+            first_index_by_id[record_id] = index
+    return issues
+
+
+def _word_slug(value: str) -> str:
+    normalized = unicodedata.normalize("NFKD", value).encode("ascii", "ignore").decode("ascii")
+    return re.sub(r"[^a-z0-9]+", "_", normalized.lower()).strip("_")
+
+
+def _concept_graph_issues(concepts: Any) -> list[ValidationIssue]:
+    if not isinstance(concepts, list):
+        return []
+
+    index_by_id = {
+        concept["id"]: index
+        for index, concept in enumerate(concepts)
+        if isinstance(concept, dict) and isinstance(concept.get("id"), str)
+    }
+    issues: list[ValidationIssue] = []
+    graph: dict[str, list[str]] = {concept_id: [] for concept_id in index_by_id}
+
+    for index, concept in enumerate(concepts):
+        if not isinstance(concept, dict):
+            continue
+        concept_id = concept.get("id")
+        prerequisites = concept.get("prerequisites")
+        if isinstance(prerequisites, list) and isinstance(concept_id, str):
+            for reference_index, target_id in enumerate(prerequisites):
+                if not isinstance(target_id, str):
+                    continue
+                if target_id not in index_by_id:
+                    issues.append(
+                        ValidationIssue(
+                            f"$.concepts[{index}].prerequisites[{reference_index}]",
+                            f"unknown concept prerequisite {target_id!r}",
+                        )
+                    )
+                else:
+                    graph.setdefault(concept_id, []).append(target_id)
+
+        relationships = concept.get("related_concepts")
+        if isinstance(relationships, list):
+            for relationship_index, relationship in enumerate(relationships):
+                if not isinstance(relationship, dict):
+                    continue
+                target_id = relationship.get("target_id")
+                if isinstance(target_id, str) and target_id not in index_by_id:
+                    issues.append(
+                        ValidationIssue(
+                            f"$.concepts[{index}].related_concepts[{relationship_index}].target_id",
+                            f"unknown related concept {target_id!r}",
+                        )
+                    )
+                elif target_id == concept_id:
+                    issues.append(
+                        ValidationIssue(
+                            f"$.concepts[{index}].related_concepts[{relationship_index}].target_id",
+                            "a concept relationship cannot target itself",
+                        )
+                    )
+
+    state: dict[str, int] = {}
+    stack: list[str] = []
+    reported_cycles: set[tuple[str, ...]] = set()
+
+    def visit(concept_id: str) -> None:
+        state[concept_id] = 1
+        stack.append(concept_id)
+        for prerequisite_id in graph.get(concept_id, []):
+            if state.get(prerequisite_id, 0) == 0:
+                visit(prerequisite_id)
+            elif state.get(prerequisite_id) == 1:
+                start = stack.index(prerequisite_id)
+                cycle = tuple(stack[start:] + [prerequisite_id])
+                if cycle not in reported_cycles:
+                    reported_cycles.add(cycle)
+                    issues.append(
+                        ValidationIssue(
+                            f"$.concepts[{index_by_id[concept_id]}].prerequisites",
+                            f"prerequisite cycle detected: {' -> '.join(cycle)}",
+                        )
+                    )
+        stack.pop()
+        state[concept_id] = 2
+
+    for concept_id in index_by_id:
+        if state.get(concept_id, 0) == 0:
+            visit(concept_id)
+    return issues
+
+
+def _vocabulary_sense_issues(
+    senses: Any, concept_ids: set[str]
+) -> list[ValidationIssue]:
+    if not isinstance(senses, list):
+        return []
+
+    issues = _duplicate_id_issues(senses, "$.vocabulary_senses")
+    sense_ids = {
+        sense["id"]
+        for sense in senses
+        if isinstance(sense, dict) and isinstance(sense.get("id"), str)
+    }
+    first_by_identity: dict[tuple[str, str, str, int], int] = {}
+    for index, sense in enumerate(senses):
+        if not isinstance(sense, dict):
+            continue
+        language = sense.get("language")
+        lemma = sense.get("lemma")
+        part_of_speech = sense.get("part_of_speech")
+        sense_number = sense.get("sense_number")
+        sense_id = sense.get("id")
+        if (
+            isinstance(language, str)
+            and isinstance(lemma, str)
+            and isinstance(part_of_speech, str)
+            and isinstance(sense_number, int)
+        ):
+            identity = (language, lemma.casefold(), part_of_speech, sense_number)
+            if identity in first_by_identity:
+                issues.append(
+                    ValidationIssue(
+                        f"$.vocabulary_senses[{index}].sense_number",
+                        "duplicate language/lemma/part_of_speech/sense_number identity; "
+                        f"first declared at $.vocabulary_senses[{first_by_identity[identity]}]",
+                    )
+                )
+            else:
+                first_by_identity[identity] = index
+            expected_id = f"vocab_{language}_{_word_slug(lemma)}_{sense_number:03d}"
+            if isinstance(sense_id, str) and sense_id != expected_id:
+                issues.append(
+                    ValidationIssue(
+                        f"$.vocabulary_senses[{index}].id",
+                        f"sense ID must be {expected_id!r} for its language, lemma, and sense_number",
+                    )
+                )
+
+        prerequisites = sense.get("prerequisites")
+        if isinstance(prerequisites, list):
+            for reference_index, target_id in enumerate(prerequisites):
+                if isinstance(target_id, str) and target_id not in concept_ids:
+                    issues.append(
+                        ValidationIssue(
+                            f"$.vocabulary_senses[{index}].prerequisites[{reference_index}]",
+                            f"unknown concept prerequisite {target_id!r}",
+                        )
+                    )
+        relationships = sense.get("relationships")
+        if isinstance(relationships, list):
+            for relationship_index, relationship in enumerate(relationships):
+                if not isinstance(relationship, dict):
+                    continue
+                target_id = relationship.get("target_id")
+                if isinstance(target_id, str) and target_id not in sense_ids:
+                    issues.append(
+                        ValidationIssue(
+                            f"$.vocabulary_senses[{index}].relationships[{relationship_index}].target_id",
+                            f"unknown vocabulary sense {target_id!r}",
+                        )
+                    )
+                elif target_id == sense_id:
+                    issues.append(
+                        ValidationIssue(
+                            f"$.vocabulary_senses[{index}].relationships[{relationship_index}].target_id",
+                            "a vocabulary-sense relationship cannot target itself",
+                        )
+                    )
+    return issues
+
+
+def taxonomy_collection_issues(instance: dict[str, Any]) -> list[ValidationIssue]:
+    """Return semantic graph and identity issues for one M2 taxonomy collection."""
+
+    concepts = instance.get("concepts")
+    concept_ids = {
+        concept["id"]
+        for concept in (concepts if isinstance(concepts, list) else [])
+        if isinstance(concept, dict) and isinstance(concept.get("id"), str)
+    }
+    issues = _duplicate_id_issues(concepts, "$.concepts")
+    issues.extend(_concept_graph_issues(concepts))
+    issues.extend(_vocabulary_sense_issues(instance.get("vocabulary_senses"), concept_ids))
+
+    annotations = instance.get("vietnamese_learner_annotations")
+    issues.extend(_duplicate_id_issues(annotations, "$.vietnamese_learner_annotations"))
+    vocabulary_ids = {
+        sense["id"]
+        for sense in (instance.get("vocabulary_senses") if isinstance(instance.get("vocabulary_senses"), list) else [])
+        if isinstance(sense, dict) and isinstance(sense.get("id"), str)
+    }
+    if isinstance(annotations, list):
+        for index, annotation in enumerate(annotations):
+            if not isinstance(annotation, dict):
+                continue
+            target_type = annotation.get("target_type")
+            target_id = annotation.get("target_id")
+            expected_ids = concept_ids if target_type == "concept" else vocabulary_ids
+            if isinstance(target_id, str) and target_id not in expected_ids:
+                issues.append(
+                    ValidationIssue(
+                        f"$.vietnamese_learner_annotations[{index}].target_id",
+                        f"unknown {target_type or 'annotation'} target {target_id!r}",
+                    )
+                )
+    return sorted(issues, key=lambda issue: (issue.instance_path, issue.message))
+
+
+def coverage_matrix_collection_issues(instance: dict[str, Any]) -> list[ValidationIssue]:
+    """Return uniqueness and completeness issues for the six broad CEFR ranges."""
+
+    rows = instance.get("rows")
+    if not isinstance(rows, list):
+        return []
+    expected_ranges = [
+        "A1.1-A1.2",
+        "A2.1-A2.2",
+        "B1.1-B1.2",
+        "B2.1-B2.2",
+        "C1.1-C1.2",
+        "C2.1-C2.2",
+    ]
+    first_index_by_range: dict[str, int] = {}
+    issues: list[ValidationIssue] = []
+    for index, row in enumerate(rows):
+        if not isinstance(row, dict) or not isinstance(row.get("cefr_range"), str):
+            continue
+        cefr_range = row["cefr_range"]
+        if cefr_range in first_index_by_range:
+            issues.append(
+                ValidationIssue(
+                    f"$.rows[{index}].cefr_range",
+                    f"duplicate cefr_range {cefr_range!r}; first declared at $.rows[{first_index_by_range[cefr_range]}].cefr_range",
+                )
+            )
+        else:
+            first_index_by_range[cefr_range] = index
+    missing = [cefr_range for cefr_range in expected_ranges if cefr_range not in first_index_by_range]
+    if missing:
+        issues.append(ValidationIssue("$.rows", f"missing CEFR coverage ranges: {', '.join(missing)}"))
+    return sorted(issues, key=lambda issue: (issue.instance_path, issue.message))
+
+
+def can_cite_for_taxonomy(registry: dict[str, Any], source_id: str) -> bool:
+    """Return whether a registered source may be cited without authorizing ingestion."""
+
+    try:
+        validate_instance(registry, "source-registry")
+        source = next(
+            (candidate for candidate in registry["sources"] if candidate["source_id"] == source_id),
+            None,
+        )
+        return bool(
+            source
+            and source["status"] in {"APPROVED", "REFERENCE_ONLY"}
+            and source["permissions"]["reference_allowed"] is True
+        )
+    except (SchemaValidationError, KeyError, TypeError, ValueError):
+        return False
+
+
+def _taxonomy_citation_issues(instance: dict[str, Any], registry: dict[str, Any]) -> list[ValidationIssue]:
+    issues: list[ValidationIssue] = []
+    records = list(instance.get("concepts", [])) + list(instance.get("vocabulary_senses", []))
+    records += list(instance.get("vietnamese_learner_annotations", []))
+    for record_index, record in enumerate(records):
+        if not isinstance(record, dict):
+            continue
+        evidence = record.get("evidence_or_reference", [])
+        for evidence_index, reference in enumerate(evidence if isinstance(evidence, list) else []):
+            if not isinstance(reference, dict) or "source_id" not in reference:
+                continue
+            source_id = reference["source_id"]
+            if not can_cite_for_taxonomy(registry, source_id):
+                issues.append(
+                    ValidationIssue(
+                        f"$.taxonomy_records[{record_index}].evidence_or_reference[{evidence_index}].source_id",
+                        f"source {source_id!r} is not eligible for taxonomy citation",
+                    )
+                )
+    return issues
+
+
+
+def validate_taxonomy_collection(
+    instance: dict[str, Any], registry: dict[str, Any] | None = None
+) -> None:
+    """Schema-validate and semantically validate a complete M2 taxonomy."""
+
+    validate_instance(instance, "taxonomy")
+    if registry is not None:
+        issues = _taxonomy_citation_issues(instance, registry)
+        if issues:
+            raise SchemaValidationError(issues)
+
+
+def validate_coverage_matrix_collection(instance: dict[str, Any]) -> None:
+    """Schema-validate and semantically validate a complete M2 coverage matrix."""
+
+    validate_instance(instance, "coverage-matrix")
+
+
 def validation_issues(instance: dict[str, Any], schema_name: str) -> list[ValidationIssue]:
     """Return deterministically ordered issues for an instance and core schema."""
 
@@ -203,6 +538,10 @@ def validation_issues(instance: dict[str, Any], schema_name: str) -> list[Valida
     ]
     if schema_name == "source-registry":
         issues.extend(_registry_duplicate_id_issues(instance))
+    elif schema_name == "taxonomy":
+        issues.extend(taxonomy_collection_issues(instance))
+    elif schema_name == "coverage-matrix":
+        issues.extend(coverage_matrix_collection_issues(instance))
     return sorted(issues, key=lambda issue: (issue.instance_path, issue.message))
 
 
@@ -350,6 +689,11 @@ def build_parser() -> argparse.ArgumentParser:
         metavar=("SOURCE_ID", "OPERATION"),
         help="Require an APPROVED source registry entry to grant an operation.",
     )
+    parser.add_argument(
+        "--source-registry",
+        type=Path,
+        help="Source registry used to verify taxonomy citation eligibility.",
+    )
     parser.add_argument("paths", nargs="+", type=Path, help="JSON or YAML record files to validate")
     return parser
 
@@ -361,12 +705,19 @@ def main(argv: list[str] | None = None) -> int:
     arguments = parser.parse_args(argv)
     if arguments.require_source_permission and arguments.schema != "source-registry":
         parser.error("--require-source-permission requires --schema source-registry")
+    if arguments.source_registry and arguments.schema != "taxonomy":
+        parser.error("--source-registry requires --schema taxonomy")
 
+    source_registry = load_source_registry(arguments.source_registry) if arguments.source_registry else None
     failed = False
     for path in arguments.paths:
         try:
             instance = load_document(path)
             validate_instance(instance, arguments.schema)
+            if arguments.schema == "taxonomy" and source_registry is not None:
+                citation_issues = _taxonomy_citation_issues(instance, source_registry)
+                if citation_issues:
+                    raise SchemaValidationError(citation_issues)
             if arguments.require_source_permission:
                 source_id, operation = arguments.require_source_permission
                 require_source_permission(instance, source_id, operation)
