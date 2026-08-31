@@ -30,9 +30,15 @@ SCHEMA_FILENAMES: dict[str, str] = {
     "vietnamese-learner-annotation": "vietnamese-learner-annotation.schema.json",
     "taxonomy": "taxonomy.schema.json",
     "coverage-matrix": "coverage-matrix.schema.json",
+    "normalized-text": "normalized-text.schema.json",
 }
 
 SOURCE_PERMISSION_PATHS: dict[str, tuple[str, ...]] = {
+    "fetch_source": ("access", "download_allowed"),
+    "ingest_source": ("permissions", "ingest_allowed"),
+    "store_source": ("permissions", "store_allowed"),
+    "transform_source": ("permissions", "modify_allowed"),
+    "redistribute_source": ("permissions", "redistribute_allowed"),
     "ingest_text": ("media_permissions", "text", "ingest_allowed"),
     "store_text": ("media_permissions", "text", "store_allowed"),
     "store_audio": ("media_permissions", "audio", "store_allowed"),

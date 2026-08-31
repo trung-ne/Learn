@@ -23,6 +23,7 @@ def test_all_schema_files_are_loaded_and_metaschema_valid(schemas: dict[str, dic
         "coverage-matrix.schema.json",
         "exercise.schema.json",
         "lesson.schema.json",
+        "normalized-text.schema.json",
         "source-registry.schema.json",
         "source.schema.json",
         "taxonomy-concept.schema.json",

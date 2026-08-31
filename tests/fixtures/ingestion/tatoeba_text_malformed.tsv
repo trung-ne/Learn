@@ -1,0 +1,4 @@
+sentence_id	language	text	author	license	license_url
+100003	en	This invented fixture row is valid.	fixture_author_three	CC-BY-2.0-FR	https://creativecommons.org/licenses/by/2.0/fr/deed.en
+broken-row-with-too-few-fields	en
+100003	en	This duplicate fixture identity must be rejected.	fixture_author_four	CC-BY-2.0-FR	https://creativecommons.org/licenses/by/2.0/fr/deed.en

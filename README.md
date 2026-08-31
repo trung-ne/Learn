@@ -2,18 +2,19 @@
 
 English Master is a reproducible, self-study English learning-system pipeline for CEFR A1 through C2. Its primary learners are Vietnamese learners of English.
 
-## Current scope: M0 through M2
+## Current scope: M0 through M3
 
 The completed foundation provides:
 
-- JSON Schema definitions for core records, source governance, and the M2 taxonomy collections.
+- JSON Schema definitions for core records, source governance, M2 taxonomy collections, and normalized external text.
 - A typed, offline JSON/YAML validator with semantic taxonomy checks and a fail-closed source-permission gate.
 - Tiny artificial fixtures, a small original-authored taxonomy prototype, and pytest coverage.
 - An official-evidence-backed source registry with separate text, audio, and video rights decisions.
 - A representative concept DAG, sense-aware vocabulary model, Vietnamese learner annotation layer, and broad confidence-marked CEFR coverage matrix.
+- A typed adapter registry and failure-safe ingestion pipeline with one bounded offline `src_tatoeba_text` adapter.
 - Data-lifecycle directory scaffolding and Git protections.
 
-M2 builds taxonomy architecture only. It does **not** crawl websites, download data or media, ingest or classify a corpus, generate a full curriculum, or generate lessons or exercises. Prototype descriptions and examples are original; external links are citations only and cited content is not copied.
+M3 is ingestion infrastructure, not a corpus project. It does **not** crawl websites, bulk-download data or media, classify records by CEFR, compute frequency, generate a curriculum, or generate lessons or exercises. The committed ingestion fixture sentences are invented and explicitly used only to test the documented Tatoeba-shaped input path.
 
 ## Requirements
 
@@ -96,14 +97,29 @@ python -m english_master.schema_validation --schema coverage-matrix curriculum/t
 
 Both commands are offline and read-only.
 
+## Run bounded M3 ingestion
+
+The M3 adapter accepts only a small local fixture and has no network mode:
+
+```bash
+python -m english_master.ingest \
+  --source src_tatoeba_text \
+  --input tests/fixtures/ingestion/tatoeba_text_valid.tsv \
+  --max-records 2 \
+  --retrieved-at 2026-08-31T12:00:00Z \
+  --offline-fixture
+```
+
+The command retains exact raw bytes, validates every normalized record, atomically publishes the run, and prints its report location. It exits nonzero for denied permissions, invalid or over-limit input, any rejected record, schema failure, or write failure. See [docs/INGESTION.md](docs/INGESTION.md) for the adapter contract, canonical field origins, storage layout, and failure semantics.
+
 ## Layout
 
 - `schemas/` — authoritative Draft 2020-12 JSON Schemas.
-- `src/english_master/` — typed local schema validation utility.
-- `tests/fixtures/` — small, invented validation examples; taxonomy tests use the authored prototype.
+- `src/english_master/` — typed validation and adapter-based ingestion utilities.
+- `tests/fixtures/` — small, invented validation and offline ingestion examples; taxonomy tests use the authored prototype.
 - `sources/` — M1 registry metadata, official evidence summary, and source-operation policy; no source payloads.
-- `data/raw/` — future downloaded payloads; ignored by Git by default.
-- `data/normalized/`, `data/approved/`, `data/quarantine/` — later pipeline stages.
+- `data/raw/`, `data/normalized/`, `data/quarantine/` — local M3 run payloads and audit records, ignored by Git except scaffolding.
+- `data/approved/` — reserved for later approved/classified data; M3 does not populate it.
 - `curriculum/taxonomy/` — M2 representative taxonomy and broad coverage matrix; not a generated curriculum.
 
 See `docs/` for architecture, data policy, curriculum models, QA policy, and milestone definitions.

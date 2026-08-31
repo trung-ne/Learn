@@ -27,9 +27,13 @@ dist/
 *.p12
 *.pfx
 
-# Raw source payloads are never committed by default.
+# External and generated ingestion payloads are never committed by default.
 data/raw/*
 !data/raw/.gitkeep
+data/normalized/*
+!data/normalized/.gitkeep
+data/quarantine/*
+!data/quarantine/.gitkeep
 
 # Editor and operating-system files
 .vscode/

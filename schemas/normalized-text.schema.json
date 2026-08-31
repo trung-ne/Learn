@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/normalized-text.schema.json",
+  "title": "English Master normalized external text record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "record_type",
+    "id",
+    "language",
+    "text",
+    "ingestion_version",
+    "provenance"
+  ],
+  "properties": {
+    "schema_version": {
+      "$ref": "https://english-master.local/schemas/common.schema.json#/$defs/schemaVersion"
+    },
+    "record_type": {
+      "const": "normalized_text"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^text_src_[a-z0-9]+(?:_[a-z0-9]+)*_[a-f0-9]{16}$"
+    },
+    "language": {
+      "type": "string",
+      "pattern": "^[a-z]{2,3}(?:-[A-Za-z0-9]{2,8})*$"
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ingestion_version": {
+      "$ref": "https://english-master.local/schemas/common.schema.json#/$defs/nonEmptyString"
+    },
+    "provenance": {
+      "$ref": "https://english-master.local/schemas/common.schema.json#/$defs/provenance"
+    }
+  }
+}

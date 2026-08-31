@@ -138,6 +138,8 @@ Do NOT download or ingest source payloads. Do NOT classify a corpus. Do NOT gene
 
 ## M3 — Data Ingestion Pipeline
 
+**Status**: Complete (verified 2026-08-31)
+
 **Estimated Duration**: ~1-2 weeks
 
 **Owner**: AI Agent
@@ -169,13 +171,13 @@ Do NOT generate curriculum yet.
 
 ### Acceptance Criteria
 
-- [ ] At least one source fully ingested
-- [ ] Normalized data is valid
-- [ ] Duplicate records are detected
-- [ ] Provenance is preserved
-- [ ] Ingestion can be reproduced
-- [ ] Errors are logged
-- [ ] Tests pass
+- [x] At least one source fully ingested
+- [x] Normalized data is valid
+- [x] Duplicate records are detected
+- [x] Provenance is preserved
+- [x] Ingestion can be reproduced
+- [x] Errors are logged
+- [x] Tests pass
 
 ### Next: M4
 

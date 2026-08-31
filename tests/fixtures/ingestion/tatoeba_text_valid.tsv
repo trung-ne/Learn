@@ -1,0 +1,3 @@
+sentence_id	language	text	author	license	license_url
+100001	en	This is an invented offline fixture sentence.	fixture_author_one	CC-BY-2.0-FR	https://creativecommons.org/licenses/by/2.0/fr/deed.en
+100002	en	The second fixture record is also artificial.	fixture_author_two	CC-BY-2.0-FR	https://creativecommons.org/licenses/by/2.0/fr/deed.en
