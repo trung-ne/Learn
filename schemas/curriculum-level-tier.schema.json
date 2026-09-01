@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/curriculum-level-tier.schema.json",
+  "title": "English Master M5 level and tier",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["level", "tiers"],
+  "properties": {
+    "level": {"$ref": "curriculum-common.schema.json#/$defs/officialCefr"},
+    "tiers": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "sequence", "official_status", "unit_ids"],
+        "properties": {
+          "id": {"$ref": "curriculum-common.schema.json#/$defs/internalTier"},
+          "sequence": {"type": "integer", "minimum": 1, "maximum": 12},
+          "official_status": {"const": "INTERNAL_CURRICULUM_SUBDIVISION"},
+          "unit_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "curriculum-common.schema.json#/$defs/unitId"}}
+        }
+      }
+    }
+  }
+}

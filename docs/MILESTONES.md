@@ -231,7 +231,7 @@ Do NOT classify CEFR content, add embeddings or a vector database, or generate c
 
 ## M5 — Curriculum Architecture & Dependency Graph
 
-**Estimated Duration**: ~2 weeks
+**Status**: Complete (verified 2026-09-02)
 
 **Owner**: AI Agent + Curriculum Designer
 
@@ -252,22 +252,26 @@ Do validate curriculum structure.
 
 ### Deliverables
 
-1. curriculum/structure.json: units, lessons, dependencies
-2. curriculum/prerequisite_graph.json: explicit dependencies
-3. Curriculum roadmap: which content belongs in which lesson
-4. Lesson templates and structure
-5. Tests verifying DAG structure
-6. Visualization of curriculum graph
-7. Documentation of curriculum design decisions
+1. `curriculum/structure.json`: compact six-band/twelve-tier hierarchy with globally numbered units, lesson outlines, and review nodes
+2. `curriculum/prerequisite_graph.json`: explicit typed dependencies and deterministic topological order
+3. `curriculum/coverage-roadmap.json`: machine-readable introduction, development, and review coverage
+4. Strict M5 schemas and an offline `english_master.curriculum_validate` CLI
+5. Tests for schema, hierarchy, references, review gates, graph semantics, coverage, and reproducibility
+6. `curriculum/curriculum-graph.dot`: deterministic compact curriculum visualization
+7. `docs/CURRICULUM_ARCHITECTURE.md`: design and governance decisions
 
 ### Acceptance Criteria
 
-- [ ] Curriculum covers A1.1 through C2.2
-- [ ] Dependency graph is acyclic
-- [ ] All prerequisites are introduced before use
-- [ ] Lessons are balanced in scope
-- [ ] Structure supports ~1000 hours of learning
-- [ ] Lesson count and structure is reasonable
+- [x] Curriculum architecture covers A1.1 through C2.2
+- [x] Dependency graph is acyclic
+- [x] All prerequisites are introduced before dependent use
+- [x] Compact lesson outlines and units are balanced and machine-readable
+- [x] Scale plan supports an estimated 1,000-1,200 hour expansion without claiming completed content
+- [x] Global unit numbering prevents lesson-ID collisions across internal half-tiers
+- [x] DRAFT taxonomy dependencies are behind an explicit review gate that blocks M6
+- [x] Coverage roadmap represents all required dimensions
+- [x] Offline CLI and applicable tests pass
+- [x] No M6 lesson content or later-milestone material was generated
 
 ### Next: M6
 

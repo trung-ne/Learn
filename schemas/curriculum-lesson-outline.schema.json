@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/curriculum-lesson-outline.schema.json",
+  "title": "English Master M5 lesson outline",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "title", "unit_id", "lesson_number", "cefr", "objectives", "grammar", "vocabulary", "functions", "pronunciation", "taxonomy_concepts", "skills", "dimensions", "prerequisites", "review_of", "lesson_kind", "status"],
+  "properties": {
+    "id": {"$ref": "curriculum-common.schema.json#/$defs/lessonId"},
+    "title": {"$ref": "curriculum-common.schema.json#/$defs/outlineText"},
+    "unit_id": {"$ref": "curriculum-common.schema.json#/$defs/unitId"},
+    "lesson_number": {"type": "integer", "minimum": 1, "maximum": 99},
+    "cefr": {"$ref": "curriculum-common.schema.json#/$defs/internalTier"},
+    "objectives": {"type": "array", "minItems": 1, "maxItems": 6, "uniqueItems": true, "items": {"$ref": "curriculum-common.schema.json#/$defs/outlineText"}},
+    "grammar": {"$ref": "curriculum-common.schema.json#/$defs/uniqueConceptIds"},
+    "vocabulary": {"$ref": "curriculum-common.schema.json#/$defs/uniqueVocabularyIds"},
+    "functions": {"$ref": "curriculum-common.schema.json#/$defs/uniqueConceptIds"},
+    "pronunciation": {"$ref": "curriculum-common.schema.json#/$defs/uniqueConceptIds"},
+    "taxonomy_concepts": {"$ref": "curriculum-common.schema.json#/$defs/uniqueConceptIds"},
+    "skills": {"$ref": "curriculum-common.schema.json#/$defs/skills"},
+    "dimensions": {"$ref": "curriculum-common.schema.json#/$defs/dimensions"},
+    "prerequisites": {"type": "array", "uniqueItems": true, "items": {"$ref": "curriculum-common.schema.json#/$defs/lessonId"}},
+    "review_of": {"type": "array", "uniqueItems": true, "items": {"$ref": "curriculum-common.schema.json#/$defs/curriculumNodeId"}},
+    "lesson_kind": {"enum": ["CORE", "CONSOLIDATION"]},
+    "status": {"$ref": "curriculum-common.schema.json#/$defs/outlineStatus"}
+  }
+}

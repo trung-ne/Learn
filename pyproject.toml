@@ -22,6 +22,7 @@ dev = [
 english-master-validate = "english_master.schema_validation:main"
 english-master-ingest = "english_master.ingest:main"
 english-master-normalize = "english_master.normalize:main"
+english-master-curriculum-validate = "english_master.curriculum_validate:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

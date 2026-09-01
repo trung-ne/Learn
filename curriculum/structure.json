@@ -1,0 +1,2322 @@
+{
+  "schema_version": "1.0",
+  "curriculum_version": "20260902",
+  "title": "English Master",
+  "framework": "CEFR",
+  "subdivision_notice": "The .1 and .2 tiers are internal curriculum subdivisions, not official CEFR levels.",
+  "status": "OUTLINE_ONLY",
+  "authorship": {
+    "content_origin": "PROJECT_AUTHORED_PLANNING_RECORDS",
+    "external_content_copied": false
+  },
+  "artifacts": {
+    "graph": "prerequisite_graph.json",
+    "coverage": "coverage-roadmap.json",
+    "visualization": "curriculum-graph.dot"
+  },
+  "taxonomy_dependency": {
+    "path": "taxonomy/taxonomy.json",
+    "taxonomy_version": "20260831",
+    "accepted_record_statuses": [
+      "DRAFT"
+    ],
+    "gate_decision": "CONDITIONAL_DRAFT_REFERENCE",
+    "approved_for_outline_planning_only": true,
+    "blocks_content_generation": true,
+    "required_next_review": "INDEPENDENT_LINGUISTIC_AND_PEDAGOGICAL_REVIEW_BEFORE_M6"
+  },
+  "scale_plan": {
+    "compact_architecture_prototype": true,
+    "target_units": {
+      "minimum": 100,
+      "maximum": 140
+    },
+    "target_lessons": {
+      "minimum": 500,
+      "maximum": 750
+    },
+    "estimated_total_hours": {
+      "minimum": 1000,
+      "maximum": 1200,
+      "basis": "PLANNING_ESTIMATE"
+    },
+    "precision_notice": "Ranges are architecture estimates, not claims that the compact M5 prototype already contains those hours or records."
+  },
+  "levels": [
+    {
+      "level": "A1",
+      "tiers": [
+        {
+          "id": "A1.1",
+          "sequence": 1,
+          "official_status": "INTERNAL_CURRICULUM_SUBDIVISION",
+          "unit_ids": [
+            "A1.1-U01"
+          ]
+        },
+        {
+          "id": "A1.2",
+          "sequence": 2,
+          "official_status": "INTERNAL_CURRICULUM_SUBDIVISION",
+          "unit_ids": [
+            "A1.2-U02"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "A2",
+      "tiers": [
+        {
+          "id": "A2.1",
+          "sequence": 3,
+          "official_status": "INTERNAL_CURRICULUM_SUBDIVISION",
+          "unit_ids": [
+            "A2.1-U03"
+          ]
+        },
+        {
+          "id": "A2.2",
+          "sequence": 4,
+          "official_status": "INTERNAL_CURRICULUM_SUBDIVISION",
+          "unit_ids": [
+            "A2.2-U04"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "B1",
+      "tiers": [
+        {
+          "id": "B1.1",
+          "sequence": 5,
+          "official_status": "INTERNAL_CURRICULUM_SUBDIVISION",
+          "unit_ids": [
+            "B1.1-U05"
+          ]
+        },
+        {
+          "id": "B1.2",
+          "sequence": 6,
+          "official_status": "INTERNAL_CURRICULUM_SUBDIVISION",
+          "unit_ids": [
+            "B1.2-U06"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "B2",
+      "tiers": [
+        {
+          "id": "B2.1",
+          "sequence": 7,
+          "official_status": "INTERNAL_CURRICULUM_SUBDIVISION",
+          "unit_ids": [
+            "B2.1-U07"
+          ]
+        },
+        {
+          "id": "B2.2",
+          "sequence": 8,
+          "official_status": "INTERNAL_CURRICULUM_SUBDIVISION",
+          "unit_ids": [
+            "B2.2-U08"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "C1",
+      "tiers": [
+        {
+          "id": "C1.1",
+          "sequence": 9,
+          "official_status": "INTERNAL_CURRICULUM_SUBDIVISION",
+          "unit_ids": [
+            "C1.1-U09"
+          ]
+        },
+        {
+          "id": "C1.2",
+          "sequence": 10,
+          "official_status": "INTERNAL_CURRICULUM_SUBDIVISION",
+          "unit_ids": [
+            "C1.2-U10"
+          ]
+        }
+      ]
+    },
+    {
+      "level": "C2",
+      "tiers": [
+        {
+          "id": "C2.1",
+          "sequence": 11,
+          "official_status": "INTERNAL_CURRICULUM_SUBDIVISION",
+          "unit_ids": [
+            "C2.1-U11"
+          ]
+        },
+        {
+          "id": "C2.2",
+          "sequence": 12,
+          "official_status": "INTERNAL_CURRICULUM_SUBDIVISION",
+          "unit_ids": [
+            "C2.2-U12"
+          ]
+        }
+      ]
+    }
+  ],
+  "units": [
+    {
+      "id": "A1.1-U01",
+      "global_unit_number": 1,
+      "level": "A1",
+      "tier": "A1.1",
+      "title": "Foundational exchange",
+      "theme": "Personal information and basic participation",
+      "goals": [
+        "develop capability in personal information and basic participation",
+        "integrate 8 roadmap dimensions"
+      ],
+      "lesson_ids": [
+        "A1-U01-L01",
+        "A1-U01-L02"
+      ],
+      "review_node_id": "A1-U01-REV",
+      "prerequisite_units": [],
+      "skills": [
+        "listening",
+        "speaking",
+        "reading",
+        "writing",
+        "spoken_interaction"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "reading",
+        "writing",
+        "grammar",
+        "pronunciation",
+        "topics",
+        "spoken_interaction"
+      ],
+      "estimated_hours": {
+        "minimum": 8.0,
+        "maximum": 12.0,
+        "basis": "PLANNING_ESTIMATE"
+      },
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "A1.2-U02",
+      "global_unit_number": 2,
+      "level": "A1",
+      "tier": "A1.2",
+      "title": "Everyday events",
+      "theme": "Simple time reference and requests for help",
+      "goals": [
+        "develop capability in simple time reference and requests for help",
+        "integrate 10 roadmap dimensions"
+      ],
+      "lesson_ids": [
+        "A1-U02-L01",
+        "A1-U02-L02"
+      ],
+      "review_node_id": "A1-U02-REV",
+      "prerequisite_units": [
+        "A1.1-U01"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "grammar",
+        "vocabulary_senses",
+        "pronunciation",
+        "communicative_functions",
+        "topics"
+      ],
+      "estimated_hours": {
+        "minimum": 8.0,
+        "maximum": 12.0,
+        "basis": "PLANNING_ESTIMATE"
+      },
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "A2.1-U03",
+      "global_unit_number": 3,
+      "level": "A2",
+      "tier": "A2.1",
+      "title": "Supported independence",
+      "theme": "Narration, mediation, and socially suitable requests",
+      "goals": [
+        "develop capability in narration, mediation, and socially suitable requests",
+        "integrate 12 roadmap dimensions"
+      ],
+      "lesson_ids": [
+        "A2-U03-L01",
+        "A2-U03-L02"
+      ],
+      "review_node_id": "A2-U03-REV",
+      "prerequisite_units": [
+        "A1.2-U02"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation",
+        "grammar",
+        "lexical_chunks",
+        "pronunciation",
+        "communicative_functions",
+        "pragmatics",
+        "assessment_capabilities"
+      ],
+      "estimated_hours": {
+        "minimum": 8.0,
+        "maximum": 12.0,
+        "basis": "PLANNING_ESTIMATE"
+      },
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "A2.2-U04",
+      "global_unit_number": 4,
+      "level": "A2",
+      "tier": "A2.2",
+      "title": "Connected accounts",
+      "theme": "Sequencing, lexical combinations, and information focus",
+      "goals": [
+        "develop capability in sequencing, lexical combinations, and information focus",
+        "integrate 12 roadmap dimensions"
+      ],
+      "lesson_ids": [
+        "A2-U04-L01",
+        "A2-U04-L02"
+      ],
+      "review_node_id": "A2-U04-REV",
+      "prerequisite_units": [
+        "A2.1-U03"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "reading",
+        "writing",
+        "spoken_interaction",
+        "mediation"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "reading",
+        "writing",
+        "collocations",
+        "pronunciation",
+        "discourse",
+        "spoken_interaction",
+        "mediation",
+        "grammar",
+        "vocabulary_senses",
+        "communicative_functions"
+      ],
+      "estimated_hours": {
+        "minimum": 8.0,
+        "maximum": 12.0,
+        "basis": "PLANNING_ESTIMATE"
+      },
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "B1.1-U05",
+      "global_unit_number": 5,
+      "level": "B1",
+      "tier": "B1.1",
+      "title": "Extended narration",
+      "theme": "Past relationships and connected speech",
+      "goals": [
+        "develop capability in past relationships and connected speech",
+        "integrate 9 roadmap dimensions"
+      ],
+      "lesson_ids": [
+        "B1-U05-L01",
+        "B1-U05-L02"
+      ],
+      "review_node_id": "B1-U05-REV",
+      "prerequisite_units": [
+        "A2.2-U04"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "reading",
+        "writing",
+        "spoken_interaction"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "reading",
+        "writing",
+        "grammar",
+        "pronunciation",
+        "discourse",
+        "spoken_interaction",
+        "vocabulary_senses"
+      ],
+      "estimated_hours": {
+        "minimum": 8.0,
+        "maximum": 12.0,
+        "basis": "PLANNING_ESTIMATE"
+      },
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "B1.2-U06",
+      "global_unit_number": 6,
+      "level": "B1",
+      "tier": "B1.2",
+      "title": "Sustained interaction",
+      "theme": "Connected production across familiar contexts",
+      "goals": [
+        "develop capability in connected production across familiar contexts",
+        "integrate 12 roadmap dimensions"
+      ],
+      "lesson_ids": [
+        "B1-U06-L01",
+        "B1-U06-L02"
+      ],
+      "review_node_id": "B1-U06-REV",
+      "prerequisite_units": [
+        "B1.1-U05"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "grammar",
+        "vocabulary_senses",
+        "pronunciation",
+        "discourse",
+        "mediation",
+        "communicative_functions",
+        "pragmatics"
+      ],
+      "estimated_hours": {
+        "minimum": 8.0,
+        "maximum": 12.0,
+        "basis": "PLANNING_ESTIMATE"
+      },
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "B2.1-U07",
+      "global_unit_number": 7,
+      "level": "B2",
+      "tier": "B2.1",
+      "title": "Effective delivery",
+      "theme": "Rhythm, intonation, and purposeful interaction",
+      "goals": [
+        "develop capability in rhythm, intonation, and purposeful interaction",
+        "integrate 6 roadmap dimensions"
+      ],
+      "lesson_ids": [
+        "B2-U07-L01",
+        "B2-U07-L02"
+      ],
+      "review_node_id": "B2-U07-REV",
+      "prerequisite_units": [
+        "B1.2-U06"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "mediation"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "pronunciation",
+        "mediation",
+        "pragmatics"
+      ],
+      "estimated_hours": {
+        "minimum": 8.0,
+        "maximum": 12.0,
+        "basis": "PLANNING_ESTIMATE"
+      },
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "B2.2-U08",
+      "global_unit_number": 8,
+      "level": "B2",
+      "tier": "B2.2",
+      "title": "Complex communication",
+      "theme": "Integrated receptive and productive control",
+      "goals": [
+        "develop capability in integrated receptive and productive control",
+        "integrate 16 roadmap dimensions"
+      ],
+      "lesson_ids": [
+        "B2-U08-L01",
+        "B2-U08-L02"
+      ],
+      "review_node_id": "B2-U08-REV",
+      "prerequisite_units": [
+        "B2.1-U07"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation",
+        "grammar",
+        "vocabulary_senses",
+        "collocations",
+        "lexical_chunks",
+        "pronunciation",
+        "communicative_functions",
+        "topics",
+        "discourse",
+        "pragmatics",
+        "assessment_capabilities"
+      ],
+      "estimated_hours": {
+        "minimum": 8.0,
+        "maximum": 12.0,
+        "basis": "PLANNING_ESTIMATE"
+      },
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "C1.1-U09",
+      "global_unit_number": 9,
+      "level": "C1",
+      "tier": "C1.1",
+      "title": "Flexible expression",
+      "theme": "Audience-aware discourse and pragmatic choices",
+      "goals": [
+        "develop capability in audience-aware discourse and pragmatic choices",
+        "integrate 16 roadmap dimensions"
+      ],
+      "lesson_ids": [
+        "C1-U09-L01",
+        "C1-U09-L02"
+      ],
+      "review_node_id": "C1-U09-REV",
+      "prerequisite_units": [
+        "B2.2-U08"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation",
+        "grammar",
+        "vocabulary_senses",
+        "collocations",
+        "lexical_chunks",
+        "pronunciation",
+        "communicative_functions",
+        "topics",
+        "discourse",
+        "pragmatics",
+        "assessment_capabilities"
+      ],
+      "estimated_hours": {
+        "minimum": 8.0,
+        "maximum": 12.0,
+        "basis": "PLANNING_ESTIMATE"
+      },
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "C1.2-U10",
+      "global_unit_number": 10,
+      "level": "C1",
+      "tier": "C1.2",
+      "title": "Advanced synthesis",
+      "theme": "Mediation and precise cross-skill communication",
+      "goals": [
+        "develop capability in mediation and precise cross-skill communication",
+        "integrate 16 roadmap dimensions"
+      ],
+      "lesson_ids": [
+        "C1-U10-L01",
+        "C1-U10-L02"
+      ],
+      "review_node_id": "C1-U10-REV",
+      "prerequisite_units": [
+        "C1.1-U09"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation",
+        "grammar",
+        "vocabulary_senses",
+        "collocations",
+        "lexical_chunks",
+        "pronunciation",
+        "communicative_functions",
+        "topics",
+        "discourse",
+        "pragmatics",
+        "assessment_capabilities"
+      ],
+      "estimated_hours": {
+        "minimum": 8.0,
+        "maximum": 12.0,
+        "basis": "PLANNING_ESTIMATE"
+      },
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "C2.1-U11",
+      "global_unit_number": 11,
+      "level": "C2",
+      "tier": "C2.1",
+      "title": "Nuanced control",
+      "theme": "Subtle stance, register, and assessment capability",
+      "goals": [
+        "develop capability in subtle stance, register, and assessment capability",
+        "integrate 16 roadmap dimensions"
+      ],
+      "lesson_ids": [
+        "C2-U11-L01",
+        "C2-U11-L02"
+      ],
+      "review_node_id": "C2-U11-REV",
+      "prerequisite_units": [
+        "C1.2-U10"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation",
+        "grammar",
+        "vocabulary_senses",
+        "collocations",
+        "lexical_chunks",
+        "pronunciation",
+        "communicative_functions",
+        "topics",
+        "discourse",
+        "pragmatics",
+        "assessment_capabilities"
+      ],
+      "estimated_hours": {
+        "minimum": 8.0,
+        "maximum": 12.0,
+        "basis": "PLANNING_ESTIMATE"
+      },
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "C2.2-U12",
+      "global_unit_number": 12,
+      "level": "C2",
+      "tier": "C2.2",
+      "title": "Mastery integration",
+      "theme": "Adaptive performance across all dimensions",
+      "goals": [
+        "develop capability in adaptive performance across all dimensions",
+        "integrate 16 roadmap dimensions"
+      ],
+      "lesson_ids": [
+        "C2-U12-L01",
+        "C2-U12-L02"
+      ],
+      "review_node_id": "C2-U12-REV",
+      "prerequisite_units": [
+        "C2.1-U11"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation",
+        "grammar",
+        "vocabulary_senses",
+        "collocations",
+        "lexical_chunks",
+        "pronunciation",
+        "communicative_functions",
+        "topics",
+        "discourse",
+        "pragmatics",
+        "assessment_capabilities"
+      ],
+      "estimated_hours": {
+        "minimum": 8.0,
+        "maximum": 12.0,
+        "basis": "PLANNING_ESTIMATE"
+      },
+      "status": "OUTLINE_ONLY"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "A1-U01-L01",
+      "title": "Foundational exchange: foundations",
+      "unit_id": "A1.1-U01",
+      "lesson_number": 1,
+      "cefr": "A1.1",
+      "objectives": [
+        "handle personal information and basic participation",
+        "combine selected A1.1 capabilities for a communicative purpose"
+      ],
+      "grammar": [
+        "concept_present_simple"
+      ],
+      "vocabulary": [],
+      "functions": [],
+      "pronunciation": [
+        "concept_pronunciation_phonemes"
+      ],
+      "taxonomy_concepts": [
+        "concept_listening",
+        "concept_speaking",
+        "concept_reading",
+        "concept_writing",
+        "concept_topic_personal_information"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "reading",
+        "writing"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "reading",
+        "writing",
+        "grammar",
+        "pronunciation",
+        "topics"
+      ],
+      "prerequisites": [],
+      "review_of": [],
+      "lesson_kind": "CORE",
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "A1-U01-L02",
+      "title": "Foundational exchange: application",
+      "unit_id": "A1.1-U01",
+      "lesson_number": 2,
+      "cefr": "A1.1",
+      "objectives": [
+        "handle personal information and basic participation",
+        "combine selected A1.1 capabilities for a communicative purpose"
+      ],
+      "grammar": [],
+      "vocabulary": [],
+      "functions": [],
+      "pronunciation": [
+        "concept_pronunciation_minimal_pairs"
+      ],
+      "taxonomy_concepts": [
+        "concept_spoken_interaction"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "pronunciation"
+      ],
+      "prerequisites": [
+        "A1-U01-L01"
+      ],
+      "review_of": [
+        "A1-U01-L01"
+      ],
+      "lesson_kind": "CONSOLIDATION",
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "A1-U02-L01",
+      "title": "Everyday events: foundations",
+      "unit_id": "A1.2-U02",
+      "lesson_number": 1,
+      "cefr": "A1.2",
+      "objectives": [
+        "handle simple time reference and requests for help",
+        "combine selected A1.2 capabilities for a communicative purpose"
+      ],
+      "grammar": [
+        "concept_past_simple"
+      ],
+      "vocabulary": [
+        "vocab_en_run_001"
+      ],
+      "functions": [
+        "concept_function_request_help"
+      ],
+      "pronunciation": [
+        "concept_pronunciation_syllables"
+      ],
+      "taxonomy_concepts": [],
+      "skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "grammar",
+        "vocabulary_senses",
+        "pronunciation",
+        "communicative_functions"
+      ],
+      "prerequisites": [
+        "A1-U01-L02"
+      ],
+      "review_of": [],
+      "lesson_kind": "CORE",
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "A1-U02-L02",
+      "title": "Everyday events: application",
+      "unit_id": "A1.2-U02",
+      "lesson_number": 2,
+      "cefr": "A1.2",
+      "objectives": [
+        "handle simple time reference and requests for help",
+        "combine selected A1.2 capabilities for a communicative purpose"
+      ],
+      "grammar": [
+        "concept_present_simple"
+      ],
+      "vocabulary": [
+        "vocab_en_run_001"
+      ],
+      "functions": [
+        "concept_function_request_help"
+      ],
+      "pronunciation": [
+        "concept_pronunciation_syllables"
+      ],
+      "taxonomy_concepts": [
+        "concept_topic_personal_information"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "grammar",
+        "vocabulary_senses",
+        "pronunciation",
+        "communicative_functions",
+        "topics"
+      ],
+      "prerequisites": [
+        "A1-U02-L01"
+      ],
+      "review_of": [
+        "A1-U02-L01"
+      ],
+      "lesson_kind": "CONSOLIDATION",
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "A2-U03-L01",
+      "title": "Supported independence: foundations",
+      "unit_id": "A2.1-U03",
+      "lesson_number": 1,
+      "cefr": "A2.1",
+      "objectives": [
+        "handle narration, mediation, and socially suitable requests",
+        "combine selected A2.1 capabilities for a communicative purpose"
+      ],
+      "grammar": [
+        "concept_past_continuous"
+      ],
+      "vocabulary": [],
+      "functions": [
+        "concept_function_request_help"
+      ],
+      "pronunciation": [
+        "concept_pronunciation_word_stress"
+      ],
+      "taxonomy_concepts": [
+        "concept_mediation",
+        "concept_chunk_could_you_help"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation",
+        "grammar",
+        "lexical_chunks",
+        "pronunciation",
+        "communicative_functions"
+      ],
+      "prerequisites": [
+        "A1-U02-L02"
+      ],
+      "review_of": [],
+      "lesson_kind": "CORE",
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "A2-U03-L02",
+      "title": "Supported independence: application",
+      "unit_id": "A2.1-U03",
+      "lesson_number": 2,
+      "cefr": "A2.1",
+      "objectives": [
+        "handle narration, mediation, and socially suitable requests",
+        "combine selected A2.1 capabilities for a communicative purpose"
+      ],
+      "grammar": [],
+      "vocabulary": [],
+      "functions": [
+        "concept_function_request_help"
+      ],
+      "pronunciation": [
+        "concept_pronunciation_word_stress"
+      ],
+      "taxonomy_concepts": [
+        "concept_pragmatics_polite_requests",
+        "concept_assessment_can_request_help"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "mediation"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "mediation",
+        "pronunciation",
+        "communicative_functions",
+        "pragmatics",
+        "assessment_capabilities"
+      ],
+      "prerequisites": [
+        "A2-U03-L01"
+      ],
+      "review_of": [
+        "A2-U03-L01"
+      ],
+      "lesson_kind": "CONSOLIDATION",
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "A2-U04-L01",
+      "title": "Connected accounts: foundations",
+      "unit_id": "A2.2-U04",
+      "lesson_number": 1,
+      "cefr": "A2.2",
+      "objectives": [
+        "handle sequencing, lexical combinations, and information focus",
+        "combine selected A2.2 capabilities for a communicative purpose"
+      ],
+      "grammar": [],
+      "vocabulary": [],
+      "functions": [],
+      "pronunciation": [
+        "concept_pronunciation_sentence_stress"
+      ],
+      "taxonomy_concepts": [
+        "concept_narrative_sequence",
+        "concept_collocation_make_decision"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "reading",
+        "writing"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "reading",
+        "writing",
+        "collocations",
+        "pronunciation",
+        "discourse"
+      ],
+      "prerequisites": [
+        "A2-U03-L02"
+      ],
+      "review_of": [],
+      "lesson_kind": "CORE",
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "A2-U04-L02",
+      "title": "Connected accounts: application",
+      "unit_id": "A2.2-U04",
+      "lesson_number": 2,
+      "cefr": "A2.2",
+      "objectives": [
+        "handle sequencing, lexical combinations, and information focus",
+        "combine selected A2.2 capabilities for a communicative purpose"
+      ],
+      "grammar": [
+        "concept_past_continuous"
+      ],
+      "vocabulary": [
+        "vocab_en_run_001"
+      ],
+      "functions": [
+        "concept_function_request_help"
+      ],
+      "pronunciation": [
+        "concept_pronunciation_sentence_stress"
+      ],
+      "taxonomy_concepts": [
+        "concept_narrative_sequence"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation",
+        "grammar",
+        "vocabulary_senses",
+        "pronunciation",
+        "communicative_functions",
+        "discourse"
+      ],
+      "prerequisites": [
+        "A2-U04-L01"
+      ],
+      "review_of": [
+        "A2-U04-L01"
+      ],
+      "lesson_kind": "CONSOLIDATION",
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "B1-U05-L01",
+      "title": "Extended narration: foundations",
+      "unit_id": "B1.1-U05",
+      "lesson_number": 1,
+      "cefr": "B1.1",
+      "objectives": [
+        "handle past relationships and connected speech",
+        "combine selected B1.1 capabilities for a communicative purpose"
+      ],
+      "grammar": [
+        "concept_past_perfect"
+      ],
+      "vocabulary": [],
+      "functions": [],
+      "pronunciation": [
+        "concept_pronunciation_weak_forms"
+      ],
+      "taxonomy_concepts": [
+        "concept_narrative_sequence"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "reading",
+        "writing"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "reading",
+        "writing",
+        "grammar",
+        "pronunciation",
+        "discourse"
+      ],
+      "prerequisites": [
+        "A2-U04-L02"
+      ],
+      "review_of": [],
+      "lesson_kind": "CORE",
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "B1-U05-L02",
+      "title": "Extended narration: application",
+      "unit_id": "B1.1-U05",
+      "lesson_number": 2,
+      "cefr": "B1.1",
+      "objectives": [
+        "handle past relationships and connected speech",
+        "combine selected B1.1 capabilities for a communicative purpose"
+      ],
+      "grammar": [
+        "concept_past_perfect"
+      ],
+      "vocabulary": [
+        "vocab_en_run_002"
+      ],
+      "functions": [],
+      "pronunciation": [
+        "concept_pronunciation_linking"
+      ],
+      "taxonomy_concepts": [],
+      "skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "grammar",
+        "vocabulary_senses",
+        "pronunciation"
+      ],
+      "prerequisites": [
+        "B1-U05-L01"
+      ],
+      "review_of": [
+        "B1-U05-L01"
+      ],
+      "lesson_kind": "CONSOLIDATION",
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "B1-U06-L01",
+      "title": "Sustained interaction: foundations",
+      "unit_id": "B1.2-U06",
+      "lesson_number": 1,
+      "cefr": "B1.2",
+      "objectives": [
+        "handle connected production across familiar contexts",
+        "combine selected B1.2 capabilities for a communicative purpose"
+      ],
+      "grammar": [
+        "concept_past_perfect"
+      ],
+      "vocabulary": [
+        "vocab_en_run_002"
+      ],
+      "functions": [],
+      "pronunciation": [
+        "concept_pronunciation_connected_speech"
+      ],
+      "taxonomy_concepts": [
+        "concept_narrative_sequence"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "grammar",
+        "vocabulary_senses",
+        "pronunciation",
+        "discourse"
+      ],
+      "prerequisites": [
+        "B1-U05-L02"
+      ],
+      "review_of": [],
+      "lesson_kind": "CORE",
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "B1-U06-L02",
+      "title": "Sustained interaction: application",
+      "unit_id": "B1.2-U06",
+      "lesson_number": 2,
+      "cefr": "B1.2",
+      "objectives": [
+        "handle connected production across familiar contexts",
+        "combine selected B1.2 capabilities for a communicative purpose"
+      ],
+      "grammar": [],
+      "vocabulary": [],
+      "functions": [
+        "concept_function_request_help"
+      ],
+      "pronunciation": [
+        "concept_pronunciation_connected_speech"
+      ],
+      "taxonomy_concepts": [
+        "concept_pragmatics_polite_requests"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "mediation"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "mediation",
+        "pronunciation",
+        "communicative_functions",
+        "pragmatics"
+      ],
+      "prerequisites": [
+        "B1-U06-L01"
+      ],
+      "review_of": [
+        "B1-U06-L01"
+      ],
+      "lesson_kind": "CONSOLIDATION",
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "B2-U07-L01",
+      "title": "Effective delivery: foundations",
+      "unit_id": "B2.1-U07",
+      "lesson_number": 1,
+      "cefr": "B2.1",
+      "objectives": [
+        "handle rhythm, intonation, and purposeful interaction",
+        "combine selected B2.1 capabilities for a communicative purpose"
+      ],
+      "grammar": [],
+      "vocabulary": [],
+      "functions": [],
+      "pronunciation": [
+        "concept_pronunciation_rhythm"
+      ],
+      "taxonomy_concepts": [],
+      "skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "pronunciation"
+      ],
+      "prerequisites": [
+        "B1-U06-L02"
+      ],
+      "review_of": [],
+      "lesson_kind": "CORE",
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "B2-U07-L02",
+      "title": "Effective delivery: application",
+      "unit_id": "B2.1-U07",
+      "lesson_number": 2,
+      "cefr": "B2.1",
+      "objectives": [
+        "handle rhythm, intonation, and purposeful interaction",
+        "combine selected B2.1 capabilities for a communicative purpose"
+      ],
+      "grammar": [],
+      "vocabulary": [],
+      "functions": [],
+      "pronunciation": [
+        "concept_pronunciation_intonation"
+      ],
+      "taxonomy_concepts": [
+        "concept_pragmatics_polite_requests"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "mediation"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "mediation",
+        "pronunciation",
+        "pragmatics"
+      ],
+      "prerequisites": [
+        "B2-U07-L01"
+      ],
+      "review_of": [
+        "B2-U07-L01"
+      ],
+      "lesson_kind": "CONSOLIDATION",
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "B2-U08-L01",
+      "title": "Complex communication: foundations",
+      "unit_id": "B2.2-U08",
+      "lesson_number": 1,
+      "cefr": "B2.2",
+      "objectives": [
+        "handle integrated receptive and productive control",
+        "combine selected B2.2 capabilities for a communicative purpose"
+      ],
+      "grammar": [
+        "concept_past_perfect"
+      ],
+      "vocabulary": [
+        "vocab_en_run_002"
+      ],
+      "functions": [
+        "concept_function_request_help"
+      ],
+      "pronunciation": [
+        "concept_pronunciation_intonation"
+      ],
+      "taxonomy_concepts": [
+        "concept_narrative_sequence",
+        "concept_pragmatics_polite_requests"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation",
+        "grammar",
+        "vocabulary_senses",
+        "collocations",
+        "lexical_chunks",
+        "pronunciation",
+        "communicative_functions",
+        "topics",
+        "discourse",
+        "pragmatics"
+      ],
+      "prerequisites": [
+        "B2-U07-L02"
+      ],
+      "review_of": [],
+      "lesson_kind": "CORE",
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "B2-U08-L02",
+      "title": "Complex communication: application",
+      "unit_id": "B2.2-U08",
+      "lesson_number": 2,
+      "cefr": "B2.2",
+      "objectives": [
+        "handle integrated receptive and productive control",
+        "combine selected B2.2 capabilities for a communicative purpose"
+      ],
+      "grammar": [],
+      "vocabulary": [],
+      "functions": [],
+      "pronunciation": [
+        "concept_pronunciation_intonation"
+      ],
+      "taxonomy_concepts": [
+        "concept_assessment_can_request_help"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation",
+        "grammar",
+        "vocabulary_senses",
+        "collocations",
+        "lexical_chunks",
+        "pronunciation",
+        "communicative_functions",
+        "topics",
+        "discourse",
+        "pragmatics",
+        "assessment_capabilities"
+      ],
+      "prerequisites": [
+        "B2-U08-L01"
+      ],
+      "review_of": [
+        "B2-U08-L01"
+      ],
+      "lesson_kind": "CONSOLIDATION",
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "C1-U09-L01",
+      "title": "Flexible expression: foundations",
+      "unit_id": "C1.1-U09",
+      "lesson_number": 1,
+      "cefr": "C1.1",
+      "objectives": [
+        "handle audience-aware discourse and pragmatic choices",
+        "combine selected C1.1 capabilities for a communicative purpose"
+      ],
+      "grammar": [
+        "concept_past_perfect"
+      ],
+      "vocabulary": [
+        "vocab_en_run_002"
+      ],
+      "functions": [
+        "concept_function_request_help"
+      ],
+      "pronunciation": [
+        "concept_pronunciation_intonation"
+      ],
+      "taxonomy_concepts": [
+        "concept_narrative_sequence",
+        "concept_pragmatics_polite_requests"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation",
+        "grammar",
+        "vocabulary_senses",
+        "collocations",
+        "lexical_chunks",
+        "pronunciation",
+        "communicative_functions",
+        "topics",
+        "discourse",
+        "pragmatics"
+      ],
+      "prerequisites": [
+        "B2-U08-L02"
+      ],
+      "review_of": [],
+      "lesson_kind": "CORE",
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "C1-U09-L02",
+      "title": "Flexible expression: application",
+      "unit_id": "C1.1-U09",
+      "lesson_number": 2,
+      "cefr": "C1.1",
+      "objectives": [
+        "handle audience-aware discourse and pragmatic choices",
+        "combine selected C1.1 capabilities for a communicative purpose"
+      ],
+      "grammar": [],
+      "vocabulary": [],
+      "functions": [],
+      "pronunciation": [
+        "concept_pronunciation_intonation"
+      ],
+      "taxonomy_concepts": [
+        "concept_assessment_can_request_help"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation",
+        "grammar",
+        "vocabulary_senses",
+        "collocations",
+        "lexical_chunks",
+        "pronunciation",
+        "communicative_functions",
+        "topics",
+        "discourse",
+        "pragmatics",
+        "assessment_capabilities"
+      ],
+      "prerequisites": [
+        "C1-U09-L01"
+      ],
+      "review_of": [
+        "C1-U09-L01"
+      ],
+      "lesson_kind": "CONSOLIDATION",
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "C1-U10-L01",
+      "title": "Advanced synthesis: foundations",
+      "unit_id": "C1.2-U10",
+      "lesson_number": 1,
+      "cefr": "C1.2",
+      "objectives": [
+        "handle mediation and precise cross-skill communication",
+        "combine selected C1.2 capabilities for a communicative purpose"
+      ],
+      "grammar": [
+        "concept_past_perfect"
+      ],
+      "vocabulary": [
+        "vocab_en_run_002"
+      ],
+      "functions": [
+        "concept_function_request_help"
+      ],
+      "pronunciation": [
+        "concept_pronunciation_intonation"
+      ],
+      "taxonomy_concepts": [
+        "concept_narrative_sequence",
+        "concept_pragmatics_polite_requests"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation",
+        "grammar",
+        "vocabulary_senses",
+        "collocations",
+        "lexical_chunks",
+        "pronunciation",
+        "communicative_functions",
+        "topics",
+        "discourse",
+        "pragmatics"
+      ],
+      "prerequisites": [
+        "C1-U09-L02"
+      ],
+      "review_of": [],
+      "lesson_kind": "CORE",
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "C1-U10-L02",
+      "title": "Advanced synthesis: application",
+      "unit_id": "C1.2-U10",
+      "lesson_number": 2,
+      "cefr": "C1.2",
+      "objectives": [
+        "handle mediation and precise cross-skill communication",
+        "combine selected C1.2 capabilities for a communicative purpose"
+      ],
+      "grammar": [],
+      "vocabulary": [],
+      "functions": [],
+      "pronunciation": [
+        "concept_pronunciation_intonation"
+      ],
+      "taxonomy_concepts": [
+        "concept_assessment_can_request_help"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation",
+        "grammar",
+        "vocabulary_senses",
+        "collocations",
+        "lexical_chunks",
+        "pronunciation",
+        "communicative_functions",
+        "topics",
+        "discourse",
+        "pragmatics",
+        "assessment_capabilities"
+      ],
+      "prerequisites": [
+        "C1-U10-L01"
+      ],
+      "review_of": [
+        "C1-U10-L01"
+      ],
+      "lesson_kind": "CONSOLIDATION",
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "C2-U11-L01",
+      "title": "Nuanced control: foundations",
+      "unit_id": "C2.1-U11",
+      "lesson_number": 1,
+      "cefr": "C2.1",
+      "objectives": [
+        "handle subtle stance, register, and assessment capability",
+        "combine selected C2.1 capabilities for a communicative purpose"
+      ],
+      "grammar": [
+        "concept_past_perfect"
+      ],
+      "vocabulary": [
+        "vocab_en_run_002"
+      ],
+      "functions": [
+        "concept_function_request_help"
+      ],
+      "pronunciation": [
+        "concept_pronunciation_intonation"
+      ],
+      "taxonomy_concepts": [
+        "concept_narrative_sequence",
+        "concept_pragmatics_polite_requests"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation",
+        "grammar",
+        "vocabulary_senses",
+        "collocations",
+        "lexical_chunks",
+        "pronunciation",
+        "communicative_functions",
+        "topics",
+        "discourse",
+        "pragmatics"
+      ],
+      "prerequisites": [
+        "C1-U10-L02"
+      ],
+      "review_of": [],
+      "lesson_kind": "CORE",
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "C2-U11-L02",
+      "title": "Nuanced control: application",
+      "unit_id": "C2.1-U11",
+      "lesson_number": 2,
+      "cefr": "C2.1",
+      "objectives": [
+        "handle subtle stance, register, and assessment capability",
+        "combine selected C2.1 capabilities for a communicative purpose"
+      ],
+      "grammar": [],
+      "vocabulary": [],
+      "functions": [],
+      "pronunciation": [
+        "concept_pronunciation_intonation"
+      ],
+      "taxonomy_concepts": [
+        "concept_assessment_can_request_help"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation",
+        "grammar",
+        "vocabulary_senses",
+        "collocations",
+        "lexical_chunks",
+        "pronunciation",
+        "communicative_functions",
+        "topics",
+        "discourse",
+        "pragmatics",
+        "assessment_capabilities"
+      ],
+      "prerequisites": [
+        "C2-U11-L01"
+      ],
+      "review_of": [
+        "C2-U11-L01"
+      ],
+      "lesson_kind": "CONSOLIDATION",
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "C2-U12-L01",
+      "title": "Mastery integration: foundations",
+      "unit_id": "C2.2-U12",
+      "lesson_number": 1,
+      "cefr": "C2.2",
+      "objectives": [
+        "handle adaptive performance across all dimensions",
+        "combine selected C2.2 capabilities for a communicative purpose"
+      ],
+      "grammar": [
+        "concept_past_perfect"
+      ],
+      "vocabulary": [
+        "vocab_en_run_002"
+      ],
+      "functions": [
+        "concept_function_request_help"
+      ],
+      "pronunciation": [
+        "concept_pronunciation_intonation"
+      ],
+      "taxonomy_concepts": [
+        "concept_narrative_sequence",
+        "concept_pragmatics_polite_requests"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation",
+        "grammar",
+        "vocabulary_senses",
+        "collocations",
+        "lexical_chunks",
+        "pronunciation",
+        "communicative_functions",
+        "topics",
+        "discourse",
+        "pragmatics"
+      ],
+      "prerequisites": [
+        "C2-U11-L02"
+      ],
+      "review_of": [],
+      "lesson_kind": "CORE",
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "C2-U12-L02",
+      "title": "Mastery integration: application",
+      "unit_id": "C2.2-U12",
+      "lesson_number": 2,
+      "cefr": "C2.2",
+      "objectives": [
+        "handle adaptive performance across all dimensions",
+        "combine selected C2.2 capabilities for a communicative purpose"
+      ],
+      "grammar": [],
+      "vocabulary": [],
+      "functions": [],
+      "pronunciation": [
+        "concept_pronunciation_intonation"
+      ],
+      "taxonomy_concepts": [
+        "concept_assessment_can_request_help"
+      ],
+      "skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation"
+      ],
+      "dimensions": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation",
+        "grammar",
+        "vocabulary_senses",
+        "collocations",
+        "lexical_chunks",
+        "pronunciation",
+        "communicative_functions",
+        "topics",
+        "discourse",
+        "pragmatics",
+        "assessment_capabilities"
+      ],
+      "prerequisites": [
+        "C2-U12-L01"
+      ],
+      "review_of": [
+        "C2-U12-L01"
+      ],
+      "lesson_kind": "CONSOLIDATION",
+      "status": "OUTLINE_ONLY"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "A1-U01-REV",
+      "title": "A1.1 architecture review",
+      "unit_id": "A1.1-U01",
+      "cefr": "A1.1",
+      "sequence_after": "A1-U01-L02",
+      "review_lessons": [
+        "A1-U01-L01",
+        "A1-U01-L02"
+      ],
+      "review_concepts": [
+        "concept_present_simple",
+        "concept_pronunciation_phonemes",
+        "concept_listening",
+        "concept_speaking",
+        "concept_reading",
+        "concept_writing",
+        "concept_topic_personal_information",
+        "concept_pronunciation_minimal_pairs",
+        "concept_spoken_interaction"
+      ],
+      "review_vocabulary": [],
+      "review_skills": [
+        "listening",
+        "speaking",
+        "reading",
+        "writing",
+        "spoken_interaction"
+      ],
+      "unresolved_review_targets": [],
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "A1-U02-REV",
+      "title": "A1.2 architecture review",
+      "unit_id": "A1.2-U02",
+      "cefr": "A1.2",
+      "sequence_after": "A1-U02-L02",
+      "review_lessons": [
+        "A1-U02-L01",
+        "A1-U02-L02"
+      ],
+      "review_concepts": [
+        "concept_past_simple",
+        "concept_function_request_help",
+        "concept_pronunciation_syllables",
+        "concept_present_simple",
+        "concept_topic_personal_information"
+      ],
+      "review_vocabulary": [
+        "vocab_en_run_001"
+      ],
+      "review_skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing"
+      ],
+      "unresolved_review_targets": [],
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "A2-U03-REV",
+      "title": "A2.1 architecture review",
+      "unit_id": "A2.1-U03",
+      "cefr": "A2.1",
+      "sequence_after": "A2-U03-L02",
+      "review_lessons": [
+        "A2-U03-L01",
+        "A2-U03-L02"
+      ],
+      "review_concepts": [
+        "concept_past_continuous",
+        "concept_function_request_help",
+        "concept_pronunciation_word_stress",
+        "concept_mediation",
+        "concept_chunk_could_you_help",
+        "concept_pragmatics_polite_requests",
+        "concept_assessment_can_request_help"
+      ],
+      "review_vocabulary": [],
+      "review_skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation"
+      ],
+      "unresolved_review_targets": [],
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "A2-U04-REV",
+      "title": "A2.2 architecture review",
+      "unit_id": "A2.2-U04",
+      "cefr": "A2.2",
+      "sequence_after": "A2-U04-L02",
+      "review_lessons": [
+        "A2-U04-L01",
+        "A2-U04-L02"
+      ],
+      "review_concepts": [
+        "concept_pronunciation_sentence_stress",
+        "concept_narrative_sequence",
+        "concept_collocation_make_decision",
+        "concept_past_continuous",
+        "concept_function_request_help"
+      ],
+      "review_vocabulary": [
+        "vocab_en_run_001"
+      ],
+      "review_skills": [
+        "listening",
+        "speaking",
+        "reading",
+        "writing",
+        "spoken_interaction",
+        "mediation"
+      ],
+      "unresolved_review_targets": [],
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "B1-U05-REV",
+      "title": "B1.1 architecture review",
+      "unit_id": "B1.1-U05",
+      "cefr": "B1.1",
+      "sequence_after": "B1-U05-L02",
+      "review_lessons": [
+        "B1-U05-L01",
+        "B1-U05-L02"
+      ],
+      "review_concepts": [
+        "concept_past_perfect",
+        "concept_pronunciation_weak_forms",
+        "concept_narrative_sequence",
+        "concept_pronunciation_linking"
+      ],
+      "review_vocabulary": [
+        "vocab_en_run_002"
+      ],
+      "review_skills": [
+        "listening",
+        "speaking",
+        "reading",
+        "writing",
+        "spoken_interaction"
+      ],
+      "unresolved_review_targets": [],
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "B1-U06-REV",
+      "title": "B1.2 architecture review",
+      "unit_id": "B1.2-U06",
+      "cefr": "B1.2",
+      "sequence_after": "B1-U06-L02",
+      "review_lessons": [
+        "B1-U06-L01",
+        "B1-U06-L02"
+      ],
+      "review_concepts": [
+        "concept_past_perfect",
+        "concept_pronunciation_connected_speech",
+        "concept_narrative_sequence",
+        "concept_function_request_help",
+        "concept_pragmatics_polite_requests"
+      ],
+      "review_vocabulary": [
+        "vocab_en_run_002"
+      ],
+      "review_skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation"
+      ],
+      "unresolved_review_targets": [],
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "B2-U07-REV",
+      "title": "B2.1 architecture review",
+      "unit_id": "B2.1-U07",
+      "cefr": "B2.1",
+      "sequence_after": "B2-U07-L02",
+      "review_lessons": [
+        "B2-U07-L01",
+        "B2-U07-L02"
+      ],
+      "review_concepts": [
+        "concept_pronunciation_rhythm",
+        "concept_pronunciation_intonation",
+        "concept_pragmatics_polite_requests"
+      ],
+      "review_vocabulary": [],
+      "review_skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "mediation"
+      ],
+      "unresolved_review_targets": [],
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "B2-U08-REV",
+      "title": "B2.2 architecture review",
+      "unit_id": "B2.2-U08",
+      "cefr": "B2.2",
+      "sequence_after": "B2-U08-L02",
+      "review_lessons": [
+        "B2-U08-L01",
+        "B2-U08-L02"
+      ],
+      "review_concepts": [
+        "concept_past_perfect",
+        "concept_function_request_help",
+        "concept_pronunciation_intonation",
+        "concept_narrative_sequence",
+        "concept_pragmatics_polite_requests",
+        "concept_assessment_can_request_help"
+      ],
+      "review_vocabulary": [
+        "vocab_en_run_002"
+      ],
+      "review_skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation"
+      ],
+      "unresolved_review_targets": [],
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "C1-U09-REV",
+      "title": "C1.1 architecture review",
+      "unit_id": "C1.1-U09",
+      "cefr": "C1.1",
+      "sequence_after": "C1-U09-L02",
+      "review_lessons": [
+        "C1-U09-L01",
+        "C1-U09-L02"
+      ],
+      "review_concepts": [
+        "concept_past_perfect",
+        "concept_function_request_help",
+        "concept_pronunciation_intonation",
+        "concept_narrative_sequence",
+        "concept_pragmatics_polite_requests",
+        "concept_assessment_can_request_help"
+      ],
+      "review_vocabulary": [
+        "vocab_en_run_002"
+      ],
+      "review_skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation"
+      ],
+      "unresolved_review_targets": [],
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "C1-U10-REV",
+      "title": "C1.2 architecture review",
+      "unit_id": "C1.2-U10",
+      "cefr": "C1.2",
+      "sequence_after": "C1-U10-L02",
+      "review_lessons": [
+        "C1-U10-L01",
+        "C1-U10-L02"
+      ],
+      "review_concepts": [
+        "concept_past_perfect",
+        "concept_function_request_help",
+        "concept_pronunciation_intonation",
+        "concept_narrative_sequence",
+        "concept_pragmatics_polite_requests",
+        "concept_assessment_can_request_help"
+      ],
+      "review_vocabulary": [
+        "vocab_en_run_002"
+      ],
+      "review_skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation"
+      ],
+      "unresolved_review_targets": [],
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "C2-U11-REV",
+      "title": "C2.1 architecture review",
+      "unit_id": "C2.1-U11",
+      "cefr": "C2.1",
+      "sequence_after": "C2-U11-L02",
+      "review_lessons": [
+        "C2-U11-L01",
+        "C2-U11-L02"
+      ],
+      "review_concepts": [
+        "concept_past_perfect",
+        "concept_function_request_help",
+        "concept_pronunciation_intonation",
+        "concept_narrative_sequence",
+        "concept_pragmatics_polite_requests",
+        "concept_assessment_can_request_help"
+      ],
+      "review_vocabulary": [
+        "vocab_en_run_002"
+      ],
+      "review_skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation"
+      ],
+      "unresolved_review_targets": [],
+      "status": "OUTLINE_ONLY"
+    },
+    {
+      "id": "C2-U12-REV",
+      "title": "C2.2 architecture review",
+      "unit_id": "C2.2-U12",
+      "cefr": "C2.2",
+      "sequence_after": "C2-U12-L02",
+      "review_lessons": [
+        "C2-U12-L01",
+        "C2-U12-L02"
+      ],
+      "review_concepts": [
+        "concept_past_perfect",
+        "concept_function_request_help",
+        "concept_pronunciation_intonation",
+        "concept_narrative_sequence",
+        "concept_pragmatics_polite_requests",
+        "concept_assessment_can_request_help"
+      ],
+      "review_vocabulary": [
+        "vocab_en_run_002"
+      ],
+      "review_skills": [
+        "listening",
+        "speaking",
+        "spoken_interaction",
+        "reading",
+        "writing",
+        "mediation"
+      ],
+      "unresolved_review_targets": [],
+      "status": "OUTLINE_ONLY"
+    }
+  ]
+}

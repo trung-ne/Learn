@@ -1,0 +1,1613 @@
+{
+  "schema_version": "1.0",
+  "curriculum_version": "20260902",
+  "ordering_semantics": {
+    "ordering_edge_types": [
+      "lesson_prerequisite",
+      "unit_ordering",
+      "taxonomy_prerequisite"
+    ],
+    "non_ordering_edge_types": [
+      "introduction",
+      "review",
+      "related_non_ordering"
+    ],
+    "edge_direction": "FROM_PREDECESSOR_OR_SOURCE_TO_DEPENDENT_OR_TARGET"
+  },
+  "nodes": [
+    {
+      "id": "concept_listening",
+      "type": "taxonomy_concept",
+      "sequence_key": "00.01"
+    },
+    {
+      "id": "concept_speaking",
+      "type": "taxonomy_concept",
+      "sequence_key": "00.02"
+    },
+    {
+      "id": "concept_spoken_interaction",
+      "type": "taxonomy_concept",
+      "sequence_key": "00.03"
+    },
+    {
+      "id": "concept_reading",
+      "type": "taxonomy_concept",
+      "sequence_key": "00.04"
+    },
+    {
+      "id": "concept_writing",
+      "type": "taxonomy_concept",
+      "sequence_key": "00.05"
+    },
+    {
+      "id": "concept_mediation",
+      "type": "taxonomy_concept",
+      "sequence_key": "00.06"
+    },
+    {
+      "id": "concept_present_simple",
+      "type": "taxonomy_concept",
+      "sequence_key": "00.07"
+    },
+    {
+      "id": "concept_past_simple",
+      "type": "taxonomy_concept",
+      "sequence_key": "00.08"
+    },
+    {
+      "id": "concept_past_continuous",
+      "type": "taxonomy_concept",
+      "sequence_key": "00.09"
+    },
+    {
+      "id": "concept_narrative_sequence",
+      "type": "taxonomy_concept",
+      "sequence_key": "00.10"
+    },
+    {
+      "id": "concept_past_perfect",
+      "type": "taxonomy_concept",
+      "sequence_key": "00.11"
+    },
+    {
+      "id": "concept_pronunciation_phonemes",
+      "type": "taxonomy_concept",
+      "sequence_key": "00.12"
+    },
+    {
+      "id": "concept_pronunciation_minimal_pairs",
+      "type": "taxonomy_concept",
+      "sequence_key": "00.13"
+    },
+    {
+      "id": "concept_pronunciation_syllables",
+      "type": "taxonomy_concept",
+      "sequence_key": "00.14"
+    },
+    {
+      "id": "concept_pronunciation_word_stress",
+      "type": "taxonomy_concept",
+      "sequence_key": "00.15"
+    },
+    {
+      "id": "concept_pronunciation_sentence_stress",
+      "type": "taxonomy_concept",
+      "sequence_key": "00.16"
+    },
+    {
+      "id": "concept_pronunciation_weak_forms",
+      "type": "taxonomy_concept",
+      "sequence_key": "00.17"
+    },
+    {
+      "id": "concept_pronunciation_linking",
+      "type": "taxonomy_concept",
+      "sequence_key": "00.18"
+    },
+    {
+      "id": "concept_pronunciation_connected_speech",
+      "type": "taxonomy_concept",
+      "sequence_key": "00.19"
+    },
+    {
+      "id": "concept_pronunciation_rhythm",
+      "type": "taxonomy_concept",
+      "sequence_key": "00.20"
+    },
+    {
+      "id": "concept_pronunciation_intonation",
+      "type": "taxonomy_concept",
+      "sequence_key": "00.21"
+    },
+    {
+      "id": "concept_collocation_make_decision",
+      "type": "taxonomy_concept",
+      "sequence_key": "00.22"
+    },
+    {
+      "id": "concept_chunk_could_you_help",
+      "type": "taxonomy_concept",
+      "sequence_key": "00.23"
+    },
+    {
+      "id": "concept_function_request_help",
+      "type": "taxonomy_concept",
+      "sequence_key": "00.24"
+    },
+    {
+      "id": "concept_topic_personal_information",
+      "type": "taxonomy_concept",
+      "sequence_key": "00.25"
+    },
+    {
+      "id": "concept_pragmatics_polite_requests",
+      "type": "taxonomy_concept",
+      "sequence_key": "00.26"
+    },
+    {
+      "id": "concept_assessment_can_request_help",
+      "type": "taxonomy_concept",
+      "sequence_key": "00.27"
+    },
+    {
+      "id": "vocab_en_run_001",
+      "type": "vocabulary_sense",
+      "sequence_key": "00.81"
+    },
+    {
+      "id": "vocab_en_run_002",
+      "type": "vocabulary_sense",
+      "sequence_key": "00.82"
+    },
+    {
+      "id": "A1.1-U01",
+      "type": "unit",
+      "parent_id": "A1.1",
+      "sequence_key": "01"
+    },
+    {
+      "id": "A1-U01-L01",
+      "type": "lesson",
+      "parent_id": "A1.1-U01",
+      "sequence_key": "01.01"
+    },
+    {
+      "id": "A1-U01-L02",
+      "type": "lesson",
+      "parent_id": "A1.1-U01",
+      "sequence_key": "01.02"
+    },
+    {
+      "id": "A1-U01-REV",
+      "type": "review",
+      "parent_id": "A1.1-U01",
+      "sequence_key": "01.99"
+    },
+    {
+      "id": "A1.2-U02",
+      "type": "unit",
+      "parent_id": "A1.2",
+      "sequence_key": "02"
+    },
+    {
+      "id": "A1-U02-L01",
+      "type": "lesson",
+      "parent_id": "A1.2-U02",
+      "sequence_key": "02.01"
+    },
+    {
+      "id": "A1-U02-L02",
+      "type": "lesson",
+      "parent_id": "A1.2-U02",
+      "sequence_key": "02.02"
+    },
+    {
+      "id": "A1-U02-REV",
+      "type": "review",
+      "parent_id": "A1.2-U02",
+      "sequence_key": "02.99"
+    },
+    {
+      "id": "A2.1-U03",
+      "type": "unit",
+      "parent_id": "A2.1",
+      "sequence_key": "03"
+    },
+    {
+      "id": "A2-U03-L01",
+      "type": "lesson",
+      "parent_id": "A2.1-U03",
+      "sequence_key": "03.01"
+    },
+    {
+      "id": "A2-U03-L02",
+      "type": "lesson",
+      "parent_id": "A2.1-U03",
+      "sequence_key": "03.02"
+    },
+    {
+      "id": "A2-U03-REV",
+      "type": "review",
+      "parent_id": "A2.1-U03",
+      "sequence_key": "03.99"
+    },
+    {
+      "id": "A2.2-U04",
+      "type": "unit",
+      "parent_id": "A2.2",
+      "sequence_key": "04"
+    },
+    {
+      "id": "A2-U04-L01",
+      "type": "lesson",
+      "parent_id": "A2.2-U04",
+      "sequence_key": "04.01"
+    },
+    {
+      "id": "A2-U04-L02",
+      "type": "lesson",
+      "parent_id": "A2.2-U04",
+      "sequence_key": "04.02"
+    },
+    {
+      "id": "A2-U04-REV",
+      "type": "review",
+      "parent_id": "A2.2-U04",
+      "sequence_key": "04.99"
+    },
+    {
+      "id": "B1.1-U05",
+      "type": "unit",
+      "parent_id": "B1.1",
+      "sequence_key": "05"
+    },
+    {
+      "id": "B1-U05-L01",
+      "type": "lesson",
+      "parent_id": "B1.1-U05",
+      "sequence_key": "05.01"
+    },
+    {
+      "id": "B1-U05-L02",
+      "type": "lesson",
+      "parent_id": "B1.1-U05",
+      "sequence_key": "05.02"
+    },
+    {
+      "id": "B1-U05-REV",
+      "type": "review",
+      "parent_id": "B1.1-U05",
+      "sequence_key": "05.99"
+    },
+    {
+      "id": "B1.2-U06",
+      "type": "unit",
+      "parent_id": "B1.2",
+      "sequence_key": "06"
+    },
+    {
+      "id": "B1-U06-L01",
+      "type": "lesson",
+      "parent_id": "B1.2-U06",
+      "sequence_key": "06.01"
+    },
+    {
+      "id": "B1-U06-L02",
+      "type": "lesson",
+      "parent_id": "B1.2-U06",
+      "sequence_key": "06.02"
+    },
+    {
+      "id": "B1-U06-REV",
+      "type": "review",
+      "parent_id": "B1.2-U06",
+      "sequence_key": "06.99"
+    },
+    {
+      "id": "B2.1-U07",
+      "type": "unit",
+      "parent_id": "B2.1",
+      "sequence_key": "07"
+    },
+    {
+      "id": "B2-U07-L01",
+      "type": "lesson",
+      "parent_id": "B2.1-U07",
+      "sequence_key": "07.01"
+    },
+    {
+      "id": "B2-U07-L02",
+      "type": "lesson",
+      "parent_id": "B2.1-U07",
+      "sequence_key": "07.02"
+    },
+    {
+      "id": "B2-U07-REV",
+      "type": "review",
+      "parent_id": "B2.1-U07",
+      "sequence_key": "07.99"
+    },
+    {
+      "id": "B2.2-U08",
+      "type": "unit",
+      "parent_id": "B2.2",
+      "sequence_key": "08"
+    },
+    {
+      "id": "B2-U08-L01",
+      "type": "lesson",
+      "parent_id": "B2.2-U08",
+      "sequence_key": "08.01"
+    },
+    {
+      "id": "B2-U08-L02",
+      "type": "lesson",
+      "parent_id": "B2.2-U08",
+      "sequence_key": "08.02"
+    },
+    {
+      "id": "B2-U08-REV",
+      "type": "review",
+      "parent_id": "B2.2-U08",
+      "sequence_key": "08.99"
+    },
+    {
+      "id": "C1.1-U09",
+      "type": "unit",
+      "parent_id": "C1.1",
+      "sequence_key": "09"
+    },
+    {
+      "id": "C1-U09-L01",
+      "type": "lesson",
+      "parent_id": "C1.1-U09",
+      "sequence_key": "09.01"
+    },
+    {
+      "id": "C1-U09-L02",
+      "type": "lesson",
+      "parent_id": "C1.1-U09",
+      "sequence_key": "09.02"
+    },
+    {
+      "id": "C1-U09-REV",
+      "type": "review",
+      "parent_id": "C1.1-U09",
+      "sequence_key": "09.99"
+    },
+    {
+      "id": "C1.2-U10",
+      "type": "unit",
+      "parent_id": "C1.2",
+      "sequence_key": "10"
+    },
+    {
+      "id": "C1-U10-L01",
+      "type": "lesson",
+      "parent_id": "C1.2-U10",
+      "sequence_key": "10.01"
+    },
+    {
+      "id": "C1-U10-L02",
+      "type": "lesson",
+      "parent_id": "C1.2-U10",
+      "sequence_key": "10.02"
+    },
+    {
+      "id": "C1-U10-REV",
+      "type": "review",
+      "parent_id": "C1.2-U10",
+      "sequence_key": "10.99"
+    },
+    {
+      "id": "C2.1-U11",
+      "type": "unit",
+      "parent_id": "C2.1",
+      "sequence_key": "11"
+    },
+    {
+      "id": "C2-U11-L01",
+      "type": "lesson",
+      "parent_id": "C2.1-U11",
+      "sequence_key": "11.01"
+    },
+    {
+      "id": "C2-U11-L02",
+      "type": "lesson",
+      "parent_id": "C2.1-U11",
+      "sequence_key": "11.02"
+    },
+    {
+      "id": "C2-U11-REV",
+      "type": "review",
+      "parent_id": "C2.1-U11",
+      "sequence_key": "11.99"
+    },
+    {
+      "id": "C2.2-U12",
+      "type": "unit",
+      "parent_id": "C2.2",
+      "sequence_key": "12"
+    },
+    {
+      "id": "C2-U12-L01",
+      "type": "lesson",
+      "parent_id": "C2.2-U12",
+      "sequence_key": "12.01"
+    },
+    {
+      "id": "C2-U12-L02",
+      "type": "lesson",
+      "parent_id": "C2.2-U12",
+      "sequence_key": "12.02"
+    },
+    {
+      "id": "C2-U12-REV",
+      "type": "review",
+      "parent_id": "C2.2-U12",
+      "sequence_key": "12.99"
+    }
+  ],
+  "edges": [
+    {
+      "from": "A1-U01-L01",
+      "to": "concept_listening",
+      "type": "introduction"
+    },
+    {
+      "from": "A1-U01-L01",
+      "to": "concept_present_simple",
+      "type": "introduction"
+    },
+    {
+      "from": "A1-U01-L01",
+      "to": "concept_pronunciation_phonemes",
+      "type": "introduction"
+    },
+    {
+      "from": "A1-U01-L01",
+      "to": "concept_reading",
+      "type": "introduction"
+    },
+    {
+      "from": "A1-U01-L01",
+      "to": "concept_speaking",
+      "type": "introduction"
+    },
+    {
+      "from": "A1-U01-L01",
+      "to": "concept_topic_personal_information",
+      "type": "introduction"
+    },
+    {
+      "from": "A1-U01-L01",
+      "to": "concept_writing",
+      "type": "introduction"
+    },
+    {
+      "from": "A1-U01-L02",
+      "to": "concept_pronunciation_minimal_pairs",
+      "type": "introduction"
+    },
+    {
+      "from": "A1-U01-L02",
+      "to": "concept_spoken_interaction",
+      "type": "introduction"
+    },
+    {
+      "from": "A1-U02-L01",
+      "to": "concept_function_request_help",
+      "type": "introduction"
+    },
+    {
+      "from": "A1-U02-L01",
+      "to": "concept_past_simple",
+      "type": "introduction"
+    },
+    {
+      "from": "A1-U02-L01",
+      "to": "concept_pronunciation_syllables",
+      "type": "introduction"
+    },
+    {
+      "from": "A1-U02-L01",
+      "to": "vocab_en_run_001",
+      "type": "introduction"
+    },
+    {
+      "from": "A2-U03-L01",
+      "to": "concept_chunk_could_you_help",
+      "type": "introduction"
+    },
+    {
+      "from": "A2-U03-L01",
+      "to": "concept_mediation",
+      "type": "introduction"
+    },
+    {
+      "from": "A2-U03-L01",
+      "to": "concept_past_continuous",
+      "type": "introduction"
+    },
+    {
+      "from": "A2-U03-L01",
+      "to": "concept_pronunciation_word_stress",
+      "type": "introduction"
+    },
+    {
+      "from": "A2-U03-L02",
+      "to": "concept_assessment_can_request_help",
+      "type": "introduction"
+    },
+    {
+      "from": "A2-U03-L02",
+      "to": "concept_pragmatics_polite_requests",
+      "type": "introduction"
+    },
+    {
+      "from": "A2-U04-L01",
+      "to": "concept_collocation_make_decision",
+      "type": "introduction"
+    },
+    {
+      "from": "A2-U04-L01",
+      "to": "concept_narrative_sequence",
+      "type": "introduction"
+    },
+    {
+      "from": "A2-U04-L01",
+      "to": "concept_pronunciation_sentence_stress",
+      "type": "introduction"
+    },
+    {
+      "from": "B1-U05-L01",
+      "to": "concept_past_perfect",
+      "type": "introduction"
+    },
+    {
+      "from": "B1-U05-L01",
+      "to": "concept_pronunciation_weak_forms",
+      "type": "introduction"
+    },
+    {
+      "from": "B1-U05-L02",
+      "to": "concept_pronunciation_linking",
+      "type": "introduction"
+    },
+    {
+      "from": "B1-U05-L02",
+      "to": "vocab_en_run_002",
+      "type": "introduction"
+    },
+    {
+      "from": "B1-U06-L01",
+      "to": "concept_pronunciation_connected_speech",
+      "type": "introduction"
+    },
+    {
+      "from": "B2-U07-L01",
+      "to": "concept_pronunciation_rhythm",
+      "type": "introduction"
+    },
+    {
+      "from": "B2-U07-L02",
+      "to": "concept_pronunciation_intonation",
+      "type": "introduction"
+    },
+    {
+      "from": "A1-U01-L01",
+      "to": "A1-U01-L02",
+      "type": "lesson_prerequisite"
+    },
+    {
+      "from": "A1-U01-L02",
+      "to": "A1-U02-L01",
+      "type": "lesson_prerequisite"
+    },
+    {
+      "from": "A1-U02-L01",
+      "to": "A1-U02-L02",
+      "type": "lesson_prerequisite"
+    },
+    {
+      "from": "A1-U02-L02",
+      "to": "A2-U03-L01",
+      "type": "lesson_prerequisite"
+    },
+    {
+      "from": "A2-U03-L01",
+      "to": "A2-U03-L02",
+      "type": "lesson_prerequisite"
+    },
+    {
+      "from": "A2-U03-L02",
+      "to": "A2-U04-L01",
+      "type": "lesson_prerequisite"
+    },
+    {
+      "from": "A2-U04-L01",
+      "to": "A2-U04-L02",
+      "type": "lesson_prerequisite"
+    },
+    {
+      "from": "A2-U04-L02",
+      "to": "B1-U05-L01",
+      "type": "lesson_prerequisite"
+    },
+    {
+      "from": "B1-U05-L01",
+      "to": "B1-U05-L02",
+      "type": "lesson_prerequisite"
+    },
+    {
+      "from": "B1-U05-L02",
+      "to": "B1-U06-L01",
+      "type": "lesson_prerequisite"
+    },
+    {
+      "from": "B1-U06-L01",
+      "to": "B1-U06-L02",
+      "type": "lesson_prerequisite"
+    },
+    {
+      "from": "B1-U06-L02",
+      "to": "B2-U07-L01",
+      "type": "lesson_prerequisite"
+    },
+    {
+      "from": "B2-U07-L01",
+      "to": "B2-U07-L02",
+      "type": "lesson_prerequisite"
+    },
+    {
+      "from": "B2-U07-L02",
+      "to": "B2-U08-L01",
+      "type": "lesson_prerequisite"
+    },
+    {
+      "from": "B2-U08-L01",
+      "to": "B2-U08-L02",
+      "type": "lesson_prerequisite"
+    },
+    {
+      "from": "B2-U08-L02",
+      "to": "C1-U09-L01",
+      "type": "lesson_prerequisite"
+    },
+    {
+      "from": "C1-U09-L01",
+      "to": "C1-U09-L02",
+      "type": "lesson_prerequisite"
+    },
+    {
+      "from": "C1-U09-L02",
+      "to": "C1-U10-L01",
+      "type": "lesson_prerequisite"
+    },
+    {
+      "from": "C1-U10-L01",
+      "to": "C1-U10-L02",
+      "type": "lesson_prerequisite"
+    },
+    {
+      "from": "C1-U10-L02",
+      "to": "C2-U11-L01",
+      "type": "lesson_prerequisite"
+    },
+    {
+      "from": "C2-U11-L01",
+      "to": "C2-U11-L02",
+      "type": "lesson_prerequisite"
+    },
+    {
+      "from": "C2-U11-L02",
+      "to": "C2-U12-L01",
+      "type": "lesson_prerequisite"
+    },
+    {
+      "from": "C2-U12-L01",
+      "to": "C2-U12-L02",
+      "type": "lesson_prerequisite"
+    },
+    {
+      "from": "concept_assessment_can_request_help",
+      "to": "concept_pragmatics_polite_requests",
+      "type": "related_non_ordering"
+    },
+    {
+      "from": "concept_chunk_could_you_help",
+      "to": "concept_function_request_help",
+      "type": "related_non_ordering"
+    },
+    {
+      "from": "concept_function_request_help",
+      "to": "concept_pragmatics_polite_requests",
+      "type": "related_non_ordering"
+    },
+    {
+      "from": "concept_listening",
+      "to": "concept_spoken_interaction",
+      "type": "related_non_ordering"
+    },
+    {
+      "from": "concept_narrative_sequence",
+      "to": "concept_past_perfect",
+      "type": "related_non_ordering"
+    },
+    {
+      "from": "concept_past_continuous",
+      "to": "concept_narrative_sequence",
+      "type": "related_non_ordering"
+    },
+    {
+      "from": "concept_past_simple",
+      "to": "concept_past_continuous",
+      "type": "related_non_ordering"
+    },
+    {
+      "from": "concept_present_simple",
+      "to": "concept_past_simple",
+      "type": "related_non_ordering"
+    },
+    {
+      "from": "concept_pronunciation_connected_speech",
+      "to": "concept_pronunciation_rhythm",
+      "type": "related_non_ordering"
+    },
+    {
+      "from": "concept_pronunciation_linking",
+      "to": "concept_pronunciation_connected_speech",
+      "type": "related_non_ordering"
+    },
+    {
+      "from": "concept_pronunciation_phonemes",
+      "to": "concept_pronunciation_minimal_pairs",
+      "type": "related_non_ordering"
+    },
+    {
+      "from": "concept_pronunciation_rhythm",
+      "to": "concept_pronunciation_intonation",
+      "type": "related_non_ordering"
+    },
+    {
+      "from": "concept_pronunciation_sentence_stress",
+      "to": "concept_pronunciation_weak_forms",
+      "type": "related_non_ordering"
+    },
+    {
+      "from": "concept_pronunciation_syllables",
+      "to": "concept_pronunciation_word_stress",
+      "type": "related_non_ordering"
+    },
+    {
+      "from": "concept_pronunciation_weak_forms",
+      "to": "concept_pronunciation_linking",
+      "type": "related_non_ordering"
+    },
+    {
+      "from": "concept_pronunciation_word_stress",
+      "to": "concept_pronunciation_sentence_stress",
+      "type": "related_non_ordering"
+    },
+    {
+      "from": "concept_reading",
+      "to": "concept_mediation",
+      "type": "related_non_ordering"
+    },
+    {
+      "from": "concept_speaking",
+      "to": "concept_spoken_interaction",
+      "type": "related_non_ordering"
+    },
+    {
+      "from": "concept_writing",
+      "to": "concept_mediation",
+      "type": "related_non_ordering"
+    },
+    {
+      "from": "A1-U01-L01",
+      "to": "A1-U01-L02",
+      "type": "review"
+    },
+    {
+      "from": "A1-U01-L01",
+      "to": "A1-U01-REV",
+      "type": "review"
+    },
+    {
+      "from": "A1-U01-L02",
+      "to": "A1-U01-REV",
+      "type": "review"
+    },
+    {
+      "from": "A1-U02-L01",
+      "to": "A1-U02-L02",
+      "type": "review"
+    },
+    {
+      "from": "A1-U02-L01",
+      "to": "A1-U02-REV",
+      "type": "review"
+    },
+    {
+      "from": "A1-U02-L02",
+      "to": "A1-U02-REV",
+      "type": "review"
+    },
+    {
+      "from": "A2-U03-L01",
+      "to": "A2-U03-L02",
+      "type": "review"
+    },
+    {
+      "from": "A2-U03-L01",
+      "to": "A2-U03-REV",
+      "type": "review"
+    },
+    {
+      "from": "A2-U03-L02",
+      "to": "A2-U03-REV",
+      "type": "review"
+    },
+    {
+      "from": "A2-U04-L01",
+      "to": "A2-U04-L02",
+      "type": "review"
+    },
+    {
+      "from": "A2-U04-L01",
+      "to": "A2-U04-REV",
+      "type": "review"
+    },
+    {
+      "from": "A2-U04-L02",
+      "to": "A2-U04-REV",
+      "type": "review"
+    },
+    {
+      "from": "B1-U05-L01",
+      "to": "B1-U05-L02",
+      "type": "review"
+    },
+    {
+      "from": "B1-U05-L01",
+      "to": "B1-U05-REV",
+      "type": "review"
+    },
+    {
+      "from": "B1-U05-L02",
+      "to": "B1-U05-REV",
+      "type": "review"
+    },
+    {
+      "from": "B1-U06-L01",
+      "to": "B1-U06-L02",
+      "type": "review"
+    },
+    {
+      "from": "B1-U06-L01",
+      "to": "B1-U06-REV",
+      "type": "review"
+    },
+    {
+      "from": "B1-U06-L02",
+      "to": "B1-U06-REV",
+      "type": "review"
+    },
+    {
+      "from": "B2-U07-L01",
+      "to": "B2-U07-L02",
+      "type": "review"
+    },
+    {
+      "from": "B2-U07-L01",
+      "to": "B2-U07-REV",
+      "type": "review"
+    },
+    {
+      "from": "B2-U07-L02",
+      "to": "B2-U07-REV",
+      "type": "review"
+    },
+    {
+      "from": "B2-U08-L01",
+      "to": "B2-U08-L02",
+      "type": "review"
+    },
+    {
+      "from": "B2-U08-L01",
+      "to": "B2-U08-REV",
+      "type": "review"
+    },
+    {
+      "from": "B2-U08-L02",
+      "to": "B2-U08-REV",
+      "type": "review"
+    },
+    {
+      "from": "C1-U09-L01",
+      "to": "C1-U09-L02",
+      "type": "review"
+    },
+    {
+      "from": "C1-U09-L01",
+      "to": "C1-U09-REV",
+      "type": "review"
+    },
+    {
+      "from": "C1-U09-L02",
+      "to": "C1-U09-REV",
+      "type": "review"
+    },
+    {
+      "from": "C1-U10-L01",
+      "to": "C1-U10-L02",
+      "type": "review"
+    },
+    {
+      "from": "C1-U10-L01",
+      "to": "C1-U10-REV",
+      "type": "review"
+    },
+    {
+      "from": "C1-U10-L02",
+      "to": "C1-U10-REV",
+      "type": "review"
+    },
+    {
+      "from": "C2-U11-L01",
+      "to": "C2-U11-L02",
+      "type": "review"
+    },
+    {
+      "from": "C2-U11-L01",
+      "to": "C2-U11-REV",
+      "type": "review"
+    },
+    {
+      "from": "C2-U11-L02",
+      "to": "C2-U11-REV",
+      "type": "review"
+    },
+    {
+      "from": "C2-U12-L01",
+      "to": "C2-U12-L02",
+      "type": "review"
+    },
+    {
+      "from": "C2-U12-L01",
+      "to": "C2-U12-REV",
+      "type": "review"
+    },
+    {
+      "from": "C2-U12-L02",
+      "to": "C2-U12-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_assessment_can_request_help",
+      "to": "A2-U03-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_assessment_can_request_help",
+      "to": "B2-U08-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_assessment_can_request_help",
+      "to": "C1-U09-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_assessment_can_request_help",
+      "to": "C1-U10-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_assessment_can_request_help",
+      "to": "C2-U11-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_assessment_can_request_help",
+      "to": "C2-U12-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_chunk_could_you_help",
+      "to": "A2-U03-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_collocation_make_decision",
+      "to": "A2-U04-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_function_request_help",
+      "to": "A1-U02-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_function_request_help",
+      "to": "A2-U03-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_function_request_help",
+      "to": "A2-U04-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_function_request_help",
+      "to": "B1-U06-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_function_request_help",
+      "to": "B2-U08-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_function_request_help",
+      "to": "C1-U09-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_function_request_help",
+      "to": "C1-U10-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_function_request_help",
+      "to": "C2-U11-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_function_request_help",
+      "to": "C2-U12-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_listening",
+      "to": "A1-U01-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_mediation",
+      "to": "A2-U03-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_narrative_sequence",
+      "to": "A2-U04-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_narrative_sequence",
+      "to": "B1-U05-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_narrative_sequence",
+      "to": "B1-U06-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_narrative_sequence",
+      "to": "B2-U08-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_narrative_sequence",
+      "to": "C1-U09-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_narrative_sequence",
+      "to": "C1-U10-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_narrative_sequence",
+      "to": "C2-U11-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_narrative_sequence",
+      "to": "C2-U12-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_past_continuous",
+      "to": "A2-U03-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_past_continuous",
+      "to": "A2-U04-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_past_perfect",
+      "to": "B1-U05-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_past_perfect",
+      "to": "B1-U06-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_past_perfect",
+      "to": "B2-U08-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_past_perfect",
+      "to": "C1-U09-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_past_perfect",
+      "to": "C1-U10-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_past_perfect",
+      "to": "C2-U11-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_past_perfect",
+      "to": "C2-U12-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_past_simple",
+      "to": "A1-U02-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_pragmatics_polite_requests",
+      "to": "A2-U03-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_pragmatics_polite_requests",
+      "to": "B1-U06-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_pragmatics_polite_requests",
+      "to": "B2-U07-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_pragmatics_polite_requests",
+      "to": "B2-U08-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_pragmatics_polite_requests",
+      "to": "C1-U09-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_pragmatics_polite_requests",
+      "to": "C1-U10-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_pragmatics_polite_requests",
+      "to": "C2-U11-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_pragmatics_polite_requests",
+      "to": "C2-U12-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_present_simple",
+      "to": "A1-U01-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_present_simple",
+      "to": "A1-U02-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_pronunciation_connected_speech",
+      "to": "B1-U06-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_pronunciation_intonation",
+      "to": "B2-U07-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_pronunciation_intonation",
+      "to": "B2-U08-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_pronunciation_intonation",
+      "to": "C1-U09-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_pronunciation_intonation",
+      "to": "C1-U10-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_pronunciation_intonation",
+      "to": "C2-U11-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_pronunciation_intonation",
+      "to": "C2-U12-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_pronunciation_linking",
+      "to": "B1-U05-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_pronunciation_minimal_pairs",
+      "to": "A1-U01-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_pronunciation_phonemes",
+      "to": "A1-U01-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_pronunciation_rhythm",
+      "to": "B2-U07-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_pronunciation_sentence_stress",
+      "to": "A2-U04-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_pronunciation_syllables",
+      "to": "A1-U02-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_pronunciation_weak_forms",
+      "to": "B1-U05-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_pronunciation_word_stress",
+      "to": "A2-U03-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_reading",
+      "to": "A1-U01-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_speaking",
+      "to": "A1-U01-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_spoken_interaction",
+      "to": "A1-U01-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_topic_personal_information",
+      "to": "A1-U01-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_topic_personal_information",
+      "to": "A1-U02-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_writing",
+      "to": "A1-U01-REV",
+      "type": "review"
+    },
+    {
+      "from": "vocab_en_run_001",
+      "to": "A1-U02-REV",
+      "type": "review"
+    },
+    {
+      "from": "vocab_en_run_001",
+      "to": "A2-U04-REV",
+      "type": "review"
+    },
+    {
+      "from": "vocab_en_run_002",
+      "to": "B1-U05-REV",
+      "type": "review"
+    },
+    {
+      "from": "vocab_en_run_002",
+      "to": "B1-U06-REV",
+      "type": "review"
+    },
+    {
+      "from": "vocab_en_run_002",
+      "to": "B2-U08-REV",
+      "type": "review"
+    },
+    {
+      "from": "vocab_en_run_002",
+      "to": "C1-U09-REV",
+      "type": "review"
+    },
+    {
+      "from": "vocab_en_run_002",
+      "to": "C1-U10-REV",
+      "type": "review"
+    },
+    {
+      "from": "vocab_en_run_002",
+      "to": "C2-U11-REV",
+      "type": "review"
+    },
+    {
+      "from": "vocab_en_run_002",
+      "to": "C2-U12-REV",
+      "type": "review"
+    },
+    {
+      "from": "concept_function_request_help",
+      "to": "concept_assessment_can_request_help",
+      "type": "taxonomy_prerequisite"
+    },
+    {
+      "from": "concept_function_request_help",
+      "to": "concept_pragmatics_polite_requests",
+      "type": "taxonomy_prerequisite"
+    },
+    {
+      "from": "concept_listening",
+      "to": "concept_spoken_interaction",
+      "type": "taxonomy_prerequisite"
+    },
+    {
+      "from": "concept_narrative_sequence",
+      "to": "concept_past_perfect",
+      "type": "taxonomy_prerequisite"
+    },
+    {
+      "from": "concept_past_continuous",
+      "to": "concept_narrative_sequence",
+      "type": "taxonomy_prerequisite"
+    },
+    {
+      "from": "concept_past_simple",
+      "to": "concept_past_continuous",
+      "type": "taxonomy_prerequisite"
+    },
+    {
+      "from": "concept_present_simple",
+      "to": "concept_past_simple",
+      "type": "taxonomy_prerequisite"
+    },
+    {
+      "from": "concept_present_simple",
+      "to": "vocab_en_run_001",
+      "type": "taxonomy_prerequisite"
+    },
+    {
+      "from": "concept_present_simple",
+      "to": "vocab_en_run_002",
+      "type": "taxonomy_prerequisite"
+    },
+    {
+      "from": "concept_pronunciation_connected_speech",
+      "to": "concept_pronunciation_rhythm",
+      "type": "taxonomy_prerequisite"
+    },
+    {
+      "from": "concept_pronunciation_linking",
+      "to": "concept_pronunciation_connected_speech",
+      "type": "taxonomy_prerequisite"
+    },
+    {
+      "from": "concept_pronunciation_phonemes",
+      "to": "concept_pronunciation_minimal_pairs",
+      "type": "taxonomy_prerequisite"
+    },
+    {
+      "from": "concept_pronunciation_phonemes",
+      "to": "concept_pronunciation_syllables",
+      "type": "taxonomy_prerequisite"
+    },
+    {
+      "from": "concept_pronunciation_rhythm",
+      "to": "concept_pronunciation_intonation",
+      "type": "taxonomy_prerequisite"
+    },
+    {
+      "from": "concept_pronunciation_sentence_stress",
+      "to": "concept_pronunciation_weak_forms",
+      "type": "taxonomy_prerequisite"
+    },
+    {
+      "from": "concept_pronunciation_syllables",
+      "to": "concept_pronunciation_word_stress",
+      "type": "taxonomy_prerequisite"
+    },
+    {
+      "from": "concept_pronunciation_weak_forms",
+      "to": "concept_pronunciation_linking",
+      "type": "taxonomy_prerequisite"
+    },
+    {
+      "from": "concept_pronunciation_word_stress",
+      "to": "concept_pronunciation_sentence_stress",
+      "type": "taxonomy_prerequisite"
+    },
+    {
+      "from": "concept_reading",
+      "to": "concept_mediation",
+      "type": "taxonomy_prerequisite"
+    },
+    {
+      "from": "concept_speaking",
+      "to": "concept_spoken_interaction",
+      "type": "taxonomy_prerequisite"
+    },
+    {
+      "from": "concept_writing",
+      "to": "concept_mediation",
+      "type": "taxonomy_prerequisite"
+    },
+    {
+      "from": "A1.1-U01",
+      "to": "A1.2-U02",
+      "type": "unit_ordering"
+    },
+    {
+      "from": "A1.2-U02",
+      "to": "A2.1-U03",
+      "type": "unit_ordering"
+    },
+    {
+      "from": "A2.1-U03",
+      "to": "A2.2-U04",
+      "type": "unit_ordering"
+    },
+    {
+      "from": "A2.2-U04",
+      "to": "B1.1-U05",
+      "type": "unit_ordering"
+    },
+    {
+      "from": "B1.1-U05",
+      "to": "B1.2-U06",
+      "type": "unit_ordering"
+    },
+    {
+      "from": "B1.2-U06",
+      "to": "B2.1-U07",
+      "type": "unit_ordering"
+    },
+    {
+      "from": "B2.1-U07",
+      "to": "B2.2-U08",
+      "type": "unit_ordering"
+    },
+    {
+      "from": "B2.2-U08",
+      "to": "C1.1-U09",
+      "type": "unit_ordering"
+    },
+    {
+      "from": "C1.1-U09",
+      "to": "C1.2-U10",
+      "type": "unit_ordering"
+    },
+    {
+      "from": "C1.2-U10",
+      "to": "C2.1-U11",
+      "type": "unit_ordering"
+    },
+    {
+      "from": "C2.1-U11",
+      "to": "C2.2-U12",
+      "type": "unit_ordering"
+    }
+  ],
+  "topological_order": [
+    "concept_listening",
+    "concept_speaking",
+    "concept_spoken_interaction",
+    "concept_reading",
+    "concept_writing",
+    "concept_mediation",
+    "concept_present_simple",
+    "concept_past_simple",
+    "concept_past_continuous",
+    "concept_narrative_sequence",
+    "concept_past_perfect",
+    "concept_pronunciation_phonemes",
+    "concept_pronunciation_minimal_pairs",
+    "concept_pronunciation_syllables",
+    "concept_pronunciation_word_stress",
+    "concept_pronunciation_sentence_stress",
+    "concept_pronunciation_weak_forms",
+    "concept_pronunciation_linking",
+    "concept_pronunciation_connected_speech",
+    "concept_pronunciation_rhythm",
+    "concept_pronunciation_intonation",
+    "concept_collocation_make_decision",
+    "concept_chunk_could_you_help",
+    "concept_function_request_help",
+    "concept_topic_personal_information",
+    "concept_pragmatics_polite_requests",
+    "concept_assessment_can_request_help",
+    "vocab_en_run_001",
+    "vocab_en_run_002",
+    "A1.1-U01",
+    "A1-U01-L01",
+    "A1-U01-L02",
+    "A1-U01-REV",
+    "A1.2-U02",
+    "A1-U02-L01",
+    "A1-U02-L02",
+    "A1-U02-REV",
+    "A2.1-U03",
+    "A2-U03-L01",
+    "A2-U03-L02",
+    "A2-U03-REV",
+    "A2.2-U04",
+    "A2-U04-L01",
+    "A2-U04-L02",
+    "A2-U04-REV",
+    "B1.1-U05",
+    "B1-U05-L01",
+    "B1-U05-L02",
+    "B1-U05-REV",
+    "B1.2-U06",
+    "B1-U06-L01",
+    "B1-U06-L02",
+    "B1-U06-REV",
+    "B2.1-U07",
+    "B2-U07-L01",
+    "B2-U07-L02",
+    "B2-U07-REV",
+    "B2.2-U08",
+    "B2-U08-L01",
+    "B2-U08-L02",
+    "B2-U08-REV",
+    "C1.1-U09",
+    "C1-U09-L01",
+    "C1-U09-L02",
+    "C1-U09-REV",
+    "C1.2-U10",
+    "C1-U10-L01",
+    "C1-U10-L02",
+    "C1-U10-REV",
+    "C2.1-U11",
+    "C2-U11-L01",
+    "C2-U11-L02",
+    "C2-U11-REV",
+    "C2.2-U12",
+    "C2-U12-L01",
+    "C2-U12-L02",
+    "C2-U12-REV"
+  ]
+}

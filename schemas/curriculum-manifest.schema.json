@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/curriculum-manifest.schema.json",
+  "title": "English Master M5 curriculum manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "curriculum_version", "title", "framework", "subdivision_notice", "status", "authorship", "artifacts", "taxonomy_dependency", "scale_plan", "levels", "units", "lessons", "reviews"],
+  "properties": {
+    "schema_version": {"$ref": "common.schema.json#/$defs/schemaVersion"},
+    "curriculum_version": {"type": "string", "pattern": "^[0-9]{8}$"},
+    "title": {"const": "English Master"},
+    "framework": {"const": "CEFR"},
+    "subdivision_notice": {"const": "The .1 and .2 tiers are internal curriculum subdivisions, not official CEFR levels."},
+    "status": {"const": "OUTLINE_ONLY"},
+    "authorship": {
+      "type": "object", "additionalProperties": false, "required": ["content_origin", "external_content_copied"],
+      "properties": {"content_origin": {"const": "PROJECT_AUTHORED_PLANNING_RECORDS"}, "external_content_copied": {"const": false}}
+    },
+    "artifacts": {
+      "type": "object", "additionalProperties": false, "required": ["graph", "coverage", "visualization"],
+      "properties": {
+        "graph": {"const": "prerequisite_graph.json"},
+        "coverage": {"const": "coverage-roadmap.json"},
+        "visualization": {"const": "curriculum-graph.dot"}
+      }
+    },
+    "taxonomy_dependency": {
+      "type": "object", "additionalProperties": false,
+      "required": ["path", "taxonomy_version", "accepted_record_statuses", "gate_decision", "approved_for_outline_planning_only", "blocks_content_generation", "required_next_review"],
+      "properties": {
+        "path": {"const": "taxonomy/taxonomy.json"},
+        "taxonomy_version": {"type": "string", "minLength": 1},
+        "accepted_record_statuses": {"type": "array", "prefixItems": [{"const": "DRAFT"}], "items": false, "minItems": 1, "maxItems": 1},
+        "gate_decision": {"const": "CONDITIONAL_DRAFT_REFERENCE"},
+        "approved_for_outline_planning_only": {"const": true},
+        "blocks_content_generation": {"const": true},
+        "required_next_review": {"const": "INDEPENDENT_LINGUISTIC_AND_PEDAGOGICAL_REVIEW_BEFORE_M6"}
+      }
+    },
+    "scale_plan": {
+      "type": "object", "additionalProperties": false,
+      "required": ["compact_architecture_prototype", "target_units", "target_lessons", "estimated_total_hours", "precision_notice"],
+      "properties": {
+        "compact_architecture_prototype": {"const": true},
+        "target_units": {"type": "object", "additionalProperties": false, "required": ["minimum", "maximum"], "properties": {"minimum": {"type": "integer", "minimum": 100}, "maximum": {"type": "integer", "minimum": 100}}},
+        "target_lessons": {"type": "object", "additionalProperties": false, "required": ["minimum", "maximum"], "properties": {"minimum": {"type": "integer", "minimum": 500}, "maximum": {"type": "integer", "minimum": 500}}},
+        "estimated_total_hours": {"type": "object", "additionalProperties": false, "required": ["minimum", "maximum", "basis"], "properties": {"minimum": {"type": "number", "minimum": 1000}, "maximum": {"type": "number", "minimum": 1000}, "basis": {"const": "PLANNING_ESTIMATE"}}},
+        "precision_notice": {"type": "string", "minLength": 20, "maxLength": 300}
+      }
+    },
+    "levels": {"type": "array", "minItems": 6, "maxItems": 6, "items": {"$ref": "curriculum-level-tier.schema.json"}},
+    "units": {"type": "array", "minItems": 12, "items": {"$ref": "curriculum-unit.schema.json"}},
+    "lessons": {"type": "array", "minItems": 12, "items": {"$ref": "curriculum-lesson-outline.schema.json"}},
+    "reviews": {"type": "array", "minItems": 12, "items": {"$ref": "curriculum-review-node.schema.json"}}
+  }
+}

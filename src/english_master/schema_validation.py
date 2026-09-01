@@ -37,6 +37,14 @@ SCHEMA_FILENAMES: dict[str, str] = {
     "semantic-review": "semantic-review.schema.json",
     "semantic-review-queue": "semantic-review-queue.schema.json",
     "normalization-report": "normalization-report.schema.json",
+    "curriculum-manifest": "curriculum-manifest.schema.json",
+    "curriculum-level-tier": "curriculum-level-tier.schema.json",
+    "curriculum-unit": "curriculum-unit.schema.json",
+    "curriculum-lesson-outline": "curriculum-lesson-outline.schema.json",
+    "curriculum-review-node": "curriculum-review-node.schema.json",
+    "curriculum-graph": "curriculum-graph.schema.json",
+    "curriculum-coverage-roadmap": "curriculum-coverage-roadmap.schema.json",
+    "curriculum-validation-report": "curriculum-validation-report.schema.json",
 }
 
 SOURCE_PERMISSION_PATHS: dict[str, tuple[str, ...]] = {

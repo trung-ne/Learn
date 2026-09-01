@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/curriculum-coverage-roadmap.schema.json",
+  "title": "English Master M5 curriculum coverage roadmap",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "curriculum_version", "scope", "dimensions"],
+  "properties": {
+    "schema_version": {"$ref": "common.schema.json#/$defs/schemaVersion"},
+    "curriculum_version": {"type": "string", "pattern": "^[0-9]{8}$"},
+    "scope": {"const": "COMPACT_M5_ARCHITECTURE_ROADMAP"},
+    "dimensions": {
+      "type": "array", "minItems": 16, "maxItems": 16,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["dimension", "introduced_at", "developed_at", "reviewed_at", "coverage_status", "confidence", "note"],
+        "properties": {
+          "dimension": {"enum": ["listening", "speaking", "spoken_interaction", "reading", "writing", "mediation", "grammar", "vocabulary_senses", "collocations", "lexical_chunks", "pronunciation", "communicative_functions", "topics", "discourse", "pragmatics", "assessment_capabilities"]},
+          "introduced_at": {"$ref": "curriculum-common.schema.json#/$defs/lessonId"},
+          "developed_at": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "curriculum-common.schema.json#/$defs/lessonId"}},
+          "reviewed_at": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "curriculum-common.schema.json#/$defs/reviewId"}},
+          "coverage_status": {"const": "PLANNED"},
+          "confidence": {"enum": ["LOW", "MEDIUM", "HIGH"]},
+          "note": {"type": "string", "minLength": 10, "maxLength": 300, "pattern": "^[^\\r\\n<>`]+$"}
+        }
+      }
+    }
+  }
+}

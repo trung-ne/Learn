@@ -68,6 +68,26 @@ python -m english_master.schema_validation --schema coverage-matrix curriculum/t
 
 ---
 
+## M5 Curriculum Architecture Collections
+
+M5 uses separate outline-only schemas rather than the full lesson schema defined below. The aggregate `curriculum/structure.json` contains six official CEFR bands, all twelve ordered internal tiers, globally numbered units, lesson outlines, and review nodes. Global numbering is required because lesson IDs omit `.1` and `.2`: `A1.1-U01` produces `A1-U01-L01`, while `A1.2-U02` produces `A1-U02-L01`.
+
+The authoritative companion records are `curriculum/prerequisite_graph.json` and `curriculum/coverage-roadmap.json`. Ordering edges (`lesson_prerequisite`, `unit_ordering`, and `taxonomy_prerequisite`) are distinct from introduction, review, and related/non-ordering edges. Coverage records identify introduction, development, and review placements for all sixteen required dimensions.
+
+All current M2 records remain `DRAFT`. M5 references them only under the manifest's explicit conditional review gate for outline planning; the gate blocks content generation and requires independent linguistic and pedagogical review before M6. It does not approve the taxonomy.
+
+The compact M5 artifact demonstrates the complete hierarchy and validation contract. Its target unit, lesson, and hour ranges are planning estimates for later expansion, not generated content or unsupported precise attainment claims.
+
+Validate all linked collections offline:
+
+```bash
+python -m english_master.curriculum_validate curriculum/structure.json
+```
+
+See [docs/CURRICULUM_ARCHITECTURE.md](CURRICULUM_ARCHITECTURE.md) for identifier, graph, governance, coverage, and CLI details.
+
+---
+
 ## Core Models
 
 ### Skill

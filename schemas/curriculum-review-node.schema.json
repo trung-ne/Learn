@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/curriculum-review-node.schema.json",
+  "title": "English Master M5 review node",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "title", "unit_id", "cefr", "sequence_after", "review_lessons", "review_concepts", "review_vocabulary", "review_skills", "unresolved_review_targets", "status"],
+  "properties": {
+    "id": {"$ref": "curriculum-common.schema.json#/$defs/reviewId"},
+    "title": {"$ref": "curriculum-common.schema.json#/$defs/outlineText"},
+    "unit_id": {"$ref": "curriculum-common.schema.json#/$defs/unitId"},
+    "cefr": {"$ref": "curriculum-common.schema.json#/$defs/internalTier"},
+    "sequence_after": {"$ref": "curriculum-common.schema.json#/$defs/lessonId"},
+    "review_lessons": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "curriculum-common.schema.json#/$defs/lessonId"}},
+    "review_concepts": {"$ref": "curriculum-common.schema.json#/$defs/uniqueConceptIds"},
+    "review_vocabulary": {"$ref": "curriculum-common.schema.json#/$defs/uniqueVocabularyIds"},
+    "review_skills": {"$ref": "curriculum-common.schema.json#/$defs/skills"},
+    "unresolved_review_targets": {"type": "array", "maxItems": 0},
+    "status": {"$ref": "curriculum-common.schema.json#/$defs/outlineStatus"}
+  }
+}

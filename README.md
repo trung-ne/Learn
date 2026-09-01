@@ -2,7 +2,7 @@
 
 English Master is a reproducible, self-study English learning-system pipeline for CEFR A1 through C2. Its primary learners are Vietnamese learners of English.
 
-## Current scope: M0 through M4
+## Current scope: M0 through M5
 
 The completed foundation provides:
 
@@ -13,9 +13,11 @@ The completed foundation provides:
 - A representative concept DAG, sense-aware vocabulary model, Vietnamese learner annotation layer, and broad confidence-marked CEFR coverage matrix.
 - A typed adapter registry and failure-safe ingestion pipeline with one bounded offline `src_tatoeba_text` adapter.
 - A deterministic post-ingestion normalization pipeline with dual hashes, exact groups, bounded character n-gram candidates, and an explicit semantic review queue.
+- A compact A1.1-C2.2 curriculum architecture with globally numbered units, outline-only lessons, review nodes, typed dependency edges, and machine-readable dimension coverage.
+- An offline curriculum validator that reuses the schema engine and enforces hierarchy, taxonomy-review gates, references, ordering, DAG, review, coverage, and reproducibility rules.
 - Data-lifecycle directory scaffolding and Git protections.
 
-M3 is ingestion infrastructure, not a corpus project. M4 adds deterministic normalization and review-oriented deduplication only. Neither stage crawls websites, bulk-downloads data or media, classifies records by CEFR, computes frequency, generates a curriculum, or generates lessons or exercises. The committed ingestion fixture sentences are invented and explicitly used only to test the documented Tatoeba-shaped input path.
+M3 is ingestion infrastructure, not a corpus project. M4 adds deterministic normalization and review-oriented deduplication only. M5 adds architecture and dependency planning only. These stages do not crawl websites, bulk-download data or media, classify records by CEFR, or generate full lessons, exercises, assessments, or AI prompts. The committed ingestion fixture sentences are invented and explicitly used only to test the documented Tatoeba-shaped input path. M5 references the DRAFT M2 taxonomy under an explicit outline-only gate that blocks M6 generation pending independent review.
 
 ## Requirements
 
@@ -129,15 +131,34 @@ python -m english_master.normalize \
 
 M4 preserves source text and provenance, emits separate raw and normalized SHA-256 hashes, creates exact duplicate groups, and sends bounded same-language n-gram candidates to review. See [docs/NORMALIZATION.md](docs/NORMALIZATION.md) for policies, safeguards, output layout, and the M3 source-hash verification limitation.
 
+## Validate the M5 curriculum architecture
+
+Validate the structure, explicit graph, coverage roadmap, and referenced taxonomy together without network access:
+
+```bash
+python -m english_master.curriculum_validate curriculum/structure.json
+```
+
+To regenerate the committed deterministic report:
+
+```bash
+python -m english_master.curriculum_validate curriculum/structure.json \
+  --report curriculum/validation-report.json
+```
+
+M5 contains a compact outline-only architecture: 12 globally numbered representative units, 24 lesson outlines, and 12 review nodes across all internal tiers. The 1,000-1,200 hour scale range is an expansion estimate, not completed content. DRAFT taxonomy dependencies are allowed only for outline planning and explicitly block M6 until independent review. See [docs/CURRICULUM_ARCHITECTURE.md](docs/CURRICULUM_ARCHITECTURE.md).
+
 ## Layout
 
 - `schemas/` — authoritative Draft 2020-12 JSON Schemas.
-- `src/english_master/` — typed validation, ingestion, normalization, and deduplication utilities.
+- `src/english_master/` — typed validation, ingestion, normalization, deduplication, and M5 curriculum-graph utilities.
 - `tests/fixtures/` — small, invented validation and offline ingestion examples; taxonomy tests use the authored prototype.
 - `sources/` — M1 registry metadata, official evidence summary, and source-operation policy; no source payloads.
 - `data/raw/`, `data/normalized/`, `data/quarantine/` — local M3 run payloads and audit records, ignored by Git except scaffolding.
 - `data/deduplicated/`, `data/reports/` — local M4 derived runs and reports, ignored by Git.
 - `data/approved/` — reserved for later approved/classified data; M3 does not populate it.
-- `curriculum/taxonomy/` — M2 representative taxonomy and broad coverage matrix; not a generated curriculum.
+- `curriculum/taxonomy/` — M2 representative taxonomy and broad coverage matrix.
+- `curriculum/structure.json`, `curriculum/prerequisite_graph.json`, `curriculum/coverage-roadmap.json` — M5 outline-only architecture, graph, and coverage artifacts.
+- `curriculum/curriculum-graph.dot` — deterministic compact graph view; JSON remains authoritative.
 
 See `docs/` for architecture, data policy, curriculum models, QA policy, and milestone definitions.

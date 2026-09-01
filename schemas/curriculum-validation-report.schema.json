@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/curriculum-validation-report.schema.json",
+  "title": "English Master M5 curriculum validation report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "curriculum_version", "status", "validated_artifacts", "counts", "issues", "topological_order"],
+  "properties": {
+    "schema_version": {"$ref": "common.schema.json#/$defs/schemaVersion"},
+    "curriculum_version": {"type": "string", "pattern": "^[0-9]{8}$"},
+    "status": {"enum": ["VALID", "INVALID"]},
+    "validated_artifacts": {"type": "array", "minItems": 4, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "counts": {
+      "type": "object", "additionalProperties": false, "required": ["levels", "tiers", "units", "lessons", "reviews", "graph_nodes", "graph_edges", "coverage_dimensions"],
+      "properties": {
+        "levels": {"type": "integer", "minimum": 0}, "tiers": {"type": "integer", "minimum": 0}, "units": {"type": "integer", "minimum": 0}, "lessons": {"type": "integer", "minimum": 0}, "reviews": {"type": "integer", "minimum": 0}, "graph_nodes": {"type": "integer", "minimum": 0}, "graph_edges": {"type": "integer", "minimum": 0}, "coverage_dimensions": {"type": "integer", "minimum": 0}
+      }
+    },
+    "issues": {
+      "type": "array",
+      "items": {"type": "object", "additionalProperties": false, "required": ["code", "path", "message"], "properties": {"code": {"type": "string", "pattern": "^[A-Z][A-Z0-9_]+$"}, "path": {"type": "string", "minLength": 1}, "message": {"type": "string", "minLength": 1}}}
+    },
+    "topological_order": {"type": "array", "uniqueItems": true, "items": {"$ref": "curriculum-common.schema.json#/$defs/curriculumNodeId"}}
+  }
+}
