@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/duplicate-group.schema.json",
+  "title": "English Master M4 exact duplicate group",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "id", "canonical_record_id", "member_record_ids", "source_ids", "source_record_ids", "raw_hashes", "normalized_hashes", "member_locations", "deduplication_reason", "deduplication_policy_version", "disposition"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "duplicate_group"},
+    "id": {"type": "string", "pattern": "^dup_[a-f0-9]{20}$"},
+    "canonical_record_id": {"$ref": "#/$defs/recordId"},
+    "member_record_ids": {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"$ref": "#/$defs/recordId"}},
+    "source_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "source_record_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "raw_hashes": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "https://english-master.local/schemas/common.schema.json#/$defs/sha256"}},
+    "normalized_hashes": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "https://english-master.local/schemas/common.schema.json#/$defs/sha256"}},
+    "member_locations": {
+      "type": "array", "minItems": 2,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["record_id", "location", "first_seen"],
+        "properties": {
+          "record_id": {"$ref": "#/$defs/recordId"},
+          "location": {"type": "string", "minLength": 1},
+          "first_seen": {"type": "boolean"}
+        }
+      }
+    },
+    "deduplication_reason": {"enum": ["RAW_HASH", "NORMALIZED_HASH"]},
+    "deduplication_policy_version": {"type": "string", "minLength": 1},
+    "disposition": {"const": "DUPLICATE"}
+  },
+  "$defs": {"recordId": {"type": "string", "pattern": "^norm_[a-f0-9]{20}$"}}
+}

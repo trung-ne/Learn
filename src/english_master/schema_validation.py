@@ -31,6 +31,12 @@ SCHEMA_FILENAMES: dict[str, str] = {
     "taxonomy": "taxonomy.schema.json",
     "coverage-matrix": "coverage-matrix.schema.json",
     "normalized-text": "normalized-text.schema.json",
+    "normalization-record": "normalization-record.schema.json",
+    "duplicate-group": "duplicate-group.schema.json",
+    "similarity-candidate": "similarity-candidate.schema.json",
+    "semantic-review": "semantic-review.schema.json",
+    "semantic-review-queue": "semantic-review-queue.schema.json",
+    "normalization-report": "normalization-report.schema.json",
 }
 
 SOURCE_PERMISSION_PATHS: dict[str, tuple[str, ...]] = {

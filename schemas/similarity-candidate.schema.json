@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/similarity-candidate.schema.json",
+  "title": "English Master M4 explainable near-duplicate candidate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "id", "left_record_id", "right_record_id", "language", "method", "score", "threshold", "evidence", "policy_version", "disposition"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "similarity_candidate"},
+    "id": {"type": "string", "pattern": "^sim_[a-f0-9]{20}$"},
+    "left_record_id": {"$ref": "#/$defs/recordId"},
+    "right_record_id": {"$ref": "#/$defs/recordId"},
+    "language": {"type": ["string", "null"]},
+    "method": {"const": "character_ngram_jaccard"},
+    "score": {"type": "number", "minimum": 0, "maximum": 1},
+    "threshold": {"type": "number", "minimum": 0, "maximum": 1},
+    "evidence": {
+      "type": "object", "additionalProperties": false,
+      "required": ["ngram_size", "intersection_count", "union_count", "matched_ngram_sample", "short_text_safeguard_passed"],
+      "properties": {
+        "ngram_size": {"type": "integer", "minimum": 2, "maximum": 8},
+        "intersection_count": {"type": "integer", "minimum": 1},
+        "union_count": {"type": "integer", "minimum": 1},
+        "matched_ngram_sample": {"type": "array", "maxItems": 10, "items": {"type": "string", "minLength": 1}},
+        "short_text_safeguard_passed": {"const": true}
+      }
+    },
+    "policy_version": {"type": "string", "minLength": 1},
+    "disposition": {"const": "REVIEW_REQUIRED"}
+  },
+  "$defs": {"recordId": {"type": "string", "pattern": "^norm_[a-f0-9]{20}$"}}
+}

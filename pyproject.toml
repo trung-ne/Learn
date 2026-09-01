@@ -21,6 +21,7 @@ dev = [
 [project.scripts]
 english-master-validate = "english_master.schema_validation:main"
 english-master-ingest = "english_master.ingest:main"
+english-master-normalize = "english_master.normalize:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

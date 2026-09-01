@@ -55,6 +55,10 @@
       "type": "string",
       "pattern": "^src_[a-z0-9]+(?:_[a-z0-9]+)*$"
     },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
     "generationMetadata": {
       "type": "object",
       "additionalProperties": false,

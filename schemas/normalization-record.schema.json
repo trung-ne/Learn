@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/normalization-record.schema.json",
+  "title": "English Master M4 normalized comparison record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "id", "m3_record_id", "m3_ingestion_version", "source_id", "source_record_id", "language", "original_text", "display_text", "comparison_text", "original_raw_location", "raw_hash", "normalized_hash", "source_content_hash", "source_content_hash_verification", "normalization_policy", "deduplication_policy_version", "processed_at", "provenance", "disposition"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "normalized_comparison_record"},
+    "id": {"type": "string", "pattern": "^norm_[a-f0-9]{20}$"},
+    "m3_record_id": {"type": "string", "pattern": "^text_src_[a-z0-9]+(?:_[a-z0-9]+)*_[a-f0-9]{16}$"},
+    "m3_ingestion_version": {"type": "string", "minLength": 1},
+    "source_id": {"type": "string", "minLength": 1},
+    "source_record_id": {"type": "string", "minLength": 1},
+    "language": {"type": "string", "pattern": "^[a-z]{2,3}(?:-[A-Za-z0-9]{2,8})*$"},
+    "original_text": {"type": "string", "minLength": 1},
+    "display_text": {"type": "string", "minLength": 1},
+    "comparison_text": {"type": "string", "minLength": 1},
+    "original_raw_location": {"type": "string", "minLength": 1},
+    "raw_hash": {"$ref": "https://english-master.local/schemas/common.schema.json#/$defs/sha256"},
+    "normalized_hash": {"$ref": "https://english-master.local/schemas/common.schema.json#/$defs/sha256"},
+    "source_content_hash": {"$ref": "https://english-master.local/schemas/common.schema.json#/$defs/sha256"},
+    "source_content_hash_verification": {
+      "type": "object", "additionalProperties": false,
+      "required": ["status", "reason"],
+      "properties": {
+        "status": {"enum": ["VERIFIED", "MISMATCH", "NOT_VERIFIABLE_FROM_M3_RECORD"]},
+        "reason": {"type": "string", "minLength": 1}
+      }
+    },
+    "normalization_policy": {"$ref": "#/$defs/normalizationPolicy"},
+    "deduplication_policy_version": {"type": "string", "minLength": 1},
+    "processed_at": {"type": "string", "format": "date-time"},
+    "provenance": {"$ref": "https://english-master.local/schemas/common.schema.json#/$defs/provenance"},
+    "disposition": {"enum": ["ACCEPTED", "DUPLICATE", "REVIEW_REQUIRED"]}
+  },
+  "$defs": {
+    "normalizationPolicy": {
+      "type": "object", "additionalProperties": false,
+      "required": ["version", "unicode_form", "collapse_whitespace", "casefold", "punctuation"],
+      "properties": {
+        "version": {"const": "text-nfc-casefold-v1"},
+        "unicode_form": {"const": "NFC"},
+        "collapse_whitespace": {"const": true},
+        "casefold": {"const": true},
+        "punctuation": {"const": "space"}
+      }
+    }
+  }
+}

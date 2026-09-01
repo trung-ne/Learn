@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/semantic-review-queue.schema.json",
+  "title": "English Master M4 semantic review queue",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "id", "candidate_ids", "status"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "semantic_review_queue"},
+    "id": {"type": "string", "pattern": "^queue_[a-f0-9]{20}$"},
+    "candidate_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string", "pattern": "^sim_[a-f0-9]{20}$"}},
+    "status": {"enum": ["EMPTY", "REVIEW_REQUIRED"]}
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/semantic-review.schema.json",
+  "title": "English Master M4 semantic review decision",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "id", "candidate_id", "disposition", "relationship", "reviewer", "reviewed_at", "reason", "evidence", "decision_method"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "semantic_review_decision"},
+    "id": {"type": "string", "pattern": "^review_[a-f0-9]{20}$"},
+    "candidate_id": {"type": "string", "pattern": "^sim_[a-f0-9]{20}$"},
+    "disposition": {"enum": ["DUPLICATE", "NOT_DUPLICATE", "RELATED_NOT_DUPLICATE"]},
+    "relationship": {"enum": ["PARAPHRASE", "TRANSLATION", "OTHER"]},
+    "reviewer": {"type": "string", "minLength": 1},
+    "reviewed_at": {"type": "string", "format": "date-time"},
+    "reason": {"type": "string", "minLength": 1},
+    "evidence": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+    "decision_method": {"const": "HUMAN_REVIEW"}
+  }
+}

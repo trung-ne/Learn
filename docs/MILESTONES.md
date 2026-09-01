@@ -183,41 +183,47 @@ Do NOT generate curriculum yet.
 
 ---
 
-## M4 — Linguistic Analysis & CEFR Classification
+## M4 — Normalization and Deduplication
 
-**Estimated Duration**: ~2-3 weeks
+**Status**: Complete (verified 2026-08-31)
 
-**Owner**: AI Agent + Linguist
+**Owner**: AI Agent
 
 ### Scope
 
-Classify ingested content by CEFR level.
+Build a deterministic post-ingestion stage for strict M3 normalized records:
 
-1. Analyze vocabulary frequency
-2. Analyze word properties (morphology, polysemy)
-3. Analyze grammar structures
-4. Propose CEFR classifications
-5. Manual review and refinement
-6. Confidence scoring
+1. Preserve source text and provenance
+2. Create conservative display and lossy comparison representations
+3. Calculate separate canonical raw and normalized SHA-256 hashes
+4. Detect exact raw and normalized-text duplicate groups
+5. Generate bounded, explainable character n-gram candidates
+6. Route candidates to explicit human semantic review
+
+Do NOT classify CEFR content, add embeddings or a vector database, or generate curriculum.
 
 ### Deliverables
 
-1. Python analyzer: frequency analysis, linguistic features
-2. CEFR classifier model (heuristics + manual rules)
-3. Classification report for each source
-4. Manual review assignments
-5. Confidence scores for classifications
-6. data/approved/ with CEFR-labeled content
-7. Tests for classifier
+1. Typed `english_master.normalization` package with separated models, text, hash, exact, near, semantic, storage, and pipeline responsibilities
+2. Strict schemas for derived records, groups, candidates, review queues/decisions, and reports
+3. Offline `python -m english_master.normalize` CLI
+4. Atomic, idempotent run storage with no-overwrite behavior
+5. Documented normalization, hash, candidate, review, and M3 provenance-verification policies
+6. Offline success and failure tests
 
 ### Acceptance Criteria
 
-- [ ] Vocabulary is frequency-ranked
-- [ ] CEFR classifications exist for majority content
-- [ ] High-confidence classifications (>0.8) exceed 70%
-- [ ] Manual review completed for low-confidence items
-- [ ] Classifications are auditable
-- [ ] Tests show classifier behavior
+- [x] Normalization is deterministic, Unicode-safe, and idempotent
+- [x] Original text, complete provenance, attribution, raw hash, and normalized hash are retained
+- [x] Exact raw and normalized-text groups are deterministic
+- [x] Inconsistent source identity metadata fails closed
+- [x] Near matching uses bounded, same-language character n-gram candidates with evidence
+- [x] Short texts and translations have explicit safeguards
+- [x] Semantic decisions require a human reviewer and supported disposition
+- [x] Derived schemas and cross-record references are validated before publication
+- [x] Reruns are idempotent and conflicting/incomplete outputs are rejected
+- [x] CLI and tests run offline
+- [x] No embeddings, vector database, CEFR classification, or M5 work was added
 
 ### Next: M5
 

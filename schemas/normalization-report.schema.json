@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/normalization-report.schema.json",
+  "title": "English Master M4 normalization run report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "run_id", "run_hash", "processed_at", "source_ids", "input", "normalization_policy", "deduplication_policy", "near_duplicate_policy", "counts", "outcome", "output_paths", "output_content_hash"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "normalization_run_report"},
+    "run_id": {"type": "string", "pattern": "^normrun_[a-f0-9]{20}$"},
+    "run_hash": {"$ref": "https://english-master.local/schemas/common.schema.json#/$defs/sha256"},
+    "processed_at": {"type": "string", "format": "date-time"},
+    "source_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "input": {
+      "type": "object", "additionalProperties": false, "required": ["path", "max_records"],
+      "properties": {"path": {"type": "string", "minLength": 1}, "max_records": {"type": "integer", "minimum": 1, "maximum": 100000}}
+    },
+    "normalization_policy": {"$ref": "https://english-master.local/schemas/normalization-record.schema.json#/$defs/normalizationPolicy"},
+    "deduplication_policy": {
+      "type": "object", "additionalProperties": false, "required": ["version", "exact_methods"],
+      "properties": {
+        "version": {"type": "string", "minLength": 1},
+        "exact_methods": {"type": "array", "const": ["RAW_HASH", "NORMALIZED_HASH"]}
+      }
+    },
+    "near_duplicate_policy": {
+      "type": "object", "additionalProperties": false,
+      "required": ["version", "method", "ngram_size", "threshold", "minimum_characters", "max_candidates_per_record", "same_language_only"],
+      "properties": {
+        "version": {"const": "char-ngram-jaccard-v1"},
+        "method": {"const": "character_ngram_jaccard"},
+        "ngram_size": {"type": "integer", "minimum": 2, "maximum": 8},
+        "threshold": {"type": "number", "minimum": 0, "maximum": 1},
+        "minimum_characters": {"type": "integer", "minimum": 2},
+        "max_candidates_per_record": {"type": "integer", "minimum": 1, "maximum": 10000},
+        "same_language_only": {"type": "boolean"}
+      }
+    },
+    "counts": {
+      "type": "object", "additionalProperties": false,
+      "required": ["input_records", "output_records", "exact_groups", "raw_duplicate_groups", "normalized_duplicate_groups", "near_duplicate_candidates", "review_required"],
+      "properties": {
+        "input_records": {"type": "integer", "minimum": 1},
+        "output_records": {"type": "integer", "minimum": 1},
+        "exact_groups": {"type": "integer", "minimum": 0},
+        "raw_duplicate_groups": {"type": "integer", "minimum": 0},
+        "normalized_duplicate_groups": {"type": "integer", "minimum": 0},
+        "near_duplicate_candidates": {"type": "integer", "minimum": 0},
+        "review_required": {"type": "integer", "minimum": 0}
+      }
+    },
+    "outcome": {"const": "COMPLETED"},
+    "output_paths": {
+      "type": "object", "additionalProperties": false,
+      "required": ["run", "records", "groups", "candidates", "review_queue", "report"],
+      "properties": {
+        "run": {"type": "string", "minLength": 1}, "records": {"type": "string", "minLength": 1},
+        "groups": {"type": "string", "minLength": 1}, "candidates": {"type": "string", "minLength": 1},
+        "review_queue": {"type": "string", "minLength": 1}, "report": {"type": "string", "minLength": 1}
+      }
+    },
+    "output_content_hash": {"$ref": "https://english-master.local/schemas/common.schema.json#/$defs/sha256"}
+  }
+}

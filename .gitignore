@@ -34,6 +34,10 @@ data/normalized/*
 !data/normalized/.gitkeep
 data/quarantine/*
 !data/quarantine/.gitkeep
+data/deduplicated/*
+!data/deduplicated/.gitkeep
+data/reports/*
+!data/reports/.gitkeep
 
 # Editor and operating-system files
 .vscode/
