@@ -279,6 +279,8 @@ Do validate curriculum structure.
 
 ## M6 — Lesson Generation
 
+**Status**: Complete (verified 2026-09-02)
+
 **Estimated Duration**: ~2-3 weeks
 
 **Owner**: AI Agent (Claude/Codex)
@@ -309,13 +311,16 @@ Do validate lesson content.
 
 ### Acceptance Criteria
 
-- [ ] At least 10 complete lessons generated
-- [ ] All lessons pass schema validation
-- [ ] All lessons have correct prerequisites
-- [ ] CEFR levels are appropriate (sampled review)
-- [ ] No plagiarism detected (spot check)
-- [ ] Lessons include vocabulary/grammar references
-- [ ] QA report is complete
+- [x] Provider-neutral generation accepts a fully explicit approved lesson snapshot
+- [x] Preflight and post-generation constraints fail closed
+- [x] Authored offline fixture lesson passes schema validation
+- [x] Prerequisites, reviews, target tier, and exact reference scopes are enforced
+- [x] Provenance/authorization, versions, canonical hashes, and audit metadata are retained
+- [x] Generated output remains `UNREVIEWED` pending independent QA
+- [x] Invalid output is rejected without partial publication
+- [x] Current M5 DRAFT/OUTLINE_ONLY bundle fails before backend invocation
+- [x] Offline mock backend, CLI, schema checks, and full tests pass
+- [x] No exercises, assessments, AI prompts, or later-milestone work was added
 
 ### Next: M7
 

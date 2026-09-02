@@ -325,6 +325,10 @@ Generate → Schema Validate → CEFR Check → Prerequisite Check →
 
 ---
 
+### M6 generation gate
+
+M6 performs a fail-closed generation validation pass, not approval. Before any backend call it validates the approved authorization snapshot, deterministic request identity, graph and prerequisite order, CEFR ceiling, exact allowed/reference types, previous knowledge, provenance permissions, bounds, and later-milestone exclusions. After generation it reports every schema, identity, scope, metadata, size, forbidden-content, and M7-plus leakage violation deterministically. Only a candidate with no issues is atomically published, and it remains `UNREVIEWED`. Rejected candidates and reasons may be retained in a separate immutable rejection record; they are never published as lessons.
+
 ## Content Review Status Levels
 
 These statuses apply to generated content; they are distinct from source disposition statuses.

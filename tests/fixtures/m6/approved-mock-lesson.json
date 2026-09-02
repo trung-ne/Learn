@@ -1,0 +1,66 @@
+{
+  "cefr_level": "A1.1",
+  "communicative_functions": [
+    "func_greet_someone"
+  ],
+  "content_sections": [
+    {
+      "body_text": "Use I for yourself and you for the other person. Example: I am Lan. You are Minh.",
+      "embedded_examples": [
+        "concept_subject_pronouns"
+      ],
+      "id": "section_grammar",
+      "section_type": "grammar",
+      "title": "I and you"
+    },
+    {
+      "body_text": "Say Hello. Then say: My name is Lan. Listen for the /h/ sound at the start of hello.",
+      "embedded_examples": [
+        "concept_pronunciation_initial_h",
+        "vocab_en_hello_001",
+        "vocab_en_name_001"
+      ],
+      "id": "section_vocabulary",
+      "section_type": "vocabulary",
+      "title": "Hello and name"
+    }
+  ],
+  "duration_minutes": 35,
+  "exercises": [],
+  "functions_introduced": [
+    "func_greet_someone"
+  ],
+  "functions_reviewed": [],
+  "generation_metadata": {
+    "curriculum_version": "20260902-m6-fixture",
+    "generated_at": "2026-09-02T09:30:00Z",
+    "generator": "english_master.lesson_generation",
+    "generator_version": "1.0",
+    "model": "authored-fixture-v1",
+    "prompt_version": "M6_LESSON_GENERATOR_v1",
+    "qa_notes": "Authored offline M6 fixture; independent QA still required.",
+    "qa_status": "UNREVIEWED"
+  },
+  "grammar_introduced": [
+    "concept_subject_pronouns"
+  ],
+  "grammar_reviewed": [],
+  "id": "A1-U01-L01",
+  "lesson_number": 1,
+  "objectives": [
+    "Greet someone and say your name."
+  ],
+  "prerequisites": [],
+  "pronunciation_introduced": [
+    "concept_pronunciation_initial_h"
+  ],
+  "pronunciation_reviewed": [],
+  "schema_version": "1.0",
+  "title": "Hello and names",
+  "unit_id": "A1.1-U01",
+  "vocabulary_introduced": [
+    "vocab_en_hello_001",
+    "vocab_en_name_001"
+  ],
+  "vocabulary_reviewed": []
+}

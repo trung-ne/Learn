@@ -88,6 +88,12 @@ See [docs/CURRICULUM_ARCHITECTURE.md](CURRICULUM_ARCHITECTURE.md) for identifier
 
 ---
 
+## M6 Lesson Generation Contracts
+
+M6 adds strict machine-readable contracts for `lesson-generation-authorization`, `lesson-generation-request`, `lesson-generation-audit`, and `lesson-generation-rejection`. An authorization snapshot contains only independently approved records and distinguishes grammar, vocabulary senses, communicative functions, and pronunciation. A request embeds the selected lesson specification, graph context, previous knowledge, exact allowed and forbidden sets, size bounds, pinned versions, backend parameters, and the authorization snapshot. Request and authorization identities are canonical SHA-256 values.
+
+The lesson schema remains backward compatible with M0 fixtures while accepting internal-tier unit IDs and optional explicit function/pronunciation introduction and review arrays. The M6 semantic validator requires these arrays, exact correspondence with the request, canonical ordering, bounded nonempty sections, and `exercises: []`. Audit and rejection records preserve hashes, applied constraints, validation outcomes, unresolved issues, candidate output when rejected after generation, and the non-approval QA boundary. See [LESSON_GENERATION.md](LESSON_GENERATION.md).
+
 ## Core Models
 
 ### Skill

@@ -45,6 +45,10 @@ SCHEMA_FILENAMES: dict[str, str] = {
     "curriculum-graph": "curriculum-graph.schema.json",
     "curriculum-coverage-roadmap": "curriculum-coverage-roadmap.schema.json",
     "curriculum-validation-report": "curriculum-validation-report.schema.json",
+    "lesson-generation-authorization": "lesson-generation-authorization.schema.json",
+    "lesson-generation-request": "lesson-generation-request.schema.json",
+    "lesson-generation-audit": "lesson-generation-audit.schema.json",
+    "lesson-generation-rejection": "lesson-generation-rejection.schema.json",
 }
 
 SOURCE_PERMISSION_PATHS: dict[str, tuple[str, ...]] = {

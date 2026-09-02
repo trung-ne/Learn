@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/lesson-generation-request.schema.json",
+  "title": "English Master M6 lesson generation request",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "request_id", "lesson_spec", "graph", "previous_knowledge", "constraints", "authorization", "generation", "requested_outputs"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "request_id": {"type": "string", "pattern": "^req_[a-f0-9]{64}$"},
+    "lesson_spec": {"$ref": "#/$defs/lessonSpec"},
+    "graph": {"$ref": "#/$defs/graph"},
+    "previous_knowledge": {"$ref": "#/$defs/referenceSets"},
+    "constraints": {"$ref": "#/$defs/constraints"},
+    "authorization": {"$ref": "lesson-generation-authorization.schema.json"},
+    "generation": {"$ref": "#/$defs/generation"},
+    "requested_outputs": {"type": "array", "prefixItems": [{"const": "lesson"}], "items": false, "minItems": 1, "maxItems": 1}
+  },
+  "$defs": {
+    "idArray": {"type": "array", "items": {"type": "string", "pattern": "^(concept_|vocab_|func_)[a-z0-9_]+$"}, "uniqueItems": true},
+    "lessonSpec": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "title", "unit_id", "lesson_number", "cefr", "duration_minutes", "objectives", "grammar_introduced", "grammar_reviewed", "vocabulary_introduced", "vocabulary_reviewed", "functions_introduced", "functions_reviewed", "pronunciation_introduced", "pronunciation_reviewed", "prerequisites"],
+      "properties": {
+        "id": {"$ref": "common.schema.json#/$defs/lessonId"}, "title": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+        "unit_id": {"type": "string", "pattern": "^(A1|A2|B1|B2|C1|C2)(?:\\.[12])?-U[0-9]{2}$"},
+        "lesson_number": {"type": "integer", "minimum": 1}, "cefr": {"$ref": "common.schema.json#/$defs/cefrLevel"},
+        "duration_minutes": {"type": "integer", "minimum": 1, "maximum": 240},
+        "objectives": {"type": "array", "minItems": 1, "items": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "uniqueItems": true},
+        "grammar_introduced": {"$ref": "#/$defs/idArray"}, "grammar_reviewed": {"$ref": "#/$defs/idArray"},
+        "vocabulary_introduced": {"$ref": "#/$defs/idArray"}, "vocabulary_reviewed": {"$ref": "#/$defs/idArray"},
+        "functions_introduced": {"$ref": "#/$defs/idArray"}, "functions_reviewed": {"$ref": "#/$defs/idArray"},
+        "pronunciation_introduced": {"$ref": "#/$defs/idArray"}, "pronunciation_reviewed": {"$ref": "#/$defs/idArray"},
+        "prerequisites": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/lessonId"}, "uniqueItems": true}
+      }
+    },
+    "graph": {
+      "type": "object", "additionalProperties": false,
+      "required": ["lesson_order", "prerequisite_edges", "introduction_edges", "review_edges", "resolved_prerequisite_closure"],
+      "properties": {
+        "lesson_order": {"type": "array", "minItems": 1, "items": {"$ref": "common.schema.json#/$defs/lessonId"}, "uniqueItems": true},
+        "prerequisite_edges": {"$ref": "#/$defs/edges"}, "introduction_edges": {"$ref": "#/$defs/edges"}, "review_edges": {"$ref": "#/$defs/edges"},
+        "resolved_prerequisite_closure": {"$ref": "#/$defs/idArray"}
+      }
+    },
+    "edges": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["from", "to"], "properties": {"from": {"type": "string", "minLength": 1}, "to": {"type": "string", "minLength": 1}}}},
+    "referenceSets": {
+      "type": "object", "additionalProperties": false,
+      "required": ["completed_lessons", "grammar", "vocabulary", "functions", "pronunciation"],
+      "properties": {
+        "completed_lessons": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/lessonId"}, "uniqueItems": true},
+        "grammar": {"$ref": "#/$defs/idArray"}, "vocabulary": {"$ref": "#/$defs/idArray"}, "functions": {"$ref": "#/$defs/idArray"}, "pronunciation": {"$ref": "#/$defs/idArray"}
+      }
+    },
+    "constraints": {
+      "type": "object", "additionalProperties": false,
+      "required": ["target_cefr", "allowed_grammar", "allowed_vocabulary", "allowed_functions", "allowed_pronunciation", "forbidden_ids", "forbidden_terms", "max_target_vocabulary", "max_sections", "max_section_characters", "max_total_characters"],
+      "properties": {
+        "target_cefr": {"$ref": "common.schema.json#/$defs/cefrLevel"},
+        "allowed_grammar": {"$ref": "#/$defs/idArray"}, "allowed_vocabulary": {"$ref": "#/$defs/idArray"}, "allowed_functions": {"$ref": "#/$defs/idArray"}, "allowed_pronunciation": {"$ref": "#/$defs/idArray"},
+        "forbidden_ids": {"$ref": "#/$defs/idArray"}, "forbidden_terms": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "uniqueItems": true},
+        "max_target_vocabulary": {"type": "integer", "minimum": 0, "maximum": 50}, "max_sections": {"type": "integer", "minimum": 1, "maximum": 20},
+        "max_section_characters": {"type": "integer", "minimum": 1, "maximum": 20000}, "max_total_characters": {"type": "integer", "minimum": 1, "maximum": 100000}
+      }
+    },
+    "generation": {
+      "type": "object", "additionalProperties": false,
+      "required": ["generator", "generator_version", "provider", "model", "prompt_version", "curriculum_version", "taxonomy_version", "lesson_schema_version", "parameters"],
+      "properties": {
+        "generator": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "generator_version": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+        "provider": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "model": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "prompt_version": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+        "curriculum_version": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "taxonomy_version": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "lesson_schema_version": {"const": "1.0"},
+        "parameters": {"type": "object", "additionalProperties": {"type": ["string", "number", "integer", "boolean", "null"]}}, "seed": {"type": "integer"}
+      }
+    }
+  }
+}

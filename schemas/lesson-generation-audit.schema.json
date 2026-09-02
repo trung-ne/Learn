@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/lesson-generation-audit.schema.json",
+  "title": "English Master M6 lesson generation audit report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "request_id", "lesson_id", "status", "input_hashes", "versions", "constraints_applied", "generator_metadata", "checks", "output_hash", "qa_status", "unresolved_issues", "reproducibility"],
+  "properties": {
+    "schema_version": {"const": "1.0"}, "request_id": {"type": "string", "pattern": "^(req_[a-f0-9]{64}|UNAVAILABLE)$"},
+    "lesson_id": {"anyOf": [{"$ref": "common.schema.json#/$defs/lessonId"}, {"const": "UNAVAILABLE"}]}, "status": {"enum": ["ACCEPTED", "REJECTED"]},
+    "input_hashes": {"type": "object", "additionalProperties": false, "required": ["request", "authorization", "lesson_spec", "graph"], "properties": {"request": {"$ref": "common.schema.json#/$defs/sha256"}, "authorization": {"$ref": "common.schema.json#/$defs/sha256"}, "lesson_spec": {"$ref": "common.schema.json#/$defs/sha256"}, "graph": {"$ref": "common.schema.json#/$defs/sha256"}}},
+    "versions": {"type": "object", "additionalProperties": false, "required": ["generator", "prompt", "curriculum", "taxonomy", "lesson_schema"], "properties": {"generator": {"type": "string"}, "prompt": {"type": "string"}, "curriculum": {"type": "string"}, "taxonomy": {"type": "string"}, "lesson_schema": {"type": "string"}}},
+    "constraints_applied": {"type": "object"},
+    "generator_metadata": {"type": "object", "additionalProperties": false, "required": ["provider", "model", "parameters", "seed"], "properties": {"provider": {"type": "string"}, "model": {"type": "string"}, "parameters": {"type": "object"}, "seed": {"type": ["integer", "null"]}}},
+    "checks": {"type": "object", "additionalProperties": false, "required": ["request_schema", "authorization", "lesson_schema", "constraints", "cefr", "prerequisites", "provenance_copyright", "m7_plus_exclusion"], "properties": {"request_schema": {"type": "boolean"}, "authorization": {"type": "boolean"}, "lesson_schema": {"type": "boolean"}, "constraints": {"type": "boolean"}, "cefr": {"type": "boolean"}, "prerequisites": {"type": "boolean"}, "provenance_copyright": {"type": "boolean"}, "m7_plus_exclusion": {"type": "boolean"}}},
+    "output_hash": {"anyOf": [{"$ref": "common.schema.json#/$defs/sha256"}, {"type": "null"}]},
+    "qa_status": {"enum": ["UNREVIEWED", "REJECTED"]},
+    "unresolved_issues": {"type": "array", "items": {"$ref": "#/$defs/issue"}},
+    "reproducibility": {"type": "object", "additionalProperties": false, "required": ["canonical_json", "byte_identical_claimed"], "properties": {"canonical_json": {"const": true}, "byte_identical_claimed": {"type": "boolean"}}}
+  },
+  "$defs": {"issue": {"type": "object", "additionalProperties": false, "required": ["code", "path", "message"], "properties": {"code": {"type": "string", "pattern": "^[A-Z0-9_]+$"}, "path": {"type": "string"}, "message": {"type": "string", "minLength": 1}}}}
+}

@@ -1,0 +1,171 @@
+{
+  "authorization": {
+    "approved_at": "2026-09-02T09:00:00Z",
+    "approved_by": "independent_m6_fixture_reviewer",
+    "authorization_id": "auth_e5b3dbef2632ae033f14d03cd34affb28b1704ff9edbf7839fa3b36f495b3c3f",
+    "curriculum_version": "20260902-m6-fixture",
+    "records": [
+      {
+        "cefr": "A1.1",
+        "content_origin": "PROJECT_AUTHORED",
+        "definition": "Subject pronouns identify who or what a clause is about.",
+        "id": "concept_subject_pronouns",
+        "prerequisites": [],
+        "record_type": "GRAMMAR",
+        "status": "APPROVED"
+      },
+      {
+        "cefr": "A1.1",
+        "content_origin": "PROJECT_AUTHORED",
+        "definition": "A greeting used when meeting or speaking to someone.",
+        "id": "vocab_en_hello_001",
+        "prerequisites": [],
+        "record_type": "VOCABULARY_SENSE",
+        "status": "APPROVED"
+      },
+      {
+        "cefr": "A1.1",
+        "content_origin": "PROJECT_AUTHORED",
+        "definition": "The word or words used to identify a person.",
+        "id": "vocab_en_name_001",
+        "prerequisites": [],
+        "record_type": "VOCABULARY_SENSE",
+        "status": "APPROVED"
+      },
+      {
+        "cefr": "A1.1",
+        "content_origin": "PROJECT_AUTHORED",
+        "definition": "Greet another person in a simple exchange.",
+        "id": "func_greet_someone",
+        "prerequisites": [],
+        "record_type": "COMMUNICATIVE_FUNCTION",
+        "status": "APPROVED"
+      },
+      {
+        "cefr": "A1.1",
+        "content_origin": "PROJECT_AUTHORED",
+        "definition": "Produce the initial /h/ sound in a familiar greeting.",
+        "id": "concept_pronunciation_initial_h",
+        "prerequisites": [],
+        "record_type": "PRONUNCIATION",
+        "status": "APPROVED"
+      }
+    ],
+    "schema_version": "1.0",
+    "status": "APPROVED",
+    "taxonomy_version": "20260902-m6-fixture",
+    "validated": true
+  },
+  "constraints": {
+    "allowed_functions": [
+      "func_greet_someone"
+    ],
+    "allowed_grammar": [
+      "concept_subject_pronouns"
+    ],
+    "allowed_pronunciation": [
+      "concept_pronunciation_initial_h"
+    ],
+    "allowed_vocabulary": [
+      "vocab_en_hello_001",
+      "vocab_en_name_001"
+    ],
+    "forbidden_ids": [
+      "concept_b1_hypothetical_conditionals"
+    ],
+    "forbidden_terms": [
+      "advanced idiom",
+      "notwithstanding"
+    ],
+    "max_section_characters": 500,
+    "max_sections": 4,
+    "max_target_vocabulary": 4,
+    "max_total_characters": 1200,
+    "target_cefr": "A1.1"
+  },
+  "generation": {
+    "curriculum_version": "20260902-m6-fixture",
+    "generator": "english_master.lesson_generation",
+    "generator_version": "1.0",
+    "lesson_schema_version": "1.0",
+    "model": "authored-fixture-v1",
+    "parameters": {
+      "temperature": 0
+    },
+    "prompt_version": "M6_LESSON_GENERATOR_v1",
+    "provider": "offline-mock",
+    "seed": 7,
+    "taxonomy_version": "20260902-m6-fixture"
+  },
+  "graph": {
+    "introduction_edges": [
+      {
+        "from": "A1-U01-L01",
+        "to": "concept_subject_pronouns"
+      },
+      {
+        "from": "A1-U01-L01",
+        "to": "vocab_en_hello_001"
+      },
+      {
+        "from": "A1-U01-L01",
+        "to": "vocab_en_name_001"
+      },
+      {
+        "from": "A1-U01-L01",
+        "to": "func_greet_someone"
+      },
+      {
+        "from": "A1-U01-L01",
+        "to": "concept_pronunciation_initial_h"
+      }
+    ],
+    "lesson_order": [
+      "A1-U01-L01"
+    ],
+    "prerequisite_edges": [],
+    "resolved_prerequisite_closure": [],
+    "review_edges": []
+  },
+  "lesson_spec": {
+    "cefr": "A1.1",
+    "duration_minutes": 35,
+    "functions_introduced": [
+      "func_greet_someone"
+    ],
+    "functions_reviewed": [],
+    "grammar_introduced": [
+      "concept_subject_pronouns"
+    ],
+    "grammar_reviewed": [],
+    "id": "A1-U01-L01",
+    "lesson_number": 1,
+    "objectives": [
+      "Greet someone and say your name."
+    ],
+    "prerequisites": [],
+    "pronunciation_introduced": [
+      "concept_pronunciation_initial_h"
+    ],
+    "pronunciation_reviewed": [],
+    "title": "Hello and names",
+    "unit_id": "A1.1-U01",
+    "vocabulary_introduced": [
+      "vocab_en_hello_001",
+      "vocab_en_name_001"
+    ],
+    "vocabulary_reviewed": []
+  },
+  "previous_knowledge": {
+    "completed_lessons": [],
+    "functions": [],
+    "grammar": [],
+    "pronunciation": [],
+    "vocabulary": []
+  },
+  "request_id": "req_d83876fbcc76ef1287fb024627ffbd3a3f00813c5c8ec1bf34189571bedbf7d0",
+  "requested_outputs": [
+    "lesson"
+  ],
+  "schema_version": "1.0"
+}

@@ -2,7 +2,7 @@
 
 English Master is a reproducible, self-study English learning-system pipeline for CEFR A1 through C2. Its primary learners are Vietnamese learners of English.
 
-## Current scope: M0 through M5
+## Current scope: M0 through M6
 
 The completed foundation provides:
 
@@ -15,9 +15,10 @@ The completed foundation provides:
 - A deterministic post-ingestion normalization pipeline with dual hashes, exact groups, bounded character n-gram candidates, and an explicit semantic review queue.
 - A compact A1.1-C2.2 curriculum architecture with globally numbered units, outline-only lessons, review nodes, typed dependency edges, and machine-readable dimension coverage.
 - An offline curriculum validator that reuses the schema engine and enforces hierarchy, taxonomy-review gates, references, ordering, DAG, review, coverage, and reproducibility rules.
+- A provider-neutral M6 lesson-generation boundary with strict authorization snapshots, deterministic requests and audits, preflight/postflight constraints, an offline mock backend, and atomic no-overwrite publication.
 - Data-lifecycle directory scaffolding and Git protections.
 
-M3 is ingestion infrastructure, not a corpus project. M4 adds deterministic normalization and review-oriented deduplication only. M5 adds architecture and dependency planning only. These stages do not crawl websites, bulk-download data or media, classify records by CEFR, or generate full lessons, exercises, assessments, or AI prompts. The committed ingestion fixture sentences are invented and explicitly used only to test the documented Tatoeba-shaped input path. M5 references the DRAFT M2 taxonomy under an explicit outline-only gate that blocks M6 generation pending independent review.
+M3 is ingestion infrastructure, not a corpus project. M4 adds deterministic normalization and review-oriented deduplication only. M5 adds architecture and dependency planning only. M6 adds constrained lesson-generation infrastructure and one approved, project-authored offline fixture; it does not approve generated lessons. These stages do not crawl websites, bulk-download data or media, generate exercises, assessments, or AI prompts. The committed ingestion fixture sentences are invented and explicitly used only to test the documented Tatoeba-shaped input path. The committed M5 bundle still references the DRAFT M2 taxonomy under an explicit outline-only gate and therefore fails M6 preflight before the backend is called. M6 success tests use a separate, explicit authorization snapshot reviewed for fixture use; they do not reinterpret or upgrade the M5 bundle.
 
 ## Requirements
 
@@ -146,13 +147,26 @@ python -m english_master.curriculum_validate curriculum/structure.json \
   --report curriculum/validation-report.json
 ```
 
-M5 contains a compact outline-only architecture: 12 globally numbered representative units, 24 lesson outlines, and 12 review nodes across all internal tiers. The 1,000-1,200 hour scale range is an expansion estimate, not completed content. DRAFT taxonomy dependencies are allowed only for outline planning and explicitly block M6 until independent review. See [docs/CURRICULUM_ARCHITECTURE.md](docs/CURRICULUM_ARCHITECTURE.md).
+M5 contains a compact outline-only architecture: 12 globally numbered representative units, 24 lesson outlines, and 12 review nodes across all internal tiers. The 1,000-1,200 hour scale range is an expansion estimate, not completed content. DRAFT taxonomy dependencies are allowed only for outline planning and explicitly fail the M6 generation gate until independent review. See [docs/CURRICULUM_ARCHITECTURE.md](docs/CURRICULUM_ARCHITECTURE.md).
+
+## Run constrained M6 lesson generation
+
+The committed success path is fully offline and uses an approved, project-authored fixture snapshot plus an authored mock response:
+
+```bash
+python -m english_master.lesson_generate \
+  --request tests/fixtures/m6/approved-request.json \
+  --mock-response tests/fixtures/m6/approved-mock-lesson.json \
+  --output-dir data/generated/m6/A1-U01-L01
+```
+
+The command validates the request and authorization before calling the backend, validates the candidate again, and atomically publishes `lesson.json` and `audit.json` only on success. Add `--rejection <path>` to retain a no-overwrite rejection record. All M6 output remains `UNREVIEWED`; independent QA is required. The M5 `OUTLINE_ONLY` bundle is intentionally a preflight rejection case. See [docs/LESSON_GENERATION.md](docs/LESSON_GENERATION.md).
 
 ## Layout
 
 - `schemas/` — authoritative Draft 2020-12 JSON Schemas.
-- `src/english_master/` — typed validation, ingestion, normalization, deduplication, and M5 curriculum-graph utilities.
-- `tests/fixtures/` — small, invented validation and offline ingestion examples; taxonomy tests use the authored prototype.
+- `src/english_master/` — typed validation, ingestion, normalization, deduplication, M5 curriculum-graph, and M6 lesson-generation utilities.
+- `tests/fixtures/` — small, invented validation, ingestion, and approved M6 offline examples; taxonomy tests use the authored prototype.
 - `sources/` — M1 registry metadata, official evidence summary, and source-operation policy; no source payloads.
 - `data/raw/`, `data/normalized/`, `data/quarantine/` — local M3 run payloads and audit records, ignored by Git except scaffolding.
 - `data/deduplicated/`, `data/reports/` — local M4 derived runs and reports, ignored by Git.
