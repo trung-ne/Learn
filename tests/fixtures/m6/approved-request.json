@@ -1,77 +1,23 @@
 {
-  "authorization": {
-    "approved_at": "2026-09-02T09:00:00Z",
-    "approved_by": "independent_m6_fixture_reviewer",
-    "authorization_id": "auth_e5b3dbef2632ae033f14d03cd34affb28b1704ff9edbf7839fa3b36f495b3c3f",
-    "curriculum_version": "20260902-m6-fixture",
-    "records": [
-      {
-        "cefr": "A1.1",
-        "content_origin": "PROJECT_AUTHORED",
-        "definition": "Subject pronouns identify who or what a clause is about.",
-        "id": "concept_subject_pronouns",
-        "prerequisites": [],
-        "record_type": "GRAMMAR",
-        "status": "APPROVED"
-      },
-      {
-        "cefr": "A1.1",
-        "content_origin": "PROJECT_AUTHORED",
-        "definition": "A greeting used when meeting or speaking to someone.",
-        "id": "vocab_en_hello_001",
-        "prerequisites": [],
-        "record_type": "VOCABULARY_SENSE",
-        "status": "APPROVED"
-      },
-      {
-        "cefr": "A1.1",
-        "content_origin": "PROJECT_AUTHORED",
-        "definition": "The word or words used to identify a person.",
-        "id": "vocab_en_name_001",
-        "prerequisites": [],
-        "record_type": "VOCABULARY_SENSE",
-        "status": "APPROVED"
-      },
-      {
-        "cefr": "A1.1",
-        "content_origin": "PROJECT_AUTHORED",
-        "definition": "Greet another person in a simple exchange.",
-        "id": "func_greet_someone",
-        "prerequisites": [],
-        "record_type": "COMMUNICATIVE_FUNCTION",
-        "status": "APPROVED"
-      },
-      {
-        "cefr": "A1.1",
-        "content_origin": "PROJECT_AUTHORED",
-        "definition": "Produce the initial /h/ sound in a familiar greeting.",
-        "id": "concept_pronunciation_initial_h",
-        "prerequisites": [],
-        "record_type": "PRONUNCIATION",
-        "status": "APPROVED"
-      }
-    ],
-    "schema_version": "1.0",
-    "status": "APPROVED",
-    "taxonomy_version": "20260902-m6-fixture",
-    "validated": true
+  "artifact_hashes": {
+    "coverage": "9a957c01cf292f8639b4a3cec95755c14c98444dee748fbe3e544f515456021e",
+    "graph": "f088a5a985117f89f5600541afe63b7c9f6be558e8baa231802e01e07129a404",
+    "source_registry": "5d20e2914a5e81b764b8a3218537c3316f6060fc3f9e37a894f240d69f4667a3",
+    "structure": "004e49a08fb0e2fd4e7d1f96756f3293842ee35c9e679f6a2acd2ecfa7784855",
+    "taxonomy": "05491045d6ddeb5ffe5cbe11f83a0354bcbe89cc3956c9ba674f51ad577b4b11"
   },
+  "authorization_id": "auth_3a05acb9cdb862569716493a964c8daaa90dab678187b2a9f7004239214b0a27",
   "constraints": {
-    "allowed_functions": [
-      "func_greet_someone"
-    ],
+    "allowed_functions": [],
     "allowed_grammar": [
-      "concept_subject_pronouns"
+      "concept_present_simple"
     ],
     "allowed_pronunciation": [
-      "concept_pronunciation_initial_h"
+      "concept_pronunciation_phonemes"
     ],
-    "allowed_vocabulary": [
-      "vocab_en_hello_001",
-      "vocab_en_name_001"
-    ],
+    "allowed_vocabulary": [],
     "forbidden_ids": [
-      "concept_b1_hypothetical_conditionals"
+      "concept_past_perfect"
     ],
     "forbidden_terms": [
       "advanced idiom",
@@ -84,76 +30,197 @@
     "target_cefr": "A1.1"
   },
   "generation": {
-    "curriculum_version": "20260902-m6-fixture",
+    "curriculum_version": "20260902",
+    "generated_at": "2026-09-02T10:00:00Z",
     "generator": "english_master.lesson_generation",
-    "generator_version": "1.0",
+    "generator_version": "1.1",
     "lesson_schema_version": "1.0",
-    "model": "authored-fixture-v1",
+    "model": "authored-fixture-v2",
     "parameters": {
       "temperature": 0
     },
-    "prompt_version": "M6_LESSON_GENERATOR_v1",
+    "prompt_version": "M6_LESSON_GENERATOR_v2",
     "provider": "offline-mock",
     "seed": 7,
-    "taxonomy_version": "20260902-m6-fixture"
+    "taxonomy_version": "20260831"
   },
   "graph": {
     "introduction_edges": [
       {
         "from": "A1-U01-L01",
-        "to": "concept_subject_pronouns"
+        "to": "concept_listening"
       },
       {
         "from": "A1-U01-L01",
-        "to": "vocab_en_hello_001"
+        "to": "concept_present_simple"
       },
       {
         "from": "A1-U01-L01",
-        "to": "vocab_en_name_001"
+        "to": "concept_pronunciation_phonemes"
       },
       {
         "from": "A1-U01-L01",
-        "to": "func_greet_someone"
+        "to": "concept_reading"
       },
       {
         "from": "A1-U01-L01",
-        "to": "concept_pronunciation_initial_h"
+        "to": "concept_speaking"
+      },
+      {
+        "from": "A1-U01-L01",
+        "to": "concept_topic_personal_information"
+      },
+      {
+        "from": "A1-U01-L01",
+        "to": "concept_writing"
       }
     ],
     "lesson_order": [
-      "A1-U01-L01"
+      "A1-U01-L01",
+      "A1-U01-L02",
+      "A1-U02-L01",
+      "A1-U02-L02",
+      "A2-U03-L01",
+      "A2-U03-L02",
+      "A2-U04-L01",
+      "A2-U04-L02",
+      "B1-U05-L01",
+      "B1-U05-L02",
+      "B1-U06-L01",
+      "B1-U06-L02",
+      "B2-U07-L01",
+      "B2-U07-L02",
+      "B2-U08-L01",
+      "B2-U08-L02",
+      "C1-U09-L01",
+      "C1-U09-L02",
+      "C1-U10-L01",
+      "C1-U10-L02",
+      "C2-U11-L01",
+      "C2-U11-L02",
+      "C2-U12-L01",
+      "C2-U12-L02"
     ],
-    "prerequisite_edges": [],
+    "prerequisite_edges": [
+      {
+        "from": "A1-U01-L01",
+        "to": "A1-U01-L02"
+      },
+      {
+        "from": "A1-U01-L02",
+        "to": "A1-U02-L01"
+      },
+      {
+        "from": "A1-U02-L01",
+        "to": "A1-U02-L02"
+      },
+      {
+        "from": "A1-U02-L02",
+        "to": "A2-U03-L01"
+      },
+      {
+        "from": "A2-U03-L01",
+        "to": "A2-U03-L02"
+      },
+      {
+        "from": "A2-U03-L02",
+        "to": "A2-U04-L01"
+      },
+      {
+        "from": "A2-U04-L01",
+        "to": "A2-U04-L02"
+      },
+      {
+        "from": "A2-U04-L02",
+        "to": "B1-U05-L01"
+      },
+      {
+        "from": "B1-U05-L01",
+        "to": "B1-U05-L02"
+      },
+      {
+        "from": "B1-U05-L02",
+        "to": "B1-U06-L01"
+      },
+      {
+        "from": "B1-U06-L01",
+        "to": "B1-U06-L02"
+      },
+      {
+        "from": "B1-U06-L02",
+        "to": "B2-U07-L01"
+      },
+      {
+        "from": "B2-U07-L01",
+        "to": "B2-U07-L02"
+      },
+      {
+        "from": "B2-U07-L02",
+        "to": "B2-U08-L01"
+      },
+      {
+        "from": "B2-U08-L01",
+        "to": "B2-U08-L02"
+      },
+      {
+        "from": "B2-U08-L02",
+        "to": "C1-U09-L01"
+      },
+      {
+        "from": "C1-U09-L01",
+        "to": "C1-U09-L02"
+      },
+      {
+        "from": "C1-U09-L02",
+        "to": "C1-U10-L01"
+      },
+      {
+        "from": "C1-U10-L01",
+        "to": "C1-U10-L02"
+      },
+      {
+        "from": "C1-U10-L02",
+        "to": "C2-U11-L01"
+      },
+      {
+        "from": "C2-U11-L01",
+        "to": "C2-U11-L02"
+      },
+      {
+        "from": "C2-U11-L02",
+        "to": "C2-U12-L01"
+      },
+      {
+        "from": "C2-U12-L01",
+        "to": "C2-U12-L02"
+      }
+    ],
     "resolved_prerequisite_closure": [],
     "review_edges": []
   },
   "lesson_spec": {
     "cefr": "A1.1",
     "duration_minutes": 35,
-    "functions_introduced": [
-      "func_greet_someone"
-    ],
+    "functions_introduced": [],
     "functions_reviewed": [],
     "grammar_introduced": [
-      "concept_subject_pronouns"
+      "concept_present_simple"
     ],
     "grammar_reviewed": [],
     "id": "A1-U01-L01",
     "lesson_number": 1,
     "objectives": [
-      "Greet someone and say your name."
+      "handle personal information and basic participation",
+      "combine selected A1.1 capabilities for a communicative purpose"
     ],
     "prerequisites": [],
     "pronunciation_introduced": [
-      "concept_pronunciation_initial_h"
+      "concept_pronunciation_phonemes"
     ],
     "pronunciation_reviewed": [],
-    "title": "Hello and names",
+    "title": "Foundational exchange: foundations",
     "unit_id": "A1.1-U01",
-    "vocabulary_introduced": [
-      "vocab_en_hello_001",
-      "vocab_en_name_001"
-    ],
+    "vocabulary_introduced": [],
     "vocabulary_reviewed": []
   },
   "previous_knowledge": {
@@ -163,7 +230,7 @@
     "pronunciation": [],
     "vocabulary": []
   },
-  "request_id": "req_d83876fbcc76ef1287fb024627ffbd3a3f00813c5c8ec1bf34189571bedbf7d0",
+  "request_id": "req_ed6fee83de0f05a0dd5a959559d8963573e1b62b16cc8b1aefd659aafa543b7c",
   "requested_outputs": [
     "lesson"
   ],

@@ -4,19 +4,42 @@
   "title": "English Master M6 lesson generation audit report",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "request_id", "lesson_id", "status", "input_hashes", "versions", "constraints_applied", "generator_metadata", "checks", "output_hash", "qa_status", "unresolved_issues", "reproducibility"],
+  "required": ["schema_version", "request_id", "lesson_id", "status", "validation_stage", "input_hashes", "versions", "constraints_applied", "generator_metadata", "checks", "output_hash", "qa_status", "qa_reviewer", "qa_timestamp", "qa_outcome", "qa_checks_performed", "qa_notes", "qa_issues_found", "outstanding_independent_reviews", "unresolved_issues", "reproducibility"],
   "properties": {
-    "schema_version": {"const": "1.0"}, "request_id": {"type": "string", "pattern": "^(req_[a-f0-9]{64}|UNAVAILABLE)$"},
-    "lesson_id": {"anyOf": [{"$ref": "common.schema.json#/$defs/lessonId"}, {"const": "UNAVAILABLE"}]}, "status": {"enum": ["ACCEPTED", "REJECTED"]},
-    "input_hashes": {"type": "object", "additionalProperties": false, "required": ["request", "authorization", "lesson_spec", "graph"], "properties": {"request": {"$ref": "common.schema.json#/$defs/sha256"}, "authorization": {"$ref": "common.schema.json#/$defs/sha256"}, "lesson_spec": {"$ref": "common.schema.json#/$defs/sha256"}, "graph": {"$ref": "common.schema.json#/$defs/sha256"}}},
+    "schema_version": {"const": "1.0"},
+    "request_id": {"type": "string", "pattern": "^(req_[a-f0-9]{64}|UNAVAILABLE)$"},
+    "lesson_id": {"anyOf": [{"$ref": "common.schema.json#/$defs/lessonId"}, {"const": "UNAVAILABLE"}]},
+    "status": {"enum": ["ACCEPTED", "REJECTED"]},
+    "validation_stage": {"enum": ["PREFLIGHT", "PROVIDER", "POSTVALIDATION", "PUBLICATION", "COMPLETE"]},
+    "input_hashes": {
+      "type": "object", "additionalProperties": false,
+      "required": ["request", "authorization", "structure", "graph", "coverage", "taxonomy", "source_registry"],
+      "properties": {
+        "request": {"anyOf": [{"$ref": "common.schema.json#/$defs/sha256"}, {"type": "null"}]},
+        "authorization": {"anyOf": [{"$ref": "common.schema.json#/$defs/sha256"}, {"type": "null"}]},
+        "structure": {"$ref": "common.schema.json#/$defs/sha256"}, "graph": {"$ref": "common.schema.json#/$defs/sha256"},
+        "coverage": {"$ref": "common.schema.json#/$defs/sha256"}, "taxonomy": {"$ref": "common.schema.json#/$defs/sha256"},
+        "source_registry": {"$ref": "common.schema.json#/$defs/sha256"}
+      }
+    },
     "versions": {"type": "object", "additionalProperties": false, "required": ["generator", "prompt", "curriculum", "taxonomy", "lesson_schema"], "properties": {"generator": {"type": "string"}, "prompt": {"type": "string"}, "curriculum": {"type": "string"}, "taxonomy": {"type": "string"}, "lesson_schema": {"type": "string"}}},
     "constraints_applied": {"type": "object"},
     "generator_metadata": {"type": "object", "additionalProperties": false, "required": ["provider", "model", "parameters", "seed"], "properties": {"provider": {"type": "string"}, "model": {"type": "string"}, "parameters": {"type": "object"}, "seed": {"type": ["integer", "null"]}}},
-    "checks": {"type": "object", "additionalProperties": false, "required": ["request_schema", "authorization", "lesson_schema", "constraints", "cefr", "prerequisites", "provenance_copyright", "m7_plus_exclusion"], "properties": {"request_schema": {"type": "boolean"}, "authorization": {"type": "boolean"}, "lesson_schema": {"type": "boolean"}, "constraints": {"type": "boolean"}, "cefr": {"type": "boolean"}, "prerequisites": {"type": "boolean"}, "provenance_copyright": {"type": "boolean"}, "m7_plus_exclusion": {"type": "boolean"}}},
+    "checks": {"type": "object", "additionalProperties": false, "required": ["request_schema", "m5_authority", "authorization", "identity", "graph", "constraints", "provenance_copyright", "backend_contract", "lesson_schema", "cefr_reference_scope", "prerequisites", "m7_plus_exclusion", "publication"], "properties": {"request_schema": {"$ref": "#/$defs/checkOutcome"}, "m5_authority": {"$ref": "#/$defs/checkOutcome"}, "authorization": {"$ref": "#/$defs/checkOutcome"}, "identity": {"$ref": "#/$defs/checkOutcome"}, "graph": {"$ref": "#/$defs/checkOutcome"}, "constraints": {"$ref": "#/$defs/checkOutcome"}, "provenance_copyright": {"$ref": "#/$defs/checkOutcome"}, "backend_contract": {"$ref": "#/$defs/checkOutcome"}, "lesson_schema": {"$ref": "#/$defs/checkOutcome"}, "cefr_reference_scope": {"$ref": "#/$defs/checkOutcome"}, "prerequisites": {"$ref": "#/$defs/checkOutcome"}, "m7_plus_exclusion": {"$ref": "#/$defs/checkOutcome"}, "publication": {"$ref": "#/$defs/checkOutcome"}}},
     "output_hash": {"anyOf": [{"$ref": "common.schema.json#/$defs/sha256"}, {"type": "null"}]},
     "qa_status": {"enum": ["UNREVIEWED", "REJECTED"]},
+    "qa_reviewer": {"const": "english_master.m6_automated_validator"},
+    "qa_timestamp": {"$ref": "common.schema.json#/$defs/isoDateTime"},
+    "qa_outcome": {"enum": ["AUTOMATED_CHECKS_PASSED_PENDING_INDEPENDENT_REVIEW", "AUTOMATED_CHECKS_FAILED"]},
+    "qa_checks_performed": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "qa_notes": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+    "qa_issues_found": {"type": "array", "items": {"$ref": "#/$defs/issue"}},
+    "outstanding_independent_reviews": {"type": "array", "minItems": 4, "uniqueItems": true, "items": {"enum": ["CEFR", "GRAMMAR_LEXICAL", "LANGUAGE_QUALITY", "PEDAGOGICAL"]}},
     "unresolved_issues": {"type": "array", "items": {"$ref": "#/$defs/issue"}},
     "reproducibility": {"type": "object", "additionalProperties": false, "required": ["canonical_json", "byte_identical_claimed"], "properties": {"canonical_json": {"const": true}, "byte_identical_claimed": {"type": "boolean"}}}
   },
-  "$defs": {"issue": {"type": "object", "additionalProperties": false, "required": ["code", "path", "message"], "properties": {"code": {"type": "string", "pattern": "^[A-Z0-9_]+$"}, "path": {"type": "string"}, "message": {"type": "string", "minLength": 1}}}}
+  "$defs": {
+    "checkOutcome": {"enum": ["PASS", "FAIL", "NOT_RUN"]},
+    "issue": {"type": "object", "additionalProperties": false, "required": ["code", "path", "message"], "properties": {"code": {"type": "string", "pattern": "^[A-Z0-9_]+$"}, "path": {"type": "string"}, "message": {"type": "string", "minLength": 1}}}
+  }
 }

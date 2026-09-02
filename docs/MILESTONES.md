@@ -279,7 +279,7 @@ Do validate curriculum structure.
 
 ## M6 — Lesson Generation
 
-**Status**: Complete (verified 2026-09-02)
+**Status**: In progress — generator repair implemented; content and independent review deliverables remain incomplete (2026-09-02)
 
 **Estimated Duration**: ~2-3 weeks
 
@@ -311,18 +311,33 @@ Do validate lesson content.
 
 ### Acceptance Criteria
 
-- [x] Provider-neutral generation accepts a fully explicit approved lesson snapshot
-- [x] Preflight and post-generation constraints fail closed
-- [x] Authored offline fixture lesson passes schema validation
-- [x] Prerequisites, reviews, target tier, and exact reference scopes are enforced
-- [x] Provenance/authorization, versions, canonical hashes, and audit metadata are retained
-- [x] Generated output remains `UNREVIEWED` pending independent QA
-- [x] Invalid output is rejected without partial publication
-- [x] Current M5 DRAFT/OUTLINE_ONLY bundle fails before backend invocation
-- [x] Offline mock backend, CLI, schema checks, and full tests pass
-- [x] No exercises, assessments, AI prompts, or later-milestone work was added
+Generator repair verification:
 
-### Next: M7
+- [x] M5 structure, graph, coverage, taxonomy, authorization, registry, versions, and hashes are independently loaded and bound
+- [x] Strict M5 validation and a separate independent authorization gate run before backend invocation
+- [x] Lesson identity, prerequisite closure, introduction/review edges, and previous knowledge are derived and cross-checked
+- [x] External provenance is authorized through the registered source status, identity, license, and permissions
+- [x] Shared typed ID contracts and cross-field lesson/unit/tier/sequence checks are enforced
+- [x] The backend returns content only; trusted fields and `UNREVIEWED` metadata are injected by orchestration
+- [x] Malformed/provider/postvalidation/publication failures produce truthful stage-aware results
+- [x] Accepted and rejected artifact bundles use atomic no-overwrite publication
+- [x] QA audits identify the automated reviewer and retain outstanding independent-review categories
+- [x] Focused offline M6 tests pass
+- [x] No M7 or later-milestone implementation was added by the repair
+
+Original M6 content acceptance still outstanding:
+
+- [ ] At least 10 complete lessons generated
+- [ ] All lessons pass schema validation
+- [ ] All lessons have correct prerequisites
+- [ ] CEFR levels are appropriate (sampled independent review)
+- [ ] No plagiarism detected (spot check)
+- [ ] Lessons include vocabulary/grammar references
+- [ ] QA report and manual review output are complete
+
+M6 is not complete while these content and independent-review criteria remain unchecked.
+
+### Next: Finish M6 content and independent QA; do not start M7 yet
 
 ---
 

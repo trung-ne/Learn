@@ -13,6 +13,8 @@ from .models import JsonObject
 class MockLessonBackend:
     """Return an authored response without network or provider SDK access."""
 
+    byte_identical_output = True
+
     def __init__(self, response: Mapping[str, Any]) -> None:
         self._response = dict(response)
         self.calls = 0

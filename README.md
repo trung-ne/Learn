@@ -2,7 +2,7 @@
 
 English Master is a reproducible, self-study English learning-system pipeline for CEFR A1 through C2. Its primary learners are Vietnamese learners of English.
 
-## Current scope: M0 through M6
+## Current scope: M0 through M5 complete; M6 infrastructure repaired
 
 The completed foundation provides:
 
@@ -15,7 +15,7 @@ The completed foundation provides:
 - A deterministic post-ingestion normalization pipeline with dual hashes, exact groups, bounded character n-gram candidates, and an explicit semantic review queue.
 - A compact A1.1-C2.2 curriculum architecture with globally numbered units, outline-only lessons, review nodes, typed dependency edges, and machine-readable dimension coverage.
 - An offline curriculum validator that reuses the schema engine and enforces hierarchy, taxonomy-review gates, references, ordering, DAG, review, coverage, and reproducibility rules.
-- A provider-neutral M6 lesson-generation boundary with strict authorization snapshots, deterministic requests and audits, preflight/postflight constraints, an offline mock backend, and atomic no-overwrite publication.
+- A repaired provider-neutral M6 generation boundary that loads and hash-binds M5 artifacts, an independent authorization, and the source registry; derives graph context; injects trusted lesson metadata; emits stage-aware QA audits; and uses atomic no-overwrite artifact bundles. This is generator infrastructure, not completed or independently approved lesson content.
 - Data-lifecycle directory scaffolding and Git protections.
 
 M3 is ingestion infrastructure, not a corpus project. M4 adds deterministic normalization and review-oriented deduplication only. M5 adds architecture and dependency planning only. M6 adds constrained lesson-generation infrastructure and one approved, project-authored offline fixture; it does not approve generated lessons. These stages do not crawl websites, bulk-download data or media, generate exercises, assessments, or AI prompts. The committed ingestion fixture sentences are invented and explicitly used only to test the documented Tatoeba-shaped input path. The committed M5 bundle still references the DRAFT M2 taxonomy under an explicit outline-only gate and therefore fails M6 preflight before the backend is called. M6 success tests use a separate, explicit authorization snapshot reviewed for fixture use; they do not reinterpret or upgrade the M5 bundle.
@@ -156,11 +156,12 @@ The committed success path is fully offline and uses an approved, project-author
 ```bash
 python -m english_master.lesson_generate \
   --request tests/fixtures/m6/approved-request.json \
+  --authorization tests/fixtures/m6/approved-authorization.json \
   --mock-response tests/fixtures/m6/approved-mock-lesson.json \
   --output-dir data/generated/m6/A1-U01-L01
 ```
 
-The command validates the request and authorization before calling the backend, validates the candidate again, and atomically publishes `lesson.json` and `audit.json` only on success. Add `--rejection <path>` to retain a no-overwrite rejection record. All M6 output remains `UNREVIEWED`; independent QA is required. The M5 `OUTLINE_ONLY` bundle is intentionally a preflight rejection case. See [docs/LESSON_GENERATION.md](docs/LESSON_GENERATION.md).
+The command independently loads and validates M5 structure/graph/coverage/taxonomy artifacts, the authorization, and the source registry before calling the backend. It derives graph context, injects trusted lesson fields, validates the assembled candidate, and atomically publishes `lesson.json` and `audit.json` only on success. Add `--rejection-dir <directory>` to retain an immutable rejection-plus-audit bundle. The fixture authorization is separately reviewed and hash-bound; it does not change the committed DRAFT taxonomy or M5 `OUTLINE_ONLY` gate. All output remains `UNREVIEWED`, and the repository does not yet contain the ten independently reviewed lessons required for complete M6 acceptance. See [docs/LESSON_GENERATION.md](docs/LESSON_GENERATION.md).
 
 ## Layout
 

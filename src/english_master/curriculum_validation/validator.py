@@ -5,7 +5,7 @@ from __future__ import annotations
 from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Iterable
+from typing import AbstractSet, Any, Iterable
 
 from english_master.schema_validation import (
     SchemaValidationError,
@@ -547,8 +547,17 @@ def validate_bundle(
     bundle: CurriculumBundle,
     *,
     require_approved_taxonomy: bool = False,
+    externally_approved_taxonomy_ids: AbstractSet[str] = frozenset(),
+    required_taxonomy_ids: AbstractSet[str] | None = None,
 ) -> CurriculumValidationResult:
-    """Validate schemas and all M5 cross-record invariants."""
+    """Validate schemas and all M5 cross-record invariants.
+
+    ``externally_approved_taxonomy_ids`` represents an independently reviewed,
+    hash-bound approval overlay. ``required_taxonomy_ids`` narrows the strict
+    gate to the transitive records used by one downstream generation request.
+    Both are explicit so strict callers never need to mutate the committed
+    DRAFT taxonomy snapshot.
+    """
 
     issues: list[CurriculumIssue] = []
     if require_approved_taxonomy:
@@ -556,7 +565,12 @@ def validate_bundle(
             records = bundle.taxonomy.get(collection_name, [])
             if isinstance(records, list):
                 for index, record in enumerate(records):
-                    if isinstance(record, dict) and record.get("status") != "APPROVED":
+                    if (
+                        isinstance(record, dict)
+                        and (required_taxonomy_ids is None or record.get("id") in required_taxonomy_ids)
+                        and record.get("status") != "APPROVED"
+                        and record.get("id") not in externally_approved_taxonomy_ids
+                    ):
                         issues.append(
                             CurriculumIssue(
                                 f"$.taxonomy.{collection_name}[{index}].status",

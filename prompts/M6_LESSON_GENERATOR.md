@@ -2,7 +2,7 @@
 
 ## Objective
 
-Build a constrained, reproducible lesson-generation pipeline. M6 consumes an approved lesson outline and its dependency context, then produces schema-valid lesson JSON. The generator must follow explicit constraints supplied by the curriculum and must never invent its own scope, level, prerequisites, or approval status.
+Build a constrained, reproducible lesson-generation pipeline. M6 consumes independently loaded and hash-bound M5 artifacts, an independent authorization, the source registry, and a bounded lesson request, then produces schema-valid lesson JSON. The request is never its own authority. The backend must never invent identity, scope, level, prerequisites, metadata, or approval status; it returns content sections only and orchestration injects all trusted fields.
 
 M6 generates lesson content only. Do not generate exercises, assessments, AI practice prompts, or web/mobile UI; those belong to later milestones.
 
@@ -41,7 +41,7 @@ The generator must receive a machine-readable generation request containing:
    - maximum content sizes
    - generator, model, prompt, curriculum, and schema versions
 
-Inputs must be validated before generation. Missing, contradictory, unauthorized, or unresolved references must fail closed; the generator must not silently repair them.
+Inputs must be loaded and validated independently before generation. The structure, graph, coverage, taxonomy, source registry, and authorization hashes must match the request pins. Graph context and prerequisite closure must be derived from the loaded M5 bundle, not trusted from request declarations. Missing, contradictory, unauthorized, stale, or unresolved references must fail closed; the generator must not silently repair them.
 
 ## Constraint example
 
@@ -92,7 +92,7 @@ No model output may override a curriculum constraint. If the model produces an o
 
 ## Output
 
-Output one lesson record conforming to the existing M0 lesson schema, including:
+The provider backend outputs only a JSON object containing `content_sections`. The orchestration layer constructs the final lesson and injects all identity, curriculum references, versions, timestamp, hashes, and `generation_metadata`; backend-supplied trusted fields are rejected.
 
 - deterministic lesson ID matching the lesson specification;
 - title, unit, lesson number, and internal CEFR tier;

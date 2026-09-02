@@ -1,0 +1,93 @@
+{
+  "approved_at": "2026-09-02T09:00:00Z",
+  "approved_by": "independent_m6_fixture_reviewer",
+  "approved_lesson_ids": [
+    "A1-U01-L01"
+  ],
+  "artifact_hashes": {
+    "coverage": "9a957c01cf292f8639b4a3cec95755c14c98444dee748fbe3e544f515456021e",
+    "graph": "f088a5a985117f89f5600541afe63b7c9f6be558e8baa231802e01e07129a404",
+    "source_registry": "5d20e2914a5e81b764b8a3218537c3316f6060fc3f9e37a894f240d69f4667a3",
+    "structure": "004e49a08fb0e2fd4e7d1f96756f3293842ee35c9e679f6a2acd2ecfa7784855",
+    "taxonomy": "05491045d6ddeb5ffe5cbe11f83a0354bcbe89cc3956c9ba674f51ad577b4b11"
+  },
+  "authorization_id": "auth_3a05acb9cdb862569716493a964c8daaa90dab678187b2a9f7004239214b0a27",
+  "curriculum_version": "20260902",
+  "records": [
+    {
+      "cefr": "A1.1",
+      "content_origin": "PROJECT_AUTHORED",
+      "definition": "Build meaning from spoken English in progressively wider contexts.",
+      "id": "concept_listening",
+      "prerequisites": [],
+      "record_type": "SUPPORTING_CONCEPT",
+      "status": "APPROVED",
+      "taxonomy_record_hash": "ec682601dd255e57de17233b0ed93812e7e068912a48faa05be7c3e971c02e7d"
+    },
+    {
+      "cefr": "A1.1",
+      "content_origin": "PROJECT_AUTHORED",
+      "definition": "Use present-tense forms for recurring situations, stable states, and general statements.",
+      "id": "concept_present_simple",
+      "prerequisites": [],
+      "record_type": "GRAMMAR",
+      "status": "APPROVED",
+      "taxonomy_record_hash": "dc22cab1abfcbbbc5b42207505be2686f0343f3276ff93017964eb68b1878143"
+    },
+    {
+      "cefr": "A1.1",
+      "content_origin": "PROJECT_AUTHORED",
+      "definition": "Perceive and produce sound contrasts that can distinguish words in English.",
+      "id": "concept_pronunciation_phonemes",
+      "prerequisites": [],
+      "record_type": "PRONUNCIATION",
+      "status": "APPROVED",
+      "taxonomy_record_hash": "fbe3020bf4dc451c9b2d34e3a224984dc5553d7772cb3589e79f8c7d36ab9b76"
+    },
+    {
+      "cefr": "A1.1",
+      "content_origin": "PROJECT_AUTHORED",
+      "definition": "Construct meaning from written English for practical, informational, and reflective purposes.",
+      "id": "concept_reading",
+      "prerequisites": [],
+      "record_type": "SUPPORTING_CONCEPT",
+      "status": "APPROVED",
+      "taxonomy_record_hash": "404fbf6081de8efa771e263eb1e03d30d6d13a944efcba8d99f898fea9a2e253"
+    },
+    {
+      "cefr": "A1.1",
+      "content_origin": "PROJECT_AUTHORED",
+      "definition": "Produce planned or sustained spoken English for a communicative purpose.",
+      "id": "concept_speaking",
+      "prerequisites": [],
+      "record_type": "SUPPORTING_CONCEPT",
+      "status": "APPROVED",
+      "taxonomy_record_hash": "c4cf3d43a1fc8fb5b9912813019d6549a058701af342bb11c3084c196871cb98"
+    },
+    {
+      "cefr": "A1.1",
+      "content_origin": "PROJECT_AUTHORED",
+      "definition": "Communicate basic identifying, contact, family, and everyday-life information with privacy awareness.",
+      "id": "concept_topic_personal_information",
+      "prerequisites": [],
+      "record_type": "SUPPORTING_CONCEPT",
+      "status": "APPROVED",
+      "taxonomy_record_hash": "3c5a283a23001c4a1417e118112adadb6d98ef18d497013b3fe68d3a4822afed"
+    },
+    {
+      "cefr": "A1.1",
+      "content_origin": "PROJECT_AUTHORED",
+      "definition": "Create written English suited to an audience, purpose, and text type.",
+      "id": "concept_writing",
+      "prerequisites": [],
+      "record_type": "SUPPORTING_CONCEPT",
+      "status": "APPROVED",
+      "taxonomy_record_hash": "c0a3026d46479bae1c0bf32b04d2bb8d238029078c81b9e63012e147f724e9ab"
+    }
+  ],
+  "review_outcome": "APPROVED_FOR_M6_GENERATION",
+  "schema_version": "1.0",
+  "status": "APPROVED",
+  "taxonomy_version": "20260831",
+  "validated": true
+}

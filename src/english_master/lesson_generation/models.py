@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import copy
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Mapping, Protocol
@@ -17,10 +18,10 @@ class LessonGenerationRequest:
 
     @classmethod
     def from_dict(cls, value: Mapping[str, Any]) -> "LessonGenerationRequest":
-        return cls(data=dict(value))
+        return cls(data=copy.deepcopy(dict(value)))
 
     def as_dict(self) -> JsonObject:
-        return dict(self.data)
+        return copy.deepcopy(dict(self.data))
 
 
 @dataclass(frozen=True, order=True)
@@ -48,6 +49,8 @@ class LessonGenerationResult:
 
 class LessonBackend(Protocol):
     """Provider-neutral backend boundary. Implementations return one JSON object."""
+
+    byte_identical_output: bool
 
     def generate(self, prompt: str, *, parameters: Mapping[str, Any], seed: int | None) -> JsonObject:
         ...
