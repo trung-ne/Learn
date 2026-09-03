@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "record_type": "lesson_ai_review",
+  "approval_tier": "AI_REVIEWED",
+  "lesson_id": "A2-U03-L01",
+  "lesson_sha256": "15a6f1f5f78016c1cda6d8df589c2582c567d77e5ebe5d64dd36ebef7d8e2d8e",
+  "audit_sha256": "7de116644f82c71605e9cced4f5cdfe5d57f6620fcdbbd9695c52836235292ff",
+  "snapshot_binding": {
+    "snapshot_id": "m5devsnapshot_df56cb242d8d89f1f04815d1e73b20af1853fd6d7b91e399ed379b0f74cc684e",
+    "snapshot_sha256": "1bcae5a8c7982b90acd4ce911d56691bbde0f9046951f37a6c6e3e2fa7d8c6bc",
+    "member_hashes": {
+      "manifest": "1436c433163765410282fffdddea1bed616feb372270a47d99bebb7193e8d296",
+      "source_registry": "1270284517c3d47e4467310ad32e7431dc0aa3cfbce0edb07e4fedc9bc347435",
+      "snapshot": "1bcae5a8c7982b90acd4ce911d56691bbde0f9046951f37a6c6e3e2fa7d8c6bc"
+    },
+    "bundle_sha256": "9ef02dd12b18a30788e1c1f61fba45b352bc50f71d42426140f54dc94c4b63d3"
+  },
+  "reviewer_type": "AI",
+  "review_role": "PEDAGOGICAL_AI_REVIEWER",
+  "independent_of_generation": true,
+  "review_prompt": {
+    "version": "M6_PEDAGOGICAL_AI_REVIEW_v1",
+    "sha256": "4d799ea436674538dffa377cb69ddcf38c0d7bb7ef65f7f37057994f505ee282",
+    "capture_mode": "SESSION_CAPTURED"
+  },
+  "response": {
+    "sha256": "ce454527ce093e7d3d387f1b4968db99c11ee246d26022a181e4446f264ca575",
+    "provider": "UNKNOWN",
+    "model": "gpt-5.6-terra",
+    "parameters": {},
+    "replayable_from_capture": true
+  },
+  "reviewed_at": "2026-09-03T06:12:50Z",
+  "decision": "APPROVE",
+  "checklist": [
+    {
+      "criterion": "OBJECTIVE_ALIGNMENT",
+      "result": "PASS",
+      "notes": "The past scene, exact relay of timetable facts, relationship-sensitive request, and final integrated performance cover narration, mediation, and socially suitable help within the allocated scope."
+    },
+    {
+      "criterion": "TEACHABILITY",
+      "result": "PASS",
+      "notes": "Each new capability receives a model and a concrete check, and the transit situation supplies a common context for the final integrated task."
+    },
+    {
+      "criterion": "PROGRESSION",
+      "result": "PASS",
+      "notes": "Past continuous and word stress are introduced over the required past-simple and syllable prerequisites; request help is reviewed and mediation is introduced after reading/writing foundations."
+    },
+    {
+      "criterion": "CLARITY",
+      "result": "PASS",
+      "notes": "Most directions are precise, including the timeline and three-fact mediation check, but one word-stress contrast is terminologically imprecise."
+    },
+    {
+      "criterion": "COGNITIVE_LOAD",
+      "result": "PASS",
+      "notes": "The lesson combines several capabilities, but limits each to one highly scaffolded example and a single transit scenario in 35 minutes."
+    },
+    {
+      "criterion": "VIETNAMESE_LEARNER_RELEVANCE",
+      "result": "PASS",
+      "notes": "The practical station scenario and explicit stress cue are relevant, while the lesson neither presumes nor labels Vietnamese learner difficulty."
+    },
+    {
+      "criterion": "COHERENCE",
+      "result": "PASS",
+      "notes": "Grammar, mediation, register, and word stress are brought together explicitly in the final explain-request-relay sequence."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "MINOR",
+      "category": "CLARITY",
+      "description": "The instruction “make that syllable clearer and longer, not every word louder” contrasts a syllable with words; the intended comparison is evidently between the stressed syllable and the other syllables in information.",
+      "recommendation": "Replace “not every word louder” with a concrete within-word cue such as “make MA more prominent than the other syllables; do not stress every syllable equally.”"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Inspected the lesson against its reconstructed, hash-matched M5 teaching payload and confirmed that no external source payload was supplied.",
+      "Compared wording and examples across the closed set of all ten revised lessons for suspicious verbatim duplication beyond shared instructional scaffolding.",
+      "Reviewed the audit provenance/copyright result and source-scope constraints as machine evidence without treating them as a web-wide originality check."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "Closed-corpus review of the ten supplied lessons plus their exact M5/request/audit context only; no Internet-wide search, external proprietary corpus, legal opinion, or provider receipt was available."
+  },
+  "limitations": [
+    "This is an independent AI pedagogical review for development evidence only; it is not human review, release approval, certification, or publication authorization.",
+    "The governing M5 snapshot retains DRAFT taxonomy and OUTLINE_ONLY curriculum records and is limited to the development lane.",
+    "No learner trial, classroom observation, or outcome study was performed.",
+    "No audio was supplied, so no acoustic, listening-performance, or pronunciation-performance review was performed.",
+    "Originality checking was closed-corpus and artifact-bound; no web-wide plagiarism search, external corpus comparison, or legal determination was performed.",
+    "Generation provider provenance was not independently established; UNKNOWN is retained rather than inferred.",
+    "Generator reasoning, self-assessment, and prior review records were not inspected.",
+    "response.sha256 hashes the canonical UTF-8 JSON of the decision, checklist, findings, copyright_originality_check, and limitations captured in this session."
+  ],
+  "ai_review_id": "m6aireview_cb98cc8aa722715e08c9611afc0ff3502e974e08219b60be29443ac9ae59e57a"
+}

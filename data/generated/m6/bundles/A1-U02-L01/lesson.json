@@ -1,0 +1,90 @@
+{
+  "cefr_level": "A1.2",
+  "communicative_functions": [
+    "concept_function_request_help"
+  ],
+  "content_sections": [
+    {
+      "body_text": "Use the past simple for a completed event: I ran home yesterday. Add a clear time word such as yesterday.",
+      "embedded_examples": [
+        "concept_past_simple",
+        "vocab_en_run_001"
+      ],
+      "id": "section_01",
+      "section_type": "grammar",
+      "title": "A finished event"
+    },
+    {
+      "body_text": "A: Could you help me? B: Yes. I ran to the station yesterday. Clap the syllables in yesterday.",
+      "embedded_examples": [
+        "concept_function_request_help",
+        "concept_pronunciation_syllables",
+        "vocab_en_run_001"
+      ],
+      "id": "section_02",
+      "section_type": "dialogue",
+      "title": "Ask for help"
+    }
+  ],
+  "dimensions": [
+    "communicative_functions",
+    "grammar",
+    "listening",
+    "pronunciation",
+    "reading",
+    "speaking",
+    "spoken_interaction",
+    "vocabulary_senses",
+    "writing"
+  ],
+  "duration_minutes": 35,
+  "exercises": [],
+  "functions_introduced": [
+    "concept_function_request_help"
+  ],
+  "functions_reviewed": [],
+  "generation_metadata": {
+    "curriculum_version": "20260903",
+    "generated_at": "2026-09-03T12:30:00Z",
+    "generator": "english_master.lesson_generation",
+    "generator_version": "2.0",
+    "model": "gpt-5.6-terra",
+    "prompt_version": "M6_LESSON_GENERATOR_v3",
+    "qa_notes": "Automated M6 structural checks passed; independent review remains required.",
+    "qa_status": "UNREVIEWED"
+  },
+  "grammar_introduced": [
+    "concept_past_simple"
+  ],
+  "grammar_reviewed": [],
+  "id": "A1-U02-L01",
+  "lesson_kind": "CORE",
+  "lesson_number": 1,
+  "objectives": [
+    "handle simple time reference and requests for help",
+    "combine selected A1.2 capabilities for a communicative purpose"
+  ],
+  "prerequisites": [
+    "A1-U01-L02"
+  ],
+  "pronunciation_introduced": [
+    "concept_pronunciation_syllables"
+  ],
+  "pronunciation_reviewed": [],
+  "review_of": [],
+  "schema_version": "1.0",
+  "skills": [
+    "listening",
+    "reading",
+    "speaking",
+    "spoken_interaction",
+    "writing"
+  ],
+  "taxonomy_concepts": [],
+  "title": "Everyday events: foundations",
+  "unit_id": "A1.2-U02",
+  "vocabulary_introduced": [
+    "vocab_en_run_001"
+  ],
+  "vocabulary_reviewed": []
+}

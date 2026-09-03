@@ -12,6 +12,7 @@ from english_master.lesson_generation import (
     LessonGenerationRequest,
     LessonGenerator,
     VerifiedM5Authority,
+    VerifiedM5DevelopmentAuthority,
     build_authorization,
     build_request,
 )
@@ -26,7 +27,8 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Generate one constrained M6 lesson from a reverified M5 approval snapshot")
     parser.add_argument("--lesson-id", required=True, help="Authoritative M5 lesson ID to generate")
     parser.add_argument("--snapshot-dir", type=Path, required=True, help="Immutable verified M5 snapshot directory")
-    parser.add_argument("--reviewer-registry", type=Path, required=True, help="Independently administered trusted reviewer registry")
+    parser.add_argument("--reviewer-registry", type=Path, help="Required only for strict human/release snapshots")
+    parser.add_argument("--development", action="store_true", help="Require an M5 development-only snapshot; never creates release approval")
     parser.add_argument("--structure", type=Path, default=root / "curriculum" / "structure.json", help="Authoritative M5 structure")
     parser.add_argument("--graph", type=Path, help="M5 graph override declared by the structure")
     parser.add_argument("--coverage", type=Path, help="M5 coverage override declared by the structure")
@@ -41,10 +43,18 @@ def build_parser() -> argparse.ArgumentParser:
 def main(argv: list[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
     try:
-        m5 = VerifiedM5Authority.from_files(
-            args.structure, args.snapshot_dir, args.source_registry, args.reviewer_registry,
-            graph_path=args.graph, coverage_path=args.coverage, taxonomy_path=args.taxonomy,
-        )
+        if args.development:
+            m5 = VerifiedM5DevelopmentAuthority.from_files(
+                args.structure, args.snapshot_dir, args.source_registry,
+                graph_path=args.graph, coverage_path=args.coverage, taxonomy_path=args.taxonomy,
+            )
+        else:
+            if args.reviewer_registry is None:
+                raise ValueError("--reviewer-registry is required unless --development is selected")
+            m5 = VerifiedM5Authority.from_files(
+                args.structure, args.snapshot_dir, args.source_registry, args.reviewer_registry,
+                graph_path=args.graph, coverage_path=args.coverage, taxonomy_path=args.taxonomy,
+            )
         authorization = build_authorization(m5, [args.lesson_id])
         authority = LessonGenerationAuthority(m5=m5, authorization=authorization)
         request = LessonGenerationRequest.from_dict(build_request(m5, authorization, args.lesson_id))

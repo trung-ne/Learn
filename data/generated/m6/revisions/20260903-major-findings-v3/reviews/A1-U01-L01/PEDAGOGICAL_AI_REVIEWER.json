@@ -1,0 +1,108 @@
+{
+  "ai_review_id": "m6aireview_44284aba68995363cbd6e9165ed1eb9106e8c70d454bc6c0831110638c3b1b49",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "f9e9057a3418d438999b49236147699b82286f96421c8d4e1302bc31c807ddaa",
+  "checklist": [
+    {
+      "criterion": "CLARITY",
+      "notes": "Directions and examples are concise, sequenced, and generally accessible at A1.1; the abstract word ‘stable’ is immediately supported by examples.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "COGNITIVE_LOAD",
+      "notes": "Four short sections and one tightly bounded language model are manageable in 35 minutes.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "COHERENCE",
+      "notes": "The grammar and pronunciation strands connect to a personal monologue, but neither the content nor the M5 allocation enacts the promised exchange/basic-participation outcome.",
+      "result": "FAIL"
+    },
+    {
+      "criterion": "OBJECTIVE_ALIGNMENT",
+      "notes": "Safe personal-information production is addressed, but ‘basic participation’ and a communicative exchange are not taught or demonstrated; the M5 objective/title conflict with an allocation containing no interaction or communicative function.",
+      "result": "FAIL"
+    },
+    {
+      "criterion": "PROGRESSION",
+      "notes": "The sequence moves from rule noticing to a model, articulatory guidance, and independent production.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "TEACHABILITY",
+      "notes": "A usable model and rehearsal cycle exist, but the final success check verifies only sound mechanics; it does not let a self-study learner verify present-simple choice/form or successful participation.",
+      "result": "FAIL"
+    },
+    {
+      "criterion": "VIETNAMESE_LEARNER_RELEVANCE",
+      "notes": "Privacy-safe substitution and explicit final-sound/no-extra-vowel guidance are useful without stereotyping; the supplied article-choice observation is not operationalized, which is recorded as a minor limitation.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Inspected only the supplied audit provenance declarations and project-authored authoritative context; no external comparison was performed."
+    ],
+    "result": "NOT_PERFORMED",
+    "scope_limitations": "No external source, corpus, web, or plagiarism search was permitted or performed; this record makes no external originality or copyright claim."
+  },
+  "decision": "NEEDS_REVISION",
+  "findings": [
+    {
+      "category": "OBJECTIVE_ALIGNMENT",
+      "description": "The lesson promises ‘basic participation’ and is titled as an exchange, yet it only elicits a four-sentence monologue. The authoritative M5 allocation contains no spoken-interaction or communicative-function target, so the objective and allocation are themselves contradictory.",
+      "recommendation": "Revise the M5 allocation/objective or add an authorized, genuinely two-turn participation outcome and regenerate the lesson consistently.",
+      "severity": "MAJOR"
+    },
+    {
+      "category": "TEACHABILITY",
+      "description": "The terminal checklist can confirm /v/ and /z/ mechanics but provides no observable criterion for correct present-simple meaning/form or communicative success.",
+      "recommendation": "Add a bounded self-check keyed to routine/fact meaning and subject–verb form, plus a viable participation check; do not add M7 exercises.",
+      "severity": "MAJOR"
+    },
+    {
+      "category": "VIETNAMESE_LEARNER_RELEVANCE",
+      "description": "The authoritative context asks for learner-specific article-choice noticing when relevant, but the personal-information production gives no optional prompt for checking articles.",
+      "recommendation": "Add a brief conditional article-noticing check only where the learner’s own sentences contain an article, without assuming a universal difficulty.",
+      "severity": "MINOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "A1-U01-L01",
+  "lesson_sha256": "9583251221377e0ae7f3aa534d92279b9629d81e665f48ea154bee730da5ee05",
+  "limitations": [
+    "AI pedagogical development review only; this is not human review, release approval, certification, or public-release evidence.",
+    "The review used only the exact lesson, audit, deterministic authoritative request rebuilt from the verified M5 development snapshot, and snapshot-bound M5 context; generator reasoning and prior reviews were not inspected.",
+    "M6 intentionally contains no M7 exercises; exercises: [] was not treated as a defect, while the staging and viability of practice and self-check instructions inside content_sections were assessed.",
+    "No external plagiarism, copyright, corpus, learner, classroom, or audio-acoustic validation was performed.",
+    "The runtime reported reviewer model gpt-5.6-sol; no reviewer provider or inference parameters were reported, so provider is UNKNOWN and parameters are empty.",
+    "response.sha256 binds canonical JSON containing decision, checklist, findings, copyright_originality_check, and limitations exactly as persisted in this record."
+  ],
+  "record_type": "lesson_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {},
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "7b306dada4a5e245ae3ce7ae40ecf3a6afbb08cc36a7c2a552d5551c1990e945"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "sha256": "183cf81bbe861eafbb053bc7c775d73ae92bad0a7021e6ae7f28213835f434d2",
+    "version": "build_ai_review_prompt-v1"
+  },
+  "review_role": "PEDAGOGICAL_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T06:47:17Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0",
+  "snapshot_binding": {
+    "bundle_sha256": "79301a37b0821fcd2cc077021db318b0a201771b9727ad08be071fc076cdb027",
+    "member_hashes": {
+      "manifest": "1436c433163765410282fffdddea1bed616feb372270a47d99bebb7193e8d296",
+      "snapshot": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f",
+      "source_registry": "1270284517c3d47e4467310ad32e7431dc0aa3cfbce0edb07e4fedc9bc347435"
+    },
+    "snapshot_id": "m5devsnapshot_5335d3a30ab9f4948e22558aa7fc755857c09dff4ef305c95d171e3ebc718c72",
+    "snapshot_sha256": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "cefr_level": "B1.1",
+  "communicative_functions": [],
+  "content_sections": [
+    {
+      "body_text": "Here run means manage or organize an activity, service, or organization. ‘Lan runs a language club.’ ‘They run a weekend course.’ Identify what is managed after run, then create one true or invented example about a club, event, service, course, or business.",
+      "embedded_examples": [
+        "vocab_en_run_002",
+        "concept_present_simple"
+      ],
+      "id": "section_01",
+      "section_type": "vocabulary",
+      "title": "Learn the management sense of run"
+    },
+    {
+      "body_text": "‘Before the guests arrived, Lan had run several events.’ Had run marks the organizing experience as earlier than arrived. Draw HAD RUN → GUESTS ARRIVED → now. Keep the management meaning by naming the event or organization that Lan managed.",
+      "embedded_examples": [
+        "vocab_en_run_002",
+        "concept_past_perfect",
+        "concept_past_simple",
+        "concept_narrative_sequence"
+      ],
+      "id": "section_02",
+      "section_type": "grammar",
+      "title": "Place management before a past point"
+    },
+    {
+      "body_text": "At a final-consonant + initial-vowel boundary, move smoothly with no pause or extra vowel: run_an event; event_at school. First say each side, then join it: run|an → run_an, event|at → event_at. Keep /n/ and /t/ audible as they lead into the next vowel.",
+      "embedded_examples": [
+        "concept_pronunciation_linking",
+        "concept_pronunciation_phonemes",
+        "vocab_en_run_002"
+      ],
+      "id": "section_03",
+      "section_type": "explanation",
+      "title": "Mark linking boundaries"
+    },
+    {
+      "body_text": "Model: ‘Before June, Lan had run_an event_at school, so she could organize the club.’ Mark the earlier event, rehearse both linked boundaries, then retell with a different activity. Check: run means manage, had run is earlier than the past reference point, and each marked final consonant remains audible without a pause.",
+      "embedded_examples": [
+        "vocab_en_run_002",
+        "concept_past_perfect",
+        "concept_pronunciation_linking",
+        "concept_narrative_sequence"
+      ],
+      "id": "section_04",
+      "section_type": "explanation",
+      "title": "Notice, retell, self-check"
+    }
+  ],
+  "dimensions": [
+    "grammar",
+    "listening",
+    "pronunciation",
+    "reading",
+    "speaking",
+    "spoken_interaction",
+    "vocabulary_senses",
+    "writing"
+  ],
+  "duration_minutes": 35,
+  "exercises": [],
+  "functions_introduced": [],
+  "functions_reviewed": [],
+  "generation_metadata": {
+    "curriculum_version": "20260903",
+    "generated_at": "2026-09-03T05:55:45Z",
+    "generator": "english_master.lesson_generation",
+    "generator_version": "2.0",
+    "model": "gpt-5.6-terra",
+    "prompt_version": "M6_LESSON_GENERATOR_v3",
+    "qa_notes": "Automated M6 structural checks passed; independent review remains required.",
+    "qa_status": "UNREVIEWED"
+  },
+  "grammar_introduced": [],
+  "grammar_reviewed": [
+    "concept_past_perfect"
+  ],
+  "id": "B1-U05-L02",
+  "lesson_kind": "CONSOLIDATION",
+  "lesson_number": 2,
+  "objectives": [
+    "handle past relationships and connected speech",
+    "combine selected B1.1 capabilities for a communicative purpose"
+  ],
+  "prerequisites": [
+    "B1-U05-L01"
+  ],
+  "pronunciation_introduced": [
+    "concept_pronunciation_linking"
+  ],
+  "pronunciation_reviewed": [],
+  "review_of": [
+    "B1-U05-L01"
+  ],
+  "schema_version": "1.0",
+  "skills": [
+    "listening",
+    "reading",
+    "speaking",
+    "spoken_interaction",
+    "writing"
+  ],
+  "taxonomy_concepts": [],
+  "title": "Extended narration: application",
+  "unit_id": "B1.1-U05",
+  "vocabulary_introduced": [
+    "vocab_en_run_002"
+  ],
+  "vocabulary_reviewed": []
+}

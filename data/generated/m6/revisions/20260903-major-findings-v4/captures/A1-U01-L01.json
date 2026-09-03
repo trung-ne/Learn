@@ -1,0 +1,65 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "grammar",
+        "title": "Facts and routines",
+        "body_text": "Use the present simple for a fact or something you often do. Read: ‘I live in Hue. I study every day. Lan lives in Hue. She studies every day.’ After I/you/we/they, use live or study. After he/she, add -s: lives or studies.",
+        "embedded_examples": [
+          "concept_present_simple",
+          "concept_reading"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "dialogue",
+        "title": "Read and take two turns",
+        "body_text": "A: ‘Where do you live?’ B: ‘I live in Hue.’ A: ‘What do you do every day?’ B: ‘I study English.’ Read both parts. Then cover B’s lines, play or say each A line, pause, and answer. Each answer must give the kind of information A asks for.",
+        "embedded_examples": [
+          "concept_present_simple",
+          "concept_topic_personal_information",
+          "concept_listening",
+          "concept_speaking"
+        ]
+      },
+      {
+        "id": "section_03",
+        "section_type": "explanation",
+        "title": "Check /v/ and /z/",
+        "body_text": "For /v/ in live, touch your lower lip with your upper teeth. For final /z/ in lives and studies, put your tongue near the small ridge behind your upper teeth. Both sounds buzz in your throat. Say the sound, then the word. Do not add another beat after it.",
+        "embedded_examples": [
+          "concept_pronunciation_phonemes",
+          "concept_listening",
+          "concept_speaking"
+        ]
+      },
+      {
+        "id": "section_04",
+        "section_type": "explanation",
+        "title": "Write, speak, and check",
+        "body_text": "Write one fact and one routine. Use this key: I live/study; she lives/studies. Correct your forms from the key. Record the two A questions with pauses; answer them, then replay. Check that each answer fits its question. Check /v/ or /z/ with the mouth steps above. If you used a/an/the, circle it for later review; do not assume it is wrong.",
+        "embedded_examples": [
+          "concept_present_simple",
+          "concept_pronunciation_phonemes",
+          "concept_writing",
+          "concept_listening",
+          "concept_speaking"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "00164d88868b6ca635a1c860cc6ce4f74ddb4ab5043d2f10ee85f1a0526bac73",
+  "response_sha256": "0f378983e43fbb3ab3c75085fe6ee3d8ecf881512bfc1b5eb59049575f887f5f",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-terra",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T07:16:57Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

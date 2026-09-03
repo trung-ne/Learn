@@ -151,6 +151,114 @@ def test_vocabulary_bearing_a1_2_request_uses_m2_lemma_and_cefr(verified_m5: Ver
     assert authority.authorization["records"]
 
 
+def test_review_edge_adds_only_explicit_a2_1_source_knowledge(verified_m5: VerifiedM5Authority) -> None:
+    _, request = authority_and_request(verified_m5, "A2-U03-L02")
+
+    assert "concept_past_continuous" in request["lesson_spec"]["grammar_reviewed"]
+    assert {
+        "concept_mediation",
+        "concept_chunk_could_you_help",
+    } <= set(request["constraints"]["allowed_supporting"])
+    assert {"from": "A2-U03-L01", "to": "A2-U03-L02"} in request["graph"]["review_edges"]
+
+    unrelated = "concept_topic_personal_information"
+    assert unrelated in request["previous_knowledge"]["supporting"]
+    assert unrelated in request["constraints"]["forbidden_ids"]
+    assert unrelated not in request["constraints"]["allowed_supporting"]
+
+
+def test_review_edge_adds_preceding_a2_2_collocation(verified_m5: VerifiedM5Authority) -> None:
+    _, request = authority_and_request(verified_m5, "A2-U04-L02")
+
+    collocation = "concept_collocation_make_decision"
+    assert collocation in request["lesson_spec"]["taxonomy_concepts"]
+    assert collocation in request["constraints"]["allowed_supporting"]
+    assert collocation not in request["constraints"]["forbidden_ids"]
+    assert collocation in {
+        record["id"] for record in request["teaching_payload"]["records"]
+    }
+
+
+def test_review_source_must_precede_target(verified_m5: VerifiedM5Authority) -> None:
+    target = next(
+        lesson
+        for lesson in verified_m5.bundle.structure["lessons"]
+        if lesson["id"] == "A2-U03-L02"
+    )
+    target["review_of"] = ["B1-U05-L01"]
+    edge = next(
+        edge
+        for edge in verified_m5.bundle.graph["edges"]
+        if edge == {
+            "from": "A2-U03-L01",
+            "to": "A2-U03-L02",
+            "type": "review",
+        }
+    )
+    edge["from"] = "B1-U05-L01"
+
+    with pytest.raises(ValueError, match="must precede"):
+        build_authorization(verified_m5, ["A2-U03-L02"])
+
+
+def test_review_source_must_be_resolvable(verified_m5: VerifiedM5Authority) -> None:
+    target = next(
+        lesson
+        for lesson in verified_m5.bundle.structure["lessons"]
+        if lesson["id"] == "A2-U03-L02"
+    )
+    target["review_of"] = ["A2-U99-L01"]
+    edge = next(
+        edge
+        for edge in verified_m5.bundle.graph["edges"]
+        if edge == {
+            "from": "A2-U03-L01",
+            "to": "A2-U03-L02",
+            "type": "review",
+        }
+    )
+    edge["from"] = "A2-U99-L01"
+
+    with pytest.raises(ValueError, match="not resolvable"):
+        build_authorization(verified_m5, ["A2-U03-L02"])
+
+
+def test_review_target_must_be_resolvable(verified_m5: VerifiedM5Authority) -> None:
+    source = next(
+        lesson
+        for lesson in verified_m5.bundle.structure["lessons"]
+        if lesson["id"] == "A2-U03-L01"
+    )
+    source["taxonomy_concepts"].append("concept_missing_review_target")
+
+    with pytest.raises(ValueError, match="review target .* is not resolvable"):
+        build_authorization(verified_m5, ["A2-U03-L02"])
+
+
+def test_review_target_must_have_been_introduced_by_source(verified_m5: VerifiedM5Authority) -> None:
+    source = next(
+        lesson
+        for lesson in verified_m5.bundle.structure["lessons"]
+        if lesson["id"] == "A2-U03-L01"
+    )
+    source["taxonomy_concepts"].append("concept_collocation_make_decision")
+
+    with pytest.raises(ValueError, match="was not introduced .* or earlier"):
+        build_authorization(verified_m5, ["A2-U03-L02"])
+
+
+def test_review_target_must_remain_in_m5_authorized_scope(verified_m5: VerifiedM5Authority) -> None:
+    target = next(
+        record
+        for record in verified_m5.bundle.taxonomy["concepts"]
+        if record["id"] == "concept_chunk_could_you_help"
+    )
+    target["status"] = "REJECTED"
+
+    with pytest.raises(ValueError, match="not M5-authorized"):
+        build_authorization(verified_m5, ["A2-U03-L02"])
+
+
 def test_capture_mismatch_is_rejected_after_preflight(verified_m5: VerifiedM5Authority) -> None:
     authority, request = authority_and_request(verified_m5)
     class MismatchedBackend:

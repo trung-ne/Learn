@@ -1,0 +1,66 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "explanation",
+        "title": "1. Two vowels (8 min)",
+        "body_text": "Live has /ɪ/; leave has /iː/. Relax your tongue for /ɪ/. Move it higher and forward for /iː/; this sound is often longer too. Say live–leave five times. Change mouth shape and length, not length alone.",
+        "embedded_examples": [
+          "concept_pronunciation_minimal_pairs",
+          "concept_pronunciation_phonemes",
+          "concept_speaking"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "dialogue",
+        "title": "2. Clear repair (8 min)",
+        "body_text": "B: ‘I live here.’ A: ‘Did you say leave?’ B: ‘No, live—/lɪv/.’ A: ‘Oh, you live here.’ Read both roles, then cover them and speak again. B clearly repeats the word that A heard wrongly.",
+        "embedded_examples": [
+          "concept_pronunciation_minimal_pairs",
+          "concept_present_simple",
+          "concept_spoken_interaction",
+          "concept_topic_personal_information"
+        ]
+      },
+      {
+        "id": "section_03",
+        "section_type": "explanation",
+        "title": "3. Two kinds of check (10 min)",
+        "body_text": "For listening, use text-to-speech only to play a hidden order of live and leave; write L or E, then reveal it. TTS speaks; it does not hear you. For speaking, say one word to an independent listener or a speech-recognition tool that displays the recognized word. If neither is available, write ‘not checked.’ Your own replay is practice, not proof.",
+        "embedded_examples": [
+          "concept_pronunciation_minimal_pairs",
+          "concept_listening",
+          "concept_speaking",
+          "concept_writing"
+        ]
+      },
+      {
+        "id": "section_04",
+        "section_type": "dialogue",
+        "title": "4. Take turns (9 min)",
+        "body_text": "Make a four-line talk: give one fact, hear one word wrongly, ask ‘Did you say …?’, then correct it. Speak both roles. Success: the reply answers the question and an independent listener or suitable speech-recognition tool identifies live or leave. If unavailable, mark ‘not checked’ and keep the recording as practice.",
+        "embedded_examples": [
+          "concept_pronunciation_minimal_pairs",
+          "concept_present_simple",
+          "concept_spoken_interaction",
+          "concept_topic_personal_information"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "7987a8415c67e5004a2abd2201c7d613691864edb8b1527b148d50a7af4f1dae",
+  "response_sha256": "23e19f688e7078af16092eb472c33168b5505f1c52ba01d0213b72245981034f",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-sol",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T07:41:36Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

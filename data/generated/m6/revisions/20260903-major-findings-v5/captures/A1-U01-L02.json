@@ -1,0 +1,66 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "explanation",
+        "title": "1. Two vowels (8 min)",
+        "body_text": "Live has /ɪ/. Leave has /iː/. For /ɪ/, relax your tongue. For /iː/, move it higher and forward; the sound is often longer too. Say live–leave five times. Change the mouth shape and the length, not only the length.",
+        "embedded_examples": [
+          "concept_pronunciation_minimal_pairs",
+          "concept_pronunciation_phonemes",
+          "concept_speaking"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "dialogue",
+        "title": "2. Clear repair (8 min)",
+        "body_text": "B: ‘I live here.’ A: ‘Did you say leave?’ B: ‘No, live—/lɪv/.’ A: ‘Oh, you live here.’ Read both roles. Cover the lines and say them again. The question is clear, and B repeats the word that A heard wrongly.",
+        "embedded_examples": [
+          "concept_pronunciation_minimal_pairs",
+          "concept_present_simple",
+          "concept_spoken_interaction",
+          "concept_topic_personal_information"
+        ]
+      },
+      {
+        "id": "section_03",
+        "section_type": "explanation",
+        "title": "3. Two kinds of check (10 min)",
+        "body_text": "For listening, use text-to-speech only to play a hidden order of live and leave; write L or E, then reveal the order. TTS speaks to you; it does not hear your speech. For speaking, say one word without showing it to an independent listener or a speech-recognition tool that displays the word it recognizes. If neither route is available, write ‘not checked.’ Your own replay is practice, not proof.",
+        "embedded_examples": [
+          "concept_pronunciation_minimal_pairs",
+          "concept_listening",
+          "concept_speaking",
+          "concept_writing"
+        ]
+      },
+      {
+        "id": "section_04",
+        "section_type": "dialogue",
+        "title": "4. Take turns (9 min)",
+        "body_text": "Make a four-line talk like the model: give one fact, hear one word wrongly, ask ‘Did you say …?’, then correct it. Speak both roles with a pause for each reply. Success: the reply answers the question and an independent listener or suitable speech-recognition tool identifies live or leave. If that check is unavailable, mark ‘not checked’ and keep the recording as practice only.",
+        "embedded_examples": [
+          "concept_pronunciation_minimal_pairs",
+          "concept_present_simple",
+          "concept_spoken_interaction",
+          "concept_topic_personal_information"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "7987a8415c67e5004a2abd2201c7d613691864edb8b1527b148d50a7af4f1dae",
+  "response_sha256": "51436a075da46bda3b6cbeafa3e3936104a03c1c8b57004525d67d773c4555b6",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-sol",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T07:39:05Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

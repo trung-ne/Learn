@@ -1,0 +1,64 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "grammar",
+        "title": "Retrieve scene and movement",
+        "body_text": "Use was/were + verb-ing for the action already in progress: ‘I was running home when the rain started.’ Here run means move on foot faster than walking. Draw a long line for was running and a point where the rain started.",
+        "embedded_examples": [
+          "concept_past_continuous",
+          "concept_past_simple",
+          "vocab_en_run_001"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "dialogue",
+        "title": "Connect request and response",
+        "body_text": "Mai: ‘I was running home when the rain started. Please help me carry these books.’ An: ‘Yes. Put them in my bag.’ Mai: ‘Thank you.’ The opening explains the situation, the request names the need, and the reply supplies relevant help.",
+        "embedded_examples": [
+          "concept_past_continuous",
+          "vocab_en_run_001",
+          "concept_function_request_help"
+        ]
+      },
+      {
+        "id": "section_03",
+        "section_type": "explanation",
+        "title": "Sequence and focus the account",
+        "body_text": "Retell in order: ‘First, Mai was running home. Then rain started. Next, she requested help. Finally, An carried the BOOKS.’ Make BOOKS more prominent when correcting ‘the bag’; make AN prominent when correcting ‘Mai.’ Focus follows the new contrast.",
+        "embedded_examples": [
+          "concept_narrative_sequence",
+          "concept_pronunciation_sentence_stress",
+          "concept_past_continuous"
+        ]
+      },
+      {
+        "id": "section_04",
+        "section_type": "explanation",
+        "title": "Integrate and self-check",
+        "body_text": "Create a new four-event account: ongoing movement, interruption, help request, relevant response. Rehearse each group before joining them. Record the final account. Check that run keeps its foot-movement sense, event order is clear, the response solves the stated need, and only the intended new word is most prominent.",
+        "embedded_examples": [
+          "concept_narrative_sequence",
+          "vocab_en_run_001",
+          "concept_function_request_help",
+          "concept_pronunciation_sentence_stress"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "b300b279adaf2672a93ae2f9ec8be17c25131324a518ea1b4c6946a3e0920d19",
+  "response_sha256": "f122916da6da30767dbd17ec0641be1a2203ea509bd925e64cddd04be0818d1c",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-terra",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T05:54:40Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

@@ -1,0 +1,122 @@
+{
+  "cefr_level": "A2.2",
+  "communicative_functions": [
+    "concept_function_request_help"
+  ],
+  "content_sections": [
+    {
+      "body_text": "Mai was running home when it began to rain. She made the decision to ask for help. Mai said, ‘Please help me carry these books.’ An said, ‘Yes,’ put the books in a bag, and carried them home. The account shows the decision, request, and completed help.",
+      "embedded_examples": [
+        "concept_past_continuous",
+        "concept_past_simple",
+        "vocab_en_run_001",
+        "concept_collocation_make_decision",
+        "concept_narrative_sequence"
+      ],
+      "id": "section_01",
+      "section_type": "reading",
+      "title": "Read one complete account"
+    },
+    {
+      "body_text": "Was running shows the action already in progress. Run means move on foot faster than walking. The general pair is make a decision; the story uses made the decision. Write three cue lines: running — rain; decision — ask; An — carried books. Use them to retell the order.",
+      "embedded_examples": [
+        "concept_past_continuous",
+        "vocab_en_run_001",
+        "concept_collocation_make_decision",
+        "concept_narrative_sequence"
+      ],
+      "id": "section_02",
+      "section_type": "explanation",
+      "title": "Notice the key language"
+    },
+    {
+      "body_text": "Mai: ‘Please help me carry these BOOKS.’ An: ‘Yes. I’ll carry the books.’ Stress BOOKS when the item is new. To correct the helper, say: ‘AN carried them, not Mai.’ Stress AN. Record Mai with a pause, answer as An, then switch roles. Each answer must say who will carry what.",
+      "embedded_examples": [
+        "concept_function_request_help",
+        "concept_pronunciation_sentence_stress"
+      ],
+      "id": "section_03",
+      "section_type": "dialogue",
+      "title": "Take turns and move the stress"
+    },
+    {
+      "body_text": "Read the account, write four cue words, and record it. Hide the text, replay, and write: who ran, what changed, Mai’s decision, and An’s action. Compare your answers with the account. Then tell a friend who has not read it those four facts, so the friend knows the full result.",
+      "embedded_examples": [
+        "concept_narrative_sequence",
+        "concept_collocation_make_decision"
+      ],
+      "id": "section_04",
+      "section_type": "explanation",
+      "title": "Listen, check, and pass it on"
+    }
+  ],
+  "dimensions": [
+    "communicative_functions",
+    "discourse",
+    "grammar",
+    "listening",
+    "mediation",
+    "pronunciation",
+    "reading",
+    "speaking",
+    "spoken_interaction",
+    "vocabulary_senses",
+    "writing"
+  ],
+  "duration_minutes": 35,
+  "exercises": [],
+  "functions_introduced": [],
+  "functions_reviewed": [
+    "concept_function_request_help"
+  ],
+  "generation_metadata": {
+    "curriculum_version": "20260903",
+    "generated_at": "2026-09-03T07:16:57Z",
+    "generator": "english_master.lesson_generation",
+    "generator_version": "2.0",
+    "model": "gpt-5.6-terra",
+    "prompt_version": "M6_LESSON_GENERATOR_v3",
+    "qa_notes": "Automated M6 structural checks passed; independent review remains required.",
+    "qa_status": "UNREVIEWED"
+  },
+  "grammar_introduced": [],
+  "grammar_reviewed": [
+    "concept_past_continuous"
+  ],
+  "id": "A2-U04-L02",
+  "lesson_kind": "CONSOLIDATION",
+  "lesson_number": 2,
+  "objectives": [
+    "handle sequencing, lexical combinations, and information focus",
+    "combine selected A2.2 capabilities for a communicative purpose"
+  ],
+  "prerequisites": [
+    "A2-U04-L01"
+  ],
+  "pronunciation_introduced": [],
+  "pronunciation_reviewed": [
+    "concept_pronunciation_sentence_stress"
+  ],
+  "review_of": [
+    "A2-U04-L01"
+  ],
+  "schema_version": "1.0",
+  "skills": [
+    "listening",
+    "mediation",
+    "reading",
+    "speaking",
+    "spoken_interaction",
+    "writing"
+  ],
+  "taxonomy_concepts": [
+    "concept_collocation_make_decision",
+    "concept_narrative_sequence"
+  ],
+  "title": "Connected accounts: application",
+  "unit_id": "A2.2-U04",
+  "vocabulary_introduced": [],
+  "vocabulary_reviewed": [
+    "vocab_en_run_001"
+  ]
+}

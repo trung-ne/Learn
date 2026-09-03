@@ -1,0 +1,96 @@
+{
+  "ai_review_id": "m6aireview_17f1743e0d1091079c7613d5071bb09f4fe3bbedc0497adef52daab55cb5dfcb",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "2aa35af3f549c763a37c3c089d502554edd49f6b64d325501d14a13448d7b729",
+  "checklist": [
+    {
+      "criterion": "CLARITY",
+      "notes": "One-event lines, sequence markers, and capitalized focus words make expected structure and stress choices explicit.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "COGNITIVE_LOAD",
+      "notes": "Four short events and one collocation/stress pattern fit the 35-minute foundation lesson.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "COHERENCE",
+      "notes": "Sequence, decision language, and information focus are carried into the learner’s final written and spoken story.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "OBJECTIVE_ALIGNMENT",
+      "notes": "A four-event account, make/made a decision, and contrastive sentence stress directly address sequencing, lexical combination, and information focus.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "PROGRESSION",
+      "notes": "The lesson moves from reading and ordering to collocation noticing, contrastive stress, and creation of a parallel account.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "TEACHABILITY",
+      "notes": "The numbered model, collocation contrast, stress models, recording, event recovery, and final retell provide sufficient explanation and bounded feedback.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "VIETNAMESE_LEARNER_RELEVANCE",
+      "notes": "Visible prominence cues and replay checks offer accessible pronunciation support without unsupported group claims.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Inspected only the supplied audit provenance declarations and project-authored snapshot-bound context; no external comparison was performed."
+    ],
+    "result": "NOT_PERFORMED",
+    "scope_limitations": "No external source, corpus, web, or plagiarism search was performed; this record makes no external originality or copyright claim."
+  },
+  "decision": "APPROVE",
+  "findings": [
+    {
+      "category": "TEACHABILITY",
+      "description": "The ordering check leaves First/Next/Then/Finally in the lines and does not ask the learner to shuffle them, so numbering 1–4 mostly copies overt sequence cues rather than testing event-order comprehension.",
+      "recommendation": "Present the four lines in a deliberately mixed order or temporarily hide the sequence markers before asking the learner to reconstruct the order.",
+      "severity": "MINOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "A2-U04-L01",
+  "lesson_sha256": "ed689e53bf48838f336c36dbcb3f87f6e9a420bde4a18618ea7f8055a25353a8",
+  "limitations": [
+    "AI pedagogical development review only; this is not human review, release approval, certification, or public-release evidence.",
+    "The review used only the exact v4 lesson, its automated audit, and snapshot-bound M5 context; generator reasoning and prior review decisions were not used as evaluation evidence.",
+    "M6 intentionally contains no M7 exercises; exercises: [] was not treated as a defect, while staging, bounded practice, and self-check instructions inside content_sections were assessed.",
+    "No external plagiarism, copyright, corpus, learner, classroom, or audio-acoustic validation was performed.",
+    "The runtime reported reviewer model gpt-5.6-sol; no reviewer provider or inference parameters were reported, so provider is UNKNOWN and parameters are empty.",
+    "response.sha256 binds canonical JSON containing decision, checklist, findings, copyright_originality_check, and limitations exactly as persisted in this record."
+  ],
+  "record_type": "lesson_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {},
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "7b63001fb66069d8d01765ef165e60366b68386de7c07db0d8252126dcbf959d"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "sha256": "c3415f814933205f693c7b753fcb3d63ee0a79b14234b8563dd3ea8f1868f9e2",
+    "version": "build_ai_review_prompt-v1"
+  },
+  "review_role": "PEDAGOGICAL_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T07:29:16Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0",
+  "snapshot_binding": {
+    "bundle_sha256": "79301a37b0821fcd2cc077021db318b0a201771b9727ad08be071fc076cdb027",
+    "member_hashes": {
+      "manifest": "1436c433163765410282fffdddea1bed616feb372270a47d99bebb7193e8d296",
+      "snapshot": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f",
+      "source_registry": "1270284517c3d47e4467310ad32e7431dc0aa3cfbce0edb07e4fedc9bc347435"
+    },
+    "snapshot_id": "m5devsnapshot_5335d3a30ab9f4948e22558aa7fc755857c09dff4ef305c95d171e3ebc718c72",
+    "snapshot_sha256": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f"
+  }
+}

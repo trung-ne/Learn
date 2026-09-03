@@ -1,0 +1,90 @@
+{
+  "ai_review_id": "m6aireview_321067e45bf40afd0ee12ff39c58e8899b0de0af7b8def3e5576b14ab2ec68a1",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "7c223f446832995d384f688d4b09c6717edfe23d473969179e5e3aae495223bd",
+  "checklist": [
+    {
+      "criterion": "CLARITY",
+      "notes": "The staff reply, the three listening questions, and the explicit check sentences make every requested response available and independently self-checkable from the supplied text and recording.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "COGNITIVE_LOAD",
+      "notes": "One station scenario, two socially differentiated request forms, three repeated travel facts, and a short record-replay check are manageable within 35 minutes at A2.1.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "COHERENCE",
+      "notes": "The repaired sequence now forms a complete chain: Mai reads the board, makes a context-suitable request, receives staff confirmation, mediates the same facts to Linh, then records and checks all three turns by listening.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "OBJECTIVE_ALIGNMENT",
+      "notes": "Contrasting a respectful staff request with a collaborative friend request, requiring justification and adaptation, and carrying confirmed facts into mediation directly support socially suitable requesting, narration, and mediation.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "PROGRESSION",
+      "notes": "The lesson moves from supported fact recall through modeled request choice and adaptation to mediated transfer, then integrates pronunciation, speaking, and listening self-check.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "TEACHABILITY",
+      "notes": "The previous missing-staff-reply defect is corrected: the staff utterance supplies the tested facts, and the final check states the expected answers, so a self-study learner can complete and verify the mediation/listening flow.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "VIETNAMESE_LEARNER_RELEVANCE",
+      "notes": "The concrete relationship-sensitive request contrast and explicit word-stress cue offer useful support without making unsupported population-wide claims about Vietnamese learners.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Inspected only the exact v6 lesson, its automated audit provenance declarations, and project-authored snapshot-bound context; no external comparison was performed."
+    ],
+    "result": "NOT_PERFORMED",
+    "scope_limitations": "No external source, corpus, web, or plagiarism search was performed; this record makes no external originality or copyright claim."
+  },
+  "decision": "APPROVE",
+  "findings": [],
+  "independent_of_generation": true,
+  "lesson_id": "A2-U03-L02",
+  "lesson_sha256": "7e661581aa02a95d74a1efaf5c96445ead3e29f53ebc522b21077a78ed2e4100",
+  "limitations": [
+    "AI pedagogical development review only; this is not human review, release approval, certification, or public-release evidence.",
+    "The review used only the exact v6 lesson, its automated audit, and snapshot-bound M5 context; generator reasoning was not used as evaluation evidence, and the corresponding v5 pedagogical review was consulted only as prior-review context to test whether its stated defects were corrected.",
+    "M6 intentionally contains no M7 exercises; exercises: [] was not treated as a defect, while staging, bounded practice, and self-check instructions inside content_sections were assessed.",
+    "The record-and-replay activity was assessed as a supported self-study listening check of known material, not as evidence of unaided comprehension of novel audio.",
+    "No external plagiarism, copyright, corpus, learner, classroom, speech-recognition, TTS, or audio-acoustic validation was performed.",
+    "The runtime reported reviewer model gpt-5.6-sol; no reviewer provider or inference parameters were reported, so provider is UNKNOWN and parameters are empty.",
+    "response.sha256 binds canonical JSON containing decision, checklist, findings, copyright_originality_check, and limitations exactly as persisted in this record."
+  ],
+  "record_type": "lesson_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {},
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "5ac9766a30e2c410cb8c5db0798c61be472315166a0f60ad4c8db33e55f62239"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "sha256": "cd1a2ff2b9784f57c549308d368384a5009bf4c4ce02302519d73291fc0d2fb3",
+    "version": "build_ai_review_prompt-v1"
+  },
+  "review_role": "PEDAGOGICAL_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T08:06:41Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0",
+  "snapshot_binding": {
+    "bundle_sha256": "79301a37b0821fcd2cc077021db318b0a201771b9727ad08be071fc076cdb027",
+    "member_hashes": {
+      "manifest": "1436c433163765410282fffdddea1bed616feb372270a47d99bebb7193e8d296",
+      "snapshot": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f",
+      "source_registry": "1270284517c3d47e4467310ad32e7431dc0aa3cfbce0edb07e4fedc9bc347435"
+    },
+    "snapshot_id": "m5devsnapshot_5335d3a30ab9f4948e22558aa7fc755857c09dff4ef305c95d171e3ebc718c72",
+    "snapshot_sha256": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f"
+  }
+}

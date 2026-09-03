@@ -1,0 +1,89 @@
+{
+  "ai_review_id": "m6aireview_75fb153ea821ea028b1fcd76193a3568f3368862fc54b69a94bba5c020833812",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "c3e337ccb3e12020a3992b9b2b3d7c42224f439298911743e160b1ee5d88c5f8",
+  "checklist": [
+    {
+      "criterion": "CLARITY",
+      "notes": "The earlier/later relationship, invariant had form, permitted reductions, and clarity constraint are explicitly stated.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "COGNITIVE_LOAD",
+      "notes": "Two paired past relationships and three optional function-word reductions are suitably bounded for B1.1 and 35 minutes.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "COHERENCE",
+      "notes": "Grammar, narrative sequencing, weak forms, stress, writing, and speaking all culminate in the same two-stage retell.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "OBJECTIVE_ALIGNMENT",
+      "notes": "Explicit earlier-past relationships, a short narrative, weak forms, prominence, and an independent retell address past relationships and connected speech.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "PROGRESSION",
+      "notes": "Form and timeline explanation precede contextual noticing, controlled connected-speech work, and original narrative production.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "TEACHABILITY",
+      "notes": "Timeline arrows, form underlining, careful-to-fluent modeling, planning, recording, and a concise correctness checklist make the content usable in self-study.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "VIETNAMESE_LEARNER_RELEVANCE",
+      "notes": "Careful-to-smooth rehearsal and preservation of content-word prominence offer useful support without imposing one accent or learner stereotype.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Inspected only the supplied audit provenance declarations and project-authored snapshot-bound context; no external comparison was performed."
+    ],
+    "result": "NOT_PERFORMED",
+    "scope_limitations": "No external source, corpus, web, or plagiarism search was performed; this record makes no external originality or copyright claim."
+  },
+  "decision": "APPROVE",
+  "findings": [],
+  "independent_of_generation": true,
+  "lesson_id": "B1-U05-L01",
+  "lesson_sha256": "3a745231dee0f8c2ac52e8fc5b9edf514b39a7af5947ba59467f25e10088d1a8",
+  "limitations": [
+    "AI pedagogical development review only; this is not human review, release approval, certification, or public-release evidence.",
+    "The review used only the exact v4 lesson, its automated audit, and snapshot-bound M5 context; generator reasoning and prior review decisions were not used as evaluation evidence.",
+    "M6 intentionally contains no M7 exercises; exercises: [] was not treated as a defect, while staging, bounded practice, and self-check instructions inside content_sections were assessed.",
+    "No external plagiarism, copyright, corpus, learner, classroom, or audio-acoustic validation was performed.",
+    "The runtime reported reviewer model gpt-5.6-sol; no reviewer provider or inference parameters were reported, so provider is UNKNOWN and parameters are empty.",
+    "response.sha256 binds canonical JSON containing decision, checklist, findings, copyright_originality_check, and limitations exactly as persisted in this record."
+  ],
+  "record_type": "lesson_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {},
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "9bd4fc724a446aafed3d6b024c3252f2032aa5fa3a1ae9dfaf66108ea6547eb9"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "sha256": "84fb0a89caa21db86c40c93d67f0601b0bd1bb8152c83dee11bb7a873864e3b3",
+    "version": "build_ai_review_prompt-v1"
+  },
+  "review_role": "PEDAGOGICAL_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T07:29:16Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0",
+  "snapshot_binding": {
+    "bundle_sha256": "79301a37b0821fcd2cc077021db318b0a201771b9727ad08be071fc076cdb027",
+    "member_hashes": {
+      "manifest": "1436c433163765410282fffdddea1bed616feb372270a47d99bebb7193e8d296",
+      "snapshot": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f",
+      "source_registry": "1270284517c3d47e4467310ad32e7431dc0aa3cfbce0edb07e4fedc9bc347435"
+    },
+    "snapshot_id": "m5devsnapshot_5335d3a30ab9f4948e22558aa7fc755857c09dff4ef305c95d171e3ebc718c72",
+    "snapshot_sha256": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "cefr_level": "B1.1",
+  "communicative_functions": [],
+  "content_sections": [
+    {
+      "body_text": "Use the past perfect for an earlier event: By the time we arrived, the film had started. Then continue the story in order.",
+      "embedded_examples": [
+        "concept_past_perfect",
+        "concept_narrative_sequence"
+      ],
+      "id": "section_01",
+      "section_type": "grammar",
+      "title": "Earlier past"
+    },
+    {
+      "body_text": "In connected speech, some small words are weaker. Keep the main message clear while you tell the sequence.",
+      "embedded_examples": [
+        "concept_pronunciation_weak_forms",
+        "concept_narrative_sequence"
+      ],
+      "id": "section_02",
+      "section_type": "explanation",
+      "title": "Link common words"
+    }
+  ],
+  "dimensions": [
+    "discourse",
+    "grammar",
+    "listening",
+    "pronunciation",
+    "reading",
+    "speaking",
+    "writing"
+  ],
+  "duration_minutes": 35,
+  "exercises": [],
+  "functions_introduced": [],
+  "functions_reviewed": [],
+  "generation_metadata": {
+    "curriculum_version": "20260903",
+    "generated_at": "2026-09-03T12:30:00Z",
+    "generator": "english_master.lesson_generation",
+    "generator_version": "2.0",
+    "model": "gpt-5.6-terra",
+    "prompt_version": "M6_LESSON_GENERATOR_v3",
+    "qa_notes": "Automated M6 structural checks passed; independent review remains required.",
+    "qa_status": "UNREVIEWED"
+  },
+  "grammar_introduced": [
+    "concept_past_perfect"
+  ],
+  "grammar_reviewed": [],
+  "id": "B1-U05-L01",
+  "lesson_kind": "CORE",
+  "lesson_number": 1,
+  "objectives": [
+    "handle past relationships and connected speech",
+    "combine selected B1.1 capabilities for a communicative purpose"
+  ],
+  "prerequisites": [
+    "A2-U04-L02"
+  ],
+  "pronunciation_introduced": [
+    "concept_pronunciation_weak_forms"
+  ],
+  "pronunciation_reviewed": [],
+  "review_of": [],
+  "schema_version": "1.0",
+  "skills": [
+    "listening",
+    "reading",
+    "speaking",
+    "writing"
+  ],
+  "taxonomy_concepts": [
+    "concept_narrative_sequence"
+  ],
+  "title": "Extended narration: foundations",
+  "unit_id": "B1.1-U05",
+  "vocabulary_introduced": [],
+  "vocabulary_reviewed": []
+}

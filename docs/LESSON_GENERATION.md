@@ -1,91 +1,70 @@
 # M6 Lesson Generation
 
-## Status and boundary
+## Approval lanes and boundary
 
-M6 generator infrastructure is implemented and tested offline. M6 is **not complete**: no genuine M5 approval snapshot, protected digest, production capture, ten generated lessons, or independent lesson-review evidence exists in this repository.
+M6 has two separate authority lanes:
 
-No production lesson may be generated until a genuine M5 snapshot has been published from distinct, verified linguistic and pedagogical reviews and its digest is protected independently. Synthetic snapshots used by tests are never production authority. Generated lessons remain `UNREVIEWED`.
+- **Development lane:** an immutable M5 development snapshot authorizes bounded M6 development only. It preserves `DRAFT` taxonomy and `OUTLINE_ONLY` M5 records. It may lead to `MACHINE_VALIDATED`, `AI_REVIEWED`, and `DEVELOPMENT_APPROVED` evidence.
+- **Release lane:** the existing strict M5 human-review snapshot remains separate. It is required for human/release claims and cannot be satisfied by an AI record.
 
-M6 generates only lesson content sections. It does not generate exercises, answer keys, assessments, AI practice prompts, media, UI, or approval decisions.
+`DEVELOPMENT_APPROVED` is not `HUMAN_REVIEWED`, `RELEASE_APPROVED`, public publication, certification, or a statement about a real person's judgment. M6 produces lesson content sections only: no exercise bank, answer keys, assessments, media, UI, or M7 behavior.
 
-## Authority boundary
+## Development authority
 
-Every M6 attempt independently reloads and verifies:
+`python -m english_master.curriculum_review.cli develop-publish` writes an immutable M5 development snapshot from an independently revalidated manifest, M5 bundle, source registry, canonical hashes, producing-tool version, timestamp, and optional Git commit. The snapshot is then reverified before every development generation/review/batch operation.
 
-- M5 structure, graph, coverage roadmap, and taxonomy;
-- the immutable six-member M5 snapshot bundle;
-- the authoritative source registry; and
-- the separately administered trusted reviewer registry.
+M6 uses only `REVIEWED_M2_M5_TAXONOMY_ONLY`. M3/M4 data has no CEFR authority here. The request is deterministically rebuilt from the exact M5 outline, graph, taxonomy scope, prerequisite closure, prior knowledge, and bounded configuration. Citation wording and external payloads are excluded; Vietnamese annotations are contextual guidance only.
 
-A deterministic M6 authorization is then rebuilt from the verified snapshot. It may narrow the approved lesson set but cannot approve taxonomy records itself. The request is independently rebuilt from that authorization, the M5 outline, graph context, exact taxonomy hashes, prerequisite closure, previous knowledge, and bounded configuration. Legacy v1 authorization/request records are rejected.
+## Generation provenance and machine validation
 
-The only current generation input policy is `REVIEWED_M2_M5_TAXONOMY_ONLY`. M3/M4 records have no production CEFR authority here, and no external source payload is included. Project-authored taxonomy fields are copied into a hash-bound teaching payload; citation wording and external payloads are excluded. Vietnamese learner annotations are hash-bound contextual guidance only, never generation authority.
+The backend returns only `content_sections`. Orchestration injects trusted identity, references, `exercises: []`, and initial `UNREVIEWED` metadata. The automated audit validates request/authorization reconstruction, schema, exact scope, prerequisite context, section bounds, no-M7 leakage, source-payload prohibition, and cryptographic hashes. A passing audit is only `MACHINE_VALIDATED` evidence; it is not linguistic, pedagogical, human, or release approval.
 
-## Derived lesson scope
+A session-captured response may be retained when no provider receipt exists, but its provider/model/run facts must be recorded exactly or as `UNKNOWN`. Test-only mocks and replay-only fixtures can validate code but cannot support development promotion. No Internet-wide plagiarism search is implied.
 
-The request and generated lesson preserve the M5 projection for grammar, vocabulary, communicative functions, pronunciation, supporting taxonomy concepts, skills, dimensions, review targets, lesson kind, objectives, unit/tier identity, and prerequisites. Embedded references may name only the exact allowed family, supporting, or prerequisite-closure records.
+## Independent AI reviews
 
-The backend may return only:
+Each accepted development lesson needs two separate, hash-bound AI records:
 
-```json
-{"content_sections": []}
-```
+- `LINGUISTIC_AI_REVIEWER`: CEFR, grammar/lexical accuracy, naturalness, prerequisite use, target-language compliance, and originality limits.
+- `PEDAGOGICAL_AI_REVIEWER`: objectives, teachability, progression, clarity, cognitive load, Vietnamese-learner relevance, and coherence.
 
-The orchestration layer injects all trusted lesson fields, an empty `exercises` list, and `UNREVIEWED` generation metadata. M7-and-later fields are rejected.
+The reviewers receive the lesson, audit, and authoritative context—not generator reasoning or self-assessment. Each record retains exact artifact/prompt/response hashes, provenance mode, provider/model or `UNKNOWN`, run ID when known, timestamp, verdict, checklist, findings, and limitations. AI records never include human names, qualifications, trusted-human registry entries, or `HUMAN_REVIEWED` status.
 
-## Captured response provenance
+## Development batch and M7 gate
 
-A backend response must be a `CapturedLessonResponse` bound to:
+A development batch requires exactly these graph-ordered lessons:
 
-- SHA-256 of the exact UTF-8 prompt;
-- canonical response hash;
-- actual provider/model when known;
-- exact parameters and seed;
-- observed provider execution time; and
-- deterministic and replayability facts.
+`A1-U01-L01`, `A1-U01-L02`, `A1-U02-L01`, `A1-U02-L02`, `A2-U03-L01`, `A2-U03-L02`, `A2-U04-L01`, `A2-U04-L02`, `B1-U05-L01`, and `B1-U05-L02`.
 
-The provider/model/timestamp are not caller-controlled request fields. The audit records the capture facts and an injectable orchestration-clock timestamp. Byte-identical output is claimed only when the concrete backend supports it.
+The immutable development batch reports hashes for every lesson, audit, and AI review, and binds the M5 development snapshot. It rejects missing roles, failed machine checks, blocking AI findings, drifted hashes, duplicate content, mixed snapshots, unsafe paths, test-only evidence, and M7 leakage. `python -m english_master.lesson_development` may publish only `DEVELOPMENT_APPROVED`. `python -m english_master.lesson_review m7-eligibility` is read-only and does not implement M7.
 
-## Audit and immutable storage
+The completed development evidence is batch `m6devbatch_4883cca8dea320c18b26a99316041dec1101c7dd28e551e265654c367af93d26` in `data/generated/m6/development-batches/20260903-v6/`. It binds the verified M5 snapshot in `data/reviews/m5/development-20260903-062008/` and the byte-for-byte assembled candidate evidence in `data/generated/m6/development-candidates/20260903-v6-selected/`. This evidence does not make a human or release claim.
 
-Audits report stage-aware `PASS`, `FAIL`, or `NOT_RUN` checks, complete snapshot binding, hashes, capture provenance, automated reviewer details, issues, and the four still-outstanding independent review categories: CEFR, grammar/lexical, language quality, and pedagogy.
-
-Accepted `lesson.json` and `audit.json`, or rejected `rejection.json` and `audit.json`, are published atomically to a new no-overwrite directory. An automated pass is not human review or content approval.
-
-## Independent review and batch QA contracts
-
-`lesson-independent-review.schema.json` defines a human-submitted, hash-bound overlay. It binds the exact lesson, automated audit, and reverified M5 snapshot; verifies the reviewer against the independently loaded registry; records CEFR, grammar/lexical, language-quality, prerequisite-scope, pedagogical, and copyright spot-check evidence; and explicitly attests that the review does **not** mutate or approve the `UNREVIEWED` lesson.
-
-`lesson-batch-qa-report.schema.json` is a fail-closed report for ten distinct graph-ordered immutable lesson bundles and a declared human-review sample. It records limitations rather than inferring manual outcomes. It does not complete M6 or M9 approval.
-
-Validate supplied evidence offline only after a genuine snapshot exists:
+## Commands
 
 ```bash
-python -m english_master.lesson_review review \
-  --snapshot-dir /trusted/m5snapshot_<digest> \
-  --reviewer-registry /trusted/reviewer-registry.json \
-  --review /trusted/review.json --lesson /trusted/lesson.json --audit /trusted/audit.json
+python -m english_master.curriculum_review.cli develop-verify \
+  curriculum/structure.json --source-registry sources/registry.yaml \
+  --snapshot data/reviews/m5/development-20260903-062008
 
-python -m english_master.lesson_review batch \
-  --snapshot-dir /trusted/m5snapshot_<digest> \
-  --reviewer-registry /trusted/reviewer-registry.json \
-  --report /trusted/batch-report.json --bundle-root /trusted/m6-bundles
+python -m english_master.lesson_generate --development \
+  --lesson-id A1-U01-L01 --snapshot-dir data/reviews/m5/development-20260903-062008 \
+  --captured-response <session-captured-response.json> \
+  --output-dir <new-immutable-bundle-directory>
+
+python -m english_master.lesson_review ai-review \
+  --snapshot-dir data/reviews/m5/development-20260903-062008 \
+  --review <review.json> --lesson <lesson.json> --audit <audit.json>
+
+python -m english_master.lesson_review development-batch \
+  --snapshot-dir data/reviews/m5/development-20260903-062008 \
+  --bundle-root data/generated/m6/development-candidates/20260903-v6-selected \
+  --report data/generated/m6/development-batches/20260903-v6/development-batch.json
+
+python -m english_master.lesson_review m7-eligibility \
+  --snapshot-dir data/reviews/m5/development-20260903-062008 \
+  --bundle-root data/generated/m6/development-candidates/20260903-v6-selected \
+  --report data/generated/m6/development-batches/20260903-v6/development-batch.json
 ```
 
-## Offline CLI
-
-The CLI requires a genuine, independently verified snapshot and a prompt-bound captured response; it deliberately has no arbitrary `--request`, `--authorization`, or `--mock-response` production path:
-
-```bash
-python -m english_master.lesson_generate \
-  --lesson-id A1-U01-L01 \
-  --snapshot-dir /trusted/m5snapshot_<digest> \
-  --reviewer-registry /trusted/reviewer-registry.json \
-  --captured-response /trusted/captured-response.json \
-  --output-dir data/generated/m6/A1-U01-L01 \
-  --rejection-dir data/reports/m6/A1-U01-L01-rejection
-```
-
-The command independently loads `sources/registry.yaml` and the M5 files by default. Overrides for graph, coverage, or taxonomy are reverified against the snapshot and therefore fail on drift. Exit codes are `0` for accepted publication, `1` for a validated generation rejection, and `2` for setup or persistence failure.
-
-Do not use synthetic fixtures, an unprotected digest, or a test-only backend as production authority.
+The old human-review commands remain valid for their separate release-quality evidence lane.

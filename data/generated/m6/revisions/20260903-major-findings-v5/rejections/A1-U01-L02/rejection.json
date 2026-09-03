@@ -1,0 +1,155 @@
+{
+  "candidate_output": {
+    "cefr_level": "A1.1",
+    "communicative_functions": [],
+    "content_sections": [
+      {
+        "body_text": "Live has /ɪ/. Leave has /iː/. For /ɪ/, relax your tongue. For /iː/, move it higher and forward; the sound is often longer too. Say live–leave five times. Change the mouth shape and the length, not only the length.",
+        "embedded_examples": [
+          "concept_pronunciation_minimal_pairs",
+          "concept_pronunciation_phonemes",
+          "concept_speaking"
+        ],
+        "id": "section_01",
+        "section_type": "explanation",
+        "title": "1. Two vowels (8 min)"
+      },
+      {
+        "body_text": "B: ‘I live here.’ A: ‘Did you say leave?’ B: ‘No, live—/lɪv/.’ A: ‘Oh, you live here.’ Read both roles. Cover the lines and say them again. The question is clear, and B repeats the word that A heard wrongly.",
+        "embedded_examples": [
+          "concept_pronunciation_minimal_pairs",
+          "concept_present_simple",
+          "concept_spoken_interaction",
+          "concept_topic_personal_information"
+        ],
+        "id": "section_02",
+        "section_type": "dialogue",
+        "title": "2. Clear repair (8 min)"
+      },
+      {
+        "body_text": "For listening, use text-to-speech only to play a hidden order of live and leave; write L or E, then reveal the order. TTS speaks to you; it does not hear your speech. For speaking, say one word without showing it to an independent listener or a speech-recognition tool that displays the word it recognizes. If neither route is available, write ‘not checked.’ Your own replay is practice, not proof.",
+        "embedded_examples": [
+          "concept_pronunciation_minimal_pairs",
+          "concept_listening",
+          "concept_speaking",
+          "concept_writing"
+        ],
+        "id": "section_03",
+        "section_type": "explanation",
+        "title": "3. Two kinds of check (10 min)"
+      },
+      {
+        "body_text": "Make a four-line talk like the model: give one fact, hear one word wrongly, ask ‘Did you say …?’, then correct it. Speak both roles with a pause for each reply. Success: the reply answers the question and an independent listener or suitable speech-recognition tool identifies live or leave. If that check is unavailable, mark ‘not checked’ and keep the recording as practice only.",
+        "embedded_examples": [
+          "concept_pronunciation_minimal_pairs",
+          "concept_present_simple",
+          "concept_spoken_interaction",
+          "concept_topic_personal_information"
+        ],
+        "id": "section_04",
+        "section_type": "dialogue",
+        "title": "4. Take turns (9 min)"
+      }
+    ],
+    "dimensions": [
+      "listening",
+      "pronunciation",
+      "speaking",
+      "spoken_interaction"
+    ],
+    "duration_minutes": 35,
+    "exercises": [],
+    "functions_introduced": [],
+    "functions_reviewed": [],
+    "generation_metadata": {
+      "curriculum_version": "20260903",
+      "generated_at": "2026-09-03T07:39:05Z",
+      "generator": "english_master.lesson_generation",
+      "generator_version": "2.0",
+      "model": "gpt-5.6-sol",
+      "prompt_version": "M6_LESSON_GENERATOR_v3",
+      "qa_notes": "Automated M6 structural checks passed; independent review remains required.",
+      "qa_status": "UNREVIEWED"
+    },
+    "grammar_introduced": [],
+    "grammar_reviewed": [
+      "concept_present_simple"
+    ],
+    "id": "A1-U01-L02",
+    "lesson_kind": "CONSOLIDATION",
+    "lesson_number": 2,
+    "objectives": [
+      "handle personal information and basic participation",
+      "combine selected A1.1 capabilities for a communicative purpose"
+    ],
+    "prerequisites": [
+      "A1-U01-L01"
+    ],
+    "pronunciation_introduced": [
+      "concept_pronunciation_minimal_pairs"
+    ],
+    "pronunciation_reviewed": [
+      "concept_pronunciation_phonemes"
+    ],
+    "review_of": [
+      "A1-U01-L01"
+    ],
+    "schema_version": "1.0",
+    "skills": [
+      "listening",
+      "speaking",
+      "spoken_interaction"
+    ],
+    "taxonomy_concepts": [
+      "concept_listening",
+      "concept_reading",
+      "concept_speaking",
+      "concept_spoken_interaction",
+      "concept_topic_personal_information",
+      "concept_writing"
+    ],
+    "title": "Foundational exchange: application",
+    "unit_id": "A1.1-U01",
+    "vocabulary_introduced": [],
+    "vocabulary_reviewed": []
+  },
+  "candidate_output_hash": "243c959bc40951053d5bf3971653d76ec15f07abd08da24b2d42296adae0b9df",
+  "lesson_id": "A1-U01-L02",
+  "published": false,
+  "reasons": [
+    {
+      "code": "TOTAL_SIZE_LIMIT",
+      "message": "total section text exceeds configured bound",
+      "path": "$.content_sections"
+    }
+  ],
+  "record_type": "lesson_generation_rejection",
+  "rejected_at": "2026-09-03T07:40:59Z",
+  "request_hash": "3171a2257c54114a27358416bc5ac208f8199c0841a79ef178d65c62d0692e9f",
+  "request_id": "req_de98ce5d5b17c697aed848b1e8dc193f8b640bc921c9a2f6e34900154b579d12",
+  "response_provenance": {
+    "deterministic": false,
+    "model": "gpt-5.6-sol",
+    "observed_at": "2026-09-03T07:39:05Z",
+    "parameters": {
+      "temperature": 0
+    },
+    "prompt_sha256": "7987a8415c67e5004a2abd2201c7d613691864edb8b1527b148d50a7af4f1dae",
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "response_sha256": "51436a075da46bda3b6cbeafa3e3936104a03c1c8b57004525d67d773c4555b6",
+    "seed": null
+  },
+  "schema_version": "2.0",
+  "snapshot_binding": {
+    "bundle_sha256": "79301a37b0821fcd2cc077021db318b0a201771b9727ad08be071fc076cdb027",
+    "member_hashes": {
+      "manifest": "1436c433163765410282fffdddea1bed616feb372270a47d99bebb7193e8d296",
+      "snapshot": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f",
+      "source_registry": "1270284517c3d47e4467310ad32e7431dc0aa3cfbce0edb07e4fedc9bc347435"
+    },
+    "snapshot_id": "m5devsnapshot_5335d3a30ab9f4948e22558aa7fc755857c09dff4ef305c95d171e3ebc718c72",
+    "snapshot_sha256": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f"
+  },
+  "stage": "POSTVALIDATION"
+}

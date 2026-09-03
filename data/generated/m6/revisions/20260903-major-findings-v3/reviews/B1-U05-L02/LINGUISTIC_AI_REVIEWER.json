@@ -1,0 +1,91 @@
+{
+  "ai_review_id": "m6aireview_f4cfd9392c8111f345df37125e8978db3f8df0609f683e2da7dd4b8f09cd4bd1",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "2f817fde24143d73f58ca022bba7619381ec1c633291d9052fec325bb8a2ec4e",
+  "checklist": [
+    {
+      "criterion": "CEFR_ALIGNMENT",
+      "notes": "The management sense of run, past-perfect sequencing, and accent-aware linking instructions are suitable for B1.1.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "GRAMMAR_LEXICAL_ACCURACY",
+      "notes": "Run is used accurately in its management sense; had run is correctly earlier than the Friday anchor; consonant-to-vowel linking is described without claiming a mandatory single-accent realization.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "NATURALNESS",
+      "notes": "The examples are coherent and mostly idiomatic. The repeated compressed time phrase is regionally marked and recorded as a minor editorial issue.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ORIGINALITY_LIMITATIONS",
+      "notes": "The exact internal reuse of part of the project-authored management-sense definition/example is transparent and authorized by the supplied payload; no external originality claim is made.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "PREREQUISITE_SCOPE",
+      "notes": "The lesson introduces only the authorized management sense and linking, while reviewing past perfect and using its complete declared narrative/pronunciation closure.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "TARGET_LANGUAGE_COMPLIANCE",
+      "notes": "All learner-facing material is English, and every embedded reference belongs to the exact request scope or prerequisite context.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Manual comparison of lesson wording with the supplied authoritative request and project-authored teaching payload.",
+      "Exact contiguous-word overlap comparison across the ten supplied v3 lesson bodies.",
+      "Inspection of the accepted audit provenance/copyright scope without consulting external sources."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "No suspicious unexplained copying was found within the supplied scope. Reuse of target forms, short pedagogical frames, and project-authored definitions/examples is expected. No external search was performed; this is not a plagiarism clearance or copyright guarantee."
+  },
+  "decision": "APPROVE",
+  "findings": [
+    {
+      "category": "NATURALNESS",
+      "description": "‘At 6:00 Friday’ appears twice. It is interpretable and possible in compressed regional usage, but ‘at 6:00 on Friday’ is the safer neutral model for an international learner course.",
+      "recommendation": "Standardize both occurrences to ‘at 6:00 on Friday.’",
+      "severity": "MINOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "B1-U05-L02",
+  "lesson_sha256": "74e2e6aeebec5fd76ba6ca57dd8aaa48bb3e553f8b70e84c1053fc9cf0b46dbb",
+  "limitations": [
+    "Review used only the exact lesson, accepted audit, regenerated hash-matching authoritative request, and verified M5 development snapshot; generator reasoning and prior review records were excluded.",
+    "No audio was supplied; pronunciation judgments cover written instructions and IPA only, not realized speech or learner performance.",
+    "No external CEFR vocabulary profiler or corpus was used; CEFR findings are qualitative independent AI judgments about the learner-facing text.",
+    "Originality checking was limited to the supplied authoritative payload and the ten supplied v3 lessons; no Internet, external corpus, or plagiarism search was performed, so no external plagiarism or legal-clearance claim is made."
+  ],
+  "record_type": "lesson_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {},
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "8d18cbfbf5e1aa2d1e2148929386b7d483277eef0de283add553492aa4cb5c40"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "sha256": "d89250fd1448800bda72788f6b4121f05f6ce75d627cfc1980c390a6bc04df08",
+    "version": "M6_LINGUISTIC_AI_REVIEW_v1"
+  },
+  "review_role": "LINGUISTIC_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T06:48:08Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0",
+  "snapshot_binding": {
+    "bundle_sha256": "79301a37b0821fcd2cc077021db318b0a201771b9727ad08be071fc076cdb027",
+    "member_hashes": {
+      "manifest": "1436c433163765410282fffdddea1bed616feb372270a47d99bebb7193e8d296",
+      "snapshot": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f",
+      "source_registry": "1270284517c3d47e4467310ad32e7431dc0aa3cfbce0edb07e4fedc9bc347435"
+    },
+    "snapshot_id": "m5devsnapshot_5335d3a30ab9f4948e22558aa7fc755857c09dff4ef305c95d171e3ebc718c72",
+    "snapshot_sha256": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f"
+  }
+}

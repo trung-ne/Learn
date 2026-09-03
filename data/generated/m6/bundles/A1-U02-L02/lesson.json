@@ -1,0 +1,96 @@
+{
+  "cefr_level": "A1.2",
+  "communicative_functions": [
+    "concept_function_request_help"
+  ],
+  "content_sections": [
+    {
+      "body_text": "Use a present-simple fact and a past event: I study here. Yesterday I ran home. Ask politely when you need help.",
+      "embedded_examples": [
+        "concept_present_simple",
+        "concept_function_request_help",
+        "vocab_en_run_001",
+        "concept_pronunciation_syllables"
+      ],
+      "id": "section_01",
+      "section_type": "explanation",
+      "title": "Connect old and new"
+    },
+    {
+      "body_text": "A: Do you study here? B: Yes. Could you help me find room two? A: Of course.",
+      "embedded_examples": [
+        "concept_topic_personal_information",
+        "concept_function_request_help"
+      ],
+      "id": "section_02",
+      "section_type": "dialogue",
+      "title": "Personal information"
+    }
+  ],
+  "dimensions": [
+    "communicative_functions",
+    "grammar",
+    "listening",
+    "pronunciation",
+    "reading",
+    "speaking",
+    "spoken_interaction",
+    "topics",
+    "vocabulary_senses",
+    "writing"
+  ],
+  "duration_minutes": 35,
+  "exercises": [],
+  "functions_introduced": [],
+  "functions_reviewed": [
+    "concept_function_request_help"
+  ],
+  "generation_metadata": {
+    "curriculum_version": "20260903",
+    "generated_at": "2026-09-03T12:30:00Z",
+    "generator": "english_master.lesson_generation",
+    "generator_version": "2.0",
+    "model": "gpt-5.6-terra",
+    "prompt_version": "M6_LESSON_GENERATOR_v3",
+    "qa_notes": "Automated M6 structural checks passed; independent review remains required.",
+    "qa_status": "UNREVIEWED"
+  },
+  "grammar_introduced": [],
+  "grammar_reviewed": [
+    "concept_present_simple"
+  ],
+  "id": "A1-U02-L02",
+  "lesson_kind": "CONSOLIDATION",
+  "lesson_number": 2,
+  "objectives": [
+    "handle simple time reference and requests for help",
+    "combine selected A1.2 capabilities for a communicative purpose"
+  ],
+  "prerequisites": [
+    "A1-U02-L01"
+  ],
+  "pronunciation_introduced": [],
+  "pronunciation_reviewed": [
+    "concept_pronunciation_syllables"
+  ],
+  "review_of": [
+    "A1-U02-L01"
+  ],
+  "schema_version": "1.0",
+  "skills": [
+    "listening",
+    "reading",
+    "speaking",
+    "spoken_interaction",
+    "writing"
+  ],
+  "taxonomy_concepts": [
+    "concept_topic_personal_information"
+  ],
+  "title": "Everyday events: application",
+  "unit_id": "A1.2-U02",
+  "vocabulary_introduced": [],
+  "vocabulary_reviewed": [
+    "vocab_en_run_001"
+  ]
+}

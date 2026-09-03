@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "record_type": "lesson_ai_review",
+  "ai_review_id": "m6aireview_85051dee32b1531436d195612d1d72dad5e0c7476361e2f9c6587b228acb6f96",
+  "approval_tier": "AI_REVIEWED",
+  "lesson_id": "A2-U03-L02",
+  "lesson_sha256": "7e661581aa02a95d74a1efaf5c96445ead3e29f53ebc522b21077a78ed2e4100",
+  "audit_sha256": "7c223f446832995d384f688d4b09c6717edfe23d473969179e5e3aae495223bd",
+  "snapshot_binding": {
+    "bundle_sha256": "79301a37b0821fcd2cc077021db318b0a201771b9727ad08be071fc076cdb027",
+    "member_hashes": {
+      "manifest": "1436c433163765410282fffdddea1bed616feb372270a47d99bebb7193e8d296",
+      "snapshot": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f",
+      "source_registry": "1270284517c3d47e4467310ad32e7431dc0aa3cfbce0edb07e4fedc9bc347435"
+    },
+    "snapshot_id": "m5devsnapshot_5335d3a30ab9f4948e22558aa7fc755857c09dff4ef305c95d171e3ebc718c72",
+    "snapshot_sha256": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f"
+  },
+  "reviewer_type": "AI",
+  "review_role": "LINGUISTIC_AI_REVIEWER",
+  "independent_of_generation": true,
+  "review_prompt": {
+    "version": "M6_LINGUISTIC_AI_REVIEW_v1",
+    "sha256": "7dab3ce2834ce0ae7978f95212ddf1462b0e610616c2cf6c36800cfc3019fa07",
+    "capture_mode": "SESSION_CAPTURED"
+  },
+  "response": {
+    "sha256": "7dcb6e190410660d8635c804a8a8da3bd77ebd8d03a128741f324c4b58a39cd6",
+    "provider": "UNKNOWN",
+    "model": "gpt-5.6-sol",
+    "parameters": {},
+    "replayable_from_capture": true
+  },
+  "reviewed_at": "2026-09-03T08:07:01Z",
+  "decision": "APPROVE",
+  "checklist": [
+    {
+      "criterion": "CEFR_ALIGNMENT",
+      "result": "PASS",
+      "notes": "The short station scenario, familiar timetable facts, reviewed past continuous, polite help requests, simple mediation, and guided listening recall are suitable for the declared internal tier A2.1; this is an AI judgment, not official CEFR certification."
+    },
+    {
+      "criterion": "GRAMMAR_LEXICAL_ACCURACY",
+      "result": "PASS",
+      "notes": "The past-continuous background clause, present-simple timetable wording, request forms, and /ˈsteɪ.ʃən/ stress guidance are accurate. ‘Two beats’ is accessible learner-facing shorthand for two syllables, and ‘STA’ correctly carries primary stress."
+    },
+    {
+      "criterion": "NATURALNESS",
+      "result": "PASS",
+      "notes": "The dialogue and instructions are coherent and generally natural for a compact lesson. The staff reply now explicitly supplies ‘Bus 12 leaves at 5:20 from Gate 4,’ so the later mediation statement and all three listening-check answers are recoverable from the lesson itself."
+    },
+    {
+      "criterion": "ORIGINALITY_LIMITATIONS",
+      "result": "PASS",
+      "notes": "No suspicious copied passage was identified in a manual internal phrase-level comparison with the authorized M5 taxonomy context and the corresponding v5 lesson/review used only as repair context. No Internet-wide or external-corpus plagiarism search was performed."
+    },
+    {
+      "criterion": "PREREQUISITE_SCOPE",
+      "result": "PASS",
+      "notes": "Every embedded and declared taxonomy reference is in the audit’s allowed or context-only sets. Context-only past simple, reading, and syllable knowledge support the task without being presented as new targets, and no forbidden taxonomy ID is taught or invoked."
+    },
+    {
+      "criterion": "TARGET_LANGUAGE_COMPLIANCE",
+      "result": "PASS",
+      "notes": "Instructional and model content is in English; names, numerals, IPA, and identifiers serve only as appropriate learning support."
+    }
+  ],
+  "findings": [],
+  "copyright_originality_check": {
+    "methods": [
+      "Manual internal phrase-level comparison against the authorized M5 taxonomy wording and the corresponding v5 lesson/review findings.",
+      "Inspection of the exact immutable v6 lesson, audit, session-captured generation evidence, and embedded snapshot binding for unauthorized external-payload or scope claims."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "No Internet-wide search, proprietary corpus comparison, or provider-authenticated plagiarism service was used; common short English requests, timetable facts, and functional phrases are not evidence of copying."
+  },
+  "limitations": [
+    "This is an independent AI development review, not human review, release approval, or CEFR certification.",
+    "The review is limited to the exact immutable v6 lesson and audit, their embedded development-snapshot binding, session-captured generation evidence, authorized local M5/taxonomy context, and the v5 review record read only as repair context.",
+    "No Internet-wide plagiarism search, proprietary corpus comparison, provider-authenticated plagiarism service, or external pronunciation recording assessment was performed.",
+    "Provider identity and inference parameters were unavailable to this review session and are recorded as UNKNOWN or empty; the runtime-disclosed model identifier is recorded without inference."
+  ]
+}

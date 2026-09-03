@@ -1,0 +1,63 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "grammar",
+        "title": "A routine and a past action",
+        "body_text": "Read: ‘I run home every Friday.’ This happens again and again. Read: ‘I ran home yesterday.’ This happened before today and is over. Run changes to ran. Write the two lines from memory, then check run + every Friday and ran + yesterday.",
+        "embedded_examples": [
+          "concept_present_simple",
+          "concept_past_simple",
+          "vocab_en_run_001"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "vocabulary",
+        "title": "Why did Mai run?",
+        "body_text": "Mai was late, so she ran to the station. Run here means move on foot faster than walking. Read: ‘Mai ran to the station because she was late.’ Change station to gate or home. Keep ran and a past time.",
+        "embedded_examples": [
+          "concept_past_simple",
+          "vocab_en_run_001"
+        ]
+      },
+      {
+        "id": "section_03",
+        "section_type": "dialogue",
+        "title": "Ask for useful help",
+        "body_text": "Mai: ‘I ran to the station because I was late. Now I cannot find Gate 2. Please help me.’ Ben: ‘Yes. Gate 2 is beside the café.’ Mai: ‘Thank you.’ Read both roles. The reply solves Mai’s problem. Change only the gate number and place.",
+        "embedded_examples": [
+          "concept_past_simple",
+          "vocab_en_run_001",
+          "concept_function_request_help"
+        ]
+      },
+      {
+        "id": "section_04",
+        "section_type": "explanation",
+        "title": "Clap, write, listen, speak",
+        "body_text": "Clap ran once, sta-tion twice, and yes-ter-day three times. Write the dialogue from memory and compare it with the model. Record it, hide the text, replay, and write two things you hear: why Mai ran and what help she needs. Uncover the model to check. Then say both roles again without reading.",
+        "embedded_examples": [
+          "concept_pronunciation_syllables",
+          "concept_pronunciation_phonemes",
+          "concept_past_simple",
+          "concept_function_request_help"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "efda4bee054b0ddf8566af50286fe9f65c8387045a30b89e747b01d751bd6c87",
+  "response_sha256": "3466b4f887ce98378cb60ed706439ee788cebc40948f1b275e56d91fc9541c5e",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-terra",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T07:16:57Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

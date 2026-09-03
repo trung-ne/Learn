@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "record_type": "lesson_ai_review",
+  "approval_tier": "AI_REVIEWED",
+  "lesson_id": "A1-U02-L01",
+  "lesson_sha256": "6cc0c6009eda28d41c12eead97089df4fe4a9b1cb81bf9719ba07f1baccd019b",
+  "audit_sha256": "d803c0cdc23bddbef74ffa03233a4f055e3fdb2d00a72c49135619831e0b3e74",
+  "snapshot_binding": {
+    "snapshot_id": "m5devsnapshot_df56cb242d8d89f1f04815d1e73b20af1853fd6d7b91e399ed379b0f74cc684e",
+    "snapshot_sha256": "1bcae5a8c7982b90acd4ce911d56691bbde0f9046951f37a6c6e3e2fa7d8c6bc",
+    "member_hashes": {
+      "manifest": "1436c433163765410282fffdddea1bed616feb372270a47d99bebb7193e8d296",
+      "source_registry": "1270284517c3d47e4467310ad32e7431dc0aa3cfbce0edb07e4fedc9bc347435",
+      "snapshot": "1bcae5a8c7982b90acd4ce911d56691bbde0f9046951f37a6c6e3e2fa7d8c6bc"
+    },
+    "bundle_sha256": "9ef02dd12b18a30788e1c1f61fba45b352bc50f71d42426140f54dc94c4b63d3"
+  },
+  "reviewer_type": "AI",
+  "review_role": "PEDAGOGICAL_AI_REVIEWER",
+  "independent_of_generation": true,
+  "review_prompt": {
+    "version": "M6_PEDAGOGICAL_AI_REVIEW_v1",
+    "sha256": "508874aad4043a0224c5450877ef02a83f610e4b7c06121cbc531ff9c721c441",
+    "capture_mode": "SESSION_CAPTURED"
+  },
+  "response": {
+    "sha256": "7df28485ac99fb6a6b0237ea07440f3ae9ba712d9d75685fbe30daa7c0413a2d",
+    "provider": "UNKNOWN",
+    "model": "gpt-5.6-terra",
+    "parameters": {},
+    "replayable_from_capture": true
+  },
+  "reviewed_at": "2026-09-03T06:12:50Z",
+  "decision": "APPROVE",
+  "checklist": [
+    {
+      "criterion": "OBJECTIVE_ALIGNMENT",
+      "result": "PASS",
+      "notes": "The completed-past timeline, movement sense of run, and coherent help exchange directly realize simple time reference and requesting help."
+    },
+    {
+      "criterion": "TEACHABILITY",
+      "result": "PASS",
+      "notes": "Meaning/form explanation, sense clarification, two-role model, pronunciation practice, and an integrated checklist provide usable self-study stages."
+    },
+    {
+      "criterion": "PROGRESSION",
+      "result": "PASS",
+      "notes": "The lesson draws only on its reconstructed prior present-simple and phoneme knowledge while introducing all four allocated targets in a sensible order."
+    },
+    {
+      "criterion": "CLARITY",
+      "result": "PASS",
+      "notes": "The timeline, one-sense definition, dialogue, clap counts, and final success conditions are concrete and comprehensible at A1.2."
+    },
+    {
+      "criterion": "COGNITIVE_LOAD",
+      "result": "PASS",
+      "notes": "Four targets are present, but each is tightly limited to one form, one sense, one request exchange, and a short syllable/final-cluster focus."
+    },
+    {
+      "criterion": "VIETNAMESE_LEARNER_RELEVANCE",
+      "result": "PASS",
+      "notes": "The Vietnamese name, practical transit context, and explicit no-extra-vowel cue address likely usefulness without assuming a uniform learner deficit."
+    },
+    {
+      "criterion": "COHERENCE",
+      "result": "PASS",
+      "notes": "The event and help scenario connect the main targets, though writing and listening are less explicitly enacted than the metadata suggests."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "MINOR",
+      "category": "COHERENCE",
+      "description": "Writing is declared but no stage explicitly requires written production, and listening is limited to rehearsing both roles rather than an explicit playback/comprehension step.",
+      "recommendation": "Add a short instruction to write the retell and record/replay the two-role exchange before applying the existing final checks; this needs no forbidden content."
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Inspected the lesson against its reconstructed, hash-matched M5 teaching payload and confirmed that no external source payload was supplied.",
+      "Compared wording and examples across the closed set of all ten revised lessons for suspicious verbatim duplication beyond shared instructional scaffolding.",
+      "Reviewed the audit provenance/copyright result and source-scope constraints as machine evidence without treating them as a web-wide originality check."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "Closed-corpus review of the ten supplied lessons plus their exact M5/request/audit context only; no Internet-wide search, external proprietary corpus, legal opinion, or provider receipt was available."
+  },
+  "limitations": [
+    "This is an independent AI pedagogical review for development evidence only; it is not human review, release approval, certification, or publication authorization.",
+    "The governing M5 snapshot retains DRAFT taxonomy and OUTLINE_ONLY curriculum records and is limited to the development lane.",
+    "No learner trial, classroom observation, or outcome study was performed.",
+    "No audio was supplied, so no acoustic, listening-performance, or pronunciation-performance review was performed.",
+    "Originality checking was closed-corpus and artifact-bound; no web-wide plagiarism search, external corpus comparison, or legal determination was performed.",
+    "Generation provider provenance was not independently established; UNKNOWN is retained rather than inferred.",
+    "Generator reasoning, self-assessment, and prior review records were not inspected.",
+    "response.sha256 hashes the canonical UTF-8 JSON of the decision, checklist, findings, copyright_originality_check, and limitations captured in this session."
+  ],
+  "ai_review_id": "m6aireview_9b3c4873fce1ea1a005565cfd262ed62ac2069d08fd49883b705020d04070d73"
+}

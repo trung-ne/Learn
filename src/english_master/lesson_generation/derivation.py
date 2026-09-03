@@ -157,6 +157,103 @@ def taxonomy_closure(
     return closure, unresolved
 
 
+def _review_source_scope(
+    *,
+    structure: Mapping[str, Any],
+    lessons: Mapping[str, JsonObject],
+    nodes: Mapping[str, JsonObject],
+    lesson_order: list[str],
+    lesson_id: str,
+    lesson: JsonObject,
+    review_pairs: set[tuple[str, str]],
+    introduction_pairs: set[tuple[str, str]],
+    taxonomy: Mapping[str, JsonObject],
+) -> tuple[dict[str, set[str]], set[str]]:
+    """Resolve only knowledge explicitly carried by authorized review-source lessons."""
+
+    declared = lesson.get("review_of", [])
+    if not isinstance(declared, list) or any(not isinstance(value, str) for value in declared):
+        raise ValueError(f"lesson {lesson_id!r} has malformed review_of lesson references")
+    declared_sources = set(declared)
+    incoming_sources = {source for source, target in review_pairs if target == lesson_id}
+    if declared_sources != incoming_sources:
+        raise ValueError(
+            f"lesson {lesson_id!r} review_of references do not match M5 review edges"
+        )
+
+    positions = {value: index for index, value in enumerate(lesson_order)}
+    target_position = positions.get(lesson_id)
+    if target_position is None:
+        raise ValueError(f"lesson {lesson_id!r} has no resolvable M5 lesson position")
+    accepted_statuses = set(
+        structure.get("taxonomy_dependency", {}).get("accepted_record_statuses", [])
+    )
+    typed: dict[str, set[str]] = {family: set() for family in FAMILIES}
+    supporting: set[str] = set()
+
+    for source_id in sorted(declared_sources):
+        source = lessons.get(source_id)
+        source_position = positions.get(source_id)
+        if (
+            source is None
+            or nodes.get(source_id, {}).get("type") != "lesson"
+            or source_position is None
+        ):
+            raise ValueError(
+                f"review source {source_id!r} for lesson {lesson_id!r} is not resolvable"
+            )
+        if source_position >= target_position:
+            raise ValueError(
+                f"review source {source_id!r} must precede lesson {lesson_id!r}"
+            )
+
+        source_references: list[tuple[str, str | None]] = []
+        for family in FAMILIES:
+            values = source.get(family, [])
+            if not isinstance(values, list) or any(not isinstance(value, str) for value in values):
+                raise ValueError(
+                    f"review source {source_id!r} has malformed {family} references"
+                )
+            source_references.extend((value, family) for value in values)
+        values = source.get("taxonomy_concepts", [])
+        if not isinstance(values, list) or any(not isinstance(value, str) for value in values):
+            raise ValueError(
+                f"review source {source_id!r} has malformed taxonomy_concepts references"
+            )
+        source_references.extend((value, None) for value in values)
+
+        for record_id, declared_family in source_references:
+            record = taxonomy.get(record_id)
+            if record is None:
+                raise ValueError(
+                    f"review target {record_id!r} from {source_id!r} is not resolvable"
+                )
+            actual_family = record_family(record)
+            if declared_family is not None and actual_family != declared_family:
+                raise ValueError(
+                    f"review target {record_id!r} from {source_id!r} has the wrong type"
+                )
+            if record.get("status") not in accepted_statuses:
+                raise ValueError(
+                    f"review target {record_id!r} from {source_id!r} is not M5-authorized"
+                )
+            introduced_by = {
+                introducer
+                for introducer, target in introduction_pairs
+                if target == record_id and introducer in positions
+            }
+            if not introduced_by or min(positions[value] for value in introduced_by) > source_position:
+                raise ValueError(
+                    f"review target {record_id!r} was not introduced by {source_id!r} or earlier"
+                )
+            if actual_family is None:
+                supporting.add(record_id)
+            else:
+                typed[actual_family].add(record_id)
+
+    return typed, supporting
+
+
 def derive_context(bundle: CurriculumBundle, lesson_id: str) -> JsonObject:
     """Derive the full narrow context for one M5 lesson outline."""
 
@@ -192,12 +289,15 @@ def derive_context(bundle: CurriculumBundle, lesson_id: str) -> JsonObject:
         and isinstance(edge.get("from"), str)
         and isinstance(edge.get("to"), str)
     }
-    introduction_pairs = {
+    all_introduction_pairs = {
         (edge["from"], edge["to"])
         for edge in edges
         if edge.get("type") == "introduction"
-        and edge.get("from") == lesson_id
+        and isinstance(edge.get("from"), str)
         and isinstance(edge.get("to"), str)
+    }
+    introduction_pairs = {
+        pair for pair in all_introduction_pairs if pair[0] == lesson_id
     }
     review_pairs = {
         (edge["from"], edge["to"])
@@ -205,7 +305,7 @@ def derive_context(bundle: CurriculumBundle, lesson_id: str) -> JsonObject:
         if edge.get("type") == "review"
         and edge.get("to") == lesson_id
         and isinstance(edge.get("from"), str)
-        and nodes.get(edge.get("from"), {}).get("type") == "lesson"
+        and isinstance(edge.get("to"), str)
     }
     direct_prerequisites = {
         source for source, target in prerequisite_pairs if target == lesson_id
@@ -242,10 +342,28 @@ def derive_context(bundle: CurriculumBundle, lesson_id: str) -> JsonObject:
         family: sorted(values & introduction_targets)
         for family, values in family_refs.items()
     }
+    review_scope, review_supporting = _review_source_scope(
+        structure=structure,
+        lessons=lessons,
+        nodes=nodes,
+        lesson_order=lesson_order,
+        lesson_id=lesson_id,
+        lesson=lesson,
+        review_pairs=review_pairs,
+        introduction_pairs=all_introduction_pairs,
+        taxonomy=taxonomy,
+    ) if lesson is not None else ({family: set() for family in FAMILIES}, set())
     reviewed = {
-        family: sorted(values - introduction_targets)
+        family: sorted(
+            (values - introduction_targets)
+            | (review_scope[family] - introduction_targets)
+        )
         for family, values in family_refs.items()
     }
+    supporting_references.update(review_supporting)
+    outline_references.update(review_supporting)
+    for values in review_scope.values():
+        outline_references.update(values)
     target_closure, unresolved = taxonomy_closure(outline_references, taxonomy)
 
     previous: dict[str, Any] = {

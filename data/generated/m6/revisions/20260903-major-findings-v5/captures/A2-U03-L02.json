@@ -1,0 +1,64 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "reading",
+        "title": "A short station story",
+        "body_text": "At 5:10, Mai was reading the station board when Linh called. Linh needed the bus number, time, and gate. Board: ‘Bus 12 leaves at 5:20 from Gate 4.’ Read the story, cover it, and name the action in progress and the three board facts.",
+        "embedded_examples": [
+          "concept_past_continuous",
+          "concept_past_simple",
+          "concept_mediation",
+          "concept_reading"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "dialogue",
+        "title": "Choose a suitable request",
+        "body_text": "To unfamiliar staff: ‘Excuse me. Could you help me check the 5:20 departure and find Gate 4, please?’ To a friend beside you: ‘Can you check Gate 4 with me?’ The first suits a respectful request to staff; the second suits a small shared task with a friend. Now choose one form for each person, say why it fits, and adapt the time, place, or detail. In urgent danger, get attention and state the need directly.",
+        "embedded_examples": [
+          "concept_function_request_help",
+          "concept_chunk_could_you_help",
+          "concept_pragmatics_polite_requests"
+        ]
+      },
+      {
+        "id": "section_03",
+        "section_type": "dialogue",
+        "title": "Pass the answer to Linh",
+        "body_text": "Linh: ‘Which bus is it, and where do I go?’ Mai: ‘Bus 12 leaves at 5:20 from Gate 4.’ Linh: ‘Thanks.’ Mai read one source, asked staff, then gave Linh the needed facts. Cover the board, answer Linh, and uncover it to check bus 12, 5:20, and Gate 4.",
+        "embedded_examples": [
+          "concept_mediation",
+          "concept_assessment_can_request_help",
+          "concept_function_request_help"
+        ]
+      },
+      {
+        "id": "section_04",
+        "section_type": "explanation",
+        "title": "Stress STA and check by listening",
+        "body_text": "STA-tion has two beats; STA /steɪ/ is stronger. Keep /eɪ/ clear and say the second beat lightly. Record the story and both talks. Hide the text, replay, and write: What was Mai doing? What did staff say? What did Mai tell Linh? Uncover the model and check every answer and the three matching facts.",
+        "embedded_examples": [
+          "concept_pronunciation_word_stress",
+          "concept_pronunciation_syllables",
+          "concept_past_continuous"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "67a2331825d8752b6f770615b6feb19e035b7ba1de18724aad90f419ea1abe8e",
+  "response_sha256": "7805cebd426cb85bf250e9c78ab1e73057e5090fee59dc7f245c6634065076d9",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-sol",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T07:39:05Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

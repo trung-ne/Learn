@@ -1,0 +1,63 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "grammar",
+        "title": "Show a finished past action",
+        "body_text": "The past simple shows a finished action before now. Compare: ‘I run home every Friday’ is a routine; ‘I ran home yesterday’ is finished. Run changes to ran in the past. Put a clear past-time word, such as yesterday, with ran.",
+        "embedded_examples": [
+          "concept_past_simple",
+          "concept_present_simple",
+          "vocab_en_run_001"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "vocabulary",
+        "title": "Use run for movement",
+        "body_text": "Here run means move on foot faster than walking. Read: ‘Mai ran to the gate yesterday.’ Picture Mai walking, then moving faster. Say the line again with home or the station. Keep ran for the finished action and name where Mai went.",
+        "embedded_examples": [
+          "vocab_en_run_001",
+          "concept_past_simple"
+        ]
+      },
+      {
+        "id": "section_03",
+        "section_type": "dialogue",
+        "title": "Make a coherent help request",
+        "body_text": "A: ‘I ran here, but I cannot find Gate 2. Please help me.’ B: ‘Yes. Gate 2 is beside the café.’ A: ‘Thank you.’ The first speaker says the exact problem. The second speaker answers that problem. Say both parts, then change only the gate number.",
+        "embedded_examples": [
+          "concept_function_request_help",
+          "concept_past_simple",
+          "vocab_en_run_001"
+        ]
+      },
+      {
+        "id": "section_04",
+        "section_type": "explanation",
+        "title": "Build syllables, then integrate",
+        "body_text": "Clap once for ran, twice for sta-tion, and three times for yes-ter-day. In help, finish /l/ then /p/ without an extra vowel. Say it slowly, then as one beat. Finally, tell the short past event and ask for help. Check: ran goes with the past time, run means fast movement on foot, and the answer gives useful help.",
+        "embedded_examples": [
+          "concept_pronunciation_syllables",
+          "concept_pronunciation_phonemes",
+          "concept_past_simple",
+          "vocab_en_run_001"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "efda4bee054b0ddf8566af50286fe9f65c8387045a30b89e747b01d751bd6c87",
+  "response_sha256": "609256449b96da1c3e3efb3a2490f66cc457d225e98c356e4dbb3c9c1614342e",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-terra",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T06:28:21Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

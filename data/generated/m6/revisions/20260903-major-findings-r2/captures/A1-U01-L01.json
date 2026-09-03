@@ -1,0 +1,63 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "grammar",
+        "title": "Notice meaning and form",
+        "body_text": "Use the present simple for a fact or usual action. I/you/we/they live and study; he/she lives and studies. A time phrase such as every day signals a routine. Read the forms, cover them, then say them from memory.",
+        "embedded_examples": [
+          "concept_present_simple",
+          "concept_reading"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "reading",
+        "title": "Read a personal model",
+        "body_text": "Model: ‘I am Minh. I live in Hue. I study English every day. My sister lives in Da Nang.’ Notice which facts are stable and which action is usual. Then replace the names, places, and routine with safe information about you.",
+        "embedded_examples": [
+          "concept_present_simple",
+          "concept_topic_personal_information",
+          "concept_writing"
+        ]
+      },
+      {
+        "id": "section_03",
+        "section_type": "explanation",
+        "title": "Make final sounds clear",
+        "body_text": "In live, the final sound is /v/; in lives and studies, it is /z/. Both sounds use voice: touch your throat and feel vibration. Hold /v/ or /z/ briefly, join it to the word, and do not add a vowel. Say live—lives and study—studies slowly, then normally.",
+        "embedded_examples": [
+          "concept_pronunciation_phonemes",
+          "concept_speaking",
+          "concept_listening"
+        ]
+      },
+      {
+        "id": "section_04",
+        "section_type": "explanation",
+        "title": "Produce and self-check",
+        "body_text": "Plan four true, privacy-safe sentences: identity, place, stable fact, and routine. Read once, speak without the text, then write them. Check: each sentence has a subject and present form; the meaning is fact or routine; final /v/ and /z/ remain audible. Repeat only the item that misses a check.",
+        "embedded_examples": [
+          "concept_present_simple",
+          "concept_pronunciation_phonemes",
+          "concept_topic_personal_information",
+          "concept_writing"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "456481ab42895c03ea7e450a4e749edabb551ff76af490b86fd2c54181b03888",
+  "response_sha256": "59f27aa801a076755f1b747099ead6d02d00457002cbd806f4d340a0a073a589",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-terra",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T05:54:40Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

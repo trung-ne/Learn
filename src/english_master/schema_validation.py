@@ -54,12 +54,15 @@ SCHEMA_FILENAMES: dict[str, str] = {
     "curriculum-independent-review": "curriculum-independent-review.schema.json",
     "curriculum-reviewer-registry": "curriculum-reviewer-registry.schema.json",
     "curriculum-approval-snapshot": "curriculum-approval-snapshot.schema.json",
+    "curriculum-development-snapshot": "curriculum-development-snapshot.schema.json",
     "lesson-generation-authorization": "lesson-generation-authorization.schema.json",
     "lesson-generation-request": "lesson-generation-request.schema.json",
     "lesson-generation-audit": "lesson-generation-audit.schema.json",
     "lesson-generation-rejection": "lesson-generation-rejection.schema.json",
     "lesson-independent-review": "lesson-independent-review.schema.json",
     "lesson-batch-qa-report": "lesson-batch-qa-report.schema.json",
+    "lesson-ai-review": "lesson-ai-review.schema.json",
+    "lesson-development-batch": "lesson-development-batch.schema.json",
 }
 
 SOURCE_PERMISSION_PATHS: dict[str, tuple[str, ...]] = {

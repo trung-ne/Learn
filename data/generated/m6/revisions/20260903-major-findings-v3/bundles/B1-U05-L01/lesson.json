@@ -1,0 +1,104 @@
+{
+  "cefr_level": "B1.1",
+  "communicative_functions": [],
+  "content_sections": [
+    {
+      "body_text": "Use had + past participle to mark an event earlier than another past point: ‘Mina had packed before she left.’ Timeline: HAD PACKED → LEFT → now. The form is had packed for every subject. Use the later past event to make the relationship clear.",
+      "embedded_examples": [
+        "concept_past_perfect",
+        "concept_narrative_sequence",
+        "concept_past_simple"
+      ],
+      "id": "section_01",
+      "section_type": "grammar",
+      "title": "Mark the earlier past"
+    },
+    {
+      "body_text": "‘Mina had packed before she went to the station, and she arrived early. Her friend had already bought the tickets.’ Underline had + packed/bought; draw arrows to the later events went/arrived. This shows sequence even when sentences mention events in another order.",
+      "embedded_examples": [
+        "concept_past_perfect",
+        "concept_narrative_sequence"
+      ],
+      "id": "section_02",
+      "section_type": "reading",
+      "title": "Notice a short narrative"
+    },
+    {
+      "body_text": "In fluent speech, unstressed had may sound /əd/, to may sound /tə/, and and may sound /ən/. Keep packed, station, and early prominent. Say ‘Mina [had] PACKED before she went [to] the STATION, [and] she arrived EARLY,’ first carefully, then with the bracketed weak forms reduced.",
+      "embedded_examples": [
+        "concept_pronunciation_weak_forms",
+        "concept_pronunciation_sentence_stress"
+      ],
+      "id": "section_03",
+      "section_type": "explanation",
+      "title": "Reduce specific function words"
+    },
+    {
+      "body_text": "Plan two earlier events and two later events. Write the timeline, model each past-perfect form, then retell without reading. Record a second version with reduced had, to, or and only when unstressed. Check: had + participle marks the earlier past, key content words stay clear, and no function word disappears.",
+      "embedded_examples": [
+        "concept_past_perfect",
+        "concept_pronunciation_weak_forms",
+        "concept_narrative_sequence"
+      ],
+      "id": "section_04",
+      "section_type": "explanation",
+      "title": "Model, retell, verify"
+    }
+  ],
+  "dimensions": [
+    "discourse",
+    "grammar",
+    "listening",
+    "pronunciation",
+    "reading",
+    "speaking",
+    "writing"
+  ],
+  "duration_minutes": 35,
+  "exercises": [],
+  "functions_introduced": [],
+  "functions_reviewed": [],
+  "generation_metadata": {
+    "curriculum_version": "20260903",
+    "generated_at": "2026-09-03T06:28:21Z",
+    "generator": "english_master.lesson_generation",
+    "generator_version": "2.0",
+    "model": "gpt-5.6-terra",
+    "prompt_version": "M6_LESSON_GENERATOR_v3",
+    "qa_notes": "Automated M6 structural checks passed; independent review remains required.",
+    "qa_status": "UNREVIEWED"
+  },
+  "grammar_introduced": [
+    "concept_past_perfect"
+  ],
+  "grammar_reviewed": [],
+  "id": "B1-U05-L01",
+  "lesson_kind": "CORE",
+  "lesson_number": 1,
+  "objectives": [
+    "handle past relationships and connected speech",
+    "combine selected B1.1 capabilities for a communicative purpose"
+  ],
+  "prerequisites": [
+    "A2-U04-L02"
+  ],
+  "pronunciation_introduced": [
+    "concept_pronunciation_weak_forms"
+  ],
+  "pronunciation_reviewed": [],
+  "review_of": [],
+  "schema_version": "1.0",
+  "skills": [
+    "listening",
+    "reading",
+    "speaking",
+    "writing"
+  ],
+  "taxonomy_concepts": [
+    "concept_narrative_sequence"
+  ],
+  "title": "Extended narration: foundations",
+  "unit_id": "B1.1-U05",
+  "vocabulary_introduced": [],
+  "vocabulary_reviewed": []
+}

@@ -1,0 +1,37 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "explanation",
+        "title": "Hear two different words",
+        "body_text": "Listen for one sound difference in pairs such as ship/sheep. Repeat slowly, then use each word in a short personal sentence.",
+        "embedded_examples": [
+          "concept_pronunciation_minimal_pairs"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "dialogue",
+        "title": "Ask and answer",
+        "body_text": "A: Is this your name? B: Yes, it is. Notice the vowel sounds before you answer.",
+        "embedded_examples": [
+          "concept_pronunciation_minimal_pairs"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "09025346abc9d9d6527cad789fecfadbbf77e427f321fb93be94911cb634c164",
+  "response_sha256": "3091451e9212f430da5e578d42228700d47999b556e3642d2d9db14c24bfc27c",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-terra",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T12:30:00Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

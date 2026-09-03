@@ -1,0 +1,97 @@
+{
+  "cefr_level": "A2.2",
+  "communicative_functions": [
+    "concept_function_request_help"
+  ],
+  "content_sections": [
+    {
+      "body_text": "I was waiting when I decided to run home. First I asked for help; then I made a decision.",
+      "embedded_examples": [
+        "concept_past_continuous",
+        "vocab_en_run_001",
+        "concept_function_request_help",
+        "concept_narrative_sequence"
+      ],
+      "id": "section_01",
+      "section_type": "dialogue",
+      "title": "A connected account"
+    },
+    {
+      "body_text": "Say the important new information more strongly: I made a DECISION.",
+      "embedded_examples": [
+        "concept_pronunciation_sentence_stress"
+      ],
+      "id": "section_02",
+      "section_type": "explanation",
+      "title": "Choose the focus"
+    }
+  ],
+  "dimensions": [
+    "communicative_functions",
+    "discourse",
+    "grammar",
+    "listening",
+    "mediation",
+    "pronunciation",
+    "reading",
+    "speaking",
+    "spoken_interaction",
+    "vocabulary_senses",
+    "writing"
+  ],
+  "duration_minutes": 35,
+  "exercises": [],
+  "functions_introduced": [],
+  "functions_reviewed": [
+    "concept_function_request_help"
+  ],
+  "generation_metadata": {
+    "curriculum_version": "20260903",
+    "generated_at": "2026-09-03T12:30:00Z",
+    "generator": "english_master.lesson_generation",
+    "generator_version": "2.0",
+    "model": "gpt-5.6-terra",
+    "prompt_version": "M6_LESSON_GENERATOR_v3",
+    "qa_notes": "Automated M6 structural checks passed; independent review remains required.",
+    "qa_status": "UNREVIEWED"
+  },
+  "grammar_introduced": [],
+  "grammar_reviewed": [
+    "concept_past_continuous"
+  ],
+  "id": "A2-U04-L02",
+  "lesson_kind": "CONSOLIDATION",
+  "lesson_number": 2,
+  "objectives": [
+    "handle sequencing, lexical combinations, and information focus",
+    "combine selected A2.2 capabilities for a communicative purpose"
+  ],
+  "prerequisites": [
+    "A2-U04-L01"
+  ],
+  "pronunciation_introduced": [],
+  "pronunciation_reviewed": [
+    "concept_pronunciation_sentence_stress"
+  ],
+  "review_of": [
+    "A2-U04-L01"
+  ],
+  "schema_version": "1.0",
+  "skills": [
+    "listening",
+    "mediation",
+    "reading",
+    "speaking",
+    "spoken_interaction",
+    "writing"
+  ],
+  "taxonomy_concepts": [
+    "concept_narrative_sequence"
+  ],
+  "title": "Connected accounts: application",
+  "unit_id": "A2.2-U04",
+  "vocabulary_introduced": [],
+  "vocabulary_reviewed": [
+    "vocab_en_run_001"
+  ]
+}

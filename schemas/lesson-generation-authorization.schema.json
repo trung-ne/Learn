@@ -9,7 +9,7 @@
     "schema_version": {"const": "2.0"},
     "record_type": {"const": "lesson_generation_authorization"},
     "authorization_id": {"type": "string", "pattern": "^auth_[a-f0-9]{64}$"},
-    "authority_source": {"const": "VERIFIED_M5_APPROVAL_SNAPSHOT"},
+    "authority_source": {"enum": ["VERIFIED_M5_APPROVAL_SNAPSHOT", "VERIFIED_M5_DEVELOPMENT_SNAPSHOT"]},
     "snapshot_binding": {"$ref": "#/$defs/snapshotBinding"},
     "curriculum_version": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
     "taxonomy_version": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
@@ -30,21 +30,27 @@
       }
     },
     "snapshotBinding": {
+      "oneOf": [
+        {"$ref": "#/$defs/releaseSnapshotBinding"},
+        {"$ref": "#/$defs/developmentSnapshotBinding"}
+      ]
+    },
+    "releaseSnapshotBinding": {
       "type": "object", "additionalProperties": false,
       "required": ["snapshot_id", "snapshot_sha256", "member_hashes", "bundle_sha256"],
       "properties": {
         "snapshot_id": {"type": "string", "pattern": "^m5snapshot_[a-f0-9]{64}$"},
-        "snapshot_sha256": {"$ref": "#/$defs/sha256"},
-        "bundle_sha256": {"$ref": "#/$defs/sha256"},
-        "member_hashes": {
-          "type": "object", "additionalProperties": false,
-          "required": ["manifest", "review_linguistic", "review_pedagogical", "reviewer_registry", "source_registry", "snapshot"],
-          "properties": {
-            "manifest": {"$ref": "#/$defs/sha256"}, "review_linguistic": {"$ref": "#/$defs/sha256"},
-            "review_pedagogical": {"$ref": "#/$defs/sha256"}, "reviewer_registry": {"$ref": "#/$defs/sha256"},
-            "source_registry": {"$ref": "#/$defs/sha256"}, "snapshot": {"$ref": "#/$defs/sha256"}
-          }
-        }
+        "snapshot_sha256": {"$ref": "#/$defs/sha256"}, "bundle_sha256": {"$ref": "#/$defs/sha256"},
+        "member_hashes": {"type": "object", "additionalProperties": false, "required": ["manifest", "review_linguistic", "review_pedagogical", "reviewer_registry", "source_registry", "snapshot"], "properties": {"manifest": {"$ref": "#/$defs/sha256"}, "review_linguistic": {"$ref": "#/$defs/sha256"}, "review_pedagogical": {"$ref": "#/$defs/sha256"}, "reviewer_registry": {"$ref": "#/$defs/sha256"}, "source_registry": {"$ref": "#/$defs/sha256"}, "snapshot": {"$ref": "#/$defs/sha256"}}}
+      }
+    },
+    "developmentSnapshotBinding": {
+      "type": "object", "additionalProperties": false,
+      "required": ["snapshot_id", "snapshot_sha256", "member_hashes", "bundle_sha256"],
+      "properties": {
+        "snapshot_id": {"type": "string", "pattern": "^m5devsnapshot_[a-f0-9]{64}$"},
+        "snapshot_sha256": {"$ref": "#/$defs/sha256"}, "bundle_sha256": {"$ref": "#/$defs/sha256"},
+        "member_hashes": {"type": "object", "additionalProperties": false, "required": ["manifest", "source_registry", "snapshot"], "properties": {"manifest": {"$ref": "#/$defs/sha256"}, "source_registry": {"$ref": "#/$defs/sha256"}, "snapshot": {"$ref": "#/$defs/sha256"}}}
       }
     },
     "referenceId": {"anyOf": [{"$ref": "common.schema.json#/$defs/conceptId"}, {"$ref": "common.schema.json#/$defs/vocabularySenseId"}]},

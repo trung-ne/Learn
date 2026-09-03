@@ -11,9 +11,9 @@ The authoritative source records retain their committed states:
 - `blocks_content_generation` remains `true`; and
 - an approval snapshot is a separate, hash-bound review overlay, not a status mutation.
 
-No committed approval snapshot is supplied by the project. Schema-valid automated output is not human approval.
+No committed human/release approval snapshot is supplied by the project. Schema-valid automated output is not human approval.
 
-The current M6 authorization contract does not yet load or hash-bind this new snapshot format. A real snapshot is therefore necessary governance evidence but is not yet a mechanically enforced M6 preflight input. Do not resume production lesson generation until M6 is explicitly bound to a verified real snapshot; the synthetic M6 fixtures are tests only.
+M6 now independently reloads and hash-binds its selected snapshot. The strict human snapshot below remains the release-quality lane. A separate deterministic development snapshot may authorize M6 development only; it neither removes `blocks_content_generation` from source M5 records nor claims human review, publisher identity, or release approval. Synthetic fixtures are tests only.
 
 ## Roles and independence
 
@@ -50,6 +50,19 @@ These are unkeyed content hashes, not digital signatures. They provide determini
 The manifest also binds `M5_INDEPENDENT_REVIEW_V2`, semantic-validator and canonicalization profile versions, both exact role checklists, and canonical hashes for the transitive local JSON Schema dependency closure used by M5 review. Changes to those rules or schemas therefore produce a different manifest rather than silently reinterpreting an existing review target.
 
 Every command independently and strictly loads the operator-supplied source registry. Before preparing, publishing, or verifying, the workflow validates the registry schema and duplicate source IDs, then checks every citation in the manifest's referenced taxonomy and annotation scopes. Externally grounded evidence must name a source. A cited source is eligible only when it exists, has status `APPROVED` or `REFERENCE_ONLY`, grants `permissions.reference_allowed: true`, and the citation URL falls under one of its explicit `taxonomy_reference_url_prefixes` (or its primary `source_url` when no override is declared). If a registered prefix contains a query string, the citation query must match exactly; this prevents a record-specific locator from authorizing a different record on the same path. Unknown, missing, mislabeled, `QUARANTINED`, `REJECTED`, reference-denied, malformed, drifted, or tampered source authority fails closed. Citation eligibility never grants ingestion, copying, transformation, exercise use, or redistribution rights. Unreferenced taxonomy records are not approved by this snapshot and remain outside this approval gate.
+
+## Development-only snapshot
+
+Development uses the same independently reloaded M5 bundle, source registry, citation eligibility, canonical manifest, and hashes, but deliberately does **not** reuse human reviewer fields. It publishes `curriculum_development_snapshot` with `approval_tier: DEVELOPMENT_APPROVED`, `authority_scope: M5_DEVELOPMENT_ONLY`, producing-tool facts, and a timestamp. It has exactly `manifest.json`, `source-registry.json`, and `snapshot.json` and is immutably published and reverified.
+
+```bash
+python -m english_master.curriculum_review develop-publish curriculum/structure.json \
+  --source-registry sources/registry.yaml \
+  --manifest data/reviews/m5/prepared/<manifest>/manifest.json \
+  --produced-at <RFC3339-tool-time> --output data/reviews/m5/development/<snapshot>
+```
+
+This path must never be described as human review or public release. The existing `publish` workflow remains mandatory for strict human/release authority.
 
 ## Workflow
 

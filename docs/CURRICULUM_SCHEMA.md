@@ -100,6 +100,8 @@ M6 adds strict machine-readable contracts for `lesson-generation-authorization`,
 
 The shared `common.schema.json` definitions are authoritative for tier-qualified unit IDs, lesson IDs, concept IDs, communicative-function IDs, vocabulary-sense IDs, and syntactically explicit ISO timestamps; M5 reuses those definitions. The backend response contains only `content_sections` in a prompt-hash-bound captured response envelope. Orchestration injects the remaining schema-valid lesson fields, actual runtime provenance, and `UNREVIEWED` status. M6 semantically requires exact reference scope, canonical ordering, bounded nonempty section titles and bodies, and `exercises: []`. Audit checks use `PASS`, `FAIL`, or `NOT_RUN`, report actual capture/reproducibility facts, and retain outstanding independent reviews. Independent review records bind exact lesson and audit hashes without changing approval status; batch reports validate ten ordered immutable bundles and declared human-review evidence without inferring a human result. See [LESSON_GENERATION.md](LESSON_GENERATION.md).
 
+M6 development evidence uses distinct `lesson-ai-review` and `lesson-development-batch` records. Their `approval_tier` values are respectively `AI_REVIEWED` and `DEVELOPMENT_APPROVED`, while `reviewer_type: AI` is mandatory on the former. They hash-bind the exact M5 development snapshot, lesson, audit, prompt, and response evidence; neither schema has human identity, qualifications, or release fields. A passing development batch is not a content-lifecycle `APPROVED` record, `HUMAN_REVIEWED`, or `RELEASE_APPROVED` claim.
+
 ## Core Models
 
 ### Skill

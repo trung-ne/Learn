@@ -1,0 +1,150 @@
+{
+  "checks": {
+    "authorization": "PASS",
+    "backend_contract": "PASS",
+    "cefr_reference_scope": "PASS",
+    "constraints": "PASS",
+    "graph": "PASS",
+    "identity": "PASS",
+    "lesson_schema": "PASS",
+    "m5_authority": "PASS",
+    "m7_plus_exclusion": "PASS",
+    "prerequisites": "PASS",
+    "provenance_copyright": "PASS",
+    "publication": "PASS",
+    "request_schema": "PASS"
+  },
+  "constraints_applied": {
+    "allowed_functions": [],
+    "allowed_grammar": [
+      "concept_past_perfect"
+    ],
+    "allowed_pronunciation": [
+      "concept_pronunciation_weak_forms"
+    ],
+    "allowed_supporting": [
+      "concept_narrative_sequence"
+    ],
+    "allowed_vocabulary": [],
+    "context_only_prerequisites": [
+      "concept_past_continuous",
+      "concept_past_simple",
+      "concept_present_simple",
+      "concept_pronunciation_phonemes",
+      "concept_pronunciation_sentence_stress",
+      "concept_pronunciation_syllables",
+      "concept_pronunciation_word_stress"
+    ],
+    "forbidden_ids": [
+      "concept_assessment_can_request_help",
+      "concept_chunk_could_you_help",
+      "concept_collocation_make_decision",
+      "concept_function_request_help",
+      "concept_listening",
+      "concept_mediation",
+      "concept_pragmatics_polite_requests",
+      "concept_pronunciation_connected_speech",
+      "concept_pronunciation_intonation",
+      "concept_pronunciation_linking",
+      "concept_pronunciation_minimal_pairs",
+      "concept_pronunciation_rhythm",
+      "concept_reading",
+      "concept_speaking",
+      "concept_spoken_interaction",
+      "concept_topic_personal_information",
+      "concept_writing",
+      "vocab_en_run_001",
+      "vocab_en_run_002"
+    ],
+    "forbidden_terms": [
+      "advanced idiom",
+      "notwithstanding"
+    ],
+    "max_section_characters": 500,
+    "max_sections": 4,
+    "max_target_vocabulary": 4,
+    "max_total_characters": 1200,
+    "target_cefr": "B1.1"
+  },
+  "input_hashes": {
+    "authorization": "6885deb2825997550abe4a40a2e6d0de191670d7a63ce12c0c5a3548c30fb155",
+    "coverage": "48600dbc80f9bf9892955703094844c72942298f421398e4e95f3888375ea382",
+    "graph": "bed5819c201f6741ce1a89df1d8d9771a94c68b6c7f6be5730fd8ba3e50d9271",
+    "request": "7e1becfa3801207d8df35f804d7d4afff5aa6206720979cf365798e5b40f9df9",
+    "source_registry": "1270284517c3d47e4467310ad32e7431dc0aa3cfbce0edb07e4fedc9bc347435",
+    "structure": "3718fb2e07e81e8a18ad6ffcab04b9990edc8855f7f6a2a6e3f781db5c675244",
+    "taxonomy": "9ca1cd20875c578577c2ad91af55770b9e515de9af173258ca76ed69ccc440f9"
+  },
+  "lesson_id": "B1-U05-L01",
+  "output_hash": "ef8b838323d7938de9dba2ffee034d8ce08fd7d133e8cbfa14fd4ed7ef30d4ef",
+  "outstanding_independent_reviews": [
+    "CEFR",
+    "GRAMMAR_LEXICAL",
+    "LANGUAGE_QUALITY",
+    "PEDAGOGICAL"
+  ],
+  "qa_checks_performed": [
+    "authorization",
+    "backend_contract",
+    "cefr_reference_scope",
+    "constraints",
+    "graph",
+    "identity",
+    "lesson_schema",
+    "m5_authority",
+    "m7_plus_exclusion",
+    "prerequisites",
+    "provenance_copyright",
+    "publication",
+    "request_schema"
+  ],
+  "qa_issues_found": [],
+  "qa_notes": "Automated M6 checks do not constitute independent linguistic, CEFR, language-quality, or pedagogical approval.",
+  "qa_outcome": "AUTOMATED_CHECKS_PASSED_PENDING_INDEPENDENT_REVIEW",
+  "qa_reviewer": "english_master.m6_automated_validator",
+  "qa_status": "UNREVIEWED",
+  "qa_timestamp": "2026-09-03T06:28:59Z",
+  "record_type": "lesson_generation_audit",
+  "reproducibility": {
+    "backend_deterministic": false,
+    "byte_identical_claimed": true,
+    "canonical_json": true,
+    "replayable_from_capture": true,
+    "seeded": false
+  },
+  "request_id": "req_6c6e5405ea0647d867639997bb3c5ed634c6f0c66667ba2125454c653b8609ec",
+  "response_provenance": {
+    "deterministic": false,
+    "model": "gpt-5.6-terra",
+    "observed_at": "2026-09-03T06:28:21Z",
+    "parameters": {
+      "temperature": 0
+    },
+    "prompt_sha256": "561b25976a45438acdab1a7c44157444a117fb68f9adc76c9bbc7961523e947f",
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "response_sha256": "f29128eb3d1b6bc61bbce9445605feece3cd8930d0d17cccf1cc353727837d45",
+    "seed": null
+  },
+  "schema_version": "2.0",
+  "snapshot_binding": {
+    "bundle_sha256": "79301a37b0821fcd2cc077021db318b0a201771b9727ad08be071fc076cdb027",
+    "member_hashes": {
+      "manifest": "1436c433163765410282fffdddea1bed616feb372270a47d99bebb7193e8d296",
+      "snapshot": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f",
+      "source_registry": "1270284517c3d47e4467310ad32e7431dc0aa3cfbce0edb07e4fedc9bc347435"
+    },
+    "snapshot_id": "m5devsnapshot_5335d3a30ab9f4948e22558aa7fc755857c09dff4ef305c95d171e3ebc718c72",
+    "snapshot_sha256": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f"
+  },
+  "status": "ACCEPTED",
+  "unresolved_issues": [],
+  "validation_stage": "COMPLETE",
+  "versions": {
+    "curriculum": "20260903",
+    "generator": "2.0",
+    "lesson_schema": "1.0",
+    "prompt": "M6_LESSON_GENERATOR_v3",
+    "taxonomy": "20260831"
+  }
+}

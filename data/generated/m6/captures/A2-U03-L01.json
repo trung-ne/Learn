@@ -1,0 +1,39 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "grammar",
+        "title": "Background and event",
+        "body_text": "Use the past continuous for a background action: I was walking when my friend called. Keep the main event clear.",
+        "embedded_examples": [
+          "concept_past_continuous"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "dialogue",
+        "title": "Polite support",
+        "body_text": "A: Could you help me explain the timetable? B: Yes. I was reading it when you arrived. Stress the important word.",
+        "embedded_examples": [
+          "concept_chunk_could_you_help",
+          "concept_mediation",
+          "concept_pronunciation_word_stress"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "548ed09433ce5cd7809f635b2e63e0e32b7f8f297312e83695c81f6597a207e5",
+  "response_sha256": "2cd7b1acff4d5992f946d6dabfd500b18eb34360175a391c75bcc74040fe3720",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-terra",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T12:30:00Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

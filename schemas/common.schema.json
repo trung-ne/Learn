@@ -39,6 +39,10 @@
       "type": "string",
       "enum": ["UNREVIEWED", "IN_REVIEW", "NEEDS_REVISION", "REVISION_SUBMITTED", "APPROVED", "REJECTED", "ARCHIVED"]
     },
+    "approvalTier": {
+      "type": "string",
+      "enum": ["UNREVIEWED", "MACHINE_VALIDATED", "AI_REVIEWED", "DEVELOPMENT_APPROVED", "HUMAN_REVIEWED", "RELEASE_APPROVED"]
+    },
     "lessonId": {
       "type": "string",
       "pattern": "^(A1|A2|B1|B2|C1|C2)-U(0[1-9]|[1-9][0-9])-L(0[1-9]|[1-9][0-9])$"

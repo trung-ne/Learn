@@ -1,0 +1,63 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "grammar",
+        "title": "Review routines and safe details",
+        "body_text": "Use the present simple for a routine or a fact: ‘I run home after class. I live near the park.’ For practice, use a made-up address instead of private information. Read each line, cover it, and say it again with your own safe place or routine.",
+        "embedded_examples": [
+          "concept_present_simple",
+          "vocab_en_run_001",
+          "concept_topic_personal_information"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "explanation",
+        "title": "Rehearse syllable boundaries",
+        "body_text": "Tap once for run and home, twice for af-ter, and twice for ad-dress. Say each part slowly, then join the parts without a new sound. Record one slow version and one normal version. Both versions must keep the same number of taps.",
+        "embedded_examples": [
+          "concept_pronunciation_syllables",
+          "concept_pronunciation_phonemes",
+          "vocab_en_run_001"
+        ]
+      },
+      {
+        "id": "section_03",
+        "section_type": "dialogue",
+        "title": "Ask someone to write",
+        "body_text": "Mai: ‘Please help me write my address on this form.’ An: ‘Yes. Tell me the address.’ Mai: ‘12 Park Road.’ An: ‘I’ll write it here.’ An is the writer, so the reply matches Mai’s request. Practise with a made-up address, then change the road name.",
+        "embedded_examples": [
+          "concept_function_request_help",
+          "concept_topic_personal_information"
+        ]
+      },
+      {
+        "id": "section_04",
+        "section_type": "explanation",
+        "title": "Say, write, and check",
+        "body_text": "Give two safe facts and one routine with run. Then ask another person to write one fact. Speak both roles and write the lines from memory. Check: the ideas are facts or routines, run means fast movement on foot, the helper clearly does the writing, and the syllable count stays the same at normal speed.",
+        "embedded_examples": [
+          "concept_present_simple",
+          "vocab_en_run_001",
+          "concept_function_request_help",
+          "concept_pronunciation_syllables"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "6f8bc6788c6ea116f5ec1461a7de914d76a0fa935892ce7aeb4c08028bce6f23",
+  "response_sha256": "821d59e40f705cf81a8256a1dc1c8ba29dae000a6583542a42f39f9db53709c6",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-terra",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T06:28:21Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

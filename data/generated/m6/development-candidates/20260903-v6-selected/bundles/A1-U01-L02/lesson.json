@@ -1,0 +1,114 @@
+{
+  "cefr_level": "A1.1",
+  "communicative_functions": [],
+  "content_sections": [
+    {
+      "body_text": "Live has /ɪ/; leave has /iː/. Relax your tongue for /ɪ/. Move it higher and forward for /iː/; this sound is often longer too. Say live–leave five times. Change mouth shape and length, not length alone.",
+      "embedded_examples": [
+        "concept_pronunciation_minimal_pairs",
+        "concept_pronunciation_phonemes",
+        "concept_speaking"
+      ],
+      "id": "section_01",
+      "section_type": "explanation",
+      "title": "1. Two vowels (8 min)"
+    },
+    {
+      "body_text": "B: ‘I live here.’ A: ‘Did you say leave?’ B: ‘No, live—/lɪv/.’ A: ‘Oh, you live here.’ Read both roles, then cover them and speak again. B clearly repeats the word that A heard wrongly.",
+      "embedded_examples": [
+        "concept_pronunciation_minimal_pairs",
+        "concept_present_simple",
+        "concept_spoken_interaction",
+        "concept_topic_personal_information"
+      ],
+      "id": "section_02",
+      "section_type": "dialogue",
+      "title": "2. Clear repair (8 min)"
+    },
+    {
+      "body_text": "For listening, use text-to-speech only to play a hidden order of live and leave; write L or E, then reveal it. TTS speaks; it does not hear you. For speaking, say one word to an independent listener or a speech-recognition tool that displays the recognized word. If neither is available, write ‘not checked.’ Your own replay is practice, not proof.",
+      "embedded_examples": [
+        "concept_pronunciation_minimal_pairs",
+        "concept_listening",
+        "concept_speaking",
+        "concept_writing"
+      ],
+      "id": "section_03",
+      "section_type": "explanation",
+      "title": "3. Two kinds of check (10 min)"
+    },
+    {
+      "body_text": "Make a four-line talk: give one fact, hear one word wrongly, ask ‘Did you say …?’, then correct it. Speak both roles. Success: the reply answers the question and an independent listener or suitable speech-recognition tool identifies live or leave. If unavailable, mark ‘not checked’ and keep the recording as practice.",
+      "embedded_examples": [
+        "concept_pronunciation_minimal_pairs",
+        "concept_present_simple",
+        "concept_spoken_interaction",
+        "concept_topic_personal_information"
+      ],
+      "id": "section_04",
+      "section_type": "dialogue",
+      "title": "4. Take turns (9 min)"
+    }
+  ],
+  "dimensions": [
+    "listening",
+    "pronunciation",
+    "speaking",
+    "spoken_interaction"
+  ],
+  "duration_minutes": 35,
+  "exercises": [],
+  "functions_introduced": [],
+  "functions_reviewed": [],
+  "generation_metadata": {
+    "curriculum_version": "20260903",
+    "generated_at": "2026-09-03T07:41:36Z",
+    "generator": "english_master.lesson_generation",
+    "generator_version": "2.0",
+    "model": "gpt-5.6-sol",
+    "prompt_version": "M6_LESSON_GENERATOR_v3",
+    "qa_notes": "Automated M6 structural checks passed; independent review remains required.",
+    "qa_status": "UNREVIEWED"
+  },
+  "grammar_introduced": [],
+  "grammar_reviewed": [
+    "concept_present_simple"
+  ],
+  "id": "A1-U01-L02",
+  "lesson_kind": "CONSOLIDATION",
+  "lesson_number": 2,
+  "objectives": [
+    "handle personal information and basic participation",
+    "combine selected A1.1 capabilities for a communicative purpose"
+  ],
+  "prerequisites": [
+    "A1-U01-L01"
+  ],
+  "pronunciation_introduced": [
+    "concept_pronunciation_minimal_pairs"
+  ],
+  "pronunciation_reviewed": [
+    "concept_pronunciation_phonemes"
+  ],
+  "review_of": [
+    "A1-U01-L01"
+  ],
+  "schema_version": "1.0",
+  "skills": [
+    "listening",
+    "speaking",
+    "spoken_interaction"
+  ],
+  "taxonomy_concepts": [
+    "concept_listening",
+    "concept_reading",
+    "concept_speaking",
+    "concept_spoken_interaction",
+    "concept_topic_personal_information",
+    "concept_writing"
+  ],
+  "title": "Foundational exchange: application",
+  "unit_id": "A1.1-U01",
+  "vocabulary_introduced": [],
+  "vocabulary_reviewed": []
+}

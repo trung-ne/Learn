@@ -203,6 +203,12 @@ Whenever practical:
 
 Generator and Reviewer should be separate passes.
 
+## Development and release approval
+
+Development approval and public-release approval are separate, ordered claims. A deterministic machine pass may establish `MACHINE_VALIDATED`; separate recorded AI reviews may establish `AI_REVIEWED`; a complete hash-bound development batch may establish `DEVELOPMENT_APPROVED`. None of those claims means a human reviewed, endorsed, certified, or released the content.
+
+`HUMAN_REVIEWED` and `RELEASE_APPROVED` require their own verified human evidence and stricter release workflow. Never fabricate a reviewer, identity, qualification, publisher, signature, provider run, or approval. AI evidence must explicitly identify itself as AI and retain factual provenance; use `UNKNOWN` when a provider or model fact is unavailable.
+
 ---
 
 # Development Process

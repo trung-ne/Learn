@@ -1,0 +1,66 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "explanation",
+        "title": "1. Two vowels (8 min)",
+        "body_text": "Live has /ɪ/. Leave has /iː/. For /ɪ/, relax your tongue. For /iː/, move it higher and forward; the sound is often longer too. Say live–leave five times. Change the mouth shape and the length, not only the length.",
+        "embedded_examples": [
+          "concept_pronunciation_minimal_pairs",
+          "concept_pronunciation_phonemes",
+          "concept_speaking"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "dialogue",
+        "title": "2. Clear repair (8 min)",
+        "body_text": "B: ‘I live here.’ A: ‘Did you say leave?’ B: ‘No, live—/lɪv/.’ A: ‘Oh, you live here.’ Read both roles. Cover the lines and say them again. The question is clear, and B repeats the word that A heard wrongly.",
+        "embedded_examples": [
+          "concept_pronunciation_minimal_pairs",
+          "concept_present_simple",
+          "concept_spoken_interaction",
+          "concept_topic_personal_information"
+        ]
+      },
+      {
+        "id": "section_03",
+        "section_type": "explanation",
+        "title": "3. Independent check (10 min)",
+        "body_text": "Your own replay is practice, not proof. For listening, ask a helper or a random text-to-speech tool to say a hidden order of live and leave; write L or E, then reveal the key. For speaking, say one word without showing it and ask the helper or tool what it heard. If no independent check is available, mark ‘not checked.’",
+        "embedded_examples": [
+          "concept_pronunciation_minimal_pairs",
+          "concept_listening",
+          "concept_speaking",
+          "concept_writing"
+        ]
+      },
+      {
+        "id": "section_04",
+        "section_type": "dialogue",
+        "title": "4. Take turns (9 min)",
+        "body_text": "Make a four-line talk like the model: give one safe fact, hear one word wrongly, ask ‘Did you say …?’, then correct it. Speak both roles with a pause for each reply. Success: the reply answers the question, the correction uses live or leave clearly, and an independent listener identifies the word. Otherwise, keep it as practice only.",
+        "embedded_examples": [
+          "concept_pronunciation_minimal_pairs",
+          "concept_present_simple",
+          "concept_spoken_interaction",
+          "concept_topic_personal_information"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "7987a8415c67e5004a2abd2201c7d613691864edb8b1527b148d50a7af4f1dae",
+  "response_sha256": "fb13da9c6a10277ea56f69f1e8e6f63c687158e9a6fc8b62558598d48fef72aa",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-terra",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T07:16:57Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

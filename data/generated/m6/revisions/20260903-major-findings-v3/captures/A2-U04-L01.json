@@ -1,0 +1,63 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "reading",
+        "title": "Read four bounded events",
+        "body_text": "Background: ‘I was walking to class.’ Four events follow: (1) ‘First, it began to rain.’ (2) ‘Next, a strong gust turned my umbrella inside out.’ (3) ‘Then, I made a decision to wait in the library.’ (4) ‘Finally, when the rain eased, I continued to class.’",
+        "embedded_examples": [
+          "concept_narrative_sequence",
+          "concept_collocation_make_decision",
+          "concept_past_continuous",
+          "concept_past_simple"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "explanation",
+        "title": "Notice order and combination",
+        "body_text": "Draw a long line for was walking. Then number only the four marked events 1–4 and underline first, next, then, and finally. Circle made a decision: English conventionally combines make with decision. The background sets the scene; the four markers bound the sequence.",
+        "embedded_examples": [
+          "concept_narrative_sequence",
+          "concept_collocation_make_decision",
+          "concept_past_continuous"
+        ]
+      },
+      {
+        "id": "section_03",
+        "section_type": "explanation",
+        "title": "Signal information focus",
+        "body_text": "Relative prominence marks the new or contrasting information: ‘I waited in the LIBRARY, not the café.’ Make LIBRARY clearer and stronger than nearby words. Change the place to HOME; the strongest word changes because the intended contrast changes.",
+        "embedded_examples": [
+          "concept_pronunciation_sentence_stress",
+          "concept_pronunciation_word_stress"
+        ]
+      },
+      {
+        "id": "section_04",
+        "section_type": "explanation",
+        "title": "Transform, retell, verify",
+        "body_text": "Change the place and weather problem, but keep one background plus exactly four numbered events. Include all four order markers and make a decision, then retell without reading. Check: there are four—not three or five—events, the weather wording is natural, the lexical combination is intact, and one contrast word is prominent.",
+        "embedded_examples": [
+          "concept_narrative_sequence",
+          "concept_collocation_make_decision",
+          "concept_pronunciation_sentence_stress"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "58cefc698198ea715c90a6b0c1c20ac94d5ca8deb075fd77282f34537528f0df",
+  "response_sha256": "6b37cb2e5dd2b4cb134591320df44d9db3b99481f62017eb712e4cc1331d8709",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-terra",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T06:28:21Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

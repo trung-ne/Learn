@@ -2,7 +2,7 @@
 
 English Master is a reproducible, self-study English learning-system pipeline for CEFR A1 through C2. Its primary learners are Vietnamese learners of English.
 
-## Current scope: M0 through M5 complete; M6 infrastructure repaired
+## Current scope: M0 through M6 development complete; M7 has not started
 
 The completed foundation provides:
 
@@ -15,10 +15,10 @@ The completed foundation provides:
 - A deterministic post-ingestion normalization pipeline with dual hashes, exact groups, bounded character n-gram candidates, and an explicit semantic review queue.
 - A compact A1.1-C2.2 curriculum architecture with globally numbered units, outline-only lessons, review nodes, typed dependency edges, and machine-readable dimension coverage.
 - An offline curriculum validator that reuses the schema engine and enforces hierarchy, taxonomy-review gates, references, ordering, DAG, review, coverage, and reproducibility rules.
-- A repaired provider-neutral M6 generation boundary that loads and hash-binds M5 artifacts, an independent authorization, and the source registry; derives graph context; injects trusted lesson metadata; emits stage-aware QA audits; and uses atomic no-overwrite artifact bundles. This is generator infrastructure, not completed or independently approved lesson content.
+- A provider-neutral M6 generation boundary and separate, hash-bound development approval lane. It independently loads M5 artifacts and source authority; derives scope; injects trusted metadata; emits stage-aware audits; retains factual AI-review evidence; and uses atomic no-overwrite artifact bundles. `DEVELOPMENT_APPROVED`, if earned, never means human review or release approval.
 - Data-lifecycle directory scaffolding and Git protections.
 
-M3 is ingestion infrastructure, not a corpus project. M4 adds deterministic normalization and review-oriented deduplication only. M5 adds architecture and dependency planning only. M6 adds constrained lesson-generation infrastructure and one project-authored offline test fixture; it does not approve generated lessons. These stages do not crawl websites, bulk-download data or media, generate exercises, assessments, or AI prompts. The committed ingestion fixture sentences are invented and explicitly used only to test the documented Tatoeba-shaped input path. The committed M5 bundle still references the DRAFT M2 taxonomy under an explicit outline-only gate and therefore fails M6 preflight before the backend is called. M6 success tests use a separate, explicitly synthetic authorization fixture; they do not constitute human review, reinterpret the M5 bundle, or upgrade its status.
+M3 is ingestion infrastructure, not a corpus project. M4 adds deterministic normalization and review-oriented deduplication only. M5 adds architecture and dependency planning only. M6 adds constrained lesson generation and an independent development lane; it does not automatically approve lessons, exercises, assessments, or AI prompts. These stages do not crawl websites or bulk-download data or media. The committed ingestion fixture sentences are invented and explicitly used only to test the documented Tatoeba-shaped input path. The strict human/release lane still rejects the DRAFT M5 source bundle without genuine independent human evidence. The separate M5 development snapshot may authorize bounded M6 development only, preserving those source states and never creating human/release claims.
 
 ## Requirements
 
@@ -147,7 +147,7 @@ python -m english_master.curriculum_validate curriculum/structure.json \
   --report curriculum/validation-report.json
 ```
 
-M5 contains a compact outline-only architecture: 12 globally numbered representative units, 24 lesson outlines, and 12 review nodes across all internal tiers. The 1,000-1,200 hour scale range is an expansion estimate, not completed content. DRAFT taxonomy dependencies are allowed only for outline planning and explicitly fail the M6 generation gate until independent review. See [docs/CURRICULUM_ARCHITECTURE.md](docs/CURRICULUM_ARCHITECTURE.md).
+M5 contains a compact outline-only architecture: 12 globally numbered representative units, 24 lesson outlines, and 12 review nodes across all internal tiers. The 1,000-1,200 hour scale range is an expansion estimate, not completed content. The strict human/release M6 lane requires a genuine human approval snapshot. A separate deterministic M5 development snapshot may authorize bounded development while leaving the taxonomy `DRAFT` and outlines `OUTLINE_ONLY`. See [docs/CURRICULUM_ARCHITECTURE.md](docs/CURRICULUM_ARCHITECTURE.md).
 
 Prepare a hash-bound packet for independent human review, with the current strict source registry independently loaded and all taxonomy citations checked for reference eligibility. Publish or verify an immutable snapshot only after real linguistic and pedagogical submissions exist:
 
@@ -157,24 +157,25 @@ python -m english_master.curriculum_review publish curriculum/structure.json --s
 python -m english_master.curriculum_review verify curriculum/structure.json --source-registry sources/registry.yaml --snapshot <snapshot-directory> --reviewer-registry <trusted-reviewer-registry.json>
 ```
 
-The repository intentionally includes blank review forms, not a real review or approval. See [docs/M5_REVIEW_WORKFLOW.md](docs/M5_REVIEW_WORKFLOW.md).
+The repository includes blank forms for the separate strict human/release lane. The deterministic development snapshot is not a human review or approval. See [docs/M5_REVIEW_WORKFLOW.md](docs/M5_REVIEW_WORKFLOW.md).
 
 ## Run constrained M6 lesson generation
 
-M6 accepts only a reverified genuine M5 approval snapshot, independently loaded reviewer/source registries, and a prompt-hash-bound captured response. It deliberately does not accept arbitrary caller-authored request, authorization, or mock-response files:
+M6 accepts either a reverified strict human/release snapshot (with independently loaded reviewer and source registries) or an explicitly selected reverified M5 development snapshot. Both require a prompt-hash-bound captured response and reject arbitrary caller-authored request, authorization, or mock-response files. The development lane is never release authority:
 
 ```bash
-python -m english_master.lesson_generate \
+python -m english_master.lesson_generate --development \
   --lesson-id A1-U01-L01 \
-  --snapshot-dir <trusted-snapshot-directory> \
-  --reviewer-registry <trusted-reviewer-registry.json> \
-  --captured-response <trusted-captured-response.json> \
-  --output-dir data/generated/m6/A1-U01-L01
+  --snapshot-dir data/reviews/m5/development \
+  --captured-response <session-captured-response.json> \
+  --output-dir <new-immutable-bundle-directory>
 ```
+
+Use the existing strict human/release invocation, including `--reviewer-registry`, only when a genuine verified human snapshot exists.
 
 The command reconstructs the exact M6 authorization and request from the verified snapshot and current M5 bundle before a backend is called. It injects only trusted lesson metadata, validates the assembled candidate, and atomically publishes `lesson.json` and `audit.json` on success. Add `--rejection-dir <directory>` to retain an immutable rejection-plus-audit bundle.
 
-No genuine snapshot, protected digest, production capture, or ten-lesson M6 batch exists yet. Test-only synthetic snapshots and mock backends exercise the fail-closed implementation but cannot authorize production generation. All generated output remains `UNREVIEWED`. See [docs/LESSON_GENERATION.md](docs/LESSON_GENERATION.md).
+No human/release snapshot or human/release approval exists yet. The development lane has a verified M5 snapshot, ten session-captured M6 lesson bundles, twenty AI review records, and one hash-bound `DEVELOPMENT_APPROVED` batch. All development evidence is distinct from human/release evidence, and M7 has not been implemented. See [docs/LESSON_GENERATION.md](docs/LESSON_GENERATION.md).
 
 ## Layout
 

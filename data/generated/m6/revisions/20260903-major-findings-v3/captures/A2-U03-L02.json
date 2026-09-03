@@ -1,0 +1,61 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "reading",
+        "title": "Notice both information needs",
+        "body_text": "Situation card: a visitor needs Gate 4 and must confirm a 5:20 departure. The visitor can ask a friend or an unfamiliar staff member directly. Keep Gate 4 and 5:20 visible. A complete exchange asks about both details and receives both details.",
+        "embedded_examples": [
+          "concept_function_request_help",
+          "concept_assessment_can_request_help"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "explanation",
+        "title": "Match wording to the person",
+        "body_text": "To a friend: ‘Help me find Gate 4 and check 5:20, please.’ To staff: ‘Excuse me. Can you help me find Gate 4 and confirm the 5:20 departure, please?’ Excuse me comes first to get an unfamiliar listener’s attention; the fuller request states both needs.",
+        "embedded_examples": [
+          "concept_function_request_help",
+          "concept_pragmatics_polite_requests"
+        ]
+      },
+      {
+        "id": "section_03",
+        "section_type": "dialogue",
+        "title": "Model and rehearse the exchange",
+        "body_text": "Visitor: ‘Excuse me. Can you help me find Gate 4 and confirm the 5:20 departure, please?’ Staff: ‘Yes. Gate 4 is on the left, and your departure is at 5:20.’ Visitor: ‘Thank you.’ Point to each requested detail and its matching answer, then rehearse both roles.",
+        "embedded_examples": [
+          "concept_function_request_help",
+          "concept_pragmatics_polite_requests",
+          "concept_assessment_can_request_help"
+        ]
+      },
+      {
+        "id": "section_04",
+        "section_type": "explanation",
+        "title": "Mark word stress and self-check",
+        "body_text": "STA-tion /ˈsteɪ.ʃən/ has two syllables; the first has the main stress. Keep /eɪ/ full and make STA a little longer and stronger; make /ʃən/ lighter. Say the word alone, then in the staff exchange. Check: Excuse me comes first, Gate 4 and 5:20 are both answered, and stress stays on the first syllable.",
+        "embedded_examples": [
+          "concept_pronunciation_word_stress",
+          "concept_pronunciation_syllables",
+          "concept_assessment_can_request_help"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "fa796538bf8a70fb0e38176bd37300659d23b66d558ff57d004e8a0239c19a35",
+  "response_sha256": "94951381c3253346e8cac4321401cb27871ec23cd542ffb80b6dcfe7cfff48f7",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-terra",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T06:28:21Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

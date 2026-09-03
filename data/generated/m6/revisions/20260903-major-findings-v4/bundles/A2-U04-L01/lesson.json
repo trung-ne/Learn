@@ -1,0 +1,105 @@
+{
+  "cefr_level": "A2.2",
+  "communicative_functions": [],
+  "content_sections": [
+    {
+      "body_text": "Scene: ‘I was walking to class.’ Then: (1) ‘First, it began to rain.’ (2) ‘Next, a strong gust turned my umbrella inside out.’ (3) ‘Then, I made the decision to wait in the library.’ (4) ‘Finally, I continued to class.’ Each numbered line has one event.",
+      "embedded_examples": [
+        "concept_narrative_sequence",
+        "concept_collocation_make_decision",
+        "concept_past_continuous",
+        "concept_past_simple"
+      ],
+      "id": "section_01",
+      "section_type": "reading",
+      "title": "Read four events"
+    },
+    {
+      "body_text": "Cover the numbers. Ask: What happened first? What happened next? Write 1–4 beside the four lines, then uncover the model. Circle made the decision. The general word pair is make a decision; in this past story, it becomes made the decision.",
+      "embedded_examples": [
+        "concept_narrative_sequence",
+        "concept_collocation_make_decision",
+        "concept_past_continuous"
+      ],
+      "id": "section_02",
+      "section_type": "explanation",
+      "title": "Put the story in order"
+    },
+    {
+      "body_text": "Say: ‘I waited in the LIBRARY, not the café.’ LIBRARY is clearer and stronger because it corrects the place. Now say: ‘I waited at HOME, not the library.’ Make HOME strongest. Record both lines, replay, and circle the word that should sound strongest; compare it with the capital word.",
+      "embedded_examples": [
+        "concept_pronunciation_sentence_stress",
+        "concept_pronunciation_word_stress"
+      ],
+      "id": "section_03",
+      "section_type": "explanation",
+      "title": "Make the new word strong"
+    },
+    {
+      "body_text": "Write one scene and four one-event lines. Use first, next, then, finally and made a decision. Number the lines before you speak. Record the story, hide it, and replay; write the four events you hear. Compare them with the numbered script. Check that one contrast word is strongest, then tell the story without reading.",
+      "embedded_examples": [
+        "concept_narrative_sequence",
+        "concept_collocation_make_decision",
+        "concept_pronunciation_sentence_stress"
+      ],
+      "id": "section_04",
+      "section_type": "explanation",
+      "title": "Write and tell a new story"
+    }
+  ],
+  "dimensions": [
+    "collocations",
+    "discourse",
+    "listening",
+    "pronunciation",
+    "reading",
+    "speaking",
+    "writing"
+  ],
+  "duration_minutes": 35,
+  "exercises": [],
+  "functions_introduced": [],
+  "functions_reviewed": [],
+  "generation_metadata": {
+    "curriculum_version": "20260903",
+    "generated_at": "2026-09-03T07:16:57Z",
+    "generator": "english_master.lesson_generation",
+    "generator_version": "2.0",
+    "model": "gpt-5.6-terra",
+    "prompt_version": "M6_LESSON_GENERATOR_v3",
+    "qa_notes": "Automated M6 structural checks passed; independent review remains required.",
+    "qa_status": "UNREVIEWED"
+  },
+  "grammar_introduced": [],
+  "grammar_reviewed": [],
+  "id": "A2-U04-L01",
+  "lesson_kind": "CORE",
+  "lesson_number": 1,
+  "objectives": [
+    "handle sequencing, lexical combinations, and information focus",
+    "combine selected A2.2 capabilities for a communicative purpose"
+  ],
+  "prerequisites": [
+    "A2-U03-L02"
+  ],
+  "pronunciation_introduced": [
+    "concept_pronunciation_sentence_stress"
+  ],
+  "pronunciation_reviewed": [],
+  "review_of": [],
+  "schema_version": "1.0",
+  "skills": [
+    "listening",
+    "reading",
+    "speaking",
+    "writing"
+  ],
+  "taxonomy_concepts": [
+    "concept_collocation_make_decision",
+    "concept_narrative_sequence"
+  ],
+  "title": "Connected accounts: foundations",
+  "unit_id": "A2.2-U04",
+  "vocabulary_introduced": [],
+  "vocabulary_reviewed": []
+}

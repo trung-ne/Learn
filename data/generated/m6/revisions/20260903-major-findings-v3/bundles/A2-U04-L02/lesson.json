@@ -1,0 +1,121 @@
+{
+  "cefr_level": "A2.2",
+  "communicative_functions": [
+    "concept_function_request_help"
+  ],
+  "content_sections": [
+    {
+      "body_text": "Use was/were + verb-ing for an action already in progress: ‘I was running home when it began to rain.’ Here run means move on foot faster than walking. Draw a long line for was running and a point for the moment it began to rain.",
+      "embedded_examples": [
+        "concept_past_continuous",
+        "concept_past_simple",
+        "vocab_en_run_001"
+      ],
+      "id": "section_01",
+      "section_type": "grammar",
+      "title": "Retrieve scene and movement"
+    },
+    {
+      "body_text": "Mai: ‘I was running home when it began to rain. Please help me carry these books.’ An: ‘Of course. I’ll carry the books in my bag.’ Mai: ‘Thank you.’ Mai states what must be carried; An explicitly agrees to carry it, so the response solves the request.",
+      "embedded_examples": [
+        "concept_past_continuous",
+        "vocab_en_run_001",
+        "concept_function_request_help"
+      ],
+      "id": "section_02",
+      "section_type": "dialogue",
+      "title": "Connect request and response"
+    },
+    {
+      "body_text": "Retell in order: ‘First, Mai was running home. Then it began to rain. Next, she requested help. Finally, An carried the books.’ Say ‘An carried the BOOKS, not the umbrella’ to focus BOOKS; say ‘AN carried the books, not Mai’ to focus AN. The contrast determines the prominent word.",
+      "embedded_examples": [
+        "concept_narrative_sequence",
+        "concept_pronunciation_sentence_stress",
+        "concept_past_continuous"
+      ],
+      "id": "section_03",
+      "section_type": "explanation",
+      "title": "Sequence and focus the account"
+    },
+    {
+      "body_text": "Create a new four-part account: ongoing movement, a natural weather change, a clear carrying request, and a reply that names what the helper will carry. Record it. Check: run keeps its foot-movement sense, the order is clear, the helper explicitly carries the requested item, and prominence matches one stated contrast.",
+      "embedded_examples": [
+        "concept_narrative_sequence",
+        "vocab_en_run_001",
+        "concept_function_request_help",
+        "concept_pronunciation_sentence_stress"
+      ],
+      "id": "section_04",
+      "section_type": "explanation",
+      "title": "Integrate and self-check"
+    }
+  ],
+  "dimensions": [
+    "communicative_functions",
+    "discourse",
+    "grammar",
+    "listening",
+    "mediation",
+    "pronunciation",
+    "reading",
+    "speaking",
+    "spoken_interaction",
+    "vocabulary_senses",
+    "writing"
+  ],
+  "duration_minutes": 35,
+  "exercises": [],
+  "functions_introduced": [],
+  "functions_reviewed": [
+    "concept_function_request_help"
+  ],
+  "generation_metadata": {
+    "curriculum_version": "20260903",
+    "generated_at": "2026-09-03T06:28:21Z",
+    "generator": "english_master.lesson_generation",
+    "generator_version": "2.0",
+    "model": "gpt-5.6-terra",
+    "prompt_version": "M6_LESSON_GENERATOR_v3",
+    "qa_notes": "Automated M6 structural checks passed; independent review remains required.",
+    "qa_status": "UNREVIEWED"
+  },
+  "grammar_introduced": [],
+  "grammar_reviewed": [
+    "concept_past_continuous"
+  ],
+  "id": "A2-U04-L02",
+  "lesson_kind": "CONSOLIDATION",
+  "lesson_number": 2,
+  "objectives": [
+    "handle sequencing, lexical combinations, and information focus",
+    "combine selected A2.2 capabilities for a communicative purpose"
+  ],
+  "prerequisites": [
+    "A2-U04-L01"
+  ],
+  "pronunciation_introduced": [],
+  "pronunciation_reviewed": [
+    "concept_pronunciation_sentence_stress"
+  ],
+  "review_of": [
+    "A2-U04-L01"
+  ],
+  "schema_version": "1.0",
+  "skills": [
+    "listening",
+    "mediation",
+    "reading",
+    "speaking",
+    "spoken_interaction",
+    "writing"
+  ],
+  "taxonomy_concepts": [
+    "concept_narrative_sequence"
+  ],
+  "title": "Connected accounts: application",
+  "unit_id": "A2.2-U04",
+  "vocabulary_introduced": [],
+  "vocabulary_reviewed": [
+    "vocab_en_run_001"
+  ]
+}

@@ -162,7 +162,7 @@ M6 generation is not approval. The pipeline must produce a validation/audit repo
 - output hash;
 - `qa_status` and unresolved issues.
 
-Human or independent QA review remains required before approval. Do not mark generated lessons `APPROVED` in M6.
+Independent QA remains required before any development or release promotion. Automated M6 validation never makes a lesson `APPROVED`. Development promotion requires separate AI linguistic and pedagogical reviews and a verified hash-bound batch; it is not human or release approval. Human/release promotion requires its separate verified human workflow.
 
 ## Reproducibility and safety
 

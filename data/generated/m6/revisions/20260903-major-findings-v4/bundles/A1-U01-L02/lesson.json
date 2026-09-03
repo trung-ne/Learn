@@ -1,0 +1,114 @@
+{
+  "cefr_level": "A1.1",
+  "communicative_functions": [],
+  "content_sections": [
+    {
+      "body_text": "Live has /ɪ/. Leave has /iː/. For /ɪ/, relax your tongue. For /iː/, move it higher and forward; the sound is often longer too. Say live–leave five times. Change the mouth shape and the length, not only the length.",
+      "embedded_examples": [
+        "concept_pronunciation_minimal_pairs",
+        "concept_pronunciation_phonemes",
+        "concept_speaking"
+      ],
+      "id": "section_01",
+      "section_type": "explanation",
+      "title": "1. Two vowels (8 min)"
+    },
+    {
+      "body_text": "B: ‘I live here.’ A: ‘Did you say leave?’ B: ‘No, live—/lɪv/.’ A: ‘Oh, you live here.’ Read both roles. Cover the lines and say them again. The question is clear, and B repeats the word that A heard wrongly.",
+      "embedded_examples": [
+        "concept_pronunciation_minimal_pairs",
+        "concept_present_simple",
+        "concept_spoken_interaction",
+        "concept_topic_personal_information"
+      ],
+      "id": "section_02",
+      "section_type": "dialogue",
+      "title": "2. Clear repair (8 min)"
+    },
+    {
+      "body_text": "Your own replay is practice, not proof. For listening, ask a helper or a random text-to-speech tool to say a hidden order of live and leave; write L or E, then reveal the key. For speaking, say one word without showing it and ask the helper or tool what it heard. If no independent check is available, mark ‘not checked.’",
+      "embedded_examples": [
+        "concept_pronunciation_minimal_pairs",
+        "concept_listening",
+        "concept_speaking",
+        "concept_writing"
+      ],
+      "id": "section_03",
+      "section_type": "explanation",
+      "title": "3. Independent check (10 min)"
+    },
+    {
+      "body_text": "Make a four-line talk like the model: give one safe fact, hear one word wrongly, ask ‘Did you say …?’, then correct it. Speak both roles with a pause for each reply. Success: the reply answers the question, the correction uses live or leave clearly, and an independent listener identifies the word. Otherwise, keep it as practice only.",
+      "embedded_examples": [
+        "concept_pronunciation_minimal_pairs",
+        "concept_present_simple",
+        "concept_spoken_interaction",
+        "concept_topic_personal_information"
+      ],
+      "id": "section_04",
+      "section_type": "dialogue",
+      "title": "4. Take turns (9 min)"
+    }
+  ],
+  "dimensions": [
+    "listening",
+    "pronunciation",
+    "speaking",
+    "spoken_interaction"
+  ],
+  "duration_minutes": 35,
+  "exercises": [],
+  "functions_introduced": [],
+  "functions_reviewed": [],
+  "generation_metadata": {
+    "curriculum_version": "20260903",
+    "generated_at": "2026-09-03T07:16:57Z",
+    "generator": "english_master.lesson_generation",
+    "generator_version": "2.0",
+    "model": "gpt-5.6-terra",
+    "prompt_version": "M6_LESSON_GENERATOR_v3",
+    "qa_notes": "Automated M6 structural checks passed; independent review remains required.",
+    "qa_status": "UNREVIEWED"
+  },
+  "grammar_introduced": [],
+  "grammar_reviewed": [
+    "concept_present_simple"
+  ],
+  "id": "A1-U01-L02",
+  "lesson_kind": "CONSOLIDATION",
+  "lesson_number": 2,
+  "objectives": [
+    "handle personal information and basic participation",
+    "combine selected A1.1 capabilities for a communicative purpose"
+  ],
+  "prerequisites": [
+    "A1-U01-L01"
+  ],
+  "pronunciation_introduced": [
+    "concept_pronunciation_minimal_pairs"
+  ],
+  "pronunciation_reviewed": [
+    "concept_pronunciation_phonemes"
+  ],
+  "review_of": [
+    "A1-U01-L01"
+  ],
+  "schema_version": "1.0",
+  "skills": [
+    "listening",
+    "speaking",
+    "spoken_interaction"
+  ],
+  "taxonomy_concepts": [
+    "concept_listening",
+    "concept_reading",
+    "concept_speaking",
+    "concept_spoken_interaction",
+    "concept_topic_personal_information",
+    "concept_writing"
+  ],
+  "title": "Foundational exchange: application",
+  "unit_id": "A1.1-U01",
+  "vocabulary_introduced": [],
+  "vocabulary_reviewed": []
+}

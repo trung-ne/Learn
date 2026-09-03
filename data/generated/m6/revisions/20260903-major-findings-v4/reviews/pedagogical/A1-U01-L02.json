@@ -1,0 +1,96 @@
+{
+  "ai_review_id": "m6aireview_6747cdef5cc150ca58eb929960f45f2c4b64798d30e2a059f6f70058a045ee3f",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "94f105e4f242f4c3384ddafebd7190c421b484f327c5832d58f85b7a4d7b99fe",
+  "checklist": [
+    {
+      "criterion": "CLARITY",
+      "notes": "The word ‘tool’ in the speaking instruction inherits the text-to-speech tool named in the same paragraph, obscuring the distinct listening capability required.",
+      "result": "FAIL"
+    },
+    {
+      "criterion": "COGNITIVE_LOAD",
+      "notes": "The four timed stages and one minimal-pair contrast are appropriately bounded for 35 minutes.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "COHERENCE",
+      "notes": "The final success condition requires independent identification, but one stated route cannot perform that task, weakening the practice-to-verification chain.",
+      "result": "FAIL"
+    },
+    {
+      "criterion": "OBJECTIVE_ALIGNMENT",
+      "notes": "The repair dialogue and role switching enact basic participation around a safe personal fact.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "PROGRESSION",
+      "notes": "Articulation practice precedes a repair model, attempted independent checking, and a short role-play.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "TEACHABILITY",
+      "notes": "The speaking check tells the learner to ask a helper or the previously named text-to-speech tool what it heard, but text-to-speech cannot listen to or identify the learner’s production.",
+      "result": "FAIL"
+    },
+    {
+      "criterion": "VIETNAMESE_LEARNER_RELEVANCE",
+      "notes": "Visible mouth-shape guidance and permission to mark an unavailable check are supportive without population-wide assumptions.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Inspected only the supplied audit provenance declarations and project-authored snapshot-bound context; no external comparison was performed."
+    ],
+    "result": "NOT_PERFORMED",
+    "scope_limitations": "No external source, corpus, web, or plagiarism search was performed; this record makes no external originality or copyright claim."
+  },
+  "decision": "NEEDS_REVISION",
+  "findings": [
+    {
+      "category": "TEACHABILITY",
+      "description": "The required independent speaking check offers a text-to-speech tool as though it could hear and identify live/leave. A TTS system produces speech rather than recognizing the learner’s speech, so the named self-study route cannot establish the success criterion.",
+      "recommendation": "Name a genuinely listening-capable route such as an independent human listener or explicitly suitable speech-recognition tool, distinguish it from TTS, and retain ‘not checked’ when neither is available.",
+      "severity": "MAJOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "A1-U01-L02",
+  "lesson_sha256": "f46ebf133be2d8868fe4e9bdf7ab00c5110e806e45baf0da27d4689780c17ecf",
+  "limitations": [
+    "AI pedagogical development review only; this is not human review, release approval, certification, or public-release evidence.",
+    "The review used only the exact v4 lesson, its automated audit, and snapshot-bound M5 context; generator reasoning and prior review decisions were not used as evaluation evidence.",
+    "M6 intentionally contains no M7 exercises; exercises: [] was not treated as a defect, while staging, bounded practice, and self-check instructions inside content_sections were assessed.",
+    "No external plagiarism, copyright, corpus, learner, classroom, or audio-acoustic validation was performed.",
+    "The runtime reported reviewer model gpt-5.6-sol; no reviewer provider or inference parameters were reported, so provider is UNKNOWN and parameters are empty.",
+    "response.sha256 binds canonical JSON containing decision, checklist, findings, copyright_originality_check, and limitations exactly as persisted in this record."
+  ],
+  "record_type": "lesson_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {},
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "5601640c8d3ab9456741362fbda6db829c5fb4c4d7817d716e3f2b8b40784be8"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "sha256": "d0b52ac83cbd74ad54203c765f3b46586df2a49183385072c2ec11229e4f3dc1",
+    "version": "build_ai_review_prompt-v1"
+  },
+  "review_role": "PEDAGOGICAL_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T07:29:16Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0",
+  "snapshot_binding": {
+    "bundle_sha256": "79301a37b0821fcd2cc077021db318b0a201771b9727ad08be071fc076cdb027",
+    "member_hashes": {
+      "manifest": "1436c433163765410282fffdddea1bed616feb372270a47d99bebb7193e8d296",
+      "snapshot": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f",
+      "source_registry": "1270284517c3d47e4467310ad32e7431dc0aa3cfbce0edb07e4fedc9bc347435"
+    },
+    "snapshot_id": "m5devsnapshot_5335d3a30ab9f4948e22558aa7fc755857c09dff4ef305c95d171e3ebc718c72",
+    "snapshot_sha256": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f"
+  }
+}

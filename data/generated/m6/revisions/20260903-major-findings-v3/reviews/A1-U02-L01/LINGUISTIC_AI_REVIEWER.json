@@ -1,0 +1,97 @@
+{
+  "ai_review_id": "m6aireview_57b237d22793bf994c2c6234d7a72955edee1abc429888d468d1fe6a607b16ba",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "520c95d48c37861fa59b80cba5e88a9e2ddfd79ec5ece4d42061db9fccfb1975",
+  "checklist": [
+    {
+      "criterion": "CEFR_ALIGNMENT",
+      "notes": "The target forms, short examples, and help request fit A1.2, but central directions use unsupported abstractions such as ‘finished action’, ‘past-time word’, ‘exact problem’, ‘extra vowel’, and ‘integrate’.",
+      "result": "FAIL"
+    },
+    {
+      "criterion": "GRAMMAR_LEXICAL_ACCURACY",
+      "notes": "The present-versus-past contrast, irregular run/ran form, movement sense of run, syllable counts, and /lp/ final-cluster guidance are accurate at this introductory level.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "NATURALNESS",
+      "notes": "The examples are understandable and broadly natural; the ‘I ran here’ setup is slightly under-motivated but remains possible in context.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ORIGINALITY_LIMITATIONS",
+      "notes": "Only expected overlap in the authorized movement-sense definition and target forms was found internally; no external originality conclusion is available.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "PREREQUISITE_SCOPE",
+      "notes": "Past simple, request-for-help, syllables, and movement run are introduced using only present simple and phonemes from the declared closure.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "TARGET_LANGUAGE_COMPLIANCE",
+      "notes": "The text is English and every embedded ID belongs to the allowed or context-only sets in the reconstructed request.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Manual comparison of lesson wording with the supplied authoritative request and project-authored teaching payload.",
+      "Exact contiguous-word overlap comparison across the ten supplied v3 lesson bodies.",
+      "Inspection of the accepted audit provenance/copyright scope without consulting external sources."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "No suspicious unexplained copying was found within the supplied scope. Reuse of target forms, short pedagogical frames, and project-authored definitions/examples is expected. No external search was performed; this is not a plagiarism clearance or copyright guarantee."
+  },
+  "decision": "NEEDS_REVISION",
+  "findings": [
+    {
+      "category": "CEFR_ALIGNMENT",
+      "description": "The lesson’s learner-facing explanations and checks depend on grammatical and phonological metalanguage that is not explained at A1.2. This affects the instructions for every major target, not merely optional enrichment.",
+      "recommendation": "Use short concrete commands and timelines, define ‘past’ and ‘extra sound’ in simple language, and provide Vietnamese scaffolding for unavoidable technical terms.",
+      "severity": "MAJOR"
+    },
+    {
+      "category": "NATURALNESS",
+      "description": "‘I ran here, but I cannot find Gate 2’ is grammatical but gives little situational reason for mentioning the running, making the model sound pedagogically assembled.",
+      "recommendation": "Supply a natural link, for example that the speaker ran to the station and arrived late, before asking for the gate.",
+      "severity": "MINOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "A1-U02-L01",
+  "lesson_sha256": "b4c6369508f09e47985e690af052687697c90179c3b20704ea236da5230383b5",
+  "limitations": [
+    "Review used only the exact lesson, accepted audit, regenerated hash-matching authoritative request, and verified M5 development snapshot; generator reasoning and prior review records were excluded.",
+    "No audio was supplied; pronunciation judgments cover written instructions and IPA only, not realized speech or learner performance.",
+    "No external CEFR vocabulary profiler or corpus was used; CEFR findings are qualitative independent AI judgments about the learner-facing text.",
+    "Originality checking was limited to the supplied authoritative payload and the ten supplied v3 lessons; no Internet, external corpus, or plagiarism search was performed, so no external plagiarism or legal-clearance claim is made."
+  ],
+  "record_type": "lesson_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {},
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "073a806c3792c154b9e4721e8c54f3b8c63121be95576dbcc72e8ec2c772114c"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "sha256": "72f7c9c51a04a7435c7a3b82b955f6847f3b47d2406c4600749fb4181f543c59",
+    "version": "M6_LINGUISTIC_AI_REVIEW_v1"
+  },
+  "review_role": "LINGUISTIC_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T06:48:08Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0",
+  "snapshot_binding": {
+    "bundle_sha256": "79301a37b0821fcd2cc077021db318b0a201771b9727ad08be071fc076cdb027",
+    "member_hashes": {
+      "manifest": "1436c433163765410282fffdddea1bed616feb372270a47d99bebb7193e8d296",
+      "snapshot": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f",
+      "source_registry": "1270284517c3d47e4467310ad32e7431dc0aa3cfbce0edb07e4fedc9bc347435"
+    },
+    "snapshot_id": "m5devsnapshot_5335d3a30ab9f4948e22558aa7fc755857c09dff4ef305c95d171e3ebc718c72",
+    "snapshot_sha256": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f"
+  }
+}

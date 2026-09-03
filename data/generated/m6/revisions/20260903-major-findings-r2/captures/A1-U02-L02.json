@@ -1,0 +1,63 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "grammar",
+        "title": "Retrieve routines and details",
+        "body_text": "Use the present simple for a usual action or stable detail: ‘I run home after class. I live near the park.’ Keep private information private; use an invented address or place when practising. Notice the subject followed by the present form.",
+        "embedded_examples": [
+          "concept_present_simple",
+          "vocab_en_run_001",
+          "concept_topic_personal_information"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "explanation",
+        "title": "Rehearse syllable boundaries",
+        "body_text": "Tap once for run and home, twice for af-ter, and twice for ad-dress. Say each part slowly, then join the parts with no added sound. Record one slow version and one normal version; count the same number of taps in both.",
+        "embedded_examples": [
+          "concept_pronunciation_syllables",
+          "concept_pronunciation_phonemes",
+          "vocab_en_run_001"
+        ]
+      },
+      {
+        "id": "section_03",
+        "section_type": "dialogue",
+        "title": "Ask for useful help",
+        "body_text": "A: ‘Please help me write this address.’ B: ‘Yes. Say it slowly, please.’ A: ‘12 Park Road.’ B: ‘Thank you. I have it.’ The request states the task; the response starts that task. Speak both roles, then replace the invented address.",
+        "embedded_examples": [
+          "concept_function_request_help",
+          "concept_topic_personal_information"
+        ]
+      },
+      {
+        "id": "section_04",
+        "section_type": "explanation",
+        "title": "Apply and verify",
+        "body_text": "Give two safe details and one usual action with run, then ask for help recording one detail. Speak, write your lines from memory, and compare them. Success: every idea is current or usual, run means fast movement on foot, the help response is relevant, and your syllable count stays stable at normal speed.",
+        "embedded_examples": [
+          "concept_present_simple",
+          "vocab_en_run_001",
+          "concept_function_request_help",
+          "concept_pronunciation_syllables"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "a1c9862dbf20c5d35156a83f52515087645c54edf3052393efb708db99a3ff9c",
+  "response_sha256": "d9aa48b4877e969e9fbb85bc95021482c0bbe143c26efe4077a9009b13b55834",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-terra",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T05:54:40Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

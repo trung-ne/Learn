@@ -1,0 +1,64 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "reading",
+        "title": "Read one complete account",
+        "body_text": "Mai was running home when it began to rain. She made the decision to ask for help. Mai said, ‘Please help me carry these books.’ An said, ‘Yes,’ put the books in a bag, and carried them home. The account shows the decision, request, and completed help.",
+        "embedded_examples": [
+          "concept_past_continuous",
+          "concept_past_simple",
+          "vocab_en_run_001",
+          "concept_collocation_make_decision",
+          "concept_narrative_sequence"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "explanation",
+        "title": "Notice the key language",
+        "body_text": "Was running shows the action already in progress. Run means move on foot faster than walking. The general pair is make a decision; the story uses made the decision. Write three cue lines: running — rain; decision — ask; An — carried books. Use them to retell the order.",
+        "embedded_examples": [
+          "concept_past_continuous",
+          "vocab_en_run_001",
+          "concept_collocation_make_decision",
+          "concept_narrative_sequence"
+        ]
+      },
+      {
+        "id": "section_03",
+        "section_type": "dialogue",
+        "title": "Take turns and move the stress",
+        "body_text": "Mai: ‘Please help me carry these BOOKS.’ An: ‘Yes. I’ll carry the books.’ Stress BOOKS when the item is new. To correct the helper, say: ‘AN carried them, not Mai.’ Stress AN. Record Mai with a pause, answer as An, then switch roles. Each answer must say who will carry what.",
+        "embedded_examples": [
+          "concept_function_request_help",
+          "concept_pronunciation_sentence_stress"
+        ]
+      },
+      {
+        "id": "section_04",
+        "section_type": "explanation",
+        "title": "Listen, check, and pass it on",
+        "body_text": "Read the account, write four cue words, and record it. Hide the text, replay, and write: who ran, what changed, Mai’s decision, and An’s action. Compare your answers with the account. Then tell a friend who has not read it those four facts, so the friend knows the full result.",
+        "embedded_examples": [
+          "concept_narrative_sequence",
+          "concept_collocation_make_decision"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "8e9edcc3b82b202062becb3b453f2fedff8865801be4ff3d40b6dc68afba4a6e",
+  "response_sha256": "15a3a120da9f42ff5eb44ade6f5d1ce3073f5098bb3b2c292383651d469771d9",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-terra",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T07:16:57Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

@@ -1,0 +1,91 @@
+{
+  "ai_review_id": "m6aireview_677572e09ecbfba2a95525ccac1e8f83d45a00ce453292b2dfc1e2682f9374ed",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "42da6468c36851ad5d27854bd65dc7af3b72080fda59042c55177295e74e855d",
+  "checklist": [
+    {
+      "criterion": "CEFR_ALIGNMENT",
+      "notes": "The past-continuous examples and station scenario are compatible with A2.1, but the task language repeatedly uses unsupported terms such as ‘recipient’, ‘relay’, ‘less direct’, ‘courtesy’, ‘prominent’, and ‘allow a pitch change’.",
+      "result": "FAIL"
+    },
+    {
+      "criterion": "GRAMMAR_LEXICAL_ACCURACY",
+      "notes": "The past-continuous form/meaning contrast, timetable language, request forms, and primary stress description for information are accurate.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "NATURALNESS",
+      "notes": "The timetable notice, polite staff request, and response expectations are natural for the scenario.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ORIGINALITY_LIMITATIONS",
+      "notes": "No unexplained internal copying was detected beyond the authorized request frame and target forms; no external comparison was made.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "PREREQUISITE_SCOPE",
+      "notes": "The lesson introduces past continuous, word stress, mediation, and the authorized request chunk while using only the declared past, syllable, reading, and writing prerequisites.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "TARGET_LANGUAGE_COMPLIANCE",
+      "notes": "The learner-facing language is English and all embedded identifiers are authorized directly or through the prerequisite closure.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Manual comparison of lesson wording with the supplied authoritative request and project-authored teaching payload.",
+      "Exact contiguous-word overlap comparison across the ten supplied v3 lesson bodies.",
+      "Inspection of the accepted audit provenance/copyright scope without consulting external sources."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "No suspicious unexplained copying was found within the supplied scope. Reuse of target forms, short pedagogical frames, and project-authored definitions/examples is expected. No external search was performed; this is not a plagiarism clearance or copyright guarantee."
+  },
+  "decision": "NEEDS_REVISION",
+  "findings": [
+    {
+      "category": "CEFR_ALIGNMENT",
+      "description": "Sections 2–4 explain core mediation, pragmatics, and pronunciation through dense B1-or-higher metalinguistic vocabulary and clause structure. With no definitions or L1 support, an A2.1 learner may not understand the instructions needed to perform the target tasks.",
+      "recommendation": "Use concrete role labels (‘your friend’), short verbs (‘tell’), numbered checks, and a simple stress demonstration; gloss or translate necessary technical terms.",
+      "severity": "MAJOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "A2-U03-L01",
+  "lesson_sha256": "2a0a9ce8f6d7242c478495a90149d6558f9c5224d31449d4df3cfbd9d02f68b6",
+  "limitations": [
+    "Review used only the exact lesson, accepted audit, regenerated hash-matching authoritative request, and verified M5 development snapshot; generator reasoning and prior review records were excluded.",
+    "No audio was supplied; pronunciation judgments cover written instructions and IPA only, not realized speech or learner performance.",
+    "No external CEFR vocabulary profiler or corpus was used; CEFR findings are qualitative independent AI judgments about the learner-facing text.",
+    "Originality checking was limited to the supplied authoritative payload and the ten supplied v3 lessons; no Internet, external corpus, or plagiarism search was performed, so no external plagiarism or legal-clearance claim is made."
+  ],
+  "record_type": "lesson_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {},
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "db914378545853ceebbbd2dca79ddfde70a7b4f8b956de4125ea5d7bc7aaa556"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "sha256": "aa2ece98a7cd90d8eb4199c16f974df88c8cf5d1df2fc65a4f48e1d02db44b10",
+    "version": "M6_LINGUISTIC_AI_REVIEW_v1"
+  },
+  "review_role": "LINGUISTIC_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T06:48:08Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0",
+  "snapshot_binding": {
+    "bundle_sha256": "79301a37b0821fcd2cc077021db318b0a201771b9727ad08be071fc076cdb027",
+    "member_hashes": {
+      "manifest": "1436c433163765410282fffdddea1bed616feb372270a47d99bebb7193e8d296",
+      "snapshot": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f",
+      "source_registry": "1270284517c3d47e4467310ad32e7431dc0aa3cfbce0edb07e4fedc9bc347435"
+    },
+    "snapshot_id": "m5devsnapshot_5335d3a30ab9f4948e22558aa7fc755857c09dff4ef305c95d171e3ebc718c72",
+    "snapshot_sha256": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f"
+  }
+}

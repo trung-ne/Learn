@@ -1,0 +1,89 @@
+{
+  "ai_review_id": "m6aireview_aa7eb9687abad7cf594f63a34b25f21e6fea5a6cc2264ea507af5aeb5187486d",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "19d16b2211f36bd3ca5d009ad683ce3667f57d7c849ec642f234e44a4264f643",
+  "checklist": [
+    {
+      "criterion": "CLARITY",
+      "notes": "The manage/organize sense, temporal relation, linking boundaries, role questions, and three target facts are explicit.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "COGNITIVE_LOAD",
+      "notes": "One new vocabulary sense and one linking pattern integrate with reviewed grammar and weak forms without excessive content for B1.1.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "COHERENCE",
+      "notes": "All sections reuse Lan’s event-and-club narrative and converge on recovering the earlier event, setting, time relation, and result.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "OBJECTIVE_ALIGNMENT",
+      "notes": "The management sense of run is placed in an earlier-past narrative and practiced with linking and weak forms in a two-role exchange.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "PROGRESSION",
+      "notes": "The lesson applies prior past-perfect and weak-form knowledge to a new sense, introduces linking, then moves through interaction to recovery and retelling.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "TEACHABILITY",
+      "notes": "Sense explanation, timeline, accent-inclusive modeling, question-answer roles, fact boxes, replay, and an explicit answer key create a workable bounded consolidation cycle.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "VIETNAMESE_LEARNER_RELEVANCE",
+      "notes": "Explicit consonant preservation and the statement that clarity matters more than copying one accent are supportive and non-stereotyping.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Inspected only the supplied audit provenance declarations and project-authored snapshot-bound context; no external comparison was performed."
+    ],
+    "result": "NOT_PERFORMED",
+    "scope_limitations": "No external source, corpus, web, or plagiarism search was performed; this record makes no external originality or copyright claim."
+  },
+  "decision": "APPROVE",
+  "findings": [],
+  "independent_of_generation": true,
+  "lesson_id": "B1-U05-L02",
+  "lesson_sha256": "9e6b0d0cac4a38c62e6f1a91d57c03ac23bdd0055a2b3ff29ed013d21cbb71de",
+  "limitations": [
+    "AI pedagogical development review only; this is not human review, release approval, certification, or public-release evidence.",
+    "The review used only the exact v4 lesson, its automated audit, and snapshot-bound M5 context; generator reasoning and prior review decisions were not used as evaluation evidence.",
+    "M6 intentionally contains no M7 exercises; exercises: [] was not treated as a defect, while staging, bounded practice, and self-check instructions inside content_sections were assessed.",
+    "No external plagiarism, copyright, corpus, learner, classroom, or audio-acoustic validation was performed.",
+    "The runtime reported reviewer model gpt-5.6-sol; no reviewer provider or inference parameters were reported, so provider is UNKNOWN and parameters are empty.",
+    "response.sha256 binds canonical JSON containing decision, checklist, findings, copyright_originality_check, and limitations exactly as persisted in this record."
+  ],
+  "record_type": "lesson_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {},
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "a0b17db4d144e5256ce52519890d05588be07f199d4e7778d12405f4dcc214f1"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "sha256": "51a9e4a4f926d69fc0e589a98f4a671879d4e9b4f37eb35d31d5cc88dda8c8fc",
+    "version": "build_ai_review_prompt-v1"
+  },
+  "review_role": "PEDAGOGICAL_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T07:29:16Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0",
+  "snapshot_binding": {
+    "bundle_sha256": "79301a37b0821fcd2cc077021db318b0a201771b9727ad08be071fc076cdb027",
+    "member_hashes": {
+      "manifest": "1436c433163765410282fffdddea1bed616feb372270a47d99bebb7193e8d296",
+      "snapshot": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f",
+      "source_registry": "1270284517c3d47e4467310ad32e7431dc0aa3cfbce0edb07e4fedc9bc347435"
+    },
+    "snapshot_id": "m5devsnapshot_5335d3a30ab9f4948e22558aa7fc755857c09dff4ef305c95d171e3ebc718c72",
+    "snapshot_sha256": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f"
+  }
+}

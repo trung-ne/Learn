@@ -1,0 +1,110 @@
+{
+  "cefr_level": "A2.1",
+  "communicative_functions": [
+    "concept_function_request_help"
+  ],
+  "content_sections": [
+    {
+      "body_text": "Situation card: a visitor needs Gate 4 and must confirm a 5:20 departure. The visitor can ask a friend or an unfamiliar staff member directly. Keep Gate 4 and 5:20 visible. A complete exchange asks about both details and receives both details.",
+      "embedded_examples": [
+        "concept_function_request_help",
+        "concept_assessment_can_request_help"
+      ],
+      "id": "section_01",
+      "section_type": "reading",
+      "title": "Notice both information needs"
+    },
+    {
+      "body_text": "To a friend: ‘Help me find Gate 4 and check 5:20, please.’ To staff: ‘Excuse me. Can you help me find Gate 4 and confirm the 5:20 departure, please?’ Excuse me comes first to get an unfamiliar listener’s attention; the fuller request states both needs.",
+      "embedded_examples": [
+        "concept_function_request_help",
+        "concept_pragmatics_polite_requests"
+      ],
+      "id": "section_02",
+      "section_type": "explanation",
+      "title": "Match wording to the person"
+    },
+    {
+      "body_text": "Visitor: ‘Excuse me. Can you help me find Gate 4 and confirm the 5:20 departure, please?’ Staff: ‘Yes. Gate 4 is on the left, and your departure is at 5:20.’ Visitor: ‘Thank you.’ Point to each requested detail and its matching answer, then rehearse both roles.",
+      "embedded_examples": [
+        "concept_function_request_help",
+        "concept_pragmatics_polite_requests",
+        "concept_assessment_can_request_help"
+      ],
+      "id": "section_03",
+      "section_type": "dialogue",
+      "title": "Model and rehearse the exchange"
+    },
+    {
+      "body_text": "STA-tion /ˈsteɪ.ʃən/ has two syllables; the first has the main stress. Keep /eɪ/ full and make STA a little longer and stronger; make /ʃən/ lighter. Say the word alone, then in the staff exchange. Check: Excuse me comes first, Gate 4 and 5:20 are both answered, and stress stays on the first syllable.",
+      "embedded_examples": [
+        "concept_pronunciation_word_stress",
+        "concept_pronunciation_syllables",
+        "concept_assessment_can_request_help"
+      ],
+      "id": "section_04",
+      "section_type": "explanation",
+      "title": "Mark word stress and self-check"
+    }
+  ],
+  "dimensions": [
+    "assessment_capabilities",
+    "communicative_functions",
+    "listening",
+    "mediation",
+    "pragmatics",
+    "pronunciation",
+    "speaking",
+    "spoken_interaction"
+  ],
+  "duration_minutes": 35,
+  "exercises": [],
+  "functions_introduced": [],
+  "functions_reviewed": [
+    "concept_function_request_help"
+  ],
+  "generation_metadata": {
+    "curriculum_version": "20260903",
+    "generated_at": "2026-09-03T06:28:21Z",
+    "generator": "english_master.lesson_generation",
+    "generator_version": "2.0",
+    "model": "gpt-5.6-terra",
+    "prompt_version": "M6_LESSON_GENERATOR_v3",
+    "qa_notes": "Automated M6 structural checks passed; independent review remains required.",
+    "qa_status": "UNREVIEWED"
+  },
+  "grammar_introduced": [],
+  "grammar_reviewed": [],
+  "id": "A2-U03-L02",
+  "lesson_kind": "CONSOLIDATION",
+  "lesson_number": 2,
+  "objectives": [
+    "handle narration, mediation, and socially suitable requests",
+    "combine selected A2.1 capabilities for a communicative purpose"
+  ],
+  "prerequisites": [
+    "A2-U03-L01"
+  ],
+  "pronunciation_introduced": [],
+  "pronunciation_reviewed": [
+    "concept_pronunciation_word_stress"
+  ],
+  "review_of": [
+    "A2-U03-L01"
+  ],
+  "schema_version": "1.0",
+  "skills": [
+    "listening",
+    "mediation",
+    "speaking",
+    "spoken_interaction"
+  ],
+  "taxonomy_concepts": [
+    "concept_assessment_can_request_help",
+    "concept_pragmatics_polite_requests"
+  ],
+  "title": "Supported independence: application",
+  "unit_id": "A2.1-U03",
+  "vocabulary_introduced": [],
+  "vocabulary_reviewed": []
+}

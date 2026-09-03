@@ -1,0 +1,63 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "grammar",
+        "title": "Every day and yesterday",
+        "body_text": "Read: ‘Every day, I run home after class.’ Read: ‘Yesterday, I ran to the bus stop.’ Run is for the routine; ran is for the past action. Cover the lines, write them, and check the first word and the verb together.",
+        "embedded_examples": [
+          "concept_present_simple",
+          "concept_past_simple",
+          "vocab_en_run_001"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "explanation",
+        "title": "Count the beats",
+        "body_text": "Tap once for run and home, twice for af-ter, and twice for ad-dress. Say each word slowly, then at normal speed. Do not add a new sound at the end. Record both speeds and tap while you replay; the number of taps must stay the same.",
+        "embedded_examples": [
+          "concept_pronunciation_syllables",
+          "concept_pronunciation_phonemes",
+          "vocab_en_run_001"
+        ]
+      },
+      {
+        "id": "section_03",
+        "section_type": "dialogue",
+        "title": "Ask someone to write it down",
+        "body_text": "Mai: ‘Please help me write my address on this form.’ An: ‘Yes. Tell me the address.’ Mai: ‘12 Park Road.’ An: ‘I’ll write it down here.’ Read both roles. An is the writer, so the answer fits the request. Use a made-up address for practice.",
+        "embedded_examples": [
+          "concept_function_request_help",
+          "concept_topic_personal_information"
+        ]
+      },
+      {
+        "id": "section_04",
+        "section_type": "explanation",
+        "title": "Use all four skills",
+        "body_text": "Write one routine and one past action with run/ran. Add the address dialogue. Record both roles with pauses, hide your text, and replay. Write down the routine, past time, and address that you hear; then compare with your script. Say the dialogue once more and answer each pause before reading the next line.",
+        "embedded_examples": [
+          "concept_present_simple",
+          "concept_past_simple",
+          "vocab_en_run_001",
+          "concept_function_request_help"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "99cb7abcdb85255b8adb84b90c9106108d6e61dfb5405ea06c414293386dfd05",
+  "response_sha256": "c2d7590de4c0454063921299cdf40149d04012ccd2d3dd82710ba5b26c2fe6e0",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-terra",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T07:16:57Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

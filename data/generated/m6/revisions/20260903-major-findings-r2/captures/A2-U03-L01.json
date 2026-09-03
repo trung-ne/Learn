@@ -1,0 +1,63 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "grammar",
+        "title": "Show an ongoing past scene",
+        "body_text": "Use was/were + verb-ing for an action in progress around a past time: ‘At four, I was reading the timetable.’ Timeline: action starts — 4:00 — action continues. Contrast the completed event: ‘The bus left at 4:15.’",
+        "embedded_examples": [
+          "concept_past_continuous",
+          "concept_past_simple"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "reading",
+        "title": "Mediate a timetable detail",
+        "body_text": "Source notice: ‘Bus 12 leaves at 4:15 from Gate 3.’ Recipient: a friend who cannot see it. Relay only the useful facts: ‘Bus 12 leaves at 4:15 from Gate 3.’ Check the bus, time, and gate against the notice; all three must match.",
+        "embedded_examples": [
+          "concept_mediation",
+          "concept_reading",
+          "concept_writing"
+        ]
+      },
+      {
+        "id": "section_03",
+        "section_type": "dialogue",
+        "title": "Choose a suitable request",
+        "body_text": "To a friend, ‘Please help me read this.’ is simple and direct. To station staff, add distance and context: ‘Excuse me. Could you help me read this timetable, please?’ Staff: ‘Yes. Bus 12 leaves at 4:15.’ Choose the fuller form when speaking to an unfamiliar helper.",
+        "embedded_examples": [
+          "concept_function_request_help",
+          "concept_chunk_could_you_help",
+          "concept_mediation"
+        ]
+      },
+      {
+        "id": "section_04",
+        "section_type": "explanation",
+        "title": "Stress a syllable and integrate",
+        "body_text": "In in-for-MA-tion, MA has the main word stress: make that syllable clearer and longer, not every word louder. Say it slowly, then normally. Now explain what you were doing, request help, and relay the notice. Check the ongoing form, suitable wording, three accurate facts, and the marked syllable.",
+        "embedded_examples": [
+          "concept_pronunciation_word_stress",
+          "concept_pronunciation_syllables",
+          "concept_past_continuous",
+          "concept_mediation"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "548ed09433ce5cd7809f635b2e63e0e32b7f8f297312e83695c81f6597a207e5",
+  "response_sha256": "2d4cc9403ab37d246ff59e095a8841b9469516a22d5d9716ad6ef54455885b6d",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-terra",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T05:54:40Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

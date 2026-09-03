@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "record_type": "lesson_ai_review",
+  "approval_tier": "AI_REVIEWED",
+  "lesson_id": "A1-U02-L02",
+  "lesson_sha256": "d9e73667d804415c56b817e4492e49be7ee1e72476bd8e5e32155146dbad5b40",
+  "audit_sha256": "2daacbb1cf47b95e6f8b04f5d77b10e24931264a60c4bd0910565eb98775cd2c",
+  "snapshot_binding": {
+    "snapshot_id": "m5devsnapshot_df56cb242d8d89f1f04815d1e73b20af1853fd6d7b91e399ed379b0f74cc684e",
+    "snapshot_sha256": "1bcae5a8c7982b90acd4ce911d56691bbde0f9046951f37a6c6e3e2fa7d8c6bc",
+    "member_hashes": {
+      "manifest": "1436c433163765410282fffdddea1bed616feb372270a47d99bebb7193e8d296",
+      "source_registry": "1270284517c3d47e4467310ad32e7431dc0aa3cfbce0edb07e4fedc9bc347435",
+      "snapshot": "1bcae5a8c7982b90acd4ce911d56691bbde0f9046951f37a6c6e3e2fa7d8c6bc"
+    },
+    "bundle_sha256": "9ef02dd12b18a30788e1c1f61fba45b352bc50f71d42426140f54dc94c4b63d3"
+  },
+  "reviewer_type": "AI",
+  "review_role": "PEDAGOGICAL_AI_REVIEWER",
+  "independent_of_generation": true,
+  "review_prompt": {
+    "version": "M6_PEDAGOGICAL_AI_REVIEW_v1",
+    "sha256": "36b0235d96dbe0a5f386af175c174fdfc8f0bb909979eb49503b0ac6e3094cd6",
+    "capture_mode": "SESSION_CAPTURED"
+  },
+  "response": {
+    "sha256": "d8f0ed819085e28b9d9274f45bb97d872a17566d6358a2057c0d17127167996a",
+    "provider": "UNKNOWN",
+    "model": "gpt-5.6-terra",
+    "parameters": {},
+    "replayable_from_capture": true
+  },
+  "reviewed_at": "2026-09-03T06:12:50Z",
+  "decision": "APPROVE",
+  "checklist": [
+    {
+      "criterion": "OBJECTIVE_ALIGNMENT",
+      "result": "PASS",
+      "notes": "Usual-time reference, the reviewed movement sense of run, and a practical help request together address both A1.2 objectives."
+    },
+    {
+      "criterion": "TEACHABILITY",
+      "result": "PASS",
+      "notes": "Retrieval, syllable rehearsal, a model exchange, personalized transfer, memory writing, and explicit success checks form a viable solo sequence."
+    },
+    {
+      "criterion": "PROGRESSION",
+      "result": "PASS",
+      "notes": "The consolidation lesson appropriately retrieves the authorized present simple, vocabulary sense, request function, syllables, and personal-information topic from earlier lessons."
+    },
+    {
+      "criterion": "CLARITY",
+      "result": "PASS",
+      "notes": "Privacy-safe substitution, tap counts, role instructions, and the final criteria are concrete and internally consistent."
+    },
+    {
+      "criterion": "COGNITIVE_LOAD",
+      "result": "PASS",
+      "notes": "All elements are review or application targets and are integrated in one short information-recording scenario."
+    },
+    {
+      "criterion": "VIETNAMESE_LEARNER_RELEVANCE",
+      "result": "PASS",
+      "notes": "The safe-address guidance and no-added-sound syllable practice are locally usable and avoid generalizing the contextual Vietnamese learner annotations."
+    },
+    {
+      "criterion": "COHERENCE",
+      "result": "PASS",
+      "notes": "The four stages consistently build toward giving safe details and obtaining help to record one detail across speaking and writing."
+    }
+  ],
+  "findings": [],
+  "copyright_originality_check": {
+    "methods": [
+      "Inspected the lesson against its reconstructed, hash-matched M5 teaching payload and confirmed that no external source payload was supplied.",
+      "Compared wording and examples across the closed set of all ten revised lessons for suspicious verbatim duplication beyond shared instructional scaffolding.",
+      "Reviewed the audit provenance/copyright result and source-scope constraints as machine evidence without treating them as a web-wide originality check."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "Closed-corpus review of the ten supplied lessons plus their exact M5/request/audit context only; no Internet-wide search, external proprietary corpus, legal opinion, or provider receipt was available."
+  },
+  "limitations": [
+    "This is an independent AI pedagogical review for development evidence only; it is not human review, release approval, certification, or publication authorization.",
+    "The governing M5 snapshot retains DRAFT taxonomy and OUTLINE_ONLY curriculum records and is limited to the development lane.",
+    "No learner trial, classroom observation, or outcome study was performed.",
+    "No audio was supplied, so no acoustic, listening-performance, or pronunciation-performance review was performed.",
+    "Originality checking was closed-corpus and artifact-bound; no web-wide plagiarism search, external corpus comparison, or legal determination was performed.",
+    "Generation provider provenance was not independently established; UNKNOWN is retained rather than inferred.",
+    "Generator reasoning, self-assessment, and prior review records were not inspected.",
+    "response.sha256 hashes the canonical UTF-8 JSON of the decision, checklist, findings, copyright_originality_check, and limitations captured in this session."
+  ],
+  "ai_review_id": "m6aireview_c0506ab5908c434812f861a6ac2da316f2e73c881ce504f9f9a71b77eb0dfed9"
+}

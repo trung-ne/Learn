@@ -1,0 +1,102 @@
+{
+  "ai_review_id": "m6aireview_da8fdbad682629c6f0032872d9435ce7e8ef6c905822ae5592d6a9b1690521b2",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "09ab2c8d14c0705d92e5eb07992e80c60af3e4e825852e3998486b17522accbe",
+  "checklist": [
+    {
+      "criterion": "CLARITY",
+      "notes": "Numbering, timeline marking, lexical noticing, contrastive stress, and the four-event constraint are explicit; one naturalness criterion is under-specified.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "COGNITIVE_LOAD",
+      "notes": "The learner manipulates a single short narrative with three coordinated targets, appropriate to the 35-minute A2.2 slot.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "COHERENCE",
+      "notes": "The background line, four ordered events, make a decision, and contrastive prominence are repeatedly integrated in one account; listening is only weakly realized.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "OBJECTIVE_ALIGNMENT",
+      "notes": "All three objective components—sequence, lexical combination, and information focus—are allocated, modeled, produced, and checked.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "PROGRESSION",
+      "notes": "A complete model leads to visual analysis, focused pronunciation manipulation, and a constrained transformed retelling.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "TEACHABILITY",
+      "notes": "Most success conditions are countable or directly comparable to the model; the open natural-weather judgment needs a bounded reference.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "VIETNAMESE_LEARNER_RELEVANCE",
+      "notes": "The lesson uses visual and oral scaffolds and makes no unsupported claim about Vietnamese learners; no supplied annotation directly requires a special intervention for the introduced targets.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Inspected only the supplied audit provenance declarations and project-authored authoritative context; no external comparison was performed."
+    ],
+    "result": "NOT_PERFORMED",
+    "scope_limitations": "No external source, corpus, web, or plagiarism search was permitted or performed; this record makes no external originality or copyright claim."
+  },
+  "decision": "APPROVE",
+  "findings": [
+    {
+      "category": "TEACHABILITY",
+      "description": "‘The weather wording is natural’ is not an operational self-check because no acceptable option set or comparison rule is supplied.",
+      "recommendation": "Offer two or three modeled weather-change frames or tell learners to retain the model frame while changing only a listed noun/verb.",
+      "severity": "MINOR"
+    },
+    {
+      "category": "M5_SKILL_REALIZATION",
+      "description": "Listening is an authoritative skill/dimension but appears only as implicit self-monitoring during retelling.",
+      "recommendation": "Explicitly ask the learner to record, replay, and recover the four-event order without viewing the plan.",
+      "severity": "MINOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "A2-U04-L01",
+  "lesson_sha256": "73404cff003340693f4b18ce8e320cce013579b71095a78e0cf2f2a2e5360f17",
+  "limitations": [
+    "AI pedagogical development review only; this is not human review, release approval, certification, or public-release evidence.",
+    "The review used only the exact lesson, audit, deterministic authoritative request rebuilt from the verified M5 development snapshot, and snapshot-bound M5 context; generator reasoning and prior reviews were not inspected.",
+    "M6 intentionally contains no M7 exercises; exercises: [] was not treated as a defect, while the staging and viability of practice and self-check instructions inside content_sections were assessed.",
+    "No external plagiarism, copyright, corpus, learner, classroom, or audio-acoustic validation was performed.",
+    "The runtime reported reviewer model gpt-5.6-sol; no reviewer provider or inference parameters were reported, so provider is UNKNOWN and parameters are empty.",
+    "response.sha256 binds canonical JSON containing decision, checklist, findings, copyright_originality_check, and limitations exactly as persisted in this record."
+  ],
+  "record_type": "lesson_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {},
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "ccc83917eb2c8e778b7d11c4a136ef3e45aded6a314822f43d9cc4710ecf8f39"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "sha256": "fabdb531978ba3db1dc85d30e1fed8917a7aa43725a1cdc1d22cfe168345b831",
+    "version": "build_ai_review_prompt-v1"
+  },
+  "review_role": "PEDAGOGICAL_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T06:47:17Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0",
+  "snapshot_binding": {
+    "bundle_sha256": "79301a37b0821fcd2cc077021db318b0a201771b9727ad08be071fc076cdb027",
+    "member_hashes": {
+      "manifest": "1436c433163765410282fffdddea1bed616feb372270a47d99bebb7193e8d296",
+      "snapshot": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f",
+      "source_registry": "1270284517c3d47e4467310ad32e7431dc0aa3cfbce0edb07e4fedc9bc347435"
+    },
+    "snapshot_id": "m5devsnapshot_5335d3a30ab9f4948e22558aa7fc755857c09dff4ef305c95d171e3ebc718c72",
+    "snapshot_sha256": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "cefr_level": "A1.2",
+  "communicative_functions": [
+    "concept_function_request_help"
+  ],
+  "content_sections": [
+    {
+      "body_text": "Use the present simple for a routine or a fact: ‘I run home after class. I live near the park.’ For practice, use a made-up address instead of private information. Read each line, cover it, and say it again with your own safe place or routine.",
+      "embedded_examples": [
+        "concept_present_simple",
+        "vocab_en_run_001",
+        "concept_topic_personal_information"
+      ],
+      "id": "section_01",
+      "section_type": "grammar",
+      "title": "Review routines and safe details"
+    },
+    {
+      "body_text": "Tap once for run and home, twice for af-ter, and twice for ad-dress. Say each part slowly, then join the parts without a new sound. Record one slow version and one normal version. Both versions must keep the same number of taps.",
+      "embedded_examples": [
+        "concept_pronunciation_syllables",
+        "concept_pronunciation_phonemes",
+        "vocab_en_run_001"
+      ],
+      "id": "section_02",
+      "section_type": "explanation",
+      "title": "Rehearse syllable boundaries"
+    },
+    {
+      "body_text": "Mai: ‘Please help me write my address on this form.’ An: ‘Yes. Tell me the address.’ Mai: ‘12 Park Road.’ An: ‘I’ll write it here.’ An is the writer, so the reply matches Mai’s request. Practise with a made-up address, then change the road name.",
+      "embedded_examples": [
+        "concept_function_request_help",
+        "concept_topic_personal_information"
+      ],
+      "id": "section_03",
+      "section_type": "dialogue",
+      "title": "Ask someone to write"
+    },
+    {
+      "body_text": "Give two safe facts and one routine with run. Then ask another person to write one fact. Speak both roles and write the lines from memory. Check: the ideas are facts or routines, run means fast movement on foot, the helper clearly does the writing, and the syllable count stays the same at normal speed.",
+      "embedded_examples": [
+        "concept_present_simple",
+        "vocab_en_run_001",
+        "concept_function_request_help",
+        "concept_pronunciation_syllables"
+      ],
+      "id": "section_04",
+      "section_type": "explanation",
+      "title": "Say, write, and check"
+    }
+  ],
+  "dimensions": [
+    "communicative_functions",
+    "grammar",
+    "listening",
+    "pronunciation",
+    "reading",
+    "speaking",
+    "spoken_interaction",
+    "topics",
+    "vocabulary_senses",
+    "writing"
+  ],
+  "duration_minutes": 35,
+  "exercises": [],
+  "functions_introduced": [],
+  "functions_reviewed": [
+    "concept_function_request_help"
+  ],
+  "generation_metadata": {
+    "curriculum_version": "20260903",
+    "generated_at": "2026-09-03T06:28:21Z",
+    "generator": "english_master.lesson_generation",
+    "generator_version": "2.0",
+    "model": "gpt-5.6-terra",
+    "prompt_version": "M6_LESSON_GENERATOR_v3",
+    "qa_notes": "Automated M6 structural checks passed; independent review remains required.",
+    "qa_status": "UNREVIEWED"
+  },
+  "grammar_introduced": [],
+  "grammar_reviewed": [
+    "concept_present_simple"
+  ],
+  "id": "A1-U02-L02",
+  "lesson_kind": "CONSOLIDATION",
+  "lesson_number": 2,
+  "objectives": [
+    "handle simple time reference and requests for help",
+    "combine selected A1.2 capabilities for a communicative purpose"
+  ],
+  "prerequisites": [
+    "A1-U02-L01"
+  ],
+  "pronunciation_introduced": [],
+  "pronunciation_reviewed": [
+    "concept_pronunciation_syllables"
+  ],
+  "review_of": [
+    "A1-U02-L01"
+  ],
+  "schema_version": "1.0",
+  "skills": [
+    "listening",
+    "reading",
+    "speaking",
+    "spoken_interaction",
+    "writing"
+  ],
+  "taxonomy_concepts": [
+    "concept_topic_personal_information"
+  ],
+  "title": "Everyday events: application",
+  "unit_id": "A1.2-U02",
+  "vocabulary_introduced": [],
+  "vocabulary_reviewed": [
+    "vocab_en_run_001"
+  ]
+}

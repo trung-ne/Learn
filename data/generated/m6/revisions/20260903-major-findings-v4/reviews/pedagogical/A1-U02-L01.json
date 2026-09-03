@@ -1,0 +1,89 @@
+{
+  "ai_review_id": "m6aireview_233471038b7c3f6d370ae404cc16f1c633766cfb6b824fba626bfe759c449ef2",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "673753a4af83e00ffbc33fbc227a9c222762bc45e7e969640d08ead71b85fea5",
+  "checklist": [
+    {
+      "criterion": "CLARITY",
+      "notes": "Time cues, the irregular run/ran contrast, the help outcome, and each final listening target are explicit.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "COGNITIVE_LOAD",
+      "notes": "One irregular verb sense, one request model, and a short dialogue keep the multi-skill load bounded for A1.2.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "COHERENCE",
+      "notes": "The lateness narrative motivates both ran and the subsequent station request, and the final cycle rehearses the same material.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "OBJECTIVE_ALIGNMENT",
+      "notes": "Run/ran with explicit time cues and the station request dialogue directly realize simple time reference and requesting help.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "PROGRESSION",
+      "notes": "The learner distinguishes routine and completed past reference, applies the sense in context, uses it in a help scenario, then integrates four skills.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "TEACHABILITY",
+      "notes": "Memory checks, constrained substitution, a functional model reply, syllable clapping, and transcript comparison provide usable scaffolding and feedback.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "VIETNAMESE_LEARNER_RELEVANCE",
+      "notes": "Syllable tapping and final-sound awareness offer useful support without unsupported claims about all Vietnamese learners.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Inspected only the supplied audit provenance declarations and project-authored snapshot-bound context; no external comparison was performed."
+    ],
+    "result": "NOT_PERFORMED",
+    "scope_limitations": "No external source, corpus, web, or plagiarism search was performed; this record makes no external originality or copyright claim."
+  },
+  "decision": "APPROVE",
+  "findings": [],
+  "independent_of_generation": true,
+  "lesson_id": "A1-U02-L01",
+  "lesson_sha256": "312ae89e4bf9205f3db93d1359744e0db8281444d22f822a559da77ae31f9bb1",
+  "limitations": [
+    "AI pedagogical development review only; this is not human review, release approval, certification, or public-release evidence.",
+    "The review used only the exact v4 lesson, its automated audit, and snapshot-bound M5 context; generator reasoning and prior review decisions were not used as evaluation evidence.",
+    "M6 intentionally contains no M7 exercises; exercises: [] was not treated as a defect, while staging, bounded practice, and self-check instructions inside content_sections were assessed.",
+    "No external plagiarism, copyright, corpus, learner, classroom, or audio-acoustic validation was performed.",
+    "The runtime reported reviewer model gpt-5.6-sol; no reviewer provider or inference parameters were reported, so provider is UNKNOWN and parameters are empty.",
+    "response.sha256 binds canonical JSON containing decision, checklist, findings, copyright_originality_check, and limitations exactly as persisted in this record."
+  ],
+  "record_type": "lesson_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {},
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "02a365cdc2ca20474a7f02fd2173cc9e0e160c3fe2c72d37ae612f56c7f98d28"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "sha256": "f5cf5e9c02be4d5741964c6f342c9491d690d3862702dcc037621fd9c532a206",
+    "version": "build_ai_review_prompt-v1"
+  },
+  "review_role": "PEDAGOGICAL_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T07:29:16Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0",
+  "snapshot_binding": {
+    "bundle_sha256": "79301a37b0821fcd2cc077021db318b0a201771b9727ad08be071fc076cdb027",
+    "member_hashes": {
+      "manifest": "1436c433163765410282fffdddea1bed616feb372270a47d99bebb7193e8d296",
+      "snapshot": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f",
+      "source_registry": "1270284517c3d47e4467310ad32e7431dc0aa3cfbce0edb07e4fedc9bc347435"
+    },
+    "snapshot_id": "m5devsnapshot_5335d3a30ab9f4948e22558aa7fc755857c09dff4ef305c95d171e3ebc718c72",
+    "snapshot_sha256": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f"
+  }
+}

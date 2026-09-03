@@ -1,0 +1,62 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "grammar",
+        "title": "An action around a past time",
+        "body_text": "Use was/were + verb-ing for an action in progress around a past time: ‘At four, I was reading the timetable.’ Draw a line through 4:00 for was reading. Add the short event: ‘The bus left at 4:15.’",
+        "embedded_examples": [
+          "concept_past_continuous",
+          "concept_past_simple"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "reading",
+        "title": "Tell your friend three facts",
+        "body_text": "Notice: ‘Bus 12 leaves at 4:15 from Gate 3.’ Your friend cannot see it. Write: ‘Bus 12 leaves at 4:15 from Gate 3.’ Cover the notice and check your message: bus 12, 4:15, Gate 3. Record the message, replay it, and write the three facts you hear.",
+        "embedded_examples": [
+          "concept_mediation",
+          "concept_reading",
+          "concept_writing"
+        ]
+      },
+      {
+        "id": "section_03",
+        "section_type": "dialogue",
+        "title": "Use one request model",
+        "body_text": "At the station, say: ‘Excuse me. Could you help me read this timetable, please?’ Staff: ‘Yes. Bus 12 leaves at 4:15 from Gate 3.’ Practise both roles. This lesson gives one useful model; comparing request choices for different situations comes in the next lesson.",
+        "embedded_examples": [
+          "concept_function_request_help",
+          "concept_chunk_could_you_help"
+        ]
+      },
+      {
+        "id": "section_04",
+        "section_type": "explanation",
+        "title": "Stress MA in information",
+        "body_text": "Say in-for-MA-tion. MA /meɪ/ has the strongest beat. Keep /meɪ/ clear and make it a little longer; say the other parts lightly. Now say what you were doing, ask for help, and tell your friend the three notice facts. Check each fact against the notice and mark MA before speaking again.",
+        "embedded_examples": [
+          "concept_pronunciation_word_stress",
+          "concept_pronunciation_syllables",
+          "concept_past_continuous",
+          "concept_mediation"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "9e7b1c46345a08ddb3a74558569912ec4cd326743bbfc03e7a07e3d76b12e3e1",
+  "response_sha256": "4dceca43968ac1d392552632eeadaf29b845e71d6c2a79043b7e6afb175e79e5",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-terra",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T07:16:57Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

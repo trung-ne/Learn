@@ -1,0 +1,90 @@
+{
+  "ai_review_id": "m6aireview_9cc7c1cb4a7763c3b5e6b89b07723e7f9c94587b2722a8f1349cd4082d4567fb",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "7a055c8b948836245e8ed114b6b11799f75988ebef649c969a648a95af124d7f",
+  "checklist": [
+    {
+      "criterion": "CEFR_ALIGNMENT",
+      "notes": "The short models, controlled instructions, and live–leave contrast are suitable for the declared internal tier A1.1; this is an AI judgment, not official CEFR certification.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "GRAMMAR_LEXICAL_ACCURACY",
+      "notes": "The /ɪ/–/iː/ contrast in live–leave is accurate, the articulatory guidance distinguishes tongue position and duration without treating length as the sole cue, and the repair exchange is grammatically sound.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "NATURALNESS",
+      "notes": "The repair exchange and revised distinction among TTS playback, an independent listener, and speech recognition are coherent and natural. The unexplained L/E response labels create a small local clarity issue.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ORIGINALITY_LIMITATIONS",
+      "notes": "No suspicious copied passage was identified in a manual internal phrase-level comparison with the authorized M5 taxonomy context and the corresponding v4 lesson. No Internet-wide or external-corpus plagiarism search was performed.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "PREREQUISITE_SCOPE",
+      "notes": "The lesson teaches or reviews only IDs in the audit’s allowed sets, and its references to present simple, phonemes, personal information, and the four supporting skills remain within the bound context.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "TARGET_LANGUAGE_COMPLIANCE",
+      "notes": "Instructional and model content is in English; IPA, single-letter response labels, identifiers, and quoted forms are used only as labelled learning support.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Manual internal phrase-level comparison against the authorized M5 taxonomy wording and the corresponding v4 lesson and findings.",
+      "Inspection of the immutable v5 lesson, audit, generation capture provenance boundary, and snapshot binding for unauthorized external-payload claims."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "No Internet-wide search, proprietary corpus comparison, or provider-authenticated plagiarism service was used; common short English forms and functional phrases are not evidence of copying."
+  },
+  "decision": "APPROVE",
+  "findings": [
+    {
+      "category": "NATURALNESS",
+      "description": "Section 3 asks the learner to write ‘L or E’ for live and leave but never states which label maps to which word; because both words begin with L, the intended coding is not immediately transparent.",
+      "recommendation": "Explicitly define the labels before the hidden-order task, for example ‘L = live; E = leave.’",
+      "severity": "MINOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "A1-U01-L02",
+  "lesson_sha256": "2b3d0dbcc6ad9b4b34b3024a671166440bc4e0678670be0320d1b30eda54afdc",
+  "limitations": [
+    "This is an independent AI development review, not human review, release approval, or CEFR certification.",
+    "The review is limited to the supplied immutable v5 lesson, audit, session-captured generation evidence, authorized M5 snapshot-bound context, corresponding v4 findings used only as repair context, and local repository materials.",
+    "No Internet-wide plagiarism search, proprietary corpus comparison, provider-authenticated plagiarism service, or external pronunciation recording assessment was performed.",
+    "Provider identity and inference parameters were unavailable to this session and are recorded as UNKNOWN or empty; the runtime-disclosed model identifier is recorded without inference."
+  ],
+  "record_type": "lesson_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {},
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "1934019ba12278719d09ca14be842b48dfb94c69ca88cdede0e65563412ef4d0"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "sha256": "34591b77349fe6ca86d3da5f8b7a42cb4a6025f03503e511f894fb8785cc8810",
+    "version": "M6_LINGUISTIC_AI_REVIEW_v1"
+  },
+  "review_role": "LINGUISTIC_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T07:50:16Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0",
+  "snapshot_binding": {
+    "bundle_sha256": "79301a37b0821fcd2cc077021db318b0a201771b9727ad08be071fc076cdb027",
+    "member_hashes": {
+      "manifest": "1436c433163765410282fffdddea1bed616feb372270a47d99bebb7193e8d296",
+      "snapshot": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f",
+      "source_registry": "1270284517c3d47e4467310ad32e7431dc0aa3cfbce0edb07e4fedc9bc347435"
+    },
+    "snapshot_id": "m5devsnapshot_5335d3a30ab9f4948e22558aa7fc755857c09dff4ef305c95d171e3ebc718c72",
+    "snapshot_sha256": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f"
+  }
+}

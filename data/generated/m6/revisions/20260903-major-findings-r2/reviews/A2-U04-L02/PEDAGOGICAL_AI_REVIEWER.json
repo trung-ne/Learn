@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0",
+  "record_type": "lesson_ai_review",
+  "approval_tier": "AI_REVIEWED",
+  "lesson_id": "A2-U04-L02",
+  "lesson_sha256": "01fb989f3c836655a024ac96cf85dcec309f31e14795eafb37929723ebbfd0f1",
+  "audit_sha256": "21149664a06711a4638472dd23c588159ace1721f9a0c76aafd132bc78c65379",
+  "snapshot_binding": {
+    "snapshot_id": "m5devsnapshot_df56cb242d8d89f1f04815d1e73b20af1853fd6d7b91e399ed379b0f74cc684e",
+    "snapshot_sha256": "1bcae5a8c7982b90acd4ce911d56691bbde0f9046951f37a6c6e3e2fa7d8c6bc",
+    "member_hashes": {
+      "manifest": "1436c433163765410282fffdddea1bed616feb372270a47d99bebb7193e8d296",
+      "source_registry": "1270284517c3d47e4467310ad32e7431dc0aa3cfbce0edb07e4fedc9bc347435",
+      "snapshot": "1bcae5a8c7982b90acd4ce911d56691bbde0f9046951f37a6c6e3e2fa7d8c6bc"
+    },
+    "bundle_sha256": "9ef02dd12b18a30788e1c1f61fba45b352bc50f71d42426140f54dc94c4b63d3"
+  },
+  "reviewer_type": "AI",
+  "review_role": "PEDAGOGICAL_AI_REVIEWER",
+  "independent_of_generation": true,
+  "review_prompt": {
+    "version": "M6_PEDAGOGICAL_AI_REVIEW_v1",
+    "sha256": "eb18b367a5bf8c13146f7f804e2459278b944c466b87e8201dec4a8407370688",
+    "capture_mode": "SESSION_CAPTURED"
+  },
+  "response": {
+    "sha256": "deb4b77dc8b1e0f7de3ec4252203e7c03278d6148a6a9a60ad1ed0a4a7dc9e53",
+    "provider": "UNKNOWN",
+    "model": "gpt-5.6-terra",
+    "parameters": {},
+    "replayable_from_capture": true
+  },
+  "reviewed_at": "2026-09-03T06:12:50Z",
+  "decision": "NEEDS_REVISION",
+  "checklist": [
+    {
+      "criterion": "OBJECTIVE_ALIGNMENT",
+      "result": "FAIL",
+      "notes": "Sequencing and information focus are addressed, but the lexical-combinations part of the authoritative objective cannot be addressed under this lesson’s allocation."
+    },
+    {
+      "criterion": "TEACHABILITY",
+      "result": "PASS",
+      "notes": "The timeline, dialogue, focus manipulation, planning frames, recording, and checks are workable for a solo learner, aside from a small story-to-retell mismatch."
+    },
+    {
+      "criterion": "PROGRESSION",
+      "result": "FAIL",
+      "notes": "The lesson reviews narrative sequence and sentence stress but omits the collocation introduced in the lesson it is designated to consolidate because that collocation is not allocated here."
+    },
+    {
+      "criterion": "CLARITY",
+      "result": "PASS",
+      "notes": "Most production requirements are explicit; the retell nevertheless changes the modeled response into an action not actually stated."
+    },
+    {
+      "criterion": "COGNITIVE_LOAD",
+      "result": "PASS",
+      "notes": "The authorized past-continuous, movement, request, sequence, and focus targets are integrated around one short event and remain manageable."
+    },
+    {
+      "criterion": "VIETNAMESE_LEARNER_RELEVANCE",
+      "result": "PASS",
+      "notes": "The Vietnamese names, familiar rain/help scenario, and explicit prominence checks are usable without stereotyping."
+    },
+    {
+      "criterion": "COHERENCE",
+      "result": "FAIL",
+      "notes": "The request and narrative largely connect, but the lesson is not coherent with the full M5 objective/review claim and one retell detail is unsupported by the model."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "MAJOR",
+      "category": "M5_ALLOCATION_CONFLICT",
+      "description": "M5 requires “sequencing, lexical combinations, and information focus” and marks this lesson as consolidation of A2-U04-L01, but the reconstructed request allocates narrative sequence and sentence stress without concept_collocation_make_decision or another lexical-combination target. That prior collocation is currently forbidden, so the generator cannot satisfy or consolidate the lexical-combinations objective.",
+      "recommendation": "Amend M5 to allocate the collocation as an explicit review target, or narrow the objective and review claim before regeneration. Do not direct the generator to use the currently forbidden collocation."
+    },
+    {
+      "severity": "MINOR",
+      "category": "MODEL_TO_RETELL_COHERENCE",
+      "description": "The dialogue says An will put the books in a bag, but the retell states that An carried the books. The added carrying event is not established by the model, weakening the instruction to retell in order.",
+      "recommendation": "Make the response explicitly say that An carried the books, or keep the retell faithful to putting the books in the bag."
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Inspected the lesson against its reconstructed, hash-matched M5 teaching payload and confirmed that no external source payload was supplied.",
+      "Compared wording and examples across the closed set of all ten revised lessons for suspicious verbatim duplication beyond shared instructional scaffolding.",
+      "Reviewed the audit provenance/copyright result and source-scope constraints as machine evidence without treating them as a web-wide originality check."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "Closed-corpus review of the ten supplied lessons plus their exact M5/request/audit context only; no Internet-wide search, external proprietary corpus, legal opinion, or provider receipt was available."
+  },
+  "limitations": [
+    "This is an independent AI pedagogical review for development evidence only; it is not human review, release approval, certification, or publication authorization.",
+    "The governing M5 snapshot retains DRAFT taxonomy and OUTLINE_ONLY curriculum records and is limited to the development lane.",
+    "No learner trial, classroom observation, or outcome study was performed.",
+    "No audio was supplied, so no acoustic, listening-performance, or pronunciation-performance review was performed.",
+    "Originality checking was closed-corpus and artifact-bound; no web-wide plagiarism search, external corpus comparison, or legal determination was performed.",
+    "Generation provider provenance was not independently established; UNKNOWN is retained rather than inferred.",
+    "Generator reasoning, self-assessment, and prior review records were not inspected.",
+    "response.sha256 hashes the canonical UTF-8 JSON of the decision, checklist, findings, copyright_originality_check, and limitations captured in this session."
+  ],
+  "ai_review_id": "m6aireview_b538a00ecc690f189a10adb7ac5dd310e9e6c9b421e507afb881de97f3605253"
+}

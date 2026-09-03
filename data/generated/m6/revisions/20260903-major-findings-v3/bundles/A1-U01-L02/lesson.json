@@ -1,0 +1,100 @@
+{
+  "cefr_level": "A1.1",
+  "communicative_functions": [],
+  "content_sections": [
+    {
+      "body_text": "Spend 8 minutes on live /lɪv/ and leave /liːv/. For /ɪ/, the tongue is relaxed and slightly lower. For /iː/, it is higher and farther forward; this vowel is often longer. Change the sound and its length: stretching /ɪ/ alone does not make /iː/.",
+      "embedded_examples": [
+        "concept_pronunciation_minimal_pairs",
+        "concept_pronunciation_phonemes",
+        "concept_listening"
+      ],
+      "id": "section_01",
+      "section_type": "explanation",
+      "title": "Compare two vowel sounds"
+    },
+    {
+      "body_text": "Spend 8 minutes on this exchange. B: ‘I live here.’ A: ‘Leave here?’ B: ‘No, live here—/lɪv/, not leave /liːv/.’ A: ‘Oh, you live here.’ The one-vowel change alters the message, so B repeats the key word and gives a short, friendly correction.",
+      "embedded_examples": [
+        "concept_pronunciation_minimal_pairs",
+        "concept_spoken_interaction"
+      ],
+      "id": "section_02",
+      "section_type": "dialogue",
+      "title": "Hear a natural correction"
+    },
+    {
+      "body_text": "Spend 10 minutes making two recordings: live–leave and sit–seat, with a pause after each word. After a short break, replay them without viewing the speaking list and write the order you hear. Reveal the list to check. For errors, reset the tongue position as well as the vowel length, then record again.",
+      "embedded_examples": [
+        "concept_pronunciation_minimal_pairs",
+        "concept_listening",
+        "concept_speaking"
+      ],
+      "id": "section_03",
+      "section_type": "explanation",
+      "title": "Record, wait, and identify"
+    },
+    {
+      "body_text": "Spend 9 minutes creating four turns: state one safe detail, let the other speaker hear live as leave, correct it, and confirm. Speak both roles without reading. Success: the vowels use different tongue positions and lengths, replay identifies the intended word, and the correction is clear and friendly.",
+      "embedded_examples": [
+        "concept_pronunciation_minimal_pairs",
+        "concept_spoken_interaction"
+      ],
+      "id": "section_04",
+      "section_type": "dialogue",
+      "title": "Use the contrast in a dialogue"
+    }
+  ],
+  "dimensions": [
+    "listening",
+    "pronunciation",
+    "speaking",
+    "spoken_interaction"
+  ],
+  "duration_minutes": 35,
+  "exercises": [],
+  "functions_introduced": [],
+  "functions_reviewed": [],
+  "generation_metadata": {
+    "curriculum_version": "20260903",
+    "generated_at": "2026-09-03T06:28:21Z",
+    "generator": "english_master.lesson_generation",
+    "generator_version": "2.0",
+    "model": "gpt-5.6-terra",
+    "prompt_version": "M6_LESSON_GENERATOR_v3",
+    "qa_notes": "Automated M6 structural checks passed; independent review remains required.",
+    "qa_status": "UNREVIEWED"
+  },
+  "grammar_introduced": [],
+  "grammar_reviewed": [],
+  "id": "A1-U01-L02",
+  "lesson_kind": "CONSOLIDATION",
+  "lesson_number": 2,
+  "objectives": [
+    "handle personal information and basic participation",
+    "combine selected A1.1 capabilities for a communicative purpose"
+  ],
+  "prerequisites": [
+    "A1-U01-L01"
+  ],
+  "pronunciation_introduced": [
+    "concept_pronunciation_minimal_pairs"
+  ],
+  "pronunciation_reviewed": [],
+  "review_of": [
+    "A1-U01-L01"
+  ],
+  "schema_version": "1.0",
+  "skills": [
+    "listening",
+    "speaking",
+    "spoken_interaction"
+  ],
+  "taxonomy_concepts": [
+    "concept_spoken_interaction"
+  ],
+  "title": "Foundational exchange: application",
+  "unit_id": "A1.1-U01",
+  "vocabulary_introduced": [],
+  "vocabulary_reviewed": []
+}

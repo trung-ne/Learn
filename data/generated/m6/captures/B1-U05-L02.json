@@ -1,0 +1,39 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "grammar",
+        "title": "Apply the earlier-past idea",
+        "body_text": "Before I arrived, my friend had run to the station. Use the past perfect to show which event happened first.",
+        "embedded_examples": [
+          "concept_past_perfect",
+          "vocab_en_run_002"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "explanation",
+        "title": "Link the story",
+        "body_text": "Connect final sounds to following vowels naturally as you retell the event. Keep the timeline easy to follow.",
+        "embedded_examples": [
+          "concept_pronunciation_linking",
+          "concept_past_perfect"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "4f98f2b0435dedf26ec3a98a1be4b3b582fcabcfa98daadbac07691f62ad06f1",
+  "response_sha256": "1f3dad52ad6e5d5e8ccb469acfe5ace5c3608d0a7486bb1153db2c32a2f31007",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-terra",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T12:30:00Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

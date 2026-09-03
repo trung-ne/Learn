@@ -8,7 +8,7 @@ from typing import Any, Mapping
 
 from english_master.schema_validation import validation_issues
 
-from .authority import VerifiedM5Authority
+from .authority import _VerifiedM5Base, VerifiedM5Authority
 from .canonical import identity, sha256_json
 from .models import GenerationIssue, JsonObject
 
@@ -158,3 +158,125 @@ def validate_batch_report(
     if not set(report["human_review_sample"]).issubset(reviewed_ids):
         issues.append(_issue("HUMAN_SAMPLE_MISSING", "$.human_review_sample", "every declared human-review sample lesson needs a referenced review record"))
     return tuple(sorted(set(issues)))
+
+
+AI_CHECKLIST_BY_ROLE = {
+    "LINGUISTIC_AI_REVIEWER": {"CEFR_ALIGNMENT", "GRAMMAR_LEXICAL_ACCURACY", "NATURALNESS", "PREREQUISITE_SCOPE", "TARGET_LANGUAGE_COMPLIANCE", "ORIGINALITY_LIMITATIONS"},
+    "PEDAGOGICAL_AI_REVIEWER": {"OBJECTIVE_ALIGNMENT", "TEACHABILITY", "PROGRESSION", "CLARITY", "COGNITIVE_LOAD", "VIETNAMESE_LEARNER_RELEVANCE", "COHERENCE"},
+}
+REQUIRED_DEVELOPMENT_LESSONS = (
+    "A1-U01-L01", "A1-U01-L02", "A1-U02-L01", "A1-U02-L02", "A2-U03-L01",
+    "A2-U03-L02", "A2-U04-L01", "A2-U04-L02", "B1-U05-L01", "B1-U05-L02",
+)
+
+
+def build_ai_review_prompt(role: str, lesson: Mapping[str, Any], audit: Mapping[str, Any], request: Mapping[str, Any] | None = None) -> str:
+    """Build a review-only prompt without generator reasoning or self-assessment."""
+    import json
+    if role not in AI_CHECKLIST_BY_ROLE:
+        raise ValueError(f"unsupported AI review role: {role}")
+    context: dict[str, Any] = {"lesson": lesson, "audit": audit}
+    if request is not None:
+        context["authoritative_request"] = request
+    return (
+        f"You are the independent {role}. Review only the supplied artifacts; do not infer or reproduce generator reasoning. "
+        f"Evaluate: {', '.join(sorted(AI_CHECKLIST_BY_ROLE[role]))}. Return a structured verdict (APPROVE, NEEDS_REVISION, or REJECT), checklist results, and concrete findings. "
+        "AI review is development evidence only and is never human or release approval.\n\n"
+        + json.dumps(context, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+    )
+
+
+def validate_ai_lesson_review(review: Mapping[str, Any], lesson: Mapping[str, Any], audit: Mapping[str, Any], m5: _VerifiedM5Base) -> tuple[GenerationIssue, ...]:
+    """Validate hash-bound AI review evidence without treating it as human evidence."""
+    issues = _schema_issues(review, "lesson-ai-review")
+    if issues:
+        return tuple(sorted(set(issues)))
+    if review["ai_review_id"] != identity("m6aireview", review, "ai_review_id"):
+        issues.append(_issue("AI_REVIEW_ID_MISMATCH", "$.ai_review_id", "must be the canonical AI review identity"))
+    if lesson.get("id") != review["lesson_id"] or audit.get("lesson_id") != lesson.get("id"):
+        issues.append(_issue("LESSON_BINDING_MISMATCH", "$.lesson_id", "lesson and audit must name the reviewed lesson"))
+    if sha256_json(lesson) != review["lesson_sha256"] or sha256_json(audit) != review["audit_sha256"]:
+        issues.append(_issue("ARTIFACT_HASH_MISMATCH", "$.lesson_sha256", "review must bind exact complete lesson and audit records"))
+    if audit.get("status") != "ACCEPTED" or audit.get("qa_status") != "UNREVIEWED":
+        issues.append(_issue("AUDIT_NOT_MACHINE_VALIDATED", "$.audit", "only accepted UNREVIEWED machine-valid output can be AI reviewed"))
+    checks = audit.get("checks", {})
+    if not isinstance(checks, Mapping) or any(value != "PASS" for key, value in checks.items() if key != "publication"):
+        issues.append(_issue("MACHINE_CHECKS_INCOMPLETE", "$.audit.checks", "all non-publication automated checks must pass"))
+    if review["snapshot_binding"] != m5.snapshot_binding() or audit.get("snapshot_binding") != m5.snapshot_binding():
+        issues.append(_issue("SNAPSHOT_BINDING_MISMATCH", "$.snapshot_binding", "review and audit must bind reverified M5 authority"))
+    criteria = [entry["criterion"] for entry in review["checklist"]]
+    if set(criteria) != AI_CHECKLIST_BY_ROLE[review["review_role"]] or len(criteria) != len(set(criteria)):
+        issues.append(_issue("AI_CHECKLIST_SCOPE_MISMATCH", "$.checklist", "must contain each role-specific criterion exactly once"))
+    capture_mode, response = review["review_prompt"]["capture_mode"], review["response"]
+    if capture_mode in {"TEST_ONLY", "REPLAY_CAPTURED"} or response.get("provider") == "TEST_ONLY_MOCK":
+        issues.append(_issue("NON_PROMOTABLE_AI_PROVENANCE", "$.review_prompt.capture_mode", "test-only and replay-only AI evidence cannot support development promotion"))
+    failed = any(entry["result"] == "FAIL" for entry in review["checklist"])
+    blocking = any(finding["severity"] in {"MAJOR", "CRITICAL"} for finding in review["findings"])
+    if review["decision"] == "APPROVE" and (failed or blocking):
+        issues.append(_issue("AI_REVIEW_DECISION_MISMATCH", "$.decision", "approval cannot contain failed checks or major/critical findings"))
+    if review["decision"] != "APPROVE" and not (failed or blocking):
+        issues.append(_issue("AI_REVIEW_DECISION_MISMATCH", "$.decision", "non-approval requires failure or blocking finding"))
+    reviewed_at, qa_at = _parse_timestamp(review["reviewed_at"]), _parse_timestamp(audit.get("qa_timestamp"))
+    if reviewed_at is None or qa_at is None or reviewed_at < qa_at:
+        issues.append(_issue("AI_REVIEW_CHRONOLOGY_INVALID", "$.reviewed_at", "AI review must be at or after automated audit"))
+    return tuple(sorted(set(issues)))
+
+
+def validate_development_batch(report: Mapping[str, Any], m5: _VerifiedM5Base, bundle_root: Path) -> tuple[GenerationIssue, ...]:
+    """Fail closed before assigning DEVELOPMENT_APPROVED to the exact initial M6 batch."""
+    issues = _schema_issues(report, "lesson-development-batch")
+    if issues:
+        return tuple(sorted(set(issues)))
+    if report["batch_id"] != identity("m6devbatch", report, "batch_id"):
+        issues.append(_issue("DEVELOPMENT_BATCH_ID_MISMATCH", "$.batch_id", "must be canonical content identity"))
+    if report["snapshot_binding"] != m5.snapshot_binding():
+        issues.append(_issue("SNAPSHOT_BINDING_MISMATCH", "$.snapshot_binding", "must bind verified development snapshot"))
+    if tuple(item["lesson_id"] for item in report["lessons"]) != REQUIRED_DEVELOPMENT_LESSONS:
+        issues.append(_issue("REQUIRED_LESSON_BATCH_MISMATCH", "$.lessons", "must contain exactly the required ten lessons in graph order"))
+    root = bundle_root.resolve()
+    seen_content: set[str] = set()
+    from english_master.curriculum_review.loading import load_strict_document
+    for index, entry in enumerate(report["lessons"]):
+        lesson_path, audit_path = (root / entry["lesson_path"]).resolve(), (root / entry["audit_path"]).resolve()
+        if root not in lesson_path.parents or root not in audit_path.parents:
+            issues.append(_issue("BUNDLE_PATH_ESCAPE", f"$.lessons[{index}]", "lesson or audit path escapes bundle root"))
+            continue
+        try:
+            lesson, audit = load_strict_document(lesson_path), load_strict_document(audit_path)
+        except (OSError, ValueError, TypeError) as error:
+            issues.append(_issue("BUNDLE_UNAVAILABLE", f"$.lessons[{index}]", type(error).__name__))
+            continue
+        if lesson.get("id") != entry["lesson_id"] or sha256_json(lesson) != entry["lesson_sha256"] or sha256_json(audit) != entry["audit_sha256"]:
+            issues.append(_issue("BUNDLE_HASH_MISMATCH", f"$.lessons[{index}]", "lesson/audit values differ from report"))
+        if audit.get("status") != "ACCEPTED" or audit.get("snapshot_binding") != m5.snapshot_binding():
+            issues.append(_issue("BUNDLE_NOT_MACHINE_VALIDATED", f"$.lessons[{index}]", "bundle has not passed machine validation for this snapshot"))
+        response_provenance = audit.get("response_provenance", {})
+        if not isinstance(response_provenance, Mapping) or response_provenance.get("provider") == "TEST_ONLY_MOCK":
+            issues.append(_issue("NON_PROMOTABLE_GENERATION_PROVENANCE", f"$.lessons[{index}].generation_provenance_mode", "test-only generation cannot support development promotion"))
+        content_hash = sha256_json(lesson)
+        if content_hash in seen_content:
+            issues.append(_issue("DUPLICATE_LESSON_CONTENT", f"$.lessons[{index}]", "complete lesson content duplicates another batch item"))
+        seen_content.add(content_hash)
+        roles: set[str] = set()
+        for review_ref in entry["ai_reviews"]:
+            review_path = (root / review_ref["path"]).resolve()
+            if root not in review_path.parents:
+                issues.append(_issue("REVIEW_PATH_ESCAPE", f"$.lessons[{index}].ai_reviews", "review path escapes bundle root"))
+                continue
+            try:
+                review = load_strict_document(review_path)
+            except (OSError, ValueError, TypeError) as error:
+                issues.append(_issue("AI_REVIEW_UNAVAILABLE", f"$.lessons[{index}].ai_reviews", type(error).__name__))
+                continue
+            if sha256_json(review) != review_ref["sha256"] or review.get("review_role") != review_ref["review_role"]:
+                issues.append(_issue("AI_REVIEW_HASH_MISMATCH", f"$.lessons[{index}].ai_reviews", "review reference differs from file"))
+            issues.extend(validate_ai_lesson_review(review, lesson, audit, m5))
+            roles.add(str(review.get("review_role")))
+        if roles != set(AI_CHECKLIST_BY_ROLE):
+            issues.append(_issue("AI_REVIEW_ROLE_COVERAGE", f"$.lessons[{index}].ai_reviews", "both independent AI review roles are required"))
+    return tuple(sorted(set(issues)))
+
+
+def m7_eligibility_issues(report: Mapping[str, Any], m5: _VerifiedM5Base, bundle_root: Path) -> tuple[GenerationIssue, ...]:
+    """Read-only M7 prerequisite check; this implements no M7 behavior."""
+    return validate_development_batch(report, m5, bundle_root)

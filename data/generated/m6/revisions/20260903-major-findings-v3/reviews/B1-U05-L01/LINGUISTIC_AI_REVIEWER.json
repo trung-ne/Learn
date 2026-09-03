@@ -1,0 +1,91 @@
+{
+  "ai_review_id": "m6aireview_64150e16a5beee7cee8a7aff0e59fcfdf6c62dfa72b172ea8719e01489fbf0cf",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "4fe03704a12d8a3a612f84ed42d1552ccf93205c35cbd6f2a5a943f206128709",
+  "checklist": [
+    {
+      "criterion": "CEFR_ALIGNMENT",
+      "notes": "The past-perfect explanation, short narrative, connected-speech notation, and learner directions are appropriately demanding but accessible for B1.1.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "GRAMMAR_LEXICAL_ACCURACY",
+      "notes": "Had + past participle is accurately related to a later past point, the forms packed/bought are correct, and the qualified weak forms /əd/, /tə/, and /ən/ are linguistically sound. One minor reference-point ambiguity is recorded.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "NATURALNESS",
+      "notes": "The narrative and rehearsal language are natural, and the bracket notation is clearly explained as a practice device.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ORIGINALITY_LIMITATIONS",
+      "notes": "No suspicious unexplained overlap was found inside the supplied scope; the absence of external searching is explicitly recorded.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "PREREQUISITE_SCOPE",
+      "notes": "Past perfect and weak forms are introduced over the declared narrative, past-tense, sentence-stress, syllable, and word-stress closure.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "TARGET_LANGUAGE_COMPLIANCE",
+      "notes": "The lesson is in English and every embedded identifier is authorized directly or as prerequisite context.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Manual comparison of lesson wording with the supplied authoritative request and project-authored teaching payload.",
+      "Exact contiguous-word overlap comparison across the ten supplied v3 lesson bodies.",
+      "Inspection of the accepted audit provenance/copyright scope without consulting external sources."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "No suspicious unexplained copying was found within the supplied scope. Reuse of target forms, short pedagogical frames, and project-authored definitions/examples is expected. No external search was performed; this is not a plagiarism clearance or copyright guarantee."
+  },
+  "decision": "APPROVE",
+  "findings": [
+    {
+      "category": "GRAMMAR_LEXICAL_ACCURACY",
+      "description": "In Section 2, ‘Her friend had already bought the tickets’ leaves its later reference point implicit, while the instruction says to draw arrows to went/arrived. A learner may be unsure whether bought should point to Mina’s arrival or another event.",
+      "recommendation": "State the relation explicitly, for example ‘Her friend had already bought the tickets before Mina arrived,’ and map each past-perfect event to its own later anchor.",
+      "severity": "MINOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "B1-U05-L01",
+  "lesson_sha256": "ef8b838323d7938de9dba2ffee034d8ce08fd7d133e8cbfa14fd4ed7ef30d4ef",
+  "limitations": [
+    "Review used only the exact lesson, accepted audit, regenerated hash-matching authoritative request, and verified M5 development snapshot; generator reasoning and prior review records were excluded.",
+    "No audio was supplied; pronunciation judgments cover written instructions and IPA only, not realized speech or learner performance.",
+    "No external CEFR vocabulary profiler or corpus was used; CEFR findings are qualitative independent AI judgments about the learner-facing text.",
+    "Originality checking was limited to the supplied authoritative payload and the ten supplied v3 lessons; no Internet, external corpus, or plagiarism search was performed, so no external plagiarism or legal-clearance claim is made."
+  ],
+  "record_type": "lesson_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {},
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "75ac8f60c9e5896532bc591582694f1965cc854b7267b0eeb4c435c18f3d08ec"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "sha256": "53502a7039c955de5b9776a63869e40b1055129871642003e4a8158a992a85ec",
+    "version": "M6_LINGUISTIC_AI_REVIEW_v1"
+  },
+  "review_role": "LINGUISTIC_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T06:48:08Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0",
+  "snapshot_binding": {
+    "bundle_sha256": "79301a37b0821fcd2cc077021db318b0a201771b9727ad08be071fc076cdb027",
+    "member_hashes": {
+      "manifest": "1436c433163765410282fffdddea1bed616feb372270a47d99bebb7193e8d296",
+      "snapshot": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f",
+      "source_registry": "1270284517c3d47e4467310ad32e7431dc0aa3cfbce0edb07e4fedc9bc347435"
+    },
+    "snapshot_id": "m5devsnapshot_5335d3a30ab9f4948e22558aa7fc755857c09dff4ef305c95d171e3ebc718c72",
+    "snapshot_sha256": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f"
+  }
+}

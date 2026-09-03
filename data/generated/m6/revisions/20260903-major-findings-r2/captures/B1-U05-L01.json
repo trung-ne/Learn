@@ -1,0 +1,61 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "grammar",
+        "title": "Mark the earlier past",
+        "body_text": "Use had + past participle to mark an event earlier than another past point: ‘Mina had packed before she left.’ Timeline: HAD PACKED → LEFT → now. The form is had packed for every subject. Use the later past event to make the relationship clear.",
+        "embedded_examples": [
+          "concept_past_perfect",
+          "concept_narrative_sequence",
+          "concept_past_simple"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "reading",
+        "title": "Notice a short narrative",
+        "body_text": "‘Mina had packed before she went to the station, and she arrived early. Her friend had already bought the tickets.’ Underline had + packed/bought; draw arrows to the later events went/arrived. This shows sequence even when sentences mention events in another order.",
+        "embedded_examples": [
+          "concept_past_perfect",
+          "concept_narrative_sequence"
+        ]
+      },
+      {
+        "id": "section_03",
+        "section_type": "explanation",
+        "title": "Reduce specific function words",
+        "body_text": "In fluent speech, unstressed had may sound /əd/, to may sound /tə/, and and may sound /ən/. Keep packed, station, and early prominent. Say ‘Mina [had] PACKED before she went [to] the STATION, [and] she arrived EARLY,’ first carefully, then with the bracketed weak forms reduced.",
+        "embedded_examples": [
+          "concept_pronunciation_weak_forms",
+          "concept_pronunciation_sentence_stress"
+        ]
+      },
+      {
+        "id": "section_04",
+        "section_type": "explanation",
+        "title": "Model, retell, verify",
+        "body_text": "Plan two earlier events and two later events. Write the timeline, model each past-perfect form, then retell without reading. Record a second version with reduced had, to, or and only when unstressed. Check: had + participle marks the earlier past, key content words stay clear, and no function word disappears.",
+        "embedded_examples": [
+          "concept_past_perfect",
+          "concept_pronunciation_weak_forms",
+          "concept_narrative_sequence"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "0546c5d8095f8a121e15fbef36d5eec32d51a881b128aad2c3308f12ed9ce793",
+  "response_sha256": "f29128eb3d1b6bc61bbce9445605feece3cd8930d0d17cccf1cc353727837d45",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-terra",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T05:55:45Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

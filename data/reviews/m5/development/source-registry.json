@@ -1,0 +1,1253 @@
+{
+  "schema_version": "1.0",
+  "sources": [
+    {
+      "access": {
+        "api_url": "https://api.tatoeba.org/",
+        "crawl_allowed": false,
+        "dataset_url": "https://tatoeba.org/en/downloads",
+        "download_allowed": true,
+        "preferred_method": "official_download"
+      },
+      "attribution": {
+        "format": "Sentence {source_record_id} by {author}, Tatoeba, {license_url}",
+        "required": true,
+        "requirements": "Preserve sentence ID, contributor/author, source URL, record-level license, attribution information, and an indication of modifications."
+      },
+      "content_types": [
+        "text",
+        "metadata"
+      ],
+      "description": "Individual Tatoeba text sentences only, used only when their record-level license, author, sentence ID, and attribution data are retained.",
+      "evidence": [
+        {
+          "checked_at": "2026-08-30T00:00:00Z",
+          "description": "Current Tatoeba text license and attribution terms.",
+          "url": "https://tatoeba.org/en/terms_of_use"
+        },
+        {
+          "checked_at": "2026-08-30T00:00:00Z",
+          "description": "Official text-download and API access information.",
+          "url": "https://tatoeba.org/en/downloads"
+        }
+      ],
+      "license": {
+        "name": "CC-BY-2.0-FR",
+        "notes": "Default sentence license; some records have a different compatible license. The record-level license and contributor attribution control. Audio is excluded.",
+        "reviewed_at": "2026-08-30T00:00:00Z",
+        "url": "https://creativecommons.org/licenses/by/2.0/fr/deed.en"
+      },
+      "media_permissions": {
+        "audio": {
+          "clip_allowed": false,
+          "derived_redistribution_allowed": false,
+          "download_allowed": false,
+          "exercise_allowed": false,
+          "redistribute_allowed": false,
+          "store_allowed": false,
+          "timestamp_allowed": false,
+          "transcript_allowed": false,
+          "transform_allowed": false
+        },
+        "text": {
+          "derived_redistribution_allowed": true,
+          "exercise_allowed": true,
+          "ingest_allowed": true,
+          "redistribute_allowed": true,
+          "store_allowed": true,
+          "transcript_allowed": false,
+          "transform_allowed": true
+        },
+        "video": {
+          "audio_extraction_allowed": false,
+          "clip_allowed": false,
+          "derived_redistribution_allowed": false,
+          "download_allowed": false,
+          "exercise_allowed": false,
+          "redistribute_allowed": false,
+          "store_allowed": false,
+          "timestamp_allowed": false,
+          "transcript_allowed": false
+        }
+      },
+      "owner": "Tatoeba Project",
+      "permissions": {
+        "commercial_use_allowed": true,
+        "ingest_allowed": true,
+        "modify_allowed": true,
+        "redistribute_allowed": true,
+        "reference_allowed": true,
+        "store_allowed": true
+      },
+      "registered_at": "2026-08-30T00:00:00Z",
+      "registered_by": "M1 source-governance review",
+      "review_notes": "Approved only for record-level text with complete attribution and license data. Do not infer text rights from a related audio record or translation chain.",
+      "reviewed_at": "2026-08-30T00:00:00Z",
+      "schema_version": "2.0",
+      "source_id": "src_tatoeba_text",
+      "source_name": "Tatoeba sentence corpus text",
+      "source_type": "dataset",
+      "source_url": "https://tatoeba.org/en/",
+      "status": "APPROVED",
+      "technical": {
+        "official_api_available": true,
+        "official_dump_available": true,
+        "rate_limit_notes": "Respect published API limits and do not bypass rate limiting.",
+        "robots_notes": "Do not crawl pages; use the official API or official download exports."
+      }
+    },
+    {
+      "access": {
+        "api_url": "https://api.tatoeba.org/",
+        "crawl_allowed": false,
+        "dataset_url": "https://tatoeba.org/en/downloads",
+        "download_allowed": true,
+        "preferred_method": "official_download"
+      },
+      "attribution": {
+        "format": "Audio {audio_id} by {author}, Tatoeba, CC BY 4.0, {attribution_url}",
+        "required": true,
+        "requirements": "Retain audio ID, sentence ID, creator, attribution URL, license notice, source link where practical, and modification notice. A transcript also needs the linked sentence's independently verified text permission."
+      },
+      "content_types": [
+        "audio",
+        "metadata"
+      ],
+      "description": "Individual audio records whose official metadata explicitly identifies CC BY 4.0 and supplies the required attribution URL. The separately licensed sentence text must be cleared independently before transcript or exercise redistribution.",
+      "evidence": [
+        {
+          "checked_at": "2026-08-30T00:00:00Z",
+          "description": "Official audio metadata fields include license and attribution URL.",
+          "url": "https://tatoeba.org/en/downloads"
+        },
+        {
+          "checked_at": "2026-08-30T00:00:00Z",
+          "description": "Official project guidance for contributor-specific audio licenses.",
+          "url": "https://en.wiki.tatoeba.org/articles/show/choose-audio-license"
+        }
+      ],
+      "license": {
+        "name": "CC-BY-4.0",
+        "notes": "Approval excludes blank, unknown, NC, ND, and offsite-prohibited audio licenses.",
+        "reviewed_at": "2026-08-30T00:00:00Z",
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode.en"
+      },
+      "media_permissions": {
+        "audio": {
+          "clip_allowed": true,
+          "derived_redistribution_allowed": true,
+          "download_allowed": true,
+          "exercise_allowed": true,
+          "redistribute_allowed": true,
+          "store_allowed": true,
+          "timestamp_allowed": true,
+          "transcript_allowed": true,
+          "transform_allowed": true
+        },
+        "text": {
+          "derived_redistribution_allowed": true,
+          "exercise_allowed": true,
+          "ingest_allowed": true,
+          "redistribute_allowed": true,
+          "store_allowed": true,
+          "transcript_allowed": false,
+          "transform_allowed": true
+        },
+        "video": {
+          "audio_extraction_allowed": false,
+          "clip_allowed": false,
+          "derived_redistribution_allowed": false,
+          "download_allowed": false,
+          "exercise_allowed": false,
+          "redistribute_allowed": false,
+          "store_allowed": false,
+          "timestamp_allowed": false,
+          "transcript_allowed": false
+        }
+      },
+      "owner": "Tatoeba Project contributors",
+      "permissions": {
+        "commercial_use_allowed": true,
+        "ingest_allowed": true,
+        "modify_allowed": true,
+        "redistribute_allowed": true,
+        "reference_allowed": true,
+        "store_allowed": true
+      },
+      "registered_at": "2026-08-30T00:00:00Z",
+      "registered_by": "M1 source-governance review",
+      "review_notes": "Approved only after an M2 record-level CC BY 4.0 and attribution check.",
+      "reviewed_at": "2026-08-30T00:00:00Z",
+      "schema_version": "2.0",
+      "source_id": "src_tatoeba_audio_cc_by_4",
+      "source_name": "Tatoeba CC BY 4.0 audio recordings",
+      "source_type": "dataset",
+      "source_url": "https://tatoeba.org/en/downloads",
+      "status": "APPROVED",
+      "technical": {
+        "official_api_available": true,
+        "official_dump_available": true,
+        "rate_limit_notes": "Respect official API limits and use bulk exports only in a later approved ingestion run.",
+        "robots_notes": "Use official downloads or API only; do not crawl contributor pages."
+      }
+    },
+    {
+      "access": {
+        "api_url": "https://datacollective.mozillafoundation.org/api-reference/docs",
+        "crawl_allowed": false,
+        "dataset_url": "https://mozilladatacollective.com/",
+        "download_allowed": true,
+        "preferred_method": "official_api"
+      },
+      "attribution": {
+        "format": null,
+        "required": false,
+        "requirements": "CC0 does not require attribution, but retain release ID, dataset URL, terms version, language, and retrieval metadata for auditability."
+      },
+      "content_types": [
+        "audio",
+        "transcript",
+        "metadata"
+      ],
+      "description": "Specifically versioned Common Voice releases used for controlled computational processing after acceptance of the release-specific Mozilla Data Collective terms.",
+      "evidence": [
+        {
+          "checked_at": "2026-08-30T00:00:00Z",
+          "description": "Official Common Voice legal terms and CC0 framing.",
+          "url": "https://commonvoice.mozilla.org/en/terms"
+        },
+        {
+          "checked_at": "2026-08-30T00:00:00Z",
+          "description": "Official English Scripted Speech 26.0 release page and no-rehosting conditions.",
+          "url": "https://mozilladatacollective.com/datasets/cmqim2hn800ssnr07gvmpcnwu"
+        }
+      ],
+      "license": {
+        "name": "CC0-1.0-WITH-MDC-TERMS",
+        "notes": "Dataset pages label releases CC0, but Mozilla Data Collective terms separately prohibit re-hosting/re-sharing and speaker-identification attempts.",
+        "reviewed_at": "2026-08-30T00:00:00Z",
+        "url": "https://commonvoice.mozilla.org/en/terms"
+      },
+      "media_permissions": {
+        "audio": {
+          "clip_allowed": true,
+          "derived_redistribution_allowed": false,
+          "download_allowed": true,
+          "exercise_allowed": true,
+          "redistribute_allowed": false,
+          "store_allowed": true,
+          "timestamp_allowed": true,
+          "transcript_allowed": true,
+          "transform_allowed": true
+        },
+        "text": {
+          "derived_redistribution_allowed": false,
+          "exercise_allowed": false,
+          "ingest_allowed": false,
+          "redistribute_allowed": false,
+          "store_allowed": true,
+          "transcript_allowed": false,
+          "transform_allowed": false
+        },
+        "video": {
+          "audio_extraction_allowed": false,
+          "clip_allowed": false,
+          "derived_redistribution_allowed": false,
+          "download_allowed": false,
+          "exercise_allowed": false,
+          "redistribute_allowed": false,
+          "store_allowed": false,
+          "timestamp_allowed": false,
+          "transcript_allowed": false
+        }
+      },
+      "owner": "Mozilla Foundation / Mozilla Data Collective",
+      "permissions": {
+        "commercial_use_allowed": true,
+        "ingest_allowed": true,
+        "modify_allowed": true,
+        "redistribute_allowed": false,
+        "reference_allowed": true,
+        "store_allowed": true
+      },
+      "registered_at": "2026-08-30T00:00:00Z",
+      "registered_by": "M1 source-governance review",
+      "review_notes": "Original and derived redistribution are denied. Do not attempt speaker identification. Distributable text derived from transcripts remains quarantined unless exact sentence provenance is cleared.",
+      "reviewed_at": "2026-08-30T00:00:00Z",
+      "schema_version": "2.0",
+      "source_id": "src_common_voice_scripted_speech",
+      "source_name": "Mozilla Common Voice Scripted Speech releases",
+      "source_type": "dataset",
+      "source_url": "https://commonvoice.mozilla.org/en/datasets",
+      "status": "APPROVED",
+      "technical": {
+        "official_api_available": true,
+        "official_dump_available": false,
+        "rate_limit_notes": "Accept current release terms before access and respect all platform limits.",
+        "robots_notes": "Use Mozilla Data Collective's authorized browser, API, or SDK route only."
+      }
+    },
+    {
+      "access": {
+        "api_url": "https://librivox.org/api/info",
+        "crawl_allowed": false,
+        "dataset_url": "https://librivox.org/search",
+        "download_allowed": true,
+        "preferred_method": "official_api"
+      },
+      "attribution": {
+        "format": null,
+        "required": false,
+        "requirements": "Credit and a LibriVox link are requested as a courtesy; preserve catalog provenance."
+      },
+      "content_types": [
+        "audio",
+        "metadata"
+      ],
+      "description": "Official LibriVox recordings and catalog metadata only, in a United States-scoped use lane. Underlying editions and translations require separate jurisdiction review.",
+      "evidence": [
+        {
+          "checked_at": "2026-08-30T00:00:00Z",
+          "description": "Official statement that recordings are public domain in the United States.",
+          "url": "https://librivox.org/pages/public-domain/"
+        },
+        {
+          "checked_at": "2026-08-30T00:00:00Z",
+          "description": "Official recording and underlying-text policy distinction.",
+          "url": "https://wiki.librivox.org/index.php/Recording_%26_Text_Policies"
+        }
+      ],
+      "license": {
+        "name": "PUBLIC-DOMAIN-US",
+        "notes": "LibriVox asserts public-domain status in the United States, not worldwide.",
+        "reviewed_at": "2026-08-30T00:00:00Z",
+        "url": "https://librivox.org/pages/public-domain/"
+      },
+      "media_permissions": {
+        "audio": {
+          "clip_allowed": true,
+          "derived_redistribution_allowed": true,
+          "download_allowed": true,
+          "exercise_allowed": true,
+          "redistribute_allowed": true,
+          "store_allowed": true,
+          "timestamp_allowed": true,
+          "transcript_allowed": true,
+          "transform_allowed": true
+        },
+        "text": {
+          "derived_redistribution_allowed": false,
+          "exercise_allowed": false,
+          "ingest_allowed": false,
+          "redistribute_allowed": false,
+          "store_allowed": false,
+          "transcript_allowed": false,
+          "transform_allowed": false
+        },
+        "video": {
+          "audio_extraction_allowed": false,
+          "clip_allowed": false,
+          "derived_redistribution_allowed": false,
+          "download_allowed": false,
+          "exercise_allowed": false,
+          "redistribute_allowed": false,
+          "store_allowed": false,
+          "timestamp_allowed": false,
+          "transcript_allowed": false
+        }
+      },
+      "owner": "LibriVox volunteers",
+      "permissions": {
+        "commercial_use_allowed": true,
+        "ingest_allowed": true,
+        "modify_allowed": true,
+        "redistribute_allowed": true,
+        "reference_allowed": true,
+        "store_allowed": true
+      },
+      "registered_at": "2026-08-30T00:00:00Z",
+      "registered_by": "M1 source-governance review",
+      "review_notes": "This approval is limited to U.S.-scoped recordings. Do not redistribute worldwide, use a translation, or create distributable transcripts until item and jurisdiction clearance is recorded.",
+      "reviewed_at": "2026-08-30T00:00:00Z",
+      "schema_version": "2.0",
+      "source_id": "src_librivox_us_recordings",
+      "source_name": "LibriVox public-domain recordings in the United States",
+      "source_type": "dataset",
+      "source_url": "https://librivox.org/",
+      "status": "APPROVED",
+      "technical": {
+        "official_api_available": true,
+        "official_dump_available": false,
+        "rate_limit_notes": "Respect official API and host limits.",
+        "robots_notes": "Use the official API, catalog, feeds, or source-hosted files; never use an unofficial mirror."
+      }
+    },
+    {
+      "access": {
+        "api_url": null,
+        "crawl_allowed": false,
+        "dataset_url": "https://svs.gsfc.nasa.gov/5587/",
+        "download_allowed": true,
+        "preferred_method": "official_download"
+      },
+      "attribution": {
+        "format": "Source: NASA Scientific Visualization Studio, NASA SVS ID 5587.",
+        "required": true,
+        "requirements": "Acknowledge NASA/SVS; do not imply endorsement; exclude music-bearing variants, third-party material, insignia use, and promotional or merchandise uses."
+      },
+      "content_types": [
+        "video",
+        "metadata"
+      ],
+      "description": "The silent/plain Moon Phase and Libration 2026 video variants explicitly made available by NASA SVS. Music-bearing variants and uncertain audio are excluded.",
+      "evidence": [
+        {
+          "checked_at": "2026-08-30T00:00:00Z",
+          "description": "Official NASA SVS page with plain-video variants and separate music-bearing variants.",
+          "url": "https://svs.gsfc.nasa.gov/5587/"
+        },
+        {
+          "checked_at": "2026-08-30T00:00:00Z",
+          "description": "Current NASA images and media usage guidelines.",
+          "url": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+        }
+      ],
+      "license": {
+        "name": "NASA-MEDIA-US-GOVERNMENT",
+        "notes": "NASA media is generally not copyrighted in the United States, subject to asset-level third-party, endorsement, mark, and jurisdictional restrictions.",
+        "reviewed_at": "2026-08-30T00:00:00Z",
+        "url": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+      },
+      "media_permissions": {
+        "audio": {
+          "clip_allowed": false,
+          "derived_redistribution_allowed": false,
+          "download_allowed": false,
+          "exercise_allowed": false,
+          "redistribute_allowed": false,
+          "store_allowed": false,
+          "timestamp_allowed": false,
+          "transcript_allowed": false,
+          "transform_allowed": false
+        },
+        "text": {
+          "derived_redistribution_allowed": false,
+          "exercise_allowed": false,
+          "ingest_allowed": false,
+          "redistribute_allowed": false,
+          "store_allowed": false,
+          "transcript_allowed": false,
+          "transform_allowed": false
+        },
+        "video": {
+          "audio_extraction_allowed": false,
+          "clip_allowed": true,
+          "derived_redistribution_allowed": true,
+          "download_allowed": true,
+          "exercise_allowed": true,
+          "redistribute_allowed": true,
+          "store_allowed": true,
+          "timestamp_allowed": true,
+          "transcript_allowed": false
+        }
+      },
+      "owner": "NASA Scientific Visualization Studio",
+      "permissions": {
+        "commercial_use_allowed": false,
+        "ingest_allowed": true,
+        "modify_allowed": true,
+        "redistribute_allowed": true,
+        "reference_allowed": true,
+        "store_allowed": true
+      },
+      "registered_at": "2026-08-30T00:00:00Z",
+      "registered_by": "M1 source-governance review",
+      "review_notes": "Approved as video-only. Audio extraction and transcript generation are blocked because this governance scope excludes soundtrack use and narrated variants.",
+      "reviewed_at": "2026-08-30T00:00:00Z",
+      "schema_version": "2.0",
+      "source_id": "src_nasa_svs_plain_moon_video",
+      "source_name": "NASA SVS Moon Phase and Libration plain video",
+      "source_type": "other",
+      "source_url": "https://svs.gsfc.nasa.gov/5587/",
+      "status": "APPROVED",
+      "technical": {
+        "official_api_available": false,
+        "official_dump_available": false,
+        "rate_limit_notes": "Do not bulk-download variants; respect NASA host limits.",
+        "robots_notes": "Use only the explicitly offered NASA SVS asset page and files."
+      }
+    },
+    {
+      "access": {
+        "api_url": null,
+        "crawl_allowed": false,
+        "dataset_url": "https://dumps.wikimedia.org/enwiktionary/latest/",
+        "download_allowed": true,
+        "preferred_method": "official_dump"
+      },
+      "attribution": {
+        "format": "Derived from English Wiktionary page {source_record_id}, CC BY-SA 4.0.",
+        "required": true,
+        "requirements": "Provide a page URL or equivalent author credit, identify changes, include the license notice/link, and distribute adapted text under CC BY-SA 4.0 or later."
+      },
+      "content_types": [
+        "text",
+        "metadata"
+      ],
+      "description": "English Wiktionary textual page content from official dumps, with item-level attribution, change indication, and ShareAlike obligations retained.",
+      "evidence": [
+        {
+          "checked_at": "2026-08-30T00:00:00Z",
+          "description": "Official English Wiktionary dump publication listing.",
+          "url": "https://dumps.wikimedia.org/enwiktionary/latest/"
+        },
+        {
+          "checked_at": "2026-08-30T00:00:00Z",
+          "description": "Current Wikimedia text-reuse and attribution terms.",
+          "url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use"
+        }
+      ],
+      "license": {
+        "name": "CC-BY-SA-4.0",
+        "notes": "Text is generally CC BY-SA 4.0 and GFDL; page-specific exceptions and non-text media are excluded.",
+        "reviewed_at": "2026-08-30T00:00:00Z",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/legalcode"
+      },
+      "media_permissions": {
+        "audio": {
+          "clip_allowed": false,
+          "derived_redistribution_allowed": false,
+          "download_allowed": false,
+          "exercise_allowed": false,
+          "redistribute_allowed": false,
+          "store_allowed": false,
+          "timestamp_allowed": false,
+          "transcript_allowed": false,
+          "transform_allowed": false
+        },
+        "text": {
+          "derived_redistribution_allowed": true,
+          "exercise_allowed": true,
+          "ingest_allowed": true,
+          "redistribute_allowed": true,
+          "store_allowed": true,
+          "transcript_allowed": false,
+          "transform_allowed": true
+        },
+        "video": {
+          "audio_extraction_allowed": false,
+          "clip_allowed": false,
+          "derived_redistribution_allowed": false,
+          "download_allowed": false,
+          "exercise_allowed": false,
+          "redistribute_allowed": false,
+          "store_allowed": false,
+          "timestamp_allowed": false,
+          "transcript_allowed": false
+        }
+      },
+      "owner": "Wikimedia contributors",
+      "permissions": {
+        "commercial_use_allowed": true,
+        "ingest_allowed": true,
+        "modify_allowed": true,
+        "redistribute_allowed": true,
+        "reference_allowed": true,
+        "store_allowed": true
+      },
+      "registered_at": "2026-08-30T00:00:00Z",
+      "registered_by": "M1 source-governance review",
+      "review_notes": "Approved only for text with complete CC BY-SA attribution and ShareAlike compliance.",
+      "reviewed_at": "2026-08-30T00:00:00Z",
+      "schema_version": "2.0",
+      "source_id": "src_wiktionary_en_text",
+      "source_name": "English Wiktionary official text dumps",
+      "source_type": "dump",
+      "source_url": "https://dumps.wikimedia.org/enwiktionary/",
+      "status": "APPROVED",
+      "taxonomy_reference_url_prefixes": [
+        "https://en.wiktionary.org/"
+      ],
+      "technical": {
+        "official_api_available": false,
+        "official_dump_available": true,
+        "rate_limit_notes": "Use official dump publication cadence and do not bypass host controls.",
+        "robots_notes": "Use official dump files only; do not scrape pages for bulk ingestion."
+      }
+    },
+    {
+      "access": {
+        "api_url": null,
+        "crawl_allowed": false,
+        "dataset_url": null,
+        "download_allowed": true,
+        "preferred_method": "manual_reference"
+      },
+      "attribution": {
+        "format": "Council of Europe, CEFR Companion Volume.",
+        "required": true,
+        "requirements": "Cite and link to the official source; do not copy content into project materials without separate clearance."
+      },
+      "content_types": [
+        "text",
+        "metadata"
+      ],
+      "description": "Authoritative CEFR reference material for taxonomy and coverage analysis; not a corpus.",
+      "evidence": [
+        {
+          "checked_at": "2026-08-30T00:00:00Z",
+          "description": "Official Companion Volume publication record and reproduction notice.",
+          "url": "https://rm.coe.int/common-european-framework-of-reference-for-languages-learning-teaching/16809ea0d4"
+        },
+        {
+          "checked_at": "2026-08-30T00:00:00Z",
+          "description": "Council of Europe copyright, licensing, and permissions policy.",
+          "url": "https://www.coe.int/en/web/portal/copyright-licensing-permissions"
+        }
+      ],
+      "license": {
+        "name": "COE-PROPRIETARY-LIMITED-EXCERPT",
+        "notes": "Citation is allowed; excerpts and reproduction remain limited by publication and permissions terms.",
+        "reviewed_at": "2026-08-30T00:00:00Z",
+        "url": "https://www.coe.int/en/web/portal/copyright-licensing-permissions"
+      },
+      "media_permissions": {
+        "audio": {
+          "clip_allowed": false,
+          "derived_redistribution_allowed": false,
+          "download_allowed": false,
+          "exercise_allowed": false,
+          "redistribute_allowed": false,
+          "store_allowed": false,
+          "timestamp_allowed": false,
+          "transcript_allowed": false,
+          "transform_allowed": false
+        },
+        "text": {
+          "derived_redistribution_allowed": false,
+          "exercise_allowed": false,
+          "ingest_allowed": false,
+          "redistribute_allowed": false,
+          "store_allowed": false,
+          "transcript_allowed": false,
+          "transform_allowed": false
+        },
+        "video": {
+          "audio_extraction_allowed": false,
+          "clip_allowed": false,
+          "derived_redistribution_allowed": false,
+          "download_allowed": false,
+          "exercise_allowed": false,
+          "redistribute_allowed": false,
+          "store_allowed": false,
+          "timestamp_allowed": false,
+          "transcript_allowed": false
+        }
+      },
+      "owner": "Council of Europe",
+      "permissions": {
+        "commercial_use_allowed": false,
+        "ingest_allowed": false,
+        "modify_allowed": false,
+        "redistribute_allowed": false,
+        "reference_allowed": true,
+        "store_allowed": false
+      },
+      "registered_at": "2026-08-30T00:00:00Z",
+      "registered_by": "M1 source-governance review",
+      "review_notes": "REFERENCE_ONLY. Limited excerpts do not authorize corpus extraction, descriptor-bank reproduction, or translation.",
+      "reviewed_at": "2026-08-30T00:00:00Z",
+      "schema_version": "2.0",
+      "source_id": "src_cefr_companion_volume",
+      "source_name": "Council of Europe CEFR Companion Volume",
+      "source_type": "other",
+      "source_url": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-companion-volume-and-its-language-versions",
+      "status": "REFERENCE_ONLY",
+      "taxonomy_reference_url_prefixes": [
+        "https://www.coe.int/en/web/common-european-framework-reference-languages"
+      ],
+      "technical": {
+        "official_api_available": false,
+        "official_dump_available": false,
+        "rate_limit_notes": "No automated collection is authorized by this governance record.",
+        "robots_notes": "Reference manually or use authorized official downloads only; no crawling."
+      }
+    },
+    {
+      "access": {
+        "api_url": null,
+        "crawl_allowed": false,
+        "dataset_url": null,
+        "download_allowed": false,
+        "preferred_method": "manual_reference"
+      },
+      "attribution": {
+        "format": "Osburne, A. G. (1996), Applied Linguistics 17(2), ERIC EJ527841.",
+        "required": true,
+        "requirements": "Cite the case study accurately and retain its single-participant limitation; do not reproduce article wording or imply a population-wide finding."
+      },
+      "content_types": [
+        "text",
+        "metadata"
+      ],
+      "description": "Bibliographic locator for a 1996 Applied Linguistics case study of one Vietnamese speaker, registered only to support a narrow, qualified research citation.",
+      "evidence": [
+        {
+          "checked_at": "2026-09-02T17:48:47Z",
+          "description": "Official ERIC bibliographic record identifying the title, author, journal, date, and case-study scope.",
+          "url": "https://eric.ed.gov/?id=EJ527841"
+        },
+        {
+          "checked_at": "2026-09-02T17:48:47Z",
+          "description": "Official Applied Linguistics terms requiring permission for reuse beyond applicable exceptions.",
+          "url": "https://academic.oup.com/applij/pages/Terms_and_Conditions"
+        }
+      ],
+      "license": {
+        "name": "ALL-RIGHTS-RESERVED-REFERENCE-ONLY",
+        "notes": "No open reuse license was identified. Citation is permitted, but copying, adaptation, ingestion, storage, and redistribution are not authorized here.",
+        "reviewed_at": "2026-09-02T17:48:47Z",
+        "url": "https://academic.oup.com/applij/pages/Terms_and_Conditions"
+      },
+      "media_permissions": {
+        "audio": {
+          "clip_allowed": false,
+          "derived_redistribution_allowed": false,
+          "download_allowed": false,
+          "exercise_allowed": false,
+          "redistribute_allowed": false,
+          "store_allowed": false,
+          "timestamp_allowed": false,
+          "transcript_allowed": false,
+          "transform_allowed": false
+        },
+        "text": {
+          "derived_redistribution_allowed": false,
+          "exercise_allowed": false,
+          "ingest_allowed": false,
+          "redistribute_allowed": false,
+          "store_allowed": false,
+          "transcript_allowed": false,
+          "transform_allowed": false
+        },
+        "video": {
+          "audio_extraction_allowed": false,
+          "clip_allowed": false,
+          "derived_redistribution_allowed": false,
+          "download_allowed": false,
+          "exercise_allowed": false,
+          "redistribute_allowed": false,
+          "store_allowed": false,
+          "timestamp_allowed": false,
+          "transcript_allowed": false
+        }
+      },
+      "owner": "Andrea G. Osburne / Oxford University Press",
+      "permissions": {
+        "commercial_use_allowed": false,
+        "ingest_allowed": false,
+        "modify_allowed": false,
+        "redistribute_allowed": false,
+        "reference_allowed": true,
+        "store_allowed": false
+      },
+      "registered_at": "2026-09-02T17:48:47Z",
+      "registered_by": "M5 review-scope remediation",
+      "review_notes": "REFERENCE_ONLY. The taxonomy may retain a narrow paraphrased citation with explicit uncertainty; no article payload may enter ingestion or generated materials.",
+      "reviewed_at": "2026-09-02T17:48:47Z",
+      "schema_version": "2.0",
+      "source_id": "src_eric_ej527841",
+      "source_name": "Final Cluster Reduction in English L2 Speech (ERIC EJ527841)",
+      "source_type": "other",
+      "source_url": "https://eric.ed.gov/?id=EJ527841",
+      "status": "REFERENCE_ONLY",
+      "taxonomy_reference_url_prefixes": [
+        "https://eric.ed.gov/?id=EJ527841"
+      ],
+      "technical": {
+        "official_api_available": false,
+        "official_dump_available": false,
+        "rate_limit_notes": "No automated collection is authorized by this governance record.",
+        "robots_notes": "Reference manually or use authorized official downloads only; no crawling."
+      }
+    },
+    {
+      "access": {
+        "api_url": null,
+        "crawl_allowed": false,
+        "dataset_url": null,
+        "download_allowed": false,
+        "preferred_method": "manual_reference"
+      },
+      "attribution": {
+        "format": "Council of Europe, CEFR Companion Volume.",
+        "required": true,
+        "requirements": "Cite and link to the official source; do not copy content into project materials without separate clearance."
+      },
+      "content_types": [
+        "text",
+        "metadata"
+      ],
+      "description": "Online English-level reference resource with unresolved reuse and automated-access permissions.",
+      "evidence": [
+        {
+          "checked_at": "2026-08-30T00:00:00Z",
+          "description": "Official EVP terms location; usable extraction/reuse permission was not verified.",
+          "url": "https://englishprofile.org/?menu=evp-terms-of-use"
+        },
+        {
+          "checked_at": "2026-08-30T00:00:00Z",
+          "description": "Official online profile resource page.",
+          "url": "https://englishprofile.org/?menu=english-vocabulary-profile"
+        }
+      ],
+      "license": {
+        "name": "UNKNOWN",
+        "notes": "No current official bulk-extraction or redistribution permission was verified.",
+        "reviewed_at": "2026-08-30T00:00:00Z",
+        "url": null
+      },
+      "media_permissions": {
+        "audio": {
+          "clip_allowed": false,
+          "derived_redistribution_allowed": false,
+          "download_allowed": false,
+          "exercise_allowed": false,
+          "redistribute_allowed": false,
+          "store_allowed": false,
+          "timestamp_allowed": false,
+          "transcript_allowed": false,
+          "transform_allowed": false
+        },
+        "text": {
+          "derived_redistribution_allowed": false,
+          "exercise_allowed": false,
+          "ingest_allowed": false,
+          "redistribute_allowed": false,
+          "store_allowed": false,
+          "transcript_allowed": false,
+          "transform_allowed": false
+        },
+        "video": {
+          "audio_extraction_allowed": false,
+          "clip_allowed": false,
+          "derived_redistribution_allowed": false,
+          "download_allowed": false,
+          "exercise_allowed": false,
+          "redistribute_allowed": false,
+          "store_allowed": false,
+          "timestamp_allowed": false,
+          "transcript_allowed": false
+        }
+      },
+      "owner": "Cambridge University Press & Assessment / English Profile",
+      "permissions": {
+        "commercial_use_allowed": false,
+        "ingest_allowed": false,
+        "modify_allowed": false,
+        "redistribute_allowed": false,
+        "reference_allowed": true,
+        "store_allowed": false
+      },
+      "registered_at": "2026-08-30T00:00:00Z",
+      "registered_by": "M1 source-governance review",
+      "review_notes": "QUARANTINED because public access does not establish copying, API, dataset, or redistribution rights.",
+      "reviewed_at": "2026-08-30T00:00:00Z",
+      "schema_version": "2.0",
+      "source_id": "src_english_profile_evp",
+      "source_name": "English Profile English Vocabulary Profile",
+      "source_type": "other",
+      "source_url": "https://englishprofile.org/?menu=english-vocabulary-profile",
+      "status": "QUARANTINED",
+      "technical": {
+        "official_api_available": false,
+        "official_dump_available": false,
+        "rate_limit_notes": "No automated collection is authorized by this governance record.",
+        "robots_notes": "Reference manually or use authorized official downloads only; no crawling."
+      }
+    },
+    {
+      "access": {
+        "api_url": null,
+        "crawl_allowed": false,
+        "dataset_url": null,
+        "download_allowed": true,
+        "preferred_method": "manual_reference"
+      },
+      "attribution": {
+        "format": "Council of Europe, CEFR Companion Volume.",
+        "required": true,
+        "requirements": "Cite and link to the official source; do not copy content into project materials without separate clearance."
+      },
+      "content_types": [
+        "text",
+        "audio",
+        "video",
+        "metadata"
+      ],
+      "description": "Public Cambridge examination specifications and preparation materials used only as exam-specific references.",
+      "evidence": [
+        {
+          "checked_at": "2026-08-30T00:00:00Z",
+          "description": "Official Cambridge regulations and copyright position for examination materials.",
+          "url": "https://support.cambridgeenglish.org/hc/en-gb/articles/11821760782610-Cambridge-English-Regulations"
+        },
+        {
+          "checked_at": "2026-08-30T00:00:00Z",
+          "description": "Current Cambridge website terms.",
+          "url": "https://www.cambridge.org/legal/website-terms-of-use"
+        }
+      ],
+      "license": {
+        "name": "CAMBRIDGE-PROPRIETARY-PERSONAL-NONCOMMERCIAL",
+        "notes": "Public download/access does not grant corpus extraction, adaptation, redistribution, or product use.",
+        "reviewed_at": "2026-08-30T00:00:00Z",
+        "url": "https://www.cambridge.org/legal/website-terms-of-use"
+      },
+      "media_permissions": {
+        "audio": {
+          "clip_allowed": false,
+          "derived_redistribution_allowed": false,
+          "download_allowed": false,
+          "exercise_allowed": false,
+          "redistribute_allowed": false,
+          "store_allowed": false,
+          "timestamp_allowed": false,
+          "transcript_allowed": false,
+          "transform_allowed": false
+        },
+        "text": {
+          "derived_redistribution_allowed": false,
+          "exercise_allowed": false,
+          "ingest_allowed": false,
+          "redistribute_allowed": false,
+          "store_allowed": false,
+          "transcript_allowed": false,
+          "transform_allowed": false
+        },
+        "video": {
+          "audio_extraction_allowed": false,
+          "clip_allowed": false,
+          "derived_redistribution_allowed": false,
+          "download_allowed": false,
+          "exercise_allowed": false,
+          "redistribute_allowed": false,
+          "store_allowed": false,
+          "timestamp_allowed": false,
+          "transcript_allowed": false
+        }
+      },
+      "owner": "Cambridge University Press & Assessment",
+      "permissions": {
+        "commercial_use_allowed": false,
+        "ingest_allowed": false,
+        "modify_allowed": false,
+        "redistribute_allowed": false,
+        "reference_allowed": true,
+        "store_allowed": false
+      },
+      "registered_at": "2026-08-30T00:00:00Z",
+      "registered_by": "M1 source-governance review",
+      "review_notes": "REFERENCE_ONLY. Do not treat free samples, printable pages, or exam alignment as a general content license.",
+      "reviewed_at": "2026-08-30T00:00:00Z",
+      "schema_version": "2.0",
+      "source_id": "src_cambridge_public_specifications",
+      "source_name": "Cambridge English public specifications and sample materials",
+      "source_type": "other",
+      "source_url": "https://www.cambridgeenglish.org/exams-and-tests/qualifications/",
+      "status": "REFERENCE_ONLY",
+      "technical": {
+        "official_api_available": false,
+        "official_dump_available": false,
+        "rate_limit_notes": "No automated collection is authorized by this governance record.",
+        "robots_notes": "Reference manually or use authorized official downloads only; no crawling."
+      }
+    },
+    {
+      "access": {
+        "api_url": null,
+        "crawl_allowed": false,
+        "dataset_url": null,
+        "download_allowed": false,
+        "preferred_method": "manual_reference"
+      },
+      "attribution": {
+        "format": "Council of Europe, CEFR Companion Volume.",
+        "required": true,
+        "requirements": "Cite and link to the official source; do not copy content into project materials without separate clearance."
+      },
+      "content_types": [
+        "text",
+        "audio",
+        "video",
+        "transcript",
+        "metadata"
+      ],
+      "description": "Public British Council reference resources with item-specific and generally restrictive reuse rights.",
+      "evidence": [
+        {
+          "checked_at": "2026-08-30T00:00:00Z",
+          "description": "Official LearnEnglish legal terms.",
+          "url": "https://learnenglish.britishcouncil.org/legal"
+        },
+        {
+          "checked_at": "2026-08-30T00:00:00Z",
+          "description": "Official resource-specific download and copyright limitations.",
+          "url": "https://learnenglishkids.britishcouncil.org/frequently-asked-questions"
+        }
+      ],
+      "license": {
+        "name": "BRITISH-COUNCIL-ITEM-SPECIFIC",
+        "notes": "Some items may carry distinct licenses, but no source-wide ingestion license was verified.",
+        "reviewed_at": "2026-08-30T00:00:00Z",
+        "url": "https://learnenglish.britishcouncil.org/legal"
+      },
+      "media_permissions": {
+        "audio": {
+          "clip_allowed": false,
+          "derived_redistribution_allowed": false,
+          "download_allowed": false,
+          "exercise_allowed": false,
+          "redistribute_allowed": false,
+          "store_allowed": false,
+          "timestamp_allowed": false,
+          "transcript_allowed": false,
+          "transform_allowed": false
+        },
+        "text": {
+          "derived_redistribution_allowed": false,
+          "exercise_allowed": false,
+          "ingest_allowed": false,
+          "redistribute_allowed": false,
+          "store_allowed": false,
+          "transcript_allowed": false,
+          "transform_allowed": false
+        },
+        "video": {
+          "audio_extraction_allowed": false,
+          "clip_allowed": false,
+          "derived_redistribution_allowed": false,
+          "download_allowed": false,
+          "exercise_allowed": false,
+          "redistribute_allowed": false,
+          "store_allowed": false,
+          "timestamp_allowed": false,
+          "transcript_allowed": false
+        }
+      },
+      "owner": "British Council",
+      "permissions": {
+        "commercial_use_allowed": false,
+        "ingest_allowed": false,
+        "modify_allowed": false,
+        "redistribute_allowed": false,
+        "reference_allowed": true,
+        "store_allowed": false
+      },
+      "registered_at": "2026-08-30T00:00:00Z",
+      "registered_by": "M1 source-governance review",
+      "review_notes": "REFERENCE_ONLY unless a separately registered item carries an independently verified license.",
+      "reviewed_at": "2026-08-30T00:00:00Z",
+      "schema_version": "2.0",
+      "source_id": "src_british_council_public_resources",
+      "source_name": "British Council public English-learning resources",
+      "source_type": "other",
+      "source_url": "https://learnenglish.britishcouncil.org/",
+      "status": "REFERENCE_ONLY",
+      "technical": {
+        "official_api_available": false,
+        "official_dump_available": false,
+        "rate_limit_notes": "No automated collection is authorized by this governance record.",
+        "robots_notes": "Reference manually or use authorized official downloads only; no crawling."
+      }
+    },
+    {
+      "access": {
+        "api_url": null,
+        "crawl_allowed": false,
+        "dataset_url": null,
+        "download_allowed": false,
+        "preferred_method": "manual_reference"
+      },
+      "attribution": {
+        "format": "Council of Europe, CEFR Companion Volume.",
+        "required": true,
+        "requirements": "Cite and link to the official source; do not copy content into project materials without separate clearance."
+      },
+      "content_types": [
+        "text",
+        "audio",
+        "video",
+        "transcript",
+        "metadata"
+      ],
+      "description": "VOA Learning English pages may mix exclusively VOA-produced public-domain material with agency, licensed, music, photograph, video, and other third-party components.",
+      "evidence": [
+        {
+          "checked_at": "2026-08-30T00:00:00Z",
+          "description": "Current VOA policy distinguishing exclusively produced material from third-party content.",
+          "url": "https://learningenglish.voanews.com/p/6021.html"
+        },
+        {
+          "checked_at": "2026-08-30T00:00:00Z",
+          "description": "Official VOA usage-request and distribution policy.",
+          "url": "https://www.insidevoa.com/p/5719.html"
+        }
+      ],
+      "license": {
+        "name": "UNKNOWN",
+        "notes": "No source-wide uniform license exists because rights are asset and component specific.",
+        "reviewed_at": "2026-08-30T00:00:00Z",
+        "url": null
+      },
+      "media_permissions": {
+        "audio": {
+          "clip_allowed": false,
+          "derived_redistribution_allowed": false,
+          "download_allowed": false,
+          "exercise_allowed": false,
+          "redistribute_allowed": false,
+          "store_allowed": false,
+          "timestamp_allowed": false,
+          "transcript_allowed": false,
+          "transform_allowed": false
+        },
+        "text": {
+          "derived_redistribution_allowed": false,
+          "exercise_allowed": false,
+          "ingest_allowed": false,
+          "redistribute_allowed": false,
+          "store_allowed": false,
+          "transcript_allowed": false,
+          "transform_allowed": false
+        },
+        "video": {
+          "audio_extraction_allowed": false,
+          "clip_allowed": false,
+          "derived_redistribution_allowed": false,
+          "download_allowed": false,
+          "exercise_allowed": false,
+          "redistribute_allowed": false,
+          "store_allowed": false,
+          "timestamp_allowed": false,
+          "transcript_allowed": false
+        }
+      },
+      "owner": "Voice of America / U.S. Agency for Global Media",
+      "permissions": {
+        "commercial_use_allowed": false,
+        "ingest_allowed": false,
+        "modify_allowed": false,
+        "redistribute_allowed": false,
+        "reference_allowed": true,
+        "store_allowed": false
+      },
+      "registered_at": "2026-08-30T00:00:00Z",
+      "registered_by": "M1 source-governance review",
+      "review_notes": "QUARANTINED as a source-level corpus. A future asset-level record needs affirmative proof that every retained component is exclusively VOA-produced and all distribution rules are met.",
+      "reviewed_at": "2026-08-30T00:00:00Z",
+      "schema_version": "2.0",
+      "source_id": "src_voa_learning_english",
+      "source_name": "VOA Learning English mixed-media pages",
+      "source_type": "other",
+      "source_url": "https://learningenglish.voanews.com/",
+      "status": "QUARANTINED",
+      "technical": {
+        "official_api_available": false,
+        "official_dump_available": false,
+        "rate_limit_notes": "No automated collection is authorized by this governance record.",
+        "robots_notes": "Reference manually or use authorized official downloads only; no crawling."
+      }
+    },
+    {
+      "access": {
+        "api_url": "https://api.tatoeba.org/",
+        "crawl_allowed": false,
+        "dataset_url": "https://tatoeba.org/en/downloads",
+        "download_allowed": false,
+        "preferred_method": "official_download"
+      },
+      "attribution": {
+        "format": "Council of Europe, CEFR Companion Volume.",
+        "required": true,
+        "requirements": "Cite and link to the official source; do not copy content into project materials without separate clearance."
+      },
+      "content_types": [
+        "audio",
+        "metadata"
+      ],
+      "description": "Tatoeba audio records with a blank, unknown, or offsite-prohibited license field.",
+      "evidence": [
+        {
+          "checked_at": "2026-08-30T00:00:00Z",
+          "description": "Official download documentation describes record-level audio license and attribution fields.",
+          "url": "https://tatoeba.org/en/downloads"
+        }
+      ],
+      "license": {
+        "name": "UNKNOWN",
+        "notes": "Official audio metadata may state that a recording cannot be reused outside Tatoeba.",
+        "reviewed_at": "2026-08-30T00:00:00Z",
+        "url": null
+      },
+      "media_permissions": {
+        "audio": {
+          "clip_allowed": false,
+          "derived_redistribution_allowed": false,
+          "download_allowed": false,
+          "exercise_allowed": false,
+          "redistribute_allowed": false,
+          "store_allowed": false,
+          "timestamp_allowed": false,
+          "transcript_allowed": false,
+          "transform_allowed": false
+        },
+        "text": {
+          "derived_redistribution_allowed": false,
+          "exercise_allowed": false,
+          "ingest_allowed": false,
+          "redistribute_allowed": false,
+          "store_allowed": false,
+          "transcript_allowed": false,
+          "transform_allowed": false
+        },
+        "video": {
+          "audio_extraction_allowed": false,
+          "clip_allowed": false,
+          "derived_redistribution_allowed": false,
+          "download_allowed": false,
+          "exercise_allowed": false,
+          "redistribute_allowed": false,
+          "store_allowed": false,
+          "timestamp_allowed": false,
+          "transcript_allowed": false
+        }
+      },
+      "owner": "Individual Tatoeba audio contributors",
+      "permissions": {
+        "commercial_use_allowed": false,
+        "ingest_allowed": false,
+        "modify_allowed": false,
+        "redistribute_allowed": false,
+        "reference_allowed": true,
+        "store_allowed": false
+      },
+      "registered_at": "2026-08-30T00:00:00Z",
+      "registered_by": "M1 source-governance review",
+      "review_notes": "QUARANTINED. Attribution is not a substitute for an affirmative offsite-use license.",
+      "reviewed_at": "2026-08-30T00:00:00Z",
+      "schema_version": "2.0",
+      "source_id": "src_tatoeba_audio_unknown",
+      "source_name": "Tatoeba audio without an offsite-use license",
+      "source_type": "dataset",
+      "source_url": "https://tatoeba.org/en/downloads",
+      "status": "QUARANTINED",
+      "technical": {
+        "official_api_available": true,
+        "official_dump_available": true,
+        "rate_limit_notes": "No project request is authorized for quarantined recordings.",
+        "robots_notes": "Do not retrieve records for project use without an affirmative record-level license."
+      }
+    }
+  ]
+}

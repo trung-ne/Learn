@@ -1,0 +1,41 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "explanation",
+        "title": "Connect old and new",
+        "body_text": "Use a present-simple fact and a past event: I study here. Yesterday I ran home. Ask politely when you need help.",
+        "embedded_examples": [
+          "concept_present_simple",
+          "concept_function_request_help",
+          "vocab_en_run_001",
+          "concept_pronunciation_syllables"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "dialogue",
+        "title": "Personal information",
+        "body_text": "A: Do you study here? B: Yes. Could you help me find room two? A: Of course.",
+        "embedded_examples": [
+          "concept_topic_personal_information",
+          "concept_function_request_help"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "a1c9862dbf20c5d35156a83f52515087645c54edf3052393efb708db99a3ff9c",
+  "response_sha256": "3158e9a8683a6b03aebfd181129dd98e7502939c17f6033e71b153fe4479bac0",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-terra",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T12:30:00Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

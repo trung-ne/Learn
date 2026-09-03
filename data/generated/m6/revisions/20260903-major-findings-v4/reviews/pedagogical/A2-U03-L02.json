@@ -1,0 +1,96 @@
+{
+  "ai_review_id": "m6aireview_8ac4d84f0cff3f8d7517228f7e855758bbf894168a31ff63a0d3731ab4e17e9f",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "8a255e1a6fced22e7dcbc8da696294d3e7797f34c3b2f16f2f963006b097c01a",
+  "checklist": [
+    {
+      "criterion": "CLARITY",
+      "notes": "The station chronology, three target facts, roles, and listening questions are clearly stated.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "COGNITIVE_LOAD",
+      "notes": "One short story, one request, and a repeated three-fact key remain manageable within 35 minutes.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "COHERENCE",
+      "notes": "The request-pragmatics explanation names contextual variables but neither models nor practices their effect, leaving a stated unit strand disconnected from the task sequence.",
+      "result": "FAIL"
+    },
+    {
+      "criterion": "OBJECTIVE_ALIGNMENT",
+      "notes": "Narration and mediation are practiced, but socially suitable request choice is only asserted through general factors; the learner receives one staff-facing form and no contrasting situation or observable choice task.",
+      "result": "FAIL"
+    },
+    {
+      "criterion": "PROGRESSION",
+      "notes": "The consolidation deepens the station scenario and mediation but does not deliver the announced progression from one request model to comparing socially suitable choices.",
+      "result": "FAIL"
+    },
+    {
+      "criterion": "TEACHABILITY",
+      "notes": "The preceding lesson promises comparison of request choices here, yet this lesson supplies no contrasting request forms or guided comparison from which a learner could infer how person, request size, or urgency changes wording.",
+      "result": "FAIL"
+    },
+    {
+      "criterion": "VIETNAMESE_LEARNER_RELEVANCE",
+      "notes": "Concrete word-stress support is useful and no universal learner deficit is asserted.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Inspected only the supplied audit provenance declarations and project-authored snapshot-bound context; no external comparison was performed."
+    ],
+    "result": "NOT_PERFORMED",
+    "scope_limitations": "No external source, corpus, web, or plagiarism search was performed; this record makes no external originality or copyright claim."
+  },
+  "decision": "NEEDS_REVISION",
+  "findings": [
+    {
+      "category": "PEDAGOGICAL_SOUNDNESS",
+      "description": "A2-U03-L01 explicitly defers comparison of request choices to this consolidation lesson, but A2-U03-L02 repeats one polite staff request and only states that person, request size, and urgency matter. It gives no contrasting forms, situations, or decision check, so learners cannot learn or demonstrate socially suitable choice.",
+      "recommendation": "Within authorized scope, model at least one bounded contrast and require the learner to select or adapt a request for clearly different interlocutor/request conditions, with an observable rationale or key; do not add M7 exercises.",
+      "severity": "MAJOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "A2-U03-L02",
+  "lesson_sha256": "a76e7a0211782452853c146b0dad80b3722ff4fd944db322a18a0c357aa9efb7",
+  "limitations": [
+    "AI pedagogical development review only; this is not human review, release approval, certification, or public-release evidence.",
+    "The review used only the exact v4 lesson, its automated audit, and snapshot-bound M5 context; generator reasoning and prior review decisions were not used as evaluation evidence.",
+    "M6 intentionally contains no M7 exercises; exercises: [] was not treated as a defect, while staging, bounded practice, and self-check instructions inside content_sections were assessed.",
+    "No external plagiarism, copyright, corpus, learner, classroom, or audio-acoustic validation was performed.",
+    "The runtime reported reviewer model gpt-5.6-sol; no reviewer provider or inference parameters were reported, so provider is UNKNOWN and parameters are empty.",
+    "response.sha256 binds canonical JSON containing decision, checklist, findings, copyright_originality_check, and limitations exactly as persisted in this record."
+  ],
+  "record_type": "lesson_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {},
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "e4c5868a1e2c9aa45c32fdf69c6a46720dd745e32cfce3be0861bd9dcc432864"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "sha256": "697eca21c5c701748f1c0dc13771768c93357f3ebb30d55ea9d11840c201be4e",
+    "version": "build_ai_review_prompt-v1"
+  },
+  "review_role": "PEDAGOGICAL_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T07:29:16Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0",
+  "snapshot_binding": {
+    "bundle_sha256": "79301a37b0821fcd2cc077021db318b0a201771b9727ad08be071fc076cdb027",
+    "member_hashes": {
+      "manifest": "1436c433163765410282fffdddea1bed616feb372270a47d99bebb7193e8d296",
+      "snapshot": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f",
+      "source_registry": "1270284517c3d47e4467310ad32e7431dc0aa3cfbce0edb07e4fedc9bc347435"
+    },
+    "snapshot_id": "m5devsnapshot_5335d3a30ab9f4948e22558aa7fc755857c09dff4ef305c95d171e3ebc718c72",
+    "snapshot_sha256": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f"
+  }
+}

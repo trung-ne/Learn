@@ -11,7 +11,14 @@ import yaml
 
 from english_master.curriculum_review.loading import load_strict_bundle, load_strict_document
 from english_master.curriculum_review.storage import AtomicPublishError, PostCommitDurabilityError, publish_bundle
-from english_master.curriculum_review.workflow import ReviewValidationError, build_manifest, publish_approval, verify_snapshot_bundle
+from english_master.curriculum_review.workflow import (
+    ReviewValidationError,
+    build_manifest,
+    publish_approval,
+    publish_development_snapshot,
+    verify_development_snapshot_bundle,
+    verify_snapshot_bundle,
+)
 from english_master.schema_validation import SchemaValidationError
 
 
@@ -49,6 +56,16 @@ def build_parser() -> argparse.ArgumentParser:
     _bundle_arguments(verify)
     verify.add_argument("--snapshot", type=Path, required=True, help="Published approval bundle directory")
     verify.add_argument("--reviewer-registry", type=Path, required=True, help="Independently loaded trusted reviewer identity registry")
+    develop_publish = commands.add_parser("develop-publish", help="Publish a deterministic M5 development-only snapshot")
+    _bundle_arguments(develop_publish)
+    develop_publish.add_argument("--manifest", type=Path, required=True)
+    develop_publish.add_argument("--produced-at", required=True, help="Trusted ISO 8601 tool execution timestamp")
+    develop_publish.add_argument("--tool-version", default="3.0")
+    develop_publish.add_argument("--git-commit", help="Optional current Git commit hash")
+    develop_publish.add_argument("--output", type=Path, required=True, help="New immutable development snapshot directory")
+    develop_verify = commands.add_parser("develop-verify", help="Verify an M5 development-only snapshot")
+    _bundle_arguments(develop_verify)
+    develop_verify.add_argument("--snapshot", type=Path, required=True)
     return parser
 
 
@@ -98,6 +115,21 @@ def main(argv: list[str] | None = None) -> int:
                 published_by=arguments.published_by,
             )
             print(f"Published M5 approval snapshot {snapshot['snapshot_id']}: {arguments.output}")
+            return 0
+        if arguments.command == "develop-publish":
+            manifest = load_strict_document(arguments.manifest)
+            snapshot = publish_development_snapshot(
+                arguments.output, bundle, manifest, source_registry=source_registry,
+                source_registry_path=source_registry_path, produced_at=arguments.produced_at,
+                tool_version=arguments.tool_version, git_commit=arguments.git_commit,
+            )
+            print(f"Published M5 development snapshot {snapshot['snapshot_id']}: {arguments.output}")
+            return 0
+        if arguments.command == "develop-verify":
+            snapshot = verify_development_snapshot_bundle(
+                arguments.snapshot, bundle, source_registry=source_registry, source_registry_path=source_registry_path,
+            )
+            print(f"Verified M5 development snapshot {snapshot['snapshot_id']}: {arguments.snapshot}")
             return 0
         reviewer_registry = load_strict_document(arguments.reviewer_registry)
         snapshot = verify_snapshot_bundle(

@@ -1,0 +1,102 @@
+{
+  "ai_review_id": "m6aireview_7ec327ed616c9c35e8c8b238ccc834e224e98952cb693f8ed24d936eef5a8bb0",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "06272a6284a167f21d4a4854b04420901cf96e1daa638470fbfe2db77dc0d7ad",
+  "checklist": [
+    {
+      "criterion": "CLARITY",
+      "notes": "The timeline, request-response matching, sequence markers, contrastive prominence, and final checklist are easy to follow.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "COGNITIVE_LOAD",
+      "notes": "The four-part account is tightly constrained and uses previously introduced language.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "COHERENCE",
+      "notes": "The movement/request narrative integrates well, but the lesson does not realize the allocated mediation skill and cannot realize the lexical-combination objective under its own forbidden scope.",
+      "result": "FAIL"
+    },
+    {
+      "criterion": "OBJECTIVE_ALIGNMENT",
+      "notes": "Sequence and information focus are practiced, but lexical combinations are omitted; mediation is declared as a skill/dimension without any transfer of meaning for another person.",
+      "result": "FAIL"
+    },
+    {
+      "criterion": "PROGRESSION",
+      "notes": "Retrieval precedes a model, ordered retelling, focus manipulation, and independent recording.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "TEACHABILITY",
+      "notes": "The model and final observable conditions support viable self-study rehearsal and checking.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "VIETNAMESE_LEARNER_RELEVANCE",
+      "notes": "Recording and explicit prominence cues provide individualized support without stereotyping; no relevant supplied annotation is contradicted.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Inspected only the supplied audit provenance declarations and project-authored authoritative context; no external comparison was performed."
+    ],
+    "result": "NOT_PERFORMED",
+    "scope_limitations": "No external source, corpus, web, or plagiarism search was permitted or performed; this record makes no external originality or copyright claim."
+  },
+  "decision": "NEEDS_REVISION",
+  "findings": [
+    {
+      "category": "M5_ALLOCATION",
+      "description": "The objective requires ‘lexical combinations,’ but concept_collocation_make_decision is neither allocated nor review-authorized and is explicitly forbidden, so the lesson necessarily omits that objective component.",
+      "recommendation": "Correct the M5 objective/allocation or explicitly allocate the collocation for review before regenerating.",
+      "severity": "MAJOR"
+    },
+    {
+      "category": "M5_SKILL_REALIZATION",
+      "description": "Mediation is listed as an authoritative skill/dimension, yet both speakers are direct participants and no learner transfers information for another person.",
+      "recommendation": "Add an authorized recipient/source-information mediation step or remove mediation from the M5 allocation.",
+      "severity": "MAJOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "A2-U04-L02",
+  "lesson_sha256": "437b488a234ca66cf9595f5467dc27ca62276c8de8032c3155dbde2868ff059c",
+  "limitations": [
+    "AI pedagogical development review only; this is not human review, release approval, certification, or public-release evidence.",
+    "The review used only the exact lesson, audit, deterministic authoritative request rebuilt from the verified M5 development snapshot, and snapshot-bound M5 context; generator reasoning and prior reviews were not inspected.",
+    "M6 intentionally contains no M7 exercises; exercises: [] was not treated as a defect, while the staging and viability of practice and self-check instructions inside content_sections were assessed.",
+    "No external plagiarism, copyright, corpus, learner, classroom, or audio-acoustic validation was performed.",
+    "The runtime reported reviewer model gpt-5.6-sol; no reviewer provider or inference parameters were reported, so provider is UNKNOWN and parameters are empty.",
+    "response.sha256 binds canonical JSON containing decision, checklist, findings, copyright_originality_check, and limitations exactly as persisted in this record."
+  ],
+  "record_type": "lesson_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {},
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "2aaa02774779bda686ede8b54bab7560d61d753d4dc8a130020483e29e95986b"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "sha256": "93a90073529eb85e2d722d9c9555f0929490103d39c5cb3e0ab70def34c42fff",
+    "version": "build_ai_review_prompt-v1"
+  },
+  "review_role": "PEDAGOGICAL_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T06:47:17Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0",
+  "snapshot_binding": {
+    "bundle_sha256": "79301a37b0821fcd2cc077021db318b0a201771b9727ad08be071fc076cdb027",
+    "member_hashes": {
+      "manifest": "1436c433163765410282fffdddea1bed616feb372270a47d99bebb7193e8d296",
+      "snapshot": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f",
+      "source_registry": "1270284517c3d47e4467310ad32e7431dc0aa3cfbce0edb07e4fedc9bc347435"
+    },
+    "snapshot_id": "m5devsnapshot_5335d3a30ab9f4948e22558aa7fc755857c09dff4ef305c95d171e3ebc718c72",
+    "snapshot_sha256": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "explanation",
+        "title": "Compare two vowel sounds",
+        "body_text": "Spend 8 minutes on live /lɪv/ and leave /liːv/. For /ɪ/, the tongue is relaxed and slightly lower. For /iː/, it is higher and farther forward; this vowel is often longer. Change the sound and its length: stretching /ɪ/ alone does not make /iː/.",
+        "embedded_examples": [
+          "concept_pronunciation_minimal_pairs",
+          "concept_pronunciation_phonemes",
+          "concept_listening"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "dialogue",
+        "title": "Hear a natural correction",
+        "body_text": "Spend 8 minutes on this exchange. B: ‘I live here.’ A: ‘Leave here?’ B: ‘No, live here—/lɪv/, not leave /liːv/.’ A: ‘Oh, you live here.’ The one-vowel change alters the message, so B repeats the key word and gives a short, friendly correction.",
+        "embedded_examples": [
+          "concept_pronunciation_minimal_pairs",
+          "concept_spoken_interaction"
+        ]
+      },
+      {
+        "id": "section_03",
+        "section_type": "explanation",
+        "title": "Record, wait, and identify",
+        "body_text": "Spend 10 minutes making two recordings: live–leave and sit–seat, with a pause after each word. After a short break, replay them without viewing the speaking list and write the order you hear. Reveal the list to check. For errors, reset the tongue position as well as the vowel length, then record again.",
+        "embedded_examples": [
+          "concept_pronunciation_minimal_pairs",
+          "concept_listening",
+          "concept_speaking"
+        ]
+      },
+      {
+        "id": "section_04",
+        "section_type": "dialogue",
+        "title": "Use the contrast in a dialogue",
+        "body_text": "Spend 9 minutes creating four turns: state one safe detail, let the other speaker hear live as leave, correct it, and confirm. Speak both roles without reading. Success: the vowels use different tongue positions and lengths, replay identifies the intended word, and the correction is clear and friendly.",
+        "embedded_examples": [
+          "concept_pronunciation_minimal_pairs",
+          "concept_spoken_interaction"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "0037fdc9273aada40f45c9dbbadad3e3b6e4b5c478c36da1c4b15f9f5e1803b7",
+  "response_sha256": "7b2e93bd04991cf7f55365593b17bfb2a5742dc191e197eddd74035fd092ddef",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-terra",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T06:28:21Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

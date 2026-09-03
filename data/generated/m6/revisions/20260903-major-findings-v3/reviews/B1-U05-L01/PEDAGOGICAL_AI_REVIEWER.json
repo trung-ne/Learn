@@ -1,0 +1,102 @@
+{
+  "ai_review_id": "m6aireview_3ec5abda3561f6674c230369e903795d4dd1ec9945c153e06022bb06624df287",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "4fe03704a12d8a3a612f84ed42d1552ccf93205c35cbd6f2a5a943f206128709",
+  "checklist": [
+    {
+      "criterion": "CLARITY",
+      "notes": "The form, timeline, prominence, reduction, and final conditions are explicit; the claim about non-chronological mention lacks a matching example.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "COGNITIVE_LOAD",
+      "notes": "Two closely connected targets are developed through a short narrative within a realistic 35-minute load.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "COHERENCE",
+      "notes": "Past-perfect sequencing and weak forms converge in the same planned retelling, with reading, writing/planning, recording/listening, and speaking all represented.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "OBJECTIVE_ALIGNMENT",
+      "notes": "The lesson directly teaches earlier-past relationships and connected-speech reduction and requires both in the final account.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "PROGRESSION",
+      "notes": "Rule and timeline precede textual noticing, focused weak-form rehearsal, then planned and recorded free retelling.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "TEACHABILITY",
+      "notes": "Form models, arrows, two recording passes, and checks for temporal relation/prominence/word preservation make success reasonably observable.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "VIETNAMESE_LEARNER_RELEVANCE",
+      "notes": "Careful-to-reduced production and the instruction not to delete function words are constructive; an optional diagnostic for the /kt/ cluster in packed would better enact the supplied variable cluster context.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Inspected only the supplied audit provenance declarations and project-authored authoritative context; no external comparison was performed."
+    ],
+    "result": "NOT_PERFORMED",
+    "scope_limitations": "No external source, corpus, web, or plagiarism search was permitted or performed; this record makes no external originality or copyright claim."
+  },
+  "decision": "APPROVE",
+  "findings": [
+    {
+      "category": "CLARITY",
+      "description": "The text says past perfect clarifies sequence when events are mentioned in another order, but both displayed sequences put the earlier event before the later reference, so the asserted contrast is not demonstrated.",
+      "recommendation": "Add one later-event-first example, such as ‘She left after she had packed,’ and bind each past perfect to an unmistakable later anchor.",
+      "severity": "MINOR"
+    },
+    {
+      "category": "VIETNAMESE_LEARNER_RELEVANCE",
+      "description": "Packed is repeatedly used and ends in /kt/, but the supplied variable final-cluster context is not turned into an optional perception/production check.",
+      "recommendation": "Add a learner-specific diagnostic and slow build-up for /kt/ only when the recording shows reduction; avoid a blanket group claim.",
+      "severity": "MINOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "B1-U05-L01",
+  "lesson_sha256": "ef8b838323d7938de9dba2ffee034d8ce08fd7d133e8cbfa14fd4ed7ef30d4ef",
+  "limitations": [
+    "AI pedagogical development review only; this is not human review, release approval, certification, or public-release evidence.",
+    "The review used only the exact lesson, audit, deterministic authoritative request rebuilt from the verified M5 development snapshot, and snapshot-bound M5 context; generator reasoning and prior reviews were not inspected.",
+    "M6 intentionally contains no M7 exercises; exercises: [] was not treated as a defect, while the staging and viability of practice and self-check instructions inside content_sections were assessed.",
+    "No external plagiarism, copyright, corpus, learner, classroom, or audio-acoustic validation was performed.",
+    "The runtime reported reviewer model gpt-5.6-sol; no reviewer provider or inference parameters were reported, so provider is UNKNOWN and parameters are empty.",
+    "response.sha256 binds canonical JSON containing decision, checklist, findings, copyright_originality_check, and limitations exactly as persisted in this record."
+  ],
+  "record_type": "lesson_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {},
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "f6fe5c0bd8d8fca5bb290abfab25b8e8b0f6b13dc516b8a7275e99e2c7f0dea8"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "sha256": "14e8b0c61e4d0669fc89c4130947aa0fe8b5f38ee95df5147d3d37f1c5ecb36b",
+    "version": "build_ai_review_prompt-v1"
+  },
+  "review_role": "PEDAGOGICAL_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T06:47:17Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0",
+  "snapshot_binding": {
+    "bundle_sha256": "79301a37b0821fcd2cc077021db318b0a201771b9727ad08be071fc076cdb027",
+    "member_hashes": {
+      "manifest": "1436c433163765410282fffdddea1bed616feb372270a47d99bebb7193e8d296",
+      "snapshot": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f",
+      "source_registry": "1270284517c3d47e4467310ad32e7431dc0aa3cfbce0edb07e4fedc9bc347435"
+    },
+    "snapshot_id": "m5devsnapshot_5335d3a30ab9f4948e22558aa7fc755857c09dff4ef305c95d171e3ebc718c72",
+    "snapshot_sha256": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f"
+  }
+}

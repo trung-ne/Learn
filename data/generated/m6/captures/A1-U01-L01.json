@@ -1,0 +1,39 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "grammar",
+        "title": "Present simple",
+        "body_text": "Use the present simple for facts and repeated actions: I live in Hanoi. She studies English every day. Say each word clearly.",
+        "embedded_examples": [
+          "concept_present_simple",
+          "concept_pronunciation_phonemes"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "explanation",
+        "title": "Personal information",
+        "body_text": "Introduce yourself with short true sentences. Listen for the sounds at the ends of live and studies.",
+        "embedded_examples": [
+          "concept_present_simple",
+          "concept_pronunciation_phonemes"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "456481ab42895c03ea7e450a4e749edabb551ff76af490b86fd2c54181b03888",
+  "response_sha256": "7107ec01dd0c271f49bed47763325ed05b3c9b850fa4b47805db84564b96151f",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-terra",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T12:30:00Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

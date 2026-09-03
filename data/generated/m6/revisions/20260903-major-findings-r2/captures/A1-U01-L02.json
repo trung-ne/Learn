@@ -1,0 +1,61 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "explanation",
+        "title": "Hear one-sound contrasts",
+        "body_text": "A minimal pair changes one sound. Tim /tɪm/ has a short vowel; team /tiːm/ has a longer vowel. Ship /ʃɪp/ and sheep /ʃiːp/ use the same contrast. Say each pair slowly. Keep the other sounds unchanged.",
+        "embedded_examples": [
+          "concept_pronunciation_minimal_pairs",
+          "concept_pronunciation_phonemes",
+          "concept_listening"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "dialogue",
+        "title": "Use the contrast to clarify",
+        "body_text": "A: ‘Team?’ B: ‘Tim—short /ɪ/. I’m Tim.’ A: ‘Tim. Nice to meet you.’ Then: A: ‘Your job?’ B: ‘I work on a ship—short /ɪ/, not sheep /iː/.’ The sound choice matters because it changes the name or meaning.",
+        "embedded_examples": [
+          "concept_pronunciation_minimal_pairs",
+          "concept_spoken_interaction"
+        ]
+      },
+      {
+        "id": "section_03",
+        "section_type": "explanation",
+        "title": "Perceive, check, repeat",
+        "body_text": "Write the two words in each pair on separate cards. Record them in mixed order, leaving a pause. Later, play the recording without looking and point to the word you hear; reveal your speaking list to check. Re-record unclear items, making /iː/ longer without changing the final sound.",
+        "embedded_examples": [
+          "concept_pronunciation_minimal_pairs",
+          "concept_listening",
+          "concept_speaking"
+        ]
+      },
+      {
+        "id": "section_04",
+        "section_type": "dialogue",
+        "title": "Personal-information outcome",
+        "body_text": "Create a three-turn introduction using Tim or a short-/ɪ/ word connected to a job or place. Include one clarification turn, then speak both roles without reading. Success: the listener choice matches your intended word twice, the correction is polite and clear, and both speakers take a turn.",
+        "embedded_examples": [
+          "concept_pronunciation_minimal_pairs",
+          "concept_spoken_interaction"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "09025346abc9d9d6527cad789fecfadbbf77e427f321fb93be94911cb634c164",
+  "response_sha256": "b77d9c805ff770b7d32e1909b7ebc7dd48d6ba494aa8baa9352e1ab11eb8491c",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-terra",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T05:54:40Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

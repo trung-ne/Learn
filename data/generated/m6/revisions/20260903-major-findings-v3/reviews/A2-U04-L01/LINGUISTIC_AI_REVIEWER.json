@@ -1,0 +1,103 @@
+{
+  "ai_review_id": "m6aireview_9862faff33786b853dd46ad6b01325d09f3e1bba7023470b7c969a933c3b85db",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "09ab2c8d14c0705d92e5eb07992e80c60af3e4e825852e3998486b17522accbe",
+  "checklist": [
+    {
+      "criterion": "CEFR_ALIGNMENT",
+      "notes": "The narrative and contrast examples can support A2.2, but essential directions use unsupported abstract wording such as ‘bounded events’, ‘conventionally combines’, ‘relative prominence’, ‘intended contrast’, and ‘lexical combination is intact’.",
+      "result": "FAIL"
+    },
+    {
+      "criterion": "GRAMMAR_LEXICAL_ACCURACY",
+      "notes": "The lesson claims exactly four bounded events, but numbered event 4 contains both the rain easing and the speaker continuing, so the model and counting rule conflict.",
+      "result": "FAIL"
+    },
+    {
+      "criterion": "NATURALNESS",
+      "notes": "Most narrative wording is natural. The forced indefinite collocation ‘made a decision to wait’ is grammatical but stylistically heavy, recorded as a minor issue.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ORIGINALITY_LIMITATIONS",
+      "notes": "Internal overlap is limited to expected target phrases and instructional frames; no external originality determination was attempted.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "PREREQUISITE_SCOPE",
+      "notes": "Narrative sequence, make a decision, and sentence stress use only the declared past-tense and word-stress prerequisite closure.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "TARGET_LANGUAGE_COMPLIANCE",
+      "notes": "The content is English and all embedded references are in the reconstructed authority scope.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Manual comparison of lesson wording with the supplied authoritative request and project-authored teaching payload.",
+      "Exact contiguous-word overlap comparison across the ten supplied v3 lesson bodies.",
+      "Inspection of the accepted audit provenance/copyright scope without consulting external sources."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "No suspicious unexplained copying was found within the supplied scope. Reuse of target forms, short pedagogical frames, and project-authored definitions/examples is expected. No external search was performed; this is not a plagiarism clearance or copyright guarantee."
+  },
+  "decision": "NEEDS_REVISION",
+  "findings": [
+    {
+      "category": "DISCOURSE_ACCURACY",
+      "description": "Section 1 labels exactly four events, yet ‘Finally, when the rain eased, I continued to class’ encodes two events: the rain eased and the speaker continued. Sections 2 and 4 then require exactly four, making the model’s event analysis internally false.",
+      "recommendation": "Remove the easing event (for example, ‘Finally, I continued to class’) or count and teach five events consistently.",
+      "severity": "MAJOR"
+    },
+    {
+      "category": "CEFR_ALIGNMENT",
+      "description": "The A2.2 learner must process dense discourse and phonology metalanguage across Sections 1–4 without a simple paraphrase or L1 support, which can block access to the otherwise appropriate narrative examples.",
+      "recommendation": "Replace abstract labels with concrete prompts (‘What happened first?’), model stress by listening/marking, and gloss unavoidable terms.",
+      "severity": "MAJOR"
+    },
+    {
+      "category": "NATURALNESS",
+      "description": "In this specific narrative, ‘I made a decision to wait’ sounds heavier and less idiomatic than the contextually definite ‘I made the decision to wait,’ although both preserve the target make + decision combination.",
+      "recommendation": "Use ‘made the decision to wait’ in the narrative while naming the general collocation as make a decision.",
+      "severity": "MINOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "A2-U04-L01",
+  "lesson_sha256": "73404cff003340693f4b18ce8e320cce013579b71095a78e0cf2f2a2e5360f17",
+  "limitations": [
+    "Review used only the exact lesson, accepted audit, regenerated hash-matching authoritative request, and verified M5 development snapshot; generator reasoning and prior review records were excluded.",
+    "No audio was supplied; pronunciation judgments cover written instructions and IPA only, not realized speech or learner performance.",
+    "No external CEFR vocabulary profiler or corpus was used; CEFR findings are qualitative independent AI judgments about the learner-facing text.",
+    "Originality checking was limited to the supplied authoritative payload and the ten supplied v3 lessons; no Internet, external corpus, or plagiarism search was performed, so no external plagiarism or legal-clearance claim is made."
+  ],
+  "record_type": "lesson_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {},
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "64635e29ef075945f3416801550349b32060616636292ab18b27da639285ec95"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "sha256": "91b6ab9705c32f8b52d3acb64430abbf2b91003ebb532a5390bbe354df29f19c",
+    "version": "M6_LINGUISTIC_AI_REVIEW_v1"
+  },
+  "review_role": "LINGUISTIC_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T06:48:08Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0",
+  "snapshot_binding": {
+    "bundle_sha256": "79301a37b0821fcd2cc077021db318b0a201771b9727ad08be071fc076cdb027",
+    "member_hashes": {
+      "manifest": "1436c433163765410282fffdddea1bed616feb372270a47d99bebb7193e8d296",
+      "snapshot": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f",
+      "source_registry": "1270284517c3d47e4467310ad32e7431dc0aa3cfbce0edb07e4fedc9bc347435"
+    },
+    "snapshot_id": "m5devsnapshot_5335d3a30ab9f4948e22558aa7fc755857c09dff4ef305c95d171e3ebc718c72",
+    "snapshot_sha256": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f"
+  }
+}

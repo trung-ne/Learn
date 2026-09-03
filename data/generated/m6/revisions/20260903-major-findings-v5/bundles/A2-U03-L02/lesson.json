@@ -1,0 +1,117 @@
+{
+  "cefr_level": "A2.1",
+  "communicative_functions": [
+    "concept_function_request_help"
+  ],
+  "content_sections": [
+    {
+      "body_text": "At 5:10, Mai was reading the station board when Linh called. Linh needed the bus number, time, and gate. Board: ‘Bus 12 leaves at 5:20 from Gate 4.’ Cover the story; name the action in progress and the three facts.",
+      "embedded_examples": [
+        "concept_past_continuous",
+        "concept_past_simple",
+        "concept_mediation",
+        "concept_reading"
+      ],
+      "id": "section_01",
+      "section_type": "reading",
+      "title": "A short station story"
+    },
+    {
+      "body_text": "To unfamiliar staff: ‘Excuse me. Could you help me check the 5:20 departure and find Gate 4, please?’ To a friend: ‘Can you check Gate 4 with me?’ The first suits a respectful request to staff; the second suits a small shared task with a friend. Choose a form for each person, say why it fits, and adapt its time, place, or detail. In urgent danger, get attention and state the need directly.",
+      "embedded_examples": [
+        "concept_function_request_help",
+        "concept_chunk_could_you_help",
+        "concept_pragmatics_polite_requests"
+      ],
+      "id": "section_02",
+      "section_type": "dialogue",
+      "title": "Choose a suitable request"
+    },
+    {
+      "body_text": "Linh: ‘Which bus is it, and where do I go?’ Mai: ‘Bus 12 leaves at 5:20 from Gate 4.’ Linh: ‘Thanks.’ Mai read one source, asked staff, then passed on the needed facts. Cover the board, answer Linh, and uncover it to check the three facts.",
+      "embedded_examples": [
+        "concept_mediation",
+        "concept_assessment_can_request_help",
+        "concept_function_request_help"
+      ],
+      "id": "section_03",
+      "section_type": "dialogue",
+      "title": "Pass the answer to Linh"
+    },
+    {
+      "body_text": "STA-tion has two beats; STA /steɪ/ is stronger. Say the second beat lightly. Record the story and talks. Hide the text, replay, and write: What was Mai doing? What did staff say? What did Mai tell Linh? Uncover the model and check the three facts.",
+      "embedded_examples": [
+        "concept_pronunciation_word_stress",
+        "concept_pronunciation_syllables",
+        "concept_past_continuous"
+      ],
+      "id": "section_04",
+      "section_type": "explanation",
+      "title": "Stress STA and check by listening"
+    }
+  ],
+  "dimensions": [
+    "assessment_capabilities",
+    "communicative_functions",
+    "listening",
+    "mediation",
+    "pragmatics",
+    "pronunciation",
+    "speaking",
+    "spoken_interaction"
+  ],
+  "duration_minutes": 35,
+  "exercises": [],
+  "functions_introduced": [],
+  "functions_reviewed": [
+    "concept_function_request_help"
+  ],
+  "generation_metadata": {
+    "curriculum_version": "20260903",
+    "generated_at": "2026-09-03T07:42:44Z",
+    "generator": "english_master.lesson_generation",
+    "generator_version": "2.0",
+    "model": "gpt-5.6-sol",
+    "prompt_version": "M6_LESSON_GENERATOR_v3",
+    "qa_notes": "Automated M6 structural checks passed; independent review remains required.",
+    "qa_status": "UNREVIEWED"
+  },
+  "grammar_introduced": [],
+  "grammar_reviewed": [
+    "concept_past_continuous"
+  ],
+  "id": "A2-U03-L02",
+  "lesson_kind": "CONSOLIDATION",
+  "lesson_number": 2,
+  "objectives": [
+    "handle narration, mediation, and socially suitable requests",
+    "combine selected A2.1 capabilities for a communicative purpose"
+  ],
+  "prerequisites": [
+    "A2-U03-L01"
+  ],
+  "pronunciation_introduced": [],
+  "pronunciation_reviewed": [
+    "concept_pronunciation_word_stress"
+  ],
+  "review_of": [
+    "A2-U03-L01"
+  ],
+  "schema_version": "1.0",
+  "skills": [
+    "listening",
+    "mediation",
+    "speaking",
+    "spoken_interaction"
+  ],
+  "taxonomy_concepts": [
+    "concept_assessment_can_request_help",
+    "concept_chunk_could_you_help",
+    "concept_mediation",
+    "concept_pragmatics_polite_requests"
+  ],
+  "title": "Supported independence: application",
+  "unit_id": "A2.1-U03",
+  "vocabulary_introduced": [],
+  "vocabulary_reviewed": []
+}

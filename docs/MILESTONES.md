@@ -283,7 +283,7 @@ The offline independent-review implementation now provides strict manifest, huma
 
 ## M6 — Lesson Generation
 
-**Status**: In progress — generator repair implemented; content and independent review deliverables remain incomplete (2026-09-02)
+**Status**: Complete for development — `DEVELOPMENT_APPROVED` batch and read-only M7 eligibility verified; human/release approval remains a separate, unclaimed gate (2026-09-03)
 
 **Estimated Duration**: ~2-3 weeks
 
@@ -308,8 +308,8 @@ Do validate lesson content.
 
 1. curriculum/lessons/ folder with JSON lesson objects
 2. Lesson generator script (prompt-based)
-3. QA report: CEFR validation, prerequisite validation, language review
-4. Manual review process output
+3. QA reports: deterministic validation plus independent AI linguistic and pedagogical review evidence
+4. Separate strict human/release review workflow (not required for development approval)
 5. Rejected/revised lessons
 6. Tests for lesson structure
 
@@ -329,20 +329,20 @@ Generator repair verification:
 - [x] Focused offline M6 tests pass
 - [x] No M7 or later-milestone implementation was added by the repair
 
-Original M6 content acceptance still outstanding:
+Development M6 content acceptance verified:
 
-- [ ] Production M6 authorization is bound to a verified genuine M5 approval snapshot (synthetic test fixtures do not satisfy this gate)
-- [ ] At least 10 complete lessons generated
-- [ ] All lessons pass schema validation
-- [ ] All lessons have correct prerequisites
-- [ ] CEFR levels are appropriate (sampled independent review)
-- [ ] No plagiarism detected (spot check)
-- [ ] Lessons include vocabulary/grammar references
-- [ ] QA report and manual review output are complete
+- [x] Development M6 authorization is bound to a verified genuine M5 development snapshot; synthetic fixtures cannot satisfy this gate
+- [x] At least 10 complete lessons generated in the required graph order
+- [x] All lessons pass schema and deterministic machine validation
+- [x] All lessons have correct prerequisites and reference scope
+- [x] Each lesson has independent AI linguistic and pedagogical review with no major or critical finding
+- [x] Available internal originality/copyright checks and their limits are recorded; no Internet-wide search is implied
+- [x] Lessons include authorized vocabulary/grammar references
+- [x] Immutable development batch QA and the read-only M7 eligibility check pass
 
-M6 is not complete while these content and independent-review criteria remain unchecked.
+`DEVELOPMENT_APPROVED` does not constitute `HUMAN_REVIEWED` or `RELEASE_APPROVED`. Human/release acceptance remains a separate future gate. M6 is complete only for the development lane; M7 is eligible to begin but has not been started.
 
-### Next: Finish M6 content and independent QA; do not start M7 yet
+### Next: M7 is eligible to start; do not start it automatically
 
 ---
 

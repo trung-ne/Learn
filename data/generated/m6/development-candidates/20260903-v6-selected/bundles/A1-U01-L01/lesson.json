@@ -1,0 +1,110 @@
+{
+  "cefr_level": "A1.1",
+  "communicative_functions": [],
+  "content_sections": [
+    {
+      "body_text": "Use the present simple for a fact or something you often do. Read: ‘I live in Hue. I study every day. Lan lives in Hue. She studies every day.’ After I/you/we/they, use live or study. After he/she, add -s: lives or studies.",
+      "embedded_examples": [
+        "concept_present_simple",
+        "concept_reading"
+      ],
+      "id": "section_01",
+      "section_type": "grammar",
+      "title": "Facts and routines"
+    },
+    {
+      "body_text": "A: ‘Where do you live?’ B: ‘I live in Hue.’ A: ‘What do you do every day?’ B: ‘I study English.’ Read both parts. Then cover B’s lines, play or say each A line, pause, and answer. Each answer must give the kind of information A asks for.",
+      "embedded_examples": [
+        "concept_present_simple",
+        "concept_topic_personal_information",
+        "concept_listening",
+        "concept_speaking"
+      ],
+      "id": "section_02",
+      "section_type": "dialogue",
+      "title": "Read and take two turns"
+    },
+    {
+      "body_text": "For /v/ in live, touch your lower lip with your upper teeth. For final /z/ in lives and studies, put your tongue near the small ridge behind your upper teeth. Both sounds buzz in your throat. Say the sound, then the word. Do not add another beat after it.",
+      "embedded_examples": [
+        "concept_pronunciation_phonemes",
+        "concept_listening",
+        "concept_speaking"
+      ],
+      "id": "section_03",
+      "section_type": "explanation",
+      "title": "Check /v/ and /z/"
+    },
+    {
+      "body_text": "Write one fact and one routine. Use this key: I live/study; she lives/studies. Correct your forms from the key. Record the two A questions with pauses; answer them, then replay. Check that each answer fits its question. Check /v/ or /z/ with the mouth steps above. If you used a/an/the, circle it for later review; do not assume it is wrong.",
+      "embedded_examples": [
+        "concept_present_simple",
+        "concept_pronunciation_phonemes",
+        "concept_writing",
+        "concept_listening",
+        "concept_speaking"
+      ],
+      "id": "section_04",
+      "section_type": "explanation",
+      "title": "Write, speak, and check"
+    }
+  ],
+  "dimensions": [
+    "grammar",
+    "listening",
+    "pronunciation",
+    "reading",
+    "speaking",
+    "topics",
+    "writing"
+  ],
+  "duration_minutes": 35,
+  "exercises": [],
+  "functions_introduced": [],
+  "functions_reviewed": [],
+  "generation_metadata": {
+    "curriculum_version": "20260903",
+    "generated_at": "2026-09-03T07:16:57Z",
+    "generator": "english_master.lesson_generation",
+    "generator_version": "2.0",
+    "model": "gpt-5.6-terra",
+    "prompt_version": "M6_LESSON_GENERATOR_v3",
+    "qa_notes": "Automated M6 structural checks passed; independent review remains required.",
+    "qa_status": "UNREVIEWED"
+  },
+  "grammar_introduced": [
+    "concept_present_simple"
+  ],
+  "grammar_reviewed": [],
+  "id": "A1-U01-L01",
+  "lesson_kind": "CORE",
+  "lesson_number": 1,
+  "objectives": [
+    "handle personal information and basic participation",
+    "combine selected A1.1 capabilities for a communicative purpose"
+  ],
+  "prerequisites": [],
+  "pronunciation_introduced": [
+    "concept_pronunciation_phonemes"
+  ],
+  "pronunciation_reviewed": [],
+  "review_of": [],
+  "schema_version": "1.0",
+  "skills": [
+    "listening",
+    "reading",
+    "speaking",
+    "writing"
+  ],
+  "taxonomy_concepts": [
+    "concept_listening",
+    "concept_reading",
+    "concept_speaking",
+    "concept_topic_personal_information",
+    "concept_writing"
+  ],
+  "title": "Foundational exchange: foundations",
+  "unit_id": "A1.1-U01",
+  "vocabulary_introduced": [],
+  "vocabulary_reviewed": []
+}

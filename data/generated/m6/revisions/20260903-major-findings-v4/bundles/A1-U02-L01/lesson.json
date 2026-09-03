@@ -1,0 +1,113 @@
+{
+  "cefr_level": "A1.2",
+  "communicative_functions": [
+    "concept_function_request_help"
+  ],
+  "content_sections": [
+    {
+      "body_text": "Read: ‘I run home every Friday.’ This happens again and again. Read: ‘I ran home yesterday.’ This happened before today and is over. Run changes to ran. Write the two lines from memory, then check run + every Friday and ran + yesterday.",
+      "embedded_examples": [
+        "concept_present_simple",
+        "concept_past_simple",
+        "vocab_en_run_001"
+      ],
+      "id": "section_01",
+      "section_type": "grammar",
+      "title": "A routine and a past action"
+    },
+    {
+      "body_text": "Mai was late, so she ran to the station. Run here means move on foot faster than walking. Read: ‘Mai ran to the station because she was late.’ Change station to gate or home. Keep ran and a past time.",
+      "embedded_examples": [
+        "concept_past_simple",
+        "vocab_en_run_001"
+      ],
+      "id": "section_02",
+      "section_type": "vocabulary",
+      "title": "Why did Mai run?"
+    },
+    {
+      "body_text": "Mai: ‘I ran to the station because I was late. Now I cannot find Gate 2. Please help me.’ Ben: ‘Yes. Gate 2 is beside the café.’ Mai: ‘Thank you.’ Read both roles. The reply solves Mai’s problem. Change only the gate number and place.",
+      "embedded_examples": [
+        "concept_past_simple",
+        "vocab_en_run_001",
+        "concept_function_request_help"
+      ],
+      "id": "section_03",
+      "section_type": "dialogue",
+      "title": "Ask for useful help"
+    },
+    {
+      "body_text": "Clap ran once, sta-tion twice, and yes-ter-day three times. Write the dialogue from memory and compare it with the model. Record it, hide the text, replay, and write two things you hear: why Mai ran and what help she needs. Uncover the model to check. Then say both roles again without reading.",
+      "embedded_examples": [
+        "concept_pronunciation_syllables",
+        "concept_pronunciation_phonemes",
+        "concept_past_simple",
+        "concept_function_request_help"
+      ],
+      "id": "section_04",
+      "section_type": "explanation",
+      "title": "Clap, write, listen, speak"
+    }
+  ],
+  "dimensions": [
+    "communicative_functions",
+    "grammar",
+    "listening",
+    "pronunciation",
+    "reading",
+    "speaking",
+    "spoken_interaction",
+    "vocabulary_senses",
+    "writing"
+  ],
+  "duration_minutes": 35,
+  "exercises": [],
+  "functions_introduced": [
+    "concept_function_request_help"
+  ],
+  "functions_reviewed": [],
+  "generation_metadata": {
+    "curriculum_version": "20260903",
+    "generated_at": "2026-09-03T07:16:57Z",
+    "generator": "english_master.lesson_generation",
+    "generator_version": "2.0",
+    "model": "gpt-5.6-terra",
+    "prompt_version": "M6_LESSON_GENERATOR_v3",
+    "qa_notes": "Automated M6 structural checks passed; independent review remains required.",
+    "qa_status": "UNREVIEWED"
+  },
+  "grammar_introduced": [
+    "concept_past_simple"
+  ],
+  "grammar_reviewed": [],
+  "id": "A1-U02-L01",
+  "lesson_kind": "CORE",
+  "lesson_number": 1,
+  "objectives": [
+    "handle simple time reference and requests for help",
+    "combine selected A1.2 capabilities for a communicative purpose"
+  ],
+  "prerequisites": [
+    "A1-U01-L02"
+  ],
+  "pronunciation_introduced": [
+    "concept_pronunciation_syllables"
+  ],
+  "pronunciation_reviewed": [],
+  "review_of": [],
+  "schema_version": "1.0",
+  "skills": [
+    "listening",
+    "reading",
+    "speaking",
+    "spoken_interaction",
+    "writing"
+  ],
+  "taxonomy_concepts": [],
+  "title": "Everyday events: foundations",
+  "unit_id": "A1.2-U02",
+  "vocabulary_introduced": [
+    "vocab_en_run_001"
+  ],
+  "vocabulary_reviewed": []
+}

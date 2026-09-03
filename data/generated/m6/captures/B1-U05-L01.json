@@ -1,0 +1,39 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "grammar",
+        "title": "Earlier past",
+        "body_text": "Use the past perfect for an earlier event: By the time we arrived, the film had started. Then continue the story in order.",
+        "embedded_examples": [
+          "concept_past_perfect",
+          "concept_narrative_sequence"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "explanation",
+        "title": "Link common words",
+        "body_text": "In connected speech, some small words are weaker. Keep the main message clear while you tell the sequence.",
+        "embedded_examples": [
+          "concept_pronunciation_weak_forms",
+          "concept_narrative_sequence"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "0546c5d8095f8a121e15fbef36d5eec32d51a881b128aad2c3308f12ed9ce793",
+  "response_sha256": "3cb96b722de77df7d35eec96ee6209845a2f426739d968d49e952eff3ba3d4d2",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-terra",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T12:30:00Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

@@ -1,0 +1,243 @@
+{
+  "approval_tier": "DEVELOPMENT_APPROVED",
+  "automated_checks": {
+    "generation_provenance": "PASS",
+    "no_m7_scope": "PASS",
+    "prerequisite": "PASS",
+    "reference_scope": "PASS",
+    "schema": "PASS"
+  },
+  "batch_id": "m6devbatch_4883cca8dea320c18b26a99316041dec1101c7dd28e551e265654c367af93d26",
+  "created_at": "2026-09-03T08:11:12Z",
+  "lessons": [
+    {
+      "ai_reviews": [
+        {
+          "path": "reviews/A1-U01-L01/LINGUISTIC_AI_REVIEWER.json",
+          "review_role": "LINGUISTIC_AI_REVIEWER",
+          "sha256": "3724d8a937ce96d108d26d83c312334b64b87244f05d03f567985b2f08461549"
+        },
+        {
+          "path": "reviews/A1-U01-L01/PEDAGOGICAL_AI_REVIEWER.json",
+          "review_role": "PEDAGOGICAL_AI_REVIEWER",
+          "sha256": "663a323f73661e9b855f893b8ccd4349ec9b8bd97aef49eebe39e331c6c4306f"
+        }
+      ],
+      "audit_path": "bundles/A1-U01-L01/audit.json",
+      "audit_sha256": "cce2d416a8fae00f2664c9f91c318d0f8f01ee0db0efa6034d9a6214e07da99d",
+      "generation_provenance_mode": "SESSION_CAPTURED",
+      "lesson_id": "A1-U01-L01",
+      "lesson_path": "bundles/A1-U01-L01/lesson.json",
+      "lesson_sha256": "a09a20b10fd36cbfdfd05a12debfebf4e5fd83dfe38e1f2448a38f5a6ae79770"
+    },
+    {
+      "ai_reviews": [
+        {
+          "path": "reviews/A1-U01-L02/LINGUISTIC_AI_REVIEWER.json",
+          "review_role": "LINGUISTIC_AI_REVIEWER",
+          "sha256": "3503900ed91bfdb64bfa41c4549beeca3d8a402abd4596cd19b96c7bbb14ff9d"
+        },
+        {
+          "path": "reviews/A1-U01-L02/PEDAGOGICAL_AI_REVIEWER.json",
+          "review_role": "PEDAGOGICAL_AI_REVIEWER",
+          "sha256": "4a483fe69e3474ab156de93b63518891ce4fab9e6af943224f27234bd4dbb52e"
+        }
+      ],
+      "audit_path": "bundles/A1-U01-L02/audit.json",
+      "audit_sha256": "7a055c8b948836245e8ed114b6b11799f75988ebef649c969a648a95af124d7f",
+      "generation_provenance_mode": "SESSION_CAPTURED",
+      "lesson_id": "A1-U01-L02",
+      "lesson_path": "bundles/A1-U01-L02/lesson.json",
+      "lesson_sha256": "2b3d0dbcc6ad9b4b34b3024a671166440bc4e0678670be0320d1b30eda54afdc"
+    },
+    {
+      "ai_reviews": [
+        {
+          "path": "reviews/A1-U02-L01/LINGUISTIC_AI_REVIEWER.json",
+          "review_role": "LINGUISTIC_AI_REVIEWER",
+          "sha256": "a979084a11608bd6e1dadd162ba0aaf2ec955cce906ef5ecc97a65ead850e7f5"
+        },
+        {
+          "path": "reviews/A1-U02-L01/PEDAGOGICAL_AI_REVIEWER.json",
+          "review_role": "PEDAGOGICAL_AI_REVIEWER",
+          "sha256": "6deaa12f6d82832fa51491a9278b1ac46c9cf4720c2478f7850a092275f4215d"
+        }
+      ],
+      "audit_path": "bundles/A1-U02-L01/audit.json",
+      "audit_sha256": "673753a4af83e00ffbc33fbc227a9c222762bc45e7e969640d08ead71b85fea5",
+      "generation_provenance_mode": "SESSION_CAPTURED",
+      "lesson_id": "A1-U02-L01",
+      "lesson_path": "bundles/A1-U02-L01/lesson.json",
+      "lesson_sha256": "312ae89e4bf9205f3db93d1359744e0db8281444d22f822a559da77ae31f9bb1"
+    },
+    {
+      "ai_reviews": [
+        {
+          "path": "reviews/A1-U02-L02/LINGUISTIC_AI_REVIEWER.json",
+          "review_role": "LINGUISTIC_AI_REVIEWER",
+          "sha256": "bfb60af200133a1bcf34dd30a6971201e283f1d4dc2a54a156fa0503c19838ef"
+        },
+        {
+          "path": "reviews/A1-U02-L02/PEDAGOGICAL_AI_REVIEWER.json",
+          "review_role": "PEDAGOGICAL_AI_REVIEWER",
+          "sha256": "4dc2c200ce4cc6b01d46a03c4cf83215d37ab3028f27dd910bd964d186fb8f0a"
+        }
+      ],
+      "audit_path": "bundles/A1-U02-L02/audit.json",
+      "audit_sha256": "0406ac5f5f9d8cc0656919d626febcd5f712c71dc68f8864b02f83d40a9f66ac",
+      "generation_provenance_mode": "SESSION_CAPTURED",
+      "lesson_id": "A1-U02-L02",
+      "lesson_path": "bundles/A1-U02-L02/lesson.json",
+      "lesson_sha256": "20326bacfa8989b614ddff53eda46a8103ee118ad8460e59a4553c5f10d5206c"
+    },
+    {
+      "ai_reviews": [
+        {
+          "path": "reviews/A2-U03-L01/LINGUISTIC_AI_REVIEWER.json",
+          "review_role": "LINGUISTIC_AI_REVIEWER",
+          "sha256": "4b312fed0369123f34cea5f2928327fd080924686cde1029a0682c1073295691"
+        },
+        {
+          "path": "reviews/A2-U03-L01/PEDAGOGICAL_AI_REVIEWER.json",
+          "review_role": "PEDAGOGICAL_AI_REVIEWER",
+          "sha256": "d90fb656f39a602abc0565c240ad37f7551e9165db0b5e0ecb8821e598cba5a1"
+        }
+      ],
+      "audit_path": "bundles/A2-U03-L01/audit.json",
+      "audit_sha256": "2242cebe848af3b36227eb89b764674892d9ed67a2bb01f973ae7a0cc2609af1",
+      "generation_provenance_mode": "SESSION_CAPTURED",
+      "lesson_id": "A2-U03-L01",
+      "lesson_path": "bundles/A2-U03-L01/lesson.json",
+      "lesson_sha256": "57bb8713d795194e2ec59c422f7507e5c16651cd83627f7f99dafa3df15f0549"
+    },
+    {
+      "ai_reviews": [
+        {
+          "path": "reviews/A2-U03-L02/LINGUISTIC_AI_REVIEWER.json",
+          "review_role": "LINGUISTIC_AI_REVIEWER",
+          "sha256": "0b5e5be6c291d3572288f75798c2719ca12490252fe480e18bd083fca1d9632d"
+        },
+        {
+          "path": "reviews/A2-U03-L02/PEDAGOGICAL_AI_REVIEWER.json",
+          "review_role": "PEDAGOGICAL_AI_REVIEWER",
+          "sha256": "9578a1af1efa50c4de5e3206c14862685f0883683503c4a76aef86a51eda6e8b"
+        }
+      ],
+      "audit_path": "bundles/A2-U03-L02/audit.json",
+      "audit_sha256": "7c223f446832995d384f688d4b09c6717edfe23d473969179e5e3aae495223bd",
+      "generation_provenance_mode": "SESSION_CAPTURED",
+      "lesson_id": "A2-U03-L02",
+      "lesson_path": "bundles/A2-U03-L02/lesson.json",
+      "lesson_sha256": "7e661581aa02a95d74a1efaf5c96445ead3e29f53ebc522b21077a78ed2e4100"
+    },
+    {
+      "ai_reviews": [
+        {
+          "path": "reviews/A2-U04-L01/LINGUISTIC_AI_REVIEWER.json",
+          "review_role": "LINGUISTIC_AI_REVIEWER",
+          "sha256": "0637cfc8632b1b28e3e8bebb5a12f6899fcf6ad4611b6df5f60064d2ab596db8"
+        },
+        {
+          "path": "reviews/A2-U04-L01/PEDAGOGICAL_AI_REVIEWER.json",
+          "review_role": "PEDAGOGICAL_AI_REVIEWER",
+          "sha256": "35212a681a260521395333254e338a0476dca1c3e1226d720f0e7b91612deede"
+        }
+      ],
+      "audit_path": "bundles/A2-U04-L01/audit.json",
+      "audit_sha256": "2aa35af3f549c763a37c3c089d502554edd49f6b64d325501d14a13448d7b729",
+      "generation_provenance_mode": "SESSION_CAPTURED",
+      "lesson_id": "A2-U04-L01",
+      "lesson_path": "bundles/A2-U04-L01/lesson.json",
+      "lesson_sha256": "ed689e53bf48838f336c36dbcb3f87f6e9a420bde4a18618ea7f8055a25353a8"
+    },
+    {
+      "ai_reviews": [
+        {
+          "path": "reviews/A2-U04-L02/LINGUISTIC_AI_REVIEWER.json",
+          "review_role": "LINGUISTIC_AI_REVIEWER",
+          "sha256": "04e61a521dd6e02c7a246f5382fbc7cbb410b1a358e9334e2e0a6535d1e60c2c"
+        },
+        {
+          "path": "reviews/A2-U04-L02/PEDAGOGICAL_AI_REVIEWER.json",
+          "review_role": "PEDAGOGICAL_AI_REVIEWER",
+          "sha256": "d38e8c81b8dc875756f8739a9854bf428e77e9fadcbc51b73323af5f4144d5b0"
+        }
+      ],
+      "audit_path": "bundles/A2-U04-L02/audit.json",
+      "audit_sha256": "b049a5106408641838bef3c3fb9039926e909b93ca4a5a8751b49a0ab54c92a3",
+      "generation_provenance_mode": "SESSION_CAPTURED",
+      "lesson_id": "A2-U04-L02",
+      "lesson_path": "bundles/A2-U04-L02/lesson.json",
+      "lesson_sha256": "c517aa8dc82a1c9fdd8ea7a0c475c3bcdb4d4f10f2b0655d8be9bbf1621d6381"
+    },
+    {
+      "ai_reviews": [
+        {
+          "path": "reviews/B1-U05-L01/LINGUISTIC_AI_REVIEWER.json",
+          "review_role": "LINGUISTIC_AI_REVIEWER",
+          "sha256": "efb7af7216a4b46a699d5eb9b581feca1cd5a74b63d5e58bc1d8cf24a75cddd7"
+        },
+        {
+          "path": "reviews/B1-U05-L01/PEDAGOGICAL_AI_REVIEWER.json",
+          "review_role": "PEDAGOGICAL_AI_REVIEWER",
+          "sha256": "14662d3abae25c64d6c467169ac5f8582abb1c8dc5e20691bd7e05efaa1ba356"
+        }
+      ],
+      "audit_path": "bundles/B1-U05-L01/audit.json",
+      "audit_sha256": "c3e337ccb3e12020a3992b9b2b3d7c42224f439298911743e160b1ee5d88c5f8",
+      "generation_provenance_mode": "SESSION_CAPTURED",
+      "lesson_id": "B1-U05-L01",
+      "lesson_path": "bundles/B1-U05-L01/lesson.json",
+      "lesson_sha256": "3a745231dee0f8c2ac52e8fc5b9edf514b39a7af5947ba59467f25e10088d1a8"
+    },
+    {
+      "ai_reviews": [
+        {
+          "path": "reviews/B1-U05-L02/LINGUISTIC_AI_REVIEWER.json",
+          "review_role": "LINGUISTIC_AI_REVIEWER",
+          "sha256": "3c41626732714ff28dbc3b0dad11fd0394622edf690e131d48a7ef778710e848"
+        },
+        {
+          "path": "reviews/B1-U05-L02/PEDAGOGICAL_AI_REVIEWER.json",
+          "review_role": "PEDAGOGICAL_AI_REVIEWER",
+          "sha256": "52752bdf5742443dfb2aa5b7678855498f845b3eca9f9b6d05922eb6b64c278f"
+        }
+      ],
+      "audit_path": "bundles/B1-U05-L02/audit.json",
+      "audit_sha256": "19d16b2211f36bd3ca5d009ad683ce3667f57d7c849ec642f234e44a4264f643",
+      "generation_provenance_mode": "SESSION_CAPTURED",
+      "lesson_id": "B1-U05-L02",
+      "lesson_path": "bundles/B1-U05-L02/lesson.json",
+      "lesson_sha256": "9e6b0d0cac4a38c62e6f1a91d57c03ac23bdd0055a2b3ff29ed013d21cbb71de"
+    }
+  ],
+  "limitations": [
+    "Development approval is not human review or release approval.",
+    "No Internet-wide plagiarism search was performed.",
+    "Session-captured AI provenance is replayable evidence, not a provider-authenticated receipt."
+  ],
+  "originality_provenance_checks": {
+    "authorized_input_scope": "PASS",
+    "duplicate_check": "PASS",
+    "external_search_performed": false,
+    "limitations": [
+      "No Internet-wide plagiarism search was performed; checks cover authorized input, immutable hashes, and exact duplicate content only."
+    ]
+  },
+  "record_type": "lesson_development_batch",
+  "schema_version": "1.0",
+  "snapshot_binding": {
+    "bundle_sha256": "79301a37b0821fcd2cc077021db318b0a201771b9727ad08be071fc076cdb027",
+    "member_hashes": {
+      "manifest": "1436c433163765410282fffdddea1bed616feb372270a47d99bebb7193e8d296",
+      "snapshot": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f",
+      "source_registry": "1270284517c3d47e4467310ad32e7431dc0aa3cfbce0edb07e4fedc9bc347435"
+    },
+    "snapshot_id": "m5devsnapshot_5335d3a30ab9f4948e22558aa7fc755857c09dff4ef305c95d171e3ebc718c72",
+    "snapshot_sha256": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f"
+  },
+  "tool": {
+    "name": "english_master.lesson_generation.development",
+    "version": "3.0"
+  }
+}

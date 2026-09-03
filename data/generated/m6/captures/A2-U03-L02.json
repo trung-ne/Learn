@@ -1,0 +1,40 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "explanation",
+        "title": "Request and mediate",
+        "body_text": "Choose a polite request, then pass on the key information in simple words. Put stress on the important word.",
+        "embedded_examples": [
+          "concept_function_request_help",
+          "concept_pragmatics_polite_requests",
+          "concept_pronunciation_word_stress"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "dialogue",
+        "title": "Check the request",
+        "body_text": "A: Could you help me with this message? B: Certainly. It says the meeting starts at three.",
+        "embedded_examples": [
+          "concept_assessment_can_request_help",
+          "concept_function_request_help"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "c1d5fb31a77eb63ab1f4e9be201559fb1f75076618d5f9d7ba4e3fcca9dda747",
+  "response_sha256": "3bb0f074974c7aa8c798427661ff91ff05811a0377f68f8866557c92eb11ee2b",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-terra",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T12:30:00Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

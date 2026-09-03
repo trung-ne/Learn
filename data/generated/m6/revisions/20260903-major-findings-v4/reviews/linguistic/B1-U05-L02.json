@@ -1,0 +1,90 @@
+{
+  "ai_review_id": "m6aireview_b62c0246084809563626a60d20a6e4d72d6945b6daf1ce58c8e1c5fc8a8dc44b",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "19d16b2211f36bd3ca5d009ad683ce3667f57d7c849ec642f234e44a4264f643",
+  "checklist": [
+    {
+      "criterion": "CEFR_ALIGNMENT",
+      "notes": "The content load, sentence length, and target forms are appropriate for the declared internal tier B1.1; this is an AI judgment, not an official CEFR certification.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "GRAMMAR_LEXICAL_ACCURACY",
+      "notes": "The manage/organize sense of run, had run form, consonant-to-vowel linking, and optional weak form of had are accurate.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "NATURALNESS",
+      "notes": "The prose is generally natural, but underscore linking notation appears inside a quoted learner answer and can look like nonstandard English orthography.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ORIGINALITY_LIMITATIONS",
+      "notes": "No suspicious copied passage was identified in a manual internal phrase-level review of this lesson against its authorized M5 taxonomy context and the other v4 lessons. No Internet-wide or external-corpus plagiarism search was performed.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "PREREQUISITE_SCOPE",
+      "notes": "All taught and reviewed references stay within the audit’s allowed or context-only sets; no forbidden taxonomy ID is taught or invoked.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "TARGET_LANGUAGE_COMPLIANCE",
+      "notes": "Instructional and model content is in English; the linking underscores are understandable pronunciation notation but create the recorded minor presentation concern.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Manual internal phrase-level comparison against the authorized M5 taxonomy wording and the other nine v4 lessons.",
+      "Inspection of the immutable audit and capture provenance boundaries for unauthorized external payload claims."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "No Internet-wide search, proprietary corpus comparison, or provider-authenticated plagiarism service was used; common short English forms and functional phrases are not evidence of copying."
+  },
+  "decision": "APPROVE",
+  "findings": [
+    {
+      "category": "TARGET_LANGUAGE_COMPLIANCE",
+      "description": "The quoted model answer “She had run_an event_at school” embeds underscores in the written target-language sentence. They signal linking, but they can be mistaken for English orthography.",
+      "recommendation": "Keep normal spaces in model sentences and show linking separately with an explicitly labelled pronunciation mark.",
+      "severity": "MINOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "B1-U05-L02",
+  "lesson_sha256": "9e6b0d0cac4a38c62e6f1a91d57c03ac23bdd0055a2b3ff29ed013d21cbb71de",
+  "limitations": [
+    "This is an independent AI development review, not human review, release approval, or CEFR certification.",
+    "The review is limited to the supplied immutable lesson, audit, capture, authorized M5 context, and local repository materials.",
+    "No Internet-wide plagiarism search or external pronunciation recording assessment was performed.",
+    "Provider identity and inference parameters were unavailable to this session and are recorded as UNKNOWN; the runtime-disclosed model identifier is recorded without inference."
+  ],
+  "record_type": "lesson_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {},
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "274507229c6d789c50b2c0780c42a1f6f7b9c1b73050e95b8111547739d28eb7"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "sha256": "e4c1c5a0605a4cef49a70eec984e87f6f2abfe8b76d2611ee0a9259916086e6a",
+    "version": "M6_LINGUISTIC_AI_REVIEW_v1"
+  },
+  "review_role": "LINGUISTIC_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T07:31:43Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0",
+  "snapshot_binding": {
+    "bundle_sha256": "79301a37b0821fcd2cc077021db318b0a201771b9727ad08be071fc076cdb027",
+    "member_hashes": {
+      "manifest": "1436c433163765410282fffdddea1bed616feb372270a47d99bebb7193e8d296",
+      "snapshot": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f",
+      "source_registry": "1270284517c3d47e4467310ad32e7431dc0aa3cfbce0edb07e4fedc9bc347435"
+    },
+    "snapshot_id": "m5devsnapshot_5335d3a30ab9f4948e22558aa7fc755857c09dff4ef305c95d171e3ebc718c72",
+    "snapshot_sha256": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f"
+  }
+}

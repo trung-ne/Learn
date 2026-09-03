@@ -1,0 +1,97 @@
+{
+  "ai_review_id": "m6aireview_fc60ff00774e8a0d583909807968038828471a1ee2ba541a078659a5c8b13bd6",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "06272a6284a167f21d4a4854b04420901cf96e1daa638470fbfe2db77dc0d7ad",
+  "checklist": [
+    {
+      "criterion": "CEFR_ALIGNMENT",
+      "notes": "The core tense and narrative examples are suitable for A2.2, but the unsupported task wording includes ‘ongoing movement’, ‘explicitly agrees’, ‘the contrast determines’, and ‘prominence matches one stated contrast’.",
+      "result": "FAIL"
+    },
+    {
+      "criterion": "GRAMMAR_LEXICAL_ACCURACY",
+      "notes": "The retell converts An’s future commitment ‘I’ll carry’ into the completed event ‘An carried’ although the source dialogue never states that the action happened.",
+      "result": "FAIL"
+    },
+    {
+      "criterion": "NATURALNESS",
+      "notes": "Individual sentences and the help exchange are grammatical and understandable; the principal defect is unsupported event meaning rather than surface idiomaticity.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ORIGINALITY_LIMITATIONS",
+      "notes": "The repeated movement-sense definition is expected target reuse within the supplied lessons; no suspicious unexplained internal copying or external check occurred.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "PREREQUISITE_SCOPE",
+      "notes": "The lesson reviews authorized past continuous, request-for-help, sentence stress, movement run, and narrative sequence using only prior past and pronunciation concepts.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "TARGET_LANGUAGE_COMPLIANCE",
+      "notes": "All text is English and embedded concept/vocabulary identifiers remain within the exact regenerated scope.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Manual comparison of lesson wording with the supplied authoritative request and project-authored teaching payload.",
+      "Exact contiguous-word overlap comparison across the ten supplied v3 lesson bodies.",
+      "Inspection of the accepted audit provenance/copyright scope without consulting external sources."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "No suspicious unexplained copying was found within the supplied scope. Reuse of target forms, short pedagogical frames, and project-authored definitions/examples is expected. No external search was performed; this is not a plagiarism clearance or copyright guarantee."
+  },
+  "decision": "NEEDS_REVISION",
+  "findings": [
+    {
+      "category": "DISCOURSE_ACCURACY",
+      "description": "Section 2 establishes only a promise (‘I’ll carry the books’), but Section 3 presents ‘Finally, An carried the books’ as a completed fact. A retell should not change an intended future action into an event known to have happened.",
+      "recommendation": "Either add source text showing that An subsequently carried the books, or retell the fourth step as ‘Finally, An agreed to carry the books.’",
+      "severity": "MAJOR"
+    },
+    {
+      "category": "CEFR_ALIGNMENT",
+      "description": "The final two sections express the speaking and self-check tasks through dense abstract language above A2.2, without scaffolding for terms such as ‘prominence’, ‘stated contrast’, and ‘ongoing movement’.",
+      "recommendation": "Use short numbered prompts and concrete stress marks, with a simple explanation or Vietnamese gloss for prominence.",
+      "severity": "MAJOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "A2-U04-L02",
+  "lesson_sha256": "437b488a234ca66cf9595f5467dc27ca62276c8de8032c3155dbde2868ff059c",
+  "limitations": [
+    "Review used only the exact lesson, accepted audit, regenerated hash-matching authoritative request, and verified M5 development snapshot; generator reasoning and prior review records were excluded.",
+    "No audio was supplied; pronunciation judgments cover written instructions and IPA only, not realized speech or learner performance.",
+    "No external CEFR vocabulary profiler or corpus was used; CEFR findings are qualitative independent AI judgments about the learner-facing text.",
+    "Originality checking was limited to the supplied authoritative payload and the ten supplied v3 lessons; no Internet, external corpus, or plagiarism search was performed, so no external plagiarism or legal-clearance claim is made."
+  ],
+  "record_type": "lesson_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {},
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "5a68a8b63a38eb89c20f1b553b08342842eaf2c89f01e75efcfff52d429c8e75"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "sha256": "811f80b081e7fd9404d5c273bd89c6200ddc8d59ac7236b512f4ef50daa2241d",
+    "version": "M6_LINGUISTIC_AI_REVIEW_v1"
+  },
+  "review_role": "LINGUISTIC_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T06:48:08Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0",
+  "snapshot_binding": {
+    "bundle_sha256": "79301a37b0821fcd2cc077021db318b0a201771b9727ad08be071fc076cdb027",
+    "member_hashes": {
+      "manifest": "1436c433163765410282fffdddea1bed616feb372270a47d99bebb7193e8d296",
+      "snapshot": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f",
+      "source_registry": "1270284517c3d47e4467310ad32e7431dc0aa3cfbce0edb07e4fedc9bc347435"
+    },
+    "snapshot_id": "m5devsnapshot_5335d3a30ab9f4948e22558aa7fc755857c09dff4ef305c95d171e3ebc718c72",
+    "snapshot_sha256": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f"
+  }
+}

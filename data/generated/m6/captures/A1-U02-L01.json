@@ -1,0 +1,40 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "grammar",
+        "title": "A finished event",
+        "body_text": "Use the past simple for a completed event: I ran home yesterday. Add a clear time word such as yesterday.",
+        "embedded_examples": [
+          "concept_past_simple",
+          "vocab_en_run_001"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "dialogue",
+        "title": "Ask for help",
+        "body_text": "A: Could you help me? B: Yes. I ran to the station yesterday. Clap the syllables in yesterday.",
+        "embedded_examples": [
+          "concept_function_request_help",
+          "concept_pronunciation_syllables",
+          "vocab_en_run_001"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "0940c57b710305a96ab98c1761514d592af3ab9e8ef87a6e34cbd20c119aeded",
+  "response_sha256": "afd88351cd69e46f631126dccf41573fd58e5dde99ad81752e13ca6f6323aede",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-terra",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T12:30:00Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

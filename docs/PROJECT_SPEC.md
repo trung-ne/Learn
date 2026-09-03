@@ -347,6 +347,12 @@ Each lesson contains:
 
 All generated content follows the content-review lifecycle. Source disposition remains separate: `APPROVED`, `REFERENCE_ONLY`, `QUARANTINED`, and `REJECTED` apply only to registered sources.
 
+### Development and release evidence
+
+Development evidence is deliberately separate from the generated-content lifecycle and from public-release authority. A hash-bound automated audit may establish `MACHINE_VALIDATED`; separate, recorded AI linguistic and pedagogical reviews may establish `AI_REVIEWED`; and a complete immutable batch may establish `DEVELOPMENT_APPROVED`. These are development-stage claims only: they do not assert a human reviewer, human endorsement, public release, or certification.
+
+`HUMAN_REVIEWED` and `RELEASE_APPROVED` require distinct verified human evidence in the strict release lane. AI records must identify themselves as AI and preserve factual provider/model/run details, using `UNKNOWN` where facts are unavailable. Neither source disposition nor development evidence may be used to manufacture human or release approval.
+
 ```
 UNREVIEWED  → IN_REVIEW  → APPROVED (if passes)
                         ↙

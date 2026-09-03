@@ -1,0 +1,116 @@
+{
+  "cefr_level": "A2.1",
+  "communicative_functions": [
+    "concept_function_request_help"
+  ],
+  "content_sections": [
+    {
+      "body_text": "Use was/were + verb-ing for an action in progress around a past time: ‘At four, I was reading the timetable.’ Timeline: action starts — 4:00 — action continues. Contrast the completed event: ‘The bus left at 4:15.’",
+      "embedded_examples": [
+        "concept_past_continuous",
+        "concept_past_simple"
+      ],
+      "id": "section_01",
+      "section_type": "grammar",
+      "title": "Show an ongoing past scene"
+    },
+    {
+      "body_text": "Source notice: ‘Bus 12 leaves at 4:15 from Gate 3.’ Recipient: a friend who cannot see it. Relay only the useful facts: ‘Bus 12 leaves at 4:15 from Gate 3.’ Check the bus, time, and gate against the notice; all three must match.",
+      "embedded_examples": [
+        "concept_mediation",
+        "concept_reading",
+        "concept_writing"
+      ],
+      "id": "section_02",
+      "section_type": "reading",
+      "title": "Mediate a timetable detail"
+    },
+    {
+      "body_text": "With a friend: ‘Please help me read this.’ With unfamiliar station staff: ‘Excuse me. Could you help me read this timetable, please?’ Excuse me gets attention politely; could you help makes the request less direct; final please adds courtesy. The staff reply should provide an actual timetable detail.",
+      "embedded_examples": [
+        "concept_function_request_help",
+        "concept_chunk_could_you_help",
+        "concept_mediation"
+      ],
+      "id": "section_03",
+      "section_type": "dialogue",
+      "title": "Explain the polite request"
+    },
+    {
+      "body_text": "In in-for-MA-tion /ˌɪn.fəˈmeɪ.ʃən/, /meɪ/ has the main word stress. Keep that vowel full, make the syllable a little longer and stronger, and allow a pitch change; say the other syllables more lightly. Then explain what you were doing, request help, and relay the bus, time, and gate exactly.",
+      "embedded_examples": [
+        "concept_pronunciation_word_stress",
+        "concept_pronunciation_syllables",
+        "concept_past_continuous",
+        "concept_mediation"
+      ],
+      "id": "section_04",
+      "section_type": "explanation",
+      "title": "Stress a syllable and integrate"
+    }
+  ],
+  "dimensions": [
+    "communicative_functions",
+    "grammar",
+    "lexical_chunks",
+    "listening",
+    "mediation",
+    "pronunciation",
+    "reading",
+    "speaking",
+    "spoken_interaction",
+    "writing"
+  ],
+  "duration_minutes": 35,
+  "exercises": [],
+  "functions_introduced": [],
+  "functions_reviewed": [
+    "concept_function_request_help"
+  ],
+  "generation_metadata": {
+    "curriculum_version": "20260903",
+    "generated_at": "2026-09-03T06:28:21Z",
+    "generator": "english_master.lesson_generation",
+    "generator_version": "2.0",
+    "model": "gpt-5.6-terra",
+    "prompt_version": "M6_LESSON_GENERATOR_v3",
+    "qa_notes": "Automated M6 structural checks passed; independent review remains required.",
+    "qa_status": "UNREVIEWED"
+  },
+  "grammar_introduced": [
+    "concept_past_continuous"
+  ],
+  "grammar_reviewed": [],
+  "id": "A2-U03-L01",
+  "lesson_kind": "CORE",
+  "lesson_number": 1,
+  "objectives": [
+    "handle narration, mediation, and socially suitable requests",
+    "combine selected A2.1 capabilities for a communicative purpose"
+  ],
+  "prerequisites": [
+    "A1-U02-L02"
+  ],
+  "pronunciation_introduced": [
+    "concept_pronunciation_word_stress"
+  ],
+  "pronunciation_reviewed": [],
+  "review_of": [],
+  "schema_version": "1.0",
+  "skills": [
+    "listening",
+    "mediation",
+    "reading",
+    "speaking",
+    "spoken_interaction",
+    "writing"
+  ],
+  "taxonomy_concepts": [
+    "concept_chunk_could_you_help",
+    "concept_mediation"
+  ],
+  "title": "Supported independence: foundations",
+  "unit_id": "A2.1-U03",
+  "vocabulary_introduced": [],
+  "vocabulary_reviewed": []
+}

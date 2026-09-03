@@ -1,0 +1,37 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "explanation",
+        "title": "Sequence an account",
+        "body_text": "Tell events in order: first, then, and finally. Use make a decision as a natural word pair.",
+        "embedded_examples": [
+          "concept_narrative_sequence"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "explanation",
+        "title": "Focus the message",
+        "body_text": "In I made a decision yesterday, stress decision to show the key information.",
+        "embedded_examples": [
+          "concept_pronunciation_sentence_stress"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "495e7f4adc5963731b8b7645108c4ddeb204844ea62abdcaf1f9289a41886d9f",
+  "response_sha256": "fda9c9719b17e0b8b195835cfb872983d427c1d8cfd20ac008fb60a4057413f7",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-terra",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T12:30:00Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

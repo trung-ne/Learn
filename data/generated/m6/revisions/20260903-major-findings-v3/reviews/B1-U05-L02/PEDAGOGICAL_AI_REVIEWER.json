@@ -1,0 +1,102 @@
+{
+  "ai_review_id": "m6aireview_5a1c3b4ff8b1a223896b1c6f50179bccff28cc48936ac7b867de2e750235bf0a",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "2f817fde24143d73f58ca022bba7619381ec1c633291d9052fec325bb8a2ec4e",
+  "checklist": [
+    {
+      "criterion": "CLARITY",
+      "notes": "The management sense, earlier-past anchor, linking boundaries, and accent-inclusive instructions are explicit.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "COGNITIVE_LOAD",
+      "notes": "One vocabulary sense, one reviewed tense relation, and one linking pattern fit the allotted time.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "COHERENCE",
+      "notes": "The lexical, grammar, and linking strands form a coherent monologic retelling, but authoritative spoken interaction is absent and listening/writing are at most implicit.",
+      "result": "FAIL"
+    },
+    {
+      "criterion": "OBJECTIVE_ALIGNMENT",
+      "notes": "The lesson applies earlier-past relationships and connected speech while introducing the allocated management sense of run.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "PROGRESSION",
+      "notes": "Sense discrimination leads to temporal placement, boundary rehearsal, and an integrated transformed retelling.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "TEACHABILITY",
+      "notes": "Meaning and timeline checks are observable and linking is carefully modeled; a recording/replay instruction would make the clarity check more reliable.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "VIETNAMESE_LEARNER_RELEVANCE",
+      "notes": "The no-added-vowel instruction, audible final consonants, gradual linking, and accent-inclusive goal align well with individualized cluster support.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Inspected only the supplied audit provenance declarations and project-authored authoritative context; no external comparison was performed."
+    ],
+    "result": "NOT_PERFORMED",
+    "scope_limitations": "No external source, corpus, web, or plagiarism search was permitted or performed; this record makes no external originality or copyright claim."
+  },
+  "decision": "NEEDS_REVISION",
+  "findings": [
+    {
+      "category": "M5_SKILL_REALIZATION",
+      "description": "Spoken interaction is an authoritative skill/dimension, but every activity is individual explanation or monologic retelling; there are no alternating speaker/listener roles or shared purpose. Listening and writing are also not explicitly enacted.",
+      "recommendation": "Add a bounded partner-role simulation with an information response and explicit record/replay plus written planning, or correct the M5 skill allocation before regeneration.",
+      "severity": "MAJOR"
+    },
+    {
+      "category": "TEACHABILITY",
+      "description": "The final check asks whether the accent keeps every word clear without telling a self-study learner to record/replay or supplying a concrete retrieval test.",
+      "recommendation": "Require replay and a short word-boundary recovery check, while retaining the accent-inclusive standard.",
+      "severity": "MINOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "B1-U05-L02",
+  "lesson_sha256": "74e2e6aeebec5fd76ba6ca57dd8aaa48bb3e553f8b70e84c1053fc9cf0b46dbb",
+  "limitations": [
+    "AI pedagogical development review only; this is not human review, release approval, certification, or public-release evidence.",
+    "The review used only the exact lesson, audit, deterministic authoritative request rebuilt from the verified M5 development snapshot, and snapshot-bound M5 context; generator reasoning and prior reviews were not inspected.",
+    "M6 intentionally contains no M7 exercises; exercises: [] was not treated as a defect, while the staging and viability of practice and self-check instructions inside content_sections were assessed.",
+    "No external plagiarism, copyright, corpus, learner, classroom, or audio-acoustic validation was performed.",
+    "The runtime reported reviewer model gpt-5.6-sol; no reviewer provider or inference parameters were reported, so provider is UNKNOWN and parameters are empty.",
+    "response.sha256 binds canonical JSON containing decision, checklist, findings, copyright_originality_check, and limitations exactly as persisted in this record."
+  ],
+  "record_type": "lesson_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {},
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "f09235ebe8526acf4b9189013b66d43aec82366ea13034ae310846b4e58ed39d"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "sha256": "45d83743683b5ad667c124d910224caa9b08e9f44f80d15e5339ef2a76d84987",
+    "version": "build_ai_review_prompt-v1"
+  },
+  "review_role": "PEDAGOGICAL_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T06:47:17Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0",
+  "snapshot_binding": {
+    "bundle_sha256": "79301a37b0821fcd2cc077021db318b0a201771b9727ad08be071fc076cdb027",
+    "member_hashes": {
+      "manifest": "1436c433163765410282fffdddea1bed616feb372270a47d99bebb7193e8d296",
+      "snapshot": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f",
+      "source_registry": "1270284517c3d47e4467310ad32e7431dc0aa3cfbce0edb07e4fedc9bc347435"
+    },
+    "snapshot_id": "m5devsnapshot_5335d3a30ab9f4948e22558aa7fc755857c09dff4ef305c95d171e3ebc718c72",
+    "snapshot_sha256": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f"
+  }
+}

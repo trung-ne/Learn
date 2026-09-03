@@ -1,0 +1,105 @@
+{
+  "cefr_level": "A2.2",
+  "communicative_functions": [],
+  "content_sections": [
+    {
+      "body_text": "Background: ‘I was walking to class.’ Four events follow: (1) ‘First, it began to rain.’ (2) ‘Next, a strong gust turned my umbrella inside out.’ (3) ‘Then, I made a decision to wait in the library.’ (4) ‘Finally, when the rain eased, I continued to class.’",
+      "embedded_examples": [
+        "concept_narrative_sequence",
+        "concept_collocation_make_decision",
+        "concept_past_continuous",
+        "concept_past_simple"
+      ],
+      "id": "section_01",
+      "section_type": "reading",
+      "title": "Read four bounded events"
+    },
+    {
+      "body_text": "Draw a long line for was walking. Then number only the four marked events 1–4 and underline first, next, then, and finally. Circle made a decision: English conventionally combines make with decision. The background sets the scene; the four markers bound the sequence.",
+      "embedded_examples": [
+        "concept_narrative_sequence",
+        "concept_collocation_make_decision",
+        "concept_past_continuous"
+      ],
+      "id": "section_02",
+      "section_type": "explanation",
+      "title": "Notice order and combination"
+    },
+    {
+      "body_text": "Relative prominence marks the new or contrasting information: ‘I waited in the LIBRARY, not the café.’ Make LIBRARY clearer and stronger than nearby words. Change the place to HOME; the strongest word changes because the intended contrast changes.",
+      "embedded_examples": [
+        "concept_pronunciation_sentence_stress",
+        "concept_pronunciation_word_stress"
+      ],
+      "id": "section_03",
+      "section_type": "explanation",
+      "title": "Signal information focus"
+    },
+    {
+      "body_text": "Change the place and weather problem, but keep one background plus exactly four numbered events. Include all four order markers and make a decision, then retell without reading. Check: there are four—not three or five—events, the weather wording is natural, the lexical combination is intact, and one contrast word is prominent.",
+      "embedded_examples": [
+        "concept_narrative_sequence",
+        "concept_collocation_make_decision",
+        "concept_pronunciation_sentence_stress"
+      ],
+      "id": "section_04",
+      "section_type": "explanation",
+      "title": "Transform, retell, verify"
+    }
+  ],
+  "dimensions": [
+    "collocations",
+    "discourse",
+    "listening",
+    "pronunciation",
+    "reading",
+    "speaking",
+    "writing"
+  ],
+  "duration_minutes": 35,
+  "exercises": [],
+  "functions_introduced": [],
+  "functions_reviewed": [],
+  "generation_metadata": {
+    "curriculum_version": "20260903",
+    "generated_at": "2026-09-03T06:28:21Z",
+    "generator": "english_master.lesson_generation",
+    "generator_version": "2.0",
+    "model": "gpt-5.6-terra",
+    "prompt_version": "M6_LESSON_GENERATOR_v3",
+    "qa_notes": "Automated M6 structural checks passed; independent review remains required.",
+    "qa_status": "UNREVIEWED"
+  },
+  "grammar_introduced": [],
+  "grammar_reviewed": [],
+  "id": "A2-U04-L01",
+  "lesson_kind": "CORE",
+  "lesson_number": 1,
+  "objectives": [
+    "handle sequencing, lexical combinations, and information focus",
+    "combine selected A2.2 capabilities for a communicative purpose"
+  ],
+  "prerequisites": [
+    "A2-U03-L02"
+  ],
+  "pronunciation_introduced": [
+    "concept_pronunciation_sentence_stress"
+  ],
+  "pronunciation_reviewed": [],
+  "review_of": [],
+  "schema_version": "1.0",
+  "skills": [
+    "listening",
+    "reading",
+    "speaking",
+    "writing"
+  ],
+  "taxonomy_concepts": [
+    "concept_collocation_make_decision",
+    "concept_narrative_sequence"
+  ],
+  "title": "Connected accounts: foundations",
+  "unit_id": "A2.2-U04",
+  "vocabulary_introduced": [],
+  "vocabulary_reviewed": []
+}

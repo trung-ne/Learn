@@ -1,0 +1,64 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "reading",
+        "title": "A short station story",
+        "body_text": "Mai was reading the station board when Linh called for three facts. Board: ‘Bus 12 leaves at 5:20 from Gate 4.’ Cover it; name the action in progress and the facts.",
+        "embedded_examples": [
+          "concept_past_continuous",
+          "concept_past_simple",
+          "concept_mediation",
+          "concept_reading"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "dialogue",
+        "title": "Choose a suitable request",
+        "body_text": "Mai to unfamiliar staff: ‘Excuse me. Could you help me check the 5:20 departure and find Gate 4, please?’ Staff: ‘Yes. Bus 12 leaves at 5:20 from Gate 4.’ To a friend: ‘Can you check Gate 4 with me?’ The first is respectful to staff; the second suits a shared task with a friend. Choose each, justify it, and adapt a detail. In danger, state the need directly.",
+        "embedded_examples": [
+          "concept_function_request_help",
+          "concept_chunk_could_you_help",
+          "concept_pragmatics_polite_requests"
+        ]
+      },
+      {
+        "id": "section_03",
+        "section_type": "dialogue",
+        "title": "Pass the answer to Linh",
+        "body_text": "Linh: ‘Which bus is it, when does it leave, and where do I go?’ Mai: ‘Bus 12 leaves at 5:20 from Gate 4.’ Linh: ‘Thanks.’ Mai read the board, confirmed the facts with staff, then passed them to Linh. Cover, answer Linh, and uncover Mai’s reply to check.",
+        "embedded_examples": [
+          "concept_mediation",
+          "concept_assessment_can_request_help",
+          "concept_function_request_help"
+        ]
+      },
+      {
+        "id": "section_04",
+        "section_type": "explanation",
+        "title": "Stress STA and check by listening",
+        "body_text": "STA-tion has two beats; STA /steɪ/ is stronger. Say the second beat lightly. Record the story and dialogues. Hide the text, replay, and answer: What was Mai doing? What did staff say? What did Mai tell Linh? Check: Mai was reading the board; staff said Bus 12 leaves at 5:20 from Gate 4; Mai told Linh the same sentence.",
+        "embedded_examples": [
+          "concept_pronunciation_word_stress",
+          "concept_pronunciation_syllables",
+          "concept_past_continuous"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "67a2331825d8752b6f770615b6feb19e035b7ba1de18724aad90f419ea1abe8e",
+  "response_sha256": "ebb0b6bcc132eab06d289d569bcb4c19f632ed2cdc51028d4e14151bdd1e2218",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-sol",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T08:00:22Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

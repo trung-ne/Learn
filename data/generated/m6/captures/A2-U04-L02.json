@@ -1,0 +1,40 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "dialogue",
+        "title": "A connected account",
+        "body_text": "I was waiting when I decided to run home. First I asked for help; then I made a decision.",
+        "embedded_examples": [
+          "concept_past_continuous",
+          "vocab_en_run_001",
+          "concept_function_request_help",
+          "concept_narrative_sequence"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "explanation",
+        "title": "Choose the focus",
+        "body_text": "Say the important new information more strongly: I made a DECISION.",
+        "embedded_examples": [
+          "concept_pronunciation_sentence_stress"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "b300b279adaf2672a93ae2f9ec8be17c25131324a518ea1b4c6946a3e0920d19",
+  "response_sha256": "279e859d39e8988e7728365822f8b3aa016356d13c4532e4c81e6bca1a5dde30",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-terra",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T12:30:00Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

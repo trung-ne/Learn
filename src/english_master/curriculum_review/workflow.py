@@ -60,6 +60,7 @@ VALIDATION_SCHEMA_ROOTS = (
     "curriculum-independent-review.schema.json",
     "curriculum-reviewer-registry.schema.json",
     "curriculum-approval-snapshot.schema.json",
+    "curriculum-development-snapshot.schema.json",
 )
 REVIEW_VALIDATION_PROFILE = "M5_INDEPENDENT_REVIEW_V2"
 SEMANTIC_VALIDATOR_VERSION = "2.0"
@@ -1202,6 +1203,124 @@ def verify_snapshot_bundle(
         issues.append(ReviewIssue("$.snapshot.snapshot_id", "SNAPSHOT_ID_MISMATCH", "snapshot_id is not its canonical content identity"))
     if snapshot != expected_snapshot:
         issues.append(ReviewIssue("$.snapshot", "SNAPSHOT_BINDING_MISMATCH", "snapshot does not exactly bind the manifest, source registry, reviewer registry, and reviews"))
+    if issues:
+        raise ReviewValidationError(issues)
+    return dict(snapshot)
+
+
+# Development authority intentionally remains separate from the human/release snapshot.
+DEVELOPMENT_SNAPSHOT_MEMBERS = ("manifest.json", "source-registry.json", "snapshot.json")
+
+
+def build_development_snapshot(
+    manifest: Mapping[str, Any],
+    *,
+    produced_at: str,
+    tool_name: str = "english_master.curriculum_review",
+    tool_version: str = "3.0",
+    git_commit: str | None = None,
+) -> dict[str, Any]:
+    """Build a hash-bound M5 development-only overlay without human claims."""
+
+    artifacts = {str(item["role"]).lower(): item["sha256"] for item in manifest["artifacts"]}
+    producing_tool: dict[str, Any] = {"name": tool_name, "version": tool_version}
+    if git_commit is not None:
+        producing_tool["git_commit"] = git_commit
+    snapshot: dict[str, Any] = {
+        "schema_version": "1.0",
+        "record_type": "curriculum_development_snapshot",
+        "approval_tier": "DEVELOPMENT_APPROVED",
+        "authority_scope": "M5_DEVELOPMENT_ONLY",
+        "manifest_id": manifest["manifest_id"],
+        "manifest_sha256": sha256_json(manifest),
+        "curriculum_version": manifest["curriculum_version"],
+        "taxonomy_version": manifest["taxonomy_version"],
+        "source_registry": copy.deepcopy(manifest["source_registry"]),
+        "artifact_hashes": artifacts,
+        "approved_taxonomy_records": copy.deepcopy(manifest["taxonomy_scope"]),
+        "reviewed_annotation_records": copy.deepcopy(manifest["annotation_scope"]),
+        "produced_at": produced_at,
+        "producing_tool": producing_tool,
+        "source_bundle_policy": {
+            "m5_records_remain_unchanged": True,
+            "taxonomy_statuses_remain_draft": True,
+            "lesson_outlines_remain_outline_only": True,
+            "snapshot_contains_generated_lesson_content": False,
+            "not_human_reviewed": True,
+            "not_release_approved": True,
+        },
+    }
+    snapshot["snapshot_id"] = content_identity("m5devsnapshot", snapshot, "snapshot_id")
+    return snapshot
+
+
+def publish_development_snapshot(
+    destination: Path,
+    bundle: CurriculumBundle,
+    manifest: Mapping[str, Any],
+    *,
+    source_registry: Mapping[str, Any],
+    source_registry_path: Path,
+    produced_at: str,
+    tool_name: str = "english_master.curriculum_review",
+    tool_version: str = "3.0",
+    git_commit: str | None = None,
+) -> dict[str, Any]:
+    """Validate and atomically publish an M5 development-only snapshot."""
+
+    if destination.exists() or destination.is_symlink():
+        raise FileExistsError(f"immutable destination already exists: {destination}")
+    issues = list(validate_manifest(manifest, bundle, source_registry, source_registry_path=source_registry_path))
+    if issues:
+        raise ReviewValidationError(issues)
+    snapshot = build_development_snapshot(
+        manifest, produced_at=produced_at, tool_name=tool_name, tool_version=tool_version, git_commit=git_commit,
+    )
+    issues = _schema_issues(snapshot, "curriculum-development-snapshot", "$.snapshot")
+    if issues:
+        raise ReviewValidationError(issues)
+    publish_bundle(destination, {
+        "manifest.json": dict(manifest),
+        "source-registry.json": dict(source_registry),
+        "snapshot.json": snapshot,
+    })
+    return snapshot
+
+
+def verify_development_snapshot_bundle(
+    directory: Path,
+    bundle: CurriculumBundle,
+    *,
+    source_registry: Mapping[str, Any],
+    source_registry_path: Path,
+    observed_at: str | None = None,
+) -> dict[str, Any]:
+    """Reverify a development snapshot against current M5 inputs and registry."""
+
+    actual_names = {path.name for path in directory.iterdir()} if directory.is_dir() else set()
+    if actual_names != set(DEVELOPMENT_SNAPSHOT_MEMBERS):
+        raise ReviewValidationError((ReviewIssue("$.bundle", "BUNDLE_MEMBERS", f"expected exactly {list(DEVELOPMENT_SNAPSHOT_MEMBERS)!r}, found {sorted(actual_names)!r}"),))
+    manifest = load_strict_document(directory / "manifest.json")
+    retained_source_registry = load_strict_document(directory / "source-registry.json")
+    snapshot = load_strict_document(directory / "snapshot.json")
+    issues = list(validate_manifest(manifest, bundle, source_registry, source_registry_path=source_registry_path))
+    if retained_source_registry != source_registry:
+        issues.append(ReviewIssue("$.source_registry", "SOURCE_REGISTRY_MISMATCH", "retained source registry does not equal independently loaded registry"))
+    issues.extend(_schema_issues(snapshot, "curriculum-development-snapshot", "$.snapshot"))
+    tool = snapshot.get("producing_tool")
+    expected = build_development_snapshot(
+        manifest,
+        produced_at=str(snapshot.get("produced_at", "")),
+        tool_name=str(tool.get("name", "")) if isinstance(tool, Mapping) else "",
+        tool_version=str(tool.get("version", "")) if isinstance(tool, Mapping) else "",
+        git_commit=tool.get("git_commit") if isinstance(tool, Mapping) and isinstance(tool.get("git_commit"), str) else None,
+    )
+    if snapshot != expected:
+        issues.append(ReviewIssue("$.snapshot", "SNAPSHOT_BINDING_MISMATCH", "development snapshot does not exactly bind its manifest and policy"))
+    produced = _parse_datetime(snapshot.get("produced_at"), path="$.snapshot.produced_at", issues=issues)
+    observed = _parse_datetime(observed_at, path="$.observation_timestamp", issues=issues) if observed_at else None
+    if produced is not None and observed is not None and produced > observed:
+        issues.append(ReviewIssue("$.snapshot.produced_at", "FUTURE_APPROVAL", "produced_at cannot be later than verification clock"))
     if issues:
         raise ReviewValidationError(issues)
     return dict(snapshot)

@@ -1,0 +1,61 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "reading",
+        "title": "Build a bounded situation",
+        "body_text": "Situation: A visitor is looking for Gate 4. The departure time is 5:20. The visitor needs direct help from a friend or a staff member. Keep these two facts visible while choosing what to say; do not add facts that the situation does not give.",
+        "embedded_examples": [
+          "concept_function_request_help",
+          "concept_assessment_can_request_help"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "explanation",
+        "title": "Match wording to the person",
+        "body_text": "To a friend: ‘Help me find Gate 4, please.’ To staff: ‘Excuse me. Can you help me find Gate 4, please?’ The greeting and fuller wording suit an unfamiliar listener. Both requests name a clear action, so the helper knows what to do.",
+        "embedded_examples": [
+          "concept_function_request_help",
+          "concept_pragmatics_polite_requests"
+        ]
+      },
+      {
+        "id": "section_03",
+        "section_type": "dialogue",
+        "title": "Model and rehearse the exchange",
+        "body_text": "Visitor: ‘Excuse me. Can you help me find Gate 4, please?’ Staff: ‘Yes. Go straight; Gate 4 is on the left.’ Visitor: ‘Thank you.’ Rehearse both roles. Then use the shorter request with a friend and keep the response relevant to finding the gate.",
+        "embedded_examples": [
+          "concept_function_request_help",
+          "concept_pragmatics_polite_requests",
+          "concept_assessment_can_request_help"
+        ]
+      },
+      {
+        "id": "section_04",
+        "section_type": "explanation",
+        "title": "Mark word stress and self-check",
+        "body_text": "VIS-i-tor has three syllables; VIS carries the main stress. Make VIS clearer and slightly longer, then say the whole word at normal speed. Record one staff exchange. Check: the request fits the relationship, names Gate 4, receives useful help, and keeps stress inside VIS-i-tor rather than stressing an entire sentence.",
+        "embedded_examples": [
+          "concept_pronunciation_word_stress",
+          "concept_pronunciation_syllables",
+          "concept_assessment_can_request_help"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "c1d5fb31a77eb63ab1f4e9be201559fb1f75076618d5f9d7ba4e3fcca9dda747",
+  "response_sha256": "8d80a2954c9b1e28f17f85d0ad4f80cf01cec530a192147ba18012dc9d24a82e",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-terra",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T05:54:40Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

@@ -8,7 +8,7 @@ from typing import Any, Iterable, Mapping
 
 from english_master.schema_validation import validate_instance
 
-from .authority import VerifiedM5Authority
+from .authority import _VerifiedM5Base
 from .canonical import authorization_id, request_id, sha256_json
 from .derivation import (
     FAMILIES,
@@ -43,7 +43,7 @@ class GenerationConfig:
     seed: int | None = None
 
 
-def _approved_snapshot_records(m5: VerifiedM5Authority) -> dict[str, Mapping[str, Any]]:
+def _approved_snapshot_records(m5: _VerifiedM5Base) -> dict[str, Mapping[str, Any]]:
     values = m5.snapshot.get("approved_taxonomy_records", [])
     if not isinstance(values, list):
         return {}
@@ -54,7 +54,7 @@ def _approved_snapshot_records(m5: VerifiedM5Authority) -> dict[str, Mapping[str
     }
 
 
-def _reviewed_snapshot_annotations(m5: VerifiedM5Authority) -> dict[str, Mapping[str, Any]]:
+def _reviewed_snapshot_annotations(m5: _VerifiedM5Base) -> dict[str, Mapping[str, Any]]:
     values = m5.snapshot.get("reviewed_annotation_records", [])
     if not isinstance(values, list):
         return {}
@@ -65,7 +65,7 @@ def _reviewed_snapshot_annotations(m5: VerifiedM5Authority) -> dict[str, Mapping
     }
 
 
-def _required_record_ids(m5: VerifiedM5Authority, lesson_ids: Iterable[str]) -> set[str]:
+def _required_record_ids(m5: _VerifiedM5Base, lesson_ids: Iterable[str]) -> set[str]:
     required: set[str] = set()
     for lesson_id in lesson_ids:
         context = derive_context(m5.bundle, lesson_id)
@@ -85,7 +85,7 @@ def _required_record_ids(m5: VerifiedM5Authority, lesson_ids: Iterable[str]) -> 
 
 
 def build_authorization(
-    m5: VerifiedM5Authority,
+    m5: _VerifiedM5Base,
     lesson_ids: Iterable[str],
 ) -> JsonObject:
     """Build an exact narrowing of a verified M5 approval snapshot."""
@@ -127,7 +127,11 @@ def build_authorization(
     payload: JsonObject = {
         "schema_version": "2.0",
         "record_type": "lesson_generation_authorization",
-        "authority_source": "VERIFIED_M5_APPROVAL_SNAPSHOT",
+        "authority_source": (
+            "VERIFIED_M5_DEVELOPMENT_SNAPSHOT"
+            if m5.snapshot.get("record_type") == "curriculum_development_snapshot"
+            else "VERIFIED_M5_APPROVAL_SNAPSHOT"
+        ),
         "snapshot_binding": m5.snapshot_binding(),
         "curriculum_version": m5.bundle.structure.get("curriculum_version"),
         "taxonomy_version": m5.bundle.taxonomy.get("taxonomy_version"),
@@ -173,7 +177,7 @@ def _teaching_record(source: Mapping[str, Any]) -> JsonObject:
 
 
 def _annotation_context(
-    m5: VerifiedM5Authority,
+    m5: _VerifiedM5Base,
     required_ids: set[str],
 ) -> list[JsonObject]:
     annotations = annotation_index(m5.bundle)
@@ -206,7 +210,7 @@ def _annotation_context(
 
 
 def build_request(
-    m5: VerifiedM5Authority,
+    m5: _VerifiedM5Base,
     authorization: Mapping[str, Any],
     lesson_id: str,
     *,

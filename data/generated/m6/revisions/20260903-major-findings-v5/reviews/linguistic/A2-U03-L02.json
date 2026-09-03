@@ -1,0 +1,90 @@
+{
+  "ai_review_id": "m6aireview_bc76d3b96e638c979c735d713d7d759cfab1137af428838870f5777ded90c8e0",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "1c949307247ea96be0102576e35453038cd4a10fc9d0ed03721595ee5a6aa1c0",
+  "checklist": [
+    {
+      "criterion": "CEFR_ALIGNMENT",
+      "notes": "The controlled station context, past-continuous review, practical request forms, and short mediation task are broadly suitable for the declared internal tier A2.1; this is an AI judgment, not official CEFR certification.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "GRAMMAR_LEXICAL_ACCURACY",
+      "notes": "The past-continuous backgrounding, timetable language, request forms, and primary stress in station are linguistically accurate; ‘two beats’ is accessible shorthand for two syllables in this beginner-facing context.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "NATURALNESS",
+      "notes": "The individual English utterances are generally natural, but the lesson’s discourse chain is internally incomplete: it says Mai asked staff and later asks what staff said although no staff response appears anywhere in the supplied model.",
+      "result": "FAIL"
+    },
+    {
+      "criterion": "ORIGINALITY_LIMITATIONS",
+      "notes": "No suspicious copied passage was identified in a manual internal phrase-level comparison with the authorized M5 taxonomy context and the corresponding v4 lesson. No Internet-wide or external-corpus plagiarism search was performed.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "PREREQUISITE_SCOPE",
+      "notes": "All embedded and declared taxonomy references are present in the audit’s allowed or context-only sets; no forbidden taxonomy ID is taught or invoked.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "TARGET_LANGUAGE_COMPLIANCE",
+      "notes": "Instructional and model content is in English; names, numerals, IPA, and identifiers function only as appropriate learning support.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Manual internal phrase-level comparison against the authorized M5 taxonomy wording and the corresponding v4 lesson and findings.",
+      "Inspection of the immutable v5 lesson, audit, generation capture provenance boundary, and snapshot binding for unauthorized external-payload claims."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "No Internet-wide search, proprietary corpus comparison, or provider-authenticated plagiarism service was used; common short English forms, timetable facts, and functional phrases are not evidence of copying."
+  },
+  "decision": "NEEDS_REVISION",
+  "findings": [
+    {
+      "category": "NATURALNESS",
+      "description": "Sections 2–4 do not form a complete discourse: section 2 gives only Mai’s request to staff, section 3 asserts that Mai asked staff, and section 4 asks ‘What did staff say?’, but no staff reply is supplied. The required listening answer therefore cannot be recovered from the lesson’s own model.",
+      "recommendation": "Add a brief staff reply containing the confirmed bus, time, and gate, then keep Mai’s mediation and the final listening question aligned with that reply.",
+      "severity": "MAJOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "A2-U03-L02",
+  "lesson_sha256": "cbf78d077505b803bce638b1d5fc560372a8ceff8faf00cb3a8f6b7e37aae389",
+  "limitations": [
+    "This is an independent AI development review, not human review, release approval, or CEFR certification.",
+    "The review is limited to the supplied immutable v5 lesson, audit, session-captured generation evidence, authorized M5 snapshot-bound context, corresponding v4 findings used only as repair context, and local repository materials.",
+    "No Internet-wide plagiarism search, proprietary corpus comparison, provider-authenticated plagiarism service, or external pronunciation recording assessment was performed.",
+    "Provider identity and inference parameters were unavailable to this session and are recorded as UNKNOWN or empty; the runtime-disclosed model identifier is recorded without inference."
+  ],
+  "record_type": "lesson_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {},
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "316721671f114b4cf4068368c34c77684117af14b49d750f1591549cc227fc52"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "sha256": "4004d65b7e3bbfd1e9c0654fbaeccd237880eb9a257c6656ff5be54f9c3c85a6",
+    "version": "M6_LINGUISTIC_AI_REVIEW_v1"
+  },
+  "review_role": "LINGUISTIC_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T07:50:16Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0",
+  "snapshot_binding": {
+    "bundle_sha256": "79301a37b0821fcd2cc077021db318b0a201771b9727ad08be071fc076cdb027",
+    "member_hashes": {
+      "manifest": "1436c433163765410282fffdddea1bed616feb372270a47d99bebb7193e8d296",
+      "snapshot": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f",
+      "source_registry": "1270284517c3d47e4467310ad32e7431dc0aa3cfbce0edb07e4fedc9bc347435"
+    },
+    "snapshot_id": "m5devsnapshot_5335d3a30ab9f4948e22558aa7fc755857c09dff4ef305c95d171e3ebc718c72",
+    "snapshot_sha256": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f"
+  }
+}

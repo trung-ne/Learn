@@ -1,0 +1,64 @@
+{
+  "content": {
+    "content_sections": [
+      {
+        "id": "section_01",
+        "section_type": "vocabulary",
+        "title": "Learn the management sense of run",
+        "body_text": "Here run means manage or organize an activity, service, or organization. ‘Lan runs a language club.’ ‘They run a weekend course.’ Identify what is managed after run, then create one true or invented example about a club, event, service, course, or business.",
+        "embedded_examples": [
+          "vocab_en_run_002",
+          "concept_present_simple"
+        ]
+      },
+      {
+        "id": "section_02",
+        "section_type": "grammar",
+        "title": "Place management before a past point",
+        "body_text": "Guests arrived for the club meeting at 6:00 Friday. Earlier, Lan had run three school events. Had run puts her organizing experience before that clear anchor. Draw HAD RUN EVENTS → GUESTS ARRIVED, 6:00 FRIDAY → now; keep the management meaning.",
+        "embedded_examples": [
+          "vocab_en_run_002",
+          "concept_past_perfect",
+          "concept_past_simple",
+          "concept_narrative_sequence"
+        ]
+      },
+      {
+        "id": "section_03",
+        "section_type": "explanation",
+        "title": "Mark linking boundaries",
+        "body_text": "Many accents can join a final consonant smoothly to a following vowel: run_an event; event_at school. Practise each side, then the pair with no added pause or vowel. Keep /n/ and /t/ audible. Timing varies by accent; aim for clear words, not one accent.",
+        "embedded_examples": [
+          "concept_pronunciation_linking",
+          "concept_pronunciation_phonemes",
+          "vocab_en_run_002"
+        ]
+      },
+      {
+        "id": "section_04",
+        "section_type": "explanation",
+        "title": "Notice, retell, self-check",
+        "body_text": "Model: ‘At 6:00 Friday, guests arrived. Earlier that day, Lan had run_an event_at school, so she knew how to organize the club.’ Mark the past anchor, rehearse both possible links, then retell with another activity. Check: run means manage, had run is earlier than 6:00, and your accent keeps every word clear.",
+        "embedded_examples": [
+          "vocab_en_run_002",
+          "concept_past_perfect",
+          "concept_pronunciation_linking",
+          "concept_narrative_sequence"
+        ]
+      }
+    ]
+  },
+  "prompt_sha256": "d748272ab312304120fae890020f5b2c736e7937410a1d2ba0687ac94764aeb3",
+  "response_sha256": "aa789f65583c23769da8d24bf396033387129b2371264fe56782d1d58d795459",
+  "provider": "UNKNOWN",
+  "model": "gpt-5.6-terra",
+  "parameters": {
+    "temperature": 0
+  },
+  "seed": null,
+  "observed_at": "2026-09-03T06:28:21Z",
+  "deterministic": false,
+  "replayable_from_capture": true,
+  "capture_mode": "SESSION_CAPTURED",
+  "provenance_note": "Content was authored during the recorded development session; no provider-authenticated receipt is available."
+}

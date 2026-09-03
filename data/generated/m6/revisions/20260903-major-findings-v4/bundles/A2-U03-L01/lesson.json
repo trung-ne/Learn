@@ -1,0 +1,115 @@
+{
+  "cefr_level": "A2.1",
+  "communicative_functions": [
+    "concept_function_request_help"
+  ],
+  "content_sections": [
+    {
+      "body_text": "Use was/were + verb-ing for an action in progress around a past time: ‘At four, I was reading the timetable.’ Draw a line through 4:00 for was reading. Add the short event: ‘The bus left at 4:15.’",
+      "embedded_examples": [
+        "concept_past_continuous",
+        "concept_past_simple"
+      ],
+      "id": "section_01",
+      "section_type": "grammar",
+      "title": "An action around a past time"
+    },
+    {
+      "body_text": "Notice: ‘Bus 12 leaves at 4:15 from Gate 3.’ Your friend cannot see it. Write: ‘Bus 12 leaves at 4:15 from Gate 3.’ Cover the notice and check your message: bus 12, 4:15, Gate 3. Record the message, replay it, and write the three facts you hear.",
+      "embedded_examples": [
+        "concept_mediation",
+        "concept_reading",
+        "concept_writing"
+      ],
+      "id": "section_02",
+      "section_type": "reading",
+      "title": "Tell your friend three facts"
+    },
+    {
+      "body_text": "At the station, say: ‘Excuse me. Could you help me read this timetable, please?’ Staff: ‘Yes. Bus 12 leaves at 4:15 from Gate 3.’ Practise both roles. This lesson gives one useful model; comparing request choices for different situations comes in the next lesson.",
+      "embedded_examples": [
+        "concept_function_request_help",
+        "concept_chunk_could_you_help"
+      ],
+      "id": "section_03",
+      "section_type": "dialogue",
+      "title": "Use one request model"
+    },
+    {
+      "body_text": "Say in-for-MA-tion. MA /meɪ/ has the strongest beat. Keep /meɪ/ clear and make it a little longer; say the other parts lightly. Now say what you were doing, ask for help, and tell your friend the three notice facts. Check each fact against the notice and mark MA before speaking again.",
+      "embedded_examples": [
+        "concept_pronunciation_word_stress",
+        "concept_pronunciation_syllables",
+        "concept_past_continuous",
+        "concept_mediation"
+      ],
+      "id": "section_04",
+      "section_type": "explanation",
+      "title": "Stress MA in information"
+    }
+  ],
+  "dimensions": [
+    "communicative_functions",
+    "grammar",
+    "lexical_chunks",
+    "listening",
+    "mediation",
+    "pronunciation",
+    "reading",
+    "speaking",
+    "spoken_interaction",
+    "writing"
+  ],
+  "duration_minutes": 35,
+  "exercises": [],
+  "functions_introduced": [],
+  "functions_reviewed": [
+    "concept_function_request_help"
+  ],
+  "generation_metadata": {
+    "curriculum_version": "20260903",
+    "generated_at": "2026-09-03T07:16:57Z",
+    "generator": "english_master.lesson_generation",
+    "generator_version": "2.0",
+    "model": "gpt-5.6-terra",
+    "prompt_version": "M6_LESSON_GENERATOR_v3",
+    "qa_notes": "Automated M6 structural checks passed; independent review remains required.",
+    "qa_status": "UNREVIEWED"
+  },
+  "grammar_introduced": [
+    "concept_past_continuous"
+  ],
+  "grammar_reviewed": [],
+  "id": "A2-U03-L01",
+  "lesson_kind": "CORE",
+  "lesson_number": 1,
+  "objectives": [
+    "handle narration, mediation, and socially suitable requests",
+    "combine selected A2.1 capabilities for a communicative purpose"
+  ],
+  "prerequisites": [
+    "A1-U02-L02"
+  ],
+  "pronunciation_introduced": [
+    "concept_pronunciation_word_stress"
+  ],
+  "pronunciation_reviewed": [],
+  "review_of": [],
+  "schema_version": "1.0",
+  "skills": [
+    "listening",
+    "mediation",
+    "reading",
+    "speaking",
+    "spoken_interaction",
+    "writing"
+  ],
+  "taxonomy_concepts": [
+    "concept_chunk_could_you_help",
+    "concept_mediation"
+  ],
+  "title": "Supported independence: foundations",
+  "unit_id": "A2.1-U03",
+  "vocabulary_introduced": [],
+  "vocabulary_reviewed": []
+}
