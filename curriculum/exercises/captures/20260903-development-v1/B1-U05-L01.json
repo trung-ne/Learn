@@ -1,0 +1,67 @@
+{
+  "observed_at": "2026-09-03T09:25:07Z",
+  "provider": "UNKNOWN",
+  "model": "UNKNOWN",
+  "run_id": "m7-session-capture-b1-u05-l01",
+  "deterministic": false,
+  "provenance_mode": "SESSION_CAPTURED",
+  "content": {
+    "items": [
+      {
+        "title": "Correct the earlier-past form",
+        "exercise_type": "error_correction",
+        "difficulty": "medium",
+        "instructions": "Correct the verb phrase that should mark the earlier event.",
+        "objective_indices": [0],
+        "target_references": ["concept_past_perfect"],
+        "review_references": [],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"erroneous_sentence": "By the time the doors opened, the team prepared every chair.", "error_span": "prepared", "correction": "had prepared", "corrected_sentence": "By the time the doors opened, the team had prepared every chair.", "explanation": "Had prepared places the preparation before the later opening."}
+      },
+      {
+        "title": "Order events by time",
+        "exercise_type": "ordering",
+        "difficulty": "medium",
+        "instructions": "Arrange the event clauses from earliest to latest.",
+        "objective_indices": [0, 1],
+        "target_references": ["concept_past_perfect", "concept_narrative_sequence"],
+        "review_references": [],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"segments": [{"id": "s1", "text": "The guests entered the hall."}, {"id": "s2", "text": "The host had tested the microphone."}, {"id": "s3", "text": "The talk began."}], "valid_order": ["s2", "s1", "s3"], "ordering_principle": "past timeline", "explanation": "Testing occurred before entry, and the talk began after the guests entered."}
+      },
+      {
+        "title": "Listen for earlier events",
+        "exercise_type": "listening",
+        "difficulty": "medium",
+        "instructions": "Use the transcript as a listening script and identify both earlier actions.",
+        "objective_indices": [0, 1],
+        "target_references": ["concept_past_perfect", "concept_pronunciation_weak_forms"],
+        "review_references": [],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"transcript": "Before Jo arrived, I had printed the schedule and had placed copies by the door. Jo then welcomed the visitors.", "questions": [{"id": "q1", "text": "Which two actions were complete before Jo arrived?"}], "answers": [{"question_id": "q1", "answer": "Printing the schedule and placing copies by the door."}], "origin": "PROJECT_AUTHORED", "media_required": false}
+      },
+      {
+        "title": "Write a two-stage narrative",
+        "exercise_type": "writing",
+        "difficulty": "hard",
+        "instructions": "Write a short account that clearly relates earlier and later past events.",
+        "objective_indices": [0, 1],
+        "target_references": ["concept_past_perfect", "concept_narrative_sequence"],
+        "review_references": [],
+        "scoring_mode": "RUBRIC",
+        "payload": {"communicative_goal": "Show preparation completed before a meeting started.", "constraints": ["Write three or four sentences.", "Use at least one correct past-perfect form."], "expected_output": "A coherent account with an unambiguous earlier-past relationship.", "rubric": [{"dimension": "time relationship", "criterion": "Past perfect marks an event earlier than a stated past point."}, {"dimension": "cohesion", "criterion": "The events connect in a logical narrative."}]}
+      },
+      {
+        "title": "Identify a possible weak form",
+        "exercise_type": "multiple_choice",
+        "difficulty": "medium",
+        "instructions": "Choose the function word that may be reduced when it is unstressed.",
+        "objective_indices": [0],
+        "target_references": ["concept_pronunciation_weak_forms"],
+        "review_references": [],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"options": [{"id": "a", "text": "had in ‘She had LEFT’"}, {"id": "b", "text": "LEFT in ‘She had LEFT’"}, {"id": "c", "text": "TRAIN in ‘to the TRAIN’"}], "primary_option_id": "a", "explanation": "Unstressed had may be reduced, while the prominent content word remains clear."}
+      }
+    ]
+  }
+}

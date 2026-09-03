@@ -1,0 +1,85 @@
+{
+  "ai_review_id": "m7aireview_eef58d0d9b04cc5e789d2d37085e3d61c2f1d88d33b824d7e2e2e57c3424d75e",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "99fad5d2781c2fa8c1b1a91b84f53514cdd27a5dd97c7abcb8e3cd01b011d982",
+  "checklist": [
+    {
+      "criterion": "CEFR_ALIGNMENT",
+      "notes": "Narrative sequencing, make a decision, sentence stress, and a four-event account suit internal tier A2.2.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "GRAMMAR_LEXICAL_ACCURACY",
+      "notes": "The event order, collocation, constructed sentence, and listening answers are accurate.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ANSWER_ACCURACY",
+      "notes": "All objective keys are uniquely supported, and the writing task has relevant analytic criteria.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "DISTRACTOR_QUALITY",
+      "notes": "Do and build are unambiguous non-collocates with a decision and focus the intended choice.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "LANGUAGE_QUALITY",
+      "notes": "The material is clear and coherent; one explanation omits an article when naming the collocation.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ORIGINALITY_LIMITATIONS",
+      "notes": "The declared project-authored policy and local wording were inspected across all ten revised sets; no suspicious copied passage was identified, but no external search was performed.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Reviewed the revised exercise set and audit against the declared PROJECT_AUTHORED input policy.",
+      "Performed manual internal phrase-level inspection across the ten supplied revised M7 exercise sets."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "No Internet-wide copyright or plagiarism search, proprietary-corpus comparison, or provider-authenticated originality service was performed; common short English forms and functional phrases are not evidence of copying."
+  },
+  "decision": "APPROVE",
+  "exercise_set_id": "m7set_1b332d9af4ec80a16c55c85736228a6b8faa78b063f1aee484c2a27a53b8d54c",
+  "exercise_set_sha256": "8bd31d2636f2629e1d6eb5eac731b0f8d4adaf17191e65661db48279116f5b2f",
+  "findings": [
+    {
+      "category": "LANGUAGE_QUALITY",
+      "description": "The explanation in ex_A2-U04-L01_002 says “uses make with decision”; natural wording requires an article or should name “make a decision.”",
+      "recommendation": "State: “The natural collocation is make a decision.”",
+      "severity": "MINOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "A2-U04-L01",
+  "limitations": [
+    "This is an independent AI linguistic development review, not human review, release approval, or CEFR certification.",
+    "The review is limited to the ten supplied revised immutable exercise sets, their audits, the verified M6 authority, and local repository materials.",
+    "No Internet-wide copyright or plagiarism search and no external audio assessment were performed.",
+    "Provider identity and inference parameters were unavailable and are recorded as UNKNOWN; the runtime-disclosed model identifier is recorded factually."
+  ],
+  "m6_batch_id": "m6devbatch_4883cca8dea320c18b26a99316041dec1101c7dd28e551e265654c367af93d26",
+  "record_type": "exercise_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {
+      "response_payload_canonicalization": "english_master.lesson_generation.canonical.canonical_json"
+    },
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "a3a0a7037b597a3983e7d1f6922a3c6ca0a6bb8f3c582106892bd4b2f67f709e"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "run_id": "m7-v2-linguistic-review-session-a2-u04-l01",
+    "sha256": "23f434c38d53f92ef2a09bc2eacac26aac74e6ece4c4cbc638bebf76c1c0e2ee",
+    "version": "M7_LINGUISTIC_AI_REVIEW_v2"
+  },
+  "review_role": "LINGUISTIC_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T09:59:13Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0"
+}

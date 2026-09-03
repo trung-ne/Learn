@@ -1,0 +1,85 @@
+{
+  "ai_review_id": "m7aireview_23289fd5ca01b1013d03697dc4cc4b3c69001d018822e5d3869e32d7a77b9123",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "9e9cd9b6eb59d45e14cf430c91c5285753dd11cb99059fb45b098149b2615a6a",
+  "checklist": [
+    {
+      "criterion": "OBJECTIVE_ALIGNMENT",
+      "notes": "The set directly addresses polite requests, situational appropriacy, information checking, and mediation.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "TEACHABILITY",
+      "notes": "Contrasting interlocutors and the explicit check-confirm-relay procedure make pragmatic choices visible and reusable.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "PROGRESSION",
+      "notes": "Tasks move from translation and matching through procedural ordering and repair to freer mediation writing, though every task is marked medium.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "CLARITY",
+      "notes": "Roles, situations, required facts, and output length are all specified.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "COGNITIVE_LOAD",
+      "notes": "Each task has a small information set and the final message preserves only three facts.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "VIETNAMESE_LEARNER_RELEVANCE",
+      "notes": "The Vietnamese request and travel-service contexts support practical formality choices without presenting one formula as universally mandatory.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "WORKLOAD",
+      "notes": "Five bounded medium tasks remain reasonable, with the final response limited to two sentences.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Reviewed the exercise set and audit against the declared original project-authored policy and external-payload/media declarations."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "No Internet-wide copyright or plagiarism search was performed; this review checked only the declared original project-authored policy and supplied artifact evidence."
+  },
+  "decision": "APPROVE",
+  "exercise_set_id": "m7set_47f6cac21c33f9bed31b62434731ff3baf58f7a6a6fdffa0483ca8334c2dc191",
+  "exercise_set_sha256": "1257f8ef4e181988cd675c874720b182037c78d2cae0f5834c4eaa7ac9f80797",
+  "findings": [
+    {
+      "category": "PROGRESSION",
+      "description": "All five tasks are labelled medium, and the set opens with productive translation rather than a lower-demand recognition scaffold.",
+      "recommendation": "Consider beginning with situational matching, then move to translation and free mediation.",
+      "severity": "MINOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "A2-U03-L02",
+  "limitations": [
+    "This is an independent AI pedagogical review for development evidence, not human review or release approval.",
+    "The review covers the supplied immutable exercise set and automated audit; it does not report an Internet-wide originality search."
+  ],
+  "m6_batch_id": "m6devbatch_4883cca8dea320c18b26a99316041dec1101c7dd28e551e265654c367af93d26",
+  "record_type": "exercise_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {},
+    "provider": "OpenAI",
+    "replayable_from_capture": true,
+    "sha256": "b7b4cbf71d64ffd17e03c30447feb57a5f457c8a24ed8e1b9bb5c573f2dc08cf"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "run_id": "m7-pedagogical-review-v2-a2-u03-l02",
+    "sha256": "f0996821e5d7a528bce2a380e390b10401ed09984b9d676e1519e90f98220799",
+    "version": "M7_PEDAGOGICAL_AI_REVIEW_v1"
+  },
+  "review_role": "PEDAGOGICAL_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T10:00:13Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0"
+}

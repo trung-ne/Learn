@@ -1,0 +1,85 @@
+{
+  "ai_review_id": "m7aireview_acf2ff923e882330438fc62a3be6d3c1191cf672dcc38afa51d8cee40dd9ea1d",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "f2cae94c426ea178f11daac95437aa94173a859e342d433bb95497d8a42d3372",
+  "checklist": [
+    {
+      "criterion": "CEFR_ALIGNMENT",
+      "notes": "The concrete travel, school, and help-request language and short past-simple tasks fit internal tier A1.2.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "GRAMMAR_LEXICAL_ACCURACY",
+      "notes": "Ran is the correct past of run, the request forms are polite, and the reading/listening language is accurate.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ANSWER_ACCURACY",
+      "notes": "The texts support all answers; the fill blank and construction keys are correct.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "DISTRACTOR_QUALITY",
+      "notes": "No multiple-choice distractors occur; objective prompts constrain the intended forms and translation guidance states required meaning.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "LANGUAGE_QUALITY",
+      "notes": "Instructions, stimuli, explanations, and answers are concise, coherent, and learner-appropriate.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ORIGINALITY_LIMITATIONS",
+      "notes": "The declared project-authored policy and local wording were inspected across all ten revised sets; no suspicious copied passage was identified, but no external search was performed.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Reviewed the revised exercise set and audit against the declared PROJECT_AUTHORED input policy.",
+      "Performed manual internal phrase-level inspection across the ten supplied revised M7 exercise sets."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "No Internet-wide copyright or plagiarism search, proprietary-corpus comparison, or provider-authenticated originality service was performed; common short English forms and functional phrases are not evidence of copying."
+  },
+  "decision": "APPROVE",
+  "exercise_set_id": "m7set_bf7aac316dee1cc4c72c9d219f3e1ac2883d9fd414c978a5a9534afdb745ac05",
+  "exercise_set_sha256": "c5a661e9160a746c261f37149e488c9f0731639b907c18e29e2a43fb3f263789",
+  "findings": [
+    {
+      "category": "ANSWER_VARIANTS",
+      "description": "ex_A1-U02-L01_001 lists only two English realizations although other polite requests, such as “Can you help me find Gate 3, please?”, preserve the meaning.",
+      "recommendation": "Apply the broader scoring guidance rather than treating the listed variants as exhaustive.",
+      "severity": "MINOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "A1-U02-L01",
+  "limitations": [
+    "This is an independent AI linguistic development review, not human review, release approval, or CEFR certification.",
+    "The review is limited to the ten supplied revised immutable exercise sets, their audits, the verified M6 authority, and local repository materials.",
+    "No Internet-wide copyright or plagiarism search and no external audio assessment were performed.",
+    "Provider identity and inference parameters were unavailable and are recorded as UNKNOWN; the runtime-disclosed model identifier is recorded factually."
+  ],
+  "m6_batch_id": "m6devbatch_4883cca8dea320c18b26a99316041dec1101c7dd28e551e265654c367af93d26",
+  "record_type": "exercise_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {
+      "response_payload_canonicalization": "english_master.lesson_generation.canonical.canonical_json"
+    },
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "1894b59cca8746488092ee50462dda5555d66d668b3869eaf7913c97b30f8e0b"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "run_id": "m7-v2-linguistic-review-session-a1-u02-l01",
+    "sha256": "a8cb89c6aff96b449eca16f81284908f26c2c4b8a7ccaf48f6c81595a70d6988",
+    "version": "M7_LINGUISTIC_AI_REVIEW_v2"
+  },
+  "review_role": "LINGUISTIC_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T09:59:09Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0"
+}

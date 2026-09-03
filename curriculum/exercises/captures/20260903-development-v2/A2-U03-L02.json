@@ -1,0 +1,67 @@
+{
+  "observed_at": "2026-09-03T09:25:07Z",
+  "provider": "UNKNOWN",
+  "model": "UNKNOWN",
+  "run_id": "m7-session-capture-a2-u03-l02",
+  "deterministic": false,
+  "provenance_mode": "SESSION_CAPTURED",
+  "content": {
+    "items": [
+      {
+        "title": "Translate a staff request",
+        "exercise_type": "translation",
+        "difficulty": "medium",
+        "instructions": "Translate the polite request into English.",
+        "objective_indices": [0],
+        "target_references": ["concept_pragmatics_polite_requests", "concept_chunk_could_you_help"],
+        "review_references": ["concept_function_request_help"],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"direction": "vi_to_en", "register": "polite", "source_text": "Xin lỗi, anh/chị có thể giúp tôi kiểm tra giờ khởi hành được không?", "intended_meaning": "A respectful request to unfamiliar staff to check a departure time.", "primary_answer": "Excuse me, could you help me check the departure time?", "acceptable_variants": ["Excuse me, could you help me check the departure time?"], "scoring_guidance": "Require an attention-getter and a polite could-you-help request."}
+      },
+      {
+        "title": "Match requests to situations",
+        "exercise_type": "matching",
+        "difficulty": "medium",
+        "instructions": "Match each request to the person and situation it best suits.",
+        "objective_indices": [0],
+        "target_references": ["concept_pragmatics_polite_requests"],
+        "review_references": ["concept_function_request_help"],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"left": [{"id": "l1", "text": "unfamiliar station employee"}, {"id": "l2", "text": "friend beside you"}], "right": [{"id": "r1", "text": "Can you look at this map with me?"}, {"id": "r2", "text": "Excuse me, could you help me check this platform, please?"}], "mapping": [{"left_id": "l1", "right_id": "r2"}, {"left_id": "l2", "right_id": "r1"}], "explanation": "The fuller request suits unfamiliar staff; the shorter shared-task request suits a friend."}
+      },
+      {
+        "title": "Sequence information mediation",
+        "exercise_type": "ordering",
+        "difficulty": "medium",
+        "instructions": "Order the steps for passing reliable station information to a friend.",
+        "objective_indices": [0, 1],
+        "target_references": ["concept_mediation"],
+        "review_references": [],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"segments": [{"id": "s1", "text": "Tell your friend the confirmed facts."}, {"id": "s2", "text": "Read the departure board carefully."}, {"id": "s3", "text": "Confirm an unclear detail with staff."}], "valid_order": ["s2", "s3", "s1"], "ordering_principle": "information-checking sequence", "explanation": "Read first, confirm uncertainty next, and relay the checked facts last."}
+      },
+      {
+        "title": "Choose a polite request",
+        "exercise_type": "multiple_choice",
+        "difficulty": "medium",
+        "instructions": "Choose the most polite request for unfamiliar station staff.",
+        "objective_indices": [0],
+        "target_references": ["concept_pragmatics_polite_requests", "concept_chunk_could_you_help"],
+        "review_references": ["concept_function_request_help"],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"options": [{"id": "a", "text": "Find Gate 7 for me."}, {"id": "b", "text": "Excuse me, could you help me find Gate 7, please?"}, {"id": "c", "text": "Hey, where is Gate 7?"}], "primary_option_id": "b", "explanation": "Option b uses an attention-getter, could you help me, and please for a respectful request to unfamiliar staff."}
+      },
+      {
+        "title": "Write a checked message",
+        "exercise_type": "writing",
+        "difficulty": "medium",
+        "instructions": "Write a message that passes all facts in the notice to a friend.",
+        "objective_indices": [0, 1],
+        "target_references": ["concept_mediation"],
+        "review_references": [],
+        "scoring_mode": "RUBRIC",
+        "payload": {"communicative_goal": "Relay a departure number, time, and location accurately.", "constraints": ["Use this original notice: Coach 9 leaves at 14:10 from Bay C.", "Write one or two sentences."], "expected_output": "A concise message preserving Coach 9, 14:10, and Bay C.", "rubric": [{"dimension": "accuracy", "criterion": "All three facts match the notice."}, {"dimension": "clarity", "criterion": "The friend can act on the message without seeing the notice."}]}
+      }
+    ]
+  }
+}

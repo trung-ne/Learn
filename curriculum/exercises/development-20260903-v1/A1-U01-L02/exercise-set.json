@@ -1,0 +1,262 @@
+{
+  "exercise_set_id": "m7set_73a9ae7313321d8fa67f458be254fd922089d83927c78a088b35e06f85f67e67",
+  "exercises": [
+    {
+      "cefr_level": "A1.1",
+      "difficulty": "easy",
+      "exercise_type": "listening",
+      "generation_metadata": {
+        "curriculum_version": "20260903",
+        "generated_at": "2026-09-03T09:25:07Z",
+        "generator": "english_master.exercise_generation",
+        "generator_version": "1.0",
+        "model": "UNKNOWN",
+        "prompt_version": "M7_EXERCISE_GENERATOR_v1",
+        "qa_notes": "Automated M7 checks passed; independent review remains required.",
+        "qa_status": "UNREVIEWED"
+      },
+      "id": "ex_A1-U01-L02_001",
+      "instructions": "Use the transcript as a listening script, then answer the question.",
+      "objective_indices": [
+        0
+      ],
+      "payload": {
+        "answers": [
+          {
+            "answer": "live",
+            "explanation": "The transcript states that Nora lives near the river.",
+            "question_id": "q1"
+          }
+        ],
+        "media_required": false,
+        "origin": "PROJECT_AUTHORED",
+        "questions": [
+          {
+            "id": "q1",
+            "text": "Which word follows I: live or leave?"
+          }
+        ],
+        "transcript": "Nora says, ‘I live near the river.’"
+      },
+      "review_references": [
+        "concept_pronunciation_phonemes"
+      ],
+      "scoring_mode": "OBJECTIVE",
+      "sequence": 1,
+      "target_references": [
+        "concept_pronunciation_minimal_pairs"
+      ],
+      "title": "Hear live or leave"
+    },
+    {
+      "cefr_level": "A1.1",
+      "difficulty": "medium",
+      "exercise_type": "speaking",
+      "generation_metadata": {
+        "curriculum_version": "20260903",
+        "generated_at": "2026-09-03T09:25:07Z",
+        "generator": "english_master.exercise_generation",
+        "generator_version": "1.0",
+        "model": "UNKNOWN",
+        "prompt_version": "M7_EXERCISE_GENERATOR_v1",
+        "qa_notes": "Automated M7 checks passed; independent review remains required.",
+        "qa_status": "UNREVIEWED"
+      },
+      "id": "ex_A1-U01-L02_002",
+      "instructions": "Respond to a listener who has confused live and leave.",
+      "objective_indices": [
+        0,
+        1
+      ],
+      "payload": {
+        "communicative_goal": "Clarify that you said live, then restate your personal fact.",
+        "constraints": [
+          "Use two short sentences.",
+          "Include the word live."
+        ],
+        "expected_output": "A brief correction followed by a clear present-simple fact.",
+        "rubric": [
+          {
+            "criterion": "The response clearly distinguishes live from leave.",
+            "dimension": "meaning"
+          },
+          {
+            "criterion": "The response directly repairs the misunderstanding.",
+            "dimension": "interaction"
+          }
+        ]
+      },
+      "review_references": [
+        "concept_present_simple"
+      ],
+      "scoring_mode": "RUBRIC",
+      "sequence": 2,
+      "target_references": [
+        "concept_pronunciation_minimal_pairs",
+        "concept_spoken_interaction"
+      ],
+      "title": "Clarify one vowel"
+    },
+    {
+      "cefr_level": "A1.1",
+      "difficulty": "easy",
+      "exercise_type": "sentence_construction",
+      "generation_metadata": {
+        "curriculum_version": "20260903",
+        "generated_at": "2026-09-03T09:25:07Z",
+        "generator": "english_master.exercise_generation",
+        "generator_version": "1.0",
+        "model": "UNKNOWN",
+        "prompt_version": "M7_EXERCISE_GENERATOR_v1",
+        "qa_notes": "Automated M7 checks passed; independent review remains required.",
+        "qa_status": "UNREVIEWED"
+      },
+      "id": "ex_A1-U01-L02_003",
+      "instructions": "Use every required word to make a clarification question.",
+      "objective_indices": [
+        0
+      ],
+      "payload": {
+        "acceptable_variants": [
+          "Did you say leave?"
+        ],
+        "primary_answer": "Did you say leave?",
+        "required_words": [
+          "did",
+          "you",
+          "say",
+          "leave"
+        ],
+        "scoring_guidance": "Accept the exact question with normal capitalization and punctuation.",
+        "target_structure": "past-simple clarification question"
+      },
+      "review_references": [],
+      "scoring_mode": "OBJECTIVE",
+      "sequence": 3,
+      "target_references": [
+        "concept_pronunciation_minimal_pairs",
+        "concept_spoken_interaction"
+      ],
+      "title": "Construct a repair question"
+    },
+    {
+      "cefr_level": "A1.1",
+      "difficulty": "easy",
+      "exercise_type": "multiple_choice",
+      "generation_metadata": {
+        "curriculum_version": "20260903",
+        "generated_at": "2026-09-03T09:25:07Z",
+        "generator": "english_master.exercise_generation",
+        "generator_version": "1.0",
+        "model": "UNKNOWN",
+        "prompt_version": "M7_EXERCISE_GENERATOR_v1",
+        "qa_notes": "Automated M7 checks passed; independent review remains required.",
+        "qa_status": "UNREVIEWED"
+      },
+      "id": "ex_A1-U01-L02_004",
+      "instructions": "Choose the sentence that means the speaker resides nearby.",
+      "objective_indices": [
+        0
+      ],
+      "payload": {
+        "explanation": "Live expresses residence; leave does not.",
+        "options": [
+          {
+            "id": "a",
+            "text": "I leave near the market."
+          },
+          {
+            "id": "b",
+            "text": "I live near the market."
+          },
+          {
+            "id": "c",
+            "text": "I lived near the market tomorrow."
+          }
+        ],
+        "primary_option_id": "b"
+      },
+      "review_references": [
+        "concept_present_simple"
+      ],
+      "scoring_mode": "OBJECTIVE",
+      "sequence": 4,
+      "target_references": [
+        "concept_pronunciation_minimal_pairs"
+      ],
+      "title": "Select the intended vowel contrast"
+    },
+    {
+      "cefr_level": "A1.1",
+      "difficulty": "medium",
+      "exercise_type": "writing",
+      "generation_metadata": {
+        "curriculum_version": "20260903",
+        "generated_at": "2026-09-03T09:25:07Z",
+        "generator": "english_master.exercise_generation",
+        "generator_version": "1.0",
+        "model": "UNKNOWN",
+        "prompt_version": "M7_EXERCISE_GENERATOR_v1",
+        "qa_notes": "Automated M7 checks passed; independent review remains required.",
+        "qa_status": "UNREVIEWED"
+      },
+      "id": "ex_A1-U01-L02_005",
+      "instructions": "Write a short exchange that corrects leave to live.",
+      "objective_indices": [
+        1
+      ],
+      "payload": {
+        "communicative_goal": "Write a natural clarification exchange about where someone resides.",
+        "constraints": [
+          "Write exactly two turns.",
+          "Use both leave and live."
+        ],
+        "expected_output": "One question showing the misunderstanding and one correction with a personal fact.",
+        "rubric": [
+          {
+            "criterion": "Live is used for residence and leave only as the misheard word.",
+            "dimension": "accuracy"
+          },
+          {
+            "criterion": "The correction is easy to follow.",
+            "dimension": "clarity"
+          }
+        ]
+      },
+      "review_references": [
+        "concept_present_simple"
+      ],
+      "scoring_mode": "RUBRIC",
+      "sequence": 5,
+      "target_references": [
+        "concept_pronunciation_minimal_pairs",
+        "concept_writing"
+      ],
+      "title": "Write a two-line repair"
+    }
+  ],
+  "generation_metadata": {
+    "curriculum_version": "20260903",
+    "generated_at": "2026-09-03T09:25:07Z",
+    "generator": "english_master.exercise_generation",
+    "generator_version": "1.0",
+    "model": "UNKNOWN",
+    "prompt_version": "M7_EXERCISE_GENERATOR_v1",
+    "qa_notes": "Automated M7 checks passed; independent review remains required.",
+    "qa_status": "UNREVIEWED"
+  },
+  "lesson_id": "A1-U01-L02",
+  "lesson_sha256": "2b3d0dbcc6ad9b4b34b3024a671166440bc4e0678670be0320d1b30eda54afdc",
+  "m6_batch_id": "m6devbatch_4883cca8dea320c18b26a99316041dec1101c7dd28e551e265654c367af93d26",
+  "output_sha256": "73a9ae7313321d8fa67f458be254fd922089d83927c78a088b35e06f85f67e67",
+  "provenance": {
+    "external_payload_used": false,
+    "media_used": false,
+    "notes": "All stimuli and response options are original project-authored text.",
+    "origin": "PROJECT_AUTHORED"
+  },
+  "record_type": "exercise_set",
+  "request_id": "m7req_434907a112c9b671f5cd14e507c0ee293c8a28c55f99747f7924239df04bda60",
+  "schema_version": "1.0",
+  "status": "UNREVIEWED"
+}

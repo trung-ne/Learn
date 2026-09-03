@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/exercise-ai-review.schema.json",
+  "title": "English Master M7 independent AI exercise review",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "ai_review_id", "approval_tier", "exercise_set_id", "lesson_id", "exercise_set_sha256", "audit_sha256", "m6_batch_id", "reviewer_type", "review_role", "independent_of_generation", "review_prompt", "response", "reviewed_at", "decision", "checklist", "findings", "copyright_originality_check", "limitations"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "exercise_ai_review"},
+    "ai_review_id": {"type": "string", "pattern": "^m7aireview_[a-f0-9]{64}$"},
+    "approval_tier": {"const": "AI_REVIEWED"},
+    "exercise_set_id": {"type": "string", "pattern": "^m7set_[a-f0-9]{64}$"},
+    "lesson_id": {"$ref": "common.schema.json#/$defs/lessonId"},
+    "exercise_set_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "audit_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "m6_batch_id": {"type": "string", "pattern": "^m6devbatch_[a-f0-9]{64}$"},
+    "reviewer_type": {"const": "AI"},
+    "review_role": {"enum": ["LINGUISTIC_AI_REVIEWER", "PEDAGOGICAL_AI_REVIEWER"]},
+    "independent_of_generation": {"const": true},
+    "review_prompt": {"$ref": "#/$defs/prompt"},
+    "response": {"$ref": "#/$defs/response"},
+    "reviewed_at": {"$ref": "common.schema.json#/$defs/isoDateTime"},
+    "decision": {"enum": ["APPROVE", "NEEDS_REVISION", "REJECT"]},
+    "checklist": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/check"}},
+    "findings": {"type": "array", "items": {"$ref": "#/$defs/finding"}},
+    "copyright_originality_check": {"$ref": "#/$defs/originality"},
+    "limitations": {"type": "array", "minItems": 1, "items": {"$ref": "common.schema.json#/$defs/nonEmptyString"}}
+  },
+  "$defs": {
+    "prompt": {"type": "object", "additionalProperties": false, "required": ["version", "sha256", "capture_mode"], "properties": {"version": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "sha256": {"$ref": "common.schema.json#/$defs/sha256"}, "capture_mode": {"enum": ["SESSION_CAPTURED", "PROVIDER_CAPTURED", "REPLAY_CAPTURED", "TEST_ONLY"]}, "run_id": {"$ref": "common.schema.json#/$defs/nonEmptyString"}}},
+    "response": {"type": "object", "additionalProperties": false, "required": ["sha256", "provider", "model", "parameters", "replayable_from_capture"], "properties": {"sha256": {"$ref": "common.schema.json#/$defs/sha256"}, "provider": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "model": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "parameters": {"type": "object"}, "replayable_from_capture": {"type": "boolean"}}},
+    "check": {"type": "object", "additionalProperties": false, "required": ["criterion", "result", "notes"], "properties": {"criterion": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "result": {"enum": ["PASS", "FAIL", "NOT_APPLICABLE"]}, "notes": {"$ref": "common.schema.json#/$defs/nonEmptyString"}}},
+    "finding": {"type": "object", "additionalProperties": false, "required": ["severity", "category", "description"], "properties": {"severity": {"enum": ["MINOR", "MAJOR", "CRITICAL"]}, "category": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "description": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "recommendation": {"type": "string"}}},
+    "originality": {"type": "object", "additionalProperties": false, "required": ["methods", "result", "scope_limitations"], "properties": {"methods": {"type": "array", "minItems": 1, "items": {"$ref": "common.schema.json#/$defs/nonEmptyString"}}, "result": {"enum": ["NO_CONCERN_FOUND", "CONCERN_FOUND", "NOT_PERFORMED"]}, "scope_limitations": {"$ref": "common.schema.json#/$defs/nonEmptyString"}}}
+  }
+}

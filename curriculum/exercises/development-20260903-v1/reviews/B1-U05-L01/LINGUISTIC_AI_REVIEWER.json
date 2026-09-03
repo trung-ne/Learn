@@ -1,0 +1,85 @@
+{
+  "ai_review_id": "m7aireview_a851382038ab21786da418ce9e179b758689626f46cacae58851bf808c5311d2",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "87384af9485ec432052ecedb38d2ea792e2916d5d46947040028a53fa1b56626",
+  "checklist": [
+    {
+      "criterion": "CEFR_ALIGNMENT",
+      "notes": "Past-perfect timeline work, weak forms, and narrative production suit internal tier B1.1.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "GRAMMAR_LEXICAL_ACCURACY",
+      "notes": "Most forms are accurate, but ex_B1-U05-L01_001 incorrectly labels a defensible simple-past sentence as erroneous.",
+      "result": "FAIL"
+    },
+    {
+      "criterion": "ANSWER_ACCURACY",
+      "notes": "The correction in ex_B1-U05-L01_001 is not uniquely required; remaining keys are accurate.",
+      "result": "FAIL"
+    },
+    {
+      "criterion": "DISTRACTOR_QUALITY",
+      "notes": "The weak-form item correctly contrasts unstressed had with prominent content words.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "LANGUAGE_QUALITY",
+      "notes": "The instructions, transcript, and rubrics are otherwise clear and natural for B1.1.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ORIGINALITY_LIMITATIONS",
+      "notes": "The declared project-authored policy and local wording were inspected across all ten sets; no suspicious copied passage was identified, but no external search was performed.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Reviewed the exercise set and audit against the declared PROJECT_AUTHORED input policy.",
+      "Performed manual internal phrase-level inspection across the ten supplied M7 exercise sets."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "No Internet-wide copyright or plagiarism search, proprietary-corpus comparison, or provider-authenticated originality service was performed; common short English forms and functional phrases are not evidence of copying."
+  },
+  "decision": "NEEDS_REVISION",
+  "exercise_set_id": "m7set_bda92cc97f4c0a06f0494939460eb2a47bd8361b702055a709ee1383928d3dcf",
+  "exercise_set_sha256": "55d9d047a2e71e28bbfa7a594653ef8eece6f0df0ae22dd62e25fd242e9fc681",
+  "findings": [
+    {
+      "category": "GRAMMAR_AND_ANSWER_ACCURACY",
+      "description": "In ex_B1-U05-L01_001, “By the time the doors opened, the team prepared every chair” can be a grammatical simple-past sequence; past perfect makes anteriority explicit but is not an obligatory correction.",
+      "recommendation": "Ask for a constrained past-perfect transformation or add context that makes simple past incompatible.",
+      "severity": "MAJOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "B1-U05-L01",
+  "limitations": [
+    "This is an independent AI linguistic development review, not human review, release approval, or CEFR certification.",
+    "The review is limited to the ten supplied immutable exercise sets, their audits, the verified M6 authority, and local repository materials.",
+    "No Internet-wide copyright or plagiarism search and no external audio assessment were performed.",
+    "Provider identity and inference parameters were unavailable and are recorded as UNKNOWN; the runtime-disclosed model identifier is recorded factually."
+  ],
+  "m6_batch_id": "m6devbatch_4883cca8dea320c18b26a99316041dec1101c7dd28e551e265654c367af93d26",
+  "record_type": "exercise_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {
+      "response_payload_canonicalization": "english_master.lesson_generation.canonical.canonical_json"
+    },
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "df107f8128674595931183b868a8fdb5ac936971eecd1c28f25c4cad3d83371d"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "run_id": "m7-linguistic-review-session-b1-u05-l01",
+    "sha256": "ee9744ec437811c18344a2f1991f898aaf7843cb1bd21be4454440f99a30f937",
+    "version": "M7_LINGUISTIC_AI_REVIEW_v1"
+  },
+  "review_role": "LINGUISTIC_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T09:47:37Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0"
+}

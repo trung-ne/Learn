@@ -25,6 +25,8 @@ english-master-normalize = "english_master.normalize:main"
 english-master-curriculum-validate = "english_master.curriculum_validate:main"
 english-master-curriculum-review = "english_master.curriculum_review.cli:main"
 english-master-lesson-generate = "english_master.lesson_generate:main"
+english-master-exercise-generate = "english_master.exercise_generate:main"
+english-master-exercise-development-batch = "english_master.exercise_development_batch:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

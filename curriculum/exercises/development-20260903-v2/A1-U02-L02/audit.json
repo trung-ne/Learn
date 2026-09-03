@@ -1,0 +1,82 @@
+{
+  "checks": {
+    "answer_ambiguity": "PASS",
+    "authorization": "PASS",
+    "backend_contract": "PASS",
+    "candidate_schema": "PASS",
+    "cefr_prerequisite": "PASS",
+    "constraints": "PASS",
+    "duplicate": "PASS",
+    "exercise_set_schema": "PASS",
+    "identity": "PASS",
+    "m6_authority": "PASS",
+    "m8_exclusion": "PASS",
+    "provenance_copyright": "PASS",
+    "publication": "PASS",
+    "reference_scope": "PASS",
+    "request_schema": "PASS"
+  },
+  "input_hashes": {
+    "m6_batch": "6ce275b6a9ee4d4ec5312be24e1a552d9d581ef8310fc68e8a3800064443b54b",
+    "request": "ec8cd8b6e3a553da42c7bc547069c956143fc139e92e3126c47b540104880695",
+    "snapshot": "0572771bbcd3c6574435d40690ced7ada227742c8ec113f87146cc2d2c5bd92f"
+  },
+  "lesson_id": "A1-U02-L02",
+  "output_hash": "1d6cf5c62c70000652779fb7a9eb01d14ece15a02be41918b937199559888fc3",
+  "outstanding_independent_reviews": [
+    "CEFR",
+    "GRAMMAR_LEXICAL",
+    "LANGUAGE_QUALITY",
+    "PEDAGOGICAL"
+  ],
+  "provenance_copyright": {
+    "decision": "PROJECT_AUTHORED_NO_EXTERNAL_RIGHTS_EXERCISED",
+    "external_media_used": false,
+    "external_payload_used": false,
+    "limitations": [
+      "No external text, audio, video, transcript, clip, transformation, extraction, or redistribution right was exercised.",
+      "No Internet-wide copyright or plagiarism search was performed."
+    ]
+  },
+  "qa_checks_performed": [
+    "request_schema",
+    "m6_authority",
+    "authorization",
+    "identity",
+    "constraints",
+    "backend_contract",
+    "candidate_schema",
+    "reference_scope",
+    "cefr_prerequisite",
+    "answer_ambiguity",
+    "duplicate",
+    "provenance_copyright",
+    "m8_exclusion",
+    "exercise_set_schema",
+    "publication"
+  ],
+  "qa_issues_found": [],
+  "qa_outcome": "AUTOMATED_CHECKS_PASSED_PENDING_INDEPENDENT_REVIEW",
+  "qa_reviewer": "english_master.m7_automated_validator",
+  "qa_status": "UNREVIEWED",
+  "qa_timestamp": "2026-09-03T09:52:26Z",
+  "record_type": "exercise_generation_audit",
+  "request_id": "m7req_cce5c16653ddd4b475314bbb11354b4a3c306514134446785d4cde35bd970530",
+  "response_provenance": {
+    "capture_mode": "SESSION_CAPTURED",
+    "deterministic": false,
+    "model": "UNKNOWN",
+    "observed_at": "2026-09-03T09:25:07Z",
+    "parameters": {},
+    "prompt_sha256": "33f5097484cacce86de042932626abb4bc7decdd39f6c14015712bcadaaede3c",
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "response_sha256": "ad62ddcac2d0057e8cf6c6f80e686c6ee8e722313d481301317c217ecd883084",
+    "run_id": "m7-session-capture-a1-u02-l02",
+    "seed": 7
+  },
+  "schema_version": "1.0",
+  "status": "ACCEPTED",
+  "unresolved_issues": [],
+  "validation_stage": "COMPLETE"
+}

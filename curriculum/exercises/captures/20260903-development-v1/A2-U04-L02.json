@@ -1,0 +1,67 @@
+{
+  "observed_at": "2026-09-03T09:25:07Z",
+  "provider": "UNKNOWN",
+  "model": "UNKNOWN",
+  "run_id": "m7-session-capture-a2-u04-l02",
+  "deterministic": false,
+  "provenance_mode": "SESSION_CAPTURED",
+  "content": {
+    "items": [
+      {
+        "title": "Read a request and result",
+        "exercise_type": "reading",
+        "difficulty": "medium",
+        "instructions": "Read the account and identify the decision and completed help.",
+        "objective_indices": [0, 1],
+        "target_references": ["concept_narrative_sequence", "concept_collocation_make_decision"],
+        "review_references": ["concept_function_request_help"],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"stimulus": "A sudden wind scattered Bao’s papers. He made a decision to ask Kim for help. Kim gathered the pages and clipped them together.", "questions": [{"id": "q1", "text": "What decision did Bao make?"}, {"id": "q2", "text": "How did Kim help?"}], "answers": [{"question_id": "q1", "answer": "He decided to ask Kim for help."}, {"question_id": "q2", "answer": "Kim gathered and clipped the pages together."}], "origin": "PROJECT_AUTHORED"}
+      },
+      {
+        "title": "Complete the interrupted action",
+        "exercise_type": "fill_blank",
+        "difficulty": "easy",
+        "instructions": "Use the past continuous form of carry.",
+        "objective_indices": [0],
+        "target_references": [],
+        "review_references": ["concept_past_continuous"],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"stimulus": "Mai ___ a box when the rain began.", "blank_marker": "___", "primary_answer": "was carrying", "acceptable_variants": ["was carrying"], "explanation": "Was carrying describes the action already in progress.", "spelling_policy": "Require the two-word form was carrying."}
+      },
+      {
+        "title": "Match focus to correction",
+        "exercise_type": "matching",
+        "difficulty": "medium",
+        "instructions": "Match each context to the word that should receive corrective focus.",
+        "objective_indices": [0],
+        "target_references": [],
+        "review_references": ["concept_pronunciation_sentence_stress"],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"left": [{"id": "l1", "text": "It was Lan, not Minh, who helped."}, {"id": "l2", "text": "They carried bags, not boxes."}], "right": [{"id": "r1", "text": "bags"}, {"id": "r2", "text": "Lan"}], "mapping": [{"left_id": "l1", "right_id": "r2"}, {"left_id": "l2", "right_id": "r1"}], "explanation": "The corrected person or object receives the strongest focus."}
+      },
+      {
+        "title": "Respond to a request",
+        "exercise_type": "speaking",
+        "difficulty": "medium",
+        "instructions": "Respond as the helper and state exactly what you will carry.",
+        "objective_indices": [0, 1],
+        "target_references": ["concept_narrative_sequence"],
+        "review_references": ["concept_function_request_help", "concept_pronunciation_sentence_stress"],
+        "scoring_mode": "RUBRIC",
+        "payload": {"communicative_goal": "Accept a request to carry two folders and make the new object clear.", "constraints": ["Answer in one or two sentences.", "Mention two folders."], "expected_output": "A relevant acceptance naming the item and quantity.", "rubric": [{"dimension": "interaction", "criterion": "The response directly answers the request."}, {"dimension": "focus", "criterion": "Two folders is clear as the new information."}]}
+      },
+      {
+        "title": "Translate the completed help",
+        "exercise_type": "translation",
+        "difficulty": "medium",
+        "instructions": "Translate the English sentence into Vietnamese.",
+        "objective_indices": [0],
+        "target_references": ["concept_narrative_sequence"],
+        "review_references": ["concept_function_request_help"],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"direction": "en_to_vi", "register": "neutral", "source_text": "Finally, An helped Mai carry the books home.", "intended_meaning": "The final event is An assisting Mai with taking books home.", "primary_answer": "Cuối cùng, An đã giúp Mai mang sách về nhà.", "acceptable_variants": ["Cuối cùng, An đã giúp Mai mang sách về nhà."], "scoring_guidance": "Preserve the final-event marker, helper, person helped, books, and destination."}
+      }
+    ]
+  }
+}

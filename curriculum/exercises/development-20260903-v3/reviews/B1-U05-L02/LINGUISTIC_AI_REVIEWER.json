@@ -1,0 +1,78 @@
+{
+  "ai_review_id": "m7aireview_d18682069ed00a866cadd0702580d60bfc9ffedb2951dfa863bdf4aaf64d5d45",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "3d686d561c04705660ea356b649e32be3f0f5b817f27d3ce7c6f45d2e060114e",
+  "checklist": [
+    {
+      "criterion": "CEFR_ALIGNMENT",
+      "notes": "The manage sense of run, past-perfect sequencing, and consonant-to-vowel linking are appropriate development targets for internal tier B1.1; the prompts and expected responses remain within that level.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "GRAMMAR_LEXICAL_ACCURACY",
+      "notes": "The set uses run naturally in the organize/manage sense. Exercise 002 now supplies the later past event “the meeting began,” so “had run” has a real past reference point rather than only a clock-time boundary.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ANSWER_ACCURACY",
+      "notes": "The objective keys are defensible. In exercise 002, “Before the meeting began, Lan had run an event” uses every required word, expresses the intended earlier-before-later relationship, and is a natural English sentence; its listed variant is also natural.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "DISTRACTOR_QUALITY",
+      "notes": "This set contains no multiple-choice distractors. The constrained objective items instead provide explicit answer requirements and acceptable variants where relevant.",
+      "result": "NOT_APPLICABLE"
+    },
+    {
+      "criterion": "LANGUAGE_QUALITY",
+      "notes": "Instructions, stimuli, questions, answers, and rubric language are clear and natural overall. The explicit “run | an” boundary is intelligible task notation and does not make exercise 002’s primary sentence unnatural.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ORIGINALITY_LIMITATIONS",
+      "notes": "The set and audit declare project-authored text with no external payload or media. Manual local phrase-level inspection found no originality concern, but no Internet-wide or proprietary-corpus comparison was performed.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Reviewed the complete final revised B1-U05-L02 exercise set and its automated audit against the declared PROJECT_AUTHORED policy.",
+      "Performed manual local phrase-level inspection of the five exercises, with particular attention to exercise 002."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "No Internet-wide copyright or plagiarism search, proprietary-corpus comparison, or provider-authenticated originality service was performed; common short English forms and functional phrases are not evidence of copying."
+  },
+  "decision": "APPROVE",
+  "exercise_set_id": "m7set_129b0df8b1b9c98b63e85ffc14c9337219198175a314add9b5612b600f4ff4ab",
+  "exercise_set_sha256": "cea10fcb880534feba6afa9f0c854fa3809d223b31de61ea695eab4b81953f8e",
+  "findings": [],
+  "independent_of_generation": true,
+  "lesson_id": "B1-U05-L02",
+  "limitations": [
+    "This is an independent AI linguistic development review, not human review, release approval, CEFR certification, or a public-release decision.",
+    "The review is limited to the supplied final revised B1-U05-L02 exercise set, its audit, the verified M6 development authority, and local repository materials.",
+    "No Internet-wide copyright or plagiarism search, proprietary-corpus comparison, external audio assessment, or learner trial was performed.",
+    "Provider identity and inference parameters were unavailable and are recorded as UNKNOWN; the runtime-disclosed model identifier is recorded factually."
+  ],
+  "m6_batch_id": "m6devbatch_4883cca8dea320c18b26a99316041dec1101c7dd28e551e265654c367af93d26",
+  "record_type": "exercise_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {
+      "response_payload_canonicalization": "english_master.lesson_generation.canonical.canonical_json"
+    },
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "5217ece308cb6a438ab8aee1a9f34ef970fdbc43d9d4d427333eae63ed284981"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "run_id": "m7-v3-linguistic-review-session-b1-u05-l02",
+    "sha256": "7c961c44c13569aac1485b65f0cd032958c9dd1f97684676c733795ac854f168",
+    "version": "M7_LINGUISTIC_AI_REVIEW_v3"
+  },
+  "review_role": "LINGUISTIC_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T10:09:52Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0"
+}

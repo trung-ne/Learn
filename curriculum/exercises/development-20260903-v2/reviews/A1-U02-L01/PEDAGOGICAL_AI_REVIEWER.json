@@ -1,0 +1,85 @@
+{
+  "ai_review_id": "m7aireview_7f0008fa6f768241e9adbb7c97a39a3980ff615eb835afac810b63f90a6ccf2f",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "f2cae94c426ea178f11daac95437aa94173a859e342d433bb95497d8a42d3372",
+  "checklist": [
+    {
+      "criterion": "OBJECTIVE_ALIGNMENT",
+      "notes": "Requests for help, simple past reference, and the movement sense of run are directly practised in controlled and integrated tasks.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "TEACHABILITY",
+      "notes": "Models, answer explanations, and constrained sentence building support independent correction and reuse.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "PROGRESSION",
+      "notes": "The set integrates translation, reading, form completion, construction, and listening, but opens with a medium translation before easier scaffolds.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "CLARITY",
+      "notes": "Each task states the expected operation and supplies enough context for a bounded response.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "COGNITIVE_LOAD",
+      "notes": "Texts are short and the final listening script combines only previously practised request and past-event content.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "VIETNAMESE_LEARNER_RELEVANCE",
+      "notes": "A Vietnamese-to-English request task and familiar names provide useful transfer practice without population-wide assumptions.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "WORKLOAD",
+      "notes": "Two short comprehension tasks plus three controlled tasks are feasible for A1.2.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Reviewed the exercise set and audit against the declared original project-authored policy and external-payload/media declarations."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "No Internet-wide copyright or plagiarism search was performed; this review checked only the declared original project-authored policy and supplied artifact evidence."
+  },
+  "decision": "APPROVE",
+  "exercise_set_id": "m7set_bf7aac316dee1cc4c72c9d219f3e1ac2883d9fd414c978a5a9534afdb745ac05",
+  "exercise_set_sha256": "c5a661e9160a746c261f37149e488c9f0731639b907c18e29e2a43fb3f263789",
+  "findings": [
+    {
+      "category": "PROGRESSION",
+      "description": "The set begins with a medium translation task before easier reading, fill-blank, and sentence-construction supports.",
+      "recommendation": "Move translation after controlled request construction so productive demand rises more gradually.",
+      "severity": "MINOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "A1-U02-L01",
+  "limitations": [
+    "This is an independent AI pedagogical review for development evidence, not human review or release approval.",
+    "The review covers the supplied immutable exercise set and automated audit; it does not report an Internet-wide originality search."
+  ],
+  "m6_batch_id": "m6devbatch_4883cca8dea320c18b26a99316041dec1101c7dd28e551e265654c367af93d26",
+  "record_type": "exercise_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {},
+    "provider": "OpenAI",
+    "replayable_from_capture": true,
+    "sha256": "93b9d68e598b2b3ddc16689d39045728f91688079adceacf431ea3195b8b16ea"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "run_id": "m7-pedagogical-review-v2-a1-u02-l01",
+    "sha256": "089b4e82a6c151c1b183dc5707b5d70ff3df8c502582017a246648c8458c967f",
+    "version": "M7_PEDAGOGICAL_AI_REVIEW_v1"
+  },
+  "review_role": "PEDAGOGICAL_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T10:00:13Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0"
+}

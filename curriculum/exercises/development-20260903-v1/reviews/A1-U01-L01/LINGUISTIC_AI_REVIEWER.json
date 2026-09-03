@@ -1,0 +1,85 @@
+{
+  "ai_review_id": "m7aireview_9ebd32fddb9bb6140f4f937df2886b1bb276bdfb650d12a38a45d7db35b5e2ed",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "3058658aed46717496b0b6226a7f6f48c4fe871046760c475b9c007609bf9482",
+  "checklist": [
+    {
+      "criterion": "CEFR_ALIGNMENT",
+      "notes": "All five short present-simple tasks use concrete routines and personal information appropriate to internal tier A1.1.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "GRAMMAR_LEXICAL_ACCURACY",
+      "notes": "The target forms walks, studies, reads, works, and cooks and the supplied sentence order are accurate.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ANSWER_ACCURACY",
+      "notes": "Each keyed answer and correction is uniquely supported; the mappings and ordering key are correct.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "DISTRACTOR_QUALITY",
+      "notes": "The alternatives isolate missing -s and an incomplete progressive form and are clearly incorrect for the stated task.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "LANGUAGE_QUALITY",
+      "notes": "Instructions and stimuli are concise and comprehensible; one metalinguistic explanation is awkward but does not alter the answer.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ORIGINALITY_LIMITATIONS",
+      "notes": "The declared project-authored policy and local wording were inspected across all ten sets; no suspicious copied passage was identified, but no external search was performed.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Reviewed the exercise set and audit against the declared PROJECT_AUTHORED input policy.",
+      "Performed manual internal phrase-level inspection across the ten supplied M7 exercise sets."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "No Internet-wide copyright or plagiarism search, proprietary-corpus comparison, or provider-authenticated originality service was performed; common short English forms and functional phrases are not evidence of copying."
+  },
+  "decision": "APPROVE",
+  "exercise_set_id": "m7set_573c12a81f3ea494e30081c21a42ed90b6450d7c0e3f3427344007d66864b278",
+  "exercise_set_sha256": "c6a34bfa69f715ee9bf42e1b6c83bfb06b504f95211b1dbe5ec6ff1dd4e9c138",
+  "findings": [
+    {
+      "category": "LANGUAGE_QUALITY",
+      "description": "In ex_A1-U01-L01_003, “We takes read; Minh takes reads” is awkward metalinguistic English and may distract an A1 learner.",
+      "recommendation": "Use “We goes with read; Minh goes with reads” or state the matches directly.",
+      "severity": "MINOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "A1-U01-L01",
+  "limitations": [
+    "This is an independent AI linguistic development review, not human review, release approval, or CEFR certification.",
+    "The review is limited to the ten supplied immutable exercise sets, their audits, the verified M6 authority, and local repository materials.",
+    "No Internet-wide copyright or plagiarism search and no external audio assessment were performed.",
+    "Provider identity and inference parameters were unavailable and are recorded as UNKNOWN; the runtime-disclosed model identifier is recorded factually."
+  ],
+  "m6_batch_id": "m6devbatch_4883cca8dea320c18b26a99316041dec1101c7dd28e551e265654c367af93d26",
+  "record_type": "exercise_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {
+      "response_payload_canonicalization": "english_master.lesson_generation.canonical.canonical_json"
+    },
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "0f2bf5f300f60145dc8a0228ea3250b340caf3cfe31c3127ee4eab682822e87c"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "run_id": "m7-linguistic-review-session-a1-u01-l01",
+    "sha256": "727820ff79c8c0b1fe304df2ca0d4f1d6e20b881550a90dc8c4f304da8126d5e",
+    "version": "M7_LINGUISTIC_AI_REVIEW_v1"
+  },
+  "review_role": "LINGUISTIC_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T09:47:37Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0"
+}

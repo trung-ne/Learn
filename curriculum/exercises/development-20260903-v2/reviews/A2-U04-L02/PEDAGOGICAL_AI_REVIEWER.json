@@ -1,0 +1,78 @@
+{
+  "ai_review_id": "m7aireview_325b62dd1c8a98305fa6dfe4a7e1326168b91259794f63e211542ea4b0020424",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "43a5605e5e51ea7680d730145182c341cfa4812c86d49ac56c1bb1cce9080c6b",
+  "checklist": [
+    {
+      "criterion": "OBJECTIVE_ALIGNMENT",
+      "notes": "All five activities address sequencing, lexical combinations, information focus, or integrated prior help language. The revised speaking task now requires and assesses a two-sentence request-before-response sequence using first and then.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "TEACHABILITY",
+      "notes": "The reading, completion, focus matching, revised sequenced speaking frame, and translation provide clear models and bounded practice.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "PROGRESSION",
+      "notes": "The set moves from comprehension and controlled form and focus work to an integrated spoken exchange and translation with manageable transitions.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "CLARITY",
+      "notes": "Instructions, two-sentence constraints, expected output, and rubric explicitly require the reported request first and the helper response second.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "COGNITIVE_LOAD",
+      "notes": "Short texts and a tightly framed two-sentence speaking response keep sequencing, interaction, and focus demands manageable for A2.2.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "VIETNAMESE_LEARNER_RELEVANCE",
+      "notes": "Vietnamese translation, familiar names, and concrete helping contexts are relevant without stereotyping learners.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "WORKLOAD",
+      "notes": "Five short activities, including one scaffolded two-sentence oral response, are proportionate for A2.2.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Reviewed the exercise set and audit against the declared original project-authored policy and external-payload/media declarations."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "No Internet-wide copyright or plagiarism search was performed; this review checked only the declared original project-authored policy and supplied artifact evidence."
+  },
+  "decision": "APPROVE",
+  "exercise_set_id": "m7set_db35839de3de31b5837ab640d2b9396ac79ee67b100681635e4a2ca70dc54618",
+  "exercise_set_sha256": "7d4f534557d860a44c3a546f9493a13f47e549c6098c36057350905844ae5fc5",
+  "findings": [],
+  "independent_of_generation": true,
+  "lesson_id": "A2-U04-L02",
+  "limitations": [
+    "This is an independent AI pedagogical review for development evidence, not human review or release approval.",
+    "The review covers the supplied immutable exercise set and automated audit; it does not report an Internet-wide originality search."
+  ],
+  "m6_batch_id": "m6devbatch_4883cca8dea320c18b26a99316041dec1101c7dd28e551e265654c367af93d26",
+  "record_type": "exercise_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {},
+    "provider": "OpenAI",
+    "replayable_from_capture": true,
+    "sha256": "4842a1481fd92c5b58842f44a1beeae35787a1aa2b18fb94a310ad100d395862"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "run_id": "m7-pedagogical-review-v2-a2-u04-l02",
+    "sha256": "fea8dec3c272657dd52b2a80ed3fe580999a9cdd71566bc920729cc06c22fa0b",
+    "version": "M7_PEDAGOGICAL_AI_REVIEW_v1"
+  },
+  "review_role": "PEDAGOGICAL_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T10:00:13Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0"
+}

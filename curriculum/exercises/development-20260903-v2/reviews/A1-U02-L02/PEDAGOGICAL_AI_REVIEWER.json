@@ -1,0 +1,78 @@
+{
+  "ai_review_id": "m7aireview_167ed79a58ff9331873f5110522e4a9e95160313ae4518a8f11a6eac793d83f8",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "597c67fcbdbc78f7c14e69023c381878e67bd5d40cc7d76666c585ca55473c0d",
+  "checklist": [
+    {
+      "criterion": "OBJECTIVE_ALIGNMENT",
+      "notes": "The activities consolidate present-versus-past time reference and requests involving personal information, then integrate these in speaking and writing.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "TEACHABILITY",
+      "notes": "Time clues, an ordered model exchange, correction feedback, and clear rubrics make the targets learnable.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "PROGRESSION",
+      "notes": "Controlled matching, ordering, and correction precede the more open speaking and writing tasks.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "CLARITY",
+      "notes": "Directions specify fictional personal data and exact output constraints, reducing privacy and task ambiguity.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "COGNITIVE_LOAD",
+      "notes": "Each controlled task isolates one choice before the final two-sentence contrast.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "VIETNAMESE_LEARNER_RELEVANCE",
+      "notes": "Names and practical form-filling situations are locally relatable, while explicit tense markers support cross-linguistic noticing.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "WORKLOAD",
+      "notes": "Five brief activities culminating in two sentences are an appropriate compact workload.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Reviewed the exercise set and audit against the declared original project-authored policy and external-payload/media declarations."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "No Internet-wide copyright or plagiarism search was performed; this review checked only the declared original project-authored policy and supplied artifact evidence."
+  },
+  "decision": "APPROVE",
+  "exercise_set_id": "m7set_1d6cf5c62c70000652779fb7a9eb01d14ece15a02be41918b937199559888fc3",
+  "exercise_set_sha256": "b47b259e94eb182d56b6aa47374b0ec4a26bb1dc0199f227b6935faf32166ce0",
+  "findings": [],
+  "independent_of_generation": true,
+  "lesson_id": "A1-U02-L02",
+  "limitations": [
+    "This is an independent AI pedagogical review for development evidence, not human review or release approval.",
+    "The review covers the supplied immutable exercise set and automated audit; it does not report an Internet-wide originality search."
+  ],
+  "m6_batch_id": "m6devbatch_4883cca8dea320c18b26a99316041dec1101c7dd28e551e265654c367af93d26",
+  "record_type": "exercise_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {},
+    "provider": "OpenAI",
+    "replayable_from_capture": true,
+    "sha256": "7f06bab761dce391b9e9258a0aa927a0a2e33827eecb13f63c39b88029026cb0"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "run_id": "m7-pedagogical-review-v2-a1-u02-l02",
+    "sha256": "cd7a7d5fc861750c005c0936e965a8fd903fa67ad37688760ea211f77f5fca9b",
+    "version": "M7_PEDAGOGICAL_AI_REVIEW_v1"
+  },
+  "review_role": "PEDAGOGICAL_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T10:00:13Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0"
+}

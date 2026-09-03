@@ -1,0 +1,91 @@
+{
+  "ai_review_id": "m7aireview_75b2acbfd0bf4e05e97a5a73515a642e4a9645a7c799e0219a1be9d51c077b24",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "401434e35592491b3b07b7e8801839a63c283a2b6b2cafa632f99eefa16e3d66",
+  "checklist": [
+    {
+      "criterion": "CEFR_ALIGNMENT",
+      "notes": "The manage sense of run, past-perfect relationships, and linking are broadly suitable for internal tier B1.1.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "GRAMMAR_LEXICAL_ACCURACY",
+      "notes": "Most uses of run are accurate, but the standalone had run model lacks a later past reference.",
+      "result": "FAIL"
+    },
+    {
+      "criterion": "ANSWER_ACCURACY",
+      "notes": "The Vietnamese prompt admits a correct simple-past translation that objective guidance excludes.",
+      "result": "FAIL"
+    },
+    {
+      "criterion": "DISTRACTOR_QUALITY",
+      "notes": "No distractor item occurs; the form-focused prompts otherwise provide explicit target constraints.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "LANGUAGE_QUALITY",
+      "notes": "Prose is mostly clear, but the underscore is pronunciation notation rather than normal written English.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ORIGINALITY_LIMITATIONS",
+      "notes": "The declared project-authored policy and local wording were inspected across all ten sets; no suspicious copied passage was identified, but no external search was performed.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Reviewed the exercise set and audit against the declared PROJECT_AUTHORED input policy.",
+      "Performed manual internal phrase-level inspection across the ten supplied M7 exercise sets."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "No Internet-wide copyright or plagiarism search, proprietary-corpus comparison, or provider-authenticated originality service was performed; common short English forms and functional phrases are not evidence of copying."
+  },
+  "decision": "NEEDS_REVISION",
+  "exercise_set_id": "m7set_e354464dd55bc5730910996ee784e6700170731dd153202d610c1efee8ad7768",
+  "exercise_set_sha256": "a074f239956a5a4df20e36893b6e1fbf5add4bf815097da96b46b4a3519a7161",
+  "findings": [
+    {
+      "category": "GRAMMAR_ACCURACY",
+      "description": "ex_B1-U05-L02_002 presents “Lan had run an event before noon” without a later past reference; in isolation, simple past is natural.",
+      "recommendation": "Add an explicit later past event or reference point; retain run_an only as pronunciation notation.",
+      "severity": "MAJOR"
+    },
+    {
+      "category": "ANSWER_ACCURACY",
+      "description": "In ex_B1-U05-L02_005, the Vietnamese source can accurately use simple past in English; the instruction requires only the manage sense while scoring additionally requires had run.",
+      "recommendation": "Explicitly require past perfect with a later reference, or accept the natural simple-past translation.",
+      "severity": "MAJOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "B1-U05-L02",
+  "limitations": [
+    "This is an independent AI linguistic development review, not human review, release approval, or CEFR certification.",
+    "The review is limited to the ten supplied immutable exercise sets, their audits, the verified M6 authority, and local repository materials.",
+    "No Internet-wide copyright or plagiarism search and no external audio assessment were performed.",
+    "Provider identity and inference parameters were unavailable and are recorded as UNKNOWN; the runtime-disclosed model identifier is recorded factually."
+  ],
+  "m6_batch_id": "m6devbatch_4883cca8dea320c18b26a99316041dec1101c7dd28e551e265654c367af93d26",
+  "record_type": "exercise_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {
+      "response_payload_canonicalization": "english_master.lesson_generation.canonical.canonical_json"
+    },
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "0145ebaa52bf3ea8a2c002d82f7079942331d7fffeff86e9a333556540227275"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "run_id": "m7-linguistic-review-session-b1-u05-l02",
+    "sha256": "685c0dc2423f766c5a0e011f548c8c1516f15949f0a3ee7597716820daf4c5cf",
+    "version": "M7_LINGUISTIC_AI_REVIEW_v1"
+  },
+  "review_role": "LINGUISTIC_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T09:47:37Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0"
+}

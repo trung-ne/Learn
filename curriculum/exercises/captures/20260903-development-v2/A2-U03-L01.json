@@ -1,0 +1,67 @@
+{
+  "observed_at": "2026-09-03T09:25:07Z",
+  "provider": "UNKNOWN",
+  "model": "UNKNOWN",
+  "run_id": "m7-session-capture-a2-u03-l01",
+  "deterministic": false,
+  "provenance_mode": "SESSION_CAPTURED",
+  "content": {
+    "items": [
+      {
+        "title": "Choose the action in progress",
+        "exercise_type": "multiple_choice",
+        "difficulty": "easy",
+        "instructions": "Choose the sentence that presents reading as ongoing at a past time.",
+        "objective_indices": [0],
+        "target_references": ["concept_past_continuous"],
+        "review_references": [],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"options": [{"id": "a", "text": "At five, I was reading the notice."}, {"id": "b", "text": "At five, I read the notice tomorrow."}, {"id": "c", "text": "At five, I am read the notice."}], "primary_option_id": "a", "explanation": "Was reading marks an action in progress around five in the past."}
+      },
+      {
+        "title": "Complete the background action",
+        "exercise_type": "fill_blank",
+        "difficulty": "easy",
+        "instructions": "Complete the sentence with the past continuous form of wait.",
+        "objective_indices": [0],
+        "target_references": ["concept_past_continuous"],
+        "review_references": [],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"stimulus": "I ___ for the bus when my phone rang.", "blank_marker": "___", "primary_answer": "was waiting", "acceptable_variants": ["was waiting"], "explanation": "Was waiting supplies the ongoing background action.", "spelling_policy": "Require the two-word form was waiting."}
+      },
+      {
+        "title": "Read and relay travel facts",
+        "exercise_type": "reading",
+        "difficulty": "medium",
+        "instructions": "Read the notice and answer with all three requested facts.",
+        "objective_indices": [0, 1],
+        "target_references": ["concept_mediation"],
+        "review_references": [],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"stimulus": "Travel notice: Train 6 departs at 7:40 from Platform 2.", "questions": [{"id": "q1", "text": "What should you tell a friend who cannot see the notice?"}], "answers": [{"question_id": "q1", "answer": "Train 6 departs at 7:40 from Platform 2."}], "origin": "PROJECT_AUTHORED"}
+      },
+      {
+        "title": "Listen for the request details",
+        "exercise_type": "listening",
+        "difficulty": "medium",
+        "instructions": "Use the transcript as a listening script and identify the requested help.",
+        "objective_indices": [0],
+        "target_references": ["concept_chunk_could_you_help"],
+        "review_references": ["concept_function_request_help"],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"transcript": "At the ticket desk, a traveller says, ‘Excuse me, could you help me find Platform 5, please?’", "questions": [{"id": "q1", "text": "What does the traveller need help finding?"}], "answers": [{"question_id": "q1", "answer": "Platform 5."}], "origin": "PROJECT_AUTHORED", "media_required": false}
+      },
+      {
+        "title": "Report while asking for help",
+        "exercise_type": "speaking",
+        "difficulty": "medium",
+        "instructions": "Explain what you were doing, then ask station staff for help.",
+        "objective_indices": [0, 1],
+        "target_references": ["concept_past_continuous", "concept_chunk_could_you_help"],
+        "review_references": ["concept_function_request_help"],
+        "scoring_mode": "RUBRIC",
+        "payload": {"communicative_goal": "Combine a brief past background with a suitable request to staff.", "constraints": ["Use was or were plus an -ing form.", "Use could you help me."], "expected_output": "Two connected sentences: background action and polite request.", "rubric": [{"dimension": "grammar", "criterion": "The ongoing past action has a correct past-continuous form."}, {"dimension": "pragmatics", "criterion": "The request is respectful and specific."}]}
+      }
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "ai_review_id": "m7aireview_a0cd489da79b5545ef250808a491950ead0072402c6571a1593424ddc65e9d11",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "f63e1e7fd7dcdd6b8093db44d81c70ea85d56aa1388f65666ba00fbb82ddcc34",
+  "checklist": [
+    {
+      "criterion": "CEFR_ALIGNMENT",
+      "notes": "The live/leave contrast, short repair formulas, and brief exchange are manageable at internal tier A1.1 with the script.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "GRAMMAR_LEXICAL_ACCURACY",
+      "notes": "Live is correctly used for residence, leave is the competing form, and the clarification language is grammatical.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ANSWER_ACCURACY",
+      "notes": "The transcript supports live, the construction key is correct, option b is the only residence statement, and rubric tasks allow varied output.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "DISTRACTOR_QUALITY",
+      "notes": "Live and leave form the intended contrast; the multiple-choice distractors are unambiguously wrong in context.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "LANGUAGE_QUALITY",
+      "notes": "The prompts, model language, and rubrics are clear and natural enough for the tier.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ORIGINALITY_LIMITATIONS",
+      "notes": "The declared project-authored policy and local wording were inspected across all ten revised sets; no suspicious copied passage was identified, but no external search was performed.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Reviewed the revised exercise set and audit against the declared PROJECT_AUTHORED input policy.",
+      "Performed manual internal phrase-level inspection across the ten supplied revised M7 exercise sets."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "No Internet-wide copyright or plagiarism search, proprietary-corpus comparison, or provider-authenticated originality service was performed; common short English forms and functional phrases are not evidence of copying."
+  },
+  "decision": "APPROVE",
+  "exercise_set_id": "m7set_0950896358e3fe0ac922f247660294aca5d2c2a5abb4289f0481bba2a87251d6",
+  "exercise_set_sha256": "a6242b991cd6b9eaee83ef11817212fb3520104ae7234716ccce45b25393ef1f",
+  "findings": [
+    {
+      "category": "MODALITY_LIMITATION",
+      "description": "ex_A1-U01-L02_001 exposes a written transcript and has no audio, so this artifact alone checks the written live/leave choice rather than demonstrating perception of the vowel contrast.",
+      "recommendation": "Keep this limitation explicit; audio-enabled review is needed to assess listening discrimination.",
+      "severity": "MINOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "A1-U01-L02",
+  "limitations": [
+    "This is an independent AI linguistic development review, not human review, release approval, or CEFR certification.",
+    "The review is limited to the ten supplied revised immutable exercise sets, their audits, the verified M6 authority, and local repository materials.",
+    "No Internet-wide copyright or plagiarism search and no external audio assessment were performed.",
+    "Provider identity and inference parameters were unavailable and are recorded as UNKNOWN; the runtime-disclosed model identifier is recorded factually."
+  ],
+  "m6_batch_id": "m6devbatch_4883cca8dea320c18b26a99316041dec1101c7dd28e551e265654c367af93d26",
+  "record_type": "exercise_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {
+      "response_payload_canonicalization": "english_master.lesson_generation.canonical.canonical_json"
+    },
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "d6c197ebc41f63ca8753c4f76b9c0f120140f59bf1ef47619415d5ee5ffb67d7"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "run_id": "m7-v2-linguistic-review-session-a1-u01-l02",
+    "sha256": "84dab45a3f74792779311c08a13ee59689ebb07ea867397780933de497675e12",
+    "version": "M7_LINGUISTIC_AI_REVIEW_v2"
+  },
+  "review_role": "LINGUISTIC_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T09:59:08Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0"
+}

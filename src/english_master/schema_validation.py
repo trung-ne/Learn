@@ -63,6 +63,14 @@ SCHEMA_FILENAMES: dict[str, str] = {
     "lesson-batch-qa-report": "lesson-batch-qa-report.schema.json",
     "lesson-ai-review": "lesson-ai-review.schema.json",
     "lesson-development-batch": "lesson-development-batch.schema.json",
+    "exercise-generation-authorization": "exercise-generation-authorization.schema.json",
+    "exercise-generation-request": "exercise-generation-request.schema.json",
+    "exercise-backend-candidate": "exercise-backend-candidate.schema.json",
+    "exercise-set": "exercise-set.schema.json",
+    "exercise-generation-audit": "exercise-generation-audit.schema.json",
+    "exercise-generation-rejection": "exercise-generation-rejection.schema.json",
+    "exercise-ai-review": "exercise-ai-review.schema.json",
+    "exercise-development-batch": "exercise-development-batch.schema.json",
 }
 
 SOURCE_PERMISSION_PATHS: dict[str, tuple[str, ...]] = {

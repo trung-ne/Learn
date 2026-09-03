@@ -1,0 +1,67 @@
+{
+  "observed_at": "2026-09-03T09:25:07Z",
+  "provider": "UNKNOWN",
+  "model": "UNKNOWN",
+  "run_id": "m7-session-capture-a2-u04-l01",
+  "deterministic": false,
+  "provenance_mode": "SESSION_CAPTURED",
+  "content": {
+    "items": [
+      {
+        "title": "Order a rainy-day account",
+        "exercise_type": "ordering",
+        "difficulty": "easy",
+        "instructions": "Arrange the events into a coherent sequence.",
+        "objective_indices": [0],
+        "target_references": ["concept_narrative_sequence"],
+        "review_references": [],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"segments": [{"id": "s1", "text": "Finally, she arrived at the community centre."}, {"id": "s2", "text": "First, Hoa left home."}, {"id": "s3", "text": "Then, she stopped under a shop awning."}, {"id": "s4", "text": "Next, heavy rain started."}], "valid_order": ["s2", "s4", "s3", "s1"], "ordering_principle": "chronological narrative sequence", "explanation": "The sequence moves from leaving, to rain, to shelter, to arrival."}
+      },
+      {
+        "title": "Choose the natural collocation",
+        "exercise_type": "multiple_choice",
+        "difficulty": "easy",
+        "instructions": "Choose the natural phrase for choosing a new route.",
+        "objective_indices": [0],
+        "target_references": ["concept_collocation_make_decision"],
+        "review_references": [],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"options": [{"id": "a", "text": "do a decision"}, {"id": "b", "text": "make a decision"}, {"id": "c", "text": "build a decision"}], "primary_option_id": "b", "explanation": "English commonly uses make with decision."}
+      },
+      {
+        "title": "Construct a sequenced event",
+        "exercise_type": "sentence_construction",
+        "difficulty": "medium",
+        "instructions": "Use all required words to add the final event to a story.",
+        "objective_indices": [0, 1],
+        "target_references": ["concept_narrative_sequence", "concept_collocation_make_decision"],
+        "review_references": [],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"required_words": ["finally", "we", "made", "a", "decision", "to", "wait"], "target_structure": "sequencer plus past collocation", "primary_answer": "Finally, we made a decision to wait.", "acceptable_variants": ["Finally, we made a decision to wait."], "scoring_guidance": "Require finally and the complete phrase made a decision to wait."}
+      },
+      {
+        "title": "Listen for sequence and focus",
+        "exercise_type": "listening",
+        "difficulty": "medium",
+        "instructions": "Use the transcript as a listening script and answer both questions.",
+        "objective_indices": [0, 1],
+        "target_references": ["concept_narrative_sequence", "concept_pronunciation_sentence_stress"],
+        "review_references": [],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"transcript": "First, I checked the kitchen. Next, I looked outside. Finally, I found my keys in the BEDROOM, not the hallway.", "questions": [{"id": "q1", "text": "Where were the keys found?"}, {"id": "q2", "text": "Which place is contrasted with the hallway?"}], "answers": [{"question_id": "q1", "answer": "In the bedroom."}, {"question_id": "q2", "answer": "The bedroom."}], "origin": "PROJECT_AUTHORED", "media_required": false}
+      },
+      {
+        "title": "Write four clear events",
+        "exercise_type": "writing",
+        "difficulty": "medium",
+        "instructions": "Create a short account with four explicitly ordered events.",
+        "objective_indices": [0, 1],
+        "target_references": ["concept_narrative_sequence", "concept_collocation_make_decision"],
+        "review_references": [],
+        "scoring_mode": "RUBRIC",
+        "payload": {"communicative_goal": "Tell a coherent four-event story that includes a decision.", "constraints": ["Use first, next, then, and finally once each.", "Include made a decision."], "expected_output": "Four one-event sentences in a logical order.", "rubric": [{"dimension": "organization", "criterion": "Each sequencer marks the intended chronological step."}, {"dimension": "language", "criterion": "Made a decision is used naturally in the past account."}]}
+      }
+    ]
+  }
+}

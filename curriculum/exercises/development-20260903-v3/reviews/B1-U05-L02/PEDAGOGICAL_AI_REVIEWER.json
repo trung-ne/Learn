@@ -1,0 +1,86 @@
+{
+  "ai_review_id": "m7aireview_55db027b03ccddb785771b0f94c804ae19a4c3765e76e69835ce9fa8deb89ef7",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "3d686d561c04705660ea356b649e32be3f0f5b817f27d3ce7c6f45d2e060114e",
+  "checklist": [
+    {
+      "criterion": "OBJECTIVE_ALIGNMENT",
+      "notes": "The set directly practises the manage sense of run, earlier-versus-later past relationships, and consonant-to-vowel linking, then combines those targets in a communicative speaking task.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "TEACHABILITY",
+      "notes": "Controlled form and meaning work precedes interpretation and production, with answer data or an analytic rubric available for every task.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "PROGRESSION",
+      "notes": "The sequence moves from completion and sentence construction through reading to integrated speaking, followed by a focused Vietnamese-to-English consolidation task.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "CLARITY",
+      "notes": "Instructions, temporal relationships, and intended meaning are explicit; the connected-speech boundary is now separately identified, though its vertical-bar notation still merits a brief learner-facing explanation.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "COGNITIVE_LOAD",
+      "notes": "Most items isolate one or two targets, and the harder speaking task limits integration to two concrete constraints with a short two-dimension rubric.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "VIETNAMESE_LEARNER_RELEVANCE",
+      "notes": "The Vietnamese-to-English item provides targeted cross-linguistic retrieval, while connected-speech noticing is offered without making unsupported claims about all Vietnamese learners.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "WORKLOAD",
+      "notes": "Four bounded controlled responses plus one concise spoken account are proportionate for a B1.1 consolidation lesson and avoid repetitive padding.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Reviewed the supplied exercise set and audit against their declared project-authored, no-external-payload, and no-external-media evidence."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "No Internet-wide copyright or plagiarism search was performed; this review checked only the supplied artifacts and their declared provenance evidence."
+  },
+  "decision": "APPROVE",
+  "exercise_set_id": "m7set_129b0df8b1b9c98b63e85ffc14c9337219198175a314add9b5612b600f4ff4ab",
+  "exercise_set_sha256": "cea10fcb880534feba6afa9f0c854fa3809d223b31de61ea695eab4b81953f8e",
+  "findings": [
+    {
+      "category": "CLARITY",
+      "description": "The learner-facing meaning of the vertical bar in “run | an” is not explicitly stated, and a vertical bar can visually suggest a pause rather than continuous linking.",
+      "recommendation": "When rendered, define the bar as a boundary marker with no pause, or model the intended link with an unambiguous notation and spoken example.",
+      "severity": "MINOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "B1-U05-L02",
+  "limitations": [
+    "This is an independent AI pedagogical review for development evidence, not human review or release approval.",
+    "The review covers only the supplied exercise set and automated audit; it does not independently validate linguistic correctness or perform an Internet-wide originality search.",
+    "Session-captured prompt and response hashes document this review exchange but are not provider-authenticated receipts."
+  ],
+  "m6_batch_id": "m6devbatch_4883cca8dea320c18b26a99316041dec1101c7dd28e551e265654c367af93d26",
+  "record_type": "exercise_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {},
+    "provider": "OpenAI",
+    "replayable_from_capture": true,
+    "sha256": "6e9a94efa3eb8c5090f0a0e3c47576c0ed88f251d4d0a37eefd8fd08b5a88339"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "run_id": "m7-pedagogical-review-v3-b1-u05-l02",
+    "sha256": "7895a5ff668f1c791d1ea92b430b90837297718a111a134632f3ec83a70609bc",
+    "version": "M7_PEDAGOGICAL_AI_REVIEW_v1"
+  },
+  "review_role": "PEDAGOGICAL_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T10:10:46Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0"
+}

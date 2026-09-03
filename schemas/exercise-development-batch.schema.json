@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/exercise-development-batch.schema.json",
+  "title": "English Master M7 development-approved exercise batch",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "batch_id", "approval_tier", "m6_batch_id", "created_at", "tool", "exercise_sets", "automated_checks", "originality_provenance_checks", "limitations"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "exercise_development_batch"},
+    "batch_id": {"type": "string", "pattern": "^m7devbatch_[a-f0-9]{64}$"},
+    "approval_tier": {"const": "DEVELOPMENT_APPROVED"},
+    "m6_batch_id": {"type": "string", "pattern": "^m6devbatch_[a-f0-9]{64}$"},
+    "created_at": {"$ref": "common.schema.json#/$defs/orderableDateTime"},
+    "tool": {"type": "object", "additionalProperties": false, "required": ["name", "version"], "properties": {"name": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "version": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "git_commit": {"type": "string", "pattern": "^[a-f0-9]{7,64}$"}}},
+    "exercise_sets": {"type": "array", "minItems": 10, "maxItems": 10, "items": {"$ref": "#/$defs/exerciseSet"}},
+    "automated_checks": {"type": "object", "additionalProperties": false, "required": ["schema", "lesson_scope", "answer_ambiguity", "duplicate", "provenance_copyright", "no_m8_scope"], "properties": {"schema": {"const": "PASS"}, "lesson_scope": {"const": "PASS"}, "answer_ambiguity": {"const": "PASS"}, "duplicate": {"const": "PASS"}, "provenance_copyright": {"const": "PASS"}, "no_m8_scope": {"const": "PASS"}}},
+    "originality_provenance_checks": {"type": "object", "additionalProperties": false, "required": ["authorized_input_scope", "duplicate_check", "external_search_performed", "limitations"], "properties": {"authorized_input_scope": {"const": "PASS"}, "duplicate_check": {"const": "PASS"}, "external_search_performed": {"const": false}, "limitations": {"type": "array", "minItems": 1, "items": {"$ref": "common.schema.json#/$defs/nonEmptyString"}}}},
+    "limitations": {"type": "array", "minItems": 1, "items": {"$ref": "common.schema.json#/$defs/nonEmptyString"}}
+  },
+  "$defs": {
+    "exerciseSet": {"type": "object", "additionalProperties": false, "required": ["lesson_id", "bundle_path", "exercise_set_sha256", "audit_sha256", "exercise_count", "generation_provenance_mode", "ai_reviews"], "properties": {"lesson_id": {"$ref": "common.schema.json#/$defs/lessonId"}, "bundle_path": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "exercise_set_sha256": {"$ref": "common.schema.json#/$defs/sha256"}, "audit_sha256": {"$ref": "common.schema.json#/$defs/sha256"}, "exercise_count": {"type": "integer", "minimum": 1, "maximum": 39}, "generation_provenance_mode": {"enum": ["SESSION_CAPTURED", "PROVIDER_CAPTURED"]}, "ai_reviews": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"$ref": "#/$defs/review"}}}},
+    "review": {"type": "object", "additionalProperties": false, "required": ["review_role", "path", "sha256"], "properties": {"review_role": {"enum": ["LINGUISTIC_AI_REVIEWER", "PEDAGOGICAL_AI_REVIEWER"]}, "path": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "sha256": {"$ref": "common.schema.json#/$defs/sha256"}}}
+  }
+}

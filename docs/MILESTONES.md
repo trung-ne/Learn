@@ -348,48 +348,40 @@ Development M6 content acceptance verified:
 
 ## M7 — Exercise Generation
 
+**Status**: Complete for the AI-only development lane (verified 2026-09-03); human/release approval remains separate
+
 **Estimated Duration**: ~3 weeks
 
 **Owner**: AI Agent (Claude/Codex)
 
 ### Scope
 
-Generate exercises for lessons:
-
-1. For each lesson, generate exercises
-2. Vary exercise types (MC, fill-blank, matching, etc.)
-3. Create answer keys
-4. Run QA
-5. Manual review challenging exercises
-
-### Exercise Types
-
-- Multiple choice
-- Fill-in-the-blank
-- Matching
-- Listening comprehension
-- Reading comprehension
-- Free response (writing/speaking)
+Generate exercise sets only from a verified M6 development-approved lesson batch. Derive exact scope and constraints from the lesson and graph; validate type-specific answer/rubric contracts; preserve provenance; and keep all generated content `UNREVIEWED`. Do not start M8.
 
 ### Deliverables
 
-1. curriculum/exercises/ folder with JSON exercise objects
-2. Exercise generator script (type-specific)
-3. Answer key validation
-4. QA report: answer validation, ambiguity detection, CEFR validity
-5. Manual review process output
-6. Tests for exercise structure
+1. Strict M7 authorization/request/candidate/set/audit/rejection schemas and offline package/CLI
+2. Immutable lesson-bound exercise sets under `curriculum/exercises/`
+3. Type-specific answer, ambiguity, CEFR, prerequisite, duplicate, provenance, copyright, and M8-exclusion checks
+4. Original authored offline captures and transcript-only listening fixtures; no external media payloads
+5. Tests, audit reports, and documented independent-review limits
 
 ### Acceptance Criteria
 
-- [ ] At least 50 exercises generated (5 per lesson)
-- [ ] Mix of exercise types
-- [ ] Answer keys are correct
-- [ ] Clarity QA passed
-- [ ] CEFR levels appropriate
-- [ ] Exercises test correct vocabulary/grammar
+- [x] Exercises consume validated M6 lesson constraints rather than inventing scope
+- [x] All supported types have strict type-specific contracts
+- [x] Count is a bounded quality target, not a reason to pad or relax QA
+- [x] Answer correctness and ambiguity checks reject unsafe publication
+- [x] CEFR, prerequisite, reference, duplicate, provenance, and copyright checks are auditable
+- [x] Subjective tasks have usable rubrics and remain reviewable
+- [x] Invalid output is rejected atomically with no partial accepted set
+- [x] Every generated exercise remains `UNREVIEWED` pending independent QA
+- [x] Offline CLI and full applicable tests pass
+- [x] No M8 or later-milestone implementation is added
 
-### Next: M8
+The 50-exercise / five-per-lesson figure is a development coverage target for the ten verified M6 lessons, not an approval criterion that overrides correctness, clarity, provenance, or pedagogical value.
+
+### Next: M8 only after M7 passes
 
 ---
 

@@ -1,0 +1,257 @@
+{
+  "exercise_set_id": "m7set_bf7aac316dee1cc4c72c9d219f3e1ac2883d9fd414c978a5a9534afdb745ac05",
+  "exercises": [
+    {
+      "cefr_level": "A1.2",
+      "difficulty": "medium",
+      "exercise_type": "translation",
+      "generation_metadata": {
+        "curriculum_version": "20260903",
+        "generated_at": "2026-09-03T09:25:07Z",
+        "generator": "english_master.exercise_generation",
+        "generator_version": "1.0",
+        "model": "UNKNOWN",
+        "prompt_version": "M7_EXERCISE_GENERATOR_v1",
+        "qa_notes": "Automated M7 checks passed; independent review remains required.",
+        "qa_status": "UNREVIEWED"
+      },
+      "id": "ex_A1-U02-L01_001",
+      "instructions": "Translate the Vietnamese sentence into polite, simple English.",
+      "objective_indices": [
+        0
+      ],
+      "payload": {
+        "acceptable_variants": [
+          "Please help me find Gate 3.",
+          "Could you help me find Gate 3?"
+        ],
+        "direction": "vi_to_en",
+        "intended_meaning": "A polite request for assistance locating Gate 3.",
+        "primary_answer": "Please help me find Gate 3.",
+        "register": "polite",
+        "scoring_guidance": "Require a polite request, help, and Gate 3.",
+        "source_text": "Làm ơn giúp tôi tìm Cổng 3."
+      },
+      "review_references": [],
+      "scoring_mode": "OBJECTIVE",
+      "sequence": 1,
+      "target_references": [
+        "concept_function_request_help"
+      ],
+      "title": "Translate a request for help"
+    },
+    {
+      "cefr_level": "A1.2",
+      "difficulty": "easy",
+      "exercise_type": "reading",
+      "generation_metadata": {
+        "curriculum_version": "20260903",
+        "generated_at": "2026-09-03T09:25:07Z",
+        "generator": "english_master.exercise_generation",
+        "generator_version": "1.0",
+        "model": "UNKNOWN",
+        "prompt_version": "M7_EXERCISE_GENERATOR_v1",
+        "qa_notes": "Automated M7 checks passed; independent review remains required.",
+        "qa_status": "UNREVIEWED"
+      },
+      "id": "ex_A1-U02-L01_002",
+      "instructions": "Read the short text and answer both questions.",
+      "objective_indices": [
+        0
+      ],
+      "payload": {
+        "answers": [
+          {
+            "answer": "Because he missed the first bell.",
+            "question_id": "q1"
+          },
+          {
+            "answer": "Across the school yard.",
+            "question_id": "q2"
+          }
+        ],
+        "origin": "PROJECT_AUTHORED",
+        "questions": [
+          {
+            "id": "q1",
+            "text": "Why did Nam run?"
+          },
+          {
+            "id": "q2",
+            "text": "Where did he run?"
+          }
+        ],
+        "stimulus": "Nam missed the first bell, so he ran across the school yard. He reached his classroom before the lesson began."
+      },
+      "review_references": [],
+      "scoring_mode": "OBJECTIVE",
+      "sequence": 2,
+      "target_references": [
+        "concept_past_simple",
+        "vocab_en_run_001"
+      ],
+      "title": "Read why Nam ran"
+    },
+    {
+      "cefr_level": "A1.2",
+      "difficulty": "easy",
+      "exercise_type": "fill_blank",
+      "generation_metadata": {
+        "curriculum_version": "20260903",
+        "generated_at": "2026-09-03T09:25:07Z",
+        "generator": "english_master.exercise_generation",
+        "generator_version": "1.0",
+        "model": "UNKNOWN",
+        "prompt_version": "M7_EXERCISE_GENERATOR_v1",
+        "qa_notes": "Automated M7 checks passed; independent review remains required.",
+        "qa_status": "UNREVIEWED"
+      },
+      "id": "ex_A1-U02-L01_003",
+      "instructions": "Use the past form of run to complete the sentence.",
+      "objective_indices": [
+        0
+      ],
+      "payload": {
+        "acceptable_variants": [
+          "ran"
+        ],
+        "blank_marker": "___",
+        "explanation": "Yesterday marks a completed past action, and the past form of run is ran.",
+        "primary_answer": "ran",
+        "spelling_policy": "Require the spelling ran.",
+        "stimulus": "Yesterday, I ___ to catch the bus."
+      },
+      "review_references": [],
+      "scoring_mode": "OBJECTIVE",
+      "sequence": 3,
+      "target_references": [
+        "concept_past_simple",
+        "vocab_en_run_001"
+      ],
+      "title": "Complete a finished action"
+    },
+    {
+      "cefr_level": "A1.2",
+      "difficulty": "easy",
+      "exercise_type": "sentence_construction",
+      "generation_metadata": {
+        "curriculum_version": "20260903",
+        "generated_at": "2026-09-03T09:25:07Z",
+        "generator": "english_master.exercise_generation",
+        "generator_version": "1.0",
+        "model": "UNKNOWN",
+        "prompt_version": "M7_EXERCISE_GENERATOR_v1",
+        "qa_notes": "Automated M7 checks passed; independent review remains required.",
+        "qa_status": "UNREVIEWED"
+      },
+      "id": "ex_A1-U02-L01_004",
+      "instructions": "Use all the words to make a polite request.",
+      "objective_indices": [
+        0,
+        1
+      ],
+      "payload": {
+        "acceptable_variants": [
+          "Please help me read this sign."
+        ],
+        "primary_answer": "Please help me read this sign.",
+        "required_words": [
+          "please",
+          "help",
+          "me",
+          "read",
+          "this",
+          "sign"
+        ],
+        "scoring_guidance": "Require every word and a grammatically complete polite request.",
+        "target_structure": "imperative request with please"
+      },
+      "review_references": [],
+      "scoring_mode": "OBJECTIVE",
+      "sequence": 4,
+      "target_references": [
+        "concept_function_request_help"
+      ],
+      "title": "Build a useful request"
+    },
+    {
+      "cefr_level": "A1.2",
+      "difficulty": "medium",
+      "exercise_type": "listening",
+      "generation_metadata": {
+        "curriculum_version": "20260903",
+        "generated_at": "2026-09-03T09:25:07Z",
+        "generator": "english_master.exercise_generation",
+        "generator_version": "1.0",
+        "model": "UNKNOWN",
+        "prompt_version": "M7_EXERCISE_GENERATOR_v1",
+        "qa_notes": "Automated M7 checks passed; independent review remains required.",
+        "qa_status": "UNREVIEWED"
+      },
+      "id": "ex_A1-U02-L01_005",
+      "instructions": "Use the transcript as a listening script and answer the questions.",
+      "objective_indices": [
+        0,
+        1
+      ],
+      "payload": {
+        "answers": [
+          {
+            "answer": "He ran to the bus stop.",
+            "question_id": "q1"
+          },
+          {
+            "answer": "Help finding Platform 1.",
+            "question_id": "q2"
+          }
+        ],
+        "media_required": false,
+        "origin": "PROJECT_AUTHORED",
+        "questions": [
+          {
+            "id": "q1",
+            "text": "What did Tuan do?"
+          },
+          {
+            "id": "q2",
+            "text": "What help does he request?"
+          }
+        ],
+        "transcript": "Tuan says, ‘I ran to the bus stop, but I dropped my map. Please help me find Platform 1.’"
+      },
+      "review_references": [],
+      "scoring_mode": "OBJECTIVE",
+      "sequence": 5,
+      "target_references": [
+        "concept_function_request_help",
+        "concept_past_simple",
+        "vocab_en_run_001"
+      ],
+      "title": "Listen for event and need"
+    }
+  ],
+  "generation_metadata": {
+    "curriculum_version": "20260903",
+    "generated_at": "2026-09-03T09:25:07Z",
+    "generator": "english_master.exercise_generation",
+    "generator_version": "1.0",
+    "model": "UNKNOWN",
+    "prompt_version": "M7_EXERCISE_GENERATOR_v1",
+    "qa_notes": "Automated M7 checks passed; independent review remains required.",
+    "qa_status": "UNREVIEWED"
+  },
+  "lesson_id": "A1-U02-L01",
+  "lesson_sha256": "312ae89e4bf9205f3db93d1359744e0db8281444d22f822a559da77ae31f9bb1",
+  "m6_batch_id": "m6devbatch_4883cca8dea320c18b26a99316041dec1101c7dd28e551e265654c367af93d26",
+  "output_sha256": "bf7aac316dee1cc4c72c9d219f3e1ac2883d9fd414c978a5a9534afdb745ac05",
+  "provenance": {
+    "external_payload_used": false,
+    "media_used": false,
+    "notes": "All stimuli and response options are original project-authored text.",
+    "origin": "PROJECT_AUTHORED"
+  },
+  "record_type": "exercise_set",
+  "request_id": "m7req_b8f4e2579ce5f23640062d0231f30ae0de6b6e2b154a9f4f8614e7b6fd9afc05",
+  "schema_version": "1.0",
+  "status": "UNREVIEWED"
+}

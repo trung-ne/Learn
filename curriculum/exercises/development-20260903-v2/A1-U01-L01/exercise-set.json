@@ -1,0 +1,257 @@
+{
+  "exercise_set_id": "m7set_308134bf454309d544b200019116f7eaaef39aeedf23c8b5667747c7ddf6b7bb",
+  "exercises": [
+    {
+      "cefr_level": "A1.1",
+      "difficulty": "easy",
+      "exercise_type": "multiple_choice",
+      "generation_metadata": {
+        "curriculum_version": "20260903",
+        "generated_at": "2026-09-03T09:25:07Z",
+        "generator": "english_master.exercise_generation",
+        "generator_version": "1.0",
+        "model": "UNKNOWN",
+        "prompt_version": "M7_EXERCISE_GENERATOR_v1",
+        "qa_notes": "Automated M7 checks passed; independent review remains required.",
+        "qa_status": "UNREVIEWED"
+      },
+      "id": "ex_A1-U01-L01_001",
+      "instructions": "Choose the sentence with the correct present-simple form.",
+      "objective_indices": [
+        0
+      ],
+      "payload": {
+        "explanation": "A third-person singular subject takes walks.",
+        "options": [
+          {
+            "id": "a",
+            "text": "Hoa walk to class each morning."
+          },
+          {
+            "id": "b",
+            "text": "Hoa walks to class each morning."
+          },
+          {
+            "id": "c",
+            "text": "Hoa walking to class each morning."
+          }
+        ],
+        "primary_option_id": "b"
+      },
+      "review_references": [],
+      "scoring_mode": "OBJECTIVE",
+      "sequence": 1,
+      "target_references": [
+        "concept_present_simple"
+      ],
+      "title": "A routine with she"
+    },
+    {
+      "cefr_level": "A1.1",
+      "difficulty": "easy",
+      "exercise_type": "fill_blank",
+      "generation_metadata": {
+        "curriculum_version": "20260903",
+        "generated_at": "2026-09-03T09:25:07Z",
+        "generator": "english_master.exercise_generation",
+        "generator_version": "1.0",
+        "model": "UNKNOWN",
+        "prompt_version": "M7_EXERCISE_GENERATOR_v1",
+        "qa_notes": "Automated M7 checks passed; independent review remains required.",
+        "qa_status": "UNREVIEWED"
+      },
+      "id": "ex_A1-U01-L01_002",
+      "instructions": "Write the correct form of study in the blank.",
+      "objective_indices": [
+        0
+      ],
+      "payload": {
+        "acceptable_variants": [
+          "studies"
+        ],
+        "blank_marker": "___",
+        "explanation": "My brother is third-person singular, so study changes to studies.",
+        "primary_answer": "studies",
+        "spelling_policy": "Ignore sentence-initial capitalization; otherwise require the shown spelling.",
+        "stimulus": "My brother ___ English on Mondays."
+      },
+      "review_references": [],
+      "scoring_mode": "OBJECTIVE",
+      "sequence": 2,
+      "target_references": [
+        "concept_present_simple"
+      ],
+      "title": "Complete an everyday fact"
+    },
+    {
+      "cefr_level": "A1.1",
+      "difficulty": "easy",
+      "exercise_type": "matching",
+      "generation_metadata": {
+        "curriculum_version": "20260903",
+        "generated_at": "2026-09-03T09:25:07Z",
+        "generator": "english_master.exercise_generation",
+        "generator_version": "1.0",
+        "model": "UNKNOWN",
+        "prompt_version": "M7_EXERCISE_GENERATOR_v1",
+        "qa_notes": "Automated M7 checks passed; independent review remains required.",
+        "qa_status": "UNREVIEWED"
+      },
+      "id": "ex_A1-U01-L01_003",
+      "instructions": "Match each subject to the present-simple verb form it requires.",
+      "objective_indices": [
+        0
+      ],
+      "payload": {
+        "explanation": "We takes read; Minh takes reads.",
+        "left": [
+          {
+            "id": "l1",
+            "text": "We"
+          },
+          {
+            "id": "l2",
+            "text": "Minh"
+          }
+        ],
+        "mapping": [
+          {
+            "left_id": "l1",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r1"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "reads"
+          },
+          {
+            "id": "r2",
+            "text": "read"
+          }
+        ]
+      },
+      "review_references": [],
+      "scoring_mode": "OBJECTIVE",
+      "sequence": 3,
+      "target_references": [
+        "concept_present_simple"
+      ],
+      "title": "Pair subjects with verbs"
+    },
+    {
+      "cefr_level": "A1.1",
+      "difficulty": "easy",
+      "exercise_type": "ordering",
+      "generation_metadata": {
+        "curriculum_version": "20260903",
+        "generated_at": "2026-09-03T09:25:07Z",
+        "generator": "english_master.exercise_generation",
+        "generator_version": "1.0",
+        "model": "UNKNOWN",
+        "prompt_version": "M7_EXERCISE_GENERATOR_v1",
+        "qa_notes": "Automated M7 checks passed; independent review remains required.",
+        "qa_status": "UNREVIEWED"
+      },
+      "id": "ex_A1-U01-L01_004",
+      "instructions": "Put the parts in the usual order for a statement.",
+      "objective_indices": [
+        0,
+        1
+      ],
+      "payload": {
+        "explanation": "The subject comes first, followed by the verb and place phrase.",
+        "ordering_principle": "English statement order",
+        "segments": [
+          {
+            "id": "s1",
+            "text": "in Da Nang"
+          },
+          {
+            "id": "s2",
+            "text": "works"
+          },
+          {
+            "id": "s3",
+            "text": "My aunt"
+          }
+        ],
+        "valid_order": [
+          "s3",
+          "s2",
+          "s1"
+        ]
+      },
+      "review_references": [],
+      "scoring_mode": "OBJECTIVE",
+      "sequence": 4,
+      "target_references": [
+        "concept_present_simple",
+        "concept_topic_personal_information"
+      ],
+      "title": "Build a personal-information sentence"
+    },
+    {
+      "cefr_level": "A1.1",
+      "difficulty": "easy",
+      "exercise_type": "error_correction",
+      "generation_metadata": {
+        "curriculum_version": "20260903",
+        "generated_at": "2026-09-03T09:25:07Z",
+        "generator": "english_master.exercise_generation",
+        "generator_version": "1.0",
+        "model": "UNKNOWN",
+        "prompt_version": "M7_EXERCISE_GENERATOR_v1",
+        "qa_notes": "Automated M7 checks passed; independent review remains required.",
+        "qa_status": "UNREVIEWED"
+      },
+      "id": "ex_A1-U01-L01_005",
+      "instructions": "Correct the verb error in the sentence.",
+      "objective_indices": [
+        0
+      ],
+      "payload": {
+        "corrected_sentence": "He cooks dinner every evening.",
+        "correction": "cooks",
+        "erroneous_sentence": "He cook dinner every evening.",
+        "error_span": "cook",
+        "explanation": "He requires the third-person singular form cooks."
+      },
+      "review_references": [],
+      "scoring_mode": "OBJECTIVE",
+      "sequence": 5,
+      "target_references": [
+        "concept_present_simple"
+      ],
+      "title": "Repair subject-verb agreement"
+    }
+  ],
+  "generation_metadata": {
+    "curriculum_version": "20260903",
+    "generated_at": "2026-09-03T09:25:07Z",
+    "generator": "english_master.exercise_generation",
+    "generator_version": "1.0",
+    "model": "UNKNOWN",
+    "prompt_version": "M7_EXERCISE_GENERATOR_v1",
+    "qa_notes": "Automated M7 checks passed; independent review remains required.",
+    "qa_status": "UNREVIEWED"
+  },
+  "lesson_id": "A1-U01-L01",
+  "lesson_sha256": "a09a20b10fd36cbfdfd05a12debfebf4e5fd83dfe38e1f2448a38f5a6ae79770",
+  "m6_batch_id": "m6devbatch_4883cca8dea320c18b26a99316041dec1101c7dd28e551e265654c367af93d26",
+  "output_sha256": "308134bf454309d544b200019116f7eaaef39aeedf23c8b5667747c7ddf6b7bb",
+  "provenance": {
+    "external_payload_used": false,
+    "media_used": false,
+    "notes": "All stimuli and response options are original project-authored text.",
+    "origin": "PROJECT_AUTHORED"
+  },
+  "record_type": "exercise_set",
+  "request_id": "m7req_6aad0e03ad2bff5ca09310f8e362d4912ea8e396d98d6103522120502d4c4941",
+  "schema_version": "1.0",
+  "status": "UNREVIEWED"
+}

@@ -1,0 +1,85 @@
+{
+  "ai_review_id": "m7aireview_1a359228197ddb3568b57be7ca601fa1c657c401bc141ebad828f991fa7c5854",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "9e9cd9b6eb59d45e14cf430c91c5285753dd11cb99059fb45b098149b2615a6a",
+  "checklist": [
+    {
+      "criterion": "CEFR_ALIGNMENT",
+      "notes": "The polite requests, travel information, and mediation tasks are appropriate for internal tier A2.1.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "GRAMMAR_LEXICAL_ACCURACY",
+      "notes": "The request structures and mediation language are accurate; “check this platform” remains understandable but slightly underspecified.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ANSWER_ACCURACY",
+      "notes": "The revised ex_A2-U03-L02_004 is a constrained multiple-choice assessment with one clearly most polite answer; the remaining keys and rubric are defensible.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "DISTRACTOR_QUALITY",
+      "notes": "The revised polite-request options contrast an imperative, a fully mitigated request, and an informal question, leaving one clear best answer.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "LANGUAGE_QUALITY",
+      "notes": "Most wording is clear, but one request collocation is less natural than “check the platform number.”",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ORIGINALITY_LIMITATIONS",
+      "notes": "The declared project-authored policy and local wording were inspected across all ten revised sets; no suspicious copied passage was identified, but no external search was performed.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Reviewed the revised exercise set and audit against the declared PROJECT_AUTHORED input policy.",
+      "Performed manual internal phrase-level inspection across the ten supplied revised M7 exercise sets."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "No Internet-wide copyright or plagiarism search, proprietary-corpus comparison, or provider-authenticated originality service was performed; common short English forms and functional phrases are not evidence of copying."
+  },
+  "decision": "APPROVE",
+  "exercise_set_id": "m7set_47f6cac21c33f9bed31b62434731ff3baf58f7a6a6fdffa0483ca8334c2dc191",
+  "exercise_set_sha256": "1257f8ef4e181988cd675c874720b182037c78d2cae0f5834c4eaa7ac9f80797",
+  "findings": [
+    {
+      "category": "LANGUAGE_QUALITY",
+      "description": "In ex_A2-U03-L02_002, “help me check this platform” is understandable but underspecified and less idiomatic than checking a platform number or confirming the correct platform.",
+      "recommendation": "Specify the information being checked.",
+      "severity": "MINOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "A2-U03-L02",
+  "limitations": [
+    "This is an independent AI linguistic development review, not human review, release approval, or CEFR certification.",
+    "The review is limited to the ten supplied revised immutable exercise sets, their audits, the verified M6 authority, and local repository materials.",
+    "No Internet-wide copyright or plagiarism search and no external audio assessment were performed.",
+    "Provider identity and inference parameters were unavailable and are recorded as UNKNOWN; the runtime-disclosed model identifier is recorded factually."
+  ],
+  "m6_batch_id": "m6devbatch_4883cca8dea320c18b26a99316041dec1101c7dd28e551e265654c367af93d26",
+  "record_type": "exercise_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {
+      "response_payload_canonicalization": "english_master.lesson_generation.canonical.canonical_json"
+    },
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "cdf0535c3ad368e271daece12920f5dca19ecf6d3cdaa0760cb85ce4a93e4452"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "run_id": "m7-v2-linguistic-review-session-a2-u03-l02",
+    "sha256": "72f90fd86935ca9ffd703038245631f833de3a34ef859005eb52d998c69eefa0",
+    "version": "M7_LINGUISTIC_AI_REVIEW_v2"
+  },
+  "review_role": "LINGUISTIC_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T09:59:12Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0"
+}

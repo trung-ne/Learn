@@ -1,0 +1,85 @@
+{
+  "ai_review_id": "m7aireview_82ac746fe3e326f57718da00823a49229ab42373a6bd4d7e24bec552d7ead95e",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "401434e35592491b3b07b7e8801839a63c283a2b6b2cafa632f99eefa16e3d66",
+  "checklist": [
+    {
+      "criterion": "OBJECTIVE_ALIGNMENT",
+      "notes": "The manage sense of run, past-perfect relationships, and consonant-to-vowel linking are practised separately and combined in speaking.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "TEACHABILITY",
+      "notes": "Repeated contextual contrast establishes the target sense, and controlled marked linking precedes freer production.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "PROGRESSION",
+      "notes": "Fill-blank and construction lead to reading, integrated speaking, and translation, with a sensible rise to the hard oral task.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "CLARITY",
+      "notes": "Meaning and grammar requirements are explicit, although underscore notation needs interpretation as a practice mark rather than normal spelling.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "COGNITIVE_LOAD",
+      "notes": "The integrated speaking task combines grammar, polysemy, and linking but gives two concrete constraints and a clear rubric.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "VIETNAMESE_LEARNER_RELEVANCE",
+      "notes": "Vietnamese-to-English translation plus connected-speech noticing offers useful cross-linguistic support without generalizing about all Vietnamese learners.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "WORKLOAD",
+      "notes": "Four controlled responses and one bounded spoken account are proportionate for B1.1.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Reviewed the exercise set and audit against the declared original project-authored policy and external-payload/media declarations."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "No Internet-wide copyright or plagiarism search was performed; this review checked only the declared original project-authored policy and supplied artifact evidence."
+  },
+  "decision": "APPROVE",
+  "exercise_set_id": "m7set_e354464dd55bc5730910996ee784e6700170731dd153202d610c1efee8ad7768",
+  "exercise_set_sha256": "a074f239956a5a4df20e36893b6e1fbf5add4bf815097da96b46b4a3519a7161",
+  "findings": [
+    {
+      "category": "CLARITY",
+      "description": "The nonstandard underscore in “run_an” can be mistaken for required written English rather than a temporary pronunciation-boundary mark.",
+      "recommendation": "Add a one-line legend stating that the underscore marks linking practice and should not appear in ordinary writing.",
+      "severity": "MINOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "B1-U05-L02",
+  "limitations": [
+    "This is an independent AI pedagogical review for development evidence, not human review or release approval.",
+    "The review covers the supplied immutable exercise set and automated audit; it does not report an Internet-wide originality search."
+  ],
+  "m6_batch_id": "m6devbatch_4883cca8dea320c18b26a99316041dec1101c7dd28e551e265654c367af93d26",
+  "record_type": "exercise_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {},
+    "provider": "OpenAI",
+    "replayable_from_capture": true,
+    "sha256": "ca31f2fa2d861c8d842657a53af2e734709e406b008d41d6f59904cbff37f472"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "run_id": "m7-pedagogical-review-session-b1-u05-l02",
+    "sha256": "cf942d70bad0700f5d31641bec98231e834e157a290efed38a7b2a97835ad581",
+    "version": "M7_PEDAGOGICAL_AI_REVIEW_v1"
+  },
+  "review_role": "PEDAGOGICAL_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T09:45:21Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0"
+}

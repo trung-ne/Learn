@@ -1,0 +1,78 @@
+{
+  "ai_review_id": "m7aireview_7bfd7cda8a17c0861515654cf9e0bc7d448d52027bbf5eaa0d65e39d1176cdb3",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "5e6a1152b82d9c6471659231fbd347606947085bcaa26a0ae67ab7f382cdfb15",
+  "checklist": [
+    {
+      "criterion": "CEFR_ALIGNMENT",
+      "notes": "Past-perfect timeline work, weak forms, and narrative production suit internal tier B1.1.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "GRAMMAR_LEXICAL_ACCURACY",
+      "notes": "The revision no longer labels grammatical simple past as an error; it asks which form explicitly marks anteriority, for which had prepared is the defensible key.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ANSWER_ACCURACY",
+      "notes": "Each objective answer is accurate and unambiguous under its wording, and the narrative rubric appropriately allows original responses.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "DISTRACTOR_QUALITY",
+      "notes": "Prepared is not presented as ungrammatical but as less explicit for the requested relationship; was preparing contrasts incompletion, producing a fair choice.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "LANGUAGE_QUALITY",
+      "notes": "The instructions, transcript, and rubrics are otherwise clear and natural for B1.1.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ORIGINALITY_LIMITATIONS",
+      "notes": "The declared project-authored policy and local wording were inspected across all ten revised sets; no suspicious copied passage was identified, but no external search was performed.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Reviewed the revised exercise set and audit against the declared PROJECT_AUTHORED input policy.",
+      "Performed manual internal phrase-level inspection across the ten supplied revised M7 exercise sets."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "No Internet-wide copyright or plagiarism search, proprietary-corpus comparison, or provider-authenticated originality service was performed; common short English forms and functional phrases are not evidence of copying."
+  },
+  "decision": "APPROVE",
+  "exercise_set_id": "m7set_6242fcb4961d2996388bdebcab4f3d465f2456507d71da2f01163b64aff6293d",
+  "exercise_set_sha256": "8332241d872a282603f8e86dc1ddb3b586e6072fc2352cb5ebba14fded412a57",
+  "findings": [],
+  "independent_of_generation": true,
+  "lesson_id": "B1-U05-L01",
+  "limitations": [
+    "This is an independent AI linguistic development review, not human review, release approval, or CEFR certification.",
+    "The review is limited to the ten supplied revised immutable exercise sets, their audits, the verified M6 authority, and local repository materials.",
+    "No Internet-wide copyright or plagiarism search and no external audio assessment were performed.",
+    "Provider identity and inference parameters were unavailable and are recorded as UNKNOWN; the runtime-disclosed model identifier is recorded factually."
+  ],
+  "m6_batch_id": "m6devbatch_4883cca8dea320c18b26a99316041dec1101c7dd28e551e265654c367af93d26",
+  "record_type": "exercise_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {
+      "response_payload_canonicalization": "english_master.lesson_generation.canonical.canonical_json"
+    },
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "5e175b465c389b895321e399aa01808b0a1c45543427aa3674f378a87ab0c354"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "run_id": "m7-v2-linguistic-review-session-b1-u05-l01",
+    "sha256": "d4152cd81186e52babae8773146d706550e5e48753c0eb236af197a19f1529ad",
+    "version": "M7_LINGUISTIC_AI_REVIEW_v2"
+  },
+  "review_role": "LINGUISTIC_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T09:59:15Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0"
+}

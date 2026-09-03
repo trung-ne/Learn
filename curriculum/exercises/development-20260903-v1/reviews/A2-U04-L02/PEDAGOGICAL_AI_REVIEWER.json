@@ -1,0 +1,85 @@
+{
+  "ai_review_id": "m7aireview_12d5125abe8815c9e99c7ecfdfb61f7eae2753657a7f8d0bf97d4f69d7b166f3",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "e4cd0c9cbddafb89f3ffe78b72b3a00e579334f10909e71fad360ab70840cea4",
+  "checklist": [
+    {
+      "criterion": "OBJECTIVE_ALIGNMENT",
+      "notes": "Four activities address sequencing, information focus, or integrated prior help language, but the speaking item is tagged for narrative sequence while asking only for request acceptance and an object quantity.",
+      "result": "FAIL"
+    },
+    {
+      "criterion": "TEACHABILITY",
+      "notes": "The reading, completion, focus matching, and translation tasks provide clear practice; the speaking rubric also supports a bounded response.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "PROGRESSION",
+      "notes": "The set moves from comprehension and controlled form/focus work to speaking and translation with manageable transitions.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "CLARITY",
+      "notes": "Individual instructions are understandable and output limits are explicit.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "COGNITIVE_LOAD",
+      "notes": "Short texts and one- or two-sentence production keep demands manageable.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "VIETNAMESE_LEARNER_RELEVANCE",
+      "notes": "Vietnamese translation, familiar names, and concrete helping contexts are relevant without stereotyping learners.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "WORKLOAD",
+      "notes": "Five short activities are proportionate for A2.2.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Reviewed the exercise set and audit against the declared original project-authored policy and external-payload/media declarations."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "No Internet-wide copyright or plagiarism search was performed; this review checked only the declared original project-authored policy and supplied artifact evidence."
+  },
+  "decision": "NEEDS_REVISION",
+  "exercise_set_id": "m7set_59e2a155153e50b53d66595cf90605b5f60eca45317af930ce560a7703aaf0a3",
+  "exercise_set_sha256": "1fb26786b228bcad8ffb3270d0d921d5a5b87bf21aa1db8954fc69a69a6d5cf1",
+  "findings": [
+    {
+      "category": "OBJECTIVE_ALIGNMENT",
+      "description": "ex_A2-U04-L02_004 declares concept_narrative_sequence as its target, but its prompt and rubric assess accepting a request and emphasizing “two folders”; no event sequence is elicited or assessed.",
+      "recommendation": "Redesign the task to require an ordered sequence of helping events, or bind it only to the interaction and sentence-focus objectives actually assessed.",
+      "severity": "MAJOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "A2-U04-L02",
+  "limitations": [
+    "This is an independent AI pedagogical review for development evidence, not human review or release approval.",
+    "The review covers the supplied immutable exercise set and automated audit; it does not report an Internet-wide originality search."
+  ],
+  "m6_batch_id": "m6devbatch_4883cca8dea320c18b26a99316041dec1101c7dd28e551e265654c367af93d26",
+  "record_type": "exercise_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {},
+    "provider": "OpenAI",
+    "replayable_from_capture": true,
+    "sha256": "88b70d837e25e0b758d25b734c90c9a00bcf3f61e68e55265186ecb9dfad511a"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "run_id": "m7-pedagogical-review-session-a2-u04-l02",
+    "sha256": "05d31852e987251b4fbe07dee5699b44619ea2839d8c451d3c04c83c8c84b2d5",
+    "version": "M7_PEDAGOGICAL_AI_REVIEW_v1"
+  },
+  "review_role": "PEDAGOGICAL_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T09:45:21Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0"
+}

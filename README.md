@@ -2,7 +2,7 @@
 
 English Master is a reproducible, self-study English learning-system pipeline for CEFR A1 through C2. Its primary learners are Vietnamese learners of English.
 
-## Current scope: M0 through M6 development complete; M7 has not started
+## Current scope: M0 through M7 development complete; M8 has not started
 
 The completed foundation provides:
 
@@ -175,12 +175,25 @@ Use the existing strict human/release invocation, including `--reviewer-registry
 
 The command reconstructs the exact M6 authorization and request from the verified snapshot and current M5 bundle before a backend is called. It injects only trusted lesson metadata, validates the assembled candidate, and atomically publishes `lesson.json` and `audit.json` on success. Add `--rejection-dir <directory>` to retain an immutable rejection-plus-audit bundle.
 
-No human/release snapshot or human/release approval exists yet. The development lane has a verified M5 snapshot, ten session-captured M6 lesson bundles, twenty AI review records, and one hash-bound `DEVELOPMENT_APPROVED` batch. All development evidence is distinct from human/release evidence, and M7 has not been implemented. See [docs/LESSON_GENERATION.md](docs/LESSON_GENERATION.md).
+No human/release snapshot or human/release approval exists yet. The development lane has a verified M5 snapshot, ten session-captured M6 lesson bundles, twenty AI review records, and one hash-bound `DEVELOPMENT_APPROVED` batch. M7 has a separate hash-bound AI-only `DEVELOPMENT_APPROVED` batch of ten `UNREVIEWED` five-exercise sets; it remains distinct from human/release evidence. See [docs/EXERCISE_GENERATION.md](docs/EXERCISE_GENERATION.md).
+
+## Run constrained M7 exercise generation
+
+M7 rebuilds a lesson request from the verified M6 batch, accepts only a prompt-bound captured response, injects trusted IDs and metadata, and atomically publishes a complete `exercise-set.json` plus `audit.json`. Initial M7 development artifacts use only original inline project-authored stimuli and transcript-only listening tasks; no external text/media operation is exercised.
+
+```bash
+python -m english_master.exercise_generate \
+  --lesson-id A1-U01-L01 \
+  --captured-response curriculum/exercises/captures/20260903-development-v1/A1-U01-L01.json \
+  --output-dir curriculum/exercises/development-20260903-v1/A1-U01-L01
+```
+
+The command exits `0` when a complete unreviewed set is published, `1` for content rejection, and `2` for authority/setup/persistence failure. See [docs/EXERCISE_GENERATION.md](docs/EXERCISE_GENERATION.md) for type-specific contracts, QA limits, and future external-media requirements.
 
 ## Layout
 
 - `schemas/` — authoritative Draft 2020-12 JSON Schemas.
-- `src/english_master/` — typed validation, ingestion, normalization, deduplication, M5 curriculum-graph, and M6 lesson-generation utilities.
+- `src/english_master/` — typed validation, ingestion, normalization, deduplication, M5 curriculum-graph, M6 lesson-generation, and M7 exercise-generation utilities.
 - `tests/fixtures/` — small, invented validation, ingestion, and M6 offline test examples; taxonomy tests use the authored prototype.
 - `sources/` — M1 registry metadata, official evidence summary, and source-operation policy; no source payloads.
 - `data/raw/`, `data/normalized/`, `data/quarantine/` — local M3 run payloads and audit records, ignored by Git except scaffolding.

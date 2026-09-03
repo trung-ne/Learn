@@ -1,0 +1,274 @@
+{
+  "exercise_set_id": "m7set_1d6cf5c62c70000652779fb7a9eb01d14ece15a02be41918b937199559888fc3",
+  "exercises": [
+    {
+      "cefr_level": "A1.2",
+      "difficulty": "easy",
+      "exercise_type": "matching",
+      "generation_metadata": {
+        "curriculum_version": "20260903",
+        "generated_at": "2026-09-03T09:25:07Z",
+        "generator": "english_master.exercise_generation",
+        "generator_version": "1.0",
+        "model": "UNKNOWN",
+        "prompt_version": "M7_EXERCISE_GENERATOR_v1",
+        "qa_notes": "Automated M7 checks passed; independent review remains required.",
+        "qa_status": "UNREVIEWED"
+      },
+      "id": "ex_A1-U02-L02_001",
+      "instructions": "Match each time clue to the sentence that fits it.",
+      "objective_indices": [
+        0
+      ],
+      "payload": {
+        "explanation": "Every Saturday signals a routine; last Saturday signals a completed past action.",
+        "left": [
+          {
+            "id": "l1",
+            "text": "every Saturday"
+          },
+          {
+            "id": "l2",
+            "text": "last Saturday"
+          }
+        ],
+        "mapping": [
+          {
+            "left_id": "l1",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r1"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "I ran in the park."
+          },
+          {
+            "id": "r2",
+            "text": "I run in the park."
+          }
+        ]
+      },
+      "review_references": [
+        "concept_past_simple",
+        "concept_present_simple"
+      ],
+      "scoring_mode": "OBJECTIVE",
+      "sequence": 1,
+      "target_references": [],
+      "title": "Match time clues and forms"
+    },
+    {
+      "cefr_level": "A1.2",
+      "difficulty": "medium",
+      "exercise_type": "ordering",
+      "generation_metadata": {
+        "curriculum_version": "20260903",
+        "generated_at": "2026-09-03T09:25:07Z",
+        "generator": "english_master.exercise_generation",
+        "generator_version": "1.0",
+        "model": "UNKNOWN",
+        "prompt_version": "M7_EXERCISE_GENERATOR_v1",
+        "qa_notes": "Automated M7 checks passed; independent review remains required.",
+        "qa_status": "UNREVIEWED"
+      },
+      "id": "ex_A1-U02-L02_002",
+      "instructions": "Put the turns in a logical conversational order.",
+      "objective_indices": [
+        0,
+        1
+      ],
+      "payload": {
+        "explanation": "The request comes first, then the offer to help, then the address.",
+        "ordering_principle": "request-response sequence",
+        "segments": [
+          {
+            "id": "s1",
+            "text": "Certainly. What is it?"
+          },
+          {
+            "id": "s2",
+            "text": "It is 8 Lake Street."
+          },
+          {
+            "id": "s3",
+            "text": "Could you help me write my address?"
+          }
+        ],
+        "valid_order": [
+          "s3",
+          "s1",
+          "s2"
+        ]
+      },
+      "review_references": [
+        "concept_function_request_help"
+      ],
+      "scoring_mode": "OBJECTIVE",
+      "sequence": 2,
+      "target_references": [
+        "concept_topic_personal_information"
+      ],
+      "title": "Order a request exchange"
+    },
+    {
+      "cefr_level": "A1.2",
+      "difficulty": "easy",
+      "exercise_type": "error_correction",
+      "generation_metadata": {
+        "curriculum_version": "20260903",
+        "generated_at": "2026-09-03T09:25:07Z",
+        "generator": "english_master.exercise_generation",
+        "generator_version": "1.0",
+        "model": "UNKNOWN",
+        "prompt_version": "M7_EXERCISE_GENERATOR_v1",
+        "qa_notes": "Automated M7 checks passed; independent review remains required.",
+        "qa_status": "UNREVIEWED"
+      },
+      "id": "ex_A1-U02-L02_003",
+      "instructions": "Fix the verb in this sentence about yesterday.",
+      "objective_indices": [
+        0
+      ],
+      "payload": {
+        "corrected_sentence": "Yesterday, Linh ran to the station.",
+        "correction": "ran",
+        "erroneous_sentence": "Yesterday, Linh run to the station.",
+        "error_span": "run",
+        "explanation": "A completed event yesterday requires ran."
+      },
+      "review_references": [
+        "concept_past_simple",
+        "vocab_en_run_001"
+      ],
+      "scoring_mode": "OBJECTIVE",
+      "sequence": 3,
+      "target_references": [],
+      "title": "Correct the past form"
+    },
+    {
+      "cefr_level": "A1.2",
+      "difficulty": "medium",
+      "exercise_type": "speaking",
+      "generation_metadata": {
+        "curriculum_version": "20260903",
+        "generated_at": "2026-09-03T09:25:07Z",
+        "generator": "english_master.exercise_generation",
+        "generator_version": "1.0",
+        "model": "UNKNOWN",
+        "prompt_version": "M7_EXERCISE_GENERATOR_v1",
+        "qa_notes": "Automated M7 checks passed; independent review remains required.",
+        "qa_status": "UNREVIEWED"
+      },
+      "id": "ex_A1-U02-L02_004",
+      "instructions": "Make a request and provide a made-up address when your partner asks.",
+      "objective_indices": [
+        0,
+        1
+      ],
+      "payload": {
+        "communicative_goal": "Ask someone to write a fictional address on a form.",
+        "constraints": [
+          "Use a polite request.",
+          "Give a clearly fictional street address."
+        ],
+        "expected_output": "A request, a relevant response, and a fictional address.",
+        "rubric": [
+          {
+            "criterion": "The request is polite and fits the situation.",
+            "dimension": "appropriacy"
+          },
+          {
+            "criterion": "The speaker supplies the information needed.",
+            "dimension": "completeness"
+          }
+        ]
+      },
+      "review_references": [
+        "concept_function_request_help"
+      ],
+      "scoring_mode": "RUBRIC",
+      "sequence": 4,
+      "target_references": [
+        "concept_topic_personal_information"
+      ],
+      "title": "Ask for form-filling help"
+    },
+    {
+      "cefr_level": "A1.2",
+      "difficulty": "medium",
+      "exercise_type": "writing",
+      "generation_metadata": {
+        "curriculum_version": "20260903",
+        "generated_at": "2026-09-03T09:25:07Z",
+        "generator": "english_master.exercise_generation",
+        "generator_version": "1.0",
+        "model": "UNKNOWN",
+        "prompt_version": "M7_EXERCISE_GENERATOR_v1",
+        "qa_notes": "Automated M7 checks passed; independent review remains required.",
+        "qa_status": "UNREVIEWED"
+      },
+      "id": "ex_A1-U02-L02_005",
+      "instructions": "Write two linked sentences contrasting a routine with one event yesterday.",
+      "objective_indices": [
+        0,
+        1
+      ],
+      "payload": {
+        "communicative_goal": "Contrast habitual run with past ran.",
+        "constraints": [
+          "Write two sentences.",
+          "Include a routine time phrase and yesterday."
+        ],
+        "expected_output": "One present-simple routine and one completed past action.",
+        "rubric": [
+          {
+            "criterion": "Run and ran agree with their time references.",
+            "dimension": "grammar"
+          },
+          {
+            "criterion": "The two sentences form a clear contrast.",
+            "dimension": "coherence"
+          }
+        ]
+      },
+      "review_references": [
+        "concept_past_simple",
+        "concept_present_simple",
+        "vocab_en_run_001"
+      ],
+      "scoring_mode": "RUBRIC",
+      "sequence": 5,
+      "target_references": [],
+      "title": "Write routine and past action"
+    }
+  ],
+  "generation_metadata": {
+    "curriculum_version": "20260903",
+    "generated_at": "2026-09-03T09:25:07Z",
+    "generator": "english_master.exercise_generation",
+    "generator_version": "1.0",
+    "model": "UNKNOWN",
+    "prompt_version": "M7_EXERCISE_GENERATOR_v1",
+    "qa_notes": "Automated M7 checks passed; independent review remains required.",
+    "qa_status": "UNREVIEWED"
+  },
+  "lesson_id": "A1-U02-L02",
+  "lesson_sha256": "20326bacfa8989b614ddff53eda46a8103ee118ad8460e59a4553c5f10d5206c",
+  "m6_batch_id": "m6devbatch_4883cca8dea320c18b26a99316041dec1101c7dd28e551e265654c367af93d26",
+  "output_sha256": "1d6cf5c62c70000652779fb7a9eb01d14ece15a02be41918b937199559888fc3",
+  "provenance": {
+    "external_payload_used": false,
+    "media_used": false,
+    "notes": "All stimuli and response options are original project-authored text.",
+    "origin": "PROJECT_AUTHORED"
+  },
+  "record_type": "exercise_set",
+  "request_id": "m7req_cce5c16653ddd4b475314bbb11354b4a3c306514134446785d4cde35bd970530",
+  "schema_version": "1.0",
+  "status": "UNREVIEWED"
+}

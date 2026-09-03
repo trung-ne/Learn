@@ -1,0 +1,85 @@
+{
+  "ai_review_id": "m7aireview_c17e06797f053f6f2dfbf03e709dc72421418efcb9be3c82681e09040446acaa",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "4b8e101977461e3d2c842ada633adbf007ab84bce5314b3f23a9b44a367f5cb2",
+  "checklist": [
+    {
+      "criterion": "CEFR_ALIGNMENT",
+      "notes": "Past continuous, travel notices, mediation, and polite station requests suit internal tier A2.1.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "GRAMMAR_LEXICAL_ACCURACY",
+      "notes": "Was reading and was waiting correctly express ongoing past actions; notice and request language is accurate.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ANSWER_ACCURACY",
+      "notes": "All keyed answers reproduce stated facts, and the speaking rubric permits varied valid responses.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "DISTRACTOR_QUALITY",
+      "notes": "The key is unique, although both distractors are conspicuously malformed and weak competitors.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "LANGUAGE_QUALITY",
+      "notes": "Instructions and texts are concise and clear; scenarios are natural.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ORIGINALITY_LIMITATIONS",
+      "notes": "The declared project-authored policy and local wording were inspected across all ten sets; no suspicious copied passage was identified, but no external search was performed.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Reviewed the exercise set and audit against the declared PROJECT_AUTHORED input policy.",
+      "Performed manual internal phrase-level inspection across the ten supplied M7 exercise sets."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "No Internet-wide copyright or plagiarism search, proprietary-corpus comparison, or provider-authenticated originality service was performed; common short English forms and functional phrases are not evidence of copying."
+  },
+  "decision": "APPROVE",
+  "exercise_set_id": "m7set_0c14cbda6d34440484ce35e4cac14456e2def00990f2f3d2bdff3d86f7b8cf7a",
+  "exercise_set_sha256": "7dc2e42613f682621e8ffe49c7a1c2d510a6f6c03604d500f719e6855d107554",
+  "findings": [
+    {
+      "category": "DISTRACTOR_QUALITY",
+      "description": "In ex_A2-U03-L01_001, both distractors contain obvious errors, so they weakly test ongoing versus completed past action.",
+      "recommendation": "Use grammatical alternatives expressing a completed event or another time relationship.",
+      "severity": "MINOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "A2-U03-L01",
+  "limitations": [
+    "This is an independent AI linguistic development review, not human review, release approval, or CEFR certification.",
+    "The review is limited to the ten supplied immutable exercise sets, their audits, the verified M6 authority, and local repository materials.",
+    "No Internet-wide copyright or plagiarism search and no external audio assessment were performed.",
+    "Provider identity and inference parameters were unavailable and are recorded as UNKNOWN; the runtime-disclosed model identifier is recorded factually."
+  ],
+  "m6_batch_id": "m6devbatch_4883cca8dea320c18b26a99316041dec1101c7dd28e551e265654c367af93d26",
+  "record_type": "exercise_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {
+      "response_payload_canonicalization": "english_master.lesson_generation.canonical.canonical_json"
+    },
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "d0bb34784082727ab081b24586fe577ce4526c21764e53b83dfd5964187d8515"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "run_id": "m7-linguistic-review-session-a2-u03-l01",
+    "sha256": "3c6b514fff59ad87c1ca3e6e83f5c80b1428db6810b02ad4b8e209c835f14c1e",
+    "version": "M7_LINGUISTIC_AI_REVIEW_v1"
+  },
+  "review_role": "LINGUISTIC_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T09:47:37Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0"
+}

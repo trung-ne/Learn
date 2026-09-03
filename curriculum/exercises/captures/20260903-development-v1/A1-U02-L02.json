@@ -1,0 +1,67 @@
+{
+  "observed_at": "2026-09-03T09:25:07Z",
+  "provider": "UNKNOWN",
+  "model": "UNKNOWN",
+  "run_id": "m7-session-capture-a1-u02-l02",
+  "deterministic": false,
+  "provenance_mode": "SESSION_CAPTURED",
+  "content": {
+    "items": [
+      {
+        "title": "Match time clues and forms",
+        "exercise_type": "matching",
+        "difficulty": "easy",
+        "instructions": "Match each time clue to the sentence that fits it.",
+        "objective_indices": [0],
+        "target_references": [],
+        "review_references": ["concept_present_simple", "concept_past_simple"],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"left": [{"id": "l1", "text": "every Saturday"}, {"id": "l2", "text": "last Saturday"}], "right": [{"id": "r1", "text": "I ran in the park."}, {"id": "r2", "text": "I run in the park."}], "mapping": [{"left_id": "l1", "right_id": "r2"}, {"left_id": "l2", "right_id": "r1"}], "explanation": "Every Saturday signals a routine; last Saturday signals a completed past action."}
+      },
+      {
+        "title": "Order a request exchange",
+        "exercise_type": "ordering",
+        "difficulty": "medium",
+        "instructions": "Put the turns in a logical conversational order.",
+        "objective_indices": [0, 1],
+        "target_references": ["concept_topic_personal_information"],
+        "review_references": ["concept_function_request_help"],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"segments": [{"id": "s1", "text": "Certainly. What is it?"}, {"id": "s2", "text": "It is 8 Lake Street."}, {"id": "s3", "text": "Could you help me write my address?"}], "valid_order": ["s3", "s1", "s2"], "ordering_principle": "request-response sequence", "explanation": "The request comes first, then the offer to help, then the address."}
+      },
+      {
+        "title": "Correct the past form",
+        "exercise_type": "error_correction",
+        "difficulty": "easy",
+        "instructions": "Fix the verb in this sentence about yesterday.",
+        "objective_indices": [0],
+        "target_references": [],
+        "review_references": ["concept_past_simple", "vocab_en_run_001"],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"erroneous_sentence": "Yesterday, Linh run to the station.", "error_span": "run", "correction": "ran", "corrected_sentence": "Yesterday, Linh ran to the station.", "explanation": "A completed event yesterday requires ran."}
+      },
+      {
+        "title": "Ask for form-filling help",
+        "exercise_type": "speaking",
+        "difficulty": "medium",
+        "instructions": "Make a request and provide a made-up address when your partner asks.",
+        "objective_indices": [0, 1],
+        "target_references": ["concept_topic_personal_information"],
+        "review_references": ["concept_function_request_help"],
+        "scoring_mode": "RUBRIC",
+        "payload": {"communicative_goal": "Ask someone to write a fictional address on a form.", "constraints": ["Use a polite request.", "Give a clearly fictional street address."], "expected_output": "A request, a relevant response, and a fictional address.", "rubric": [{"dimension": "appropriacy", "criterion": "The request is polite and fits the situation."}, {"dimension": "completeness", "criterion": "The speaker supplies the information needed."}]}
+      },
+      {
+        "title": "Write routine and past action",
+        "exercise_type": "writing",
+        "difficulty": "medium",
+        "instructions": "Write two linked sentences contrasting a routine with one event yesterday.",
+        "objective_indices": [0, 1],
+        "target_references": [],
+        "review_references": ["concept_present_simple", "concept_past_simple", "vocab_en_run_001"],
+        "scoring_mode": "RUBRIC",
+        "payload": {"communicative_goal": "Contrast habitual run with past ran.", "constraints": ["Write two sentences.", "Include a routine time phrase and yesterday."], "expected_output": "One present-simple routine and one completed past action.", "rubric": [{"dimension": "grammar", "criterion": "Run and ran agree with their time references."}, {"dimension": "coherence", "criterion": "The two sentences form a clear contrast."}]}
+      }
+    ]
+  }
+}

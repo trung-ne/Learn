@@ -1,0 +1,85 @@
+{
+  "ai_review_id": "m7aireview_36c220f8b8af2de6433f81a3828035b309314897ec52067e3f6ee9b00a090e2f",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "963ccdb1730be117bb680b48dc9506b5a221a3e34d78deaa43859b8391234da9",
+  "checklist": [
+    {
+      "criterion": "CEFR_ALIGNMENT",
+      "notes": "The tense contrast, request exchange, fictional address, and two-sentence writing task fit internal tier A1.2.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "GRAMMAR_LEXICAL_ACCURACY",
+      "notes": "Run and ran are correctly paired with their time clues, and the request/address language is grammatical.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ANSWER_ACCURACY",
+      "notes": "The matching, ordering, and correction keys are defensible; subjective tasks use open rubrics.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "DISTRACTOR_QUALITY",
+      "notes": "The paired tense forms provide a focused contrast and the dialogue has one intended sequence.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "LANGUAGE_QUALITY",
+      "notes": "The set is clear overall, though one response turn has a slightly vague pronoun.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ORIGINALITY_LIMITATIONS",
+      "notes": "The declared project-authored policy and local wording were inspected across all ten sets; no suspicious copied passage was identified, but no external search was performed.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Reviewed the exercise set and audit against the declared PROJECT_AUTHORED input policy.",
+      "Performed manual internal phrase-level inspection across the ten supplied M7 exercise sets."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "No Internet-wide copyright or plagiarism search, proprietary-corpus comparison, or provider-authenticated originality service was performed; common short English forms and functional phrases are not evidence of copying."
+  },
+  "decision": "APPROVE",
+  "exercise_set_id": "m7set_dc5f1fc002a2d52bf67c04e155062b4f5177a20328cf3f4af75fd71468f0cbf0",
+  "exercise_set_sha256": "e1464662d87c694025d8ea0d2aec15e82d9c81a31fb8b1d89f20a8a2037de971",
+  "findings": [
+    {
+      "category": "LANGUAGE_QUALITY",
+      "description": "In ex_A1-U02-L02_002, “Certainly. What is it?” is understandable but “it” is slightly vague after a request to write an address.",
+      "recommendation": "Use “Certainly. What is your address?”",
+      "severity": "MINOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "A1-U02-L02",
+  "limitations": [
+    "This is an independent AI linguistic development review, not human review, release approval, or CEFR certification.",
+    "The review is limited to the ten supplied immutable exercise sets, their audits, the verified M6 authority, and local repository materials.",
+    "No Internet-wide copyright or plagiarism search and no external audio assessment were performed.",
+    "Provider identity and inference parameters were unavailable and are recorded as UNKNOWN; the runtime-disclosed model identifier is recorded factually."
+  ],
+  "m6_batch_id": "m6devbatch_4883cca8dea320c18b26a99316041dec1101c7dd28e551e265654c367af93d26",
+  "record_type": "exercise_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {
+      "response_payload_canonicalization": "english_master.lesson_generation.canonical.canonical_json"
+    },
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "931ff70f70218a7158a30572d8422d7f54c2384a9af690b2e92358cf9629bb57"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "run_id": "m7-linguistic-review-session-a1-u02-l02",
+    "sha256": "c147251c37b158ba6450461d868265d00d400bc4f98ef2968baa2cfba9adf102",
+    "version": "M7_LINGUISTIC_AI_REVIEW_v1"
+  },
+  "review_role": "LINGUISTIC_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T09:47:37Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0"
+}

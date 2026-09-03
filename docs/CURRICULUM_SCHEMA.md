@@ -102,6 +102,12 @@ The shared `common.schema.json` definitions are authoritative for tier-qualified
 
 M6 development evidence uses distinct `lesson-ai-review` and `lesson-development-batch` records. Their `approval_tier` values are respectively `AI_REVIEWED` and `DEVELOPMENT_APPROVED`, while `reviewer_type: AI` is mandatory on the former. They hash-bind the exact M5 development snapshot, lesson, audit, prompt, and response evidence; neither schema has human identity, qualifications, or release fields. A passing development batch is not a content-lifecycle `APPROVED` record, `HUMAN_REVIEWED`, or `RELEASE_APPROVED` claim.
 
+## M7 Exercise Generation Contracts
+
+M7 uses separate authorization, request, narrow backend-candidate, exercise-set, audit, rejection, independent-AI-review, and development-batch contracts. Its authority independently revalidates the M5 development snapshot and complete M6 `DEVELOPMENT_APPROVED` batch before it derives a lesson-bound request. Backend responses contain authored exercise items only; host orchestration supplies deterministic `ex_{lesson}_{sequence}` identities, exact upstream bindings, output hashes, `UNREVIEWED` status, and trusted generation metadata.
+
+The current M7 development policy permits only `PROJECT_AUTHORED` inline text and transcript-only listening (`media_required: false`), so no external media or text operation is authorized or exercised. The contracts explicitly support multiple choice, fill blank, matching, ordering, error correction, sentence construction, translation, reading, listening, speaking, and writing. Objective tasks need complete defensible answer data; subjective tasks require analytic rubrics and remain reviewable. Automated acceptance establishes only structural machine validation. Separate AI linguistic and pedagogical reviews may establish `AI_REVIEWED` development evidence for an unchanged set; a complete hash-bound batch may establish `DEVELOPMENT_APPROVED`. Neither changes an exercise's `UNREVIEWED` lifecycle status or claims human/release approval. See [EXERCISE_GENERATION.md](EXERCISE_GENERATION.md).
+
 ## Core Models
 
 ### Skill

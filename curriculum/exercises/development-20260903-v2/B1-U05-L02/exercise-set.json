@@ -1,0 +1,251 @@
+{
+  "exercise_set_id": "m7set_a2f45e3d6cccde5dcd2aacb965d1c7b9bffee2198a18ce2a6fa0d99a983c380f",
+  "exercises": [
+    {
+      "cefr_level": "B1.1",
+      "difficulty": "medium",
+      "exercise_type": "fill_blank",
+      "generation_metadata": {
+        "curriculum_version": "20260903",
+        "generated_at": "2026-09-03T09:25:07Z",
+        "generator": "english_master.exercise_generation",
+        "generator_version": "1.0",
+        "model": "UNKNOWN",
+        "prompt_version": "M7_EXERCISE_GENERATOR_v1",
+        "qa_notes": "Automated M7 checks passed; independent review remains required.",
+        "qa_status": "UNREVIEWED"
+      },
+      "id": "ex_B1-U05-L02_001",
+      "instructions": "Use the correct past-perfect form of run in the manage or organize sense.",
+      "objective_indices": [
+        0
+      ],
+      "payload": {
+        "acceptable_variants": [
+          "had run"
+        ],
+        "blank_marker": "___",
+        "explanation": "Had run marks Duyen's organizing experience as earlier than the later club meeting, and run means organized here.",
+        "primary_answer": "had run",
+        "spelling_policy": "Require the two-word form had run.",
+        "stimulus": "Before the club meeting began, Duyen ___ two school events."
+      },
+      "review_references": [
+        "concept_past_perfect"
+      ],
+      "scoring_mode": "OBJECTIVE",
+      "sequence": 1,
+      "target_references": [
+        "vocab_en_run_002"
+      ],
+      "title": "Complete manage-sense run"
+    },
+    {
+      "cefr_level": "B1.1",
+      "difficulty": "medium",
+      "exercise_type": "sentence_construction",
+      "generation_metadata": {
+        "curriculum_version": "20260903",
+        "generated_at": "2026-09-03T09:25:07Z",
+        "generator": "english_master.exercise_generation",
+        "generator_version": "1.0",
+        "model": "UNKNOWN",
+        "prompt_version": "M7_EXERCISE_GENERATOR_v1",
+        "qa_notes": "Automated M7 checks passed; independent review remains required.",
+        "qa_status": "UNREVIEWED"
+      },
+      "id": "ex_B1-U05-L02_002",
+      "instructions": "Use every element to form a sentence with the indicated connected-speech boundary.",
+      "objective_indices": [
+        0,
+        1
+      ],
+      "payload": {
+        "acceptable_variants": [
+          "Lan had run_an event before noon."
+        ],
+        "primary_answer": "Lan had run_an event before noon.",
+        "required_words": [
+          "Lan",
+          "had",
+          "run_an",
+          "event",
+          "before",
+          "noon"
+        ],
+        "scoring_guidance": "Require had run and preserve run_an as the marked practice boundary.",
+        "target_structure": "past perfect with marked consonant-to-vowel link"
+      },
+      "review_references": [
+        "concept_past_perfect"
+      ],
+      "scoring_mode": "OBJECTIVE",
+      "sequence": 2,
+      "target_references": [
+        "concept_pronunciation_linking",
+        "vocab_en_run_002"
+      ],
+      "title": "Construct a linked phrase"
+    },
+    {
+      "cefr_level": "B1.1",
+      "difficulty": "medium",
+      "exercise_type": "reading",
+      "generation_metadata": {
+        "curriculum_version": "20260903",
+        "generated_at": "2026-09-03T09:25:07Z",
+        "generator": "english_master.exercise_generation",
+        "generator_version": "1.0",
+        "model": "UNKNOWN",
+        "prompt_version": "M7_EXERCISE_GENERATOR_v1",
+        "qa_notes": "Automated M7 checks passed; independent review remains required.",
+        "qa_status": "UNREVIEWED"
+      },
+      "id": "ex_B1-U05-L02_003",
+      "instructions": "Read the account and explain which organized activity happened first.",
+      "objective_indices": [
+        0,
+        1
+      ],
+      "payload": {
+        "answers": [
+          {
+            "answer": "A workshop for new volunteers.",
+            "question_id": "q1"
+          }
+        ],
+        "origin": "PROJECT_AUTHORED",
+        "questions": [
+          {
+            "id": "q1",
+            "text": "What had Priya organized before the members arrived?"
+          }
+        ],
+        "stimulus": "At 7:00, members arrived for the science club. Earlier, Priya had run a workshop for new volunteers."
+      },
+      "review_references": [
+        "concept_past_perfect"
+      ],
+      "scoring_mode": "OBJECTIVE",
+      "sequence": 3,
+      "target_references": [
+        "vocab_en_run_002"
+      ],
+      "title": "Read the management timeline"
+    },
+    {
+      "cefr_level": "B1.1",
+      "difficulty": "hard",
+      "exercise_type": "speaking",
+      "generation_metadata": {
+        "curriculum_version": "20260903",
+        "generated_at": "2026-09-03T09:25:07Z",
+        "generator": "english_master.exercise_generation",
+        "generator_version": "1.0",
+        "model": "UNKNOWN",
+        "prompt_version": "M7_EXERCISE_GENERATOR_v1",
+        "qa_notes": "Automated M7 checks passed; independent review remains required.",
+        "qa_status": "UNREVIEWED"
+      },
+      "id": "ex_B1-U05-L02_004",
+      "instructions": "Explain how an earlier organized event prepared someone for a later club meeting.",
+      "objective_indices": [
+        0,
+        1
+      ],
+      "payload": {
+        "communicative_goal": "Retell an earlier management experience and its later benefit.",
+        "constraints": [
+          "Use had run in the manage sense.",
+          "Include one consonant-to-vowel link you can mark in your script."
+        ],
+        "expected_output": "A clear two-stage account followed by the result or benefit.",
+        "rubric": [
+          {
+            "criterion": "Run unmistakably means organize or manage.",
+            "dimension": "meaning"
+          },
+          {
+            "criterion": "The marked link joins a final consonant to a following vowel without deleting either sound.",
+            "dimension": "delivery plan"
+          }
+        ]
+      },
+      "review_references": [
+        "concept_past_perfect",
+        "concept_pronunciation_weak_forms"
+      ],
+      "scoring_mode": "RUBRIC",
+      "sequence": 4,
+      "target_references": [
+        "concept_pronunciation_linking",
+        "vocab_en_run_002"
+      ],
+      "title": "Retell prior experience"
+    },
+    {
+      "cefr_level": "B1.1",
+      "difficulty": "medium",
+      "exercise_type": "translation",
+      "generation_metadata": {
+        "curriculum_version": "20260903",
+        "generated_at": "2026-09-03T09:25:07Z",
+        "generator": "english_master.exercise_generation",
+        "generator_version": "1.0",
+        "model": "UNKNOWN",
+        "prompt_version": "M7_EXERCISE_GENERATOR_v1",
+        "qa_notes": "Automated M7 checks passed; independent review remains required.",
+        "qa_status": "UNREVIEWED"
+      },
+      "id": "ex_B1-U05-L02_005",
+      "instructions": "Translate the Vietnamese sentence into English to show an event completed before the meeting began.",
+      "objective_indices": [
+        0
+      ],
+      "payload": {
+        "acceptable_variants": [
+          "Before the meeting began, she had run a school event."
+        ],
+        "direction": "vi_to_en",
+        "intended_meaning": "She organized a school event before the later meeting began.",
+        "primary_answer": "Before the meeting began, she had run an event at school.",
+        "register": "neutral",
+        "scoring_guidance": "Require a clear later past reference and had run in the manage meaning.",
+        "source_text": "Trước khi cuộc họp bắt đầu, cô ấy đã tổ chức một sự kiện ở trường."
+      },
+      "review_references": [
+        "concept_past_perfect"
+      ],
+      "scoring_mode": "OBJECTIVE",
+      "sequence": 5,
+      "target_references": [
+        "vocab_en_run_002"
+      ],
+      "title": "Translate organized an event"
+    }
+  ],
+  "generation_metadata": {
+    "curriculum_version": "20260903",
+    "generated_at": "2026-09-03T09:25:07Z",
+    "generator": "english_master.exercise_generation",
+    "generator_version": "1.0",
+    "model": "UNKNOWN",
+    "prompt_version": "M7_EXERCISE_GENERATOR_v1",
+    "qa_notes": "Automated M7 checks passed; independent review remains required.",
+    "qa_status": "UNREVIEWED"
+  },
+  "lesson_id": "B1-U05-L02",
+  "lesson_sha256": "9e6b0d0cac4a38c62e6f1a91d57c03ac23bdd0055a2b3ff29ed013d21cbb71de",
+  "m6_batch_id": "m6devbatch_4883cca8dea320c18b26a99316041dec1101c7dd28e551e265654c367af93d26",
+  "output_sha256": "a2f45e3d6cccde5dcd2aacb965d1c7b9bffee2198a18ce2a6fa0d99a983c380f",
+  "provenance": {
+    "external_payload_used": false,
+    "media_used": false,
+    "notes": "All stimuli and response options are original project-authored text.",
+    "origin": "PROJECT_AUTHORED"
+  },
+  "record_type": "exercise_set",
+  "request_id": "m7req_3bb9af001b6791d1c6e94748d00bbc86f98857b23f44b76e9e92bd778014782f",
+  "schema_version": "1.0",
+  "status": "UNREVIEWED"
+}

@@ -1,0 +1,91 @@
+{
+  "ai_review_id": "m7aireview_d596508728e79b7b5cc898c8dd949a48dc9cb28e721a16ce75311ff8fdb8b124",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "961360109f9c35f59a97b4b439ec8db13c7b320cbb51edcdeb27db0f25f11d0f",
+  "checklist": [
+    {
+      "criterion": "CEFR_ALIGNMENT",
+      "notes": "The polite requests, travel information, and mediation tasks are appropriate for internal tier A2.1.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "GRAMMAR_LEXICAL_ACCURACY",
+      "notes": "The translation and most requests are accurate; “check this platform” is slightly unnatural but understandable.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ANSWER_ACCURACY",
+      "notes": "The open-ended polite rewrite in ex_A2-U03-L02_004 has multiple correct answers but only one objective key.",
+      "result": "FAIL"
+    },
+    {
+      "criterion": "DISTRACTOR_QUALITY",
+      "notes": "The matching clearly contrasts a fuller staff request with an informal peer request; no unsafe multiple-choice distractors occur.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "LANGUAGE_QUALITY",
+      "notes": "Most wording is clear, but one request collocation is less natural than “check the platform number.”",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ORIGINALITY_LIMITATIONS",
+      "notes": "The declared project-authored policy and local wording were inspected across all ten sets; no suspicious copied passage was identified, but no external search was performed.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Reviewed the exercise set and audit against the declared PROJECT_AUTHORED input policy.",
+      "Performed manual internal phrase-level inspection across the ten supplied M7 exercise sets."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "No Internet-wide copyright or plagiarism search, proprietary-corpus comparison, or provider-authenticated originality service was performed; common short English forms and functional phrases are not evidence of copying."
+  },
+  "decision": "NEEDS_REVISION",
+  "exercise_set_id": "m7set_ba3aaee0ac112395c31567e0f4e47984dc30469d5cfed633ba624e64da203da3",
+  "exercise_set_sha256": "cd238ce6979866b1ebe61a916f4e9064e423de11b1795b0f3a96f2e0a9bccd00",
+  "findings": [
+    {
+      "category": "ANSWER_ACCURACY",
+      "description": "ex_A2-U03-L02_004 is objectively scored although “Replace ... with a polite form” permits many correct rewrites; only one corrected sentence is supplied.",
+      "recommendation": "Constrain the requested structure, enumerate defensible variants, or use rubric scoring.",
+      "severity": "MAJOR"
+    },
+    {
+      "category": "LANGUAGE_QUALITY",
+      "description": "In ex_A2-U03-L02_002, “help me check this platform” is understandable but underspecified and less idiomatic than checking a platform number or confirming the correct platform.",
+      "recommendation": "Specify the information being checked.",
+      "severity": "MINOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "A2-U03-L02",
+  "limitations": [
+    "This is an independent AI linguistic development review, not human review, release approval, or CEFR certification.",
+    "The review is limited to the ten supplied immutable exercise sets, their audits, the verified M6 authority, and local repository materials.",
+    "No Internet-wide copyright or plagiarism search and no external audio assessment were performed.",
+    "Provider identity and inference parameters were unavailable and are recorded as UNKNOWN; the runtime-disclosed model identifier is recorded factually."
+  ],
+  "m6_batch_id": "m6devbatch_4883cca8dea320c18b26a99316041dec1101c7dd28e551e265654c367af93d26",
+  "record_type": "exercise_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {
+      "response_payload_canonicalization": "english_master.lesson_generation.canonical.canonical_json"
+    },
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "1400968cbbb06105b4052b99bc74ae5796349f34d5d01c1a066660b5487e1691"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "run_id": "m7-linguistic-review-session-a2-u03-l02",
+    "sha256": "6ef7f825c301039943dfa13d55e7633b0c6731147adfa2cac5d883aa0978a849",
+    "version": "M7_LINGUISTIC_AI_REVIEW_v1"
+  },
+  "review_role": "LINGUISTIC_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T09:47:37Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0"
+}

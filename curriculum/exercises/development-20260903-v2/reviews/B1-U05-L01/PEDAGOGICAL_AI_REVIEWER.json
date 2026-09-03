@@ -1,0 +1,85 @@
+{
+  "ai_review_id": "m7aireview_c4ac0ee9fdfc4b8f4a73cdefadbe86d966a9e84009de58e4f9ba38b2dbdca770",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "5e6a1152b82d9c6471659231fbd347606947085bcaa26a0ae67ab7f382cdfb15",
+  "checklist": [
+    {
+      "criterion": "OBJECTIVE_ALIGNMENT",
+      "notes": "Past-perfect time relationships and connected-speech awareness are both assessed, with narrative ordering and writing integrating earlier and later events.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "TEACHABILITY",
+      "notes": "Correction and timeline ordering externalize the time relationship before the extended account.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "PROGRESSION",
+      "notes": "Controlled grammar and timeline work lead to comprehension and writing; the final weak-form choice returns to a lower-demand pronunciation check.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "CLARITY",
+      "notes": "Task operations and writing constraints are explicit, and answer explanations identify intended cues.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "COGNITIVE_LOAD",
+      "notes": "The hard writing item is bounded to four sentences and follows several focused examples.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "VIETNAMESE_LEARNER_RELEVANCE",
+      "notes": "Explicit earlier-past marking and attention to reduced function words provide useful noticing for Vietnamese learners without asserting universal difficulty.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "WORKLOAD",
+      "notes": "One short writing task and four objective tasks constitute a reasonable B1.1 practice block.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Reviewed the exercise set and audit against the declared original project-authored policy and external-payload/media declarations."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "No Internet-wide copyright or plagiarism search was performed; this review checked only the declared original project-authored policy and supplied artifact evidence."
+  },
+  "decision": "APPROVE",
+  "exercise_set_id": "m7set_6242fcb4961d2996388bdebcab4f3d465f2456507d71da2f01163b64aff6293d",
+  "exercise_set_sha256": "8332241d872a282603f8e86dc1ddb3b586e6072fc2352cb5ebba14fded412a57",
+  "findings": [
+    {
+      "category": "PROGRESSION",
+      "description": "The set culminates at the hard writing task, then drops to a medium isolated weak-form recognition item.",
+      "recommendation": "Place weak-form recognition before listening or incorporate weak forms into a final spoken retelling.",
+      "severity": "MINOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "B1-U05-L01",
+  "limitations": [
+    "This is an independent AI pedagogical review for development evidence, not human review or release approval.",
+    "The review covers the supplied immutable exercise set and automated audit; it does not report an Internet-wide originality search."
+  ],
+  "m6_batch_id": "m6devbatch_4883cca8dea320c18b26a99316041dec1101c7dd28e551e265654c367af93d26",
+  "record_type": "exercise_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {},
+    "provider": "OpenAI",
+    "replayable_from_capture": true,
+    "sha256": "10c001a556f0c6ffe2cc0505727796df898181dcd0ce88c4ed214cefa2252552"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "run_id": "m7-pedagogical-review-v2-b1-u05-l01",
+    "sha256": "2dc39f885049fbde2bede4d7cb67dc651453e97877383d72cf4c44056e20969d",
+    "version": "M7_PEDAGOGICAL_AI_REVIEW_v1"
+  },
+  "review_role": "PEDAGOGICAL_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T10:00:13Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0"
+}

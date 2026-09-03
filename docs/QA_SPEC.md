@@ -337,6 +337,16 @@ M6 performs a fail-closed automated generation validation pass, not approval. Be
 
 The development lane may use a separately verified M5 development snapshot, two independent AI-only reviews per lesson, and a cryptographically bound ten-lesson batch to establish `DEVELOPMENT_APPROVED`. Each AI review must retain its role, exact lesson/audit/snapshot/prompt/response hashes, factual provenance, verdict, findings, and limitations. `TEST_ONLY` and replay-only evidence cannot support promotion. Passing development evidence is never `HUMAN_REVIEWED`, `RELEASE_APPROVED`, or public release. The strict human M5 snapshot and human review contracts remain the separate release lane.
 
+### M7 exercise-generation gate
+
+M7 first independently revalidates the exact M5 development snapshot and the complete M6 `DEVELOPMENT_APPROVED` batch, then reconstructs scope from the selected lesson. It rejects request/authorization drift before backend invocation. The backend supplies only untrusted authored item payloads; host code injects identifiers, hashes, provenance decisions, status, and metadata.
+
+Every candidate is checked for schema shape, lesson/reference scope, CEFR/prerequisite constraints, type-specific answer and ambiguity rules, deterministic exact/near duplicates, workload limits, original authored provenance, no external-media use, and M8 leakage. Passing machine checks publish only a complete atomic `UNREVIEWED` set plus an audit that names all outstanding independent review categories. Speaking and writing receive rubrics, not fictional exact answers. The initial M7 policy uses original inline text and transcript-only listening, so no external text/audio/video permission is exercised; a future external stimulus must separately prove source approval, provenance, attribution, and every relevant operation permission.
+
+Separate AI linguistic and pedagogical review records may then hash-bind an accepted set and its immutable audit. A `SESSION_CAPTURED` or `PROVIDER_CAPTURED` AI record can provide development evidence only when its factual capture provenance, role-specific checklist, actual response hash, decision, findings, and limitations validate. `TEST_ONLY` and replay-only evidence cannot promote a batch. A complete ten-set batch with both roles can establish `DEVELOPMENT_APPROVED`, without changing generated content from `UNREVIEWED` or asserting human, release, or Internet-wide originality review.
+
+Automated M7 validation is not a human, release, or comprehensive language-quality decision. No Internet-wide plagiarism/copyright search is implied unless actually performed and recorded.
+
 ## Content Review Status Levels
 
 These statuses apply to generated content; they are distinct from source disposition statuses.

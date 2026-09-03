@@ -1,0 +1,67 @@
+{
+  "observed_at": "2026-09-03T09:25:07Z",
+  "provider": "UNKNOWN",
+  "model": "UNKNOWN",
+  "run_id": "m7-session-capture-b1-u05-l02",
+  "deterministic": false,
+  "provenance_mode": "SESSION_CAPTURED",
+  "content": {
+    "items": [
+      {
+        "title": "Complete manage-sense run",
+        "exercise_type": "fill_blank",
+        "difficulty": "medium",
+        "instructions": "Use the correct past-perfect form of run in the manage or organize sense.",
+        "objective_indices": [0],
+        "target_references": ["vocab_en_run_002"],
+        "review_references": ["concept_past_perfect"],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"stimulus": "Before the club meeting began, Duyen ___ two school events.", "blank_marker": "___", "primary_answer": "had run", "acceptable_variants": ["had run"], "explanation": "Had run marks Duyen's organizing experience as earlier than the later club meeting, and run means organized here.", "spelling_policy": "Require the two-word form had run."}
+      },
+      {
+        "title": "Construct a linked phrase",
+        "exercise_type": "sentence_construction",
+        "difficulty": "medium",
+        "instructions": "Use every element to form a sentence with the indicated connected-speech boundary.",
+        "objective_indices": [0, 1],
+        "target_references": ["concept_pronunciation_linking", "vocab_en_run_002"],
+        "review_references": ["concept_past_perfect"],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"required_words": ["Before", "the", "meeting", "began", "Lan", "had", "run", "an", "event"], "target_structure": "past perfect before a later past event with a marked consonant-to-vowel link", "primary_answer": "Before the meeting began, Lan had run an event.", "acceptable_variants": ["Lan had run an event before the meeting began."], "link_boundary": "run | an", "scoring_guidance": "Require a clear later past reference, had run, and a marked /n/-to-vowel link between run and an."}
+      },
+      {
+        "title": "Read the management timeline",
+        "exercise_type": "reading",
+        "difficulty": "medium",
+        "instructions": "Read the account and explain which organized activity happened first.",
+        "objective_indices": [0, 1],
+        "target_references": ["vocab_en_run_002"],
+        "review_references": ["concept_past_perfect"],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"stimulus": "At 7:00, members arrived for the science club. Earlier, Priya had run a workshop for new volunteers.", "questions": [{"id": "q1", "text": "What had Priya organized before the members arrived?"}], "answers": [{"question_id": "q1", "answer": "A workshop for new volunteers."}], "origin": "PROJECT_AUTHORED"}
+      },
+      {
+        "title": "Retell prior experience",
+        "exercise_type": "speaking",
+        "difficulty": "hard",
+        "instructions": "Explain how an earlier organized event prepared someone for a later club meeting.",
+        "objective_indices": [0, 1],
+        "target_references": ["vocab_en_run_002", "concept_pronunciation_linking"],
+        "review_references": ["concept_past_perfect", "concept_pronunciation_weak_forms"],
+        "scoring_mode": "RUBRIC",
+        "payload": {"communicative_goal": "Retell an earlier management experience and its later benefit.", "constraints": ["Use had run in the manage sense.", "Include one consonant-to-vowel link you can mark in your script."], "expected_output": "A clear two-stage account followed by the result or benefit.", "rubric": [{"dimension": "meaning", "criterion": "Run unmistakably means organize or manage."}, {"dimension": "delivery plan", "criterion": "The marked link joins a final consonant to a following vowel without deleting either sound."}]}
+      },
+      {
+        "title": "Translate organized an event",
+        "exercise_type": "translation",
+        "difficulty": "medium",
+        "instructions": "Translate the Vietnamese sentence into English to show an event completed before the meeting began.",
+        "objective_indices": [0],
+        "target_references": ["vocab_en_run_002"],
+        "review_references": ["concept_past_perfect"],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"direction": "vi_to_en", "register": "neutral", "source_text": "Trước khi cuộc họp bắt đầu, cô ấy đã tổ chức một sự kiện ở trường.", "intended_meaning": "She organized a school event before the later meeting began.", "primary_answer": "Before the meeting began, she had run an event at school.", "acceptable_variants": ["Before the meeting began, she had run a school event."], "scoring_guidance": "Require a clear later past reference and had run in the manage meaning."}
+      }
+    ]
+  }
+}

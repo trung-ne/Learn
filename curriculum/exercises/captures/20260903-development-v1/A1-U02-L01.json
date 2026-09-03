@@ -1,0 +1,67 @@
+{
+  "observed_at": "2026-09-03T09:25:07Z",
+  "provider": "UNKNOWN",
+  "model": "UNKNOWN",
+  "run_id": "m7-session-capture-a1-u02-l01",
+  "deterministic": false,
+  "provenance_mode": "SESSION_CAPTURED",
+  "content": {
+    "items": [
+      {
+        "title": "Translate a request for help",
+        "exercise_type": "translation",
+        "difficulty": "medium",
+        "instructions": "Translate the Vietnamese sentence into polite, simple English.",
+        "objective_indices": [0],
+        "target_references": ["concept_function_request_help"],
+        "review_references": [],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"direction": "vi_to_en", "register": "polite", "source_text": "Làm ơn giúp tôi tìm Cổng 3.", "intended_meaning": "A polite request for assistance locating Gate 3.", "primary_answer": "Please help me find Gate 3.", "acceptable_variants": ["Please help me find Gate 3.", "Could you help me find Gate 3?"], "scoring_guidance": "Require a polite request, help, and Gate 3."}
+      },
+      {
+        "title": "Read why Nam ran",
+        "exercise_type": "reading",
+        "difficulty": "easy",
+        "instructions": "Read the short text and answer both questions.",
+        "objective_indices": [0],
+        "target_references": ["concept_past_simple", "vocab_en_run_001"],
+        "review_references": [],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"stimulus": "Nam missed the first bell, so he ran across the school yard. He reached his classroom before the lesson began.", "questions": [{"id": "q1", "text": "Why did Nam run?"}, {"id": "q2", "text": "Where did he run?"}], "answers": [{"question_id": "q1", "answer": "Because he missed the first bell."}, {"question_id": "q2", "answer": "Across the school yard."}], "origin": "PROJECT_AUTHORED"}
+      },
+      {
+        "title": "Complete a finished action",
+        "exercise_type": "fill_blank",
+        "difficulty": "easy",
+        "instructions": "Use the past form of run to complete the sentence.",
+        "objective_indices": [0],
+        "target_references": ["concept_past_simple", "vocab_en_run_001"],
+        "review_references": [],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"stimulus": "Yesterday, I ___ to catch the bus.", "blank_marker": "___", "primary_answer": "ran", "acceptable_variants": ["ran"], "explanation": "Yesterday marks a completed past action, and the past form of run is ran.", "spelling_policy": "Require the spelling ran."}
+      },
+      {
+        "title": "Build a useful request",
+        "exercise_type": "sentence_construction",
+        "difficulty": "easy",
+        "instructions": "Use all the words to make a polite request.",
+        "objective_indices": [0, 1],
+        "target_references": ["concept_function_request_help"],
+        "review_references": [],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"required_words": ["please", "help", "me", "read", "this", "sign"], "target_structure": "imperative request with please", "primary_answer": "Please help me read this sign.", "acceptable_variants": ["Please help me read this sign."], "scoring_guidance": "Require every word and a grammatically complete polite request."}
+      },
+      {
+        "title": "Listen for event and need",
+        "exercise_type": "listening",
+        "difficulty": "medium",
+        "instructions": "Use the transcript as a listening script and answer the questions.",
+        "objective_indices": [0, 1],
+        "target_references": ["concept_past_simple", "concept_function_request_help", "vocab_en_run_001"],
+        "review_references": [],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"transcript": "Tuan says, ‘I ran to the bus stop, but I dropped my map. Please help me find Platform 1.’", "questions": [{"id": "q1", "text": "What did Tuan do?"}, {"id": "q2", "text": "What help does he request?"}], "answers": [{"question_id": "q1", "answer": "He ran to the bus stop."}, {"question_id": "q2", "answer": "Help finding Platform 1."}], "origin": "PROJECT_AUTHORED", "media_required": false}
+      }
+    ]
+  }
+}

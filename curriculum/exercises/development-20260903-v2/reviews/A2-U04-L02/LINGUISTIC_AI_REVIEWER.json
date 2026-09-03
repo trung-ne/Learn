@@ -1,0 +1,85 @@
+{
+  "ai_review_id": "m7aireview_88f111dde4c7af2793f09d0670ff5211d8d26780ff865646a2d1b3ff32af33ad",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "43a5605e5e51ea7680d730145182c341cfa4812c86d49ac56c1bb1cce9080c6b",
+  "checklist": [
+    {
+      "criterion": "CEFR_ALIGNMENT",
+      "notes": "The narrative, interrupted action, corrective focus, response task, and translation fit internal tier A2.2.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "GRAMMAR_LEXICAL_ACCURACY",
+      "notes": "Was carrying, the focus contrasts, make a decision, and both translation texts are sound.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ANSWER_ACCURACY",
+      "notes": "Reading and fill-blank keys are supported; matching identifies corrected constituents; open speaking uses a rubric.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "DISTRACTOR_QUALITY",
+      "notes": "The focus alternatives contrast person and object correction cleanly; other types do not rely on distractors.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "LANGUAGE_QUALITY",
+      "notes": "Instructions, stimuli, answers, and rubric wording are clear and natural overall.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ORIGINALITY_LIMITATIONS",
+      "notes": "The declared project-authored policy and local wording were inspected across all ten revised sets; no suspicious copied passage was identified, but no external search was performed.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Reviewed the revised exercise set and audit against the declared PROJECT_AUTHORED input policy.",
+      "Performed manual internal phrase-level inspection across the ten supplied revised M7 exercise sets."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "No Internet-wide copyright or plagiarism search, proprietary-corpus comparison, or provider-authenticated originality service was performed; common short English forms and functional phrases are not evidence of copying."
+  },
+  "decision": "APPROVE",
+  "exercise_set_id": "m7set_db35839de3de31b5837ab640d2b9396ac79ee67b100681635e4a2ca70dc54618",
+  "exercise_set_sha256": "7d4f534557d860a44c3a546f9493a13f47e549c6098c36057350905844ae5fc5",
+  "findings": [
+    {
+      "category": "ANSWER_VARIANTS",
+      "description": "ex_A2-U04-L02_005 gives one Vietnamese rendering, while natural variants can preserve the same meaning.",
+      "recommendation": "Treat semantic scoring guidance, not the single listed string, as authoritative.",
+      "severity": "MINOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "A2-U04-L02",
+  "limitations": [
+    "This is an independent AI linguistic development review, not human review, release approval, or CEFR certification.",
+    "The review is limited to the ten supplied revised immutable exercise sets, their audits, the verified M6 authority, and local repository materials.",
+    "No Internet-wide copyright or plagiarism search and no external audio assessment were performed.",
+    "Provider identity and inference parameters were unavailable and are recorded as UNKNOWN; the runtime-disclosed model identifier is recorded factually."
+  ],
+  "m6_batch_id": "m6devbatch_4883cca8dea320c18b26a99316041dec1101c7dd28e551e265654c367af93d26",
+  "record_type": "exercise_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {
+      "response_payload_canonicalization": "english_master.lesson_generation.canonical.canonical_json"
+    },
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "47e4037767c47d614061ac140b14ca3f69187b2325fdd4d6764ad2f0e3cc1e2c"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "run_id": "m7-v2-linguistic-review-session-a2-u04-l02",
+    "sha256": "4af31b2e1c6dfe62d6d5852f756e577641bd7cc3308c49491cd1863cfca0450b",
+    "version": "M7_LINGUISTIC_AI_REVIEW_v2"
+  },
+  "review_role": "LINGUISTIC_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T09:59:14Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0"
+}

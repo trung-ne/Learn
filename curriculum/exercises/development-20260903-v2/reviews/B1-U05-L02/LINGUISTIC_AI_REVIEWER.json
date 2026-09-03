@@ -1,0 +1,85 @@
+{
+  "ai_review_id": "m7aireview_df06cff633579b9ce9667a3550393bf5b2831a0f35dcc8d87d3aeec68fbf0cb8",
+  "approval_tier": "AI_REVIEWED",
+  "audit_sha256": "75fca9e5fc0533fc91a910f7720e03b53e87083aa5989ad6c699825b85f752ec",
+  "checklist": [
+    {
+      "criterion": "CEFR_ALIGNMENT",
+      "notes": "The manage sense of run, past-perfect relationships, and linking are broadly suitable for internal tier B1.1.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "GRAMMAR_LEXICAL_ACCURACY",
+      "notes": "Most items now supply a later past reference, but ex_B1-U05-L02_002 still presents an isolated before-noon sentence with no later past reference, making the required past perfect contextually unsupported.",
+      "result": "FAIL"
+    },
+    {
+      "criterion": "ANSWER_ACCURACY",
+      "notes": "The revised translation explicitly supplies the later meeting and states the past-perfect scoring requirement, so that prior scoring issue is repaired; the other objective keys are defensible.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "DISTRACTOR_QUALITY",
+      "notes": "No distractor item occurs; the form-focused prompts otherwise provide explicit target constraints.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "LANGUAGE_QUALITY",
+      "notes": "Prose is mostly clear, but the underscore is pronunciation notation rather than normal written English.",
+      "result": "PASS"
+    },
+    {
+      "criterion": "ORIGINALITY_LIMITATIONS",
+      "notes": "The declared project-authored policy and local wording were inspected across all ten revised sets; no suspicious copied passage was identified, but no external search was performed.",
+      "result": "PASS"
+    }
+  ],
+  "copyright_originality_check": {
+    "methods": [
+      "Reviewed the revised exercise set and audit against the declared PROJECT_AUTHORED input policy.",
+      "Performed manual internal phrase-level inspection across the ten supplied revised M7 exercise sets."
+    ],
+    "result": "NO_CONCERN_FOUND",
+    "scope_limitations": "No Internet-wide copyright or plagiarism search, proprietary-corpus comparison, or provider-authenticated originality service was performed; common short English forms and functional phrases are not evidence of copying."
+  },
+  "decision": "NEEDS_REVISION",
+  "exercise_set_id": "m7set_a2f45e3d6cccde5dcd2aacb965d1c7b9bffee2198a18ce2a6fa0d99a983c380f",
+  "exercise_set_sha256": "3571ddb8a3cfa14851a7e33c496363246fccd50d2ca2763acc7a8942b1f5f058",
+  "findings": [
+    {
+      "category": "GRAMMAR_LEXICAL_ACCURACY",
+      "description": "ex_B1-U05-L02_002 still requires “Lan had run_an event before noon” without stating any later past reference point. In this isolated sentence, before noon alone normally supports simple past, so past perfect is not independently motivated.",
+      "recommendation": "Add a later past event, for example “Before the meeting began at noon, Lan had run_an event,” while preserving a genuine consonant-to-vowel linking boundary.",
+      "severity": "MAJOR"
+    }
+  ],
+  "independent_of_generation": true,
+  "lesson_id": "B1-U05-L02",
+  "limitations": [
+    "This is an independent AI linguistic development review, not human review, release approval, or CEFR certification.",
+    "The review is limited to the ten supplied revised immutable exercise sets, their audits, the verified M6 authority, and local repository materials.",
+    "No Internet-wide copyright or plagiarism search and no external audio assessment were performed.",
+    "Provider identity and inference parameters were unavailable and are recorded as UNKNOWN; the runtime-disclosed model identifier is recorded factually."
+  ],
+  "m6_batch_id": "m6devbatch_4883cca8dea320c18b26a99316041dec1101c7dd28e551e265654c367af93d26",
+  "record_type": "exercise_ai_review",
+  "response": {
+    "model": "gpt-5.6-sol",
+    "parameters": {
+      "response_payload_canonicalization": "english_master.lesson_generation.canonical.canonical_json"
+    },
+    "provider": "UNKNOWN",
+    "replayable_from_capture": true,
+    "sha256": "dd3cc61ff6873be324f497962de930bc93cb1aea795793c3b4fbc41665278c7b"
+  },
+  "review_prompt": {
+    "capture_mode": "SESSION_CAPTURED",
+    "run_id": "m7-v2-linguistic-review-session-b1-u05-l02",
+    "sha256": "247d9d02cc8c672949cc96b3bd95102a9702a8d2df432b052e7e8e2030b3a4a1",
+    "version": "M7_LINGUISTIC_AI_REVIEW_v2"
+  },
+  "review_role": "LINGUISTIC_AI_REVIEWER",
+  "reviewed_at": "2026-09-03T09:59:16Z",
+  "reviewer_type": "AI",
+  "schema_version": "1.0"
+}

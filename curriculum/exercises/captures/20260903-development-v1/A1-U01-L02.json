@@ -1,0 +1,67 @@
+{
+  "observed_at": "2026-09-03T09:25:07Z",
+  "provider": "UNKNOWN",
+  "model": "UNKNOWN",
+  "run_id": "m7-session-capture-a1-u01-l02",
+  "deterministic": false,
+  "provenance_mode": "SESSION_CAPTURED",
+  "content": {
+    "items": [
+      {
+        "title": "Hear live or leave",
+        "exercise_type": "listening",
+        "difficulty": "easy",
+        "instructions": "Use the transcript as a listening script, then answer the question.",
+        "objective_indices": [0],
+        "target_references": ["concept_pronunciation_minimal_pairs"],
+        "review_references": ["concept_pronunciation_phonemes"],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"transcript": "Nora says, ‘I live near the river.’", "questions": [{"id": "q1", "text": "Which word follows I: live or leave?"}], "answers": [{"question_id": "q1", "answer": "live", "explanation": "The transcript states that Nora lives near the river."}], "origin": "PROJECT_AUTHORED", "media_required": false}
+      },
+      {
+        "title": "Clarify one vowel",
+        "exercise_type": "speaking",
+        "difficulty": "medium",
+        "instructions": "Respond to a listener who has confused live and leave.",
+        "objective_indices": [0, 1],
+        "target_references": ["concept_pronunciation_minimal_pairs", "concept_spoken_interaction"],
+        "review_references": ["concept_present_simple"],
+        "scoring_mode": "RUBRIC",
+        "payload": {"communicative_goal": "Clarify that you said live, then restate your personal fact.", "constraints": ["Use two short sentences.", "Include the word live."], "expected_output": "A brief correction followed by a clear present-simple fact.", "rubric": [{"dimension": "meaning", "criterion": "The response clearly distinguishes live from leave."}, {"dimension": "interaction", "criterion": "The response directly repairs the misunderstanding."}]}
+      },
+      {
+        "title": "Construct a repair question",
+        "exercise_type": "sentence_construction",
+        "difficulty": "easy",
+        "instructions": "Use every required word to make a clarification question.",
+        "objective_indices": [0],
+        "target_references": ["concept_pronunciation_minimal_pairs", "concept_spoken_interaction"],
+        "review_references": [],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"required_words": ["did", "you", "say", "leave"], "target_structure": "past-simple clarification question", "primary_answer": "Did you say leave?", "acceptable_variants": ["Did you say leave?"], "scoring_guidance": "Accept the exact question with normal capitalization and punctuation."}
+      },
+      {
+        "title": "Select the intended vowel contrast",
+        "exercise_type": "multiple_choice",
+        "difficulty": "easy",
+        "instructions": "Choose the sentence that means the speaker resides nearby.",
+        "objective_indices": [0],
+        "target_references": ["concept_pronunciation_minimal_pairs"],
+        "review_references": ["concept_present_simple"],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"options": [{"id": "a", "text": "I leave near the market."}, {"id": "b", "text": "I live near the market."}, {"id": "c", "text": "I lived near the market tomorrow."}], "primary_option_id": "b", "explanation": "Live expresses residence; leave does not."}
+      },
+      {
+        "title": "Write a two-line repair",
+        "exercise_type": "writing",
+        "difficulty": "medium",
+        "instructions": "Write a short exchange that corrects leave to live.",
+        "objective_indices": [1],
+        "target_references": ["concept_pronunciation_minimal_pairs", "concept_writing"],
+        "review_references": ["concept_present_simple"],
+        "scoring_mode": "RUBRIC",
+        "payload": {"communicative_goal": "Write a natural clarification exchange about where someone resides.", "constraints": ["Write exactly two turns.", "Use both leave and live."], "expected_output": "One question showing the misunderstanding and one correction with a personal fact.", "rubric": [{"dimension": "accuracy", "criterion": "Live is used for residence and leave only as the misheard word."}, {"dimension": "clarity", "criterion": "The correction is easy to follow."}]}
+      }
+    ]
+  }
+}
