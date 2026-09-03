@@ -2,79 +2,90 @@
 
 ## Status and boundary
 
-The constrained M6 generator repair is implemented and covered by offline tests. This is pipeline infrastructure, not completed lesson production. The repository still has no set of ten independently reviewed lessons, no manual language-quality review output, and no M6-approved lesson content. Generated fixture output remains `UNREVIEWED`.
+M6 generator infrastructure is implemented and tested offline. M6 is **not complete**: no genuine M5 approval snapshot, protected digest, production capture, ten generated lessons, or independent lesson-review evidence exists in this repository.
 
-M6 produces one lesson JSON record from separately loaded M5 artifacts, an independent authorization, a source registry, and a bounded request. It does not generate exercises, answer keys, assessments, AI practice prompts, media, UI, or approval decisions.
+No production lesson may be generated until a genuine M5 snapshot has been published from distinct, verified linguistic and pedagogical reviews and its digest is protected independently. Synthetic snapshots used by tests are never production authority. Generated lessons remain `UNREVIEWED`.
 
-## Authoritative inputs
+M6 generates only lesson content sections. It does not generate exercises, answer keys, assessments, AI practice prompts, media, UI, or approval decisions.
 
-The request is not its own authority. `LessonGenerationAuthority` separately loads:
+## Authority boundary
 
-- `curriculum/structure.json`;
-- its declared prerequisite graph, coverage roadmap, and taxonomy;
-- an independent M6 authorization record; and
-- `sources/registry.yaml`.
+Every M6 attempt independently reloads and verifies:
 
-The request and authorization must pin canonical hashes for all five artifacts. M5 validation is reused in strict mode for the exact referenced taxonomy closure. The authorization must name the lesson, match the pinned taxonomy records byte-for-byte through record hashes, and document an independent `APPROVED_FOR_M6_GENERATION` decision.
+- M5 structure, graph, coverage roadmap, and taxonomy;
+- the immutable six-member M5 snapshot bundle;
+- the authoritative source registry; and
+- the separately administered trusted reviewer registry.
 
-The committed M5 bundle remains `OUTLINE_ONLY`; its taxonomy remains `DRAFT`, and its own gate blocks content generation. It does not become authorized merely because it passes M5 architecture validation. The test success authorization is a separate project-authored fixture review overlay bound to the exact committed artifact hashes and all seven records required by its lesson allocation (including five supporting taxonomy concepts). A missing, stale, malformed, incomplete, or mismatched authorization fails before the backend is called.
+A deterministic M6 authorization is then rebuilt from the verified snapshot. It may narrow the approved lesson set but cannot approve taxonomy records itself. The request is independently rebuilt from that authorization, the M5 outline, graph context, exact taxonomy hashes, prerequisite closure, previous knowledge, and bounded configuration. Legacy v1 authorization/request records are rejected.
 
-## Derived graph and identity contracts
+The only current generation input policy is `REVIEWED_M2_M5_TAXONOMY_ONLY`. M3/M4 records have no production CEFR authority here, and no external source payload is included. Project-authored taxonomy fields are copied into a hash-bound teaching payload; citation wording and external payloads are excluded. Vietnamese learner annotations are hash-bound contextual guidance only, never generation authority.
 
-M6 derives and checks, rather than trusts:
+## Derived lesson scope
 
-- lesson order and direct/transitive lesson prerequisites;
-- incoming lesson-to-lesson review edges for the target and target introduction edges;
-- previous knowledge from earlier authoritative introduction edges;
-- every lesson `taxonomy_concepts` allocation and the full taxonomy prerequisite closure; and
-- the target lesson's identity, parent unit, number, CEFR tier, objectives, and allocated references.
+The request and generated lesson preserve the M5 projection for grammar, vocabulary, communicative functions, pronunciation, supporting taxonomy concepts, skills, dimensions, review targets, lesson kind, objectives, unit/tier identity, and prerequisites. Embedded references may name only the exact allowed family, supporting, or prerequisite-closure records.
 
-Missing, reversed, fabricated, stale, or surplus declarations are rejected. Shared common-schema contracts govern tier-qualified unit IDs, lesson IDs, concept IDs, and vocabulary-sense IDs. Semantic checks also reconcile the CEFR band/tier and numeric suffixes across lesson and unit fields.
+The backend may return only:
 
-## Provenance authorization
+```json
+{"content_sections": []}
+```
 
-Project-authored records require explicit independent approval and an exact pinned taxonomy-record hash. External records additionally require complete provenance, the authorized source payload, a matching SHA-256 over its UTF-8 bytes, sufficient attribution, and resolution against the independently loaded source registry. M6 checks source registration, `APPROVED` status, identity, license name and URL, and the reference/transform/redistribution permissions applicable to the declared content type. Caller-supplied authorization booleans are not accepted.
+The orchestration layer injects all trusted lesson fields, an empty `exercises` list, and `UNREVIEWED` generation metadata. M7-and-later fields are rejected.
 
-## Backend and trusted metadata
+## Captured response provenance
 
-The backend may return only `content_sections`. The orchestration layer injects all trusted fields:
+A backend response must be a `CapturedLessonResponse` bound to:
 
-- lesson identity, parent, tier, objectives, references, and prerequisites;
-- schema, curriculum, generator, model, and prompt versions;
-- trusted generation timestamp;
-- an empty M7 `exercises` array; and
-- `qa_status: UNREVIEWED` with the independent-review notice.
+- SHA-256 of the exact UTF-8 prompt;
+- canonical response hash;
+- actual provider/model when known;
+- exact parameters and seed;
+- observed provider execution time; and
+- deterministic and replayability facts.
 
-Non-object, non-finite, noncanonical, or over-scoped backend values are controlled rejections before unsafe hashing or publication. Section bounds and forbidden-term checks cover both titles and bodies. Byte-identical reproducibility is claimed only when the concrete backend explicitly declares that capability, never from caller-supplied provider metadata.
+The provider/model/timestamp are not caller-controlled request fields. The audit records the capture facts and an injectable orchestration-clock timestamp. Byte-identical output is claimed only when the concrete backend supports it.
 
-## Audit and storage
+## Audit and immutable storage
 
-Check outcomes are stage-aware: `PASS`, `FAIL`, or `NOT_RUN`. A failed preflight cannot report skipped backend or lesson checks as successful. Audits include the automated reviewer, timestamp, outcome, checks performed, issues, and explicit outstanding independent CEFR, grammar/lexical, language-quality, and pedagogical reviews.
+Audits report stage-aware `PASS`, `FAIL`, or `NOT_RUN` checks, complete snapshot binding, hashes, capture provenance, automated reviewer details, issues, and the four still-outstanding independent review categories: CEFR, grammar/lexical, language quality, and pedagogy.
 
-Accepted `lesson.json` and `audit.json` are published together using an atomic platform no-replace operation. Rejected `rejection.json` and `audit.json` use the same immutable directory-bundle mechanism. Concurrent destinations are never replaced. The exclusive rename is the publication commit point; a later POSIX parent-directory fsync is best-effort because the complete bundle is already visible and cannot truthfully be reported as rejected. Pre-commit publication and rejection-persistence failures are reported as publication-stage failures; invalid output never creates a partial lesson bundle.
+Accepted `lesson.json` and `audit.json`, or rejected `rejection.json` and `audit.json`, are published atomically to a new no-overwrite directory. An automated pass is not human review or content approval.
+
+## Independent review and batch QA contracts
+
+`lesson-independent-review.schema.json` defines a human-submitted, hash-bound overlay. It binds the exact lesson, automated audit, and reverified M5 snapshot; verifies the reviewer against the independently loaded registry; records CEFR, grammar/lexical, language-quality, prerequisite-scope, pedagogical, and copyright spot-check evidence; and explicitly attests that the review does **not** mutate or approve the `UNREVIEWED` lesson.
+
+`lesson-batch-qa-report.schema.json` is a fail-closed report for ten distinct graph-ordered immutable lesson bundles and a declared human-review sample. It records limitations rather than inferring manual outcomes. It does not complete M6 or M9 approval.
+
+Validate supplied evidence offline only after a genuine snapshot exists:
+
+```bash
+python -m english_master.lesson_review review \
+  --snapshot-dir /trusted/m5snapshot_<digest> \
+  --reviewer-registry /trusted/reviewer-registry.json \
+  --review /trusted/review.json --lesson /trusted/lesson.json --audit /trusted/audit.json
+
+python -m english_master.lesson_review batch \
+  --snapshot-dir /trusted/m5snapshot_<digest> \
+  --reviewer-registry /trusted/reviewer-registry.json \
+  --report /trusted/batch-report.json --bundle-root /trusted/m6-bundles
+```
 
 ## Offline CLI
 
-The successful fixture path is fully offline:
+The CLI requires a genuine, independently verified snapshot and a prompt-bound captured response; it deliberately has no arbitrary `--request`, `--authorization`, or `--mock-response` production path:
 
 ```bash
 python -m english_master.lesson_generate \
-  --request tests/fixtures/m6/approved-request.json \
-  --authorization tests/fixtures/m6/approved-authorization.json \
-  --mock-response tests/fixtures/m6/approved-mock-lesson.json \
+  --lesson-id A1-U01-L01 \
+  --snapshot-dir /trusted/m5snapshot_<digest> \
+  --reviewer-registry /trusted/reviewer-registry.json \
+  --captured-response /trusted/captured-response.json \
   --output-dir data/generated/m6/A1-U01-L01 \
   --rejection-dir data/reports/m6/A1-U01-L01-rejection
 ```
 
-The authoritative structure and source registry default to the committed paths. `--graph`, `--coverage`, and `--taxonomy` exist only to load a complete alternate pinned bundle; every override changes the required artifact hashes.
+The command independently loads `sources/registry.yaml` and the M5 files by default. Overrides for graph, coverage, or taxonomy are reverified against the snapshot and therefore fail on drift. Exit codes are `0` for accepted publication, `1` for a validated generation rejection, and `2` for setup or persistence failure.
 
-Exit codes are `0` for accepted publication, `1` for a validated generation rejection, and `2` for setup or persistence failure. Output directories are immutable.
-
-Validate records offline with:
-
-```bash
-python -m english_master.schema_validation --schema lesson-generation-authorization tests/fixtures/m6/approved-authorization.json
-python -m english_master.schema_validation --schema lesson-generation-request tests/fixtures/m6/approved-request.json
-```
-
-The mock response is deliberately a backend-content fragment, not a final lesson record; the CLI assembles and validates the final lesson.
+Do not use synthetic fixtures, an unprotected digest, or a test-only backend as production authority.

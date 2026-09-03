@@ -1,20 +1,16 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://english-master.local/schemas/lesson-generation-rejection.schema.json",
-  "title": "English Master M6 rejected lesson generation attempt",
+  "title": "English Master M6 rejected snapshot-bound lesson generation attempt",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "request_id", "lesson_id", "stage", "rejected_at", "reasons", "request_hash", "candidate_output_hash", "candidate_output", "published"],
+  "required": ["schema_version", "record_type", "request_id", "lesson_id", "snapshot_binding", "stage", "rejected_at", "reasons", "request_hash", "candidate_output_hash", "candidate_output", "response_provenance", "published"],
   "properties": {
-    "schema_version": {"const": "1.0"},
-    "request_id": {"type": "string", "pattern": "^(req_[a-f0-9]{64}|UNAVAILABLE)$"},
-    "lesson_id": {"anyOf": [{"$ref": "common.schema.json#/$defs/lessonId"}, {"const": "UNAVAILABLE"}]},
-    "stage": {"enum": ["PREFLIGHT", "PROVIDER", "POSTVALIDATION", "PUBLICATION"]},
-    "rejected_at": {"$ref": "common.schema.json#/$defs/isoDateTime"},
-    "reasons": {"type": "array", "minItems": 1, "items": {"$ref": "lesson-generation-audit.schema.json#/$defs/issue"}},
-    "request_hash": {"anyOf": [{"$ref": "common.schema.json#/$defs/sha256"}, {"type": "null"}]},
-    "candidate_output_hash": {"anyOf": [{"$ref": "common.schema.json#/$defs/sha256"}, {"type": "null"}]},
-    "candidate_output": {"type": ["object", "null"]},
-    "published": {"const": false}
+    "schema_version": {"const": "2.0"}, "record_type": {"const": "lesson_generation_rejection"},
+    "request_id": {"type": "string", "pattern": "^(req_[a-f0-9]{64}|UNAVAILABLE)$"}, "lesson_id": {"anyOf": [{"$ref": "common.schema.json#/$defs/lessonId"}, {"const": "UNAVAILABLE"}]},
+    "snapshot_binding": {"$ref": "lesson-generation-authorization.schema.json#/$defs/snapshotBinding"}, "stage": {"enum": ["PREFLIGHT", "PROVIDER", "POSTVALIDATION", "PUBLICATION"]},
+    "rejected_at": {"$ref": "common.schema.json#/$defs/isoDateTime"}, "reasons": {"type": "array", "minItems": 1, "items": {"$ref": "lesson-generation-audit.schema.json#/$defs/issue"}},
+    "request_hash": {"anyOf": [{"$ref": "common.schema.json#/$defs/sha256"}, {"type": "null"}]}, "candidate_output_hash": {"anyOf": [{"$ref": "common.schema.json#/$defs/sha256"}, {"type": "null"}]}, "candidate_output": {"type": ["object", "null"]},
+    "response_provenance": {"anyOf": [{"$ref": "lesson-generation-audit.schema.json#/$defs/responseProvenance"}, {"type": "null"}]}, "published": {"const": false}
   }
 }

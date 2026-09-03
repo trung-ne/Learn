@@ -15,6 +15,7 @@ Registration includes:
 - source_name: human-readable name
 - source_type: dataset | API | dump | crawlable | other
 - source_url: primary URL or homepage
+- taxonomy_reference_url_prefixes: optional explicit locator scopes for M2/M5 citations when the primary URL alone is insufficient
 - status: APPROVED | REFERENCE_ONLY | QUARANTINED | REJECTED
 - license: identified license identifier; use `UNKNOWN` only while status is QUARANTINED
 - license_url: link to license text when the license is identified

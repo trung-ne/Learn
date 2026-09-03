@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "curriculum_version": "20260902",
+  "curriculum_version": "20260903",
   "status": "VALID",
   "validated_artifacts": [
     "structure.json",

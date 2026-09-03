@@ -1,0 +1,345 @@
+{
+  "annotation_scope": [
+    {
+      "annotation_kind": "PEDAGOGICAL_OBSERVATION",
+      "id": "vi_annotation_article_transfer_observation",
+      "sha256": "08daaacc575db108f0bd58b25f6238c66087ff26d8934ab77dbbc38b4a63de5e",
+      "source_status": "DRAFT",
+      "target_id": "concept_present_simple"
+    },
+    {
+      "annotation_kind": "RESEARCH_CLAIM",
+      "id": "vi_annotation_final_consonant_clusters",
+      "sha256": "19856adc8a551f06a324f852e6603cc290750df2e6eea5eb0f3ed2314175c7a3",
+      "source_status": "DRAFT",
+      "target_id": "concept_pronunciation_syllables"
+    }
+  ],
+  "artifacts": [
+    {
+      "logical_path": "structure.json",
+      "role": "STRUCTURE",
+      "schema_name": "curriculum-manifest",
+      "sha256": "3718fb2e07e81e8a18ad6ffcab04b9990edc8855f7f6a2a6e3f781db5c675244"
+    },
+    {
+      "logical_path": "prerequisite_graph.json",
+      "role": "GRAPH",
+      "schema_name": "curriculum-graph",
+      "sha256": "bed5819c201f6741ce1a89df1d8d9771a94c68b6c7f6be5730fd8ba3e50d9271"
+    },
+    {
+      "logical_path": "coverage-roadmap.json",
+      "role": "COVERAGE",
+      "schema_name": "curriculum-coverage-roadmap",
+      "sha256": "48600dbc80f9bf9892955703094844c72942298f421398e4e95f3888375ea382"
+    },
+    {
+      "logical_path": "taxonomy/taxonomy.json",
+      "role": "TAXONOMY",
+      "schema_name": "taxonomy",
+      "sha256": "9ca1cd20875c578577c2ad91af55770b9e515de9af173258ca76ed69ccc440f9"
+    }
+  ],
+  "curriculum_version": "20260903",
+  "manifest_id": "m5manifest_75bdb3e02c1d050b30ab815de0e0b01aa17af2c79571b57f7a3591d62d245fb3",
+  "record_type": "curriculum_review_manifest",
+  "required_review_roles": [
+    "LINGUISTIC",
+    "PEDAGOGICAL"
+  ],
+  "schema_version": "2.0",
+  "source_bundle_policy": {
+    "content_generation_permitted_by_manifest": false,
+    "lesson_outlines_remain_outline_only": true,
+    "m5_records_remain_unchanged": true,
+    "taxonomy_statuses_remain_draft": true
+  },
+  "source_registry": {
+    "logical_path": "../sources/registry.yaml",
+    "schema_name": "source-registry",
+    "schema_version": "1.0",
+    "sha256": "1270284517c3d47e4467310ad32e7431dc0aa3cfbce0edb07e4fedc9bc347435"
+  },
+  "taxonomy_scope": [
+    {
+      "id": "concept_assessment_can_request_help",
+      "record_type": "TAXONOMY_CONCEPT",
+      "sha256": "57990b76a7bee5dc70bad4c99eb28d2bf488553929868b43876f9840532ee963",
+      "source_status": "DRAFT"
+    },
+    {
+      "id": "concept_chunk_could_you_help",
+      "record_type": "TAXONOMY_CONCEPT",
+      "sha256": "68af86f9eb83bcfbdafe862ee2ffce5593687a0644da90c5a04612c16a57097d",
+      "source_status": "DRAFT"
+    },
+    {
+      "id": "concept_collocation_make_decision",
+      "record_type": "TAXONOMY_CONCEPT",
+      "sha256": "0766f03b65b947960d1197c8f787e8134ae99070e4821d671072e5eb4125f67a",
+      "source_status": "DRAFT"
+    },
+    {
+      "id": "concept_function_request_help",
+      "record_type": "TAXONOMY_CONCEPT",
+      "sha256": "734e292bbdd13091be8c76e897a2208cc9e112ecc12bcc683712de069ec6faab",
+      "source_status": "DRAFT"
+    },
+    {
+      "id": "concept_listening",
+      "record_type": "TAXONOMY_CONCEPT",
+      "sha256": "ec682601dd255e57de17233b0ed93812e7e068912a48faa05be7c3e971c02e7d",
+      "source_status": "DRAFT"
+    },
+    {
+      "id": "concept_mediation",
+      "record_type": "TAXONOMY_CONCEPT",
+      "sha256": "ddc76ee12869f2e06e17c29c236fa63674322ac7faf2a81d57a3a388d7972a81",
+      "source_status": "DRAFT"
+    },
+    {
+      "id": "concept_narrative_sequence",
+      "record_type": "TAXONOMY_CONCEPT",
+      "sha256": "fc3b31c85873bbbb03b387c3af0b8aa860f4d1d306459a1ce1243e6b6ad18375",
+      "source_status": "DRAFT"
+    },
+    {
+      "id": "concept_past_continuous",
+      "record_type": "TAXONOMY_CONCEPT",
+      "sha256": "4877f2062ae0187d3210ea44b88db8df3d4ac3e7752939c76f7300f9e273a4f8",
+      "source_status": "DRAFT"
+    },
+    {
+      "id": "concept_past_perfect",
+      "record_type": "TAXONOMY_CONCEPT",
+      "sha256": "4f2d05e63ec4fc4a3ea1f67f2b785da775ed949752793d46de6e05adf5f26130",
+      "source_status": "DRAFT"
+    },
+    {
+      "id": "concept_past_simple",
+      "record_type": "TAXONOMY_CONCEPT",
+      "sha256": "ed646b0ff2672669b9b68a16e70aa9031d8ba61066b09f20f37bf18ed79a8cf3",
+      "source_status": "DRAFT"
+    },
+    {
+      "id": "concept_pragmatics_polite_requests",
+      "record_type": "TAXONOMY_CONCEPT",
+      "sha256": "622ee56f37ac520bf95d1f646aae3deae7247bf94551041d8ffa2db240e966fa",
+      "source_status": "DRAFT"
+    },
+    {
+      "id": "concept_present_simple",
+      "record_type": "TAXONOMY_CONCEPT",
+      "sha256": "dc22cab1abfcbbbc5b42207505be2686f0343f3276ff93017964eb68b1878143",
+      "source_status": "DRAFT"
+    },
+    {
+      "id": "concept_pronunciation_connected_speech",
+      "record_type": "TAXONOMY_CONCEPT",
+      "sha256": "a2b7b21434b0e9703f7c7600744ead0e74f76fb87ff56e797354d7d970fa89c7",
+      "source_status": "DRAFT"
+    },
+    {
+      "id": "concept_pronunciation_intonation",
+      "record_type": "TAXONOMY_CONCEPT",
+      "sha256": "b37143f745e83771ec74ef5b418184c457b7427ffd3f7935a057a22480435e2e",
+      "source_status": "DRAFT"
+    },
+    {
+      "id": "concept_pronunciation_linking",
+      "record_type": "TAXONOMY_CONCEPT",
+      "sha256": "5ce5aad4138ec5c5c8e38d71f3a8e933034a65d4b5de302c5d88f994485e5ae1",
+      "source_status": "DRAFT"
+    },
+    {
+      "id": "concept_pronunciation_minimal_pairs",
+      "record_type": "TAXONOMY_CONCEPT",
+      "sha256": "4cb9bab39f830046402410038d97f3b32f6de7821c1f6f88831945fdebac1370",
+      "source_status": "DRAFT"
+    },
+    {
+      "id": "concept_pronunciation_phonemes",
+      "record_type": "TAXONOMY_CONCEPT",
+      "sha256": "fbe3020bf4dc451c9b2d34e3a224984dc5553d7772cb3589e79f8c7d36ab9b76",
+      "source_status": "DRAFT"
+    },
+    {
+      "id": "concept_pronunciation_rhythm",
+      "record_type": "TAXONOMY_CONCEPT",
+      "sha256": "d0096e89ab96f32f6e36336e9f133461ad1d2083789d33da7cf77d608c341989",
+      "source_status": "DRAFT"
+    },
+    {
+      "id": "concept_pronunciation_sentence_stress",
+      "record_type": "TAXONOMY_CONCEPT",
+      "sha256": "8fd89e0cc4b721a62f07caafaf86a934407da87f9a26618dffaf74883428f641",
+      "source_status": "DRAFT"
+    },
+    {
+      "id": "concept_pronunciation_syllables",
+      "record_type": "TAXONOMY_CONCEPT",
+      "sha256": "6fb6353d02a03324c47452c0897a8a4ce26f35e3bf35827e6953b5a63b1009ae",
+      "source_status": "DRAFT"
+    },
+    {
+      "id": "concept_pronunciation_weak_forms",
+      "record_type": "TAXONOMY_CONCEPT",
+      "sha256": "5f97f7297a18ffad7fd5936c46288387d03436726679e5f7de2519dd00520a9b",
+      "source_status": "DRAFT"
+    },
+    {
+      "id": "concept_pronunciation_word_stress",
+      "record_type": "TAXONOMY_CONCEPT",
+      "sha256": "270fc1eb76571350f94a27ff37e52b2ea661b51d326c9aae0a53f54334d91682",
+      "source_status": "DRAFT"
+    },
+    {
+      "id": "concept_reading",
+      "record_type": "TAXONOMY_CONCEPT",
+      "sha256": "404fbf6081de8efa771e263eb1e03d30d6d13a944efcba8d99f898fea9a2e253",
+      "source_status": "DRAFT"
+    },
+    {
+      "id": "concept_speaking",
+      "record_type": "TAXONOMY_CONCEPT",
+      "sha256": "c4cf3d43a1fc8fb5b9912813019d6549a058701af342bb11c3084c196871cb98",
+      "source_status": "DRAFT"
+    },
+    {
+      "id": "concept_spoken_interaction",
+      "record_type": "TAXONOMY_CONCEPT",
+      "sha256": "0accb07e7095b7605c8f9077c1f7a7819c938e45515593cf0282a5b4439dea7c",
+      "source_status": "DRAFT"
+    },
+    {
+      "id": "concept_topic_personal_information",
+      "record_type": "TAXONOMY_CONCEPT",
+      "sha256": "3c5a283a23001c4a1417e118112adadb6d98ef18d497013b3fe68d3a4822afed",
+      "source_status": "DRAFT"
+    },
+    {
+      "id": "concept_writing",
+      "record_type": "TAXONOMY_CONCEPT",
+      "sha256": "c0a3026d46479bae1c0bf32b04d2bb8d238029078c81b9e63012e147f724e9ab",
+      "source_status": "DRAFT"
+    },
+    {
+      "id": "vocab_en_run_001",
+      "record_type": "VOCABULARY_SENSE",
+      "sha256": "4da4593f20ae406dd7508357eedf6839e4c4d2bb0860cfd5d477fc6aa13c973f",
+      "source_status": "DRAFT"
+    },
+    {
+      "id": "vocab_en_run_002",
+      "record_type": "VOCABULARY_SENSE",
+      "sha256": "c6f2be39262493f4a6e91f7ba1d9a14612028e67ae70513f056c21697981084d",
+      "source_status": "DRAFT"
+    }
+  ],
+  "taxonomy_version": "20260831",
+  "validation_policy": {
+    "canonicalization_profile": "SORTED_COMPACT_JSON_V1",
+    "profile": "M5_INDEPENDENT_REVIEW_V2",
+    "required_checklists": {
+      "LINGUISTIC": [
+        "CEFR_ALIGNMENT",
+        "LINGUISTIC_ACCURACY",
+        "DEPENDENCY_SOUNDNESS",
+        "VOCABULARY_SENSE_INTEGRITY",
+        "VIETNAMESE_LEARNER_RELEVANCE"
+      ],
+      "PEDAGOGICAL": [
+        "PEDAGOGICAL_SEQUENCE",
+        "OBJECTIVE_COHERENCE",
+        "SKILL_BALANCE",
+        "REVIEW_SPIRAL",
+        "ASSESSMENT_ALIGNMENT",
+        "SCOPE_AND_HOURS_CREDIBILITY"
+      ]
+    },
+    "schema_bindings": [
+      {
+        "logical_path": "schemas/common.schema.json",
+        "sha256": "5941980cf9dbba8b7d26f0d6a64408323c6876b087c0749c63e0366f7cc9be5d"
+      },
+      {
+        "logical_path": "schemas/curriculum-approval-snapshot.schema.json",
+        "sha256": "b76771dbb8cd6f36d517470359a6f17843827019b40b09f7180d61d44498c64d"
+      },
+      {
+        "logical_path": "schemas/curriculum-common.schema.json",
+        "sha256": "92f2d41c8321c59c6f4c78ddc5c19ea9fec28ca5b657d0d037834bfa05e24932"
+      },
+      {
+        "logical_path": "schemas/curriculum-coverage-roadmap.schema.json",
+        "sha256": "62b6cfbf592bd130b76f6b30ddc368257c8ce7ce23988b7334c73d701a5c436d"
+      },
+      {
+        "logical_path": "schemas/curriculum-graph.schema.json",
+        "sha256": "1600f1681d8042c2d8af152f78a86913f5428e8a3ec4c39ff619842d6ed2f970"
+      },
+      {
+        "logical_path": "schemas/curriculum-independent-review-draft.schema.json",
+        "sha256": "8bc89a9eea140898cb47f5080f61faf975b762f081e6a0f60d722b23c6ba9fe4"
+      },
+      {
+        "logical_path": "schemas/curriculum-independent-review.schema.json",
+        "sha256": "326dafa2babd130bafaf5018100ddbef4d5f5932969b443070c20e2920c30cd9"
+      },
+      {
+        "logical_path": "schemas/curriculum-lesson-outline.schema.json",
+        "sha256": "6c422087f887e1e40925b2a6917c3daae7b0882d9a98ffc29e7d500f4c226661"
+      },
+      {
+        "logical_path": "schemas/curriculum-level-tier.schema.json",
+        "sha256": "49543a170eb5e39613a2ecc2c08aec98389077b0ea33d5cd51fbb1aebf4c4945"
+      },
+      {
+        "logical_path": "schemas/curriculum-manifest.schema.json",
+        "sha256": "539b21b8810c7d5e96a8c6e54c3788fd9c39e7d461a5b2e83a93393f07b05c95"
+      },
+      {
+        "logical_path": "schemas/curriculum-review-manifest.schema.json",
+        "sha256": "6a27f6eb420b619d2aa136a9f8f20073381b9277d95924f9343b22880c0c84fe"
+      },
+      {
+        "logical_path": "schemas/curriculum-review-node.schema.json",
+        "sha256": "59a500f1f830ad7739adceb5eefe255d92acd51fece5e284e62c1a3b605522c2"
+      },
+      {
+        "logical_path": "schemas/curriculum-reviewer-registry.schema.json",
+        "sha256": "c1bc9268e1c7a049ae5891df0c2766bf4cf72c43b54e38ef549db291cb207c5d"
+      },
+      {
+        "logical_path": "schemas/curriculum-unit.schema.json",
+        "sha256": "ee5f039bccb6503b61633deba6cfec3ea53aa231f29a2ef44619b6fe91546f1e"
+      },
+      {
+        "logical_path": "schemas/source-registry.schema.json",
+        "sha256": "4507d74641db6e388d9f1029febeb760fa3ccb121347d06dfa5f4713363b5ebf"
+      },
+      {
+        "logical_path": "schemas/source.schema.json",
+        "sha256": "db7807c54ff50b3e985404be0107aabcb296b7801cfcb83dfb187ab08d97f74d"
+      },
+      {
+        "logical_path": "schemas/taxonomy-concept.schema.json",
+        "sha256": "d32d28fe662a51a27d8b85e9e51d3378e1d5a1fa84fa703557aaccc3f5a9993e"
+      },
+      {
+        "logical_path": "schemas/taxonomy-vocabulary-sense.schema.json",
+        "sha256": "f08e1ef2765034c46272390eeab320647b6fc15c01bc40ca01a0290867ee193b"
+      },
+      {
+        "logical_path": "schemas/taxonomy.schema.json",
+        "sha256": "823c1e71de50bcfd22debdbcbeb2ba97ebc1d628a6f0241d6f04ba5e766cf901"
+      },
+      {
+        "logical_path": "schemas/vietnamese-learner-annotation.schema.json",
+        "sha256": "c4f5b36864df17ef3a75ec76d574d5a9c3cb5ecaa6ed8f80cc0f00c7998cd8b8"
+      }
+    ],
+    "semantic_validator_version": "2.0"
+  }
+}

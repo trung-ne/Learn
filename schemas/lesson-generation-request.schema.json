@@ -1,39 +1,46 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://english-master.local/schemas/lesson-generation-request.schema.json",
-  "title": "English Master M6 lesson generation request",
+  "title": "English Master M6 snapshot-derived lesson generation request",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "request_id", "authorization_id", "artifact_hashes", "lesson_spec", "graph", "previous_knowledge", "constraints", "generation", "requested_outputs"],
+  "required": ["schema_version", "record_type", "request_id", "authorization_id", "authorization_sha256", "snapshot_binding", "artifact_hashes", "lesson_spec", "graph", "previous_knowledge", "constraints", "teaching_payload", "generation_config", "requested_outputs"],
   "properties": {
-    "schema_version": {"const": "1.0"},
+    "schema_version": {"const": "2.0"},
+    "record_type": {"const": "lesson_generation_request"},
     "request_id": {"type": "string", "pattern": "^req_[a-f0-9]{64}$"},
     "authorization_id": {"type": "string", "pattern": "^auth_[a-f0-9]{64}$"},
+    "authorization_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "snapshot_binding": {"$ref": "lesson-generation-authorization.schema.json#/$defs/snapshotBinding"},
     "artifact_hashes": {"$ref": "lesson-generation-authorization.schema.json#/$defs/artifactHashes"},
     "lesson_spec": {"$ref": "#/$defs/lessonSpec"},
     "graph": {"$ref": "#/$defs/graph"},
     "previous_knowledge": {"$ref": "#/$defs/referenceSets"},
     "constraints": {"$ref": "#/$defs/constraints"},
-    "generation": {"$ref": "#/$defs/generation"},
-    "requested_outputs": {"type": "array", "prefixItems": [{"const": "lesson"}], "items": false, "minItems": 1, "maxItems": 1}
+    "teaching_payload": {"$ref": "#/$defs/teachingPayload"},
+    "generation_config": {"$ref": "#/$defs/generationConfig"},
+    "requested_outputs": {"const": ["lesson"]}
   },
   "$defs": {
     "conceptIds": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/conceptId"}, "uniqueItems": true},
     "vocabularyIds": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/vocabularySenseId"}, "uniqueItems": true},
+    "referenceId": {"anyOf": [{"$ref": "common.schema.json#/$defs/conceptId"}, {"$ref": "common.schema.json#/$defs/vocabularySenseId"}]},
+    "referenceIds": {"type": "array", "items": {"$ref": "#/$defs/referenceId"}, "uniqueItems": true},
     "lessonSpec": {
       "type": "object", "additionalProperties": false,
-      "required": ["id", "title", "unit_id", "lesson_number", "cefr", "duration_minutes", "objectives", "grammar_introduced", "grammar_reviewed", "vocabulary_introduced", "vocabulary_reviewed", "functions_introduced", "functions_reviewed", "pronunciation_introduced", "pronunciation_reviewed", "prerequisites"],
+      "required": ["id", "title", "unit_id", "lesson_number", "cefr", "duration_minutes", "objectives", "grammar_introduced", "grammar_reviewed", "vocabulary_introduced", "vocabulary_reviewed", "functions_introduced", "functions_reviewed", "pronunciation_introduced", "pronunciation_reviewed", "taxonomy_concepts", "skills", "dimensions", "prerequisites", "review_of", "lesson_kind"],
       "properties": {
         "id": {"$ref": "common.schema.json#/$defs/lessonId"}, "title": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
-        "unit_id": {"$ref": "common.schema.json#/$defs/unitId"},
-        "lesson_number": {"type": "integer", "minimum": 1, "maximum": 99}, "cefr": {"$ref": "common.schema.json#/$defs/cefrLevel"},
-        "duration_minutes": {"type": "integer", "minimum": 1, "maximum": 240},
+        "unit_id": {"$ref": "common.schema.json#/$defs/unitId"}, "lesson_number": {"type": "integer", "minimum": 1, "maximum": 99},
+        "cefr": {"$ref": "common.schema.json#/$defs/cefrLevel"}, "duration_minutes": {"type": "integer", "minimum": 1, "maximum": 240},
         "objectives": {"type": "array", "minItems": 1, "items": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "uniqueItems": true},
         "grammar_introduced": {"$ref": "#/$defs/conceptIds"}, "grammar_reviewed": {"$ref": "#/$defs/conceptIds"},
         "vocabulary_introduced": {"$ref": "#/$defs/vocabularyIds"}, "vocabulary_reviewed": {"$ref": "#/$defs/vocabularyIds"},
         "functions_introduced": {"$ref": "#/$defs/conceptIds"}, "functions_reviewed": {"$ref": "#/$defs/conceptIds"},
         "pronunciation_introduced": {"$ref": "#/$defs/conceptIds"}, "pronunciation_reviewed": {"$ref": "#/$defs/conceptIds"},
-        "prerequisites": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/lessonId"}, "uniqueItems": true}
+        "taxonomy_concepts": {"$ref": "#/$defs/conceptIds"}, "skills": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true}, "dimensions": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+        "prerequisites": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/lessonId"}, "uniqueItems": true},
+        "review_of": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/lessonId"}, "uniqueItems": true}, "lesson_kind": {"type": "string", "minLength": 1}
       }
     },
     "graph": {
@@ -47,37 +54,25 @@
     },
     "lessonEdges": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["from", "to"], "properties": {"from": {"$ref": "common.schema.json#/$defs/lessonId"}, "to": {"$ref": "common.schema.json#/$defs/lessonId"}}}},
     "referenceEdges": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["from", "to"], "properties": {"from": {"$ref": "common.schema.json#/$defs/lessonId"}, "to": {"$ref": "#/$defs/referenceId"}}}},
-    "referenceId": {"anyOf": [{"$ref": "common.schema.json#/$defs/conceptId"}, {"$ref": "common.schema.json#/$defs/vocabularySenseId"}]},
-    "referenceIds": {"type": "array", "items": {"$ref": "#/$defs/referenceId"}, "uniqueItems": true},
     "referenceSets": {
       "type": "object", "additionalProperties": false,
-      "required": ["completed_lessons", "grammar", "vocabulary", "functions", "pronunciation"],
+      "required": ["completed_lessons", "grammar", "vocabulary", "functions", "pronunciation", "supporting"],
       "properties": {
         "completed_lessons": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/lessonId"}, "uniqueItems": true},
-        "grammar": {"$ref": "#/$defs/conceptIds"}, "vocabulary": {"$ref": "#/$defs/vocabularyIds"}, "functions": {"$ref": "#/$defs/conceptIds"}, "pronunciation": {"$ref": "#/$defs/conceptIds"}
+        "grammar": {"$ref": "#/$defs/conceptIds"}, "vocabulary": {"$ref": "#/$defs/vocabularyIds"}, "functions": {"$ref": "#/$defs/conceptIds"}, "pronunciation": {"$ref": "#/$defs/conceptIds"}, "supporting": {"$ref": "#/$defs/conceptIds"}
       }
     },
     "constraints": {
       "type": "object", "additionalProperties": false,
-      "required": ["target_cefr", "allowed_grammar", "allowed_vocabulary", "allowed_functions", "allowed_pronunciation", "forbidden_ids", "forbidden_terms", "max_target_vocabulary", "max_sections", "max_section_characters", "max_total_characters"],
+      "required": ["target_cefr", "allowed_grammar", "allowed_vocabulary", "allowed_functions", "allowed_pronunciation", "allowed_supporting", "context_only_prerequisites", "forbidden_ids", "forbidden_terms", "max_target_vocabulary", "max_sections", "max_section_characters", "max_total_characters"],
       "properties": {
-        "target_cefr": {"$ref": "common.schema.json#/$defs/cefrLevel"},
-        "allowed_grammar": {"$ref": "#/$defs/conceptIds"}, "allowed_vocabulary": {"$ref": "#/$defs/vocabularyIds"}, "allowed_functions": {"$ref": "#/$defs/conceptIds"}, "allowed_pronunciation": {"$ref": "#/$defs/conceptIds"},
-        "forbidden_ids": {"$ref": "#/$defs/referenceIds"}, "forbidden_terms": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "uniqueItems": true},
-        "max_target_vocabulary": {"type": "integer", "minimum": 0, "maximum": 50}, "max_sections": {"type": "integer", "minimum": 1, "maximum": 20},
-        "max_section_characters": {"type": "integer", "minimum": 1, "maximum": 20000}, "max_total_characters": {"type": "integer", "minimum": 1, "maximum": 100000}
+        "target_cefr": {"$ref": "common.schema.json#/$defs/cefrLevel"}, "allowed_grammar": {"$ref": "#/$defs/conceptIds"}, "allowed_vocabulary": {"$ref": "#/$defs/vocabularyIds"}, "allowed_functions": {"$ref": "#/$defs/conceptIds"}, "allowed_pronunciation": {"$ref": "#/$defs/conceptIds"}, "allowed_supporting": {"$ref": "#/$defs/conceptIds"}, "context_only_prerequisites": {"$ref": "#/$defs/referenceIds"}, "forbidden_ids": {"$ref": "#/$defs/referenceIds"}, "forbidden_terms": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "uniqueItems": true},
+        "max_target_vocabulary": {"type": "integer", "minimum": 0, "maximum": 50}, "max_sections": {"type": "integer", "minimum": 1, "maximum": 20}, "max_section_characters": {"type": "integer", "minimum": 1, "maximum": 20000}, "max_total_characters": {"type": "integer", "minimum": 1, "maximum": 100000}
       }
     },
-    "generation": {
-      "type": "object", "additionalProperties": false,
-      "required": ["generator", "generator_version", "provider", "model", "prompt_version", "generated_at", "curriculum_version", "taxonomy_version", "lesson_schema_version", "parameters"],
-      "properties": {
-        "generator": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "generator_version": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
-        "provider": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "model": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "prompt_version": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
-        "generated_at": {"$ref": "common.schema.json#/$defs/isoDateTime"},
-        "curriculum_version": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "taxonomy_version": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "lesson_schema_version": {"const": "1.0"},
-        "parameters": {"type": "object", "additionalProperties": {"type": ["string", "number", "integer", "boolean", "null"]}}, "seed": {"type": "integer"}
-      }
-    }
+    "teachingRecord": {"type": "object", "additionalProperties": false, "required": ["id", "record_type", "name", "definition", "cefr", "prerequisites", "taxonomy_record_hash", "content_origin"], "properties": {"id": {"$ref": "#/$defs/referenceId"}, "record_type": {"enum": ["GRAMMAR", "VOCABULARY_SENSE", "COMMUNICATIVE_FUNCTION", "PRONUNCIATION", "SUPPORTING_CONCEPT"]}, "name": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "definition": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "cefr": {"$ref": "common.schema.json#/$defs/cefrLevel"}, "prerequisites": {"$ref": "#/$defs/referenceIds"}, "taxonomy_record_hash": {"$ref": "common.schema.json#/$defs/sha256"}, "content_origin": {"const": "PROJECT_AUTHORED"}, "subtype": {"type": "string"}, "language": {"type": "string"}, "lemma": {"type": "string"}, "part_of_speech": {"type": "string"}, "sense_number": {"type": "integer"}, "collocations": {"type": "array", "items": {"type": "string"}}, "chunks": {"type": "array", "items": {"type": "string"}}, "examples": {"type": "array", "items": {"type": "string"}}}},
+    "annotation": {"type": "object", "additionalProperties": false, "required": ["id", "target_id", "annotation_kind", "difficulty", "description", "teaching_response", "context_only", "taxonomy_record_hash", "content_origin"], "properties": {"id": {"type": "string", "minLength": 1}, "target_id": {"$ref": "#/$defs/referenceId"}, "annotation_kind": {"enum": ["RESEARCH_CLAIM", "PEDAGOGICAL_OBSERVATION"]}, "difficulty": {"type": "string", "minLength": 1}, "description": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "teaching_response": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "context_only": {"const": true}, "taxonomy_record_hash": {"$ref": "common.schema.json#/$defs/sha256"}, "content_origin": {"const": "PROJECT_AUTHORED"}}},
+    "teachingPayload": {"type": "object", "additionalProperties": false, "required": ["input_policy", "external_source_payloads_included", "records", "vietnamese_learner_context", "payload_sha256"], "properties": {"input_policy": {"const": "REVIEWED_M2_M5_TAXONOMY_ONLY"}, "external_source_payloads_included": {"const": false}, "records": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/teachingRecord"}}, "vietnamese_learner_context": {"type": "array", "items": {"$ref": "#/$defs/annotation"}}, "payload_sha256": {"$ref": "common.schema.json#/$defs/sha256"}}},
+    "generationConfig": {"type": "object", "additionalProperties": false, "required": ["generator", "generator_version", "prompt_version", "curriculum_version", "taxonomy_version", "lesson_schema_version", "parameters", "seed"], "properties": {"generator": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "generator_version": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "prompt_version": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "curriculum_version": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "taxonomy_version": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "lesson_schema_version": {"const": "1.0"}, "parameters": {"type": "object", "additionalProperties": {"type": ["string", "number", "boolean", "null"]}}, "seed": {"type": ["integer", "null"]}}}
   }
 }

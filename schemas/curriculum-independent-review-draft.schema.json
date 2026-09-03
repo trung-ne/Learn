@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/curriculum-independent-review-draft.schema.json",
+  "title": "English Master M5 independent human review draft submission",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "manifest_id", "manifest_sha256", "review_role", "reviewer", "reviewed_at", "decision", "artifact_scope", "taxonomy_scope", "annotation_scope", "checklist", "findings", "attestation"],
+  "properties": {
+    "schema_version": {"const": "2.0"},
+    "record_type": {"const": "curriculum_independent_review"},
+    "manifest_id": {"type": "string", "pattern": "^m5manifest_[a-f0-9]{64}$"},
+    "manifest_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "review_role": {"enum": ["LINGUISTIC", "PEDAGOGICAL"]},
+    "reviewer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["reviewer_id", "display_name", "qualifications", "identity_evidence_id", "independent_of_authorship", "conflicts_disclosed"],
+      "properties": {
+        "reviewer_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._:@/-]{0,127}$"},
+        "display_name": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+        "qualifications": {"type": "array", "minItems": 1, "items": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "uniqueItems": true},
+        "identity_evidence_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._:@/-]{0,127}$"},
+        "independent_of_authorship": {"const": true},
+        "conflicts_disclosed": {"type": "boolean"},
+        "conflict_notes": {"$ref": "common.schema.json#/$defs/nonEmptyString"}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"conflicts_disclosed": {"const": true}}, "required": ["conflicts_disclosed"]},
+          "then": {"required": ["conflict_notes"]},
+          "else": {"not": {"required": ["conflict_notes"]}}
+        }
+      ]
+    },
+    "reviewed_at": {"$ref": "common.schema.json#/$defs/orderableDateTime"},
+    "decision": {"enum": ["APPROVE", "REQUEST_CHANGES", "REJECT"]},
+    "artifact_scope": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {"enum": ["STRUCTURE", "GRAPH", "COVERAGE", "TAXONOMY"]},
+      "uniqueItems": true
+    },
+    "taxonomy_scope": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "anyOf": [
+          {"$ref": "common.schema.json#/$defs/conceptId"},
+          {"$ref": "common.schema.json#/$defs/vocabularySenseId"}
+        ]
+      },
+      "uniqueItems": true
+    },
+    "annotation_scope": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "pattern": "^vi_annotation_[a-z0-9]+(?:_[a-z0-9]+)*$"},
+      "uniqueItems": true
+    },
+    "checklist": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/check"}
+    },
+    "findings": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/finding"}
+    },
+    "attestation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["method", "reviewed_exact_hash_bound_manifest_and_artifacts", "source_records_not_edited", "no_lesson_content_approved"],
+      "properties": {
+        "method": {"const": "HUMAN_REVIEW"},
+        "reviewed_exact_hash_bound_manifest_and_artifacts": {"const": true},
+        "source_records_not_edited": {"const": true},
+        "no_lesson_content_approved": {"const": true}
+      }
+    }
+  },
+  "$defs": {
+    "check": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["criterion", "result", "notes"],
+      "properties": {
+        "criterion": {"enum": ["CEFR_ALIGNMENT", "LINGUISTIC_ACCURACY", "DEPENDENCY_SOUNDNESS", "VOCABULARY_SENSE_INTEGRITY", "VIETNAMESE_LEARNER_RELEVANCE", "PEDAGOGICAL_SEQUENCE", "OBJECTIVE_COHERENCE", "SKILL_BALANCE", "REVIEW_SPIRAL", "ASSESSMENT_ALIGNMENT", "SCOPE_AND_HOURS_CREDIBILITY"]},
+        "result": {"enum": ["PASS", "FAIL"]},
+        "notes": {"$ref": "common.schema.json#/$defs/nonEmptyString"}
+      }
+    },
+    "finding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["finding_id", "severity", "category", "location", "description", "required_action"],
+      "properties": {
+        "finding_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9_-]{2,63}$"},
+        "severity": {"enum": ["INFO", "MINOR", "MAJOR", "CRITICAL"]},
+        "category": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+        "location": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+        "description": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+        "required_action": {"$ref": "common.schema.json#/$defs/nonEmptyString"}
+      }
+    }
+  }
+}

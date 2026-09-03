@@ -18,7 +18,7 @@ The completed foundation provides:
 - A repaired provider-neutral M6 generation boundary that loads and hash-binds M5 artifacts, an independent authorization, and the source registry; derives graph context; injects trusted lesson metadata; emits stage-aware QA audits; and uses atomic no-overwrite artifact bundles. This is generator infrastructure, not completed or independently approved lesson content.
 - Data-lifecycle directory scaffolding and Git protections.
 
-M3 is ingestion infrastructure, not a corpus project. M4 adds deterministic normalization and review-oriented deduplication only. M5 adds architecture and dependency planning only. M6 adds constrained lesson-generation infrastructure and one approved, project-authored offline fixture; it does not approve generated lessons. These stages do not crawl websites, bulk-download data or media, generate exercises, assessments, or AI prompts. The committed ingestion fixture sentences are invented and explicitly used only to test the documented Tatoeba-shaped input path. The committed M5 bundle still references the DRAFT M2 taxonomy under an explicit outline-only gate and therefore fails M6 preflight before the backend is called. M6 success tests use a separate, explicit authorization snapshot reviewed for fixture use; they do not reinterpret or upgrade the M5 bundle.
+M3 is ingestion infrastructure, not a corpus project. M4 adds deterministic normalization and review-oriented deduplication only. M5 adds architecture and dependency planning only. M6 adds constrained lesson-generation infrastructure and one project-authored offline test fixture; it does not approve generated lessons. These stages do not crawl websites, bulk-download data or media, generate exercises, assessments, or AI prompts. The committed ingestion fixture sentences are invented and explicitly used only to test the documented Tatoeba-shaped input path. The committed M5 bundle still references the DRAFT M2 taxonomy under an explicit outline-only gate and therefore fails M6 preflight before the backend is called. M6 success tests use a separate, explicitly synthetic authorization fixture; they do not constitute human review, reinterpret the M5 bundle, or upgrade its status.
 
 ## Requirements
 
@@ -149,25 +149,38 @@ python -m english_master.curriculum_validate curriculum/structure.json \
 
 M5 contains a compact outline-only architecture: 12 globally numbered representative units, 24 lesson outlines, and 12 review nodes across all internal tiers. The 1,000-1,200 hour scale range is an expansion estimate, not completed content. DRAFT taxonomy dependencies are allowed only for outline planning and explicitly fail the M6 generation gate until independent review. See [docs/CURRICULUM_ARCHITECTURE.md](docs/CURRICULUM_ARCHITECTURE.md).
 
+Prepare a hash-bound packet for independent human review, with the current strict source registry independently loaded and all taxonomy citations checked for reference eligibility. Publish or verify an immutable snapshot only after real linguistic and pedagogical submissions exist:
+
+```bash
+python -m english_master.curriculum_review prepare curriculum/structure.json --source-registry sources/registry.yaml --output <new-manifest-directory>
+python -m english_master.curriculum_review publish curriculum/structure.json --source-registry sources/registry.yaml --manifest <manifest.json> --linguistic-review <review.json> --pedagogical-review <review.json> --reviewer-registry <trusted-reviewer-registry.json> --approved-at <ISO-8601> --published-by <publisher-id> --output <new-snapshot-directory>
+python -m english_master.curriculum_review verify curriculum/structure.json --source-registry sources/registry.yaml --snapshot <snapshot-directory> --reviewer-registry <trusted-reviewer-registry.json>
+```
+
+The repository intentionally includes blank review forms, not a real review or approval. See [docs/M5_REVIEW_WORKFLOW.md](docs/M5_REVIEW_WORKFLOW.md).
+
 ## Run constrained M6 lesson generation
 
-The committed success path is fully offline and uses an approved, project-authored fixture snapshot plus an authored mock response:
+M6 accepts only a reverified genuine M5 approval snapshot, independently loaded reviewer/source registries, and a prompt-hash-bound captured response. It deliberately does not accept arbitrary caller-authored request, authorization, or mock-response files:
 
 ```bash
 python -m english_master.lesson_generate \
-  --request tests/fixtures/m6/approved-request.json \
-  --authorization tests/fixtures/m6/approved-authorization.json \
-  --mock-response tests/fixtures/m6/approved-mock-lesson.json \
+  --lesson-id A1-U01-L01 \
+  --snapshot-dir <trusted-snapshot-directory> \
+  --reviewer-registry <trusted-reviewer-registry.json> \
+  --captured-response <trusted-captured-response.json> \
   --output-dir data/generated/m6/A1-U01-L01
 ```
 
-The command independently loads and validates M5 structure/graph/coverage/taxonomy artifacts, the authorization, and the source registry before calling the backend. It derives graph context, injects trusted lesson fields, validates the assembled candidate, and atomically publishes `lesson.json` and `audit.json` only on success. Add `--rejection-dir <directory>` to retain an immutable rejection-plus-audit bundle. The fixture authorization is separately reviewed and hash-bound; it does not change the committed DRAFT taxonomy or M5 `OUTLINE_ONLY` gate. All output remains `UNREVIEWED`, and the repository does not yet contain the ten independently reviewed lessons required for complete M6 acceptance. See [docs/LESSON_GENERATION.md](docs/LESSON_GENERATION.md).
+The command reconstructs the exact M6 authorization and request from the verified snapshot and current M5 bundle before a backend is called. It injects only trusted lesson metadata, validates the assembled candidate, and atomically publishes `lesson.json` and `audit.json` on success. Add `--rejection-dir <directory>` to retain an immutable rejection-plus-audit bundle.
+
+No genuine snapshot, protected digest, production capture, or ten-lesson M6 batch exists yet. Test-only synthetic snapshots and mock backends exercise the fail-closed implementation but cannot authorize production generation. All generated output remains `UNREVIEWED`. See [docs/LESSON_GENERATION.md](docs/LESSON_GENERATION.md).
 
 ## Layout
 
 - `schemas/` — authoritative Draft 2020-12 JSON Schemas.
 - `src/english_master/` — typed validation, ingestion, normalization, deduplication, M5 curriculum-graph, and M6 lesson-generation utilities.
-- `tests/fixtures/` — small, invented validation, ingestion, and approved M6 offline examples; taxonomy tests use the authored prototype.
+- `tests/fixtures/` — small, invented validation, ingestion, and M6 offline test examples; taxonomy tests use the authored prototype.
 - `sources/` — M1 registry metadata, official evidence summary, and source-operation policy; no source payloads.
 - `data/raw/`, `data/normalized/`, `data/quarantine/` — local M3 run payloads and audit records, ignored by Git except scaffolding.
 - `data/deduplicated/`, `data/reports/` — local M4 derived runs and reports, ignored by Git.

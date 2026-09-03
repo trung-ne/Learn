@@ -1,57 +1,73 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://english-master.local/schemas/lesson-generation-authorization.schema.json",
-  "title": "English Master M6 independent generation authorization",
+  "title": "English Master M6 snapshot-derived generation authorization",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "authorization_id", "status", "validated", "approved_at", "approved_by", "review_outcome", "curriculum_version", "taxonomy_version", "artifact_hashes", "approved_lesson_ids", "records"],
+  "required": ["schema_version", "record_type", "authorization_id", "authority_source", "snapshot_binding", "curriculum_version", "taxonomy_version", "artifact_hashes", "approved_lesson_ids", "records", "generation_policy"],
   "properties": {
-    "schema_version": {"const": "1.0"},
+    "schema_version": {"const": "2.0"},
+    "record_type": {"const": "lesson_generation_authorization"},
     "authorization_id": {"type": "string", "pattern": "^auth_[a-f0-9]{64}$"},
-    "status": {"const": "APPROVED"},
-    "validated": {"const": true},
-    "approved_at": {"$ref": "common.schema.json#/$defs/isoDateTime"},
-    "approved_by": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
-    "review_outcome": {"const": "APPROVED_FOR_M6_GENERATION"},
+    "authority_source": {"const": "VERIFIED_M5_APPROVAL_SNAPSHOT"},
+    "snapshot_binding": {"$ref": "#/$defs/snapshotBinding"},
     "curriculum_version": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
     "taxonomy_version": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
     "artifact_hashes": {"$ref": "#/$defs/artifactHashes"},
     "approved_lesson_ids": {"type": "array", "minItems": 1, "items": {"$ref": "common.schema.json#/$defs/lessonId"}, "uniqueItems": true},
-    "records": {"type": "array", "items": {"$ref": "#/$defs/authorizedRecord"}}
+    "records": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/authorizedRecord"}, "uniqueItems": true},
+    "generation_policy": {"$ref": "#/$defs/generationPolicy"}
   },
   "$defs": {
+    "sha256": {"$ref": "common.schema.json#/$defs/sha256"},
     "artifactHashes": {
       "type": "object", "additionalProperties": false,
       "required": ["structure", "graph", "coverage", "taxonomy", "source_registry"],
       "properties": {
-        "structure": {"$ref": "common.schema.json#/$defs/sha256"}, "graph": {"$ref": "common.schema.json#/$defs/sha256"},
-        "coverage": {"$ref": "common.schema.json#/$defs/sha256"}, "taxonomy": {"$ref": "common.schema.json#/$defs/sha256"},
-        "source_registry": {"$ref": "common.schema.json#/$defs/sha256"}
+        "structure": {"$ref": "#/$defs/sha256"}, "graph": {"$ref": "#/$defs/sha256"},
+        "coverage": {"$ref": "#/$defs/sha256"}, "taxonomy": {"$ref": "#/$defs/sha256"},
+        "source_registry": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "snapshotBinding": {
+      "type": "object", "additionalProperties": false,
+      "required": ["snapshot_id", "snapshot_sha256", "member_hashes", "bundle_sha256"],
+      "properties": {
+        "snapshot_id": {"type": "string", "pattern": "^m5snapshot_[a-f0-9]{64}$"},
+        "snapshot_sha256": {"$ref": "#/$defs/sha256"},
+        "bundle_sha256": {"$ref": "#/$defs/sha256"},
+        "member_hashes": {
+          "type": "object", "additionalProperties": false,
+          "required": ["manifest", "review_linguistic", "review_pedagogical", "reviewer_registry", "source_registry", "snapshot"],
+          "properties": {
+            "manifest": {"$ref": "#/$defs/sha256"}, "review_linguistic": {"$ref": "#/$defs/sha256"},
+            "review_pedagogical": {"$ref": "#/$defs/sha256"}, "reviewer_registry": {"$ref": "#/$defs/sha256"},
+            "source_registry": {"$ref": "#/$defs/sha256"}, "snapshot": {"$ref": "#/$defs/sha256"}
+          }
+        }
       }
     },
     "referenceId": {"anyOf": [{"$ref": "common.schema.json#/$defs/conceptId"}, {"$ref": "common.schema.json#/$defs/vocabularySenseId"}]},
     "authorizedRecord": {
       "type": "object", "additionalProperties": false,
-      "required": ["id", "record_type", "cefr", "status", "definition", "prerequisites", "content_origin", "taxonomy_record_hash"],
+      "required": ["id", "record_type", "cefr", "source_status", "approval_basis", "taxonomy_record_hash"],
       "properties": {
         "id": {"$ref": "#/$defs/referenceId"},
         "record_type": {"enum": ["GRAMMAR", "VOCABULARY_SENSE", "COMMUNICATIVE_FUNCTION", "PRONUNCIATION", "SUPPORTING_CONCEPT"]},
-        "cefr": {"$ref": "common.schema.json#/$defs/cefrLevel"}, "status": {"const": "APPROVED"},
-        "definition": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
-        "prerequisites": {"type": "array", "items": {"$ref": "#/$defs/referenceId"}, "uniqueItems": true},
-        "content_origin": {"enum": ["PROJECT_AUTHORED", "EXTERNAL_APPROVED"]},
-        "taxonomy_record_hash": {"$ref": "common.schema.json#/$defs/sha256"},
-        "provenance": {"$ref": "common.schema.json#/$defs/provenance"},
-        "source_content_type": {"enum": ["text", "audio", "video"]},
-        "source_content": {"$ref": "common.schema.json#/$defs/nonEmptyString"}
-      },
-      "allOf": [
-        {
-          "if": {"properties": {"content_origin": {"const": "EXTERNAL_APPROVED"}}, "required": ["content_origin"]},
-          "then": {"required": ["provenance", "source_content_type", "source_content"]},
-          "else": {"not": {"anyOf": [{"required": ["provenance"]}, {"required": ["source_content_type"]}, {"required": ["source_content"]}]}}
-        }
-      ]
+        "cefr": {"$ref": "common.schema.json#/$defs/cefrLevel"},
+        "source_status": {"const": "DRAFT"},
+        "approval_basis": {"const": "M5_SNAPSHOT_OVERLAY"},
+        "taxonomy_record_hash": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "generationPolicy": {
+      "type": "object", "additionalProperties": false,
+      "required": ["input_policy", "source_payloads_included", "content_generation_allowed"],
+      "properties": {
+        "input_policy": {"const": "REVIEWED_M2_M5_TAXONOMY_ONLY"},
+        "source_payloads_included": {"const": false},
+        "content_generation_allowed": {"const": true}
+      }
     }
   }
 }

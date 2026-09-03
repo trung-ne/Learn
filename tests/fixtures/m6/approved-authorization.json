@@ -1,17 +1,17 @@
 {
   "approved_at": "2026-09-02T09:00:00Z",
-  "approved_by": "independent_m6_fixture_reviewer",
+  "approved_by": "synthetic_m6_fixture_reviewer",
   "approved_lesson_ids": [
     "A1-U01-L01"
   ],
   "artifact_hashes": {
     "coverage": "9a957c01cf292f8639b4a3cec95755c14c98444dee748fbe3e544f515456021e",
     "graph": "f088a5a985117f89f5600541afe63b7c9f6be558e8baa231802e01e07129a404",
-    "source_registry": "5d20e2914a5e81b764b8a3218537c3316f6060fc3f9e37a894f240d69f4667a3",
+    "source_registry": "a9e164630c39e653db53f229404e19fda44b497e0218e200fd988ce6799248e7",
     "structure": "004e49a08fb0e2fd4e7d1f96756f3293842ee35c9e679f6a2acd2ecfa7784855",
     "taxonomy": "05491045d6ddeb5ffe5cbe11f83a0354bcbe89cc3956c9ba674f51ad577b4b11"
   },
-  "authorization_id": "auth_3a05acb9cdb862569716493a964c8daaa90dab678187b2a9f7004239214b0a27",
+  "authorization_id": "auth_3d8770f0b11de9c788d0c49ca2158524bad1c502442cd8f9b205db577c505f0c",
   "curriculum_version": "20260902",
   "records": [
     {

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "curriculum_version": "20260902",
+  "curriculum_version": "20260903",
   "ordering_semantics": {
     "ordering_edge_types": [
       "lesson_prerequisite",

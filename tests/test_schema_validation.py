@@ -8,6 +8,7 @@ from pathlib import Path
 import pytest
 
 from english_master.schema_validation import (
+    DuplicateMappingKeyError,
     SchemaValidationError,
     SourcePermissionError,
     can_create_clip,
@@ -37,6 +38,32 @@ SCHEMA_NAMES = [
     "exercise",
     "ai-practice-prompt",
 ]
+
+
+def test_generic_loader_rejects_nested_duplicate_keys(tmp_path: Path) -> None:
+    path = tmp_path / "duplicate.json"
+    path.write_text(
+        '{"id":"A1-U01-L01","nested":{"decision":"REJECT","decision":"APPROVE"}}',
+        encoding="utf-8",
+    )
+    with pytest.raises(DuplicateMappingKeyError):
+        load_json(path)
+
+    result = subprocess.run(
+        [
+            sys.executable,
+            "-m",
+            "english_master.schema_validation",
+            "--schema",
+            "lesson",
+            str(path),
+        ],
+        check=False,
+        capture_output=True,
+        text=True,
+    )
+    assert result.returncode != 0
+    assert "duplicate JSON mapping key" in result.stderr
 
 
 @pytest.mark.parametrize("schema_name", SCHEMA_NAMES)
@@ -185,8 +212,16 @@ def test_reference_only_source_cannot_enter_ingestion() -> None:
     registry = load_source_registry(REGISTRY_PATH)
 
     assert not can_ingest_text(registry, "src_cefr_companion_volume")
+    assert not can_ingest_text(registry, "src_eric_ej527841")
+    assert not can_use_for_generated_exercises(
+        registry,
+        "src_eric_ej527841",
+        "text",
+    )
     with pytest.raises(SourcePermissionError, match="REFERENCE_ONLY"):
         require_source_permission(registry, "src_cefr_companion_volume", "ingest_text")
+    with pytest.raises(SourcePermissionError, match="REFERENCE_ONLY"):
+        require_source_permission(registry, "src_eric_ej527841", "ingest_text")
 
 
 def test_quarantined_source_cannot_enter_ingestion() -> None:
@@ -260,7 +295,12 @@ def test_registry_rejects_duplicate_source_ids() -> None:
 
     issues = validation_issues(duplicate, "source-registry")
 
-    assert any(issue.instance_path == "$.sources[12].source_id" and "duplicate source_id" in issue.message for issue in issues)
+    duplicate_index = len(duplicate["sources"]) - 1
+    assert any(
+        issue.instance_path == f"$.sources[{duplicate_index}].source_id"
+        and "duplicate source_id" in issue.message
+        for issue in issues
+    )
 
 
 def test_registry_cli_permits_explicitly_approved_operation() -> None:

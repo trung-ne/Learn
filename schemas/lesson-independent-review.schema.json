@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/lesson-independent-review.schema.json",
+  "title": "English Master M6 independent lesson review",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "lesson_review_id", "lesson_id", "lesson_sha256", "audit_sha256", "snapshot_binding", "review_role", "reviewer", "reviewed_at", "decision", "checklist", "findings", "copyright_spot_check", "attestation"],
+  "properties": {
+    "schema_version": {"const": "1.0"}, "record_type": {"const": "lesson_independent_review"},
+    "lesson_review_id": {"type": "string", "pattern": "^m6review_[a-f0-9]{64}$"}, "lesson_id": {"$ref": "common.schema.json#/$defs/lessonId"},
+    "lesson_sha256": {"$ref": "common.schema.json#/$defs/sha256"}, "audit_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "snapshot_binding": {"$ref": "lesson-generation-authorization.schema.json#/$defs/snapshotBinding"}, "review_role": {"enum": ["LINGUISTIC", "PEDAGOGICAL"]},
+    "reviewer": {"$ref": "#/$defs/reviewer"}, "reviewed_at": {"$ref": "common.schema.json#/$defs/isoDateTime"}, "decision": {"enum": ["APPROVE", "NEEDS_REVISION", "REJECT"]},
+    "checklist": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/checklistEntry"}, "uniqueItems": true},
+    "findings": {"type": "array", "items": {"$ref": "#/$defs/finding"}}, "copyright_spot_check": {"$ref": "#/$defs/copyrightSpotCheck"}, "attestation": {"$ref": "#/$defs/attestation"}
+  },
+  "$defs": {
+    "reviewer": {"type": "object", "additionalProperties": false, "required": ["reviewer_id", "display_name", "qualifications", "identity_evidence_id", "independent_of_generation", "conflicts_disclosed"], "properties": {"reviewer_id": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "display_name": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "qualifications": {"type": "array", "minItems": 1, "items": {"$ref": "common.schema.json#/$defs/nonEmptyString"}}, "identity_evidence_id": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "independent_of_generation": {"const": true}, "conflicts_disclosed": {"type": "boolean"}}},
+    "checklistEntry": {"type": "object", "additionalProperties": false, "required": ["criterion", "result", "notes"], "properties": {"criterion": {"enum": ["CEFR_ALIGNMENT", "GRAMMAR_LEXICAL_ACCURACY", "LANGUAGE_QUALITY", "PEDAGOGICAL_SOUNDNESS", "PREREQUISITE_SCOPE", "COPYRIGHT_SPOT_CHECK"]}, "result": {"enum": ["PASS", "FAIL", "NOT_APPLICABLE"]}, "notes": {"$ref": "common.schema.json#/$defs/nonEmptyString"}}},
+    "finding": {"type": "object", "additionalProperties": false, "required": ["severity", "category", "description"], "properties": {"severity": {"enum": ["MINOR", "MAJOR", "CRITICAL"]}, "category": {"type": "string", "minLength": 1}, "description": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "recommendation": {"type": "string"}}},
+    "copyrightSpotCheck": {"type": "object", "additionalProperties": false, "required": ["method", "scope_limitations", "result", "notes"], "properties": {"method": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "scope_limitations": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "result": {"enum": ["NO_CONCERN_FOUND", "CONCERN_FOUND", "NOT_PERFORMED"]}, "notes": {"$ref": "common.schema.json#/$defs/nonEmptyString"}}},
+    "attestation": {"type": "object", "additionalProperties": false, "required": ["reviewed_exact_lesson_and_audit", "independent_review_performed", "does_not_approve_content"], "properties": {"reviewed_exact_lesson_and_audit": {"const": true}, "independent_review_performed": {"const": true}, "does_not_approve_content": {"const": true}}}
+  }
+}

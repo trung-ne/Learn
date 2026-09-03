@@ -6,16 +6,20 @@ import argparse
 import json
 import re
 import sys
+import sysconfig
 import unicodedata
 from collections.abc import Iterable
 from dataclasses import dataclass
+from functools import lru_cache
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlsplit
 
 import yaml
 from jsonschema import Draft202012Validator, FormatChecker, ValidationError
 from referencing import Registry, Resource
 from referencing.jsonschema import DRAFT202012
+from yaml.nodes import MappingNode
 
 SCHEMA_FILENAMES: dict[str, str] = {
     "source": "source.schema.json",
@@ -45,10 +49,17 @@ SCHEMA_FILENAMES: dict[str, str] = {
     "curriculum-graph": "curriculum-graph.schema.json",
     "curriculum-coverage-roadmap": "curriculum-coverage-roadmap.schema.json",
     "curriculum-validation-report": "curriculum-validation-report.schema.json",
+    "curriculum-review-manifest": "curriculum-review-manifest.schema.json",
+    "curriculum-independent-review-draft": "curriculum-independent-review-draft.schema.json",
+    "curriculum-independent-review": "curriculum-independent-review.schema.json",
+    "curriculum-reviewer-registry": "curriculum-reviewer-registry.schema.json",
+    "curriculum-approval-snapshot": "curriculum-approval-snapshot.schema.json",
     "lesson-generation-authorization": "lesson-generation-authorization.schema.json",
     "lesson-generation-request": "lesson-generation-request.schema.json",
     "lesson-generation-audit": "lesson-generation-audit.schema.json",
     "lesson-generation-rejection": "lesson-generation-rejection.schema.json",
+    "lesson-independent-review": "lesson-independent-review.schema.json",
+    "lesson-batch-qa-report": "lesson-batch-qa-report.schema.json",
 }
 
 SOURCE_PERMISSION_PATHS: dict[str, tuple[str, ...]] = {
@@ -104,20 +115,82 @@ class SourcePermissionError(ValueError):
     """Raised when a registered source cannot perform a requested operation."""
 
 
+class DuplicateMappingKeyError(ValueError):
+    """Raised when JSON or YAML contains an ambiguous duplicate mapping key."""
+
+
+def _unique_json_object(pairs: list[tuple[str, Any]]) -> dict[str, Any]:
+    value: dict[str, Any] = {}
+    for key, item in pairs:
+        if key in value:
+            raise DuplicateMappingKeyError(f"duplicate JSON mapping key: {key!r}")
+        value[key] = item
+    return value
+
+
+class _UniqueKeySafeLoader(yaml.SafeLoader):
+    """SafeLoader variant that rejects duplicate keys at every depth."""
+
+
+def _construct_unique_yaml_mapping(
+    loader: _UniqueKeySafeLoader,
+    node: MappingNode,
+    deep: bool = False,
+) -> dict[Any, Any]:
+    loader.flatten_mapping(node)
+    value: dict[Any, Any] = {}
+    for key_node, value_node in node.value:
+        key = loader.construct_object(key_node, deep=deep)
+        try:
+            duplicate = key in value
+        except TypeError as error:
+            raise DuplicateMappingKeyError(
+                f"unhashable YAML mapping key at line {key_node.start_mark.line + 1}"
+            ) from error
+        if duplicate:
+            raise DuplicateMappingKeyError(
+                f"duplicate YAML mapping key {key!r} at line {key_node.start_mark.line + 1}"
+            )
+        value[key] = loader.construct_object(value_node, deep=deep)
+    return value
+
+
+_UniqueKeySafeLoader.add_constructor(
+    yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG,
+    _construct_unique_yaml_mapping,
+)
+
+
 def repository_root() -> Path:
-    """Return the repository root that contains the authoritative schemas."""
+    """Return the source-checkout root for repository-bound defaults."""
 
     source_root = Path(__file__).resolve().parents[2]
-    schema_directory = source_root / "schemas"
-    if not schema_directory.is_dir():
-        raise FileNotFoundError(f"Schema directory not found: {schema_directory}")
+    if not (source_root / "schemas").is_dir():
+        raise FileNotFoundError(
+            "Repository root is unavailable outside a source checkout; "
+            "pass repository-bound input paths explicitly"
+        )
     return source_root
 
 
 def schema_directory() -> Path:
-    """Return the absolute path to the authoritative schema directory."""
+    """Return authoritative checkout schemas or their installed wheel copies."""
 
-    return repository_root() / "schemas"
+    checkout_directory = Path(__file__).resolve().parents[2] / "schemas"
+    if checkout_directory.is_dir():
+        return checkout_directory
+    installed_directory = (
+        Path(sysconfig.get_path("data"))
+        / "share"
+        / "english-master"
+        / "schemas"
+    )
+    if installed_directory.is_dir():
+        return installed_directory
+    raise FileNotFoundError(
+        "Schema directory not found in the source checkout or installed package data: "
+        f"{checkout_directory}; {installed_directory}"
+    )
 
 
 def _require_object(value: Any, path: Path) -> dict[str, Any]:
@@ -127,18 +200,18 @@ def _require_object(value: Any, path: Path) -> dict[str, Any]:
 
 
 def load_json(path: Path) -> dict[str, Any]:
-    """Load a JSON object from *path* with a clear error for non-object values."""
+    """Strictly load a JSON object and reject duplicate mapping keys."""
 
     with path.open("r", encoding="utf-8") as file:
-        return _require_object(json.load(file), path)
+        return _require_object(json.load(file, object_pairs_hook=_unique_json_object), path)
 
 
 def load_document(path: Path) -> dict[str, Any]:
-    """Load a JSON or YAML object, selected by the filename suffix."""
+    """Strictly load a JSON or YAML object, selected by the filename suffix."""
 
     if path.suffix.lower() in {".yaml", ".yml"}:
         with path.open("r", encoding="utf-8") as file:
-            return _require_object(yaml.safe_load(file), path)
+            return _require_object(yaml.load(file, Loader=_UniqueKeySafeLoader), path)
     return load_json(path)
 
 
@@ -156,6 +229,13 @@ def load_schemas() -> dict[str, dict[str, Any]]:
     if not schemas:
         raise FileNotFoundError(f"No schemas found in {schema_directory()}")
     return schemas
+
+
+@lru_cache(maxsize=1)
+def _validation_schema_catalog() -> dict[str, dict[str, Any]]:
+    """Cache the immutable in-process schema catalog used by validators."""
+
+    return load_schemas()
 
 
 def schema_registry(schemas: dict[str, dict[str, Any]] | None = None) -> Registry:
@@ -487,43 +567,123 @@ def coverage_matrix_collection_issues(instance: dict[str, Any]) -> list[Validati
     return sorted(issues, key=lambda issue: (issue.instance_path, issue.message))
 
 
+def _eligible_taxonomy_sources(registry: dict[str, Any]) -> dict[str, dict[str, Any]]:
+    validate_instance(registry, "source-registry")
+    return {
+        source["source_id"]: source
+        for source in registry["sources"]
+        if source["status"] in {"APPROVED", "REFERENCE_ONLY"}
+        and source["permissions"]["reference_allowed"] is True
+    }
+
+
 def can_cite_for_taxonomy(registry: dict[str, Any], source_id: str) -> bool:
     """Return whether a registered source may be cited without authorizing ingestion."""
 
     try:
-        validate_instance(registry, "source-registry")
-        source = next(
-            (candidate for candidate in registry["sources"] if candidate["source_id"] == source_id),
-            None,
-        )
-        return bool(
-            source
-            and source["status"] in {"APPROVED", "REFERENCE_ONLY"}
-            and source["permissions"]["reference_allowed"] is True
-        )
+        return source_id in _eligible_taxonomy_sources(registry)
     except (SchemaValidationError, KeyError, TypeError, ValueError):
         return False
 
 
-def _taxonomy_citation_issues(instance: dict[str, Any], registry: dict[str, Any]) -> list[ValidationIssue]:
+def _url_origin_path_and_query(value: str) -> tuple[str, str, int | None, str, str] | None:
+    try:
+        parsed = urlsplit(value)
+        hostname = parsed.hostname
+        port = parsed.port
+        if not parsed.scheme or hostname is None:
+            return None
+        ascii_hostname = hostname.encode("idna").decode("ascii").lower()
+    except (UnicodeError, ValueError):
+        return None
+    effective_port = port
+    if effective_port is None:
+        effective_port = {"http": 80, "https": 443}.get(parsed.scheme.lower())
+    return parsed.scheme.lower(), ascii_hostname, effective_port, parsed.path or "/", parsed.query
+
+
+def _url_matches_registered_prefix(url: str, prefix: str) -> bool:
+    candidate = _url_origin_path_and_query(url)
+    authority = _url_origin_path_and_query(prefix)
+    if candidate is None or authority is None or candidate[:3] != authority[:3]:
+        return False
+    candidate_path = candidate[3]
+    authority_path = authority[3]
+    authority_query = authority[4]
+    if authority_query:
+        return candidate_path == authority_path and candidate[4] == authority_query
+    authority_path = authority_path.rstrip("/")
+    return (
+        not authority_path
+        or candidate_path == authority_path
+        or candidate_path.startswith(f"{authority_path}/")
+    )
+
+
+def taxonomy_citation_issues(
+    instance: dict[str, Any],
+    registry: dict[str, Any],
+    *,
+    required_record_ids: Iterable[str] | None = None,
+) -> list[ValidationIssue]:
+    """Return source-identity, permission, and locator issues for taxonomy citations."""
+
     issues: list[ValidationIssue] = []
-    records = list(instance.get("concepts", [])) + list(instance.get("vocabulary_senses", []))
-    records += list(instance.get("vietnamese_learner_annotations", []))
-    for record_index, record in enumerate(records):
-        if not isinstance(record, dict):
+    try:
+        eligible_sources = _eligible_taxonomy_sources(registry)
+    except (SchemaValidationError, KeyError, TypeError, ValueError):
+        eligible_sources = {}
+    required_ids = frozenset(required_record_ids) if required_record_ids is not None else None
+    for collection in ("concepts", "vocabulary_senses", "vietnamese_learner_annotations"):
+        records = instance.get(collection)
+        if not isinstance(records, list):
             continue
-        evidence = record.get("evidence_or_reference", [])
-        for evidence_index, reference in enumerate(evidence if isinstance(evidence, list) else []):
-            if not isinstance(reference, dict) or "source_id" not in reference:
+        for record_index, record in enumerate(records):
+            if not isinstance(record, dict):
                 continue
-            source_id = reference["source_id"]
-            if not can_cite_for_taxonomy(registry, source_id):
-                issues.append(
-                    ValidationIssue(
-                        f"$.taxonomy_records[{record_index}].evidence_or_reference[{evidence_index}].source_id",
-                        f"source {source_id!r} is not eligible for taxonomy citation",
+            record_id = record.get("id")
+            if required_ids is not None and record_id not in required_ids:
+                continue
+            evidence = record.get("evidence_or_reference")
+            if not isinstance(evidence, list):
+                continue
+            for evidence_index, reference in enumerate(evidence):
+                if not isinstance(reference, dict):
+                    continue
+                path = f"$.{collection}[{record_index}].evidence_or_reference[{evidence_index}]"
+                source_id = reference.get("source_id")
+                if source_id is None:
+                    if reference.get("kind") != "AUTHORED_PROTOTYPE":
+                        issues.append(
+                            ValidationIssue(
+                                f"{path}.source_id",
+                                "externally grounded taxonomy evidence must name a registered source",
+                            )
+                        )
+                    continue
+                source = eligible_sources.get(source_id) if isinstance(source_id, str) else None
+                if source is None:
+                    issues.append(
+                        ValidationIssue(
+                            f"{path}.source_id",
+                            f"source {source_id!r} is not eligible for taxonomy citation",
+                        )
                     )
-                )
+                    continue
+                citation_url = reference.get("citation_url")
+                prefixes = source.get("taxonomy_reference_url_prefixes")
+                if not isinstance(prefixes, list):
+                    prefixes = [source.get("source_url")]
+                if not isinstance(citation_url, str) or not any(
+                    isinstance(prefix, str) and _url_matches_registered_prefix(citation_url, prefix)
+                    for prefix in prefixes
+                ):
+                    issues.append(
+                        ValidationIssue(
+                            f"{path}.citation_url",
+                            f"citation URL is outside the registered locator scope for source {source_id!r}",
+                        )
+                    )
     return issues
 
 
@@ -535,7 +695,7 @@ def validate_taxonomy_collection(
 
     validate_instance(instance, "taxonomy")
     if registry is not None:
-        issues = _taxonomy_citation_issues(instance, registry)
+        issues = taxonomy_citation_issues(instance, registry)
         if issues:
             raise SchemaValidationError(issues)
 
@@ -546,16 +706,22 @@ def validate_coverage_matrix_collection(instance: dict[str, Any]) -> None:
     validate_instance(instance, "coverage-matrix")
 
 
-def validation_issues(instance: dict[str, Any], schema_name: str) -> list[ValidationIssue]:
-    """Return deterministically ordered issues for an instance and core schema."""
+@lru_cache(maxsize=None)
+def _schema_validator(schema_name: str) -> Draft202012Validator:
+    """Build each immutable local-schema validator once per process."""
 
-    schemas = load_schemas()
-    schema = load_schema(schema_name)
-    validator = Draft202012Validator(
-        schema,
+    schemas = _validation_schema_catalog()
+    return Draft202012Validator(
+        load_schema(schema_name),
         registry=schema_registry(schemas),
         format_checker=FormatChecker(),
     )
+
+
+def validation_issues(instance: dict[str, Any], schema_name: str) -> list[ValidationIssue]:
+    """Return deterministically ordered issues for an instance and core schema."""
+
+    validator = _schema_validator(schema_name)
     issues = [
         ValidationIssue(instance_path=_json_path(error), message=error.message)
         for error in validator.iter_errors(instance)
@@ -739,7 +905,7 @@ def main(argv: list[str] | None = None) -> int:
             instance = load_document(path)
             validate_instance(instance, arguments.schema)
             if arguments.schema == "taxonomy" and source_registry is not None:
-                citation_issues = _taxonomy_citation_issues(instance, source_registry)
+                citation_issues = taxonomy_citation_issues(instance, source_registry)
                 if citation_issues:
                     raise SchemaValidationError(citation_issues)
             if arguments.require_source_permission:

@@ -373,6 +373,8 @@ sources:
     owner: Wikimedia contributors
     source_type: dump
     source_url: https://dumps.wikimedia.org/enwiktionary/
+    taxonomy_reference_url_prefixes:
+      - https://en.wiktionary.org/
     description: >-
       English Wiktionary textual page content from official dumps, with item-level
       attribution, change indication, and ShareAlike obligations retained.
@@ -423,6 +425,8 @@ sources:
     owner: Council of Europe
     source_type: other
     source_url: https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-companion-volume-and-its-language-versions
+    taxonomy_reference_url_prefixes:
+      - https://www.coe.int/en/web/common-european-framework-reference-languages
     description: "Authoritative CEFR reference material for taxonomy and coverage analysis; not a corpus."
     content_types: [text, metadata]
     access:
@@ -475,6 +479,58 @@ sources:
     registered_by: M1 source-governance review
     reviewed_at: "2026-08-30T00:00:00Z"
     review_notes: "REFERENCE_ONLY. Limited excerpts do not authorize corpus extraction, descriptor-bank reproduction, or translation."
+
+  - schema_version: "2.0"
+    source_id: src_eric_ej527841
+    source_name: Final Cluster Reduction in English L2 Speech (ERIC EJ527841)
+    owner: Andrea G. Osburne / Oxford University Press
+    source_type: other
+    source_url: https://eric.ed.gov/?id=EJ527841
+    taxonomy_reference_url_prefixes:
+      - https://eric.ed.gov/?id=EJ527841
+    description: >-
+      Bibliographic locator for a 1996 Applied Linguistics case study of one Vietnamese
+      speaker, registered only to support a narrow, qualified research citation.
+    content_types: [text, metadata]
+    access:
+      preferred_method: manual_reference
+      api_url: null
+      dataset_url: null
+      crawl_allowed: false
+      download_allowed: false
+    license:
+      name: ALL-RIGHTS-RESERVED-REFERENCE-ONLY
+      url: https://academic.oup.com/applij/pages/Terms_and_Conditions
+      reviewed_at: "2026-09-02T17:48:47Z"
+      notes: >-
+        No open reuse license was identified. Citation is permitted, but copying,
+        adaptation, ingestion, storage, and redistribution are not authorized here.
+    permissions: *reference_permissions
+    media_permissions:
+      text: *reference_text
+      audio: *no_audio
+      video: *no_video
+    attribution:
+      required: true
+      format: "Osburne, A. G. (1996), Applied Linguistics 17(2), ERIC EJ527841."
+      requirements: >-
+        Cite the case study accurately and retain its single-participant limitation;
+        do not reproduce article wording or imply a population-wide finding.
+    technical: *reference_technical
+    status: REFERENCE_ONLY
+    evidence:
+      - url: https://eric.ed.gov/?id=EJ527841
+        description: "Official ERIC bibliographic record identifying the title, author, journal, date, and case-study scope."
+        checked_at: "2026-09-02T17:48:47Z"
+      - url: https://academic.oup.com/applij/pages/Terms_and_Conditions
+        description: "Official Applied Linguistics terms requiring permission for reuse beyond applicable exceptions."
+        checked_at: "2026-09-02T17:48:47Z"
+    registered_at: "2026-09-02T17:48:47Z"
+    registered_by: M5 review-scope remediation
+    reviewed_at: "2026-09-02T17:48:47Z"
+    review_notes: >-
+      REFERENCE_ONLY. The taxonomy may retain a narrow paraphrased citation with explicit
+      uncertainty; no article payload may enter ingestion or generated materials.
 
   - schema_version: "2.0"
     source_id: src_english_profile_evp

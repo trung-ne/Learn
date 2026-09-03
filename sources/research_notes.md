@@ -1,12 +1,13 @@
 # Source research, quarantine, and review protocol
 
-**Research reviewed:** 2026-08-30. All links named here are official sources and are also recorded per source in [registry.yaml](registry.yaml). This is a conservative operational assessment, not legal advice.
+**Research reviewed:** 2026-08-30; amended 2026-09-03 for ERIC EJ527841. All links named here are official sources and are also recorded per source in [registry.yaml](registry.yaml). This is a conservative operational assessment, not legal advice.
 
 ## Why items are not automatically approved
 
 | Candidate | Decision | Evidence-based restriction |
 | --- | --- | --- |
 | Council of Europe CEFR Companion Volume | Reference only | Official publishing and permissions material does not make the content an open corpus. Use for CEFR taxonomy and coverage review, not extraction or copying. |
+| ERIC EJ527841 / Osburne (1996) | Reference only | The exact bibliographic locator supports a narrow citation to a single-participant case study. No article payload may be copied, stored, adapted, ingested, redistributed, or used in exercises; the registered query-specific locator does not authorize other ERIC records. |
 | English Profile EVP | Quarantined | The site is publicly available, but no official bulk/API/reuse permission was verified in this review. |
 | Cambridge specifications | Reference only | Official public specifications, regulations, and sample resources remain controlled educational materials. |
 | British Council learning resources | Reference only | Rights can vary at item level; a site-wide, redistributable ingestion license was not established. |

@@ -369,7 +369,7 @@
       "difficulty": "VARIABLE",
       "description": "Some Vietnamese learners may reduce English syllable-final consonant clusters; individual performance must be assessed rather than assumed.",
       "teaching_response": "Use perception checks and gradual production practice while avoiding deficit labels or blanket claims about all learners.",
-      "evidence_or_reference": [{"kind": "RESEARCH_CLAIM", "citation_url": "https://eric.ed.gov/?id=EJ527841", "note": "Paraphrased narrow finding from a case study; evidence is limited and does not justify population-wide prediction."}],
+      "evidence_or_reference": [{"kind": "RESEARCH_CLAIM", "citation_url": "https://eric.ed.gov/?id=EJ527841", "source_id": "src_eric_ej527841", "note": "Paraphrased narrow finding from a case study; evidence is limited and does not justify population-wide prediction."}],
       "status": "DRAFT"
     },
     {
@@ -381,7 +381,7 @@
       "difficulty": "VARIABLE",
       "description": "During review, check article choices explicitly instead of presuming that every Vietnamese learner has the same difficulty.",
       "teaching_response": "Use contextual noticing tasks and record learner-specific evidence before assigning remediation.",
-      "evidence_or_reference": [{"kind": "PEDAGOGICAL_OBSERVATION", "citation_url": "https://www.coe.int/en/web/common-european-framework-reference-languages", "note": "Project-authored teaching caution, not a research claim and not attributed to the cited framework."}],
+      "evidence_or_reference": [{"kind": "PEDAGOGICAL_OBSERVATION", "citation_url": "https://www.coe.int/en/web/common-european-framework-reference-languages", "source_id": "src_cefr_companion_volume", "note": "Project-authored teaching caution, not a research claim and not attributed to the cited framework."}],
       "status": "DRAFT"
     }
   ]

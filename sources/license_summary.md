@@ -1,7 +1,7 @@
 # Source licensing and evidence summary
 
-**Review date:** 2026-08-30  
-**Scope:** M1 governance metadata only. No corpus, audio, video, transcript, or other source payload was downloaded or stored. This document is operational guidance, not legal advice.
+**Review date:** 2026-08-30; amended 2026-09-03 for the record-specific ERIC reference
+**Scope:** Source-governance metadata only. No corpus, article text, audio, video, transcript, or other source payload was downloaded or stored. This document is operational guidance, not legal advice.
 
 The machine-readable authority is [registry.yaml](registry.yaml), validated by [source-registry.schema.json](../schemas/source-registry.schema.json). Every approval is deliberately narrow: a source is usable only when it is `APPROVED` **and** the specific requested media operation is true. A valid registry entry alone never authorizes use.
 
@@ -21,6 +21,7 @@ The machine-readable authority is [registry.yaml](registry.yaml), validated by [
 | Source | Status | Reason |
 | --- | --- | --- |
 | Council of Europe CEFR Companion Volume | `REFERENCE_ONLY` | It is authoritative for taxonomy, but availability of a PDF does not grant corpus extraction, adaptation, translation, or redistribution. |
+| ERIC EJ527841 / Osburne (1996) | `REFERENCE_ONLY` | The exact ERIC bibliographic record supports a narrow, qualified case-study citation only. No open reuse license was identified; article copying, adaptation, ingestion, storage, exercise use, and redistribution are denied. |
 | Cambridge public specifications | `REFERENCE_ONLY` | Public documents and sample materials are not a general reuse or corpus license. |
 | British Council public resources | `REFERENCE_ONLY` | Rights vary by item; source-wide automated ingestion and reuse are not established. |
 | English Profile EVP | `QUARANTINED` | Current official evidence did not establish bulk extraction, API, storage, or redistribution permission. |

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/lesson-batch-qa-report.schema.json",
+  "title": "English Master M6 ten-lesson batch QA report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "batch_id", "snapshot_binding", "generated_at", "lesson_bundles", "review_records", "automated_checks_complete", "human_review_sample", "status", "limitations"],
+  "properties": {
+    "schema_version": {"const": "1.0"}, "record_type": {"const": "lesson_batch_qa_report"}, "batch_id": {"type": "string", "pattern": "^m6batch_[a-f0-9]{64}$"},
+    "snapshot_binding": {"$ref": "lesson-generation-authorization.schema.json#/$defs/snapshotBinding"}, "generated_at": {"$ref": "common.schema.json#/$defs/isoDateTime"},
+    "lesson_bundles": {"type": "array", "minItems": 10, "maxItems": 10, "uniqueItems": true, "items": {"$ref": "#/$defs/lessonBundle"}},
+    "review_records": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/reviewRecord"}}, "automated_checks_complete": {"const": true},
+    "human_review_sample": {"type": "array", "minItems": 1, "items": {"$ref": "common.schema.json#/$defs/lessonId"}, "uniqueItems": true},
+    "status": {"enum": ["COMPLETE_PENDING_M6_APPROVAL", "BLOCKED", "FAILED"]}, "limitations": {"type": "array", "minItems": 1, "items": {"$ref": "common.schema.json#/$defs/nonEmptyString"}, "uniqueItems": true}
+  },
+  "$defs": {
+    "lessonBundle": {"type": "object", "additionalProperties": false, "required": ["lesson_id", "bundle_path", "lesson_sha256", "audit_sha256"], "properties": {"lesson_id": {"$ref": "common.schema.json#/$defs/lessonId"}, "bundle_path": {"type": "string", "pattern": "^(?!.*(?:^|/)\\.\\.(?:/|$)).+"}, "lesson_sha256": {"$ref": "common.schema.json#/$defs/sha256"}, "audit_sha256": {"$ref": "common.schema.json#/$defs/sha256"}}},
+    "reviewRecord": {"type": "object", "additionalProperties": false, "required": ["lesson_review_id", "lesson_id", "review_sha256", "review_path"], "properties": {"lesson_review_id": {"type": "string", "pattern": "^m6review_[a-f0-9]{64}$"}, "lesson_id": {"$ref": "common.schema.json#/$defs/lessonId"}, "review_sha256": {"$ref": "common.schema.json#/$defs/sha256"}, "review_path": {"type": "string", "pattern": "^(?!.*(?:^|/)\\.\\.(?:/|$)).+"}}}
+  }
+}

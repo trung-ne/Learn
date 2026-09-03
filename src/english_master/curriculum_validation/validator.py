@@ -519,27 +519,65 @@ def _coverage_issues(structure: dict[str, Any], coverage: dict[str, Any]) -> lis
         if not isinstance(row, dict):
             continue
         dimension = row.get("dimension")
-        if dimension in seen:
+        dimension_key = str(dimension)
+        if dimension_key in seen:
             issues.append(CurriculumIssue(f"$.coverage.dimensions[{index}].dimension", "DUPLICATE_COVERAGE", f"duplicate dimension {dimension!r}"))
-        seen.add(str(dimension))
+        seen.add(dimension_key)
         introduced = row.get("introduced_at")
-        if introduced not in lessons:
+        introduced_lesson = lessons.get(str(introduced))
+        introduced_position: tuple[int, int] | None = None
+        if introduced_lesson is None:
             issues.append(CurriculumIssue(f"$.coverage.dimensions[{index}].introduced_at", "UNKNOWN_COVERAGE_NODE", f"unknown lesson {introduced!r}"))
-            continue
-        introduced_position = _curriculum_position(lessons[introduced], units)
-        for target in row.get("developed_at", []):
-            if target not in lessons:
-                issues.append(CurriculumIssue(f"$.coverage.dimensions[{index}].developed_at", "UNKNOWN_COVERAGE_NODE", f"unknown lesson {target!r}"))
-            elif _curriculum_position(lessons[target], units) <= introduced_position:
-                issues.append(CurriculumIssue(f"$.coverage.dimensions[{index}].developed_at", "COVERAGE_ORDER", f"development node {target!r} must follow introduction"))
-        for target in row.get("reviewed_at", []):
-            review = reviews.get(target)
+        else:
+            introduced_position = _curriculum_position(introduced_lesson, units)
+            if dimension_key not in introduced_lesson.get("dimensions", []):
+                issues.append(
+                    CurriculumIssue(
+                        f"$.coverage.dimensions[{index}].introduced_at",
+                        "COVERAGE_DIMENSION_MISMATCH",
+                        f"introduction lesson {introduced!r} does not declare dimension {dimension!r}",
+                    )
+                )
+        developed = row.get("developed_at", [])
+        for target_index, target in enumerate(developed if isinstance(developed, list) else []):
+            path = f"$.coverage.dimensions[{index}].developed_at[{target_index}]"
+            lesson = lessons.get(str(target))
+            if lesson is None:
+                issues.append(CurriculumIssue(path, "UNKNOWN_COVERAGE_NODE", f"unknown lesson {target!r}"))
+            else:
+                if introduced_position is not None and _curriculum_position(lesson, units) <= introduced_position:
+                    issues.append(CurriculumIssue(path, "COVERAGE_ORDER", f"development node {target!r} must follow introduction"))
+                if dimension_key not in lesson.get("dimensions", []):
+                    issues.append(
+                        CurriculumIssue(
+                            path,
+                            "COVERAGE_DIMENSION_MISMATCH",
+                            f"development lesson {target!r} does not declare dimension {dimension!r}",
+                        )
+                    )
+        reviewed = row.get("reviewed_at", [])
+        for target_index, target in enumerate(reviewed if isinstance(reviewed, list) else []):
+            path = f"$.coverage.dimensions[{index}].reviewed_at[{target_index}]"
+            review = reviews.get(str(target))
             if review is None:
-                issues.append(CurriculumIssue(f"$.coverage.dimensions[{index}].reviewed_at", "UNKNOWN_COVERAGE_NODE", f"unknown review {target!r}"))
+                issues.append(CurriculumIssue(path, "UNKNOWN_COVERAGE_NODE", f"unknown review {target!r}"))
             else:
                 review_unit = units.get(str(review.get("unit_id")), {})
-                if (int(review_unit.get("global_unit_number", 10_000)), 100) <= introduced_position:
-                    issues.append(CurriculumIssue(f"$.coverage.dimensions[{index}].reviewed_at", "COVERAGE_ORDER", f"review node {target!r} must follow introduction"))
+                if introduced_position is not None and (int(review_unit.get("global_unit_number", 10_000)), 100) <= introduced_position:
+                    issues.append(CurriculumIssue(path, "COVERAGE_ORDER", f"review node {target!r} must follow introduction"))
+                review_lessons = review.get("review_lessons", [])
+                declares_dimension = any(
+                    dimension_key in lessons[lesson_id].get("dimensions", [])
+                    for lesson_id in review_lessons if lesson_id in lessons
+                ) if isinstance(review_lessons, list) else False
+                if not declares_dimension:
+                    issues.append(
+                        CurriculumIssue(
+                            path,
+                            "COVERAGE_DIMENSION_MISMATCH",
+                            f"review node {target!r} does not review a lesson declaring dimension {dimension!r}",
+                        )
+                    )
     return issues
 
 

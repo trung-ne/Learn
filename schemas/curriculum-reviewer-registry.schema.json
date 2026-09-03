@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/curriculum-reviewer-registry.schema.json",
+  "title": "English Master M5 trusted reviewer identity registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "registry_id", "issued_at", "issued_by", "trust_policy", "reviewers"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "curriculum_reviewer_registry"},
+    "registry_id": {"type": "string", "pattern": "^m5reviewers_[a-f0-9]{64}$"},
+    "issued_at": {"$ref": "common.schema.json#/$defs/orderableDateTime"},
+    "issued_by": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+    "trust_policy": {"const": "EXTERNALLY_VERIFIED_IDENTITIES_V1"},
+    "reviewers": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/reviewer"}
+    }
+  },
+  "$defs": {
+    "reviewerId": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._:@/-]{0,127}$"
+    },
+    "reviewer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["reviewer_id", "display_name", "qualifications", "permitted_roles", "status", "identity_evidence"],
+      "properties": {
+        "reviewer_id": {"$ref": "#/$defs/reviewerId"},
+        "display_name": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+        "qualifications": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+          "uniqueItems": true
+        },
+        "permitted_roles": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"enum": ["LINGUISTIC", "PEDAGOGICAL"]},
+          "uniqueItems": true
+        },
+        "status": {"const": "VERIFIED"},
+        "identity_evidence": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["evidence_id", "method", "issuer", "subject_id", "evidence_reference", "verified_at", "verified_by"],
+          "properties": {
+            "evidence_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._:@/-]{0,127}$"},
+            "method": {"enum": ["ORGANIZATIONAL_DIRECTORY", "EXTERNAL_IDENTITY_PROVIDER", "SIGNED_ATTESTATION", "MANUAL_ID_CHECK"]},
+            "issuer": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+            "subject_id": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+            "evidence_reference": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+            "verified_at": {"$ref": "common.schema.json#/$defs/orderableDateTime"},
+            "verified_by": {"$ref": "common.schema.json#/$defs/nonEmptyString"}
+          }
+        }
+      }
+    }
+  }
+}

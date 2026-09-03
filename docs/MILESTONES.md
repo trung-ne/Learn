@@ -273,6 +273,10 @@ Do validate curriculum structure.
 - [x] Offline CLI and applicable tests pass
 - [x] No M6 lesson content or later-milestone material was generated
 
+### Post-completion M5 review governance
+
+The offline independent-review implementation now provides strict manifest, human-review, reviewer-authority, source-registry, and approval-snapshot contracts; canonical hash binding; taxonomy citation-eligibility and semantic review gates; prepare/publish/verify commands; atomic immutable storage; and blank human checklists. This implementation does not constitute an actual linguistic or pedagogical review, does not change the `DRAFT`/`OUTLINE_ONLY` source bundle, and does not by itself complete M6's outstanding independent-review acceptance criteria.
+
 ### Next: M6
 
 ---
@@ -327,6 +331,7 @@ Generator repair verification:
 
 Original M6 content acceptance still outstanding:
 
+- [ ] Production M6 authorization is bound to a verified genuine M5 approval snapshot (synthetic test fixtures do not satisfy this gate)
 - [ ] At least 10 complete lessons generated
 - [ ] All lessons pass schema validation
 - [ ] All lessons have correct prerequisites

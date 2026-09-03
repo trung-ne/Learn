@@ -1,0 +1,164 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/curriculum-review-manifest.schema.json",
+  "title": "English Master M5 independent-review manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "manifest_id", "curriculum_version", "taxonomy_version", "source_registry", "artifacts", "taxonomy_scope", "annotation_scope", "required_review_roles", "validation_policy", "source_bundle_policy"],
+  "properties": {
+    "schema_version": {"const": "2.0"},
+    "record_type": {"const": "curriculum_review_manifest"},
+    "manifest_id": {"type": "string", "pattern": "^m5manifest_[a-f0-9]{64}$"},
+    "curriculum_version": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+    "taxonomy_version": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+    "source_registry": {"$ref": "#/$defs/sourceRegistryBinding"},
+    "artifacts": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "prefixItems": [
+        {
+          "allOf": [
+            {"$ref": "#/$defs/artifact"},
+            {"properties": {"role": {"const": "STRUCTURE"}, "schema_name": {"const": "curriculum-manifest"}}}
+          ]
+        },
+        {
+          "allOf": [
+            {"$ref": "#/$defs/artifact"},
+            {"properties": {"role": {"const": "GRAPH"}, "schema_name": {"const": "curriculum-graph"}}}
+          ]
+        },
+        {
+          "allOf": [
+            {"$ref": "#/$defs/artifact"},
+            {"properties": {"role": {"const": "COVERAGE"}, "schema_name": {"const": "curriculum-coverage-roadmap"}}}
+          ]
+        },
+        {
+          "allOf": [
+            {"$ref": "#/$defs/artifact"},
+            {"properties": {"role": {"const": "TAXONOMY"}, "schema_name": {"const": "taxonomy"}}}
+          ]
+        }
+      ],
+      "items": false
+    },
+    "taxonomy_scope": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/taxonomyRecord"}
+    },
+    "annotation_scope": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/annotationRecord"}
+    },
+    "required_review_roles": {
+      "const": ["LINGUISTIC", "PEDAGOGICAL"]
+    },
+    "validation_policy": {"$ref": "#/$defs/validationPolicy"},
+    "source_bundle_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["m5_records_remain_unchanged", "taxonomy_statuses_remain_draft", "lesson_outlines_remain_outline_only", "content_generation_permitted_by_manifest"],
+      "properties": {
+        "m5_records_remain_unchanged": {"const": true},
+        "taxonomy_statuses_remain_draft": {"const": true},
+        "lesson_outlines_remain_outline_only": {"const": true},
+        "content_generation_permitted_by_manifest": {"const": false}
+      }
+    }
+  },
+  "$defs": {
+    "validationPolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["profile", "semantic_validator_version", "canonicalization_profile", "required_checklists", "schema_bindings"],
+      "properties": {
+        "profile": {"const": "M5_INDEPENDENT_REVIEW_V2"},
+        "semantic_validator_version": {"const": "2.0"},
+        "canonicalization_profile": {"const": "SORTED_COMPACT_JSON_V1"},
+        "required_checklists": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["LINGUISTIC", "PEDAGOGICAL"],
+          "properties": {
+            "LINGUISTIC": {"const": ["CEFR_ALIGNMENT", "LINGUISTIC_ACCURACY", "DEPENDENCY_SOUNDNESS", "VOCABULARY_SENSE_INTEGRITY", "VIETNAMESE_LEARNER_RELEVANCE"]},
+            "PEDAGOGICAL": {"const": ["PEDAGOGICAL_SEQUENCE", "OBJECTIVE_COHERENCE", "SKILL_BALANCE", "REVIEW_SPIRAL", "ASSESSMENT_ALIGNMENT", "SCOPE_AND_HOURS_CREDIBILITY"]}
+          }
+        },
+        "schema_bindings": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/schemaBinding"}
+        }
+      }
+    },
+    "schemaBinding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["logical_path", "sha256"],
+      "properties": {
+        "logical_path": {"type": "string", "pattern": "^schemas/[A-Za-z0-9-]+\\.schema\\.json$"},
+        "sha256": {"$ref": "common.schema.json#/$defs/sha256"}
+      }
+    },
+    "sourceRegistryBinding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["logical_path", "schema_name", "schema_version", "sha256"],
+      "properties": {
+        "logical_path": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+        "schema_name": {"const": "source-registry"},
+        "schema_version": {"$ref": "common.schema.json#/$defs/schemaVersion"},
+        "sha256": {"$ref": "common.schema.json#/$defs/sha256"}
+      }
+    },
+    "artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["role", "logical_path", "schema_name", "sha256"],
+      "properties": {
+        "role": {"enum": ["STRUCTURE", "GRAPH", "COVERAGE", "TAXONOMY"]},
+        "logical_path": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+        "schema_name": {"enum": ["curriculum-manifest", "curriculum-graph", "curriculum-coverage-roadmap", "taxonomy"]},
+        "sha256": {"$ref": "common.schema.json#/$defs/sha256"}
+      }
+    },
+    "taxonomyRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "record_type", "source_status", "sha256"],
+      "properties": {
+        "id": {
+          "anyOf": [
+            {"$ref": "common.schema.json#/$defs/conceptId"},
+            {"$ref": "common.schema.json#/$defs/vocabularySenseId"}
+          ]
+        },
+        "record_type": {"enum": ["TAXONOMY_CONCEPT", "VOCABULARY_SENSE"]},
+        "source_status": {"const": "DRAFT"},
+        "sha256": {"$ref": "common.schema.json#/$defs/sha256"}
+      }
+    },
+    "annotationRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "target_id", "annotation_kind", "source_status", "sha256"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^vi_annotation_[a-z0-9]+(?:_[a-z0-9]+)*$"},
+        "target_id": {
+          "anyOf": [
+            {"$ref": "common.schema.json#/$defs/conceptId"},
+            {"$ref": "common.schema.json#/$defs/vocabularySenseId"}
+          ]
+        },
+        "annotation_kind": {"enum": ["RESEARCH_CLAIM", "PEDAGOGICAL_OBSERVATION"]},
+        "source_status": {"const": "DRAFT"},
+        "sha256": {"$ref": "common.schema.json#/$defs/sha256"}
+      }
+    }
+  }
+}

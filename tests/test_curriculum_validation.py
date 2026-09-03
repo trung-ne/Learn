@@ -172,6 +172,48 @@ def test_coverage_gaps_unknown_nodes_and_ordering_fail(valid_bundle: CurriculumB
     assert "COVERAGE_ORDER" in codes(changed(valid_bundle, coverage=coverage))
 
 
+def test_coverage_placements_must_declare_the_dimension(valid_bundle: CurriculumBundle) -> None:
+    coverage = deepcopy(valid_bundle.coverage)
+    coverage["dimensions"][8]["introduced_at"] = "A2-U03-L02"
+    issues = validate_bundle(changed(valid_bundle, coverage=coverage)).issues
+    assert any(
+        issue.code == "COVERAGE_DIMENSION_MISMATCH"
+        and issue.path == "$.coverage.dimensions[8].introduced_at"
+        for issue in issues
+    )
+
+    coverage = deepcopy(valid_bundle.coverage)
+    coverage["dimensions"][5]["developed_at"][0] = "A2-U04-L01"
+    issues = validate_bundle(changed(valid_bundle, coverage=coverage)).issues
+    assert any(
+        issue.code == "COVERAGE_DIMENSION_MISMATCH"
+        and issue.path == "$.coverage.dimensions[5].developed_at[0]"
+        for issue in issues
+    )
+
+    coverage = deepcopy(valid_bundle.coverage)
+    coverage["dimensions"][5]["reviewed_at"][0] = "B1-U05-REV"
+    issues = validate_bundle(changed(valid_bundle, coverage=coverage)).issues
+    assert any(
+        issue.code == "COVERAGE_DIMENSION_MISMATCH"
+        and issue.path == "$.coverage.dimensions[5].reviewed_at[0]"
+        for issue in issues
+    )
+
+
+def test_committed_coverage_nodes_match_declared_dimensions(valid_bundle: CurriculumBundle) -> None:
+    lessons = {lesson["id"]: lesson for lesson in valid_bundle.structure["lessons"]}
+    reviews = {review["id"]: review for review in valid_bundle.structure["reviews"]}
+    for row in valid_bundle.coverage["dimensions"]:
+        dimension = row["dimension"]
+        assert dimension in lessons[row["introduced_at"]]["dimensions"]
+        assert all(dimension in lessons[lesson_id]["dimensions"] for lesson_id in row["developed_at"])
+        assert all(
+            any(dimension in lessons[lesson_id]["dimensions"] for lesson_id in reviews[review_id]["review_lessons"])
+            for review_id in row["reviewed_at"]
+        )
+
+
 def test_graph_serialization_and_topology_are_deterministic(valid_bundle: CurriculumBundle) -> None:
     first = validate_bundle(valid_bundle)
     second = validate_bundle(load_bundle(STRUCTURE))

@@ -15,6 +15,11 @@ def sha256_json(value: Any) -> str:
     return hashlib.sha256(canonical_json(value).encode("utf-8")).hexdigest()
 
 
+def sha256_text(value: str) -> str:
+    """Hash the exact UTF-8 text passed to a provider boundary."""
+    return hashlib.sha256(value.encode("utf-8")).hexdigest()
+
+
 def identity(prefix: str, value: Mapping[str, Any], identity_field: str) -> str:
     payload = dict(value)
     payload.pop(identity_field, None)

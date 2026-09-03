@@ -75,7 +75,7 @@ The coverage roadmap has exactly one row for each required dimension:
 - grammar, vocabulary senses, collocations, lexical chunks, pronunciation;
 - communicative functions, topics, discourse, pragmatics, and assessment capabilities.
 
-Every row declares one introduction lesson, later development lesson(s), and later review node(s). Placements are original planning decisions with explicit confidence and remain subject to curriculum review.
+Every row declares one introduction lesson, later development lesson(s), and later review node(s). Every introduction and development lesson must declare the row's dimension, and each review node must review at least one lesson that declares it. Placements are original planning decisions with explicit confidence and remain subject to curriculum review.
 
 ## Offline validation
 
@@ -98,4 +98,16 @@ The installed equivalent is:
 english-master-curriculum-validate curriculum/structure.json
 ```
 
-The validator returns nonzero for schema errors, hierarchy or deterministic-ID violations, duplicate IDs or edges, missing references, unauthorized dependencies, parent mismatches, non-earlier prerequisites, ordering cycles, unresolved or premature reviews, graph drift, nondeterministic serialization/topology, coverage gaps, and version mismatches. All operation is local and offline.
+The validator returns nonzero for schema errors, hierarchy or deterministic-ID violations, duplicate IDs or edges, missing references, unauthorized dependencies, parent mismatches, non-earlier prerequisites, ordering cycles, unresolved or premature reviews, graph drift, nondeterministic serialization/topology, coverage gaps or dimension-placement mismatches, and version mismatches. All operation is local and offline.
+
+## Independent human review snapshots
+
+The M5 review workflow prepares a canonical hash manifest, independently loads and binds the source registry, rejects taxonomy or Vietnamese-annotation citations whose source is missing or ineligible for reference, validates distinct linguistic and pedagogical human submissions against the complete taxonomy and annotation scopes, atomically publishes an immutable approval overlay, and verifies that overlay against current source and registry values. Reviewed annotations remain contextual evidence and do not enter the approved-taxonomy generation-authority set. The workflow never edits `OUTLINE_ONLY` structure records or `DRAFT` taxonomy records, and the manifest itself does not authorize content generation.
+
+No real review or approval snapshot is committed by this implementation. See [M5_REVIEW_WORKFLOW.md](M5_REVIEW_WORKFLOW.md) for trust boundaries, forms, commands, checklist criteria, revision handling, storage layout, and exit codes.
+
+```bash
+python -m english_master.curriculum_review prepare curriculum/structure.json --source-registry sources/registry.yaml --output <new-manifest-directory>
+python -m english_master.curriculum_review publish curriculum/structure.json --source-registry sources/registry.yaml --manifest <manifest.json> --linguistic-review <review.json> --pedagogical-review <review.json> --reviewer-registry <trusted-reviewer-registry.json> --approved-at <ISO-8601> --published-by <publisher-id> --output <new-snapshot-directory>
+python -m english_master.curriculum_review verify curriculum/structure.json --source-registry sources/registry.yaml --snapshot <snapshot-directory> --reviewer-registry <trusted-reviewer-registry.json>
+```

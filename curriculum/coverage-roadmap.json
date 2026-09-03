@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "curriculum_version": "20260902",
+  "curriculum_version": "20260903",
   "scope": "COMPACT_M5_ARCHITECTURE_ROADMAP",
   "dimensions": [
     {
@@ -82,7 +82,7 @@
       "dimension": "mediation",
       "introduced_at": "A2-U03-L01",
       "developed_at": [
-        "A2-U04-L01",
+        "A2-U03-L02",
         "C2-U12-L02"
       ],
       "reviewed_at": [
@@ -112,7 +112,7 @@
       "dimension": "vocabulary_senses",
       "introduced_at": "A1-U02-L01",
       "developed_at": [
-        "A2-U03-L01",
+        "A1-U02-L02",
         "C2-U12-L02"
       ],
       "reviewed_at": [
@@ -127,7 +127,7 @@
       "dimension": "collocations",
       "introduced_at": "A2-U04-L01",
       "developed_at": [
-        "B1-U05-L01",
+        "B2-U08-L01",
         "C2-U12-L02"
       ],
       "reviewed_at": [
@@ -142,7 +142,7 @@
       "dimension": "lexical_chunks",
       "introduced_at": "A2-U03-L01",
       "developed_at": [
-        "A2-U04-L01",
+        "B2-U08-L01",
         "C2-U12-L02"
       ],
       "reviewed_at": [
@@ -187,7 +187,7 @@
       "dimension": "topics",
       "introduced_at": "A1-U01-L01",
       "developed_at": [
-        "A1-U02-L01",
+        "A1-U02-L02",
         "C2-U12-L02"
       ],
       "reviewed_at": [
@@ -217,7 +217,7 @@
       "dimension": "pragmatics",
       "introduced_at": "A2-U03-L02",
       "developed_at": [
-        "A2-U04-L02",
+        "B1-U06-L02",
         "C2-U12-L02"
       ],
       "reviewed_at": [
@@ -232,7 +232,7 @@
       "dimension": "assessment_capabilities",
       "introduced_at": "A2-U03-L02",
       "developed_at": [
-        "A2-U04-L02",
+        "B2-U08-L02",
         "C2-U12-L02"
       ],
       "reviewed_at": [
