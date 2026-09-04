@@ -341,11 +341,19 @@ The development lane may use a separately verified M5 development snapshot, two 
 
 M7 first independently revalidates the exact M5 development snapshot and the complete M6 `DEVELOPMENT_APPROVED` batch, then reconstructs scope from the selected lesson. It rejects request/authorization drift before backend invocation. The backend supplies only untrusted authored item payloads; host code injects identifiers, hashes, provenance decisions, status, and metadata.
 
-Every candidate is checked for schema shape, lesson/reference scope, CEFR/prerequisite constraints, type-specific answer and ambiguity rules, deterministic exact/near duplicates, workload limits, original authored provenance, no external-media use, and M8 leakage. Passing machine checks publish only a complete atomic `UNREVIEWED` set plus an audit that names all outstanding independent review categories. Speaking and writing receive rubrics, not fictional exact answers. The initial M7 policy uses original inline text and transcript-only listening, so no external text/audio/video permission is exercised; a future external stimulus must separately prove source approval, provenance, attribution, and every relevant operation permission.
+Every candidate is checked for schema shape, lesson/reference scope, CEFR/prerequisite constraints, type-specific answer and ambiguity rules, deterministic exact/near duplicates, workload limits, original authored provenance, no external-media use, and later-milestone scope leakage. Passing machine checks publish only a complete atomic `UNREVIEWED` set plus an audit that names all outstanding independent review categories. Speaking and writing receive rubrics, not fictional exact answers. The initial M7 policy uses original inline text and transcript-only listening, so no external text/audio/video permission is exercised; a future external stimulus must separately prove source approval, provenance, attribution, and every relevant operation permission.
 
 Separate AI linguistic and pedagogical review records may then hash-bind an accepted set and its immutable audit. A `SESSION_CAPTURED` or `PROVIDER_CAPTURED` AI record can provide development evidence only when its factual capture provenance, role-specific checklist, actual response hash, decision, findings, and limitations validate. `TEST_ONLY` and replay-only evidence cannot promote a batch. A complete ten-set batch with both roles can establish `DEVELOPMENT_APPROVED`, without changing generated content from `UNREVIEWED` or asserting human, release, or Internet-wide originality review.
 
 Automated M7 validation is not a human, release, or comprehensive language-quality decision. No Internet-wide plagiarism/copyright search is implied unless actually performed and recorded.
+
+### M8 QA Engine development gate
+
+M8 is a development-quality gate, not a replacement for deferred learner-facing AI practice prompts, M9 independent QA, M10 revision governance, human review, or release authority. It enforces this fixed order: generator, immutable candidate, schema QA, answer QA, CEFR QA, prerequisite QA, duplicate QA, language QA, then at most `DEVELOPMENT_APPROVED` evidence. Each stage publishes a hash-bound `PASS`, `FAIL`, `NOT_RUN`, or operational-error receipt. A failed content stage rejects the full candidate and makes later stages `NOT_RUN`.
+
+A rejected candidate is never edited in place or manually approved. Regeneration receives the original trusted authority and recorded repair constraints, then creates a new immutable attempt with a new identity, captured prompt/response hashes, and fresh candidate-bound AI review after machine QA passes. Retry limits are bounded and cannot relax QA criteria; retained rejection evidence records exhaustion. Replay, test, mock, unsupported, parameter-mismatched, or authentication-asserting capture evidence cannot promote a changed candidate. Underlying content remains `UNREVIEWED`; no machine or AI pass creates `APPROVED`, `HUMAN_REVIEWED`, or `RELEASE_APPROVED`.
+
+See [QA_ENGINE.md](QA_ENGINE.md).
 
 ## Content Review Status Levels
 

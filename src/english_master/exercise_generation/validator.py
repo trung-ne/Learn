@@ -12,7 +12,7 @@ from .authority import VerifiedM6DevelopmentAuthority
 from .builders import build_authorization, build_request
 from .models import ExerciseIssue, JsonObject
 
-M8_TERMS = ("ai tutor", "system prompt", "pronunciation evaluator", "spaced repetition", "placement test", "level test")
+LATER_MILESTONE_SCOPE_TERMS = ("ai tutor", "system prompt", "pronunciation evaluator", "spaced repetition", "placement test", "level test")
 
 
 def _issue(code: str, path: str, message: str) -> ExerciseIssue:
@@ -144,6 +144,29 @@ def _payload_issue(item: Mapping[str, Any], index: int) -> list[ExerciseIssue]:
         if payload.get("direction") not in {"vi_to_en","en_to_vi"}: issues.append(_issue("TRANSLATION_DIRECTION_INVALID",path,"direction must be vi_to_en or en_to_vi"))
     elif kind in {"reading","listening"}:
         required("stimulus" if kind=="reading" else "transcript", "questions", "answers", "origin")
+        questions, answers = payload.get("questions"), payload.get("answers")
+        question_ids = (
+            [item.get("id") for item in questions if isinstance(item, Mapping)]
+            if isinstance(questions, list)
+            else []
+        )
+        answer_ids = (
+            [item.get("question_id") for item in answers if isinstance(item, Mapping)]
+            if isinstance(answers, list)
+            else []
+        )
+        if (
+            not isinstance(questions, list)
+            or not isinstance(answers, list)
+            or not question_ids
+            or len(question_ids) != len(questions)
+            or len(answer_ids) != len(answers)
+            or any(not isinstance(value, str) or not value.strip() for value in question_ids + answer_ids)
+            or len(question_ids) != len(set(question_ids))
+            or len(answer_ids) != len(set(answer_ids))
+            or set(question_ids) != set(answer_ids)
+        ):
+            issues.append(_issue("COMPREHENSION_ANSWER_MAPPING_INVALID",path,"questions and answers must form one complete one-to-one question_id mapping"))
         if kind=="listening" and payload.get("media_required") is not False: issues.append(_issue("UNSUPPORTED_MEDIA",path,"listening must be transcript-only with media_required false"))
         if payload.get("origin")!="PROJECT_AUTHORED": issues.append(_issue("EXTERNAL_STIMULUS_FORBIDDEN",path,"only project-authored inline stimuli are allowed"))
     elif kind in {"speaking","writing"}:
@@ -179,7 +202,7 @@ def candidate_semantic_issues(request: Mapping[str, Any], candidate: Mapping[str
         if any(i < 0 or i >= len(spec["objectives"]) for i in item["objective_indices"]):
             issues.append(_issue("OBJECTIVE_ALIGNMENT",f"{path}.objective_indices","objective index is outside lesson objectives"))
         words=(item["title"]+" "+item["instructions"]+" "+str(item["payload"])).casefold()
-        if any(term.casefold() in words for term in M8_TERMS): issues.append(_issue("M8_LEAKAGE",path,"M8 or later-milestone behavior is forbidden"))
+        if any(term.casefold() in words for term in LATER_MILESTONE_SCOPE_TERMS): issues.append(_issue("LATER_MILESTONE_SCOPE_LEAKAGE",path,"later-milestone behavior is forbidden"))
         if any(term.casefold() in words for term in constraints["forbidden_terms"]): issues.append(_issue("FORBIDDEN_TERM",path,"contains a request-forbidden term"))
         normalized.append(re.sub(r"\W+"," ",words).strip())
         issues.extend(_payload_issue(item,index))

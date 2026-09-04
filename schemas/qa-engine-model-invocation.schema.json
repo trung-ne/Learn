@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/qa-engine-model-invocation.schema.json",
+  "title": "English Master M8 model invocation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "record_type", "invocation_id", "engine_run_id",
+    "purpose", "attempt_number", "candidate_attempt_id",
+    "parent_rejection_sha256", "qa_request_sha256",
+    "repair_constraints_sha256", "capture_mode", "reported_capture_mode",
+    "prompt", "prompt_sha256",
+    "response", "response_sha256", "provider", "model", "provider_run_id",
+    "parameters", "captured_parameters", "parameters_match", "seed", "captured_seed",
+    "seed_observed", "seed_match", "observed_at",
+    "reported_provider_authenticated", "provider_authenticated"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "qa_engine_model_invocation"},
+    "invocation_id": {"type": "string", "pattern": "^qaeinvoke_[a-f0-9]{64}$"},
+    "engine_run_id": {"type": "string", "pattern": "^qaerun_[a-f0-9]{64}$"},
+    "purpose": {"enum": ["REGENERATION", "SEMANTIC_REVIEW"]},
+    "attempt_number": {"type": "integer", "minimum": 1, "maximum": 3},
+    "candidate_attempt_id": {
+      "type": ["string", "null"],
+      "pattern": "^qaeattempt_[a-f0-9]{64}$"
+    },
+    "parent_rejection_sha256": {
+      "type": ["string", "null"],
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "qa_request_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "repair_constraints_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "capture_mode": {"enum": ["SESSION_CAPTURED", "PROVIDER_CAPTURED", "REPLAY_CAPTURED", "TEST_ONLY", "UNSUPPORTED"]},
+    "reported_capture_mode": {"type": "string", "minLength": 1},
+    "prompt": {"type": "string", "minLength": 1},
+    "prompt_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "response": {"type": "object"},
+    "response_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "provider": {"type": "string", "minLength": 1},
+    "model": {"type": "string", "minLength": 1},
+    "provider_run_id": {"type": "string", "minLength": 1},
+    "parameters": {"type": "object"},
+    "captured_parameters": {"type": ["object", "null"]},
+    "parameters_match": {"type": "boolean"},
+    "seed": {"type": ["integer", "null"]},
+    "captured_seed": {"type": ["integer", "null"]},
+    "seed_observed": {"type": "boolean"},
+    "seed_match": {"type": "boolean"},
+    "observed_at": {"$ref": "common.schema.json#/$defs/orderableDateTime"},
+    "reported_provider_authenticated": {"type": "boolean"},
+    "provider_authenticated": {"const": false}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"purpose": {"const": "REGENERATION"}}},
+      "then": {
+        "properties": {
+          "attempt_number": {"minimum": 2},
+          "candidate_attempt_id": {"type": "null"},
+          "parent_rejection_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"purpose": {"const": "SEMANTIC_REVIEW"}}},
+      "then": {
+        "properties": {
+          "candidate_attempt_id": {"type": "string", "pattern": "^qaeattempt_[a-f0-9]{64}$"}
+        }
+      }
+    }
+  ]
+}

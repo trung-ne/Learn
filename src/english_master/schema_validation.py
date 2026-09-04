@@ -71,6 +71,15 @@ SCHEMA_FILENAMES: dict[str, str] = {
     "exercise-generation-rejection": "exercise-generation-rejection.schema.json",
     "exercise-ai-review": "exercise-ai-review.schema.json",
     "exercise-development-batch": "exercise-development-batch.schema.json",
+    "qa-engine-request": "qa-engine-request.schema.json",
+    "qa-engine-model-invocation": "qa-engine-model-invocation.schema.json",
+    "qa-engine-candidate-attempt": "qa-engine-candidate-attempt.schema.json",
+    "qa-engine-stage-receipt": "qa-engine-stage-receipt.schema.json",
+    "qa-engine-ai-review": "qa-engine-ai-review.schema.json",
+    "qa-engine-rejection": "qa-engine-rejection.schema.json",
+    "qa-engine-decision": "qa-engine-decision.schema.json",
+    "qa-engine-operational-failure": "qa-engine-operational-failure.schema.json",
+    "qa-engine-run-manifest": "qa-engine-run-manifest.schema.json",
 }
 
 SOURCE_PERMISSION_PATHS: dict[str, tuple[str, ...]] = {

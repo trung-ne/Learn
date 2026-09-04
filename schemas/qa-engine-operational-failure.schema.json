@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/qa-engine-operational-failure.schema.json",
+  "title": "English Master M8 operational failure",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "record_type", "operational_failure_id", "engine_run_id",
+    "attempt_number", "candidate_attempt_id", "parent_rejection_sha256",
+    "invocation_id", "invocation_sha256", "ai_review_id", "ai_review_sha256",
+    "operation", "error_type", "message", "related_receipt_sha256s",
+    "occurred_at", "occurred_at_source"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "qa_engine_operational_failure"},
+    "operational_failure_id": {"type": "string", "pattern": "^qaeopfail_[a-f0-9]{64}$"},
+    "engine_run_id": {"type": "string", "pattern": "^qaerun_[a-f0-9]{64}$"},
+    "attempt_number": {"type": "integer", "minimum": 1, "maximum": 3},
+    "candidate_attempt_id": {
+      "type": ["string", "null"], "pattern": "^qaeattempt_[a-f0-9]{64}$"
+    },
+    "parent_rejection_sha256": {
+      "type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"
+    },
+    "invocation_id": {
+      "type": ["string", "null"], "pattern": "^qaeinvoke_[a-f0-9]{64}$"
+    },
+    "invocation_sha256": {
+      "type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"
+    },
+    "ai_review_id": {
+      "type": ["string", "null"], "pattern": "^qaeaireview_[a-f0-9]{64}$"
+    },
+    "ai_review_sha256": {
+      "type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"
+    },
+    "operation": {"enum": ["INITIAL_MATERIALIZATION", "CANDIDATE_GENERATION", "CANDIDATE_ASSEMBLY", "QA_STAGE", "AI_REVIEW_CAPTURE", "AI_REVIEW", "RECORD_CONSTRUCTION"]},
+    "error_type": {"type": "string", "minLength": 1},
+    "message": {"type": "string", "minLength": 1, "maxLength": 4000},
+    "related_receipt_sha256s": {
+      "type": "array", "maxItems": 6,
+      "items": {"$ref": "common.schema.json#/$defs/sha256"}, "uniqueItems": true
+    },
+    "occurred_at": {"$ref": "common.schema.json#/$defs/orderableDateTime"},
+    "occurred_at_source": {
+      "enum": ["OBSERVED_CLOCK", "LAST_KNOWN_SAFE_TIMESTAMP", "REQUEST_CREATED_AT"]
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"invocation_id": {"type": "null"}}},
+      "then": {"properties": {"invocation_sha256": {"type": "null"}}},
+      "else": {"properties": {"invocation_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}}}
+    },
+    {
+      "if": {"properties": {"ai_review_id": {"type": "null"}}},
+      "then": {"properties": {"ai_review_sha256": {"type": "null"}}},
+      "else": {"properties": {"ai_review_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}}}
+    }
+  ]
+}

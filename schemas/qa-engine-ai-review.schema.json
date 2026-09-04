@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/qa-engine-ai-review.schema.json",
+  "title": "English Master M8 candidate-bound AI review",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "record_type", "ai_review_id", "engine_run_id",
+    "candidate_attempt_id", "candidate_sha256", "qa_request_sha256",
+    "m7_batch_id", "machine_receipt_sha256s", "evidence_kind",
+    "invocation_id", "invocation_sha256", "source_review_sha256s",
+    "source_reviewed_ats",
+    "reviewer_type", "review_role", "independent_of_generation",
+    "criteria", "findings", "decision", "reviewed_at", "approval_tier",
+    "content_lifecycle_status", "human_reviewed", "release_approved",
+    "limitations"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "qa_engine_ai_review"},
+    "ai_review_id": {"type": "string", "pattern": "^qaeaireview_[a-f0-9]{64}$"},
+    "engine_run_id": {"type": "string", "pattern": "^qaerun_[a-f0-9]{64}$"},
+    "candidate_attempt_id": {"type": "string", "pattern": "^qaeattempt_[a-f0-9]{64}$"},
+    "candidate_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "qa_request_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "m7_batch_id": {"type": "string", "pattern": "^m7devbatch_[a-f0-9]{64}$"},
+    "machine_receipt_sha256s": {
+      "type": "array", "minItems": 5, "maxItems": 5,
+      "items": {"$ref": "common.schema.json#/$defs/sha256"}, "uniqueItems": true
+    },
+    "evidence_kind": {"enum": ["M8_CANDIDATE_BOUND", "M7_BOUND_LEGACY"]},
+    "invocation_id": {
+      "type": ["string", "null"], "pattern": "^qaeinvoke_[a-f0-9]{64}$"
+    },
+    "invocation_sha256": {
+      "type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"
+    },
+    "source_review_sha256s": {
+      "type": "array", "maxItems": 2,
+      "items": {"$ref": "common.schema.json#/$defs/sha256"}, "uniqueItems": true
+    },
+    "source_reviewed_ats": {
+      "type": "array", "maxItems": 2,
+      "items": {"$ref": "common.schema.json#/$defs/orderableDateTime"}, "uniqueItems": true
+    },
+    "reviewer_type": {"const": "AI"},
+    "review_role": {"const": "COMPREHENSIVE_AI_REVIEWER"},
+    "independent_of_generation": {"type": "boolean"},
+    "criteria": {
+      "type": "array", "minItems": 4, "maxItems": 4,
+      "prefixItems": [
+        {"$ref": "#/$defs/answerCriterion"},
+        {"$ref": "#/$defs/cefrCriterion"},
+        {"$ref": "#/$defs/prerequisiteCriterion"},
+        {"$ref": "#/$defs/languageCriterion"}
+      ],
+      "items": false
+    },
+    "findings": {"type": "array", "items": {"$ref": "#/$defs/issue"}},
+    "decision": {"enum": ["APPROVE", "REQUEST_REVISION"]},
+    "reviewed_at": {"$ref": "common.schema.json#/$defs/orderableDateTime"},
+    "approval_tier": {"const": "AI_REVIEWED"},
+    "content_lifecycle_status": {"const": "UNREVIEWED"},
+    "human_reviewed": {"const": false},
+    "release_approved": {"const": false},
+    "limitations": {
+      "type": "array", "minItems": 2,
+      "items": {"type": "string", "minLength": 1}, "uniqueItems": true
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"evidence_kind": {"const": "M8_CANDIDATE_BOUND"}}},
+      "then": {
+        "properties": {
+          "invocation_id": {"type": "string", "pattern": "^qaeinvoke_[a-f0-9]{64}$"},
+          "invocation_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+          "source_review_sha256s": {"maxItems": 0},
+          "source_reviewed_ats": {"maxItems": 0}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"evidence_kind": {"const": "M7_BOUND_LEGACY"}}},
+      "then": {
+        "properties": {
+          "invocation_id": {"type": "null"},
+          "invocation_sha256": {"type": "null"},
+          "source_review_sha256s": {"minItems": 2, "maxItems": 2},
+          "source_reviewed_ats": {"minItems": 2, "maxItems": 2}
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "criterionBase": {
+      "type": "object", "additionalProperties": false,
+      "required": ["criterion", "result", "rationale"],
+      "properties": {
+        "criterion": {"type": "string"},
+        "result": {"enum": ["PASS", "FAIL"]},
+        "rationale": {"type": "string", "minLength": 1, "maxLength": 4000}
+      }
+    },
+    "answerCriterion": {
+      "allOf": [
+        {"$ref": "#/$defs/criterionBase"},
+        {"properties": {"criterion": {"const": "ANSWER_ACCURACY_AND_AMBIGUITY"}}}
+      ]
+    },
+    "cefrCriterion": {
+      "allOf": [
+        {"$ref": "#/$defs/criterionBase"},
+        {"properties": {"criterion": {"const": "CEFR_SEMANTIC_ALIGNMENT"}}}
+      ]
+    },
+    "prerequisiteCriterion": {
+      "allOf": [
+        {"$ref": "#/$defs/criterionBase"},
+        {"properties": {"criterion": {"const": "PREREQUISITE_OBJECTIVE_ALIGNMENT"}}}
+      ]
+    },
+    "languageCriterion": {
+      "allOf": [
+        {"$ref": "#/$defs/criterionBase"},
+        {"properties": {"criterion": {"const": "LANGUAGE_QUALITY"}}}
+      ]
+    },
+    "issue": {
+      "type": "object", "additionalProperties": false,
+      "required": ["code", "path", "message", "severity"],
+      "properties": {
+        "code": {"type": "string", "pattern": "^[A-Z0-9_]+$"},
+        "path": {"type": "string", "minLength": 1},
+        "message": {"type": "string", "minLength": 1, "maxLength": 4000},
+        "severity": {"enum": ["INFO", "MINOR", "MAJOR", "CRITICAL"]}
+      }
+    }
+  }
+}

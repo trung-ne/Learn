@@ -2,7 +2,7 @@
 
 English Master is a reproducible, self-study English learning-system pipeline for CEFR A1 through C2. Its primary learners are Vietnamese learners of English.
 
-## Current scope: M0 through M7 development complete; M8 has not started
+## Current scope: M0 through M8 development infrastructure complete
 
 The completed foundation provides:
 
@@ -16,6 +16,7 @@ The completed foundation provides:
 - A compact A1.1-C2.2 curriculum architecture with globally numbered units, outline-only lessons, review nodes, typed dependency edges, and machine-readable dimension coverage.
 - An offline curriculum validator that reuses the schema engine and enforces hierarchy, taxonomy-review gates, references, ordering, DAG, review, coverage, and reproducibility rules.
 - A provider-neutral M6 generation boundary and separate, hash-bound development approval lane. It independently loads M5 artifacts and source authority; derives scope; injects trusted metadata; emits stage-aware audits; retains factual AI-review evidence; and uses atomic no-overwrite artifact bundles. `DEVELOPMENT_APPROVED`, if earned, never means human review or release approval.
+- An M8 QA Engine development gate that records ordered schema, answer, CEFR, prerequisite, duplicate, and candidate-bound AI language QA receipts; failures create immutable rejection and regeneration lineage rather than editing candidates. Successful decisions are `DEVELOPMENT_APPROVED` only and keep content `UNREVIEWED`.
 - Data-lifecycle directory scaffolding and Git protections.
 
 M3 is ingestion infrastructure, not a corpus project. M4 adds deterministic normalization and review-oriented deduplication only. M5 adds architecture and dependency planning only. M6 adds constrained lesson generation and an independent development lane; it does not automatically approve lessons, exercises, assessments, or AI prompts. These stages do not crawl websites or bulk-download data or media. The committed ingestion fixture sentences are invented and explicitly used only to test the documented Tatoeba-shaped input path. The strict human/release lane still rejects the DRAFT M5 source bundle without genuine independent human evidence. The separate M5 development snapshot may authorize bounded M6 development only, preserving those source states and never creating human/release claims.
@@ -190,10 +191,26 @@ python -m english_master.exercise_generate \
 
 The command exits `0` when a complete unreviewed set is published, `1` for content rejection, and `2` for authority/setup/persistence failure. See [docs/EXERCISE_GENERATION.md](docs/EXERCISE_GENERATION.md) for type-specific contracts, QA limits, and future external-media requirements.
 
+## Run M8 QA Engine
+
+M8 independently revalidates the exact M5-M7 development authority, executes six fixed QA stages, and atomically publishes a complete `DEVELOPMENT_APPROVED`, `REJECTED`, or `OPERATIONAL_FAILURE` run. Content remains `UNREVIEWED`; M8 does not assert human review, release approval, provider authentication, or an Internet-wide originality search.
+
+```bash
+python -m english_master.qa_engine run \
+  --lesson-id A1-U01-L01 \
+  --created-at 2026-09-04T10:00:00Z \
+  --output-dir <new-immutable-run-directory>
+
+python -m english_master.qa_engine verify \
+  --run-dir <immutable-run-directory>
+```
+
+Static response documents supplied through `--regeneration-captures` or `--review-captures` are replay-only evidence and cannot promote a changed candidate. See [docs/QA_ENGINE.md](docs/QA_ENGINE.md) for evidence, retry, and verification constraints.
+
 ## Layout
 
 - `schemas/` — authoritative Draft 2020-12 JSON Schemas.
-- `src/english_master/` — typed validation, ingestion, normalization, deduplication, M5 curriculum-graph, M6 lesson-generation, and M7 exercise-generation utilities.
+- `src/english_master/` — typed validation, ingestion, normalization, deduplication, M5 curriculum-graph, M6 lesson-generation, M7 exercise-generation, and M8 QA Engine utilities.
 - `tests/fixtures/` — small, invented validation, ingestion, and M6 offline test examples; taxonomy tests use the authored prototype.
 - `sources/` — M1 registry metadata, official evidence summary, and source-operation policy; no source payloads.
 - `data/raw/`, `data/normalized/`, `data/quarantine/` — local M3 run payloads and audit records, ignored by Git except scaffolding.

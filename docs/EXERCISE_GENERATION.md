@@ -4,7 +4,7 @@
 
 M7 consumes only a reverified M6 `DEVELOPMENT_APPROVED` batch and produces lesson-bound exercise sets. It is a development lane: an accepted set and its exercises remain `UNREVIEWED`. Machine validation, recorded AI review, and any future human/release review are distinct evidence; no M7 command can emit `APPROVED`, `HUMAN_REVIEWED`, or `RELEASE_APPROVED`.
 
-M7 does not create AI practice prompts, pronunciation evaluators, web/mobile features, spaced-repetition schedules, assessments, or M8 artifacts.
+M7 does not create AI practice prompts, pronunciation evaluators, web/mobile features, spaced-repetition schedules, assessments, or later-milestone artifacts.
 
 ## Authority and request
 
@@ -22,7 +22,7 @@ A future external stimulus/media feature must remain opt-in and fail closed: it 
 
 The backend candidate and semantic validator support: multiple choice, fill blank, matching, ordering, error correction, sentence construction, translation, reading, listening, speaking, and writing. Objective tasks carry complete answer/scoring data. Speaking and writing use analytic rubrics and remain reviewable rather than asserting one exact answer. Listening requires an authored inline transcript and `media_required: false`.
 
-The validator checks schema, authority/request reconstruction, scope, CEFR/prerequisite constraints, answer shape, type-specific invariants, duplicate/near-duplicate padding, bounded workload, authored provenance, and M8 exclusion. It records outstanding CEFR, grammar/lexical, language-quality, and pedagogical reviews rather than pretending automated checks replace them.
+The validator checks schema, authority/request reconstruction, scope, CEFR/prerequisite constraints, answer shape, type-specific invariants, duplicate/near-duplicate padding, bounded workload, authored provenance, and later-milestone scope exclusion. It records outstanding CEFR, grammar/lexical, language-quality, and pedagogical reviews rather than pretending automated checks replace them.
 
 ## Independent AI development review
 
@@ -53,4 +53,4 @@ python -m english_master.exercise_development_batch \
   --output-dir curriculum/exercises/development-batches/20260903-v3
 ```
 
-The verified batch contains ten five-exercise sets (50 exercises) and covers all eleven supported types. It independently reapplies final set schema, identity, scope, type, duplicate, provenance, and M8-exclusion checks before treating the batch's AI evidence as development approval. It remains neither human review nor release approval.
+The verified batch contains ten five-exercise sets (50 exercises) and covers all eleven supported types. It independently reapplies final set schema, identity, scope, type, duplicate, provenance, and later-milestone scope-exclusion checks before treating the batch's AI evidence as development approval. It remains neither human review nor release approval.

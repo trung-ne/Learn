@@ -73,11 +73,11 @@ def test_multiple_choice_multiple_primary_or_duplicate_option_is_rejected() -> N
     assert "MCQ_DISTRACTOR_INVALID" in {item["code"] for item in result.audit["qa_issues_found"]}
 
 
-def test_unsupported_media_and_m8_leakage_are_rejected() -> None:
+def test_unsupported_media_and_later_milestone_scope_leakage_are_rejected() -> None:
     value = candidate(); value["items"][0]["instructions"] = "Ask an AI tutor to evaluate pronunciation."
     _, result, _ = run(value)
     assert not result.accepted
-    assert "M8_LEAKAGE" in {item["code"] for item in result.audit["qa_issues_found"]}
+    assert "LATER_MILESTONE_SCOPE_LEAKAGE" in {item["code"] for item in result.audit["qa_issues_found"]}
 
 
 def test_all_supported_types_are_accepted_in_development_captures() -> None:
@@ -152,6 +152,24 @@ def test_final_set_revalidation_does_not_trust_a_passing_audit() -> None:
     exercise_set["output_sha256"] = sha256_json(base)
     exercise_set["exercise_set_id"] = f"m7set_{exercise_set['output_sha256']}"
     assert "REFERENCE_SCOPE_MISMATCH" in {issue.code for issue in _revalidate_exercise_set(exercise_set, verified)}
+
+
+def test_comprehension_questions_require_exact_answer_mapping() -> None:
+    verified = authority()
+    lesson_id = "B1-U05-L02"
+    captured = load_json(
+        DEVELOPMENT_CAPTURES / f"{lesson_id}.json"
+    )["content"]
+    reading = next(
+        item for item in captured["items"] if item["exercise_type"] == "reading"
+    )
+    reading["payload"]["answers"][0]["question_id"] = "unrelated"
+    request = build_request(
+        verified, build_authorization(verified), lesson_id
+    ).as_dict()
+    assert "COMPREHENSION_ANSWER_MAPPING_INVALID" in {
+        issue.code for issue in candidate_semantic_issues(request, captured)
+    }
 
 
 def test_subjective_rubric_rejects_duplicate_or_empty_dimensions() -> None:

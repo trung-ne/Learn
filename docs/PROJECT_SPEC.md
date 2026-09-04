@@ -267,14 +267,18 @@ Each lesson contains:
 
 ## Curriculum Lifecycle
 
-### Creation Phase (M5-M8)
+### Content Creation and Development QA (M5-M8)
 
 1. Curriculum structure designed (prerequisites, sequence)
 2. Lessons generated (content)
 3. Exercises generated (practice)
-4. Prompts generated (AI interaction)
+4. M8 development QA engine validates immutable exercise candidates
 
-### QA Phase (M9-M10)
+### Deferred future scope — AI practice prompts
+
+Learner-facing AI interaction prompts are deliberately deferred and require a separately assigned milestone before generation.
+
+### Independent QA and Revision Phase (M9-M10)
 
 1. Automated QA (schema, CEFR, prerequisites)
 2. Linguistic QA (grammar, vocabulary, authenticity)

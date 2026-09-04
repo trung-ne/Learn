@@ -362,7 +362,7 @@ Generate exercise sets only from a verified M6 development-approved lesson batch
 
 1. Strict M7 authorization/request/candidate/set/audit/rejection schemas and offline package/CLI
 2. Immutable lesson-bound exercise sets under `curriculum/exercises/`
-3. Type-specific answer, ambiguity, CEFR, prerequisite, duplicate, provenance, copyright, and M8-exclusion checks
+3. Type-specific answer, ambiguity, CEFR, prerequisite, duplicate, provenance, copyright, and later-milestone scope-exclusion checks
 4. Original authored offline captures and transcript-only listening fixtures; no external media payloads
 5. Tests, audit reports, and documented independent-review limits
 
@@ -381,42 +381,51 @@ Generate exercise sets only from a verified M6 development-approved lesson batch
 
 The 50-exercise / five-per-lesson figure is a development coverage target for the ten verified M6 lessons, not an approval criterion that overrides correctness, clarity, provenance, or pedagogical value.
 
-### Next: M8 only after M7 passes
+### Next: M8 — QA Engine; do not start it automatically
 
 ---
 
-## M8 — AI Practice Prompt Generation
+## M8 — QA Engine
 
-**Estimated Duration**: ~1-2 weeks
+**Status**: Complete — development-only infrastructure verified 2026-09-04; no human or release approval is claimed
 
 **Owner**: AI Agent (Claude/Codex)
 
 ### Scope
 
-Create AI-driven practice prompts for:
+Validate immutable M7 exercise candidates through the fixed order: schema, answer, CEFR, prerequisite, duplicate, and candidate-bound AI language QA. A content failure publishes immutable rejection evidence and may regenerate a new candidate under a strict attempt limit. A candidate is never edited in place and a failed gate is never manually waived.
 
-- Listening practice (AI reads, learner listens)
-- Speaking practice (AI prompts, learner speaks)
-- Pronunciation practice (AI checks pronunciation)
-- Writing tutoring (AI gives feedback)
+M8 independently reloads M5-M7 authority, retains prompts and raw responses for M8 invocations, enforces exact chronology and retry lineage, and publishes one atomic terminal run as `DEVELOPMENT_APPROVED`, `REJECTED`, or `OPERATIONAL_FAILURE`. A pass is development evidence only: exercise content remains `UNREVIEWED`.
 
 ### Deliverables
 
-1. prompts/ folder with JSON prompt templates
-2. Prompt generator (system role + template)
-3. Evaluation criteria per prompt
-4. Tests for prompt structure
-5. Sample prompt executions
+1. Strict request, candidate-attempt, stage-receipt, invocation, AI-review, rejection, operational-failure, decision, and run-manifest schemas
+2. Ordered offline QA orchestration with immutable bounded regeneration
+3. Learner-facing exact and normalized near-duplicate policy
+4. Atomic complete-run publication and independent run-directory verification
+5. Offline CLI, adversarial tests, and `prompts/M8_QA_ENGINE.md`
 
 ### Acceptance Criteria
 
-- [ ] At least 20 prompts created
-- [ ] Each prompt has clear communicative goal
-- [ ] Prompts reference correct vocabulary/grammar
-- [ ] Evaluation criteria are reasonable
-- [ ] Prompts can be used with Claude API
+- [x] Exact M5, M6, and M7 authority is independently revalidated
+- [x] All six stages enforce fixed sequence, reviewer type, and fail-fast `NOT_RUN` behavior
+- [x] Attempt 1 is the exact M7 set and retries bind the complete parent rejection and repair constraints
+- [x] Fresh regenerated candidates receive candidate-bound AI review after five passing machine stages
+- [x] Replay, test, mock, unsupported, or parameter-mismatched evidence cannot promote content
+- [x] Duplicate checks exclude volatile metadata while retaining learner-facing semantics
+- [x] Approved, rejected, and operational terminal bundles publish atomically and verify independently
+- [x] Exact timestamps, prompts, raw responses, identities, hashes, and record chronology fail closed
+- [x] Content remains `UNREVIEWED`; `human_reviewed` and `release_approved` remain false
+- [x] Focused and full applicable tests pass
+- [x] No M5, M6, or M7 immutable artifact is changed
 
-### Next: M9
+### Next: M9 only after an explicit request
+
+---
+
+## Deferred future scope — Learner-facing AI Practice Prompts
+
+This unnumbered scope is intentionally deferred. It may later create listening, speaking, pronunciation, and writing-tutor prompt templates with communicative goals and evaluation criteria, but it is not part of M8 and has not been implemented. It requires its own explicit request and milestone assignment before work begins.
 
 ---
 

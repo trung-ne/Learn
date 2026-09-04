@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/qa-engine-candidate-attempt.schema.json",
+  "title": "English Master M8 candidate attempt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "record_type", "candidate_attempt_id", "engine_run_id",
+    "attempt_number", "status", "candidate", "candidate_sha256",
+    "parent_rejection_sha256", "generation_provenance", "created_at"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "qa_engine_candidate_attempt"},
+    "candidate_attempt_id": {"type": "string", "pattern": "^qaeattempt_[a-f0-9]{64}$"},
+    "engine_run_id": {"type": "string", "pattern": "^qaerun_[a-f0-9]{64}$"},
+    "attempt_number": {"type": "integer", "minimum": 1, "maximum": 3},
+    "status": {"const": "CANDIDATE"},
+    "candidate": {"type": "object"},
+    "candidate_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "parent_rejection_sha256": {
+      "type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"
+    },
+    "generation_provenance": {
+      "type": "object", "additionalProperties": false,
+      "required": [
+        "origin", "source_sha256", "invocation_id", "invocation_sha256",
+        "capture_mode", "observed_at", "qa_request_sha256",
+        "repair_constraints_sha256", "provider_authenticated"
+      ],
+      "properties": {
+        "origin": {"enum": ["M7_AUTHORITY", "M8_REGENERATION"]},
+        "source_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+        "invocation_id": {
+          "type": ["string", "null"], "pattern": "^qaeinvoke_[a-f0-9]{64}$"
+        },
+        "invocation_sha256": {
+          "type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"
+        },
+        "capture_mode": {"enum": ["M7_AUTHORITY", "SESSION_CAPTURED", "PROVIDER_CAPTURED", "REPLAY_CAPTURED", "TEST_ONLY", "UNSUPPORTED"]},
+        "observed_at": {"$ref": "common.schema.json#/$defs/orderableDateTime"},
+        "qa_request_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+        "repair_constraints_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+        "provider_authenticated": {"const": false}
+      }
+    },
+    "created_at": {"$ref": "common.schema.json#/$defs/orderableDateTime"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"attempt_number": {"const": 1}}},
+      "then": {
+        "properties": {
+          "parent_rejection_sha256": {"type": "null"},
+          "generation_provenance": {
+            "properties": {
+              "origin": {"const": "M7_AUTHORITY"},
+              "invocation_id": {"type": "null"},
+              "invocation_sha256": {"type": "null"},
+              "capture_mode": {"const": "M7_AUTHORITY"}
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {"properties": {"attempt_number": {"minimum": 2}}},
+      "then": {
+        "properties": {
+          "parent_rejection_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+          "generation_provenance": {
+            "properties": {
+              "origin": {"const": "M8_REGENERATION"},
+              "invocation_id": {"type": "string", "pattern": "^qaeinvoke_[a-f0-9]{64}$"},
+              "invocation_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+            }
+          }
+        }
+      }
+    }
+  ]
+}

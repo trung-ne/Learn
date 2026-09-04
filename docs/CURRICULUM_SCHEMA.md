@@ -108,6 +108,10 @@ M7 uses separate authorization, request, narrow backend-candidate, exercise-set,
 
 The current M7 development policy permits only `PROJECT_AUTHORED` inline text and transcript-only listening (`media_required: false`), so no external media or text operation is authorized or exercised. The contracts explicitly support multiple choice, fill blank, matching, ordering, error correction, sentence construction, translation, reading, listening, speaking, and writing. Objective tasks need complete defensible answer data; subjective tasks require analytic rubrics and remain reviewable. Automated acceptance establishes only structural machine validation. Separate AI linguistic and pedagogical reviews may establish `AI_REVIEWED` development evidence for an unchanged set; a complete hash-bound batch may establish `DEVELOPMENT_APPROVED`. Neither changes an exercise's `UNREVIEWED` lifecycle status or claims human/release approval. See [EXERCISE_GENERATION.md](EXERCISE_GENERATION.md).
 
+## M8 QA Engine Contracts
+
+M8 uses strict request, candidate-attempt, stage-receipt, model-invocation, AI-review, rejection, operational-failure, decision, and terminal run-manifest records. Six ordered receipts represent schema, answer, CEFR, prerequisite, duplicate, and language QA. Each candidate and receipt is hash-bound; a failure records an immutable rejection and only a newly generated candidate revision can retry. Regenerated candidates bind an exact host-built prompt and raw response to their parent rejection and receive fresh candidate-bound AI review after machine stages pass. Replay, test, mock, unsupported, parameter-mismatched, and authentication-asserting evidence cannot promote a changed revision. A passing decision is `DEVELOPMENT_APPROVED` while its content lifecycle remains `UNREVIEWED`; every contract prohibits human/release claims. Complete approved, rejected, and operational runs are atomically published with a manifest and independently reverified. See [QA_ENGINE.md](QA_ENGINE.md).
+
 ## Core Models
 
 ### Skill

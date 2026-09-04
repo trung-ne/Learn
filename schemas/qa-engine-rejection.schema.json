@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/qa-engine-rejection.schema.json",
+  "title": "English Master M8 candidate rejection",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "record_type", "rejection_id", "engine_run_id",
+    "candidate_attempt_id", "candidate_sha256", "attempt_number", "reason",
+    "receipt_sha256s", "repair_constraints", "repair_constraints_sha256",
+    "rejected_at"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "qa_engine_rejection"},
+    "rejection_id": {"type": "string", "pattern": "^qaereject_[a-f0-9]{64}$"},
+    "engine_run_id": {"type": "string", "pattern": "^qaerun_[a-f0-9]{64}$"},
+    "candidate_attempt_id": {"type": "string", "pattern": "^qaeattempt_[a-f0-9]{64}$"},
+    "candidate_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "attempt_number": {"type": "integer", "minimum": 1, "maximum": 3},
+    "reason": {"enum": ["CONTENT_QA_FAILED", "NON_REPAIRABLE_AUTHORITY_FAILURE", "RETRY_LIMIT_EXHAUSTED"]},
+    "receipt_sha256s": {
+      "type": "array", "minItems": 6, "maxItems": 6,
+      "items": {"$ref": "common.schema.json#/$defs/sha256"}, "uniqueItems": true
+    },
+    "repair_constraints": {
+      "type": "array", "minItems": 1, "maxItems": 100, "uniqueItems": true,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["stage", "code", "path", "message"],
+        "properties": {
+          "stage": {"enum": ["SCHEMA", "ANSWER", "CEFR", "PREREQUISITE", "DUPLICATE", "LANGUAGE"]},
+          "code": {"type": "string", "pattern": "^[A-Z0-9_]+$"},
+          "path": {"type": "string", "minLength": 1},
+          "message": {"type": "string", "minLength": 1, "maxLength": 4000}
+        }
+      }
+    },
+    "repair_constraints_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "rejected_at": {"$ref": "common.schema.json#/$defs/orderableDateTime"}
+  }
+}

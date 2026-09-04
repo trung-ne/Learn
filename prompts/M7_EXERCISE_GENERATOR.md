@@ -127,7 +127,7 @@ No generator response may override lesson constraints. Out-of-scope output must 
 
 - Prompt specifies communicative goal, constraints, and expected output.
 - Use a clear rubric rather than pretending subjective output has one exact answer.
-- Do not generate M8 AI tutoring or evaluation prompts.
+- Do not generate later-milestone AI tutoring or evaluation prompts.
 
 ## QA pipeline
 
@@ -186,7 +186,7 @@ Use authored offline fixtures and a deterministic mock backend. Test:
 - fill-blank variants, translation alternatives, subjective rubrics, and ordering ambiguity;
 - duplicate exercises and padded repetition;
 - copyright/provenance failures for reading/listening stimuli;
-- M8 prompt leakage and unsupported media;
+- AI-practice-prompt and later-milestone leakage and unsupported media;
 - schema-invalid backend output;
 - atomic rejection and no partial publication;
 - independent QA status and audit metadata;
@@ -196,7 +196,7 @@ No live model, network request, bulk download, or external corpus is permitted i
 
 ## Explicit exclusions
 
-M7 does not generate AI practice prompts, speaking/pronunciation evaluation agents, web/mobile UI, spaced-repetition schedules, placement/level assessments beyond exercise records, or M8 and later milestone artifacts.
+M7 does not generate AI practice prompts, speaking/pronunciation evaluation agents, web/mobile UI, spaced-repetition schedules, placement/level assessments beyond exercise records, or later-milestone artifacts.
 
 ## Acceptance criteria
 
@@ -209,6 +209,6 @@ M7 does not generate AI practice prompts, speaking/pronunciation evaluation agen
 7. Invalid or low-quality output is rejected without partial publication.
 8. All generated content remains `UNREVIEWED` until independent QA.
 9. Offline tests and CLI checks pass.
-10. M8 and later milestones are not started.
+10. Later milestones are not started.
 
 Run the full applicable test suite, inspect exercises and QA reports, inspect the diff, verify every acceptance criterion, report PASS/FAIL and unresolved issues, then STOP.
