@@ -1,0 +1,7 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://english-master.local/schemas/ai-practice-audit.schema.json",
+  "title":"English Master M8.2 AI practice artifact audit","type":"object","additionalProperties":false,
+  "required":["schema_version","record_type","audit_id","prompt_artifact_id","artifact_sha256","checks","issues","result","qa_reviewer","qa_timestamp","limitations"],
+  "properties":{"schema_version":{"const":"1.0"},"record_type":{"const":"ai_practice_audit"},"audit_id":{"type":"string","pattern":"^aipaudit_[a-f0-9]{64}$"},"prompt_artifact_id":{"type":"string","pattern":"^aipprompt_[a-f0-9]{64}$"},"artifact_sha256":{"$ref":"common.schema.json#/$defs/sha256"},"checks":{"type":"array","minItems":1,"items":{"type":"string"},"uniqueItems":true},"issues":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["code","path","message"],"properties":{"code":{"type":"string","minLength":1},"path":{"type":"string","minLength":1},"message":{"type":"string","minLength":1}}}},"result":{"enum":["PASS","FAIL"]},"qa_reviewer":{"type":"string","minLength":1},"qa_timestamp":{"$ref":"common.schema.json#/$defs/orderableDateTime"},"limitations":{"type":"array","minItems":1,"items":{"type":"string","minLength":1}}}
+}

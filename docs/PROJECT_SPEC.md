@@ -272,11 +272,12 @@ Each lesson contains:
 1. Curriculum structure designed (prerequisites, sequence)
 2. Lessons generated (content)
 3. Exercises generated (practice)
-4. M8 development QA engine validates immutable exercise candidates
+4. M8.1 development QA engine validates immutable exercise candidates
+5. M8.2 generates and machine-validates a bounded lesson-specific AI-practice prompt pilot from verified M6 authority; prompts remain `UNREVIEWED`
 
-### Deferred future scope — AI practice prompts
+### M8.2 AI practice prompt pilot
 
-Learner-facing AI interaction prompts are deliberately deferred and require a separately assigned milestone before generation.
+M8.2 currently provides a closed ten-lesson × four-modality pilot with strict lesson/hash/scope binding, transcript privacy, interaction contracts, pronunciation audio-only assessment boundaries, writing draft-first feedback boundaries, provenance, and independent immutable-batch verification. It is development evidence only and does not start M9 or claim human/release approval. See [AI_PRACTICE_PILOT.md](AI_PRACTICE_PILOT.md).
 
 ### Independent QA and Revision Phase (M9-M10)
 

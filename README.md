@@ -17,6 +17,7 @@ The completed foundation provides:
 - An offline curriculum validator that reuses the schema engine and enforces hierarchy, taxonomy-review gates, references, ordering, DAG, review, coverage, and reproducibility rules.
 - A provider-neutral M6 generation boundary and separate, hash-bound development approval lane. It independently loads M5 artifacts and source authority; derives scope; injects trusted metadata; emits stage-aware audits; retains factual AI-review evidence; and uses atomic no-overwrite artifact bundles. `DEVELOPMENT_APPROVED`, if earned, never means human review or release approval.
 - An M8 QA Engine development gate that records ordered schema, answer, CEFR, prerequisite, duplicate, and candidate-bound AI language QA receipts; failures create immutable rejection and regeneration lineage rather than editing candidates. Successful decisions are `DEVELOPMENT_APPROVED` only and keep content `UNREVIEWED`.
+- An M8.2 immutable lesson-specific AI-practice pilot: forty M6-authority-bound listening, speaking, pronunciation, and writing protocols, independently reconstructed and machine-validated while content remains `UNREVIEWED`.
 - Data-lifecycle directory scaffolding and Git protections.
 
 M3 is ingestion infrastructure, not a corpus project. M4 adds deterministic normalization and review-oriented deduplication only. M5 adds architecture and dependency planning only. M6 adds constrained lesson generation and an independent development lane; it does not automatically approve lessons, exercises, assessments, or AI prompts. These stages do not crawl websites or bulk-download data or media. The committed ingestion fixture sentences are invented and explicitly used only to test the documented Tatoeba-shaped input path. The strict human/release lane still rejects the DRAFT M5 source bundle without genuine independent human evidence. The separate M5 development snapshot may authorize bounded M6 development only, preserving those source states and never creating human/release claims.
@@ -206,6 +207,20 @@ python -m english_master.qa_engine verify \
 ```
 
 Static response documents supplied through `--regeneration-captures` or `--review-captures` are replay-only evidence and cannot promote a changed candidate. See [docs/QA_ENGINE.md](docs/QA_ENGINE.md) for evidence, retry, and verification constraints.
+
+## Build and verify the M8.2 AI-practice pilot
+
+M8.2 builds exactly forty immutable lesson-specific prompt artifacts from the verified ten-lesson M6 development batch. It uses only original project-authored inline text; prompts remain `UNREVIEWED` and a successful pilot is only `MACHINE_VALIDATED`.
+
+```bash
+python -m english_master.ai_practice build-pilot \
+  --output-dir <new-immutable-pilot-directory>
+
+python -m english_master.ai_practice verify-pilot \
+  --pilot-dir curriculum/ai-practice/pilot-batches/20260905-v13
+```
+
+See [docs/AI_PRACTICE_PILOT.md](docs/AI_PRACTICE_PILOT.md) for the modality contracts, evidence limits, and tamper-resistant verification.
 
 ## Layout
 

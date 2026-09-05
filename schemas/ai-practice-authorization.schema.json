@@ -1,0 +1,15 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://english-master.local/schemas/ai-practice-authorization.schema.json",
+  "title":"English Master M8.2 AI practice authorization",
+  "type":"object","additionalProperties":false,
+  "required":["schema_version","record_type","authorization_id","m6_batch_id","m6_batch_sha256","snapshot_binding","lesson_bindings","policy","prompt_version","created_at"],
+  "properties":{
+    "schema_version":{"const":"1.0"},"record_type":{"const":"ai_practice_authorization"},
+    "authorization_id":{"type":"string","pattern":"^aipauth_[a-f0-9]{64}$"},"m6_batch_id":{"type":"string","minLength":1},
+    "m6_batch_sha256":{"$ref":"common.schema.json#/$defs/sha256"},"snapshot_binding":{"$ref":"lesson-generation-authorization.schema.json#/$defs/snapshotBinding"},
+    "lesson_bindings":{"type":"array","minItems":10,"maxItems":10,"uniqueItems":true,"items":{"type":"object","additionalProperties":false,"required":["lesson_id","lesson_sha256","audit_sha256"],"properties":{"lesson_id":{"$ref":"common.schema.json#/$defs/lessonId"},"lesson_sha256":{"$ref":"common.schema.json#/$defs/sha256"},"audit_sha256":{"$ref":"common.schema.json#/$defs/sha256"}}}},
+    "policy":{"type":"object","additionalProperties":false,"required":["authored_inline_text","external_text","external_media","provider_authenticated","human_reviewed","release_approved"],"properties":{"authored_inline_text":{"const":"REQUIRED"},"external_text":{"const":"FORBIDDEN"},"external_media":{"const":"FORBIDDEN"},"provider_authenticated":{"const":false},"human_reviewed":{"const":false},"release_approved":{"const":false}}},
+    "prompt_version":{"const":"M8_2_AI_PRACTICE_v9"},"created_at":{"$ref":"common.schema.json#/$defs/orderableDateTime"}
+  }
+}

@@ -387,7 +387,7 @@ The 50-exercise / five-per-lesson figure is a development coverage target for th
 
 ## M8 — QA Engine
 
-**Status**: Complete — development-only infrastructure verified 2026-09-04; no human or release approval is claimed
+**Status**: Complete for M8.1 QA Engine and M8.2 lesson-specific AI-practice pilot — development-only evidence verified 2026-09-04; no human or release approval is claimed
 
 **Owner**: AI Agent (Claude/Codex)
 
@@ -419,13 +419,15 @@ M8 independently reloads M5-M7 authority, retains prompts and raw responses for 
 - [x] Focused and full applicable tests pass
 - [x] No M5, M6, or M7 immutable artifact is changed
 
+## M8.2 — Lesson-Specific AI Practice Prompt Pilot
+
+**Status**: Complete — forty project-authored, M6-authority-bound prompt artifacts are machine-validated as development evidence only (verified 2026-09-04)
+
+M8.2 is an extension of M8, not M9. It creates four immutable lesson-specific protocols (listening, speaking roleplay, pronunciation, and writing) for each of the exact ten lessons in the verified M6 development batch. Every artifact remains `UNREVIEWED`; the batch can state only `MACHINE_VALIDATED` and never human review, release approval, provider authentication, live-provider behavior, external-media use, or an Internet-wide search.
+
+The pilot independently derives lesson scope, protects listening transcripts, enforces one-question interaction rules, makes pronunciation assessment audio-only with `NOT_ASSESSED` fallback, makes writing draft-first and bounded, and independently verifies a closed 10×4 inventory before atomic publication. See [AI_PRACTICE_PILOT.md](AI_PRACTICE_PILOT.md).
+
 ### Next: M9 only after an explicit request
-
----
-
-## Deferred future scope — Learner-facing AI Practice Prompts
-
-This unnumbered scope is intentionally deferred. It may later create listening, speaking, pronunciation, and writing-tutor prompt templates with communicative goals and evaluation criteria, but it is not part of M8 and has not been implemented. It requires its own explicit request and milestone assignment before work begins.
 
 ---
 

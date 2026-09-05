@@ -2,7 +2,7 @@
 
 ## Boundary
 
-M8 is the development gate after M7. It does not implement the deferred learner-facing AI practice prompts, replace M9 independent human QA, or perform M10 revision governance.
+M8.1 is the development gate after M7. M8.2 is the separate lesson-specific AI-practice prompt pilot documented in [AI_PRACTICE_PILOT.md](AI_PRACTICE_PILOT.md). Neither replaces M9 independent human QA or M10 revision governance.
 
 The engine processes only an independently reverified M7 `DEVELOPMENT_APPROVED` batch and keeps every candidate exercise set `UNREVIEWED`. Its strongest successful terminal evidence is `DEVELOPMENT_APPROVED`; it never emits content-lifecycle `APPROVED`, `HUMAN_REVIEWED`, or `RELEASE_APPROVED`.
 

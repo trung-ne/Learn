@@ -234,6 +234,9 @@ def validate_development_batch(report: Mapping[str, Any], m5: _VerifiedM5Base, b
     if tuple(item["lesson_id"] for item in report["lessons"]) != REQUIRED_DEVELOPMENT_LESSONS:
         issues.append(_issue("REQUIRED_LESSON_BATCH_MISMATCH", "$.lessons", "must contain exactly the required ten lessons in graph order"))
     root = bundle_root.resolve()
+    batch_created_at = _parse_timestamp(report.get("created_at"))
+    if batch_created_at is None:
+        issues.append(_issue("DEVELOPMENT_BATCH_CHRONOLOGY_INVALID", "$.created_at", "batch timestamp must be orderable"))
     seen_content: set[str] = set()
     from english_master.curriculum_review.loading import load_strict_document
     for index, entry in enumerate(report["lessons"]):
@@ -271,6 +274,9 @@ def validate_development_batch(report: Mapping[str, Any], m5: _VerifiedM5Base, b
             if sha256_json(review) != review_ref["sha256"] or review.get("review_role") != review_ref["review_role"]:
                 issues.append(_issue("AI_REVIEW_HASH_MISMATCH", f"$.lessons[{index}].ai_reviews", "review reference differs from file"))
             issues.extend(validate_ai_lesson_review(review, lesson, audit, m5))
+            reviewed_at = _parse_timestamp(review.get("reviewed_at"))
+            if batch_created_at is None or reviewed_at is None or batch_created_at < reviewed_at:
+                issues.append(_issue("DEVELOPMENT_BATCH_CHRONOLOGY_INVALID", f"$.lessons[{index}].ai_reviews", "batch approval must be at or after every required AI review"))
             roles.add(str(review.get("review_role")))
         if roles != set(AI_CHECKLIST_BY_ROLE):
             issues.append(_issue("AI_REVIEW_ROLE_COVERAGE", f"$.lessons[{index}].ai_reviews", "both independent AI review roles are required"))

@@ -112,6 +112,12 @@ The current M7 development policy permits only `PROJECT_AUTHORED` inline text an
 
 M8 uses strict request, candidate-attempt, stage-receipt, model-invocation, AI-review, rejection, operational-failure, decision, and terminal run-manifest records. Six ordered receipts represent schema, answer, CEFR, prerequisite, duplicate, and language QA. Each candidate and receipt is hash-bound; a failure records an immutable rejection and only a newly generated candidate revision can retry. Regenerated candidates bind an exact host-built prompt and raw response to their parent rejection and receive fresh candidate-bound AI review after machine stages pass. Replay, test, mock, unsupported, parameter-mismatched, and authentication-asserting evidence cannot promote a changed revision. A passing decision is `DEVELOPMENT_APPROVED` while its content lifecycle remains `UNREVIEWED`; every contract prohibits human/release claims. Complete approved, rejected, and operational runs are atomically published with a manifest and independently reverified. See [QA_ENGINE.md](QA_ENGINE.md).
 
+## M8.2 AI Practice Prompt Contracts
+
+M8.2 uses a separate authorization, lesson-derived request, typed lesson-bound prompt artifact, deterministic audit, and closed pilot-manifest family. It independently binds the M5 development snapshot, exact M6 development batch, every lesson/audit hash, CEFR, known/target reference partitions, communicative functions, pronunciation target context, prerequisite context, prompt version, and factual project-authored provenance. The legacy generic `ai-practice-prompt` schema remains a conceptual M0 model and is not used for M8.2 publication.
+
+The compact pilot has exactly ten lessons × four modalities. Its listening contract keeps transcripts private before an attempt and limits questions by turn; speaking uses explicit roles and turn bounds; pronunciation assessment requires audio and returns `NOT_ASSESSED` without it; writing is draft-first and forbids full replacement. A passing audit establishes only `MACHINE_VALIDATED`; every artifact remains `UNREVIEWED`, with `human_reviewed`, `release_approved`, and `provider_authenticated` false. See [AI_PRACTICE_PILOT.md](AI_PRACTICE_PILOT.md).
+
 ## Core Models
 
 ### Skill

@@ -149,6 +149,16 @@ def test_complete_ten_lesson_development_batch_passes_offline(tmp_path: Path) ->
     assert m7_eligibility_issues(report, authority, bundle_root) == ()
 
 
+def test_development_batch_cannot_predate_ai_review_evidence(tmp_path: Path) -> None:
+    authority, bundle_root, report = _complete_development_batch(tmp_path)
+    report["created_at"] = "2026-09-03T12:00:30Z"
+    _refresh_identity(report, "m6devbatch", "batch_id")
+
+    assert "DEVELOPMENT_BATCH_CHRONOLOGY_INVALID" in _issue_codes(
+        validate_development_batch(report, authority, bundle_root)
+    )
+
+
 def test_development_batch_requires_both_ai_roles(tmp_path: Path) -> None:
     authority, bundle_root, report = _complete_development_batch(tmp_path)
     report["lessons"][0]["ai_reviews"][1] = copy.deepcopy(report["lessons"][0]["ai_reviews"][0])

@@ -17,7 +17,12 @@ def schemas() -> dict[str, dict[str, object]]:
 def test_all_schema_files_are_loaded_and_metaschema_valid(schemas: dict[str, dict[str, object]]) -> None:
     files = sorted(path.name for path in schema_directory().glob("*.schema.json"))
     assert files == [
+        "ai-practice-audit.schema.json",
+        "ai-practice-authorization.schema.json",
+        "ai-practice-pilot-manifest.schema.json",
+        "ai-practice-prompt-artifact.schema.json",
         "ai-practice-prompt.schema.json",
+        "ai-practice-request.schema.json",
         "common.schema.json",
         "concept.schema.json",
         "coverage-matrix.schema.json",
