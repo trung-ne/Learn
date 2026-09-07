@@ -18,6 +18,7 @@ The completed foundation provides:
 - A provider-neutral M6 generation boundary and separate, hash-bound development approval lane. It independently loads M5 artifacts and source authority; derives scope; injects trusted metadata; emits stage-aware audits; retains factual AI-review evidence; and uses atomic no-overwrite artifact bundles. `DEVELOPMENT_APPROVED`, if earned, never means human review or release approval.
 - An M8 QA Engine development gate that records ordered schema, answer, CEFR, prerequisite, duplicate, and candidate-bound AI language QA receipts; failures create immutable rejection and regeneration lineage rather than editing candidates. Successful decisions are `DEVELOPMENT_APPROVED` only and keep content `UNREVIEWED`.
 - An M8.2 immutable lesson-specific AI-practice pilot: forty M6-authority-bound listening, speaking, pronunciation, and writing protocols, independently reconstructed and machine-validated while content remains `UNREVIEWED`.
+- M9 independent-review and M10 revision-governance contracts. Failed M9 evidence is non-promotable; M10 preserves predecessors and creates bounded, hash-bound successor attempts that require a fresh M9 review after static verification.
 - Data-lifecycle directory scaffolding and Git protections.
 
 M3 is ingestion infrastructure, not a corpus project. M4 adds deterministic normalization and review-oriented deduplication only. M5 adds architecture and dependency planning only. M6 adds constrained lesson generation and an independent development lane; it does not automatically approve lessons, exercises, assessments, or AI prompts. These stages do not crawl websites or bulk-download data or media. The committed ingestion fixture sentences are invented and explicitly used only to test the documented Tatoeba-shaped input path. The strict human/release lane still rejects the DRAFT M5 source bundle without genuine independent human evidence. The separate M5 development snapshot may authorize bounded M6 development only, preserving those source states and never creating human/release claims.
@@ -221,6 +222,23 @@ python -m english_master.ai_practice verify-pilot \
 ```
 
 See [docs/AI_PRACTICE_PILOT.md](docs/AI_PRACTICE_PILOT.md) for the modality contracts, evidence limits, and tamper-resistant verification.
+
+## Run M9 independent review
+
+M9 publishes an immutable development-evidence overlay over a declared representative sample spanning lessons, exercise sets, and all four M8.2 prompt modalities. It requires fresh static machine reports and two separately captured AI roles; underlying content remains `UNREVIEWED`.
+
+```bash
+python -m english_master.independent_review prepare-development \
+  --output-dir <new-prepared-directory>
+python -m english_master.independent_review publish-development \
+  --prepared-dir <prepared-directory> \
+  --capture-dir <real-ai-capture-directory> \
+  --output-dir <new-immutable-development-directory>
+python -m english_master.independent_review verify-development \
+  --batch-dir <immutable-development-directory>
+```
+
+The optional human/release lane is separate. No M9 development result claims `HUMAN_REVIEWED`, `RELEASE_APPROVED`, provider authentication, live-provider behavior, or an Internet-wide originality search. See [docs/M9_INDEPENDENT_REVIEW.md](docs/M9_INDEPENDENT_REVIEW.md).
 
 ## Layout
 

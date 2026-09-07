@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/m9-human-review-batch.schema.json",
+  "title": "English Master M9 human-reviewed overlay",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "batch_id", "development_batch_id", "development_batch_sha256", "reviewer_registry_id", "reviewer_registry_sha256", "reviews", "approval_tier", "created_at", "release_approved"],
+  "properties": {"schema_version": {"const": "1.0"}, "record_type": {"const": "m9_human_review_batch"}, "batch_id": {"type": "string", "pattern": "^m9humanbatch_[a-f0-9]{64}$"}, "development_batch_id": {"type": "string", "pattern": "^m9devbatch_[a-f0-9]{64}$"}, "development_batch_sha256": {"$ref": "common.schema.json#/$defs/sha256"}, "reviewer_registry_id": {"type": "string", "minLength": 1}, "reviewer_registry_sha256": {"$ref": "common.schema.json#/$defs/sha256"}, "reviews": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"$ref": "#/$defs/review"}, "uniqueItems": true}, "approval_tier": {"const": "HUMAN_REVIEWED"}, "created_at": {"$ref": "common.schema.json#/$defs/orderableDateTime"}, "release_approved": {"const": false}},
+  "$defs": {"review": {"type": "object", "additionalProperties": false, "required": ["review_role", "review_id", "sha256"], "properties": {"review_role": {"enum": ["LINGUISTIC", "PEDAGOGICAL"]}, "review_id": {"type": "string", "pattern": "^m9humanreview_[a-f0-9]{64}$"}, "sha256": {"$ref": "common.schema.json#/$defs/sha256"}}}}
+}

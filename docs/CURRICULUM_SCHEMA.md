@@ -118,6 +118,12 @@ M8.2 uses a separate authorization, lesson-derived request, typed lesson-bound p
 
 The compact pilot has exactly ten lessons × four modalities. Its listening contract keeps transcripts private before an attempt and limits questions by turn; speaking uses explicit roles and turn bounds; pronunciation assessment requires audio and returns `NOT_ASSESSED` without it; writing is draft-first and forbids full replacement. A passing audit establishes only `MACHINE_VALIDATED`; every artifact remains `UNREVIEWED`, with `human_reviewed`, `release_approved`, and `provider_authenticated` false. See [AI_PRACTICE_PILOT.md](AI_PRACTICE_PILOT.md).
 
+## M9 Independent Review and M10 Revision Contracts
+
+M9 overlays a declared representative sample of immutable M6, M7, and M8.2 artifacts. Fresh machine reports and independent AI linguistic and pedagogical captures may establish only `DEVELOPMENT_APPROVED` for a complete passing sample; the selected sample does not approve the unselected population. A failed M9 capture is not promotion evidence.
+
+M10 imports an actionable failed M9 capture only as a hash-bound `NON_PROMOTABLE` revision input. Finding batches and revision requests preserve exact artifact, report, prompt, response, and finding bindings while leaving the predecessor and all generated content `UNREVIEWED`. A governance run freezes the bounded retry budget before immutable candidate attempts; every candidate has an exact regeneration capture and six ordered static-verification receipts. Failures retain receipt hashes, repair constraints, and retryability in immutable rejection records. Successors must be new immutable artifacts, and M10 may end only `READY_FOR_FRESH_M9`, `RETRY_EXHAUSTED`, `ESCALATED`, or `OPERATIONAL_FAILURE`; it never creates human or release approval. See [M9_INDEPENDENT_REVIEW.md](M9_INDEPENDENT_REVIEW.md) and [M10_REVISION_CYCLE.md](M10_REVISION_CYCLE.md).
+
 ## Core Models
 
 ### Skill

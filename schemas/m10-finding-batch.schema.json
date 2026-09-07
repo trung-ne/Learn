@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/m10-finding-batch.schema.json",
+  "title": "English Master M10 immutable finding input batch",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "batch_id", "source_milestone", "evidence_purpose", "promotion_status", "selection_id", "selection_sha256", "machine_reports", "review_inputs", "inventory", "imported_at", "content_lifecycle_status", "human_reviewed", "release_approved", "provider_authenticated"],
+  "properties": {
+    "schema_version": {"const": "1.0"}, "record_type": {"const": "m10_finding_batch"}, "batch_id": {"type": "string", "pattern": "^m10findings_[a-f0-9]{64}$"}, "source_milestone": {"const": "M9"}, "evidence_purpose": {"const": "M10_REVISION_INPUT"}, "promotion_status": {"const": "NON_PROMOTABLE"}, "selection_id": {"type": "string", "pattern": "^m9select_[a-f0-9]{64}$"}, "selection_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "machine_reports": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/reference"}}, "review_inputs": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/reference"}}, "inventory": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/inventory"}}, "imported_at": {"$ref": "common.schema.json#/$defs/orderableDateTime"}, "content_lifecycle_status": {"const": "UNREVIEWED"}, "human_reviewed": {"const": false}, "release_approved": {"const": false}, "provider_authenticated": {"const": false}
+  },
+  "$defs": {"reference": {"type": "object", "additionalProperties": false, "required": ["path", "sha256"], "properties": {"path": {"type": "string", "pattern": "^(machine|inputs)/[a-z0-9._/-]+\\.json$"}, "sha256": {"$ref": "common.schema.json#/$defs/sha256"}}}, "inventory": {"type": "object", "additionalProperties": false, "required": ["path", "sha256"], "properties": {"path": {"type": "string", "pattern": "^(selection\\.json|(machine|inputs)/[a-z0-9._/-]+\\.json)$"}, "sha256": {"$ref": "common.schema.json#/$defs/sha256"}}}}
+}

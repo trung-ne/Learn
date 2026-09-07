@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/m9-release-decision.schema.json",
+  "title": "English Master M9 release decision",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "decision_id", "human_review_batch_id", "human_review_batch_sha256", "release_authority", "decision", "scope_is_complete_release_candidate", "released_at", "approval_tier"],
+  "properties": {"schema_version": {"const": "1.0"}, "record_type": {"const": "m9_release_decision"}, "decision_id": {"type": "string", "pattern": "^m9release_[a-f0-9]{64}$"}, "human_review_batch_id": {"type": "string", "pattern": "^m9humanbatch_[a-f0-9]{64}$"}, "human_review_batch_sha256": {"$ref": "common.schema.json#/$defs/sha256"}, "release_authority": {"type": "object", "additionalProperties": false, "required": ["authority_id", "evidence_reference"], "properties": {"authority_id": {"type": "string", "minLength": 1}, "evidence_reference": {"type": "string", "minLength": 1}}}, "decision": {"const": "APPROVE_RELEASE"}, "scope_is_complete_release_candidate": {"const": true}, "released_at": {"$ref": "common.schema.json#/$defs/orderableDateTime"}, "approval_tier": {"const": "RELEASE_APPROVED"}}
+}

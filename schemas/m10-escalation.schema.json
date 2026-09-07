@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/m10-escalation.schema.json",
+  "title": "English Master M10 non-retryable authority-conflict escalation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "escalation_id", "run", "finding_batch", "revision_request", "source_input", "conflict_code", "retryable", "authority_constraint", "conflicts", "required_resolution_boundary", "created_at", "content_lifecycle_status", "development_approved", "human_reviewed", "release_approved", "provider_authenticated"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "m10_escalation"},
+    "escalation_id": {"type": "string", "pattern": "^m10escalation_[a-f0-9]{64}$"},
+    "run": {"$ref": "#/$defs/idReference"},
+    "finding_batch": {"$ref": "#/$defs/idReference"},
+    "revision_request": {"$ref": "#/$defs/idReference"},
+    "source_input": {"$ref": "#/$defs/idReference"},
+    "conflict_code": {"const": "AUTHORITY_CONFLICT"},
+    "retryable": {"const": false},
+    "authority_constraint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["field_path", "authority_source", "authority_sha256", "required_value", "validator_code"],
+      "properties": {
+        "field_path": {"const": "/title"},
+        "authority_source": {"type": "string", "minLength": 1},
+        "authority_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+        "required_value": {"type": "string", "minLength": 1},
+        "validator_code": {"const": "LESSON_SPEC_MISMATCH"}
+      }
+    },
+    "conflicts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["finding_index", "field_path", "repair_requirement", "reason"],
+        "properties": {
+          "finding_index": {"type": "integer", "minimum": 0},
+          "field_path": {"const": "/title"},
+          "repair_requirement": {"type": "string", "minLength": 1},
+          "reason": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "required_resolution_boundary": {"type": "string", "minLength": 1},
+    "created_at": {"$ref": "common.schema.json#/$defs/orderableDateTime"},
+    "content_lifecycle_status": {"const": "UNREVIEWED"},
+    "development_approved": {"const": false},
+    "human_reviewed": {"const": false},
+    "release_approved": {"const": false},
+    "provider_authenticated": {"const": false}
+  },
+  "$defs": {
+    "idReference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "sha256"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "sha256": {"$ref": "common.schema.json#/$defs/sha256"}
+      }
+    }
+  }
+}

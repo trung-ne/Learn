@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/m10-candidate-attempt.schema.json",
+  "title": "English Master M10 immutable successor candidate attempt",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "record_type", "attempt_id", "run_id", "attempt_number", "revision_request", "predecessor", "candidate", "capture", "content_lifecycle_status", "development_approved", "human_reviewed", "release_approved", "provider_authenticated", "created_at"],
+  "properties": {
+    "schema_version": {"const": "1.0"}, "record_type": {"const": "m10_candidate_attempt"}, "attempt_id": {"type": "string", "pattern": "^m10attempt_[a-f0-9]{64}$"}, "run_id": {"type": "string", "pattern": "^m10run_[a-f0-9]{64}$"}, "attempt_number": {"type": "integer", "minimum": 1, "maximum": 3},
+    "revision_request": {"$ref": "#/$defs/reference"}, "predecessor": {"$ref": "#/$defs/reference"}, "parent_rejection": {"$ref": "#/$defs/reference"},
+    "candidate": {"type": "object", "additionalProperties": false, "required": ["artifact_sha256", "audit_sha256", "content_sha256"], "properties": {"artifact_sha256": {"$ref": "common.schema.json#/$defs/sha256"}, "audit_sha256": {"$ref": "common.schema.json#/$defs/sha256"}, "content_sha256": {"$ref": "common.schema.json#/$defs/sha256"}}},
+    "capture": {"$ref": "#/$defs/reference"}, "content_lifecycle_status": {"const": "UNREVIEWED"}, "development_approved": {"const": false}, "human_reviewed": {"const": false}, "release_approved": {"const": false}, "provider_authenticated": {"const": false}, "created_at": {"$ref": "common.schema.json#/$defs/orderableDateTime"}
+  },
+  "allOf": [{"if": {"properties": {"attempt_number": {"const": 1}}}, "then": {"not": {"required": ["parent_rejection"]}}}, {"if": {"properties": {"attempt_number": {"minimum": 2}}}, "then": {"required": ["parent_rejection"]}}],
+  "$defs": {"reference": {"type": "object", "additionalProperties": false, "required": ["id", "sha256"], "properties": {"id": {"type": "string", "minLength": 1}, "sha256": {"$ref": "common.schema.json#/$defs/sha256"}}}}
+}

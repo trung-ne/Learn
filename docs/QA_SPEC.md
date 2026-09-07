@@ -355,6 +355,14 @@ A rejected candidate is never edited in place or manually approved. Regeneration
 
 See [QA_ENGINE.md](QA_ENGINE.md).
 
+## M9 independent-review lanes
+
+M9 development evidence is a separate, bounded overlay over immutable generated artifacts. For a declared sample spanning lessons, exercise sets, and all four AI-practice modalities, fresh static machine QA plus separate AI linguistic and pedagogical review may establish only `DEVELOPMENT_APPROVED`. Every source artifact remains `UNREVIEWED`; the development lane does not require or simulate a human reviewer.
+
+M8.2 prompt checks and M9 prompt reviews inspect stored protocols only. They do not establish a live provider's turn handling, audio delivery, pronunciation scoring, writing feedback execution, or learner outcome.
+
+`HUMAN_REVIEWED` requires genuine registry-bound human evidence with verified identity, permitted role, qualification, independence/conflict evidence, exact immutable scope, and chronology. `RELEASE_APPROVED` requires a separate authorized release decision. AI evidence, a provider name, a checkbox, or a CLI argument cannot establish either claim. A representative sample cannot authorize release of unreviewed population members.
+
 ## Content Review Status Levels
 
 These statuses apply to generated content; they are distinct from source disposition statuses.

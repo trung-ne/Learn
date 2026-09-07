@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/m9-machine-qa-report.schema.json",
+  "title": "English Master M9 fresh machine QA report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "report_id", "selection_id", "subject_id", "content_type", "artifact_sha256", "machine_audit_sha256", "checks", "result", "review_scope", "limitations", "reviewed_at", "human_reviewed", "release_approved", "provider_authenticated"],
+  "properties": {
+    "schema_version": {"const": "1.0"}, "record_type": {"const": "m9_machine_qa_report"},
+    "report_id": {"type": "string", "pattern": "^m9machine_[a-f0-9]{64}$"}, "selection_id": {"type": "string", "pattern": "^m9select_[a-f0-9]{64}$"}, "subject_id": {"type": "string", "pattern": "^m9sub_[a-f0-9]{64}$"}, "content_type": {"enum": ["LESSON", "EXERCISE_SET", "AI_PRACTICE_PROMPT"]}, "artifact_sha256": {"$ref": "common.schema.json#/$defs/sha256"}, "machine_audit_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "checks": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/check"}}, "result": {"enum": ["PASS", "FAIL"]}, "review_scope": {"enum": ["STATIC_ARTIFACT", "STATIC_PROTOCOL"]}, "limitations": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}, "uniqueItems": true}, "reviewed_at": {"$ref": "common.schema.json#/$defs/orderableDateTime"}, "human_reviewed": {"const": false}, "release_approved": {"const": false}, "provider_authenticated": {"const": false}
+  },
+  "$defs": {"check": {"type": "object", "additionalProperties": false, "required": ["criterion", "result", "notes"], "properties": {"criterion": {"type": "string", "minLength": 1}, "result": {"enum": ["PASS", "FAIL", "NOT_RUN"]}, "notes": {"type": "string", "minLength": 1}}}}
+}

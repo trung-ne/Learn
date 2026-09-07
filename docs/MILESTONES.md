@@ -431,39 +431,41 @@ The pilot independently derives lesson scope, protects listening transcripts, en
 
 ---
 
-## M9 — Independent QA
+## M9 — Independent Review Layer
 
-**Estimated Duration**: ~2-4 weeks
+**Status**: Development lane implemented for a bounded representative sample; human/release lane is available only with genuine verified human evidence
 
-**Owner**: Human QA Team
+**Owner**: AI Agent (development lane) + optional Human QA Team (human/release lane)
 
 ### Scope
 
-Comprehensive QA review:
+M9 has two distinct lanes:
 
-1. Schema validation (automated)
-2. CEFR validation (sampled manual)
-3. Grammar/lexical validation (expert review)
-4. Pedagogical review (educator review)
-5. Copyright/provenance validation (automated)
-6. Language quality review (native speaker)
+1. **Development lane:** independently reload M5–M8.2 authority, run fresh static machine QA, then retain separate AI linguistic and pedagogical reviews before a hash-bound `DEVELOPMENT_APPROVED` overlay can be published.
+2. **Optional human/release lane:** after a verified development overlay, separately validate real registry-bound human linguistic and pedagogical review for `HUMAN_REVIEWED`; a distinct authorized release decision is required for `RELEASE_APPROVED`.
+
+The development lane never waits for a real person, never alters underlying content status, and never claims human review, release approval, provider authentication, live-provider behavior, or an Internet-wide originality search. It reviews lessons, exercise sets, listening prompts, speaking prompts, pronunciation prompts, and writing prompts. M8.2 prompt review is static-protocol review, not observed runtime behavior.
 
 ### Deliverables
 
-1. QA report for each content type
-2. Identified issues and recommendations
-3. Revision requests
-4. Revision tickets logged
+1. Hash-bound scope manifest and per-content-type machine QA reports
+2. Independent AI linguistic and pedagogical review evidence
+3. Immutable development batch and read-only verifier
+4. Optional human/release contracts and blank workflow documentation
+5. Lane-qualified QA reports and M10-consumable findings
 
-### Acceptance Criteria
+### Development acceptance criteria
 
-- [ ] All content paths reviewed
-- [ ] Critical issues identified
-- [ ] >95% content passes automated checks
-- [ ] >90% of sample manual review passes
-- [ ] Revision queue is prioritized
+- [ ] All required artifact types are represented by real immutable artifacts
+- [ ] Sample scope and its unreviewed population boundary are explicit
+- [ ] Fresh static checks, two AI roles, provenance, and closed inventory are hash-bound
+- [ ] Development evidence cannot manufacture human or release approval
+- [ ] Human absence does not block development approval
+- [ ] Tests and read-only verification pass
 
-### Next: M10
+A representative development pass is not comprehensive review of unselected content and cannot authorize a release. See [M9_INDEPENDENT_REVIEW.md](M9_INDEPENDENT_REVIEW.md).
+
+### Next: M10 only after an explicit request
 
 ---
 

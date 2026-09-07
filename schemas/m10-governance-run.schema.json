@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/m10-governance-run.schema.json",
+  "title": "English Master M10 bounded regeneration governance run",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "run_id", "finding_batch_id", "finding_batch_sha256", "revision_request_id", "revision_request_sha256", "target_milestone", "predecessor", "maximum_attempts", "policy_version", "created_at", "content_lifecycle_status", "development_approved", "human_reviewed", "release_approved", "provider_authenticated"],
+  "properties": {
+    "schema_version": {"const": "1.0"}, "record_type": {"const": "m10_governance_run"},
+    "run_id": {"type": "string", "pattern": "^m10run_[a-f0-9]{64}$"},
+    "finding_batch_id": {"type": "string", "pattern": "^m10findings_[a-f0-9]{64}$"}, "finding_batch_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "revision_request_id": {"type": "string", "pattern": "^m10request_[a-f0-9]{64}$"}, "revision_request_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "target_milestone": {"enum": ["M6", "M7", "M8_2"]}, "predecessor": {"$ref": "#/$defs/predecessor"},
+    "maximum_attempts": {"type": "integer", "minimum": 1, "maximum": 3}, "policy_version": {"type": "string", "minLength": 1}, "created_at": {"$ref": "common.schema.json#/$defs/orderableDateTime"},
+    "supersedes_run": {"$ref": "#/$defs/runReference"},
+    "content_lifecycle_status": {"const": "UNREVIEWED"}, "development_approved": {"const": false}, "human_reviewed": {"const": false}, "release_approved": {"const": false}, "provider_authenticated": {"const": false}
+  },
+  "$defs": {
+    "predecessor": {"type": "object", "additionalProperties": false, "required": ["artifact_path", "artifact_sha256", "audit_path", "audit_sha256"], "properties": {"artifact_path": {"type": "string", "minLength": 1}, "artifact_sha256": {"$ref": "common.schema.json#/$defs/sha256"}, "audit_path": {"type": "string", "minLength": 1}, "audit_sha256": {"$ref": "common.schema.json#/$defs/sha256"}}},
+    "runReference": {"type": "object", "additionalProperties": false, "required": ["run_id", "manifest_sha256"], "properties": {"run_id": {"type": "string", "pattern": "^m10run_[a-f0-9]{64}$"}, "manifest_sha256": {"$ref": "common.schema.json#/$defs/sha256"}}}
+  }
+}

@@ -281,11 +281,14 @@ M8.2 currently provides a closed ten-lesson × four-modality pilot with strict l
 
 ### Independent QA and Revision Phase (M9-M10)
 
+M9 uses two ordered lanes. Its required development lane independently reloads the selected authority, runs fresh static machine checks, and records independent AI linguistic and pedagogical reviews for a frozen sample spanning lessons, exercise sets, and listening, speaking, pronunciation, and writing prompt artifacts. A passing hash-bound batch is only `DEVELOPMENT_APPROVED`; underlying content remains `UNREVIEWED`.
+
+A separate optional human/release lane requires genuine verified human evidence for `HUMAN_REVIEWED` and a distinct release authorization for `RELEASE_APPROVED`. Missing human evidence never blocks development evidence, and AI evidence never substitutes for human or release authority. Static AI-practice protocol review does not claim runtime model behavior.
+
 1. Automated QA (schema, CEFR, prerequisites)
-2. Linguistic QA (grammar, vocabulary, authenticity)
-3. Pedagogical QA (clarity, sequencing, pedagogical soundness)
-4. Copyright QA (license compliance, attribution)
-5. Revisions and approvals
+2. AI linguistic and pedagogical development review
+3. Optional human linguistic, pedagogical, language-quality, and copyright review for release scope
+4. Lane-qualified revisions and approvals
 
 ### Publishing Phase (M11)
 
