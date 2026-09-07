@@ -288,6 +288,14 @@ Deletion must be:
 
 ---
 
+## Authorized real-record pilot boundary
+
+The Post-M3 real-record pilot does not grant a general ingestion or redistribution license. It accepts only a locally supplied official payload from an already `APPROVED` source after a hash-bound authorization and acquisition receipt establish the exact source registry snapshot, official URL, filename, byte count, SHA-256, count bound, and record-level license/attribution lane. A locally observed checksum is labeled as such; it is never presented as a publisher checksum.
+
+Prepared TSV rows are derived operational inputs, not substitutes for the retained official payload. Raw payload, receipt, preparation report, normalized records, quarantines, and duplicate-review evidence stay outside Git and outside `data/approved/`. No pilot result authorizes curriculum use, lesson generation, human review, release approval, or an approved-corpus claim.
+
+---
+
 ## Summary
 
 The project prioritizes:

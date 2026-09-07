@@ -18,6 +18,7 @@ class FetchOptions:
     input_path: Path
     max_records: int
     retrieved_at: datetime
+    input_mode: str = "offline_fixture"
 
 
 @dataclass(frozen=True)

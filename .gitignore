@@ -38,6 +38,8 @@ data/deduplicated/*
 !data/deduplicated/.gitkeep
 data/reports/*
 !data/reports/.gitkeep
+data/exports/*
+!data/exports/.gitkeep
 
 # Editor and operating-system files
 .vscode/

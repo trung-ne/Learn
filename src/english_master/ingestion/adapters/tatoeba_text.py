@@ -25,6 +25,9 @@ EXPECTED_HEADER = (
 )
 MAX_FIXTURE_BYTES = 1_000_000
 MAX_RECORDS = 100
+MAX_PILOT_BYTES = 50_000_000
+MIN_PILOT_RECORDS = 1_000
+MAX_PILOT_RECORDS = 5_000
 
 
 @dataclass(frozen=True)
@@ -62,14 +65,21 @@ class TatoebaTextAdapter(SourceAdapter[TatoebaTextRecord]):
     )
 
     def fetch(self, options: FetchOptions) -> RawPayload:
-        if not 1 <= options.max_records <= MAX_RECORDS:
-            raise ValueError(f"max_records must be between 1 and {MAX_RECORDS}")
+        pilot = options.input_mode == "authorized_pilot"
+        if options.input_mode not in {"offline_fixture", "authorized_pilot"}:
+            raise ValueError(f"Unsupported Tatoeba input mode: {options.input_mode!r}")
+        minimum, maximum = (
+            (MIN_PILOT_RECORDS, MAX_PILOT_RECORDS) if pilot else (1, MAX_RECORDS)
+        )
+        max_bytes = MAX_PILOT_BYTES if pilot else MAX_FIXTURE_BYTES
+        if not minimum <= options.max_records <= maximum:
+            raise ValueError(f"max_records must be between {minimum} and {maximum}")
         path = options.input_path.resolve()
         if not path.is_file():
             raise FileNotFoundError(f"Bounded input does not exist: {path}")
         size = path.stat().st_size
-        if size > MAX_FIXTURE_BYTES:
-            raise ValueError(f"Bounded input exceeds {MAX_FIXTURE_BYTES} bytes: {size}")
+        if size > max_bytes:
+            raise ValueError(f"Bounded input exceeds {max_bytes} bytes: {size}")
         content = path.read_bytes()
         lines = content.splitlines()
         record_count = max(0, len(lines) - 1)
@@ -77,10 +87,12 @@ class TatoebaTextAdapter(SourceAdapter[TatoebaTextRecord]):
             raise ValueError(
                 f"Input contains {record_count} records, exceeding --max-records {options.max_records}"
             )
+        if pilot and record_count != options.max_records:
+            raise ValueError("Authorized pilot input must contain exactly --max-records records")
         return RawPayload(
             content=content,
             input_description={
-                "mode": "offline_fixture",
+                "mode": options.input_mode,
                 "input_name": path.name,
                 "input_sha256": hashlib.sha256(content).hexdigest(),
                 "input_bytes": len(content),
@@ -194,6 +206,8 @@ class TatoebaTextAdapter(SourceAdapter[TatoebaTextRecord]):
         source: dict[str, Any],
         options: FetchOptions,
     ) -> dict[str, Any]:
+        if options.input_mode == "authorized_pilot" and record.language.lower() != "eng":
+            raise ValueError(f"Pilot record {record.sentence_id} is not English")
         registered_license = source["license"]
         if record.license != registered_license["name"] or record.license_url != registered_license["url"]:
             raise ValueError(

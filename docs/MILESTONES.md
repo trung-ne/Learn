@@ -181,6 +181,14 @@ Do NOT generate curriculum yet.
 
 ### Next: M4
 
+### Post-M3 Authorized Real-Record Ingestion Pilot Addendum
+
+**Status**: Implemented contract; blocked pending a genuine authorization and a pinned local official payload
+
+This bounded operational addendum may process 1,000–5,000 English text records from `src_tatoeba_text` only after a hash-bound authorization, local official-download receipt, and record-level attribution/license evidence validate. It uses M3 normalization and M4 duplicate analysis without reopening either milestone.
+
+It is **not M11**. It does not authorize CEFR classification, curriculum generation, lesson/exercise use, `data/approved/` publication, human/release approval, or a network crawler. M11 remains Export & Packaging.
+
 ---
 
 ## M4 — Normalization and Deduplication
@@ -503,6 +511,8 @@ Fix issues identified in M9:
 
 ## M11 — Export & Packaging
 
+**Status**: Framework complete; production export blocked pending genuine complete human/release authority (verified 2026-09-07)
+
 **Estimated Duration**: ~1 week
 
 **Owner**: AI Agent
@@ -526,11 +536,15 @@ Package content for different modalities:
 
 ### Acceptance Criteria
 
-- [ ] All formats valid
-- [ ] Data integrity preserved
-- [ ] Export commands are reproducible
+- [x] All format renderers and strict metadata contracts are implemented and testable offline
+- [x] Data integrity is hash-inventoried and independently verifiable
+- [x] Export commands are deterministic, atomic, no-overwrite, and require an explicit timestamp
+- [x] Current development, representative, escalated, unreviewed, ingestion, and Tatoeba-pilot authority fails closed
+- [ ] A genuine complete human-reviewed and release-approved candidate has been exported (no eligible authority currently exists)
 
-### Next: M12
+M11 framework completion does not claim that current content is human reviewed, release approved, public, or export-ready. See [EXPORT_PACKAGING.md](EXPORT_PACKAGING.md).
+
+### Next: M12 only after an explicit request and an eligible verified release; do not start automatically
 
 ---
 

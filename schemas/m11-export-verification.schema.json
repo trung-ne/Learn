@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/m11-export-verification.schema.json",
+  "title": "English Master M11 export verification",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "verification_id", "export_id", "manifest_sha256", "authorization_sha256", "verified_at", "checks", "verified_file_count", "result", "approval_tier", "human_reviewed", "release_approved"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "m11_export_verification"},
+    "verification_id": {"type": "string", "pattern": "^m11verify_[a-f0-9]{64}$"},
+    "export_id": {"type": "string", "pattern": "^m11export_[a-f0-9]{64}$"},
+    "manifest_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "authorization_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "verified_at": {"$ref": "common.schema.json#/$defs/orderableDateTime"},
+    "checks": {"type": "array", "minItems": 10, "uniqueItems": true, "items": {"enum": ["AUTHORITY", "CLOSED_INVENTORY", "FILE_HASHES", "JSON", "CSV", "HTML", "XML", "ARCHIVE_CLOSURE", "DETERMINISTIC_ARCHIVE", "ANSWER_SEPARATION", "TATOEBA_EXCLUSION"]}},
+    "verified_file_count": {"type": "integer", "minimum": 1},
+    "result": {"const": "PASS"},
+    "approval_tier": {"const": "RELEASE_APPROVED"},
+    "human_reviewed": {"const": true},
+    "release_approved": {"const": true}
+  }
+}

@@ -208,6 +208,11 @@ class IngestionPipeline:
             }
             _write_once(quarantine_path, _pretty_json(quarantine_document))
 
+        if options.input_mode == "authorized_pilot" and errors:
+            raise IngestionError(
+                f"Authorized pilot {run_id} rejected {len(errors)} record(s); no normalized run was published"
+            )
+
         stage_parent = run_directory.parent
         stage_parent.mkdir(parents=True, exist_ok=True)
         stage_directory = Path(

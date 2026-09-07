@@ -69,3 +69,5 @@ One complete run is staged and atomically published under:
 Run identity includes sorted input identities/hashes, all policy settings, and the explicit processing timestamp. An identical rerun returns the existing report. An incomplete or conflicting existing run is rejected; partial staged output is removed. Derived data is schema-validated and references are checked before publication.
 
 Generated outputs under `data/deduplicated/` and `data/reports/` are ignored by Git. They are not approved/classified data and must not be moved to `data/approved/` without later QA.
+
+The Post-M3 authorized real-record pilot invokes this unchanged M4 stage only after its M3 prepared-input bindings validate. M4 still retains its explicit `NOT_VERIFIABLE_FROM_M3_RECORD` limitation for source-row bytes; the pilot's separate authorization, receipt, and preparation report are provenance evidence, not a claim that M4 independently re-read the official raw payload.

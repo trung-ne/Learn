@@ -14,7 +14,7 @@ fetch -> retain raw bytes -> parse -> provenance -> normalize -> schema validate
 
 `SourceAdapter` in `src/english_master/ingestion/base.py` separates these responsibilities:
 
-- `fetch` accepts an explicit local path, record cap, and retrieval timestamp. The Tatoeba adapter rejects inputs over 100 records or 1,000,000 bytes and rejects a file rather than silently truncating it.
+- `fetch` accepts an explicit local path, record cap, and retrieval timestamp. Fixture mode rejects inputs over 100 records or 1,000,000 bytes; the separately authorized pilot mode has its own 1,000–5,000-record bounds and is unavailable through the fixture CLI.
 - `parse` preserves each original TSV row, keeps sentence identity, and returns structured errors for every malformed or duplicate row.
 - `provenance` builds all Data Policy fields and hashes the original UTF-8 TSV row bytes with SHA-256.
 - `normalize` creates the canonical text shape and does not assign CEFR.
@@ -75,3 +75,11 @@ data/quarantine/ingestion_record_error/<source_id>/<run_id>/errors.json
 Raw payloads are retained before parsing. A normalized run is staged and renamed into place only after all record and report files are written. Existing output is never silently replaced: identical reruns reuse the report, while differing content at an existing path fails. Invalid records are never written to `records/`; structured errors preserve their audit context under quarantine. A mixed run may publish its valid records, but its outcome is `COMPLETED_WITH_ERRORS` and the CLI exits nonzero.
 
 Runtime raw, normalized, and quarantine payloads are ignored by Git by default. The tiny committed fixtures are the only source-shaped payloads used by ordinary tests.
+
+## Post-M3 authorized real-record pilot
+
+The separate `english_master.ingestion_pilot` command is the only implemented route for a 1,000–5,000-record real-English batch. It is an offline local-import boundary, not a crawler, API client, or replacement for fixture mode. It accepts only the registered `src_tatoeba_text` source and requires hash-bound authorization, acquisition receipt, local official payload, and preparation report artifacts.
+
+`prepare` verifies official-host/release facts, local payload bytes, the registry hash, every required operation, English-only record values, record-level attribution/licensing, and deterministic numeric source-ID selection before atomically creating a prepared TSV. `run` rechecks those bindings, requires an exact 1,000–5,000 record count, publishes no normalized run if any pilot record fails, then invokes M4 normalization/deduplication. `verify` is read-only.
+
+All real payloads stay gitignored below `data/raw/`. The pilot cannot target `data/approved/`, curriculum, lessons, exercises, or export directories. Its normalized records and duplicate-review artifacts remain `UNREVIEWED` evidence; they are not CEFR classifications, curriculum material, human-reviewed content, release-approved content, or an approved corpus. See [M11_REAL_DATA_INGESTION.md](../prompts/M11_REAL_DATA_INGESTION.md) for the operator contract.

@@ -2,7 +2,7 @@
 
 English Master is a reproducible, self-study English learning-system pipeline for CEFR A1 through C2. Its primary learners are Vietnamese learners of English.
 
-## Current scope: M0 through M8 development infrastructure complete
+## Current scope: M0 through M11 development infrastructure complete
 
 The completed foundation provides:
 
@@ -19,9 +19,12 @@ The completed foundation provides:
 - An M8 QA Engine development gate that records ordered schema, answer, CEFR, prerequisite, duplicate, and candidate-bound AI language QA receipts; failures create immutable rejection and regeneration lineage rather than editing candidates. Successful decisions are `DEVELOPMENT_APPROVED` only and keep content `UNREVIEWED`.
 - An M8.2 immutable lesson-specific AI-practice pilot: forty M6-authority-bound listening, speaking, pronunciation, and writing protocols, independently reconstructed and machine-validated while content remains `UNREVIEWED`.
 - M9 independent-review and M10 revision-governance contracts. Failed M9 evidence is non-promotable; M10 preserves predecessors and creates bounded, hash-bound successor attempts that require a fresh M9 review after static verification.
+- The M11 standard-library export framework produces deterministic JSON, RFC-4180 CSV, static mobile/web, separate learner/instructor print HTML, and ungraded IMS Common Cartridge 1.3 packages only after complete human/release authority. Current real artifacts are ineligible, so no release export is claimed. See [Export & Packaging](docs/EXPORT_PACKAGING.md).
 - Data-lifecycle directory scaffolding and Git protections.
 
 M3 is ingestion infrastructure, not a corpus project. M4 adds deterministic normalization and review-oriented deduplication only. M5 adds architecture and dependency planning only. M6 adds constrained lesson generation and an independent development lane; it does not automatically approve lessons, exercises, assessments, or AI prompts. These stages do not crawl websites or bulk-download data or media. The committed ingestion fixture sentences are invented and explicitly used only to test the documented Tatoeba-shaped input path. The strict human/release lane still rejects the DRAFT M5 source bundle without genuine independent human evidence. The separate M5 development snapshot may authorize bounded M6 development only, preserving those source states and never creating human/release claims.
+
+A separately implemented **Post-M3 Authorized Real-Record Ingestion Pilot** can process a local, pinned official `src_tatoeba_text` payload only after a hash-bound authorization and receipt validate. It is not M11 (which remains Export & Packaging), never makes network requests, accepts 1,000–5,000 English text records, and leaves all raw, normalized, and deduplication artifacts gitignored and `UNREVIEWED`. It cannot publish to `data/approved/` or create learning material. See [the pilot operator contract](prompts/M11_REAL_DATA_INGESTION.md).
 
 ## Requirements
 
@@ -240,15 +243,28 @@ python -m english_master.independent_review verify-development \
 
 The optional human/release lane is separate. No M9 development result claims `HUMAN_REVIEWED`, `RELEASE_APPROVED`, provider authentication, live-provider behavior, or an Internet-wide originality search. See [docs/M9_INDEPENDENT_REVIEW.md](docs/M9_INDEPENDENT_REVIEW.md).
 
+## Build and verify M11 exports
+
+M11 accepts only complete, hash-bound human and release authority. The current repository is intentionally ineligible. Inspecting it or attempting a build exits nonzero without creating an export:
+
+```bash
+python -m english_master.export_packaging inspect-authority --authorization <m11-authorization.json> --repository-root .
+python -m english_master.export_packaging build --authorization <m11-authorization.json> --repository-root . --output-root data/exports --exported-at <ISO-8601>
+python -m english_master.export_packaging verify data/exports/<export-id> --repository-root .
+```
+
+See [docs/EXPORT_PACKAGING.md](docs/EXPORT_PACKAGING.md) for authority, formats, layout, integrity checks, and explicit limitations.
+
 ## Layout
 
 - `schemas/` — authoritative Draft 2020-12 JSON Schemas.
-- `src/english_master/` — typed validation, ingestion, normalization, deduplication, M5 curriculum-graph, M6 lesson-generation, M7 exercise-generation, and M8 QA Engine utilities.
+- `src/english_master/` — typed pipeline, generation, review, revision, and export utilities.
 - `tests/fixtures/` — small, invented validation, ingestion, and M6 offline test examples; taxonomy tests use the authored prototype.
 - `sources/` — M1 registry metadata, official evidence summary, and source-operation policy; no source payloads.
 - `data/raw/`, `data/normalized/`, `data/quarantine/` — local M3 run payloads and audit records, ignored by Git except scaffolding.
 - `data/deduplicated/`, `data/reports/` — local M4 derived runs and reports, ignored by Git.
-- `data/approved/` — reserved for later approved/classified data; M3 does not populate it.
+- `data/approved/` — reserved for genuinely approved/classified data; current development artifacts do not populate it.
+- `data/exports/` — immutable local M11 export bundles, ignored by Git; currently empty because release authority is absent.
 - `curriculum/taxonomy/` — M2 representative taxonomy and broad coverage matrix.
 - `curriculum/structure.json`, `curriculum/prerequisite_graph.json`, `curriculum/coverage-roadmap.json` — M5 outline-only architecture, graph, and coverage artifacts.
 - `curriculum/curriculum-graph.dot` — deterministic compact graph view; JSON remains authoritative.
