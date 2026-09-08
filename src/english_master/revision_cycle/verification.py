@@ -56,8 +56,6 @@ def build_finding_batch(
         "inventory": [dict(entry) for entry in sorted(inventory, key=lambda entry: str(entry["path"]))],
         "imported_at": imported_at,
         "content_lifecycle_status": "UNREVIEWED",
-        "human_reviewed": False,
-        "release_approved": False,
         "provider_authenticated": False,
     }
     value["batch_id"] = identity("m10findings", value, "batch_id")

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/media-quarantine-record.schema.json",
+  "title": "English Master M12 Media Quarantine Record",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "record_type", "quarantine_id", "authorization_id", "authorization_sha256", "source_id", "source_record_id", "payload_filename", "observed_sha256", "observed_bytes", "reason_code", "reason", "quarantine_path", "quarantined_at", "fixture_only", "content_lifecycle_status", "approval_tier", "redistribution_authorized"],
+  "properties": {
+    "schema_version": {"const": "1.0"}, "record_type": {"const": "media_quarantine_record"},
+    "quarantine_id": {"type": "string", "pattern": "^mediaquarantine_[0-9a-f]{64}$"}, "authorization_id": {"type": "string", "pattern": "^mediaauth_[0-9a-f]{64}$"}, "authorization_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "source_id": {"$ref": "common.schema.json#/$defs/sourceId"}, "source_record_id": {"type": "string", "minLength": 1}, "payload_filename": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"},
+    "observed_sha256": {"$ref": "common.schema.json#/$defs/sha256"}, "observed_bytes": {"type": "integer", "minimum": 0, "maximum": 10485760},
+    "reason_code": {"enum": ["AUTHORIZATION_INVALID", "CHECKSUM_MISMATCH", "DUPLICATE_IDENTITY", "DUPLICATE_IDENTITY_DRIFT", "METADATA_MISMATCH", "MIME_EXTENSION_MISMATCH", "PAYLOAD_MALFORMED", "PERMISSION_DENIED", "UNSAFE_PATH"]}, "reason": {"type": "string", "minLength": 1},
+    "quarantine_path": {"type": "string", "pattern": "^quarantine/[A-Za-z0-9_-]+/payload/[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"}, "quarantined_at": {"type": "string", "format": "date-time"},
+    "fixture_only": {"const": true}, "content_lifecycle_status": {"const": "UNREVIEWED"}, "approval_tier": {"const": "NONE"}, "redistribution_authorized": {"const": false}
+  }
+}

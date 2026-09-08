@@ -1,10 +1,10 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://english-master.local/schemas/m11-export-verification.schema.json",
-  "title": "English Master M11 export verification",
+  "title": "English Master M11 development export verification",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "record_type", "verification_id", "export_id", "manifest_sha256", "authorization_sha256", "verified_at", "checks", "verified_file_count", "result", "approval_tier", "human_reviewed", "release_approved"],
+  "required": ["schema_version", "record_type", "verification_id", "export_id", "manifest_sha256", "authorization_sha256", "verified_at", "checks", "verified_file_count", "result", "approval_tier"],
   "properties": {
     "schema_version": {"const": "1.0"},
     "record_type": {"const": "m11_export_verification"},
@@ -16,8 +16,6 @@
     "checks": {"type": "array", "minItems": 10, "uniqueItems": true, "items": {"enum": ["AUTHORITY", "CLOSED_INVENTORY", "FILE_HASHES", "JSON", "CSV", "HTML", "XML", "ARCHIVE_CLOSURE", "DETERMINISTIC_ARCHIVE", "ANSWER_SEPARATION", "TATOEBA_EXCLUSION"]}},
     "verified_file_count": {"type": "integer", "minimum": 1},
     "result": {"const": "PASS"},
-    "approval_tier": {"const": "RELEASE_APPROVED"},
-    "human_reviewed": {"const": true},
-    "release_approved": {"const": true}
+    "approval_tier": {"const": "DEVELOPMENT_APPROVED"}
   }
 }

@@ -9,6 +9,10 @@ Always read and follow:
 
 @PROJECT_RULES.md
 
+## Validation policy
+
+For future work, use deterministic and AI-based validation only. Do not require, create, infer, or claim `HUMAN_REVIEWED`, `RELEASE_APPROVED`, human review, human endorsement, or release approval. Existing immutable artifacts containing those historical fields must remain unchanged and cannot authorize new work.
+
 Also read these files when they exist:
 
 @docs/PROJECT_SPEC.md

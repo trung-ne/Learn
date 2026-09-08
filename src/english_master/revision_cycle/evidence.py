@@ -64,8 +64,6 @@ def build_review_input(
         "observed_at": observed_at,
         "imported_at": imported_at,
         "content_lifecycle_status": "UNREVIEWED",
-        "human_reviewed": False,
-        "release_approved": False,
         "provider_authenticated": False,
     }
     if subject.modality is not None:

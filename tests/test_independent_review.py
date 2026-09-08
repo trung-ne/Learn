@@ -72,13 +72,23 @@ def _publishable_evidence(authority: VerifiedM9Authority):
     return selection, reports, reviews
 
 
-def test_authority_selects_real_six_category_sample(authority: VerifiedM9Authority) -> None:
-    assert len(authority.subjects) == 18
-    assert {subject.lesson_id for subject in authority.subjects} == {"A1-U01-L01", "A2-U03-L01", "B1-U05-L01"}
+def test_authority_selects_complete_current_population(authority: VerifiedM9Authority) -> None:
+    assert len(authority.subjects) == 60
+    assert len({subject.lesson_id for subject in authority.subjects}) == 10
     assert {subject.content_type for subject in authority.subjects} == {"LESSON", "EXERCISE_SET", "AI_PRACTICE_PROMPT"}
     assert {subject.modality for subject in authority.subjects if subject.modality} == {"LISTENING", "SPEAKING", "PRONUNCIATION", "WRITING"}
+    assert all("/" in subject.artifact_path for subject in authority.subjects)
     selection = build_selection(authority, created_at="2026-09-05T10:00:00Z")
-    assert selection["population"]["selected_subject_count"] == 18
+    assert selection["schema_version"] == "2.0"
+    assert selection["selection_scope"] == "FULL_POPULATION"
+    assert selection["population"] == {
+        "lesson_count": 10,
+        "exercise_set_count": 10,
+        "prompt_count": 40,
+        "total_subject_count": 60,
+        "selected_subject_count": 60,
+        "unreviewed_outside_selection": False,
+    }
     assert selection["upstream"]["m8_1_terminal_run_consumed"] is False
 
 
@@ -86,7 +96,7 @@ def test_machine_reports_reconstruct_all_subjects(authority: VerifiedM9Authority
     selection = build_selection(authority, created_at="2026-09-05T10:00:00Z")
     reports = [build_machine_report(authority, selection, subject, reviewed_at="2026-09-05T10:00:00Z") for subject in authority.subjects]
     assert all(report["result"] == "PASS" for report in reports)
-    assert sum(report["review_scope"] == "STATIC_PROTOCOL" for report in reports) == 12
+    assert sum(report["review_scope"] == "STATIC_PROTOCOL" for report in reports) == 40
 
 
 def test_test_only_capture_cannot_publish_development_evidence(authority: VerifiedM9Authority, tmp_path: Path) -> None:
@@ -141,6 +151,30 @@ def test_equal_chronology_boundaries_are_valid(authority: VerifiedM9Authority) -
         capture={"capture_mode": "SESSION_CAPTURED", "provider": "UNKNOWN", "model": "UNKNOWN", "execution_id": "chronology-equal", "provider_authenticated": False, "observed_at": "2026-09-05T10:00:00Z"},
         raw_response=_response("LINGUISTIC_AI_REVIEWER"), reviewed_at="2026-09-05T10:00:00Z",
     )
+    assert validate_ai_review(review, selection=selection, subject=subject, machine_report=report) == ()
+    assert review["schema_version"] == "2.0"
+    assert "human_reviewed" not in review
+    assert "release_approved" not in review
+    forbidden_claim = copy.deepcopy(review)
+    forbidden_claim["human_reviewed"] = False
+    assert validate_ai_review(
+        forbidden_claim, selection=selection, subject=subject, machine_report=report,
+    )[0].startswith("SCHEMA:")
+
+
+def test_historical_v1_review_contract_remains_selectable(authority: VerifiedM9Authority) -> None:
+    selection = build_selection(authority, created_at="2026-09-05T10:00:00Z")
+    selection["schema_version"] = "1.0"
+    subject = authority.subjects[0]
+    report = build_machine_report(authority, selection, subject, reviewed_at="2026-09-05T10:00:00Z")
+    review = build_ai_review(
+        selection=selection, subject=subject, machine_report=report, role="LINGUISTIC_AI_REVIEWER",
+        capture={"capture_mode": "SESSION_CAPTURED", "provider": "UNKNOWN", "model": "UNKNOWN", "execution_id": "historical-v1", "provider_authenticated": False, "observed_at": "2026-09-05T10:00:00Z"},
+        raw_response=_response("LINGUISTIC_AI_REVIEWER"), reviewed_at="2026-09-05T10:00:00Z",
+    )
+    assert review["schema_version"] == "1.0"
+    assert review["human_reviewed"] is False
+    assert review["release_approved"] is False
     assert validate_ai_review(review, selection=selection, subject=subject, machine_report=report) == ()
 
 

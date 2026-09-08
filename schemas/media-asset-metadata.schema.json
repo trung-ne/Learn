@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/media-asset-metadata.schema.json",
+  "title": "English Master M12 Media Asset Metadata",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "record_type", "asset_id", "authorization_id", "authorization_sha256", "receipt_id", "receipt_sha256", "source_id", "source_record_id", "media_kind", "original_filename", "stored_path", "payload_sha256", "payload_bytes", "mime_type", "metadata", "license", "license_url", "attribution", "imported_at", "fixture_only", "content_lifecycle_status", "approval_tier", "redistribution_authorized"],
+  "properties": {
+    "schema_version": {"const": "1.0"}, "record_type": {"const": "media_asset_metadata"},
+    "asset_id": {"type": "string", "pattern": "^mediaasset_[0-9a-f]{64}$"},
+    "authorization_id": {"type": "string", "pattern": "^mediaauth_[0-9a-f]{64}$"}, "authorization_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "receipt_id": {"type": "string", "pattern": "^mediareceipt_[0-9a-f]{64}$"}, "receipt_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "source_id": {"$ref": "common.schema.json#/$defs/sourceId"}, "source_record_id": {"type": "string", "minLength": 1}, "media_kind": {"enum": ["AUDIO", "VIDEO"]},
+    "original_filename": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"},
+    "stored_path": {"type": "string", "pattern": "^originals/[A-Za-z0-9_-]+/payload/[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"},
+    "payload_sha256": {"$ref": "common.schema.json#/$defs/sha256"}, "payload_bytes": {"type": "integer", "minimum": 1, "maximum": 10485760},
+    "mime_type": {"enum": ["audio/wav", "audio/mpeg", "audio/ogg", "video/mp4", "video/webm"]}, "metadata": {"$ref": "media-source-authorization.schema.json#/$defs/mediaMetadata"},
+    "license": {"type": "string", "minLength": 1, "not": {"const": "UNKNOWN"}}, "license_url": {"type": "string", "format": "uri", "pattern": "^https://"}, "attribution": {"type": "string", "minLength": 1},
+    "imported_at": {"type": "string", "format": "date-time"}, "fixture_only": {"const": true}, "content_lifecycle_status": {"const": "UNREVIEWED"}, "approval_tier": {"const": "MACHINE_VALIDATED"}, "redistribution_authorized": {"type": "boolean"}
+  }
+}

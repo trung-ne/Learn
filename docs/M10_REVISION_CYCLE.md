@@ -2,7 +2,7 @@
 
 ## Purpose
 
-M10 turns independently retained M9 findings into auditable successor work. It never edits an immutable M6, M7, or M8.2 artifact in place and never converts a failed AI review into `AI_REVIEWED`, `DEVELOPMENT_APPROVED`, `HUMAN_REVIEWED`, or `RELEASE_APPROVED` evidence.
+M10 turns independently retained M9 findings into auditable successor work. It never edits an immutable M6, M7, or M8.2 artifact in place and never converts a failed AI review into `AI_REVIEWED` or `DEVELOPMENT_APPROVED` evidence.
 
 ## Evidence intake
 
@@ -47,6 +47,16 @@ The only terminal states are `READY_FOR_FRESH_M9`, `RETRY_EXHAUSTED`, `ESCALATED
 
 ```bash
 python -m english_master.revision_cycle verify-run <immutable-run-directory>
+```
+
+A complete captured M9 inventory can be imported as non-promotable immutable M10 evidence with:
+
+```bash
+python -m english_master.revision_cycle import-findings \
+  --prepared-dir <m9-prepared-directory> \
+  --capture-dir <m9-capture-directory> \
+  --output-dir <new-m10-finding-directory> \
+  --imported-at <ISO-8601-timestamp>
 ```
 
 ## Authority-conflict escalation

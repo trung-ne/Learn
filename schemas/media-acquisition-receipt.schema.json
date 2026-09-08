@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/media-acquisition-receipt.schema.json",
+  "title": "English Master M12 Media Acquisition Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "receipt_id", "authorization_id", "authorization_sha256", "source_id", "source_record_id", "official_record_url", "filename", "payload_sha256", "payload_bytes", "mime_type", "media_kind", "metadata", "acquisition_method", "fixture_only", "acquired_at", "checksum_verified"],
+  "properties": {
+    "schema_version": {"const": "1.0"}, "record_type": {"const": "media_acquisition_receipt"},
+    "receipt_id": {"type": "string", "pattern": "^mediareceipt_[0-9a-f]{64}$"},
+    "authorization_id": {"type": "string", "pattern": "^mediaauth_[0-9a-f]{64}$"},
+    "authorization_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "source_id": {"$ref": "common.schema.json#/$defs/sourceId"}, "source_record_id": {"type": "string", "minLength": 1},
+    "official_record_url": {"type": "string", "format": "uri", "pattern": "^https://"},
+    "filename": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"},
+    "payload_sha256": {"$ref": "common.schema.json#/$defs/sha256"}, "payload_bytes": {"type": "integer", "minimum": 1, "maximum": 10485760},
+    "mime_type": {"enum": ["audio/wav", "audio/mpeg", "audio/ogg", "video/mp4", "video/webm"]}, "media_kind": {"enum": ["AUDIO", "VIDEO"]},
+    "metadata": {"$ref": "media-source-authorization.schema.json#/$defs/mediaMetadata"},
+    "acquisition_method": {"const": "LOCAL_TEST_FIXTURE"}, "fixture_only": {"const": true},
+    "acquired_at": {"type": "string", "format": "date-time"}, "checksum_verified": {"const": true}
+  }
+}

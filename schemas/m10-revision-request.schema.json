@@ -25,9 +25,7 @@
     "lifecycle_transition_authorized",
     "approval_claim_authorized",
     "content_lifecycle_status",
-    "development_approved",
-    "human_reviewed",
-    "release_approved"
+    "development_approved"
   ],
   "properties": {
     "schema_version": {"const": "1.0"},
@@ -71,9 +69,7 @@
     "lifecycle_transition_authorized": {"const": false},
     "approval_claim_authorized": {"const": false},
     "content_lifecycle_status": {"const": "UNREVIEWED"},
-    "development_approved": {"const": false},
-    "human_reviewed": {"const": false},
-    "release_approved": {"const": false}
+    "development_approved": {"const": false}
   },
   "$defs": {
     "predecessor": {

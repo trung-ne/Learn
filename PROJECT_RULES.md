@@ -57,7 +57,7 @@ The main product is a reproducible system that can:
 7. generate exercises
 8. audit generated content
 9. regenerate bad content
-10. export approved learning materials
+10. export development-validated learning materials
 
 Content generation must be reproducible and testable.
 
@@ -183,7 +183,7 @@ A1-U01-L01
 
 # Quality
 
-Generated content never automatically becomes approved content.
+Generated content remains `UNREVIEWED` in its content lifecycle. It may be used only after the applicable deterministic and AI validation evidence is complete.
 
 Required QA categories include:
 
@@ -197,17 +197,17 @@ Required QA categories include:
 - duplicate detection
 - provenance validation
 - copyright validation
-- language quality review
+- AI language-quality and pedagogical validation
 
-Whenever practical:
+Whenever practical, generation and AI review must be separate, recorded passes.
 
-Generator and Reviewer should be separate passes.
+## Development-only validation policy
 
-## Development and release approval
+This project does not require, request, infer, or record human review, human endorsement, or release approval. `HUMAN_REVIEWED` and `RELEASE_APPROVED` are not valid active project statuses or gates.
 
-Development approval and public-release approval are separate, ordered claims. A deterministic machine pass may establish `MACHINE_VALIDATED`; separate recorded AI reviews may establish `AI_REVIEWED`; a complete hash-bound development batch may establish `DEVELOPMENT_APPROVED`. None of those claims means a human reviewed, endorsed, certified, or released the content.
+A deterministic machine pass may establish `MACHINE_VALIDATED`; separate recorded AI reviews may establish `AI_REVIEWED`; and a complete hash-bound development batch may establish `DEVELOPMENT_APPROVED`. These are the only approval-evidence tiers for future work. AI evidence must identify itself as AI and retain factual provider/model provenance; use `UNKNOWN` when a provider or model fact is unavailable.
 
-`HUMAN_REVIEWED` and `RELEASE_APPROVED` require their own verified human evidence and stricter release workflow. Never fabricate a reviewer, identity, qualification, publisher, signature, provider run, or approval. AI evidence must explicitly identify itself as AI and retain factual provenance; use `UNKNOWN` when a provider or model fact is unavailable.
+Existing immutable artifacts that contain historical human/release fields remain historical records only. They must not be modified, regenerated, or used as authority for new work.
 
 ---
 

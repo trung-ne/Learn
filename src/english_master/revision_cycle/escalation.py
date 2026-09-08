@@ -98,8 +98,6 @@ def build_authority_conflict_escalation(
         "created_at": created_at,
         "content_lifecycle_status": "UNREVIEWED",
         "development_approved": False,
-        "human_reviewed": False,
-        "release_approved": False,
         "provider_authenticated": False,
     }
     value["escalation_id"] = identity("m10escalation", value, "escalation_id")

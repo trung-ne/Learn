@@ -123,7 +123,7 @@ def build_verification(bundle: Path, repository_root: Path, *, require_receipt: 
 
     learner = (bundle / "print" / "learner.html").read_text(encoding="utf-8")
     instructor = (bundle / "print" / "instructor-answer-key.html").read_text(encoding="utf-8")
-    if "Answer material:" in learner or "Answer material:" not in instructor:
+    if "Answer material:" in learner or (model.exercise_sets and "Answer material:" not in instructor):
         raise ExportVerificationError("learner/instructor answer-material separation failed")
     _validate_cartridge(bundle / "lms" / "english-master.imscc", common_cartridge_bytes(model))
 
@@ -138,9 +138,7 @@ def build_verification(bundle: Path, repository_root: Path, *, require_receipt: 
         "checks": ["ANSWER_SEPARATION", "ARCHIVE_CLOSURE", "AUTHORITY", "CLOSED_INVENTORY", "CSV", "DETERMINISTIC_ARCHIVE", "FILE_HASHES", "HTML", "JSON", "TATOEBA_EXCLUSION", "XML"],
         "verified_file_count": len(manifest["files"]),
         "result": "PASS",
-        "approval_tier": "RELEASE_APPROVED",
-        "human_reviewed": True,
-        "release_approved": True,
+        "approval_tier": "DEVELOPMENT_APPROVED",
     }
     receipt["verification_id"] = identity("m11verify", receipt, "verification_id")
     validate_instance(receipt, "m11-export-verification")

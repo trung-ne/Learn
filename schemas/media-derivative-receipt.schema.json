@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/media-derivative-receipt.schema.json",
+  "title": "English Master M12 Media Derivative Operation Receipt",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "record_type", "derivative_id", "parent_asset_id", "parent_sha256", "authorization_id", "authorization_sha256", "operation", "permission_field", "permission_evidence_sha256", "tool", "tool_version", "parameters", "output_path", "output_sha256", "output_bytes", "created_at", "fixture_only", "content_lifecycle_status"],
+  "properties": {
+    "schema_version": {"const": "1.0"}, "record_type": {"const": "media_derivative_receipt"},
+    "derivative_id": {"type": "string", "pattern": "^mediaderivative_[0-9a-f]{64}$"}, "parent_asset_id": {"type": "string", "pattern": "^mediaasset_[0-9a-f]{64}$"}, "parent_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "authorization_id": {"type": "string", "pattern": "^mediaauth_[0-9a-f]{64}$"}, "authorization_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "operation": {"enum": ["CLIP", "TRANSFORM", "EXTRACT_AUDIO", "GENERATE_TRANSCRIPT"]}, "permission_field": {"enum": ["can_clip", "can_transform", "can_extract_audio", "can_generate_transcript"]}, "permission_evidence_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "tool": {"type": "string", "minLength": 1}, "tool_version": {"type": "string", "minLength": 1}, "parameters": {"type": "object", "additionalProperties": {"type": ["string", "number", "integer", "boolean", "null"]}},
+    "output_path": {"type": "string", "pattern": "^derivatives/[A-Za-z0-9_-]+/[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"}, "output_sha256": {"$ref": "common.schema.json#/$defs/sha256"}, "output_bytes": {"type": "integer", "minimum": 1},
+    "created_at": {"type": "string", "format": "date-time"}, "fixture_only": {"const": true}, "content_lifecycle_status": {"const": "UNREVIEWED"}
+  }
+}

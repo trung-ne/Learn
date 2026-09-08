@@ -40,6 +40,8 @@ data/reports/*
 !data/reports/.gitkeep
 data/exports/*
 !data/exports/.gitkeep
+data/media/*
+!data/media/.gitkeep
 
 # Editor and operating-system files
 .vscode/

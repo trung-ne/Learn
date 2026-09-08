@@ -511,7 +511,7 @@ Fix issues identified in M9:
 
 ## M11 — Export & Packaging
 
-**Status**: Framework complete; production export blocked pending genuine complete human/release authority (verified 2026-09-07)
+**Status**: AI-only development export framework implemented but blocked pending a complete version-2 full-population M9 development batch and closed M10 lineage.
 
 **Estimated Duration**: ~1 week
 
@@ -540,15 +540,56 @@ Package content for different modalities:
 - [x] Data integrity is hash-inventoried and independently verifiable
 - [x] Export commands are deterministic, atomic, no-overwrite, and require an explicit timestamp
 - [x] Current development, representative, escalated, unreviewed, ingestion, and Tatoeba-pilot authority fails closed
-- [ ] A genuine complete human-reviewed and release-approved candidate has been exported (no eligible authority currently exists)
+- [ ] A complete version-2 full-population `DEVELOPMENT_APPROVED` M9 batch and closed M10 lineage have authorized an M11 package that passes independent verification.
 
-M11 framework completion does not claim that current content is human reviewed, release approved, public, or export-ready. See [EXPORT_PACKAGING.md](EXPORT_PACKAGING.md).
+M11 framework completion does not claim that current content is human reviewed, release approved, public, or export-ready. See [M11.md](M11.md) and [EXPORT_PACKAGING.md](EXPORT_PACKAGING.md).
 
-### Next: M12 only after an explicit request and an eligible verified release; do not start automatically
+### Next: M12 only after an explicit request and a complete, independently verified `DEVELOPMENT_APPROVED` M11 export; do not start operationally or automatically
 
 ---
 
-## M12 — Web Platform (Optional, Future)
+## M12 — Real Audio / Video Corpus Ingestion
+
+**Status**: Preparation only — implementation blocked until M11 has a complete, independently verified `DEVELOPMENT_APPROVED` export
+
+**Estimated Duration**: To be determined before operational work begins
+
+**Owner**: AI Agent
+
+### Gate
+
+M12 must not begin operationally until the M11 authorization, export manifest, and independent verification receipt all validate as `DEVELOPMENT_APPROVED`. This is a development gate, not human review, endorsement, release approval, redistribution authority, or public-release authority.
+
+### Scope
+
+Build a reproducible, permission-aware pipeline for legitimately supplied audio/video records:
+
+1. Source and record-level media permission verification
+2. Locally supplied or explicitly authorized acquisition inputs
+3. Immutable payload checksums and provenance
+4. Media metadata and safe controlled storage
+5. Permission-gated derivative lineage
+6. Quarantine, closed inventories, and independent verification
+
+Generic crawling, access-control bypass, YouTube URL ingestion, and redistribution without explicit permission are prohibited.
+
+See [M12_MEDIA_INGESTION.md](../prompts/M12_MEDIA_INGESTION.md) for the complete design contract and deferred implementation requirements.
+
+### Acceptance Criteria
+
+- [ ] M11 prerequisite evidence passes independent verification
+- [ ] Strict M12 schemas and offline-first commands are implemented
+- [ ] Every accepted operation has source- and record-specific permission evidence
+- [ ] Original and derivative bytes have immutable checksum-bound lineage
+- [ ] Unauthorized, malformed, drifted, or unsafe records fail closed
+- [ ] Complete run inventories pass independent verification
+- [ ] No output claims curriculum, human-review, redistribution, or release authority without a separate applicable gate
+
+### Next: M13
+
+---
+
+## M13 — Web Platform (Optional, Future)
 
 **Estimated Duration**: ~4-6 weeks
 
@@ -567,13 +608,13 @@ Build web UI for learners:
 
 ### Note
 
-This is future work. Core curriculum is production-ready before web platform.
+This is future work after M12 media ingestion. Completion of the preceding development milestones does not by itself claim public-release or production readiness.
 
-### Next: M13
+### Next: M14
 
 ---
 
-## M13 — Production Deployment
+## M14 — Production Deployment
 
 **Estimated Duration**: ~1-2 weeks
 
@@ -600,16 +641,16 @@ Deploy to production:
 
 ## Summary
 
-**Total Estimated Timeline**: ~4-5 months
+**Total Estimated Timeline**: To be revised after M12 duration and downstream schedule are approved
 
 **Core Milestones**: M0 - M11 (most important)
 
-**Future**: M12 - M13 (web platform and deployment)
+**Future**: M12 - M14 (media ingestion, web platform, and production deployment)
 
 Each milestone is a deliberate, auditable step toward a complete A1-C2 English learning system.
 
 No milestone is skipped.
 
-No milestone is started until the previous one is complete.
+No milestone begins operationally until its predecessor’s stated acceptance gate is satisfied; preparation-only design documents do not constitute operational work.
 
 Quality over speed.

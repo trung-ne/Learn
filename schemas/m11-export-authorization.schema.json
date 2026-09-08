@@ -1,10 +1,10 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://english-master.local/schemas/m11-export-authorization.schema.json",
-  "title": "English Master M11 export authorization",
+  "title": "English Master M11 development export authorization",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "record_type", "authorization_id", "package_version", "authorized_at", "m9_development_batch", "human_review_batch", "release_decision", "source_registry", "artifacts", "subject_inventory_sha256", "formats", "answer_materials", "approval_tier", "human_reviewed", "release_approved", "tatoeba_pilot_included"],
+  "required": ["schema_version", "record_type", "authorization_id", "package_version", "authorized_at", "m9_development_batch", "source_registry", "artifacts", "subject_inventory_sha256", "formats", "answer_materials", "approval_tier", "tatoeba_pilot_included"],
   "properties": {
     "schema_version": {"const": "1.0"},
     "record_type": {"const": "m11_export_authorization"},
@@ -12,16 +12,12 @@
     "package_version": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,63}$"},
     "authorized_at": {"$ref": "common.schema.json#/$defs/orderableDateTime"},
     "m9_development_batch": {"$ref": "#/$defs/fileReference"},
-    "human_review_batch": {"$ref": "#/$defs/fileReference"},
-    "release_decision": {"$ref": "#/$defs/fileReference"},
     "source_registry": {"$ref": "#/$defs/fileReference"},
-    "artifacts": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/artifactReference"}},
+    "artifacts": {"type": "array", "minItems": 60, "maxItems": 60, "items": {"$ref": "#/$defs/artifactReference"}, "uniqueItems": true},
     "subject_inventory_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
     "formats": {"type": "array", "minItems": 6, "maxItems": 6, "uniqueItems": true, "items": {"enum": ["JSON", "CSV", "STATIC_MOBILE", "STATIC_WEB", "PRINT_HTML", "IMS_COMMON_CARTRIDGE_1_3"]}, "allOf": [{"contains": {"const": "JSON"}}, {"contains": {"const": "CSV"}}, {"contains": {"const": "STATIC_MOBILE"}}, {"contains": {"const": "STATIC_WEB"}}, {"contains": {"const": "PRINT_HTML"}}, {"contains": {"const": "IMS_COMMON_CARTRIDGE_1_3"}}]},
     "answer_materials": {"const": "SEPARATE_INSTRUCTOR_EDITION"},
-    "approval_tier": {"const": "RELEASE_APPROVED"},
-    "human_reviewed": {"const": true},
-    "release_approved": {"const": true},
+    "approval_tier": {"const": "DEVELOPMENT_APPROVED"},
     "tatoeba_pilot_included": {"const": false}
   },
   "$defs": {

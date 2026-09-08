@@ -100,8 +100,10 @@ def test_groups_verbatim_findings_and_builds_canonical_lesson_request() -> None:
         {"target_milestone": "M8_2", "artifact_kind": "AI_PRACTICE_PILOT", "scope": "FULL_CLOSED_PILOT"},
     ]
     assert request["planning_only"] is True
-    for boundary in ("successor_created", "lifecycle_transition_authorized", "approval_claim_authorized", "development_approved", "human_reviewed", "release_approved"):
+    for boundary in ("successor_created", "lifecycle_transition_authorized", "approval_claim_authorized", "development_approved"):
         assert request[boundary] is False
+    assert "human_reviewed" not in request
+    assert "release_approved" not in request
 
 
 def test_target_and_rebuild_closure_follow_subject_type() -> None:

@@ -4,7 +4,7 @@
   "title": "English Master M10 non-promotable M9 review input",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "record_type", "input_id", "source_milestone", "evidence_purpose", "promotion_status", "selection_id", "subject_id", "content_type", "artifact_sha256", "machine_report_sha256", "review_role", "capture", "review_prompt", "review_prompt_sha256", "raw_response", "raw_response_sha256", "decision", "checklist", "findings", "limitations", "observed_at", "imported_at", "content_lifecycle_status", "human_reviewed", "release_approved", "provider_authenticated"],
+  "required": ["schema_version", "record_type", "input_id", "source_milestone", "evidence_purpose", "promotion_status", "selection_id", "subject_id", "content_type", "artifact_sha256", "machine_report_sha256", "review_role", "capture", "review_prompt", "review_prompt_sha256", "raw_response", "raw_response_sha256", "decision", "checklist", "findings", "limitations", "observed_at", "imported_at", "content_lifecycle_status", "provider_authenticated"],
   "properties": {
     "schema_version": {"const": "1.0"},
     "record_type": {"const": "m10_review_input"},
@@ -31,8 +31,6 @@
     "observed_at": {"oneOf": [{"$ref": "common.schema.json#/$defs/orderableDateTime"}, {"const": "UNKNOWN"}]},
     "imported_at": {"$ref": "common.schema.json#/$defs/orderableDateTime"},
     "content_lifecycle_status": {"const": "UNREVIEWED"},
-    "human_reviewed": {"const": false},
-    "release_approved": {"const": false},
     "provider_authenticated": {"const": false}
   },
   "$defs": {

@@ -1,12 +1,14 @@
 # M11 Export & Packaging
 
-## Status and authority boundary
+## Status and AI-only authority boundary
 
-The M11 framework is implemented, but this repository currently has no eligible release candidate and no export has been published. `data/approved/` is empty; the M9 evidence is representative and cannot authorize release; the M10 run is escalated; and all current generated lessons, exercises, and AI-practice protocols remain `UNREVIEWED` development material.
+M11 is an AI-only development packaging gate. An active authorization hash-binds a `DEVELOPMENT_APPROVED` M9 development batch, the source registry, and every declared content record. Human-review batches and release decisions are not active inputs, and M11 does not create or report human review, endorsement, or release approval.
 
-The production builder is authority-first and fail-closed. It independently reloads the authorization, complete M9 development batch, genuine human-review batch, separate release decision, source registry, and every declared content record. It checks schemas, canonical identities, exact hashes, path containment, content identity, lifecycle status, redistribution permissions, and release-chain bindings before creating a staging directory. The existing M9 rule that a representative sample cannot authorize release is retained.
+The builder independently reloads and validates the authorization, M9 evidence, registry, and content. It checks canonical identities, exact hashes, path containment, content identity, chronology, source redistribution permission, prohibited lineage, and lifecycle status before staging output. Every applicable lifecycle value on an exported generated record must remain exactly `UNREVIEWED`; absent, mixed, or differently labeled values fail closed. AI development approval is documented as development evidence and never silently changes content lifecycle state.
 
-An authorization must request all six profiles and use `SEPARATE_INSTRUCTOR_EDITION`:
+The current repository has no completed M9 development batch, `data/approved/` has no eligible inventory, current generated artifacts remain `UNREVIEWED`, and M10 is escalated. It therefore cannot currently build an M11 package. Existing immutable historical records are not changed.
+
+An authorization requests all six profiles and `SEPARATE_INSTRUCTOR_EDITION`:
 
 - canonical JSON;
 - RFC-4180 CSV;
@@ -15,11 +17,9 @@ An authorization must request all six profiles and use `SEPARATE_INSTRUCTOR_EDIT
 - print HTML; and
 - IMS Common Cartridge 1.3.
 
-Development approval, AI review, machine validation, a schema-shaped record, or a caller-set boolean is not human or release approval.
-
 ## Commands
 
-All commands are offline and require explicit paths. Timestamps never default to the wall clock.
+All commands are offline and require explicit paths and timestamps.
 
 ```bash
 python -m english_master.export_packaging inspect-authority \
@@ -37,7 +37,7 @@ python -m english_master.export_packaging verify \
   --repository-root .
 ```
 
-The installed command is `english-master-export`. Ineligibility exits with status 2 and the builder creates no export directory. Publication uses an atomic, no-overwrite directory rename.
+The installed command is `english-master-export`. Ineligibility exits with status 2 and creates no export directory. Publication uses an atomic, no-overwrite directory rename.
 
 ## Output layout
 
@@ -48,11 +48,7 @@ data/exports/m11export_<sha256>/
   verification.json
   json/catalog.json
   json/artifacts/<type>/<id>.json
-  csv/lessons.csv
-  csv/sections.csv
-  csv/exercises.csv
-  csv/references.csv
-  csv/provenance.csv
+  csv/{lessons,sections,exercises,references,provenance}.csv
   mobile/{index.html,catalog.json,styles.css,lessons/...}
   web/{index.html,catalog.json,styles.css,lessons/...}
   print/learner.html
@@ -60,18 +56,14 @@ data/exports/m11export_<sha256>/
   lms/english-master.imscc
 ```
 
-The manifest inventories authorization and payload files by POSIX-relative path, byte count, and SHA-256. The manifest and verification receipt are control records whose identities bind their contents; they are the two necessary non-self-hashed files. Read-only verification permits no other unreferenced file.
+The manifest inventories authorization and payload files by POSIX-relative path, byte count, and SHA-256. Read-only verification reconstructs the authority and normalized model and rejects missing, changed, or unexpected files. Manifest and verification identities bind their contents. Both report only `DEVELOPMENT_APPROVED`.
 
 ## Format guarantees and limits
 
-All renderers consume one normalized deterministic model. JSON is the lossless catalog and per-artifact representation. CSV is a tabular projection; irregular exercise data remains canonical JSON in `payload_json`. HTML/XML text is escaped, files use normalized encodings/newlines, and ZIP members have fixed ordering, timestamps, permissions, and compression settings.
+All renderers consume one deterministic model. JSON is lossless; CSV is a tabular projection with irregular exercise data retained as canonical JSON in `payload_json`. HTML/XML text is escaped, and ZIP ordering, timestamps, permissions, and compression are fixed.
 
-The learner print edition omits answer material. The separately labelled instructor edition includes it. File separation is not access control, and PDF conversion is outside this standard-library profile.
-
-The `.imscc` archive contains only ungraded XHTML `webcontent` resources and a closed `imsmanifest.xml`. It does not implement or claim QTI, SCORM, gradebook support, target-LMS certification, or IMS certification.
-
-Mobile and web packages are static offline projections. They contain no application runtime, authentication, telemetry, media downloader, live AI provider, or runtime-behavior assurance. AI-practice records describe static protocols only.
+Learner print output omits answers; the separate instructor edition includes them. File separation is not access control. The `.imscc` archive contains ungraded XHTML `webcontent`, not QTI, SCORM, gradebook integration, target-LMS certification, or IMS certification. Mobile and web exports contain no runtime, authentication, telemetry, media downloader, live AI provider, or runtime-behavior assurance.
 
 ## Exclusions
 
-Raw, normalized, deduplicated, and quarantined ingestion paths are rejected. Private model captures, secrets, credentials, and reviewer identity evidence are not exported. The Post-M3 Tatoeba real-record pilot is categorically excluded by path and provenance and cannot become curriculum or release content through M11.
+Raw, normalized, deduplicated, and quarantined ingestion paths are rejected. Private captures, secrets, credentials, and identity evidence are not exported. The Post-M3 Tatoeba pilot is excluded by path and provenance. No media is downloaded by M11.

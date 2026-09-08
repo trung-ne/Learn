@@ -15,10 +15,10 @@ from .verification import ExportVerificationError, verify_export
 def _parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Build and independently verify English Master M11 export packages offline.")
     commands = parser.add_subparsers(dest="command", required=True)
-    inspect = commands.add_parser("inspect-authority", help="check release authority without creating output")
+    inspect = commands.add_parser("inspect-authority", help="check AI development authority without creating output")
     inspect.add_argument("--authorization", required=True, type=Path)
     inspect.add_argument("--repository-root", required=True, type=Path)
-    build = commands.add_parser("build", help="build all required formats from eligible release authority")
+    build = commands.add_parser("build", help="build all required formats from eligible AI development authority")
     build.add_argument("--authorization", required=True, type=Path)
     build.add_argument("--repository-root", required=True, type=Path)
     build.add_argument("--output-root", required=True, type=Path)
@@ -34,7 +34,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     try:
         if args.command == "inspect-authority":
             eligible = assess_authorization(args.authorization, args.repository_root)
-            result = {"eligible": True, "authorization_id": eligible.authorization["authorization_id"], "artifact_count": len(eligible.artifacts), "release_approved": True}
+            result = {"eligible": True, "authorization_id": eligible.authorization["authorization_id"], "artifact_count": len(eligible.artifacts), "approval_tier": "DEVELOPMENT_APPROVED"}
         elif args.command == "build":
             directory = build_export(args.authorization, args.repository_root, args.output_root, exported_at=args.exported_at)
             result = {"result": "BUILT", "directory": str(directory), "export_id": directory.name}

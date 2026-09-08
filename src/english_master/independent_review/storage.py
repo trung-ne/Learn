@@ -10,9 +10,11 @@ from typing import Mapping
 
 from english_master.lesson_generation.canonical import sha256_json
 from english_master.lesson_generation.storage import _fsync_directory, _rename_directory_noreplace
+from english_master.schema_validation import validate_instance
 
 from .authority import VerifiedM9Authority
 from .development import build_development_batch
+from .review import ai_review_schema_for_selection
 from .verification import _linklike, verify_development_batch
 
 
@@ -34,6 +36,9 @@ def publish_development_batch(
     created_at: str,
 ) -> Path:
     """Stage, independently reverify, then atomically publish an M9 overlay."""
+    review_schema, _ = ai_review_schema_for_selection(selection)
+    for review in reviews.values():
+        validate_instance(dict(review), review_schema)
     destination = directory.absolute()
     for ancestor in (destination, *destination.parents):
         if _linklike(ancestor):
@@ -47,9 +52,11 @@ def publish_development_batch(
         stage.mkdir(parents=True, exist_ok=False)
         _write(stage / "selection.json", selection)
         for subject_id, report in reports.items():
-            _write(stage / "machine" / f"{subject_id.split('_', 1)[1][:16]}.json", report)
+            token = subject_id.split("_", 1)[1]
+            _write(stage / "machine" / f"{token}.json", report)
         for (subject_id, role), review in reviews.items():
-            _write(stage / "reviews" / f"{subject_id.split('_', 1)[1][:16]}--{role.lower()}.json", review)
+            token = subject_id.split("_", 1)[1]
+            _write(stage / "reviews" / f"{token}--{role.lower()}.json", review)
         inventory = [
             {"path": path.relative_to(stage).as_posix(), "sha256": sha256_json(json.loads(path.read_text(encoding="utf-8")))}
             for path in sorted(stage.rglob("*.json"))

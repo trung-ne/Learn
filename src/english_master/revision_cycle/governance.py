@@ -28,8 +28,8 @@ def build_governance_run(*, finding_batch: Mapping[str, Any], request: Mapping[s
         "revision_request_id": request["request_id"], "revision_request_sha256": sha256_json(request),
         "target_milestone": request["target_milestone"], "predecessor": dict(predecessor),
         "maximum_attempts": maximum_attempts, "policy_version": policy_version, "created_at": created_at,
-        "content_lifecycle_status": "UNREVIEWED", "development_approved": False, "human_reviewed": False,
-        "release_approved": False, "provider_authenticated": False,
+        "content_lifecycle_status": "UNREVIEWED", "development_approved": False,
+        "provider_authenticated": False,
     }
     value["run_id"] = identity("m10run", value, "run_id")
     validate_instance(value, "m10-governance-run")
@@ -70,7 +70,7 @@ def build_attempt(*, run: Mapping[str, Any], request: Mapping[str, Any], attempt
         "predecessor": {"id": f"predecessor_{sha256_json(predecessor)}", "sha256": sha256_json(predecessor)},
         "candidate": {"artifact_sha256": sha256_json(artifact), "audit_sha256": sha256_json(audit), "content_sha256": sha256_json(artifact)},
         "capture": _reference(str(capture["capture_id"]), capture), "content_lifecycle_status": "UNREVIEWED",
-        "development_approved": False, "human_reviewed": False, "release_approved": False,
+        "development_approved": False,
         "provider_authenticated": False, "created_at": created_at,
     }
     if parent_rejection is not None:
@@ -106,7 +106,7 @@ def build_rejection(*, run: Mapping[str, Any], attempt: Mapping[str, Any], recei
     constraints = sorted({f"Repair {issue['code']} at {issue['path']}: {issue['message']}" for issue in issues})
     remaining = int(run["maximum_attempts"]) - int(attempt["attempt_number"])
     retryable = remaining > 0 and not bool(codes & NON_RETRYABLE_CODES)
-    value: JsonObject = {"schema_version": "1.0", "record_type": "m10_rejection", "rejection_id": "PENDING", "run_id": run["run_id"], "attempt": _reference(str(attempt["attempt_id"]), attempt), "rejected_content_sha256": attempt["candidate"]["content_sha256"], "receipt_hashes": [sha256_json(receipt) for receipt in all_receipts], "blocking_issues": issues, "repair_constraints": constraints, "repair_constraints_sha256": sha256_json(constraints), "retryable": retryable, "remaining_attempts": remaining, "rejected_at": rejected_at, "content_lifecycle_status": "UNREVIEWED", "development_approved": False, "human_reviewed": False, "release_approved": False, "provider_authenticated": False}
+    value: JsonObject = {"schema_version": "1.0", "record_type": "m10_rejection", "rejection_id": "PENDING", "run_id": run["run_id"], "attempt": _reference(str(attempt["attempt_id"]), attempt), "rejected_content_sha256": attempt["candidate"]["content_sha256"], "receipt_hashes": [sha256_json(receipt) for receipt in all_receipts], "blocking_issues": issues, "repair_constraints": constraints, "repair_constraints_sha256": sha256_json(constraints), "retryable": retryable, "remaining_attempts": remaining, "rejected_at": rejected_at, "content_lifecycle_status": "UNREVIEWED", "development_approved": False, "provider_authenticated": False}
     value["rejection_id"] = identity("m10reject", value, "rejection_id")
     validate_instance(value, "m10-rejection")
     return value
@@ -114,7 +114,7 @@ def build_rejection(*, run: Mapping[str, Any], attempt: Mapping[str, Any], recei
 
 def build_operational_failure(*, run: Mapping[str, Any], stage: str, error_code: str, message: str, failed_at: str, attempt: Mapping[str, Any] | None = None) -> JsonObject:
     """Record a truthful terminal operational failure without an approval claim."""
-    value: JsonObject = {"schema_version": "1.0", "record_type": "m10_operational_failure", "failure_id": "PENDING", "run_id": run["run_id"], "stage": stage, "error_code": error_code, "message": message, "failed_at": failed_at, "content_lifecycle_status": "UNREVIEWED", "development_approved": False, "human_reviewed": False, "release_approved": False, "provider_authenticated": False}
+    value: JsonObject = {"schema_version": "1.0", "record_type": "m10_operational_failure", "failure_id": "PENDING", "run_id": run["run_id"], "stage": stage, "error_code": error_code, "message": message, "failed_at": failed_at, "content_lifecycle_status": "UNREVIEWED", "development_approved": False, "provider_authenticated": False}
     if attempt is not None:
         value["attempt_id"] = attempt["attempt_id"]
     value["failure_id"] = identity("m10failure", value, "failure_id")

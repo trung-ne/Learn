@@ -37,12 +37,14 @@ def verify_development_batch(directory: Path, authority: VerifiedM9Authority) ->
     if selection != expected_selection:
         raise ValueError("M9 selection manifest is not authority-reconstructable")
     batch = _load(root / "development-batch.json")
-    validate_instance(batch, "m9-development-batch")
+    validate_instance(batch, "m9-development-batch-v2")
     subject_by_id = {subject.subject_id: subject for subject in authority.subjects}
     if {entry.get("subject_id") for entry in batch["subjects"]} != set(subject_by_id):
         raise ValueError("M9 development batch has incomplete or substituted subject coverage")
     reports: dict[str, JsonObject] = {}
     reviews: dict[tuple[str, str], JsonObject] = {}
+    all_executions: set[str] = set()
+    all_responses: set[str] = set()
     expected_paths = {"selection.json", "development-batch.json"}
     for entry in batch["subjects"]:
         subject_id = entry["subject_id"]
@@ -55,8 +57,6 @@ def verify_development_batch(directory: Path, authority: VerifiedM9Authority) ->
             raise ValueError(f"M9 machine report drift: {subject_id}")
         reports[subject_id] = report
         roles: set[str] = set()
-        executions: set[str] = set()
-        responses: set[str] = set()
         for reference in entry["ai_reviews"]:
             role = reference["review_role"]
             review_path = root / reference["path"]
@@ -68,10 +68,10 @@ def verify_development_batch(directory: Path, authority: VerifiedM9Authority) ->
             if issues:
                 raise ValueError(f"M9 AI review invalid: {subject_id}/{role}: {', '.join(issues)}")
             execution, response_hash = str(review["capture"]["execution_id"]), str(review["raw_response_sha256"])
-            if execution in executions or response_hash in responses:
-                raise ValueError(f"M9 AI roles are not capture-separated: {subject_id}")
-            executions.add(execution)
-            responses.add(response_hash)
+            if execution in all_executions or response_hash in all_responses:
+                raise ValueError("M9 AI captures are not globally distinct")
+            all_executions.add(execution)
+            all_responses.add(response_hash)
             roles.add(role)
             reviews[(subject_id, role)] = review
         if roles != set(CHECKLISTS):
@@ -87,4 +87,12 @@ def verify_development_batch(directory: Path, authority: VerifiedM9Authority) ->
     )
     if batch != expected_batch:
         raise ValueError("M9 development batch is not reconstructable")
-    return {"batch_id": batch["batch_id"], "approval_tier": "DEVELOPMENT_APPROVED", "selection_scope": "REPRESENTATIVE_SAMPLE", "selected_subject_count": 18, "ai_review_count": 36, "human_reviewed": False, "release_approved": False, "provider_authenticated": False}
+    return {
+        "batch_id": batch["batch_id"],
+        "approval_tier": "DEVELOPMENT_APPROVED",
+        "selection_scope": "FULL_POPULATION",
+        "selected_subject_count": len(authority.subjects),
+        "machine_report_count": len(reports),
+        "ai_review_count": len(reviews),
+        "content_lifecycle_status": "UNREVIEWED",
+    }

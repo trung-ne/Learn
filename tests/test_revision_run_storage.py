@@ -24,7 +24,7 @@ def _manifest(*, run: dict[str, object], request: dict[str, object]) -> dict[str
         "revision_requests": [{"request_id": request["request_id"], "path": "requests/1.json", "sha256": run["revision_request_sha256"]}],
         "dispositions": [{"request_id": request["request_id"], "request_sha256": run["revision_request_sha256"], "status": "RETRY_EXHAUSTED", "unresolved_issues": ["Budget exhausted."]}],
         "created_at": "2026-09-05T10:00:00Z", "fresh_m9_required": True, "content_lifecycle_status": "UNREVIEWED",
-        "development_approved": False, "human_reviewed": False, "release_approved": False, "provider_authenticated": False,
+        "development_approved": False, "provider_authenticated": False,
         "limitations": ["No approval."],
     }
     value["manifest_id"] = identity("m10manifest", value, "manifest_id")

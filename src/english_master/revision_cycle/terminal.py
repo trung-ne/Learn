@@ -122,8 +122,6 @@ def build_revision_manifest(
         "fresh_m9_required": True,
         "content_lifecycle_status": "UNREVIEWED",
         "development_approved": False,
-        "human_reviewed": False,
-        "release_approved": False,
         "provider_authenticated": False,
         "limitations": [
             "M10 does not approve generated content, human review, release approval, or provider authentication.",

@@ -13,7 +13,7 @@ from english_master.curriculum_review.loading import load_strict_document
 
 from .authority import VerifiedM9Authority
 from .machine import build_machine_report
-from .review import CHECKLISTS, build_ai_review
+from .review import CHECKLISTS, build_ai_review, build_review_prompt
 from .selection import build_selection
 from .storage import publish_development_batch
 from .verification import verify_development_batch
@@ -60,10 +60,14 @@ def _prepare(authority: VerifiedM9Authority, directory: Path, created_at: str) -
     selection = build_selection(authority, created_at=created_at)
     directory.mkdir(parents=True)
     (directory / "machine").mkdir()
+    (directory / "prompts").mkdir()
     (directory / "selection.json").write_text(json.dumps(selection, ensure_ascii=False, sort_keys=True, separators=(",", ":")) + "\n", encoding="utf-8")
     for subject in authority.subjects:
         report = build_machine_report(authority, selection, subject, reviewed_at=created_at)
         (directory / "machine" / f"{subject.subject_id}.json").write_text(json.dumps(report, ensure_ascii=False, sort_keys=True, separators=(",", ":")) + "\n", encoding="utf-8")
+        for role in CHECKLISTS:
+            prompt_path = directory / "prompts" / f"{subject.subject_id}--{role.lower()}.txt"
+            prompt_path.write_text(build_review_prompt(role, subject, report) + "\n", encoding="utf-8")
     return directory
 
 
@@ -84,7 +88,7 @@ def main(argv: list[str] | None = None) -> int:
         authority = _authority(args)
         if args.command == "prepare-development":
             path = _prepare(authority, args.output_dir, args.created_at or _now())
-            _emit({"prepared": str(path), "selected_subject_count": 18, "approval_tier": "NOT_PUBLISHED"})
+            _emit({"prepared": str(path), "selected_subject_count": len(authority.subjects), "review_prompt_count": len(authority.subjects) * len(CHECKLISTS), "approval_tier": "NOT_PUBLISHED"})
             return 0
         if args.command == "publish-development":
             path = _publish(authority, args.prepared_dir, args.capture_dir, args.output_dir, args.created_at or _now())

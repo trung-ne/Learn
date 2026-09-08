@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/media-verification-report.schema.json",
+  "title": "English Master M12 Independent Media Verification Report",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "record_type", "verification_id", "run_id", "run_report_sha256", "authorization_sha256", "receipt_sha256", "verified_at", "verified_inventory", "checks", "result", "fixture_only", "network_accessed", "approval_tier", "content_lifecycle_status"],
+  "properties": {
+    "schema_version": {"const": "1.0"}, "record_type": {"const": "media_verification_report"}, "verification_id": {"type": "string", "pattern": "^mediaverify_[0-9a-f]{64}$"}, "run_id": {"type": "string", "pattern": "^mediarun_[0-9a-f]{64}$"},
+    "run_report_sha256": {"$ref": "common.schema.json#/$defs/sha256"}, "authorization_sha256": {"$ref": "common.schema.json#/$defs/sha256"}, "receipt_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "verified_at": {"type": "string", "format": "date-time"}, "verified_inventory": {"type": "array", "minItems": 3, "uniqueItems": true, "items": {"$ref": "media-run-report.schema.json#/$defs/inventoryEntry"}},
+    "checks": {"type": "array", "minItems": 8, "uniqueItems": true, "items": {"enum": ["AUTHORIZATION_BINDING", "CHECKSUM", "CLOSED_INVENTORY", "DUPLICATE_IDENTITY", "FIXTURE_BOUNDARY", "MEDIA_METADATA", "MIME_EXTENSION", "PATH_SAFETY", "PERMISSIONS", "PROVENANCE", "SOURCE_REGISTRY"]}},
+    "result": {"const": "PASS"}, "fixture_only": {"const": true}, "network_accessed": {"const": false}, "approval_tier": {"const": "MACHINE_VALIDATED"}, "content_lifecycle_status": {"const": "UNREVIEWED"}
+  }
+}

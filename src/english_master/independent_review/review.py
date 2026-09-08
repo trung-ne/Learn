@@ -18,6 +18,16 @@ CHECKLISTS = {
 }
 
 
+def ai_review_schema_for_selection(selection: Mapping[str, Any]) -> tuple[str, str]:
+    """Select the AI-review contract from the bound selection version."""
+    selection_version = selection.get("schema_version")
+    if selection_version == "1.0":
+        return "m9-ai-review", "1.0"
+    if selection_version == "2.0":
+        return "m9-ai-review-v2", "2.0"
+    raise ValueError(f"unsupported M9 selection schema version: {selection_version!r}")
+
+
 def build_review_prompt(role: str, subject: ReviewSubject, machine_report: Mapping[str, Any]) -> str:
     """Build a context-isolated review prompt without generator reasoning."""
     if role not in CHECKLISTS:
@@ -77,18 +87,21 @@ def build_ai_review(
 ) -> JsonObject:
     """Wrap one actual role-specific captured response in immutable M9 evidence."""
     prompt = build_review_prompt(role, subject, machine_report)
+    schema_name, review_version = ai_review_schema_for_selection(selection)
     value: JsonObject = {
-        "schema_version": "1.0", "record_type": "m9_ai_review", "review_id": "PENDING", "approval_tier": "AI_REVIEWED",
+        "schema_version": review_version, "record_type": "m9_ai_review", "review_id": "PENDING", "approval_tier": "AI_REVIEWED",
         "selection_id": selection["selection_id"], "subject_id": subject.subject_id, "content_type": subject.content_type,
         "artifact_sha256": subject.artifact_sha256, "machine_report_sha256": sha256_json(machine_report),
         "reviewer_type": "AI", "review_role": role, "independent_of_generation": True, "capture": dict(capture),
         "review_prompt": prompt, "raw_response": dict(raw_response), "raw_response_sha256": sha256_json(raw_response),
         "decision": raw_response["decision"], "checklist": list(raw_response["checklist"]), "findings": list(raw_response["findings"]),
         "limitations": list(raw_response["limitations"]), "reviewed_at": reviewed_at, "content_lifecycle_status": "UNREVIEWED",
-        "human_reviewed": False, "release_approved": False, "provider_authenticated": False,
+        "provider_authenticated": False,
     }
+    if review_version == "1.0":
+        value.update({"human_reviewed": False, "release_approved": False})
     value["review_id"] = identity("m9aireview", value, "review_id")
-    validate_instance(value, "m9-ai-review")
+    validate_instance(value, schema_name)
     issues = validate_ai_review(value, selection=selection, subject=subject, machine_report=machine_report)
     if issues:
         raise ValueError("; ".join(issues))
@@ -105,7 +118,8 @@ def validate_ai_review(
     """Reject stale, role-incomplete, non-promotable, or self-consistent fake evidence."""
     issues: list[str] = []
     try:
-        validate_instance(dict(review), "m9-ai-review")
+        schema_name, _ = ai_review_schema_for_selection(selection)
+        validate_instance(dict(review), schema_name)
     except ValueError as error:
         return (f"SCHEMA: {error}",)
     if review.get("review_id") != identity("m9aireview", review, "review_id"):

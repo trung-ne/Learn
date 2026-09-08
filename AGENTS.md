@@ -16,6 +16,10 @@ Before making changes, read:
 
 PROJECT_RULES.md is mandatory.
 
+## Validation policy
+
+For future work, use deterministic and AI-based validation only. Do not require, create, infer, or claim `HUMAN_REVIEWED`, `RELEASE_APPROVED`, human review, human endorsement, or release approval. Existing immutable artifacts containing those historical fields must remain unchanged and cannot authorize new work.
+
 Follow only the milestone explicitly requested by the user.
 
 Never automatically begin another milestone.

@@ -170,8 +170,6 @@ def build_revision_requests(
             "approval_claim_authorized": False,
             "content_lifecycle_status": "UNREVIEWED",
             "development_approved": False,
-            "human_reviewed": False,
-            "release_approved": False,
         }
         if subject.modality is not None:
             value["modality"] = subject.modality

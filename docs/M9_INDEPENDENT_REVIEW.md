@@ -1,41 +1,29 @@
 # M9 Independent Review Layer
 
-## Two lanes
+## Active full-population development lane
 
-M9 keeps development evidence separate from human and release authority.
+The active M9 contract is version 2.0 and covers the complete independently reconstructed current population:
 
-```text
-DEVELOPMENT LANE
-fresh static machine QA
-+ independent AI linguistic review
-+ independent AI pedagogical review
-= DEVELOPMENT_APPROVED
+- 10 M6 lessons
+- 10 M7 exercise sets
+- 40 M8.2 lesson-specific prompt artifacts
+- 60 subjects total
 
-OPTIONAL RELEASE LANE
-verified DEVELOPMENT_APPROVED scope
-+ genuine registry-bound human linguistic and pedagogical review
-= HUMAN_REVIEWED
-+ separate authorized release decision
-= RELEASE_APPROVED
-```
+Subjects are selected dynamically in M6 graph order and M8.2 modality order. The selection binds repository-relative artifact and machine-audit paths plus canonical hashes. The earlier version-1 representative selection and its immutable prepared evidence remain historical, non-promotable records; they are not rewritten or accepted as full-population authority.
 
-Development evidence is not blocked by missing human reviewers. It never changes the reviewed artifacts: lessons, exercise sets, and AI-practice prompt artifacts remain `UNREVIEWED`.
+For every selected subject, M9 requires a fresh passing machine report and two separately captured AI reviews: one linguistic and one pedagogical. A complete batch therefore contains 60 machine reports and 120 AI reviews. Execution IDs and raw-response hashes must be globally unique across all 120 reviews. The closed batch inventory contains the selection plus all reports and reviews.
 
-## Initial development sample
-
-The initial pass selects three graph-ordered clusters from the current ten-lesson development authority: `A1-U01-L01`, `A2-U03-L01`, and `B1-U05-L01`. Each cluster includes one lesson, one exercise set, and the listening, speaking, pronunciation, and writing prompt for that lesson: 18 subjects from a frozen population of 60.
-
-This is a representative sample spanning every M9 content type, not a conclusion about unselected artifacts. The batch must say that unselected content remains outside the review sample.
+A passing batch establishes only `DEVELOPMENT_APPROVED` evidence. Every generated artifact remains consistently `UNREVIEWED`. No human review, release approval, provider authentication, observed live-provider behavior, or Internet-wide originality search is claimed.
 
 ## Authority and checks
 
-M9 independently reloads the M5 development snapshot, M6 ten-lesson batch, M7 ten-set batch, and the complete M8.2 pilot. It does not invent an M8.1 terminal run because none is bound by this M9 contract; it reruns applicable static M9 checks over the selected M7 exercise sets.
+M9 independently reloads the M5 development snapshot, M6 ten-lesson batch, M7 ten-set batch, and complete M8.2 pilot. It reconstructs the whole inventory instead of trusting caller counts.
 
 - Lesson reports recheck schema, authority/audit binding, CEFR/prerequisite scope, provenance, and lifecycle state.
-- Exercise reports rerun the final-set semantic validator and inspect answer/CEFR/prerequisite/provenance constraints.
-- Prompt reports rebuild the M8.2 request/artifact/audit contract and check its modality safety boundary.
+- Exercise reports rerun final-set semantic checks and inspect answer, CEFR, prerequisite, and provenance constraints.
+- Prompt reports rebuild the M8.2 request/artifact/audit contract and check modality safety boundaries.
 
-M8.2 review is **static protocol review only**. It does not assert a live model, audio delivery, speech assessment, conversational execution, writing feedback behavior, or learner outcome.
+M8.2 review is static protocol review only. It does not establish audio delivery, speech assessment, conversation execution, writing-feedback behavior, or learner outcome.
 
 ## Commands
 
@@ -52,16 +40,16 @@ python -m english_master.independent_review verify-development \
   --batch-dir <immutable-development-directory>
 ```
 
-`prepare-development` creates non-promotable scope and machine-report input. `publish-development` accepts only complete, separately captured linguistic and pedagogical AI evidence for all 18 subjects, verifies the staged closed inventory with freshly reloaded authority, and atomically publishes without overwrite.
+`prepare-development` writes a non-promotable version-2 selection, 60 machine reports, and 120 exact role-specific prompt files. It does not call a provider or create capture evidence. `publish-development` imports factual captures only, validates their projections and chronology, verifies the staged closed inventory against freshly reloaded authority, and publishes atomically without overwrite.
 
 ## Capture chronology and failed evidence
 
-For every role capture, the recorded order must be `selection.created_at ≤ machine_report.reviewed_at ≤ capture.observed_at ≤ ai_review.reviewed_at ≤ development_batch.created_at`. Equal values are allowed only when operations share the same clock tick. A later wrapper timestamp cannot rehabilitate a response observed before its frozen machine report. Known timestamps must never be replaced with `UNKNOWN` to bypass this rule.
+For every role capture, the order is:
 
-An actionable `NEEDS_REVISION` or `REJECT` response is retained as non-promotable M9 failure evidence; it cannot be included in a `DEVELOPMENT_APPROVED` batch. It may be imported into M10 only after its exact selection, subject, machine report, prompt, raw response, capture metadata, and chronology are independently validated. Historical invalid captures remain preserved but cannot be rewrapped or reused as fresh evidence.
+`selection.created_at ≤ machine_report.reviewed_at ≤ capture.observed_at ≤ ai_review.reviewed_at ≤ development_batch.created_at`.
 
-## Human and release boundary
+An actionable `NEEDS_REVISION` or `REJECT` response is non-promotable. It may become hash-bound M10 input, but cannot appear in a `DEVELOPMENT_APPROVED` batch. Historical invalid or representative captures cannot be rewrapped as fresh full-population evidence.
 
-The optional human lane requires real external reviewer-registry evidence, including verified identity, authorized role, qualifications, conflict disclosure, exact development-batch binding, chronology, and two distinct linguistic/pedagogical people. AI output can never substitute for that evidence.
+## Current blocker
 
-A separate release decision is required after a valid human-reviewed batch. This representative sample is deliberately not a complete release candidate and cannot authorize a release. No human-review, release, or publisher artifact is supplied by the M9 development pass.
+No version-2 full-population AI capture set or development batch has been manufactured. The existing immutable M10 escalation for `A1-U01-L01` also remains unresolved and must block M11 eligibility until separately authorized upstream repair, dependent rebuild, and wholly fresh M9 review close that lineage.

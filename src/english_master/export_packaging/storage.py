@@ -71,7 +71,7 @@ def build_export(authorization_path: Path, repository_root: Path, output_root: P
             "content_counts": {"lessons": len(model.lessons), "exercise_sets": len(model.exercise_sets), "ai_practice_prompts": len(model.prompts)},
             "files": inventory,
             "static_limitations": STATIC_LIMITATIONS,
-            "approval_tier": "RELEASE_APPROVED",
+            "approval_tier": "DEVELOPMENT_APPROVED",
             "tatoeba_pilot_included": False,
         }
         manifest["export_id"] = identity("m11export", manifest, "export_id")
