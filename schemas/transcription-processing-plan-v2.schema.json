@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/transcription-processing-plan-v2.schema.json",
+  "title": "English Master M13 No-Media Fixture Processing Plan",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "plan_id", "authorization_id", "authorization_sha256", "request_id", "request_sha256", "planned_at", "processing_mode", "input_kind", "operations", "tool", "model", "parameters", "fixture_segments_sha256", "fixture_only"],
+  "properties": {
+    "schema_version": {"const": "2.0"},
+    "record_type": {"const": "transcription_processing_plan"},
+    "plan_id": {"type": "string", "pattern": "^transplan_[0-9a-f]{64}$"},
+    "authorization_id": {"type": "string", "pattern": "^transauth_[0-9a-f]{64}$"},
+    "authorization_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "request_id": {"type": "string", "pattern": "^transreq_[0-9a-f]{64}$"},
+    "request_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "planned_at": {"type": "string", "format": "date-time"},
+    "processing_mode": {"const": "INLINE_FIXTURE_COPY_NO_MEDIA_ACCESS"},
+    "input_kind": {"const": "CALLER_AUTHORED_INLINE_SEGMENTS"},
+    "operations": {"$ref": "#/$defs/prohibitedOperations"},
+    "tool": {"$ref": "#/$defs/tool"},
+    "model": {"$ref": "#/$defs/model"},
+    "parameters": {"$ref": "#/$defs/parameters"},
+    "fixture_segments_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "fixture_only": {"const": true}
+  },
+  "$defs": {
+    "prohibitedOperations": {
+      "type": "object", "additionalProperties": false,
+      "required": ["read_parent_media", "decode_media", "extract_audio", "transform_media", "invoke_external_process", "access_network"],
+      "properties": {
+        "read_parent_media": {"const": false}, "decode_media": {"const": false},
+        "extract_audio": {"const": false}, "transform_media": {"const": false},
+        "invoke_external_process": {"const": false}, "access_network": {"const": false}
+      }
+    },
+    "tool": {
+      "type": "object", "additionalProperties": false, "required": ["name", "version", "implementation"],
+      "properties": {
+        "name": {"const": "english_master.transcription.fixture_copy"},
+        "version": {"const": "2.0"},
+        "implementation": {"const": "PROJECT_PYTHON"}
+      }
+    },
+    "model": {
+      "type": "object", "additionalProperties": false,
+      "required": ["invoked", "provider", "name", "version", "model_file_sha256"],
+      "properties": {
+        "invoked": {"const": false}, "provider": {"type": "null"}, "name": {"type": "null"},
+        "version": {"type": "null"}, "model_file_sha256": {"type": "null"}
+      }
+    },
+    "parameters": {
+      "type": "object", "additionalProperties": false,
+      "required": ["segment_source", "text_join_separator", "timestamp_unit", "text_normalization", "speaker_label_policy"],
+      "properties": {
+        "segment_source": {"const": "INLINE_REQUEST"}, "text_join_separator": {"const": " "},
+        "timestamp_unit": {"const": "MILLISECONDS"}, "text_normalization": {"const": "NONE_EXACT_COPY"},
+        "speaker_label_policy": {"const": "ANONYMIZED_SEQUENTIAL"}
+      }
+    }
+  }
+}

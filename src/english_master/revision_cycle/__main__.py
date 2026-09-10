@@ -21,12 +21,12 @@ def _parser() -> argparse.ArgumentParser:
 
 def main(argv: Sequence[str] | None = None) -> int:
     arguments = list(argv) if argv is not None else None
-    if arguments is not None and arguments and arguments[0] == "import-findings":
+    if arguments is not None and arguments and arguments[0] in {"import-findings", "plan-findings", "execute-successor"}:
         return intake_main(arguments)
     if arguments is None:
         import sys
 
-        if len(sys.argv) > 1 and sys.argv[1] == "import-findings":
+        if len(sys.argv) > 1 and sys.argv[1] in {"import-findings", "plan-findings", "execute-successor"}:
             return intake_main()
     args = _parser().parse_args(arguments)
     if args.command == "verify-run":

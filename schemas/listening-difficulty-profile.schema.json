@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/listening-difficulty-profile.schema.json",
+  "title": "English Master M14 Listening Difficulty Profile",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "record_type", "profile_id", "transcription_id", "transcription_sha256",
+    "algorithm_version", "feature_ledger", "composite", "content_status", "publication_status", "validation_tier",
+    "human_reviewed", "release_approved", "fixture_only", "network_accessed", "media_accessed",
+    "model_accessed", "limitations"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "listening_difficulty_profile"},
+    "profile_id": {"type": "string", "pattern": "^ldprofile_[a-f0-9]{64}$"},
+    "transcription_id": {"type": "string", "pattern": "^ldtx_[a-f0-9]{64}$"},
+    "transcription_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "transcription_run_id": {"type": "string", "pattern": "^transrun_[a-f0-9]{64}$"},
+    "transcription_manifest_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "transcription_verification_id": {"type": "string", "pattern": "^transverify_[a-f0-9]{64}$"},
+    "transcription_verification_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "transcript_artifact_id": {"type": "string", "pattern": "^transcript_[a-f0-9]{64}$"},
+    "transcript_artifact_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "media_run_id": {"type": "string", "pattern": "^mediarun_[a-f0-9]{64}$"},
+    "media_asset_id": {"type": "string", "pattern": "^mediaasset_[a-f0-9]{64}$"},
+    "media_payload_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "acoustic_sidecar_id": {"type": "string", "pattern": "^ldacoustic_[a-f0-9]{64}$"},
+    "acoustic_sidecar_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "algorithm_version": {"const": "listening_difficulty_fixture_v2"},
+    "feature_ledger": {
+      "type": "array", "minItems": 11, "maxItems": 11,
+      "items": {"$ref": "#/$defs/featureEntry"}
+    },
+    "composite": {
+      "type": "object", "additionalProperties": false,
+      "required": ["status", "score", "confidence", "required_core_features", "qualifying_nonlexical_features", "missing_required_features", "rationale"],
+      "properties": {
+        "status": {"enum": ["SCORED", "INSUFFICIENT_EVIDENCE"]},
+        "score": {"oneOf": [{"type": "number", "minimum": 0, "maximum": 100}, {"type": "null"}]},
+        "confidence": {"enum": ["LOW", "MEDIUM", "HIGH", "NOT_ASSESSED"]},
+        "required_core_features": {"const": ["lexical", "grammar", "speech_rate", "utterance_length", "discourse_complexity"]},
+        "qualifying_nonlexical_features": {
+          "type": "array", "uniqueItems": true,
+          "items": {"enum": ["reductions", "connected_speech", "accent", "speaker_count", "speaker_overlap", "noise"]}
+        },
+        "missing_required_features": {
+          "type": "array", "uniqueItems": true,
+          "items": {"enum": ["lexical", "grammar", "speech_rate", "utterance_length", "discourse_complexity", "nonlexical_audio_or_interaction"]}
+        },
+        "rationale": {"type": "string", "minLength": 1, "maxLength": 1000}
+      }
+    },
+    "content_status": {"const": "UNREVIEWED"},
+    "publication_status": {"enum": ["INTERNAL_ANALYSIS_ONLY", "VERIFIED_M13_FIXTURE_RUN"]},
+    "validation_tier": {"enum": ["INTERNAL_ANALYSIS_ONLY", "MACHINE_VALIDATED"]},
+    "human_reviewed": {"const": false},
+    "release_approved": {"const": false},
+    "fixture_only": {"const": true},
+    "network_accessed": {"const": false},
+    "media_accessed": {"const": false},
+    "model_accessed": {"const": false},
+    "limitations": {
+      "type": "array", "minItems": 1, "maxItems": 20,
+      "items": {"type": "string", "minLength": 1, "maxLength": 500}
+    }
+  },
+  "dependentRequired": {
+    "acoustic_sidecar_id": ["acoustic_sidecar_sha256"],
+    "acoustic_sidecar_sha256": ["acoustic_sidecar_id"]
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"publication_status": {"const": "VERIFIED_M13_FIXTURE_RUN"}}},
+      "then": {"properties": {"validation_tier": {"const": "MACHINE_VALIDATED"}}},
+      "else": {"properties": {"validation_tier": {"const": "INTERNAL_ANALYSIS_ONLY"}}}
+    }
+  ],
+  "$defs": {
+    "featureEntry": {
+      "type": "object", "additionalProperties": false,
+      "required": ["feature", "status", "score", "confidence", "evidence", "method", "method_version", "contribution", "limitations"],
+      "properties": {
+        "feature": {"enum": ["lexical", "grammar", "speech_rate", "utterance_length", "reductions", "connected_speech", "accent", "speaker_count", "speaker_overlap", "noise", "discourse_complexity"]},
+        "status": {"enum": ["ASSESSED", "NOT_ASSESSED"]},
+        "score": {"oneOf": [{"type": "number", "minimum": 0, "maximum": 100}, {"type": "null"}]},
+        "confidence": {"enum": ["LOW", "MEDIUM", "HIGH", "NOT_ASSESSED"]},
+        "evidence": {
+          "type": "array", "minItems": 1, "maxItems": 20,
+          "items": {"$ref": "#/$defs/evidenceReference"}
+        },
+        "method": {"type": "string", "minLength": 1, "maxLength": 500},
+        "method_version": {"type": "string", "minLength": 1, "maxLength": 100},
+        "contribution": {
+          "type": "object", "additionalProperties": false,
+          "required": ["included_in_composite", "weight", "weighted_score", "rationale"],
+          "properties": {
+            "included_in_composite": {"type": "boolean"},
+            "weight": {"type": "number", "minimum": 0, "maximum": 1},
+            "weighted_score": {"oneOf": [{"type": "number", "minimum": 0, "maximum": 100}, {"type": "null"}]},
+            "rationale": {"type": "string", "minLength": 1, "maxLength": 500}
+          }
+        },
+        "limitations": {
+          "type": "array", "minItems": 1, "maxItems": 20,
+          "items": {"type": "string", "minLength": 1, "maxLength": 500}
+        }
+      }
+    },
+    "evidenceReference": {
+      "type": "object", "additionalProperties": false,
+      "required": ["evidence_type", "source_record_id", "source_sha256", "locator", "detail"],
+      "properties": {
+        "evidence_type": {"enum": ["TRANSCRIPT_TEXT", "TIMESTAMP", "SPEAKER_LABEL", "DERIVED_STATISTIC", "ACOUSTIC_FIXTURE_SIDECAR", "ABSENCE"]},
+        "source_record_id": {"type": "string", "minLength": 1, "maxLength": 200},
+        "source_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+        "locator": {"type": "string", "minLength": 1, "maxLength": 300},
+        "detail": {"type": "string", "minLength": 1, "maxLength": 500}
+      }
+    }
+  }
+}

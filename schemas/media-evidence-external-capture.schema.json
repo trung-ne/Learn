@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/media-evidence-external-capture.schema.json",
+  "title": "English Master M12 Optional External Evidence-Assessor Capture",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "capture_id", "authorization_id", "authorization_sha256", "provider", "model", "runner", "prompt_sha256", "response_sha256", "captured_at", "operation_results", "overall_result"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "media_evidence_external_capture"},
+    "capture_id": {"type": "string", "pattern": "^mediaevidencecapture_[0-9a-f]{64}$"},
+    "authorization_id": {"type": "string", "pattern": "^mediaauth_[0-9a-f]{64}$"},
+    "authorization_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "provider": {"type": "string", "minLength": 1},
+    "model": {"type": "string", "minLength": 1},
+    "runner": {"type": "string", "minLength": 1},
+    "prompt_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "response_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "captured_at": {"type": "string", "format": "date-time"},
+    "operation_results": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/result"}},
+    "overall_result": {"enum": ["CONSISTENT", "UNVERIFIED"]}
+  },
+  "$defs": {
+    "result": {
+      "type": "object", "additionalProperties": false,
+      "required": ["operation", "result", "reason"],
+      "properties": {
+        "operation": {"$ref": "media-source-authorization-v2.schema.json#/$defs/operation"},
+        "result": {"enum": ["CONSISTENT", "UNVERIFIED"]},
+        "reason": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/transcription-request-v2.schema.json",
+  "title": "English Master M13 Hardened Fixture Transcription Request",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "request_id", "authorization_id", "authorization_sha256", "media_run_id", "media_asset_id", "media_payload_sha256", "language", "speaker_label_policy", "transcription_method", "processing_constraints", "fixture_segments", "fixture_segments_sha256", "requested_at", "fixture_only"],
+  "properties": {
+    "schema_version": {"const": "2.0"},
+    "record_type": {"const": "transcription_request"},
+    "request_id": {"type": "string", "pattern": "^transreq_[0-9a-f]{64}$"},
+    "authorization_id": {"type": "string", "pattern": "^transauth_[0-9a-f]{64}$"},
+    "authorization_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "media_run_id": {"type": "string", "pattern": "^mediarun_[0-9a-f]{64}$"},
+    "media_asset_id": {"type": "string", "pattern": "^mediaasset_[0-9a-f]{64}$"},
+    "media_payload_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "language": {"type": "string", "pattern": "^[a-z]{2,3}(?:-[A-Z]{2})?$"},
+    "speaker_label_policy": {"const": "ANONYMIZED_SEQUENTIAL"},
+    "transcription_method": {"const": "DETERMINISTIC_INLINE_FIXTURE"},
+    "processing_constraints": {"$ref": "transcription-processing-plan-v2.schema.json#/$defs/prohibitedOperations"},
+    "fixture_segments": {"type": "array", "minItems": 1, "maxItems": 1000, "items": {"$ref": "transcription-request.schema.json#/$defs/requestSegment"}},
+    "fixture_segments_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "requested_at": {"type": "string", "format": "date-time"},
+    "fixture_only": {"const": true}
+  }
+}

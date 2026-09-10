@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/transcription-verification-v2.schema.json",
+  "title": "English Master M13 Hardened Transcription Verification",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "record_type", "verification_id", "run_id", "manifest_sha256", "authorization_sha256", "request_sha256", "processing_plan_sha256", "artifact_sha256", "media_schema_version", "media_run_report_sha256", "media_acquisition_receipt_sha256", "media_verification_id", "media_verification_sha256", "media_evidence_assessment_sha256", "verified_at", "verified_inventory", "checks", "result", "fixture_only", "network_accessed", "provider_invoked", "model_invoked", "content_lifecycle_status", "approval_tier"],
+  "properties": {
+    "schema_version": {"const": "2.0"}, "record_type": {"const": "transcription_verification"},
+    "verification_id": {"type": "string", "pattern": "^transverify_[0-9a-f]{64}$"}, "run_id": {"type": "string", "pattern": "^transrun_[0-9a-f]{64}$"},
+    "manifest_sha256": {"$ref": "common.schema.json#/$defs/sha256"}, "authorization_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "request_sha256": {"$ref": "common.schema.json#/$defs/sha256"}, "processing_plan_sha256": {"$ref": "common.schema.json#/$defs/sha256"}, "artifact_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "media_schema_version": {"const": "2.0"}, "media_run_report_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "media_acquisition_receipt_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "media_verification_id": {"type": "string", "pattern": "^mediaverify_[0-9a-f]{64}$"}, "media_verification_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "media_evidence_assessment_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "verified_at": {"type": "string", "format": "date-time"},
+    "verified_inventory": {"type": "array", "minItems": 16, "uniqueItems": true, "items": {"$ref": "transcription-run-manifest-v2.schema.json#/$defs/inventoryEntry"}},
+    "checks": {"type": "array", "minItems": 17, "maxItems": 17, "uniqueItems": true, "items": {"enum": ["CANONICAL_IDENTITIES", "CLOSED_INVENTORY", "FIXTURE_BOUNDARY", "M12_V2_BINDING", "NO_MEDIA_ACCESS", "NO_TRANSFORM", "PARAMETER_BINDING", "PATH_SAFETY", "PROCESSING_PLAN_BINDING", "RECORD_PERMISSION_EVIDENCE", "SCHEMA", "SEGMENT_CONSISTENCY", "SOURCE_REGISTRY", "TIMESTAMP_ORDER", "TOOL_MODEL_PROVENANCE", "TRANSCRIPT_PERMISSION", "TIMESTAMP_PERMISSION"]}},
+    "result": {"const": "PASS"}, "fixture_only": {"const": true}, "network_accessed": {"const": false}, "provider_invoked": {"const": false}, "model_invoked": {"const": false},
+    "content_lifecycle_status": {"const": "UNREVIEWED"}, "approval_tier": {"const": "MACHINE_VALIDATED"}
+  }
+}

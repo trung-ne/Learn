@@ -8,6 +8,8 @@ from typing import Any, Mapping
 
 from english_master.independent_review.authority import VerifiedM9Authority
 from english_master.independent_review.verification import verify_development_batch
+from english_master.lesson_generation.canonical import sha256_json
+from english_master.revision_cycle.supersession import validate_supersession_index
 from english_master.schema_validation import load_json, require_source_permission, validate_instance
 
 from .canonical import canonical_json_bytes, identity, sha256_bytes, sha256_file
@@ -136,21 +138,73 @@ def _current_m9_authority(root: Path, source_registry_path: Path) -> VerifiedM9A
     )
 
 
-def _reject_unresolved_m10(root: Path) -> None:
-    """Conservatively block M11 while any recorded M10 run is unresolved."""
+def _verify_m10_closure(
+    root: Path,
+    index: Mapping[str, Any],
+    *,
+    authorized_m9_reference: Mapping[str, Any],
+) -> None:
+    """Verify the authorization-bound M10 index against every stored run."""
+    issues = validate_supersession_index(index)
+    if issues:
+        raise ExportEligibilityError("M10 supersession index is invalid: " + "; ".join(issues))
+
     runs = root / "data" / "reviews" / "m10" / "runs"
-    if not runs.is_dir():
-        return
-    for path in sorted(runs.rglob("*.json")):
-        if path.is_symlink() or not path.is_file():
-            raise ExportEligibilityError(f"M10 lineage contains an unsafe path: {path}")
+    if runs.is_symlink() or not runs.is_dir():
+        raise ExportEligibilityError("M10 run archive is absent or unsafe")
+    root_members = list(runs.iterdir())
+    if any(path.is_symlink() or not path.is_dir() for path in root_members):
+        raise ExportEligibilityError("M10 run archive must contain only real run directories")
+
+    stored: dict[str, tuple[dict[str, Any], dict[str, Any], Path]] = {}
+    for directory in sorted(root_members):
+        run_path = directory / "run.json"
+        manifest_path = directory / "terminal-manifest.json"
+        if run_path.is_symlink() or manifest_path.is_symlink() or not run_path.is_file() or not manifest_path.is_file():
+            raise ExportEligibilityError(f"M10 run archive is incomplete or unsafe: {directory.relative_to(root).as_posix()}")
         try:
-            record = load_json(path)
+            run = load_json(run_path)
+            manifest = load_json(manifest_path)
+            validate_instance(run, "m10-governance-run")
+            validate_instance(manifest, "m10-revision-manifest")
         except (OSError, ValueError) as error:
-            raise ExportEligibilityError(f"M10 lineage record is invalid: {path}: {error}") from error
-        issue = _forbidden_lineage(record)
-        if issue:
-            raise ExportEligibilityError(f"M10 lineage is not closed: {path.relative_to(root).as_posix()}: {issue}")
+            raise ExportEligibilityError(f"M10 run archive record is invalid: {directory.relative_to(root).as_posix()}: {error}") from error
+        run_id = run.get("run_id")
+        if run_id != identity("m10run", run, "run_id"):
+            raise ExportEligibilityError(f"M10 run identity is not canonical: {directory.relative_to(root).as_posix()}")
+        if manifest.get("manifest_id") != identity("m10manifest", manifest, "manifest_id"):
+            raise ExportEligibilityError(f"M10 manifest identity is not canonical: {directory.relative_to(root).as_posix()}")
+        if run_id in stored:
+            raise ExportEligibilityError(f"M10 run archive contains duplicate run ID {run_id}")
+        stored[str(run_id)] = (run, manifest, directory)
+
+    entries = index.get("entries")
+    if not isinstance(entries, list):
+        raise ExportEligibilityError("M10 supersession index entries are invalid")
+    indexed = {str(entry["run_id"]): entry for entry in entries}
+    if set(indexed) != set(stored):
+        missing = sorted(set(stored) - set(indexed))
+        extra = sorted(set(indexed) - set(stored))
+        raise ExportEligibilityError(f"M10 supersession index does not exactly cover stored runs; missing={missing!r}, extra={extra!r}")
+
+    closed_count = 0
+    for run_id, entry in indexed.items():
+        _, manifest, directory = stored[run_id]
+        if entry.get("manifest_sha256") != sha256_json(manifest):
+            raise ExportEligibilityError(f"M10 terminal manifest hash mismatch for {run_id}")
+        state = entry.get("state")
+        if state == "ACTIVE":
+            issue = _forbidden_lineage(manifest) or "active M10 lineage"
+            raise ExportEligibilityError(f"M10 lineage is not closed: {directory.relative_to(root).as_posix()}: {issue}")
+        if state == "CLOSED_AFTER_FRESH_M9":
+            closed_count += 1
+            if manifest.get("terminal_state") != "READY_FOR_FRESH_M9":
+                raise ExportEligibilityError(f"M10 closure leaf {run_id} is not READY_FOR_FRESH_M9")
+            closure = entry.get("m9_closure")
+            if closure != dict(authorized_m9_reference):
+                raise ExportEligibilityError(f"M10 closure for {run_id} does not bind the M11-authorized fresh M9 batch")
+    if stored and closed_count == 0:
+        raise ExportEligibilityError("M10 lineage has no CLOSED_AFTER_FRESH_M9 leaf")
 
 
 def assess_authorization(authorization_path: Path, repository_root: Path) -> EligibleExport:
@@ -172,6 +226,7 @@ def assess_authorization(authorization_path: Path, repository_root: Path) -> Eli
 
     evidence_specs = (
         ("m9_development_batch", "m9-development-batch-v2"),
+        ("m10_supersession_index", "m10-supersession-index"),
         ("source_registry", "source-registry"),
     )
     loaded: dict[str, dict[str, Any]] = {}
@@ -209,13 +264,17 @@ def assess_authorization(authorization_path: Path, repository_root: Path) -> Eli
     if development_ref.get("sha256") != sha256_file(evidence[0][2]):
         raise ExportEligibilityError("authorization does not bind the exact M9 development batch")
     try:
-        m9_authority = _current_m9_authority(repository_root.resolve(), evidence[1][2])
+        m9_authority = _current_m9_authority(repository_root.resolve(), evidence[2][2])
         verified_m9 = verify_development_batch(evidence[0][2].parent, m9_authority)
     except (OSError, TypeError, ValueError) as error:
         raise ExportEligibilityError(f"M9 development directory is not independently verifiable: {error}") from error
     if verified_m9.get("batch_id") != development.get("batch_id"):
         raise ExportEligibilityError("M9 verifier did not reconstruct the authorized batch")
-    _reject_unresolved_m10(repository_root.resolve())
+    _verify_m10_closure(
+        repository_root.resolve(),
+        loaded["m10_supersession_index"],
+        authorized_m9_reference=authorization["m9_development_batch"],
+    )
 
     artifacts: list[tuple[dict[str, Any], dict[str, Any], Path]] = []
     seen_ids: set[str] = set()

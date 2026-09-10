@@ -306,6 +306,16 @@ All generated content must pass applicable QA before approval.
 
 ---
 
+### 12. Transcript and Listening-Difficulty Validation
+
+**Purpose**: Validate M13 derivative lineage and M14 multidimensional listening evidence.
+
+**Automated**: YES for authority, hash, timestamp, inventory, and feature-evidence constraints; separate recorded AI review may assess linguistic/pedagogical limitations.
+
+Transcript runs must verify explicit transcript and timestamp permission, parent-media lineage, safe publication, ordered duration-bounded segments, anonymous-only speaker labels, and exact inventory hashes. Listening profiles must retain evidence and limitations for lexical, grammar, timing, utterance, discourse, and acoustic/interaction dimensions; a vocabulary-only composite is `INSUFFICIENT_EVIDENCE`.
+
+Fixture output does not establish real ASR accuracy, provider runtime behavior, real-media analysis, learner outcomes, or operational readiness.
+
 ## QA Workflow
 
 ### For Ingested Content

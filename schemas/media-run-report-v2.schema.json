@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/media-run-report-v2.schema.json",
+  "title": "English Master M12 Immutable Media Run Report v2",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "record_type", "run_id", "authorization_id", "authorization_sha256", "assessment_id", "assessment_sha256", "receipt_id", "receipt_sha256", "registry_snapshot_path", "registry_sha256", "source_id", "source_record_id", "started_at", "completed_at", "outcome", "asset_id", "quarantine_id", "expected_payload_sha256", "expected_payload_bytes", "observed_payload_sha256", "observed_payload_bytes", "payload_matches_authorization", "inventory", "inventory_sha256", "checks", "fixture_only", "network_accessed", "derivatives_created", "content_lifecycle_status", "approval_tier", "redistribution_authorized", "limitations"],
+  "properties": {
+    "schema_version": {"const": "2.0"}, "record_type": {"const": "media_run_report"}, "run_id": {"type": "string", "pattern": "^mediarun_[0-9a-f]{64}$"},
+    "authorization_id": {"type": "string", "pattern": "^mediaauth_[0-9a-f]{64}$"}, "authorization_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "assessment_id": {"type": "string", "pattern": "^mediaevidenceassessment_[0-9a-f]{64}$"}, "assessment_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "receipt_id": {"type": "string", "pattern": "^mediareceipt_[0-9a-f]{64}$"}, "receipt_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "registry_snapshot_path": {"const": "registry-snapshot.yaml"}, "registry_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "source_id": {"$ref": "common.schema.json#/$defs/sourceId"}, "source_record_id": {"type": "string", "minLength": 1}, "started_at": {"type": "string", "format": "date-time"}, "completed_at": {"type": "string", "format": "date-time"},
+    "outcome": {"enum": ["STORED", "QUARANTINED"]}, "asset_id": {"type": ["string", "null"], "pattern": "^mediaasset_[0-9a-f]{64}$"}, "quarantine_id": {"type": ["string", "null"], "pattern": "^mediaquarantine_[0-9a-f]{64}$"},
+    "expected_payload_sha256": {"$ref": "common.schema.json#/$defs/sha256"}, "expected_payload_bytes": {"type": "integer", "minimum": 1}, "observed_payload_sha256": {"$ref": "common.schema.json#/$defs/sha256"}, "observed_payload_bytes": {"type": "integer", "minimum": 1}, "payload_matches_authorization": {"type": "boolean"},
+    "inventory": {"type": "array", "minItems": 7, "uniqueItems": true, "items": {"$ref": "#/$defs/inventoryEntry"}}, "inventory_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "checks": {"type": "array", "minItems": 10, "uniqueItems": true, "items": {"enum": ["AUTHORIZATION_BINDING", "CHECKSUM", "CLOSED_INVENTORY", "DUPLICATE_IDENTITY", "EVIDENCE_ASSESSMENT", "EVIDENCE_SNAPSHOTS", "FIXTURE_BOUNDARY", "MEDIA_METADATA", "MIME_EXTENSION", "PATH_SAFETY", "PERMISSIONS", "PROVENANCE", "REGISTRY_SNAPSHOT", "SOURCE_REGISTRY"]}},
+    "fixture_only": {"const": true}, "network_accessed": {"const": false}, "derivatives_created": {"const": 0}, "content_lifecycle_status": {"const": "UNREVIEWED"}, "approval_tier": {"const": "MACHINE_VALIDATED"}, "redistribution_authorized": {"type": "boolean"},
+    "limitations": {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"type": "string", "minLength": 1}}
+  },
+  "$defs": {"inventoryEntry": {"type": "object", "additionalProperties": false, "required": ["path", "bytes", "sha256", "role"], "properties": {"path": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._/-]{0,300}$", "not": {"pattern": "(?:^|/)\\.\\.(?:/|$)|\\\\"}}, "bytes": {"type": "integer", "minimum": 1}, "sha256": {"$ref": "common.schema.json#/$defs/sha256"}, "role": {"enum": ["AUTHORIZATION", "EVIDENCE_ASSESSMENT", "EXTERNAL_CAPTURE", "EVIDENCE_SNAPSHOT", "SOURCE_REGISTRY_SNAPSHOT", "ACQUISITION_RECEIPT", "ASSET_METADATA", "QUARANTINE_RECORD", "PAYLOAD"]}}}}
+}

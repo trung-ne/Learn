@@ -2,7 +2,7 @@
 
 English Master is a reproducible, self-study English learning-system pipeline for CEFR A1 through C2. Its primary learners are Vietnamese learners of English.
 
-## Current scope: M0 through M11 development infrastructure complete
+## Current scope: M0–M12 development infrastructure complete; M13–M14 fixture-only frameworks complete
 
 The completed foundation provides:
 
@@ -19,7 +19,8 @@ The completed foundation provides:
 - An M8 QA Engine development gate that records ordered schema, answer, CEFR, prerequisite, duplicate, and candidate-bound AI language QA receipts; failures create immutable rejection and regeneration lineage rather than editing candidates. Successful decisions are `DEVELOPMENT_APPROVED` only and keep content `UNREVIEWED`.
 - An M8.2 immutable lesson-specific AI-practice pilot: forty M6-authority-bound listening, speaking, pronunciation, and writing protocols, independently reconstructed and machine-validated while content remains `UNREVIEWED`.
 - M9 independent-review and M10 revision-governance contracts. Failed M9 evidence is non-promotable; M10 preserves predecessors and creates bounded, hash-bound successor attempts that require a fresh M9 review after static verification.
-- The M11 standard-library export framework produces deterministic JSON, RFC-4180 CSV, static mobile/web, separate learner/instructor print HTML, and ungraded IMS Common Cartridge 1.3 packages only after complete human/release authority. Current real artifacts are ineligible, so no release export is claimed. See [Export & Packaging](docs/EXPORT_PACKAGING.md).
+- The M11 standard-library export framework produces deterministic JSON, RFC-4180 CSV, static mobile/web, separate learner/instructor print HTML, and ungraded IMS Common Cartridge 1.3 packages only after complete AI-only `DEVELOPMENT_APPROVED` authority. Current real artifacts are ineligible, so no export is claimed. See [Export & Packaging](docs/EXPORT_PACKAGING.md).
+- The M12 controlled-media framework is local-fixture-only. M13 transcription/timestamp and M14 listening-difficulty fixture frameworks are complete, hash-bound, and independently verifiable; they remain preparation-only until their predecessor authority validates. No real media, ASR provider, or downloaded model is used.
 - Data-lifecycle directory scaffolding and Git protections.
 
 M3 is ingestion infrastructure, not a corpus project. M4 adds deterministic normalization and review-oriented deduplication only. M5 adds architecture and dependency planning only. M6 adds constrained lesson generation and an independent development lane; it does not automatically approve lessons, exercises, assessments, or AI prompts. These stages do not crawl websites or bulk-download data or media. The committed ingestion fixture sentences are invented and explicitly used only to test the documented Tatoeba-shaped input path. The strict human/release lane still rejects the DRAFT M5 source bundle without genuine independent human evidence. The separate M5 development snapshot may authorize bounded M6 development only, preserving those source states and never creating human/release claims.

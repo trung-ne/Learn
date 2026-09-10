@@ -181,6 +181,10 @@ def _verify_payloads(
         candidate = attempt["candidate"]
         if candidate["artifact_sha256"] != sha256_json(payload["artifact"]) or candidate["audit_sha256"] != sha256_json(payload["audit"]):
             raise ValueError("M10 stored candidate payload hash drift")
+        if {"artifact", "audit", "closure"} <= set(response) and any(
+            payload[key] != response[key] for key in ("artifact", "audit", "closure")
+        ):
+            raise ValueError("M10 stored successor payload differs from its captured raw response")
 
 
 

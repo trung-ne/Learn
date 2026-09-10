@@ -4,7 +4,7 @@
   "title": "English Master M11 development export authorization",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "record_type", "authorization_id", "package_version", "authorized_at", "m9_development_batch", "source_registry", "artifacts", "subject_inventory_sha256", "formats", "answer_materials", "approval_tier", "tatoeba_pilot_included"],
+  "required": ["schema_version", "record_type", "authorization_id", "package_version", "authorized_at", "m9_development_batch", "m10_supersession_index", "source_registry", "artifacts", "subject_inventory_sha256", "formats", "answer_materials", "approval_tier", "tatoeba_pilot_included"],
   "properties": {
     "schema_version": {"const": "1.0"},
     "record_type": {"const": "m11_export_authorization"},
@@ -12,6 +12,7 @@
     "package_version": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,63}$"},
     "authorized_at": {"$ref": "common.schema.json#/$defs/orderableDateTime"},
     "m9_development_batch": {"$ref": "#/$defs/fileReference"},
+    "m10_supersession_index": {"$ref": "#/$defs/fileReference"},
     "source_registry": {"$ref": "#/$defs/fileReference"},
     "artifacts": {"type": "array", "minItems": 60, "maxItems": 60, "items": {"$ref": "#/$defs/artifactReference"}, "uniqueItems": true},
     "subject_inventory_sha256": {"$ref": "common.schema.json#/$defs/sha256"},

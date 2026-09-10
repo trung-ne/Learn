@@ -288,6 +288,12 @@ Deletion must be:
 
 ---
 
+## Media derivatives and listening-analysis evidence
+
+M13 transcript/timestamp derivatives and M14 listening-difficulty profiles remain separate from original controlled media, `data/approved/`, and exports. Each derivative or profile must bind its exact parent media/transcript hash, source and record identity, operation-specific permission evidence, local tool/model facts (or `UNKNOWN`), parameters, output hash, run manifest, and verification receipt.
+
+Transcript generation and timestamp generation are separate permissions. Speaker segments may use only anonymous within-record labels; no speaker identity, biometric inference, or cross-record linkage is retained. A listening-difficulty profile must retain per-feature evidence and limitations and must never derive its overall result from vocabulary alone. Fixture-derived evidence is clearly marked and cannot claim real-media processing.
+
 ## Authorized real-record pilot boundary
 
 The Post-M3 real-record pilot does not grant a general ingestion or redistribution license. It accepts only a locally supplied official payload from an already `APPROVED` source after a hash-bound authorization and acquisition receipt establish the exact source registry snapshot, official URL, filename, byte count, SHA-256, count bound, and record-level license/attribution lane. A locally observed checksum is labeled as such; it is never presented as a publisher checksum.

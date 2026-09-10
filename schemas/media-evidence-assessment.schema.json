@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/media-evidence-assessment.schema.json",
+  "title": "English Master M12 Local Evidence Consistency Assessment",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "assessment_id", "authorization_id", "authorization_sha256", "assessed_at", "assessor_mode", "external_capture_sha256", "operation_results", "overall_result", "rights_granted", "limitations"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "media_evidence_assessment"},
+    "assessment_id": {"type": "string", "pattern": "^mediaevidenceassessment_[0-9a-f]{64}$"},
+    "authorization_id": {"type": "string", "pattern": "^mediaauth_[0-9a-f]{64}$"},
+    "authorization_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "assessed_at": {"type": "string", "format": "date-time"},
+    "assessor_mode": {"enum": ["DETERMINISTIC_LOCAL", "DETERMINISTIC_WITH_EXTERNAL_CAPTURE"]},
+    "external_capture_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+    "operation_results": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/result"}},
+    "overall_result": {"enum": ["CONSISTENT", "UNVERIFIED"]},
+    "rights_granted": {"const": false},
+    "limitations": {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"type": "string", "minLength": 1}}
+  },
+  "$defs": {
+    "result": {
+      "type": "object", "additionalProperties": false,
+      "required": ["operation", "snapshot_path", "snapshot_sha256", "locator", "located_value_sha256", "deterministic_result", "external_result", "result", "reasons"],
+      "properties": {
+        "operation": {"$ref": "media-source-authorization-v2.schema.json#/$defs/operation"},
+        "snapshot_path": {"type": "string", "minLength": 1},
+        "snapshot_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+        "locator": {"$ref": "media-source-authorization-v2.schema.json#/$defs/locator"},
+        "located_value_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+        "deterministic_result": {"enum": ["CONSISTENT", "UNVERIFIED"]},
+        "external_result": {"type": ["string", "null"], "enum": ["CONSISTENT", "UNVERIFIED", null]},
+        "result": {"enum": ["CONSISTENT", "UNVERIFIED"]},
+        "reasons": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}}
+      }
+    }
+  }
+}

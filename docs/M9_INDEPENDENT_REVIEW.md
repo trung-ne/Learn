@@ -31,6 +31,15 @@ M8.2 review is static protocol review only. It does not establish audio delivery
 python -m english_master.independent_review prepare-development \
   --output-dir <new-prepared-directory>
 
+# Requires a configured local executable. The repository makes no provider call itself.
+export ENGLISH_MASTER_M9_AI_RUNNER='<external-runner-command>'
+# Optional: a local JSON configuration path passed hash-bound to the runner.
+export ENGLISH_MASTER_M9_AI_RUNNER_CONFIG='<local-runner-config.json>'
+
+python -m english_master.independent_review capture-development \
+  --prepared-dir <prepared-directory> \
+  --output-dir <new-real-ai-capture-directory>
+
 python -m english_master.independent_review publish-development \
   --prepared-dir <prepared-directory> \
   --capture-dir <real-ai-capture-directory> \
@@ -40,7 +49,7 @@ python -m english_master.independent_review verify-development \
   --batch-dir <immutable-development-directory>
 ```
 
-`prepare-development` writes a non-promotable version-2 selection, 60 machine reports, and 120 exact role-specific prompt files. It does not call a provider or create capture evidence. `publish-development` imports factual captures only, validates their projections and chronology, verifies the staged closed inventory against freshly reloaded authority, and publishes atomically without overwrite.
+`prepare-development` writes a non-promotable version-2 selection, 60 machine reports, and 120 exact role-specific prompt files. `capture-development` sends one canonical JSON request on standard input to the configured executable for each prompt and requires exactly one canonical JSON response plus a newline on standard output. It records only host-observed and runner-returned facts; unavailable provider/model facts remain `UNKNOWN`. No executable, malformed response, duplicate execution identity, nonzero exit, timeout, or partial capture inventory publishes output. `publish-development` imports factual captures only, validates their projections and chronology, verifies the staged closed inventory against freshly reloaded authority, and publishes atomically without overwrite.
 
 ## Capture chronology and failed evidence
 

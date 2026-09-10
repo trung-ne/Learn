@@ -47,6 +47,7 @@
       "required": ["capture_mode", "provider", "model", "execution_id", "provider_authenticated", "observed_at"],
       "properties": {
         "capture_mode": {"enum": ["SESSION_CAPTURED", "PROVIDER_CAPTURED", "TEST_ONLY"]},
+        "runner_executable": {"type": "string", "minLength": 1},
         "provider": {"type": "string", "minLength": 1},
         "model": {"type": "string", "minLength": 1},
         "execution_id": {"type": "string", "minLength": 1},

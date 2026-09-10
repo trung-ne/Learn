@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/listening-difficulty-verification.schema.json",
+  "title": "English Master M14 Listening Difficulty Verification Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "record_type", "verification_id", "run_id", "transcription_id",
+    "transcription_sha256", "profile_id", "profile_sha256", "core_inventory_sha256",
+    "result", "verifier", "verification_method", "checks", "content_status",
+    "validation_tier", "human_reviewed", "release_approved", "fixture_only",
+    "network_accessed", "media_accessed", "model_accessed", "limitations"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "listening_difficulty_verification"},
+    "verification_id": {"type": "string", "pattern": "^ldverify_[a-f0-9]{64}$"},
+    "run_id": {"type": "string", "pattern": "^ldrun_[a-f0-9]{64}$"},
+    "transcription_id": {"type": "string", "pattern": "^ldtx_[a-f0-9]{64}$"},
+    "transcription_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "profile_id": {"type": "string", "pattern": "^ldprofile_[a-f0-9]{64}$"},
+    "profile_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "acoustic_sidecar_id": {"type": "string", "pattern": "^ldacoustic_[a-f0-9]{64}$"},
+    "acoustic_sidecar_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "core_inventory_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "result": {"const": "PASS"},
+    "verifier": {"const": "english_master.listening_difficulty.verify/v2"},
+    "verification_method": {"const": "DETERMINISTIC_OFFLINE_RECONSTRUCTION"},
+    "checks": {
+      "const": ["M13_FIXTURE_RUN_REVERIFIED", "CLOSED_INVENTORY", "HASH_BINDINGS", "PROFILE_SCHEMA", "FEATURE_SEMANTICS", "DETERMINISTIC_RECONSTRUCTION", "FIXTURE_ONLY_BOUNDARY"]
+    },
+    "content_status": {"const": "UNREVIEWED"},
+    "validation_tier": {"const": "MACHINE_VALIDATED"},
+    "human_reviewed": {"const": false},
+    "release_approved": {"const": false},
+    "fixture_only": {"const": true},
+    "network_accessed": {"const": false},
+    "media_accessed": {"const": false},
+    "model_accessed": {"const": false},
+    "limitations": {
+      "type": "array", "minItems": 1, "maxItems": 20,
+      "items": {"type": "string", "minLength": 1, "maxLength": 500}
+    }
+  },
+  "dependentRequired": {
+    "acoustic_sidecar_id": ["acoustic_sidecar_sha256"],
+    "acoustic_sidecar_sha256": ["acoustic_sidecar_id"]
+  }
+}

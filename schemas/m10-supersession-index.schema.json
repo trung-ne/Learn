@@ -1,6 +1,54 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema", "$id": "https://english-master.local/schemas/m10-supersession-index.schema.json", "title": "English Master M10 append-only supersession index", "type": "object", "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/m10-supersession-index.schema.json",
+  "title": "English Master M10 append-only supersession index",
+  "type": "object",
+  "additionalProperties": false,
   "required": ["schema_version", "record_type", "index_id", "entries", "updated_at"],
-  "properties": {"schema_version": {"const": "1.0"}, "record_type": {"const": "m10_supersession_index"}, "index_id": {"type": "string", "pattern": "^m10index_[a-f0-9]{64}$"}, "entries": {"type": "array", "items": {"$ref": "#/$defs/entry"}}, "updated_at": {"$ref": "common.schema.json#/$defs/orderableDateTime"}},
-  "$defs": {"entry": {"type": "object", "additionalProperties": false, "required": ["run_id", "manifest_sha256", "state", "recorded_at"], "properties": {"run_id": {"type": "string", "pattern": "^m10run_[a-f0-9]{64}$"}, "manifest_sha256": {"$ref": "common.schema.json#/$defs/sha256"}, "state": {"enum": ["ACTIVE", "SUPERSEDED", "CLOSED_AFTER_FRESH_M9"]}, "supersedes": {"type": "object", "additionalProperties": false, "required": ["run_id", "manifest_sha256", "reason"], "properties": {"run_id": {"type": "string", "pattern": "^m10run_[a-f0-9]{64}$"}, "manifest_sha256": {"$ref": "common.schema.json#/$defs/sha256"}, "reason": {"type": "string", "minLength": 1}}}, "m9_closure": {"type": "object", "additionalProperties": false, "required": ["path", "sha256"], "properties": {"path": {"type": "string", "minLength": 1}, "sha256": {"$ref": "common.schema.json#/$defs/sha256"}}}, "recorded_at": {"$ref": "common.schema.json#/$defs/orderableDateTime"}}}}
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "m10_supersession_index"},
+    "index_id": {"type": "string", "pattern": "^m10index_[a-f0-9]{64}$"},
+    "entries": {"type": "array", "items": {"$ref": "#/$defs/entry"}},
+    "updated_at": {"$ref": "common.schema.json#/$defs/orderableDateTime"}
+  },
+  "$defs": {
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["run_id", "manifest_sha256", "state", "recorded_at"],
+      "properties": {
+        "run_id": {"type": "string", "pattern": "^m10run_[a-f0-9]{64}$"},
+        "manifest_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+        "state": {"enum": ["ACTIVE", "SUPERSEDED", "CLOSED_AFTER_FRESH_M9"]},
+        "supersedes": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["run_id", "manifest_sha256", "reason"],
+          "properties": {
+            "run_id": {"type": "string", "pattern": "^m10run_[a-f0-9]{64}$"},
+            "manifest_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+            "reason": {"type": "string", "minLength": 1}
+          }
+        },
+        "m9_closure": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["path", "sha256"],
+          "properties": {
+            "path": {"type": "string", "minLength": 1},
+            "sha256": {"$ref": "common.schema.json#/$defs/sha256"}
+          }
+        },
+        "recorded_at": {"$ref": "common.schema.json#/$defs/orderableDateTime"}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"state": {"const": "CLOSED_AFTER_FRESH_M9"}}, "required": ["state"]},
+          "then": {"required": ["m9_closure"]},
+          "else": {"not": {"required": ["m9_closure"]}}
+        }
+      ]
+    }
+  }
 }

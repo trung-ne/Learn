@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/listening-difficulty-run-manifest.schema.json",
+  "title": "English Master M14 Listening Difficulty Run Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "record_type", "run_id", "transcription_id", "transcription_sha256",
+    "profile_id", "profile_sha256", "verification_id", "verification_sha256",
+    "algorithm_version", "outcome", "inventory", "inventory_sha256", "content_status",
+    "validation_tier", "human_reviewed", "release_approved", "fixture_only", "network_accessed",
+    "media_accessed", "model_accessed", "limitations"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "listening_difficulty_run_manifest"},
+    "run_id": {"type": "string", "pattern": "^ldrun_[a-f0-9]{64}$"},
+    "transcription_id": {"type": "string", "pattern": "^ldtx_[a-f0-9]{64}$"},
+    "transcription_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "profile_id": {"type": "string", "pattern": "^ldprofile_[a-f0-9]{64}$"},
+    "profile_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "acoustic_sidecar_id": {"type": "string", "pattern": "^ldacoustic_[a-f0-9]{64}$"},
+    "acoustic_sidecar_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "verification_id": {"type": "string", "pattern": "^ldverify_[a-f0-9]{64}$"},
+    "verification_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "algorithm_version": {"const": "listening_difficulty_fixture_v2"},
+    "outcome": {"enum": ["SCORED", "INSUFFICIENT_EVIDENCE"]},
+    "inventory": {
+      "type": "array", "minItems": 3, "maxItems": 4,
+      "items": {"$ref": "#/$defs/inventoryEntry"}
+    },
+    "inventory_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "content_status": {"const": "UNREVIEWED"},
+    "validation_tier": {"const": "MACHINE_VALIDATED"},
+    "human_reviewed": {"const": false},
+    "release_approved": {"const": false},
+    "fixture_only": {"const": true},
+    "network_accessed": {"const": false},
+    "media_accessed": {"const": false},
+    "model_accessed": {"const": false},
+    "limitations": {
+      "type": "array", "minItems": 1, "maxItems": 20,
+      "items": {"type": "string", "minLength": 1, "maxLength": 500}
+    }
+  },
+  "dependentRequired": {
+    "acoustic_sidecar_id": ["acoustic_sidecar_sha256"],
+    "acoustic_sidecar_sha256": ["acoustic_sidecar_id"]
+  },
+  "$defs": {
+    "inventoryEntry": {
+      "type": "object", "additionalProperties": false,
+      "required": ["path", "role", "bytes", "sha256"],
+      "properties": {
+        "path": {"enum": ["input.json", "acoustic-sidecar.json", "profile.json", "verification.json"]},
+        "role": {"enum": ["VERIFIED_M13_FIXTURE_INPUT", "ACOUSTIC_FIXTURE_SIDECAR", "DIFFICULTY_PROFILE", "IMMUTABLE_VERIFICATION_RECEIPT"]},
+        "bytes": {"type": "integer", "minimum": 1},
+        "sha256": {"$ref": "common.schema.json#/$defs/sha256"}
+      }
+    }
+  }
+}

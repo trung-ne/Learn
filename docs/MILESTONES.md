@@ -542,7 +542,7 @@ Package content for different modalities:
 - [x] Current development, representative, escalated, unreviewed, ingestion, and Tatoeba-pilot authority fails closed
 - [ ] A complete version-2 full-population `DEVELOPMENT_APPROVED` M9 batch and closed M10 lineage have authorized an M11 package that passes independent verification.
 
-M11 framework completion does not claim that current content is human reviewed, release approved, public, or export-ready. See [M11.md](M11.md) and [EXPORT_PACKAGING.md](EXPORT_PACKAGING.md).
+M11 framework completion does not claim that current content is public or export-ready; its only future authority path is the active AI-only development evidence model. See [M11.md](M11.md) and [EXPORT_PACKAGING.md](EXPORT_PACKAGING.md).
 
 ### Next: M12 only after an explicit request and a complete, independently verified `DEVELOPMENT_APPROVED` M11 export; do not start operationally or automatically
 
@@ -585,11 +585,66 @@ See [M12_MEDIA_INGESTION.md](../prompts/M12_MEDIA_INGESTION.md) for the complete
 - [ ] Complete run inventories pass independent verification
 - [ ] No output claims curriculum, human-review, redistribution, or release authority without a separate applicable gate
 
-### Next: M13
+### Next: M13 only after an explicit request and verified operational M12 media authority
 
 ---
 
-## M13 — Web Platform (Optional, Future)
+## M13 — ASR, Transcript, and Timestamp
+
+**Status**: Fixture-only preparation framework complete; operational transcription is blocked pending verified M11 and M12 authority
+
+### Scope
+
+Produce immutable, permission-bound transcript derivatives from authorized controlled-media assets:
+
+1. Verify the parent M12 asset, registry, authorization, and operation-specific permission evidence
+2. Run an explicitly configured ASR tool or local deterministic fixture backend
+3. Retain transcript text, sentence segmentation, duration-bounded timestamps, and factual tool/model provenance
+4. Add optional anonymous within-record speaker segments when separately permitted and evidenced
+5. Publish an atomic derivative run with independent verification
+
+Transcript and timestamp generation are separate operations. No speaker identity, voice profile, cross-record linkage, or runtime-provider behavior may be inferred. See [M13_TRANSCRIPTION.md](M13_TRANSCRIPTION.md).
+
+### Acceptance Criteria
+
+- [x] Fixture-only M12 v2 parent media and current operation authority independently verify
+- [x] Transcript and timestamp permissions are explicit at source and record scope in fixture contracts
+- [x] Sentence segments are deterministic, ordered, duration-bounded, and hash-bound to the parent asset
+- [x] Optional speaker labels are anonymous and local to the single artifact
+- [x] Fixture-only runs remain clearly non-operational and independently verifiable
+- [x] No real ASR, provider call, model download, or source-media processing occurs until predecessor gates pass
+
+The completed fixture framework does not establish an operational M13 transcript, source/media authority, ASR accuracy, or permission to begin M15.
+
+### Next: M14 only after an explicit request and verified M13 output
+
+---
+
+## M14 — Listening Difficulty Analyzer
+
+**Status**: Fixture-only preparation framework complete; operational analysis is blocked pending verified operational M13 output
+
+### Scope
+
+Create auditable, multidimensional listening-difficulty evidence from verified M13 transcripts and measured media evidence. The analyzer must consider lexical difficulty, grammar difficulty, speech rate, utterance length, reductions, connected speech, accent/variety complexity, number of speakers, speaker overlap, noise, and discourse complexity.
+
+It must not assign an overall listening level from vocabulary alone. Each feature records evidence, method/version, score or `NOT_ASSESSED`, confidence, limitations, and contribution to the cautious composite result. See [M14_LISTENING_DIFFICULTY.md](M14_LISTENING_DIFFICULTY.md).
+
+### Acceptance Criteria
+
+- [x] Fixture-only M13 lineage and evidence verify independently before publication
+- [x] Every required listening dimension is measured or explicitly `NOT_ASSESSED`
+- [x] Vocabulary-only or insufficiently evidenced composites fail closed as `INSUFFICIENT_EVIDENCE`
+- [x] Text-only inputs do not invent acoustic or interaction properties
+- [x] Profiles, manifests, and verifier receipts are immutable and independently verifiable
+
+The completed fixture framework does not establish measured real-media evidence, operational listening analysis, or permission to begin M15.
+
+### Next: M15 only after an explicit request
+
+---
+
+## M15 — Authorized Listening Assembly and Web Platform (Optional, Future)
 
 **Estimated Duration**: ~4-6 weeks
 
@@ -597,24 +652,20 @@ See [M12_MEDIA_INGESTION.md](../prompts/M12_MEDIA_INGESTION.md) for the complete
 
 ### Scope
 
-Build web UI for learners:
+First build authorized listening-exercise assembly from M13/M14 evidence, then build a learner web UI:
 
-- Next.js frontend
-- TypeScript
-- Lesson viewer
-- Exercise taker
-- Progress tracking
-- Spaced repetition scheduler
+- permission-bound media/transcript exercise assembly
+- Next.js frontend and TypeScript
+- lesson and exercise delivery
+- progress tracking and spaced-repetition scheduling
 
-### Note
+The platform must not expose assets, transcripts, or derivatives beyond their exact permission scope.
 
-This is future work after M12 media ingestion. Completion of the preceding development milestones does not by itself claim public-release or production readiness.
-
-### Next: M14
+### Next: M16
 
 ---
 
-## M14 — Production Deployment
+## M16 — Production Deployment
 
 **Estimated Duration**: ~1-2 weeks
 
@@ -622,13 +673,7 @@ This is future work after M12 media ingestion. Completion of the preceding devel
 
 ### Scope
 
-Deploy to production:
-
-1. Infrastructure setup
-2. Security hardening
-3. Load testing
-4. Public launch preparation
-5. Documentation for users
+Deploy the authorized platform using deterministic security and operational evidence, with recorded AI evidence where applicable. Development evidence is not itself public-release authority.
 
 ### Acceptance Criteria
 
@@ -645,7 +690,7 @@ Deploy to production:
 
 **Core Milestones**: M0 - M11 (most important)
 
-**Future**: M12 - M14 (media ingestion, web platform, and production deployment)
+**Future**: M12 - M16 (media ingestion, transcription, listening analysis, web platform, and production deployment)
 
 Each milestone is a deliberate, auditable step toward a complete A1-C2 English learning system.
 

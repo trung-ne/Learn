@@ -59,6 +59,29 @@ python -m english_master.revision_cycle import-findings \
   --imported-at <ISO-8601-timestamp>
 ```
 
+## Supplied-successor execution
+
+`execute-successor` is a production-facing validation boundary, not a generation backend. It freezes one previously planned revision request and accepts only a prompt file, an externally supplied successor envelope, and separately supplied factual capture metadata. It makes no model or provider call.
+
+```bash
+python -m english_master.revision_cycle execute-successor \
+  --finding-batch <finding-batch.json> \
+  --revision-request <revision-request.json> \
+  --prompt <exact-prompt.txt> \
+  --capture <capture-facts.json> \
+  --successor <successor.json> \
+  --output-dir <new-immutable-run-directory> \
+  --maximum-attempts 1 \
+  --created-at <ISO-8601-timestamp> \
+  --reviewed-at <ISO-8601-timestamp>
+```
+
+The capture document is a closed object containing `capture_mode`, `provider`, `model`, `execution_id`, `parameters`, `seed`, `provider_authenticated: false`, `prompt_sha256`, `raw_response_sha256`, and `captured_at`. Only `SESSION_CAPTURED` and `PROVIDER_CAPTURED` are accepted; test/replay modes and test-labelled facts fail before publication. The hashes must match the exact prompt and successor files.
+
+The successor document is a closed envelope containing `artifact`, `audit`, `closure`, and `successor_evidence` (plus `pilot_artifact_count: 40` for an M8.2 target). Closure must exactly equal the frozen request. Evidence kinds must exactly cover the target boundary. A valid supplied envelope receives all six existing M10 receipts and is atomically stored as `READY_FOR_FRESH_M9`, never as approved content.
+
+Omitting both `--capture` and `--successor` records an immutable `CAPTURE_NOT_CONFIGURED` operational failure and does not attempt generation. Supplying only one, supplying malformed or mismatched facts, or supplying an invalid successor exits nonzero and does not create the output directory.
+
 ## Authority-conflict escalation
 
 M10 cannot silently amend M5 authority. If a mandatory repair requires changing an M5-bound M6 field, no regeneration attempt is authorized. M10 instead publishes an immutable `m10_escalation` record that binds the finding input, request, frozen run, predecessor, authority record, exact conflicting repair constraint, and external resolution boundary.

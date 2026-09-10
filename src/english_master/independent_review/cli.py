@@ -14,6 +14,7 @@ from english_master.curriculum_review.loading import load_strict_document
 from .authority import VerifiedM9Authority
 from .machine import build_machine_report
 from .review import CHECKLISTS, build_ai_review, build_review_prompt
+from .runner import RunnerOperationalError, capture_development
 from .selection import build_selection
 from .storage import publish_development_batch
 from .verification import verify_development_batch
@@ -47,6 +48,8 @@ def _parser() -> argparse.ArgumentParser:
     commands = parser.add_subparsers(dest="command", required=True)
     prepare = commands.add_parser("prepare-development", help="write a non-promotable M9 selection and fresh machine reports")
     _common(prepare); prepare.add_argument("--output-dir", type=Path, required=True); prepare.add_argument("--created-at")
+    capture = commands.add_parser("capture-development", help="run all 120 provider-neutral M9 AI capture operations")
+    _common(capture); capture.add_argument("--prepared-dir", type=Path, required=True); capture.add_argument("--output-dir", type=Path, required=True); capture.add_argument("--runner-config", type=Path); capture.add_argument("--timeout-seconds", type=float, default=600.0)
     publish = commands.add_parser("publish-development", help="publish complete M9 evidence from real AI captures")
     _common(publish); publish.add_argument("--prepared-dir", type=Path, required=True); publish.add_argument("--capture-dir", type=Path, required=True); publish.add_argument("--output-dir", type=Path, required=True); publish.add_argument("--created-at", default=None)
     verify = commands.add_parser("verify-development", help="read-only verify an immutable M9 development batch")
@@ -90,12 +93,20 @@ def main(argv: list[str] | None = None) -> int:
             path = _prepare(authority, args.output_dir, args.created_at or _now())
             _emit({"prepared": str(path), "selected_subject_count": len(authority.subjects), "review_prompt_count": len(authority.subjects) * len(CHECKLISTS), "approval_tier": "NOT_PUBLISHED"})
             return 0
+        if args.command == "capture-development":
+            path = capture_development(
+                authority=authority, prepared_directory=args.prepared_dir,
+                output_directory=args.output_dir, config_path=args.runner_config,
+                timeout_seconds=args.timeout_seconds,
+            )
+            _emit({"capture_directory": str(path), "successful_capture_count": 120, "complete": True})
+            return 0
         if args.command == "publish-development":
             path = _publish(authority, args.prepared_dir, args.capture_dir, args.output_dir, args.created_at or _now())
             _emit({"output": str(path), **verify_development_batch(path, authority)})
             return 0
         _emit(verify_development_batch(args.batch_dir, authority))
         return 0
-    except (KeyError, OSError, TypeError, ValueError, yaml.YAMLError) as error:
+    except (KeyError, OSError, RunnerOperationalError, TypeError, ValueError, yaml.YAMLError) as error:
         print(f"{type(error).__name__}: {error}".encode("ascii", "backslashreplace").decode("ascii"))
         return 2

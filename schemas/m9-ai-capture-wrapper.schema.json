@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/m9-ai-capture-wrapper.schema.json",
+  "title": "English Master M9 AI runner capture wrapper",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["capture", "raw_response", "reviewed_at"],
+  "properties": {
+    "capture": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["capture_mode", "runner_executable", "provider", "model", "execution_id", "provider_authenticated", "observed_at"],
+      "properties": {
+        "capture_mode": {"const": "PROVIDER_CAPTURED"},
+        "runner_executable": {"type": "string", "minLength": 1},
+        "provider": {"type": "string", "minLength": 1},
+        "model": {"type": "string", "minLength": 1},
+        "execution_id": {"type": "string", "minLength": 1},
+        "provider_authenticated": {"const": false},
+        "observed_at": {"$ref": "common.schema.json#/$defs/orderableDateTime"}
+      }
+    },
+    "raw_response": {"$ref": "m9-ai-runner-response.schema.json#/properties/raw_response"},
+    "reviewed_at": {"$ref": "common.schema.json#/$defs/orderableDateTime"}
+  }
+}

@@ -10,12 +10,15 @@ from xml.etree import ElementTree as ET
 import pytest
 import yaml
 
+from english_master.export_packaging import authority as export_authority
 from english_master.export_packaging.authority import ExportEligibilityError, assess_authorization
 from english_master.export_packaging.canonical import canonical_json_bytes, identity, sha256_bytes, sha256_file
 from english_master.export_packaging.cli import main
 from english_master.export_packaging.models import ExportArtifact, ExportModel
 from english_master.export_packaging.renderers import RENDERERS, common_cartridge_bytes
 from english_master.export_packaging.storage import build_export
+from english_master.lesson_generation.canonical import sha256_json
+from english_master.revision_cycle.supersession import build_supersession_index
 from english_master.schema_validation import load_schemas
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -85,6 +88,83 @@ def _eligible_authorization(root: Path) -> Path:
     path = root / "authorization.json"
     _write_json(path, authorization)
     return path
+
+
+def _stored_m10_run(root: Path, token: str, terminal_state: str) -> tuple[dict[str, object], dict[str, object]]:
+    run: dict[str, object] = {"run_id": "PENDING", "token": token}
+    run["run_id"] = identity("m10run", run, "run_id")
+    manifest: dict[str, object] = {"manifest_id": "PENDING", "terminal_state": terminal_state, "token": token}
+    manifest["manifest_id"] = identity("m10manifest", manifest, "manifest_id")
+    directory = root / "data" / "reviews" / "m10" / "runs" / token
+    _write_json(directory / "run.json", run)
+    _write_json(directory / "terminal-manifest.json", manifest)
+    return run, manifest
+
+
+def _closed_index_entry(run: dict[str, object], manifest: dict[str, object], m9: dict[str, str]) -> dict[str, object]:
+    return {
+        "run_id": run["run_id"],
+        "manifest_sha256": sha256_json(manifest),
+        "state": "CLOSED_AFTER_FRESH_M9",
+        "m9_closure": m9,
+        "recorded_at": "2026-09-07T10:00:00Z",
+    }
+
+
+def test_m10_closed_lineage_must_bind_exact_authorized_fresh_m9(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setattr(export_authority, "validate_instance", lambda *_args, **_kwargs: None)
+    m9 = {"path": "data/reviews/m9/fresh/development-batch.json", "sha256": "f" * 64}
+    run, manifest = _stored_m10_run(tmp_path, "closed", "READY_FOR_FRESH_M9")
+    index = build_supersession_index(
+        entries=[_closed_index_entry(run, manifest, m9)],
+        updated_at="2026-09-07T10:00:00Z",
+    )
+    export_authority._verify_m10_closure(tmp_path, index, authorized_m9_reference=m9)
+
+    wrong_m9 = {"path": m9["path"], "sha256": "e" * 64}
+    with pytest.raises(ExportEligibilityError, match="does not bind the M11-authorized"):
+        export_authority._verify_m10_closure(tmp_path, index, authorized_m9_reference=wrong_m9)
+
+
+def test_m10_current_escalation_remains_fail_closed(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setattr(export_authority, "validate_instance", lambda *_args, **_kwargs: None)
+    run, manifest = _stored_m10_run(tmp_path, "escalated", "ESCALATED")
+    entry = {
+        "run_id": run["run_id"],
+        "manifest_sha256": sha256_json(manifest),
+        "state": "ACTIVE",
+        "recorded_at": "2026-09-07T10:00:00Z",
+    }
+    index = build_supersession_index(entries=[entry], updated_at="2026-09-07T10:00:00Z")
+    with pytest.raises(ExportEligibilityError, match="ESCALATED"):
+        export_authority._verify_m10_closure(tmp_path, index, authorized_m9_reference={"path": "unused", "sha256": "f" * 64})
+
+
+def test_m10_index_rejects_manifest_hash_drift_and_invented_or_omitted_runs(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setattr(export_authority, "validate_instance", lambda *_args, **_kwargs: None)
+    m9 = {"path": "data/reviews/m9/fresh/development-batch.json", "sha256": "f" * 64}
+    run, manifest = _stored_m10_run(tmp_path, "stored", "READY_FOR_FRESH_M9")
+    drifted = _closed_index_entry(run, manifest, m9)
+    drifted["manifest_sha256"] = "0" * 64
+    drifted_index = build_supersession_index(entries=[drifted], updated_at="2026-09-07T10:00:00Z")
+    with pytest.raises(ExportEligibilityError, match="manifest hash mismatch"):
+        export_authority._verify_m10_closure(tmp_path, drifted_index, authorized_m9_reference=m9)
+
+    omitted = build_supersession_index(entries=[], updated_at="2026-09-07T10:00:00Z")
+    with pytest.raises(ExportEligibilityError, match="does not exactly cover"):
+        export_authority._verify_m10_closure(tmp_path, omitted, authorized_m9_reference=m9)
+
+    invented_run = {"run_id": "m10run_" + "9" * 64}
+    invented = {
+        "run_id": invented_run["run_id"],
+        "manifest_sha256": "9" * 64,
+        "state": "CLOSED_AFTER_FRESH_M9",
+        "m9_closure": m9,
+        "recorded_at": "2026-09-07T10:00:00Z",
+    }
+    invented_index = build_supersession_index(entries=[invented], updated_at="2026-09-07T10:00:00Z")
+    with pytest.raises(ExportEligibilityError, match="does not exactly cover"):
+        export_authority._verify_m10_closure(tmp_path, invented_index, authorized_m9_reference=m9)
 
 
 def test_m11_schemas_load_and_metaschema_validate() -> None:

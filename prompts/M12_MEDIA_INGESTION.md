@@ -6,7 +6,7 @@
 
 M12 must not begin operationally until M11 has a complete export whose authorization, manifest, and verification receipt all validate as `DEVELOPMENT_APPROVED` under the active AI-only policy. This is a development gate, not human review, endorsement, release approval, or public-release authority. Creating this document records the design boundary only; it does not authorize acquisition, downloading, transformation, transcription, redistribution, or controlled-media publication.
 
-Current M11 status does not satisfy that gate. No M12 code, source registration, media acquisition, or real media payload is authorized by this document.
+Current M11 status does not satisfy that gate. The local fixture-only M12 framework is implemented, but no source registration, media acquisition, real payload, transformation, or controlled-media publication is authorized by this document.
 
 ## Mission
 
@@ -57,6 +57,7 @@ Permissions are checked separately for every source and every record. A source i
 - `can_transform`
 - `can_extract_audio`
 - `can_generate_transcript`
+- `can_generate_timestamps`
 - `can_redistribute`
 
 Missing, ambiguous, expired, conflicting, or inherited-only permission fails closed. Audio permission does not imply video permission. Storage permission does not imply redistribution permission. Extraction, clipping, transformation, and transcription are separate operations and require separate evidence.
@@ -82,9 +83,10 @@ A derivative is not automatically permitted because the original is permitted. B
 - format or codec conversion requires `can_transform`
 - audio extraction from video requires `can_extract_audio`
 - transcript generation requires `can_generate_transcript`
+- timestamp generation requires `can_generate_timestamps`
 - public/export distribution requires `can_redistribute`
 
-If a transcript provider, model, or tool is used, retain factual provider/model/version information. Use `UNKNOWN` when unavailable; never fabricate it. Generated transcripts remain unreviewed until a later approved QA workflow.
+M12 stores the original and derivative authority only. M13 owns ASR execution, transcript segmentation, timestamp validation, optional anonymous speaker segmentation, and its separate immutable derivative runs.
 
 ## Storage and safety
 
@@ -100,27 +102,24 @@ The controlled store must reject:
 - duplicate source identity with changed bytes
 - output roots inside curriculum, exports, or approved content
 
-## Planned contracts and commands
+## Implemented fixture-only contracts and commands
 
-Future M12 implementation should add strict schemas for:
+The repository now provides both the legacy v1 fixture framework and a stricter v2 fixture framework. Neither framework authorizes real acquisition, access to a URL, rights determination, transformation, transcript creation, or redistribution.
 
-- media source authorization
-- acquisition receipt
-- media asset metadata
-- derivative operation receipt
-- quarantine record
-- immutable run report
-- independent verification report
-
-Planned offline-first commands:
+The v2 lane adds hash/size/locator-bound evidence snapshots for every enabled operation, an explicit `can_generate_timestamps` permission, retained registry snapshots, direct authorization/payload comparison, and a local consistency assessor. The assessor returns only `CONSISTENT` or `UNVERIFIED` and always records `rights_granted: false`.
 
 ```bash
 python -m english_master.media_ingestion prepare ...
 python -m english_master.media_ingestion run ...
 python -m english_master.media_ingestion verify ...
+
+python -m english_master.media_ingestion assess-evidence-v2 ...
+python -m english_master.media_ingestion prepare-v2 ...
+python -m english_master.media_ingestion run-v2 ...
+python -m english_master.media_ingestion verify-v2 ...
 ```
 
-Acquisition itself remains outside the generic CLI unless a separately authorized official API/download adapter is implemented and permission-checked. No command may accept YouTube URLs.
+All arguments that name artifacts are local paths; URLs are rejected. Acquisition remains outside the generic CLI unless a separately authorized official adapter is added.
 
 ## QA requirements
 

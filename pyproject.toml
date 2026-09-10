@@ -31,6 +31,8 @@ english-master-exercise-development-batch = "english_master.exercise_development
 english-master-qa-engine = "english_master.qa_engine.cli:main"
 english-master-export = "english_master.export_packaging.cli:main"
 english-master-media-ingestion = "english_master.media_ingestion.__main__:main"
+english-master-listening-difficulty = "english_master.listening_difficulty.__main__:main"
+english-master-transcription = "english_master.transcription.__main__:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

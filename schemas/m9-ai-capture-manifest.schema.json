@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/m9-ai-capture-manifest.schema.json",
+  "title": "English Master M9 closed AI capture manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "selection_id", "runner_executable", "config_sha256", "expected_operation_count", "successful_operation_count", "complete", "captures"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "m9_ai_capture_manifest"},
+    "selection_id": {"type": "string", "pattern": "^m9select_[a-f0-9]{64}$"},
+    "runner_executable": {"type": "string", "minLength": 1},
+    "config_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "expected_operation_count": {"const": 120},
+    "successful_operation_count": {"const": 120},
+    "complete": {"const": true},
+    "captures": {
+      "type": "array",
+      "minItems": 120,
+      "maxItems": 120,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["subject_id", "review_role", "path", "sha256", "request_id"],
+        "properties": {
+          "subject_id": {"type": "string", "pattern": "^m9sub_[a-f0-9]{64}$"},
+          "review_role": {"enum": ["LINGUISTIC_AI_REVIEWER", "PEDAGOGICAL_AI_REVIEWER"]},
+          "path": {"type": "string", "pattern": "^[^/\\\\]+\\.json$"},
+          "sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+          "request_id": {"type": "string", "pattern": "^m9airunreq_[a-f0-9]{64}$"}
+        }
+      }
+    }
+  }
+}

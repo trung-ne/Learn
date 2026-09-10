@@ -7,7 +7,7 @@ from english_master.independent_review.authority import VerifiedM9Authority
 from english_master.independent_review.machine import build_machine_report
 from english_master.independent_review.review import CHECKLISTS
 from english_master.independent_review.selection import build_selection
-from english_master.revision_cycle.cli import import_findings
+from english_master.revision_cycle.cli import import_findings, plan_findings
 from english_master.revision_cycle.verification import verify_finding_batch
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -71,3 +71,7 @@ def test_import_findings_requires_complete_capture_inventory_and_publishes_nonap
     result = verify_finding_batch(output, selection=selection, subjects={subject.subject_id: subject for subject in authority.subjects})
     assert len(result["review_inputs"]) == 1
     assert result["promotion_status"] == "NON_PROMOTABLE"
+    requests = plan_findings(authority=authority, finding_batch_directory=output)
+    assert len(requests) == 1
+    assert requests[0]["planning_only"] is True
+    assert requests[0]["successor_created"] is False

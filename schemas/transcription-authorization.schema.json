@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/transcription-authorization.schema.json",
+  "title": "English Master M13 Fixture Transcription Authorization",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "authorization_id", "authorization_mode", "fixture_only", "registry_path", "registry_sha256", "media_run_path", "media_schema_version", "media_run_id", "media_run_report_sha256", "media_acquisition_receipt_id", "media_acquisition_receipt_sha256", "media_verification_id", "media_verification_sha256", "media_evidence_assessment_id", "media_evidence_assessment_sha256", "media_asset_id", "media_asset_sha256", "media_payload_sha256", "source_id", "source_record_id", "media_kind", "media_duration_ms", "permissions", "permission_basis", "authorized_at", "expires_at"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "transcription_authorization"},
+    "authorization_id": {"type": "string", "pattern": "^transauth_[0-9a-f]{64}$"},
+    "authorization_mode": {"const": "OFFLINE_TEST_FIXTURE_ONLY"},
+    "fixture_only": {"const": true},
+    "registry_path": {"$ref": "#/$defs/localPath"},
+    "registry_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "media_run_path": {"$ref": "#/$defs/localPath"},
+    "media_schema_version": {"enum": ["1.0", "2.0"]},
+    "media_run_id": {"type": "string", "pattern": "^mediarun_[0-9a-f]{64}$"},
+    "media_run_report_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "media_acquisition_receipt_id": {"type": "string", "pattern": "^mediareceipt_[0-9a-f]{64}$"},
+    "media_acquisition_receipt_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "media_verification_id": {"type": "string", "pattern": "^mediaverify_[0-9a-f]{64}$"},
+    "media_verification_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "media_evidence_assessment_id": {"oneOf": [{"type": "string", "pattern": "^mediaevidenceassessment_[0-9a-f]{64}$"}, {"type": "null"}]},
+    "media_evidence_assessment_sha256": {"oneOf": [{"$ref": "common.schema.json#/$defs/sha256"}, {"type": "null"}]},
+    "media_asset_id": {"type": "string", "pattern": "^mediaasset_[0-9a-f]{64}$"},
+    "media_asset_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "media_payload_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "source_id": {"$ref": "common.schema.json#/$defs/sourceId"},
+    "source_record_id": {"type": "string", "minLength": 1, "maxLength": 256},
+    "media_kind": {"enum": ["AUDIO", "VIDEO"]},
+    "media_duration_ms": {"type": "integer", "minimum": 1, "maximum": 600000},
+    "permissions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["transcript_generation", "timestamp_generation"],
+      "properties": {
+        "transcript_generation": {"const": true},
+        "timestamp_generation": {"const": true}
+      }
+    },
+    "permission_basis": {"const": "SOURCE_REGISTRY_AND_M12_AUTHORIZATION"},
+    "authorized_at": {"type": "string", "format": "date-time"},
+    "expires_at": {"type": "string", "format": "date-time"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"media_schema_version": {"const": "1.0"}}},
+      "then": {
+        "properties": {
+          "media_evidence_assessment_id": {"type": "null"},
+          "media_evidence_assessment_sha256": {"type": "null"}
+        }
+      },
+      "else": {
+        "properties": {
+          "media_evidence_assessment_id": {"type": "string", "pattern": "^mediaevidenceassessment_[0-9a-f]{64}$"},
+          "media_evidence_assessment_sha256": {"$ref": "common.schema.json#/$defs/sha256"}
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "localPath": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 512,
+      "pattern": "^(?![/\\\\])(?![A-Za-z]:)(?!.*://)(?!.*(?:^|[/\\\\])\\.\\.(?:[/\\\\]|$)).+$"
+    }
+  }
+}

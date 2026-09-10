@@ -64,6 +64,12 @@ Data Sources
 [Approval] → Publish to Approved Data
     ↓
 [Export] → Multiple Formats
+    ↓
+[Controlled Media] → Permission-bound originals
+    ↓
+[Transcription] → Transcript, sentence segments, timestamps
+    ↓
+[Listening Analysis] → Multidimensional difficulty evidence
 ```
 
 ### Key Components
@@ -78,6 +84,9 @@ Data Sources
 8. **QA Engine**: Validate schema, grammar, answers, copyright
 9. **Approval System**: Manual review and final approval
 10. **Export Engine**: Package for different modalities
+11. **Controlled Media Pipeline**: Permission-bound media storage, immutable derivative lineage, and verification
+12. **Transcription Pipeline**: Permission-bound ASR/fixture outputs with sentence timestamps and anonymous optional speaker segments
+13. **Listening Difficulty Analyzer**: Evidence-led, multidimensional listening profile; never vocabulary-only classification
 
 ---
 

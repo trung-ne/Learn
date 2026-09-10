@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/transcription-run-manifest-v2.schema.json",
+  "title": "English Master M13 Hardened Immutable Run Manifest",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "record_type", "run_id", "authorization_id", "authorization_sha256", "request_id", "request_sha256", "processing_plan_id", "processing_plan_sha256", "artifact_id", "artifact_sha256", "media_schema_version", "media_run_id", "media_run_report_sha256", "media_acquisition_receipt_id", "media_acquisition_receipt_sha256", "media_verification_id", "media_verification_sha256", "media_evidence_assessment_id", "media_evidence_assessment_sha256", "media_asset_id", "started_at", "completed_at", "outcome", "stage_receipts", "inventory", "inventory_sha256", "checks", "fixture_only", "network_accessed", "provider_invoked", "model_invoked", "content_lifecycle_status", "approval_tier", "redistribution_authorized", "limitations"],
+  "properties": {
+    "schema_version": {"const": "2.0"}, "record_type": {"const": "transcription_run_manifest"},
+    "run_id": {"type": "string", "pattern": "^transrun_[0-9a-f]{64}$"},
+    "authorization_id": {"type": "string", "pattern": "^transauth_[0-9a-f]{64}$"}, "authorization_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "request_id": {"type": "string", "pattern": "^transreq_[0-9a-f]{64}$"}, "request_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "processing_plan_id": {"type": "string", "pattern": "^transplan_[0-9a-f]{64}$"}, "processing_plan_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "artifact_id": {"type": "string", "pattern": "^transcript_[0-9a-f]{64}$"}, "artifact_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "media_schema_version": {"const": "2.0"}, "media_run_id": {"type": "string", "pattern": "^mediarun_[0-9a-f]{64}$"},
+    "media_run_report_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "media_acquisition_receipt_id": {"type": "string", "pattern": "^mediareceipt_[0-9a-f]{64}$"}, "media_acquisition_receipt_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "media_verification_id": {"type": "string", "pattern": "^mediaverify_[0-9a-f]{64}$"}, "media_verification_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "media_evidence_assessment_id": {"type": "string", "pattern": "^mediaevidenceassessment_[0-9a-f]{64}$"}, "media_evidence_assessment_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "media_asset_id": {"type": "string", "pattern": "^mediaasset_[0-9a-f]{64}$"},
+    "started_at": {"type": "string", "format": "date-time"}, "completed_at": {"type": "string", "format": "date-time"}, "outcome": {"const": "COMPLETED"},
+    "stage_receipts": {"type": "array", "minItems": 5, "maxItems": 5, "items": {"$ref": "#/$defs/receiptReference"}},
+    "inventory": {"type": "array", "minItems": 16, "uniqueItems": true, "items": {"$ref": "#/$defs/inventoryEntry"}},
+    "inventory_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "checks": {"type": "array", "minItems": 17, "maxItems": 17, "uniqueItems": true, "items": {"enum": ["CANONICAL_IDENTITIES", "CLOSED_INVENTORY", "FIXTURE_BOUNDARY", "M12_V2_BINDING", "NO_MEDIA_ACCESS", "NO_TRANSFORM", "PARAMETER_BINDING", "PATH_SAFETY", "PROCESSING_PLAN_BINDING", "RECORD_PERMISSION_EVIDENCE", "SCHEMA", "SEGMENT_CONSISTENCY", "SOURCE_REGISTRY", "TIMESTAMP_ORDER", "TOOL_MODEL_PROVENANCE", "TRANSCRIPT_PERMISSION", "TIMESTAMP_PERMISSION"]}},
+    "fixture_only": {"const": true}, "network_accessed": {"const": false}, "provider_invoked": {"const": false}, "model_invoked": {"const": false},
+    "content_lifecycle_status": {"const": "UNREVIEWED"}, "approval_tier": {"const": "MACHINE_VALIDATED"}, "redistribution_authorized": {"const": false},
+    "limitations": {"type": "array", "minItems": 3, "uniqueItems": true, "items": {"type": "string", "minLength": 1}}
+  },
+  "$defs": {
+    "receiptReference": {"type": "object", "additionalProperties": false, "required": ["sequence", "stage", "path", "receipt_id", "sha256"], "properties": {
+      "sequence": {"type": "integer", "minimum": 1, "maximum": 5}, "stage": {"enum": ["AUTHORIZATION", "REQUEST", "PROCESSING_PLAN", "SEGMENTS", "ARTIFACT"]},
+      "path": {"type": "string", "pattern": "^receipts/[1-5]-(?:authorization|request|processing-plan|segments|artifact)\\.json$"},
+      "receipt_id": {"type": "string", "pattern": "^transreceipt_[0-9a-f]{64}$"}, "sha256": {"$ref": "common.schema.json#/$defs/sha256"}
+    }},
+    "inventoryEntry": {"type": "object", "additionalProperties": false, "required": ["path", "bytes", "sha256", "role"], "properties": {
+      "path": {"type": "string", "pattern": "^(?:authorization\\.json|request\\.json|processing-plan\\.json|transcript-artifact\\.json|source-registry\\.yaml|parent-media-authorization\\.json|parent-media-acquisition-receipt\\.json|parent-media-run-report\\.json|parent-media-verification\\.json|parent-media-evidence-assessment\\.json|parent-media-asset\\.json|evidence-(?:transcript|timestamp)\\.snapshot|receipts/[1-5]-(?:authorization|request|processing-plan|segments|artifact)\\.json)$"},
+      "bytes": {"type": "integer", "minimum": 1}, "sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+      "role": {"enum": ["AUTHORIZATION", "REQUEST", "PROCESSING_PLAN", "TRANSCRIPT_ARTIFACT", "SOURCE_REGISTRY", "PARENT_MEDIA_AUTHORIZATION", "PARENT_MEDIA_ACQUISITION_RECEIPT", "PARENT_MEDIA_RUN_REPORT", "PARENT_MEDIA_VERIFICATION", "PARENT_MEDIA_EVIDENCE_ASSESSMENT", "PARENT_MEDIA_ASSET", "PARENT_PERMISSION_EVIDENCE", "STAGE_RECEIPT"]}
+    }}
+  }
+}
