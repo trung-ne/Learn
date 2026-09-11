@@ -183,29 +183,17 @@ A1-U01-L01
 
 # Quality
 
-Generated content remains `UNREVIEWED` in its content lifecycle. It may be used only after the applicable deterministic and AI validation evidence is complete.
+Generated content remains `UNREVIEWED` in its content lifecycle.
 
-Required QA categories include:
+Routine development validation is intentionally lightweight. Check only the concrete risk introduced by the change: documentation/code/knowledge drift, relevant local schema or unit tests, and repository whitespace. Do not require paid services, live AI runners, human review, broad review batches, or approval-like evidence for routine work.
 
-- schema validation
-- CEFR validation
-- prerequisite validation
-- grammar validation
-- lexical validation
-- answer validation
-- ambiguity detection
-- duplicate detection
-- provenance validation
-- copyright validation
-- AI language-quality and pedagogical validation
-
-Whenever practical, generation and AI review must be separate, recorded passes.
+Use `python -m english_master.project_audit` to check active documentation, local implementation paths, and declared repository facts for drift. A passing audit is a consistency result only; it does not establish pedagogical quality, approval, release, provider behavior, or public-distribution authority.
 
 ## Development-only validation policy
 
 This project does not require, request, infer, or record human review, human endorsement, or release approval. `HUMAN_REVIEWED` and `RELEASE_APPROVED` are not valid active project statuses or gates.
 
-A deterministic machine pass may establish `MACHINE_VALIDATED`; separate recorded AI reviews may establish `AI_REVIEWED`; and a complete hash-bound development batch may establish `DEVELOPMENT_APPROVED`. These are the only approval-evidence tiers for future work. AI evidence must identify itself as AI and retain factual provider/model provenance; use `UNKNOWN` when a provider or model fact is unavailable.
+Historical deterministic and AI evidence may retain their existing `MACHINE_VALIDATED`, `AI_REVIEWED`, or `DEVELOPMENT_APPROVED` labels, but future routine work does not need to create them. If a recorded AI fact is retained, it must identify itself as AI and use factual provider/model provenance or `UNKNOWN`.
 
 Existing immutable artifacts that contain historical human/release fields remain historical records only. They must not be modified, regenerated, or used as authority for new work.
 
@@ -217,19 +205,15 @@ Work milestone by milestone.
 
 Do not silently begin the next milestone.
 
-For every milestone:
+For every requested milestone or scoped change:
 
-1. read specifications
-2. implement only that milestone
-3. add/update tests
-4. run tests
-5. inspect output
-6. report failures
-7. resolve failures
-8. provide milestone summary
-9. STOP
+1. read the relevant specifications and implementation
+2. implement only the requested scope
+3. run the project-consistency audit and relevant local tests when code changes; for an explicitly requested M9 run, execute `python -m pytest` and record the required five-packet direct inspection
+4. inspect and report concrete failures
+5. provide a concise summary and STOP
 
-A milestone is not complete while applicable tests fail.
+A change is not complete while its relevant targeted checks fail. Run the full suite only after changes to shared validators, schemas, or other core components.
 
 ---
 

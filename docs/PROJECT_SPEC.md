@@ -23,6 +23,12 @@ Vietnamese explanations may enhance pedagogy where appropriate.
 
 ---
 
+## Current Active Development Workflow
+
+For routine work, the lightweight workflow in [DEVELOPMENT_WORKFLOW.md](DEVELOPMENT_WORKFLOW.md) supersedes the older QA/approval descriptions below. It checks documentation, implementation, and declared-fact drift with the local audit and relevant tests. An explicitly requested M9 run additionally executes the complete pytest suite and records a five-packet direct inspection. Active M10 creates and retests corrected successors, M11 exports an explicit local batch, and M12–M14 supply bounded local-pilot tooling. Older strict M9/M10/M11 contracts remain historical verification material only.
+
+This workflow does not require human review, paid/live AI review, full-population review batches, external approval services, or approval-like evidence tiers. Its output is a repository-consistency result, not a quality, release, or distribution claim.
+
 ## System Boundaries
 
 ### In Scope
@@ -288,16 +294,15 @@ Each lesson contains:
 
 M8.2 currently provides a closed ten-lesson × four-modality pilot with strict lesson/hash/scope binding, transcript privacy, interaction contracts, pronunciation audio-only assessment boundaries, writing draft-first feedback boundaries, provenance, and independent immutable-batch verification. It is development evidence only and does not start M9 or claim human/release approval. See [AI_PRACTICE_PILOT.md](AI_PRACTICE_PILOT.md).
 
-### Independent QA and Revision Phase (M9-M10)
+### Lightweight Development QA (M9)
 
-M9 uses two ordered lanes. Its required development lane independently reloads the selected authority, runs fresh static machine checks, and records independent AI linguistic and pedagogical reviews for a frozen sample spanning lessons, exercise sets, and listening, speaking, pronunciation, and writing prompt artifacts. A passing hash-bound batch is only `DEVELOPMENT_APPROVED`; underlying content remains `UNREVIEWED`.
+M9 is practical personal-project development QA. It runs the existing deterministic validation surface over current M6–M8.2 artifacts and records a direct current-coding-agent inspection of five representative lesson packets spanning lessons, exercise sets, and all four AI-practice modalities. When no live external AI runner is available, live AI review is `NOT_RUN`; the direct inspection is clearly development review, not independent AI review or human review.
 
-A separate optional human/release lane requires genuine verified human evidence for `HUMAN_REVIEWED` and a distinct release authorization for `RELEASE_APPROVED`. Missing human evidence never blocks development evidence, and AI evidence never substitutes for human or release authority. Static AI-practice protocol review does not claim runtime model behavior.
+A pass requires `python -m pytest`, all five packets to be inspected, no blocking sampled content defect, and no fabricated human, release, provider-authentication, or live-AI claim. It leaves generated content `UNREVIEWED`, permits the next explicitly requested step, and does not assert runtime-provider behavior or a public-release decision.
 
-1. Automated QA (schema, CEFR, prerequisites)
-2. AI linguistic and pedagogical development review
-3. Optional human linguistic, pedagogical, language-quality, and copyright review for release scope
-4. Lane-qualified revisions and approvals
+1. Automated QA (schema, CEFR, prerequisites, deterministic answer and duplicate checks, provenance, prompt structure)
+2. Direct five-packet development inspection
+3. Bounded report with `M9 DEVELOPMENT: PASS` or `M9 DEVELOPMENT: FAIL`
 
 ### Publishing Phase (M11)
 

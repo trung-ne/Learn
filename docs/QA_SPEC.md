@@ -8,6 +8,12 @@ All generated content must pass applicable QA before approval.
 
 ---
 
+## Active Lightweight Workflow
+
+For routine development, use [DEVELOPMENT_WORKFLOW.md](DEVELOPMENT_WORKFLOW.md): a local consistency audit, relevant local tests, and whitespace checking. An explicitly requested M9 run executes `python -m pytest` and adds a recorded five-packet direct inspection for schema, CEFR/reference, prerequisite, answer/ambiguity, duplicate, and static prompt-protocol concerns. The goal is to identify concrete drift between active documentation, local implementation, and declared repository facts.
+
+The detailed QA categories and historical M5–M11 contracts below are retained for understanding and verification of immutable historical records. They are not required as routine gates. A passing consistency audit does not claim content quality, human review, release approval, provider behavior, learner outcomes, or public-distribution authority.
+
 ## QA Categories
 
 ### 1. Schema Validation
@@ -365,13 +371,13 @@ A rejected candidate is never edited in place or manually approved. Regeneration
 
 See [QA_ENGINE.md](QA_ENGINE.md).
 
-## M9 independent-review lanes
+## M9 lightweight development QA
 
-M9 development evidence is a separate, bounded overlay over immutable generated artifacts. For a declared sample spanning lessons, exercise sets, and all four AI-practice modalities, fresh static machine QA plus separate AI linguistic and pedagogical review may establish only `DEVELOPMENT_APPROVED`. Every source artifact remains `UNREVIEWED`; the development lane does not require or simulate a human reviewer.
+M9 is a bounded personal-project development QA gate over immutable M6, M7, and M8.2 artifacts. It runs the existing deterministic validation surface and records direct current-coding-agent inspection of five representative lesson packets, each containing a lesson, its exercise set, and all four AI-practice modalities. The review assesses English correctness and naturalness, CEFR suitability, teaching clarity, deterministic answer quality, duplicate concerns, scope/provenance, and static prompt-protocol structure.
 
-M8.2 prompt checks and M9 prompt reviews inspect stored protocols only. They do not establish a live provider's turn handling, audio delivery, pronunciation scoring, writing feedback execution, or learner outcome.
+No paid/live AI runner, large review batch, human reviewer, external approval service, or release authority is required. If no live external AI runner is available, that review category is explicitly `NOT_RUN`; direct coding-agent inspection is development review, not independent AI or human evidence. M8.2 prompt review remains static-protocol inspection only and does not establish runtime turn handling, audio delivery, pronunciation scoring, writing-feedback execution, or learner outcomes.
 
-`HUMAN_REVIEWED` requires genuine registry-bound human evidence with verified identity, permitted role, qualification, independence/conflict evidence, exact immutable scope, and chronology. `RELEASE_APPROVED` requires a separate authorized release decision. AI evidence, a provider name, a checkbox, or a CLI argument cannot establish either claim. A representative sample cannot authorize release of unreviewed population members.
+`M9 DEVELOPMENT: PASS` requires passing prescribed automated commands, a completed recorded five-packet review, no blocking sampled defect, and no fabricated human/release/provider-authentication/live-AI claim. A pass keeps all generated artifacts `UNREVIEWED`, does not authorize M10 or M11, and does not create public-release authority. A blocking defect produces `M9 DEVELOPMENT: FAIL` and is recorded without changing immutable artifacts in place.
 
 ## Content Review Status Levels
 

@@ -439,208 +439,77 @@ The pilot independently derives lesson scope, protects listening transcripts, en
 
 ---
 
-## M9 — Independent Review Layer
+## M9 — Lightweight QA
 
-**Status**: Development lane implemented for a bounded representative sample; human/release lane is available only with genuine verified human evidence
+**Status**: Active free QA workflow.
 
-**Owner**: AI Agent (development lane) + optional Human QA Team (human/release lane)
+Run `python -m pytest` for the existing schema, CEFR/reference, prerequisite, answer/ambiguity, and duplicate checks. Directly inspect five representative lesson packets. A factual `M9 DEVELOPMENT: PASS` allows the next explicitly requested development step; paid runners, 120 AI reviews, full-population live review, human review, and release authority are not required.
 
-### Scope
-
-M9 has two distinct lanes:
-
-1. **Development lane:** independently reload M5–M8.2 authority, run fresh static machine QA, then retain separate AI linguistic and pedagogical reviews before a hash-bound `DEVELOPMENT_APPROVED` overlay can be published.
-2. **Optional human/release lane:** after a verified development overlay, separately validate real registry-bound human linguistic and pedagogical review for `HUMAN_REVIEWED`; a distinct authorized release decision is required for `RELEASE_APPROVED`.
-
-The development lane never waits for a real person, never alters underlying content status, and never claims human review, release approval, provider authentication, live-provider behavior, or an Internet-wide originality search. It reviews lessons, exercise sets, listening prompts, speaking prompts, pronunciation prompts, and writing prompts. M8.2 prompt review is static-protocol review, not observed runtime behavior.
-
-### Deliverables
-
-1. Hash-bound scope manifest and per-content-type machine QA reports
-2. Independent AI linguistic and pedagogical review evidence
-3. Immutable development batch and read-only verifier
-4. Optional human/release contracts and blank workflow documentation
-5. Lane-qualified QA reports and M10-consumable findings
-
-### Development acceptance criteria
-
-- [ ] All required artifact types are represented by real immutable artifacts
-- [ ] Sample scope and its unreviewed population boundary are explicit
-- [ ] Fresh static checks, two AI roles, provenance, and closed inventory are hash-bound
-- [ ] Development evidence cannot manufacture human or release approval
-- [ ] Human absence does not block development approval
-- [ ] Tests and read-only verification pass
-
-A representative development pass is not comprehensive review of unselected content and cannot authorize a release. See [M9_INDEPENDENT_REVIEW.md](M9_INDEPENDENT_REVIEW.md).
-
-### Next: M10 only after an explicit request
+### Next: M10 only when a checked artifact needs revision
 
 ---
 
-## M10 — Revision Cycle
+## M10 — Revision
 
-**Estimated Duration**: ~2-3 weeks
+**Status**: Active lightweight revision workflow; historical governance records are retained separately.
 
-**Owner**: AI Agent + Subject Matter Experts
+For a failed artifact, preserve the predecessor, publish a corrected revision at a new path, retain a short predecessor-hash/finding note, and run the relevant validator/tests. No supersession system, M9 import, broad dependency rebuild, or fresh whole-population review is required.
 
-### Scope
-
-Fix issues identified in M9:
-
-1. Revise failed content
-2. Address QA feedback
-3. Re-run QA
-4. Approve or escalate
-
-### Deliverables
-
-1. Revised content
-2. QA report (second pass)
-3. Unresolved issues escalation
-4. Final approval list
-
-### Acceptance Criteria
-
-- [ ] >98% of content approved
-- [ ] Only critical unresolved issues remain
-- [ ] Revisions are auditable
-
-### Next: M11
+### Next: M11 when a local batch export is requested
 
 ---
 
 ## M11 — Export & Packaging
 
-**Status**: AI-only development export framework implemented but blocked pending a complete version-2 full-population M9 development batch and closed M10 lineage.
-
-**Estimated Duration**: ~1 week
-
-**Owner**: AI Agent
+**Status**: Local-batch export implemented alongside legacy authority verification.
 
 ### Scope
 
-Package content for different modalities:
+Package one locally declared batch into JSON, CSV, static web, and static mobile output. Print and IMS Common Cartridge are optional. The batch validates schema-valid inputs, hashes, source permissions, closed inventory, deterministic rendering, and no-overwrite publication.
 
-1. Export to a selected LMS package format
-2. Export to JSON/CSV for data scientists
-3. Create mobile-friendly format
-4. Create web-friendly format
-5. Create printable materials
+### Routine development boundary
 
-### Deliverables
+The local-batch command does not require M9 full-population review, M10 closure, `DEVELOPMENT_APPROVED`, human review, or release authority. Output remains `UNREVIEWED` and does not authorize public distribution.
 
-1. Standardized export formats
-2. Export scripts
-3. Format validation
-4. Documentation for using exported materials
-
-### Acceptance Criteria
-
-- [x] All format renderers and strict metadata contracts are implemented and testable offline
-- [x] Data integrity is hash-inventoried and independently verifiable
-- [x] Export commands are deterministic, atomic, no-overwrite, and require an explicit timestamp
-- [x] Current development, representative, escalated, unreviewed, ingestion, and Tatoeba-pilot authority fails closed
-- [ ] A complete version-2 full-population `DEVELOPMENT_APPROVED` M9 batch and closed M10 lineage have authorized an M11 package that passes independent verification.
-
-M11 framework completion does not claim that current content is public or export-ready; its only future authority path is the active AI-only development evidence model. See [M11.md](M11.md) and [EXPORT_PACKAGING.md](EXPORT_PACKAGING.md).
-
-### Next: M12 only after an explicit request and a complete, independently verified `DEVELOPMENT_APPROVED` M11 export; do not start operationally or automatically
+### Next: M12 local pilot can validate explicitly listed licensed local files
 
 ---
 
 ## M12 — Real Audio / Video Corpus Ingestion
 
-**Status**: Preparation only — implementation blocked until M11 has a complete, independently verified `DEVELOPMENT_APPROVED` export
-
-**Estimated Duration**: To be determined before operational work begins
-
-**Owner**: AI Agent
-
-### Gate
-
-M12 must not begin operationally until the M11 authorization, export manifest, and independent verification receipt all validate as `DEVELOPMENT_APPROVED`. This is a development gate, not human review, endorsement, release approval, redistribution authority, or public-release authority.
+**Status**: Local-pilot manifest validator implemented; no real payload has been processed.
 
 ### Scope
 
-Build a reproducible, permission-aware pipeline for legitimately supplied audio/video records:
-
-1. Source and record-level media permission verification
-2. Locally supplied or explicitly authorized acquisition inputs
-3. Immutable payload checksums and provenance
-4. Media metadata and safe controlled storage
-5. Permission-gated derivative lineage
-6. Quarantine, closed inventories, and independent verification
-
-Generic crawling, access-control bypass, YouTube URL ingestion, and redistribution without explicit permission are prohibited.
-
-See [M12_MEDIA_INGESTION.md](../prompts/M12_MEDIA_INGESTION.md) for the complete design contract and deferred implementation requirements.
+Validate a supplied pilot of 10–30 local audio/video files. Each record retains source, URL/local locator, license, attribution, SHA-256, and explicit storage/transcript/timestamp permissions. The validator does not fetch URLs, discover unlisted files, download models, or process media.
 
 ### Acceptance Criteria
 
-- [ ] M11 prerequisite evidence passes independent verification
-- [ ] Strict M12 schemas and offline-first commands are implemented
-- [ ] Every accepted operation has source- and record-specific permission evidence
-- [ ] Original and derivative bytes have immutable checksum-bound lineage
-- [ ] Unauthorized, malformed, drifted, or unsafe records fail closed
-- [ ] Complete run inventories pass independent verification
-- [ ] No output claims curriculum, human-review, redistribution, or release authority without a separate applicable gate
+- [x] A local manifest validates count, unique IDs, safe paths, license/source fields, permissions, and exact hashes.
+- [ ] A licensed local 10–30 file pilot is supplied and validated.
+- [ ] A real-media run is explicitly requested.
 
-### Next: M13 only after an explicit request and verified operational M12 media authority
+### Next: M13 can process an explicit 10–20-record local selection with a supplied local ASR backend
 
 ---
 
-## M13 — ASR, Transcript, and Timestamp
+## M13 — Transcript and Timestamp
 
-**Status**: Fixture-only preparation framework complete; operational transcription is blocked pending verified M11 and M12 authority
+**Status**: Local-pilot transcript tooling implemented; no real ASR run has occurred.
 
-### Scope
+A caller-controlled local ASR backend can process an explicit 10–20-record selection from a validated M12 local manifest. It retains factual tool/model provenance, rejects reported network use, enforces transcript/timestamp permission and duration-bounded ordered segments, and uses anonymous speaker labels. It does not bundle or download a model.
 
-Produce immutable, permission-bound transcript derivatives from authorized controlled-media assets:
-
-1. Verify the parent M12 asset, registry, authorization, and operation-specific permission evidence
-2. Run an explicitly configured ASR tool or local deterministic fixture backend
-3. Retain transcript text, sentence segmentation, duration-bounded timestamps, and factual tool/model provenance
-4. Add optional anonymous within-record speaker segments when separately permitted and evidenced
-5. Publish an atomic derivative run with independent verification
-
-Transcript and timestamp generation are separate operations. No speaker identity, voice profile, cross-record linkage, or runtime-provider behavior may be inferred. See [M13_TRANSCRIPTION.md](M13_TRANSCRIPTION.md).
-
-### Acceptance Criteria
-
-- [x] Fixture-only M12 v2 parent media and current operation authority independently verify
-- [x] Transcript and timestamp permissions are explicit at source and record scope in fixture contracts
-- [x] Sentence segments are deterministic, ordered, duration-bounded, and hash-bound to the parent asset
-- [x] Optional speaker labels are anonymous and local to the single artifact
-- [x] Fixture-only runs remain clearly non-operational and independently verifiable
-- [x] No real ASR, provider call, model download, or source-media processing occurs until predecessor gates pass
-
-The completed fixture framework does not establish an operational M13 transcript, source/media authority, ASR accuracy, or permission to begin M15.
-
-### Next: M14 only after an explicit request and verified M13 output
+### Next: M14 can compute simple local-pilot metrics from a supplied transcript artifact
 
 ---
 
-## M14 — Listening Difficulty Analyzer
+## M14 — Listening Metrics
 
-**Status**: Fixture-only preparation framework complete; operational analysis is blocked pending verified operational M13 output
+**Status**: Local-pilot metrics tooling implemented; no real transcript artifact has been analyzed.
 
-### Scope
+The local metric module computes only speech rate, vocabulary proxies, grammar-complexity proxies, length measures, and anonymous speaker count. It does not produce CEFR levels, a composite score, diarization-quality claims, or model judgments.
 
-Create auditable, multidimensional listening-difficulty evidence from verified M13 transcripts and measured media evidence. The analyzer must consider lexical difficulty, grammar difficulty, speech rate, utterance length, reductions, connected speech, accent/variety complexity, number of speakers, speaker overlap, noise, and discourse complexity.
-
-It must not assign an overall listening level from vocabulary alone. Each feature records evidence, method/version, score or `NOT_ASSESSED`, confidence, limitations, and contribution to the cautious composite result. See [M14_LISTENING_DIFFICULTY.md](M14_LISTENING_DIFFICULTY.md).
-
-### Acceptance Criteria
-
-- [x] Fixture-only M13 lineage and evidence verify independently before publication
-- [x] Every required listening dimension is measured or explicitly `NOT_ASSESSED`
-- [x] Vocabulary-only or insufficiently evidenced composites fail closed as `INSUFFICIENT_EVIDENCE`
-- [x] Text-only inputs do not invent acoustic or interaction properties
-- [x] Profiles, manifests, and verifier receipts are immutable and independently verifiable
-
-The completed fixture framework does not establish measured real-media evidence or operational listening analysis. The curriculum population and A1 blueprint tracks below are separate planning workstreams and do not authorize the existing M15 platform milestone.
-
-### Next: M15-KG-FULL and M16-A1-BLUEPRINT only after an explicit request
+### Next: M15-KG-FULL and M16-A1-BLUEPRINT use focused reference/prerequisite validation
 
 ---
 
@@ -648,7 +517,7 @@ The completed fixture framework does not establish measured real-media evidence 
 
 **Status**: Implemented as a bounded, original-authored development population
 
-M15-KG-FULL creates a separate 120-node, twelve-tier knowledge-graph population covering grammar, vocabulary senses, functions, pronunciation, discourse, pragmatics, collocations, lexical chunks, topics, and skills. It includes deterministic typed prerequisite edges and no lesson prose, exercises, media, or release authority. The M2 prototype and M5 hash-bound architecture remain unchanged. See [M15 prompt](../prompts/M15_CURRICULUM_POPULATION.md).
+M15-KG-FULL creates a separate 120-node, twelve-tier knowledge-graph population covering grammar, vocabulary senses, functions, pronunciation, discourse, pragmatics, collocations, lexical chunks, topics, and skills. Its active validation checks that IDs and dependency endpoints resolve and that prerequisites are acyclic. It includes no lesson prose, exercises, media, or release authority. See [M15 prompt](../prompts/M15_CURRICULUM_POPULATION.md).
 
 The bounded population is not exhaustive English coverage, official CEFR endorsement, human/release approval, or M6 generation authority.
 
@@ -660,7 +529,7 @@ The bounded population is not exhaustive English coverage, official CEFR endorse
 
 **Status**: Implemented as an outline-only development blueprint
 
-M16-A1-BLUEPRINT consumes the versioned M15 population and maps A1.1 and A1.2 into units, deterministic lesson IDs, objectives, grammar/vocabulary/pronunciation/function targets, prerequisites, review placements, and assessment blueprints. It contains no lesson prose, exercises, answer keys, media, or M6 authorization. See [M16 documentation](M16_A1_BLUEPRINT.md) and [M16 prompt](../prompts/M16_A1_CURRICULUM.md).
+M16-A1-BLUEPRINT consumes the versioned M15 population and maps A1.1 and A1.2 into units, deterministic lesson IDs, objectives, grammar/vocabulary/pronunciation/function targets, prerequisites, review placements, and assessment blueprints. Its active validation resolves all references, rejects broken/non-forward prerequisites, and requires existing concept IDs. It contains no lesson prose, exercises, answer keys, media, or M6 authorization. See [M16 documentation](M16_A1_BLUEPRINT.md) and [M16 prompt](../prompts/M16_A1_CURRICULUM.md).
 
 The blueprint is a planning artifact only and does not replace the historical M5 structure or authorize lesson generation.
 

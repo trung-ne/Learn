@@ -1,6 +1,6 @@
 # English Master — Tình hình dự án
 
-**Ngày cập nhật:** 2026-09-11  
+**Ngày cập nhật:** 2026-09-12
 **Nhánh:** `feat/ai-only-m12-framework`  
 **Phạm vi:** hệ thống học tiếng Anh tự học A1–C2, ưu tiên người học Việt Nam
 
@@ -9,6 +9,12 @@
 English Master hiện là một pipeline Python offline-first, có thể tái lập và kiểm chứng bằng schema, validator, provenance, hash binding, immutable artifacts và các bài kiểm thử tự động. Dự án đã xây dựng phần lớn hạ tầng phát triển từ M0 đến M14, cùng hai nhánh công việc mới là **M15-KG-FULL** và **M16-A1-BLUEPRINT**.
 
 Các artifact phát triển hiện có không đồng nghĩa với nội dung đã được phát hành. Nội dung sinh ra vẫn giữ trạng thái `UNREVIEWED`; bằng chứng AI hoặc máy chỉ có thể thiết lập các tầng phát triển như `MACHINE_VALIDATED`, `AI_REVIEWED` và `DEVELOPMENT_APPROVED`. Không có tuyên bố về phê duyệt phát hành, quyền phân phối công khai, hay xử lý media thực tế khi các điều kiện tương ứng chưa đạt.
+
+## 1.1. Workflow hiện hành
+
+Routine development dùng **lightweight consistency audit**: kiểm tra tài liệu active, local implementation paths và các facts đã khai báo có bị lệch nhau hay không. Với code thay đổi, chạy các test local liên quan và `git diff --check`. Khi M9 được yêu cầu rõ ràng, chạy toàn bộ `python -m pytest` và direct-inspect năm lesson packets. Không cần human review, paid/live AI runner, full-population review batch, M10 closure hay release authority.
+
+Một `M9 DEVELOPMENT: PASS` trong phạm vi sample cho phép bước được yêu cầu tiếp theo, nhưng không xác nhận chất lượng toàn bộ corpus, provider behavior hoặc quyền phân phối.
 
 ## 2. Trạng thái theo milestone
 
@@ -23,12 +29,12 @@ Các artifact phát triển hiện có không đồng nghĩa với nội dung đ
 | M6 | Hoàn tất cho development lane | 10 lesson bundles, authority-bound generation và AI linguistic/pedagogical evidence. Chưa phải release authority. |
 | M7 | Hoàn tất cho AI-only development lane | 10 exercise sets, tổng 50 exercises; mọi exercise vẫn `UNREVIEWED`. |
 | M8 / M8.2 | Hoàn tất cho development lane | QA engine sáu stage và pilot 40 AI-practice prompts trên bốn modality. |
-| M9 | Framework development đã triển khai; full-population gate chưa đóng | Có independent-review contracts và representative-sample lane; cần batch v2 đầy đủ. |
-| M10 | Framework và lineage đã triển khai; còn finding cần xử lý | Có immutable revision, retry và supersession machinery; một finding liên quan authority M5 còn escalated. |
-| M11 | Framework export đã triển khai; chưa được authorize | Có JSON, CSV, mobile/web, print và IMS Common Cartridge renderers; chưa có export đủ authority để phát hành. |
-| M12 | Preparation / fixture-only | Có controlled-media contracts và permission-aware checks; operational media ingestion bị chặn bởi gate M11. |
-| M13 | Fixture-only hoàn tất | Có transcript/timestamp lineage, permission checks, anonymous speaker labels và verification. Chưa chạy ASR/media thật. |
-| M14 | Fixture-only hoàn tất | Có listening-difficulty evidence đa chiều; không suy ra level chỉ từ vocabulary. Chưa có phân tích media thật. |
+| M9 | Lightweight development QA sample — `PASS` | Báo cáo M9 đầu tiên `FAIL` được giữ nguyên; follow-up sau hai M10 successor repairs đã kiểm tra lại 5 lesson packets. Kết quả giới hạn theo sample; nội dung vẫn `UNREVIEWED`, nhưng M9 pass cho phép bước được yêu cầu tiếp theo. |
+| M10 | Lightweight revision workflow và hai successor repairs đã có | M7 successor sửa giải thích matching A1; M8.2 v10 full pilot sửa B1 speaking feedback scope. Active workflow chỉ yêu cầu artifact kế nhiệm mới, ghi chú finding/hash predecessor và retest liên quan. |
+| M11 | Local-batch exporter đã triển khai; chưa chạy một batch thật trong phiên đồng bộ này | `build-batch`/`verify-batch` xuất JSON, CSV, static web/mobile mặc định; print và IMS là tùy chọn. Không có M9/M10/release-authority gate. |
+| M12 | Local-pilot manifest validator đã triển khai | Validator read-only kiểm tra 10–30 file local được liệt kê rõ, hash, source/license/attribution và permission. Chưa có media thật do người dùng cung cấp. |
+| M13 | Local-pilot transcription API đã triển khai | Chọn 10–20 record từ M12 và dùng local ASR backend do caller cung cấp. Không bundled model, không download, không media/ASR thật trong repo. |
+| M14 | Local metric tooling đã triển khai | Chỉ tính speech rate, vocabulary/grammar proxies, length và anonymous speaker count; không CEFR/composite. |
 | M15-KG-FULL | Đã triển khai dưới dạng development population | Knowledge graph original-authored, 120 nodes, 12 tiers, typed prerequisites; không có lesson prose hay release authority. |
 | M16-A1-BLUEPRINT | Đã triển khai dưới dạng outline-only blueprint | Blueprint A1.1/A1.2 gồm 10 units và 50 lesson outlines; không có lesson prose, exercises hay M6 authorization. |
 | M15 platform / M16 deployment | Chưa bắt đầu | Đây là các milestone tương lai, khác với hai workstream KG/blueprint ở trên. |
@@ -45,8 +51,8 @@ Các artifact phát triển hiện có không đồng nghĩa với nội dung đ
 - Immutable, atomic, no-overwrite publication cho bundles, reports, review evidence và run manifests.
 - QA fail-closed: schema, answer, CEFR, prerequisite, duplicate và AI language QA theo thứ tự cố định.
 - AI-practice pilot giới hạn listening, speaking, pronunciation và writing; prompt review chỉ kiểm tra protocol tĩnh, không chứng minh runtime provider behavior.
-- Export framework nhiều định dạng nhưng chỉ hoạt động khi predecessor authority đầy đủ.
-- Controlled media, transcript và listening-analysis frameworks có hash-bound lineage, nhưng chỉ ở fixture/development boundary.
+- Local M11 batch export JSON/CSV/static web/static mobile, với schema/hash/path/source-permission/inventory checks; print/IMS là tùy chọn.
+- Local M12 manifest validation, M13 caller-controlled ASR contract, và M14 basic transcript metrics. Các tool chưa xử lý media thật vì chưa có file/manifests/model path được cung cấp.
 - Knowledge graph và A1 blueprint mới nhất để hỗ trợ quy hoạch nội dung, không thay thế M5 lịch sử và không tự động cấp quyền M6.
 
 ## 4. Các artifact nội dung hiện tại
@@ -60,24 +66,23 @@ Các artifact phát triển hiện có không đồng nghĩa với nội dung đ
 
 Các con số trên là development fixtures/populations có giới hạn, không phải tuyên bố exhaustive coverage hay official CEFR endorsement.
 
-## 5. Chuỗi gate còn lại
+## 5. Bước tiếp theo và điều kiện thực tế
 
-1. Hoàn tất một M9 development batch v2 cho full population, với machine evidence và AI review độc lập đầy đủ.
-2. Đóng M10 lineage và xử lý finding/escalation còn tồn tại, không sửa artifact immutable tại chỗ.
-3. Independently verify một M11 export được authorize từ authority đầy đủ.
-4. Chỉ sau đó mới mở operational M12 cho media được cung cấp hợp pháp và có permission record cụ thể.
-5. M13 operational cần M12 authority; M14 operational cần output M13 đã verify.
-6. Các bước human/release, redistribution và public deployment là các gate riêng, không được suy ra từ kết quả máy hoặc AI.
+1. Chạy integrated validation sau khi hoàn tất đồng bộ tài liệu/audit; không suy ra kết quả trước khi lệnh thực tế chạy.
+2. Có thể tạo M11 local batch khi có input JSON hợp lệ với artifact paths, hashes và source permissions.
+3. Chỉ chạy M12 real local-media pilot khi người dùng cung cấp 10–30 file licensed local cùng manifest có exact hashes.
+4. Chỉ chạy M13 khi có subset M12 hợp lệ và local ASR backend/model path được chỉ rõ.
+5. M14 sau đó chỉ phân tích transcript output bằng các metric đã công bố.
 
 ## 6. Giới hạn và vấn đề cần theo dõi
 
 - M1 đã có implementation nhưng trạng thái/checklist trong tài liệu milestone cần đồng bộ rõ hơn.
-- M9/M10 documentation vẫn cần phản ánh chính xác hơn phần framework đã triển khai và phần gate chưa hoàn tất.
-- README và MILESTONES có một số câu mô tả khác mức chi tiết về M12; cách hiểu đúng là preparation/fixture-only, không phải operational ingestion.
+- M9/M10 documents now distinguish the immutable historical findings from the active lightweight sample/revision flow.
+- Integrated tests và consistency audit đã pass sau synchronization; chưa có real-media pilot vì chưa có local inputs/model path được cung cấp.
 - Không có corpus lớn, real-media corpus, ASR model download, network crawler hay dữ liệu `data/approved/` được tạo bởi các workstream hiện tại.
 - M5 taxonomy/structure lịch sử và M15/M16 planning artifacts cần tiếp tục được giữ tách biệt khỏi quyền generate lesson và quyền publish.
 
-## 7. Kiểm thử xác nhận tại thời điểm cập nhật
+## 7. Lần full-suite gần nhất được ghi nhận
 
 Đã chạy:
 
@@ -87,11 +92,11 @@ python -m pytest
 
 Kết quả thực tế:
 
-- **331 tests collected**
-- **331 passed**
-- Thời gian: **250.82 giây**
-- Không có test failure trong lần chạy ngày 2026-09-11.
+- **369 tests collected**
+- **369 passed**
+- Thời gian: **387.57 giây**
+- Không có test failure trong lần chạy ngày 2026-09-12.
 
 ## 8. Kết luận
 
-Dự án đã đạt mức **hạ tầng phát triển và validation khá đầy đủ**, với development lanes từ M0–M14 và các population/blueprint mới cho knowledge graph và A1. Tuy nhiên dự án **chưa ở trạng thái production/public release**: full-population M9/M10 evidence, authorized M11 export, operational media authority và các gate release tương ứng vẫn còn thiếu. Bước tiếp theo chỉ nên được thực hiện khi có yêu cầu milestone rõ ràng; không tự động chuyển sang M12 operational, M15 platform hoặc M16 deployment.
+Dự án có development tooling từ M0 đến M16 planning workstreams. M9 lightweight sample follow-up đã ghi nhận `M9 DEVELOPMENT: PASS` trong phạm vi năm packet và cho phép bước được yêu cầu tiếp theo; nó không thay đổi trạng thái `UNREVIEWED`. M11 direct local-batch export cùng M12–M14 local-pilot tooling đã được thêm nhưng chưa có real-media run: cần integrated validation và, cho real processing, licensed local files/manifests cùng local ASR backend/model path. Dự án chưa tự động chuyển sang bất kỳ milestone nào hoặc public deployment.

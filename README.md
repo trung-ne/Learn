@@ -2,7 +2,7 @@
 
 English Master is a reproducible, self-study English learning-system pipeline for CEFR A1 through C2. Its primary learners are Vietnamese learners of English.
 
-## Current scope: M0–M12 development infrastructure complete; M13–M14 fixture-only frameworks complete
+## Current scope: development tooling through M16
 
 The completed foundation provides:
 
@@ -18,9 +18,11 @@ The completed foundation provides:
 - A provider-neutral M6 generation boundary and separate, hash-bound development approval lane. It independently loads M5 artifacts and source authority; derives scope; injects trusted metadata; emits stage-aware audits; retains factual AI-review evidence; and uses atomic no-overwrite artifact bundles. `DEVELOPMENT_APPROVED`, if earned, never means human review or release approval.
 - An M8 QA Engine development gate that records ordered schema, answer, CEFR, prerequisite, duplicate, and candidate-bound AI language QA receipts; failures create immutable rejection and regeneration lineage rather than editing candidates. Successful decisions are `DEVELOPMENT_APPROVED` only and keep content `UNREVIEWED`.
 - An M8.2 immutable lesson-specific AI-practice pilot: forty M6-authority-bound listening, speaking, pronunciation, and writing protocols, independently reconstructed and machine-validated while content remains `UNREVIEWED`.
-- M9 independent-review and M10 revision-governance contracts. Failed M9 evidence is non-promotable; M10 preserves predecessors and creates bounded, hash-bound successor attempts that require a fresh M9 review after static verification.
-- The M11 standard-library export framework produces deterministic JSON, RFC-4180 CSV, static mobile/web, separate learner/instructor print HTML, and ungraded IMS Common Cartridge 1.3 packages only after complete AI-only `DEVELOPMENT_APPROVED` authority. Current real artifacts are ineligible, so no export is claimed. See [Export & Packaging](docs/EXPORT_PACKAGING.md).
-- The M12 controlled-media framework is local-fixture-only. M13 transcription/timestamp and M14 listening-difficulty fixture frameworks are complete, hash-bound, and independently verifiable; they remain preparation-only until their predecessor authority validates. No real media, ASR provider, or downloaded model is used.
+- Active M9 uses the complete pytest suite plus a recorded direct inspection of five representative lesson packets. It requires neither paid/live AI, human review, nor release approval; the previous full-population contracts remain available only for existing immutable records.
+- M10 creates a corrected successor rather than changing a predecessor and reruns only the validation relevant to that correction.
+- M11 provides direct local-batch export to deterministic JSON, RFC-4180 CSV, static web, and static mobile; print and IMS are optional. It validates paths, hashes, input schemas, source permissions, closed inventories, and preserved `UNREVIEWED` lifecycle, without an M9/M10 or release-authority gate.
+- M12 validates a manifest for 10–30 explicitly listed, licensed local media files. M13 provides a caller-controlled local-ASR interface for 10–20 selected records, and M14 computes only basic offline transcript metrics. No real media or ASR model is processed until licensed local inputs and a local ASR backend/model path are supplied.
+- M15/M16 validate graph and blueprint IDs, references, prerequisite integrity, and population binding without requiring an exact regenerated-object match.
 - Data-lifecycle directory scaffolding and Git protections.
 
 M3 is ingestion infrastructure, not a corpus project. M4 adds deterministic normalization and review-oriented deduplication only. M5 adds architecture and dependency planning only. M6 adds constrained lesson generation and an independent development lane; it does not automatically approve lessons, exercises, assessments, or AI prompts. These stages do not crawl websites or bulk-download data or media. The committed ingestion fixture sentences are invented and explicitly used only to test the documented Tatoeba-shaped input path. The strict human/release lane still rejects the DRAFT M5 source bundle without genuine independent human evidence. The separate M5 development snapshot may authorize bounded M6 development only, preserving those source states and never creating human/release claims.
@@ -227,34 +229,40 @@ python -m english_master.ai_practice verify-pilot \
 
 See [docs/AI_PRACTICE_PILOT.md](docs/AI_PRACTICE_PILOT.md) for the modality contracts, evidence limits, and tamper-resistant verification.
 
-## Run M9 independent review
+## Active M9 development check
 
-M9 publishes an immutable development-evidence overlay over a declared representative sample spanning lessons, exercise sets, and all four M8.2 prompt modalities. It requires fresh static machine reports and two separately captured AI roles; underlying content remains `UNREVIEWED`.
+Run the complete deterministic suite, then record a direct inspection of five representative lesson packets as described in [M9 Lightweight Development QA](docs/M9_INDEPENDENT_REVIEW.md):
 
 ```bash
-python -m english_master.independent_review prepare-development \
-  --output-dir <new-prepared-directory>
-python -m english_master.independent_review publish-development \
-  --prepared-dir <prepared-directory> \
-  --capture-dir <real-ai-capture-directory> \
-  --output-dir <new-immutable-development-directory>
-python -m english_master.independent_review verify-development \
-  --batch-dir <immutable-development-directory>
+python -m pytest
+python -m english_master.project_audit
+git diff --check
 ```
 
-The optional human/release lane is separate. No M9 development result claims `HUMAN_REVIEWED`, `RELEASE_APPROVED`, provider authentication, live-provider behavior, or an Internet-wide originality search. See [docs/M9_INDEPENDENT_REVIEW.md](docs/M9_INDEPENDENT_REVIEW.md).
+The audit checks active documentation, local implementation paths, and declared repository facts for drift. It is a consistency check, not an approval, release, human-review, or runtime-quality gate.
 
-## Build and verify M11 exports
+## M11 local-batch and historical commands
 
-M11 accepts only complete, hash-bound human and release authority. The current repository is intentionally ineligible. Inspecting it or attempting a build exits nonzero without creating an export:
+Build and verify a local batch without an M9/M10 or release-authority gate:
+
+```bash
+python -m english_master.export_packaging build-batch \
+  --batch-input <m11-export-batch-input.json> \
+  --repository-root . \
+  --output-root data/exports \
+  --exported-at <ISO-8601>
+python -m english_master.export_packaging verify-batch \
+  data/exports/<export-id> --repository-root .
+```
+
+The historical authority commands remain solely for existing immutable records:
 
 ```bash
 python -m english_master.export_packaging inspect-authority --authorization <m11-authorization.json> --repository-root .
-python -m english_master.export_packaging build --authorization <m11-authorization.json> --repository-root . --output-root data/exports --exported-at <ISO-8601>
 python -m english_master.export_packaging verify data/exports/<export-id> --repository-root .
 ```
 
-See [docs/EXPORT_PACKAGING.md](docs/EXPORT_PACKAGING.md) for authority, formats, layout, integrity checks, and explicit limitations.
+See [Export & Packaging](docs/EXPORT_PACKAGING.md) for format and verification details.
 
 ## Layout
 
@@ -265,7 +273,7 @@ See [docs/EXPORT_PACKAGING.md](docs/EXPORT_PACKAGING.md) for authority, formats,
 - `data/raw/`, `data/normalized/`, `data/quarantine/` — local M3 run payloads and audit records, ignored by Git except scaffolding.
 - `data/deduplicated/`, `data/reports/` — local M4 derived runs and reports, ignored by Git.
 - `data/approved/` — reserved for genuinely approved/classified data; current development artifacts do not populate it.
-- `data/exports/` — immutable local M11 export bundles, ignored by Git; currently empty because release authority is absent.
+- `data/exports/` — immutable local M11 export bundles, ignored by Git; a successful local export does not create public-distribution authority.
 - `curriculum/taxonomy/` — M2 representative taxonomy and broad coverage matrix.
 - `curriculum/structure.json`, `curriculum/prerequisite_graph.json`, `curriculum/coverage-roadmap.json` — M5 outline-only architecture, graph, and coverage artifacts.
 - `curriculum/curriculum-graph.dot` — deterministic compact graph view; JSON remains authoritative.
