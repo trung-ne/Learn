@@ -1,0 +1,10 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema","$id":"m15-knowledge-graph-node.schema.json","title":"English Master M15 Knowledge Graph Node","type":"object","additionalProperties":false,
+  "required":["schema_version","record_type","id","tier","dimension","name","description","prerequisites","dependency_edges","status","authorship"],
+  "properties":{
+    "schema_version":{"const":"1.0"},"record_type":{"const":"m15_knowledge_graph_node"},
+    "id":{"type":"string","pattern":"^kg_[a-z0-9_]+$"},"tier":{"type":"string","enum":["A1.1","A1.2","A2.1","A2.2","B1.1","B1.2","B2.1","B2.2","C1.1","C1.2","C2.1","C2.2"]},
+    "dimension":{"type":"string","enum":["grammar","vocabulary_senses","functions","pronunciation","discourse","pragmatics","collocations","lexical_chunks","topics","skills"]},
+    "name":{"type":"string","minLength":1},"description":{"type":"string","minLength":1},"prerequisites":{"type":"array","items":{"type":"string"}},"dependency_edges":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["source","target","relation"],"properties":{"source":{"type":"string"},"target":{"type":"string"},"relation":{"const":"PREREQUISITE"}}}},"status":{"const":"DRAFT"},"authorship":{"const":"PROJECT_AUTHORED"}
+  }
+}

@@ -33,6 +33,8 @@ english-master-export = "english_master.export_packaging.cli:main"
 english-master-media-ingestion = "english_master.media_ingestion.__main__:main"
 english-master-listening-difficulty = "english_master.listening_difficulty.__main__:main"
 english-master-transcription = "english_master.transcription.__main__:main"
+english-master-knowledge-graph = "english_master.knowledge_graph.__main__:main"
+english-master-curriculum-blueprint = "english_master.curriculum_blueprint:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

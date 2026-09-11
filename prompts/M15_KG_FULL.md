@@ -1,0 +1,5 @@
+# M15 Knowledge Graph Population Prompt (compatibility alias)
+
+Use [M15_CURRICULUM_POPULATION.md](M15_CURRICULUM_POPULATION.md) as the canonical M15 contract. This alias remains for tooling that references the earlier filename.
+
+Populate only bounded, original-authored knowledge-graph targets across all twelve internal tiers and these ten dimensions: grammar, vocabulary senses, communicative functions, pronunciation, discourse, pragmatics, collocations, lexical chunks, topics, and skills. Include deterministic IDs and explicit typed prerequisites. Do not create lessons, lesson prose, exercises, answer keys, media, external payload copies, human/release approval claims, or official CEFR claims. Keep output `DRAFT`, `UNREVIEWED`, fixture/development-only, hash-bound, and independently verifiable.

@@ -1,0 +1,5 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema","$id":"m15-knowledge-graph-population.schema.json","title":"English Master M15 Knowledge Graph Population","type":"object","additionalProperties":false,
+  "required":["schema_version","record_type","population_id","nodes","tiers","dimensions","content_status","fixture_only","external_content_used"],
+  "properties":{"schema_version":{"const":"1.0"},"record_type":{"const":"m15_knowledge_graph_population"},"population_id":{"type":"string","pattern":"^kgpop_[a-f0-9]{64}$"},"nodes":{"type":"array","minItems":120,"items":{"$ref":"m15-knowledge-graph-node.schema.json"}},"tiers":{"type":"array","const":["A1.1","A1.2","A2.1","A2.2","B1.1","B1.2","B2.1","B2.2","C1.1","C1.2","C2.1","C2.2"]},"dimensions":{"type":"array","const":["grammar","vocabulary_senses","functions","pronunciation","discourse","pragmatics","collocations","lexical_chunks","topics","skills"]},"content_status":{"const":"UNREVIEWED"},"fixture_only":{"const":true},"external_content_used":{"const":false}}
+}

@@ -638,9 +638,33 @@ It must not assign an overall listening level from vocabulary alone. Each featur
 - [x] Text-only inputs do not invent acoustic or interaction properties
 - [x] Profiles, manifests, and verifier receipts are immutable and independently verifiable
 
-The completed fixture framework does not establish measured real-media evidence, operational listening analysis, or permission to begin M15.
+The completed fixture framework does not establish measured real-media evidence or operational listening analysis. The curriculum population and A1 blueprint tracks below are separate planning workstreams and do not authorize the existing M15 platform milestone.
 
-### Next: M15 only after an explicit request
+### Next: M15-KG-FULL and M16-A1-BLUEPRINT only after an explicit request
+
+---
+
+## M15-KG-FULL — Populate Full Curriculum Knowledge Graph
+
+**Status**: Implemented as a bounded, original-authored development population
+
+M15-KG-FULL creates a separate 120-node, twelve-tier knowledge-graph population covering grammar, vocabulary senses, functions, pronunciation, discourse, pragmatics, collocations, lexical chunks, topics, and skills. It includes deterministic typed prerequisite edges and no lesson prose, exercises, media, or release authority. The M2 prototype and M5 hash-bound architecture remain unchanged. See [M15 prompt](../prompts/M15_CURRICULUM_POPULATION.md).
+
+The bounded population is not exhaustive English coverage, official CEFR endorsement, human/release approval, or M6 generation authority.
+
+### Next: M16-A1-BLUEPRINT
+
+---
+
+## M16-A1-BLUEPRINT — Build Full A1 Curriculum Outline
+
+**Status**: Implemented as an outline-only development blueprint
+
+M16-A1-BLUEPRINT consumes the versioned M15 population and maps A1.1 and A1.2 into units, deterministic lesson IDs, objectives, grammar/vocabulary/pronunciation/function targets, prerequisites, review placements, and assessment blueprints. It contains no lesson prose, exercises, answer keys, media, or M6 authorization. See [M16 documentation](M16_A1_BLUEPRINT.md) and [M16 prompt](../prompts/M16_A1_CURRICULUM.md).
+
+The blueprint is a planning artifact only and does not replace the historical M5 structure or authorize lesson generation.
+
+### Next: existing M15 platform milestone remains separately gated
 
 ---
 
