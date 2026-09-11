@@ -15,6 +15,7 @@ from english_master.lesson_generation.storage import _fsync_directory, _rename_d
 from english_master.schema_validation import _unique_json_object, validate_instance
 
 from .models import NON_RETRYABLE_CODES, STAGE_CONTRACT
+from .successor_evidence import verify_successor_evidence
 
 JsonObject = dict[str, Any]
 _REQUIRED_PAYLOAD_KEYS = frozenset({"prompt", "raw_response", "artifact", "audit", "closure"})
@@ -242,6 +243,8 @@ def publish_governance_run(
     rejections: Iterable[Mapping[str, Any]],
     terminal_manifest: Mapping[str, Any],
     payloads: Mapping[str, Mapping[str, Any]],
+    request: Mapping[str, Any] | None = None,
+    repository_root: Path | None = None,
     operational_failures: Iterable[Mapping[str, Any]] = (),
 ) -> Path:
     """Stage a fully evidenced run, reverify it, then atomically publish it."""
@@ -254,6 +257,12 @@ def publish_governance_run(
         if failure.get("run_id") != run.get("run_id") or failure.get("failure_id") != identity("m10failure", failure, "failure_id"):
             raise ValueError("M10 operational failure binding or identity drift")
     _verify_terminal_state(run, attempts, receipts, rejections, operational_failures, terminal_manifest)
+    if request is not None:
+        validate_instance(dict(request), "m10-revision-request")
+        if request.get("request_id") != run.get("revision_request_id") or sha256_json(request) != run.get("revision_request_sha256"):
+            raise ValueError("M10 stored revision request binding drift")
+    elif terminal_manifest.get("terminal_state") == "READY_FOR_FRESH_M9":
+        raise ValueError("M10 readiness publication requires the frozen revision request")
     destination = directory.absolute()
     if destination.exists() or destination.is_symlink():
         raise FileExistsError(f"immutable M10 governance directory already exists: {destination}")
@@ -264,6 +273,8 @@ def publish_governance_run(
         stage.mkdir(parents=True, exist_ok=False)
         _write(stage / "run.json", run)
         _write(stage / "terminal-manifest.json", terminal_manifest)
+        if request is not None:
+            _write(stage / "requests" / f"{_token(str(request['request_id']))}.json", request)
         for capture in captures:
             _write(stage / "captures" / f"{_token(str(capture['capture_id']))}.json", capture)
         for attempt in attempts:
@@ -281,8 +292,8 @@ def publish_governance_run(
             _write(stage / "rejections" / f"{_token(str(rejection['rejection_id']))}.json", rejection)
         for failure in operational_failures:
             _write(stage / "operational-failures" / f"{_token(str(failure['failure_id']))}.json", failure)
-        verify_governance_run(stage)
-        for child in (stage / "captures", stage / "attempts", stage / "payloads", stage / "receipts", stage / "rejections", stage / "operational-failures", stage):
+        verify_governance_run(stage, repository_root=repository_root)
+        for child in (stage / "captures", stage / "attempts", stage / "payloads", stage / "receipts", stage / "rejections", stage / "operational-failures", stage / "requests", stage):
             if child.exists():
                 _fsync_directory(child)
         _rename_directory_noreplace(stage, destination)
@@ -294,7 +305,7 @@ def publish_governance_run(
         raise
 
 
-def verify_governance_run(directory: Path) -> JsonObject:
+def verify_governance_run(directory: Path, *, repository_root: Path | None = None) -> JsonObject:
     """Read-only full inventory validation; reject links, extras, and hash drift."""
     if directory.is_symlink():
         raise ValueError("M10 governance run must not be a symlink")
@@ -302,7 +313,7 @@ def verify_governance_run(directory: Path) -> JsonObject:
     if not root.is_dir() or root.is_symlink():
         raise ValueError("M10 governance run must be a real directory")
     expected = {"run.json", "terminal-manifest.json"}
-    record_directories = {"captures", "attempts", "receipts", "rejections", "operational-failures"}
+    record_directories = {"captures", "attempts", "receipts", "rejections", "operational-failures", "requests"}
     permitted_root_entries = expected | record_directories | {"payloads"}
     for child in root.iterdir():
         if child.name not in permitted_root_entries:
@@ -317,6 +328,10 @@ def verify_governance_run(directory: Path) -> JsonObject:
             expected_record = (
                 relative.count("/") == 1
                 and relative.rsplit("/", 1)[0] in values
+                and relative.endswith(".json")
+            ) or (
+                relative.count("/") == 1
+                and relative.startswith("requests/")
                 and relative.endswith(".json")
             )
             if relative not in expected and not expected_payload and not expected_record:
@@ -361,4 +376,33 @@ def verify_governance_run(directory: Path) -> JsonObject:
     if not isinstance(manifest, dict):
         raise ValueError("M10 terminal manifest must be an object")
     _verify_terminal_state(run, values["attempts"], values["receipts"], values["rejections"], values["operational-failures"], manifest)
+    if manifest.get("terminal_state") == "READY_FOR_FRESH_M9":
+        manifest_requests = manifest.get("revision_requests")
+        if not isinstance(manifest_requests, list) or len(manifest_requests) != 1:
+            raise ValueError("M10 readiness run lacks one frozen revision request reference")
+        request_reference = manifest_requests[0]
+        if not isinstance(request_reference, Mapping) or not isinstance(request_reference.get("path"), str):
+            raise ValueError("M10 readiness revision request reference is malformed")
+        request_path = root / request_reference["path"]
+        if request_path.is_symlink() or not request_path.is_file():
+            raise ValueError("M10 readiness run lacks its frozen revision request")
+        request = load_strict_document(request_path)
+        if not isinstance(request, dict):
+            raise ValueError("M10 stored revision request must be an object")
+        validate_instance(request, "m10-revision-request")
+        if request.get("request_id") != run.get("revision_request_id") or sha256_json(request) != run.get("revision_request_sha256") or request_reference.get("sha256") != sha256_json(request):
+            raise ValueError("M10 stored revision request binding drift")
+        if {path.name for path in (root / "requests").glob("*.json")} != {Path(request_reference["path"]).name}:
+            raise ValueError("M10 stored revision-request inventory is not closed")
+        root_for_evidence = (repository_root or Path.cwd()).resolve(strict=True)
+        for payload in payloads.values():
+            issues = verify_successor_evidence(
+                request=request,
+                successor=payload["raw_response"],
+                repository_root=root_for_evidence,
+            )
+            if issues:
+                raise ValueError("M10 dereferenced successor evidence failed: " + "; ".join(issue.message for issue in issues))
+    elif (root / "requests").exists():
+        raise ValueError("M10 non-readiness run must not store a revision request")
     return {"run": run, "terminal_manifest": manifest, "attempt_count": len(values["attempts"]), "capture_count": len(values["captures"]), "receipt_count": len(values["receipts"]), "rejection_count": len(values["rejections"]), "operational_failure_count": len(values["operational-failures"])}

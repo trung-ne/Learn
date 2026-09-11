@@ -1,0 +1,1 @@
+Validate the supplied immutable M7 revision-2 successor for A1-U01-L01. Confirm the two reported answer explanations are corrected without expanding the frozen lesson scope.

@@ -32,7 +32,7 @@ def _parser() -> argparse.ArgumentParser:
     _common(build)
     build.add_argument("--output-dir", type=Path, required=True)
     build.add_argument("--created-at", help="actual RFC 3339 build time; defaults to the current UTC time")
-    build.add_argument("--prompt-version", default="M8_2_AI_PRACTICE_v9")
+    build.add_argument("--prompt-version", default="M8_2_AI_PRACTICE_v10")
     verify = commands.add_parser("verify-pilot", help="independently verify an immutable pilot")
     _common(verify)
     verify.add_argument("--pilot-dir", type=Path, required=True)

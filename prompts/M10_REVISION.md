@@ -1,15 +1,17 @@
 # M10 Revision Instruction
 
-Follow [M10_REVISION_GOVERNANCE.md](M10_REVISION_GOVERNANCE.md). This file is subordinate to that governance contract.
+## Active revision flow
 
-Use an immutable `m10_revision_request` as the sole repair authority.
+When an artifact fails a relevant check:
 
-1. Repair only the cited defect and preserve the request's allowed scope.
-2. Do not edit the predecessor artifact or any prior audit/review evidence.
-3. Create a new successor with exact predecessor and finding bindings.
-4. Do not claim approval, human review, release approval, provider authentication, live runtime behavior, learner outcomes, or an Internet-wide originality search.
-5. Keep generated successor content `UNREVIEWED`.
-6. Address every verbatim finding and every stated acceptance check. If a repair cannot meet a constraint, retain an escalated unresolved issue instead of weakening the requirement.
-7. Never reuse a prior M9 review for changed bytes. A successor requires a fresh M9 review after M10 verification.
+1. Preserve the predecessor bytes unchanged.
+2. Create a corrected revision at a new, previously unused path.
+3. Retain a short note containing the predecessor hash, defect, and changed artifact path.
+4. Run the schema/validator/tests relevant to the changed artifact.
+5. Stop and report the result.
 
-For a response that supplies authored content, return only the requested narrow generated payload. Do not emit trusted IDs, hashes, approval flags, lifecycle transitions, provenance assertions, or reviewer decisions; host orchestration supplies and validates those fields.
+Do not require a full M9 import, closure inventory, supersession index, 120 reviews, a fresh whole-population review, or an approval tier. Keep generated revised content `UNREVIEWED` and do not claim human review, release approval, provider behavior, learner outcomes, or public-distribution authority.
+
+## Historical governance
+
+[M10_REVISION_GOVERNANCE.md](M10_REVISION_GOVERNANCE.md) describes retained immutable historical records. Use it only when explicitly verifying or extending that historical contract; do not apply it as the default revision workflow.

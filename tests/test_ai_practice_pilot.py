@@ -190,6 +190,26 @@ def test_review_only_lesson_uses_its_taxonomy_context(authority: VerifiedM6Pract
     assert "connected speech" not in advanced_writing["payload"]["communicative_goal"].casefold()
 
 
+def test_v10_speaking_feedback_keeps_pronunciation_scope(authority: VerifiedM6PracticeAuthority, tmp_path: Path) -> None:
+    successor = tmp_path / "v10-pilot"
+    build_pilot(authority, successor, created_at="2026-09-11T08:00:00Z")
+    assert verify_pilot(successor, authority)["artifact_count"] == 40
+    prompt = load_document(successor / "prompts" / "b1-u05-l02--speaking.json")
+    assert prompt["prompt_version"] == "M8_2_AI_PRACTICE_v10"
+    assert prompt["payload"]["feedback_policy"]["target_references"] == [
+        "vocab_en_run_002",
+        "concept_past_perfect",
+        "concept_pronunciation_linking",
+        "concept_pronunciation_weak_forms",
+    ]
+    assert prompt["payload"]["pronunciation_feedback_policy"] == {
+        "when_targets_present": "AUDIO_ONLY",
+        "without_audio_result": "NOT_ASSESSED",
+        "forbidden_without_audio": ["score", "phonetic_correctness_judgment", "accent_inference"],
+    }
+
+
+
 def test_mutated_reused_m6_authority_cannot_publish(tmp_path: Path) -> None:
     authority = _authority()
     with pytest.raises(TypeError):

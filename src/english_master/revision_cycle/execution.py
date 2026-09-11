@@ -21,6 +21,7 @@ from .governance import build_governance_run, build_operational_failure
 from .models import RegenerationCapture, RevisionIssue
 from .orchestrator import RevisionOrchestrator
 from .run_storage import publish_governance_run, verify_governance_run
+from .successor_evidence import verify_successor_evidence
 
 JsonObject = dict[str, Any]
 _CAPTURE_KEYS = frozenset(
@@ -146,7 +147,14 @@ def _manifest(
         "status": status,
     }
     if successor_evidence is not None:
-        disposition["successor_evidence"] = [dict(item) for item in successor_evidence]
+        disposition["successor_evidence"] = [
+            {
+                "kind": item["kind"],
+                "path": item.get("batch_manifest_path", item.get("exercise_set_path")),
+                "sha256": item.get("batch_manifest_sha256", item.get("exercise_set_sha256")),
+            }
+            for item in successor_evidence
+        ]
     if unresolved_issue is not None:
         disposition["unresolved_issues"] = [unresolved_issue]
     value: JsonObject = {
@@ -190,6 +198,7 @@ def execute_supplied_successor(
     policy_version: str,
     created_at: str,
     reviewed_at: str,
+    repository_root: Path | None = None,
 ) -> JsonObject:
     """Publish one immutable supplied-successor run or no-capture failure.
 
@@ -236,6 +245,8 @@ def execute_supplied_successor(
             operational_failures=(failure,),
             terminal_manifest=manifest,
             payloads={},
+            request=None,
+            repository_root=repository_root,
         )
         return {"output": str(published), **verify_governance_run(published)}
     if not isinstance(successor, Mapping):
@@ -243,10 +254,21 @@ def execute_supplied_successor(
     _validate_capture_facts(capture_facts, prompt=prompt, response=successor)
     ensure_not_after(created_at, capture_facts["captured_at"], "M10 governance run must precede its capture")
     ensure_not_after(capture_facts["captured_at"], reviewed_at, "M10 capture must precede static review")
+    evidence_root = (repository_root or Path.cwd()).resolve(strict=True)
+
+    def validate_successor(
+        frozen_request: Mapping[str, Any], supplied_successor: Mapping[str, Any]
+    ) -> tuple[RevisionIssue, ...]:
+        return _successor_schema_issues(frozen_request, supplied_successor) + verify_successor_evidence(
+            request=frozen_request,
+            successor=supplied_successor,
+            repository_root=evidence_root,
+        )
+
     adapter = StaticTargetAdapter(
         str(request["target_milestone"]),
         lambda _request, response: response,
-        _successor_schema_issues,
+        validate_successor,
     )
     orchestrator = RevisionOrchestrator(
         backend=SuppliedCaptureBackend(successor, capture_facts),
@@ -294,8 +316,10 @@ def execute_supplied_successor(
         rejections=(),
         terminal_manifest=manifest,
         payloads=payloads,
+        request=request,
+        repository_root=evidence_root,
     )
-    return {"output": str(published), **verify_governance_run(published)}
+    return {"output": str(published), **verify_governance_run(published, repository_root=evidence_root)}
 
 
 def build_capture_from_attempt(

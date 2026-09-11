@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import copy
 import json
 from pathlib import Path
 
@@ -10,6 +11,7 @@ from english_master.revision_cycle.__main__ import main
 from english_master.revision_cycle.execution import execute_supplied_successor
 from english_master.revision_cycle.run_storage import verify_governance_run
 
+ROOT = Path(__file__).resolve().parents[1]
 NOW = "2026-09-10T10:00:00Z"
 LATER = "2026-09-10T10:01:00Z"
 
@@ -90,12 +92,22 @@ def _authority() -> tuple[dict[str, object], dict[str, object]]:
 
 
 def _successor(request: dict[str, object]) -> dict[str, object]:
+    exercise_path = "curriculum/exercises/development-20260911-m10-r2/A1-U01-L01/exercise-set.json"
+    audit_path = "curriculum/exercises/development-20260911-m10-r2/A1-U01-L01/audit.json"
+    artifact = json.loads((ROOT / exercise_path).read_text(encoding="utf-8"))
+    audit = json.loads((ROOT / audit_path).read_text(encoding="utf-8"))
     return {
-        "artifact": {"id": "successor", "status": "UNREVIEWED"},
-        "audit": {"result": "PASS"},
+        "artifact": artifact,
+        "audit": audit,
         "closure": request["rebuild_closure"],
         "successor_evidence": [
-            {"kind": "M7_SUCCESSOR_BATCH", "path": "successors/m7-batch.json", "sha256": "a" * 64}
+            {
+                "kind": "M7_SUCCESSOR_BATCH",
+                "exercise_set_path": exercise_path,
+                "exercise_set_sha256": sha256_json(artifact),
+                "audit_path": audit_path,
+                "audit_sha256": sha256_json(audit),
+            }
         ],
     }
 
@@ -130,16 +142,17 @@ def test_executes_only_supplied_factual_successor_and_publishes_closed_run(tmp_p
         policy_version="phase-2-v1",
         created_at=NOW,
         reviewed_at=LATER,
+        repository_root=ROOT,
     )
     assert result["terminal_manifest"]["terminal_state"] == "READY_FOR_FRESH_M9"
     assert result["attempt_count"] == 1
     assert result["capture_count"] == 1
     assert result["receipt_count"] == 6
-    assert verify_governance_run(tmp_path / "run")["terminal_manifest"]["development_approved"] is False
+    assert verify_governance_run(tmp_path / "run", repository_root=ROOT)["terminal_manifest"]["development_approved"] is False
     closure_path = next((tmp_path / "run" / "payloads").glob("*/closure.json"))
     closure_path.write_text("[]", encoding="utf-8")
     with pytest.raises(ValueError, match="captured raw response"):
-        verify_governance_run(tmp_path / "run")
+        verify_governance_run(tmp_path / "run", repository_root=ROOT)
 
 
 @pytest.mark.parametrize("mutation", ["hash", "test", "closure"])
@@ -168,11 +181,90 @@ def test_invalid_supplied_facts_or_closure_publish_nothing(tmp_path: Path, mutat
             policy_version="phase-2-v1",
             created_at=NOW,
             reviewed_at=LATER,
+            repository_root=ROOT,
         )
     assert not destination.exists()
 
 
-def test_absent_capture_configuration_publishes_truthful_operational_failure(tmp_path: Path) -> None:
+def test_evidence_path_escape_or_hash_drift_publish_nothing(tmp_path: Path) -> None:
+    batch, request = _authority()
+    prompt = "Repair only the frozen request scope."
+    successor = _successor(request)
+    for path, digest in (("../outside.json", None), (None, "0" * 64)):
+        candidate = copy.deepcopy(successor)
+        if path is not None:
+            candidate["successor_evidence"][0]["exercise_set_path"] = path
+        if digest is not None:
+            candidate["successor_evidence"][0]["audit_sha256"] = digest
+        with pytest.raises(ValueError, match="successor evidence"):
+            execute_supplied_successor(
+                finding_batch=batch,
+                request=request,
+                prompt=prompt,
+                successor=candidate,
+                capture_facts=_capture(prompt, candidate),
+                output_directory=tmp_path / f"invalid-{path is not None}",
+                maximum_attempts=1,
+                policy_version="phase-2-v1",
+                created_at=NOW,
+                reviewed_at=LATER,
+                repository_root=ROOT,
+            )
+    assert not any(tmp_path.iterdir())
+
+
+
+def test_m8_successor_requires_a_dereferenced_full_pilot(tmp_path: Path) -> None:
+    batch, request = _authority()
+    request = copy.deepcopy(request)
+    request.update({
+        "target_milestone": "M8_2",
+        "content_type": "AI_PRACTICE_PROMPT",
+        "lesson_id": "B1-U05-L02",
+        "modality": "SPEAKING",
+        "rebuild_closure": [{"target_milestone": "M8_2", "artifact_kind": "AI_PRACTICE_PILOT", "scope": "FULL_CLOSED_PILOT"}],
+        "acceptance_checks": [{"check_code": "M8_2_FULL_PILOT_REBUILT", "requirement": "Full pilot passes."}],
+    })
+    request["request_id"] = "PENDING"
+    request["request_id"] = identity("m10request", request, "request_id")
+    pilot = "curriculum/ai-practice/pilot-batches/20260911-v14-m10"
+    artifact_path = f"{pilot}/prompts/b1-u05-l02--speaking.json"
+    audit_path = f"{pilot}/audits/b1-u05-l02--speaking.json"
+    manifest_path = f"{pilot}/batch-manifest.json"
+    artifact = json.loads((ROOT / artifact_path).read_text(encoding="utf-8"))
+    audit = json.loads((ROOT / audit_path).read_text(encoding="utf-8"))
+    manifest = json.loads((ROOT / manifest_path).read_text(encoding="utf-8"))
+    successor = {
+        "artifact": artifact,
+        "audit": audit,
+        "closure": request["rebuild_closure"],
+        "pilot_artifact_count": 40,
+        "successor_evidence": [{
+            "kind": "M8_2_SUCCESSOR_PILOT",
+            "pilot_directory": pilot,
+            "batch_manifest_path": manifest_path,
+            "batch_manifest_sha256": sha256_json(manifest),
+            "artifact_path": artifact_path,
+            "artifact_sha256": sha256_json(artifact),
+            "audit_path": audit_path,
+            "audit_sha256": sha256_json(audit),
+        }],
+    }
+    result = execute_supplied_successor(
+        finding_batch=batch,
+        request=request,
+        prompt="Repair the frozen speaking protocol.",
+        successor=successor,
+        capture_facts=_capture("Repair the frozen speaking protocol.", successor),
+        output_directory=tmp_path / "m8-run",
+        maximum_attempts=1,
+        policy_version="phase-2-v1",
+        created_at=NOW,
+        reviewed_at=LATER,
+        repository_root=ROOT,
+    )
+    assert result["terminal_manifest"]["terminal_state"] == "READY_FOR_FRESH_M9"
+
     batch, request = _authority()
     result = execute_supplied_successor(
         finding_batch=batch,
@@ -185,6 +277,7 @@ def test_absent_capture_configuration_publishes_truthful_operational_failure(tmp
         policy_version="phase-2-v1",
         created_at=NOW,
         reviewed_at=LATER,
+        repository_root=ROOT,
     )
     assert result["terminal_manifest"]["terminal_state"] == "OPERATIONAL_FAILURE"
     assert result["attempt_count"] == 0

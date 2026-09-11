@@ -1,5 +1,7 @@
 # M10 Revision / Regeneration Governance
 
+> Historical contract only. This document governs retained M10 evidence and is not required by the active lightweight revision flow in [M10_REVISION.md](M10_REVISION.md).
+
 M10 starts only from immutable M9 `NEEDS_REVISION` or `REJECT` evidence imported as non-promotable `m10_review_input` records. It must not edit predecessor artifacts, reinterpret old reviews as approval, or start M9.
 
 1. Freeze one `m10_governance_run` before candidate one. The run binds the exact M9 finding batch, revision request, predecessor, policy, and maximum of three attempts.

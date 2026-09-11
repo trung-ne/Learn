@@ -104,10 +104,18 @@ def _active_language_targets(request: Mapping[str, Any]) -> list[str]:
     return active
 
 
+def _speaking_feedback_targets(request: Mapping[str, Any]) -> list[str]:
+    targets = _active_language_targets(request)
+    if request["prompt_version"] == "M8_2_AI_PRACTICE_v10":
+        targets = list(dict.fromkeys(targets + _references(request, "target_pronunciation", "review_pronunciation")))
+    return targets
+
+
 def _payload(request: Mapping[str, Any], lesson: Mapping[str, Any], utterance: str) -> JsonObject:
     modality = request["modality"]
     objective = request["objectives"][0]
     language_targets = _active_language_targets(request)
+    speaking_targets = _speaking_feedback_targets(request)
     writing_targets = language_targets
     if modality == "LISTENING":
         transcript = f"Speaker: {utterance}"
@@ -132,7 +140,7 @@ def _payload(request: Mapping[str, Any], lesson: Mapping[str, Any], utterance: s
             scenario_scope = "the declared lesson taxonomy context"
         else:
             scenario_scope = "the declared previously learned scope"
-        return {
+        payload: JsonObject = {
             "system_role": "lesson-bound roleplay partner",
             "learner_role": f"learner as the speaker working toward: {objective}",
             "assistant_role": "conversation partner in a lesson-bound practice situation",
@@ -141,9 +149,16 @@ def _payload(request: Mapping[str, Any], lesson: Mapping[str, Any], utterance: s
             "success_condition": "The learner completes the declared communicative goal with a lesson-scoped response before the turn cap.",
             "stop_condition": "Stop after the communicative goal is completed or six roleplay turns occur.",
             "turn_policy": {"one_question_at_a_time": True, "maximum_questions_per_turn": 1, "maximum_roleplay_turns": 6},
-            "feedback_policy": {"timing": "AFTER_ROLEPLAY", "maximum_priorities": 2, "target_references": language_targets},
+            "feedback_policy": {"timing": "AFTER_ROLEPLAY", "maximum_priorities": 2, "target_references": speaking_targets},
             "opening_turn": f"Your partner is ready. In your own words, work toward the stated goal using this lesson example as a model: {utterance}",
         }
+        if request["prompt_version"] == "M8_2_AI_PRACTICE_v10":
+            payload["pronunciation_feedback_policy"] = {
+                "when_targets_present": "AUDIO_ONLY",
+                "without_audio_result": "NOT_ASSESSED",
+                "forbidden_without_audio": ["score", "phonetic_correctness_judgment", "accent_inference"],
+            }
+        return payload
     if modality == "PRONUNCIATION":
         practice_targets = _references(request, "target_pronunciation", "review_pronunciation") or _references(request, "known_pronunciation")
         return {
@@ -263,9 +278,17 @@ def audit_artifact(
             policy = payload["turn_policy"]
             if not payload["learner_role"] or not payload["assistant_role"] or not payload["stop_condition"] or not policy["one_question_at_a_time"] or policy["maximum_questions_per_turn"] != 1:
                 issues.append({"code": "SPEAKING_ROLEPLAY_POLICY", "path": "$.payload", "message": "speaking roleplay contract is incomplete"})
-            expected_targets = _active_language_targets(request)
+            expected_targets = _speaking_feedback_targets(request)
             if payload["feedback_policy"]["target_references"] != expected_targets:
                 issues.append({"code": "SPEAKING_SCOPE_DRIFT", "path": "$.payload.feedback_policy.target_references", "message": "speaking feedback targets differ from the authorized active scope"})
+            if request["prompt_version"] == "M8_2_AI_PRACTICE_v10":
+                pronunciation_policy = payload["pronunciation_feedback_policy"]
+                if (
+                    pronunciation_policy["when_targets_present"] != "AUDIO_ONLY"
+                    or pronunciation_policy["without_audio_result"] != "NOT_ASSESSED"
+                    or not set(("score", "phonetic_correctness_judgment", "accent_inference")).issubset(pronunciation_policy["forbidden_without_audio"])
+                ):
+                    issues.append({"code": "SPEAKING_PRONUNCIATION_FEEDBACK_POLICY", "path": "$.payload.pronunciation_feedback_policy", "message": "speaking pronunciation feedback must be audio-only with a safe fallback"})
         elif modality == "PRONUNCIATION":
             policy = payload["assessment_policy"]
             if not payload["target_utterance"] or policy["required_input"] != "AUDIO" or policy["without_audio_result"] != "NOT_ASSESSED" or not set(("score", "phonetic_correctness_judgment", "accent_inference")).issubset(policy["forbidden_without_audio"]):
@@ -290,7 +313,7 @@ def audit_artifact(
     return value
 
 
-def build_pilot(authority: VerifiedM6PracticeAuthority, output_directory: Path, *, created_at: str | None = None, prompt_version: str = "M8_2_AI_PRACTICE_v9") -> Path:
+def build_pilot(authority: VerifiedM6PracticeAuthority, output_directory: Path, *, created_at: str | None = None, prompt_version: str = "M8_2_AI_PRACTICE_v10") -> Path:
     created_at = _timestamp(created_at)
     authorization = authority.authorization(created_at=created_at, prompt_version=prompt_version)
     validate_instance(authorization, "ai-practice-authorization")

@@ -142,6 +142,7 @@ def build_parser() -> argparse.ArgumentParser:
     execution.add_argument("--prompt", type=Path, required=True)
     execution.add_argument("--capture", type=Path, help="closed factual capture metadata; omit to record CAPTURE_NOT_CONFIGURED")
     execution.add_argument("--successor", type=Path, help="externally supplied successor response; required with --capture")
+    execution.add_argument("--repository-root", type=Path, default=Path("."), help="root that safely contains immutable successor evidence")
     execution.add_argument("--output-dir", type=Path, required=True)
     execution.add_argument("--maximum-attempts", type=int, default=1)
     execution.add_argument("--policy-version", default="m10-successor-execution-v1")
@@ -177,6 +178,7 @@ def main(argv: Sequence[str] | None = None) -> int:
                 policy_version=args.policy_version,
                 created_at=args.created_at,
                 reviewed_at=args.reviewed_at,
+                repository_root=args.repository_root,
             )
             _emit(result)
             return 0

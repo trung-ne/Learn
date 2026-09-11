@@ -14,7 +14,7 @@ from english_master.schema_validation import validate_instance
 JsonObject = dict[str, Any]
 MODALITIES = ("LISTENING", "SPEAKING", "PRONUNCIATION", "WRITING")
 EXPECTED_LESSON_COUNT = 10
-SUPPORTED_PROMPT_VERSIONS = ("M8_2_AI_PRACTICE_v9",)
+SUPPORTED_PROMPT_VERSIONS = ("M8_2_AI_PRACTICE_v9", "M8_2_AI_PRACTICE_v10")
 
 
 @dataclass(frozen=True)

@@ -1,0 +1,75 @@
+{
+  "observed_at": "2026-09-11T08:10:41Z",
+  "provider": "UNKNOWN",
+  "model": "UNKNOWN",
+  "run_id": "m10-session-capture-a1-u01-l01-r2",
+  "deterministic": false,
+  "provenance_mode": "SESSION_CAPTURED",
+  "content": {
+    "items": [
+      {
+        "title": "A routine with she",
+        "exercise_type": "multiple_choice",
+        "difficulty": "easy",
+        "instructions": "Choose the sentence with the correct present-simple form.",
+        "objective_indices": [0],
+        "target_references": ["concept_present_simple"],
+        "review_references": [],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {
+          "options": [
+            {"id": "a", "text": "Hoa walk to class each morning."},
+            {"id": "b", "text": "Hoa walks to class each morning."},
+            {"id": "c", "text": "Hoa walking to class each morning."}
+          ],
+          "primary_option_id": "b",
+          "explanation": "Hoa is third-person singular, so use walks."
+        }
+      },
+      {
+        "title": "Complete an everyday fact",
+        "exercise_type": "fill_blank",
+        "difficulty": "easy",
+        "instructions": "Write the correct form of study in the blank.",
+        "objective_indices": [0],
+        "target_references": ["concept_present_simple"],
+        "review_references": [],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"stimulus": "My brother ___ English on Mondays.", "blank_marker": "___", "primary_answer": "studies", "acceptable_variants": ["studies"], "explanation": "My brother is third-person singular, so study changes to studies.", "spelling_policy": "Ignore sentence-initial capitalization; otherwise require the shown spelling."}
+      },
+      {
+        "title": "Pair subjects with verbs",
+        "exercise_type": "matching",
+        "difficulty": "easy",
+        "instructions": "Match each subject to the present-simple verb form it requires.",
+        "objective_indices": [0],
+        "target_references": ["concept_present_simple"],
+        "review_references": [],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"left": [{"id": "l1", "text": "We"}, {"id": "l2", "text": "Minh"}], "right": [{"id": "r1", "text": "reads"}, {"id": "r2", "text": "read"}], "mapping": [{"left_id": "l1", "right_id": "r2"}, {"left_id": "l2", "right_id": "r1"}], "explanation": "Use read with we. Use reads with Minh because Minh is third-person singular."}
+      },
+      {
+        "title": "Build a personal-information sentence",
+        "exercise_type": "ordering",
+        "difficulty": "easy",
+        "instructions": "Put the parts in the usual order for a statement.",
+        "objective_indices": [0, 1],
+        "target_references": ["concept_present_simple", "concept_topic_personal_information"],
+        "review_references": [],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"segments": [{"id": "s1", "text": "in Da Nang"}, {"id": "s2", "text": "works"}, {"id": "s3", "text": "My aunt"}], "valid_order": ["s3", "s2", "s1"], "ordering_principle": "English statement order", "explanation": "The subject comes first, followed by the verb and place phrase."}
+      },
+      {
+        "title": "Repair subject-verb agreement",
+        "exercise_type": "error_correction",
+        "difficulty": "easy",
+        "instructions": "Correct the verb error in the sentence.",
+        "objective_indices": [0],
+        "target_references": ["concept_present_simple"],
+        "review_references": [],
+        "scoring_mode": "OBJECTIVE",
+        "payload": {"erroneous_sentence": "He cook dinner every evening.", "error_span": "cook", "correction": "cooks", "corrected_sentence": "He cooks dinner every evening.", "explanation": "He requires the third-person singular form cooks."}
+      }
+    ]
+  }
+}
