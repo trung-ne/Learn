@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/m11-export-batch-manifest.schema.json",
+  "title": "English Master M11 direct local export batch manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "export_id", "package_version", "exported_at", "batch_input_id", "batch_input_sha256", "formats", "answer_materials", "renderer_profiles", "content_counts", "files", "content_lifecycle_status", "required_source_permission", "static_limitations"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "m11_export_batch_manifest"},
+    "export_id": {"type": "string", "pattern": "^m11batchexport_[a-f0-9]{64}$"},
+    "package_version": {"type": "string", "minLength": 1},
+    "exported_at": {"$ref": "common.schema.json#/$defs/orderableDateTime"},
+    "batch_input_id": {"type": "string", "pattern": "^m11batchinput_[a-f0-9]{64}$"},
+    "batch_input_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "formats": {"type": "array", "minItems": 4, "maxItems": 6, "uniqueItems": true, "items": {"enum": ["JSON", "CSV", "STATIC_MOBILE", "STATIC_WEB", "PRINT_HTML", "IMS_COMMON_CARTRIDGE_1_3"]}, "allOf": [{"contains": {"const": "JSON"}}, {"contains": {"const": "CSV"}}, {"contains": {"const": "STATIC_MOBILE"}}, {"contains": {"const": "STATIC_WEB"}}]},
+    "answer_materials": {"const": "SEPARATE_INSTRUCTOR_EDITION"},
+    "renderer_profiles": {"type": "object", "additionalProperties": false, "required": ["model", "json", "csv", "static", "print", "common_cartridge"], "properties": {"model": {"const": "M11_NORMALIZED_MODEL_v1"}, "json": {"const": "M11_CANONICAL_JSON_v1"}, "csv": {"const": "M11_RFC4180_CSV_v1"}, "static": {"const": "M11_STATIC_HTML_v1"}, "print": {"const": "M11_PRINT_HTML_v1"}, "common_cartridge": {"const": "M11_IMS_CC_1_3_UNGRADED_WEBCONTENT_v1"}}},
+    "content_counts": {"type": "object", "additionalProperties": false, "required": ["lessons", "exercise_sets", "ai_practice_prompts"], "properties": {"lessons": {"type": "integer", "minimum": 1}, "exercise_sets": {"type": "integer", "minimum": 0}, "ai_practice_prompts": {"type": "integer", "minimum": 0}}},
+    "files": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "object", "additionalProperties": false, "required": ["path", "format", "bytes", "sha256"], "properties": {"path": {"type": "string", "pattern": "^(?:batch-input\\.json|json|csv|mobile|web|print|lms)(?:/[A-Za-z0-9._-]+)*$"}, "format": {"enum": ["CONTROL", "JSON", "CSV", "STATIC_MOBILE", "STATIC_WEB", "PRINT_HTML", "IMS_COMMON_CARTRIDGE_1_3"]}, "bytes": {"type": "integer", "minimum": 0}, "sha256": {"$ref": "common.schema.json#/$defs/sha256"}}}},
+    "content_lifecycle_status": {"const": "UNREVIEWED"},
+    "required_source_permission": {"const": "redistribute_text"},
+    "static_limitations": {"type": "array", "minItems": 5, "uniqueItems": true, "items": {"type": "string", "minLength": 1}}
+  }
+}

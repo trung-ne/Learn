@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/m11-export-batch-verification.schema.json",
+  "title": "English Master M11 direct local export batch verification",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "verification_id", "export_id", "manifest_sha256", "batch_input_sha256", "verified_at", "checks", "verified_file_count", "result", "content_lifecycle_status"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "m11_export_batch_verification"},
+    "verification_id": {"type": "string", "pattern": "^m11batchverify_[a-f0-9]{64}$"},
+    "export_id": {"type": "string", "pattern": "^m11batchexport_[a-f0-9]{64}$"},
+    "manifest_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "batch_input_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "verified_at": {"$ref": "common.schema.json#/$defs/orderableDateTime"},
+    "checks": {"type": "array", "minItems": 8, "uniqueItems": true, "items": {"enum": ["ANSWER_SEPARATION", "ARCHIVE_CLOSURE", "BATCH_INPUT", "CLOSED_INVENTORY", "CSV", "DETERMINISTIC_OUTPUT", "FILE_HASHES", "HTML", "JSON", "LIFECYCLE", "SCHEMA", "SOURCE_PERMISSIONS", "XML"]}},
+    "verified_file_count": {"type": "integer", "minimum": 1},
+    "result": {"const": "PASS"},
+    "content_lifecycle_status": {"const": "UNREVIEWED"}
+  }
+}

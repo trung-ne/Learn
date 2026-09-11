@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/m11-export-batch-input.schema.json",
+  "title": "English Master M11 direct local export batch input",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "batch_input_id", "package_version", "source_registry", "artifacts", "subject_inventory_sha256", "required_lifecycle_status", "required_source_permission"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "m11_export_batch_input"},
+    "batch_input_id": {"type": "string", "pattern": "^m11batchinput_[a-f0-9]{64}$"},
+    "package_version": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,63}$"},
+    "source_registry": {"$ref": "#/$defs/fileReference"},
+    "artifacts": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/artifactReference"}},
+    "subject_inventory_sha256": {"$ref": "common.schema.json#/$defs/sha256"},
+    "required_lifecycle_status": {"const": "UNREVIEWED"},
+    "required_source_permission": {"const": "redistribute_text"}
+  },
+  "$defs": {
+    "safePath": {"type": "string", "minLength": 1, "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))(?!.*\\\\)[A-Za-z0-9._-]+(?:/[A-Za-z0-9._-]+)*$"},
+    "fileReference": {"type": "object", "additionalProperties": false, "required": ["path", "sha256"], "properties": {"path": {"$ref": "#/$defs/safePath"}, "sha256": {"$ref": "common.schema.json#/$defs/sha256"}}},
+    "artifactReference": {"type": "object", "additionalProperties": false, "required": ["content_type", "content_id", "lesson_id", "path", "sha256"], "properties": {"content_type": {"enum": ["LESSON", "EXERCISE_SET", "AI_PRACTICE_PROMPT"]}, "content_id": {"type": "string", "minLength": 1}, "lesson_id": {"$ref": "common.schema.json#/$defs/lessonId"}, "path": {"$ref": "#/$defs/safePath"}, "sha256": {"$ref": "common.schema.json#/$defs/sha256"}}}
+  }
+}
