@@ -53,11 +53,78 @@ def build_population() -> dict[str, Any]:
     return value
 
 def validate_population(value: dict[str, Any]) -> dict[str, Any]:
+    """Validate the M15 graph contract without requiring builder equality."""
     validate_instance(value, "m15-knowledge-graph-population")
-    if len(value["nodes"]) != 120 or len({n["id"] for n in value["nodes"]}) != 120:
-        raise ValueError("population must contain 120 unique nodes")
-    if value != build_population():
-        raise ValueError("population is not the canonical deterministic population")
+    nodes = value["nodes"]
+    by_id = {node["id"]: node for node in nodes}
+    if len(nodes) != 120 or len(by_id) != len(nodes):
+        raise ValueError("population must contain 120 unique node IDs")
+
+    expected_ids = {
+        _node_id(tier, dimension) for tier in TIERS for dimension in DIMENSIONS
+    }
+    actual_ids = set(by_id)
+    if actual_ids != expected_ids:
+        missing = sorted(expected_ids - actual_ids)
+        unexpected = sorted(actual_ids - expected_ids)
+        raise ValueError(
+            f"population node IDs do not cover the tier/dimension matrix; "
+            f"missing={missing}, unexpected={unexpected}"
+        )
+
+    adjacency: dict[str, set[str]] = {node_id: set() for node_id in by_id}
+    for node in nodes:
+        expected_id = _node_id(node["tier"], node["dimension"])
+        if node["id"] != expected_id:
+            raise ValueError(
+                f"node {node['id']} does not agree with its tier/dimension: {expected_id}"
+            )
+        prerequisites = node["prerequisites"]
+        if len(prerequisites) != len(set(prerequisites)):
+            raise ValueError(f"node {node['id']} has duplicate prerequisites")
+        missing_refs = sorted(set(prerequisites) - actual_ids)
+        if missing_refs:
+            raise ValueError(
+                f"node {node['id']} has unresolved prerequisites: {missing_refs}"
+            )
+
+        edge_pairs: list[tuple[str, str]] = []
+        for edge in node["dependency_edges"]:
+            if edge["source"] not in by_id or edge["target"] not in by_id:
+                raise ValueError(
+                    f"node {node['id']} has an unresolved dependency edge: {edge}"
+                )
+            if edge["target"] != node["id"]:
+                raise ValueError(
+                    f"dependency edge stored on {node['id']} targets {edge['target']}"
+                )
+            edge_pairs.append((edge["source"], edge["target"]))
+        if len(edge_pairs) != len(set(edge_pairs)):
+            raise ValueError(f"node {node['id']} has duplicate dependency edges")
+        edge_sources = {source for source, _ in edge_pairs}
+        if edge_sources != set(prerequisites):
+            raise ValueError(
+                f"node {node['id']} prerequisites and dependency edges disagree"
+            )
+        for prerequisite in prerequisites:
+            adjacency[prerequisite].add(node["id"])
+
+    indegree = {node_id: 0 for node_id in by_id}
+    for targets in adjacency.values():
+        for target in targets:
+            indegree[target] += 1
+    ready = sorted(node_id for node_id, degree in indegree.items() if degree == 0)
+    visited = 0
+    while ready:
+        node_id = ready.pop(0)
+        visited += 1
+        for target in sorted(adjacency[node_id]):
+            indegree[target] -= 1
+            if indegree[target] == 0:
+                ready.append(target)
+                ready.sort()
+    if visited != len(nodes):
+        raise ValueError("population prerequisite graph contains a cycle")
     return value
 
 def run(output: Path) -> Path:

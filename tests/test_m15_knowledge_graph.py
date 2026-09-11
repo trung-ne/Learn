@@ -17,13 +17,36 @@ def test_population_has_concrete_complete_coverage_and_chain():
         assert {e["source"] for e in by_name[target]["dependency_edges"]} >= {by_name[source]["id"]}
 
 
-def test_population_is_deterministic_and_tamper_detecting():
+def test_population_is_deterministic_and_allows_semantic_equivalents():
     first = build_population()
     assert first == build_population()
     altered = json.loads(json.dumps(first))
-    altered["nodes"][0]["description"] = "tampered"
-    with pytest.raises(ValueError):
-        validate_population(altered)
+    altered["nodes"][0]["description"] = "An alternative original planning description."
+    assert validate_population(altered) is altered
+
+
+def test_population_rejects_broken_refs_edge_disagreement_and_cycles():
+    population = build_population()
+
+    broken = json.loads(json.dumps(population))
+    broken["nodes"][10]["prerequisites"][0] = "kg_missing"
+    with pytest.raises(ValueError, match="unresolved prerequisites"):
+        validate_population(broken)
+
+    disagreement = json.loads(json.dumps(population))
+    disagreement["nodes"][10]["dependency_edges"] = []
+    with pytest.raises(ValueError, match="disagree"):
+        validate_population(disagreement)
+
+    cyclic = json.loads(json.dumps(population))
+    first = cyclic["nodes"][0]
+    last_id = "kg_c2_2_grammar"
+    first["prerequisites"].append(last_id)
+    first["dependency_edges"].append(
+        {"source": last_id, "target": first["id"], "relation": "PREREQUISITE"}
+    )
+    with pytest.raises(ValueError, match="cycle"):
+        validate_population(cyclic)
 
 
 def test_run_refuses_overwrite(tmp_path):
