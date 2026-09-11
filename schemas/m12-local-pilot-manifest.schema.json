@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/m12-local-pilot-manifest.schema.json",
+  "title": "English Master M12 Operational Local Pilot Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "records"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "m12_operational_local_pilot_manifest"},
+    "records": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 30,
+      "items": {"$ref": "#/$defs/record"}
+    }
+  },
+  "$defs": {
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "path",
+        "sha256",
+        "duration_seconds",
+        "source_url",
+        "license",
+        "attribution",
+        "permissions"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9]*(?:[-_][a-z0-9]+)*$",
+          "minLength": 3,
+          "maxLength": 128
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512,
+          "pattern": "^(?![\\\\/])(?![A-Za-z]:)(?!.*(?:^|[\\\\/])\\.\\.(?:[\\\\/]|$))(?!.*(?:^|[\\\\/])\\.(?:[\\\\/]|$))[^\\u0000]+$"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "duration_seconds": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 86400
+        },
+        "source_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://[^\\s]+$",
+          "maxLength": 2048
+        },
+        "license": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "attribution": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        },
+        "permissions": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["storage", "transcript", "timestamp"],
+          "properties": {
+            "storage": {"type": "boolean"},
+            "transcript": {"type": "boolean"},
+            "timestamp": {"type": "boolean"}
+          }
+        }
+      }
+    }
+  }
+}

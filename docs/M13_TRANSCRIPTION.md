@@ -1,5 +1,13 @@
 # M13 Transcription
 
+## Local operational-pilot tooling
+
+A separate local pilot API is available in `english_master.m13_local_pilot`. It accepts a selected 10–20-record subset of a validated M12 local-pilot manifest and a caller-controlled local ASR backend. It records tool/model provenance, prohibits reported network use, checks transcript/timestamp permission, bounds ordered timestamps by declared duration, and uses anonymous `SPEAKER_NN` labels. It does not download models, invoke a provider, or include a bundled ASR model.
+
+No real transcription is run until a licensed local M12 manifest, media files, and an explicit local ASR backend/model path are supplied. A pilot transcript remains `UNREVIEWED`; its existence is not an accuracy, release, or redistribution claim.
+
+## Historical fixture framework
+
 M13 is a fixture-only, offline derivative framework. It does not perform ASR, access a provider, download a model, or process parent media bytes.
 
 ## Creation gate

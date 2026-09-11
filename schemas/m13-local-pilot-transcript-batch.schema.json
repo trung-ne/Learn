@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/m13-local-pilot-transcript-batch.schema.json",
+  "title": "English Master M13 Local Pilot Transcript Batch",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "record_type",
+    "artifact_id",
+    "m12_manifest_sha256",
+    "tool_provenance",
+    "model_provenance",
+    "transcripts",
+    "network_accessed",
+    "content_lifecycle_status"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "m13_local_pilot_transcript_batch"},
+    "artifact_id": {"type": "string", "pattern": "^m13local_[0-9a-f]{64}$"},
+    "m12_manifest_sha256": {"$ref": "#/$defs/sha256"},
+    "tool_provenance": {"$ref": "#/$defs/toolProvenance"},
+    "model_provenance": {"$ref": "#/$defs/modelProvenance"},
+    "transcripts": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 20,
+      "items": {"$ref": "#/$defs/transcript"}
+    },
+    "network_accessed": {"const": false},
+    "content_lifecycle_status": {"const": "UNREVIEWED"}
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "nonempty": {"type": "string", "minLength": 1, "maxLength": 256},
+    "toolProvenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "version"],
+      "properties": {
+        "name": {"$ref": "#/$defs/nonempty"},
+        "version": {"$ref": "#/$defs/nonempty"}
+      }
+    },
+    "modelProvenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provider", "name", "version"],
+      "properties": {
+        "provider": {"$ref": "#/$defs/nonempty"},
+        "name": {"$ref": "#/$defs/nonempty"},
+        "version": {"$ref": "#/$defs/nonempty"}
+      }
+    },
+    "segment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start_seconds", "end_seconds", "text", "speaker_label"],
+      "properties": {
+        "start_seconds": {"type": "number", "minimum": 0},
+        "end_seconds": {"type": "number", "exclusiveMinimum": 0},
+        "text": {"type": "string", "minLength": 1, "maxLength": 10000},
+        "speaker_label": {"type": "string", "pattern": "^SPEAKER_[0-9]{2,}$"}
+      }
+    },
+    "transcript": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_id",
+        "parent_media_sha256",
+        "declared_duration_seconds",
+        "text",
+        "segments"
+      ],
+      "properties": {
+        "record_id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9]*(?:[-_][a-z0-9]+)*$",
+          "minLength": 3,
+          "maxLength": 128
+        },
+        "parent_media_sha256": {"$ref": "#/$defs/sha256"},
+        "declared_duration_seconds": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 86400
+        },
+        "text": {"type": "string", "minLength": 1},
+        "segments": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/segment"}}
+      }
+    }
+  }
+}

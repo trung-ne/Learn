@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/m14-local-pilot-metrics.schema.json",
+  "title": "English Master M14 Local-Pilot Transcript Metrics",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["speech_rate", "vocabulary_proxies", "grammar_proxies", "length_measures", "anonymous_speaker_count"],
+  "properties": {
+    "speech_rate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["word_count", "timed_span_seconds", "words_per_minute"],
+      "properties": {
+        "word_count": {"type": "integer", "minimum": 1},
+        "timed_span_seconds": {"type": "number", "exclusiveMinimum": 0},
+        "words_per_minute": {"type": "number", "minimum": 0}
+      }
+    },
+    "vocabulary_proxies": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["unique_word_count", "type_token_ratio", "mean_word_length", "long_word_ratio"],
+      "properties": {
+        "unique_word_count": {"type": "integer", "minimum": 1},
+        "type_token_ratio": {"type": "number", "minimum": 0, "maximum": 1},
+        "mean_word_length": {"type": "number", "exclusiveMinimum": 0},
+        "long_word_ratio": {"type": "number", "minimum": 0, "maximum": 1}
+      }
+    },
+    "grammar_proxies": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sentence_count", "mean_words_per_sentence", "subordinator_count", "subordinator_ratio"],
+      "properties": {
+        "sentence_count": {"type": "integer", "minimum": 1},
+        "mean_words_per_sentence": {"type": "number", "exclusiveMinimum": 0},
+        "subordinator_count": {"type": "integer", "minimum": 0},
+        "subordinator_ratio": {"type": "number", "minimum": 0, "maximum": 1}
+      }
+    },
+    "length_measures": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["segment_count", "total_word_count", "mean_words_per_segment", "max_words_per_segment"],
+      "properties": {
+        "segment_count": {"type": "integer", "minimum": 1},
+        "total_word_count": {"type": "integer", "minimum": 1},
+        "mean_words_per_segment": {"type": "number", "exclusiveMinimum": 0},
+        "max_words_per_segment": {"type": "integer", "minimum": 1}
+      }
+    },
+    "anonymous_speaker_count": {"type": "integer", "minimum": 1}
+  }
+}

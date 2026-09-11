@@ -1,5 +1,13 @@
 # M14 Listening Difficulty Analyzer
 
+## Local operational-pilot metrics
+
+`english_master.listening_difficulty.local_metrics` provides a small offline metric surface for local-pilot transcript artifacts: speech rate, vocabulary proxies, grammar-complexity proxies, length measures, and anonymous speaker-label count. It produces no CEFR level, composite difficulty score, diarization-quality claim, or model judgment.
+
+The existing fixture publication framework below remains unchanged for historical verification.
+
+## Historical fixture framework
+
 M14 is hardened as a deterministic, offline, fixture-only analysis stage. A publishable M14 run must be built directly from an independently verified M13 fixture run. A caller-supplied JSON projection can be passed to the Python `analyze()` API for non-publishing internal analysis, but it cannot authorize `run()` or the CLI publication command.
 
 ## Publication authority

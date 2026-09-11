@@ -1,12 +1,22 @@
-# M12 — Real Audio / Video Corpus Ingestion
+# M12 — Local Media Pilot
 
-**Status:** Preparation framework only — real media acquisition and controlled-media publication are blocked until M11 has a complete, independently verified AI-only development export.
+## Active local-pilot workflow
 
-## Gate
+`english_master.m12_local_pilot` validates a manifest for 10–30 explicitly listed local audio/video files. Each record provides its local relative path, observed SHA-256, source URL, license, attribution, and explicit storage, transcript, and timestamp permissions.
 
-M12 must not begin operationally until M11 has a complete export whose authorization, manifest, and verification receipt all validate as `DEVELOPMENT_APPROVED` under the active AI-only policy. This is a development gate, not human review, endorsement, release approval, or public-release authority. Creating this document records the design boundary only; it does not authorize acquisition, downloading, transformation, transcription, redistribution, or controlled-media publication.
+```bash
+english-master-m12-local-pilot validate \
+  --manifest <m12-local-pilot-manifest.json> \
+  --input-root <local-media-directory>
+```
 
-Current M11 status does not satisfy that gate. The local fixture-only M12 framework is implemented, but no source registration, media acquisition, real payload, transformation, or controlled-media publication is authorized by this document.
+The command is read-only: it fetches no URL, processes no media, downloads no model, and writes no payload. Local possession alone does not establish permission. The manifest must be valid before the separate M13 local-pilot API can use selected records.
+
+Do not run a real pilot until licensed local files and a manifest with their exact hashes are supplied. Validation is not a redistribution, release, transcript-quality, or public-use claim.
+
+## Historical controlled-media framework
+
+The remaining sections describe the earlier controlled-media framework retained for existing immutable fixture records. Its historical M11 authority gate is not required by the active local-pilot validator.
 
 ## Mission
 
