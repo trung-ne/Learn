@@ -68,6 +68,7 @@ Một `M9 DEVELOPMENT: PASS` trong phạm vi sample cho phép bước được y
 - M16-A1-BLUEPRINT: A1.1/A1.2, 10 units, 50 lessons, mục tiêu và prerequisite/review mappings.
 - M16-A2-BLUEPRINT: A2.1/A2.2, 10 units, 50 lesson outlines, review lessons, unit-test blueprints và M15 target coverage có kiểm chứng.
 - Full A1 v2: 10 original-authored unit files build thành 50 canonical packets; audit deterministic chạy trên toàn corpus và sample 12 lesson được hash-rank, stratify theo unit.
+- A2 pilot: 10 original-authored A2.1 packets from the first two blueprint units, each with exercises and four practice modalities; repaired successor run, deterministic audit, and five-lesson stratified sample pass. Content remains `UNREVIEWED`.
 
 Các con số trên là development fixtures/populations có giới hạn, không phải tuyên bố exhaustive coverage hay official CEFR endorsement.
 

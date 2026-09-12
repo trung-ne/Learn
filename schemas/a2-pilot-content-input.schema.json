@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/a2-pilot-content-input.schema.json",
+  "title": "English Master A2 pilot authored content input",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["schema_version", "record_type", "lessons"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "a2_pilot_content_input"},
+    "lessons": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": ["outline_id", "title", "duration_minutes", "objectives", "content_sections", "exercises", "prompts"],
+        "properties": {
+          "outline_id": {"type": "string", "minLength": 1},
+          "title": {"type": "string", "minLength": 1, "maxLength": 120},
+          "duration_minutes": {"type": "integer", "minimum": 15, "maximum": 45},
+          "objectives": {"type": "array", "minItems": 1, "maxItems": 4, "items": {"type": "string", "minLength": 1}},
+          "content_sections": {"type": "array", "minItems": 2, "maxItems": 4, "items": {"type": "object"}},
+          "exercises": {"type": "array", "minItems": 3, "maxItems": 6, "items": {"type": "object"}},
+          "prompts": {"type": "object", "additionalProperties": false, "required": ["listening", "speaking", "pronunciation", "writing"], "properties": {"listening": {"type": "object"}, "speaking": {"type": "object"}, "pronunciation": {"type": "object"}, "writing": {"type": "object"}}}
+        }
+      }
+    }
+  }
+}

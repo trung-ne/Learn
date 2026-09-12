@@ -1,0 +1,996 @@
+{
+  "lessons": [
+    {
+      "content_sections": [
+        {
+          "body": "In lost umbrella, put finished actions in a clear order. Use time words such as yesterday, first, then, and this morning. Example: “Yesterday I left my umbrella on the bus.” The past action tells the listener what happened; the time word tells when.",
+          "section_type": "explanation",
+          "title": "Notice the language"
+        },
+        {
+          "body": "Yesterday I left my umbrella on the bus. I called the bus office and collected it this morning. Ask: what detail would a friend need next? Say the key action once, then add one time or place detail.",
+          "section_type": "dialogue",
+          "title": "Context and meaning"
+        },
+        {
+          "body": "Choose a true or invented lost umbrella detail. Say two connected sentences: one about what happened and one about the next step. Check that the order is easy to follow.",
+          "section_type": "practice",
+          "title": "Guided use"
+        }
+      ],
+      "duration_minutes": 30,
+      "exercises": [
+        {
+          "answer": "Yesterday I left my umbrella on the bus.",
+          "prompt": "Choose the sentence that best reports the main event in this lost umbrella situation.",
+          "type": "multiple_choice",
+          "items": [
+            "Yesterday I left my umbrella on the bus.",
+            "The situation was completely different.",
+            "The speaker did not mention this situation."
+          ]
+        },
+        {
+          "answer": "my umbrella on the bus",
+          "prompt": "Complete this sentence: Yesterday, I _____. Use the lesson 1 situation.",
+          "type": "fill_blank"
+        },
+        {
+          "answer": "left the umbrella on the bus",
+          "prompt": "Read the text: \"Yesterday I left my umbrella on the bus. I called the bus office and collected it this morning. Ask: what detail would a friend need next? Say the key action once, then add one time or place detail.\" Then read the short lost umbrella message and answer: What happened first?",
+          "type": "reading"
+        },
+        {
+          "prompt": "Tell a partner about a lost umbrella situation using two ordered sentences.",
+          "rubric": {
+            "criteria": [
+              "Reports a clear event.",
+              "Uses an understandable time or sequence word.",
+              "Answers one follow-up question."
+            ]
+          },
+          "type": "speaking"
+        }
+      ],
+      "objectives": [
+        "Describe one finished event with simple past-time language."
+      ],
+      "outline_id": "m16a2-v1-a2-u01-l01",
+      "prompts": {
+        "listening": {
+          "answer": "left the umbrella on the bus",
+          "constraints": [
+            "Keep transcript private until the first answer.",
+            "Ask exactly one question before revealing it.",
+            "Use no media; use only the supplied transcript."
+          ],
+          "goal": "Catch the main event and one detail about lost umbrella.",
+          "instruction": "Listen once to a short message about lost umbrella. Answer one question before seeing the transcript. Then listen again and notice the sequence words.",
+          "media_required": false,
+          "question": "What happened first?",
+          "transcript": "Yesterday I left my umbrella on the bus. I called the bus office and collected it this morning."
+        },
+        "pronunciation": {
+          "constraints": [
+            "Assess only with learner audio.",
+            "Return NOT_ASSESSED without audio."
+          ],
+          "goal": "Make the event order and main action easy to hear.",
+          "instruction": "Practise the concrete sound target for lost umbrella: group the message into two thought groups and stress the main action word. Read the example slowly, then at natural speed."
+        },
+        "speaking": {
+          "constraints": [
+            "Use at most three tutor turns.",
+            "Ask one follow-up question.",
+            "Stop after agreeing on a next step."
+          ],
+          "goal": "Complete a useful exchange about lost umbrella.",
+          "instruction": "Roleplay: you are a customer or friend dealing with lost umbrella; the tutor is the staff member or friend who has one missing detail. Scenario: explain what happened and ask for the next step. Tutor opening: “Hi, what happened?” Ask one follow-up about time, place, quantity, or result; finish when the tutor understands and you agree on the next step."
+        },
+        "writing": {
+          "constraints": [
+            "Wait for the draft.",
+            "Give two brief feedback points.",
+            "Do not replace the learner draft."
+          ],
+          "goal": "Write a clear short message about lost umbrella.",
+          "instruction": "Write 3 short sentences about lost umbrella: say what happened, add when or where, and say what happened next. Submit your draft first."
+        }
+      },
+      "title": "Past events: form and key words"
+    },
+    {
+      "content_sections": [
+        {
+          "body": "In market visit, put finished actions in a clear order. Use time words such as yesterday, first, then, and this morning. Example: “On Saturday, I bought tomatoes at the market.” The past action tells the listener what happened; the time word tells when.",
+          "section_type": "explanation",
+          "title": "Notice the language"
+        },
+        {
+          "body": "On Saturday, I bought tomatoes at the market. The seller gave me a small bag. Ask: what detail would a friend need next? Say the key action once, then add one time or place detail.",
+          "section_type": "dialogue",
+          "title": "Context and meaning"
+        },
+        {
+          "body": "Choose a true or invented market visit detail. Say two connected sentences: one about what happened and one about the next step. Check that the order is easy to follow.",
+          "section_type": "practice",
+          "title": "Guided use"
+        }
+      ],
+      "duration_minutes": 30,
+      "exercises": [
+        {
+          "answer": "On Saturday, I bought tomatoes at the market.",
+          "prompt": "Choose the sentence that best reports the main event in this market visit situation.",
+          "type": "multiple_choice",
+          "items": [
+            "On Saturday, I bought tomatoes at the market.",
+            "The situation was completely different.",
+            "The speaker did not mention this situation."
+          ]
+        },
+        {
+          "answer": "bought tomatoes at the market",
+          "prompt": "Complete this sentence: Yesterday, I _____. Use the lesson 2 situation.",
+          "type": "fill_blank"
+        },
+        {
+          "answer": "bought tomatoes",
+          "prompt": "Read the text: \"On Saturday, I bought tomatoes at the market. The seller gave me a small bag. Ask: what detail would a friend need next? Say the key action once, then add one time or place detail.\" Then read the short market visit message and answer: What did the speaker buy?",
+          "type": "reading"
+        },
+        {
+          "prompt": "Tell a partner about a market visit situation using two ordered sentences.",
+          "rubric": {
+            "criteria": [
+              "Reports a clear event.",
+              "Uses an understandable time or sequence word.",
+              "Answers one follow-up question."
+            ]
+          },
+          "type": "speaking"
+        }
+      ],
+      "objectives": [
+        "Use a short frame to report what happened and when."
+      ],
+      "outline_id": "m16a2-v1-a2-u01-l02",
+      "prompts": {
+        "listening": {
+          "answer": "bought tomatoes",
+          "constraints": [
+            "Keep transcript private until the first answer.",
+            "Ask exactly one question before revealing it.",
+            "Use no media; use only the supplied transcript."
+          ],
+          "goal": "Catch the main event and one detail about market visit.",
+          "instruction": "Listen once to a short message about market visit. Answer one question before seeing the transcript. Then listen again and notice the sequence words.",
+          "media_required": false,
+          "question": "What did the speaker buy?",
+          "transcript": "On Saturday, I bought tomatoes at the market. The seller gave me a small bag."
+        },
+        "pronunciation": {
+          "constraints": [
+            "Assess only with learner audio.",
+            "Return NOT_ASSESSED without audio."
+          ],
+          "goal": "Make the event order and main action easy to hear.",
+          "instruction": "Practise the concrete sound target for market visit: group the message into two thought groups and stress the main action word. Read the example slowly, then at natural speed."
+        },
+        "speaking": {
+          "constraints": [
+            "Use at most three tutor turns.",
+            "Ask one follow-up question.",
+            "Stop after agreeing on a next step."
+          ],
+          "goal": "Complete a useful exchange about market visit.",
+          "instruction": "Roleplay: you are a customer or friend dealing with market visit; the tutor is the staff member or friend who has one missing detail. Scenario: explain what happened and ask for the next step. Tutor opening: “Hi, what happened?” Ask one follow-up about time, place, quantity, or result; finish when the tutor understands and you agree on the next step."
+        },
+        "writing": {
+          "constraints": [
+            "Wait for the draft.",
+            "Give two brief feedback points.",
+            "Do not replace the learner draft."
+          ],
+          "goal": "Write a clear short message about market visit.",
+          "instruction": "Write 3 short sentences about market visit: say what happened, add when or where, and say what happened next. Submit your draft first."
+        }
+      },
+      "title": "Event-reporting chunks"
+    },
+    {
+      "content_sections": [
+        {
+          "body": "In late train, put finished actions in a clear order. Use time words such as yesterday, first, then, and this morning. Example: “My train arrived late, so I phoned my friend and explained the delay..” The past action tells the listener what happened; the time word tells when.",
+          "section_type": "explanation",
+          "title": "Notice the language"
+        },
+        {
+          "body": "My train arrived late, so I phoned my friend and explained the delay. Ask: what detail would a friend need next? Say the key action once, then add one time or place detail.",
+          "section_type": "dialogue",
+          "title": "Context and meaning"
+        },
+        {
+          "body": "Choose a true or invented late train detail. Say two connected sentences: one about what happened and one about the next step. Check that the order is easy to follow.",
+          "section_type": "practice",
+          "title": "Guided use"
+        }
+      ],
+      "duration_minutes": 30,
+      "exercises": [
+        {
+          "answer": "My train arrived late, so I phoned my friend and explained the delay.",
+          "prompt": "Choose the sentence that best reports the main event in this late train situation.",
+          "type": "multiple_choice",
+          "items": [
+            "My train arrived late, so I phoned my friend and explained the delay.",
+            "The situation was completely different.",
+            "The speaker did not mention this situation."
+          ]
+        },
+        {
+          "answer": "late, so I phoned my friend and explained the delay",
+          "prompt": "Complete this sentence: Yesterday, I _____. Use the lesson 3 situation.",
+          "type": "fill_blank"
+        },
+        {
+          "answer": "the train arrived late",
+          "prompt": "Read the text: \"My train arrived late, so I phoned my friend and explained the delay. Ask: what detail would a friend need next? Say the key action once, then add one time or place detail.\" Then read the short late train message and answer: What problem or detail does the speaker mention?",
+          "type": "reading"
+        },
+        {
+          "prompt": "Tell a partner about a late train situation using two ordered sentences.",
+          "rubric": {
+            "criteria": [
+              "Reports a clear event.",
+              "Uses an understandable time or sequence word.",
+              "Answers one follow-up question."
+            ]
+          },
+          "type": "speaking"
+        }
+      ],
+      "objectives": [
+        "Ask one follow-up question and repair a simple misunderstanding."
+      ],
+      "outline_id": "m16a2-v1-a2-u01-l03",
+      "prompts": {
+        "listening": {
+          "answer": "the train arrived late",
+          "constraints": [
+            "Keep transcript private until the first answer.",
+            "Ask exactly one question before revealing it.",
+            "Use no media; use only the supplied transcript."
+          ],
+          "goal": "Catch the main event and one detail about late train.",
+          "instruction": "Listen once to a short message about late train. Answer one question before seeing the transcript. Then listen again and notice the sequence words.",
+          "media_required": false,
+          "question": "What problem or detail does the speaker mention?",
+          "transcript": "My train arrived late, so I phoned my friend and explained the delay."
+        },
+        "pronunciation": {
+          "constraints": [
+            "Assess only with learner audio.",
+            "Return NOT_ASSESSED without audio."
+          ],
+          "goal": "Make the event order and main action easy to hear.",
+          "instruction": "Practise the concrete sound target for late train: group the message into two thought groups and stress the main action word. Read the example slowly, then at natural speed."
+        },
+        "speaking": {
+          "constraints": [
+            "Use at most three tutor turns.",
+            "Ask one follow-up question.",
+            "Stop after agreeing on a next step."
+          ],
+          "goal": "Complete a useful exchange about late train.",
+          "instruction": "Roleplay: you are a customer or friend dealing with late train; the tutor is the staff member or friend who has one missing detail. Scenario: explain what happened and ask for the next step. Tutor opening: “Hi, what happened?” Ask one follow-up about time, place, quantity, or result; finish when the tutor understands and you agree on the next step."
+        },
+        "writing": {
+          "constraints": [
+            "Wait for the draft.",
+            "Give two brief feedback points.",
+            "Do not replace the learner draft."
+          ],
+          "goal": "Write a clear short message about late train.",
+          "instruction": "Write 3 short sentences about late train: say what happened, add when or where, and say what happened next. Submit your draft first."
+        }
+      },
+      "title": "Follow-up questions and repair"
+    },
+    {
+      "content_sections": [
+        {
+          "body": "In clinic visit, put finished actions in a clear order. Use time words such as yesterday, first, then, and this morning. Example: “I felt ill yesterday.” The past action tells the listener what happened; the time word tells when.",
+          "section_type": "explanation",
+          "title": "Notice the language"
+        },
+        {
+          "body": "I felt ill yesterday. The nurse asked two questions and gave me useful advice. Ask: what detail would a friend need next? Say the key action once, then add one time or place detail.",
+          "section_type": "dialogue",
+          "title": "Context and meaning"
+        },
+        {
+          "body": "Choose a true or invented clinic visit detail. Say two connected sentences: one about what happened and one about the next step. Check that the order is easy to follow.",
+          "section_type": "practice",
+          "title": "Guided use"
+        }
+      ],
+      "duration_minutes": 30,
+      "exercises": [
+        {
+          "answer": "I felt ill yesterday.",
+          "prompt": "Choose the sentence that best reports the main event in this clinic visit situation.",
+          "type": "multiple_choice",
+          "items": [
+            "I felt ill yesterday.",
+            "The situation was completely different.",
+            "The speaker did not mention this situation."
+          ]
+        },
+        {
+          "answer": "yesterday",
+          "prompt": "Complete this sentence: Yesterday, I _____. Use the lesson 4 situation.",
+          "type": "fill_blank"
+        },
+        {
+          "answer": "felt ill",
+          "prompt": "Read the text: \"I felt ill yesterday. The nurse asked two questions and gave me useful advice. Ask: what detail would a friend need next? Say the key action once, then add one time or place detail.\" Then read the short clinic visit message and answer: What problem or detail does the speaker mention?",
+          "type": "reading"
+        },
+        {
+          "prompt": "Tell a partner about a clinic visit situation using two ordered sentences.",
+          "rubric": {
+            "criteria": [
+              "Reports a clear event.",
+              "Uses an understandable time or sequence word.",
+              "Answers one follow-up question."
+            ]
+          },
+          "type": "speaking"
+        }
+      ],
+      "objectives": [
+        "Organize a short account in a clear event order."
+      ],
+      "outline_id": "m16a2-v1-a2-u01-l04",
+      "prompts": {
+        "listening": {
+          "answer": "felt ill",
+          "constraints": [
+            "Keep transcript private until the first answer.",
+            "Ask exactly one question before revealing it.",
+            "Use no media; use only the supplied transcript."
+          ],
+          "goal": "Catch the main event and one detail about clinic visit.",
+          "instruction": "Listen once to a short message about clinic visit. Answer one question before seeing the transcript. Then listen again and notice the sequence words.",
+          "media_required": false,
+          "question": "What problem or detail does the speaker mention?",
+          "transcript": "I felt ill yesterday. The nurse asked two questions and gave me useful advice."
+        },
+        "pronunciation": {
+          "constraints": [
+            "Assess only with learner audio.",
+            "Return NOT_ASSESSED without audio."
+          ],
+          "goal": "Make the event order and main action easy to hear.",
+          "instruction": "Practise the concrete sound target for clinic visit: group the message into two thought groups and stress the main action word. Read the example slowly, then at natural speed."
+        },
+        "speaking": {
+          "constraints": [
+            "Use at most three tutor turns.",
+            "Ask one follow-up question.",
+            "Stop after agreeing on a next step."
+          ],
+          "goal": "Complete a useful exchange about clinic visit.",
+          "instruction": "Roleplay: you are a customer or friend dealing with clinic visit; the tutor is the staff member or friend who has one missing detail. Scenario: explain what happened and ask for the next step. Tutor opening: “Hi, what happened?” Ask one follow-up about time, place, quantity, or result; finish when the tutor understands and you agree on the next step."
+        },
+        "writing": {
+          "constraints": [
+            "Wait for the draft.",
+            "Give two brief feedback points.",
+            "Do not replace the learner draft."
+          ],
+          "goal": "Write a clear short message about clinic visit.",
+          "instruction": "Write 3 short sentences about clinic visit: say what happened, add when or where, and say what happened next. Submit your draft first."
+        }
+      },
+      "title": "A short personal account"
+    },
+    {
+      "content_sections": [
+        {
+          "body": "In weekend story, put finished actions in a clear order. Use time words such as yesterday, first, then, and this morning. Example: “Last weekend, I visited my aunt.” The past action tells the listener what happened; the time word tells when.",
+          "section_type": "explanation",
+          "title": "Notice the language"
+        },
+        {
+          "body": "Last weekend, I visited my aunt. First we cooked lunch, and then we walked by the river. Ask: what detail would a friend need next? Say the key action once, then add one time or place detail.",
+          "section_type": "dialogue",
+          "title": "Context and meaning"
+        },
+        {
+          "body": "Choose a true or invented weekend story detail. Say two connected sentences: one about what happened and one about the next step. Check that the order is easy to follow.",
+          "section_type": "practice",
+          "title": "Guided use"
+        }
+      ],
+      "duration_minutes": 30,
+      "exercises": [
+        {
+          "answer": "Last weekend, I visited my aunt.",
+          "prompt": "Choose the sentence that best reports the main event in this weekend story situation.",
+          "type": "multiple_choice",
+          "items": [
+            "Last weekend, I visited my aunt.",
+            "The situation was completely different.",
+            "The speaker did not mention this situation."
+          ]
+        },
+        {
+          "answer": "visited my aunt",
+          "prompt": "Complete this sentence: Yesterday, I _____. Use the lesson 5 situation.",
+          "type": "fill_blank"
+        },
+        {
+          "answer": "visited the aunt",
+          "prompt": "Read the text: \"Last weekend, I visited my aunt. First we cooked lunch, and then we walked by the river. Ask: what detail would a friend need next? Say the key action once, then add one time or place detail.\" Then read the short weekend story message and answer: What happened first?",
+          "type": "reading"
+        },
+        {
+          "prompt": "Tell a partner about a weekend story situation using two ordered sentences.",
+          "rubric": {
+            "criteria": [
+              "Reports a clear event.",
+              "Uses an understandable time or sequence word.",
+              "Answers one follow-up question."
+            ]
+          },
+          "type": "speaking"
+        }
+      ],
+      "objectives": [
+        "Review the unit targets in a short account and follow-up exchange."
+      ],
+      "outline_id": "m16a2-v1-a2-u01-l05",
+      "prompts": {
+        "listening": {
+          "answer": "visited the aunt",
+          "constraints": [
+            "Keep transcript private until the first answer.",
+            "Ask exactly one question before revealing it.",
+            "Use no media; use only the supplied transcript."
+          ],
+          "goal": "Catch the main event and one detail about weekend story.",
+          "instruction": "Listen once to a short message about weekend story. Answer one question before seeing the transcript. Then listen again and notice the sequence words.",
+          "media_required": false,
+          "question": "What happened first?",
+          "transcript": "Last weekend, I visited my aunt. First we cooked lunch, and then we walked by the river."
+        },
+        "pronunciation": {
+          "constraints": [
+            "Assess only with learner audio.",
+            "Return NOT_ASSESSED without audio."
+          ],
+          "goal": "Make the event order and main action easy to hear.",
+          "instruction": "Practise the concrete sound target for weekend story: group the message into two thought groups and stress the main action word. Read the example slowly, then at natural speed."
+        },
+        "speaking": {
+          "constraints": [
+            "Use at most three tutor turns.",
+            "Ask one follow-up question.",
+            "Stop after agreeing on a next step."
+          ],
+          "goal": "Complete a useful exchange about weekend story.",
+          "instruction": "Roleplay: you are a customer or friend dealing with weekend story; the tutor is the staff member or friend who has one missing detail. Scenario: explain what happened and ask for the next step. Tutor opening: “Hi, what happened?” Ask one follow-up about time, place, quantity, or result; finish when the tutor understands and you agree on the next step."
+        },
+        "writing": {
+          "constraints": [
+            "Wait for the draft.",
+            "Give two brief feedback points.",
+            "Do not replace the learner draft."
+          ],
+          "goal": "Write a clear short message about weekend story.",
+          "instruction": "Write 3 short sentences about weekend story: say what happened, add when or where, and say what happened next. Submit your draft first."
+        }
+      },
+      "title": "Review: recent experiences"
+    },
+    {
+      "content_sections": [
+        {
+          "body": "In rice shopping, put finished actions in a clear order. Use time words such as yesterday, first, then, and this morning. Example: “At the shop, I bought a bag of rice and two bottles of water..” The past action tells the listener what happened; the time word tells when.",
+          "section_type": "explanation",
+          "title": "Notice the language"
+        },
+        {
+          "body": "At the shop, I bought a bag of rice and two bottles of water. Ask: what detail would a friend need next? Say the key action once, then add one time or place detail.",
+          "section_type": "dialogue",
+          "title": "Context and meaning"
+        },
+        {
+          "body": "Choose a true or invented rice shopping detail. Say two connected sentences: one about what happened and one about the next step. Check that the order is easy to follow.",
+          "section_type": "practice",
+          "title": "Guided use"
+        }
+      ],
+      "duration_minutes": 30,
+      "exercises": [
+        {
+          "answer": "At the shop, I bought a bag of rice and two bottles of water.",
+          "prompt": "Choose the sentence that best reports the main event in this rice shopping situation.",
+          "type": "multiple_choice",
+          "items": [
+            "At the shop, I bought a bag of rice and two bottles of water.",
+            "The situation was completely different.",
+            "The speaker did not mention this situation."
+          ]
+        },
+        {
+          "answer": "I bought a bag of rice and two bottles of water",
+          "prompt": "Complete this sentence: Yesterday, I _____. Use the lesson 6 situation.",
+          "type": "fill_blank"
+        },
+        {
+          "answer": "a bag of rice and two bottles of water",
+          "prompt": "Read the text: \"At the shop, I bought a bag of rice and two bottles of water. Ask: what detail would a friend need next? Say the key action once, then add one time or place detail.\" Then read the short rice shopping message and answer: What did the speaker buy?",
+          "type": "reading"
+        },
+        {
+          "prompt": "Tell a partner about a rice shopping situation using two ordered sentences.",
+          "rubric": {
+            "criteria": [
+              "Reports a clear event.",
+              "Uses an understandable time or sequence word.",
+              "Answers one follow-up question."
+            ]
+          },
+          "type": "speaking"
+        }
+      ],
+      "objectives": [
+        "Use count and noncount language for everyday shopping."
+      ],
+      "outline_id": "m16a2-v1-a2-u02-l01",
+      "prompts": {
+        "listening": {
+          "answer": "a bag of rice and two bottles of water",
+          "constraints": [
+            "Keep transcript private until the first answer.",
+            "Ask exactly one question before revealing it.",
+            "Use no media; use only the supplied transcript."
+          ],
+          "goal": "Catch the main event and one detail about rice shopping.",
+          "instruction": "Listen once to a short message about rice shopping. Answer one question before seeing the transcript. Then listen again and notice the sequence words.",
+          "media_required": false,
+          "question": "What did the speaker buy?",
+          "transcript": "At the shop, I bought a bag of rice and two bottles of water."
+        },
+        "pronunciation": {
+          "constraints": [
+            "Assess only with learner audio.",
+            "Return NOT_ASSESSED without audio."
+          ],
+          "goal": "Make the event order and main action easy to hear.",
+          "instruction": "Practise the concrete sound target for rice shopping: group the message into two thought groups and stress the main action word. Read the example slowly, then at natural speed."
+        },
+        "speaking": {
+          "constraints": [
+            "Use at most three tutor turns.",
+            "Ask one follow-up question.",
+            "Stop after agreeing on a next step."
+          ],
+          "goal": "Complete a useful exchange about rice shopping.",
+          "instruction": "Roleplay: you are a customer or friend dealing with rice shopping; the tutor is the staff member or friend who has one missing detail. Scenario: explain what happened and ask for the next step. Tutor opening: “Hi, what happened?” Ask one follow-up about time, place, quantity, or result; finish when the tutor understands and you agree on the next step."
+        },
+        "writing": {
+          "constraints": [
+            "Wait for the draft.",
+            "Give two brief feedback points.",
+            "Do not replace the learner draft."
+          ],
+          "goal": "Write a clear short message about rice shopping.",
+          "instruction": "Write 3 short sentences about rice shopping: say what happened, add when or where, and say what happened next. Submit your draft first."
+        }
+      },
+      "title": "Choosing quantities"
+    },
+    {
+      "content_sections": [
+        {
+          "body": "In different size, put finished actions in a clear order. Use time words such as yesterday, first, then, and this morning. Example: “The shoes were too small, so I asked the assistant for a larger pair..” The past action tells the listener what happened; the time word tells when.",
+          "section_type": "explanation",
+          "title": "Notice the language"
+        },
+        {
+          "body": "The shoes were too small, so I asked the assistant for a larger pair. Ask: what detail would a friend need next? Say the key action once, then add one time or place detail.",
+          "section_type": "dialogue",
+          "title": "Context and meaning"
+        },
+        {
+          "body": "Choose a true or invented different size detail. Say two connected sentences: one about what happened and one about the next step. Check that the order is easy to follow.",
+          "section_type": "practice",
+          "title": "Guided use"
+        }
+      ],
+      "duration_minutes": 30,
+      "exercises": [
+        {
+          "answer": "The shoes were too small, so I asked the assistant for a larger pair.",
+          "prompt": "Choose the sentence that best reports the main event in this different size situation.",
+          "type": "multiple_choice",
+          "items": [
+            "The shoes were too small, so I asked the assistant for a larger pair.",
+            "The situation was completely different.",
+            "The speaker did not mention this situation."
+          ]
+        },
+        {
+          "answer": "too small, so I asked the assistant for a larger pair",
+          "prompt": "Complete this sentence: Yesterday, I _____. Use the lesson 7 situation.",
+          "type": "fill_blank"
+        },
+        {
+          "answer": "the shoes were too small",
+          "prompt": "Read the text: \"The shoes were too small, so I asked the assistant for a larger pair. Ask: what detail would a friend need next? Say the key action once, then add one time or place detail.\" Then read the short different size message and answer: What problem or detail does the speaker mention?",
+          "type": "reading"
+        },
+        {
+          "prompt": "Tell a partner about a different size situation using two ordered sentences.",
+          "rubric": {
+            "criteria": [
+              "Reports a clear event.",
+              "Uses an understandable time or sequence word.",
+              "Answers one follow-up question."
+            ]
+          },
+          "type": "speaking"
+        }
+      ],
+      "objectives": [
+        "Ask for a quantity, price, or alternative in a short transaction."
+      ],
+      "outline_id": "m16a2-v1-a2-u02-l02",
+      "prompts": {
+        "listening": {
+          "answer": "the shoes were too small",
+          "constraints": [
+            "Keep transcript private until the first answer.",
+            "Ask exactly one question before revealing it.",
+            "Use no media; use only the supplied transcript."
+          ],
+          "goal": "Catch the main event and one detail about different size.",
+          "instruction": "Listen once to a short message about different size. Answer one question before seeing the transcript. Then listen again and notice the sequence words.",
+          "media_required": false,
+          "question": "What problem or detail does the speaker mention?",
+          "transcript": "The shoes were too small, so I asked the assistant for a larger pair."
+        },
+        "pronunciation": {
+          "constraints": [
+            "Assess only with learner audio.",
+            "Return NOT_ASSESSED without audio."
+          ],
+          "goal": "Make the event order and main action easy to hear.",
+          "instruction": "Practise the concrete sound target for different size: group the message into two thought groups and stress the main action word. Read the example slowly, then at natural speed."
+        },
+        "speaking": {
+          "constraints": [
+            "Use at most three tutor turns.",
+            "Ask one follow-up question.",
+            "Stop after agreeing on a next step."
+          ],
+          "goal": "Complete a useful exchange about different size.",
+          "instruction": "Roleplay: you are a customer or friend dealing with different size; the tutor is the staff member or friend who has one missing detail. Scenario: explain what happened and ask for the next step. Tutor opening: “Hi, what happened?” Ask one follow-up about time, place, quantity, or result; finish when the tutor understands and you agree on the next step."
+        },
+        "writing": {
+          "constraints": [
+            "Wait for the draft.",
+            "Give two brief feedback points.",
+            "Do not replace the learner draft."
+          ],
+          "goal": "Write a clear short message about different size.",
+          "instruction": "Write 3 short sentences about different size: say what happened, add when or where, and say what happened next. Submit your draft first."
+        }
+      },
+      "title": "Clarifying a purchase"
+    },
+    {
+      "content_sections": [
+        {
+          "body": "In bus ticket, put finished actions in a clear order. Use time words such as yesterday, first, then, and this morning. Example: “I needed a ticket to the airport.” The past action tells the listener what happened; the time word tells when.",
+          "section_type": "explanation",
+          "title": "Notice the language"
+        },
+        {
+          "body": "I needed a ticket to the airport. The clerk told me the price and departure time. Ask: what detail would a friend need next? Say the key action once, then add one time or place detail.",
+          "section_type": "dialogue",
+          "title": "Context and meaning"
+        },
+        {
+          "body": "Choose a true or invented bus ticket detail. Say two connected sentences: one about what happened and one about the next step. Check that the order is easy to follow.",
+          "section_type": "practice",
+          "title": "Guided use"
+        }
+      ],
+      "duration_minutes": 30,
+      "exercises": [
+        {
+          "answer": "I needed a ticket to the airport.",
+          "prompt": "Choose the sentence that best reports the main event in this bus ticket situation.",
+          "type": "multiple_choice",
+          "items": [
+            "I needed a ticket to the airport.",
+            "The situation was completely different.",
+            "The speaker did not mention this situation."
+          ]
+        },
+        {
+          "answer": "ticket to the airport",
+          "prompt": "Complete this sentence: Yesterday, I _____. Use the lesson 8 situation.",
+          "type": "fill_blank"
+        },
+        {
+          "answer": "a ticket to the airport",
+          "prompt": "Read the text: \"I needed a ticket to the airport. The clerk told me the price and departure time. Ask: what detail would a friend need next? Say the key action once, then add one time or place detail.\" Then read the short bus ticket message and answer: What problem or detail does the speaker mention?",
+          "type": "reading"
+        },
+        {
+          "prompt": "Tell a partner about a bus ticket situation using two ordered sentences.",
+          "rubric": {
+            "criteria": [
+              "Reports a clear event.",
+              "Uses an understandable time or sequence word.",
+              "Answers one follow-up question."
+            ]
+          },
+          "type": "speaking"
+        }
+      ],
+      "objectives": [
+        "Use thought groups and clear key words in a shopping request."
+      ],
+      "outline_id": "m16a2-v1-a2-u02-l03",
+      "prompts": {
+        "listening": {
+          "answer": "a ticket to the airport",
+          "constraints": [
+            "Keep transcript private until the first answer.",
+            "Ask exactly one question before revealing it.",
+            "Use no media; use only the supplied transcript."
+          ],
+          "goal": "Catch the main event and one detail about bus ticket.",
+          "instruction": "Listen once to a short message about bus ticket. Answer one question before seeing the transcript. Then listen again and notice the sequence words.",
+          "media_required": false,
+          "question": "What problem or detail does the speaker mention?",
+          "transcript": "I needed a ticket to the airport. The clerk told me the price and departure time."
+        },
+        "pronunciation": {
+          "constraints": [
+            "Assess only with learner audio.",
+            "Return NOT_ASSESSED without audio."
+          ],
+          "goal": "Make the event order and main action easy to hear.",
+          "instruction": "Practise the concrete sound target for bus ticket: group the message into two thought groups and stress the main action word. Read the example slowly, then at natural speed."
+        },
+        "speaking": {
+          "constraints": [
+            "Use at most three tutor turns.",
+            "Ask one follow-up question.",
+            "Stop after agreeing on a next step."
+          ],
+          "goal": "Complete a useful exchange about bus ticket.",
+          "instruction": "Roleplay: you are a customer or friend dealing with bus ticket; the tutor is the staff member or friend who has one missing detail. Scenario: explain what happened and ask for the next step. Tutor opening: “Hi, what happened?” Ask one follow-up about time, place, quantity, or result; finish when the tutor understands and you agree on the next step."
+        },
+        "writing": {
+          "constraints": [
+            "Wait for the draft.",
+            "Give two brief feedback points.",
+            "Do not replace the learner draft."
+          ],
+          "goal": "Write a clear short message about bus ticket.",
+          "instruction": "Write 3 short sentences about bus ticket: say what happened, add when or where, and say what happened next. Submit your draft first."
+        }
+      },
+      "title": "Pronouncing clear requests"
+    },
+    {
+      "content_sections": [
+        {
+          "body": "In service request, put finished actions in a clear order. Use time words such as yesterday, first, then, and this morning. Example: “My card did not work at the machine, so I asked a staff member for help..” The past action tells the listener what happened; the time word tells when.",
+          "section_type": "explanation",
+          "title": "Notice the language"
+        },
+        {
+          "body": "My card did not work at the machine, so I asked a staff member for help. Ask: what detail would a friend need next? Say the key action once, then add one time or place detail.",
+          "section_type": "dialogue",
+          "title": "Context and meaning"
+        },
+        {
+          "body": "Choose a true or invented service request detail. Say two connected sentences: one about what happened and one about the next step. Check that the order is easy to follow.",
+          "section_type": "practice",
+          "title": "Guided use"
+        }
+      ],
+      "duration_minutes": 30,
+      "exercises": [
+        {
+          "answer": "My card did not work at the machine, so I asked a staff member for help.",
+          "prompt": "Choose the sentence that best reports the main event in this service request situation.",
+          "type": "multiple_choice",
+          "items": [
+            "My card did not work at the machine, so I asked a staff member for help.",
+            "The situation was completely different.",
+            "The speaker did not mention this situation."
+          ]
+        },
+        {
+          "answer": "not work at the machine, so I asked a staff member for help",
+          "prompt": "Complete this sentence: Yesterday, I _____. Use the lesson 9 situation.",
+          "type": "fill_blank"
+        },
+        {
+          "answer": "the card did not work",
+          "prompt": "Read the text: \"My card did not work at the machine, so I asked a staff member for help. Ask: what detail would a friend need next? Say the key action once, then add one time or place detail.\" Then read the short service request message and answer: What problem or detail does the speaker mention?",
+          "type": "reading"
+        },
+        {
+          "prompt": "Tell a partner about a service request situation using two ordered sentences.",
+          "rubric": {
+            "criteria": [
+              "Reports a clear event.",
+              "Uses an understandable time or sequence word.",
+              "Answers one follow-up question."
+            ]
+          },
+          "type": "speaking"
+        }
+      ],
+      "objectives": [
+        "Understand and produce a short, polite service exchange."
+      ],
+      "outline_id": "m16a2-v1-a2-u02-l04",
+      "prompts": {
+        "listening": {
+          "answer": "the card did not work",
+          "constraints": [
+            "Keep transcript private until the first answer.",
+            "Ask exactly one question before revealing it.",
+            "Use no media; use only the supplied transcript."
+          ],
+          "goal": "Catch the main event and one detail about service request.",
+          "instruction": "Listen once to a short message about service request. Answer one question before seeing the transcript. Then listen again and notice the sequence words.",
+          "media_required": false,
+          "question": "What problem or detail does the speaker mention?",
+          "transcript": "My card did not work at the machine, so I asked a staff member for help."
+        },
+        "pronunciation": {
+          "constraints": [
+            "Assess only with learner audio.",
+            "Return NOT_ASSESSED without audio."
+          ],
+          "goal": "Make the event order and main action easy to hear.",
+          "instruction": "Practise the concrete sound target for service request: group the message into two thought groups and stress the main action word. Read the example slowly, then at natural speed."
+        },
+        "speaking": {
+          "constraints": [
+            "Use at most three tutor turns.",
+            "Ask one follow-up question.",
+            "Stop after agreeing on a next step."
+          ],
+          "goal": "Complete a useful exchange about service request.",
+          "instruction": "Roleplay: you are a customer or friend dealing with service request; the tutor is the staff member or friend who has one missing detail. Scenario: explain what happened and ask for the next step. Tutor opening: “Hi, what happened?” Ask one follow-up about time, place, quantity, or result; finish when the tutor understands and you agree on the next step."
+        },
+        "writing": {
+          "constraints": [
+            "Wait for the draft.",
+            "Give two brief feedback points.",
+            "Do not replace the learner draft."
+          ],
+          "goal": "Write a clear short message about service request.",
+          "instruction": "Write 3 short sentences about service request: say what happened, add when or where, and say what happened next. Submit your draft first."
+        }
+      },
+      "title": "A useful local-service exchange"
+    },
+    {
+      "content_sections": [
+        {
+          "body": "In shopping review, put finished actions in a clear order. Use time words such as yesterday, first, then, and this morning. Example: “I compared two products, chose one, and checked the quantity and price..” The past action tells the listener what happened; the time word tells when.",
+          "section_type": "explanation",
+          "title": "Notice the language"
+        },
+        {
+          "body": "I compared two products, chose one, and checked the quantity and price. Ask: what detail would a friend need next? Say the key action once, then add one time or place detail.",
+          "section_type": "dialogue",
+          "title": "Context and meaning"
+        },
+        {
+          "body": "Choose a true or invented shopping review detail. Say two connected sentences: one about what happened and one about the next step. Check that the order is easy to follow.",
+          "section_type": "practice",
+          "title": "Guided use"
+        }
+      ],
+      "duration_minutes": 30,
+      "exercises": [
+        {
+          "answer": "I compared two products, chose one, and checked the quantity and price.",
+          "prompt": "Choose the sentence that best reports the main event in this shopping review situation.",
+          "type": "multiple_choice",
+          "items": [
+            "I compared two products, chose one, and checked the quantity and price.",
+            "The situation was completely different.",
+            "The speaker did not mention this situation."
+          ]
+        },
+        {
+          "answer": "products, chose one, and checked the quantity and price",
+          "prompt": "Complete this sentence: Yesterday, I _____. Use the lesson 10 situation.",
+          "type": "fill_blank"
+        },
+        {
+          "answer": "compared two products",
+          "prompt": "Read the text: \"I compared two products, chose one, and checked the quantity and price. Ask: what detail would a friend need next? Say the key action once, then add one time or place detail.\" Then read the short shopping review message and answer: What did the speaker buy?",
+          "type": "reading"
+        },
+        {
+          "prompt": "Tell a partner about a shopping review situation using two ordered sentences.",
+          "rubric": {
+            "criteria": [
+              "Reports a clear event.",
+              "Uses an understandable time or sequence word.",
+              "Answers one follow-up question."
+            ]
+          },
+          "type": "speaking"
+        }
+      ],
+      "objectives": [
+        "Review quantity, request, and clarification language."
+      ],
+      "outline_id": "m16a2-v1-a2-u02-l05",
+      "prompts": {
+        "listening": {
+          "answer": "compared two products",
+          "constraints": [
+            "Keep transcript private until the first answer.",
+            "Ask exactly one question before revealing it.",
+            "Use no media; use only the supplied transcript."
+          ],
+          "goal": "Catch the main event and one detail about shopping review.",
+          "instruction": "Listen once to a short message about shopping review. Answer one question before seeing the transcript. Then listen again and notice the sequence words.",
+          "media_required": false,
+          "question": "What did the speaker buy?",
+          "transcript": "I compared two products, chose one, and checked the quantity and price."
+        },
+        "pronunciation": {
+          "constraints": [
+            "Assess only with learner audio.",
+            "Return NOT_ASSESSED without audio."
+          ],
+          "goal": "Make the event order and main action easy to hear.",
+          "instruction": "Practise the concrete sound target for shopping review: group the message into two thought groups and stress the main action word. Read the example slowly, then at natural speed."
+        },
+        "speaking": {
+          "constraints": [
+            "Use at most three tutor turns.",
+            "Ask one follow-up question.",
+            "Stop after agreeing on a next step."
+          ],
+          "goal": "Complete a useful exchange about shopping review.",
+          "instruction": "Roleplay: you are a customer or friend dealing with shopping review; the tutor is the staff member or friend who has one missing detail. Scenario: explain what happened and ask for the next step. Tutor opening: “Hi, what happened?” Ask one follow-up about time, place, quantity, or result; finish when the tutor understands and you agree on the next step."
+        },
+        "writing": {
+          "constraints": [
+            "Wait for the draft.",
+            "Give two brief feedback points.",
+            "Do not replace the learner draft."
+          ],
+          "goal": "Write a clear short message about shopping review.",
+          "instruction": "Write 3 short sentences about shopping review: say what happened, add when or where, and say what happened next. Submit your draft first."
+        }
+      },
+      "title": "Review: shopping and quantities"
+    }
+  ],
+  "record_type": "a2_pilot_content_input",
+  "schema_version": "1.0"
+}

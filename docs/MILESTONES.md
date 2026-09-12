@@ -557,7 +557,13 @@ M16-A2-BLUEPRINT maps the existing M15 A2.1/A2.2 nodes into ten units, fifty det
 
 The blueprint is a planning artifact only. It does not replace historical curriculum structures, authorize lesson generation, claim CEFR endorsement, or establish human/release/provider authority.
 
-### Next: an explicitly requested A2 content-planning or generation scope
+### A2 pilot follow-up
+
+**Status**: Implemented as a bounded ten-lesson development pilot
+
+The pilot builds the first two A2.1 units into immutable packets with exercises and four AI-practice protocols. Deterministic verification, audit, and a five-lesson unit-stratified sample pass; content remains `UNREVIEWED` and no live-provider, human, release, or public-distribution claim is made. See [A2 Pilot](A2_PILOT.md).
+
+### Next: direct use of the deterministic A2 sample
 
 ---
 
