@@ -6,7 +6,7 @@
 
 ## 1. Tóm tắt điều hành
 
-English Master hiện là một pipeline Python offline-first, có thể tái lập và kiểm chứng bằng schema, validator, provenance, hash binding, immutable artifacts và các bài kiểm thử tự động. Dự án đã xây dựng phần lớn hạ tầng phát triển từ M0 đến M14, cùng hai nhánh công việc mới là **M15-KG-FULL** và **M16-A1-BLUEPRINT**.
+English Master hiện là một pipeline Python offline-first, có thể tái lập và kiểm chứng bằng schema, validator, provenance, hash binding, immutable artifacts và các bài kiểm thử tự động. Dự án đã xây dựng phần lớn hạ tầng phát triển từ M0 đến M14, cùng các workstream curriculum **M15-KG-FULL**, **M16-A1-BLUEPRINT** và **M16-A2-BLUEPRINT**.
 
 Các artifact phát triển hiện có không đồng nghĩa với nội dung đã được phát hành. Nội dung sinh ra vẫn giữ trạng thái `UNREVIEWED`; bằng chứng AI hoặc máy chỉ có thể thiết lập các tầng phát triển như `MACHINE_VALIDATED`, `AI_REVIEWED` và `DEVELOPMENT_APPROVED`. Không có tuyên bố về phê duyệt phát hành, quyền phân phối công khai, hay xử lý media thực tế khi các điều kiện tương ứng chưa đạt.
 
@@ -37,6 +37,7 @@ Một `M9 DEVELOPMENT: PASS` trong phạm vi sample cho phép bước được y
 | M14 | Local metric tooling đã triển khai | Chỉ tính speech rate, vocabulary/grammar proxies, length và anonymous speaker count; không CEFR/composite. |
 | M15-KG-FULL | Đã triển khai dưới dạng development population | Knowledge graph original-authored, 120 nodes, 12 tiers, typed prerequisites; không có lesson prose hay release authority. |
 | M16-A1-BLUEPRINT | Đã triển khai dưới dạng outline-only blueprint | Blueprint A1.1/A1.2 gồm 10 units và 50 lesson outlines; không có lesson prose, exercises hay M6 authorization. |
+| M16-A2-BLUEPRINT | Đã triển khai dưới dạng outline-only blueprint | Blueprint A2.1/A2.2 gồm 10 units, 50 lesson outlines, review lessons và unit-test blueprints; chỉ dùng M15 node/prerequisite references, không có authority bridge hay prose. |
 | A1 pilot | Đã build development pilot 10 lesson A1.1 | Mỗi packet có lesson, exercises và 4 prompt modalities; hash/inventory/prerequisite checks pass. Review template được tạo nhưng chưa có user/AI review hoàn chỉnh, vì vậy nội dung vẫn `UNREVIEWED`. |
 | Full A1 v2 | Đã build đủ 50 lesson A1.1/A1.2 | Allocation granular, 10 unit content files, 50 immutable packets, full-corpus lightweight audit `PASS`, và sample 12 lesson deterministic theo 10 unit. Giữ `UNREVIEWED`; không có human/release/provider/live-AI/network/media claim. |
 | M15 platform / M16 deployment | Chưa bắt đầu | Đây là các milestone tương lai, khác với hai workstream KG/blueprint ở trên. |
@@ -65,6 +66,7 @@ Một `M9 DEVELOPMENT: PASS` trong phạm vi sample cho phép bước được y
 - M8.2: 10 lessons × 4 modalities = 40 prompt artifacts.
 - M15-KG-FULL: 120 graph nodes, phủ 12 internal tiers và các nhóm grammar, vocabulary senses, functions, pronunciation, discourse, pragmatics, collocations, lexical chunks, topics và skills.
 - M16-A1-BLUEPRINT: A1.1/A1.2, 10 units, 50 lessons, mục tiêu và prerequisite/review mappings.
+- M16-A2-BLUEPRINT: A2.1/A2.2, 10 units, 50 lesson outlines, review lessons, unit-test blueprints và M15 target coverage có kiểm chứng.
 - Full A1 v2: 10 original-authored unit files build thành 50 canonical packets; audit deterministic chạy trên toàn corpus và sample 12 lesson được hash-rank, stratify theo unit.
 
 Các con số trên là development fixtures/populations có giới hạn, không phải tuyên bố exhaustive coverage hay official CEFR endorsement.
@@ -95,9 +97,9 @@ python -m pytest
 
 Kết quả thực tế:
 
-- **398 tests collected**
-- **398 passed**
-- Thời gian: **289.89 giây**
+- **413 tests collected**
+- **413 passed**
+- Thời gian: **225.80 giây**
 - Không có test failure trong lần chạy ngày 2026-09-12.
 
 ## 8. Kết luận

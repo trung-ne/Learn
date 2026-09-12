@@ -1,0 +1,2528 @@
+{
+  "edition": "m16a2-v1",
+  "entry_prerequisite_node_ids": [
+    "kg_a1_2_collocations",
+    "kg_a1_2_discourse",
+    "kg_a1_2_functions",
+    "kg_a1_2_grammar",
+    "kg_a1_2_lexical_chunks",
+    "kg_a1_2_pragmatics",
+    "kg_a1_2_pronunciation",
+    "kg_a1_2_skills",
+    "kg_a1_2_topics",
+    "kg_a1_2_vocabulary_senses"
+  ],
+  "lessons": [
+    {
+      "id": "m16a2-v1-a2-u01-l01",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Describe one finished event with simple past-time language."
+      ],
+      "prerequisite_lesson_ids": [],
+      "sequence": 1,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a2_1_grammar",
+          "use": "INTRODUCE"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a2_1_vocabulary_senses",
+          "use": "INTRODUCE"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a2_1_pronunciation",
+          "use": "INTRODUCE"
+        }
+      ],
+      "tier": "A2.1",
+      "title": "Past events: form and key words",
+      "unit_id": "m16a2-v1-a2-u01"
+    },
+    {
+      "id": "m16a2-v1-a2-u01-l02",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Use a short frame to report what happened and when."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u01-l01"
+      ],
+      "sequence": 2,
+      "targets": [
+        {
+          "dimension": "functions",
+          "node_id": "kg_a2_1_functions",
+          "use": "INTRODUCE"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a2_1_discourse",
+          "use": "INTRODUCE"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a2_1_lexical_chunks",
+          "use": "INTRODUCE"
+        }
+      ],
+      "tier": "A2.1",
+      "title": "Event-reporting chunks",
+      "unit_id": "m16a2-v1-a2-u01"
+    },
+    {
+      "id": "m16a2-v1-a2-u01-l03",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Ask one follow-up question and repair a simple misunderstanding."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u01-l02"
+      ],
+      "sequence": 3,
+      "targets": [
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a2_1_pragmatics",
+          "use": "INTRODUCE"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a2_1_collocations",
+          "use": "INTRODUCE"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a2_1_topics",
+          "use": "INTRODUCE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a2_1_skills",
+          "use": "INTRODUCE"
+        }
+      ],
+      "tier": "A2.1",
+      "title": "Follow-up questions and repair",
+      "unit_id": "m16a2-v1-a2-u01"
+    },
+    {
+      "id": "m16a2-v1-a2-u01-l04",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Organize a short account in a clear event order."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u01-l03"
+      ],
+      "sequence": 4,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a2_1_grammar",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a2_1_vocabulary_senses",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a2_1_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a2_1_pronunciation",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a2_1_discourse",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a2_1_pragmatics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a2_1_collocations",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a2_1_lexical_chunks",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a2_1_topics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a2_1_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.1",
+      "title": "A short personal account",
+      "unit_id": "m16a2-v1-a2-u01"
+    },
+    {
+      "id": "m16a2-v1-a2-u01-l05",
+      "lesson_kind": "REVIEW",
+      "objectives": [
+        "Review the unit targets in a short account and follow-up exchange."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u01-l04"
+      ],
+      "sequence": 5,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a2_1_grammar",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a2_1_vocabulary_senses",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a2_1_functions",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a2_1_pronunciation",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a2_1_discourse",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a2_1_pragmatics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a2_1_collocations",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a2_1_lexical_chunks",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a2_1_topics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a2_1_skills",
+          "use": "REVIEW"
+        }
+      ],
+      "tier": "A2.1",
+      "title": "Review: recent experiences",
+      "unit_id": "m16a2-v1-a2-u01"
+    },
+    {
+      "id": "m16a2-v1-a2-u02-l01",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Use count and noncount language for everyday shopping."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u01-l05"
+      ],
+      "sequence": 1,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a2_1_grammar",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a2_1_vocabulary_senses",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a2_1_functions",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.1",
+      "title": "Choosing quantities",
+      "unit_id": "m16a2-v1-a2-u02"
+    },
+    {
+      "id": "m16a2-v1-a2-u02-l02",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Ask for a quantity, price, or alternative in a short transaction."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u02-l01"
+      ],
+      "sequence": 2,
+      "targets": [
+        {
+          "dimension": "functions",
+          "node_id": "kg_a2_1_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a2_1_pragmatics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a2_1_collocations",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.1",
+      "title": "Clarifying a purchase",
+      "unit_id": "m16a2-v1-a2-u02"
+    },
+    {
+      "id": "m16a2-v1-a2-u02-l03",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Use thought groups and clear key words in a shopping request."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u02-l02"
+      ],
+      "sequence": 3,
+      "targets": [
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a2_1_pronunciation",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a2_1_lexical_chunks",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a2_1_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.1",
+      "title": "Pronouncing clear requests",
+      "unit_id": "m16a2-v1-a2-u02"
+    },
+    {
+      "id": "m16a2-v1-a2-u02-l04",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Understand and produce a short, polite service exchange."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u02-l03"
+      ],
+      "sequence": 4,
+      "targets": [
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a2_1_discourse",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a2_1_topics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a2_1_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.1",
+      "title": "A useful local-service exchange",
+      "unit_id": "m16a2-v1-a2-u02"
+    },
+    {
+      "id": "m16a2-v1-a2-u02-l05",
+      "lesson_kind": "REVIEW",
+      "objectives": [
+        "Review quantity, request, and clarification language."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u02-l04"
+      ],
+      "sequence": 5,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a2_1_grammar",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a2_1_vocabulary_senses",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a2_1_functions",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a2_1_pronunciation",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a2_1_discourse",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a2_1_pragmatics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a2_1_collocations",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a2_1_lexical_chunks",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a2_1_topics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a2_1_skills",
+          "use": "REVIEW"
+        }
+      ],
+      "tier": "A2.1",
+      "title": "Review: shopping and quantities",
+      "unit_id": "m16a2-v1-a2-u02"
+    },
+    {
+      "id": "m16a2-v1-a2-u03-l01",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Give a simple account of a recent health or service problem."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u02-l05"
+      ],
+      "sequence": 1,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a2_1_grammar",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a2_1_vocabulary_senses",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a2_1_functions",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.1",
+      "title": "Describing a recent problem",
+      "unit_id": "m16a2-v1-a2-u03"
+    },
+    {
+      "id": "m16a2-v1-a2-u03-l02",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Make and respond to a polite request for practical help."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u03-l01"
+      ],
+      "sequence": 2,
+      "targets": [
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a2_1_pragmatics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a2_1_lexical_chunks",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a2_1_collocations",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.1",
+      "title": "Asking for help politely",
+      "unit_id": "m16a2-v1-a2-u03"
+    },
+    {
+      "id": "m16a2-v1-a2-u03-l03",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Use short thought groups to make the order of events clear."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u03-l02"
+      ],
+      "sequence": 3,
+      "targets": [
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a2_1_pronunciation",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a2_1_discourse",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a2_1_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.1",
+      "title": "Clear event sequence",
+      "unit_id": "m16a2-v1-a2-u03"
+    },
+    {
+      "id": "m16a2-v1-a2-u03-l04",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Ask and answer a follow-up question about a local service."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u03-l03"
+      ],
+      "sequence": 4,
+      "targets": [
+        {
+          "dimension": "topics",
+          "node_id": "kg_a2_1_topics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a2_1_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a2_1_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.1",
+      "title": "Health and service follow-up",
+      "unit_id": "m16a2-v1-a2-u03"
+    },
+    {
+      "id": "m16a2-v1-a2-u03-l05",
+      "lesson_kind": "REVIEW",
+      "objectives": [
+        "Review the unit language in a short problem-and-response exchange."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u03-l04"
+      ],
+      "sequence": 5,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a2_1_grammar",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a2_1_vocabulary_senses",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a2_1_functions",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a2_1_pronunciation",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a2_1_discourse",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a2_1_pragmatics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a2_1_collocations",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a2_1_lexical_chunks",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a2_1_topics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a2_1_skills",
+          "use": "REVIEW"
+        }
+      ],
+      "tier": "A2.1",
+      "title": "Review: health and services",
+      "unit_id": "m16a2-v1-a2-u03"
+    },
+    {
+      "id": "m16a2-v1-a2-u04-l01",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Report a completed journey with key time and place details."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u03-l05"
+      ],
+      "sequence": 1,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a2_1_grammar",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a2_1_vocabulary_senses",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a2_1_discourse",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.1",
+      "title": "A completed journey",
+      "unit_id": "m16a2-v1-a2-u04"
+    },
+    {
+      "id": "m16a2-v1-a2-u04-l02",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Ask and answer short questions about a journey or delay."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u04-l01"
+      ],
+      "sequence": 2,
+      "targets": [
+        {
+          "dimension": "functions",
+          "node_id": "kg_a2_1_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a2_1_lexical_chunks",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a2_1_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.1",
+      "title": "Travel questions and answers",
+      "unit_id": "m16a2-v1-a2-u04"
+    },
+    {
+      "id": "m16a2-v1-a2-u04-l03",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Make past-tense endings and important travel details audible."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u04-l02"
+      ],
+      "sequence": 3,
+      "targets": [
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a2_1_pronunciation",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a2_1_collocations",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a2_1_topics",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.1",
+      "title": "Past endings and key information",
+      "unit_id": "m16a2-v1-a2-u04"
+    },
+    {
+      "id": "m16a2-v1-a2-u04-l04",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Explain a simple travel problem and ask for a practical response."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u04-l03"
+      ],
+      "sequence": 4,
+      "targets": [
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a2_1_pragmatics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a2_1_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a2_1_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.1",
+      "title": "Handling a travel problem",
+      "unit_id": "m16a2-v1-a2-u04"
+    },
+    {
+      "id": "m16a2-v1-a2-u04-l05",
+      "lesson_kind": "REVIEW",
+      "objectives": [
+        "Review a short travel account, follow-up question, and repair."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u04-l04"
+      ],
+      "sequence": 5,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a2_1_grammar",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a2_1_vocabulary_senses",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a2_1_functions",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a2_1_pronunciation",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a2_1_discourse",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a2_1_pragmatics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a2_1_collocations",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a2_1_lexical_chunks",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a2_1_topics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a2_1_skills",
+          "use": "REVIEW"
+        }
+      ],
+      "tier": "A2.1",
+      "title": "Review: travel experiences",
+      "unit_id": "m16a2-v1-a2-u04"
+    },
+    {
+      "id": "m16a2-v1-a2-u05-l01",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Select suitable A2.1 language for a story, transaction, or request."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u04-l05"
+      ],
+      "sequence": 1,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a2_1_grammar",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a2_1_vocabulary_senses",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a2_1_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a2_1_pronunciation",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a2_1_discourse",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a2_1_pragmatics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a2_1_collocations",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a2_1_lexical_chunks",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a2_1_topics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a2_1_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.1",
+      "title": "Comparing everyday situations",
+      "unit_id": "m16a2-v1-a2-u05"
+    },
+    {
+      "id": "m16a2-v1-a2-u05-l02",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Follow a short event account and retell its main sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u05-l01"
+      ],
+      "sequence": 2,
+      "targets": [
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a2_1_discourse",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a2_1_skills",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a2_1_pronunciation",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a2_1_vocabulary_senses",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.1",
+      "title": "Listening and retelling",
+      "unit_id": "m16a2-v1-a2-u05"
+    },
+    {
+      "id": "m16a2-v1-a2-u05-l03",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Use a request, follow-up, and repair in one short interaction."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u05-l02"
+      ],
+      "sequence": 3,
+      "targets": [
+        {
+          "dimension": "functions",
+          "node_id": "kg_a2_1_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a2_1_pragmatics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a2_1_lexical_chunks",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a2_1_collocations",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.1",
+      "title": "Practical interaction",
+      "unit_id": "m16a2-v1-a2-u05"
+    },
+    {
+      "id": "m16a2-v1-a2-u05-l04",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Prepare to use the A2.1 targets across familiar practical contexts."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u05-l03"
+      ],
+      "sequence": 4,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a2_1_grammar",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a2_1_vocabulary_senses",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a2_1_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a2_1_pronunciation",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a2_1_discourse",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a2_1_pragmatics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a2_1_collocations",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a2_1_lexical_chunks",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a2_1_topics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a2_1_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.1",
+      "title": "A2.1 preparation",
+      "unit_id": "m16a2-v1-a2-u05"
+    },
+    {
+      "id": "m16a2-v1-a2-u05-l05",
+      "lesson_kind": "REVIEW",
+      "objectives": [
+        "Review all A2.1 target dimensions before the unit test."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u05-l04"
+      ],
+      "sequence": 5,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a2_1_grammar",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a2_1_vocabulary_senses",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a2_1_functions",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a2_1_pronunciation",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a2_1_discourse",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a2_1_pragmatics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a2_1_collocations",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a2_1_lexical_chunks",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a2_1_topics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a2_1_skills",
+          "use": "REVIEW"
+        }
+      ],
+      "tier": "A2.1",
+      "title": "Review: A2.1 consolidation",
+      "unit_id": "m16a2-v1-a2-u05"
+    },
+    {
+      "id": "m16a2-v1-a2-u06-l01",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "State a personal plan and give one reason for it."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u05-l05"
+      ],
+      "sequence": 1,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a2_2_grammar",
+          "use": "INTRODUCE"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a2_2_vocabulary_senses",
+          "use": "INTRODUCE"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a2_2_functions",
+          "use": "INTRODUCE"
+        }
+      ],
+      "tier": "A2.2",
+      "title": "Future plans with going to",
+      "unit_id": "m16a2-v1-a2-u06"
+    },
+    {
+      "id": "m16a2-v1-a2-u06-l02",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Use weak forms and thought groups in a short plan."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u06-l01"
+      ],
+      "sequence": 2,
+      "targets": [
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a2_2_pronunciation",
+          "use": "INTRODUCE"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a2_2_discourse",
+          "use": "INTRODUCE"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a2_2_lexical_chunks",
+          "use": "INTRODUCE"
+        }
+      ],
+      "tier": "A2.2",
+      "title": "Planning language in speech",
+      "unit_id": "m16a2-v1-a2-u06"
+    },
+    {
+      "id": "m16a2-v1-a2-u06-l03",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Make, accept, or decline a simple invitation appropriately."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u06-l02"
+      ],
+      "sequence": 3,
+      "targets": [
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a2_2_pragmatics",
+          "use": "INTRODUCE"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a2_2_collocations",
+          "use": "INTRODUCE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a2_2_skills",
+          "use": "INTRODUCE"
+        }
+      ],
+      "tier": "A2.2",
+      "title": "Inviting and responding",
+      "unit_id": "m16a2-v1-a2-u06"
+    },
+    {
+      "id": "m16a2-v1-a2-u06-l04",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Organize a short exchange about study and future plans."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u06-l03"
+      ],
+      "sequence": 4,
+      "targets": [
+        {
+          "dimension": "topics",
+          "node_id": "kg_a2_2_topics",
+          "use": "INTRODUCE"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a2_2_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a2_2_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.2",
+      "title": "Study and future plans",
+      "unit_id": "m16a2-v1-a2-u06"
+    },
+    {
+      "id": "m16a2-v1-a2-u06-l05",
+      "lesson_kind": "REVIEW",
+      "objectives": [
+        "Review plan, reason, invitation, and response language."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u06-l04"
+      ],
+      "sequence": 5,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a2_2_grammar",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a2_2_vocabulary_senses",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a2_2_functions",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a2_2_pronunciation",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a2_2_discourse",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a2_2_pragmatics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a2_2_collocations",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a2_2_lexical_chunks",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a2_2_topics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a2_2_skills",
+          "use": "REVIEW"
+        }
+      ],
+      "tier": "A2.2",
+      "title": "Review: plans for study and life",
+      "unit_id": "m16a2-v1-a2-u06"
+    },
+    {
+      "id": "m16a2-v1-a2-u07-l01",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Describe a work or study plan using clear future language."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u06-l05"
+      ],
+      "sequence": 1,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a2_2_grammar",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a2_2_vocabulary_senses",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a2_2_topics",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.2",
+      "title": "Work and study plans",
+      "unit_id": "m16a2-v1-a2-u07"
+    },
+    {
+      "id": "m16a2-v1-a2-u07-l02",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Report a simple achievement and ask a relevant follow-up."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u07-l01"
+      ],
+      "sequence": 2,
+      "targets": [
+        {
+          "dimension": "functions",
+          "node_id": "kg_a2_2_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a2_2_discourse",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a2_2_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.2",
+      "title": "Talking about an achievement",
+      "unit_id": "m16a2-v1-a2-u07"
+    },
+    {
+      "id": "m16a2-v1-a2-u07-l03",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Use common planning and achievement chunks in a short exchange."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u07-l02"
+      ],
+      "sequence": 3,
+      "targets": [
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a2_2_lexical_chunks",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a2_2_collocations",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a2_2_pragmatics",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.2",
+      "title": "Useful work and study chunks",
+      "unit_id": "m16a2-v1-a2-u07"
+    },
+    {
+      "id": "m16a2-v1-a2-u07-l04",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Use weak forms and clear information stress when arranging a plan."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u07-l03"
+      ],
+      "sequence": 4,
+      "targets": [
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a2_2_pronunciation",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a2_2_skills",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a2_2_functions",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.2",
+      "title": "Natural planned speech",
+      "unit_id": "m16a2-v1-a2-u07"
+    },
+    {
+      "id": "m16a2-v1-a2-u07-l05",
+      "lesson_kind": "REVIEW",
+      "objectives": [
+        "Review planning, achievement, and follow-up language."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u07-l04"
+      ],
+      "sequence": 5,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a2_2_grammar",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a2_2_vocabulary_senses",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a2_2_functions",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a2_2_pronunciation",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a2_2_discourse",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a2_2_pragmatics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a2_2_collocations",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a2_2_lexical_chunks",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a2_2_topics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a2_2_skills",
+          "use": "REVIEW"
+        }
+      ],
+      "tier": "A2.2",
+      "title": "Review: work, routines, and achievements",
+      "unit_id": "m16a2-v1-a2-u07"
+    },
+    {
+      "id": "m16a2-v1-a2-u08-l01",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Make a practical offer and respond clearly."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u07-l05"
+      ],
+      "sequence": 1,
+      "targets": [
+        {
+          "dimension": "functions",
+          "node_id": "kg_a2_2_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a2_2_pragmatics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a2_2_vocabulary_senses",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.2",
+      "title": "Making an offer",
+      "unit_id": "m16a2-v1-a2-u08"
+    },
+    {
+      "id": "m16a2-v1-a2-u08-l02",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Make a simple arrangement with a time, place, and plan."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u08-l01"
+      ],
+      "sequence": 2,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a2_2_grammar",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a2_2_discourse",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a2_2_topics",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.2",
+      "title": "Arranging a time and place",
+      "unit_id": "m16a2-v1-a2-u08"
+    },
+    {
+      "id": "m16a2-v1-a2-u08-l03",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Use invitation and arrangement chunks with suitable stress."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u08-l02"
+      ],
+      "sequence": 3,
+      "targets": [
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a2_2_lexical_chunks",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a2_2_collocations",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a2_2_pronunciation",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.2",
+      "title": "Responding naturally",
+      "unit_id": "m16a2-v1-a2-u08"
+    },
+    {
+      "id": "m16a2-v1-a2-u08-l04",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Suggest and negotiate one small change to an arrangement."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u08-l03"
+      ],
+      "sequence": 4,
+      "targets": [
+        {
+          "dimension": "functions",
+          "node_id": "kg_a2_2_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a2_2_skills",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a2_2_pragmatics",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.2",
+      "title": "Changing a plan",
+      "unit_id": "m16a2-v1-a2-u08"
+    },
+    {
+      "id": "m16a2-v1-a2-u08-l05",
+      "lesson_kind": "REVIEW",
+      "objectives": [
+        "Review offers, invitations, arrangements, and changes."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u08-l04"
+      ],
+      "sequence": 5,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a2_2_grammar",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a2_2_vocabulary_senses",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a2_2_functions",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a2_2_pronunciation",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a2_2_discourse",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a2_2_pragmatics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a2_2_collocations",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a2_2_lexical_chunks",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a2_2_topics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a2_2_skills",
+          "use": "REVIEW"
+        }
+      ],
+      "tier": "A2.2",
+      "title": "Review: offers and arrangements",
+      "unit_id": "m16a2-v1-a2-u08"
+    },
+    {
+      "id": "m16a2-v1-a2-u09-l01",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Describe a future community activity and its purpose."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u08-l05"
+      ],
+      "sequence": 1,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a2_2_grammar",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a2_2_vocabulary_senses",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a2_2_topics",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.2",
+      "title": "Community plans",
+      "unit_id": "m16a2-v1-a2-u09"
+    },
+    {
+      "id": "m16a2-v1-a2-u09-l02",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Organize a short plan with a reason and clear sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u09-l01"
+      ],
+      "sequence": 2,
+      "targets": [
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a2_2_discourse",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a2_2_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a2_2_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.2",
+      "title": "Reasons and organization",
+      "unit_id": "m16a2-v1-a2-u09"
+    },
+    {
+      "id": "m16a2-v1-a2-u09-l03",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Invite another person and respond appropriately to their answer."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u09-l02"
+      ],
+      "sequence": 3,
+      "targets": [
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a2_2_pragmatics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a2_2_lexical_chunks",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a2_2_collocations",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.2",
+      "title": "Inviting others",
+      "unit_id": "m16a2-v1-a2-u09"
+    },
+    {
+      "id": "m16a2-v1-a2-u09-l04",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Use weak forms, thought groups, and key-word stress in a plan."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u09-l03"
+      ],
+      "sequence": 4,
+      "targets": [
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a2_2_pronunciation",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a2_2_skills",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a2_2_functions",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.2",
+      "title": "Clear planned speech",
+      "unit_id": "m16a2-v1-a2-u09"
+    },
+    {
+      "id": "m16a2-v1-a2-u09-l05",
+      "lesson_kind": "REVIEW",
+      "objectives": [
+        "Review future plans, reasons, invitations, and arrangements."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u09-l04"
+      ],
+      "sequence": 5,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a2_2_grammar",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a2_2_vocabulary_senses",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a2_2_functions",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a2_2_pronunciation",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a2_2_discourse",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a2_2_pragmatics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a2_2_collocations",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a2_2_lexical_chunks",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a2_2_topics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a2_2_skills",
+          "use": "REVIEW"
+        }
+      ],
+      "tier": "A2.2",
+      "title": "Review: community participation",
+      "unit_id": "m16a2-v1-a2-u09"
+    },
+    {
+      "id": "m16a2-v1-a2-u10-l01",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Select suitable A2.2 language for study, work, or community plans."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u09-l05"
+      ],
+      "sequence": 1,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a2_2_grammar",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a2_2_vocabulary_senses",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a2_2_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a2_2_pronunciation",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a2_2_discourse",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a2_2_pragmatics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a2_2_collocations",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a2_2_lexical_chunks",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a2_2_topics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a2_2_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.2",
+      "title": "Planning across contexts",
+      "unit_id": "m16a2-v1-a2-u10"
+    },
+    {
+      "id": "m16a2-v1-a2-u10-l02",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Make an arrangement, give a reason, and respond to a change."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u10-l01"
+      ],
+      "sequence": 2,
+      "targets": [
+        {
+          "dimension": "functions",
+          "node_id": "kg_a2_2_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a2_2_discourse",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a2_2_pragmatics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a2_2_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.2",
+      "title": "Coordinating a plan",
+      "unit_id": "m16a2-v1-a2-u10"
+    },
+    {
+      "id": "m16a2-v1-a2-u10-l03",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Follow a short planned interaction and produce a clear response."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u10-l02"
+      ],
+      "sequence": 3,
+      "targets": [
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a2_2_pronunciation",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a2_2_vocabulary_senses",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a2_2_lexical_chunks",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a2_2_collocations",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.2",
+      "title": "Listening and speaking preparation",
+      "unit_id": "m16a2-v1-a2-u10"
+    },
+    {
+      "id": "m16a2-v1-a2-u10-l04",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Prepare to use the A2.2 targets in a connected practical exchange."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u10-l03"
+      ],
+      "sequence": 4,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a2_2_grammar",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a2_2_vocabulary_senses",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a2_2_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a2_2_pronunciation",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a2_2_discourse",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a2_2_pragmatics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a2_2_collocations",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a2_2_lexical_chunks",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a2_2_topics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a2_2_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "A2.2",
+      "title": "A2.2 preparation",
+      "unit_id": "m16a2-v1-a2-u10"
+    },
+    {
+      "id": "m16a2-v1-a2-u10-l05",
+      "lesson_kind": "REVIEW",
+      "objectives": [
+        "Review all A2.2 target dimensions before the unit test."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u10-l04"
+      ],
+      "sequence": 5,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a2_2_grammar",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a2_2_vocabulary_senses",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a2_2_functions",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a2_2_pronunciation",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a2_2_discourse",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a2_2_pragmatics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a2_2_collocations",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a2_2_lexical_chunks",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a2_2_topics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a2_2_skills",
+          "use": "REVIEW"
+        }
+      ],
+      "tier": "A2.2",
+      "title": "Review: A2.2 consolidation",
+      "unit_id": "m16a2-v1-a2-u10"
+    }
+  ],
+  "record_type": "m16_a2_curriculum_blueprint",
+  "schema_version": "1.0",
+  "source_population_id": "kgpop_c4dda95c776698cf9c5e862e7499bea8a081f40a00212d83a21843a3f1652248",
+  "source_population_sha256": "04316d931c16ce32e90dbfed123c8fd9d85fb3b01c4e1e22f310a672bfae9ea1",
+  "status": "OUTLINE_ONLY",
+  "tiers": [
+    "A2.1",
+    "A2.2"
+  ],
+  "unit_tests": [
+    {
+      "assessed_lesson_ids": [
+        "m16a2-v1-a2-u01-l01",
+        "m16a2-v1-a2-u01-l02",
+        "m16a2-v1-a2-u01-l03",
+        "m16a2-v1-a2-u01-l04",
+        "m16a2-v1-a2-u01-l05"
+      ],
+      "id": "m16a2-v1-a2-unit-test-01",
+      "placement_after_lesson_id": "m16a2-v1-a2-u01-l05",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "tier": "A2.1",
+      "unit_id": "m16a2-v1-a2-u01"
+    },
+    {
+      "assessed_lesson_ids": [
+        "m16a2-v1-a2-u02-l01",
+        "m16a2-v1-a2-u02-l02",
+        "m16a2-v1-a2-u02-l03",
+        "m16a2-v1-a2-u02-l04",
+        "m16a2-v1-a2-u02-l05"
+      ],
+      "id": "m16a2-v1-a2-unit-test-02",
+      "placement_after_lesson_id": "m16a2-v1-a2-u02-l05",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "tier": "A2.1",
+      "unit_id": "m16a2-v1-a2-u02"
+    },
+    {
+      "assessed_lesson_ids": [
+        "m16a2-v1-a2-u03-l01",
+        "m16a2-v1-a2-u03-l02",
+        "m16a2-v1-a2-u03-l03",
+        "m16a2-v1-a2-u03-l04",
+        "m16a2-v1-a2-u03-l05"
+      ],
+      "id": "m16a2-v1-a2-unit-test-03",
+      "placement_after_lesson_id": "m16a2-v1-a2-u03-l05",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "tier": "A2.1",
+      "unit_id": "m16a2-v1-a2-u03"
+    },
+    {
+      "assessed_lesson_ids": [
+        "m16a2-v1-a2-u04-l01",
+        "m16a2-v1-a2-u04-l02",
+        "m16a2-v1-a2-u04-l03",
+        "m16a2-v1-a2-u04-l04",
+        "m16a2-v1-a2-u04-l05"
+      ],
+      "id": "m16a2-v1-a2-unit-test-04",
+      "placement_after_lesson_id": "m16a2-v1-a2-u04-l05",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "tier": "A2.1",
+      "unit_id": "m16a2-v1-a2-u04"
+    },
+    {
+      "assessed_lesson_ids": [
+        "m16a2-v1-a2-u05-l01",
+        "m16a2-v1-a2-u05-l02",
+        "m16a2-v1-a2-u05-l03",
+        "m16a2-v1-a2-u05-l04",
+        "m16a2-v1-a2-u05-l05"
+      ],
+      "id": "m16a2-v1-a2-unit-test-05",
+      "placement_after_lesson_id": "m16a2-v1-a2-u05-l05",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "tier": "A2.1",
+      "unit_id": "m16a2-v1-a2-u05"
+    },
+    {
+      "assessed_lesson_ids": [
+        "m16a2-v1-a2-u06-l01",
+        "m16a2-v1-a2-u06-l02",
+        "m16a2-v1-a2-u06-l03",
+        "m16a2-v1-a2-u06-l04",
+        "m16a2-v1-a2-u06-l05"
+      ],
+      "id": "m16a2-v1-a2-unit-test-06",
+      "placement_after_lesson_id": "m16a2-v1-a2-u06-l05",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "tier": "A2.2",
+      "unit_id": "m16a2-v1-a2-u06"
+    },
+    {
+      "assessed_lesson_ids": [
+        "m16a2-v1-a2-u07-l01",
+        "m16a2-v1-a2-u07-l02",
+        "m16a2-v1-a2-u07-l03",
+        "m16a2-v1-a2-u07-l04",
+        "m16a2-v1-a2-u07-l05"
+      ],
+      "id": "m16a2-v1-a2-unit-test-07",
+      "placement_after_lesson_id": "m16a2-v1-a2-u07-l05",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "tier": "A2.2",
+      "unit_id": "m16a2-v1-a2-u07"
+    },
+    {
+      "assessed_lesson_ids": [
+        "m16a2-v1-a2-u08-l01",
+        "m16a2-v1-a2-u08-l02",
+        "m16a2-v1-a2-u08-l03",
+        "m16a2-v1-a2-u08-l04",
+        "m16a2-v1-a2-u08-l05"
+      ],
+      "id": "m16a2-v1-a2-unit-test-08",
+      "placement_after_lesson_id": "m16a2-v1-a2-u08-l05",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "tier": "A2.2",
+      "unit_id": "m16a2-v1-a2-u08"
+    },
+    {
+      "assessed_lesson_ids": [
+        "m16a2-v1-a2-u09-l01",
+        "m16a2-v1-a2-u09-l02",
+        "m16a2-v1-a2-u09-l03",
+        "m16a2-v1-a2-u09-l04",
+        "m16a2-v1-a2-u09-l05"
+      ],
+      "id": "m16a2-v1-a2-unit-test-09",
+      "placement_after_lesson_id": "m16a2-v1-a2-u09-l05",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "tier": "A2.2",
+      "unit_id": "m16a2-v1-a2-u09"
+    },
+    {
+      "assessed_lesson_ids": [
+        "m16a2-v1-a2-u10-l01",
+        "m16a2-v1-a2-u10-l02",
+        "m16a2-v1-a2-u10-l03",
+        "m16a2-v1-a2-u10-l04",
+        "m16a2-v1-a2-u10-l05"
+      ],
+      "id": "m16a2-v1-a2-unit-test-10",
+      "placement_after_lesson_id": "m16a2-v1-a2-u10-l05",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "tier": "A2.2",
+      "unit_id": "m16a2-v1-a2-u10"
+    }
+  ],
+  "units": [
+    {
+      "id": "m16a2-v1-a2-u01",
+      "lesson_ids": [
+        "m16a2-v1-a2-u01-l01",
+        "m16a2-v1-a2-u01-l02",
+        "m16a2-v1-a2-u01-l03",
+        "m16a2-v1-a2-u01-l04",
+        "m16a2-v1-a2-u01-l05"
+      ],
+      "review_lesson_id": "m16a2-v1-a2-u01-l05",
+      "sequence": 1,
+      "tier": "A2.1",
+      "title": "Recent experiences and simple stories",
+      "unit_test_id": "m16a2-v1-a2-unit-test-01"
+    },
+    {
+      "id": "m16a2-v1-a2-u02",
+      "lesson_ids": [
+        "m16a2-v1-a2-u02-l01",
+        "m16a2-v1-a2-u02-l02",
+        "m16a2-v1-a2-u02-l03",
+        "m16a2-v1-a2-u02-l04",
+        "m16a2-v1-a2-u02-l05"
+      ],
+      "review_lesson_id": "m16a2-v1-a2-u02-l05",
+      "sequence": 2,
+      "tier": "A2.1",
+      "title": "Shopping and quantities",
+      "unit_test_id": "m16a2-v1-a2-unit-test-02"
+    },
+    {
+      "id": "m16a2-v1-a2-u03",
+      "lesson_ids": [
+        "m16a2-v1-a2-u03-l01",
+        "m16a2-v1-a2-u03-l02",
+        "m16a2-v1-a2-u03-l03",
+        "m16a2-v1-a2-u03-l04",
+        "m16a2-v1-a2-u03-l05"
+      ],
+      "review_lesson_id": "m16a2-v1-a2-u03-l05",
+      "sequence": 3,
+      "tier": "A2.1",
+      "title": "Health, advice, and local services",
+      "unit_test_id": "m16a2-v1-a2-unit-test-03"
+    },
+    {
+      "id": "m16a2-v1-a2-u04",
+      "lesson_ids": [
+        "m16a2-v1-a2-u04-l01",
+        "m16a2-v1-a2-u04-l02",
+        "m16a2-v1-a2-u04-l03",
+        "m16a2-v1-a2-u04-l04",
+        "m16a2-v1-a2-u04-l05"
+      ],
+      "review_lesson_id": "m16a2-v1-a2-u04-l05",
+      "sequence": 4,
+      "tier": "A2.1",
+      "title": "Travel and transport experiences",
+      "unit_test_id": "m16a2-v1-a2-unit-test-04"
+    },
+    {
+      "id": "m16a2-v1-a2-u05",
+      "lesson_ids": [
+        "m16a2-v1-a2-u05-l01",
+        "m16a2-v1-a2-u05-l02",
+        "m16a2-v1-a2-u05-l03",
+        "m16a2-v1-a2-u05-l04",
+        "m16a2-v1-a2-u05-l05"
+      ],
+      "review_lesson_id": "m16a2-v1-a2-u05-l05",
+      "sequence": 5,
+      "tier": "A2.1",
+      "title": "A2.1 consolidation",
+      "unit_test_id": "m16a2-v1-a2-unit-test-05"
+    },
+    {
+      "id": "m16a2-v1-a2-u06",
+      "lesson_ids": [
+        "m16a2-v1-a2-u06-l01",
+        "m16a2-v1-a2-u06-l02",
+        "m16a2-v1-a2-u06-l03",
+        "m16a2-v1-a2-u06-l04",
+        "m16a2-v1-a2-u06-l05"
+      ],
+      "review_lesson_id": "m16a2-v1-a2-u06-l05",
+      "sequence": 6,
+      "tier": "A2.2",
+      "title": "Plans for study and everyday life",
+      "unit_test_id": "m16a2-v1-a2-unit-test-06"
+    },
+    {
+      "id": "m16a2-v1-a2-u07",
+      "lesson_ids": [
+        "m16a2-v1-a2-u07-l01",
+        "m16a2-v1-a2-u07-l02",
+        "m16a2-v1-a2-u07-l03",
+        "m16a2-v1-a2-u07-l04",
+        "m16a2-v1-a2-u07-l05"
+      ],
+      "review_lesson_id": "m16a2-v1-a2-u07-l05",
+      "sequence": 7,
+      "tier": "A2.2",
+      "title": "Work, routines, and achievements",
+      "unit_test_id": "m16a2-v1-a2-unit-test-07"
+    },
+    {
+      "id": "m16a2-v1-a2-u08",
+      "lesson_ids": [
+        "m16a2-v1-a2-u08-l01",
+        "m16a2-v1-a2-u08-l02",
+        "m16a2-v1-a2-u08-l03",
+        "m16a2-v1-a2-u08-l04",
+        "m16a2-v1-a2-u08-l05"
+      ],
+      "review_lesson_id": "m16a2-v1-a2-u08-l05",
+      "sequence": 8,
+      "tier": "A2.2",
+      "title": "Offers, invitations, and arrangements",
+      "unit_test_id": "m16a2-v1-a2-unit-test-08"
+    },
+    {
+      "id": "m16a2-v1-a2-u09",
+      "lesson_ids": [
+        "m16a2-v1-a2-u09-l01",
+        "m16a2-v1-a2-u09-l02",
+        "m16a2-v1-a2-u09-l03",
+        "m16a2-v1-a2-u09-l04",
+        "m16a2-v1-a2-u09-l05"
+      ],
+      "review_lesson_id": "m16a2-v1-a2-u09-l05",
+      "sequence": 9,
+      "tier": "A2.2",
+      "title": "Community and future participation",
+      "unit_test_id": "m16a2-v1-a2-unit-test-09"
+    },
+    {
+      "id": "m16a2-v1-a2-u10",
+      "lesson_ids": [
+        "m16a2-v1-a2-u10-l01",
+        "m16a2-v1-a2-u10-l02",
+        "m16a2-v1-a2-u10-l03",
+        "m16a2-v1-a2-u10-l04",
+        "m16a2-v1-a2-u10-l05"
+      ],
+      "review_lesson_id": "m16a2-v1-a2-u10-l05",
+      "sequence": 10,
+      "tier": "A2.2",
+      "title": "A2.2 consolidation",
+      "unit_test_id": "m16a2-v1-a2-unit-test-10"
+    }
+  ]
+}

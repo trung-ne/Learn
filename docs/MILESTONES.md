@@ -549,6 +549,18 @@ The isolated Full A1 v2 path preserves the pilot and adds an original-authored g
 
 ---
 
+## M16-A2-BLUEPRINT — Build Full A2 Curriculum Outline
+
+**Status**: Implemented as an outline-only development blueprint
+
+M16-A2-BLUEPRINT maps the existing M15 A2.1/A2.2 nodes into ten units, fifty deterministic lesson outlines, explicit review lessons, and unit-test blueprints. It uses only hash-bound M15 node references and their direct A1.2 entry prerequisites; it does not add an A1 authority bridge. Local validation resolves node IDs, checks target tier/dimension and introduction/review coverage, rejects broken or forward prerequisites, and detects cycles. It contains no lesson prose, exercises, answer keys, media, or M6 authorization. See [A2 documentation](A2_BLUEPRINT.md) and [A2 prompt](../prompts/A2_BLUEPRINT.md).
+
+The blueprint is a planning artifact only. It does not replace historical curriculum structures, authorize lesson generation, claim CEFR endorsement, or establish human/release/provider authority.
+
+### Next: an explicitly requested A2 content-planning or generation scope
+
+---
+
 ## M15 — Authorized Listening Assembly and Web Platform (Optional, Future)
 
 **Estimated Duration**: ~4-6 weeks

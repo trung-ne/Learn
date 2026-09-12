@@ -111,6 +111,7 @@ def test_all_schema_files_are_loaded_and_metaschema_valid(schemas: dict[str, dic
         "m16-a1-lesson.schema.json",
         "m16-a1-review.schema.json",
         "m16-a1-unit.schema.json",
+        "m16-a2-curriculum-blueprint.schema.json",
         "m9-ai-capture-manifest.schema.json",
         "m9-ai-capture-wrapper.schema.json",
         "m9-ai-review-v2.schema.json",
