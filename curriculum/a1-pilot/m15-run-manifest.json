@@ -1,0 +1,12 @@
+{
+  "dimension_count": 10,
+  "external_content_used": false,
+  "fixture_only": true,
+  "node_count": 120,
+  "population_sha256": "04316d931c16ce32e90dbfed123c8fd9d85fb3b01c4e1e22f310a672bfae9ea1",
+  "record_type": "m15_knowledge_graph_run_manifest",
+  "result": "PASS",
+  "run_id": "kg_run_04316d931c16ce32e90dbfed123c8fd9d85fb3b01c4e1e22f310a672bfae9ea1",
+  "schema_version": "1.0",
+  "tier_count": 12
+}

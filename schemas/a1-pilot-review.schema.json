@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/a1-pilot-review.schema.json",
+  "title": "English Master A1 pilot review",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "pilot_id", "manifest_sha256", "reviewers", "lessons"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "a1_pilot_review"},
+    "pilot_id": {"type": "string", "pattern": "^a1pilot_[a-f0-9]{64}$"},
+    "manifest_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "reviewers": {"type": "array", "minItems": 1, "items": {"type": "object", "additionalProperties": false, "required": ["reviewer_type", "identifier"], "properties": {"reviewer_type": {"enum": ["USER", "AI"]}, "identifier": {"type": "string", "minLength": 1}, "provider": {"type": "string"}, "model": {"type": "string"}, "prompt_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "response_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}}}},
+    "lessons": {"type": "array", "minItems": 10, "maxItems": 10, "items": {"$ref": "#/$defs/lesson"}}
+  },
+  "$defs": {
+    "finding": {"type": "object", "additionalProperties": false, "required": ["dimension", "classification", "severity", "description"], "properties": {"dimension": {"enum": ["explanation_clarity", "grammar_correctness", "vocabulary_difficulty", "exercise_quality", "prompt_usability", "lesson_duration", "duplication"]}, "classification": {"enum": ["ISOLATED", "SYSTEMIC"]}, "severity": {"enum": ["INFO", "BLOCKING"]}, "description": {"type": "string", "minLength": 1}, "generator_rule": {"type": "string", "minLength": 1}}},
+    "lesson": {"type": "object", "additionalProperties": false, "required": ["lesson_id", "dimensions", "findings"], "properties": {"lesson_id": {"type": "string"}, "dimensions": {"type": "object", "additionalProperties": false, "required": ["explanation_clarity", "grammar_correctness", "vocabulary_difficulty", "exercise_quality", "prompt_usability", "lesson_duration", "duplication"], "properties": {"explanation_clarity": {"enum": ["PASS", "FAIL", "NOT_RUN"]}, "grammar_correctness": {"enum": ["PASS", "FAIL", "NOT_RUN"]}, "vocabulary_difficulty": {"enum": ["PASS", "FAIL", "NOT_RUN"]}, "exercise_quality": {"enum": ["PASS", "FAIL", "NOT_RUN"]}, "prompt_usability": {"enum": ["PASS", "FAIL", "NOT_RUN"]}, "lesson_duration": {"enum": ["PASS", "FAIL", "NOT_RUN"]}, "duplication": {"enum": ["PASS", "FAIL", "NOT_RUN"]}}}, "findings": {"type": "array", "items": {"$ref": "#/$defs/finding"}}}}
+  }
+}

@@ -533,7 +533,13 @@ M16-A1-BLUEPRINT consumes the versioned M15 population and maps A1.1 and A1.2 in
 
 The blueprint is a planning artifact only and does not replace the historical M5 structure or authorize lesson generation.
 
-### Next: existing M15 platform milestone remains separately gated
+### A1 pilot follow-up
+
+**Status**: Implemented as a bounded development pilot
+
+The A1 pilot derives the first ten A1.1 M16 outline lessons into ten original-authored learner packets. Every packet contains lesson content, exercises, and listening, speaking, pronunciation, and writing practice protocols. The pilot validates source hashes, ordered prerequisites, exact four-modality inventory, answer/rubric completeness, duration bounds, duplicate learner-facing text, and closed immutable inventory. A direct user-plus-AI review template covers clarity, grammar, vocabulary difficulty, exercise quality, prompt usability, duration, and duplication; systemic findings identify a generator rule to repair. The pilot remains `UNREVIEWED` and makes no human/release/provider or real-media claim. See [A1 Pilot](A1_PILOT.md).
+
+### Next: direct A1 pilot use and completed development review
 
 ---
 

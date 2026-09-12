@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/a1-pilot-review-summary.schema.json",
+  "title": "English Master A1 pilot review summary",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "pilot_id", "manifest_sha256", "review_sha256", "content_status", "systemic_findings", "isolated_findings", "next_action"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "a1_pilot_review_summary"},
+    "pilot_id": {"type": "string", "pattern": "^a1pilot_[a-f0-9]{64}$"},
+    "manifest_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "review_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "content_status": {"const": "UNREVIEWED"},
+    "systemic_findings": {"type": "array", "items": {"type": "object"}},
+    "isolated_findings": {"type": "array", "items": {"type": "object"}},
+    "next_action": {"enum": ["FIX_GENERATOR", "REPLACE_LOCAL_PACKETS", "NO_BLOCKING_FINDINGS"]}
+  }
+}

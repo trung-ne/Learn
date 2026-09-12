@@ -1,0 +1,3808 @@
+{
+  "assessments": [
+    {
+      "assessed_lesson_ids": [
+        "m16a1-v1-a1-u01-l01",
+        "m16a1-v1-a1-u01-l02",
+        "m16a1-v1-a1-u01-l03",
+        "m16a1-v1-a1-u01-l04",
+        "m16a1-v1-a1-u01-l05"
+      ],
+      "id": "m16a1-v1-a1-assess-unit-01",
+      "kind": "unit_check",
+      "placement_after_unit_id": "m16a1-v1-a1-u01",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "tier": "A1.1"
+    },
+    {
+      "assessed_lesson_ids": [
+        "m16a1-v1-a1-u02-l01",
+        "m16a1-v1-a1-u02-l02",
+        "m16a1-v1-a1-u02-l03",
+        "m16a1-v1-a1-u02-l04",
+        "m16a1-v1-a1-u02-l05"
+      ],
+      "id": "m16a1-v1-a1-assess-unit-02",
+      "kind": "unit_check",
+      "placement_after_unit_id": "m16a1-v1-a1-u02",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "tier": "A1.1"
+    },
+    {
+      "assessed_lesson_ids": [
+        "m16a1-v1-a1-u03-l01",
+        "m16a1-v1-a1-u03-l02",
+        "m16a1-v1-a1-u03-l03",
+        "m16a1-v1-a1-u03-l04",
+        "m16a1-v1-a1-u03-l05"
+      ],
+      "id": "m16a1-v1-a1-assess-unit-03",
+      "kind": "unit_check",
+      "placement_after_unit_id": "m16a1-v1-a1-u03",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "tier": "A1.1"
+    },
+    {
+      "assessed_lesson_ids": [
+        "m16a1-v1-a1-u04-l01",
+        "m16a1-v1-a1-u04-l02",
+        "m16a1-v1-a1-u04-l03",
+        "m16a1-v1-a1-u04-l04",
+        "m16a1-v1-a1-u04-l05"
+      ],
+      "id": "m16a1-v1-a1-assess-unit-04",
+      "kind": "unit_check",
+      "placement_after_unit_id": "m16a1-v1-a1-u04",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "tier": "A1.1"
+    },
+    {
+      "assessed_lesson_ids": [
+        "m16a1-v1-a1-u05-l01",
+        "m16a1-v1-a1-u05-l02",
+        "m16a1-v1-a1-u05-l03",
+        "m16a1-v1-a1-u05-l04",
+        "m16a1-v1-a1-u05-l05"
+      ],
+      "id": "m16a1-v1-a1-assess-unit-05",
+      "kind": "unit_check",
+      "placement_after_unit_id": "m16a1-v1-a1-u05",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "tier": "A1.1"
+    },
+    {
+      "assessed_lesson_ids": [
+        "m16a1-v1-a1-u06-l01",
+        "m16a1-v1-a1-u06-l02",
+        "m16a1-v1-a1-u06-l03",
+        "m16a1-v1-a1-u06-l04",
+        "m16a1-v1-a1-u06-l05"
+      ],
+      "id": "m16a1-v1-a1-assess-unit-06",
+      "kind": "unit_check",
+      "placement_after_unit_id": "m16a1-v1-a1-u06",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "tier": "A1.2"
+    },
+    {
+      "assessed_lesson_ids": [
+        "m16a1-v1-a1-u07-l01",
+        "m16a1-v1-a1-u07-l02",
+        "m16a1-v1-a1-u07-l03",
+        "m16a1-v1-a1-u07-l04",
+        "m16a1-v1-a1-u07-l05"
+      ],
+      "id": "m16a1-v1-a1-assess-unit-07",
+      "kind": "unit_check",
+      "placement_after_unit_id": "m16a1-v1-a1-u07",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "tier": "A1.2"
+    },
+    {
+      "assessed_lesson_ids": [
+        "m16a1-v1-a1-u08-l01",
+        "m16a1-v1-a1-u08-l02",
+        "m16a1-v1-a1-u08-l03",
+        "m16a1-v1-a1-u08-l04",
+        "m16a1-v1-a1-u08-l05"
+      ],
+      "id": "m16a1-v1-a1-assess-unit-08",
+      "kind": "unit_check",
+      "placement_after_unit_id": "m16a1-v1-a1-u08",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "tier": "A1.2"
+    },
+    {
+      "assessed_lesson_ids": [
+        "m16a1-v1-a1-u09-l01",
+        "m16a1-v1-a1-u09-l02",
+        "m16a1-v1-a1-u09-l03",
+        "m16a1-v1-a1-u09-l04",
+        "m16a1-v1-a1-u09-l05"
+      ],
+      "id": "m16a1-v1-a1-assess-unit-09",
+      "kind": "unit_check",
+      "placement_after_unit_id": "m16a1-v1-a1-u09",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "tier": "A1.2"
+    },
+    {
+      "assessed_lesson_ids": [
+        "m16a1-v1-a1-u10-l01",
+        "m16a1-v1-a1-u10-l02",
+        "m16a1-v1-a1-u10-l03",
+        "m16a1-v1-a1-u10-l04",
+        "m16a1-v1-a1-u10-l05"
+      ],
+      "id": "m16a1-v1-a1-assess-unit-10",
+      "kind": "unit_check",
+      "placement_after_unit_id": "m16a1-v1-a1-u10",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "tier": "A1.2"
+    },
+    {
+      "assessed_lesson_ids": [
+        "m16a1-v1-a1-u01-l01",
+        "m16a1-v1-a1-u01-l02",
+        "m16a1-v1-a1-u01-l03",
+        "m16a1-v1-a1-u01-l04",
+        "m16a1-v1-a1-u01-l05",
+        "m16a1-v1-a1-u02-l01",
+        "m16a1-v1-a1-u02-l02",
+        "m16a1-v1-a1-u02-l03",
+        "m16a1-v1-a1-u02-l04",
+        "m16a1-v1-a1-u02-l05",
+        "m16a1-v1-a1-u03-l01",
+        "m16a1-v1-a1-u03-l02",
+        "m16a1-v1-a1-u03-l03",
+        "m16a1-v1-a1-u03-l04",
+        "m16a1-v1-a1-u03-l05",
+        "m16a1-v1-a1-u04-l01",
+        "m16a1-v1-a1-u04-l02",
+        "m16a1-v1-a1-u04-l03",
+        "m16a1-v1-a1-u04-l04",
+        "m16a1-v1-a1-u04-l05",
+        "m16a1-v1-a1-u05-l01",
+        "m16a1-v1-a1-u05-l02",
+        "m16a1-v1-a1-u05-l03",
+        "m16a1-v1-a1-u05-l04",
+        "m16a1-v1-a1-u05-l05"
+      ],
+      "id": "m16a1-v1-a1-assess-tier-05",
+      "kind": "tier_check",
+      "placement_after_unit_id": "m16a1-v1-a1-u05",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "tier": "A1.1"
+    },
+    {
+      "assessed_lesson_ids": [
+        "m16a1-v1-a1-u06-l01",
+        "m16a1-v1-a1-u06-l02",
+        "m16a1-v1-a1-u06-l03",
+        "m16a1-v1-a1-u06-l04",
+        "m16a1-v1-a1-u06-l05",
+        "m16a1-v1-a1-u07-l01",
+        "m16a1-v1-a1-u07-l02",
+        "m16a1-v1-a1-u07-l03",
+        "m16a1-v1-a1-u07-l04",
+        "m16a1-v1-a1-u07-l05",
+        "m16a1-v1-a1-u08-l01",
+        "m16a1-v1-a1-u08-l02",
+        "m16a1-v1-a1-u08-l03",
+        "m16a1-v1-a1-u08-l04",
+        "m16a1-v1-a1-u08-l05",
+        "m16a1-v1-a1-u09-l01",
+        "m16a1-v1-a1-u09-l02",
+        "m16a1-v1-a1-u09-l03",
+        "m16a1-v1-a1-u09-l04",
+        "m16a1-v1-a1-u09-l05",
+        "m16a1-v1-a1-u10-l01",
+        "m16a1-v1-a1-u10-l02",
+        "m16a1-v1-a1-u10-l03",
+        "m16a1-v1-a1-u10-l04",
+        "m16a1-v1-a1-u10-l05"
+      ],
+      "id": "m16a1-v1-a1-assess-tier-10",
+      "kind": "tier_check",
+      "placement_after_unit_id": "m16a1-v1-a1-u10",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "tier": "A1.2"
+    }
+  ],
+  "edition": "m16a1-v1",
+  "lessons": [
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-01"
+      ],
+      "id": "m16a1-v1-a1-u01-l01",
+      "objectives": [
+        "Use the A1.1 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [],
+      "review_ids": [
+        "m16a1-v1-a1-r01"
+      ],
+      "sequence": 1,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_1_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_1_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_1_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_1_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_1_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_1_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_1_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_1_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_1_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_1_skills"
+        }
+      ],
+      "tier": "A1.1",
+      "title": "A1.1 learning focus 1.1",
+      "unit_id": "m16a1-v1-a1-u01"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-01"
+      ],
+      "id": "m16a1-v1-a1-u01-l02",
+      "objectives": [
+        "Use the A1.1 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u01-l01"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r01"
+      ],
+      "sequence": 2,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_1_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_1_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_1_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_1_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_1_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_1_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_1_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_1_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_1_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_1_skills"
+        }
+      ],
+      "tier": "A1.1",
+      "title": "A1.1 learning focus 1.2",
+      "unit_id": "m16a1-v1-a1-u01"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-01"
+      ],
+      "id": "m16a1-v1-a1-u01-l03",
+      "objectives": [
+        "Use the A1.1 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u01-l02"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r01"
+      ],
+      "sequence": 3,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_1_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_1_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_1_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_1_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_1_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_1_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_1_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_1_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_1_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_1_skills"
+        }
+      ],
+      "tier": "A1.1",
+      "title": "A1.1 learning focus 1.3",
+      "unit_id": "m16a1-v1-a1-u01"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-01"
+      ],
+      "id": "m16a1-v1-a1-u01-l04",
+      "objectives": [
+        "Use the A1.1 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u01-l03"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r01"
+      ],
+      "sequence": 4,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_1_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_1_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_1_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_1_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_1_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_1_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_1_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_1_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_1_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_1_skills"
+        }
+      ],
+      "tier": "A1.1",
+      "title": "A1.1 learning focus 1.4",
+      "unit_id": "m16a1-v1-a1-u01"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-01"
+      ],
+      "id": "m16a1-v1-a1-u01-l05",
+      "objectives": [
+        "Use the A1.1 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u01-l04"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r01"
+      ],
+      "sequence": 5,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_1_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_1_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_1_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_1_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_1_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_1_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_1_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_1_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_1_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_1_skills"
+        }
+      ],
+      "tier": "A1.1",
+      "title": "A1.1 learning focus 1.5",
+      "unit_id": "m16a1-v1-a1-u01"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-02"
+      ],
+      "id": "m16a1-v1-a1-u02-l01",
+      "objectives": [
+        "Use the A1.1 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u01-l05"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r02"
+      ],
+      "sequence": 1,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_1_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_1_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_1_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_1_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_1_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_1_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_1_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_1_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_1_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_1_skills"
+        }
+      ],
+      "tier": "A1.1",
+      "title": "A1.1 learning focus 2.1",
+      "unit_id": "m16a1-v1-a1-u02"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-02"
+      ],
+      "id": "m16a1-v1-a1-u02-l02",
+      "objectives": [
+        "Use the A1.1 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u02-l01"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r02"
+      ],
+      "sequence": 2,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_1_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_1_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_1_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_1_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_1_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_1_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_1_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_1_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_1_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_1_skills"
+        }
+      ],
+      "tier": "A1.1",
+      "title": "A1.1 learning focus 2.2",
+      "unit_id": "m16a1-v1-a1-u02"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-02"
+      ],
+      "id": "m16a1-v1-a1-u02-l03",
+      "objectives": [
+        "Use the A1.1 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u02-l02"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r02"
+      ],
+      "sequence": 3,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_1_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_1_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_1_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_1_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_1_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_1_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_1_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_1_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_1_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_1_skills"
+        }
+      ],
+      "tier": "A1.1",
+      "title": "A1.1 learning focus 2.3",
+      "unit_id": "m16a1-v1-a1-u02"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-02"
+      ],
+      "id": "m16a1-v1-a1-u02-l04",
+      "objectives": [
+        "Use the A1.1 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u02-l03"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r02"
+      ],
+      "sequence": 4,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_1_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_1_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_1_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_1_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_1_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_1_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_1_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_1_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_1_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_1_skills"
+        }
+      ],
+      "tier": "A1.1",
+      "title": "A1.1 learning focus 2.4",
+      "unit_id": "m16a1-v1-a1-u02"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-02"
+      ],
+      "id": "m16a1-v1-a1-u02-l05",
+      "objectives": [
+        "Use the A1.1 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u02-l04"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r02"
+      ],
+      "sequence": 5,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_1_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_1_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_1_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_1_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_1_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_1_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_1_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_1_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_1_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_1_skills"
+        }
+      ],
+      "tier": "A1.1",
+      "title": "A1.1 learning focus 2.5",
+      "unit_id": "m16a1-v1-a1-u02"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-03"
+      ],
+      "id": "m16a1-v1-a1-u03-l01",
+      "objectives": [
+        "Use the A1.1 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u02-l05"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r03"
+      ],
+      "sequence": 1,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_1_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_1_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_1_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_1_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_1_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_1_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_1_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_1_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_1_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_1_skills"
+        }
+      ],
+      "tier": "A1.1",
+      "title": "A1.1 learning focus 3.1",
+      "unit_id": "m16a1-v1-a1-u03"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-03"
+      ],
+      "id": "m16a1-v1-a1-u03-l02",
+      "objectives": [
+        "Use the A1.1 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u03-l01"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r03"
+      ],
+      "sequence": 2,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_1_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_1_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_1_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_1_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_1_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_1_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_1_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_1_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_1_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_1_skills"
+        }
+      ],
+      "tier": "A1.1",
+      "title": "A1.1 learning focus 3.2",
+      "unit_id": "m16a1-v1-a1-u03"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-03"
+      ],
+      "id": "m16a1-v1-a1-u03-l03",
+      "objectives": [
+        "Use the A1.1 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u03-l02"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r03"
+      ],
+      "sequence": 3,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_1_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_1_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_1_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_1_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_1_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_1_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_1_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_1_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_1_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_1_skills"
+        }
+      ],
+      "tier": "A1.1",
+      "title": "A1.1 learning focus 3.3",
+      "unit_id": "m16a1-v1-a1-u03"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-03"
+      ],
+      "id": "m16a1-v1-a1-u03-l04",
+      "objectives": [
+        "Use the A1.1 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u03-l03"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r03"
+      ],
+      "sequence": 4,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_1_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_1_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_1_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_1_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_1_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_1_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_1_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_1_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_1_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_1_skills"
+        }
+      ],
+      "tier": "A1.1",
+      "title": "A1.1 learning focus 3.4",
+      "unit_id": "m16a1-v1-a1-u03"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-03"
+      ],
+      "id": "m16a1-v1-a1-u03-l05",
+      "objectives": [
+        "Use the A1.1 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u03-l04"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r03"
+      ],
+      "sequence": 5,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_1_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_1_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_1_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_1_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_1_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_1_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_1_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_1_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_1_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_1_skills"
+        }
+      ],
+      "tier": "A1.1",
+      "title": "A1.1 learning focus 3.5",
+      "unit_id": "m16a1-v1-a1-u03"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-04"
+      ],
+      "id": "m16a1-v1-a1-u04-l01",
+      "objectives": [
+        "Use the A1.1 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u03-l05"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r04"
+      ],
+      "sequence": 1,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_1_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_1_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_1_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_1_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_1_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_1_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_1_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_1_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_1_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_1_skills"
+        }
+      ],
+      "tier": "A1.1",
+      "title": "A1.1 learning focus 4.1",
+      "unit_id": "m16a1-v1-a1-u04"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-04"
+      ],
+      "id": "m16a1-v1-a1-u04-l02",
+      "objectives": [
+        "Use the A1.1 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u04-l01"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r04"
+      ],
+      "sequence": 2,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_1_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_1_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_1_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_1_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_1_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_1_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_1_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_1_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_1_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_1_skills"
+        }
+      ],
+      "tier": "A1.1",
+      "title": "A1.1 learning focus 4.2",
+      "unit_id": "m16a1-v1-a1-u04"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-04"
+      ],
+      "id": "m16a1-v1-a1-u04-l03",
+      "objectives": [
+        "Use the A1.1 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u04-l02"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r04"
+      ],
+      "sequence": 3,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_1_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_1_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_1_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_1_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_1_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_1_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_1_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_1_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_1_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_1_skills"
+        }
+      ],
+      "tier": "A1.1",
+      "title": "A1.1 learning focus 4.3",
+      "unit_id": "m16a1-v1-a1-u04"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-04"
+      ],
+      "id": "m16a1-v1-a1-u04-l04",
+      "objectives": [
+        "Use the A1.1 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u04-l03"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r04"
+      ],
+      "sequence": 4,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_1_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_1_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_1_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_1_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_1_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_1_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_1_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_1_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_1_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_1_skills"
+        }
+      ],
+      "tier": "A1.1",
+      "title": "A1.1 learning focus 4.4",
+      "unit_id": "m16a1-v1-a1-u04"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-04"
+      ],
+      "id": "m16a1-v1-a1-u04-l05",
+      "objectives": [
+        "Use the A1.1 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u04-l04"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r04"
+      ],
+      "sequence": 5,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_1_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_1_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_1_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_1_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_1_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_1_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_1_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_1_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_1_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_1_skills"
+        }
+      ],
+      "tier": "A1.1",
+      "title": "A1.1 learning focus 4.5",
+      "unit_id": "m16a1-v1-a1-u04"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-05"
+      ],
+      "id": "m16a1-v1-a1-u05-l01",
+      "objectives": [
+        "Use the A1.1 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u04-l05"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r05"
+      ],
+      "sequence": 1,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_1_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_1_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_1_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_1_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_1_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_1_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_1_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_1_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_1_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_1_skills"
+        }
+      ],
+      "tier": "A1.1",
+      "title": "A1.1 learning focus 5.1",
+      "unit_id": "m16a1-v1-a1-u05"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-05"
+      ],
+      "id": "m16a1-v1-a1-u05-l02",
+      "objectives": [
+        "Use the A1.1 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u05-l01"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r05"
+      ],
+      "sequence": 2,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_1_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_1_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_1_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_1_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_1_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_1_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_1_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_1_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_1_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_1_skills"
+        }
+      ],
+      "tier": "A1.1",
+      "title": "A1.1 learning focus 5.2",
+      "unit_id": "m16a1-v1-a1-u05"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-05"
+      ],
+      "id": "m16a1-v1-a1-u05-l03",
+      "objectives": [
+        "Use the A1.1 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u05-l02"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r05"
+      ],
+      "sequence": 3,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_1_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_1_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_1_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_1_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_1_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_1_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_1_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_1_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_1_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_1_skills"
+        }
+      ],
+      "tier": "A1.1",
+      "title": "A1.1 learning focus 5.3",
+      "unit_id": "m16a1-v1-a1-u05"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-05"
+      ],
+      "id": "m16a1-v1-a1-u05-l04",
+      "objectives": [
+        "Use the A1.1 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u05-l03"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r05"
+      ],
+      "sequence": 4,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_1_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_1_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_1_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_1_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_1_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_1_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_1_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_1_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_1_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_1_skills"
+        }
+      ],
+      "tier": "A1.1",
+      "title": "A1.1 learning focus 5.4",
+      "unit_id": "m16a1-v1-a1-u05"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-05"
+      ],
+      "id": "m16a1-v1-a1-u05-l05",
+      "objectives": [
+        "Use the A1.1 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u05-l04"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r05"
+      ],
+      "sequence": 5,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_1_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_1_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_1_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_1_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_1_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_1_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_1_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_1_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_1_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_1_skills"
+        }
+      ],
+      "tier": "A1.1",
+      "title": "A1.1 learning focus 5.5",
+      "unit_id": "m16a1-v1-a1-u05"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-06"
+      ],
+      "id": "m16a1-v1-a1-u06-l01",
+      "objectives": [
+        "Use the A1.2 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u05-l05"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r06"
+      ],
+      "sequence": 1,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_2_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_2_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_2_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_2_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_2_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_2_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_2_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_2_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_2_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_2_skills"
+        }
+      ],
+      "tier": "A1.2",
+      "title": "A1.2 learning focus 6.1",
+      "unit_id": "m16a1-v1-a1-u06"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-06"
+      ],
+      "id": "m16a1-v1-a1-u06-l02",
+      "objectives": [
+        "Use the A1.2 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u06-l01"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r06"
+      ],
+      "sequence": 2,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_2_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_2_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_2_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_2_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_2_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_2_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_2_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_2_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_2_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_2_skills"
+        }
+      ],
+      "tier": "A1.2",
+      "title": "A1.2 learning focus 6.2",
+      "unit_id": "m16a1-v1-a1-u06"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-06"
+      ],
+      "id": "m16a1-v1-a1-u06-l03",
+      "objectives": [
+        "Use the A1.2 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u06-l02"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r06"
+      ],
+      "sequence": 3,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_2_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_2_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_2_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_2_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_2_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_2_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_2_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_2_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_2_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_2_skills"
+        }
+      ],
+      "tier": "A1.2",
+      "title": "A1.2 learning focus 6.3",
+      "unit_id": "m16a1-v1-a1-u06"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-06"
+      ],
+      "id": "m16a1-v1-a1-u06-l04",
+      "objectives": [
+        "Use the A1.2 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u06-l03"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r06"
+      ],
+      "sequence": 4,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_2_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_2_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_2_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_2_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_2_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_2_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_2_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_2_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_2_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_2_skills"
+        }
+      ],
+      "tier": "A1.2",
+      "title": "A1.2 learning focus 6.4",
+      "unit_id": "m16a1-v1-a1-u06"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-06"
+      ],
+      "id": "m16a1-v1-a1-u06-l05",
+      "objectives": [
+        "Use the A1.2 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u06-l04"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r06"
+      ],
+      "sequence": 5,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_2_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_2_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_2_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_2_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_2_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_2_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_2_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_2_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_2_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_2_skills"
+        }
+      ],
+      "tier": "A1.2",
+      "title": "A1.2 learning focus 6.5",
+      "unit_id": "m16a1-v1-a1-u06"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-07"
+      ],
+      "id": "m16a1-v1-a1-u07-l01",
+      "objectives": [
+        "Use the A1.2 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u06-l05"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r07"
+      ],
+      "sequence": 1,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_2_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_2_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_2_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_2_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_2_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_2_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_2_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_2_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_2_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_2_skills"
+        }
+      ],
+      "tier": "A1.2",
+      "title": "A1.2 learning focus 7.1",
+      "unit_id": "m16a1-v1-a1-u07"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-07"
+      ],
+      "id": "m16a1-v1-a1-u07-l02",
+      "objectives": [
+        "Use the A1.2 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u07-l01"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r07"
+      ],
+      "sequence": 2,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_2_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_2_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_2_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_2_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_2_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_2_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_2_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_2_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_2_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_2_skills"
+        }
+      ],
+      "tier": "A1.2",
+      "title": "A1.2 learning focus 7.2",
+      "unit_id": "m16a1-v1-a1-u07"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-07"
+      ],
+      "id": "m16a1-v1-a1-u07-l03",
+      "objectives": [
+        "Use the A1.2 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u07-l02"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r07"
+      ],
+      "sequence": 3,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_2_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_2_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_2_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_2_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_2_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_2_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_2_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_2_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_2_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_2_skills"
+        }
+      ],
+      "tier": "A1.2",
+      "title": "A1.2 learning focus 7.3",
+      "unit_id": "m16a1-v1-a1-u07"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-07"
+      ],
+      "id": "m16a1-v1-a1-u07-l04",
+      "objectives": [
+        "Use the A1.2 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u07-l03"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r07"
+      ],
+      "sequence": 4,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_2_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_2_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_2_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_2_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_2_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_2_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_2_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_2_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_2_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_2_skills"
+        }
+      ],
+      "tier": "A1.2",
+      "title": "A1.2 learning focus 7.4",
+      "unit_id": "m16a1-v1-a1-u07"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-07"
+      ],
+      "id": "m16a1-v1-a1-u07-l05",
+      "objectives": [
+        "Use the A1.2 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u07-l04"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r07"
+      ],
+      "sequence": 5,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_2_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_2_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_2_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_2_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_2_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_2_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_2_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_2_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_2_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_2_skills"
+        }
+      ],
+      "tier": "A1.2",
+      "title": "A1.2 learning focus 7.5",
+      "unit_id": "m16a1-v1-a1-u07"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-08"
+      ],
+      "id": "m16a1-v1-a1-u08-l01",
+      "objectives": [
+        "Use the A1.2 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u07-l05"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r08"
+      ],
+      "sequence": 1,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_2_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_2_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_2_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_2_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_2_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_2_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_2_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_2_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_2_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_2_skills"
+        }
+      ],
+      "tier": "A1.2",
+      "title": "A1.2 learning focus 8.1",
+      "unit_id": "m16a1-v1-a1-u08"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-08"
+      ],
+      "id": "m16a1-v1-a1-u08-l02",
+      "objectives": [
+        "Use the A1.2 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u08-l01"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r08"
+      ],
+      "sequence": 2,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_2_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_2_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_2_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_2_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_2_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_2_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_2_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_2_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_2_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_2_skills"
+        }
+      ],
+      "tier": "A1.2",
+      "title": "A1.2 learning focus 8.2",
+      "unit_id": "m16a1-v1-a1-u08"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-08"
+      ],
+      "id": "m16a1-v1-a1-u08-l03",
+      "objectives": [
+        "Use the A1.2 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u08-l02"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r08"
+      ],
+      "sequence": 3,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_2_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_2_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_2_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_2_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_2_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_2_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_2_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_2_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_2_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_2_skills"
+        }
+      ],
+      "tier": "A1.2",
+      "title": "A1.2 learning focus 8.3",
+      "unit_id": "m16a1-v1-a1-u08"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-08"
+      ],
+      "id": "m16a1-v1-a1-u08-l04",
+      "objectives": [
+        "Use the A1.2 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u08-l03"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r08"
+      ],
+      "sequence": 4,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_2_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_2_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_2_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_2_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_2_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_2_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_2_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_2_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_2_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_2_skills"
+        }
+      ],
+      "tier": "A1.2",
+      "title": "A1.2 learning focus 8.4",
+      "unit_id": "m16a1-v1-a1-u08"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-08"
+      ],
+      "id": "m16a1-v1-a1-u08-l05",
+      "objectives": [
+        "Use the A1.2 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u08-l04"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r08"
+      ],
+      "sequence": 5,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_2_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_2_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_2_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_2_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_2_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_2_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_2_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_2_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_2_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_2_skills"
+        }
+      ],
+      "tier": "A1.2",
+      "title": "A1.2 learning focus 8.5",
+      "unit_id": "m16a1-v1-a1-u08"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-09"
+      ],
+      "id": "m16a1-v1-a1-u09-l01",
+      "objectives": [
+        "Use the A1.2 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u08-l05"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r09"
+      ],
+      "sequence": 1,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_2_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_2_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_2_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_2_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_2_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_2_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_2_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_2_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_2_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_2_skills"
+        }
+      ],
+      "tier": "A1.2",
+      "title": "A1.2 learning focus 9.1",
+      "unit_id": "m16a1-v1-a1-u09"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-09"
+      ],
+      "id": "m16a1-v1-a1-u09-l02",
+      "objectives": [
+        "Use the A1.2 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u09-l01"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r09"
+      ],
+      "sequence": 2,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_2_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_2_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_2_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_2_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_2_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_2_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_2_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_2_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_2_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_2_skills"
+        }
+      ],
+      "tier": "A1.2",
+      "title": "A1.2 learning focus 9.2",
+      "unit_id": "m16a1-v1-a1-u09"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-09"
+      ],
+      "id": "m16a1-v1-a1-u09-l03",
+      "objectives": [
+        "Use the A1.2 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u09-l02"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r09"
+      ],
+      "sequence": 3,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_2_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_2_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_2_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_2_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_2_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_2_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_2_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_2_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_2_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_2_skills"
+        }
+      ],
+      "tier": "A1.2",
+      "title": "A1.2 learning focus 9.3",
+      "unit_id": "m16a1-v1-a1-u09"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-09"
+      ],
+      "id": "m16a1-v1-a1-u09-l04",
+      "objectives": [
+        "Use the A1.2 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u09-l03"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r09"
+      ],
+      "sequence": 4,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_2_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_2_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_2_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_2_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_2_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_2_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_2_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_2_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_2_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_2_skills"
+        }
+      ],
+      "tier": "A1.2",
+      "title": "A1.2 learning focus 9.4",
+      "unit_id": "m16a1-v1-a1-u09"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-09"
+      ],
+      "id": "m16a1-v1-a1-u09-l05",
+      "objectives": [
+        "Use the A1.2 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u09-l04"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r09"
+      ],
+      "sequence": 5,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_2_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_2_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_2_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_2_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_2_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_2_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_2_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_2_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_2_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_2_skills"
+        }
+      ],
+      "tier": "A1.2",
+      "title": "A1.2 learning focus 9.5",
+      "unit_id": "m16a1-v1-a1-u09"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-10"
+      ],
+      "id": "m16a1-v1-a1-u10-l01",
+      "objectives": [
+        "Use the A1.2 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u09-l05"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r10"
+      ],
+      "sequence": 1,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_2_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_2_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_2_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_2_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_2_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_2_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_2_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_2_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_2_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_2_skills"
+        }
+      ],
+      "tier": "A1.2",
+      "title": "A1.2 learning focus 10.1",
+      "unit_id": "m16a1-v1-a1-u10"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-10"
+      ],
+      "id": "m16a1-v1-a1-u10-l02",
+      "objectives": [
+        "Use the A1.2 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u10-l01"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r10"
+      ],
+      "sequence": 2,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_2_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_2_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_2_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_2_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_2_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_2_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_2_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_2_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_2_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_2_skills"
+        }
+      ],
+      "tier": "A1.2",
+      "title": "A1.2 learning focus 10.2",
+      "unit_id": "m16a1-v1-a1-u10"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-10"
+      ],
+      "id": "m16a1-v1-a1-u10-l03",
+      "objectives": [
+        "Use the A1.2 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u10-l02"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r10"
+      ],
+      "sequence": 3,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_2_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_2_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_2_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_2_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_2_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_2_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_2_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_2_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_2_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_2_skills"
+        }
+      ],
+      "tier": "A1.2",
+      "title": "A1.2 learning focus 10.3",
+      "unit_id": "m16a1-v1-a1-u10"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-10"
+      ],
+      "id": "m16a1-v1-a1-u10-l04",
+      "objectives": [
+        "Use the A1.2 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u10-l03"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r10"
+      ],
+      "sequence": 4,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_2_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_2_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_2_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_2_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_2_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_2_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_2_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_2_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_2_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_2_skills"
+        }
+      ],
+      "tier": "A1.2",
+      "title": "A1.2 learning focus 10.4",
+      "unit_id": "m16a1-v1-a1-u10"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-10"
+      ],
+      "id": "m16a1-v1-a1-u10-l05",
+      "objectives": [
+        "Use the A1.2 targets in a controlled learning sequence."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u10-l04"
+      ],
+      "review_ids": [
+        "m16a1-v1-a1-r10"
+      ],
+      "sequence": 5,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_a1_2_grammar"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_a1_2_vocabulary_senses"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_a1_2_functions"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_a1_2_pronunciation"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_a1_2_discourse"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_a1_2_pragmatics"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_a1_2_collocations"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_a1_2_lexical_chunks"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_a1_2_topics"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_a1_2_skills"
+        }
+      ],
+      "tier": "A1.2",
+      "title": "A1.2 learning focus 10.5",
+      "unit_id": "m16a1-v1-a1-u10"
+    }
+  ],
+  "record_type": "m16_a1_curriculum_blueprint",
+  "reviews": [
+    {
+      "id": "m16a1-v1-a1-r01",
+      "placement_after_lesson_id": "m16a1-v1-a1-u01-l05",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "target_lesson_ids": [
+        "m16a1-v1-a1-u01-l01",
+        "m16a1-v1-a1-u01-l02",
+        "m16a1-v1-a1-u01-l03",
+        "m16a1-v1-a1-u01-l04",
+        "m16a1-v1-a1-u01-l05"
+      ],
+      "tier": "A1.1"
+    },
+    {
+      "id": "m16a1-v1-a1-r02",
+      "placement_after_lesson_id": "m16a1-v1-a1-u02-l05",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "target_lesson_ids": [
+        "m16a1-v1-a1-u02-l01",
+        "m16a1-v1-a1-u02-l02",
+        "m16a1-v1-a1-u02-l03",
+        "m16a1-v1-a1-u02-l04",
+        "m16a1-v1-a1-u02-l05"
+      ],
+      "tier": "A1.1"
+    },
+    {
+      "id": "m16a1-v1-a1-r03",
+      "placement_after_lesson_id": "m16a1-v1-a1-u03-l05",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "target_lesson_ids": [
+        "m16a1-v1-a1-u03-l01",
+        "m16a1-v1-a1-u03-l02",
+        "m16a1-v1-a1-u03-l03",
+        "m16a1-v1-a1-u03-l04",
+        "m16a1-v1-a1-u03-l05"
+      ],
+      "tier": "A1.1"
+    },
+    {
+      "id": "m16a1-v1-a1-r04",
+      "placement_after_lesson_id": "m16a1-v1-a1-u04-l05",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "target_lesson_ids": [
+        "m16a1-v1-a1-u04-l01",
+        "m16a1-v1-a1-u04-l02",
+        "m16a1-v1-a1-u04-l03",
+        "m16a1-v1-a1-u04-l04",
+        "m16a1-v1-a1-u04-l05"
+      ],
+      "tier": "A1.1"
+    },
+    {
+      "id": "m16a1-v1-a1-r05",
+      "placement_after_lesson_id": "m16a1-v1-a1-u05-l05",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "target_lesson_ids": [
+        "m16a1-v1-a1-u05-l01",
+        "m16a1-v1-a1-u05-l02",
+        "m16a1-v1-a1-u05-l03",
+        "m16a1-v1-a1-u05-l04",
+        "m16a1-v1-a1-u05-l05"
+      ],
+      "tier": "A1.1"
+    },
+    {
+      "id": "m16a1-v1-a1-r06",
+      "placement_after_lesson_id": "m16a1-v1-a1-u06-l05",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "target_lesson_ids": [
+        "m16a1-v1-a1-u06-l01",
+        "m16a1-v1-a1-u06-l02",
+        "m16a1-v1-a1-u06-l03",
+        "m16a1-v1-a1-u06-l04",
+        "m16a1-v1-a1-u06-l05"
+      ],
+      "tier": "A1.2"
+    },
+    {
+      "id": "m16a1-v1-a1-r07",
+      "placement_after_lesson_id": "m16a1-v1-a1-u07-l05",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "target_lesson_ids": [
+        "m16a1-v1-a1-u07-l01",
+        "m16a1-v1-a1-u07-l02",
+        "m16a1-v1-a1-u07-l03",
+        "m16a1-v1-a1-u07-l04",
+        "m16a1-v1-a1-u07-l05"
+      ],
+      "tier": "A1.2"
+    },
+    {
+      "id": "m16a1-v1-a1-r08",
+      "placement_after_lesson_id": "m16a1-v1-a1-u08-l05",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "target_lesson_ids": [
+        "m16a1-v1-a1-u08-l01",
+        "m16a1-v1-a1-u08-l02",
+        "m16a1-v1-a1-u08-l03",
+        "m16a1-v1-a1-u08-l04",
+        "m16a1-v1-a1-u08-l05"
+      ],
+      "tier": "A1.2"
+    },
+    {
+      "id": "m16a1-v1-a1-r09",
+      "placement_after_lesson_id": "m16a1-v1-a1-u09-l05",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "target_lesson_ids": [
+        "m16a1-v1-a1-u09-l01",
+        "m16a1-v1-a1-u09-l02",
+        "m16a1-v1-a1-u09-l03",
+        "m16a1-v1-a1-u09-l04",
+        "m16a1-v1-a1-u09-l05"
+      ],
+      "tier": "A1.2"
+    },
+    {
+      "id": "m16a1-v1-a1-r10",
+      "placement_after_lesson_id": "m16a1-v1-a1-u10-l05",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "target_lesson_ids": [
+        "m16a1-v1-a1-u10-l01",
+        "m16a1-v1-a1-u10-l02",
+        "m16a1-v1-a1-u10-l03",
+        "m16a1-v1-a1-u10-l04",
+        "m16a1-v1-a1-u10-l05"
+      ],
+      "tier": "A1.2"
+    }
+  ],
+  "schema_version": "1.0",
+  "source_population_id": "kgpop_c4dda95c776698cf9c5e862e7499bea8a081f40a00212d83a21843a3f1652248",
+  "source_population_sha256": "04316d931c16ce32e90dbfed123c8fd9d85fb3b01c4e1e22f310a672bfae9ea1",
+  "status": "OUTLINE_ONLY",
+  "tiers": [
+    "A1.1",
+    "A1.2"
+  ],
+  "units": [
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-01"
+      ],
+      "id": "m16a1-v1-a1-u01",
+      "lesson_ids": [
+        "m16a1-v1-a1-u01-l01",
+        "m16a1-v1-a1-u01-l02",
+        "m16a1-v1-a1-u01-l03",
+        "m16a1-v1-a1-u01-l04",
+        "m16a1-v1-a1-u01-l05"
+      ],
+      "sequence": 1,
+      "tier": "A1.1",
+      "title": "A1.1 Unit 1"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-02"
+      ],
+      "id": "m16a1-v1-a1-u02",
+      "lesson_ids": [
+        "m16a1-v1-a1-u02-l01",
+        "m16a1-v1-a1-u02-l02",
+        "m16a1-v1-a1-u02-l03",
+        "m16a1-v1-a1-u02-l04",
+        "m16a1-v1-a1-u02-l05"
+      ],
+      "sequence": 2,
+      "tier": "A1.1",
+      "title": "A1.1 Unit 2"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-03"
+      ],
+      "id": "m16a1-v1-a1-u03",
+      "lesson_ids": [
+        "m16a1-v1-a1-u03-l01",
+        "m16a1-v1-a1-u03-l02",
+        "m16a1-v1-a1-u03-l03",
+        "m16a1-v1-a1-u03-l04",
+        "m16a1-v1-a1-u03-l05"
+      ],
+      "sequence": 3,
+      "tier": "A1.1",
+      "title": "A1.1 Unit 3"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-04"
+      ],
+      "id": "m16a1-v1-a1-u04",
+      "lesson_ids": [
+        "m16a1-v1-a1-u04-l01",
+        "m16a1-v1-a1-u04-l02",
+        "m16a1-v1-a1-u04-l03",
+        "m16a1-v1-a1-u04-l04",
+        "m16a1-v1-a1-u04-l05"
+      ],
+      "sequence": 4,
+      "tier": "A1.1",
+      "title": "A1.1 Unit 4"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-05"
+      ],
+      "id": "m16a1-v1-a1-u05",
+      "lesson_ids": [
+        "m16a1-v1-a1-u05-l01",
+        "m16a1-v1-a1-u05-l02",
+        "m16a1-v1-a1-u05-l03",
+        "m16a1-v1-a1-u05-l04",
+        "m16a1-v1-a1-u05-l05"
+      ],
+      "sequence": 5,
+      "tier": "A1.1",
+      "title": "A1.1 Unit 5"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-06"
+      ],
+      "id": "m16a1-v1-a1-u06",
+      "lesson_ids": [
+        "m16a1-v1-a1-u06-l01",
+        "m16a1-v1-a1-u06-l02",
+        "m16a1-v1-a1-u06-l03",
+        "m16a1-v1-a1-u06-l04",
+        "m16a1-v1-a1-u06-l05"
+      ],
+      "sequence": 6,
+      "tier": "A1.2",
+      "title": "A1.2 Unit 6"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-07"
+      ],
+      "id": "m16a1-v1-a1-u07",
+      "lesson_ids": [
+        "m16a1-v1-a1-u07-l01",
+        "m16a1-v1-a1-u07-l02",
+        "m16a1-v1-a1-u07-l03",
+        "m16a1-v1-a1-u07-l04",
+        "m16a1-v1-a1-u07-l05"
+      ],
+      "sequence": 7,
+      "tier": "A1.2",
+      "title": "A1.2 Unit 7"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-08"
+      ],
+      "id": "m16a1-v1-a1-u08",
+      "lesson_ids": [
+        "m16a1-v1-a1-u08-l01",
+        "m16a1-v1-a1-u08-l02",
+        "m16a1-v1-a1-u08-l03",
+        "m16a1-v1-a1-u08-l04",
+        "m16a1-v1-a1-u08-l05"
+      ],
+      "sequence": 8,
+      "tier": "A1.2",
+      "title": "A1.2 Unit 8"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-09"
+      ],
+      "id": "m16a1-v1-a1-u09",
+      "lesson_ids": [
+        "m16a1-v1-a1-u09-l01",
+        "m16a1-v1-a1-u09-l02",
+        "m16a1-v1-a1-u09-l03",
+        "m16a1-v1-a1-u09-l04",
+        "m16a1-v1-a1-u09-l05"
+      ],
+      "sequence": 9,
+      "tier": "A1.2",
+      "title": "A1.2 Unit 9"
+    },
+    {
+      "assessment_ids": [
+        "m16a1-v1-a1-assess-unit-10"
+      ],
+      "id": "m16a1-v1-a1-u10",
+      "lesson_ids": [
+        "m16a1-v1-a1-u10-l01",
+        "m16a1-v1-a1-u10-l02",
+        "m16a1-v1-a1-u10-l03",
+        "m16a1-v1-a1-u10-l04",
+        "m16a1-v1-a1-u10-l05"
+      ],
+      "sequence": 10,
+      "tier": "A1.2",
+      "title": "A1.2 Unit 10"
+    }
+  ]
+}

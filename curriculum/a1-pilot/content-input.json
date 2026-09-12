@@ -1,0 +1,772 @@
+{
+  "schema_version": "1.0",
+  "record_type": "a1_pilot_content_input",
+  "edition": "m16a1-v1",
+  "tier": "A1.1",
+  "content_status": "UNREVIEWED",
+  "authorship": "PROJECT_ORIGINAL",
+  "external_materials": [],
+  "media": [],
+  "lessons": [
+    {
+      "outline_id": "m16a1-v1-a1-u01-l01",
+      "title": "Hello! My Name Is Mai",
+      "duration_minutes": 35,
+      "objectives": [
+        "Use hello, hi, and goodbye in short exchanges.",
+        "Say and ask a person's name with I am, My name is, and What is your name?"
+      ],
+      "content_sections": [
+        {
+          "section_type": "dialogue",
+          "title": "First greetings",
+          "body": "Mai: Hello! I am Mai. What is your name?\nBen: Hi, Mai. My name is Ben.\nMai: Nice to meet you.\nBen: Nice to meet you, too. Goodbye!",
+          "language_focus": ["hello", "hi", "goodbye", "I am ...", "My name is ...", "What is your name?", "Nice to meet you."]
+        },
+        {
+          "section_type": "explanation",
+          "title": "Say your name",
+          "body": "Use Hello or Hi to begin. Say I am + name or My name is + name. Ask What is your name? End with Goodbye. In speech, I am can become I'm.",
+          "examples": ["Hello. I'm Lan.", "What is your name?", "My name is Tom."]
+        }
+      ],
+      "exercises": [
+        {
+          "exercise_type": "multiple_choice",
+          "instructions": "Choose the best first greeting.",
+          "items": [
+            {
+              "prompt": "You meet a new classmate in the morning.",
+              "options": ["Hello!", "Goodbye!", "Thank you."],
+              "answer": "Hello!",
+              "explanation": "Hello is used to begin the exchange."
+            }
+          ]
+        },
+        {
+          "exercise_type": "ordering",
+          "instructions": "Put the lines in a natural order.",
+          "items": ["My name is Hoa.", "Hello! What is your name?", "Nice to meet you, Hoa."],
+          "answer_data": {
+            "ordered_items": ["Hello! What is your name?", "My name is Hoa.", "Nice to meet you, Hoa."]
+          }
+        },
+        {
+          "exercise_type": "speaking",
+          "instructions": "Give a three-line introduction: greet, say your name, and close politely.",
+          "rubric": {
+            "criteria": [
+              "Uses an appropriate greeting.",
+              "Uses I am or My name is with a name.",
+              "Uses Nice to meet you or Goodbye to close."
+            ],
+            "score_range": "0-3; one point per criterion"
+          }
+        }
+      ],
+      "prompts": {
+        "listening": {
+          "prompt": "Read one original two-line greeting aloud at a slow A1 pace. Keep the text hidden until the learner answers: What is the speaker's name? Ask only that question, then reveal the lines and give brief feedback.",
+          "constraints": ["Use only names and greeting language from this lesson.", "Do not use external audio or text."]
+        },
+        "speaking": {
+          "prompt": "Act as a new classmate. Say hello and ask the learner's name. Wait for one answer, respond Nice to meet you, and invite the learner to say goodbye.",
+          "constraints": ["Use no more than three short tutor turns.", "Correct only the target greeting and name forms."]
+        },
+        "pronunciation": {
+          "prompt": "Model hello, hi, and my name is in short chunks. Ask the learner to repeat each chunk, focusing on a clear first sound in hello and natural stress on name.",
+          "constraints": ["If no learner audio is available, provide a model only and state NOT_ASSESSED.", "Do not infer pronunciation quality from typed text."]
+        },
+        "writing": {
+          "prompt": "Ask the learner to write a three-line greeting with a name. Wait for the draft, then point out at most two target-language changes and ask for a revision.",
+          "constraints": ["Do not write the full response for the learner.", "Accept either I am or My name is."]
+        }
+      }
+    },
+    {
+      "outline_id": "m16a1-v1-a1-u01-l02",
+      "title": "Spell Your Name",
+      "duration_minutes": 40,
+      "objectives": [
+        "Recognize and say the English alphabet in useful groups.",
+        "Ask for and give the spelling of a name."
+      ],
+      "content_sections": [
+        {
+          "section_type": "vocabulary",
+          "title": "The alphabet",
+          "body": "Practise the alphabet in groups: A–G, H–N, O–U, V–Z. Notice easily confused letter names such as A/E, G/J, and M/N.",
+          "examples": ["A, B, C, D, E, F, G", "M and N", "G and J"]
+        },
+        {
+          "section_type": "dialogue",
+          "title": "How do you spell it?",
+          "body": "An: My name is An.\nLeo: How do you spell that?\nAn: A-N.\nLeo: Thank you.",
+          "language_focus": ["How do you spell that?", "A-N", "Thank you."]
+        }
+      ],
+      "exercises": [
+        {
+          "exercise_type": "matching",
+          "instructions": "Match each name to its spelling.",
+          "items": [
+            {"left": "Mai", "right_options": ["M-A-I", "M-I-A", "N-A-I"], "answer": "M-A-I"},
+            {"left": "Ben", "right_options": ["B-N-E", "B-E-N", "D-E-N"], "answer": "B-E-N"}
+          ]
+        },
+        {
+          "exercise_type": "fill_blank",
+          "instructions": "Complete the question.",
+          "items": [
+            {
+              "prompt": "How do you ___ that?",
+              "answer_data": {"accepted_answers": ["spell"]},
+              "explanation": "Spell asks for the letters in a word or name."
+            }
+          ]
+        },
+        {
+          "exercise_type": "speaking",
+          "instructions": "Say your first name, then spell it letter by letter.",
+          "rubric": {
+            "criteria": [
+              "Says a complete name sentence.",
+              "Gives the letters in the correct order.",
+              "Separates the letter names clearly enough to follow."
+            ],
+            "score_range": "0-3; one point per criterion"
+          }
+        }
+      ],
+      "prompts": {
+        "listening": {
+          "prompt": "Read an original exchange in which a speaker spells one short name. Hide the exchange and ask the learner to choose the correct spelling from three options. Reveal it after the answer.",
+          "constraints": ["Use a name of two to five letters.", "Do not use external audio or text."]
+        },
+        "speaking": {
+          "prompt": "Ask the learner's name, then ask How do you spell that? Wait after each question and confirm the letters in one short sentence.",
+          "constraints": ["Do not request a full legal name.", "Focus feedback on the target question and letter order."]
+        },
+        "pronunciation": {
+          "prompt": "Model the letter pairs A/E, G/J, and M/N one pair at a time. Ask the learner to repeat and then spell a short chosen name.",
+          "constraints": ["If no learner audio is available, provide models only and state NOT_ASSESSED.", "Do not score typed spellings as speech."]
+        },
+        "writing": {
+          "prompt": "Ask the learner to write two lines: My name is ___. It is spelled ___. Wait for the draft and give one brief correction if needed.",
+          "constraints": ["Do not replace the learner's full draft.", "Treat hyphenated letter sequences as acceptable."]
+        }
+      }
+    },
+    {
+      "outline_id": "m16a1-v1-a1-u01-l03",
+      "title": "Numbers from Zero to Ten",
+      "duration_minutes": 40,
+      "objectives": [
+        "Understand and use the numbers zero through ten.",
+        "Ask and answer How old are you? with a small fictional age for controlled practice."
+      ],
+      "content_sections": [
+        {
+          "section_type": "vocabulary",
+          "title": "Count 0–10",
+          "body": "zero, one, two, three, four, five, six, seven, eight, nine, ten. Count objects with a number before the noun: one pen, two books.",
+          "examples": ["three pens", "six books", "ten bags"]
+        },
+        {
+          "section_type": "dialogue",
+          "title": "Ask about age",
+          "body": "Kim: How old are you?\nSam: I am ten. How old are you?\nKim: I am nine.",
+          "language_focus": ["How old are you?", "I am nine.", "I am ten."]
+        }
+      ],
+      "exercises": [
+        {
+          "exercise_type": "multiple_choice",
+          "instructions": "Choose the written number.",
+          "items": [
+            {"prompt": "7", "options": ["five", "seven", "ten"], "answer": "seven"},
+            {"prompt": "3", "options": ["three", "eight", "zero"], "answer": "three"}
+          ]
+        },
+        {
+          "exercise_type": "short_answer",
+          "instructions": "Count and write the number word.",
+          "items": [
+            {
+              "prompt": "● ● ● ●",
+              "answer_data": {"accepted_answers": ["four"]},
+              "explanation": "There are four dots."
+            }
+          ]
+        },
+        {
+          "exercise_type": "roleplay",
+          "instructions": "Use fictional characters aged six and ten. Ask and answer about each character's age.",
+          "rubric": {
+            "criteria": [
+              "Uses How old are you?",
+              "Answers with I am plus the correct number.",
+              "Says both assigned number words accurately."
+            ],
+            "score_range": "0-3; one point per criterion"
+          }
+        }
+      ],
+      "prompts": {
+        "listening": {
+          "prompt": "Say five numbers from zero to ten in a mixed order, pausing between them. Ask the learner to type the sequence, then show the answer and repeat once.",
+          "constraints": ["Use only zero through ten.", "Generate the sequence yourself; use no external recording."]
+        },
+        "speaking": {
+          "prompt": "Play a fictional classmate. Ask How old are you? Invite the learner to choose a practice age from six to ten, then switch roles.",
+          "constraints": ["Make clear that a fictional practice age is acceptable.", "Use no more than four short turns."]
+        },
+        "pronunciation": {
+          "prompt": "Model three, six, seven, and ten. Ask for repetition, with special attention to the first sound in three and both syllables in seven.",
+          "constraints": ["If audio is unavailable, state NOT_ASSESSED and offer articulatory guidance only.", "Do not judge pronunciation from text."]
+        },
+        "writing": {
+          "prompt": "Ask the learner to write three short count phrases such as two pens, using different numbers from one to ten. Give bounded feedback, then request one revision.",
+          "constraints": ["Do not introduce numbers above ten.", "Do not rewrite all three phrases."]
+        }
+      }
+    },
+    {
+      "outline_id": "m16a1-v1-a1-u01-l04",
+      "title": "Where Are You From?",
+      "duration_minutes": 40,
+      "objectives": [
+        "Ask and answer where a person is from.",
+        "Use am, is, and are in simple statements and questions."
+      ],
+      "content_sections": [
+        {
+          "section_type": "dialogue",
+          "title": "Meet people from different places",
+          "body": "Linh: Where are you from, Omar?\nOmar: I am from Egypt. Where are you from?\nLinh: I am from Vietnam.\nOmar: Is Hana from Japan?\nLinh: Yes, she is.",
+          "language_focus": ["Where are you from?", "I am from ...", "Is she from ...?", "Yes, she is."]
+        },
+        {
+          "section_type": "explanation",
+          "title": "Be: am, is, are",
+          "body": "Use am with I, is with he or she, and are with you. Use from before a place. In a yes/no question, put Is before he or she.",
+          "examples": ["I am from Vietnam.", "She is from Japan.", "Where are you from?", "Is he from Egypt?"]
+        }
+      ],
+      "exercises": [
+        {
+          "exercise_type": "fill_blank",
+          "instructions": "Choose am, is, or are.",
+          "items": [
+            {"prompt": "I ___ from Vietnam.", "answer_data": {"accepted_answers": ["am"]}},
+            {"prompt": "Where ___ you from?", "answer_data": {"accepted_answers": ["are"]}},
+            {"prompt": "She ___ from Japan.", "answer_data": {"accepted_answers": ["is"]}}
+          ]
+        },
+        {
+          "exercise_type": "sentence_construction",
+          "instructions": "Put the words in order.",
+          "items": [
+            {
+              "words": ["from", "Where", "you", "are"],
+              "answer_data": {"accepted_answers": ["Where are you from?"]}
+            }
+          ]
+        },
+        {
+          "exercise_type": "speaking",
+          "instructions": "Choose two fictional people and places. Ask where each person is from and answer in a full sentence.",
+          "rubric": {
+            "criteria": [
+              "Forms the question with Where + are/is.",
+              "Uses the correct form of be in each answer.",
+              "Uses from before the place."
+            ],
+            "score_range": "0-3; one point per criterion"
+          }
+        }
+      ],
+      "prompts": {
+        "listening": {
+          "prompt": "Read three original one-sentence introductions using I am from plus Vietnam, Japan, or Egypt. Ask one question about each speaker's place and reveal the script only after all answers.",
+          "constraints": ["Keep names and places fictional or generic.", "Use no external recordings or passages."]
+        },
+        "speaking": {
+          "prompt": "Ask Where are you from? Accept the learner's real answer or an explicitly fictional answer. Then introduce one fictional person and ask Is he/she from ...?",
+          "constraints": ["Do not press for location details.", "Keep feedback to am, is, are, and from."]
+        },
+        "pronunciation": {
+          "prompt": "Model Where are you from? and I'm from Vietnam in short thought groups. Ask the learner to repeat, focusing on the stressed place name.",
+          "constraints": ["If learner audio is unavailable, state NOT_ASSESSED.", "Do not infer accent or origin."]
+        },
+        "writing": {
+          "prompt": "Ask for three sentences about fictional people: one with I am from, one with He is from, and one with She is from. Give up to two focused corrections.",
+          "constraints": ["Do not require personal location data.", "Do not replace the full draft."]
+        }
+      }
+    },
+    {
+      "outline_id": "m16a1-v1-a1-u01-l05",
+      "title": "Meet a New Classmate",
+      "duration_minutes": 45,
+      "objectives": [
+        "Combine greetings, names, spelling, age, and place in a short conversation.",
+        "Use polite listening responses such as Thank you and Nice to meet you."
+      ],
+      "content_sections": [
+        {
+          "section_type": "dialogue",
+          "title": "A complete introduction",
+          "body": "Vy: Hi! My name is Vy. What's your name?\nNoah: I'm Noah.\nVy: How do you spell that?\nNoah: N-O-A-H.\nVy: Where are you from?\nNoah: I'm from Canada. Nice to meet you.\nVy: Nice to meet you, too.",
+          "language_focus": ["What's your name?", "How do you spell that?", "Where are you from?", "Nice to meet you, too."]
+        },
+        {
+          "section_type": "strategy",
+          "title": "Build the conversation",
+          "body": "Begin with a greeting. Ask one question at a time and listen to the answer. Use a short polite response before the next question. End the exchange clearly.",
+          "examples": ["Hi!", "Thank you.", "Nice to meet you, too.", "Goodbye!"]
+        }
+      ],
+      "exercises": [
+        {
+          "exercise_type": "dialogue_completion",
+          "instructions": "Complete each missing line with the best question.",
+          "items": [
+            {
+              "prompt": "A: ___  B: My name is Nam.",
+              "answer_data": {"accepted_answers": ["What is your name?", "What's your name?"]}
+            },
+            {
+              "prompt": "A: ___  B: N-A-M.",
+              "answer_data": {"accepted_answers": ["How do you spell that?"]}
+            }
+          ]
+        },
+        {
+          "exercise_type": "error_correction",
+          "instructions": "Correct the sentence.",
+          "items": [
+            {
+              "prompt": "Where is you from?",
+              "answer_data": {"accepted_answers": ["Where are you from?"]},
+              "explanation": "Use are with you."
+            }
+          ]
+        },
+        {
+          "exercise_type": "roleplay",
+          "instructions": "Have a six-turn first-meeting conversation using a fictional identity if preferred.",
+          "rubric": {
+            "criteria": [
+              "Begins and ends appropriately.",
+              "Asks at least two target questions accurately.",
+              "Gives clear, relevant answers.",
+              "Uses one polite listening response."
+            ],
+            "score_range": "0-4; one point per criterion"
+          }
+        }
+      ],
+      "prompts": {
+        "listening": {
+          "prompt": "Read an original first-meeting conversation of four short lines. Keep it hidden and ask, one at a time, for the person's name, spelling, and country. Reveal the script after the third answer.",
+          "constraints": ["Use only language reviewed in Unit 1.", "Do not use external text or media."]
+        },
+        "speaking": {
+          "prompt": "Role-play a new classmate and conduct a short exchange about name, spelling, and place. Ask one question per turn and let the learner ask you at least one question.",
+          "constraints": ["Use a fictional tutor identity.", "Keep the exchange to six tutor turns or fewer."]
+        },
+        "pronunciation": {
+          "prompt": "Model the question rhythm in What's your name?, How do you spell that?, and Where are you from? Ask the learner to repeat each question and then use one in a mini-dialogue.",
+          "constraints": ["If audio is unavailable, state NOT_ASSESSED and describe stress only.", "Do not assess from transcription alone."]
+        },
+        "writing": {
+          "prompt": "Ask the learner to draft a six-line first-meeting dialogue. Check greeting, question forms, be, and closing; give at most three brief comments and request a revision.",
+          "constraints": ["Do not supply a full replacement dialogue.", "Keep all suggested language within Unit 1 scope."]
+        }
+      }
+    },
+    {
+      "outline_id": "m16a1-v1-a1-u02-l01",
+      "title": "Things in the Classroom",
+      "duration_minutes": 40,
+      "objectives": [
+        "Name common classroom objects.",
+        "Use a and an with one object and ask What is this?"
+      ],
+      "content_sections": [
+        {
+          "section_type": "vocabulary",
+          "title": "Classroom objects",
+          "body": "Learn these words: book, pen, pencil, bag, desk, chair, eraser. Use a before a consonant sound and an before a vowel sound.",
+          "examples": ["a book", "a eraser is incorrect", "an eraser", "a chair"]
+        },
+        {
+          "section_type": "dialogue",
+          "title": "What is this?",
+          "body": "A: What is this?\nB: It is a pencil.\nA: And what is this?\nB: It is an eraser.",
+          "language_focus": ["What is this?", "It is a ...", "It is an ..."]
+        }
+      ],
+      "exercises": [
+        {
+          "exercise_type": "categorization",
+          "instructions": "Put each phrase under a or an.",
+          "items": ["book", "eraser", "pen", "orange bag"],
+          "answer_data": {
+            "a": ["book", "pen"],
+            "an": ["eraser", "orange bag"]
+          }
+        },
+        {
+          "exercise_type": "multiple_choice",
+          "instructions": "Choose the best answer.",
+          "items": [
+            {
+              "prompt": "What is this? (pencil)",
+              "options": ["It is a pencil.", "They are pencils.", "I am a pencil."],
+              "answer": "It is a pencil.",
+              "explanation": "It is identifies one thing."
+            }
+          ]
+        },
+        {
+          "exercise_type": "speaking",
+          "instructions": "Choose three nearby classroom objects or imagine them. Ask and answer What is this? for each one.",
+          "rubric": {
+            "criteria": [
+              "Uses the target question accurately.",
+              "Names three objects from the lesson.",
+              "Uses a or an accurately in the answers."
+            ],
+            "score_range": "0-3; one point per criterion"
+          }
+        }
+      ],
+      "prompts": {
+        "listening": {
+          "prompt": "Describe three imagined classroom objects with It is a/an ___. Keep the sentences hidden and ask the learner to list the objects in order before revealing them.",
+          "constraints": ["Use only this lesson's object words.", "Use no image, recording, or external material."]
+        },
+        "speaking": {
+          "prompt": "Imagine a classroom desk with a book, a pen, and an eraser. Ask What is this? about one object at a time and let the learner answer.",
+          "constraints": ["Describe objects in text; do not imply an image exists.", "Correct only object words and a/an."]
+        },
+        "pronunciation": {
+          "prompt": "Model a book, a pen, and an eraser, linking the article smoothly to the noun. Ask the learner to repeat each phrase and then answer What is this?",
+          "constraints": ["If audio is unavailable, state NOT_ASSESSED.", "Do not judge pronunciation from typed answers."]
+        },
+        "writing": {
+          "prompt": "Ask the learner to write four It is ... sentences naming classroom objects, including one sentence with an. Give at most two corrections and request a revised sentence.",
+          "constraints": ["Do not invent external visual context.", "Do not rewrite the complete set."]
+        }
+      }
+    },
+    {
+      "outline_id": "m16a1-v1-a1-u02-l02",
+      "title": "This Book, These Books",
+      "duration_minutes": 40,
+      "objectives": [
+        "Use basic color words to describe classroom objects.",
+        "Distinguish one and more than one with this/these and singular/plural nouns."
+      ],
+      "content_sections": [
+        {
+          "section_type": "vocabulary",
+          "title": "Colors and plurals",
+          "body": "Colors: red, blue, green, black, white. For many regular objects, add -s: book → books, pen → pens, chair → chairs.",
+          "examples": ["a red pen", "two blue books", "three green chairs"]
+        },
+        {
+          "section_type": "explanation",
+          "title": "This and these",
+          "body": "Use this is for one nearby thing. Use these are for two or more nearby things. The color comes before the noun.",
+          "examples": ["This is a black bag.", "These are white books.", "These are two red pens."]
+        }
+      ],
+      "exercises": [
+        {
+          "exercise_type": "multiple_choice",
+          "instructions": "Choose this is or these are.",
+          "items": [
+            {"prompt": "___ a blue book.", "options": ["This is", "These are"], "answer": "This is"},
+            {"prompt": "___ three red pens.", "options": ["This is", "These are"], "answer": "These are"}
+          ]
+        },
+        {
+          "exercise_type": "sentence_construction",
+          "instructions": "Put the words in order.",
+          "items": [
+            {
+              "words": ["are", "green", "These", "chairs"],
+              "answer_data": {"accepted_answers": ["These are green chairs."]}
+            }
+          ]
+        },
+        {
+          "exercise_type": "writing",
+          "instructions": "Write one sentence about one object and one about several objects. Include a color in each.",
+          "rubric": {
+            "criteria": [
+              "Uses This is with a singular noun.",
+              "Uses These are with a plural noun.",
+              "Places a suitable color before each noun."
+            ],
+            "score_range": "0-3; one point per criterion"
+          }
+        }
+      ],
+      "prompts": {
+        "listening": {
+          "prompt": "Read four original sentences using this is or these are with classroom objects and colors. Ask the learner to mark each sentence ONE or MANY, then reveal the script.",
+          "constraints": ["Use regular plurals only.", "Use no external text, pictures, or audio."]
+        },
+        "speaking": {
+          "prompt": "Name an imagined classroom object or group of objects with a color. Ask the learner to describe it using This is or These are, then change singular to plural or plural to singular.",
+          "constraints": ["State the imagined objects clearly in words.", "Keep vocabulary within the lesson."]
+        },
+        "pronunciation": {
+          "prompt": "Model book/books, pen/pens, and chair/chairs. Ask the learner to repeat, focusing on the final plural sound, then use one plural in These are ...",
+          "constraints": ["If no audio is available, state NOT_ASSESSED and explain the final sound.", "Do not assess speech from spelling."]
+        },
+        "writing": {
+          "prompt": "Ask for three descriptions: one with This is and two with These are. Require a color and a classroom noun in each. Give no more than three focused comments.",
+          "constraints": ["Do not write replacement answers.", "Keep correction focused on number agreement and word order."]
+        }
+      }
+    },
+    {
+      "outline_id": "m16a1-v1-a1-u02-l03",
+      "title": "My Family",
+      "duration_minutes": 40,
+      "objectives": [
+        "Use basic words for close family members.",
+        "Use have/has and my/his/her in simple family descriptions."
+      ],
+      "content_sections": [
+        {
+          "section_type": "vocabulary",
+          "title": "Family words",
+          "body": "Family words: mother, father, sister, brother, parents. Use my for your own family, his for a male person's family, and her for a female person's family.",
+          "examples": ["my sister", "his father", "her parents"]
+        },
+        {
+          "section_type": "explanation",
+          "title": "Have and has",
+          "body": "Use have with I and you. Use has with he and she. These sentences can describe real or fictional families.",
+          "examples": ["I have one brother.", "She has two sisters.", "He has a mother and a father."]
+        }
+      ],
+      "exercises": [
+        {
+          "exercise_type": "fill_blank",
+          "instructions": "Choose have or has.",
+          "items": [
+            {"prompt": "I ___ one sister.", "answer_data": {"accepted_answers": ["have"]}},
+            {"prompt": "She ___ two brothers.", "answer_data": {"accepted_answers": ["has"]}},
+            {"prompt": "You ___ a brother.", "answer_data": {"accepted_answers": ["have"]}}
+          ]
+        },
+        {
+          "exercise_type": "matching",
+          "instructions": "Match the person to the correct possessive word.",
+          "items": [
+            {"left": "I", "answer": "my"},
+            {"left": "he", "answer": "his"},
+            {"left": "she", "answer": "her"}
+          ]
+        },
+        {
+          "exercise_type": "speaking",
+          "instructions": "Describe a fictional family in three sentences using have or has.",
+          "rubric": {
+            "criteria": [
+              "Uses at least three family words accurately.",
+              "Uses have with I/you or has with he/she accurately.",
+              "Uses my, his, or her clearly."
+            ],
+            "score_range": "0-3; one point per criterion"
+          }
+        }
+      ],
+      "prompts": {
+        "listening": {
+          "prompt": "Read an original three-sentence description of a fictional family. Keep it hidden and ask how many brothers and sisters the person has, one question at a time.",
+          "constraints": ["Use only numbers zero through ten and this lesson's family words.", "Do not use external stories or recordings."]
+        },
+        "speaking": {
+          "prompt": "Invite the learner to describe a real or fictional family. Ask one optional follow-up using Does the character have ...? and accept a short answer.",
+          "constraints": ["Never require personal family information.", "Focus feedback on have/has and family words."]
+        },
+        "pronunciation": {
+          "prompt": "Model mother, father, brother, and sister slowly and then in short phrases. Ask the learner to repeat, focusing on the final syllable in each word.",
+          "constraints": ["If learner audio is unavailable, state NOT_ASSESSED.", "Do not infer family or identity information."]
+        },
+        "writing": {
+          "prompt": "Ask the learner to invent a person and write three family sentences using has, his, or her. Wait for the draft, give at most two corrections, and request one revision.",
+          "constraints": ["Do not require true personal details.", "Do not replace the full draft."]
+        }
+      }
+    },
+    {
+      "outline_id": "m16a1-v1-a1-u02-l04",
+      "title": "Everyday Actions",
+      "duration_minutes": 45,
+      "objectives": [
+        "Use common verbs for a simple daily routine.",
+        "Make present-simple statements with I and you and ask What do you do?"
+      ],
+      "content_sections": [
+        {
+          "section_type": "vocabulary",
+          "title": "Routine verbs",
+          "body": "Useful actions: get up, eat breakfast, study, work, go home, sleep. Put the action after I or you.",
+          "examples": ["I study.", "You work.", "I go home."]
+        },
+        {
+          "section_type": "dialogue",
+          "title": "What do you do?",
+          "body": "A: What do you do in the morning?\nB: I get up and eat breakfast. What do you do?\nA: I study.",
+          "language_focus": ["What do you do?", "in the morning", "I get up.", "I eat breakfast."]
+        }
+      ],
+      "exercises": [
+        {
+          "exercise_type": "ordering",
+          "instructions": "Put the fictional morning routine in a sensible order.",
+          "items": ["I study.", "I eat breakfast.", "I get up."],
+          "answer_data": {"ordered_items": ["I get up.", "I eat breakfast.", "I study."]}
+        },
+        {
+          "exercise_type": "dialogue_completion",
+          "instructions": "Complete the exchange.",
+          "items": [
+            {
+              "prompt": "A: What do you do in the morning?  B: ___",
+              "answer_data": {
+                "accepted_answers": ["I get up and eat breakfast.", "I study.", "I work."],
+                "acceptance_note": "Accept another grammatical I + lesson verb answer."
+              }
+            }
+          ]
+        },
+        {
+          "exercise_type": "speaking",
+          "instructions": "Describe three actions in your real or imagined day, in order.",
+          "rubric": {
+            "criteria": [
+              "Uses three verbs from the lesson.",
+              "Forms present-simple I statements accurately.",
+              "Presents the actions in a clear order."
+            ],
+            "score_range": "0-3; one point per criterion"
+          }
+        }
+      ],
+      "prompts": {
+        "listening": {
+          "prompt": "Read an original three-action morning routine once slowly. Ask the learner to put the actions in order, then read it again and reveal the script.",
+          "constraints": ["Use only this lesson's routine verbs.", "Use no external recording or passage."]
+        },
+        "speaking": {
+          "prompt": "Ask What do you do in the morning? Wait for the answer, ask one follow-up about another part of the day, and model one short fictional answer if help is needed.",
+          "constraints": ["Accept real or imagined routines.", "Limit correction to present-simple I/you forms and target verbs."]
+        },
+        "pronunciation": {
+          "prompt": "Model get up, eat breakfast, study, and go home with clear word stress. Ask the learner to repeat each phrase and combine two with and.",
+          "constraints": ["If no audio is available, state NOT_ASSESSED and provide stress marks only.", "Do not assess from typed text."]
+        },
+        "writing": {
+          "prompt": "Ask the learner to draft four ordered sentences about a real or fictional day. Give up to two corrections on subject-verb form or verb choice, then ask for a revision.",
+          "constraints": ["Do not add advanced time expressions.", "Do not rewrite the entire routine."]
+        }
+      }
+    },
+    {
+      "outline_id": "m16a1-v1-a1-u02-l05",
+      "title": "My Simple Day",
+      "duration_minutes": 45,
+      "objectives": [
+        "Tell and ask about simple whole-hour times.",
+        "Combine time and routine language in a short description."
+      ],
+      "content_sections": [
+        {
+          "section_type": "explanation",
+          "title": "Whole-hour time",
+          "body": "Ask What time is it? For a whole hour, answer It is + number + o'clock. Use at before a time when you say when an action happens.",
+          "examples": ["It is seven o'clock.", "I eat breakfast at eight o'clock.", "What time is it?"]
+        },
+        {
+          "section_type": "reading",
+          "title": "Tara's simple day",
+          "body": "Tara gets up at seven o'clock. She eats breakfast at eight o'clock. She studies at nine o'clock. She goes home at four o'clock. This is a fictional routine written for this lesson.",
+          "language_focus": ["at seven o'clock", "gets up", "eats breakfast", "studies", "goes home"]
+        }
+      ],
+      "exercises": [
+        {
+          "exercise_type": "reading_comprehension",
+          "instructions": "Read Tara's simple day and answer.",
+          "items": [
+            {
+              "prompt": "What does Tara do at nine o'clock?",
+              "answer_data": {"accepted_answers": ["She studies.", "Tara studies.", "She studies at nine o'clock."]}
+            },
+            {
+              "prompt": "What time does Tara eat breakfast?",
+              "answer_data": {"accepted_answers": ["At eight o'clock.", "Eight o'clock.", "She eats breakfast at eight o'clock."]}
+            }
+          ]
+        },
+        {
+          "exercise_type": "error_correction",
+          "instructions": "Correct each sentence.",
+          "items": [
+            {
+              "prompt": "I study in nine o'clock.",
+              "answer_data": {"accepted_answers": ["I study at nine o'clock."]},
+              "explanation": "Use at before a clock time."
+            },
+            {
+              "prompt": "It is seven clock.",
+              "answer_data": {"accepted_answers": ["It is seven o'clock."]},
+              "explanation": "A whole-hour expression uses o'clock."
+            }
+          ]
+        },
+        {
+          "exercise_type": "writing",
+          "instructions": "Write a four-sentence real or fictional routine with four whole-hour times.",
+          "rubric": {
+            "criteria": [
+              "Includes four clear routine actions.",
+              "Uses at before each time.",
+              "Forms whole-hour expressions with o'clock.",
+              "Keeps the routine in a logical order."
+            ],
+            "score_range": "0-4; one point per criterion"
+          }
+        }
+      ],
+      "prompts": {
+        "listening": {
+          "prompt": "Read an original four-sentence daily schedule using whole-hour times. Keep the schedule hidden and ask two questions, one at a time, about an action and its time. Reveal the script afterward.",
+          "constraints": ["Use only numbers one through ten and Unit 2 routine verbs.", "Do not use external text, audio, or media."]
+        },
+        "speaking": {
+          "prompt": "Ask the learner what they do at two whole-hour times. Accept a real or fictional routine, then ask the learner to ask you What time do you ...? and answer as a fictional character.",
+          "constraints": ["Use no more than five tutor turns.", "Focus feedback on at, o'clock, and routine verbs."]
+        },
+        "pronunciation": {
+          "prompt": "Model seven o'clock, eight o'clock, and at nine o'clock. Ask the learner to repeat and then say one full routine sentence with a time.",
+          "constraints": ["If no learner audio is available, state NOT_ASSESSED and provide a spoken model only where supported.", "Do not score a typed response as pronunciation."]
+        },
+        "writing": {
+          "prompt": "Ask for a four-sentence real or fictional daily schedule with whole-hour times. Wait for the draft, give up to three targeted comments, and ask the learner to revise one sentence.",
+          "constraints": ["Do not produce a full replacement schedule.", "Keep feedback within the first ten pilot lessons."]
+        }
+      }
+    }
+  ]
+}
