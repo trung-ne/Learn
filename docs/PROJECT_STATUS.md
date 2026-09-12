@@ -1,6 +1,6 @@
 # English Master — Tình hình dự án
 
-**Ngày cập nhật:** 2026-09-12
+**Ngày cập nhật:** 2026-09-13
 **Nhánh:** `feat/ai-only-m12-framework`  
 **Phạm vi:** hệ thống học tiếng Anh tự học A1–C2, ưu tiên người học Việt Nam
 
@@ -40,6 +40,7 @@ Một `M9 DEVELOPMENT: PASS` trong phạm vi sample cho phép bước được y
 | M16-A2-BLUEPRINT | Đã triển khai dưới dạng outline-only blueprint | Blueprint A2.1/A2.2 gồm 10 units, 50 lesson outlines, review lessons và unit-test blueprints; chỉ dùng M15 node/prerequisite references, không có authority bridge hay prose. |
 | A1 pilot | Đã build development pilot 10 lesson A1.1 | Mỗi packet có lesson, exercises và 4 prompt modalities; hash/inventory/prerequisite checks pass. Review template được tạo nhưng chưa có user/AI review hoàn chỉnh, vì vậy nội dung vẫn `UNREVIEWED`. |
 | Full A1 v2 | Đã build đủ 50 lesson A1.1/A1.2 | Allocation granular, 10 unit content files, 50 immutable packets, full-corpus lightweight audit `PASS`, và sample 12 lesson deterministic theo 10 unit. Giữ `UNREVIEWED`; không có human/release/provider/live-AI/network/media claim. |
+| Full A2 | Đã build đủ 50 lesson A2.1/A2.2 | 10 unit content files, 50 immutable packets, hash-bound verification, lightweight audit `PASS`, và sample 12 lesson theo 10 unit. Giữ `UNREVIEWED`; không có human/release/provider/live-AI/network/media claim. |
 | M15 platform / M16 deployment | Chưa bắt đầu | Đây là các milestone tương lai, khác với hai workstream KG/blueprint ở trên. |
 
 > Tên M15/M16 hiện có hai ngữ cảnh: `M15-KG-FULL`/`M16-A1-BLUEPRINT` là workstream curriculum mới; M15 platform và M16 production deployment vẫn là các milestone tương lai riêng.

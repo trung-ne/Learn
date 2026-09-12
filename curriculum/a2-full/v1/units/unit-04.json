@@ -1,0 +1,993 @@
+{
+  "schema_version": "1.0",
+  "record_type": "a2_full_content_unit",
+  "unit_id": "m16a2-v1-a2-u04",
+  "tier": "A2.1",
+  "content_origin": "PROJECT_AUTHORED",
+  "lessons": [
+    {
+      "lesson_id": "m16a2-v1-a2-u04-l01",
+      "title": "A completed journey",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a2t_u01_grammar",
+        "a2t_u01_vocabulary_senses",
+        "a2t_u01_discourse"
+      ],
+      "objectives": [
+        "Report a completed journey with key time and place details.",
+        "Use a main idea and one relevant detail in a response about reporting a completed trip."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice form and meaning (8 minutes)",
+          "body": "Read the model aloud twice: 'I travelled to Hue by train last Friday and arrived before lunch.' Underline the words that show the situation, time, or result. In this lesson, report a completed journey with key time and place details. Keep the language connected: do not give isolated words.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_discourse"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided dialogue (8 minutes)",
+          "body": "Partner A begins a realistic exchange about reporting a completed trip. Partner B asks for one missing detail. Swap roles and make one change to the time, place, reason, quantity, or next action. Check that the exchange achieves: Report a completed journey with key time and place details.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_discourse"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent response (6 minutes)",
+          "body": "Create a short message about reporting a completed trip without reading the model. Include a main event or plan and one precise detail. Speak it once slowly, then once at a natural pace. Listen for whether the key information is clear.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_discourse"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_discourse"
+          ],
+          "prompt": "Choose the response that gives a clear, useful message for this situation: reporting a completed trip.",
+          "media_required": false,
+          "options": [
+            "I travelled to Hue by train last Friday and arrived before lunch.",
+            "I made a request, answered a follow-up, and repaired one misunderstanding.",
+            "I need to change our plan because my sister is visiting on Sunday."
+          ],
+          "correct_answer": "I travelled to Hue by train last Friday and arrived before lunch."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_discourse"
+          ],
+          "prompt": "Complete the model with the missing words: 'I travelled to Hue by train last Friday and ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "arrived before lunch"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_discourse"
+          ],
+          "prompt": "Read this short message for the lesson 'A completed journey' and identify the real-life situation it describes.",
+          "media_required": false,
+          "stimulus": "I travelled to Hue by train last Friday and arrived before lunch. The message gives one main point and one detail for the listener.",
+          "questions": [
+            {
+              "question": "What situation does the message describe?",
+              "acceptable_answers": [
+                "The message is about reporting a completed trip."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_discourse"
+          ],
+          "prompt": "Speak for 30–45 seconds about reporting a completed trip. State the main message, add a relevant detail, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Communicates the main message about reporting a completed trip clearly.",
+              "Adds a relevant detail and responds appropriately to a follow-up question."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short message about reporting a completed trip. Answer the question before the transcript is revealed, then listen again and check the key detail.",
+          "goal": "Identify the situation and a useful detail in a short message about reporting a completed trip.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_discourse"
+          ],
+          "transcript": "I travelled to Hue by train last Friday and arrived before lunch.",
+          "question": "What is the message mainly about?",
+          "answer": "The listener should understand that it concerns reporting a completed trip.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay reporting a completed trip. Learner role: explain the situation and give one useful detail. Tutor role: be a helpful listener, ask one specific follow-up, and confirm the next step. Begin with a natural greeting and finish once both roles agree on the next action.",
+          "goal": "Complete a clear, practical exchange about reporting a completed trip.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_discourse"
+          ],
+          "constraints": [
+            "Name the learner and tutor roles before the first turn.",
+            "Use at most three tutor turns and stop after the agreed next step."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Say the model for reporting a completed trip in two thought groups. Mark the pause between ideas, then stress the word that gives the key action, time, quantity, reason, or request. Record a second attempt after listening to your first attempt.",
+          "goal": "Make the key information in reporting a completed trip easy to hear.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_discourse"
+          ],
+          "target": "Thought-group pause and key-word stress in a completed journey",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a 35–50 word message about reporting a completed trip. Include the main event or plan, one precise detail, and the next action or response. Submit your own draft before requesting feedback.",
+          "goal": "Write a connected, useful short message about reporting a completed trip.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_discourse"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u04-l02",
+      "title": "Travel questions and answers",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a2t_u01_functions",
+        "a2t_u01_lexical_chunks",
+        "a2t_u01_skills"
+      ],
+      "objectives": [
+        "Ask and answer short questions about a journey or delay.",
+        "Use a main idea and one relevant detail in a response about asking about a late coach."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Build a useful turn (8 minutes)",
+          "body": "Start with the model: 'What time did the coach leave, and why was it late?' Replace one detail with your own information about asking about a late coach. Then add a short follow-up or reason. This builds the skill to ask and answer short questions about a journey or delay.",
+          "target_ids": [
+            "a2t_u01_functions",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_skills"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided dialogue (8 minutes)",
+          "body": "Partner A begins a realistic exchange about asking about a late coach. Partner B asks for one missing detail. Swap roles and make one change to the time, place, reason, quantity, or next action. Check that the exchange achieves: Ask and answer short questions about a journey or delay.",
+          "target_ids": [
+            "a2t_u01_functions",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_skills"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent response (6 minutes)",
+          "body": "Create a short message about asking about a late coach without reading the model. Include a main event or plan and one precise detail. Speak it once slowly, then once at a natural pace. Listen for whether the key information is clear.",
+          "target_ids": [
+            "a2t_u01_functions",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_skills"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a2t_u01_functions",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Choose the response that gives a clear, useful message for this situation: asking about a late coach.",
+          "media_required": false,
+          "options": [
+            "What time did the coach leave, and why was it late?",
+            "I can give a short account with time words, details, and a clear next step.",
+            "I can make an offer, arrange details, and explain a change politely."
+          ],
+          "correct_answer": "What time did the coach leave, and why was it late?"
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "a2t_u01_functions",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Complete the model with the missing words: 'What time did the coach leave, and why ____?'",
+          "media_required": false,
+          "acceptable_answers": [
+            "was it late"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "a2t_u01_functions",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Read this short message for the lesson 'Travel questions and answers' and identify the real-life situation it describes.",
+          "media_required": false,
+          "stimulus": "What time did the coach leave, and why was it late? The message gives one main point and one detail for the listener.",
+          "questions": [
+            {
+              "question": "What situation does the message describe?",
+              "acceptable_answers": [
+                "The message is about asking about a late coach."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "a2t_u01_functions",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Speak for 30–45 seconds about asking about a late coach. State the main message, add a relevant detail, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Communicates the main message about asking about a late coach clearly.",
+              "Adds a relevant detail and responds appropriately to a follow-up question."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short message about asking about a late coach. Answer the question before the transcript is revealed, then listen again and check the key detail.",
+          "goal": "Identify the situation and a useful detail in a short message about asking about a late coach.",
+          "target_ids": [
+            "a2t_u01_functions",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_skills"
+          ],
+          "transcript": "What time did the coach leave, and why was it late?",
+          "question": "What is the message mainly about?",
+          "answer": "The listener should understand that it concerns asking about a late coach.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay asking about a late coach. Learner role: explain the situation and give one useful detail. Tutor role: be a helpful listener, ask one specific follow-up, and confirm the next step. Begin with a natural greeting and finish once both roles agree on the next action.",
+          "goal": "Complete a clear, practical exchange about asking about a late coach.",
+          "target_ids": [
+            "a2t_u01_functions",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_skills"
+          ],
+          "constraints": [
+            "Name the learner and tutor roles before the first turn.",
+            "Use at most three tutor turns and stop after the agreed next step."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Say the model for asking about a late coach in two thought groups. Mark the pause between ideas, then stress the word that gives the key action, time, quantity, reason, or request. Record a second attempt after listening to your first attempt.",
+          "goal": "Make the key information in asking about a late coach easy to hear.",
+          "target_ids": [
+            "a2t_u01_functions",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_skills"
+          ],
+          "target": "Thought-group pause and key-word stress in travel questions and answers",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a 35–50 word message about asking about a late coach. Include the main event or plan, one precise detail, and the next action or response. Submit your own draft before requesting feedback.",
+          "goal": "Write a connected, useful short message about asking about a late coach.",
+          "target_ids": [
+            "a2t_u01_functions",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_skills"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u04-l03",
+      "title": "Past endings and key information",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a2t_u01_pronunciation",
+        "a2t_u01_collocations",
+        "a2t_u01_topics"
+      ],
+      "objectives": [
+        "Make past-tense endings and important travel details audible.",
+        "Use a main idea and one relevant detail in a response about hearing travel details clearly."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Make the message easy to hear (8 minutes)",
+          "body": "Say the model in two thought groups: 'The bus stopped at River Road, and the driver explained the delay.' Pause after the first complete idea and stress the word that carries the important information. Then say a new version about hearing travel details clearly. This supports the goal to make past-tense endings and important travel details audible.",
+          "target_ids": [
+            "a2t_u01_pronunciation",
+            "a2t_u01_collocations",
+            "a2t_u01_topics"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided dialogue (8 minutes)",
+          "body": "Partner A begins a realistic exchange about hearing travel details clearly. Partner B asks for one missing detail. Swap roles and make one change to the time, place, reason, quantity, or next action. Check that the exchange achieves: Make past-tense endings and important travel details audible.",
+          "target_ids": [
+            "a2t_u01_pronunciation",
+            "a2t_u01_collocations",
+            "a2t_u01_topics"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent response (6 minutes)",
+          "body": "Create a short message about hearing travel details clearly without reading the model. Include a main event or plan and one precise detail. Speak it once slowly, then once at a natural pace. Listen for whether the key information is clear.",
+          "target_ids": [
+            "a2t_u01_pronunciation",
+            "a2t_u01_collocations",
+            "a2t_u01_topics"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a2t_u01_pronunciation",
+            "a2t_u01_collocations",
+            "a2t_u01_topics"
+          ],
+          "prompt": "Choose the response that gives a clear, useful message for this situation: hearing travel details clearly.",
+          "media_required": false,
+          "options": [
+            "The bus stopped at River Road, and the driver explained the delay.",
+            "I can choose language for stories, requests, and everyday problems.",
+            "Our group is going to clean the park next Saturday morning."
+          ],
+          "correct_answer": "The bus stopped at River Road, and the driver explained the delay."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "a2t_u01_pronunciation",
+            "a2t_u01_collocations",
+            "a2t_u01_topics"
+          ],
+          "prompt": "Complete the model with the missing words: 'The bus stopped at River Road, and the driver ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "explained the delay"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "a2t_u01_pronunciation",
+            "a2t_u01_collocations",
+            "a2t_u01_topics"
+          ],
+          "prompt": "Read this short message for the lesson 'Past endings and key information' and identify the real-life situation it describes.",
+          "media_required": false,
+          "stimulus": "The bus stopped at River Road, and the driver explained the delay. The message gives one main point and one detail for the listener.",
+          "questions": [
+            {
+              "question": "What situation does the message describe?",
+              "acceptable_answers": [
+                "The message is about hearing travel details clearly."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "a2t_u01_pronunciation",
+            "a2t_u01_collocations",
+            "a2t_u01_topics"
+          ],
+          "prompt": "Speak for 30–45 seconds about hearing travel details clearly. State the main message, add a relevant detail, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Communicates the main message about hearing travel details clearly clearly.",
+              "Adds a relevant detail and responds appropriately to a follow-up question."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short message about hearing travel details clearly. Answer the question before the transcript is revealed, then listen again and check the key detail.",
+          "goal": "Identify the situation and a useful detail in a short message about hearing travel details clearly.",
+          "target_ids": [
+            "a2t_u01_pronunciation",
+            "a2t_u01_collocations",
+            "a2t_u01_topics"
+          ],
+          "transcript": "The bus stopped at River Road, and the driver explained the delay.",
+          "question": "What is the message mainly about?",
+          "answer": "The listener should understand that it concerns hearing travel details clearly.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay hearing travel details clearly. Learner role: explain the situation and give one useful detail. Tutor role: be a helpful listener, ask one specific follow-up, and confirm the next step. Begin with a natural greeting and finish once both roles agree on the next action.",
+          "goal": "Complete a clear, practical exchange about hearing travel details clearly.",
+          "target_ids": [
+            "a2t_u01_pronunciation",
+            "a2t_u01_collocations",
+            "a2t_u01_topics"
+          ],
+          "constraints": [
+            "Name the learner and tutor roles before the first turn.",
+            "Use at most three tutor turns and stop after the agreed next step."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Say the model for hearing travel details clearly in two thought groups. Mark the pause between ideas, then stress the word that gives the key action, time, quantity, reason, or request. Record a second attempt after listening to your first attempt.",
+          "goal": "Make the key information in hearing travel details clearly easy to hear.",
+          "target_ids": [
+            "a2t_u01_pronunciation",
+            "a2t_u01_collocations",
+            "a2t_u01_topics"
+          ],
+          "target": "Thought-group pause and key-word stress in past endings and key information",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a 35–50 word message about hearing travel details clearly. Include the main event or plan, one precise detail, and the next action or response. Submit your own draft before requesting feedback.",
+          "goal": "Write a connected, useful short message about hearing travel details clearly.",
+          "target_ids": [
+            "a2t_u01_pronunciation",
+            "a2t_u01_collocations",
+            "a2t_u01_topics"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u04-l04",
+      "title": "Handling a travel problem",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a2t_u01_pragmatics",
+        "a2t_u01_functions",
+        "a2t_u01_skills"
+      ],
+      "objectives": [
+        "Explain a simple travel problem and ask for a practical response.",
+        "Use a main idea and one relevant detail in a response about solving a missed connection."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Use it in a practical exchange (8 minutes)",
+          "body": "Prepare a two-turn exchange about solving a missed connection. Give the main detail, listen to one follow-up, and answer it clearly. Use this model as support: 'I missed my connection, so I asked the station worker for another route.' The exchange should meet this lesson goal: Explain a simple travel problem and ask for a practical response.",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_functions",
+            "a2t_u01_skills"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided dialogue (8 minutes)",
+          "body": "Partner A begins a realistic exchange about solving a missed connection. Partner B asks for one missing detail. Swap roles and make one change to the time, place, reason, quantity, or next action. Check that the exchange achieves: Explain a simple travel problem and ask for a practical response.",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_functions",
+            "a2t_u01_skills"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent response (6 minutes)",
+          "body": "Create a short message about solving a missed connection without reading the model. Include a main event or plan and one precise detail. Speak it once slowly, then once at a natural pace. Listen for whether the key information is clear.",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_functions",
+            "a2t_u01_skills"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_functions",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Choose the response that gives a clear, useful message for this situation: solving a missed connection.",
+          "media_required": false,
+          "options": [
+            "I missed my connection, so I asked the station worker for another route.",
+            "I am going to revise vocabulary after dinner and practise speaking on Friday.",
+            "We need three people for the posters because the event starts at ten."
+          ],
+          "correct_answer": "I missed my connection, so I asked the station worker for another route."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_functions",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Complete the model with the missing words: 'I missed my connection, so I asked the station worker ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "for another route"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_functions",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Read this short message for the lesson 'Handling a travel problem' and identify the real-life situation it describes.",
+          "media_required": false,
+          "stimulus": "I missed my connection, so I asked the station worker for another route. The message gives one main point and one detail for the listener.",
+          "questions": [
+            {
+              "question": "What situation does the message describe?",
+              "acceptable_answers": [
+                "The message is about solving a missed connection."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_functions",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Speak for 30–45 seconds about solving a missed connection. State the main message, add a relevant detail, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Communicates the main message about solving a missed connection clearly.",
+              "Adds a relevant detail and responds appropriately to a follow-up question."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short message about solving a missed connection. Answer the question before the transcript is revealed, then listen again and check the key detail.",
+          "goal": "Identify the situation and a useful detail in a short message about solving a missed connection.",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_functions",
+            "a2t_u01_skills"
+          ],
+          "transcript": "I missed my connection, so I asked the station worker for another route.",
+          "question": "What is the message mainly about?",
+          "answer": "The listener should understand that it concerns solving a missed connection.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay solving a missed connection. Learner role: explain the situation and give one useful detail. Tutor role: be a helpful listener, ask one specific follow-up, and confirm the next step. Begin with a natural greeting and finish once both roles agree on the next action.",
+          "goal": "Complete a clear, practical exchange about solving a missed connection.",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_functions",
+            "a2t_u01_skills"
+          ],
+          "constraints": [
+            "Name the learner and tutor roles before the first turn.",
+            "Use at most three tutor turns and stop after the agreed next step."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Say the model for solving a missed connection in two thought groups. Mark the pause between ideas, then stress the word that gives the key action, time, quantity, reason, or request. Record a second attempt after listening to your first attempt.",
+          "goal": "Make the key information in solving a missed connection easy to hear.",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_functions",
+            "a2t_u01_skills"
+          ],
+          "target": "Thought-group pause and key-word stress in handling a travel problem",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a 35–50 word message about solving a missed connection. Include the main event or plan, one precise detail, and the next action or response. Submit your own draft before requesting feedback.",
+          "goal": "Write a connected, useful short message about solving a missed connection.",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_functions",
+            "a2t_u01_skills"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u04-l05",
+      "title": "Review: travel experiences",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a2t_u01_grammar",
+        "a2t_u01_vocabulary_senses",
+        "a2t_u01_functions",
+        "a2t_u01_pronunciation",
+        "a2t_u01_discourse",
+        "a2t_u01_pragmatics",
+        "a2t_u01_collocations",
+        "a2t_u01_lexical_chunks",
+        "a2t_u01_topics",
+        "a2t_u01_skills"
+      ],
+      "objectives": [
+        "Review a short travel account, follow-up question, and repair.",
+        "Use a main idea and one relevant detail in a response about retelling a travel experience."
+      ],
+      "content_sections": [
+        {
+          "id": "recall",
+          "section_type": "review",
+          "title": "Recall and select (8 minutes)",
+          "body": "Work without notes first. For the situation 'retelling a travel experience', say one sentence that meets this goal: Review a short travel account, follow-up question, and repair. Then check the model: 'I explained the journey in order and checked that my friend understood.' Identify one word or phrase that makes the message clear.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ]
+        },
+        {
+          "id": "compare",
+          "section_type": "dialogue",
+          "title": "Compare two responses (8 minutes)",
+          "body": "Give one clear response for retelling a travel experience, then ask a partner one follow-up question. Compare the response with the model and repair one missing time, reason, place, quantity, or next step. Use the whole unit's familiar language rather than memorising one sentence.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ]
+        },
+        {
+          "id": "self-check",
+          "section_type": "review",
+          "title": "Self-check and transfer (6 minutes)",
+          "body": "Before the unit test, check three things: the main message is clear, one useful detail is included, and the listener knows what happens next. Say or write a new short message about a similar situation, not the model about retelling a travel experience.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Choose the response that gives a clear, useful message for this situation: retelling a travel experience.",
+          "media_required": false,
+          "options": [
+            "I explained the journey in order and checked that my friend understood.",
+            "I am going to meet my cousin at the library on Saturday afternoon.",
+            "Would you like to join our park clean-up and bring a pair of gloves?"
+          ],
+          "correct_answer": "I explained the journey in order and checked that my friend understood."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Complete the model with the missing words: 'I explained the journey in order and checked that ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "my friend understood"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Read this short message for the lesson 'Review: travel experiences' and identify the real-life situation it describes.",
+          "media_required": false,
+          "stimulus": "I explained the journey in order and checked that my friend understood. The message gives one main point and one detail for the listener.",
+          "questions": [
+            {
+              "question": "What situation does the message describe?",
+              "acceptable_answers": [
+                "The message is about retelling a travel experience."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Speak for 30–45 seconds about retelling a travel experience. State the main message, add a relevant detail, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Communicates the main message about retelling a travel experience clearly.",
+              "Adds a relevant detail and responds appropriately to a follow-up question."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short message about retelling a travel experience. Answer the question before the transcript is revealed, then listen again and check the key detail.",
+          "goal": "Identify the situation and a useful detail in a short message about retelling a travel experience.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "transcript": "I explained the journey in order and checked that my friend understood.",
+          "question": "What is the message mainly about?",
+          "answer": "The listener should understand that it concerns retelling a travel experience.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay retelling a travel experience. Learner role: explain the situation and give one useful detail. Tutor role: be a helpful listener, ask one specific follow-up, and confirm the next step. Begin with a natural greeting and finish once both roles agree on the next action.",
+          "goal": "Complete a clear, practical exchange about retelling a travel experience.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "constraints": [
+            "Name the learner and tutor roles before the first turn.",
+            "Use at most three tutor turns and stop after the agreed next step."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Say the model for retelling a travel experience in two thought groups. Mark the pause between ideas, then stress the word that gives the key action, time, quantity, reason, or request. Record a second attempt after listening to your first attempt.",
+          "goal": "Make the key information in retelling a travel experience easy to hear.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "target": "Thought-group pause and key-word stress in review: travel experiences",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a 35–50 word message about retelling a travel experience. Include the main event or plan, one precise detail, and the next action or response. Submit your own draft before requesting feedback.",
+          "goal": "Write a connected, useful short message about retelling a travel experience.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    }
+  ]
+}

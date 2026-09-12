@@ -1,0 +1,2208 @@
+{
+  "schema_version": "1.0",
+  "record_type": "a2_full_allocation",
+  "population_sha256": "04316d931c16ce32e90dbfed123c8fd9d85fb3b01c4e1e22f310a672bfae9ea1",
+  "blueprint_sha256": "09bdb3a2aecbd131f2b6afc53194313ece4fec8dc3ffe882d0a2fad9a36b5b9a",
+  "targets": [
+    {
+      "id": "a2t_u01_grammar",
+      "name": "A2 grammar target introduced in m16a2-v1-a2-u01-l01",
+      "tier": "A2.1",
+      "dimension": "grammar",
+      "broad_target_id": "kg_a2_1_grammar",
+      "prerequisites": []
+    },
+    {
+      "id": "a2t_u01_pronunciation",
+      "name": "A2 pronunciation target introduced in m16a2-v1-a2-u01-l01",
+      "tier": "A2.1",
+      "dimension": "pronunciation",
+      "broad_target_id": "kg_a2_1_pronunciation",
+      "prerequisites": []
+    },
+    {
+      "id": "a2t_u01_vocabulary_senses",
+      "name": "A2 vocabulary senses target introduced in m16a2-v1-a2-u01-l01",
+      "tier": "A2.1",
+      "dimension": "vocabulary_senses",
+      "broad_target_id": "kg_a2_1_vocabulary_senses",
+      "prerequisites": []
+    },
+    {
+      "id": "a2t_u01_discourse",
+      "name": "A2 discourse target introduced in m16a2-v1-a2-u01-l02",
+      "tier": "A2.1",
+      "dimension": "discourse",
+      "broad_target_id": "kg_a2_1_discourse",
+      "prerequisites": []
+    },
+    {
+      "id": "a2t_u01_functions",
+      "name": "A2 functions target introduced in m16a2-v1-a2-u01-l02",
+      "tier": "A2.1",
+      "dimension": "functions",
+      "broad_target_id": "kg_a2_1_functions",
+      "prerequisites": []
+    },
+    {
+      "id": "a2t_u01_lexical_chunks",
+      "name": "A2 lexical chunks target introduced in m16a2-v1-a2-u01-l02",
+      "tier": "A2.1",
+      "dimension": "lexical_chunks",
+      "broad_target_id": "kg_a2_1_lexical_chunks",
+      "prerequisites": []
+    },
+    {
+      "id": "a2t_u01_collocations",
+      "name": "A2 collocations target introduced in m16a2-v1-a2-u01-l03",
+      "tier": "A2.1",
+      "dimension": "collocations",
+      "broad_target_id": "kg_a2_1_collocations",
+      "prerequisites": []
+    },
+    {
+      "id": "a2t_u01_pragmatics",
+      "name": "A2 pragmatics target introduced in m16a2-v1-a2-u01-l03",
+      "tier": "A2.1",
+      "dimension": "pragmatics",
+      "broad_target_id": "kg_a2_1_pragmatics",
+      "prerequisites": []
+    },
+    {
+      "id": "a2t_u01_skills",
+      "name": "A2 skills target introduced in m16a2-v1-a2-u01-l03",
+      "tier": "A2.1",
+      "dimension": "skills",
+      "broad_target_id": "kg_a2_1_skills",
+      "prerequisites": []
+    },
+    {
+      "id": "a2t_u01_topics",
+      "name": "A2 topics target introduced in m16a2-v1-a2-u01-l03",
+      "tier": "A2.1",
+      "dimension": "topics",
+      "broad_target_id": "kg_a2_1_topics",
+      "prerequisites": []
+    },
+    {
+      "id": "a2t_u06_functions",
+      "name": "A2 functions target introduced in m16a2-v1-a2-u06-l01",
+      "tier": "A2.2",
+      "dimension": "functions",
+      "broad_target_id": "kg_a2_2_functions",
+      "prerequisites": []
+    },
+    {
+      "id": "a2t_u06_grammar",
+      "name": "A2 grammar target introduced in m16a2-v1-a2-u06-l01",
+      "tier": "A2.2",
+      "dimension": "grammar",
+      "broad_target_id": "kg_a2_2_grammar",
+      "prerequisites": []
+    },
+    {
+      "id": "a2t_u06_vocabulary_senses",
+      "name": "A2 vocabulary senses target introduced in m16a2-v1-a2-u06-l01",
+      "tier": "A2.2",
+      "dimension": "vocabulary_senses",
+      "broad_target_id": "kg_a2_2_vocabulary_senses",
+      "prerequisites": []
+    },
+    {
+      "id": "a2t_u06_discourse",
+      "name": "A2 discourse target introduced in m16a2-v1-a2-u06-l02",
+      "tier": "A2.2",
+      "dimension": "discourse",
+      "broad_target_id": "kg_a2_2_discourse",
+      "prerequisites": []
+    },
+    {
+      "id": "a2t_u06_lexical_chunks",
+      "name": "A2 lexical chunks target introduced in m16a2-v1-a2-u06-l02",
+      "tier": "A2.2",
+      "dimension": "lexical_chunks",
+      "broad_target_id": "kg_a2_2_lexical_chunks",
+      "prerequisites": []
+    },
+    {
+      "id": "a2t_u06_pronunciation",
+      "name": "A2 pronunciation target introduced in m16a2-v1-a2-u06-l02",
+      "tier": "A2.2",
+      "dimension": "pronunciation",
+      "broad_target_id": "kg_a2_2_pronunciation",
+      "prerequisites": []
+    },
+    {
+      "id": "a2t_u06_collocations",
+      "name": "A2 collocations target introduced in m16a2-v1-a2-u06-l03",
+      "tier": "A2.2",
+      "dimension": "collocations",
+      "broad_target_id": "kg_a2_2_collocations",
+      "prerequisites": []
+    },
+    {
+      "id": "a2t_u06_pragmatics",
+      "name": "A2 pragmatics target introduced in m16a2-v1-a2-u06-l03",
+      "tier": "A2.2",
+      "dimension": "pragmatics",
+      "broad_target_id": "kg_a2_2_pragmatics",
+      "prerequisites": []
+    },
+    {
+      "id": "a2t_u06_skills",
+      "name": "A2 skills target introduced in m16a2-v1-a2-u06-l03",
+      "tier": "A2.2",
+      "dimension": "skills",
+      "broad_target_id": "kg_a2_2_skills",
+      "prerequisites": []
+    },
+    {
+      "id": "a2t_u06_topics",
+      "name": "A2 topics target introduced in m16a2-v1-a2-u06-l04",
+      "tier": "A2.2",
+      "dimension": "topics",
+      "broad_target_id": "kg_a2_2_topics",
+      "prerequisites": []
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "m16a2-v1-a2-u01-l01",
+      "tier": "A2.1",
+      "unit_id": "m16a2-v1-a2-u01",
+      "sequence": 1,
+      "lesson_kind": "LEARN",
+      "topic": "a lost umbrella after a bus journey",
+      "language_focus": "Describe one finished event with simple past-time language.",
+      "prerequisite_lesson_ids": [],
+      "target_usage": [
+        {
+          "target_id": "a2t_u01_grammar",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a2t_u01_vocabulary_senses",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a2t_u01_pronunciation",
+          "usage": "INTRODUCE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u01-l02",
+      "tier": "A2.1",
+      "unit_id": "m16a2-v1-a2-u01",
+      "sequence": 2,
+      "lesson_kind": "LEARN",
+      "topic": "a Saturday market visit",
+      "language_focus": "Use a short frame to report what happened and when.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u01-l01"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u01_functions",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a2t_u01_discourse",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a2t_u01_lexical_chunks",
+          "usage": "INTRODUCE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u01-l03",
+      "tier": "A2.1",
+      "unit_id": "m16a2-v1-a2-u01",
+      "sequence": 3,
+      "lesson_kind": "LEARN",
+      "topic": "a delayed train message",
+      "language_focus": "Ask one follow-up question and repair a simple misunderstanding.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u01-l02"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u01_pragmatics",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a2t_u01_collocations",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a2t_u01_topics",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a2t_u01_skills",
+          "usage": "INTRODUCE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u01-l04",
+      "tier": "A2.1",
+      "unit_id": "m16a2-v1-a2-u01",
+      "sequence": 4,
+      "lesson_kind": "LEARN",
+      "topic": "a clinic visit",
+      "language_focus": "Organize a short account in a clear event order.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u01-l03"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u01_grammar",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_vocabulary_senses",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_pronunciation",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_discourse",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_pragmatics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_collocations",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_lexical_chunks",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_topics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_skills",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u01-l05",
+      "tier": "A2.1",
+      "unit_id": "m16a2-v1-a2-u01",
+      "sequence": 5,
+      "lesson_kind": "REVIEW",
+      "topic": "a weekend story for a friend",
+      "language_focus": "Review the unit targets in a short account and follow-up exchange.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u01-l04"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u01_grammar",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_vocabulary_senses",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_functions",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_pronunciation",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_discourse",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_pragmatics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_collocations",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_lexical_chunks",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_topics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_skills",
+          "usage": "REVIEW"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u02-l01",
+      "tier": "A2.1",
+      "unit_id": "m16a2-v1-a2-u02",
+      "sequence": 6,
+      "lesson_kind": "LEARN",
+      "topic": "buying rice and water",
+      "language_focus": "Use count and noncount language for everyday shopping.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u01-l05"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u01_grammar",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_vocabulary_senses",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_functions",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u02-l02",
+      "tier": "A2.1",
+      "unit_id": "m16a2-v1-a2-u02",
+      "sequence": 7,
+      "lesson_kind": "LEARN",
+      "topic": "changing shoes at a shop",
+      "language_focus": "Ask for a quantity, price, or alternative in a short transaction.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u02-l01"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u01_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_pragmatics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_collocations",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u02-l03",
+      "tier": "A2.1",
+      "unit_id": "m16a2-v1-a2-u02",
+      "sequence": 8,
+      "lesson_kind": "LEARN",
+      "topic": "buying an airport bus ticket",
+      "language_focus": "Use thought groups and clear key words in a shopping request.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u02-l02"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u01_pronunciation",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_lexical_chunks",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_skills",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u02-l04",
+      "tier": "A2.1",
+      "unit_id": "m16a2-v1-a2-u02",
+      "sequence": 9,
+      "lesson_kind": "LEARN",
+      "topic": "asking for help at a ticket machine",
+      "language_focus": "Understand and produce a short, polite service exchange.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u02-l03"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u01_discourse",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_topics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_skills",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u02-l05",
+      "tier": "A2.1",
+      "unit_id": "m16a2-v1-a2-u02",
+      "sequence": 10,
+      "lesson_kind": "REVIEW",
+      "topic": "checking a shopping receipt",
+      "language_focus": "Review quantity, request, and clarification language.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u02-l04"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u01_grammar",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_vocabulary_senses",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_functions",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_pronunciation",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_discourse",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_pragmatics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_collocations",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_lexical_chunks",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_topics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_skills",
+          "usage": "REVIEW"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u03-l01",
+      "tier": "A2.1",
+      "unit_id": "m16a2-v1-a2-u03",
+      "sequence": 11,
+      "lesson_kind": "LEARN",
+      "topic": "explaining a headache",
+      "language_focus": "Give a simple account of a recent health or service problem.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u02-l05"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u01_grammar",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_vocabulary_senses",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_functions",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u03-l02",
+      "tier": "A2.1",
+      "unit_id": "m16a2-v1-a2-u03",
+      "sequence": 12,
+      "lesson_kind": "LEARN",
+      "topic": "asking a neighbour for help",
+      "language_focus": "Make and respond to a polite request for practical help.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u03-l01"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u01_pragmatics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_lexical_chunks",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_collocations",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u03-l03",
+      "tier": "A2.1",
+      "unit_id": "m16a2-v1-a2-u03",
+      "sequence": 13,
+      "lesson_kind": "LEARN",
+      "topic": "telling a pharmacist what happened",
+      "language_focus": "Use short thought groups to make the order of events clear.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u03-l02"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u01_pronunciation",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_discourse",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_skills",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u03-l04",
+      "tier": "A2.1",
+      "unit_id": "m16a2-v1-a2-u03",
+      "sequence": 14,
+      "lesson_kind": "LEARN",
+      "topic": "following up after a service call",
+      "language_focus": "Ask and answer a follow-up question about a local service.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u03-l03"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u01_topics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_skills",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u03-l05",
+      "tier": "A2.1",
+      "unit_id": "m16a2-v1-a2-u03",
+      "sequence": 15,
+      "lesson_kind": "REVIEW",
+      "topic": "reviewing a health problem",
+      "language_focus": "Review the unit language in a short problem-and-response exchange.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u03-l04"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u01_grammar",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_vocabulary_senses",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_functions",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_pronunciation",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_discourse",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_pragmatics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_collocations",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_lexical_chunks",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_topics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_skills",
+          "usage": "REVIEW"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u04-l01",
+      "tier": "A2.1",
+      "unit_id": "m16a2-v1-a2-u04",
+      "sequence": 16,
+      "lesson_kind": "LEARN",
+      "topic": "reporting a completed trip",
+      "language_focus": "Report a completed journey with key time and place details.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u03-l05"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u01_grammar",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_vocabulary_senses",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_discourse",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u04-l02",
+      "tier": "A2.1",
+      "unit_id": "m16a2-v1-a2-u04",
+      "sequence": 17,
+      "lesson_kind": "LEARN",
+      "topic": "asking about a late coach",
+      "language_focus": "Ask and answer short questions about a journey or delay.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u04-l01"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u01_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_lexical_chunks",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_skills",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u04-l03",
+      "tier": "A2.1",
+      "unit_id": "m16a2-v1-a2-u04",
+      "sequence": 18,
+      "lesson_kind": "LEARN",
+      "topic": "hearing travel details clearly",
+      "language_focus": "Make past-tense endings and important travel details audible.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u04-l02"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u01_pronunciation",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_collocations",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_topics",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u04-l04",
+      "tier": "A2.1",
+      "unit_id": "m16a2-v1-a2-u04",
+      "sequence": 19,
+      "lesson_kind": "LEARN",
+      "topic": "solving a missed connection",
+      "language_focus": "Explain a simple travel problem and ask for a practical response.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u04-l03"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u01_pragmatics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_skills",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u04-l05",
+      "tier": "A2.1",
+      "unit_id": "m16a2-v1-a2-u04",
+      "sequence": 20,
+      "lesson_kind": "REVIEW",
+      "topic": "retelling a travel experience",
+      "language_focus": "Review a short travel account, follow-up question, and repair.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u04-l04"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u01_grammar",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_vocabulary_senses",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_functions",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_pronunciation",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_discourse",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_pragmatics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_collocations",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_lexical_chunks",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_topics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_skills",
+          "usage": "REVIEW"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u05-l01",
+      "tier": "A2.1",
+      "unit_id": "m16a2-v1-a2-u05",
+      "sequence": 21,
+      "lesson_kind": "LEARN",
+      "topic": "choosing language for daily situations",
+      "language_focus": "Select suitable A2.1 language for a story, transaction, or request.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u04-l05"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u01_grammar",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_vocabulary_senses",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_pronunciation",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_discourse",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_pragmatics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_collocations",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_lexical_chunks",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_topics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_skills",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u05-l02",
+      "tier": "A2.1",
+      "unit_id": "m16a2-v1-a2-u05",
+      "sequence": 22,
+      "lesson_kind": "LEARN",
+      "topic": "retelling a short message",
+      "language_focus": "Follow a short event account and retell its main sequence.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u05-l01"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u01_discourse",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_skills",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_pronunciation",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_vocabulary_senses",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u05-l03",
+      "tier": "A2.1",
+      "unit_id": "m16a2-v1-a2-u05",
+      "sequence": 23,
+      "lesson_kind": "LEARN",
+      "topic": "handling a practical conversation",
+      "language_focus": "Use a request, follow-up, and repair in one short interaction.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u05-l02"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u01_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_pragmatics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_lexical_chunks",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_collocations",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u05-l04",
+      "tier": "A2.1",
+      "unit_id": "m16a2-v1-a2-u05",
+      "sequence": 24,
+      "lesson_kind": "LEARN",
+      "topic": "preparing an A2.1 account",
+      "language_focus": "Prepare to use the A2.1 targets across familiar practical contexts.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u05-l03"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u01_grammar",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_vocabulary_senses",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_pronunciation",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_discourse",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_pragmatics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_collocations",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_lexical_chunks",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_topics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u01_skills",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u05-l05",
+      "tier": "A2.1",
+      "unit_id": "m16a2-v1-a2-u05",
+      "sequence": 25,
+      "lesson_kind": "REVIEW",
+      "topic": "reviewing A2.1 communication",
+      "language_focus": "Review all A2.1 target dimensions before the unit test.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u05-l04"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u01_grammar",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_vocabulary_senses",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_functions",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_pronunciation",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_discourse",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_pragmatics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_collocations",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_lexical_chunks",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_topics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u01_skills",
+          "usage": "REVIEW"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u06-l01",
+      "tier": "A2.2",
+      "unit_id": "m16a2-v1-a2-u06",
+      "sequence": 26,
+      "lesson_kind": "LEARN",
+      "topic": "planning a study evening",
+      "language_focus": "State a personal plan and give one reason for it.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u05-l05"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u06_grammar",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a2t_u06_vocabulary_senses",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a2t_u06_functions",
+          "usage": "INTRODUCE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u06-l02",
+      "tier": "A2.2",
+      "unit_id": "m16a2-v1-a2-u06",
+      "sequence": 27,
+      "lesson_kind": "LEARN",
+      "topic": "talking about a weekend plan",
+      "language_focus": "Use weak forms and thought groups in a short plan.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u06-l01"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u06_pronunciation",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a2t_u06_discourse",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a2t_u06_lexical_chunks",
+          "usage": "INTRODUCE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u06-l03",
+      "tier": "A2.2",
+      "unit_id": "m16a2-v1-a2-u06",
+      "sequence": 28,
+      "lesson_kind": "LEARN",
+      "topic": "inviting a classmate",
+      "language_focus": "Make, accept, or decline a simple invitation appropriately.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u06-l02"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u06_pragmatics",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a2t_u06_collocations",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a2t_u06_skills",
+          "usage": "INTRODUCE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u06-l04",
+      "tier": "A2.2",
+      "unit_id": "m16a2-v1-a2-u06",
+      "sequence": 29,
+      "lesson_kind": "LEARN",
+      "topic": "making a study timetable",
+      "language_focus": "Organize a short exchange about study and future plans.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u06-l03"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u06_topics",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a2t_u06_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_skills",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u06-l05",
+      "tier": "A2.2",
+      "unit_id": "m16a2-v1-a2-u06",
+      "sequence": 30,
+      "lesson_kind": "REVIEW",
+      "topic": "reviewing plans and invitations",
+      "language_focus": "Review plan, reason, invitation, and response language.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u06-l04"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u06_grammar",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_vocabulary_senses",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_functions",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_pronunciation",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_discourse",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_pragmatics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_collocations",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_lexical_chunks",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_topics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_skills",
+          "usage": "REVIEW"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u07-l01",
+      "tier": "A2.2",
+      "unit_id": "m16a2-v1-a2-u07",
+      "sequence": 31,
+      "lesson_kind": "LEARN",
+      "topic": "describing a work goal",
+      "language_focus": "Describe a work or study plan using clear future language.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u06-l05"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u06_grammar",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_vocabulary_senses",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_topics",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u07-l02",
+      "tier": "A2.2",
+      "unit_id": "m16a2-v1-a2-u07",
+      "sequence": 32,
+      "lesson_kind": "LEARN",
+      "topic": "sharing a small achievement",
+      "language_focus": "Report a simple achievement and ask a relevant follow-up.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u07-l01"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u06_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_discourse",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_skills",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u07-l03",
+      "tier": "A2.2",
+      "unit_id": "m16a2-v1-a2-u07",
+      "sequence": 33,
+      "lesson_kind": "LEARN",
+      "topic": "using a workplace message",
+      "language_focus": "Use common planning and achievement chunks in a short exchange.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u07-l02"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u06_lexical_chunks",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_collocations",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_pragmatics",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u07-l04",
+      "tier": "A2.2",
+      "unit_id": "m16a2-v1-a2-u07",
+      "sequence": 34,
+      "lesson_kind": "LEARN",
+      "topic": "saying plans naturally",
+      "language_focus": "Use weak forms and clear information stress when arranging a plan.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u07-l03"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u06_pronunciation",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_skills",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_functions",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u07-l05",
+      "tier": "A2.2",
+      "unit_id": "m16a2-v1-a2-u07",
+      "sequence": 35,
+      "lesson_kind": "REVIEW",
+      "topic": "reviewing work and study language",
+      "language_focus": "Review planning, achievement, and follow-up language.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u07-l04"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u06_grammar",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_vocabulary_senses",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_functions",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_pronunciation",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_discourse",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_pragmatics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_collocations",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_lexical_chunks",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_topics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_skills",
+          "usage": "REVIEW"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u08-l01",
+      "tier": "A2.2",
+      "unit_id": "m16a2-v1-a2-u08",
+      "sequence": 36,
+      "lesson_kind": "LEARN",
+      "topic": "offering help at an event",
+      "language_focus": "Make a practical offer and respond clearly.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u07-l05"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u06_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_pragmatics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_vocabulary_senses",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u08-l02",
+      "tier": "A2.2",
+      "unit_id": "m16a2-v1-a2-u08",
+      "sequence": 37,
+      "lesson_kind": "LEARN",
+      "topic": "arranging a meeting place",
+      "language_focus": "Make a simple arrangement with a time, place, and plan.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u08-l01"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u06_grammar",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_discourse",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_topics",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u08-l03",
+      "tier": "A2.2",
+      "unit_id": "m16a2-v1-a2-u08",
+      "sequence": 38,
+      "lesson_kind": "LEARN",
+      "topic": "responding to an invitation",
+      "language_focus": "Use invitation and arrangement chunks with suitable stress.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u08-l02"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u06_lexical_chunks",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_collocations",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_pronunciation",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u08-l04",
+      "tier": "A2.2",
+      "unit_id": "m16a2-v1-a2-u08",
+      "sequence": 39,
+      "lesson_kind": "LEARN",
+      "topic": "changing a weekend arrangement",
+      "language_focus": "Suggest and negotiate one small change to an arrangement.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u08-l03"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u06_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_skills",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_pragmatics",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u08-l05",
+      "tier": "A2.2",
+      "unit_id": "m16a2-v1-a2-u08",
+      "sequence": 40,
+      "lesson_kind": "REVIEW",
+      "topic": "reviewing arrangements",
+      "language_focus": "Review offers, invitations, arrangements, and changes.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u08-l04"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u06_grammar",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_vocabulary_senses",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_functions",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_pronunciation",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_discourse",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_pragmatics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_collocations",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_lexical_chunks",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_topics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_skills",
+          "usage": "REVIEW"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u09-l01",
+      "tier": "A2.2",
+      "unit_id": "m16a2-v1-a2-u09",
+      "sequence": 41,
+      "lesson_kind": "LEARN",
+      "topic": "planning a community activity",
+      "language_focus": "Describe a future community activity and its purpose.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u08-l05"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u06_grammar",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_vocabulary_senses",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_topics",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u09-l02",
+      "tier": "A2.2",
+      "unit_id": "m16a2-v1-a2-u09",
+      "sequence": 42,
+      "lesson_kind": "LEARN",
+      "topic": "organising volunteers",
+      "language_focus": "Organize a short plan with a reason and clear sequence.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u09-l01"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u06_discourse",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_skills",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u09-l03",
+      "tier": "A2.2",
+      "unit_id": "m16a2-v1-a2-u09",
+      "sequence": 43,
+      "lesson_kind": "LEARN",
+      "topic": "inviting neighbours",
+      "language_focus": "Invite another person and respond appropriately to their answer.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u09-l02"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u06_pragmatics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_lexical_chunks",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_collocations",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u09-l04",
+      "tier": "A2.2",
+      "unit_id": "m16a2-v1-a2-u09",
+      "sequence": 44,
+      "lesson_kind": "LEARN",
+      "topic": "speaking about a future activity",
+      "language_focus": "Use weak forms, thought groups, and key-word stress in a plan.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u09-l03"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u06_pronunciation",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_skills",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_functions",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u09-l05",
+      "tier": "A2.2",
+      "unit_id": "m16a2-v1-a2-u09",
+      "sequence": 45,
+      "lesson_kind": "REVIEW",
+      "topic": "reviewing community participation",
+      "language_focus": "Review future plans, reasons, invitations, and arrangements.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u09-l04"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u06_grammar",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_vocabulary_senses",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_functions",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_pronunciation",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_discourse",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_pragmatics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_collocations",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_lexical_chunks",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_topics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_skills",
+          "usage": "REVIEW"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u10-l01",
+      "tier": "A2.2",
+      "unit_id": "m16a2-v1-a2-u10",
+      "sequence": 46,
+      "lesson_kind": "LEARN",
+      "topic": "planning across several situations",
+      "language_focus": "Select suitable A2.2 language for study, work, or community plans.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u09-l05"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u06_grammar",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_vocabulary_senses",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_pronunciation",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_discourse",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_pragmatics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_collocations",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_lexical_chunks",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_topics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_skills",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u10-l02",
+      "tier": "A2.2",
+      "unit_id": "m16a2-v1-a2-u10",
+      "sequence": 47,
+      "lesson_kind": "LEARN",
+      "topic": "coordinating a group plan",
+      "language_focus": "Make an arrangement, give a reason, and respond to a change.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u10-l01"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u06_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_discourse",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_pragmatics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_skills",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u10-l03",
+      "tier": "A2.2",
+      "unit_id": "m16a2-v1-a2-u10",
+      "sequence": 48,
+      "lesson_kind": "LEARN",
+      "topic": "listening before a planned conversation",
+      "language_focus": "Follow a short planned interaction and produce a clear response.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u10-l02"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u06_pronunciation",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_vocabulary_senses",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_lexical_chunks",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_collocations",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u10-l04",
+      "tier": "A2.2",
+      "unit_id": "m16a2-v1-a2-u10",
+      "sequence": 49,
+      "lesson_kind": "LEARN",
+      "topic": "preparing an A2.2 exchange",
+      "language_focus": "Prepare to use the A2.2 targets in a connected practical exchange.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u10-l03"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u06_grammar",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_vocabulary_senses",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_pronunciation",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_discourse",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_pragmatics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_collocations",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_lexical_chunks",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_topics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "a2t_u06_skills",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u10-l05",
+      "tier": "A2.2",
+      "unit_id": "m16a2-v1-a2-u10",
+      "sequence": 50,
+      "lesson_kind": "REVIEW",
+      "topic": "reviewing A2.2 communication",
+      "language_focus": "Review all A2.2 target dimensions before the unit test.",
+      "prerequisite_lesson_ids": [
+        "m16a2-v1-a2-u10-l04"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a2t_u06_grammar",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_vocabulary_senses",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_functions",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_pronunciation",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_discourse",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_pragmatics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_collocations",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_lexical_chunks",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_topics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "a2t_u06_skills",
+          "usage": "REVIEW"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    }
+  ]
+}

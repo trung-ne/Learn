@@ -1,0 +1,993 @@
+{
+  "schema_version": "1.0",
+  "record_type": "a2_full_content_unit",
+  "unit_id": "m16a2-v1-a2-u08",
+  "tier": "A2.2",
+  "content_origin": "PROJECT_AUTHORED",
+  "lessons": [
+    {
+      "lesson_id": "m16a2-v1-a2-u08-l01",
+      "title": "Making an offer",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a2t_u06_functions",
+        "a2t_u06_pragmatics",
+        "a2t_u06_vocabulary_senses"
+      ],
+      "objectives": [
+        "Make a practical offer and respond clearly.",
+        "Use a main idea and one relevant detail in a response about offering help at an event."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice form and meaning (8 minutes)",
+          "body": "Read the model aloud twice: 'Can I bring some drinks for the meeting on Saturday?' Underline the words that show the situation, time, or result. In this lesson, make a practical offer and respond clearly. Keep the language connected: do not give isolated words.",
+          "target_ids": [
+            "a2t_u06_functions",
+            "a2t_u06_pragmatics",
+            "a2t_u06_vocabulary_senses"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided dialogue (8 minutes)",
+          "body": "Partner A begins a realistic exchange about offering help at an event. Partner B asks for one missing detail. Swap roles and make one change to the time, place, reason, quantity, or next action. Check that the exchange achieves: Make a practical offer and respond clearly.",
+          "target_ids": [
+            "a2t_u06_functions",
+            "a2t_u06_pragmatics",
+            "a2t_u06_vocabulary_senses"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent response (6 minutes)",
+          "body": "Create a short message about offering help at an event without reading the model. Include a main event or plan and one precise detail. Speak it once slowly, then once at a natural pace. Listen for whether the key information is clear.",
+          "target_ids": [
+            "a2t_u06_functions",
+            "a2t_u06_pragmatics",
+            "a2t_u06_vocabulary_senses"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a2t_u06_functions",
+            "a2t_u06_pragmatics",
+            "a2t_u06_vocabulary_senses"
+          ],
+          "prompt": "Choose the response that gives a clear, useful message for this situation: offering help at an event.",
+          "media_required": false,
+          "options": [
+            "Can I bring some drinks for the meeting on Saturday?",
+            "Would you like to join our park clean-up and bring a pair of gloves?",
+            "My card did not work at the machine, so I asked a staff member for help."
+          ],
+          "correct_answer": "Can I bring some drinks for the meeting on Saturday?"
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "a2t_u06_functions",
+            "a2t_u06_pragmatics",
+            "a2t_u06_vocabulary_senses"
+          ],
+          "prompt": "Complete the model with the missing words: 'Can I bring some drinks for the ____?'",
+          "media_required": false,
+          "acceptable_answers": [
+            "meeting on Saturday"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "a2t_u06_functions",
+            "a2t_u06_pragmatics",
+            "a2t_u06_vocabulary_senses"
+          ],
+          "prompt": "Read this short message for the lesson 'Making an offer' and identify the real-life situation it describes.",
+          "media_required": false,
+          "stimulus": "Can I bring some drinks for the meeting on Saturday? The message gives one main point and one detail for the listener.",
+          "questions": [
+            {
+              "question": "What situation does the message describe?",
+              "acceptable_answers": [
+                "The message is about offering help at an event."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "a2t_u06_functions",
+            "a2t_u06_pragmatics",
+            "a2t_u06_vocabulary_senses"
+          ],
+          "prompt": "Speak for 30–45 seconds about offering help at an event. State the main message, add a relevant detail, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Communicates the main message about offering help at an event clearly.",
+              "Adds a relevant detail and responds appropriately to a follow-up question."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short message about offering help at an event. Answer the question before the transcript is revealed, then listen again and check the key detail.",
+          "goal": "Identify the situation and a useful detail in a short message about offering help at an event.",
+          "target_ids": [
+            "a2t_u06_functions",
+            "a2t_u06_pragmatics",
+            "a2t_u06_vocabulary_senses"
+          ],
+          "transcript": "Can I bring some drinks for the meeting on Saturday?",
+          "question": "What is the message mainly about?",
+          "answer": "The listener should understand that it concerns offering help at an event.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay offering help at an event. Learner role: explain the situation and give one useful detail. Tutor role: be a helpful listener, ask one specific follow-up, and confirm the next step. Begin with a natural greeting and finish once both roles agree on the next action.",
+          "goal": "Complete a clear, practical exchange about offering help at an event.",
+          "target_ids": [
+            "a2t_u06_functions",
+            "a2t_u06_pragmatics",
+            "a2t_u06_vocabulary_senses"
+          ],
+          "constraints": [
+            "Name the learner and tutor roles before the first turn.",
+            "Use at most three tutor turns and stop after the agreed next step."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Say the model for offering help at an event in two thought groups. Mark the pause between ideas, then stress the word that gives the key action, time, quantity, reason, or request. Record a second attempt after listening to your first attempt.",
+          "goal": "Make the key information in offering help at an event easy to hear.",
+          "target_ids": [
+            "a2t_u06_functions",
+            "a2t_u06_pragmatics",
+            "a2t_u06_vocabulary_senses"
+          ],
+          "target": "Thought-group pause and key-word stress in making an offer",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a 35–50 word message about offering help at an event. Include the main event or plan, one precise detail, and the next action or response. Submit your own draft before requesting feedback.",
+          "goal": "Write a connected, useful short message about offering help at an event.",
+          "target_ids": [
+            "a2t_u06_functions",
+            "a2t_u06_pragmatics",
+            "a2t_u06_vocabulary_senses"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u08-l02",
+      "title": "Arranging a time and place",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a2t_u06_grammar",
+        "a2t_u06_discourse",
+        "a2t_u06_topics"
+      ],
+      "objectives": [
+        "Make a simple arrangement with a time, place, and plan.",
+        "Use a main idea and one relevant detail in a response about arranging a meeting place."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Build a useful turn (8 minutes)",
+          "body": "Start with the model: 'Let's meet outside the community centre at half past six.' Replace one detail with your own information about arranging a meeting place. Then add a short follow-up or reason. This builds the skill to make a simple arrangement with a time, place, and plan.",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_discourse",
+            "a2t_u06_topics"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided dialogue (8 minutes)",
+          "body": "Partner A begins a realistic exchange about arranging a meeting place. Partner B asks for one missing detail. Swap roles and make one change to the time, place, reason, quantity, or next action. Check that the exchange achieves: Make a simple arrangement with a time, place, and plan.",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_discourse",
+            "a2t_u06_topics"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent response (6 minutes)",
+          "body": "Create a short message about arranging a meeting place without reading the model. Include a main event or plan and one precise detail. Speak it once slowly, then once at a natural pace. Listen for whether the key information is clear.",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_discourse",
+            "a2t_u06_topics"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_discourse",
+            "a2t_u06_topics"
+          ],
+          "prompt": "Choose the response that gives a clear, useful message for this situation: arranging a meeting place.",
+          "media_required": false,
+          "options": [
+            "Let's meet outside the community centre at half past six.",
+            "I am going to explain the plan slowly and stress the time and place.",
+            "I compared two products, chose one, and checked the quantity and price."
+          ],
+          "correct_answer": "Let's meet outside the community centre at half past six."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_discourse",
+            "a2t_u06_topics"
+          ],
+          "prompt": "Complete the model with the missing words: 'Let's meet outside the community centre at ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "half past six"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_discourse",
+            "a2t_u06_topics"
+          ],
+          "prompt": "Read this short message for the lesson 'Arranging a time and place' and identify the real-life situation it describes.",
+          "media_required": false,
+          "stimulus": "Let's meet outside the community centre at half past six. The message gives one main point and one detail for the listener.",
+          "questions": [
+            {
+              "question": "What situation does the message describe?",
+              "acceptable_answers": [
+                "The message is about arranging a meeting place."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_discourse",
+            "a2t_u06_topics"
+          ],
+          "prompt": "Speak for 30–45 seconds about arranging a meeting place. State the main message, add a relevant detail, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Communicates the main message about arranging a meeting place clearly.",
+              "Adds a relevant detail and responds appropriately to a follow-up question."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short message about arranging a meeting place. Answer the question before the transcript is revealed, then listen again and check the key detail.",
+          "goal": "Identify the situation and a useful detail in a short message about arranging a meeting place.",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_discourse",
+            "a2t_u06_topics"
+          ],
+          "transcript": "Let's meet outside the community centre at half past six.",
+          "question": "What is the message mainly about?",
+          "answer": "The listener should understand that it concerns arranging a meeting place.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay arranging a meeting place. Learner role: explain the situation and give one useful detail. Tutor role: be a helpful listener, ask one specific follow-up, and confirm the next step. Begin with a natural greeting and finish once both roles agree on the next action.",
+          "goal": "Complete a clear, practical exchange about arranging a meeting place.",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_discourse",
+            "a2t_u06_topics"
+          ],
+          "constraints": [
+            "Name the learner and tutor roles before the first turn.",
+            "Use at most three tutor turns and stop after the agreed next step."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Say the model for arranging a meeting place in two thought groups. Mark the pause between ideas, then stress the word that gives the key action, time, quantity, reason, or request. Record a second attempt after listening to your first attempt.",
+          "goal": "Make the key information in arranging a meeting place easy to hear.",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_discourse",
+            "a2t_u06_topics"
+          ],
+          "target": "Thought-group pause and key-word stress in arranging a time and place",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a 35–50 word message about arranging a meeting place. Include the main event or plan, one precise detail, and the next action or response. Submit your own draft before requesting feedback.",
+          "goal": "Write a connected, useful short message about arranging a meeting place.",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_discourse",
+            "a2t_u06_topics"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u08-l03",
+      "title": "Responding naturally",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a2t_u06_lexical_chunks",
+        "a2t_u06_collocations",
+        "a2t_u06_pronunciation"
+      ],
+      "objectives": [
+        "Use invitation and arrangement chunks with suitable stress.",
+        "Use a main idea and one relevant detail in a response about responding to an invitation."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Make the message easy to hear (8 minutes)",
+          "body": "Say the model in two thought groups: 'That sounds good, but could we meet a little later?' Pause after the first complete idea and stress the word that carries the important information. Then say a new version about responding to an invitation. This supports the goal to use invitation and arrangement chunks with suitable stress.",
+          "target_ids": [
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_collocations",
+            "a2t_u06_pronunciation"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided dialogue (8 minutes)",
+          "body": "Partner A begins a realistic exchange about responding to an invitation. Partner B asks for one missing detail. Swap roles and make one change to the time, place, reason, quantity, or next action. Check that the exchange achieves: Use invitation and arrangement chunks with suitable stress.",
+          "target_ids": [
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_collocations",
+            "a2t_u06_pronunciation"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent response (6 minutes)",
+          "body": "Create a short message about responding to an invitation without reading the model. Include a main event or plan and one precise detail. Speak it once slowly, then once at a natural pace. Listen for whether the key information is clear.",
+          "target_ids": [
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_collocations",
+            "a2t_u06_pronunciation"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_collocations",
+            "a2t_u06_pronunciation"
+          ],
+          "prompt": "Choose the response that gives a clear, useful message for this situation: responding to an invitation.",
+          "media_required": false,
+          "options": [
+            "That sounds good, but could we meet a little later?",
+            "I can give a reason, invite others, and organize a simple activity.",
+            "I have had a headache since yesterday, so I need some advice."
+          ],
+          "correct_answer": "That sounds good, but could we meet a little later?"
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_collocations",
+            "a2t_u06_pronunciation"
+          ],
+          "prompt": "Complete the model with the missing words: 'That sounds good, but could we meet ____?'",
+          "media_required": false,
+          "acceptable_answers": [
+            "a little later"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_collocations",
+            "a2t_u06_pronunciation"
+          ],
+          "prompt": "Read this short message for the lesson 'Responding naturally' and identify the real-life situation it describes.",
+          "media_required": false,
+          "stimulus": "That sounds good, but could we meet a little later? The message gives one main point and one detail for the listener.",
+          "questions": [
+            {
+              "question": "What situation does the message describe?",
+              "acceptable_answers": [
+                "The message is about responding to an invitation."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_collocations",
+            "a2t_u06_pronunciation"
+          ],
+          "prompt": "Speak for 30–45 seconds about responding to an invitation. State the main message, add a relevant detail, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Communicates the main message about responding to an invitation clearly.",
+              "Adds a relevant detail and responds appropriately to a follow-up question."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short message about responding to an invitation. Answer the question before the transcript is revealed, then listen again and check the key detail.",
+          "goal": "Identify the situation and a useful detail in a short message about responding to an invitation.",
+          "target_ids": [
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_collocations",
+            "a2t_u06_pronunciation"
+          ],
+          "transcript": "That sounds good, but could we meet a little later?",
+          "question": "What is the message mainly about?",
+          "answer": "The listener should understand that it concerns responding to an invitation.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay responding to an invitation. Learner role: explain the situation and give one useful detail. Tutor role: be a helpful listener, ask one specific follow-up, and confirm the next step. Begin with a natural greeting and finish once both roles agree on the next action.",
+          "goal": "Complete a clear, practical exchange about responding to an invitation.",
+          "target_ids": [
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_collocations",
+            "a2t_u06_pronunciation"
+          ],
+          "constraints": [
+            "Name the learner and tutor roles before the first turn.",
+            "Use at most three tutor turns and stop after the agreed next step."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Say the model for responding to an invitation in two thought groups. Mark the pause between ideas, then stress the word that gives the key action, time, quantity, reason, or request. Record a second attempt after listening to your first attempt.",
+          "goal": "Make the key information in responding to an invitation easy to hear.",
+          "target_ids": [
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_collocations",
+            "a2t_u06_pronunciation"
+          ],
+          "target": "Thought-group pause and key-word stress in responding naturally",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a 35–50 word message about responding to an invitation. Include the main event or plan, one precise detail, and the next action or response. Submit your own draft before requesting feedback.",
+          "goal": "Write a connected, useful short message about responding to an invitation.",
+          "target_ids": [
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_collocations",
+            "a2t_u06_pronunciation"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u08-l04",
+      "title": "Changing a plan",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a2t_u06_functions",
+        "a2t_u06_skills",
+        "a2t_u06_pragmatics"
+      ],
+      "objectives": [
+        "Suggest and negotiate one small change to an arrangement.",
+        "Use a main idea and one relevant detail in a response about changing a weekend arrangement."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Use it in a practical exchange (8 minutes)",
+          "body": "Prepare a two-turn exchange about changing a weekend arrangement. Give the main detail, listen to one follow-up, and answer it clearly. Use this model as support: 'I need to change our plan because my sister is visiting on Sunday.' The exchange should meet this lesson goal: Suggest and negotiate one small change to an arrangement.",
+          "target_ids": [
+            "a2t_u06_functions",
+            "a2t_u06_skills",
+            "a2t_u06_pragmatics"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided dialogue (8 minutes)",
+          "body": "Partner A begins a realistic exchange about changing a weekend arrangement. Partner B asks for one missing detail. Swap roles and make one change to the time, place, reason, quantity, or next action. Check that the exchange achieves: Suggest and negotiate one small change to an arrangement.",
+          "target_ids": [
+            "a2t_u06_functions",
+            "a2t_u06_skills",
+            "a2t_u06_pragmatics"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent response (6 minutes)",
+          "body": "Create a short message about changing a weekend arrangement without reading the model. Include a main event or plan and one precise detail. Speak it once slowly, then once at a natural pace. Listen for whether the key information is clear.",
+          "target_ids": [
+            "a2t_u06_functions",
+            "a2t_u06_skills",
+            "a2t_u06_pragmatics"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a2t_u06_functions",
+            "a2t_u06_skills",
+            "a2t_u06_pragmatics"
+          ],
+          "prompt": "Choose the response that gives a clear, useful message for this situation: changing a weekend arrangement.",
+          "media_required": false,
+          "options": [
+            "I need to change our plan because my sister is visiting on Sunday.",
+            "I can choose suitable future language for study, work, and community plans.",
+            "Could you help me carry this box upstairs, please?"
+          ],
+          "correct_answer": "I need to change our plan because my sister is visiting on Sunday."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "a2t_u06_functions",
+            "a2t_u06_skills",
+            "a2t_u06_pragmatics"
+          ],
+          "prompt": "Complete the model with the missing words: 'I need to change our plan because my sister is ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "visiting on Sunday"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "a2t_u06_functions",
+            "a2t_u06_skills",
+            "a2t_u06_pragmatics"
+          ],
+          "prompt": "Read this short message for the lesson 'Changing a plan' and identify the real-life situation it describes.",
+          "media_required": false,
+          "stimulus": "I need to change our plan because my sister is visiting on Sunday. The message gives one main point and one detail for the listener.",
+          "questions": [
+            {
+              "question": "What situation does the message describe?",
+              "acceptable_answers": [
+                "The message is about changing a weekend arrangement."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "a2t_u06_functions",
+            "a2t_u06_skills",
+            "a2t_u06_pragmatics"
+          ],
+          "prompt": "Speak for 30–45 seconds about changing a weekend arrangement. State the main message, add a relevant detail, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Communicates the main message about changing a weekend arrangement clearly.",
+              "Adds a relevant detail and responds appropriately to a follow-up question."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short message about changing a weekend arrangement. Answer the question before the transcript is revealed, then listen again and check the key detail.",
+          "goal": "Identify the situation and a useful detail in a short message about changing a weekend arrangement.",
+          "target_ids": [
+            "a2t_u06_functions",
+            "a2t_u06_skills",
+            "a2t_u06_pragmatics"
+          ],
+          "transcript": "I need to change our plan because my sister is visiting on Sunday.",
+          "question": "What is the message mainly about?",
+          "answer": "The listener should understand that it concerns changing a weekend arrangement.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay changing a weekend arrangement. Learner role: explain the situation and give one useful detail. Tutor role: be a helpful listener, ask one specific follow-up, and confirm the next step. Begin with a natural greeting and finish once both roles agree on the next action.",
+          "goal": "Complete a clear, practical exchange about changing a weekend arrangement.",
+          "target_ids": [
+            "a2t_u06_functions",
+            "a2t_u06_skills",
+            "a2t_u06_pragmatics"
+          ],
+          "constraints": [
+            "Name the learner and tutor roles before the first turn.",
+            "Use at most three tutor turns and stop after the agreed next step."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Say the model for changing a weekend arrangement in two thought groups. Mark the pause between ideas, then stress the word that gives the key action, time, quantity, reason, or request. Record a second attempt after listening to your first attempt.",
+          "goal": "Make the key information in changing a weekend arrangement easy to hear.",
+          "target_ids": [
+            "a2t_u06_functions",
+            "a2t_u06_skills",
+            "a2t_u06_pragmatics"
+          ],
+          "target": "Thought-group pause and key-word stress in changing a plan",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a 35–50 word message about changing a weekend arrangement. Include the main event or plan, one precise detail, and the next action or response. Submit your own draft before requesting feedback.",
+          "goal": "Write a connected, useful short message about changing a weekend arrangement.",
+          "target_ids": [
+            "a2t_u06_functions",
+            "a2t_u06_skills",
+            "a2t_u06_pragmatics"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u08-l05",
+      "title": "Review: offers and arrangements",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a2t_u06_grammar",
+        "a2t_u06_vocabulary_senses",
+        "a2t_u06_functions",
+        "a2t_u06_pronunciation",
+        "a2t_u06_discourse",
+        "a2t_u06_pragmatics",
+        "a2t_u06_collocations",
+        "a2t_u06_lexical_chunks",
+        "a2t_u06_topics",
+        "a2t_u06_skills"
+      ],
+      "objectives": [
+        "Review offers, invitations, arrangements, and changes.",
+        "Use a main idea and one relevant detail in a response about reviewing arrangements."
+      ],
+      "content_sections": [
+        {
+          "id": "recall",
+          "section_type": "review",
+          "title": "Recall and select (8 minutes)",
+          "body": "Work without notes first. For the situation 'reviewing arrangements', say one sentence that meets this goal: Review offers, invitations, arrangements, and changes. Then check the model: 'I can make an offer, arrange details, and explain a change politely.' Identify one word or phrase that makes the message clear.",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_functions",
+            "a2t_u06_pronunciation",
+            "a2t_u06_discourse",
+            "a2t_u06_pragmatics",
+            "a2t_u06_collocations",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_topics",
+            "a2t_u06_skills"
+          ]
+        },
+        {
+          "id": "compare",
+          "section_type": "dialogue",
+          "title": "Compare two responses (8 minutes)",
+          "body": "Give one clear response for reviewing arrangements, then ask a partner one follow-up question. Compare the response with the model and repair one missing time, reason, place, quantity, or next step. Use the whole unit's familiar language rather than memorising one sentence.",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_functions",
+            "a2t_u06_pronunciation",
+            "a2t_u06_discourse",
+            "a2t_u06_pragmatics",
+            "a2t_u06_collocations",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_topics",
+            "a2t_u06_skills"
+          ]
+        },
+        {
+          "id": "self-check",
+          "section_type": "review",
+          "title": "Self-check and transfer (6 minutes)",
+          "body": "Before the unit test, check three things: the main message is clear, one useful detail is included, and the listener knows what happens next. Say or write a new short message about a similar situation, not the model about reviewing arrangements.",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_functions",
+            "a2t_u06_pronunciation",
+            "a2t_u06_discourse",
+            "a2t_u06_pragmatics",
+            "a2t_u06_collocations",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_topics",
+            "a2t_u06_skills"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_functions",
+            "a2t_u06_pronunciation",
+            "a2t_u06_discourse",
+            "a2t_u06_pragmatics",
+            "a2t_u06_collocations",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_topics",
+            "a2t_u06_skills"
+          ],
+          "prompt": "Choose the response that gives a clear, useful message for this situation: reviewing arrangements.",
+          "media_required": false,
+          "options": [
+            "I can make an offer, arrange details, and explain a change politely.",
+            "Let's agree on a time, a place, and one task for each person.",
+            "First I felt dizzy, then I sat down and called the pharmacy."
+          ],
+          "correct_answer": "I can make an offer, arrange details, and explain a change politely."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_functions",
+            "a2t_u06_pronunciation",
+            "a2t_u06_discourse",
+            "a2t_u06_pragmatics",
+            "a2t_u06_collocations",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_topics",
+            "a2t_u06_skills"
+          ],
+          "prompt": "Complete the model with the missing words: 'I can make an offer, arrange details, and explain ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "a change politely"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_functions",
+            "a2t_u06_pronunciation",
+            "a2t_u06_discourse",
+            "a2t_u06_pragmatics",
+            "a2t_u06_collocations",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_topics",
+            "a2t_u06_skills"
+          ],
+          "prompt": "Read this short message for the lesson 'Review: offers and arrangements' and identify the real-life situation it describes.",
+          "media_required": false,
+          "stimulus": "I can make an offer, arrange details, and explain a change politely. The message gives one main point and one detail for the listener.",
+          "questions": [
+            {
+              "question": "What situation does the message describe?",
+              "acceptable_answers": [
+                "The message is about reviewing arrangements."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_functions",
+            "a2t_u06_pronunciation",
+            "a2t_u06_discourse",
+            "a2t_u06_pragmatics",
+            "a2t_u06_collocations",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_topics",
+            "a2t_u06_skills"
+          ],
+          "prompt": "Speak for 30–45 seconds about reviewing arrangements. State the main message, add a relevant detail, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Communicates the main message about reviewing arrangements clearly.",
+              "Adds a relevant detail and responds appropriately to a follow-up question."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short message about reviewing arrangements. Answer the question before the transcript is revealed, then listen again and check the key detail.",
+          "goal": "Identify the situation and a useful detail in a short message about reviewing arrangements.",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_functions",
+            "a2t_u06_pronunciation",
+            "a2t_u06_discourse",
+            "a2t_u06_pragmatics",
+            "a2t_u06_collocations",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_topics",
+            "a2t_u06_skills"
+          ],
+          "transcript": "I can make an offer, arrange details, and explain a change politely.",
+          "question": "What is the message mainly about?",
+          "answer": "The listener should understand that it concerns reviewing arrangements.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay reviewing arrangements. Learner role: explain the situation and give one useful detail. Tutor role: be a helpful listener, ask one specific follow-up, and confirm the next step. Begin with a natural greeting and finish once both roles agree on the next action.",
+          "goal": "Complete a clear, practical exchange about reviewing arrangements.",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_functions",
+            "a2t_u06_pronunciation",
+            "a2t_u06_discourse",
+            "a2t_u06_pragmatics",
+            "a2t_u06_collocations",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_topics",
+            "a2t_u06_skills"
+          ],
+          "constraints": [
+            "Name the learner and tutor roles before the first turn.",
+            "Use at most three tutor turns and stop after the agreed next step."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Say the model for reviewing arrangements in two thought groups. Mark the pause between ideas, then stress the word that gives the key action, time, quantity, reason, or request. Record a second attempt after listening to your first attempt.",
+          "goal": "Make the key information in reviewing arrangements easy to hear.",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_functions",
+            "a2t_u06_pronunciation",
+            "a2t_u06_discourse",
+            "a2t_u06_pragmatics",
+            "a2t_u06_collocations",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_topics",
+            "a2t_u06_skills"
+          ],
+          "target": "Thought-group pause and key-word stress in review: offers and arrangements",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a 35–50 word message about reviewing arrangements. Include the main event or plan, one precise detail, and the next action or response. Submit your own draft before requesting feedback.",
+          "goal": "Write a connected, useful short message about reviewing arrangements.",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_functions",
+            "a2t_u06_pronunciation",
+            "a2t_u06_discourse",
+            "a2t_u06_pragmatics",
+            "a2t_u06_collocations",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_topics",
+            "a2t_u06_skills"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    }
+  ]
+}

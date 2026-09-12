@@ -40,6 +40,7 @@ english-master-a2-curriculum-blueprint = "english_master.a2_curriculum_blueprint
 english-master-a1-pilot = "english_master.a1_pilot.cli:main"
 english-master-a2-pilot = "english_master.a2_pilot.cli:main"
 english-master-a1-full = "english_master.a1_full.cli:main"
+english-master-a2-full = "english_master.a2_full.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

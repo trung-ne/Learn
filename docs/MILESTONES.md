@@ -563,6 +563,12 @@ The blueprint is a planning artifact only. It does not replace historical curric
 
 The pilot builds the first two A2.1 units into immutable packets with exercises and four AI-practice protocols. Deterministic verification, audit, and a five-lesson unit-stratified sample pass; content remains `UNREVIEWED` and no live-provider, human, release, or public-distribution claim is made. See [A2 Pilot](A2_PILOT.md).
 
+### Full A2 implementation follow-up
+
+**Status**: Implemented as a complete fifty-lesson development corpus
+
+Full A2 adds ten original-authored unit files and fifty immutable A2.1/A2.2 packets derived from the M16 A2 blueprint. Source hashes, references, prerequisites, exercise answer contracts, modality boundaries, duplicates, verification, and a 12-lesson ten-unit sample pass in the lightweight development workflow. Content remains `UNREVIEWED`; no live AI, human/release/provider, CEFR-endorsement, public-distribution, or real-media claim is made. See [Full A2](A2_FULL.md).
+
 ### Next: direct use of the deterministic A2 sample
 
 ---

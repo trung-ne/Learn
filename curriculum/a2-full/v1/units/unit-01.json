@@ -1,0 +1,1089 @@
+{
+  "schema_version": "1.0",
+  "record_type": "a2_full_content_unit",
+  "unit_id": "m16a2-v1-a2-u01",
+  "tier": "A2.1",
+  "content_origin": "PROJECT_AUTHORED",
+  "lessons": [
+    {
+      "lesson_id": "m16a2-v1-a2-u01-l01",
+      "title": "Past events: form and key words",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a2t_u01_grammar",
+        "a2t_u01_vocabulary_senses",
+        "a2t_u01_pronunciation"
+      ],
+      "objectives": [
+        "Describe one finished event with simple past-time language.",
+        "Use a main idea and one relevant detail in a response about a lost umbrella after a bus journey."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice form and meaning (8 minutes)",
+          "body": "Read the model aloud twice: 'Yesterday I left my umbrella on the number 8 bus, then I called the bus office.' Underline the words that show the situation, time, or result. In this lesson, describe one finished event with simple past-time language. Keep the language connected: do not give isolated words.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_pronunciation"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided dialogue (8 minutes)",
+          "body": "Partner A begins a realistic exchange about a lost umbrella after a bus journey. Partner B asks for one missing detail. Swap roles and make one change to the time, place, reason, quantity, or next action. Check that the exchange achieves: Describe one finished event with simple past-time language.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_pronunciation"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent response (6 minutes)",
+          "body": "Create a short message about a lost umbrella after a bus journey without reading the model. Include a main event or plan and one precise detail. Speak it once slowly, then once at a natural pace. Listen for whether the key information is clear.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_pronunciation"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_pronunciation"
+          ],
+          "prompt": "Choose the response that gives a clear, useful message for this situation: a lost umbrella after a bus journey.",
+          "media_required": false,
+          "options": [
+            "Yesterday I left my umbrella on the number 8 bus, then I called the bus office.",
+            "I need one ticket to the airport for tomorrow morning, please.",
+            "I can give a short account with time words, details, and a clear next step."
+          ],
+          "correct_answer": "Yesterday I left my umbrella on the number 8 bus, then I called the bus office."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_pronunciation"
+          ],
+          "prompt": "Complete the model with the missing words: 'Yesterday I left my umbrella on the number 8 bus, then I called ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "the bus office"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_pronunciation"
+          ],
+          "prompt": "Read this short message for the lesson 'Past events: form and key words' and identify the real-life situation it describes.",
+          "media_required": false,
+          "stimulus": "Yesterday I left my umbrella on the number 8 bus, then I called the bus office. The message gives one main point and one detail for the listener.",
+          "questions": [
+            {
+              "question": "What situation does the message describe?",
+              "acceptable_answers": [
+                "The message is about a lost umbrella after a bus journey."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_pronunciation"
+          ],
+          "prompt": "Speak for 30–45 seconds about a lost umbrella after a bus journey. State the main message, add a relevant detail, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Communicates the main message about a lost umbrella after a bus journey clearly.",
+              "Adds a relevant detail and responds appropriately to a follow-up question."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short message about a lost umbrella after a bus journey. Answer the question before the transcript is revealed, then listen again and check the key detail.",
+          "goal": "Identify the situation and a useful detail in a short message about a lost umbrella after a bus journey.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_pronunciation"
+          ],
+          "transcript": "Yesterday I left my umbrella on the number 8 bus, then I called the bus office.",
+          "question": "What is the message mainly about?",
+          "answer": "The listener should understand that it concerns a lost umbrella after a bus journey.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a lost umbrella after a bus journey. Learner role: explain the situation and give one useful detail. Tutor role: be a helpful listener, ask one specific follow-up, and confirm the next step. Begin with a natural greeting and finish once both roles agree on the next action.",
+          "goal": "Complete a clear, practical exchange about a lost umbrella after a bus journey.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_pronunciation"
+          ],
+          "constraints": [
+            "Name the learner and tutor roles before the first turn.",
+            "Use at most three tutor turns and stop after the agreed next step."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Say the model for a lost umbrella after a bus journey in two thought groups. Mark the pause between ideas, then stress the word that gives the key action, time, quantity, reason, or request. Record a second attempt after listening to your first attempt.",
+          "goal": "Make the key information in a lost umbrella after a bus journey easy to hear.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_pronunciation"
+          ],
+          "target": "Thought-group pause and key-word stress in past events: form and key words",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a 35–50 word message about a lost umbrella after a bus journey. Include the main event or plan, one precise detail, and the next action or response. Submit your own draft before requesting feedback.",
+          "goal": "Write a connected, useful short message about a lost umbrella after a bus journey.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_pronunciation"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u01-l02",
+      "title": "Event-reporting chunks",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a2t_u01_functions",
+        "a2t_u01_discourse",
+        "a2t_u01_lexical_chunks"
+      ],
+      "objectives": [
+        "Use a short frame to report what happened and when.",
+        "Use a main idea and one relevant detail in a response about a Saturday market visit."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Build a useful turn (8 minutes)",
+          "body": "Start with the model: 'On Saturday I bought tomatoes and asked the seller for a bag.' Replace one detail with your own information about a Saturday market visit. Then add a short follow-up or reason. This builds the skill to use a short frame to report what happened and when.",
+          "target_ids": [
+            "a2t_u01_functions",
+            "a2t_u01_discourse",
+            "a2t_u01_lexical_chunks"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided dialogue (8 minutes)",
+          "body": "Partner A begins a realistic exchange about a Saturday market visit. Partner B asks for one missing detail. Swap roles and make one change to the time, place, reason, quantity, or next action. Check that the exchange achieves: Use a short frame to report what happened and when.",
+          "target_ids": [
+            "a2t_u01_functions",
+            "a2t_u01_discourse",
+            "a2t_u01_lexical_chunks"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent response (6 minutes)",
+          "body": "Create a short message about a Saturday market visit without reading the model. Include a main event or plan and one precise detail. Speak it once slowly, then once at a natural pace. Listen for whether the key information is clear.",
+          "target_ids": [
+            "a2t_u01_functions",
+            "a2t_u01_discourse",
+            "a2t_u01_lexical_chunks"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a2t_u01_functions",
+            "a2t_u01_discourse",
+            "a2t_u01_lexical_chunks"
+          ],
+          "prompt": "Choose the response that gives a clear, useful message for this situation: a Saturday market visit.",
+          "media_required": false,
+          "options": [
+            "On Saturday I bought tomatoes and asked the seller for a bag.",
+            "My card did not work at the machine, so I asked a staff member for help.",
+            "I can choose language for stories, requests, and everyday problems."
+          ],
+          "correct_answer": "On Saturday I bought tomatoes and asked the seller for a bag."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "a2t_u01_functions",
+            "a2t_u01_discourse",
+            "a2t_u01_lexical_chunks"
+          ],
+          "prompt": "Complete the model with the missing words: 'On Saturday I bought tomatoes and asked the seller ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "for a bag"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "a2t_u01_functions",
+            "a2t_u01_discourse",
+            "a2t_u01_lexical_chunks"
+          ],
+          "prompt": "Read this short message for the lesson 'Event-reporting chunks' and identify the real-life situation it describes.",
+          "media_required": false,
+          "stimulus": "On Saturday I bought tomatoes and asked the seller for a bag. The message gives one main point and one detail for the listener.",
+          "questions": [
+            {
+              "question": "What situation does the message describe?",
+              "acceptable_answers": [
+                "The message is about a Saturday market visit."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "a2t_u01_functions",
+            "a2t_u01_discourse",
+            "a2t_u01_lexical_chunks"
+          ],
+          "prompt": "Speak for 30–45 seconds about a Saturday market visit. State the main message, add a relevant detail, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Communicates the main message about a Saturday market visit clearly.",
+              "Adds a relevant detail and responds appropriately to a follow-up question."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short message about a Saturday market visit. Answer the question before the transcript is revealed, then listen again and check the key detail.",
+          "goal": "Identify the situation and a useful detail in a short message about a Saturday market visit.",
+          "target_ids": [
+            "a2t_u01_functions",
+            "a2t_u01_discourse",
+            "a2t_u01_lexical_chunks"
+          ],
+          "transcript": "On Saturday I bought tomatoes and asked the seller for a bag.",
+          "question": "What is the message mainly about?",
+          "answer": "The listener should understand that it concerns a Saturday market visit.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a Saturday market visit. Learner role: explain the situation and give one useful detail. Tutor role: be a helpful listener, ask one specific follow-up, and confirm the next step. Begin with a natural greeting and finish once both roles agree on the next action.",
+          "goal": "Complete a clear, practical exchange about a Saturday market visit.",
+          "target_ids": [
+            "a2t_u01_functions",
+            "a2t_u01_discourse",
+            "a2t_u01_lexical_chunks"
+          ],
+          "constraints": [
+            "Name the learner and tutor roles before the first turn.",
+            "Use at most three tutor turns and stop after the agreed next step."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Say the model for a Saturday market visit in two thought groups. Mark the pause between ideas, then stress the word that gives the key action, time, quantity, reason, or request. Record a second attempt after listening to your first attempt.",
+          "goal": "Make the key information in a Saturday market visit easy to hear.",
+          "target_ids": [
+            "a2t_u01_functions",
+            "a2t_u01_discourse",
+            "a2t_u01_lexical_chunks"
+          ],
+          "target": "Thought-group pause and key-word stress in event-reporting chunks",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a 35–50 word message about a Saturday market visit. Include the main event or plan, one precise detail, and the next action or response. Submit your own draft before requesting feedback.",
+          "goal": "Write a connected, useful short message about a Saturday market visit.",
+          "target_ids": [
+            "a2t_u01_functions",
+            "a2t_u01_discourse",
+            "a2t_u01_lexical_chunks"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u01-l03",
+      "title": "Follow-up questions and repair",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a2t_u01_pragmatics",
+        "a2t_u01_collocations",
+        "a2t_u01_topics",
+        "a2t_u01_skills"
+      ],
+      "objectives": [
+        "Ask one follow-up question and repair a simple misunderstanding.",
+        "Use a main idea and one relevant detail in a response about a delayed train message."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Make the message easy to hear (8 minutes)",
+          "body": "Say the model in two thought groups: 'My train arrived late, so I sent my friend a message before dinner.' Pause after the first complete idea and stress the word that carries the important information. Then say a new version about a delayed train message. This supports the goal to ask one follow-up question and repair a simple misunderstanding.",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided dialogue (8 minutes)",
+          "body": "Partner A begins a realistic exchange about a delayed train message. Partner B asks for one missing detail. Swap roles and make one change to the time, place, reason, quantity, or next action. Check that the exchange achieves: Ask one follow-up question and repair a simple misunderstanding.",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent response (6 minutes)",
+          "body": "Create a short message about a delayed train message without reading the model. Include a main event or plan and one precise detail. Speak it once slowly, then once at a natural pace. Listen for whether the key information is clear.",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Choose the response that gives a clear, useful message for this situation: a delayed train message.",
+          "media_required": false,
+          "options": [
+            "My train arrived late, so I sent my friend a message before dinner.",
+            "I compared two products, chose one, and checked the quantity and price.",
+            "I am going to revise vocabulary after dinner and practise speaking on Friday."
+          ],
+          "correct_answer": "My train arrived late, so I sent my friend a message before dinner."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Complete the model with the missing words: 'My train arrived late, so I sent my friend a ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "message before dinner"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Read this short message for the lesson 'Follow-up questions and repair' and identify the real-life situation it describes.",
+          "media_required": false,
+          "stimulus": "My train arrived late, so I sent my friend a message before dinner. The message gives one main point and one detail for the listener.",
+          "questions": [
+            {
+              "question": "What situation does the message describe?",
+              "acceptable_answers": [
+                "The message is about a delayed train message."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Speak for 30–45 seconds about a delayed train message. State the main message, add a relevant detail, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Communicates the main message about a delayed train message clearly.",
+              "Adds a relevant detail and responds appropriately to a follow-up question."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short message about a delayed train message. Answer the question before the transcript is revealed, then listen again and check the key detail.",
+          "goal": "Identify the situation and a useful detail in a short message about a delayed train message.",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "transcript": "My train arrived late, so I sent my friend a message before dinner.",
+          "question": "What is the message mainly about?",
+          "answer": "The listener should understand that it concerns a delayed train message.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a delayed train message. Learner role: explain the situation and give one useful detail. Tutor role: be a helpful listener, ask one specific follow-up, and confirm the next step. Begin with a natural greeting and finish once both roles agree on the next action.",
+          "goal": "Complete a clear, practical exchange about a delayed train message.",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "constraints": [
+            "Name the learner and tutor roles before the first turn.",
+            "Use at most three tutor turns and stop after the agreed next step."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Say the model for a delayed train message in two thought groups. Mark the pause between ideas, then stress the word that gives the key action, time, quantity, reason, or request. Record a second attempt after listening to your first attempt.",
+          "goal": "Make the key information in a delayed train message easy to hear.",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "target": "Thought-group pause and key-word stress in follow-up questions and repair",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a 35–50 word message about a delayed train message. Include the main event or plan, one precise detail, and the next action or response. Submit your own draft before requesting feedback.",
+          "goal": "Write a connected, useful short message about a delayed train message.",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u01-l04",
+      "title": "A short personal account",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a2t_u01_grammar",
+        "a2t_u01_vocabulary_senses",
+        "a2t_u01_functions",
+        "a2t_u01_pronunciation",
+        "a2t_u01_discourse",
+        "a2t_u01_pragmatics",
+        "a2t_u01_collocations",
+        "a2t_u01_lexical_chunks",
+        "a2t_u01_topics",
+        "a2t_u01_skills"
+      ],
+      "objectives": [
+        "Organize a short account in a clear event order.",
+        "Use a main idea and one relevant detail in a response about a clinic visit."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Use it in a practical exchange (8 minutes)",
+          "body": "Prepare a two-turn exchange about a clinic visit. Give the main detail, listen to one follow-up, and answer it clearly. Use this model as support: 'Yesterday I felt ill, visited the clinic, and followed the nurse's advice.' The exchange should meet this lesson goal: Organize a short account in a clear event order.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided dialogue (8 minutes)",
+          "body": "Partner A begins a realistic exchange about a clinic visit. Partner B asks for one missing detail. Swap roles and make one change to the time, place, reason, quantity, or next action. Check that the exchange achieves: Organize a short account in a clear event order.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent response (6 minutes)",
+          "body": "Create a short message about a clinic visit without reading the model. Include a main event or plan and one precise detail. Speak it once slowly, then once at a natural pace. Listen for whether the key information is clear.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Choose the response that gives a clear, useful message for this situation: a clinic visit.",
+          "media_required": false,
+          "options": [
+            "Yesterday I felt ill, visited the clinic, and followed the nurse's advice.",
+            "I have had a headache since yesterday, so I need some advice.",
+            "I am going to meet my cousin at the library on Saturday afternoon."
+          ],
+          "correct_answer": "Yesterday I felt ill, visited the clinic, and followed the nurse's advice."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Complete the model with the missing words: 'Yesterday I felt ill, visited the clinic, and followed ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "the nurse's advice"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Read this short message for the lesson 'A short personal account' and identify the real-life situation it describes.",
+          "media_required": false,
+          "stimulus": "Yesterday I felt ill, visited the clinic, and followed the nurse's advice. The message gives one main point and one detail for the listener.",
+          "questions": [
+            {
+              "question": "What situation does the message describe?",
+              "acceptable_answers": [
+                "The message is about a clinic visit."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Speak for 30–45 seconds about a clinic visit. State the main message, add a relevant detail, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Communicates the main message about a clinic visit clearly.",
+              "Adds a relevant detail and responds appropriately to a follow-up question."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short message about a clinic visit. Answer the question before the transcript is revealed, then listen again and check the key detail.",
+          "goal": "Identify the situation and a useful detail in a short message about a clinic visit.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "transcript": "Yesterday I felt ill, visited the clinic, and followed the nurse's advice.",
+          "question": "What is the message mainly about?",
+          "answer": "The listener should understand that it concerns a clinic visit.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a clinic visit. Learner role: explain the situation and give one useful detail. Tutor role: be a helpful listener, ask one specific follow-up, and confirm the next step. Begin with a natural greeting and finish once both roles agree on the next action.",
+          "goal": "Complete a clear, practical exchange about a clinic visit.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "constraints": [
+            "Name the learner and tutor roles before the first turn.",
+            "Use at most three tutor turns and stop after the agreed next step."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Say the model for a clinic visit in two thought groups. Mark the pause between ideas, then stress the word that gives the key action, time, quantity, reason, or request. Record a second attempt after listening to your first attempt.",
+          "goal": "Make the key information in a clinic visit easy to hear.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "target": "Thought-group pause and key-word stress in a short personal account",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a 35–50 word message about a clinic visit. Include the main event or plan, one precise detail, and the next action or response. Submit your own draft before requesting feedback.",
+          "goal": "Write a connected, useful short message about a clinic visit.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u01-l05",
+      "title": "Review: recent experiences",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a2t_u01_grammar",
+        "a2t_u01_vocabulary_senses",
+        "a2t_u01_functions",
+        "a2t_u01_pronunciation",
+        "a2t_u01_discourse",
+        "a2t_u01_pragmatics",
+        "a2t_u01_collocations",
+        "a2t_u01_lexical_chunks",
+        "a2t_u01_topics",
+        "a2t_u01_skills"
+      ],
+      "objectives": [
+        "Review the unit targets in a short account and follow-up exchange.",
+        "Use a main idea and one relevant detail in a response about a weekend story for a friend."
+      ],
+      "content_sections": [
+        {
+          "id": "recall",
+          "section_type": "review",
+          "title": "Recall and select (8 minutes)",
+          "body": "Work without notes first. For the situation 'a weekend story for a friend', say one sentence that meets this goal: Review the unit targets in a short account and follow-up exchange. Then check the model: 'Last weekend I visited my aunt and told her about my new class.' Identify one word or phrase that makes the message clear.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ]
+        },
+        {
+          "id": "compare",
+          "section_type": "dialogue",
+          "title": "Compare two responses (8 minutes)",
+          "body": "Give one clear response for a weekend story for a friend, then ask a partner one follow-up question. Compare the response with the model and repair one missing time, reason, place, quantity, or next step. Use the whole unit's familiar language rather than memorising one sentence.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ]
+        },
+        {
+          "id": "self-check",
+          "section_type": "review",
+          "title": "Self-check and transfer (6 minutes)",
+          "body": "Before the unit test, check three things: the main message is clear, one useful detail is included, and the listener knows what happens next. Say or write a new short message about a similar situation, not the model about a weekend story for a friend.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Choose the response that gives a clear, useful message for this situation: a weekend story for a friend.",
+          "media_required": false,
+          "options": [
+            "Last weekend I visited my aunt and told her about my new class.",
+            "Could you help me carry this box upstairs, please?",
+            "Would you like to study together after class on Thursday?"
+          ],
+          "correct_answer": "Last weekend I visited my aunt and told her about my new class."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Complete the model with the missing words: 'Last weekend I visited my aunt and told her about ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "my new class"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Read this short message for the lesson 'Review: recent experiences' and identify the real-life situation it describes.",
+          "media_required": false,
+          "stimulus": "Last weekend I visited my aunt and told her about my new class. The message gives one main point and one detail for the listener.",
+          "questions": [
+            {
+              "question": "What situation does the message describe?",
+              "acceptable_answers": [
+                "The message is about a weekend story for a friend."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Speak for 30–45 seconds about a weekend story for a friend. State the main message, add a relevant detail, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Communicates the main message about a weekend story for a friend clearly.",
+              "Adds a relevant detail and responds appropriately to a follow-up question."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short message about a weekend story for a friend. Answer the question before the transcript is revealed, then listen again and check the key detail.",
+          "goal": "Identify the situation and a useful detail in a short message about a weekend story for a friend.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "transcript": "Last weekend I visited my aunt and told her about my new class.",
+          "question": "What is the message mainly about?",
+          "answer": "The listener should understand that it concerns a weekend story for a friend.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a weekend story for a friend. Learner role: explain the situation and give one useful detail. Tutor role: be a helpful listener, ask one specific follow-up, and confirm the next step. Begin with a natural greeting and finish once both roles agree on the next action.",
+          "goal": "Complete a clear, practical exchange about a weekend story for a friend.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "constraints": [
+            "Name the learner and tutor roles before the first turn.",
+            "Use at most three tutor turns and stop after the agreed next step."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Say the model for a weekend story for a friend in two thought groups. Mark the pause between ideas, then stress the word that gives the key action, time, quantity, reason, or request. Record a second attempt after listening to your first attempt.",
+          "goal": "Make the key information in a weekend story for a friend easy to hear.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "target": "Thought-group pause and key-word stress in review: recent experiences",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a 35–50 word message about a weekend story for a friend. Include the main event or plan, one precise detail, and the next action or response. Submit your own draft before requesting feedback.",
+          "goal": "Write a connected, useful short message about a weekend story for a friend.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    }
+  ]
+}

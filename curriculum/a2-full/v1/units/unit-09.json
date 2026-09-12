@@ -1,0 +1,993 @@
+{
+  "schema_version": "1.0",
+  "record_type": "a2_full_content_unit",
+  "unit_id": "m16a2-v1-a2-u09",
+  "tier": "A2.2",
+  "content_origin": "PROJECT_AUTHORED",
+  "lessons": [
+    {
+      "lesson_id": "m16a2-v1-a2-u09-l01",
+      "title": "Community plans",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a2t_u06_grammar",
+        "a2t_u06_vocabulary_senses",
+        "a2t_u06_topics"
+      ],
+      "objectives": [
+        "Describe a future community activity and its purpose.",
+        "Use a main idea and one relevant detail in a response about planning a community activity."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice form and meaning (8 minutes)",
+          "body": "Read the model aloud twice: 'Our group is going to clean the park next Saturday morning.' Underline the words that show the situation, time, or result. In this lesson, describe a future community activity and its purpose. Keep the language connected: do not give isolated words.",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_topics"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided dialogue (8 minutes)",
+          "body": "Partner A begins a realistic exchange about planning a community activity. Partner B asks for one missing detail. Swap roles and make one change to the time, place, reason, quantity, or next action. Check that the exchange achieves: Describe a future community activity and its purpose.",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_topics"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent response (6 minutes)",
+          "body": "Create a short message about planning a community activity without reading the model. Include a main event or plan and one precise detail. Speak it once slowly, then once at a natural pace. Listen for whether the key information is clear.",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_topics"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_topics"
+          ],
+          "prompt": "Choose the response that gives a clear, useful message for this situation: planning a community activity.",
+          "media_required": false,
+          "options": [
+            "Our group is going to clean the park next Saturday morning.",
+            "I can identify the plan, the key detail, and the next action in a short message.",
+            "The repair person came this morning; when will the machine be ready?"
+          ],
+          "correct_answer": "Our group is going to clean the park next Saturday morning."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_topics"
+          ],
+          "prompt": "Complete the model with the missing words: 'Our group is going to clean the park ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "next Saturday morning"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_topics"
+          ],
+          "prompt": "Read this short message for the lesson 'Community plans' and identify the real-life situation it describes.",
+          "media_required": false,
+          "stimulus": "Our group is going to clean the park next Saturday morning. The message gives one main point and one detail for the listener.",
+          "questions": [
+            {
+              "question": "What situation does the message describe?",
+              "acceptable_answers": [
+                "The message is about planning a community activity."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_topics"
+          ],
+          "prompt": "Speak for 30–45 seconds about planning a community activity. State the main message, add a relevant detail, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Communicates the main message about planning a community activity clearly.",
+              "Adds a relevant detail and responds appropriately to a follow-up question."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short message about planning a community activity. Answer the question before the transcript is revealed, then listen again and check the key detail.",
+          "goal": "Identify the situation and a useful detail in a short message about planning a community activity.",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_topics"
+          ],
+          "transcript": "Our group is going to clean the park next Saturday morning.",
+          "question": "What is the message mainly about?",
+          "answer": "The listener should understand that it concerns planning a community activity.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay planning a community activity. Learner role: explain the situation and give one useful detail. Tutor role: be a helpful listener, ask one specific follow-up, and confirm the next step. Begin with a natural greeting and finish once both roles agree on the next action.",
+          "goal": "Complete a clear, practical exchange about planning a community activity.",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_topics"
+          ],
+          "constraints": [
+            "Name the learner and tutor roles before the first turn.",
+            "Use at most three tutor turns and stop after the agreed next step."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Say the model for planning a community activity in two thought groups. Mark the pause between ideas, then stress the word that gives the key action, time, quantity, reason, or request. Record a second attempt after listening to your first attempt.",
+          "goal": "Make the key information in planning a community activity easy to hear.",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_topics"
+          ],
+          "target": "Thought-group pause and key-word stress in community plans",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a 35–50 word message about planning a community activity. Include the main event or plan, one precise detail, and the next action or response. Submit your own draft before requesting feedback.",
+          "goal": "Write a connected, useful short message about planning a community activity.",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_topics"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u09-l02",
+      "title": "Reasons and organization",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a2t_u06_discourse",
+        "a2t_u06_functions",
+        "a2t_u06_skills"
+      ],
+      "objectives": [
+        "Organize a short plan with a reason and clear sequence.",
+        "Use a main idea and one relevant detail in a response about organising volunteers."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Build a useful turn (8 minutes)",
+          "body": "Start with the model: 'We need three people for the posters because the event starts at ten.' Replace one detail with your own information about organising volunteers. Then add a short follow-up or reason. This builds the skill to organize a short plan with a reason and clear sequence.",
+          "target_ids": [
+            "a2t_u06_discourse",
+            "a2t_u06_functions",
+            "a2t_u06_skills"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided dialogue (8 minutes)",
+          "body": "Partner A begins a realistic exchange about organising volunteers. Partner B asks for one missing detail. Swap roles and make one change to the time, place, reason, quantity, or next action. Check that the exchange achieves: Organize a short plan with a reason and clear sequence.",
+          "target_ids": [
+            "a2t_u06_discourse",
+            "a2t_u06_functions",
+            "a2t_u06_skills"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent response (6 minutes)",
+          "body": "Create a short message about organising volunteers without reading the model. Include a main event or plan and one precise detail. Speak it once slowly, then once at a natural pace. Listen for whether the key information is clear.",
+          "target_ids": [
+            "a2t_u06_discourse",
+            "a2t_u06_functions",
+            "a2t_u06_skills"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a2t_u06_discourse",
+            "a2t_u06_functions",
+            "a2t_u06_skills"
+          ],
+          "prompt": "Choose the response that gives a clear, useful message for this situation: organising volunteers.",
+          "media_required": false,
+          "options": [
+            "We need three people for the posters because the event starts at ten.",
+            "I can make an arrangement, respond naturally, and change one detail if needed.",
+            "I described the problem clearly, asked for advice, and wrote down the next step."
+          ],
+          "correct_answer": "We need three people for the posters because the event starts at ten."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "a2t_u06_discourse",
+            "a2t_u06_functions",
+            "a2t_u06_skills"
+          ],
+          "prompt": "Complete the model with the missing words: 'We need three people for the posters because the event ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "starts at ten"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "a2t_u06_discourse",
+            "a2t_u06_functions",
+            "a2t_u06_skills"
+          ],
+          "prompt": "Read this short message for the lesson 'Reasons and organization' and identify the real-life situation it describes.",
+          "media_required": false,
+          "stimulus": "We need three people for the posters because the event starts at ten. The message gives one main point and one detail for the listener.",
+          "questions": [
+            {
+              "question": "What situation does the message describe?",
+              "acceptable_answers": [
+                "The message is about organising volunteers."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "a2t_u06_discourse",
+            "a2t_u06_functions",
+            "a2t_u06_skills"
+          ],
+          "prompt": "Speak for 30–45 seconds about organising volunteers. State the main message, add a relevant detail, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Communicates the main message about organising volunteers clearly.",
+              "Adds a relevant detail and responds appropriately to a follow-up question."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short message about organising volunteers. Answer the question before the transcript is revealed, then listen again and check the key detail.",
+          "goal": "Identify the situation and a useful detail in a short message about organising volunteers.",
+          "target_ids": [
+            "a2t_u06_discourse",
+            "a2t_u06_functions",
+            "a2t_u06_skills"
+          ],
+          "transcript": "We need three people for the posters because the event starts at ten.",
+          "question": "What is the message mainly about?",
+          "answer": "The listener should understand that it concerns organising volunteers.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay organising volunteers. Learner role: explain the situation and give one useful detail. Tutor role: be a helpful listener, ask one specific follow-up, and confirm the next step. Begin with a natural greeting and finish once both roles agree on the next action.",
+          "goal": "Complete a clear, practical exchange about organising volunteers.",
+          "target_ids": [
+            "a2t_u06_discourse",
+            "a2t_u06_functions",
+            "a2t_u06_skills"
+          ],
+          "constraints": [
+            "Name the learner and tutor roles before the first turn.",
+            "Use at most three tutor turns and stop after the agreed next step."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Say the model for organising volunteers in two thought groups. Mark the pause between ideas, then stress the word that gives the key action, time, quantity, reason, or request. Record a second attempt after listening to your first attempt.",
+          "goal": "Make the key information in organising volunteers easy to hear.",
+          "target_ids": [
+            "a2t_u06_discourse",
+            "a2t_u06_functions",
+            "a2t_u06_skills"
+          ],
+          "target": "Thought-group pause and key-word stress in reasons and organization",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a 35–50 word message about organising volunteers. Include the main event or plan, one precise detail, and the next action or response. Submit your own draft before requesting feedback.",
+          "goal": "Write a connected, useful short message about organising volunteers.",
+          "target_ids": [
+            "a2t_u06_discourse",
+            "a2t_u06_functions",
+            "a2t_u06_skills"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u09-l03",
+      "title": "Inviting others",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a2t_u06_pragmatics",
+        "a2t_u06_lexical_chunks",
+        "a2t_u06_collocations"
+      ],
+      "objectives": [
+        "Invite another person and respond appropriately to their answer.",
+        "Use a main idea and one relevant detail in a response about inviting neighbours."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Make the message easy to hear (8 minutes)",
+          "body": "Say the model in two thought groups: 'Would you like to join our park clean-up and bring a pair of gloves?' Pause after the first complete idea and stress the word that carries the important information. Then say a new version about inviting neighbours. This supports the goal to invite another person and respond appropriately to their answer.",
+          "target_ids": [
+            "a2t_u06_pragmatics",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_collocations"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided dialogue (8 minutes)",
+          "body": "Partner A begins a realistic exchange about inviting neighbours. Partner B asks for one missing detail. Swap roles and make one change to the time, place, reason, quantity, or next action. Check that the exchange achieves: Invite another person and respond appropriately to their answer.",
+          "target_ids": [
+            "a2t_u06_pragmatics",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_collocations"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent response (6 minutes)",
+          "body": "Create a short message about inviting neighbours without reading the model. Include a main event or plan and one precise detail. Speak it once slowly, then once at a natural pace. Listen for whether the key information is clear.",
+          "target_ids": [
+            "a2t_u06_pragmatics",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_collocations"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a2t_u06_pragmatics",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_collocations"
+          ],
+          "prompt": "Choose the response that gives a clear, useful message for this situation: inviting neighbours.",
+          "media_required": false,
+          "options": [
+            "Would you like to join our park clean-up and bring a pair of gloves?",
+            "I can plan, invite, offer help, and explain a practical change clearly.",
+            "I travelled to Hue by train last Friday and arrived before lunch."
+          ],
+          "correct_answer": "Would you like to join our park clean-up and bring a pair of gloves?"
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "a2t_u06_pragmatics",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_collocations"
+          ],
+          "prompt": "Complete the model with the missing words: 'Would you like to join our park clean-up and bring a ____?'",
+          "media_required": false,
+          "acceptable_answers": [
+            "pair of gloves"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "a2t_u06_pragmatics",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_collocations"
+          ],
+          "prompt": "Read this short message for the lesson 'Inviting others' and identify the real-life situation it describes.",
+          "media_required": false,
+          "stimulus": "Would you like to join our park clean-up and bring a pair of gloves? The message gives one main point and one detail for the listener.",
+          "questions": [
+            {
+              "question": "What situation does the message describe?",
+              "acceptable_answers": [
+                "The message is about inviting neighbours."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "a2t_u06_pragmatics",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_collocations"
+          ],
+          "prompt": "Speak for 30–45 seconds about inviting neighbours. State the main message, add a relevant detail, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Communicates the main message about inviting neighbours clearly.",
+              "Adds a relevant detail and responds appropriately to a follow-up question."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short message about inviting neighbours. Answer the question before the transcript is revealed, then listen again and check the key detail.",
+          "goal": "Identify the situation and a useful detail in a short message about inviting neighbours.",
+          "target_ids": [
+            "a2t_u06_pragmatics",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_collocations"
+          ],
+          "transcript": "Would you like to join our park clean-up and bring a pair of gloves?",
+          "question": "What is the message mainly about?",
+          "answer": "The listener should understand that it concerns inviting neighbours.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay inviting neighbours. Learner role: explain the situation and give one useful detail. Tutor role: be a helpful listener, ask one specific follow-up, and confirm the next step. Begin with a natural greeting and finish once both roles agree on the next action.",
+          "goal": "Complete a clear, practical exchange about inviting neighbours.",
+          "target_ids": [
+            "a2t_u06_pragmatics",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_collocations"
+          ],
+          "constraints": [
+            "Name the learner and tutor roles before the first turn.",
+            "Use at most three tutor turns and stop after the agreed next step."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Say the model for inviting neighbours in two thought groups. Mark the pause between ideas, then stress the word that gives the key action, time, quantity, reason, or request. Record a second attempt after listening to your first attempt.",
+          "goal": "Make the key information in inviting neighbours easy to hear.",
+          "target_ids": [
+            "a2t_u06_pragmatics",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_collocations"
+          ],
+          "target": "Thought-group pause and key-word stress in inviting others",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a 35–50 word message about inviting neighbours. Include the main event or plan, one precise detail, and the next action or response. Submit your own draft before requesting feedback.",
+          "goal": "Write a connected, useful short message about inviting neighbours.",
+          "target_ids": [
+            "a2t_u06_pragmatics",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_collocations"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u09-l04",
+      "title": "Clear planned speech",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a2t_u06_pronunciation",
+        "a2t_u06_skills",
+        "a2t_u06_functions"
+      ],
+      "objectives": [
+        "Use weak forms, thought groups, and key-word stress in a plan.",
+        "Use a main idea and one relevant detail in a response about speaking about a future activity."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Use it in a practical exchange (8 minutes)",
+          "body": "Prepare a two-turn exchange about speaking about a future activity. Give the main detail, listen to one follow-up, and answer it clearly. Use this model as support: 'I am going to explain the plan slowly and stress the time and place.' The exchange should meet this lesson goal: Use weak forms, thought groups, and key-word stress in a plan.",
+          "target_ids": [
+            "a2t_u06_pronunciation",
+            "a2t_u06_skills",
+            "a2t_u06_functions"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided dialogue (8 minutes)",
+          "body": "Partner A begins a realistic exchange about speaking about a future activity. Partner B asks for one missing detail. Swap roles and make one change to the time, place, reason, quantity, or next action. Check that the exchange achieves: Use weak forms, thought groups, and key-word stress in a plan.",
+          "target_ids": [
+            "a2t_u06_pronunciation",
+            "a2t_u06_skills",
+            "a2t_u06_functions"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent response (6 minutes)",
+          "body": "Create a short message about speaking about a future activity without reading the model. Include a main event or plan and one precise detail. Speak it once slowly, then once at a natural pace. Listen for whether the key information is clear.",
+          "target_ids": [
+            "a2t_u06_pronunciation",
+            "a2t_u06_skills",
+            "a2t_u06_functions"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a2t_u06_pronunciation",
+            "a2t_u06_skills",
+            "a2t_u06_functions"
+          ],
+          "prompt": "Choose the response that gives a clear, useful message for this situation: speaking about a future activity.",
+          "media_required": false,
+          "options": [
+            "I am going to explain the plan slowly and stress the time and place.",
+            "Yesterday I left my umbrella on the number 8 bus, then I called the bus office.",
+            "What time did the coach leave, and why was it late?"
+          ],
+          "correct_answer": "I am going to explain the plan slowly and stress the time and place."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "a2t_u06_pronunciation",
+            "a2t_u06_skills",
+            "a2t_u06_functions"
+          ],
+          "prompt": "Complete the model with the missing words: 'I am going to explain the plan slowly and stress the ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "time and place"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "a2t_u06_pronunciation",
+            "a2t_u06_skills",
+            "a2t_u06_functions"
+          ],
+          "prompt": "Read this short message for the lesson 'Clear planned speech' and identify the real-life situation it describes.",
+          "media_required": false,
+          "stimulus": "I am going to explain the plan slowly and stress the time and place. The message gives one main point and one detail for the listener.",
+          "questions": [
+            {
+              "question": "What situation does the message describe?",
+              "acceptable_answers": [
+                "The message is about speaking about a future activity."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "a2t_u06_pronunciation",
+            "a2t_u06_skills",
+            "a2t_u06_functions"
+          ],
+          "prompt": "Speak for 30–45 seconds about speaking about a future activity. State the main message, add a relevant detail, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Communicates the main message about speaking about a future activity clearly.",
+              "Adds a relevant detail and responds appropriately to a follow-up question."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short message about speaking about a future activity. Answer the question before the transcript is revealed, then listen again and check the key detail.",
+          "goal": "Identify the situation and a useful detail in a short message about speaking about a future activity.",
+          "target_ids": [
+            "a2t_u06_pronunciation",
+            "a2t_u06_skills",
+            "a2t_u06_functions"
+          ],
+          "transcript": "I am going to explain the plan slowly and stress the time and place.",
+          "question": "What is the message mainly about?",
+          "answer": "The listener should understand that it concerns speaking about a future activity.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay speaking about a future activity. Learner role: explain the situation and give one useful detail. Tutor role: be a helpful listener, ask one specific follow-up, and confirm the next step. Begin with a natural greeting and finish once both roles agree on the next action.",
+          "goal": "Complete a clear, practical exchange about speaking about a future activity.",
+          "target_ids": [
+            "a2t_u06_pronunciation",
+            "a2t_u06_skills",
+            "a2t_u06_functions"
+          ],
+          "constraints": [
+            "Name the learner and tutor roles before the first turn.",
+            "Use at most three tutor turns and stop after the agreed next step."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Say the model for speaking about a future activity in two thought groups. Mark the pause between ideas, then stress the word that gives the key action, time, quantity, reason, or request. Record a second attempt after listening to your first attempt.",
+          "goal": "Make the key information in speaking about a future activity easy to hear.",
+          "target_ids": [
+            "a2t_u06_pronunciation",
+            "a2t_u06_skills",
+            "a2t_u06_functions"
+          ],
+          "target": "Thought-group pause and key-word stress in clear planned speech",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a 35–50 word message about speaking about a future activity. Include the main event or plan, one precise detail, and the next action or response. Submit your own draft before requesting feedback.",
+          "goal": "Write a connected, useful short message about speaking about a future activity.",
+          "target_ids": [
+            "a2t_u06_pronunciation",
+            "a2t_u06_skills",
+            "a2t_u06_functions"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u09-l05",
+      "title": "Review: community participation",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a2t_u06_grammar",
+        "a2t_u06_vocabulary_senses",
+        "a2t_u06_functions",
+        "a2t_u06_pronunciation",
+        "a2t_u06_discourse",
+        "a2t_u06_pragmatics",
+        "a2t_u06_collocations",
+        "a2t_u06_lexical_chunks",
+        "a2t_u06_topics",
+        "a2t_u06_skills"
+      ],
+      "objectives": [
+        "Review future plans, reasons, invitations, and arrangements.",
+        "Use a main idea and one relevant detail in a response about reviewing community participation."
+      ],
+      "content_sections": [
+        {
+          "id": "recall",
+          "section_type": "review",
+          "title": "Recall and select (8 minutes)",
+          "body": "Work without notes first. For the situation 'reviewing community participation', say one sentence that meets this goal: Review future plans, reasons, invitations, and arrangements. Then check the model: 'I can give a reason, invite others, and organize a simple activity.' Identify one word or phrase that makes the message clear.",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_functions",
+            "a2t_u06_pronunciation",
+            "a2t_u06_discourse",
+            "a2t_u06_pragmatics",
+            "a2t_u06_collocations",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_topics",
+            "a2t_u06_skills"
+          ]
+        },
+        {
+          "id": "compare",
+          "section_type": "dialogue",
+          "title": "Compare two responses (8 minutes)",
+          "body": "Give one clear response for reviewing community participation, then ask a partner one follow-up question. Compare the response with the model and repair one missing time, reason, place, quantity, or next step. Use the whole unit's familiar language rather than memorising one sentence.",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_functions",
+            "a2t_u06_pronunciation",
+            "a2t_u06_discourse",
+            "a2t_u06_pragmatics",
+            "a2t_u06_collocations",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_topics",
+            "a2t_u06_skills"
+          ]
+        },
+        {
+          "id": "self-check",
+          "section_type": "review",
+          "title": "Self-check and transfer (6 minutes)",
+          "body": "Before the unit test, check three things: the main message is clear, one useful detail is included, and the listener knows what happens next. Say or write a new short message about a similar situation, not the model about reviewing community participation.",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_functions",
+            "a2t_u06_pronunciation",
+            "a2t_u06_discourse",
+            "a2t_u06_pragmatics",
+            "a2t_u06_collocations",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_topics",
+            "a2t_u06_skills"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_functions",
+            "a2t_u06_pronunciation",
+            "a2t_u06_discourse",
+            "a2t_u06_pragmatics",
+            "a2t_u06_collocations",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_topics",
+            "a2t_u06_skills"
+          ],
+          "prompt": "Choose the response that gives a clear, useful message for this situation: reviewing community participation.",
+          "media_required": false,
+          "options": [
+            "I can give a reason, invite others, and organize a simple activity.",
+            "On Saturday I bought tomatoes and asked the seller for a bag.",
+            "The bus stopped at River Road, and the driver explained the delay."
+          ],
+          "correct_answer": "I can give a reason, invite others, and organize a simple activity."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_functions",
+            "a2t_u06_pronunciation",
+            "a2t_u06_discourse",
+            "a2t_u06_pragmatics",
+            "a2t_u06_collocations",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_topics",
+            "a2t_u06_skills"
+          ],
+          "prompt": "Complete the model with the missing words: 'I can give a reason, invite others, and organize ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "a simple activity"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_functions",
+            "a2t_u06_pronunciation",
+            "a2t_u06_discourse",
+            "a2t_u06_pragmatics",
+            "a2t_u06_collocations",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_topics",
+            "a2t_u06_skills"
+          ],
+          "prompt": "Read this short message for the lesson 'Review: community participation' and identify the real-life situation it describes.",
+          "media_required": false,
+          "stimulus": "I can give a reason, invite others, and organize a simple activity. The message gives one main point and one detail for the listener.",
+          "questions": [
+            {
+              "question": "What situation does the message describe?",
+              "acceptable_answers": [
+                "The message is about reviewing community participation."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_functions",
+            "a2t_u06_pronunciation",
+            "a2t_u06_discourse",
+            "a2t_u06_pragmatics",
+            "a2t_u06_collocations",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_topics",
+            "a2t_u06_skills"
+          ],
+          "prompt": "Speak for 30–45 seconds about reviewing community participation. State the main message, add a relevant detail, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Communicates the main message about reviewing community participation clearly.",
+              "Adds a relevant detail and responds appropriately to a follow-up question."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short message about reviewing community participation. Answer the question before the transcript is revealed, then listen again and check the key detail.",
+          "goal": "Identify the situation and a useful detail in a short message about reviewing community participation.",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_functions",
+            "a2t_u06_pronunciation",
+            "a2t_u06_discourse",
+            "a2t_u06_pragmatics",
+            "a2t_u06_collocations",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_topics",
+            "a2t_u06_skills"
+          ],
+          "transcript": "I can give a reason, invite others, and organize a simple activity.",
+          "question": "What is the message mainly about?",
+          "answer": "The listener should understand that it concerns reviewing community participation.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay reviewing community participation. Learner role: explain the situation and give one useful detail. Tutor role: be a helpful listener, ask one specific follow-up, and confirm the next step. Begin with a natural greeting and finish once both roles agree on the next action.",
+          "goal": "Complete a clear, practical exchange about reviewing community participation.",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_functions",
+            "a2t_u06_pronunciation",
+            "a2t_u06_discourse",
+            "a2t_u06_pragmatics",
+            "a2t_u06_collocations",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_topics",
+            "a2t_u06_skills"
+          ],
+          "constraints": [
+            "Name the learner and tutor roles before the first turn.",
+            "Use at most three tutor turns and stop after the agreed next step."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Say the model for reviewing community participation in two thought groups. Mark the pause between ideas, then stress the word that gives the key action, time, quantity, reason, or request. Record a second attempt after listening to your first attempt.",
+          "goal": "Make the key information in reviewing community participation easy to hear.",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_functions",
+            "a2t_u06_pronunciation",
+            "a2t_u06_discourse",
+            "a2t_u06_pragmatics",
+            "a2t_u06_collocations",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_topics",
+            "a2t_u06_skills"
+          ],
+          "target": "Thought-group pause and key-word stress in review: community participation",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a 35–50 word message about reviewing community participation. Include the main event or plan, one precise detail, and the next action or response. Submit your own draft before requesting feedback.",
+          "goal": "Write a connected, useful short message about reviewing community participation.",
+          "target_ids": [
+            "a2t_u06_grammar",
+            "a2t_u06_vocabulary_senses",
+            "a2t_u06_functions",
+            "a2t_u06_pronunciation",
+            "a2t_u06_discourse",
+            "a2t_u06_pragmatics",
+            "a2t_u06_collocations",
+            "a2t_u06_lexical_chunks",
+            "a2t_u06_topics",
+            "a2t_u06_skills"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    }
+  ]
+}

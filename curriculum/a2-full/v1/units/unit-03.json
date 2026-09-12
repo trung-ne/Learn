@@ -1,0 +1,993 @@
+{
+  "schema_version": "1.0",
+  "record_type": "a2_full_content_unit",
+  "unit_id": "m16a2-v1-a2-u03",
+  "tier": "A2.1",
+  "content_origin": "PROJECT_AUTHORED",
+  "lessons": [
+    {
+      "lesson_id": "m16a2-v1-a2-u03-l01",
+      "title": "Describing a recent problem",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a2t_u01_grammar",
+        "a2t_u01_vocabulary_senses",
+        "a2t_u01_functions"
+      ],
+      "objectives": [
+        "Give a simple account of a recent health or service problem.",
+        "Use a main idea and one relevant detail in a response about explaining a headache."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice form and meaning (8 minutes)",
+          "body": "Read the model aloud twice: 'I have had a headache since yesterday, so I need some advice.' Underline the words that show the situation, time, or result. In this lesson, give a simple account of a recent health or service problem. Keep the language connected: do not give isolated words.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided dialogue (8 minutes)",
+          "body": "Partner A begins a realistic exchange about explaining a headache. Partner B asks for one missing detail. Swap roles and make one change to the time, place, reason, quantity, or next action. Check that the exchange achieves: Give a simple account of a recent health or service problem.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent response (6 minutes)",
+          "body": "Create a short message about explaining a headache without reading the model. Include a main event or plan and one precise detail. Speak it once slowly, then once at a natural pace. Listen for whether the key information is clear.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions"
+          ],
+          "prompt": "Choose the response that gives a clear, useful message for this situation: explaining a headache.",
+          "media_required": false,
+          "options": [
+            "I have had a headache since yesterday, so I need some advice.",
+            "The bus stopped at River Road, and the driver explained the delay.",
+            "I am going to start early, but I will message you if the bus is late."
+          ],
+          "correct_answer": "I have had a headache since yesterday, so I need some advice."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions"
+          ],
+          "prompt": "Complete the model with the missing words: 'I have had a headache since yesterday, so I ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "need some advice"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions"
+          ],
+          "prompt": "Read this short message for the lesson 'Describing a recent problem' and identify the real-life situation it describes.",
+          "media_required": false,
+          "stimulus": "I have had a headache since yesterday, so I need some advice. The message gives one main point and one detail for the listener.",
+          "questions": [
+            {
+              "question": "What situation does the message describe?",
+              "acceptable_answers": [
+                "The message is about explaining a headache."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions"
+          ],
+          "prompt": "Speak for 30–45 seconds about explaining a headache. State the main message, add a relevant detail, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Communicates the main message about explaining a headache clearly.",
+              "Adds a relevant detail and responds appropriately to a follow-up question."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short message about explaining a headache. Answer the question before the transcript is revealed, then listen again and check the key detail.",
+          "goal": "Identify the situation and a useful detail in a short message about explaining a headache.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions"
+          ],
+          "transcript": "I have had a headache since yesterday, so I need some advice.",
+          "question": "What is the message mainly about?",
+          "answer": "The listener should understand that it concerns explaining a headache.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay explaining a headache. Learner role: explain the situation and give one useful detail. Tutor role: be a helpful listener, ask one specific follow-up, and confirm the next step. Begin with a natural greeting and finish once both roles agree on the next action.",
+          "goal": "Complete a clear, practical exchange about explaining a headache.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions"
+          ],
+          "constraints": [
+            "Name the learner and tutor roles before the first turn.",
+            "Use at most three tutor turns and stop after the agreed next step."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Say the model for explaining a headache in two thought groups. Mark the pause between ideas, then stress the word that gives the key action, time, quantity, reason, or request. Record a second attempt after listening to your first attempt.",
+          "goal": "Make the key information in explaining a headache easy to hear.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions"
+          ],
+          "target": "Thought-group pause and key-word stress in describing a recent problem",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a 35–50 word message about explaining a headache. Include the main event or plan, one precise detail, and the next action or response. Submit your own draft before requesting feedback.",
+          "goal": "Write a connected, useful short message about explaining a headache.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u03-l02",
+      "title": "Asking for help politely",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a2t_u01_pragmatics",
+        "a2t_u01_lexical_chunks",
+        "a2t_u01_collocations"
+      ],
+      "objectives": [
+        "Make and respond to a polite request for practical help.",
+        "Use a main idea and one relevant detail in a response about asking a neighbour for help."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Build a useful turn (8 minutes)",
+          "body": "Start with the model: 'Could you help me carry this box upstairs, please?' Replace one detail with your own information about asking a neighbour for help. Then add a short follow-up or reason. This builds the skill to make and respond to a polite request for practical help.",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_collocations"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided dialogue (8 minutes)",
+          "body": "Partner A begins a realistic exchange about asking a neighbour for help. Partner B asks for one missing detail. Swap roles and make one change to the time, place, reason, quantity, or next action. Check that the exchange achieves: Make and respond to a polite request for practical help.",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_collocations"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent response (6 minutes)",
+          "body": "Create a short message about asking a neighbour for help without reading the model. Include a main event or plan and one precise detail. Speak it once slowly, then once at a natural pace. Listen for whether the key information is clear.",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_collocations"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_collocations"
+          ],
+          "prompt": "Choose the response that gives a clear, useful message for this situation: asking a neighbour for help.",
+          "media_required": false,
+          "options": [
+            "Could you help me carry this box upstairs, please?",
+            "I missed my connection, so I asked the station worker for another route.",
+            "I can talk about a goal, an achievement, and a change to a plan."
+          ],
+          "correct_answer": "Could you help me carry this box upstairs, please?"
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_collocations"
+          ],
+          "prompt": "Complete the model with the missing words: 'Could you help me carry this ____?'",
+          "media_required": false,
+          "acceptable_answers": [
+            "box upstairs, please"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_collocations"
+          ],
+          "prompt": "Read this short message for the lesson 'Asking for help politely' and identify the real-life situation it describes.",
+          "media_required": false,
+          "stimulus": "Could you help me carry this box upstairs, please? The message gives one main point and one detail for the listener.",
+          "questions": [
+            {
+              "question": "What situation does the message describe?",
+              "acceptable_answers": [
+                "The message is about asking a neighbour for help."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_collocations"
+          ],
+          "prompt": "Speak for 30–45 seconds about asking a neighbour for help. State the main message, add a relevant detail, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Communicates the main message about asking a neighbour for help clearly.",
+              "Adds a relevant detail and responds appropriately to a follow-up question."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short message about asking a neighbour for help. Answer the question before the transcript is revealed, then listen again and check the key detail.",
+          "goal": "Identify the situation and a useful detail in a short message about asking a neighbour for help.",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_collocations"
+          ],
+          "transcript": "Could you help me carry this box upstairs, please?",
+          "question": "What is the message mainly about?",
+          "answer": "The listener should understand that it concerns asking a neighbour for help.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay asking a neighbour for help. Learner role: explain the situation and give one useful detail. Tutor role: be a helpful listener, ask one specific follow-up, and confirm the next step. Begin with a natural greeting and finish once both roles agree on the next action.",
+          "goal": "Complete a clear, practical exchange about asking a neighbour for help.",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_collocations"
+          ],
+          "constraints": [
+            "Name the learner and tutor roles before the first turn.",
+            "Use at most three tutor turns and stop after the agreed next step."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Say the model for asking a neighbour for help in two thought groups. Mark the pause between ideas, then stress the word that gives the key action, time, quantity, reason, or request. Record a second attempt after listening to your first attempt.",
+          "goal": "Make the key information in asking a neighbour for help easy to hear.",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_collocations"
+          ],
+          "target": "Thought-group pause and key-word stress in asking for help politely",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a 35–50 word message about asking a neighbour for help. Include the main event or plan, one precise detail, and the next action or response. Submit your own draft before requesting feedback.",
+          "goal": "Write a connected, useful short message about asking a neighbour for help.",
+          "target_ids": [
+            "a2t_u01_pragmatics",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_collocations"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u03-l03",
+      "title": "Clear event sequence",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a2t_u01_pronunciation",
+        "a2t_u01_discourse",
+        "a2t_u01_skills"
+      ],
+      "objectives": [
+        "Use short thought groups to make the order of events clear.",
+        "Use a main idea and one relevant detail in a response about telling a pharmacist what happened."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Make the message easy to hear (8 minutes)",
+          "body": "Say the model in two thought groups: 'First I felt dizzy, then I sat down and called the pharmacy.' Pause after the first complete idea and stress the word that carries the important information. Then say a new version about telling a pharmacist what happened. This supports the goal to use short thought groups to make the order of events clear.",
+          "target_ids": [
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_skills"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided dialogue (8 minutes)",
+          "body": "Partner A begins a realistic exchange about telling a pharmacist what happened. Partner B asks for one missing detail. Swap roles and make one change to the time, place, reason, quantity, or next action. Check that the exchange achieves: Use short thought groups to make the order of events clear.",
+          "target_ids": [
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_skills"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent response (6 minutes)",
+          "body": "Create a short message about telling a pharmacist what happened without reading the model. Include a main event or plan and one precise detail. Speak it once slowly, then once at a natural pace. Listen for whether the key information is clear.",
+          "target_ids": [
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_skills"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Choose the response that gives a clear, useful message for this situation: telling a pharmacist what happened.",
+          "media_required": false,
+          "options": [
+            "First I felt dizzy, then I sat down and called the pharmacy.",
+            "I explained the journey in order and checked that my friend understood.",
+            "Can I bring some drinks for the meeting on Saturday?"
+          ],
+          "correct_answer": "First I felt dizzy, then I sat down and called the pharmacy."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Complete the model with the missing words: 'First I felt dizzy, then I sat down and ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "called the pharmacy"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Read this short message for the lesson 'Clear event sequence' and identify the real-life situation it describes.",
+          "media_required": false,
+          "stimulus": "First I felt dizzy, then I sat down and called the pharmacy. The message gives one main point and one detail for the listener.",
+          "questions": [
+            {
+              "question": "What situation does the message describe?",
+              "acceptable_answers": [
+                "The message is about telling a pharmacist what happened."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Speak for 30–45 seconds about telling a pharmacist what happened. State the main message, add a relevant detail, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Communicates the main message about telling a pharmacist what happened clearly.",
+              "Adds a relevant detail and responds appropriately to a follow-up question."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short message about telling a pharmacist what happened. Answer the question before the transcript is revealed, then listen again and check the key detail.",
+          "goal": "Identify the situation and a useful detail in a short message about telling a pharmacist what happened.",
+          "target_ids": [
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_skills"
+          ],
+          "transcript": "First I felt dizzy, then I sat down and called the pharmacy.",
+          "question": "What is the message mainly about?",
+          "answer": "The listener should understand that it concerns telling a pharmacist what happened.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay telling a pharmacist what happened. Learner role: explain the situation and give one useful detail. Tutor role: be a helpful listener, ask one specific follow-up, and confirm the next step. Begin with a natural greeting and finish once both roles agree on the next action.",
+          "goal": "Complete a clear, practical exchange about telling a pharmacist what happened.",
+          "target_ids": [
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_skills"
+          ],
+          "constraints": [
+            "Name the learner and tutor roles before the first turn.",
+            "Use at most three tutor turns and stop after the agreed next step."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Say the model for telling a pharmacist what happened in two thought groups. Mark the pause between ideas, then stress the word that gives the key action, time, quantity, reason, or request. Record a second attempt after listening to your first attempt.",
+          "goal": "Make the key information in telling a pharmacist what happened easy to hear.",
+          "target_ids": [
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_skills"
+          ],
+          "target": "Thought-group pause and key-word stress in clear event sequence",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a 35–50 word message about telling a pharmacist what happened. Include the main event or plan, one precise detail, and the next action or response. Submit your own draft before requesting feedback.",
+          "goal": "Write a connected, useful short message about telling a pharmacist what happened.",
+          "target_ids": [
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_skills"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u03-l04",
+      "title": "Health and service follow-up",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a2t_u01_topics",
+        "a2t_u01_functions",
+        "a2t_u01_skills"
+      ],
+      "objectives": [
+        "Ask and answer a follow-up question about a local service.",
+        "Use a main idea and one relevant detail in a response about following up after a service call."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Use it in a practical exchange (8 minutes)",
+          "body": "Prepare a two-turn exchange about following up after a service call. Give the main detail, listen to one follow-up, and answer it clearly. Use this model as support: 'The repair person came this morning; when will the machine be ready?' The exchange should meet this lesson goal: Ask and answer a follow-up question about a local service.",
+          "target_ids": [
+            "a2t_u01_topics",
+            "a2t_u01_functions",
+            "a2t_u01_skills"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided dialogue (8 minutes)",
+          "body": "Partner A begins a realistic exchange about following up after a service call. Partner B asks for one missing detail. Swap roles and make one change to the time, place, reason, quantity, or next action. Check that the exchange achieves: Ask and answer a follow-up question about a local service.",
+          "target_ids": [
+            "a2t_u01_topics",
+            "a2t_u01_functions",
+            "a2t_u01_skills"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent response (6 minutes)",
+          "body": "Create a short message about following up after a service call without reading the model. Include a main event or plan and one precise detail. Speak it once slowly, then once at a natural pace. Listen for whether the key information is clear.",
+          "target_ids": [
+            "a2t_u01_topics",
+            "a2t_u01_functions",
+            "a2t_u01_skills"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a2t_u01_topics",
+            "a2t_u01_functions",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Choose the response that gives a clear, useful message for this situation: following up after a service call.",
+          "media_required": false,
+          "options": [
+            "The repair person came this morning; when will the machine be ready?",
+            "I can compare a shop problem, a journey, and a health appointment.",
+            "Let's meet outside the community centre at half past six."
+          ],
+          "correct_answer": "The repair person came this morning; when will the machine be ready?"
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "a2t_u01_topics",
+            "a2t_u01_functions",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Complete the model with the missing words: 'The repair person came this morning; when will the ____?'",
+          "media_required": false,
+          "acceptable_answers": [
+            "machine be ready"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "a2t_u01_topics",
+            "a2t_u01_functions",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Read this short message for the lesson 'Health and service follow-up' and identify the real-life situation it describes.",
+          "media_required": false,
+          "stimulus": "The repair person came this morning; when will the machine be ready? The message gives one main point and one detail for the listener.",
+          "questions": [
+            {
+              "question": "What situation does the message describe?",
+              "acceptable_answers": [
+                "The message is about following up after a service call."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "a2t_u01_topics",
+            "a2t_u01_functions",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Speak for 30–45 seconds about following up after a service call. State the main message, add a relevant detail, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Communicates the main message about following up after a service call clearly.",
+              "Adds a relevant detail and responds appropriately to a follow-up question."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short message about following up after a service call. Answer the question before the transcript is revealed, then listen again and check the key detail.",
+          "goal": "Identify the situation and a useful detail in a short message about following up after a service call.",
+          "target_ids": [
+            "a2t_u01_topics",
+            "a2t_u01_functions",
+            "a2t_u01_skills"
+          ],
+          "transcript": "The repair person came this morning; when will the machine be ready?",
+          "question": "What is the message mainly about?",
+          "answer": "The listener should understand that it concerns following up after a service call.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay following up after a service call. Learner role: explain the situation and give one useful detail. Tutor role: be a helpful listener, ask one specific follow-up, and confirm the next step. Begin with a natural greeting and finish once both roles agree on the next action.",
+          "goal": "Complete a clear, practical exchange about following up after a service call.",
+          "target_ids": [
+            "a2t_u01_topics",
+            "a2t_u01_functions",
+            "a2t_u01_skills"
+          ],
+          "constraints": [
+            "Name the learner and tutor roles before the first turn.",
+            "Use at most three tutor turns and stop after the agreed next step."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Say the model for following up after a service call in two thought groups. Mark the pause between ideas, then stress the word that gives the key action, time, quantity, reason, or request. Record a second attempt after listening to your first attempt.",
+          "goal": "Make the key information in following up after a service call easy to hear.",
+          "target_ids": [
+            "a2t_u01_topics",
+            "a2t_u01_functions",
+            "a2t_u01_skills"
+          ],
+          "target": "Thought-group pause and key-word stress in health and service follow-up",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a 35–50 word message about following up after a service call. Include the main event or plan, one precise detail, and the next action or response. Submit your own draft before requesting feedback.",
+          "goal": "Write a connected, useful short message about following up after a service call.",
+          "target_ids": [
+            "a2t_u01_topics",
+            "a2t_u01_functions",
+            "a2t_u01_skills"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a2-v1-a2-u03-l05",
+      "title": "Review: health and services",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a2t_u01_grammar",
+        "a2t_u01_vocabulary_senses",
+        "a2t_u01_functions",
+        "a2t_u01_pronunciation",
+        "a2t_u01_discourse",
+        "a2t_u01_pragmatics",
+        "a2t_u01_collocations",
+        "a2t_u01_lexical_chunks",
+        "a2t_u01_topics",
+        "a2t_u01_skills"
+      ],
+      "objectives": [
+        "Review the unit language in a short problem-and-response exchange.",
+        "Use a main idea and one relevant detail in a response about reviewing a health problem."
+      ],
+      "content_sections": [
+        {
+          "id": "recall",
+          "section_type": "review",
+          "title": "Recall and select (8 minutes)",
+          "body": "Work without notes first. For the situation 'reviewing a health problem', say one sentence that meets this goal: Review the unit language in a short problem-and-response exchange. Then check the model: 'I described the problem clearly, asked for advice, and wrote down the next step.' Identify one word or phrase that makes the message clear.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ]
+        },
+        {
+          "id": "compare",
+          "section_type": "dialogue",
+          "title": "Compare two responses (8 minutes)",
+          "body": "Give one clear response for reviewing a health problem, then ask a partner one follow-up question. Compare the response with the model and repair one missing time, reason, place, quantity, or next step. Use the whole unit's familiar language rather than memorising one sentence.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ]
+        },
+        {
+          "id": "self-check",
+          "section_type": "review",
+          "title": "Self-check and transfer (6 minutes)",
+          "body": "Before the unit test, check three things: the main message is clear, one useful detail is included, and the listener knows what happens next. Say or write a new short message about a similar situation, not the model about reviewing a health problem.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Choose the response that gives a clear, useful message for this situation: reviewing a health problem.",
+          "media_required": false,
+          "options": [
+            "I described the problem clearly, asked for advice, and wrote down the next step.",
+            "I listened for the main event, noted two details, and retold the sequence.",
+            "That sounds good, but could we meet a little later?"
+          ],
+          "correct_answer": "I described the problem clearly, asked for advice, and wrote down the next step."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Complete the model with the missing words: 'I described the problem clearly, asked for advice, and wrote down ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "the next step"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Read this short message for the lesson 'Review: health and services' and identify the real-life situation it describes.",
+          "media_required": false,
+          "stimulus": "I described the problem clearly, asked for advice, and wrote down the next step. The message gives one main point and one detail for the listener.",
+          "questions": [
+            {
+              "question": "What situation does the message describe?",
+              "acceptable_answers": [
+                "The message is about reviewing a health problem."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "prompt": "Speak for 30–45 seconds about reviewing a health problem. State the main message, add a relevant detail, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Communicates the main message about reviewing a health problem clearly.",
+              "Adds a relevant detail and responds appropriately to a follow-up question."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short message about reviewing a health problem. Answer the question before the transcript is revealed, then listen again and check the key detail.",
+          "goal": "Identify the situation and a useful detail in a short message about reviewing a health problem.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "transcript": "I described the problem clearly, asked for advice, and wrote down the next step.",
+          "question": "What is the message mainly about?",
+          "answer": "The listener should understand that it concerns reviewing a health problem.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay reviewing a health problem. Learner role: explain the situation and give one useful detail. Tutor role: be a helpful listener, ask one specific follow-up, and confirm the next step. Begin with a natural greeting and finish once both roles agree on the next action.",
+          "goal": "Complete a clear, practical exchange about reviewing a health problem.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "constraints": [
+            "Name the learner and tutor roles before the first turn.",
+            "Use at most three tutor turns and stop after the agreed next step."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Say the model for reviewing a health problem in two thought groups. Mark the pause between ideas, then stress the word that gives the key action, time, quantity, reason, or request. Record a second attempt after listening to your first attempt.",
+          "goal": "Make the key information in reviewing a health problem easy to hear.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "target": "Thought-group pause and key-word stress in review: health and services",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a 35–50 word message about reviewing a health problem. Include the main event or plan, one precise detail, and the next action or response. Submit your own draft before requesting feedback.",
+          "goal": "Write a connected, useful short message about reviewing a health problem.",
+          "target_ids": [
+            "a2t_u01_grammar",
+            "a2t_u01_vocabulary_senses",
+            "a2t_u01_functions",
+            "a2t_u01_pronunciation",
+            "a2t_u01_discourse",
+            "a2t_u01_pragmatics",
+            "a2t_u01_collocations",
+            "a2t_u01_lexical_chunks",
+            "a2t_u01_topics",
+            "a2t_u01_skills"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    }
+  ]
+}
