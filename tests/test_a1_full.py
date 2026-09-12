@@ -9,6 +9,7 @@ from pathlib import Path
 import pytest
 
 from english_master.a1_full import service
+from english_master.a1_full.authoring import compile_authoring_source, seed_authoring_source
 from english_master.a1_full.service import audit_full_a1, build_full_a1, sample_full_a1, verify_full_a1
 from english_master.lesson_generation.canonical import sha256_json
 
@@ -224,3 +225,64 @@ def test_sampling_rejects_failed_audit(tmp_path: Path) -> None:
     _write(report_path, report)
     with pytest.raises(ValueError, match="passing audit"):
         sample_full_a1(run_dir=run, audit_report_path=report_path, seed="blocked", **_paths(source))
+
+
+def test_practical_authoring_compiles_as_successor_without_changing_v1(tmp_path: Path) -> None:
+    source_path = tmp_path / "lesson-source.json"
+    seed_authoring_source(predecessor_units=COMMITTED / "units", output_path=source_path)
+    content_root = tmp_path / "v2-content"
+    manifest_path = compile_authoring_source(
+        source_path=source_path,
+        allocation_path=COMMITTED / "allocation.json",
+        output_root=content_root,
+    )
+    v1_run = COMMITTED / "runs" / "a1full_a45a6b574127a4328b518da37be8f15ac83696d3ae77b0af4ff1e637740edc87"
+    verify_full_a1(v1_run, **_paths(COMMITTED))
+    run = build_full_a1(
+        population_path=COMMITTED / "m15-population.json",
+        blueprint_path=COMMITTED / "m16-blueprint.json",
+        allocation_path=COMMITTED / "allocation.json",
+        content_manifest_path=manifest_path,
+        output_root=tmp_path / "runs",
+        built_at=BUILT_AT,
+    )
+    _, packets = verify_full_a1(
+        run,
+        population_path=COMMITTED / "m15-population.json",
+        blueprint_path=COMMITTED / "m16-blueprint.json",
+        allocation_path=COMMITTED / "allocation.json",
+        content_manifest_path=manifest_path,
+    )
+    assert len(packets) == 50
+    assert manifest_path != COMMITTED / "content-manifest.json"
+
+
+def test_practical_authoring_rejects_legacy_boilerplate(tmp_path: Path) -> None:
+    source_path = tmp_path / "lesson-source.json"
+    seed_authoring_source(predecessor_units=COMMITTED / "units", output_path=source_path)
+    source = json.loads(source_path.read_text(encoding="utf-8"))
+    source["lessons"][0]["content_sections"][0]["body"] += " No detail is provided."
+    source["source_sha256"] = sha256_json({key: value for key, value in source.items() if key != "source_sha256"})
+    _write(source_path, source)
+    with pytest.raises(ValueError, match="rejected legacy boilerplate"):
+        compile_authoring_source(
+            source_path=source_path,
+            allocation_path=COMMITTED / "allocation.json",
+            output_root=tmp_path / "v2-content",
+        )
+
+
+def test_practical_authoring_rejects_visible_listening_transcript(tmp_path: Path) -> None:
+    source_path = tmp_path / "lesson-source.json"
+    seed_authoring_source(predecessor_units=COMMITTED / "units", output_path=source_path)
+    source = json.loads(source_path.read_text(encoding="utf-8"))
+    lesson = source["lessons"][0]
+    lesson["content_sections"][0]["body"] += " " + lesson["practice"]["listening"]["transcript"]
+    source["source_sha256"] = sha256_json({key: value for key, value in source.items() if key != "source_sha256"})
+    _write(source_path, source)
+    with pytest.raises(ValueError, match="transcript is visible"):
+        compile_authoring_source(
+            source_path=source_path,
+            allocation_path=COMMITTED / "allocation.json",
+            output_root=tmp_path / "v2-content",
+        )

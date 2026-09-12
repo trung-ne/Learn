@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
+from .authoring import compile_authoring_source, seed_authoring_source
 from .service import audit_full_a1, build_full_a1, sample_full_a1, verify_full_a1
 
 
@@ -36,7 +37,20 @@ def main(argv: list[str] | None = None) -> int:
     sample.add_argument("--seed", required=True)
     sample.add_argument("--size", default=12, type=int)
     sample.add_argument("--output", required=True, type=Path)
+    authoring_seed = commands.add_parser("seed-authoring", help="create a retained repaired-content authoring source")
+    authoring_seed.add_argument("--predecessor-units", required=True, type=Path)
+    authoring_seed.add_argument("--output", required=True, type=Path)
+    authoring_compile = commands.add_parser("compile-authoring", help="compile retained authoring source into closed unit files")
+    authoring_compile.add_argument("--source", required=True, type=Path)
+    authoring_compile.add_argument("--allocation", required=True, type=Path)
+    authoring_compile.add_argument("--output-root", required=True, type=Path)
     args = parser.parse_args(argv)
+    if args.command == "seed-authoring":
+        print(seed_authoring_source(predecessor_units=args.predecessor_units, output_path=args.output))
+        return 0
+    if args.command == "compile-authoring":
+        print(compile_authoring_source(source_path=args.source, allocation_path=args.allocation, output_root=args.output_root))
+        return 0
     sources = {"population_path": args.population, "blueprint_path": args.blueprint, "allocation_path": args.allocation, "content_manifest_path": args.content_manifest}
     if args.command == "build":
         print(build_full_a1(**sources, output_root=args.output_root, built_at=args.built_at))

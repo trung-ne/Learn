@@ -1,14 +1,17 @@
-# A1 Full Content Authoring Contract
+# A1 Full Practical Content Authoring Contract
 
-Author exactly one of the ten five-lesson unit files declared by `curriculum/a1-full/v1/content-manifest.json`.
+Author a successor Full A1 content snapshot without changing the immutable predecessor under `curriculum/a1-full/v1/`.
 
-- Use only the exact ordered lesson IDs, target usage, permitted exercise types, and prerequisites in `allocation.json`.
-- Write original A1 learner material; do not copy or adapt external lessons, examples, or media.
-- Give each lesson 2–4 concise sections, 2–4 allocated objectives, and 3–6 exercises.
-- Every section, exercise, and practice protocol must cite only target IDs allocated to that lesson.
-- Follow the type-specific multiple-choice, fill-blank, matching, ordering, reading, listening, speaking, and writing fields in the v2 content-unit schema. Every exercise sets `media_required: false`.
-- Include exactly four practice protocols. Keep listening transcript-only and hidden before the attempt; use `NOT_ASSESSED` when pronunciation audio is unavailable; wait for the learner's writing draft and provide feedback without a replacement answer.
-- Keep content `PROJECT_AUTHORED`; do not add human-review, approval, release, provider-authentication, live-AI, network, or real-media claims.
-- Avoid normalized exact reuse of learner-facing sections, exercise prompts or answers, and protocol instructions.
+- Retain a complete ordered source of exactly fifty target-bound lesson cards, then compile it into ten five-lesson unit files and a closed content manifest.
+- Reuse only the exact lesson IDs, target usage, permitted exercise types, and prerequisites in the pinned allocation. Do not alter the M15 population, M16 blueprint, or allocation merely to fit content.
+- Write original A1 learner material. Do not copy or adapt external lessons, examples, or media.
+- Give every 25–45 minute lesson at least three useful sections: explicit form/meaning/use guidance, a contextual example or dialogue, and a guided communicative use step. Add Vietnamese support where it explains a concrete learning decision; do not use filler translation.
+- Every exercise must ask the learner to understand, arrange, choose, complete, or produce English for the lesson target. Do not create exercises about lesson numbers, target labels, study steps, or generic metadata.
+- A listening transcript must be private until the learner’s first answer and must not duplicate visible learner-facing text. Preserve the transcript-only/no-media boundary.
+- A speaking protocol must name learner and tutor roles, a real-life scenario, a tutor opening, an information gap or follow-up, and a completion condition.
+- A pronunciation protocol must name a concrete sound, stress, rhythm, linking, or contrast action and preserve `NOT_ASSESSED` without learner audio.
+- A writing protocol must request a small A1 draft, wait for it, and provide feedback only—not a replacement answer.
+- Keep all content `PROJECT_AUTHORED` and `UNREVIEWED`. Do not add human-review, approval, release, provider-authentication, live-AI, network, or real-media claims.
+- Avoid exact duplicate learner-facing sections, exercise prompts or answers, and protocol instructions.
 
-Validate the complete manifest and all ten units through `english-master-a1-full build`, then run `verify` and the full-population `audit`. Do not edit a published run in place.
+Use the authoring CLI to create the retained source and compile it into a successor content root, then use `english-master-a1-full build`, `verify`, `audit`, and `sample` with the predecessor structural inputs and successor content manifest. Never edit a published run in place.

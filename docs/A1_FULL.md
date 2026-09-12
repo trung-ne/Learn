@@ -51,3 +51,11 @@ This audit does not establish prose-level linguistic correctness, pedagogical qu
 Sampling requires a verified run and a hash-valid passing audit report. The default size is 12; valid sizes are 10–15. Candidate rank is SHA-256 over the audit-report hash, required seed, policy version, and lesson ID. The algorithm selects the top-ranked lesson from each of ten units, then the globally top-ranked unselected lessons until the requested size is reached. It persists all fifty rankings and input hashes, so selection is reproducible and independent of input iteration order.
 
 The sample is only a bounded set for direct use or inspection. It is not a review or approval gate.
+
+## Practical-content successor
+
+`curriculum/a1-full/v1/` is an immutable predecessor. A successor source may live under `curriculum/a1-full/v2/` while reusing the pinned v1 M15 population, M16 blueprint, and allocation as independent inputs. `english-master-a1-full seed-authoring` creates a retained 50-card authoring source, and `compile-authoring` validates it and atomically produces the successor unit files plus content manifest.
+
+The authoring compiler rejects the specific recurring failures discovered by the initial practical check: legacy metadata exercises, a visible listening transcript, non-roleplay speaking instructions, generic pronunciation instructions, insufficient section structure, missing ordered coverage, and target-scope drift. These are limited local content lints; they do not establish linguistic quality, pedagogical approval, human review, or release authority.
+
+A successor still requires a new immutable run, verification, audit, deterministic sample, and the requested direct practical inspection before any `A1 PRACTICAL CHECK: PASS` or `A1 DEVELOPMENT READY` statement.
