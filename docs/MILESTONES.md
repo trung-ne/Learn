@@ -539,7 +539,13 @@ The blueprint is a planning artifact only and does not replace the historical M5
 
 The A1 pilot derives the first ten A1.1 M16 outline lessons into ten original-authored learner packets. Every packet contains lesson content, exercises, and listening, speaking, pronunciation, and writing practice protocols. The pilot validates source hashes, ordered prerequisites, exact four-modality inventory, answer/rubric completeness, duration bounds, duplicate learner-facing text, and closed immutable inventory. A direct user-plus-AI review template covers clarity, grammar, vocabulary difficulty, exercise quality, prompt usability, duration, and duplication; systemic findings identify a generator rule to repair. The pilot remains `UNREVIEWED` and makes no human/release/provider or real-media claim. See [A1 Pilot](A1_PILOT.md).
 
-### Next: direct A1 pilot use and completed development review
+### Full A1 implementation follow-up
+
+**Status**: Implemented as a complete fifty-lesson development corpus
+
+The isolated Full A1 v2 path preserves the pilot and adds an original-authored granular allocation across the exact ten M16 units and fifty A1.1/A1.2 lessons. Ten hash-bound content files build fifty immutable learner packets with structured exercises and all four practice protocols. Read-only verification reconstructs every packet from M15, M16, allocation, and content inputs. A lightweight full-population audit reports deterministic reference, prerequisite, tier/scope, exercise, media-boundary, claim-boundary, and exact-duplicate checks; a passing report can feed a reproducible 10–15 lesson SHA-256-ranked unit-stratified sample. Everything remains `UNREVIEWED`, uses no network/live AI/external media, and creates no human, release, or provider claim. See [Full A1](A1_FULL.md).
+
+### Next: direct use of the deterministic twelve-lesson Full A1 sample
 
 ---
 

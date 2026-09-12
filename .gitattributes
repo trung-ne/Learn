@@ -1,0 +1,3 @@
+# Immutable Full A1 artifacts bind hashes to canonical JSON bytes.
+curriculum/a1-full/*.json text eol=lf
+curriculum/a1-full/**/*.json text eol=lf

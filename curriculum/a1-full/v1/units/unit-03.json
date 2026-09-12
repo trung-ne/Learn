@@ -1,0 +1,742 @@
+{
+  "schema_version": "2.0",
+  "record_type": "a1_full_content_unit",
+  "unit_id": "m16a1-v1-a1-u03",
+  "tier": "A1.1",
+  "content_origin": "PROJECT_AUTHORED",
+  "lessons": [
+    {
+      "lesson_id": "m16a1-v1-a1-u03-l01",
+      "title": "People in my family",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a1t_u03_family_words",
+        "a1t_u02_adverbs_of_frequency"
+      ],
+      "objectives": [
+        "Use family nouns and possessive adjectives my, your, his, and her.",
+        "Use family words in one short, clear everyday exchange."
+      ],
+      "content_sections": [
+        {
+          "id": "language-note",
+          "section_type": "explanation",
+          "title": "Language focus",
+          "body": "In lesson 11: family words, notice this model: This is my sister. Her name is Anh. Keep the word order short and make the meaning clear.",
+          "target_ids": [
+            "a1t_u03_family_words"
+          ]
+        },
+        {
+          "id": "context",
+          "section_type": "dialogue",
+          "title": "Everyday context",
+          "body": "Read the original mini-context for lesson 11: family words: 'This is my sister. Her name is Anh.' Say which words carry the main information.",
+          "target_ids": [
+            "a1t_u03_family_words",
+            "a1t_u02_adverbs_of_frequency"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "detail-check",
+          "type": "reading",
+          "target_ids": [
+            "a1t_u03_family_words"
+          ],
+          "prompt": "Use the supplied original text for lesson 11: family words and answer one detail question.",
+          "media_required": false,
+          "stimulus": "This is my sister. Her name is Anh.",
+          "questions": [
+            {
+              "question": "Who is Anh?",
+              "acceptable_answers": [
+                "the speaker's sister"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "form-match",
+          "type": "matching",
+          "target_ids": [
+            "a1t_u03_family_words"
+          ],
+          "prompt": "Match the two lesson 11: family words cues with their meanings.",
+          "media_required": false,
+          "pairs": [
+            {
+              "left": "Target phrase in People in my family",
+              "right": "This is my sister. Her name is Anh."
+            },
+            {
+              "left": "Communication goal in lesson 11",
+              "right": "Use family nouns and possessive adjectives my, your, his, and her."
+            }
+          ]
+        },
+        {
+          "id": "personal-response",
+          "type": "speaking",
+          "target_ids": [
+            "a1t_u03_family_words",
+            "a1t_u02_adverbs_of_frequency"
+          ],
+          "prompt": "Give your own short speaking response for lesson 11: family words; use the target but do not copy the model.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "The response clearly addresses family words in lesson 11.",
+              "The response uses the allocated People in my family target intelligibly."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen to the tutor read the lesson 11: family words transcript once. Answer one question before seeing the text.",
+          "goal": "Identify one explicit detail about family words.",
+          "target_ids": [
+            "a1t_u03_family_words",
+            "a1t_u02_adverbs_of_frequency"
+          ],
+          "transcript": "This is my sister. Her name is Anh.",
+          "question": "Who is Anh?",
+          "answer": "the speaker's sister",
+          "media_required": false,
+          "constraints": [
+            "Do not reveal the transcript before the learner answers.",
+            "Ask exactly one comprehension question.",
+            "Use only the supplied project-authored transcript."
+          ]
+        },
+        "speaking": {
+          "instruction": "Take the learner role in a two-turn exchange about family words in lesson 11; respond with one or two short sentences.",
+          "goal": "Use the family words language focus intelligibly.",
+          "target_ids": [
+            "a1t_u03_family_words",
+            "a1t_u02_adverbs_of_frequency"
+          ],
+          "constraints": [
+            "Use at most two tutor turns.",
+            "Correct only one blocking error after the response."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Read the target words for lesson 11: family words aloud, then compare clear final sounds and stress.",
+          "goal": "Produce the selected family words words clearly.",
+          "target_ids": [
+            "a1t_u03_family_words",
+            "a1t_u02_adverbs_of_frequency"
+          ],
+          "target": "sister, her",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is available.",
+            "Return NOT_ASSESSED when no audio is supplied."
+          ]
+        },
+        "writing": {
+          "instruction": "Write two sentences about an invented family. For lesson 11: family words, submit your draft before receiving two brief improvement points.",
+          "goal": "Write a short A1 response about family words.",
+          "target_ids": [
+            "a1t_u03_family_words",
+            "a1t_u02_adverbs_of_frequency"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Do not replace the learner draft with a complete rewritten answer."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u03-l02",
+      "title": "Have and has",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a1t_u03_possessions_and_relationships",
+        "a1t_u03_family_words"
+      ],
+      "objectives": [
+        "Use have and has in simple statements.",
+        "Use possessions and relationships in one short, clear everyday exchange."
+      ],
+      "content_sections": [
+        {
+          "id": "language-note",
+          "section_type": "explanation",
+          "title": "Language focus",
+          "body": "In lesson 12: possessions and relationships, notice this model: Tuan has one brother, and I have two sisters. Keep the word order short and make the meaning clear.",
+          "target_ids": [
+            "a1t_u03_possessions_and_relationships"
+          ]
+        },
+        {
+          "id": "context",
+          "section_type": "dialogue",
+          "title": "Everyday context",
+          "body": "Read the original mini-context for lesson 12: possessions and relationships: 'Tuan has one brother, and I have two sisters.' Say which words carry the main information.",
+          "target_ids": [
+            "a1t_u03_possessions_and_relationships",
+            "a1t_u03_family_words"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "detail-check",
+          "type": "listening",
+          "target_ids": [
+            "a1t_u03_possessions_and_relationships"
+          ],
+          "prompt": "Use the supplied original transcript for lesson 12: possessions and relationships and answer one detail question.",
+          "media_required": false,
+          "stimulus": "Tuan has one brother, and I have two sisters.",
+          "questions": [
+            {
+              "question": "How many brothers does Tuan have?",
+              "acceptable_answers": [
+                "one"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "practice-order",
+          "type": "ordering",
+          "target_ids": [
+            "a1t_u03_possessions_and_relationships"
+          ],
+          "prompt": "Put the three learning steps for lesson 12: possessions and relationships in a useful order.",
+          "media_required": false,
+          "items": [
+            "Read the model in lesson 12",
+            "Create a new possessions and relationships example",
+            "Notice the form in Have and has"
+          ],
+          "correct_order": [
+            "Notice the form in Have and has",
+            "Read the model in lesson 12",
+            "Create a new possessions and relationships example"
+          ]
+        },
+        {
+          "id": "personal-response",
+          "type": "writing",
+          "target_ids": [
+            "a1t_u03_possessions_and_relationships",
+            "a1t_u03_family_words"
+          ],
+          "prompt": "Give your own short writing response for lesson 12: possessions and relationships; use the target but do not copy the model.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "The response clearly addresses possessions and relationships in lesson 12.",
+              "The response uses the allocated Have and has target intelligibly."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen to the tutor read the lesson 12: possessions and relationships transcript once. Answer one question before seeing the text.",
+          "goal": "Identify one explicit detail about possessions and relationships.",
+          "target_ids": [
+            "a1t_u03_possessions_and_relationships",
+            "a1t_u03_family_words"
+          ],
+          "transcript": "Tuan has one brother, and I have two sisters.",
+          "question": "How many brothers does Tuan have?",
+          "answer": "one",
+          "media_required": false,
+          "constraints": [
+            "Do not reveal the transcript before the learner answers.",
+            "Ask exactly one comprehension question.",
+            "Use only the supplied project-authored transcript."
+          ]
+        },
+        "speaking": {
+          "instruction": "Take the learner role in a two-turn exchange about possessions and relationships in lesson 12; respond with one or two short sentences.",
+          "goal": "Use the possessions and relationships language focus intelligibly.",
+          "target_ids": [
+            "a1t_u03_possessions_and_relationships",
+            "a1t_u03_family_words"
+          ],
+          "constraints": [
+            "Use at most two tutor turns.",
+            "Correct only one blocking error after the response."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Read the target words for lesson 12: possessions and relationships aloud, then compare clear final sounds and stress.",
+          "goal": "Produce the selected possessions and relationships words clearly.",
+          "target_ids": [
+            "a1t_u03_possessions_and_relationships",
+            "a1t_u03_family_words"
+          ],
+          "target": "has, brother",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is available.",
+            "Return NOT_ASSESSED when no audio is supplied."
+          ]
+        },
+        "writing": {
+          "instruction": "Write one sentence with have and one with has. For lesson 12: possessions and relationships, submit your draft before receiving two brief improvement points.",
+          "goal": "Write a short A1 response about possessions and relationships.",
+          "target_ids": [
+            "a1t_u03_possessions_and_relationships",
+            "a1t_u03_family_words"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Do not replace the learner draft with a complete rewritten answer."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u03-l03",
+      "title": "Rooms at home",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a1t_u03_rooms_and_furniture",
+        "a1t_u03_possessions_and_relationships"
+      ],
+      "objectives": [
+        "Name common rooms and objects in a home.",
+        "Use rooms and furniture in one short, clear everyday exchange."
+      ],
+      "content_sections": [
+        {
+          "id": "language-note",
+          "section_type": "explanation",
+          "title": "Language focus",
+          "body": "In lesson 13: rooms and furniture, notice this model: The lamp is in the bedroom beside the bed. Keep the word order short and make the meaning clear.",
+          "target_ids": [
+            "a1t_u03_rooms_and_furniture"
+          ]
+        },
+        {
+          "id": "context",
+          "section_type": "dialogue",
+          "title": "Everyday context",
+          "body": "Read the original mini-context for lesson 13: rooms and furniture: 'The lamp is in the bedroom beside the bed.' Say which words carry the main information.",
+          "target_ids": [
+            "a1t_u03_rooms_and_furniture",
+            "a1t_u03_possessions_and_relationships"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "meaning-check",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a1t_u03_rooms_and_furniture"
+          ],
+          "prompt": "Choose the exact model sentence for lesson 13: rooms and furniture.",
+          "media_required": false,
+          "options": [
+            "The lamp is in the bedroom beside the bed.",
+            "No detail is provided in Rooms at home.",
+            "A different routine appears in Rooms at home."
+          ],
+          "correct_answer": "The lamp is in the bedroom beside the bed."
+        },
+        {
+          "id": "form-match",
+          "type": "matching",
+          "target_ids": [
+            "a1t_u03_rooms_and_furniture"
+          ],
+          "prompt": "Match the two lesson 13: rooms and furniture cues with their meanings.",
+          "media_required": false,
+          "pairs": [
+            {
+              "left": "Target phrase in Rooms at home",
+              "right": "The lamp is in the bedroom beside the bed."
+            },
+            {
+              "left": "Communication goal in lesson 13",
+              "right": "Name common rooms and objects in a home."
+            }
+          ]
+        },
+        {
+          "id": "personal-response",
+          "type": "speaking",
+          "target_ids": [
+            "a1t_u03_rooms_and_furniture",
+            "a1t_u03_possessions_and_relationships"
+          ],
+          "prompt": "Give your own short speaking response for lesson 13: rooms and furniture; use the target but do not copy the model.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "The response clearly addresses rooms and furniture in lesson 13.",
+              "The response uses the allocated Rooms at home target intelligibly."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen to the tutor read the lesson 13: rooms and furniture transcript once. Answer one question before seeing the text.",
+          "goal": "Identify one explicit detail about rooms and furniture.",
+          "target_ids": [
+            "a1t_u03_rooms_and_furniture",
+            "a1t_u03_possessions_and_relationships"
+          ],
+          "transcript": "The lamp is in the bedroom beside the bed.",
+          "question": "Where is the lamp?",
+          "answer": "in the bedroom beside the bed",
+          "media_required": false,
+          "constraints": [
+            "Do not reveal the transcript before the learner answers.",
+            "Ask exactly one comprehension question.",
+            "Use only the supplied project-authored transcript."
+          ]
+        },
+        "speaking": {
+          "instruction": "Take the learner role in a two-turn exchange about rooms and furniture in lesson 13; respond with one or two short sentences.",
+          "goal": "Use the rooms and furniture language focus intelligibly.",
+          "target_ids": [
+            "a1t_u03_rooms_and_furniture",
+            "a1t_u03_possessions_and_relationships"
+          ],
+          "constraints": [
+            "Use at most two tutor turns.",
+            "Correct only one blocking error after the response."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Read the target words for lesson 13: rooms and furniture aloud, then compare clear final sounds and stress.",
+          "goal": "Produce the selected rooms and furniture words clearly.",
+          "target_ids": [
+            "a1t_u03_rooms_and_furniture",
+            "a1t_u03_possessions_and_relationships"
+          ],
+          "target": "lamp, bedroom",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is available.",
+            "Return NOT_ASSESSED when no audio is supplied."
+          ]
+        },
+        "writing": {
+          "instruction": "Write where two home objects are. For lesson 13: rooms and furniture, submit your draft before receiving two brief improvement points.",
+          "goal": "Write a short A1 response about rooms and furniture.",
+          "target_ids": [
+            "a1t_u03_rooms_and_furniture",
+            "a1t_u03_possessions_and_relationships"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Do not replace the learner draft with a complete rewritten answer."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u03-l04",
+      "title": "There is and there are",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a1t_u03_describing_a_room",
+        "a1t_u03_rooms_and_furniture"
+      ],
+      "objectives": [
+        "Use there is and there are with singular and plural nouns.",
+        "Use describing a room in one short, clear everyday exchange."
+      ],
+      "content_sections": [
+        {
+          "id": "language-note",
+          "section_type": "explanation",
+          "title": "Language focus",
+          "body": "In lesson 14: describing a room, notice this model: There is a table, and there are four chairs in the kitchen. Keep the word order short and make the meaning clear.",
+          "target_ids": [
+            "a1t_u03_describing_a_room"
+          ]
+        },
+        {
+          "id": "context",
+          "section_type": "dialogue",
+          "title": "Everyday context",
+          "body": "Read the original mini-context for lesson 14: describing a room: 'There is a table, and there are four chairs in the kitchen.' Say which words carry the main information.",
+          "target_ids": [
+            "a1t_u03_describing_a_room",
+            "a1t_u03_rooms_and_furniture"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "language-gap",
+          "type": "fill_blank",
+          "target_ids": [
+            "a1t_u03_describing_a_room"
+          ],
+          "prompt": "Complete the key detail for lesson 14: describing a room: There is a table, and there are ___ chairs in the kitchen.",
+          "media_required": false,
+          "acceptable_answers": [
+            "four"
+          ]
+        },
+        {
+          "id": "practice-order",
+          "type": "ordering",
+          "target_ids": [
+            "a1t_u03_describing_a_room"
+          ],
+          "prompt": "Put the three learning steps for lesson 14: describing a room in a useful order.",
+          "media_required": false,
+          "items": [
+            "Read the model in lesson 14",
+            "Create a new describing a room example",
+            "Notice the form in There is and there are"
+          ],
+          "correct_order": [
+            "Notice the form in There is and there are",
+            "Read the model in lesson 14",
+            "Create a new describing a room example"
+          ]
+        },
+        {
+          "id": "personal-response",
+          "type": "writing",
+          "target_ids": [
+            "a1t_u03_describing_a_room",
+            "a1t_u03_rooms_and_furniture"
+          ],
+          "prompt": "Give your own short writing response for lesson 14: describing a room; use the target but do not copy the model.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "The response clearly addresses describing a room in lesson 14.",
+              "The response uses the allocated There is and there are target intelligibly."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen to the tutor read the lesson 14: describing a room transcript once. Answer one question before seeing the text.",
+          "goal": "Identify one explicit detail about describing a room.",
+          "target_ids": [
+            "a1t_u03_describing_a_room",
+            "a1t_u03_rooms_and_furniture"
+          ],
+          "transcript": "There is a table, and there are four chairs in the kitchen.",
+          "question": "How many chairs are there?",
+          "answer": "four",
+          "media_required": false,
+          "constraints": [
+            "Do not reveal the transcript before the learner answers.",
+            "Ask exactly one comprehension question.",
+            "Use only the supplied project-authored transcript."
+          ]
+        },
+        "speaking": {
+          "instruction": "Take the learner role in a two-turn exchange about describing a room in lesson 14; respond with one or two short sentences.",
+          "goal": "Use the describing a room language focus intelligibly.",
+          "target_ids": [
+            "a1t_u03_describing_a_room",
+            "a1t_u03_rooms_and_furniture"
+          ],
+          "constraints": [
+            "Use at most two tutor turns.",
+            "Correct only one blocking error after the response."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Read the target words for lesson 14: describing a room aloud, then compare clear final sounds and stress.",
+          "goal": "Produce the selected describing a room words clearly.",
+          "target_ids": [
+            "a1t_u03_describing_a_room",
+            "a1t_u03_rooms_and_furniture"
+          ],
+          "target": "table, chairs",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is available.",
+            "Return NOT_ASSESSED when no audio is supplied."
+          ]
+        },
+        "writing": {
+          "instruction": "Write two sentences describing a room. For lesson 14: describing a room, submit your draft before receiving two brief improvement points.",
+          "goal": "Write a short A1 response about describing a room.",
+          "target_ids": [
+            "a1t_u03_describing_a_room",
+            "a1t_u03_rooms_and_furniture"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Do not replace the learner draft with a complete rewritten answer."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u03-l05",
+      "title": "A home tour",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a1t_u03_home_language_review",
+        "a1t_u03_describing_a_room",
+        "a1t_u03_family_words"
+      ],
+      "objectives": [
+        "Combine family, possession, place, and polite welcome language.",
+        "Use home-language review in one short, clear everyday exchange."
+      ],
+      "content_sections": [
+        {
+          "id": "language-note",
+          "section_type": "explanation",
+          "title": "Language focus",
+          "body": "In lesson 15: home-language review, notice this model: Welcome to our flat. My parents have a small room near the kitchen. Keep the word order short and make the meaning clear.",
+          "target_ids": [
+            "a1t_u03_home_language_review"
+          ]
+        },
+        {
+          "id": "context",
+          "section_type": "dialogue",
+          "title": "Everyday context",
+          "body": "Read the original mini-context for lesson 15: home-language review: 'Welcome to our flat. My parents have a small room near the kitchen.' Say which words carry the main information.",
+          "target_ids": [
+            "a1t_u03_home_language_review",
+            "a1t_u03_describing_a_room",
+            "a1t_u03_family_words"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "detail-check",
+          "type": "reading",
+          "target_ids": [
+            "a1t_u03_home_language_review"
+          ],
+          "prompt": "Use the supplied original text for lesson 15: home-language review and answer one detail question.",
+          "media_required": false,
+          "stimulus": "Welcome to our flat. My parents have a small room near the kitchen.",
+          "questions": [
+            {
+              "question": "Whose flat is it?",
+              "acceptable_answers": [
+                "the speaker's family flat"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "form-match",
+          "type": "matching",
+          "target_ids": [
+            "a1t_u03_home_language_review"
+          ],
+          "prompt": "Match the two lesson 15: home-language review cues with their meanings.",
+          "media_required": false,
+          "pairs": [
+            {
+              "left": "Target phrase in A home tour",
+              "right": "Welcome to our flat. My parents have a small room near the kitchen."
+            },
+            {
+              "left": "Communication goal in lesson 15",
+              "right": "Combine family, possession, place, and polite welcome language."
+            }
+          ]
+        },
+        {
+          "id": "personal-response",
+          "type": "speaking",
+          "target_ids": [
+            "a1t_u03_home_language_review",
+            "a1t_u03_describing_a_room",
+            "a1t_u03_family_words"
+          ],
+          "prompt": "Give your own short speaking response for lesson 15: home-language review; use the target but do not copy the model.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "The response clearly addresses home-language review in lesson 15.",
+              "The response uses the allocated A home tour target intelligibly."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen to the tutor read the lesson 15: home-language review transcript once. Answer one question before seeing the text.",
+          "goal": "Identify one explicit detail about home-language review.",
+          "target_ids": [
+            "a1t_u03_home_language_review",
+            "a1t_u03_describing_a_room",
+            "a1t_u03_family_words"
+          ],
+          "transcript": "Welcome to our flat. My parents have a small room near the kitchen.",
+          "question": "Whose flat is it?",
+          "answer": "the speaker's family flat",
+          "media_required": false,
+          "constraints": [
+            "Do not reveal the transcript before the learner answers.",
+            "Ask exactly one comprehension question.",
+            "Use only the supplied project-authored transcript."
+          ]
+        },
+        "speaking": {
+          "instruction": "Take the learner role in a two-turn exchange about home-language review in lesson 15; respond with one or two short sentences.",
+          "goal": "Use the home-language review language focus intelligibly.",
+          "target_ids": [
+            "a1t_u03_home_language_review",
+            "a1t_u03_describing_a_room",
+            "a1t_u03_family_words"
+          ],
+          "constraints": [
+            "Use at most two tutor turns.",
+            "Correct only one blocking error after the response."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Read the target words for lesson 15: home-language review aloud, then compare clear final sounds and stress.",
+          "goal": "Produce the selected home-language review words clearly.",
+          "target_ids": [
+            "a1t_u03_home_language_review",
+            "a1t_u03_describing_a_room",
+            "a1t_u03_family_words"
+          ],
+          "target": "welcome, parents",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is available.",
+            "Return NOT_ASSESSED when no audio is supplied."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a short welcome to an invented home. For lesson 15: home-language review, submit your draft before receiving two brief improvement points.",
+          "goal": "Write a short A1 response about home-language review.",
+          "target_ids": [
+            "a1t_u03_home_language_review",
+            "a1t_u03_describing_a_room",
+            "a1t_u03_family_words"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Do not replace the learner draft with a complete rewritten answer."
+          ]
+        }
+      }
+    }
+  ]
+}

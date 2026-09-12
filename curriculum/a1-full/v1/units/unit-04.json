@@ -1,0 +1,742 @@
+{
+  "schema_version": "2.0",
+  "record_type": "a1_full_content_unit",
+  "unit_id": "m16a1-v1-a1-u04",
+  "tier": "A1.1",
+  "content_origin": "PROJECT_AUTHORED",
+  "lessons": [
+    {
+      "lesson_id": "m16a1-v1-a1-u04-l01",
+      "title": "Food I like",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a1t_u04_food_preferences",
+        "a1t_u03_home_language_review"
+      ],
+      "objectives": [
+        "Use like, love, and do not like with food nouns.",
+        "Use food preferences in one short, clear everyday exchange."
+      ],
+      "content_sections": [
+        {
+          "id": "language-note",
+          "section_type": "explanation",
+          "title": "Language focus",
+          "body": "In lesson 16: food preferences, notice this model: I like rice, but I do not like very sweet tea. Keep the word order short and make the meaning clear.",
+          "target_ids": [
+            "a1t_u04_food_preferences"
+          ]
+        },
+        {
+          "id": "context",
+          "section_type": "dialogue",
+          "title": "Everyday context",
+          "body": "Read the original mini-context for lesson 16: food preferences: 'I like rice, but I do not like very sweet tea.' Say which words carry the main information.",
+          "target_ids": [
+            "a1t_u04_food_preferences",
+            "a1t_u03_home_language_review"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "detail-check",
+          "type": "listening",
+          "target_ids": [
+            "a1t_u04_food_preferences"
+          ],
+          "prompt": "Use the supplied original transcript for lesson 16: food preferences and answer one detail question.",
+          "media_required": false,
+          "stimulus": "I like rice, but I do not like very sweet tea.",
+          "questions": [
+            {
+              "question": "What drink does the speaker dislike?",
+              "acceptable_answers": [
+                "very sweet tea"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "practice-order",
+          "type": "ordering",
+          "target_ids": [
+            "a1t_u04_food_preferences"
+          ],
+          "prompt": "Put the three learning steps for lesson 16: food preferences in a useful order.",
+          "media_required": false,
+          "items": [
+            "Read the model in lesson 16",
+            "Create a new food preferences example",
+            "Notice the form in Food I like"
+          ],
+          "correct_order": [
+            "Notice the form in Food I like",
+            "Read the model in lesson 16",
+            "Create a new food preferences example"
+          ]
+        },
+        {
+          "id": "personal-response",
+          "type": "writing",
+          "target_ids": [
+            "a1t_u04_food_preferences",
+            "a1t_u03_home_language_review"
+          ],
+          "prompt": "Give your own short writing response for lesson 16: food preferences; use the target but do not copy the model.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "The response clearly addresses food preferences in lesson 16.",
+              "The response uses the allocated Food I like target intelligibly."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen to the tutor read the lesson 16: food preferences transcript once. Answer one question before seeing the text.",
+          "goal": "Identify one explicit detail about food preferences.",
+          "target_ids": [
+            "a1t_u04_food_preferences",
+            "a1t_u03_home_language_review"
+          ],
+          "transcript": "I like rice, but I do not like very sweet tea.",
+          "question": "What drink does the speaker dislike?",
+          "answer": "very sweet tea",
+          "media_required": false,
+          "constraints": [
+            "Do not reveal the transcript before the learner answers.",
+            "Ask exactly one comprehension question.",
+            "Use only the supplied project-authored transcript."
+          ]
+        },
+        "speaking": {
+          "instruction": "Take the learner role in a two-turn exchange about food preferences in lesson 16; respond with one or two short sentences.",
+          "goal": "Use the food preferences language focus intelligibly.",
+          "target_ids": [
+            "a1t_u04_food_preferences",
+            "a1t_u03_home_language_review"
+          ],
+          "constraints": [
+            "Use at most two tutor turns.",
+            "Correct only one blocking error after the response."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Read the target words for lesson 16: food preferences aloud, then compare clear final sounds and stress.",
+          "goal": "Produce the selected food preferences words clearly.",
+          "target_ids": [
+            "a1t_u04_food_preferences",
+            "a1t_u03_home_language_review"
+          ],
+          "target": "rice, tea",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is available.",
+            "Return NOT_ASSESSED when no audio is supplied."
+          ]
+        },
+        "writing": {
+          "instruction": "Write two food preference sentences. For lesson 16: food preferences, submit your draft before receiving two brief improvement points.",
+          "goal": "Write a short A1 response about food preferences.",
+          "target_ids": [
+            "a1t_u04_food_preferences",
+            "a1t_u03_home_language_review"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Do not replace the learner draft with a complete rewritten answer."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u04-l02",
+      "title": "Breakfast and lunch",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a1t_u04_meal_vocabulary",
+        "a1t_u04_food_preferences"
+      ],
+      "objectives": [
+        "Describe simple meals with have for eating and drinking.",
+        "Use meal vocabulary in one short, clear everyday exchange."
+      ],
+      "content_sections": [
+        {
+          "id": "language-note",
+          "section_type": "explanation",
+          "title": "Language focus",
+          "body": "In lesson 17: meal vocabulary, notice this model: Vy has noodles for breakfast and fruit for lunch. Keep the word order short and make the meaning clear.",
+          "target_ids": [
+            "a1t_u04_meal_vocabulary"
+          ]
+        },
+        {
+          "id": "context",
+          "section_type": "dialogue",
+          "title": "Everyday context",
+          "body": "Read the original mini-context for lesson 17: meal vocabulary: 'Vy has noodles for breakfast and fruit for lunch.' Say which words carry the main information.",
+          "target_ids": [
+            "a1t_u04_meal_vocabulary",
+            "a1t_u04_food_preferences"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "meaning-check",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a1t_u04_meal_vocabulary"
+          ],
+          "prompt": "Choose the exact model sentence for lesson 17: meal vocabulary.",
+          "media_required": false,
+          "options": [
+            "Vy has noodles for breakfast and fruit for lunch.",
+            "No detail is provided in Breakfast and lunch.",
+            "A different routine appears in Breakfast and lunch."
+          ],
+          "correct_answer": "Vy has noodles for breakfast and fruit for lunch."
+        },
+        {
+          "id": "form-match",
+          "type": "matching",
+          "target_ids": [
+            "a1t_u04_meal_vocabulary"
+          ],
+          "prompt": "Match the two lesson 17: meal vocabulary cues with their meanings.",
+          "media_required": false,
+          "pairs": [
+            {
+              "left": "Target phrase in Breakfast and lunch",
+              "right": "Vy has noodles for breakfast and fruit for lunch."
+            },
+            {
+              "left": "Communication goal in lesson 17",
+              "right": "Describe simple meals with have for eating and drinking."
+            }
+          ]
+        },
+        {
+          "id": "personal-response",
+          "type": "speaking",
+          "target_ids": [
+            "a1t_u04_meal_vocabulary",
+            "a1t_u04_food_preferences"
+          ],
+          "prompt": "Give your own short speaking response for lesson 17: meal vocabulary; use the target but do not copy the model.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "The response clearly addresses meal vocabulary in lesson 17.",
+              "The response uses the allocated Breakfast and lunch target intelligibly."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen to the tutor read the lesson 17: meal vocabulary transcript once. Answer one question before seeing the text.",
+          "goal": "Identify one explicit detail about meal vocabulary.",
+          "target_ids": [
+            "a1t_u04_meal_vocabulary",
+            "a1t_u04_food_preferences"
+          ],
+          "transcript": "Vy has noodles for breakfast and fruit for lunch.",
+          "question": "What does Vy have for lunch?",
+          "answer": "fruit",
+          "media_required": false,
+          "constraints": [
+            "Do not reveal the transcript before the learner answers.",
+            "Ask exactly one comprehension question.",
+            "Use only the supplied project-authored transcript."
+          ]
+        },
+        "speaking": {
+          "instruction": "Take the learner role in a two-turn exchange about meal vocabulary in lesson 17; respond with one or two short sentences.",
+          "goal": "Use the meal vocabulary language focus intelligibly.",
+          "target_ids": [
+            "a1t_u04_meal_vocabulary",
+            "a1t_u04_food_preferences"
+          ],
+          "constraints": [
+            "Use at most two tutor turns.",
+            "Correct only one blocking error after the response."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Read the target words for lesson 17: meal vocabulary aloud, then compare clear final sounds and stress.",
+          "goal": "Produce the selected meal vocabulary words clearly.",
+          "target_ids": [
+            "a1t_u04_meal_vocabulary",
+            "a1t_u04_food_preferences"
+          ],
+          "target": "noodles, fruit",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is available.",
+            "Return NOT_ASSESSED when no audio is supplied."
+          ]
+        },
+        "writing": {
+          "instruction": "Write what you have for one meal. For lesson 17: meal vocabulary, submit your draft before receiving two brief improvement points.",
+          "goal": "Write a short A1 response about meal vocabulary.",
+          "target_ids": [
+            "a1t_u04_meal_vocabulary",
+            "a1t_u04_food_preferences"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Do not replace the learner draft with a complete rewritten answer."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u04-l03",
+      "title": "Some and any",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a1t_u04_basic_quantities",
+        "a1t_u04_meal_vocabulary"
+      ],
+      "objectives": [
+        "Use some in affirmative statements and any in simple questions.",
+        "Use basic quantities in one short, clear everyday exchange."
+      ],
+      "content_sections": [
+        {
+          "id": "language-note",
+          "section_type": "explanation",
+          "title": "Language focus",
+          "body": "In lesson 18: basic quantities, notice this model: We have some eggs. Do we have any milk? Keep the word order short and make the meaning clear.",
+          "target_ids": [
+            "a1t_u04_basic_quantities"
+          ]
+        },
+        {
+          "id": "context",
+          "section_type": "dialogue",
+          "title": "Everyday context",
+          "body": "Read the original mini-context for lesson 18: basic quantities: 'We have some eggs. Do we have any milk?' Say which words carry the main information.",
+          "target_ids": [
+            "a1t_u04_basic_quantities",
+            "a1t_u04_meal_vocabulary"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "language-gap",
+          "type": "fill_blank",
+          "target_ids": [
+            "a1t_u04_basic_quantities"
+          ],
+          "prompt": "Complete the key detail for lesson 18: basic quantities: We have ___. Do we have any milk?",
+          "media_required": false,
+          "acceptable_answers": [
+            "some eggs"
+          ]
+        },
+        {
+          "id": "practice-order",
+          "type": "ordering",
+          "target_ids": [
+            "a1t_u04_basic_quantities"
+          ],
+          "prompt": "Put the three learning steps for lesson 18: basic quantities in a useful order.",
+          "media_required": false,
+          "items": [
+            "Read the model in lesson 18",
+            "Create a new basic quantities example",
+            "Notice the form in Some and any"
+          ],
+          "correct_order": [
+            "Notice the form in Some and any",
+            "Read the model in lesson 18",
+            "Create a new basic quantities example"
+          ]
+        },
+        {
+          "id": "personal-response",
+          "type": "writing",
+          "target_ids": [
+            "a1t_u04_basic_quantities",
+            "a1t_u04_meal_vocabulary"
+          ],
+          "prompt": "Give your own short writing response for lesson 18: basic quantities; use the target but do not copy the model.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "The response clearly addresses basic quantities in lesson 18.",
+              "The response uses the allocated Some and any target intelligibly."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen to the tutor read the lesson 18: basic quantities transcript once. Answer one question before seeing the text.",
+          "goal": "Identify one explicit detail about basic quantities.",
+          "target_ids": [
+            "a1t_u04_basic_quantities",
+            "a1t_u04_meal_vocabulary"
+          ],
+          "transcript": "We have some eggs. Do we have any milk?",
+          "question": "What food do they have?",
+          "answer": "some eggs",
+          "media_required": false,
+          "constraints": [
+            "Do not reveal the transcript before the learner answers.",
+            "Ask exactly one comprehension question.",
+            "Use only the supplied project-authored transcript."
+          ]
+        },
+        "speaking": {
+          "instruction": "Take the learner role in a two-turn exchange about basic quantities in lesson 18; respond with one or two short sentences.",
+          "goal": "Use the basic quantities language focus intelligibly.",
+          "target_ids": [
+            "a1t_u04_basic_quantities",
+            "a1t_u04_meal_vocabulary"
+          ],
+          "constraints": [
+            "Use at most two tutor turns.",
+            "Correct only one blocking error after the response."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Read the target words for lesson 18: basic quantities aloud, then compare clear final sounds and stress.",
+          "goal": "Produce the selected basic quantities words clearly.",
+          "target_ids": [
+            "a1t_u04_basic_quantities",
+            "a1t_u04_meal_vocabulary"
+          ],
+          "target": "some, any",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is available.",
+            "Return NOT_ASSESSED when no audio is supplied."
+          ]
+        },
+        "writing": {
+          "instruction": "Write one statement with some and one question with any. For lesson 18: basic quantities, submit your draft before receiving two brief improvement points.",
+          "goal": "Write a short A1 response about basic quantities.",
+          "target_ids": [
+            "a1t_u04_basic_quantities",
+            "a1t_u04_meal_vocabulary"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Do not replace the learner draft with a complete rewritten answer."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u04-l04",
+      "title": "How much and how many",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a1t_u04_asking_about_quantity",
+        "a1t_u04_basic_quantities"
+      ],
+      "objectives": [
+        "Choose how much for uncountable nouns and how many for countable nouns.",
+        "Use asking about quantity in one short, clear everyday exchange."
+      ],
+      "content_sections": [
+        {
+          "id": "language-note",
+          "section_type": "explanation",
+          "title": "Language focus",
+          "body": "In lesson 19: asking about quantity, notice this model: How many bananas do you need, and how much rice do you want? Keep the word order short and make the meaning clear.",
+          "target_ids": [
+            "a1t_u04_asking_about_quantity"
+          ]
+        },
+        {
+          "id": "context",
+          "section_type": "dialogue",
+          "title": "Everyday context",
+          "body": "Read the original mini-context for lesson 19: asking about quantity: 'How many bananas do you need, and how much rice do you want?' Say which words carry the main information.",
+          "target_ids": [
+            "a1t_u04_asking_about_quantity",
+            "a1t_u04_basic_quantities"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "detail-check",
+          "type": "reading",
+          "target_ids": [
+            "a1t_u04_asking_about_quantity"
+          ],
+          "prompt": "Use the supplied original text for lesson 19: asking about quantity and answer one detail question.",
+          "media_required": false,
+          "stimulus": "How many bananas do you need, and how much rice do you want?",
+          "questions": [
+            {
+              "question": "Which noun follows how much?",
+              "acceptable_answers": [
+                "rice"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "form-match",
+          "type": "matching",
+          "target_ids": [
+            "a1t_u04_asking_about_quantity"
+          ],
+          "prompt": "Match the two lesson 19: asking about quantity cues with their meanings.",
+          "media_required": false,
+          "pairs": [
+            {
+              "left": "Target phrase in How much and how many",
+              "right": "How many bananas do you need, and how much rice do you want?"
+            },
+            {
+              "left": "Communication goal in lesson 19",
+              "right": "Choose how much for uncountable nouns and how many for countable nouns."
+            }
+          ]
+        },
+        {
+          "id": "personal-response",
+          "type": "speaking",
+          "target_ids": [
+            "a1t_u04_asking_about_quantity",
+            "a1t_u04_basic_quantities"
+          ],
+          "prompt": "Give your own short speaking response for lesson 19: asking about quantity; use the target but do not copy the model.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "The response clearly addresses asking about quantity in lesson 19.",
+              "The response uses the allocated How much and how many target intelligibly."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen to the tutor read the lesson 19: asking about quantity transcript once. Answer one question before seeing the text.",
+          "goal": "Identify one explicit detail about asking about quantity.",
+          "target_ids": [
+            "a1t_u04_asking_about_quantity",
+            "a1t_u04_basic_quantities"
+          ],
+          "transcript": "How many bananas do you need, and how much rice do you want?",
+          "question": "Which noun follows how much?",
+          "answer": "rice",
+          "media_required": false,
+          "constraints": [
+            "Do not reveal the transcript before the learner answers.",
+            "Ask exactly one comprehension question.",
+            "Use only the supplied project-authored transcript."
+          ]
+        },
+        "speaking": {
+          "instruction": "Take the learner role in a two-turn exchange about asking about quantity in lesson 19; respond with one or two short sentences.",
+          "goal": "Use the asking about quantity language focus intelligibly.",
+          "target_ids": [
+            "a1t_u04_asking_about_quantity",
+            "a1t_u04_basic_quantities"
+          ],
+          "constraints": [
+            "Use at most two tutor turns.",
+            "Correct only one blocking error after the response."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Read the target words for lesson 19: asking about quantity aloud, then compare clear final sounds and stress.",
+          "goal": "Produce the selected asking about quantity words clearly.",
+          "target_ids": [
+            "a1t_u04_asking_about_quantity",
+            "a1t_u04_basic_quantities"
+          ],
+          "target": "bananas, rice",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is available.",
+            "Return NOT_ASSESSED when no audio is supplied."
+          ]
+        },
+        "writing": {
+          "instruction": "Write two quantity questions. For lesson 19: asking about quantity, submit your draft before receiving two brief improvement points.",
+          "goal": "Write a short A1 response about asking about quantity.",
+          "target_ids": [
+            "a1t_u04_asking_about_quantity",
+            "a1t_u04_basic_quantities"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Do not replace the learner draft with a complete rewritten answer."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u04-l05",
+      "title": "At a cafe",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a1t_u04_ordering_politely",
+        "a1t_u04_asking_about_quantity",
+        "a1t_u04_food_preferences"
+      ],
+      "objectives": [
+        "Use I'd like and please in a short cafe order.",
+        "Use ordering politely in one short, clear everyday exchange."
+      ],
+      "content_sections": [
+        {
+          "id": "language-note",
+          "section_type": "explanation",
+          "title": "Language focus",
+          "body": "In lesson 20: ordering politely, notice this model: I'd like a vegetable sandwich and water, please. Keep the word order short and make the meaning clear.",
+          "target_ids": [
+            "a1t_u04_ordering_politely"
+          ]
+        },
+        {
+          "id": "context",
+          "section_type": "dialogue",
+          "title": "Everyday context",
+          "body": "Read the original mini-context for lesson 20: ordering politely: 'I'd like a vegetable sandwich and water, please.' Say which words carry the main information.",
+          "target_ids": [
+            "a1t_u04_ordering_politely",
+            "a1t_u04_asking_about_quantity",
+            "a1t_u04_food_preferences"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "detail-check",
+          "type": "listening",
+          "target_ids": [
+            "a1t_u04_ordering_politely"
+          ],
+          "prompt": "Use the supplied original transcript for lesson 20: ordering politely and answer one detail question.",
+          "media_required": false,
+          "stimulus": "I'd like a vegetable sandwich and water, please.",
+          "questions": [
+            {
+              "question": "What food does the customer order?",
+              "acceptable_answers": [
+                "a vegetable sandwich"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "practice-order",
+          "type": "ordering",
+          "target_ids": [
+            "a1t_u04_ordering_politely"
+          ],
+          "prompt": "Put the three learning steps for lesson 20: ordering politely in a useful order.",
+          "media_required": false,
+          "items": [
+            "Read the model in lesson 20",
+            "Create a new ordering politely example",
+            "Notice the form in At a cafe"
+          ],
+          "correct_order": [
+            "Notice the form in At a cafe",
+            "Read the model in lesson 20",
+            "Create a new ordering politely example"
+          ]
+        },
+        {
+          "id": "personal-response",
+          "type": "writing",
+          "target_ids": [
+            "a1t_u04_ordering_politely",
+            "a1t_u04_asking_about_quantity",
+            "a1t_u04_food_preferences"
+          ],
+          "prompt": "Give your own short writing response for lesson 20: ordering politely; use the target but do not copy the model.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "The response clearly addresses ordering politely in lesson 20.",
+              "The response uses the allocated At a cafe target intelligibly."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen to the tutor read the lesson 20: ordering politely transcript once. Answer one question before seeing the text.",
+          "goal": "Identify one explicit detail about ordering politely.",
+          "target_ids": [
+            "a1t_u04_ordering_politely",
+            "a1t_u04_asking_about_quantity",
+            "a1t_u04_food_preferences"
+          ],
+          "transcript": "I'd like a vegetable sandwich and water, please.",
+          "question": "What food does the customer order?",
+          "answer": "a vegetable sandwich",
+          "media_required": false,
+          "constraints": [
+            "Do not reveal the transcript before the learner answers.",
+            "Ask exactly one comprehension question.",
+            "Use only the supplied project-authored transcript."
+          ]
+        },
+        "speaking": {
+          "instruction": "Take the learner role in a two-turn exchange about ordering politely in lesson 20; respond with one or two short sentences.",
+          "goal": "Use the ordering politely language focus intelligibly.",
+          "target_ids": [
+            "a1t_u04_ordering_politely",
+            "a1t_u04_asking_about_quantity",
+            "a1t_u04_food_preferences"
+          ],
+          "constraints": [
+            "Use at most two tutor turns.",
+            "Correct only one blocking error after the response."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Read the target words for lesson 20: ordering politely aloud, then compare clear final sounds and stress.",
+          "goal": "Produce the selected ordering politely words clearly.",
+          "target_ids": [
+            "a1t_u04_ordering_politely",
+            "a1t_u04_asking_about_quantity",
+            "a1t_u04_food_preferences"
+          ],
+          "target": "sandwich, please",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is available.",
+            "Return NOT_ASSESSED when no audio is supplied."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a polite two-item cafe order. For lesson 20: ordering politely, submit your draft before receiving two brief improvement points.",
+          "goal": "Write a short A1 response about ordering politely.",
+          "target_ids": [
+            "a1t_u04_ordering_politely",
+            "a1t_u04_asking_about_quantity",
+            "a1t_u04_food_preferences"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Do not replace the learner draft with a complete rewritten answer."
+          ]
+        }
+      }
+    }
+  ]
+}

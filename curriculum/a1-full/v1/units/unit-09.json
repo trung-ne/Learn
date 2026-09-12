@@ -1,0 +1,739 @@
+{
+  "schema_version": "2.0",
+  "record_type": "a1_full_content_unit",
+  "unit_id": "m16a1-v1-a1-u09",
+  "tier": "A1.2",
+  "content_origin": "PROJECT_AUTHORED",
+  "lessons": [
+    {
+      "lesson_id": "m16a1-v1-a1-u09-l01",
+      "title": "Getting around",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a1t_u09_transport_phrases",
+        "a1t_u08_weather_health_integration"
+      ],
+      "objectives": [
+        "Use take and get with common transport and destinations.",
+        "Use transport phrases in one short, clear everyday exchange."
+      ],
+      "content_sections": [
+        {
+          "id": "language-note",
+          "section_type": "explanation",
+          "title": "Language focus",
+          "body": "In lesson 41: transport phrases, notice this model: We take the bus to town and get off near the museum. Keep the word order short and make the meaning clear.",
+          "target_ids": [
+            "a1t_u09_transport_phrases"
+          ]
+        },
+        {
+          "id": "context",
+          "section_type": "dialogue",
+          "title": "Everyday context",
+          "body": "Read the original mini-context for lesson 41: transport phrases: 'We take the bus to town and get off near the museum.' Say which words carry the main information.",
+          "target_ids": [
+            "a1t_u09_transport_phrases",
+            "a1t_u08_weather_health_integration"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "meaning-check",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a1t_u09_transport_phrases"
+          ],
+          "prompt": "Choose the exact model sentence for lesson 41: transport phrases.",
+          "media_required": false,
+          "options": [
+            "We take the bus to town and get off near the museum.",
+            "No detail is provided in Getting around.",
+            "A different routine appears in Getting around."
+          ],
+          "correct_answer": "We take the bus to town and get off near the museum."
+        },
+        {
+          "id": "form-match",
+          "type": "matching",
+          "target_ids": [
+            "a1t_u09_transport_phrases"
+          ],
+          "prompt": "Match the two lesson 41: transport phrases cues with their meanings.",
+          "media_required": false,
+          "pairs": [
+            {
+              "left": "Target phrase in Getting around",
+              "right": "We take the bus to town and get off near the museum."
+            },
+            {
+              "left": "Communication goal in lesson 41",
+              "right": "Use take and get with common transport and destinations."
+            }
+          ]
+        },
+        {
+          "id": "personal-response",
+          "type": "speaking",
+          "target_ids": [
+            "a1t_u09_transport_phrases",
+            "a1t_u08_weather_health_integration"
+          ],
+          "prompt": "Give your own short speaking response for lesson 41: transport phrases; use the target but do not copy the model.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "The response clearly addresses transport phrases in lesson 41.",
+              "The response uses the allocated Getting around target intelligibly."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen to the tutor read the lesson 41: transport phrases transcript once. Answer one question before seeing the text.",
+          "goal": "Identify one explicit detail about transport phrases.",
+          "target_ids": [
+            "a1t_u09_transport_phrases",
+            "a1t_u08_weather_health_integration"
+          ],
+          "transcript": "We take the bus to town and get off near the museum.",
+          "question": "Where do they get off?",
+          "answer": "near the museum",
+          "media_required": false,
+          "constraints": [
+            "Do not reveal the transcript before the learner answers.",
+            "Ask exactly one comprehension question.",
+            "Use only the supplied project-authored transcript."
+          ]
+        },
+        "speaking": {
+          "instruction": "Take the learner role in a two-turn exchange about transport phrases in lesson 41; respond with one or two short sentences.",
+          "goal": "Use the transport phrases language focus intelligibly.",
+          "target_ids": [
+            "a1t_u09_transport_phrases",
+            "a1t_u08_weather_health_integration"
+          ],
+          "constraints": [
+            "Use at most two tutor turns.",
+            "Correct only one blocking error after the response."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Read the target words for lesson 41: transport phrases aloud, then compare clear final sounds and stress.",
+          "goal": "Produce the selected transport phrases words clearly.",
+          "target_ids": [
+            "a1t_u09_transport_phrases",
+            "a1t_u08_weather_health_integration"
+          ],
+          "target": "bus, museum",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is available.",
+            "Return NOT_ASSESSED when no audio is supplied."
+          ]
+        },
+        "writing": {
+          "instruction": "Write how you travel to a place. For lesson 41: transport phrases, submit your draft before receiving two brief improvement points.",
+          "goal": "Write a short A1 response about transport phrases.",
+          "target_ids": [
+            "a1t_u09_transport_phrases",
+            "a1t_u08_weather_health_integration"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Do not replace the learner draft with a complete rewritten answer."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u09-l02",
+      "title": "Travel directions",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a1t_u09_route_language",
+        "a1t_u09_transport_phrases"
+      ],
+      "objectives": [
+        "Combine transport and direction steps in order.",
+        "Use route language in one short, clear everyday exchange."
+      ],
+      "content_sections": [
+        {
+          "id": "language-note",
+          "section_type": "explanation",
+          "title": "Language focus",
+          "body": "In lesson 42: route language, notice this model: Take bus six, get off at King Street, and walk past the post office. Keep the word order short and make the meaning clear.",
+          "target_ids": [
+            "a1t_u09_route_language"
+          ]
+        },
+        {
+          "id": "context",
+          "section_type": "dialogue",
+          "title": "Everyday context",
+          "body": "Read the original mini-context for lesson 42: route language: 'Take bus six, get off at King Street, and walk past the post office.' Say which words carry the main information.",
+          "target_ids": [
+            "a1t_u09_route_language",
+            "a1t_u09_transport_phrases"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "language-gap",
+          "type": "fill_blank",
+          "target_ids": [
+            "a1t_u09_route_language"
+          ],
+          "prompt": "Complete the key detail for lesson 42: route language: Take ___, get off at King Street, and walk past the post office.",
+          "media_required": false,
+          "acceptable_answers": [
+            "bus six"
+          ]
+        },
+        {
+          "id": "practice-order",
+          "type": "ordering",
+          "target_ids": [
+            "a1t_u09_route_language"
+          ],
+          "prompt": "Put the three learning steps for lesson 42: route language in a useful order.",
+          "media_required": false,
+          "items": [
+            "Read the model in lesson 42",
+            "Create a new route language example",
+            "Notice the form in Travel directions"
+          ],
+          "correct_order": [
+            "Notice the form in Travel directions",
+            "Read the model in lesson 42",
+            "Create a new route language example"
+          ]
+        },
+        {
+          "id": "personal-response",
+          "type": "writing",
+          "target_ids": [
+            "a1t_u09_route_language",
+            "a1t_u09_transport_phrases"
+          ],
+          "prompt": "Give your own short writing response for lesson 42: route language; use the target but do not copy the model.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "The response clearly addresses route language in lesson 42.",
+              "The response uses the allocated Travel directions target intelligibly."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen to the tutor read the lesson 42: route language transcript once. Answer one question before seeing the text.",
+          "goal": "Identify one explicit detail about route language.",
+          "target_ids": [
+            "a1t_u09_route_language",
+            "a1t_u09_transport_phrases"
+          ],
+          "transcript": "Take bus six, get off at King Street, and walk past the post office.",
+          "question": "Which bus should the traveller take?",
+          "answer": "bus six",
+          "media_required": false,
+          "constraints": [
+            "Do not reveal the transcript before the learner answers.",
+            "Ask exactly one comprehension question.",
+            "Use only the supplied project-authored transcript."
+          ]
+        },
+        "speaking": {
+          "instruction": "Take the learner role in a two-turn exchange about route language in lesson 42; respond with one or two short sentences.",
+          "goal": "Use the route language language focus intelligibly.",
+          "target_ids": [
+            "a1t_u09_route_language",
+            "a1t_u09_transport_phrases"
+          ],
+          "constraints": [
+            "Use at most two tutor turns.",
+            "Correct only one blocking error after the response."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Read the target words for lesson 42: route language aloud, then compare clear final sounds and stress.",
+          "goal": "Produce the selected route language words clearly.",
+          "target_ids": [
+            "a1t_u09_route_language",
+            "a1t_u09_transport_phrases"
+          ],
+          "target": "take, street",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is available.",
+            "Return NOT_ASSESSED when no audio is supplied."
+          ]
+        },
+        "writing": {
+          "instruction": "Write three travel direction steps. For lesson 42: route language, submit your draft before receiving two brief improvement points.",
+          "goal": "Write a short A1 response about route language.",
+          "target_ids": [
+            "a1t_u09_route_language",
+            "a1t_u09_transport_phrases"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Do not replace the learner draft with a complete rewritten answer."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u09-l03",
+      "title": "Timetables",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a1t_u09_departure_and_arrival_times",
+        "a1t_u09_route_language"
+      ],
+      "objectives": [
+        "Ask when transport leaves and arrives using present simple.",
+        "Use departure and arrival times in one short, clear everyday exchange."
+      ],
+      "content_sections": [
+        {
+          "id": "language-note",
+          "section_type": "explanation",
+          "title": "Language focus",
+          "body": "In lesson 43: departure and arrival times, notice this model: The train leaves at nine fifteen and arrives at ten. Keep the word order short and make the meaning clear.",
+          "target_ids": [
+            "a1t_u09_departure_and_arrival_times"
+          ]
+        },
+        {
+          "id": "context",
+          "section_type": "dialogue",
+          "title": "Everyday context",
+          "body": "Read the original mini-context for lesson 43: departure and arrival times: 'The train leaves at nine fifteen and arrives at ten.' Say which words carry the main information.",
+          "target_ids": [
+            "a1t_u09_departure_and_arrival_times",
+            "a1t_u09_route_language"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "detail-check",
+          "type": "reading",
+          "target_ids": [
+            "a1t_u09_departure_and_arrival_times"
+          ],
+          "prompt": "Use the supplied original text for lesson 43: departure and arrival times and answer one detail question.",
+          "media_required": false,
+          "stimulus": "The train leaves at nine fifteen and arrives at ten.",
+          "questions": [
+            {
+              "question": "When does the train arrive?",
+              "acceptable_answers": [
+                "at ten"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "form-match",
+          "type": "matching",
+          "target_ids": [
+            "a1t_u09_departure_and_arrival_times"
+          ],
+          "prompt": "Match the two lesson 43: departure and arrival times cues with their meanings.",
+          "media_required": false,
+          "pairs": [
+            {
+              "left": "Target phrase in Timetables",
+              "right": "The train leaves at nine fifteen and arrives at ten."
+            },
+            {
+              "left": "Communication goal in lesson 43",
+              "right": "Ask when transport leaves and arrives using present simple."
+            }
+          ]
+        },
+        {
+          "id": "personal-response",
+          "type": "speaking",
+          "target_ids": [
+            "a1t_u09_departure_and_arrival_times",
+            "a1t_u09_route_language"
+          ],
+          "prompt": "Give your own short speaking response for lesson 43: departure and arrival times; use the target but do not copy the model.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "The response clearly addresses departure and arrival times in lesson 43.",
+              "The response uses the allocated Timetables target intelligibly."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen to the tutor read the lesson 43: departure and arrival times transcript once. Answer one question before seeing the text.",
+          "goal": "Identify one explicit detail about departure and arrival times.",
+          "target_ids": [
+            "a1t_u09_departure_and_arrival_times",
+            "a1t_u09_route_language"
+          ],
+          "transcript": "The train leaves at nine fifteen and arrives at ten.",
+          "question": "When does the train arrive?",
+          "answer": "at ten",
+          "media_required": false,
+          "constraints": [
+            "Do not reveal the transcript before the learner answers.",
+            "Ask exactly one comprehension question.",
+            "Use only the supplied project-authored transcript."
+          ]
+        },
+        "speaking": {
+          "instruction": "Take the learner role in a two-turn exchange about departure and arrival times in lesson 43; respond with one or two short sentences.",
+          "goal": "Use the departure and arrival times language focus intelligibly.",
+          "target_ids": [
+            "a1t_u09_departure_and_arrival_times",
+            "a1t_u09_route_language"
+          ],
+          "constraints": [
+            "Use at most two tutor turns.",
+            "Correct only one blocking error after the response."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Read the target words for lesson 43: departure and arrival times aloud, then compare clear final sounds and stress.",
+          "goal": "Produce the selected departure and arrival times words clearly.",
+          "target_ids": [
+            "a1t_u09_departure_and_arrival_times",
+            "a1t_u09_route_language"
+          ],
+          "target": "leaves, arrives",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is available.",
+            "Return NOT_ASSESSED when no audio is supplied."
+          ]
+        },
+        "writing": {
+          "instruction": "Write one departure and arrival sentence. For lesson 43: departure and arrival times, submit your draft before receiving two brief improvement points.",
+          "goal": "Write a short A1 response about departure and arrival times.",
+          "target_ids": [
+            "a1t_u09_departure_and_arrival_times",
+            "a1t_u09_route_language"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Do not replace the learner draft with a complete rewritten answer."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u09-l04",
+      "title": "Plans for tomorrow",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a1t_u09_going_to_plans",
+        "a1t_u09_departure_and_arrival_times"
+      ],
+      "objectives": [
+        "Use be going to for a simple near-future plan.",
+        "Use going to plans in one short, clear everyday exchange."
+      ],
+      "content_sections": [
+        {
+          "id": "language-note",
+          "section_type": "explanation",
+          "title": "Language focus",
+          "body": "In lesson 44: going to plans, notice this model: Tomorrow, I am going to visit the market with my neighbour. Keep the word order short and make the meaning clear.",
+          "target_ids": [
+            "a1t_u09_going_to_plans"
+          ]
+        },
+        {
+          "id": "context",
+          "section_type": "dialogue",
+          "title": "Everyday context",
+          "body": "Read the original mini-context for lesson 44: going to plans: 'Tomorrow, I am going to visit the market with my neighbour.' Say which words carry the main information.",
+          "target_ids": [
+            "a1t_u09_going_to_plans",
+            "a1t_u09_departure_and_arrival_times"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "detail-check",
+          "type": "listening",
+          "target_ids": [
+            "a1t_u09_going_to_plans"
+          ],
+          "prompt": "Use the supplied original transcript for lesson 44: going to plans and answer one detail question.",
+          "media_required": false,
+          "stimulus": "Tomorrow, I am going to visit the market with my neighbour.",
+          "questions": [
+            {
+              "question": "Where is the speaker going?",
+              "acceptable_answers": [
+                "the market"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "practice-order",
+          "type": "ordering",
+          "target_ids": [
+            "a1t_u09_going_to_plans"
+          ],
+          "prompt": "Put the three learning steps for lesson 44: going to plans in a useful order.",
+          "media_required": false,
+          "items": [
+            "Read the model in lesson 44",
+            "Create a new going to plans example",
+            "Notice the form in Plans for tomorrow"
+          ],
+          "correct_order": [
+            "Notice the form in Plans for tomorrow",
+            "Read the model in lesson 44",
+            "Create a new going to plans example"
+          ]
+        },
+        {
+          "id": "personal-response",
+          "type": "writing",
+          "target_ids": [
+            "a1t_u09_going_to_plans",
+            "a1t_u09_departure_and_arrival_times"
+          ],
+          "prompt": "Give your own short writing response for lesson 44: going to plans; use the target but do not copy the model.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "The response clearly addresses going to plans in lesson 44.",
+              "The response uses the allocated Plans for tomorrow target intelligibly."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen to the tutor read the lesson 44: going to plans transcript once. Answer one question before seeing the text.",
+          "goal": "Identify one explicit detail about going to plans.",
+          "target_ids": [
+            "a1t_u09_going_to_plans",
+            "a1t_u09_departure_and_arrival_times"
+          ],
+          "transcript": "Tomorrow, I am going to visit the market with my neighbour.",
+          "question": "Where is the speaker going?",
+          "answer": "the market",
+          "media_required": false,
+          "constraints": [
+            "Do not reveal the transcript before the learner answers.",
+            "Ask exactly one comprehension question.",
+            "Use only the supplied project-authored transcript."
+          ]
+        },
+        "speaking": {
+          "instruction": "Take the learner role in a two-turn exchange about going to plans in lesson 44; respond with one or two short sentences.",
+          "goal": "Use the going to plans language focus intelligibly.",
+          "target_ids": [
+            "a1t_u09_going_to_plans",
+            "a1t_u09_departure_and_arrival_times"
+          ],
+          "constraints": [
+            "Use at most two tutor turns.",
+            "Correct only one blocking error after the response."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Read the target words for lesson 44: going to plans aloud, then compare clear final sounds and stress.",
+          "goal": "Produce the selected going to plans words clearly.",
+          "target_ids": [
+            "a1t_u09_going_to_plans",
+            "a1t_u09_departure_and_arrival_times"
+          ],
+          "target": "tomorrow, going",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is available.",
+            "Return NOT_ASSESSED when no audio is supplied."
+          ]
+        },
+        "writing": {
+          "instruction": "Write two going-to plans. For lesson 44: going to plans, submit your draft before receiving two brief improvement points.",
+          "goal": "Write a short A1 response about going to plans.",
+          "target_ids": [
+            "a1t_u09_going_to_plans",
+            "a1t_u09_departure_and_arrival_times"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Do not replace the learner draft with a complete rewritten answer."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u09-l05",
+      "title": "A trip across town",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a1t_u09_transport_language_review",
+        "a1t_u09_going_to_plans",
+        "a1t_u09_transport_phrases"
+      ],
+      "objectives": [
+        "Use a polite question, timetable fact, and ordered route.",
+        "Use transport-language review in one short, clear everyday exchange."
+      ],
+      "content_sections": [
+        {
+          "id": "language-note",
+          "section_type": "explanation",
+          "title": "Language focus",
+          "body": "In lesson 45: transport-language review, notice this model: Excuse me, when does bus twelve leave? It leaves after lunch. Keep the word order short and make the meaning clear.",
+          "target_ids": [
+            "a1t_u09_transport_language_review"
+          ]
+        },
+        {
+          "id": "context",
+          "section_type": "dialogue",
+          "title": "Everyday context",
+          "body": "Read the original mini-context for lesson 45: transport-language review: 'Excuse me, when does bus twelve leave? It leaves after lunch.' Say which words carry the main information.",
+          "target_ids": [
+            "a1t_u09_transport_language_review",
+            "a1t_u09_going_to_plans",
+            "a1t_u09_transport_phrases"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "meaning-check",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a1t_u09_transport_language_review"
+          ],
+          "prompt": "Choose the exact model sentence for lesson 45: transport-language review.",
+          "media_required": false,
+          "options": [
+            "Excuse me, when does bus twelve leave? It leaves after lunch.",
+            "No detail is provided in A trip across town.",
+            "A different routine appears in A trip across town."
+          ],
+          "correct_answer": "Excuse me, when does bus twelve leave? It leaves after lunch."
+        },
+        {
+          "id": "form-match",
+          "type": "matching",
+          "target_ids": [
+            "a1t_u09_transport_language_review"
+          ],
+          "prompt": "Match the two lesson 45: transport-language review cues with their meanings.",
+          "media_required": false,
+          "pairs": [
+            {
+              "left": "Target phrase in A trip across town",
+              "right": "Excuse me, when does bus twelve leave? It leaves after lunch."
+            },
+            {
+              "left": "Communication goal in lesson 45",
+              "right": "Use a polite question, timetable fact, and ordered route."
+            }
+          ]
+        },
+        {
+          "id": "personal-response",
+          "type": "speaking",
+          "target_ids": [
+            "a1t_u09_transport_language_review",
+            "a1t_u09_going_to_plans",
+            "a1t_u09_transport_phrases"
+          ],
+          "prompt": "Give your own short speaking response for lesson 45: transport-language review; use the target but do not copy the model.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "The response clearly addresses transport-language review in lesson 45.",
+              "The response uses the allocated A trip across town target intelligibly."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen to the tutor read the lesson 45: transport-language review transcript once. Answer one question before seeing the text.",
+          "goal": "Identify one explicit detail about transport-language review.",
+          "target_ids": [
+            "a1t_u09_transport_language_review",
+            "a1t_u09_going_to_plans",
+            "a1t_u09_transport_phrases"
+          ],
+          "transcript": "Excuse me, when does bus twelve leave? It leaves after lunch.",
+          "question": "Which bus is discussed?",
+          "answer": "bus twelve",
+          "media_required": false,
+          "constraints": [
+            "Do not reveal the transcript before the learner answers.",
+            "Ask exactly one comprehension question.",
+            "Use only the supplied project-authored transcript."
+          ]
+        },
+        "speaking": {
+          "instruction": "Take the learner role in a two-turn exchange about transport-language review in lesson 45; respond with one or two short sentences.",
+          "goal": "Use the transport-language review language focus intelligibly.",
+          "target_ids": [
+            "a1t_u09_transport_language_review",
+            "a1t_u09_going_to_plans",
+            "a1t_u09_transport_phrases"
+          ],
+          "constraints": [
+            "Use at most two tutor turns.",
+            "Correct only one blocking error after the response."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Read the target words for lesson 45: transport-language review aloud, then compare clear final sounds and stress.",
+          "goal": "Produce the selected transport-language review words clearly.",
+          "target_ids": [
+            "a1t_u09_transport_language_review",
+            "a1t_u09_going_to_plans",
+            "a1t_u09_transport_phrases"
+          ],
+          "target": "twelve, leave",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is available.",
+            "Return NOT_ASSESSED when no audio is supplied."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a short exchange about a local trip. For lesson 45: transport-language review, submit your draft before receiving two brief improvement points.",
+          "goal": "Write a short A1 response about transport-language review.",
+          "target_ids": [
+            "a1t_u09_transport_language_review",
+            "a1t_u09_going_to_plans",
+            "a1t_u09_transport_phrases"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Do not replace the learner draft with a complete rewritten answer."
+          ]
+        }
+      }
+    }
+  ]
+}

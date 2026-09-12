@@ -1,0 +1,736 @@
+{
+  "schema_version": "2.0",
+  "record_type": "a1_full_content_unit",
+  "unit_id": "m16a1-v1-a1-u10",
+  "tier": "A1.2",
+  "content_origin": "PROJECT_AUTHORED",
+  "lessons": [
+    {
+      "lesson_id": "m16a1-v1-a1-u10-l01",
+      "title": "Getting practical help",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a1t_u10_service_request_integration",
+        "a1t_u09_transport_language_review"
+      ],
+      "objectives": [
+        "Combine a symptom or need with a polite request for help.",
+        "Use service-request integration in one short, clear everyday exchange."
+      ],
+      "content_sections": [
+        {
+          "id": "language-note",
+          "section_type": "explanation",
+          "title": "Language focus",
+          "body": "In lesson 46: service-request integration, notice this model: I feel dizzy, so could you call the clinic, please? Keep the word order short and make the meaning clear.",
+          "target_ids": [
+            "a1t_u10_service_request_integration"
+          ]
+        },
+        {
+          "id": "context",
+          "section_type": "dialogue",
+          "title": "Everyday context",
+          "body": "Read the original mini-context for lesson 46: service-request integration: 'I feel dizzy, so could you call the clinic, please?' Say which words carry the main information.",
+          "target_ids": [
+            "a1t_u10_service_request_integration",
+            "a1t_u09_transport_language_review"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "language-gap",
+          "type": "fill_blank",
+          "target_ids": [
+            "a1t_u10_service_request_integration"
+          ],
+          "prompt": "Complete the key detail for lesson 46: service-request integration: I feel dizzy, so could you call the clinic, please? Answer: ___",
+          "media_required": false,
+          "acceptable_answers": [
+            "a call to the clinic"
+          ]
+        },
+        {
+          "id": "practice-order",
+          "type": "ordering",
+          "target_ids": [
+            "a1t_u10_service_request_integration"
+          ],
+          "prompt": "Put the three learning steps for lesson 46: service-request integration in a useful order.",
+          "media_required": false,
+          "items": [
+            "Read the model in lesson 46",
+            "Create a new service-request integration example",
+            "Notice the form in Getting practical help"
+          ],
+          "correct_order": [
+            "Notice the form in Getting practical help",
+            "Read the model in lesson 46",
+            "Create a new service-request integration example"
+          ]
+        },
+        {
+          "id": "personal-response",
+          "type": "writing",
+          "target_ids": [
+            "a1t_u10_service_request_integration",
+            "a1t_u09_transport_language_review"
+          ],
+          "prompt": "Give your own short writing response for lesson 46: service-request integration; use the target but do not copy the model.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "The response clearly addresses service-request integration in lesson 46.",
+              "The response uses the allocated Getting practical help target intelligibly."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen to the tutor read the lesson 46: service-request integration transcript once. Answer one question before seeing the text.",
+          "goal": "Identify one explicit detail about service-request integration.",
+          "target_ids": [
+            "a1t_u10_service_request_integration",
+            "a1t_u09_transport_language_review"
+          ],
+          "transcript": "I feel dizzy, so could you call the clinic, please?",
+          "question": "What help does the speaker request?",
+          "answer": "a call to the clinic",
+          "media_required": false,
+          "constraints": [
+            "Do not reveal the transcript before the learner answers.",
+            "Ask exactly one comprehension question.",
+            "Use only the supplied project-authored transcript."
+          ]
+        },
+        "speaking": {
+          "instruction": "Take the learner role in a two-turn exchange about service-request integration in lesson 46; respond with one or two short sentences.",
+          "goal": "Use the service-request integration language focus intelligibly.",
+          "target_ids": [
+            "a1t_u10_service_request_integration",
+            "a1t_u09_transport_language_review"
+          ],
+          "constraints": [
+            "Use at most two tutor turns.",
+            "Correct only one blocking error after the response."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Read the target words for lesson 46: service-request integration aloud, then compare clear final sounds and stress.",
+          "goal": "Produce the selected service-request integration words clearly.",
+          "target_ids": [
+            "a1t_u10_service_request_integration",
+            "a1t_u09_transport_language_review"
+          ],
+          "target": "dizzy, clinic",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is available.",
+            "Return NOT_ASSESSED when no audio is supplied."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a simple need and polite request. For lesson 46: service-request integration, submit your draft before receiving two brief improvement points.",
+          "goal": "Write a short A1 response about service-request integration.",
+          "target_ids": [
+            "a1t_u10_service_request_integration",
+            "a1t_u09_transport_language_review"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Do not replace the learner draft with a complete rewritten answer."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u10-l02",
+      "title": "Making an appointment",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a1t_u10_appointment_requests",
+        "a1t_u10_service_request_integration"
+      ],
+      "objectives": [
+        "Request and confirm a simple day and time.",
+        "Use appointment requests in one short, clear everyday exchange."
+      ],
+      "content_sections": [
+        {
+          "id": "language-note",
+          "section_type": "explanation",
+          "title": "Language focus",
+          "body": "In lesson 47: appointment requests, notice this model: Could I have an appointment on Friday at eleven, please? Keep the word order short and make the meaning clear.",
+          "target_ids": [
+            "a1t_u10_appointment_requests"
+          ]
+        },
+        {
+          "id": "context",
+          "section_type": "dialogue",
+          "title": "Everyday context",
+          "body": "Read the original mini-context for lesson 47: appointment requests: 'Could I have an appointment on Friday at eleven, please?' Say which words carry the main information.",
+          "target_ids": [
+            "a1t_u10_appointment_requests",
+            "a1t_u10_service_request_integration"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "detail-check",
+          "type": "reading",
+          "target_ids": [
+            "a1t_u10_appointment_requests"
+          ],
+          "prompt": "Use the supplied original text for lesson 47: appointment requests and answer one detail question.",
+          "media_required": false,
+          "stimulus": "Could I have an appointment on Friday at eleven, please?",
+          "questions": [
+            {
+              "question": "What time is requested?",
+              "acceptable_answers": [
+                "eleven"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "form-match",
+          "type": "matching",
+          "target_ids": [
+            "a1t_u10_appointment_requests"
+          ],
+          "prompt": "Match the two lesson 47: appointment requests cues with their meanings.",
+          "media_required": false,
+          "pairs": [
+            {
+              "left": "Target phrase in Making an appointment",
+              "right": "Could I have an appointment on Friday at eleven, please?"
+            },
+            {
+              "left": "Communication goal in lesson 47",
+              "right": "Request and confirm a simple day and time."
+            }
+          ]
+        },
+        {
+          "id": "personal-response",
+          "type": "speaking",
+          "target_ids": [
+            "a1t_u10_appointment_requests",
+            "a1t_u10_service_request_integration"
+          ],
+          "prompt": "Give your own short speaking response for lesson 47: appointment requests; use the target but do not copy the model.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "The response clearly addresses appointment requests in lesson 47.",
+              "The response uses the allocated Making an appointment target intelligibly."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen to the tutor read the lesson 47: appointment requests transcript once. Answer one question before seeing the text.",
+          "goal": "Identify one explicit detail about appointment requests.",
+          "target_ids": [
+            "a1t_u10_appointment_requests",
+            "a1t_u10_service_request_integration"
+          ],
+          "transcript": "Could I have an appointment on Friday at eleven, please?",
+          "question": "What time is requested?",
+          "answer": "eleven",
+          "media_required": false,
+          "constraints": [
+            "Do not reveal the transcript before the learner answers.",
+            "Ask exactly one comprehension question.",
+            "Use only the supplied project-authored transcript."
+          ]
+        },
+        "speaking": {
+          "instruction": "Take the learner role in a two-turn exchange about appointment requests in lesson 47; respond with one or two short sentences.",
+          "goal": "Use the appointment requests language focus intelligibly.",
+          "target_ids": [
+            "a1t_u10_appointment_requests",
+            "a1t_u10_service_request_integration"
+          ],
+          "constraints": [
+            "Use at most two tutor turns.",
+            "Correct only one blocking error after the response."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Read the target words for lesson 47: appointment requests aloud, then compare clear final sounds and stress.",
+          "goal": "Produce the selected appointment requests words clearly.",
+          "target_ids": [
+            "a1t_u10_appointment_requests",
+            "a1t_u10_service_request_integration"
+          ],
+          "target": "Friday, eleven",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is available.",
+            "Return NOT_ASSESSED when no audio is supplied."
+          ]
+        },
+        "writing": {
+          "instruction": "Write an appointment request and confirmation. For lesson 47: appointment requests, submit your draft before receiving two brief improvement points.",
+          "goal": "Write a short A1 response about appointment requests.",
+          "target_ids": [
+            "a1t_u10_appointment_requests",
+            "a1t_u10_service_request_integration"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Do not replace the learner draft with a complete rewritten answer."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u10-l03",
+      "title": "An invitation",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a1t_u10_inviting_and_responding",
+        "a1t_u10_appointment_requests"
+      ],
+      "objectives": [
+        "Use Would you like with short acceptance or refusal.",
+        "Use inviting and responding in one short, clear everyday exchange."
+      ],
+      "content_sections": [
+        {
+          "id": "language-note",
+          "section_type": "explanation",
+          "title": "Language focus",
+          "body": "In lesson 48: inviting and responding, notice this model: Would you like to have lunch on Saturday? Yes, that sounds good. Keep the word order short and make the meaning clear.",
+          "target_ids": [
+            "a1t_u10_inviting_and_responding"
+          ]
+        },
+        {
+          "id": "context",
+          "section_type": "dialogue",
+          "title": "Everyday context",
+          "body": "Read the original mini-context for lesson 48: inviting and responding: 'Would you like to have lunch on Saturday? Yes, that sounds good.' Say which words carry the main information.",
+          "target_ids": [
+            "a1t_u10_inviting_and_responding",
+            "a1t_u10_appointment_requests"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "detail-check",
+          "type": "listening",
+          "target_ids": [
+            "a1t_u10_inviting_and_responding"
+          ],
+          "prompt": "Use the supplied original transcript for lesson 48: inviting and responding and answer one detail question.",
+          "media_required": false,
+          "stimulus": "Would you like to have lunch on Saturday? Yes, that sounds good.",
+          "questions": [
+            {
+              "question": "What is the invitation for?",
+              "acceptable_answers": [
+                "lunch on Saturday"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "practice-order",
+          "type": "ordering",
+          "target_ids": [
+            "a1t_u10_inviting_and_responding"
+          ],
+          "prompt": "Put the three learning steps for lesson 48: inviting and responding in a useful order.",
+          "media_required": false,
+          "items": [
+            "Read the model in lesson 48",
+            "Create a new inviting and responding example",
+            "Notice the form in An invitation"
+          ],
+          "correct_order": [
+            "Notice the form in An invitation",
+            "Read the model in lesson 48",
+            "Create a new inviting and responding example"
+          ]
+        },
+        {
+          "id": "personal-response",
+          "type": "writing",
+          "target_ids": [
+            "a1t_u10_inviting_and_responding",
+            "a1t_u10_appointment_requests"
+          ],
+          "prompt": "Give your own short writing response for lesson 48: inviting and responding; use the target but do not copy the model.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "The response clearly addresses inviting and responding in lesson 48.",
+              "The response uses the allocated An invitation target intelligibly."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen to the tutor read the lesson 48: inviting and responding transcript once. Answer one question before seeing the text.",
+          "goal": "Identify one explicit detail about inviting and responding.",
+          "target_ids": [
+            "a1t_u10_inviting_and_responding",
+            "a1t_u10_appointment_requests"
+          ],
+          "transcript": "Would you like to have lunch on Saturday? Yes, that sounds good.",
+          "question": "What is the invitation for?",
+          "answer": "lunch on Saturday",
+          "media_required": false,
+          "constraints": [
+            "Do not reveal the transcript before the learner answers.",
+            "Ask exactly one comprehension question.",
+            "Use only the supplied project-authored transcript."
+          ]
+        },
+        "speaking": {
+          "instruction": "Take the learner role in a two-turn exchange about inviting and responding in lesson 48; respond with one or two short sentences.",
+          "goal": "Use the inviting and responding language focus intelligibly.",
+          "target_ids": [
+            "a1t_u10_inviting_and_responding",
+            "a1t_u10_appointment_requests"
+          ],
+          "constraints": [
+            "Use at most two tutor turns.",
+            "Correct only one blocking error after the response."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Read the target words for lesson 48: inviting and responding aloud, then compare clear final sounds and stress.",
+          "goal": "Produce the selected inviting and responding words clearly.",
+          "target_ids": [
+            "a1t_u10_inviting_and_responding",
+            "a1t_u10_appointment_requests"
+          ],
+          "target": "would, Saturday",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is available.",
+            "Return NOT_ASSESSED when no audio is supplied."
+          ]
+        },
+        "writing": {
+          "instruction": "Write an invitation and a polite response. For lesson 48: inviting and responding, submit your draft before receiving two brief improvement points.",
+          "goal": "Write a short A1 response about inviting and responding.",
+          "target_ids": [
+            "a1t_u10_inviting_and_responding",
+            "a1t_u10_appointment_requests"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Do not replace the learner draft with a complete rewritten answer."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u10-l04",
+      "title": "A short message",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a1t_u10_everyday_written_notes",
+        "a1t_u10_inviting_and_responding"
+      ],
+      "objectives": [
+        "Write a brief message with greeting, reason, detail, and closing.",
+        "Use everyday written notes in one short, clear everyday exchange."
+      ],
+      "content_sections": [
+        {
+          "id": "language-note",
+          "section_type": "explanation",
+          "title": "Language focus",
+          "body": "In lesson 49: everyday written notes, notice this model: Hi An, I am late because the bus is slow. See you at the cafe. Minh Keep the word order short and make the meaning clear.",
+          "target_ids": [
+            "a1t_u10_everyday_written_notes"
+          ]
+        },
+        {
+          "id": "context",
+          "section_type": "dialogue",
+          "title": "Everyday context",
+          "body": "Read the original mini-context for lesson 49: everyday written notes: 'Hi An, I am late because the bus is slow. See you at the cafe. Minh' Say which words carry the main information.",
+          "target_ids": [
+            "a1t_u10_everyday_written_notes",
+            "a1t_u10_inviting_and_responding"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "meaning-check",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a1t_u10_everyday_written_notes"
+          ],
+          "prompt": "Choose the exact model sentence for lesson 49: everyday written notes.",
+          "media_required": false,
+          "options": [
+            "Hi An, I am late because the bus is slow. See you at the cafe. Minh",
+            "No detail is provided in A short message.",
+            "A different routine appears in A short message."
+          ],
+          "correct_answer": "Hi An, I am late because the bus is slow. See you at the cafe. Minh"
+        },
+        {
+          "id": "form-match",
+          "type": "matching",
+          "target_ids": [
+            "a1t_u10_everyday_written_notes"
+          ],
+          "prompt": "Match the two lesson 49: everyday written notes cues with their meanings.",
+          "media_required": false,
+          "pairs": [
+            {
+              "left": "Target phrase in A short message",
+              "right": "Hi An, I am late because the bus is slow. See you at the cafe. Minh"
+            },
+            {
+              "left": "Communication goal in lesson 49",
+              "right": "Write a brief message with greeting, reason, detail, and closing."
+            }
+          ]
+        },
+        {
+          "id": "personal-response",
+          "type": "speaking",
+          "target_ids": [
+            "a1t_u10_everyday_written_notes",
+            "a1t_u10_inviting_and_responding"
+          ],
+          "prompt": "Give your own short speaking response for lesson 49: everyday written notes; use the target but do not copy the model.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "The response clearly addresses everyday written notes in lesson 49.",
+              "The response uses the allocated A short message target intelligibly."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen to the tutor read the lesson 49: everyday written notes transcript once. Answer one question before seeing the text.",
+          "goal": "Identify one explicit detail about everyday written notes.",
+          "target_ids": [
+            "a1t_u10_everyday_written_notes",
+            "a1t_u10_inviting_and_responding"
+          ],
+          "transcript": "Hi An, I am late because the bus is slow. See you at the cafe. Minh",
+          "question": "Why is Minh late?",
+          "answer": "because the bus is slow",
+          "media_required": false,
+          "constraints": [
+            "Do not reveal the transcript before the learner answers.",
+            "Ask exactly one comprehension question.",
+            "Use only the supplied project-authored transcript."
+          ]
+        },
+        "speaking": {
+          "instruction": "Take the learner role in a two-turn exchange about everyday written notes in lesson 49; respond with one or two short sentences.",
+          "goal": "Use the everyday written notes language focus intelligibly.",
+          "target_ids": [
+            "a1t_u10_everyday_written_notes",
+            "a1t_u10_inviting_and_responding"
+          ],
+          "constraints": [
+            "Use at most two tutor turns.",
+            "Correct only one blocking error after the response."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Read the target words for lesson 49: everyday written notes aloud, then compare clear final sounds and stress.",
+          "goal": "Produce the selected everyday written notes words clearly.",
+          "target_ids": [
+            "a1t_u10_everyday_written_notes",
+            "a1t_u10_inviting_and_responding"
+          ],
+          "target": "late, slow",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is available.",
+            "Return NOT_ASSESSED when no audio is supplied."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a three-line message about a small delay. For lesson 49: everyday written notes, submit your draft before receiving two brief improvement points.",
+          "goal": "Write a short A1 response about everyday written notes.",
+          "target_ids": [
+            "a1t_u10_everyday_written_notes",
+            "a1t_u10_inviting_and_responding"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Do not replace the learner draft with a complete rewritten answer."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u10-l05",
+      "title": "A1 everyday challenge",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a1t_u10_integrated_a1_review",
+        "a1t_u10_everyday_written_notes",
+        "a1t_u10_service_request_integration"
+      ],
+      "objectives": [
+        "Combine a request, routine fact, past event, and future plan clearly.",
+        "Use integrated A1 review in one short, clear everyday exchange."
+      ],
+      "content_sections": [
+        {
+          "id": "language-note",
+          "section_type": "explanation",
+          "title": "Language focus",
+          "body": "In lesson 50: integrated A1 review, notice this model: I usually shop every Friday. Yesterday I went late, so tomorrow I am going early. Keep the word order short and make the meaning clear.",
+          "target_ids": [
+            "a1t_u10_integrated_a1_review"
+          ]
+        },
+        {
+          "id": "context",
+          "section_type": "dialogue",
+          "title": "Everyday context",
+          "body": "Read the original mini-context for lesson 50: integrated A1 review: 'I usually shop every Friday. Yesterday I went late, so tomorrow I am going early.' Say which words carry the main information.",
+          "target_ids": [
+            "a1t_u10_integrated_a1_review",
+            "a1t_u10_everyday_written_notes",
+            "a1t_u10_service_request_integration"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "language-gap",
+          "type": "fill_blank",
+          "target_ids": [
+            "a1t_u10_integrated_a1_review"
+          ],
+          "prompt": "Complete the key detail for lesson 50: integrated A1 review: I usually shop ___. Yesterday I went late, so tomorrow I am going early.",
+          "media_required": false,
+          "acceptable_answers": [
+            "every Friday"
+          ]
+        },
+        {
+          "id": "practice-order",
+          "type": "ordering",
+          "target_ids": [
+            "a1t_u10_integrated_a1_review"
+          ],
+          "prompt": "Put the three learning steps for lesson 50: integrated A1 review in a useful order.",
+          "media_required": false,
+          "items": [
+            "Read the model in lesson 50",
+            "Create a new integrated A1 review example",
+            "Notice the form in A1 everyday challenge"
+          ],
+          "correct_order": [
+            "Notice the form in A1 everyday challenge",
+            "Read the model in lesson 50",
+            "Create a new integrated A1 review example"
+          ]
+        },
+        {
+          "id": "personal-response",
+          "type": "writing",
+          "target_ids": [
+            "a1t_u10_integrated_a1_review",
+            "a1t_u10_everyday_written_notes",
+            "a1t_u10_service_request_integration"
+          ],
+          "prompt": "Give your own short writing response for lesson 50: integrated A1 review; use the target but do not copy the model.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "The response clearly addresses integrated A1 review in lesson 50.",
+              "The response uses the allocated A1 everyday challenge target intelligibly."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen to the tutor read the lesson 50: integrated A1 review transcript once. Answer one question before seeing the text.",
+          "goal": "Identify one explicit detail about integrated A1 review.",
+          "target_ids": [
+            "a1t_u10_integrated_a1_review",
+            "a1t_u10_everyday_written_notes",
+            "a1t_u10_service_request_integration"
+          ],
+          "transcript": "I usually shop every Friday. Yesterday I went late, so tomorrow I am going early.",
+          "question": "When does the speaker usually shop?",
+          "answer": "every Friday",
+          "media_required": false,
+          "constraints": [
+            "Do not reveal the transcript before the learner answers.",
+            "Ask exactly one comprehension question.",
+            "Use only the supplied project-authored transcript."
+          ]
+        },
+        "speaking": {
+          "instruction": "Take the learner role in a two-turn exchange about integrated A1 review in lesson 50; respond with one or two short sentences.",
+          "goal": "Use the integrated A1 review language focus intelligibly.",
+          "target_ids": [
+            "a1t_u10_integrated_a1_review",
+            "a1t_u10_everyday_written_notes",
+            "a1t_u10_service_request_integration"
+          ],
+          "constraints": [
+            "Use at most two tutor turns.",
+            "Correct only one blocking error after the response."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Read the target words for lesson 50: integrated A1 review aloud, then compare clear final sounds and stress.",
+          "goal": "Produce the selected integrated A1 review words clearly.",
+          "target_ids": [
+            "a1t_u10_integrated_a1_review",
+            "a1t_u10_everyday_written_notes",
+            "a1t_u10_service_request_integration"
+          ],
+          "target": "usually, tomorrow",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is available.",
+            "Return NOT_ASSESSED when no audio is supplied."
+          ]
+        },
+        "writing": {
+          "instruction": "Write four linked sentences using familiar A1 language. For lesson 50: integrated A1 review, submit your draft before receiving two brief improvement points.",
+          "goal": "Write a short A1 response about integrated A1 review.",
+          "target_ids": [
+            "a1t_u10_integrated_a1_review",
+            "a1t_u10_everyday_written_notes",
+            "a1t_u10_service_request_integration"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Do not replace the learner draft with a complete rewritten answer."
+          ]
+        }
+      }
+    }
+  ]
+}

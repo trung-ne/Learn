@@ -37,6 +37,7 @@ english-master-transcription = "english_master.transcription.__main__:main"
 english-master-knowledge-graph = "english_master.knowledge_graph.__main__:main"
 english-master-curriculum-blueprint = "english_master.curriculum_blueprint:main"
 english-master-a1-pilot = "english_master.a1_pilot.cli:main"
+english-master-a1-full = "english_master.a1_full.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

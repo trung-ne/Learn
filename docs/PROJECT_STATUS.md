@@ -38,6 +38,7 @@ Một `M9 DEVELOPMENT: PASS` trong phạm vi sample cho phép bước được y
 | M15-KG-FULL | Đã triển khai dưới dạng development population | Knowledge graph original-authored, 120 nodes, 12 tiers, typed prerequisites; không có lesson prose hay release authority. |
 | M16-A1-BLUEPRINT | Đã triển khai dưới dạng outline-only blueprint | Blueprint A1.1/A1.2 gồm 10 units và 50 lesson outlines; không có lesson prose, exercises hay M6 authorization. |
 | A1 pilot | Đã build development pilot 10 lesson A1.1 | Mỗi packet có lesson, exercises và 4 prompt modalities; hash/inventory/prerequisite checks pass. Review template được tạo nhưng chưa có user/AI review hoàn chỉnh, vì vậy nội dung vẫn `UNREVIEWED`. |
+| Full A1 v2 | Đã build đủ 50 lesson A1.1/A1.2 | Allocation granular, 10 unit content files, 50 immutable packets, full-corpus lightweight audit `PASS`, và sample 12 lesson deterministic theo 10 unit. Giữ `UNREVIEWED`; không có human/release/provider/live-AI/network/media claim. |
 | M15 platform / M16 deployment | Chưa bắt đầu | Đây là các milestone tương lai, khác với hai workstream KG/blueprint ở trên. |
 
 > Tên M15/M16 hiện có hai ngữ cảnh: `M15-KG-FULL`/`M16-A1-BLUEPRINT` là workstream curriculum mới; M15 platform và M16 production deployment vẫn là các milestone tương lai riêng.
@@ -64,6 +65,7 @@ Một `M9 DEVELOPMENT: PASS` trong phạm vi sample cho phép bước được y
 - M8.2: 10 lessons × 4 modalities = 40 prompt artifacts.
 - M15-KG-FULL: 120 graph nodes, phủ 12 internal tiers và các nhóm grammar, vocabulary senses, functions, pronunciation, discourse, pragmatics, collocations, lexical chunks, topics và skills.
 - M16-A1-BLUEPRINT: A1.1/A1.2, 10 units, 50 lessons, mục tiêu và prerequisite/review mappings.
+- Full A1 v2: 10 original-authored unit files build thành 50 canonical packets; audit deterministic chạy trên toàn corpus và sample 12 lesson được hash-rank, stratify theo unit.
 
 Các con số trên là development fixtures/populations có giới hạn, không phải tuyên bố exhaustive coverage hay official CEFR endorsement.
 
@@ -79,7 +81,7 @@ Các con số trên là development fixtures/populations có giới hạn, khôn
 
 - M1 đã có implementation nhưng trạng thái/checklist trong tài liệu milestone cần đồng bộ rõ hơn.
 - M9/M10 documents now distinguish the immutable historical findings from the active lightweight sample/revision flow.
-- Integrated tests và consistency audit đã pass sau A1 pilot; chưa có real-media pilot vì chưa có local inputs/model path được cung cấp.
+- Integrated tests, Full A1 full-corpus consistency audit và project consistency audit đã pass; chưa có real-media pilot vì chưa có local inputs/model path được cung cấp.
 - Không có corpus lớn, real-media corpus, ASR model download, network crawler hay dữ liệu `data/approved/` được tạo bởi các workstream hiện tại.
 - M5 taxonomy/structure lịch sử và M15/M16 planning artifacts cần tiếp tục được giữ tách biệt khỏi quyền generate lesson và quyền publish.
 
@@ -93,9 +95,9 @@ python -m pytest
 
 Kết quả thực tế:
 
-- **376 tests collected**
-- **376 passed**
-- Thời gian: **419.17 giây**
+- **398 tests collected**
+- **398 passed**
+- Thời gian: **289.89 giây**
 - Không có test failure trong lần chạy ngày 2026-09-12.
 
 ## 8. Kết luận

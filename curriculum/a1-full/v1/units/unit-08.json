@@ -1,0 +1,742 @@
+{
+  "schema_version": "2.0",
+  "record_type": "a1_full_content_unit",
+  "unit_id": "m16a1-v1-a1-u08",
+  "tier": "A1.2",
+  "content_origin": "PROJECT_AUTHORED",
+  "lessons": [
+    {
+      "lesson_id": "m16a1-v1-a1-u08-l01",
+      "title": "Today's weather",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a1t_u08_basic_weather_descriptions",
+        "a1t_u07_practical_shopping_review"
+      ],
+      "objectives": [
+        "Use it is with sunny, rainy, cloudy, windy, hot, and cold.",
+        "Use basic weather descriptions in one short, clear everyday exchange."
+      ],
+      "content_sections": [
+        {
+          "id": "language-note",
+          "section_type": "explanation",
+          "title": "Language focus",
+          "body": "In lesson 36: basic weather descriptions, notice this model: It is cloudy this morning, but it is warm now. Keep the word order short and make the meaning clear.",
+          "target_ids": [
+            "a1t_u08_basic_weather_descriptions"
+          ]
+        },
+        {
+          "id": "context",
+          "section_type": "dialogue",
+          "title": "Everyday context",
+          "body": "Read the original mini-context for lesson 36: basic weather descriptions: 'It is cloudy this morning, but it is warm now.' Say which words carry the main information.",
+          "target_ids": [
+            "a1t_u08_basic_weather_descriptions",
+            "a1t_u07_practical_shopping_review"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "detail-check",
+          "type": "listening",
+          "target_ids": [
+            "a1t_u08_basic_weather_descriptions"
+          ],
+          "prompt": "Use the supplied original transcript for lesson 36: basic weather descriptions and answer one detail question.",
+          "media_required": false,
+          "stimulus": "It is cloudy this morning, but it is warm now.",
+          "questions": [
+            {
+              "question": "How is the weather this morning?",
+              "acceptable_answers": [
+                "cloudy"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "practice-order",
+          "type": "ordering",
+          "target_ids": [
+            "a1t_u08_basic_weather_descriptions"
+          ],
+          "prompt": "Put the three learning steps for lesson 36: basic weather descriptions in a useful order.",
+          "media_required": false,
+          "items": [
+            "Read the model in lesson 36",
+            "Create a new basic weather descriptions example",
+            "Notice the form in Today's weather"
+          ],
+          "correct_order": [
+            "Notice the form in Today's weather",
+            "Read the model in lesson 36",
+            "Create a new basic weather descriptions example"
+          ]
+        },
+        {
+          "id": "personal-response",
+          "type": "writing",
+          "target_ids": [
+            "a1t_u08_basic_weather_descriptions",
+            "a1t_u07_practical_shopping_review"
+          ],
+          "prompt": "Give your own short writing response for lesson 36: basic weather descriptions; use the target but do not copy the model.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "The response clearly addresses basic weather descriptions in lesson 36.",
+              "The response uses the allocated Today's weather target intelligibly."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen to the tutor read the lesson 36: basic weather descriptions transcript once. Answer one question before seeing the text.",
+          "goal": "Identify one explicit detail about basic weather descriptions.",
+          "target_ids": [
+            "a1t_u08_basic_weather_descriptions",
+            "a1t_u07_practical_shopping_review"
+          ],
+          "transcript": "It is cloudy this morning, but it is warm now.",
+          "question": "How is the weather this morning?",
+          "answer": "cloudy",
+          "media_required": false,
+          "constraints": [
+            "Do not reveal the transcript before the learner answers.",
+            "Ask exactly one comprehension question.",
+            "Use only the supplied project-authored transcript."
+          ]
+        },
+        "speaking": {
+          "instruction": "Take the learner role in a two-turn exchange about basic weather descriptions in lesson 36; respond with one or two short sentences.",
+          "goal": "Use the basic weather descriptions language focus intelligibly.",
+          "target_ids": [
+            "a1t_u08_basic_weather_descriptions",
+            "a1t_u07_practical_shopping_review"
+          ],
+          "constraints": [
+            "Use at most two tutor turns.",
+            "Correct only one blocking error after the response."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Read the target words for lesson 36: basic weather descriptions aloud, then compare clear final sounds and stress.",
+          "goal": "Produce the selected basic weather descriptions words clearly.",
+          "target_ids": [
+            "a1t_u08_basic_weather_descriptions",
+            "a1t_u07_practical_shopping_review"
+          ],
+          "target": "cloudy, warm",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is available.",
+            "Return NOT_ASSESSED when no audio is supplied."
+          ]
+        },
+        "writing": {
+          "instruction": "Write two weather sentences. For lesson 36: basic weather descriptions, submit your draft before receiving two brief improvement points.",
+          "goal": "Write a short A1 response about basic weather descriptions.",
+          "target_ids": [
+            "a1t_u08_basic_weather_descriptions",
+            "a1t_u07_practical_shopping_review"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Do not replace the learner draft with a complete rewritten answer."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u08-l02",
+      "title": "Clothes for the weather",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a1t_u08_weather_choices",
+        "a1t_u08_basic_weather_descriptions"
+      ],
+      "objectives": [
+        "Give a simple reason for choosing familiar clothes.",
+        "Use weather choices in one short, clear everyday exchange."
+      ],
+      "content_sections": [
+        {
+          "id": "language-note",
+          "section_type": "explanation",
+          "title": "Language focus",
+          "body": "In lesson 37: weather choices, notice this model: I wear my coat because it is cold and windy. Keep the word order short and make the meaning clear.",
+          "target_ids": [
+            "a1t_u08_weather_choices"
+          ]
+        },
+        {
+          "id": "context",
+          "section_type": "dialogue",
+          "title": "Everyday context",
+          "body": "Read the original mini-context for lesson 37: weather choices: 'I wear my coat because it is cold and windy.' Say which words carry the main information.",
+          "target_ids": [
+            "a1t_u08_weather_choices",
+            "a1t_u08_basic_weather_descriptions"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "meaning-check",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a1t_u08_weather_choices"
+          ],
+          "prompt": "Choose the exact model sentence for lesson 37: weather choices.",
+          "media_required": false,
+          "options": [
+            "I wear my coat because it is cold and windy.",
+            "No detail is provided in Clothes for the weather.",
+            "A different routine appears in Clothes for the weather."
+          ],
+          "correct_answer": "I wear my coat because it is cold and windy."
+        },
+        {
+          "id": "form-match",
+          "type": "matching",
+          "target_ids": [
+            "a1t_u08_weather_choices"
+          ],
+          "prompt": "Match the two lesson 37: weather choices cues with their meanings.",
+          "media_required": false,
+          "pairs": [
+            {
+              "left": "Target phrase in Clothes for the weather",
+              "right": "I wear my coat because it is cold and windy."
+            },
+            {
+              "left": "Communication goal in lesson 37",
+              "right": "Give a simple reason for choosing familiar clothes."
+            }
+          ]
+        },
+        {
+          "id": "personal-response",
+          "type": "speaking",
+          "target_ids": [
+            "a1t_u08_weather_choices",
+            "a1t_u08_basic_weather_descriptions"
+          ],
+          "prompt": "Give your own short speaking response for lesson 37: weather choices; use the target but do not copy the model.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "The response clearly addresses weather choices in lesson 37.",
+              "The response uses the allocated Clothes for the weather target intelligibly."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen to the tutor read the lesson 37: weather choices transcript once. Answer one question before seeing the text.",
+          "goal": "Identify one explicit detail about weather choices.",
+          "target_ids": [
+            "a1t_u08_weather_choices",
+            "a1t_u08_basic_weather_descriptions"
+          ],
+          "transcript": "I wear my coat because it is cold and windy.",
+          "question": "Why does the speaker wear a coat?",
+          "answer": "because it is cold and windy",
+          "media_required": false,
+          "constraints": [
+            "Do not reveal the transcript before the learner answers.",
+            "Ask exactly one comprehension question.",
+            "Use only the supplied project-authored transcript."
+          ]
+        },
+        "speaking": {
+          "instruction": "Take the learner role in a two-turn exchange about weather choices in lesson 37; respond with one or two short sentences.",
+          "goal": "Use the weather choices language focus intelligibly.",
+          "target_ids": [
+            "a1t_u08_weather_choices",
+            "a1t_u08_basic_weather_descriptions"
+          ],
+          "constraints": [
+            "Use at most two tutor turns.",
+            "Correct only one blocking error after the response."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Read the target words for lesson 37: weather choices aloud, then compare clear final sounds and stress.",
+          "goal": "Produce the selected weather choices words clearly.",
+          "target_ids": [
+            "a1t_u08_weather_choices",
+            "a1t_u08_basic_weather_descriptions"
+          ],
+          "target": "coat, windy",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is available.",
+            "Return NOT_ASSESSED when no audio is supplied."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a clothing choice with a weather reason. For lesson 37: weather choices, submit your draft before receiving two brief improvement points.",
+          "goal": "Write a short A1 response about weather choices.",
+          "target_ids": [
+            "a1t_u08_weather_choices",
+            "a1t_u08_basic_weather_descriptions"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Do not replace the learner draft with a complete rewritten answer."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u08-l03",
+      "title": "How do you feel?",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a1t_u08_basic_health_words",
+        "a1t_u08_weather_choices"
+      ],
+      "objectives": [
+        "Use feel and have with a few common symptoms.",
+        "Use basic health words in one short, clear everyday exchange."
+      ],
+      "content_sections": [
+        {
+          "id": "language-note",
+          "section_type": "explanation",
+          "title": "Language focus",
+          "body": "In lesson 38: basic health words, notice this model: I feel tired, and I have a mild headache today. Keep the word order short and make the meaning clear.",
+          "target_ids": [
+            "a1t_u08_basic_health_words"
+          ]
+        },
+        {
+          "id": "context",
+          "section_type": "dialogue",
+          "title": "Everyday context",
+          "body": "Read the original mini-context for lesson 38: basic health words: 'I feel tired, and I have a mild headache today.' Say which words carry the main information.",
+          "target_ids": [
+            "a1t_u08_basic_health_words",
+            "a1t_u08_weather_choices"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "language-gap",
+          "type": "fill_blank",
+          "target_ids": [
+            "a1t_u08_basic_health_words"
+          ],
+          "prompt": "Complete the key detail for lesson 38: basic health words: I feel tired, and I have ___ today.",
+          "media_required": false,
+          "acceptable_answers": [
+            "a mild headache"
+          ]
+        },
+        {
+          "id": "practice-order",
+          "type": "ordering",
+          "target_ids": [
+            "a1t_u08_basic_health_words"
+          ],
+          "prompt": "Put the three learning steps for lesson 38: basic health words in a useful order.",
+          "media_required": false,
+          "items": [
+            "Read the model in lesson 38",
+            "Create a new basic health words example",
+            "Notice the form in How do you feel?"
+          ],
+          "correct_order": [
+            "Notice the form in How do you feel?",
+            "Read the model in lesson 38",
+            "Create a new basic health words example"
+          ]
+        },
+        {
+          "id": "personal-response",
+          "type": "writing",
+          "target_ids": [
+            "a1t_u08_basic_health_words",
+            "a1t_u08_weather_choices"
+          ],
+          "prompt": "Give your own short writing response for lesson 38: basic health words; use the target but do not copy the model.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "The response clearly addresses basic health words in lesson 38.",
+              "The response uses the allocated How do you feel? target intelligibly."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen to the tutor read the lesson 38: basic health words transcript once. Answer one question before seeing the text.",
+          "goal": "Identify one explicit detail about basic health words.",
+          "target_ids": [
+            "a1t_u08_basic_health_words",
+            "a1t_u08_weather_choices"
+          ],
+          "transcript": "I feel tired, and I have a mild headache today.",
+          "question": "What symptom does the speaker have?",
+          "answer": "a mild headache",
+          "media_required": false,
+          "constraints": [
+            "Do not reveal the transcript before the learner answers.",
+            "Ask exactly one comprehension question.",
+            "Use only the supplied project-authored transcript."
+          ]
+        },
+        "speaking": {
+          "instruction": "Take the learner role in a two-turn exchange about basic health words in lesson 38; respond with one or two short sentences.",
+          "goal": "Use the basic health words language focus intelligibly.",
+          "target_ids": [
+            "a1t_u08_basic_health_words",
+            "a1t_u08_weather_choices"
+          ],
+          "constraints": [
+            "Use at most two tutor turns.",
+            "Correct only one blocking error after the response."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Read the target words for lesson 38: basic health words aloud, then compare clear final sounds and stress.",
+          "goal": "Produce the selected basic health words words clearly.",
+          "target_ids": [
+            "a1t_u08_basic_health_words",
+            "a1t_u08_weather_choices"
+          ],
+          "target": "tired, headache",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is available.",
+            "Return NOT_ASSESSED when no audio is supplied."
+          ]
+        },
+        "writing": {
+          "instruction": "Write one sentence about an invented symptom. For lesson 38: basic health words, submit your draft before receiving two brief improvement points.",
+          "goal": "Write a short A1 response about basic health words.",
+          "target_ids": [
+            "a1t_u08_basic_health_words",
+            "a1t_u08_weather_choices"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Do not replace the learner draft with a complete rewritten answer."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u08-l04",
+      "title": "Would you like to come?",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a1t_u08_simple_invitations",
+        "a1t_u08_basic_health_words"
+      ],
+      "objectives": [
+        "Use Would you like to and short acceptance or refusal.",
+        "Use simple invitations in one short, clear everyday exchange."
+      ],
+      "content_sections": [
+        {
+          "id": "language-note",
+          "section_type": "explanation",
+          "title": "Language focus",
+          "body": "In lesson 39: simple invitations, notice this model: Would you like to walk in the park? Yes, that sounds good. Keep the word order short and make the meaning clear.",
+          "target_ids": [
+            "a1t_u08_simple_invitations"
+          ]
+        },
+        {
+          "id": "context",
+          "section_type": "dialogue",
+          "title": "Everyday context",
+          "body": "Read the original mini-context for lesson 39: simple invitations: 'Would you like to walk in the park? Yes, that sounds good.' Say which words carry the main information.",
+          "target_ids": [
+            "a1t_u08_simple_invitations",
+            "a1t_u08_basic_health_words"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "detail-check",
+          "type": "reading",
+          "target_ids": [
+            "a1t_u08_simple_invitations"
+          ],
+          "prompt": "Use the supplied original text for lesson 39: simple invitations and answer one detail question.",
+          "media_required": false,
+          "stimulus": "Would you like to walk in the park? Yes, that sounds good.",
+          "questions": [
+            {
+              "question": "What activity is suggested?",
+              "acceptable_answers": [
+                "a walk in the park"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "form-match",
+          "type": "matching",
+          "target_ids": [
+            "a1t_u08_simple_invitations"
+          ],
+          "prompt": "Match the two lesson 39: simple invitations cues with their meanings.",
+          "media_required": false,
+          "pairs": [
+            {
+              "left": "Target phrase in Would you like to come?",
+              "right": "Would you like to walk in the park? Yes, that sounds good."
+            },
+            {
+              "left": "Communication goal in lesson 39",
+              "right": "Use Would you like to and short acceptance or refusal."
+            }
+          ]
+        },
+        {
+          "id": "personal-response",
+          "type": "speaking",
+          "target_ids": [
+            "a1t_u08_simple_invitations",
+            "a1t_u08_basic_health_words"
+          ],
+          "prompt": "Give your own short speaking response for lesson 39: simple invitations; use the target but do not copy the model.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "The response clearly addresses simple invitations in lesson 39.",
+              "The response uses the allocated Would you like to come? target intelligibly."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen to the tutor read the lesson 39: simple invitations transcript once. Answer one question before seeing the text.",
+          "goal": "Identify one explicit detail about simple invitations.",
+          "target_ids": [
+            "a1t_u08_simple_invitations",
+            "a1t_u08_basic_health_words"
+          ],
+          "transcript": "Would you like to walk in the park? Yes, that sounds good.",
+          "question": "What activity is suggested?",
+          "answer": "a walk in the park",
+          "media_required": false,
+          "constraints": [
+            "Do not reveal the transcript before the learner answers.",
+            "Ask exactly one comprehension question.",
+            "Use only the supplied project-authored transcript."
+          ]
+        },
+        "speaking": {
+          "instruction": "Take the learner role in a two-turn exchange about simple invitations in lesson 39; respond with one or two short sentences.",
+          "goal": "Use the simple invitations language focus intelligibly.",
+          "target_ids": [
+            "a1t_u08_simple_invitations",
+            "a1t_u08_basic_health_words"
+          ],
+          "constraints": [
+            "Use at most two tutor turns.",
+            "Correct only one blocking error after the response."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Read the target words for lesson 39: simple invitations aloud, then compare clear final sounds and stress.",
+          "goal": "Produce the selected simple invitations words clearly.",
+          "target_ids": [
+            "a1t_u08_simple_invitations",
+            "a1t_u08_basic_health_words"
+          ],
+          "target": "would, sounds",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is available.",
+            "Return NOT_ASSESSED when no audio is supplied."
+          ]
+        },
+        "writing": {
+          "instruction": "Write an invitation and a polite response. For lesson 39: simple invitations, submit your draft before receiving two brief improvement points.",
+          "goal": "Write a short A1 response about simple invitations.",
+          "target_ids": [
+            "a1t_u08_simple_invitations",
+            "a1t_u08_basic_health_words"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Do not replace the learner draft with a complete rewritten answer."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u08-l05",
+      "title": "Changing an outdoor plan",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a1t_u08_weather_health_integration",
+        "a1t_u08_simple_invitations",
+        "a1t_u08_basic_weather_descriptions"
+      ],
+      "objectives": [
+        "Explain a simple plan change with because.",
+        "Use weather-health integration in one short, clear everyday exchange."
+      ],
+      "content_sections": [
+        {
+          "id": "language-note",
+          "section_type": "explanation",
+          "title": "Language focus",
+          "body": "In lesson 40: weather-health integration, notice this model: It is raining, so we are not walking; we are having tea inside. Keep the word order short and make the meaning clear.",
+          "target_ids": [
+            "a1t_u08_weather_health_integration"
+          ]
+        },
+        {
+          "id": "context",
+          "section_type": "dialogue",
+          "title": "Everyday context",
+          "body": "Read the original mini-context for lesson 40: weather-health integration: 'It is raining, so we are not walking; we are having tea inside.' Say which words carry the main information.",
+          "target_ids": [
+            "a1t_u08_weather_health_integration",
+            "a1t_u08_simple_invitations",
+            "a1t_u08_basic_weather_descriptions"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "detail-check",
+          "type": "listening",
+          "target_ids": [
+            "a1t_u08_weather_health_integration"
+          ],
+          "prompt": "Use the supplied original transcript for lesson 40: weather-health integration and answer one detail question.",
+          "media_required": false,
+          "stimulus": "It is raining, so we are not walking; we are having tea inside.",
+          "questions": [
+            {
+              "question": "Why are they staying inside?",
+              "acceptable_answers": [
+                "because it is raining"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "practice-order",
+          "type": "ordering",
+          "target_ids": [
+            "a1t_u08_weather_health_integration"
+          ],
+          "prompt": "Put the three learning steps for lesson 40: weather-health integration in a useful order.",
+          "media_required": false,
+          "items": [
+            "Read the model in lesson 40",
+            "Create a new weather-health integration example",
+            "Notice the form in Changing an outdoor plan"
+          ],
+          "correct_order": [
+            "Notice the form in Changing an outdoor plan",
+            "Read the model in lesson 40",
+            "Create a new weather-health integration example"
+          ]
+        },
+        {
+          "id": "personal-response",
+          "type": "writing",
+          "target_ids": [
+            "a1t_u08_weather_health_integration",
+            "a1t_u08_simple_invitations",
+            "a1t_u08_basic_weather_descriptions"
+          ],
+          "prompt": "Give your own short writing response for lesson 40: weather-health integration; use the target but do not copy the model.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "The response clearly addresses weather-health integration in lesson 40.",
+              "The response uses the allocated Changing an outdoor plan target intelligibly."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen to the tutor read the lesson 40: weather-health integration transcript once. Answer one question before seeing the text.",
+          "goal": "Identify one explicit detail about weather-health integration.",
+          "target_ids": [
+            "a1t_u08_weather_health_integration",
+            "a1t_u08_simple_invitations",
+            "a1t_u08_basic_weather_descriptions"
+          ],
+          "transcript": "It is raining, so we are not walking; we are having tea inside.",
+          "question": "Why are they staying inside?",
+          "answer": "because it is raining",
+          "media_required": false,
+          "constraints": [
+            "Do not reveal the transcript before the learner answers.",
+            "Ask exactly one comprehension question.",
+            "Use only the supplied project-authored transcript."
+          ]
+        },
+        "speaking": {
+          "instruction": "Take the learner role in a two-turn exchange about weather-health integration in lesson 40; respond with one or two short sentences.",
+          "goal": "Use the weather-health integration language focus intelligibly.",
+          "target_ids": [
+            "a1t_u08_weather_health_integration",
+            "a1t_u08_simple_invitations",
+            "a1t_u08_basic_weather_descriptions"
+          ],
+          "constraints": [
+            "Use at most two tutor turns.",
+            "Correct only one blocking error after the response."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Read the target words for lesson 40: weather-health integration aloud, then compare clear final sounds and stress.",
+          "goal": "Produce the selected weather-health integration words clearly.",
+          "target_ids": [
+            "a1t_u08_weather_health_integration",
+            "a1t_u08_simple_invitations",
+            "a1t_u08_basic_weather_descriptions"
+          ],
+          "target": "raining, inside",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is available.",
+            "Return NOT_ASSESSED when no audio is supplied."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a short plan change and reason. For lesson 40: weather-health integration, submit your draft before receiving two brief improvement points.",
+          "goal": "Write a short A1 response about weather-health integration.",
+          "target_ids": [
+            "a1t_u08_weather_health_integration",
+            "a1t_u08_simple_invitations",
+            "a1t_u08_basic_weather_descriptions"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Do not replace the learner draft with a complete rewritten answer."
+          ]
+        }
+      }
+    }
+  ]
+}

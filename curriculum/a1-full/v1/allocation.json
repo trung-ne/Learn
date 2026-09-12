@@ -1,0 +1,1836 @@
+{
+  "schema_version": "2.0",
+  "record_type": "a1_full_allocation",
+  "population_sha256": "04316d931c16ce32e90dbfed123c8fd9d85fb3b01c4e1e22f310a672bfae9ea1",
+  "blueprint_sha256": "9b993df9715ec8d4e75bed9458830b7e010e853bfac59894f8124359651fad17",
+  "targets": [
+    {
+      "id": "a1t_u01_social_greetings",
+      "name": "Use Hello, Hi, and Goodbye in short exchanges.",
+      "tier": "A1.1",
+      "dimension": "functions",
+      "broad_target_id": "kg_a1_1_functions",
+      "prerequisites": []
+    },
+    {
+      "id": "a1t_u01_introducing_yourself",
+      "name": "Use I am and My name is to introduce yourself.",
+      "tier": "A1.1",
+      "dimension": "vocabulary_senses",
+      "broad_target_id": "kg_a1_1_vocabulary_senses",
+      "prerequisites": [
+        "a1t_u01_social_greetings"
+      ]
+    },
+    {
+      "id": "a1t_u01_personal_origin",
+      "name": "Ask and answer Where are you from? with be.",
+      "tier": "A1.1",
+      "dimension": "grammar",
+      "broad_target_id": "kg_a1_1_grammar",
+      "prerequisites": [
+        "a1t_u01_introducing_yourself"
+      ]
+    },
+    {
+      "id": "a1t_u01_alphabet_and_spelling",
+      "name": "Ask How do you spell it? and give letter names.",
+      "tier": "A1.1",
+      "dimension": "pronunciation",
+      "broad_target_id": "kg_a1_1_pronunciation",
+      "prerequisites": [
+        "a1t_u01_personal_origin"
+      ]
+    },
+    {
+      "id": "a1t_u01_numbers_zero_to_twenty",
+      "name": "Say simple phone digits and protect private information.",
+      "tier": "A1.1",
+      "dimension": "skills",
+      "broad_target_id": "kg_a1_1_skills",
+      "prerequisites": [
+        "a1t_u01_alphabet_and_spelling"
+      ]
+    },
+    {
+      "id": "a1t_u02_classroom_objects",
+      "name": "Name a book, pen, desk, chair, board, and bag with a or an.",
+      "tier": "A1.1",
+      "dimension": "functions",
+      "broad_target_id": "kg_a1_1_functions",
+      "prerequisites": [
+        "a1t_u01_numbers_zero_to_twenty"
+      ]
+    },
+    {
+      "id": "a1t_u02_teacher_instructions",
+      "name": "Understand and use open, close, look, listen, read, and write.",
+      "tier": "A1.1",
+      "dimension": "vocabulary_senses",
+      "broad_target_id": "kg_a1_1_vocabulary_senses",
+      "prerequisites": [
+        "a1t_u02_classroom_objects"
+      ]
+    },
+    {
+      "id": "a1t_u02_family_words",
+      "name": "Use this is, my, his, and her to identify family members.",
+      "tier": "A1.1",
+      "dimension": "grammar",
+      "broad_target_id": "kg_a1_1_grammar",
+      "prerequisites": [
+        "a1t_u02_teacher_instructions"
+      ]
+    },
+    {
+      "id": "a1t_u02_everyday_routine_verbs",
+      "name": "Use present simple affirmative for a short school-day routine.",
+      "tier": "A1.1",
+      "dimension": "pronunciation",
+      "broad_target_id": "kg_a1_1_pronunciation",
+      "prerequisites": [
+        "a1t_u02_family_words"
+      ]
+    },
+    {
+      "id": "a1t_u02_adverbs_of_frequency",
+      "name": "Place always, usually, sometimes, and never with familiar actions.",
+      "tier": "A1.1",
+      "dimension": "skills",
+      "broad_target_id": "kg_a1_1_skills",
+      "prerequisites": [
+        "a1t_u02_everyday_routine_verbs"
+      ]
+    },
+    {
+      "id": "a1t_u03_family_words",
+      "name": "Use family nouns and possessive adjectives my, your, his, and her.",
+      "tier": "A1.1",
+      "dimension": "functions",
+      "broad_target_id": "kg_a1_1_functions",
+      "prerequisites": [
+        "a1t_u02_adverbs_of_frequency"
+      ]
+    },
+    {
+      "id": "a1t_u03_possessions_and_relationships",
+      "name": "Use have and has in simple statements.",
+      "tier": "A1.1",
+      "dimension": "vocabulary_senses",
+      "broad_target_id": "kg_a1_1_vocabulary_senses",
+      "prerequisites": [
+        "a1t_u03_family_words"
+      ]
+    },
+    {
+      "id": "a1t_u03_rooms_and_furniture",
+      "name": "Name common rooms and objects in a home.",
+      "tier": "A1.1",
+      "dimension": "grammar",
+      "broad_target_id": "kg_a1_1_grammar",
+      "prerequisites": [
+        "a1t_u03_possessions_and_relationships"
+      ]
+    },
+    {
+      "id": "a1t_u03_describing_a_room",
+      "name": "Use there is and there are with singular and plural nouns.",
+      "tier": "A1.1",
+      "dimension": "pronunciation",
+      "broad_target_id": "kg_a1_1_pronunciation",
+      "prerequisites": [
+        "a1t_u03_rooms_and_furniture"
+      ]
+    },
+    {
+      "id": "a1t_u03_home_language_review",
+      "name": "Combine family, possession, place, and polite welcome language.",
+      "tier": "A1.1",
+      "dimension": "skills",
+      "broad_target_id": "kg_a1_1_skills",
+      "prerequisites": [
+        "a1t_u03_describing_a_room"
+      ]
+    },
+    {
+      "id": "a1t_u04_food_preferences",
+      "name": "Use like, love, and do not like with food nouns.",
+      "tier": "A1.1",
+      "dimension": "functions",
+      "broad_target_id": "kg_a1_1_functions",
+      "prerequisites": [
+        "a1t_u03_home_language_review"
+      ]
+    },
+    {
+      "id": "a1t_u04_meal_vocabulary",
+      "name": "Describe simple meals with have for eating and drinking.",
+      "tier": "A1.1",
+      "dimension": "vocabulary_senses",
+      "broad_target_id": "kg_a1_1_vocabulary_senses",
+      "prerequisites": [
+        "a1t_u04_food_preferences"
+      ]
+    },
+    {
+      "id": "a1t_u04_basic_quantities",
+      "name": "Use some in affirmative statements and any in simple questions.",
+      "tier": "A1.1",
+      "dimension": "grammar",
+      "broad_target_id": "kg_a1_1_grammar",
+      "prerequisites": [
+        "a1t_u04_meal_vocabulary"
+      ]
+    },
+    {
+      "id": "a1t_u04_asking_about_quantity",
+      "name": "Choose how much for uncountable nouns and how many for countable nouns.",
+      "tier": "A1.1",
+      "dimension": "pronunciation",
+      "broad_target_id": "kg_a1_1_pronunciation",
+      "prerequisites": [
+        "a1t_u04_basic_quantities"
+      ]
+    },
+    {
+      "id": "a1t_u04_ordering_politely",
+      "name": "Use I'd like and please in a short cafe order.",
+      "tier": "A1.1",
+      "dimension": "skills",
+      "broad_target_id": "kg_a1_1_skills",
+      "prerequisites": [
+        "a1t_u04_asking_about_quantity"
+      ]
+    },
+    {
+      "id": "a1t_u05_town_place_nouns",
+      "name": "Name common places and say where you go.",
+      "tier": "A1.1",
+      "dimension": "functions",
+      "broad_target_id": "kg_a1_1_functions",
+      "prerequisites": [
+        "a1t_u04_ordering_politely"
+      ]
+    },
+    {
+      "id": "a1t_u05_place_prepositions",
+      "name": "Use next to, opposite, between, and behind for location.",
+      "tier": "A1.1",
+      "dimension": "vocabulary_senses",
+      "broad_target_id": "kg_a1_1_vocabulary_senses",
+      "prerequisites": [
+        "a1t_u05_town_place_nouns"
+      ]
+    },
+    {
+      "id": "a1t_u05_simple_schedules",
+      "name": "Ask when a familiar place opens and closes.",
+      "tier": "A1.1",
+      "dimension": "grammar",
+      "broad_target_id": "kg_a1_1_grammar",
+      "prerequisites": [
+        "a1t_u05_place_prepositions"
+      ]
+    },
+    {
+      "id": "a1t_u05_ability_and_directions",
+      "name": "Use can or cannot with a short direction step.",
+      "tier": "A1.1",
+      "dimension": "pronunciation",
+      "broad_target_id": "kg_a1_1_pronunciation",
+      "prerequisites": [
+        "a1t_u05_simple_schedules"
+      ]
+    },
+    {
+      "id": "a1t_u05_town_language_review",
+      "name": "Ask politely for and follow a short route.",
+      "tier": "A1.1",
+      "dimension": "skills",
+      "broad_target_id": "kg_a1_1_skills",
+      "prerequisites": [
+        "a1t_u05_ability_and_directions"
+      ]
+    },
+    {
+      "id": "a1t_u06_present_simple_statements",
+      "name": "Use present simple forms for regular work and study facts.",
+      "tier": "A1.2",
+      "dimension": "functions",
+      "broad_target_id": "kg_a1_2_functions",
+      "prerequisites": []
+    },
+    {
+      "id": "a1t_u06_present_simple_questions",
+      "name": "Build do and does questions about familiar routines.",
+      "tier": "A1.2",
+      "dimension": "vocabulary_senses",
+      "broad_target_id": "kg_a1_2_vocabulary_senses",
+      "prerequisites": [
+        "a1t_u06_present_simple_statements"
+      ]
+    },
+    {
+      "id": "a1t_u06_present_simple_negatives",
+      "name": "Use do not and does not to correct routine information.",
+      "tier": "A1.2",
+      "dimension": "grammar",
+      "broad_target_id": "kg_a1_2_grammar",
+      "prerequisites": [
+        "a1t_u06_present_simple_questions"
+      ]
+    },
+    {
+      "id": "a1t_u06_habit_frequency_review",
+      "name": "Combine an adverb of frequency with a day or clock time.",
+      "tier": "A1.2",
+      "dimension": "pronunciation",
+      "broad_target_id": "kg_a1_2_pronunciation",
+      "prerequisites": [
+        "a1t_u06_present_simple_negatives"
+      ]
+    },
+    {
+      "id": "a1t_u06_present_simple_integration",
+      "name": "Link several weekly habits with and, but, and because.",
+      "tier": "A1.2",
+      "dimension": "skills",
+      "broad_target_id": "kg_a1_2_skills",
+      "prerequisites": [
+        "a1t_u06_habit_frequency_review"
+      ]
+    },
+    {
+      "id": "a1t_u07_clothing_descriptions",
+      "name": "Use colour and size adjectives before clothing nouns.",
+      "tier": "A1.2",
+      "dimension": "functions",
+      "broad_target_id": "kg_a1_2_functions",
+      "prerequisites": [
+        "a1t_u06_present_simple_integration"
+      ]
+    },
+    {
+      "id": "a1t_u07_demonstratives_and_sizes",
+      "name": "Use this, that, these, and those while comparing clothes.",
+      "tier": "A1.2",
+      "dimension": "vocabulary_senses",
+      "broad_target_id": "kg_a1_2_vocabulary_senses",
+      "prerequisites": [
+        "a1t_u07_clothing_descriptions"
+      ]
+    },
+    {
+      "id": "a1t_u07_prices_and_money",
+      "name": "Ask How much is or are and state a simple price.",
+      "tier": "A1.2",
+      "dimension": "grammar",
+      "broad_target_id": "kg_a1_2_grammar",
+      "prerequisites": [
+        "a1t_u07_demonstratives_and_sizes"
+      ]
+    },
+    {
+      "id": "a1t_u07_polite_shop_requests",
+      "name": "Use Could I try and Can I have in a clothing shop.",
+      "tier": "A1.2",
+      "dimension": "pronunciation",
+      "broad_target_id": "kg_a1_2_pronunciation",
+      "prerequisites": [
+        "a1t_u07_prices_and_money"
+      ]
+    },
+    {
+      "id": "a1t_u07_practical_shopping_review",
+      "name": "Combine item, colour, size, price, and thanks in a short exchange.",
+      "tier": "A1.2",
+      "dimension": "skills",
+      "broad_target_id": "kg_a1_2_skills",
+      "prerequisites": [
+        "a1t_u07_polite_shop_requests"
+      ]
+    },
+    {
+      "id": "a1t_u08_basic_weather_descriptions",
+      "name": "Use it is with sunny, rainy, cloudy, windy, hot, and cold.",
+      "tier": "A1.2",
+      "dimension": "functions",
+      "broad_target_id": "kg_a1_2_functions",
+      "prerequisites": [
+        "a1t_u07_practical_shopping_review"
+      ]
+    },
+    {
+      "id": "a1t_u08_weather_choices",
+      "name": "Give a simple reason for choosing familiar clothes.",
+      "tier": "A1.2",
+      "dimension": "vocabulary_senses",
+      "broad_target_id": "kg_a1_2_vocabulary_senses",
+      "prerequisites": [
+        "a1t_u08_basic_weather_descriptions"
+      ]
+    },
+    {
+      "id": "a1t_u08_basic_health_words",
+      "name": "Use feel and have with a few common symptoms.",
+      "tier": "A1.2",
+      "dimension": "grammar",
+      "broad_target_id": "kg_a1_2_grammar",
+      "prerequisites": [
+        "a1t_u08_weather_choices"
+      ]
+    },
+    {
+      "id": "a1t_u08_simple_invitations",
+      "name": "Use Would you like to and short acceptance or refusal.",
+      "tier": "A1.2",
+      "dimension": "pronunciation",
+      "broad_target_id": "kg_a1_2_pronunciation",
+      "prerequisites": [
+        "a1t_u08_basic_health_words"
+      ]
+    },
+    {
+      "id": "a1t_u08_weather_health_integration",
+      "name": "Explain a simple plan change with because.",
+      "tier": "A1.2",
+      "dimension": "skills",
+      "broad_target_id": "kg_a1_2_skills",
+      "prerequisites": [
+        "a1t_u08_simple_invitations"
+      ]
+    },
+    {
+      "id": "a1t_u09_transport_phrases",
+      "name": "Use take and get with common transport and destinations.",
+      "tier": "A1.2",
+      "dimension": "functions",
+      "broad_target_id": "kg_a1_2_functions",
+      "prerequisites": [
+        "a1t_u08_weather_health_integration"
+      ]
+    },
+    {
+      "id": "a1t_u09_route_language",
+      "name": "Combine transport and direction steps in order.",
+      "tier": "A1.2",
+      "dimension": "vocabulary_senses",
+      "broad_target_id": "kg_a1_2_vocabulary_senses",
+      "prerequisites": [
+        "a1t_u09_transport_phrases"
+      ]
+    },
+    {
+      "id": "a1t_u09_departure_and_arrival_times",
+      "name": "Ask when transport leaves and arrives using present simple.",
+      "tier": "A1.2",
+      "dimension": "grammar",
+      "broad_target_id": "kg_a1_2_grammar",
+      "prerequisites": [
+        "a1t_u09_route_language"
+      ]
+    },
+    {
+      "id": "a1t_u09_going_to_plans",
+      "name": "Use be going to for a simple near-future plan.",
+      "tier": "A1.2",
+      "dimension": "pronunciation",
+      "broad_target_id": "kg_a1_2_pronunciation",
+      "prerequisites": [
+        "a1t_u09_departure_and_arrival_times"
+      ]
+    },
+    {
+      "id": "a1t_u09_transport_language_review",
+      "name": "Use a polite question, timetable fact, and ordered route.",
+      "tier": "A1.2",
+      "dimension": "skills",
+      "broad_target_id": "kg_a1_2_skills",
+      "prerequisites": [
+        "a1t_u09_going_to_plans"
+      ]
+    },
+    {
+      "id": "a1t_u10_service_request_integration",
+      "name": "Combine a symptom or need with a polite request for help.",
+      "tier": "A1.2",
+      "dimension": "functions",
+      "broad_target_id": "kg_a1_2_functions",
+      "prerequisites": [
+        "a1t_u09_transport_language_review"
+      ]
+    },
+    {
+      "id": "a1t_u10_appointment_requests",
+      "name": "Request and confirm a simple day and time.",
+      "tier": "A1.2",
+      "dimension": "vocabulary_senses",
+      "broad_target_id": "kg_a1_2_vocabulary_senses",
+      "prerequisites": [
+        "a1t_u10_service_request_integration"
+      ]
+    },
+    {
+      "id": "a1t_u10_inviting_and_responding",
+      "name": "Use Would you like with short acceptance or refusal.",
+      "tier": "A1.2",
+      "dimension": "grammar",
+      "broad_target_id": "kg_a1_2_grammar",
+      "prerequisites": [
+        "a1t_u10_appointment_requests"
+      ]
+    },
+    {
+      "id": "a1t_u10_everyday_written_notes",
+      "name": "Write a brief message with greeting, reason, detail, and closing.",
+      "tier": "A1.2",
+      "dimension": "pronunciation",
+      "broad_target_id": "kg_a1_2_pronunciation",
+      "prerequisites": [
+        "a1t_u10_inviting_and_responding"
+      ]
+    },
+    {
+      "id": "a1t_u10_integrated_a1_review",
+      "name": "Combine a request, routine fact, past event, and future plan clearly.",
+      "tier": "A1.2",
+      "dimension": "skills",
+      "broad_target_id": "kg_a1_2_skills",
+      "prerequisites": [
+        "a1t_u10_everyday_written_notes"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "m16a1-v1-a1-u01-l01",
+      "tier": "A1.1",
+      "unit_id": "m16a1-v1-a1-u01",
+      "sequence": 1,
+      "topic": "social greetings",
+      "language_focus": "Use Hello, Hi, and Goodbye in short exchanges.",
+      "prerequisite_lesson_ids": [],
+      "target_usage": [
+        {
+          "target_id": "a1t_u01_social_greetings",
+          "usage": "INTRODUCE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "matching",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u01-l02",
+      "tier": "A1.1",
+      "unit_id": "m16a1-v1-a1-u01",
+      "sequence": 2,
+      "topic": "introducing yourself",
+      "language_focus": "Use I am and My name is to introduce yourself.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u01-l01"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u01_introducing_yourself",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u01_social_greetings",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "fill_blank",
+        "ordering",
+        "writing"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u01-l03",
+      "tier": "A1.1",
+      "unit_id": "m16a1-v1-a1-u01",
+      "sequence": 3,
+      "topic": "personal origin",
+      "language_focus": "Ask and answer Where are you from? with be.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u01-l02"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u01_personal_origin",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u01_introducing_yourself",
+          "usage": "REQUIRE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "reading",
+        "matching",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u01-l04",
+      "tier": "A1.1",
+      "unit_id": "m16a1-v1-a1-u01",
+      "sequence": 4,
+      "topic": "alphabet and spelling",
+      "language_focus": "Ask How do you spell it? and give letter names.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u01-l03"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u01_alphabet_and_spelling",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u01_personal_origin",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "listening",
+        "ordering",
+        "writing"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u01-l05",
+      "tier": "A1.1",
+      "unit_id": "m16a1-v1-a1-u01",
+      "sequence": 5,
+      "topic": "numbers zero to twenty",
+      "language_focus": "Say simple phone digits and protect private information.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u01-l04"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u01_numbers_zero_to_twenty",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u01_alphabet_and_spelling",
+          "usage": "REQUIRE"
+        },
+        {
+          "target_id": "a1t_u01_social_greetings",
+          "usage": "REVIEW"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "matching",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u02-l01",
+      "tier": "A1.1",
+      "unit_id": "m16a1-v1-a1-u02",
+      "sequence": 6,
+      "topic": "classroom objects",
+      "language_focus": "Name a book, pen, desk, chair, board, and bag with a or an.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u01-l05"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u02_classroom_objects",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u01_numbers_zero_to_twenty",
+          "usage": "REQUIRE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "fill_blank",
+        "ordering",
+        "writing"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u02-l02",
+      "tier": "A1.1",
+      "unit_id": "m16a1-v1-a1-u02",
+      "sequence": 7,
+      "topic": "teacher instructions",
+      "language_focus": "Understand and use open, close, look, listen, read, and write.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u02-l01"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u02_teacher_instructions",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u02_classroom_objects",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "reading",
+        "matching",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u02-l03",
+      "tier": "A1.1",
+      "unit_id": "m16a1-v1-a1-u02",
+      "sequence": 8,
+      "topic": "family words",
+      "language_focus": "Use this is, my, his, and her to identify family members.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u02-l02"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u02_family_words",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u02_teacher_instructions",
+          "usage": "REQUIRE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "listening",
+        "ordering",
+        "writing"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u02-l04",
+      "tier": "A1.1",
+      "unit_id": "m16a1-v1-a1-u02",
+      "sequence": 9,
+      "topic": "everyday routine verbs",
+      "language_focus": "Use present simple affirmative for a short school-day routine.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u02-l03"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u02_everyday_routine_verbs",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u02_family_words",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "matching",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u02-l05",
+      "tier": "A1.1",
+      "unit_id": "m16a1-v1-a1-u02",
+      "sequence": 10,
+      "topic": "adverbs of frequency",
+      "language_focus": "Place always, usually, sometimes, and never with familiar actions.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u02-l04"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u02_adverbs_of_frequency",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u02_everyday_routine_verbs",
+          "usage": "REQUIRE"
+        },
+        {
+          "target_id": "a1t_u02_classroom_objects",
+          "usage": "REVIEW"
+        }
+      ],
+      "allowed_exercise_types": [
+        "fill_blank",
+        "ordering",
+        "writing"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u03-l01",
+      "tier": "A1.1",
+      "unit_id": "m16a1-v1-a1-u03",
+      "sequence": 11,
+      "topic": "family words",
+      "language_focus": "Use family nouns and possessive adjectives my, your, his, and her.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u02-l05"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u03_family_words",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u02_adverbs_of_frequency",
+          "usage": "REQUIRE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "reading",
+        "matching",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u03-l02",
+      "tier": "A1.1",
+      "unit_id": "m16a1-v1-a1-u03",
+      "sequence": 12,
+      "topic": "possessions and relationships",
+      "language_focus": "Use have and has in simple statements.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u03-l01"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u03_possessions_and_relationships",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u03_family_words",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "listening",
+        "ordering",
+        "writing"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u03-l03",
+      "tier": "A1.1",
+      "unit_id": "m16a1-v1-a1-u03",
+      "sequence": 13,
+      "topic": "rooms and furniture",
+      "language_focus": "Name common rooms and objects in a home.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u03-l02"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u03_rooms_and_furniture",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u03_possessions_and_relationships",
+          "usage": "REQUIRE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "matching",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u03-l04",
+      "tier": "A1.1",
+      "unit_id": "m16a1-v1-a1-u03",
+      "sequence": 14,
+      "topic": "describing a room",
+      "language_focus": "Use there is and there are with singular and plural nouns.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u03-l03"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u03_describing_a_room",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u03_rooms_and_furniture",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "fill_blank",
+        "ordering",
+        "writing"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u03-l05",
+      "tier": "A1.1",
+      "unit_id": "m16a1-v1-a1-u03",
+      "sequence": 15,
+      "topic": "home-language review",
+      "language_focus": "Combine family, possession, place, and polite welcome language.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u03-l04"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u03_home_language_review",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u03_describing_a_room",
+          "usage": "REQUIRE"
+        },
+        {
+          "target_id": "a1t_u03_family_words",
+          "usage": "REVIEW"
+        }
+      ],
+      "allowed_exercise_types": [
+        "reading",
+        "matching",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u04-l01",
+      "tier": "A1.1",
+      "unit_id": "m16a1-v1-a1-u04",
+      "sequence": 16,
+      "topic": "food preferences",
+      "language_focus": "Use like, love, and do not like with food nouns.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u03-l05"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u04_food_preferences",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u03_home_language_review",
+          "usage": "REQUIRE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "listening",
+        "ordering",
+        "writing"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u04-l02",
+      "tier": "A1.1",
+      "unit_id": "m16a1-v1-a1-u04",
+      "sequence": 17,
+      "topic": "meal vocabulary",
+      "language_focus": "Describe simple meals with have for eating and drinking.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u04-l01"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u04_meal_vocabulary",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u04_food_preferences",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "matching",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u04-l03",
+      "tier": "A1.1",
+      "unit_id": "m16a1-v1-a1-u04",
+      "sequence": 18,
+      "topic": "basic quantities",
+      "language_focus": "Use some in affirmative statements and any in simple questions.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u04-l02"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u04_basic_quantities",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u04_meal_vocabulary",
+          "usage": "REQUIRE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "fill_blank",
+        "ordering",
+        "writing"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u04-l04",
+      "tier": "A1.1",
+      "unit_id": "m16a1-v1-a1-u04",
+      "sequence": 19,
+      "topic": "asking about quantity",
+      "language_focus": "Choose how much for uncountable nouns and how many for countable nouns.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u04-l03"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u04_asking_about_quantity",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u04_basic_quantities",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "reading",
+        "matching",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u04-l05",
+      "tier": "A1.1",
+      "unit_id": "m16a1-v1-a1-u04",
+      "sequence": 20,
+      "topic": "ordering politely",
+      "language_focus": "Use I'd like and please in a short cafe order.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u04-l04"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u04_ordering_politely",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u04_asking_about_quantity",
+          "usage": "REQUIRE"
+        },
+        {
+          "target_id": "a1t_u04_food_preferences",
+          "usage": "REVIEW"
+        }
+      ],
+      "allowed_exercise_types": [
+        "listening",
+        "ordering",
+        "writing"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u05-l01",
+      "tier": "A1.1",
+      "unit_id": "m16a1-v1-a1-u05",
+      "sequence": 21,
+      "topic": "town place nouns",
+      "language_focus": "Name common places and say where you go.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u04-l05"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u05_town_place_nouns",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u04_ordering_politely",
+          "usage": "REQUIRE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "matching",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u05-l02",
+      "tier": "A1.1",
+      "unit_id": "m16a1-v1-a1-u05",
+      "sequence": 22,
+      "topic": "place prepositions",
+      "language_focus": "Use next to, opposite, between, and behind for location.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u05-l01"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u05_place_prepositions",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u05_town_place_nouns",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "fill_blank",
+        "ordering",
+        "writing"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u05-l03",
+      "tier": "A1.1",
+      "unit_id": "m16a1-v1-a1-u05",
+      "sequence": 23,
+      "topic": "simple schedules",
+      "language_focus": "Ask when a familiar place opens and closes.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u05-l02"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u05_simple_schedules",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u05_place_prepositions",
+          "usage": "REQUIRE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "reading",
+        "matching",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u05-l04",
+      "tier": "A1.1",
+      "unit_id": "m16a1-v1-a1-u05",
+      "sequence": 24,
+      "topic": "ability and directions",
+      "language_focus": "Use can or cannot with a short direction step.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u05-l03"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u05_ability_and_directions",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u05_simple_schedules",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "listening",
+        "ordering",
+        "writing"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u05-l05",
+      "tier": "A1.1",
+      "unit_id": "m16a1-v1-a1-u05",
+      "sequence": 25,
+      "topic": "town-language review",
+      "language_focus": "Ask politely for and follow a short route.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u05-l04"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u05_town_language_review",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u05_ability_and_directions",
+          "usage": "REQUIRE"
+        },
+        {
+          "target_id": "a1t_u05_town_place_nouns",
+          "usage": "REVIEW"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "matching",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u06-l01",
+      "tier": "A1.2",
+      "unit_id": "m16a1-v1-a1-u06",
+      "sequence": 26,
+      "topic": "present simple statements",
+      "language_focus": "Use present simple forms for regular work and study facts.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u05-l05"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u06_present_simple_statements",
+          "usage": "INTRODUCE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "fill_blank",
+        "ordering",
+        "writing"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u06-l02",
+      "tier": "A1.2",
+      "unit_id": "m16a1-v1-a1-u06",
+      "sequence": 27,
+      "topic": "present simple questions",
+      "language_focus": "Build do and does questions about familiar routines.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u06-l01"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u06_present_simple_questions",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u06_present_simple_statements",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "reading",
+        "matching",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u06-l03",
+      "tier": "A1.2",
+      "unit_id": "m16a1-v1-a1-u06",
+      "sequence": 28,
+      "topic": "present simple negatives",
+      "language_focus": "Use do not and does not to correct routine information.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u06-l02"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u06_present_simple_negatives",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u06_present_simple_questions",
+          "usage": "REQUIRE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "listening",
+        "ordering",
+        "writing"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u06-l04",
+      "tier": "A1.2",
+      "unit_id": "m16a1-v1-a1-u06",
+      "sequence": 29,
+      "topic": "habit frequency review",
+      "language_focus": "Combine an adverb of frequency with a day or clock time.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u06-l03"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u06_habit_frequency_review",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u06_present_simple_negatives",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "matching",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u06-l05",
+      "tier": "A1.2",
+      "unit_id": "m16a1-v1-a1-u06",
+      "sequence": 30,
+      "topic": "present-simple integration",
+      "language_focus": "Link several weekly habits with and, but, and because.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u06-l04"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u06_present_simple_integration",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u06_habit_frequency_review",
+          "usage": "REQUIRE"
+        },
+        {
+          "target_id": "a1t_u06_present_simple_statements",
+          "usage": "REVIEW"
+        }
+      ],
+      "allowed_exercise_types": [
+        "fill_blank",
+        "ordering",
+        "writing"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u07-l01",
+      "tier": "A1.2",
+      "unit_id": "m16a1-v1-a1-u07",
+      "sequence": 31,
+      "topic": "clothing descriptions",
+      "language_focus": "Use colour and size adjectives before clothing nouns.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u06-l05"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u07_clothing_descriptions",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u06_present_simple_integration",
+          "usage": "REQUIRE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "reading",
+        "matching",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u07-l02",
+      "tier": "A1.2",
+      "unit_id": "m16a1-v1-a1-u07",
+      "sequence": 32,
+      "topic": "demonstratives and sizes",
+      "language_focus": "Use this, that, these, and those while comparing clothes.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u07-l01"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u07_demonstratives_and_sizes",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u07_clothing_descriptions",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "listening",
+        "ordering",
+        "writing"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u07-l03",
+      "tier": "A1.2",
+      "unit_id": "m16a1-v1-a1-u07",
+      "sequence": 33,
+      "topic": "prices and money",
+      "language_focus": "Ask How much is or are and state a simple price.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u07-l02"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u07_prices_and_money",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u07_demonstratives_and_sizes",
+          "usage": "REQUIRE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "matching",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u07-l04",
+      "tier": "A1.2",
+      "unit_id": "m16a1-v1-a1-u07",
+      "sequence": 34,
+      "topic": "polite shop requests",
+      "language_focus": "Use Could I try and Can I have in a clothing shop.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u07-l03"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u07_polite_shop_requests",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u07_prices_and_money",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "fill_blank",
+        "ordering",
+        "writing"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u07-l05",
+      "tier": "A1.2",
+      "unit_id": "m16a1-v1-a1-u07",
+      "sequence": 35,
+      "topic": "practical shopping review",
+      "language_focus": "Combine item, colour, size, price, and thanks in a short exchange.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u07-l04"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u07_practical_shopping_review",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u07_polite_shop_requests",
+          "usage": "REQUIRE"
+        },
+        {
+          "target_id": "a1t_u07_clothing_descriptions",
+          "usage": "REVIEW"
+        }
+      ],
+      "allowed_exercise_types": [
+        "reading",
+        "matching",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u08-l01",
+      "tier": "A1.2",
+      "unit_id": "m16a1-v1-a1-u08",
+      "sequence": 36,
+      "topic": "basic weather descriptions",
+      "language_focus": "Use it is with sunny, rainy, cloudy, windy, hot, and cold.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u07-l05"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u08_basic_weather_descriptions",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u07_practical_shopping_review",
+          "usage": "REQUIRE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "listening",
+        "ordering",
+        "writing"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u08-l02",
+      "tier": "A1.2",
+      "unit_id": "m16a1-v1-a1-u08",
+      "sequence": 37,
+      "topic": "weather choices",
+      "language_focus": "Give a simple reason for choosing familiar clothes.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u08-l01"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u08_weather_choices",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u08_basic_weather_descriptions",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "matching",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u08-l03",
+      "tier": "A1.2",
+      "unit_id": "m16a1-v1-a1-u08",
+      "sequence": 38,
+      "topic": "basic health words",
+      "language_focus": "Use feel and have with a few common symptoms.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u08-l02"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u08_basic_health_words",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u08_weather_choices",
+          "usage": "REQUIRE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "fill_blank",
+        "ordering",
+        "writing"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u08-l04",
+      "tier": "A1.2",
+      "unit_id": "m16a1-v1-a1-u08",
+      "sequence": 39,
+      "topic": "simple invitations",
+      "language_focus": "Use Would you like to and short acceptance or refusal.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u08-l03"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u08_simple_invitations",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u08_basic_health_words",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "reading",
+        "matching",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u08-l05",
+      "tier": "A1.2",
+      "unit_id": "m16a1-v1-a1-u08",
+      "sequence": 40,
+      "topic": "weather-health integration",
+      "language_focus": "Explain a simple plan change with because.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u08-l04"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u08_weather_health_integration",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u08_simple_invitations",
+          "usage": "REQUIRE"
+        },
+        {
+          "target_id": "a1t_u08_basic_weather_descriptions",
+          "usage": "REVIEW"
+        }
+      ],
+      "allowed_exercise_types": [
+        "listening",
+        "ordering",
+        "writing"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u09-l01",
+      "tier": "A1.2",
+      "unit_id": "m16a1-v1-a1-u09",
+      "sequence": 41,
+      "topic": "transport phrases",
+      "language_focus": "Use take and get with common transport and destinations.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u08-l05"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u09_transport_phrases",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u08_weather_health_integration",
+          "usage": "REQUIRE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "matching",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u09-l02",
+      "tier": "A1.2",
+      "unit_id": "m16a1-v1-a1-u09",
+      "sequence": 42,
+      "topic": "route language",
+      "language_focus": "Combine transport and direction steps in order.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u09-l01"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u09_route_language",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u09_transport_phrases",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "fill_blank",
+        "ordering",
+        "writing"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u09-l03",
+      "tier": "A1.2",
+      "unit_id": "m16a1-v1-a1-u09",
+      "sequence": 43,
+      "topic": "departure and arrival times",
+      "language_focus": "Ask when transport leaves and arrives using present simple.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u09-l02"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u09_departure_and_arrival_times",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u09_route_language",
+          "usage": "REQUIRE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "reading",
+        "matching",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u09-l04",
+      "tier": "A1.2",
+      "unit_id": "m16a1-v1-a1-u09",
+      "sequence": 44,
+      "topic": "going to plans",
+      "language_focus": "Use be going to for a simple near-future plan.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u09-l03"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u09_going_to_plans",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u09_departure_and_arrival_times",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "listening",
+        "ordering",
+        "writing"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u09-l05",
+      "tier": "A1.2",
+      "unit_id": "m16a1-v1-a1-u09",
+      "sequence": 45,
+      "topic": "transport-language review",
+      "language_focus": "Use a polite question, timetable fact, and ordered route.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u09-l04"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u09_transport_language_review",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u09_going_to_plans",
+          "usage": "REQUIRE"
+        },
+        {
+          "target_id": "a1t_u09_transport_phrases",
+          "usage": "REVIEW"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "matching",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u10-l01",
+      "tier": "A1.2",
+      "unit_id": "m16a1-v1-a1-u10",
+      "sequence": 46,
+      "topic": "service-request integration",
+      "language_focus": "Combine a symptom or need with a polite request for help.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u09-l05"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u10_service_request_integration",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u09_transport_language_review",
+          "usage": "REQUIRE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "fill_blank",
+        "ordering",
+        "writing"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u10-l02",
+      "tier": "A1.2",
+      "unit_id": "m16a1-v1-a1-u10",
+      "sequence": 47,
+      "topic": "appointment requests",
+      "language_focus": "Request and confirm a simple day and time.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u10-l01"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u10_appointment_requests",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u10_service_request_integration",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "reading",
+        "matching",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u10-l03",
+      "tier": "A1.2",
+      "unit_id": "m16a1-v1-a1-u10",
+      "sequence": 48,
+      "topic": "inviting and responding",
+      "language_focus": "Use Would you like with short acceptance or refusal.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u10-l02"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u10_inviting_and_responding",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u10_appointment_requests",
+          "usage": "REQUIRE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "listening",
+        "ordering",
+        "writing"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u10-l04",
+      "tier": "A1.2",
+      "unit_id": "m16a1-v1-a1-u10",
+      "sequence": 49,
+      "topic": "everyday written notes",
+      "language_focus": "Write a brief message with greeting, reason, detail, and closing.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u10-l03"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u10_everyday_written_notes",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u10_inviting_and_responding",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "matching",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u10-l05",
+      "tier": "A1.2",
+      "unit_id": "m16a1-v1-a1-u10",
+      "sequence": 50,
+      "topic": "integrated A1 review",
+      "language_focus": "Combine a request, routine fact, past event, and future plan clearly.",
+      "prerequisite_lesson_ids": [
+        "m16a1-v1-a1-u10-l04"
+      ],
+      "target_usage": [
+        {
+          "target_id": "a1t_u10_integrated_a1_review",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "a1t_u10_everyday_written_notes",
+          "usage": "REQUIRE"
+        },
+        {
+          "target_id": "a1t_u10_service_request_integration",
+          "usage": "REVIEW"
+        }
+      ],
+      "allowed_exercise_types": [
+        "fill_blank",
+        "ordering",
+        "writing"
+      ]
+    }
+  ]
+}

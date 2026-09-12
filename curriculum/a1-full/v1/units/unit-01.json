@@ -1,0 +1,732 @@
+{
+  "schema_version": "2.0",
+  "record_type": "a1_full_content_unit",
+  "unit_id": "m16a1-v1-a1-u01",
+  "tier": "A1.1",
+  "content_origin": "PROJECT_AUTHORED",
+  "lessons": [
+    {
+      "lesson_id": "m16a1-v1-a1-u01-l01",
+      "title": "Hello and goodbye",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a1t_u01_social_greetings"
+      ],
+      "objectives": [
+        "Use Hello, Hi, and Goodbye in short exchanges.",
+        "Use social greetings in one short, clear everyday exchange."
+      ],
+      "content_sections": [
+        {
+          "id": "language-note",
+          "section_type": "explanation",
+          "title": "Language focus",
+          "body": "In lesson 1: social greetings, notice this model: Hello, I am Lan. Keep the word order short and make the meaning clear.",
+          "target_ids": [
+            "a1t_u01_social_greetings"
+          ]
+        },
+        {
+          "id": "context",
+          "section_type": "dialogue",
+          "title": "Everyday context",
+          "body": "Read the original mini-context for lesson 1: social greetings: 'Hello, I am Lan.' Say which words carry the main information.",
+          "target_ids": [
+            "a1t_u01_social_greetings"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "meaning-check",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a1t_u01_social_greetings"
+          ],
+          "prompt": "Choose the exact model sentence for lesson 1: social greetings.",
+          "media_required": false,
+          "options": [
+            "Hello, I am Lan.",
+            "No detail is provided in Hello and goodbye.",
+            "A different routine appears in Hello and goodbye."
+          ],
+          "correct_answer": "Hello, I am Lan."
+        },
+        {
+          "id": "form-match",
+          "type": "matching",
+          "target_ids": [
+            "a1t_u01_social_greetings"
+          ],
+          "prompt": "Match the two lesson 1: social greetings cues with their meanings.",
+          "media_required": false,
+          "pairs": [
+            {
+              "left": "Target phrase in Hello and goodbye",
+              "right": "Hello, I am Lan."
+            },
+            {
+              "left": "Communication goal in lesson 1",
+              "right": "Use Hello, Hi, and Goodbye in short exchanges."
+            }
+          ]
+        },
+        {
+          "id": "personal-response",
+          "type": "speaking",
+          "target_ids": [
+            "a1t_u01_social_greetings"
+          ],
+          "prompt": "Give your own short speaking response for lesson 1: social greetings; use the target but do not copy the model.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "The response clearly addresses social greetings in lesson 1.",
+              "The response uses the allocated Hello and goodbye target intelligibly."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen to the tutor read the lesson 1: social greetings transcript once. Answer one question before seeing the text.",
+          "goal": "Identify one explicit detail about social greetings.",
+          "target_ids": [
+            "a1t_u01_social_greetings"
+          ],
+          "transcript": "Hello, I am Lan.",
+          "question": "What is the speaker's name?",
+          "answer": "Lan",
+          "media_required": false,
+          "constraints": [
+            "Do not reveal the transcript before the learner answers.",
+            "Ask exactly one comprehension question.",
+            "Use only the supplied project-authored transcript."
+          ]
+        },
+        "speaking": {
+          "instruction": "Take the learner role in a two-turn exchange about social greetings in lesson 1; respond with one or two short sentences.",
+          "goal": "Use the social greetings language focus intelligibly.",
+          "target_ids": [
+            "a1t_u01_social_greetings"
+          ],
+          "constraints": [
+            "Use at most two tutor turns.",
+            "Correct only one blocking error after the response."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Read the target words for lesson 1: social greetings aloud, then compare clear final sounds and stress.",
+          "goal": "Produce the selected social greetings words clearly.",
+          "target_ids": [
+            "a1t_u01_social_greetings"
+          ],
+          "target": "hello, goodbye",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is available.",
+            "Return NOT_ASSESSED when no audio is supplied."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a two-line greeting. For lesson 1: social greetings, submit your draft before receiving two brief improvement points.",
+          "goal": "Write a short A1 response about social greetings.",
+          "target_ids": [
+            "a1t_u01_social_greetings"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Do not replace the learner draft with a complete rewritten answer."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u01-l02",
+      "title": "Names and introductions",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a1t_u01_introducing_yourself",
+        "a1t_u01_social_greetings"
+      ],
+      "objectives": [
+        "Use I am and My name is to introduce yourself.",
+        "Use introducing yourself in one short, clear everyday exchange."
+      ],
+      "content_sections": [
+        {
+          "id": "language-note",
+          "section_type": "explanation",
+          "title": "Language focus",
+          "body": "In lesson 2: introducing yourself, notice this model: My name is Minh. I am a student. Keep the word order short and make the meaning clear.",
+          "target_ids": [
+            "a1t_u01_introducing_yourself"
+          ]
+        },
+        {
+          "id": "context",
+          "section_type": "dialogue",
+          "title": "Everyday context",
+          "body": "Read the original mini-context for lesson 2: introducing yourself: 'My name is Minh. I am a student.' Say which words carry the main information.",
+          "target_ids": [
+            "a1t_u01_introducing_yourself",
+            "a1t_u01_social_greetings"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "language-gap",
+          "type": "fill_blank",
+          "target_ids": [
+            "a1t_u01_introducing_yourself"
+          ],
+          "prompt": "Complete the key detail for lesson 2: introducing yourself: My name is Minh. I am ___.",
+          "media_required": false,
+          "acceptable_answers": [
+            "a student"
+          ]
+        },
+        {
+          "id": "practice-order",
+          "type": "ordering",
+          "target_ids": [
+            "a1t_u01_introducing_yourself"
+          ],
+          "prompt": "Put the three learning steps for lesson 2: introducing yourself in a useful order.",
+          "media_required": false,
+          "items": [
+            "Read the model in lesson 2",
+            "Create a new introducing yourself example",
+            "Notice the form in Names and introductions"
+          ],
+          "correct_order": [
+            "Notice the form in Names and introductions",
+            "Read the model in lesson 2",
+            "Create a new introducing yourself example"
+          ]
+        },
+        {
+          "id": "personal-response",
+          "type": "writing",
+          "target_ids": [
+            "a1t_u01_introducing_yourself",
+            "a1t_u01_social_greetings"
+          ],
+          "prompt": "Give your own short writing response for lesson 2: introducing yourself; use the target but do not copy the model.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "The response clearly addresses introducing yourself in lesson 2.",
+              "The response uses the allocated Names and introductions target intelligibly."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen to the tutor read the lesson 2: introducing yourself transcript once. Answer one question before seeing the text.",
+          "goal": "Identify one explicit detail about introducing yourself.",
+          "target_ids": [
+            "a1t_u01_introducing_yourself",
+            "a1t_u01_social_greetings"
+          ],
+          "transcript": "My name is Minh. I am a student.",
+          "question": "What is Minh?",
+          "answer": "a student",
+          "media_required": false,
+          "constraints": [
+            "Do not reveal the transcript before the learner answers.",
+            "Ask exactly one comprehension question.",
+            "Use only the supplied project-authored transcript."
+          ]
+        },
+        "speaking": {
+          "instruction": "Take the learner role in a two-turn exchange about introducing yourself in lesson 2; respond with one or two short sentences.",
+          "goal": "Use the introducing yourself language focus intelligibly.",
+          "target_ids": [
+            "a1t_u01_introducing_yourself",
+            "a1t_u01_social_greetings"
+          ],
+          "constraints": [
+            "Use at most two tutor turns.",
+            "Correct only one blocking error after the response."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Read the target words for lesson 2: introducing yourself aloud, then compare clear final sounds and stress.",
+          "goal": "Produce the selected introducing yourself words clearly.",
+          "target_ids": [
+            "a1t_u01_introducing_yourself",
+            "a1t_u01_social_greetings"
+          ],
+          "target": "name, student",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is available.",
+            "Return NOT_ASSESSED when no audio is supplied."
+          ]
+        },
+        "writing": {
+          "instruction": "Write your name and one fact. For lesson 2: introducing yourself, submit your draft before receiving two brief improvement points.",
+          "goal": "Write a short A1 response about introducing yourself.",
+          "target_ids": [
+            "a1t_u01_introducing_yourself",
+            "a1t_u01_social_greetings"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Do not replace the learner draft with a complete rewritten answer."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u01-l03",
+      "title": "Countries and hometowns",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a1t_u01_personal_origin",
+        "a1t_u01_introducing_yourself"
+      ],
+      "objectives": [
+        "Ask and answer Where are you from? with be.",
+        "Use personal origin in one short, clear everyday exchange."
+      ],
+      "content_sections": [
+        {
+          "id": "language-note",
+          "section_type": "explanation",
+          "title": "Language focus",
+          "body": "In lesson 3: personal origin, notice this model: Hoa is from Hue, and Ben is from Leeds. Keep the word order short and make the meaning clear.",
+          "target_ids": [
+            "a1t_u01_personal_origin"
+          ]
+        },
+        {
+          "id": "context",
+          "section_type": "dialogue",
+          "title": "Everyday context",
+          "body": "Read the original mini-context for lesson 3: personal origin: 'Hoa is from Hue, and Ben is from Leeds.' Say which words carry the main information.",
+          "target_ids": [
+            "a1t_u01_personal_origin",
+            "a1t_u01_introducing_yourself"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "detail-check",
+          "type": "reading",
+          "target_ids": [
+            "a1t_u01_personal_origin"
+          ],
+          "prompt": "Use the supplied original text for lesson 3: personal origin and answer one detail question.",
+          "media_required": false,
+          "stimulus": "Hoa is from Hue, and Ben is from Leeds.",
+          "questions": [
+            {
+              "question": "Where is Hoa from?",
+              "acceptable_answers": [
+                "Hue"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "form-match",
+          "type": "matching",
+          "target_ids": [
+            "a1t_u01_personal_origin"
+          ],
+          "prompt": "Match the two lesson 3: personal origin cues with their meanings.",
+          "media_required": false,
+          "pairs": [
+            {
+              "left": "Target phrase in Countries and hometowns",
+              "right": "Hoa is from Hue, and Ben is from Leeds."
+            },
+            {
+              "left": "Communication goal in lesson 3",
+              "right": "Ask and answer Where are you from? with be."
+            }
+          ]
+        },
+        {
+          "id": "personal-response",
+          "type": "speaking",
+          "target_ids": [
+            "a1t_u01_personal_origin",
+            "a1t_u01_introducing_yourself"
+          ],
+          "prompt": "Give your own short speaking response for lesson 3: personal origin; use the target but do not copy the model.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "The response clearly addresses personal origin in lesson 3.",
+              "The response uses the allocated Countries and hometowns target intelligibly."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen to the tutor read the lesson 3: personal origin transcript once. Answer one question before seeing the text.",
+          "goal": "Identify one explicit detail about personal origin.",
+          "target_ids": [
+            "a1t_u01_personal_origin",
+            "a1t_u01_introducing_yourself"
+          ],
+          "transcript": "Hoa is from Hue, and Ben is from Leeds.",
+          "question": "Where is Hoa from?",
+          "answer": "Hue",
+          "media_required": false,
+          "constraints": [
+            "Do not reveal the transcript before the learner answers.",
+            "Ask exactly one comprehension question.",
+            "Use only the supplied project-authored transcript."
+          ]
+        },
+        "speaking": {
+          "instruction": "Take the learner role in a two-turn exchange about personal origin in lesson 3; respond with one or two short sentences.",
+          "goal": "Use the personal origin language focus intelligibly.",
+          "target_ids": [
+            "a1t_u01_personal_origin",
+            "a1t_u01_introducing_yourself"
+          ],
+          "constraints": [
+            "Use at most two tutor turns.",
+            "Correct only one blocking error after the response."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Read the target words for lesson 3: personal origin aloud, then compare clear final sounds and stress.",
+          "goal": "Produce the selected personal origin words clearly.",
+          "target_ids": [
+            "a1t_u01_personal_origin",
+            "a1t_u01_introducing_yourself"
+          ],
+          "target": "from, Hue",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is available.",
+            "Return NOT_ASSESSED when no audio is supplied."
+          ]
+        },
+        "writing": {
+          "instruction": "Write where you are from. For lesson 3: personal origin, submit your draft before receiving two brief improvement points.",
+          "goal": "Write a short A1 response about personal origin.",
+          "target_ids": [
+            "a1t_u01_personal_origin",
+            "a1t_u01_introducing_yourself"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Do not replace the learner draft with a complete rewritten answer."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u01-l04",
+      "title": "Spell a name",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a1t_u01_alphabet_and_spelling",
+        "a1t_u01_personal_origin"
+      ],
+      "objectives": [
+        "Ask How do you spell it? and give letter names.",
+        "Use alphabet and spelling in one short, clear everyday exchange."
+      ],
+      "content_sections": [
+        {
+          "id": "language-note",
+          "section_type": "explanation",
+          "title": "Language focus",
+          "body": "In lesson 4: alphabet and spelling, notice this model: Mai spells her name M-A-I for the receptionist. Keep the word order short and make the meaning clear.",
+          "target_ids": [
+            "a1t_u01_alphabet_and_spelling"
+          ]
+        },
+        {
+          "id": "context",
+          "section_type": "dialogue",
+          "title": "Everyday context",
+          "body": "Read the original mini-context for lesson 4: alphabet and spelling: 'Mai spells her name M-A-I for the receptionist.' Say which words carry the main information.",
+          "target_ids": [
+            "a1t_u01_alphabet_and_spelling",
+            "a1t_u01_personal_origin"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "detail-check",
+          "type": "listening",
+          "target_ids": [
+            "a1t_u01_alphabet_and_spelling"
+          ],
+          "prompt": "Use the supplied original transcript for lesson 4: alphabet and spelling and answer one detail question.",
+          "media_required": false,
+          "stimulus": "Mai spells her name M-A-I for the receptionist.",
+          "questions": [
+            {
+              "question": "How does Mai spell her name?",
+              "acceptable_answers": [
+                "M-A-I"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "practice-order",
+          "type": "ordering",
+          "target_ids": [
+            "a1t_u01_alphabet_and_spelling"
+          ],
+          "prompt": "Put the three learning steps for lesson 4: alphabet and spelling in a useful order.",
+          "media_required": false,
+          "items": [
+            "Read the model in lesson 4",
+            "Create a new alphabet and spelling example",
+            "Notice the form in Spell a name"
+          ],
+          "correct_order": [
+            "Notice the form in Spell a name",
+            "Read the model in lesson 4",
+            "Create a new alphabet and spelling example"
+          ]
+        },
+        {
+          "id": "personal-response",
+          "type": "writing",
+          "target_ids": [
+            "a1t_u01_alphabet_and_spelling",
+            "a1t_u01_personal_origin"
+          ],
+          "prompt": "Give your own short writing response for lesson 4: alphabet and spelling; use the target but do not copy the model.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "The response clearly addresses alphabet and spelling in lesson 4.",
+              "The response uses the allocated Spell a name target intelligibly."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen to the tutor read the lesson 4: alphabet and spelling transcript once. Answer one question before seeing the text.",
+          "goal": "Identify one explicit detail about alphabet and spelling.",
+          "target_ids": [
+            "a1t_u01_alphabet_and_spelling",
+            "a1t_u01_personal_origin"
+          ],
+          "transcript": "Mai spells her name M-A-I for the receptionist.",
+          "question": "How does Mai spell her name?",
+          "answer": "M-A-I",
+          "media_required": false,
+          "constraints": [
+            "Do not reveal the transcript before the learner answers.",
+            "Ask exactly one comprehension question.",
+            "Use only the supplied project-authored transcript."
+          ]
+        },
+        "speaking": {
+          "instruction": "Take the learner role in a two-turn exchange about alphabet and spelling in lesson 4; respond with one or two short sentences.",
+          "goal": "Use the alphabet and spelling language focus intelligibly.",
+          "target_ids": [
+            "a1t_u01_alphabet_and_spelling",
+            "a1t_u01_personal_origin"
+          ],
+          "constraints": [
+            "Use at most two tutor turns.",
+            "Correct only one blocking error after the response."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Read the target words for lesson 4: alphabet and spelling aloud, then compare clear final sounds and stress.",
+          "goal": "Produce the selected alphabet and spelling words clearly.",
+          "target_ids": [
+            "a1t_u01_alphabet_and_spelling",
+            "a1t_u01_personal_origin"
+          ],
+          "target": "M, A, I",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is available.",
+            "Return NOT_ASSESSED when no audio is supplied."
+          ]
+        },
+        "writing": {
+          "instruction": "Write a short spelling exchange. For lesson 4: alphabet and spelling, submit your draft before receiving two brief improvement points.",
+          "goal": "Write a short A1 response about alphabet and spelling.",
+          "target_ids": [
+            "a1t_u01_alphabet_and_spelling",
+            "a1t_u01_personal_origin"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Do not replace the learner draft with a complete rewritten answer."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16a1-v1-a1-u01-l05",
+      "title": "Numbers for contact details",
+      "duration_minutes": 35,
+      "objective_target_ids": [
+        "a1t_u01_numbers_zero_to_twenty",
+        "a1t_u01_alphabet_and_spelling",
+        "a1t_u01_social_greetings"
+      ],
+      "objectives": [
+        "Say simple phone digits and protect private information.",
+        "Use numbers zero to twenty in one short, clear everyday exchange."
+      ],
+      "content_sections": [
+        {
+          "id": "language-note",
+          "section_type": "explanation",
+          "title": "Language focus",
+          "body": "In lesson 5: numbers zero to twenty, notice this model: Nam gives the practice number zero nine one two. Keep the word order short and make the meaning clear.",
+          "target_ids": [
+            "a1t_u01_numbers_zero_to_twenty"
+          ]
+        },
+        {
+          "id": "context",
+          "section_type": "dialogue",
+          "title": "Everyday context",
+          "body": "Read the original mini-context for lesson 5: numbers zero to twenty: 'Nam gives the practice number zero nine one two.' Say which words carry the main information.",
+          "target_ids": [
+            "a1t_u01_numbers_zero_to_twenty",
+            "a1t_u01_alphabet_and_spelling",
+            "a1t_u01_social_greetings"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "meaning-check",
+          "type": "multiple_choice",
+          "target_ids": [
+            "a1t_u01_numbers_zero_to_twenty"
+          ],
+          "prompt": "Choose the exact model sentence for lesson 5: numbers zero to twenty.",
+          "media_required": false,
+          "options": [
+            "Nam gives the practice number zero nine one two.",
+            "No detail is provided in Numbers for contact details.",
+            "A different routine appears in Numbers for contact details."
+          ],
+          "correct_answer": "Nam gives the practice number zero nine one two."
+        },
+        {
+          "id": "form-match",
+          "type": "matching",
+          "target_ids": [
+            "a1t_u01_numbers_zero_to_twenty"
+          ],
+          "prompt": "Match the two lesson 5: numbers zero to twenty cues with their meanings.",
+          "media_required": false,
+          "pairs": [
+            {
+              "left": "Target phrase in Numbers for contact details",
+              "right": "Nam gives the practice number zero nine one two."
+            },
+            {
+              "left": "Communication goal in lesson 5",
+              "right": "Say simple phone digits and protect private information."
+            }
+          ]
+        },
+        {
+          "id": "personal-response",
+          "type": "speaking",
+          "target_ids": [
+            "a1t_u01_numbers_zero_to_twenty",
+            "a1t_u01_alphabet_and_spelling",
+            "a1t_u01_social_greetings"
+          ],
+          "prompt": "Give your own short speaking response for lesson 5: numbers zero to twenty; use the target but do not copy the model.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "The response clearly addresses numbers zero to twenty in lesson 5.",
+              "The response uses the allocated Numbers for contact details target intelligibly."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen to the tutor read the lesson 5: numbers zero to twenty transcript once. Answer one question before seeing the text.",
+          "goal": "Identify one explicit detail about numbers zero to twenty.",
+          "target_ids": [
+            "a1t_u01_numbers_zero_to_twenty",
+            "a1t_u01_alphabet_and_spelling",
+            "a1t_u01_social_greetings"
+          ],
+          "transcript": "Nam gives the practice number zero nine one two.",
+          "question": "Which four digits does Nam practise?",
+          "answer": "zero nine one two",
+          "media_required": false,
+          "constraints": [
+            "Do not reveal the transcript before the learner answers.",
+            "Ask exactly one comprehension question.",
+            "Use only the supplied project-authored transcript."
+          ]
+        },
+        "speaking": {
+          "instruction": "Take the learner role in a two-turn exchange about numbers zero to twenty in lesson 5; respond with one or two short sentences.",
+          "goal": "Use the numbers zero to twenty language focus intelligibly.",
+          "target_ids": [
+            "a1t_u01_numbers_zero_to_twenty",
+            "a1t_u01_alphabet_and_spelling",
+            "a1t_u01_social_greetings"
+          ],
+          "constraints": [
+            "Use at most two tutor turns.",
+            "Correct only one blocking error after the response."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Read the target words for lesson 5: numbers zero to twenty aloud, then compare clear final sounds and stress.",
+          "goal": "Produce the selected numbers zero to twenty words clearly.",
+          "target_ids": [
+            "a1t_u01_numbers_zero_to_twenty",
+            "a1t_u01_alphabet_and_spelling",
+            "a1t_u01_social_greetings"
+          ],
+          "target": "zero, nine, one, two",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is available.",
+            "Return NOT_ASSESSED when no audio is supplied."
+          ]
+        },
+        "writing": {
+          "instruction": "Write four invented practice digits. For lesson 5: numbers zero to twenty, submit your draft before receiving two brief improvement points.",
+          "goal": "Write a short A1 response about numbers zero to twenty.",
+          "target_ids": [
+            "a1t_u01_numbers_zero_to_twenty",
+            "a1t_u01_alphabet_and_spelling",
+            "a1t_u01_social_greetings"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Do not replace the learner draft with a complete rewritten answer."
+          ]
+        }
+      }
+    }
+  ]
+}
