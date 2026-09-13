@@ -1,0 +1,996 @@
+{
+  "lessons": [
+    {
+      "content_sections": [
+        {
+          "body": "In this lesson, focus on present perfect for an unfinished period and past simple for a finished starting event. Notice how the ideas about volunteering at a community garden are linked so that the listener can follow the speaker's meaning.",
+          "section_type": "explanation",
+          "title": "Notice the language"
+        },
+        {
+          "body": "I have volunteered at a community garden for six months, and the experience has made me more confident. I joined my first Saturday session in March.",
+          "section_type": "dialogue",
+          "title": "Context and meaning"
+        },
+        {
+          "body": "Prepare a three-sentence response about volunteering at a community garden. Include the lesson language, one concrete detail, and a clear link between your ideas.",
+          "section_type": "practice",
+          "title": "Guided use"
+        }
+      ],
+      "duration_minutes": 35,
+      "exercises": [
+        {
+          "answer": "for six months",
+          "items": [
+            "for six months",
+            "The speaker gives no view or experience.",
+            "The speaker reaches the opposite conclusion."
+          ],
+          "prompt": "Choose the statement that best matches the message about volunteering at a community garden.",
+          "type": "multiple_choice"
+        },
+        {
+          "answer": "so",
+          "prompt": "Complete this Experiences up to now sentence with a suitable linker: I have experience of this topic, ____ I can explain my view clearly.",
+          "type": "fill_blank"
+        },
+        {
+          "answer": "for six months",
+          "prompt": "Read the text: \"I have volunteered at a community garden for six months, and the experience has made me more confident. I joined my first Saturday session in March.\" Then answer: How long has the speaker volunteered?",
+          "type": "reading"
+        },
+        {
+          "prompt": "Give a connected response about volunteering at a community garden, then respond politely to one follow-up view.",
+          "rubric": {
+            "criteria": [
+              "States a clear experience or viewpoint.",
+              "Supports the main idea with a relevant detail.",
+              "Links ideas clearly and responds tactfully."
+            ]
+          },
+          "type": "speaking"
+        }
+      ],
+      "objectives": [
+        "Describe one life experience and explain why it matters now."
+      ],
+      "outline_id": "m16b1-v1-b1-u01-l01",
+      "prompts": {
+        "listening": {
+          "answer": "for six months",
+          "constraints": [
+            "Keep transcript private until the first answer.",
+            "Ask exactly one question before revealing it.",
+            "Use no media; use only the supplied transcript."
+          ],
+          "goal": "Identify the main point and supporting detail about volunteering at a community garden.",
+          "instruction": "Listen once to a short message about volunteering at a community garden. Answer one question before seeing the transcript, then listen again for the linking language.",
+          "media_required": false,
+          "question": "How long has the speaker volunteered?",
+          "transcript": "I have volunteered at a community garden for six months, and the experience has made me more confident. I joined my first Saturday session in March."
+        },
+        "pronunciation": {
+          "constraints": [
+            "Assess only with learner audio.",
+            "Return NOT_ASSESSED without audio."
+          ],
+          "goal": "Use sentence stress to make the main viewpoint about volunteering at a community garden clear.",
+          "instruction": "Read the key message about volunteering at a community garden aloud. Stress the word that carries the main contrast or new information, first slowly and then naturally."
+        },
+        "speaking": {
+          "constraints": [
+            "Use at most four tutor turns.",
+            "Ask one relevant follow-up question.",
+            "End after the learner has supported and clarified the main point."
+          ],
+          "goal": "Complete a connected exchange about volunteering at a community garden.",
+          "instruction": "Discuss volunteering at a community garden with the tutor. Give your experience or opinion, support it, and respond tactfully to one different view."
+        },
+        "writing": {
+          "constraints": [
+            "Wait for the draft.",
+            "Give three brief feedback points.",
+            "Do not replace the learner draft."
+          ],
+          "goal": "Write a supported B1 response about volunteering at a community garden.",
+          "instruction": "Write 5-6 connected sentences about volunteering at a community garden. Include a clear main point, a reason or example, and a tactful contrast. Submit your draft first."
+        }
+      },
+      "title": "Experiences up to now"
+    },
+    {
+      "content_sections": [
+        {
+          "body": "In this lesson, focus on an opinion frame followed by because and a relevant example. Notice how the ideas about flexible working hours are linked so that the listener can follow the speaker's meaning.",
+          "section_type": "explanation",
+          "title": "Notice the language"
+        },
+        {
+          "body": "In my view, flexible working hours are helpful because people can avoid the busiest travel times. For example, my sister starts early and gets home before rush hour.",
+          "section_type": "dialogue",
+          "title": "Context and meaning"
+        },
+        {
+          "body": "Prepare a three-sentence response about flexible working hours. Include the lesson language, one concrete detail, and a clear link between your ideas.",
+          "section_type": "practice",
+          "title": "Guided use"
+        }
+      ],
+      "duration_minutes": 35,
+      "exercises": [
+        {
+          "answer": "people can avoid the busiest travel times",
+          "items": [
+            "people can avoid the busiest travel times",
+            "The speaker gives no view or experience.",
+            "The speaker reaches the opposite conclusion."
+          ],
+          "prompt": "Choose the statement that best matches the message about flexible working hours.",
+          "type": "multiple_choice"
+        },
+        {
+          "answer": "so",
+          "prompt": "Complete this Explaining an opinion sentence with a suitable linker: I have experience of this topic, ____ I can explain my view clearly.",
+          "type": "fill_blank"
+        },
+        {
+          "answer": "people can avoid the busiest travel times",
+          "prompt": "Read the text: \"In my view, flexible working hours are helpful because people can avoid the busiest travel times. For example, my sister starts early and gets home before rush hour.\" Then answer: Why does the speaker support flexible hours?",
+          "type": "reading"
+        },
+        {
+          "prompt": "Give a connected response about flexible working hours, then respond politely to one follow-up view.",
+          "rubric": {
+            "criteria": [
+              "States a clear experience or viewpoint.",
+              "Supports the main idea with a relevant detail.",
+              "Links ideas clearly and responds tactfully."
+            ]
+          },
+          "type": "speaking"
+        }
+      ],
+      "objectives": [
+        "State an opinion and support it with a clear reason."
+      ],
+      "outline_id": "m16b1-v1-b1-u01-l02",
+      "prompts": {
+        "listening": {
+          "answer": "people can avoid the busiest travel times",
+          "constraints": [
+            "Keep transcript private until the first answer.",
+            "Ask exactly one question before revealing it.",
+            "Use no media; use only the supplied transcript."
+          ],
+          "goal": "Identify the main point and supporting detail about flexible working hours.",
+          "instruction": "Listen once to a short message about flexible working hours. Answer one question before seeing the transcript, then listen again for the linking language.",
+          "media_required": false,
+          "question": "Why does the speaker support flexible hours?",
+          "transcript": "In my view, flexible working hours are helpful because people can avoid the busiest travel times. For example, my sister starts early and gets home before rush hour."
+        },
+        "pronunciation": {
+          "constraints": [
+            "Assess only with learner audio.",
+            "Return NOT_ASSESSED without audio."
+          ],
+          "goal": "Use sentence stress to make the main viewpoint about flexible working hours clear.",
+          "instruction": "Read the key message about flexible working hours aloud. Stress the word that carries the main contrast or new information, first slowly and then naturally."
+        },
+        "speaking": {
+          "constraints": [
+            "Use at most four tutor turns.",
+            "Ask one relevant follow-up question.",
+            "End after the learner has supported and clarified the main point."
+          ],
+          "goal": "Complete a connected exchange about flexible working hours.",
+          "instruction": "Discuss flexible working hours with the tutor. Give your experience or opinion, support it, and respond tactfully to one different view."
+        },
+        "writing": {
+          "constraints": [
+            "Wait for the draft.",
+            "Give three brief feedback points.",
+            "Do not replace the learner draft."
+          ],
+          "goal": "Write a supported B1 response about flexible working hours.",
+          "instruction": "Write 5-6 connected sentences about flexible working hours. Include a clear main point, a reason or example, and a tactful contrast. Submit your draft first."
+        }
+      },
+      "title": "Explaining an opinion"
+    },
+    {
+      "content_sections": [
+        {
+          "body": "In this lesson, focus on a partial-agreement phrase before a polite contrasting view. Notice how the ideas about phones during shared meals are linked so that the listener can follow the speaker's meaning.",
+          "section_type": "explanation",
+          "title": "Notice the language"
+        },
+        {
+          "body": "I see your point about checking urgent messages, but I think phones should stay off the table during shared meals. That way, everyone can take part in the conversation.",
+          "section_type": "dialogue",
+          "title": "Context and meaning"
+        },
+        {
+          "body": "Prepare a three-sentence response about phones during shared meals. Include the lesson language, one concrete detail, and a clear link between your ideas.",
+          "section_type": "practice",
+          "title": "Guided use"
+        }
+      ],
+      "duration_minutes": 35,
+      "exercises": [
+        {
+          "answer": "keeping phones off the table during shared meals",
+          "items": [
+            "keeping phones off the table during shared meals",
+            "The speaker gives no view or experience.",
+            "The speaker reaches the opposite conclusion."
+          ],
+          "prompt": "Choose the statement that best matches the message about phones during shared meals.",
+          "type": "multiple_choice"
+        },
+        {
+          "answer": "so",
+          "prompt": "Complete this Agreeing and disagreeing tactfully sentence with a suitable linker: I have experience of this topic, ____ I can explain my view clearly.",
+          "type": "fill_blank"
+        },
+        {
+          "answer": "keeping phones off the table during shared meals",
+          "prompt": "Read the text: \"I see your point about checking urgent messages, but I think phones should stay off the table during shared meals. That way, everyone can take part in the conversation.\" Then answer: What compromise does the speaker suggest?",
+          "type": "reading"
+        },
+        {
+          "prompt": "Give a connected response about phones during shared meals, then respond politely to one follow-up view.",
+          "rubric": {
+            "criteria": [
+              "States a clear experience or viewpoint.",
+              "Supports the main idea with a relevant detail.",
+              "Links ideas clearly and responds tactfully."
+            ]
+          },
+          "type": "speaking"
+        }
+      ],
+      "objectives": [
+        "Respond to a different view without sounding abrupt."
+      ],
+      "outline_id": "m16b1-v1-b1-u01-l03",
+      "prompts": {
+        "listening": {
+          "answer": "keeping phones off the table during shared meals",
+          "constraints": [
+            "Keep transcript private until the first answer.",
+            "Ask exactly one question before revealing it.",
+            "Use no media; use only the supplied transcript."
+          ],
+          "goal": "Identify the main point and supporting detail about phones during shared meals.",
+          "instruction": "Listen once to a short message about phones during shared meals. Answer one question before seeing the transcript, then listen again for the linking language.",
+          "media_required": false,
+          "question": "What compromise does the speaker suggest?",
+          "transcript": "I see your point about checking urgent messages, but I think phones should stay off the table during shared meals. That way, everyone can take part in the conversation."
+        },
+        "pronunciation": {
+          "constraints": [
+            "Assess only with learner audio.",
+            "Return NOT_ASSESSED without audio."
+          ],
+          "goal": "Use sentence stress to make the main viewpoint about phones during shared meals clear.",
+          "instruction": "Read the key message about phones during shared meals aloud. Stress the word that carries the main contrast or new information, first slowly and then naturally."
+        },
+        "speaking": {
+          "constraints": [
+            "Use at most four tutor turns.",
+            "Ask one relevant follow-up question.",
+            "End after the learner has supported and clarified the main point."
+          ],
+          "goal": "Complete a connected exchange about phones during shared meals.",
+          "instruction": "Discuss phones during shared meals with the tutor. Give your experience or opinion, support it, and respond tactfully to one different view."
+        },
+        "writing": {
+          "constraints": [
+            "Wait for the draft.",
+            "Give three brief feedback points.",
+            "Do not replace the learner draft."
+          ],
+          "goal": "Write a supported B1 response about phones during shared meals.",
+          "instruction": "Write 5-6 connected sentences about phones during shared meals. Include a clear main point, a reason or example, and a tactful contrast. Submit your draft first."
+        }
+      },
+      "title": "Agreeing and disagreeing tactfully"
+    },
+    {
+      "content_sections": [
+        {
+          "body": "In this lesson, focus on experience, contrast, opinion, and reasons in one connected response. Notice how the ideas about learning to cook are linked so that the listener can follow the speaker's meaning.",
+          "section_type": "explanation",
+          "title": "Notice the language"
+        },
+        {
+          "body": "I have learned to cook several meals since moving away from home. At first it was difficult; however, I now think cooking is worth the effort because it saves money and brings friends together.",
+          "section_type": "dialogue",
+          "title": "Context and meaning"
+        },
+        {
+          "body": "Prepare a three-sentence response about learning to cook. Include the lesson language, one concrete detail, and a clear link between your ideas.",
+          "section_type": "practice",
+          "title": "Guided use"
+        }
+      ],
+      "duration_minutes": 35,
+      "exercises": [
+        {
+          "answer": "saving money and bringing friends together",
+          "items": [
+            "saving money and bringing friends together",
+            "The speaker gives no view or experience.",
+            "The speaker reaches the opposite conclusion."
+          ],
+          "prompt": "Choose the statement that best matches the message about learning to cook.",
+          "type": "multiple_choice"
+        },
+        {
+          "answer": "so",
+          "prompt": "Complete this A connected personal response sentence with a suitable linker: I have experience of this topic, ____ I can explain my view clearly.",
+          "type": "fill_blank"
+        },
+        {
+          "answer": "saving money and bringing friends together",
+          "prompt": "Read the text: \"I have learned to cook several meals since moving away from home. At first it was difficult; however, I now think cooking is worth the effort because it saves money and brings friends together.\" Then answer: What two benefits does the speaker give?",
+          "type": "reading"
+        },
+        {
+          "prompt": "Give a connected response about learning to cook, then respond politely to one follow-up view.",
+          "rubric": {
+            "criteria": [
+              "States a clear experience or viewpoint.",
+              "Supports the main idea with a relevant detail.",
+              "Links ideas clearly and responds tactfully."
+            ]
+          },
+          "type": "speaking"
+        }
+      ],
+      "objectives": [
+        "Combine experience and opinion in connected language."
+      ],
+      "outline_id": "m16b1-v1-b1-u01-l04",
+      "prompts": {
+        "listening": {
+          "answer": "saving money and bringing friends together",
+          "constraints": [
+            "Keep transcript private until the first answer.",
+            "Ask exactly one question before revealing it.",
+            "Use no media; use only the supplied transcript."
+          ],
+          "goal": "Identify the main point and supporting detail about learning to cook.",
+          "instruction": "Listen once to a short message about learning to cook. Answer one question before seeing the transcript, then listen again for the linking language.",
+          "media_required": false,
+          "question": "What two benefits does the speaker give?",
+          "transcript": "I have learned to cook several meals since moving away from home. At first it was difficult; however, I now think cooking is worth the effort because it saves money and brings friends together."
+        },
+        "pronunciation": {
+          "constraints": [
+            "Assess only with learner audio.",
+            "Return NOT_ASSESSED without audio."
+          ],
+          "goal": "Use sentence stress to make the main viewpoint about learning to cook clear.",
+          "instruction": "Read the key message about learning to cook aloud. Stress the word that carries the main contrast or new information, first slowly and then naturally."
+        },
+        "speaking": {
+          "constraints": [
+            "Use at most four tutor turns.",
+            "Ask one relevant follow-up question.",
+            "End after the learner has supported and clarified the main point."
+          ],
+          "goal": "Complete a connected exchange about learning to cook.",
+          "instruction": "Discuss learning to cook with the tutor. Give your experience or opinion, support it, and respond tactfully to one different view."
+        },
+        "writing": {
+          "constraints": [
+            "Wait for the draft.",
+            "Give three brief feedback points.",
+            "Do not replace the learner draft."
+          ],
+          "goal": "Write a supported B1 response about learning to cook.",
+          "instruction": "Write 5-6 connected sentences about learning to cook. Include a clear main point, a reason or example, and a tactful contrast. Submit your draft first."
+        }
+      },
+      "title": "A connected personal response"
+    },
+    {
+      "content_sections": [
+        {
+          "body": "In this lesson, focus on present relevance, a supported opinion, and a tactful qualification. Notice how the ideas about joining a running group are linked so that the listener can follow the speaker's meaning.",
+          "section_type": "explanation",
+          "title": "Notice the language"
+        },
+        {
+          "body": "I have belonged to a running group since January. I think it has improved my routine because I exercise regularly, although I understand that group activities do not suit everyone.",
+          "section_type": "dialogue",
+          "title": "Context and meaning"
+        },
+        {
+          "body": "Prepare a three-sentence response about joining a running group. Include the lesson language, one concrete detail, and a clear link between your ideas.",
+          "section_type": "practice",
+          "title": "Guided use"
+        }
+      ],
+      "duration_minutes": 35,
+      "exercises": [
+        {
+          "answer": "in January",
+          "items": [
+            "in January",
+            "The speaker gives no view or experience.",
+            "The speaker reaches the opposite conclusion."
+          ],
+          "prompt": "Choose the statement that best matches the message about joining a running group.",
+          "type": "multiple_choice"
+        },
+        {
+          "answer": "so",
+          "prompt": "Complete this Review: experiences and change sentence with a suitable linker: I have experience of this topic, ____ I can explain my view clearly.",
+          "type": "fill_blank"
+        },
+        {
+          "answer": "in January",
+          "prompt": "Read the text: \"I have belonged to a running group since January. I think it has improved my routine because I exercise regularly, although I understand that group activities do not suit everyone.\" Then answer: When did the speaker join the group?",
+          "type": "reading"
+        },
+        {
+          "prompt": "Give a connected response about joining a running group, then respond politely to one follow-up view.",
+          "rubric": {
+            "criteria": [
+              "States a clear experience or viewpoint.",
+              "Supports the main idea with a relevant detail.",
+              "Links ideas clearly and responds tactfully."
+            ]
+          },
+          "type": "speaking"
+        }
+      ],
+      "objectives": [
+        "Review experience, opinion, and tactful response targets."
+      ],
+      "outline_id": "m16b1-v1-b1-u01-l05",
+      "prompts": {
+        "listening": {
+          "answer": "in January",
+          "constraints": [
+            "Keep transcript private until the first answer.",
+            "Ask exactly one question before revealing it.",
+            "Use no media; use only the supplied transcript."
+          ],
+          "goal": "Identify the main point and supporting detail about joining a running group.",
+          "instruction": "Listen once to a short message about joining a running group. Answer one question before seeing the transcript, then listen again for the linking language.",
+          "media_required": false,
+          "question": "When did the speaker join the group?",
+          "transcript": "I have belonged to a running group since January. I think it has improved my routine because I exercise regularly, although I understand that group activities do not suit everyone."
+        },
+        "pronunciation": {
+          "constraints": [
+            "Assess only with learner audio.",
+            "Return NOT_ASSESSED without audio."
+          ],
+          "goal": "Use sentence stress to make the main viewpoint about joining a running group clear.",
+          "instruction": "Read the key message about joining a running group aloud. Stress the word that carries the main contrast or new information, first slowly and then naturally."
+        },
+        "speaking": {
+          "constraints": [
+            "Use at most four tutor turns.",
+            "Ask one relevant follow-up question.",
+            "End after the learner has supported and clarified the main point."
+          ],
+          "goal": "Complete a connected exchange about joining a running group.",
+          "instruction": "Discuss joining a running group with the tutor. Give your experience or opinion, support it, and respond tactfully to one different view."
+        },
+        "writing": {
+          "constraints": [
+            "Wait for the draft.",
+            "Give three brief feedback points.",
+            "Do not replace the learner draft."
+          ],
+          "goal": "Write a supported B1 response about joining a running group.",
+          "instruction": "Write 5-6 connected sentences about joining a running group. Include a clear main point, a reason or example, and a tactful contrast. Submit your draft first."
+        }
+      },
+      "title": "Review: experiences and change"
+    },
+    {
+      "content_sections": [
+        {
+          "body": "In this lesson, focus on present perfect for general experience and past simple with a finished time. Notice how the ideas about a science podcast are linked so that the listener can follow the speaker's meaning.",
+          "section_type": "explanation",
+          "title": "Notice the language"
+        },
+        {
+          "body": "I have listened to the science podcast several times, so I know its usual format. Last night I heard an episode about sleep, and it changed one of my habits.",
+          "section_type": "dialogue",
+          "title": "Context and meaning"
+        },
+        {
+          "body": "Prepare a three-sentence response about a science podcast. Include the lesson language, one concrete detail, and a clear link between your ideas.",
+          "section_type": "practice",
+          "title": "Guided use"
+        }
+      ],
+      "duration_minutes": 35,
+      "exercises": [
+        {
+          "answer": "an episode about sleep",
+          "items": [
+            "an episode about sleep",
+            "The speaker gives no view or experience.",
+            "The speaker reaches the opposite conclusion."
+          ],
+          "prompt": "Choose the statement that best matches the message about a science podcast.",
+          "type": "multiple_choice"
+        },
+        {
+          "answer": "so",
+          "prompt": "Complete this Media experiences sentence with a suitable linker: I have experience of this topic, ____ I can explain my view clearly.",
+          "type": "fill_blank"
+        },
+        {
+          "answer": "an episode about sleep",
+          "prompt": "Read the text: \"I have listened to the science podcast several times, so I know its usual format. Last night I heard an episode about sleep, and it changed one of my habits.\" Then answer: Which episode did the speaker hear last night?",
+          "type": "reading"
+        },
+        {
+          "prompt": "Give a connected response about a science podcast, then respond politely to one follow-up view.",
+          "rubric": {
+            "criteria": [
+              "States a clear experience or viewpoint.",
+              "Supports the main idea with a relevant detail.",
+              "Links ideas clearly and responds tactfully."
+            ]
+          },
+          "type": "speaking"
+        }
+      ],
+      "objectives": [
+        "Relate media experiences and distinguish finished time from current relevance."
+      ],
+      "outline_id": "m16b1-v1-b1-u02-l01",
+      "prompts": {
+        "listening": {
+          "answer": "an episode about sleep",
+          "constraints": [
+            "Keep transcript private until the first answer.",
+            "Ask exactly one question before revealing it.",
+            "Use no media; use only the supplied transcript."
+          ],
+          "goal": "Identify the main point and supporting detail about a science podcast.",
+          "instruction": "Listen once to a short message about a science podcast. Answer one question before seeing the transcript, then listen again for the linking language.",
+          "media_required": false,
+          "question": "Which episode did the speaker hear last night?",
+          "transcript": "I have listened to the science podcast several times, so I know its usual format. Last night I heard an episode about sleep, and it changed one of my habits."
+        },
+        "pronunciation": {
+          "constraints": [
+            "Assess only with learner audio.",
+            "Return NOT_ASSESSED without audio."
+          ],
+          "goal": "Use sentence stress to make the main viewpoint about a science podcast clear.",
+          "instruction": "Read the key message about a science podcast aloud. Stress the word that carries the main contrast or new information, first slowly and then naturally."
+        },
+        "speaking": {
+          "constraints": [
+            "Use at most four tutor turns.",
+            "Ask one relevant follow-up question.",
+            "End after the learner has supported and clarified the main point."
+          ],
+          "goal": "Complete a connected exchange about a science podcast.",
+          "instruction": "Discuss a science podcast with the tutor. Give your experience or opinion, support it, and respond tactfully to one different view."
+        },
+        "writing": {
+          "constraints": [
+            "Wait for the draft.",
+            "Give three brief feedback points.",
+            "Do not replace the learner draft."
+          ],
+          "goal": "Write a supported B1 response about a science podcast.",
+          "instruction": "Write 5-6 connected sentences about a science podcast. Include a clear main point, a reason or example, and a tactful contrast. Submit your draft first."
+        }
+      },
+      "title": "Media experiences"
+    },
+    {
+      "content_sections": [
+        {
+          "body": "In this lesson, focus on a claim, a because-clause, and a specific supporting example. Notice how the ideas about local news apps are linked so that the listener can follow the speaker's meaning.",
+          "section_type": "explanation",
+          "title": "Notice the language"
+        },
+        {
+          "body": "I prefer local news apps because they report transport changes quickly. For instance, an alert helped me choose another bus route during roadworks yesterday.",
+          "section_type": "dialogue",
+          "title": "Context and meaning"
+        },
+        {
+          "body": "Prepare a three-sentence response about local news apps. Include the lesson language, one concrete detail, and a clear link between your ideas.",
+          "section_type": "practice",
+          "title": "Guided use"
+        }
+      ],
+      "duration_minutes": 35,
+      "exercises": [
+        {
+          "answer": "an alert helped the speaker choose another bus route",
+          "items": [
+            "an alert helped the speaker choose another bus route",
+            "The speaker gives no view or experience.",
+            "The speaker reaches the opposite conclusion."
+          ],
+          "prompt": "Choose the statement that best matches the message about local news apps.",
+          "type": "multiple_choice"
+        },
+        {
+          "answer": "so",
+          "prompt": "Complete this Reasons and examples sentence with a suitable linker: I have experience of this topic, ____ I can explain my view clearly.",
+          "type": "fill_blank"
+        },
+        {
+          "answer": "an alert helped the speaker choose another bus route",
+          "prompt": "Read the text: \"I prefer local news apps because they report transport changes quickly. For instance, an alert helped me choose another bus route during roadworks yesterday.\" Then answer: What example supports the opinion?",
+          "type": "reading"
+        },
+        {
+          "prompt": "Give a connected response about local news apps, then respond politely to one follow-up view.",
+          "rubric": {
+            "criteria": [
+              "States a clear experience or viewpoint.",
+              "Supports the main idea with a relevant detail.",
+              "Links ideas clearly and responds tactfully."
+            ]
+          },
+          "type": "speaking"
+        }
+      ],
+      "objectives": [
+        "Develop an opinion with a reason and a relevant example."
+      ],
+      "outline_id": "m16b1-v1-b1-u02-l02",
+      "prompts": {
+        "listening": {
+          "answer": "an alert helped the speaker choose another bus route",
+          "constraints": [
+            "Keep transcript private until the first answer.",
+            "Ask exactly one question before revealing it.",
+            "Use no media; use only the supplied transcript."
+          ],
+          "goal": "Identify the main point and supporting detail about local news apps.",
+          "instruction": "Listen once to a short message about local news apps. Answer one question before seeing the transcript, then listen again for the linking language.",
+          "media_required": false,
+          "question": "What example supports the opinion?",
+          "transcript": "I prefer local news apps because they report transport changes quickly. For instance, an alert helped me choose another bus route during roadworks yesterday."
+        },
+        "pronunciation": {
+          "constraints": [
+            "Assess only with learner audio.",
+            "Return NOT_ASSESSED without audio."
+          ],
+          "goal": "Use sentence stress to make the main viewpoint about local news apps clear.",
+          "instruction": "Read the key message about local news apps aloud. Stress the word that carries the main contrast or new information, first slowly and then naturally."
+        },
+        "speaking": {
+          "constraints": [
+            "Use at most four tutor turns.",
+            "Ask one relevant follow-up question.",
+            "End after the learner has supported and clarified the main point."
+          ],
+          "goal": "Complete a connected exchange about local news apps.",
+          "instruction": "Discuss local news apps with the tutor. Give your experience or opinion, support it, and respond tactfully to one different view."
+        },
+        "writing": {
+          "constraints": [
+            "Wait for the draft.",
+            "Give three brief feedback points.",
+            "Do not replace the learner draft."
+          ],
+          "goal": "Write a supported B1 response about local news apps.",
+          "instruction": "Write 5-6 connected sentences about local news apps. Include a clear main point, a reason or example, and a tactful contrast. Submit your draft first."
+        }
+      },
+      "title": "Reasons and examples"
+    },
+    {
+      "content_sections": [
+        {
+          "body": "In this lesson, focus on contrastive stress on the corrected or preferred information. Notice how the ideas about documentaries and short clips are linked so that the listener can follow the speaker's meaning.",
+          "section_type": "explanation",
+          "title": "Notice the language"
+        },
+        {
+          "body": "I do not dislike short clips, but I prefer DOCUMENTARIES when I want to understand a topic. Stressing documentaries corrects the idea that both formats are equally useful to me.",
+          "section_type": "dialogue",
+          "title": "Context and meaning"
+        },
+        {
+          "body": "Prepare a three-sentence response about documentaries and short clips. Include the lesson language, one concrete detail, and a clear link between your ideas.",
+          "section_type": "practice",
+          "title": "Guided use"
+        }
+      ],
+      "duration_minutes": 35,
+      "exercises": [
+        {
+          "answer": "documentaries",
+          "items": [
+            "documentaries",
+            "The speaker gives no view or experience.",
+            "The speaker reaches the opposite conclusion."
+          ],
+          "prompt": "Choose the statement that best matches the message about documentaries and short clips.",
+          "type": "multiple_choice"
+        },
+        {
+          "answer": "so",
+          "prompt": "Complete this Emphasis and viewpoint sentence with a suitable linker: I have experience of this topic, ____ I can explain my view clearly.",
+          "type": "fill_blank"
+        },
+        {
+          "answer": "documentaries",
+          "prompt": "Read the text: \"I do not dislike short clips, but I prefer DOCUMENTARIES when I want to understand a topic. Stressing documentaries corrects the idea that both formats are equally useful to me.\" Then answer: Which format does the speaker prefer for understanding a topic?",
+          "type": "reading"
+        },
+        {
+          "prompt": "Give a connected response about documentaries and short clips, then respond politely to one follow-up view.",
+          "rubric": {
+            "criteria": [
+              "States a clear experience or viewpoint.",
+              "Supports the main idea with a relevant detail.",
+              "Links ideas clearly and responds tactfully."
+            ]
+          },
+          "type": "speaking"
+        }
+      ],
+      "objectives": [
+        "Use contrastive stress and opinion frames to highlight a viewpoint."
+      ],
+      "outline_id": "m16b1-v1-b1-u02-l03",
+      "prompts": {
+        "listening": {
+          "answer": "documentaries",
+          "constraints": [
+            "Keep transcript private until the first answer.",
+            "Ask exactly one question before revealing it.",
+            "Use no media; use only the supplied transcript."
+          ],
+          "goal": "Identify the main point and supporting detail about documentaries and short clips.",
+          "instruction": "Listen once to a short message about documentaries and short clips. Answer one question before seeing the transcript, then listen again for the linking language.",
+          "media_required": false,
+          "question": "Which format does the speaker prefer for understanding a topic?",
+          "transcript": "I do not dislike short clips, but I prefer DOCUMENTARIES when I want to understand a topic. Stressing documentaries corrects the idea that both formats are equally useful to me."
+        },
+        "pronunciation": {
+          "constraints": [
+            "Assess only with learner audio.",
+            "Return NOT_ASSESSED without audio."
+          ],
+          "goal": "Use sentence stress to make the main viewpoint about documentaries and short clips clear.",
+          "instruction": "Read the key message about documentaries and short clips aloud. Stress the word that carries the main contrast or new information, first slowly and then naturally."
+        },
+        "speaking": {
+          "constraints": [
+            "Use at most four tutor turns.",
+            "Ask one relevant follow-up question.",
+            "End after the learner has supported and clarified the main point."
+          ],
+          "goal": "Complete a connected exchange about documentaries and short clips.",
+          "instruction": "Discuss documentaries and short clips with the tutor. Give your experience or opinion, support it, and respond tactfully to one different view."
+        },
+        "writing": {
+          "constraints": [
+            "Wait for the draft.",
+            "Give three brief feedback points.",
+            "Do not replace the learner draft."
+          ],
+          "goal": "Write a supported B1 response about documentaries and short clips.",
+          "instruction": "Write 5-6 connected sentences about documentaries and short clips. Include a clear main point, a reason or example, and a tactful contrast. Submit your draft first."
+        }
+      },
+      "title": "Emphasis and viewpoint"
+    },
+    {
+      "content_sections": [
+        {
+          "body": "In this lesson, focus on acknowledgement, polite disagreement, and a reason for caution. Notice how the ideas about sharing news online are linked so that the listener can follow the speaker's meaning.",
+          "section_type": "explanation",
+          "title": "Notice the language"
+        },
+        {
+          "body": "I agree that useful news should be shared, but we should check the source first. A post can look convincing even when an important detail is missing.",
+          "section_type": "dialogue",
+          "title": "Context and meaning"
+        },
+        {
+          "body": "Prepare a three-sentence response about sharing news online. Include the lesson language, one concrete detail, and a clear link between your ideas.",
+          "section_type": "practice",
+          "title": "Guided use"
+        }
+      ],
+      "duration_minutes": 35,
+      "exercises": [
+        {
+          "answer": "check the source",
+          "items": [
+            "check the source",
+            "The speaker gives no view or experience.",
+            "The speaker reaches the opposite conclusion."
+          ],
+          "prompt": "Choose the statement that best matches the message about sharing news online.",
+          "type": "multiple_choice"
+        },
+        {
+          "answer": "so",
+          "prompt": "Complete this Discussing different views sentence with a suitable linker: I have experience of this topic, ____ I can explain my view clearly.",
+          "type": "fill_blank"
+        },
+        {
+          "answer": "check the source",
+          "prompt": "Read the text: \"I agree that useful news should be shared, but we should check the source first. A post can look convincing even when an important detail is missing.\" Then answer: What should people do before sharing news?",
+          "type": "reading"
+        },
+        {
+          "prompt": "Give a connected response about sharing news online, then respond politely to one follow-up view.",
+          "rubric": {
+            "criteria": [
+              "States a clear experience or viewpoint.",
+              "Supports the main idea with a relevant detail.",
+              "Links ideas clearly and responds tactfully."
+            ]
+          },
+          "type": "speaking"
+        }
+      ],
+      "objectives": [
+        "Agree or disagree tactfully in a familiar media discussion."
+      ],
+      "outline_id": "m16b1-v1-b1-u02-l04",
+      "prompts": {
+        "listening": {
+          "answer": "check the source",
+          "constraints": [
+            "Keep transcript private until the first answer.",
+            "Ask exactly one question before revealing it.",
+            "Use no media; use only the supplied transcript."
+          ],
+          "goal": "Identify the main point and supporting detail about sharing news online.",
+          "instruction": "Listen once to a short message about sharing news online. Answer one question before seeing the transcript, then listen again for the linking language.",
+          "media_required": false,
+          "question": "What should people do before sharing news?",
+          "transcript": "I agree that useful news should be shared, but we should check the source first. A post can look convincing even when an important detail is missing."
+        },
+        "pronunciation": {
+          "constraints": [
+            "Assess only with learner audio.",
+            "Return NOT_ASSESSED without audio."
+          ],
+          "goal": "Use sentence stress to make the main viewpoint about sharing news online clear.",
+          "instruction": "Read the key message about sharing news online aloud. Stress the word that carries the main contrast or new information, first slowly and then naturally."
+        },
+        "speaking": {
+          "constraints": [
+            "Use at most four tutor turns.",
+            "Ask one relevant follow-up question.",
+            "End after the learner has supported and clarified the main point."
+          ],
+          "goal": "Complete a connected exchange about sharing news online.",
+          "instruction": "Discuss sharing news online with the tutor. Give your experience or opinion, support it, and respond tactfully to one different view."
+        },
+        "writing": {
+          "constraints": [
+            "Wait for the draft.",
+            "Give three brief feedback points.",
+            "Do not replace the learner draft."
+          ],
+          "goal": "Write a supported B1 response about sharing news online.",
+          "instruction": "Write 5-6 connected sentences about sharing news online. Include a clear main point, a reason or example, and a tactful contrast. Submit your draft first."
+        }
+      },
+      "title": "Discussing different views"
+    },
+    {
+      "content_sections": [
+        {
+          "body": "In this lesson, focus on experience, supported opinion, contrast, and tactful awareness of another view. Notice how the ideas about a weekly screen-free evening are linked so that the listener can follow the speaker's meaning.",
+          "section_type": "explanation",
+          "title": "Notice the language"
+        },
+        {
+          "body": "I have tried a screen-free evening every Wednesday for a month. In my opinion, it is helpful because I sleep better; however, I understand why some people need to stay available online.",
+          "section_type": "dialogue",
+          "title": "Context and meaning"
+        },
+        {
+          "body": "Prepare a three-sentence response about a weekly screen-free evening. Include the lesson language, one concrete detail, and a clear link between your ideas.",
+          "section_type": "practice",
+          "title": "Guided use"
+        }
+      ],
+      "duration_minutes": 35,
+      "exercises": [
+        {
+          "answer": "the speaker sleeps better",
+          "items": [
+            "the speaker sleeps better",
+            "The speaker gives no view or experience.",
+            "The speaker reaches the opposite conclusion."
+          ],
+          "prompt": "Choose the statement that best matches the message about a weekly screen-free evening.",
+          "type": "multiple_choice"
+        },
+        {
+          "answer": "so",
+          "prompt": "Complete this Review: media opinions sentence with a suitable linker: I have experience of this topic, ____ I can explain my view clearly.",
+          "type": "fill_blank"
+        },
+        {
+          "answer": "the speaker sleeps better",
+          "prompt": "Read the text: \"I have tried a screen-free evening every Wednesday for a month. In my opinion, it is helpful because I sleep better; however, I understand why some people need to stay available online.\" Then answer: How has the routine helped the speaker?",
+          "type": "reading"
+        },
+        {
+          "prompt": "Give a connected response about a weekly screen-free evening, then respond politely to one follow-up view.",
+          "rubric": {
+            "criteria": [
+              "States a clear experience or viewpoint.",
+              "Supports the main idea with a relevant detail.",
+              "Links ideas clearly and responds tactfully."
+            ]
+          },
+          "type": "speaking"
+        }
+      ],
+      "objectives": [
+        "Review connected opinions about familiar media."
+      ],
+      "outline_id": "m16b1-v1-b1-u02-l05",
+      "prompts": {
+        "listening": {
+          "answer": "the speaker sleeps better",
+          "constraints": [
+            "Keep transcript private until the first answer.",
+            "Ask exactly one question before revealing it.",
+            "Use no media; use only the supplied transcript."
+          ],
+          "goal": "Identify the main point and supporting detail about a weekly screen-free evening.",
+          "instruction": "Listen once to a short message about a weekly screen-free evening. Answer one question before seeing the transcript, then listen again for the linking language.",
+          "media_required": false,
+          "question": "How has the routine helped the speaker?",
+          "transcript": "I have tried a screen-free evening every Wednesday for a month. In my opinion, it is helpful because I sleep better; however, I understand why some people need to stay available online."
+        },
+        "pronunciation": {
+          "constraints": [
+            "Assess only with learner audio.",
+            "Return NOT_ASSESSED without audio."
+          ],
+          "goal": "Use sentence stress to make the main viewpoint about a weekly screen-free evening clear.",
+          "instruction": "Read the key message about a weekly screen-free evening aloud. Stress the word that carries the main contrast or new information, first slowly and then naturally."
+        },
+        "speaking": {
+          "constraints": [
+            "Use at most four tutor turns.",
+            "Ask one relevant follow-up question.",
+            "End after the learner has supported and clarified the main point."
+          ],
+          "goal": "Complete a connected exchange about a weekly screen-free evening.",
+          "instruction": "Discuss a weekly screen-free evening with the tutor. Give your experience or opinion, support it, and respond tactfully to one different view."
+        },
+        "writing": {
+          "constraints": [
+            "Wait for the draft.",
+            "Give three brief feedback points.",
+            "Do not replace the learner draft."
+          ],
+          "goal": "Write a supported B1 response about a weekly screen-free evening.",
+          "instruction": "Write 5-6 connected sentences about a weekly screen-free evening. Include a clear main point, a reason or example, and a tactful contrast. Submit your draft first."
+        }
+      },
+      "title": "Review: media opinions"
+    }
+  ],
+  "record_type": "b1_pilot_content_input",
+  "schema_version": "1.0"
+}

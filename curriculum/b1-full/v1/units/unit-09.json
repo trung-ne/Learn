@@ -1,0 +1,993 @@
+{
+  "schema_version": "1.0",
+  "record_type": "b1_full_content_unit",
+  "unit_id": "m16b1-v1-b1-u09",
+  "tier": "B1.2",
+  "content_origin": "PROJECT_AUTHORED",
+  "lessons": [
+    {
+      "lesson_id": "m16b1-v1-b1-u09-l01",
+      "title": "A relationship story",
+      "duration_minutes": 40,
+      "objective_target_ids": [
+        "b1t_u06_grammar",
+        "b1t_u06_vocabulary_senses",
+        "b1t_u06_collocations"
+      ],
+      "objectives": [
+        "Sequence events that changed or maintained a relationship.",
+        "Develop a connected response in a discussion about a relationship story with a reason and relevant detail."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice the connected language (10 minutes)",
+          "body": "Read this model: 'I have considered a relationship story, and my experience shows one useful reason for this view.' Identify the main point, the linking expression, and the supporting detail. Then explain how the wording helps the speaker achieve this objective: Sequence events that changed or maintained a relationship.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_collocations"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided exchange (10 minutes)",
+          "body": "Work with a partner in a discussion about a relationship story. Give a clear main point, support it with a specific reason, and respond to one follow-up question. Use tactful language when the other speaker presents a different perspective.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_collocations"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent connected response (8 minutes)",
+          "body": "Prepare a one-minute response about a relationship story. Organize it into thought groups, stress the words that carry your main point, and finish with a concise conclusion rather than a list of isolated sentences.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_collocations"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_collocations"
+          ],
+          "prompt": "Choose the most connected and tactful response for a discussion about a relationship story.",
+          "media_required": false,
+          "options": [
+            "I have considered a relationship story, and my experience shows one useful reason for this view.",
+            "A relationship story is a topic, but I will not explain my view.",
+            "Several details exist about a relationship story, perhaps."
+          ],
+          "correct_answer": "I have considered a relationship story, and my experience shows one useful reason for this view."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_collocations"
+          ],
+          "prompt": "Complete this response about a relationship story: 'My experience supports this view ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "because it offers evidence about a relationship story"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_collocations"
+          ],
+          "prompt": "Read the short response about a relationship story and identify how the writer handles another view.",
+          "media_required": false,
+          "stimulus": "Although another person may disagree about a relationship story, I can respond politely and explain my reason.",
+          "questions": [
+            {
+              "question": "How does the writer respond to disagreement?",
+              "acceptable_answers": [
+                "The writer responds politely and gives a reason in the discussion of a relationship story."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_collocations"
+          ],
+          "prompt": "Speak for 60–90 seconds in a discussion about a relationship story. State your point, support it, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Presents a connected main point about a relationship story with relevant support.",
+              "Responds clearly and tactfully to a follow-up question about a relationship story."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short response about a relationship story. Identify the view and supporting reason before the transcript is revealed, then listen again to check the linking language.",
+          "goal": "Follow the main point and support in spoken language about a relationship story.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_collocations"
+          ],
+          "transcript": "I have considered a relationship story, and my experience shows one useful reason for this view.",
+          "question": "What view and supporting reason does the speaker communicate?",
+          "answer": "The speaker connects a considered view about a relationship story to a useful reason from experience.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a discussion about a relationship story. Learner role: present and support a view. Tutor role: ask one probing question and offer a different perspective. End after the learner responds tactfully and summarizes the point.",
+          "goal": "Sustain a connected, tactful exchange about a relationship story.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_collocations"
+          ],
+          "constraints": [
+            "State both roles before beginning the exchange.",
+            "Use at most four tutor turns and stop after the learner summary."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Record the model about a relationship story in meaningful thought groups. Stress the main point and reason, then compare a second attempt with the first for clarity and rhythm.",
+          "goal": "Make connected speech about a relationship story easy to follow.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_collocations"
+          ],
+          "target": "Thought groups and information stress for a relationship story",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write 90–120 words about a relationship story. State a position or experience, support it with a reason and example, and acknowledge another perspective. Submit your own draft before asking for feedback.",
+          "goal": "Produce a connected written response about a relationship story.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_collocations"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u09-l02",
+      "title": "Topic development",
+      "duration_minutes": 40,
+      "objective_target_ids": [
+        "b1t_u06_discourse",
+        "b1t_u06_topics",
+        "b1t_u06_skills"
+      ],
+      "objectives": [
+        "Develop the people, events, and consequences in a clear account.",
+        "Develop a connected response in a discussion about topic development with a reason and relevant detail."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice the connected language (10 minutes)",
+          "body": "Read this model: 'I have considered topic development, and my experience shows one useful reason for this view.' Identify the main point, the linking expression, and the supporting detail. Then explain how the wording helps the speaker achieve this objective: Develop the people, events, and consequences in a clear account.",
+          "target_ids": [
+            "b1t_u06_discourse",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided exchange (10 minutes)",
+          "body": "Work with a partner in a discussion about topic development. Give a clear main point, support it with a specific reason, and respond to one follow-up question. Use tactful language when the other speaker presents a different perspective.",
+          "target_ids": [
+            "b1t_u06_discourse",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent connected response (8 minutes)",
+          "body": "Prepare a one-minute response about topic development. Organize it into thought groups, stress the words that carry your main point, and finish with a concise conclusion rather than a list of isolated sentences.",
+          "target_ids": [
+            "b1t_u06_discourse",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "b1t_u06_discourse",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ],
+          "prompt": "Choose the most connected and tactful response for a discussion about topic development.",
+          "media_required": false,
+          "options": [
+            "I have considered topic development, and my experience shows one useful reason for this view.",
+            "Topic development is a topic, but I will not explain my view.",
+            "Several details exist about topic development, perhaps."
+          ],
+          "correct_answer": "I have considered topic development, and my experience shows one useful reason for this view."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "b1t_u06_discourse",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ],
+          "prompt": "Complete this response about topic development: 'My experience supports this view ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "because it offers evidence about topic development"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "b1t_u06_discourse",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ],
+          "prompt": "Read the short response about topic development and identify how the writer handles another view.",
+          "media_required": false,
+          "stimulus": "Although another person may disagree about topic development, I can respond politely and explain my reason.",
+          "questions": [
+            {
+              "question": "How does the writer respond to disagreement?",
+              "acceptable_answers": [
+                "The writer responds politely and gives a reason in the discussion of topic development."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "b1t_u06_discourse",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ],
+          "prompt": "Speak for 60–90 seconds in a discussion about topic development. State your point, support it, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Presents a connected main point about topic development with relevant support.",
+              "Responds clearly and tactfully to a follow-up question about topic development."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short response about topic development. Identify the view and supporting reason before the transcript is revealed, then listen again to check the linking language.",
+          "goal": "Follow the main point and support in spoken language about topic development.",
+          "target_ids": [
+            "b1t_u06_discourse",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ],
+          "transcript": "I have considered topic development, and my experience shows one useful reason for this view.",
+          "question": "What view and supporting reason does the speaker communicate?",
+          "answer": "The speaker connects a considered view about topic development to a useful reason from experience.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a discussion about topic development. Learner role: present and support a view. Tutor role: ask one probing question and offer a different perspective. End after the learner responds tactfully and summarizes the point.",
+          "goal": "Sustain a connected, tactful exchange about topic development.",
+          "target_ids": [
+            "b1t_u06_discourse",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ],
+          "constraints": [
+            "State both roles before beginning the exchange.",
+            "Use at most four tutor turns and stop after the learner summary."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Record the model about topic development in meaningful thought groups. Stress the main point and reason, then compare a second attempt with the first for clarity and rhythm.",
+          "goal": "Make connected speech about topic development easy to follow.",
+          "target_ids": [
+            "b1t_u06_discourse",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ],
+          "target": "Thought groups and information stress for topic development",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write 90–120 words about topic development. State a position or experience, support it with a reason and example, and acknowledge another perspective. Submit your own draft before asking for feedback.",
+          "goal": "Produce a connected written response about topic development.",
+          "target_ids": [
+            "b1t_u06_discourse",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u09-l03",
+      "title": "Clarifying sensitively",
+      "duration_minutes": 40,
+      "objective_target_ids": [
+        "b1t_u06_functions",
+        "b1t_u06_pragmatics",
+        "b1t_u06_lexical_chunks"
+      ],
+      "objectives": [
+        "Repair meaning with register suitable for a less familiar setting.",
+        "Develop a connected response in a discussion about clarifying sensitively with a reason and relevant detail."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice the connected language (10 minutes)",
+          "body": "Read this model: 'I have considered clarifying sensitively, and my experience shows one useful reason for this view.' Identify the main point, the linking expression, and the supporting detail. Then explain how the wording helps the speaker achieve this objective: Repair meaning with register suitable for a less familiar setting.",
+          "target_ids": [
+            "b1t_u06_functions",
+            "b1t_u06_pragmatics",
+            "b1t_u06_lexical_chunks"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided exchange (10 minutes)",
+          "body": "Work with a partner in a discussion about clarifying sensitively. Give a clear main point, support it with a specific reason, and respond to one follow-up question. Use tactful language when the other speaker presents a different perspective.",
+          "target_ids": [
+            "b1t_u06_functions",
+            "b1t_u06_pragmatics",
+            "b1t_u06_lexical_chunks"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent connected response (8 minutes)",
+          "body": "Prepare a one-minute response about clarifying sensitively. Organize it into thought groups, stress the words that carry your main point, and finish with a concise conclusion rather than a list of isolated sentences.",
+          "target_ids": [
+            "b1t_u06_functions",
+            "b1t_u06_pragmatics",
+            "b1t_u06_lexical_chunks"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "b1t_u06_functions",
+            "b1t_u06_pragmatics",
+            "b1t_u06_lexical_chunks"
+          ],
+          "prompt": "Choose the most connected and tactful response for a discussion about clarifying sensitively.",
+          "media_required": false,
+          "options": [
+            "I have considered clarifying sensitively, and my experience shows one useful reason for this view.",
+            "Clarifying sensitively is a topic, but I will not explain my view.",
+            "Several details exist about clarifying sensitively, perhaps."
+          ],
+          "correct_answer": "I have considered clarifying sensitively, and my experience shows one useful reason for this view."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "b1t_u06_functions",
+            "b1t_u06_pragmatics",
+            "b1t_u06_lexical_chunks"
+          ],
+          "prompt": "Complete this response about clarifying sensitively: 'My experience supports this view ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "because it offers evidence about clarifying sensitively"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "b1t_u06_functions",
+            "b1t_u06_pragmatics",
+            "b1t_u06_lexical_chunks"
+          ],
+          "prompt": "Read the short response about clarifying sensitively and identify how the writer handles another view.",
+          "media_required": false,
+          "stimulus": "Although another person may disagree about clarifying sensitively, I can respond politely and explain my reason.",
+          "questions": [
+            {
+              "question": "How does the writer respond to disagreement?",
+              "acceptable_answers": [
+                "The writer responds politely and gives a reason in the discussion of clarifying sensitively."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "b1t_u06_functions",
+            "b1t_u06_pragmatics",
+            "b1t_u06_lexical_chunks"
+          ],
+          "prompt": "Speak for 60–90 seconds in a discussion about clarifying sensitively. State your point, support it, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Presents a connected main point about clarifying sensitively with relevant support.",
+              "Responds clearly and tactfully to a follow-up question about clarifying sensitively."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short response about clarifying sensitively. Identify the view and supporting reason before the transcript is revealed, then listen again to check the linking language.",
+          "goal": "Follow the main point and support in spoken language about clarifying sensitively.",
+          "target_ids": [
+            "b1t_u06_functions",
+            "b1t_u06_pragmatics",
+            "b1t_u06_lexical_chunks"
+          ],
+          "transcript": "I have considered clarifying sensitively, and my experience shows one useful reason for this view.",
+          "question": "What view and supporting reason does the speaker communicate?",
+          "answer": "The speaker connects a considered view about clarifying sensitively to a useful reason from experience.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a discussion about clarifying sensitively. Learner role: present and support a view. Tutor role: ask one probing question and offer a different perspective. End after the learner responds tactfully and summarizes the point.",
+          "goal": "Sustain a connected, tactful exchange about clarifying sensitively.",
+          "target_ids": [
+            "b1t_u06_functions",
+            "b1t_u06_pragmatics",
+            "b1t_u06_lexical_chunks"
+          ],
+          "constraints": [
+            "State both roles before beginning the exchange.",
+            "Use at most four tutor turns and stop after the learner summary."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Record the model about clarifying sensitively in meaningful thought groups. Stress the main point and reason, then compare a second attempt with the first for clarity and rhythm.",
+          "goal": "Make connected speech about clarifying sensitively easy to follow.",
+          "target_ids": [
+            "b1t_u06_functions",
+            "b1t_u06_pragmatics",
+            "b1t_u06_lexical_chunks"
+          ],
+          "target": "Thought groups and information stress for clarifying sensitively",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write 90–120 words about clarifying sensitively. State a position or experience, support it with a reason and example, and acknowledge another perspective. Submit your own draft before asking for feedback.",
+          "goal": "Produce a connected written response about clarifying sensitively.",
+          "target_ids": [
+            "b1t_u06_functions",
+            "b1t_u06_pragmatics",
+            "b1t_u06_lexical_chunks"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u09-l04",
+      "title": "Telling the story aloud",
+      "duration_minutes": 40,
+      "objective_target_ids": [
+        "b1t_u06_pronunciation",
+        "b1t_u06_skills",
+        "b1t_u06_functions"
+      ],
+      "objectives": [
+        "Use narrative intonation and connected language in discussion.",
+        "Develop a connected response in a discussion about telling the story aloud with a reason and relevant detail."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice the connected language (10 minutes)",
+          "body": "Read this model: 'I have considered telling the story aloud, and my experience shows one useful reason for this view.' Identify the main point, the linking expression, and the supporting detail. Then explain how the wording helps the speaker achieve this objective: Use narrative intonation and connected language in discussion.",
+          "target_ids": [
+            "b1t_u06_pronunciation",
+            "b1t_u06_skills",
+            "b1t_u06_functions"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided exchange (10 minutes)",
+          "body": "Work with a partner in a discussion about telling the story aloud. Give a clear main point, support it with a specific reason, and respond to one follow-up question. Use tactful language when the other speaker presents a different perspective.",
+          "target_ids": [
+            "b1t_u06_pronunciation",
+            "b1t_u06_skills",
+            "b1t_u06_functions"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent connected response (8 minutes)",
+          "body": "Prepare a one-minute response about telling the story aloud. Organize it into thought groups, stress the words that carry your main point, and finish with a concise conclusion rather than a list of isolated sentences.",
+          "target_ids": [
+            "b1t_u06_pronunciation",
+            "b1t_u06_skills",
+            "b1t_u06_functions"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "b1t_u06_pronunciation",
+            "b1t_u06_skills",
+            "b1t_u06_functions"
+          ],
+          "prompt": "Choose the most connected and tactful response for a discussion about telling the story aloud.",
+          "media_required": false,
+          "options": [
+            "I have considered telling the story aloud, and my experience shows one useful reason for this view.",
+            "Telling the story aloud is a topic, but I will not explain my view.",
+            "Several details exist about telling the story aloud, perhaps."
+          ],
+          "correct_answer": "I have considered telling the story aloud, and my experience shows one useful reason for this view."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "b1t_u06_pronunciation",
+            "b1t_u06_skills",
+            "b1t_u06_functions"
+          ],
+          "prompt": "Complete this response about telling the story aloud: 'My experience supports this view ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "because it offers evidence about telling the story aloud"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "b1t_u06_pronunciation",
+            "b1t_u06_skills",
+            "b1t_u06_functions"
+          ],
+          "prompt": "Read the short response about telling the story aloud and identify how the writer handles another view.",
+          "media_required": false,
+          "stimulus": "Although another person may disagree about telling the story aloud, I can respond politely and explain my reason.",
+          "questions": [
+            {
+              "question": "How does the writer respond to disagreement?",
+              "acceptable_answers": [
+                "The writer responds politely and gives a reason in the discussion of telling the story aloud."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "b1t_u06_pronunciation",
+            "b1t_u06_skills",
+            "b1t_u06_functions"
+          ],
+          "prompt": "Speak for 60–90 seconds in a discussion about telling the story aloud. State your point, support it, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Presents a connected main point about telling the story aloud with relevant support.",
+              "Responds clearly and tactfully to a follow-up question about telling the story aloud."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short response about telling the story aloud. Identify the view and supporting reason before the transcript is revealed, then listen again to check the linking language.",
+          "goal": "Follow the main point and support in spoken language about telling the story aloud.",
+          "target_ids": [
+            "b1t_u06_pronunciation",
+            "b1t_u06_skills",
+            "b1t_u06_functions"
+          ],
+          "transcript": "I have considered telling the story aloud, and my experience shows one useful reason for this view.",
+          "question": "What view and supporting reason does the speaker communicate?",
+          "answer": "The speaker connects a considered view about telling the story aloud to a useful reason from experience.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a discussion about telling the story aloud. Learner role: present and support a view. Tutor role: ask one probing question and offer a different perspective. End after the learner responds tactfully and summarizes the point.",
+          "goal": "Sustain a connected, tactful exchange about telling the story aloud.",
+          "target_ids": [
+            "b1t_u06_pronunciation",
+            "b1t_u06_skills",
+            "b1t_u06_functions"
+          ],
+          "constraints": [
+            "State both roles before beginning the exchange.",
+            "Use at most four tutor turns and stop after the learner summary."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Record the model about telling the story aloud in meaningful thought groups. Stress the main point and reason, then compare a second attempt with the first for clarity and rhythm.",
+          "goal": "Make connected speech about telling the story aloud easy to follow.",
+          "target_ids": [
+            "b1t_u06_pronunciation",
+            "b1t_u06_skills",
+            "b1t_u06_functions"
+          ],
+          "target": "Thought groups and information stress for telling the story aloud",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write 90–120 words about telling the story aloud. State a position or experience, support it with a reason and example, and acknowledge another perspective. Submit your own draft before asking for feedback.",
+          "goal": "Produce a connected written response about telling the story aloud.",
+          "target_ids": [
+            "b1t_u06_pronunciation",
+            "b1t_u06_skills",
+            "b1t_u06_functions"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u09-l05",
+      "title": "Review: relationships over time",
+      "duration_minutes": 40,
+      "objective_target_ids": [
+        "b1t_u06_grammar",
+        "b1t_u06_vocabulary_senses",
+        "b1t_u06_functions",
+        "b1t_u06_pronunciation",
+        "b1t_u06_discourse",
+        "b1t_u06_pragmatics",
+        "b1t_u06_collocations",
+        "b1t_u06_lexical_chunks",
+        "b1t_u06_topics",
+        "b1t_u06_skills"
+      ],
+      "objectives": [
+        "Review relationship narratives and sensitive clarification.",
+        "Develop a connected response in a discussion about review: relationships over time with a reason and relevant detail."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice the connected language (10 minutes)",
+          "body": "Read this model: 'I have considered review: relationships over time, and my experience shows one useful reason for this view.' Identify the main point, the linking expression, and the supporting detail. Then explain how the wording helps the speaker achieve this objective: Review relationship narratives and sensitive clarification.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided exchange (10 minutes)",
+          "body": "Work with a partner in a discussion about review: relationships over time. Give a clear main point, support it with a specific reason, and respond to one follow-up question. Use tactful language when the other speaker presents a different perspective.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent connected response (8 minutes)",
+          "body": "Prepare a one-minute response about review: relationships over time. Organize it into thought groups, stress the words that carry your main point, and finish with a concise conclusion rather than a list of isolated sentences.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ],
+          "prompt": "Choose the most connected and tactful response for a discussion about review: relationships over time.",
+          "media_required": false,
+          "options": [
+            "I have considered review: relationships over time, and my experience shows one useful reason for this view.",
+            "Review: relationships over time is a topic, but I will not explain my view.",
+            "Several details exist about review: relationships over time, perhaps."
+          ],
+          "correct_answer": "I have considered review: relationships over time, and my experience shows one useful reason for this view."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ],
+          "prompt": "Complete this response about review: relationships over time: 'My experience supports this view ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "because it offers evidence about review: relationships over time"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ],
+          "prompt": "Read the short response about review: relationships over time and identify how the writer handles another view.",
+          "media_required": false,
+          "stimulus": "Although another person may disagree about review: relationships over time, I can respond politely and explain my reason.",
+          "questions": [
+            {
+              "question": "How does the writer respond to disagreement?",
+              "acceptable_answers": [
+                "The writer responds politely and gives a reason in the discussion of review: relationships over time."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ],
+          "prompt": "Speak for 60–90 seconds in a discussion about review: relationships over time. State your point, support it, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Presents a connected main point about review: relationships over time with relevant support.",
+              "Responds clearly and tactfully to a follow-up question about review: relationships over time."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short response about review: relationships over time. Identify the view and supporting reason before the transcript is revealed, then listen again to check the linking language.",
+          "goal": "Follow the main point and support in spoken language about review: relationships over time.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ],
+          "transcript": "I have considered review: relationships over time, and my experience shows one useful reason for this view.",
+          "question": "What view and supporting reason does the speaker communicate?",
+          "answer": "The speaker connects a considered view about review: relationships over time to a useful reason from experience.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a discussion about review: relationships over time. Learner role: present and support a view. Tutor role: ask one probing question and offer a different perspective. End after the learner responds tactfully and summarizes the point.",
+          "goal": "Sustain a connected, tactful exchange about review: relationships over time.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ],
+          "constraints": [
+            "State both roles before beginning the exchange.",
+            "Use at most four tutor turns and stop after the learner summary."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Record the model about review: relationships over time in meaningful thought groups. Stress the main point and reason, then compare a second attempt with the first for clarity and rhythm.",
+          "goal": "Make connected speech about review: relationships over time easy to follow.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ],
+          "target": "Thought groups and information stress for review: relationships over time",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write 90–120 words about review: relationships over time. State a position or experience, support it with a reason and example, and acknowledge another perspective. Submit your own draft before asking for feedback.",
+          "goal": "Produce a connected written response about review: relationships over time.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    }
+  ]
+}

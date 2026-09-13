@@ -1,0 +1,993 @@
+{
+  "schema_version": "1.0",
+  "record_type": "b1_full_content_unit",
+  "unit_id": "m16b1-v1-b1-u03",
+  "tier": "B1.1",
+  "content_origin": "PROJECT_AUTHORED",
+  "lessons": [
+    {
+      "lesson_id": "m16b1-v1-b1-u03-l01",
+      "title": "Changes in relationships",
+      "duration_minutes": 40,
+      "objective_target_ids": [
+        "b1t_u01_grammar",
+        "b1t_u01_vocabulary_senses",
+        "b1t_u01_topics"
+      ],
+      "objectives": [
+        "Describe an experience or change in a familiar relationship.",
+        "Develop a connected response in a discussion about changes in relationships with a reason and relevant detail."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice the connected language (10 minutes)",
+          "body": "Read this model: 'I have considered changes in relationships, and my experience shows one useful reason for this view.' Identify the main point, the linking expression, and the supporting detail. Then explain how the wording helps the speaker achieve this objective: Describe an experience or change in a familiar relationship.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_topics"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided exchange (10 minutes)",
+          "body": "Work with a partner in a discussion about changes in relationships. Give a clear main point, support it with a specific reason, and respond to one follow-up question. Use tactful language when the other speaker presents a different perspective.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_topics"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent connected response (8 minutes)",
+          "body": "Prepare a one-minute response about changes in relationships. Organize it into thought groups, stress the words that carry your main point, and finish with a concise conclusion rather than a list of isolated sentences.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_topics"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_topics"
+          ],
+          "prompt": "Choose the most connected and tactful response for a discussion about changes in relationships.",
+          "media_required": false,
+          "options": [
+            "I have considered changes in relationships, and my experience shows one useful reason for this view.",
+            "Changes in relationships is a topic, but I will not explain my view.",
+            "Several details exist about changes in relationships, perhaps."
+          ],
+          "correct_answer": "I have considered changes in relationships, and my experience shows one useful reason for this view."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_topics"
+          ],
+          "prompt": "Complete this response about changes in relationships: 'My experience supports this view ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "because it offers evidence about changes in relationships"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_topics"
+          ],
+          "prompt": "Read the short response about changes in relationships and identify how the writer handles another view.",
+          "media_required": false,
+          "stimulus": "Although another person may disagree about changes in relationships, I can respond politely and explain my reason.",
+          "questions": [
+            {
+              "question": "How does the writer respond to disagreement?",
+              "acceptable_answers": [
+                "The writer responds politely and gives a reason in the discussion of changes in relationships."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_topics"
+          ],
+          "prompt": "Speak for 60–90 seconds in a discussion about changes in relationships. State your point, support it, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Presents a connected main point about changes in relationships with relevant support.",
+              "Responds clearly and tactfully to a follow-up question about changes in relationships."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short response about changes in relationships. Identify the view and supporting reason before the transcript is revealed, then listen again to check the linking language.",
+          "goal": "Follow the main point and support in spoken language about changes in relationships.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_topics"
+          ],
+          "transcript": "I have considered changes in relationships, and my experience shows one useful reason for this view.",
+          "question": "What view and supporting reason does the speaker communicate?",
+          "answer": "The speaker connects a considered view about changes in relationships to a useful reason from experience.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a discussion about changes in relationships. Learner role: present and support a view. Tutor role: ask one probing question and offer a different perspective. End after the learner responds tactfully and summarizes the point.",
+          "goal": "Sustain a connected, tactful exchange about changes in relationships.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_topics"
+          ],
+          "constraints": [
+            "State both roles before beginning the exchange.",
+            "Use at most four tutor turns and stop after the learner summary."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Record the model about changes in relationships in meaningful thought groups. Stress the main point and reason, then compare a second attempt with the first for clarity and rhythm.",
+          "goal": "Make connected speech about changes in relationships easy to follow.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_topics"
+          ],
+          "target": "Thought groups and information stress for changes in relationships",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write 90–120 words about changes in relationships. State a position or experience, support it with a reason and example, and acknowledge another perspective. Submit your own draft before asking for feedback.",
+          "goal": "Produce a connected written response about changes in relationships.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_topics"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u03-l02",
+      "title": "Expressing a concern",
+      "duration_minutes": 40,
+      "objective_target_ids": [
+        "b1t_u01_functions",
+        "b1t_u01_discourse",
+        "b1t_u01_lexical_chunks"
+      ],
+      "objectives": [
+        "Give a view and explain a relationship concern clearly.",
+        "Develop a connected response in a discussion about expressing a concern with a reason and relevant detail."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice the connected language (10 minutes)",
+          "body": "Read this model: 'I have considered expressing a concern, and my experience shows one useful reason for this view.' Identify the main point, the linking expression, and the supporting detail. Then explain how the wording helps the speaker achieve this objective: Give a view and explain a relationship concern clearly.",
+          "target_ids": [
+            "b1t_u01_functions",
+            "b1t_u01_discourse",
+            "b1t_u01_lexical_chunks"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided exchange (10 minutes)",
+          "body": "Work with a partner in a discussion about expressing a concern. Give a clear main point, support it with a specific reason, and respond to one follow-up question. Use tactful language when the other speaker presents a different perspective.",
+          "target_ids": [
+            "b1t_u01_functions",
+            "b1t_u01_discourse",
+            "b1t_u01_lexical_chunks"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent connected response (8 minutes)",
+          "body": "Prepare a one-minute response about expressing a concern. Organize it into thought groups, stress the words that carry your main point, and finish with a concise conclusion rather than a list of isolated sentences.",
+          "target_ids": [
+            "b1t_u01_functions",
+            "b1t_u01_discourse",
+            "b1t_u01_lexical_chunks"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "b1t_u01_functions",
+            "b1t_u01_discourse",
+            "b1t_u01_lexical_chunks"
+          ],
+          "prompt": "Choose the most connected and tactful response for a discussion about expressing a concern.",
+          "media_required": false,
+          "options": [
+            "I have considered expressing a concern, and my experience shows one useful reason for this view.",
+            "Expressing a concern is a topic, but I will not explain my view.",
+            "Several details exist about expressing a concern, perhaps."
+          ],
+          "correct_answer": "I have considered expressing a concern, and my experience shows one useful reason for this view."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "b1t_u01_functions",
+            "b1t_u01_discourse",
+            "b1t_u01_lexical_chunks"
+          ],
+          "prompt": "Complete this response about expressing a concern: 'My experience supports this view ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "because it offers evidence about expressing a concern"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "b1t_u01_functions",
+            "b1t_u01_discourse",
+            "b1t_u01_lexical_chunks"
+          ],
+          "prompt": "Read the short response about expressing a concern and identify how the writer handles another view.",
+          "media_required": false,
+          "stimulus": "Although another person may disagree about expressing a concern, I can respond politely and explain my reason.",
+          "questions": [
+            {
+              "question": "How does the writer respond to disagreement?",
+              "acceptable_answers": [
+                "The writer responds politely and gives a reason in the discussion of expressing a concern."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "b1t_u01_functions",
+            "b1t_u01_discourse",
+            "b1t_u01_lexical_chunks"
+          ],
+          "prompt": "Speak for 60–90 seconds in a discussion about expressing a concern. State your point, support it, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Presents a connected main point about expressing a concern with relevant support.",
+              "Responds clearly and tactfully to a follow-up question about expressing a concern."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short response about expressing a concern. Identify the view and supporting reason before the transcript is revealed, then listen again to check the linking language.",
+          "goal": "Follow the main point and support in spoken language about expressing a concern.",
+          "target_ids": [
+            "b1t_u01_functions",
+            "b1t_u01_discourse",
+            "b1t_u01_lexical_chunks"
+          ],
+          "transcript": "I have considered expressing a concern, and my experience shows one useful reason for this view.",
+          "question": "What view and supporting reason does the speaker communicate?",
+          "answer": "The speaker connects a considered view about expressing a concern to a useful reason from experience.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a discussion about expressing a concern. Learner role: present and support a view. Tutor role: ask one probing question and offer a different perspective. End after the learner responds tactfully and summarizes the point.",
+          "goal": "Sustain a connected, tactful exchange about expressing a concern.",
+          "target_ids": [
+            "b1t_u01_functions",
+            "b1t_u01_discourse",
+            "b1t_u01_lexical_chunks"
+          ],
+          "constraints": [
+            "State both roles before beginning the exchange.",
+            "Use at most four tutor turns and stop after the learner summary."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Record the model about expressing a concern in meaningful thought groups. Stress the main point and reason, then compare a second attempt with the first for clarity and rhythm.",
+          "goal": "Make connected speech about expressing a concern easy to follow.",
+          "target_ids": [
+            "b1t_u01_functions",
+            "b1t_u01_discourse",
+            "b1t_u01_lexical_chunks"
+          ],
+          "target": "Thought groups and information stress for expressing a concern",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write 90–120 words about expressing a concern. State a position or experience, support it with a reason and example, and acknowledge another perspective. Submit your own draft before asking for feedback.",
+          "goal": "Produce a connected written response about expressing a concern.",
+          "target_ids": [
+            "b1t_u01_functions",
+            "b1t_u01_discourse",
+            "b1t_u01_lexical_chunks"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u03-l03",
+      "title": "Tactful responses",
+      "duration_minutes": 40,
+      "objective_target_ids": [
+        "b1t_u01_pronunciation",
+        "b1t_u01_pragmatics",
+        "b1t_u01_skills"
+      ],
+      "objectives": [
+        "Use suitable stress and pragmatic choices when views differ.",
+        "Develop a connected response in a discussion about tactful responses with a reason and relevant detail."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice the connected language (10 minutes)",
+          "body": "Read this model: 'I have considered tactful responses, and my experience shows one useful reason for this view.' Identify the main point, the linking expression, and the supporting detail. Then explain how the wording helps the speaker achieve this objective: Use suitable stress and pragmatic choices when views differ.",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_pragmatics",
+            "b1t_u01_skills"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided exchange (10 minutes)",
+          "body": "Work with a partner in a discussion about tactful responses. Give a clear main point, support it with a specific reason, and respond to one follow-up question. Use tactful language when the other speaker presents a different perspective.",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_pragmatics",
+            "b1t_u01_skills"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent connected response (8 minutes)",
+          "body": "Prepare a one-minute response about tactful responses. Organize it into thought groups, stress the words that carry your main point, and finish with a concise conclusion rather than a list of isolated sentences.",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_pragmatics",
+            "b1t_u01_skills"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_pragmatics",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Choose the most connected and tactful response for a discussion about tactful responses.",
+          "media_required": false,
+          "options": [
+            "I have considered tactful responses, and my experience shows one useful reason for this view.",
+            "Tactful responses is a topic, but I will not explain my view.",
+            "Several details exist about tactful responses, perhaps."
+          ],
+          "correct_answer": "I have considered tactful responses, and my experience shows one useful reason for this view."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_pragmatics",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Complete this response about tactful responses: 'My experience supports this view ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "because it offers evidence about tactful responses"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_pragmatics",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Read the short response about tactful responses and identify how the writer handles another view.",
+          "media_required": false,
+          "stimulus": "Although another person may disagree about tactful responses, I can respond politely and explain my reason.",
+          "questions": [
+            {
+              "question": "How does the writer respond to disagreement?",
+              "acceptable_answers": [
+                "The writer responds politely and gives a reason in the discussion of tactful responses."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_pragmatics",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Speak for 60–90 seconds in a discussion about tactful responses. State your point, support it, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Presents a connected main point about tactful responses with relevant support.",
+              "Responds clearly and tactfully to a follow-up question about tactful responses."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short response about tactful responses. Identify the view and supporting reason before the transcript is revealed, then listen again to check the linking language.",
+          "goal": "Follow the main point and support in spoken language about tactful responses.",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_pragmatics",
+            "b1t_u01_skills"
+          ],
+          "transcript": "I have considered tactful responses, and my experience shows one useful reason for this view.",
+          "question": "What view and supporting reason does the speaker communicate?",
+          "answer": "The speaker connects a considered view about tactful responses to a useful reason from experience.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a discussion about tactful responses. Learner role: present and support a view. Tutor role: ask one probing question and offer a different perspective. End after the learner responds tactfully and summarizes the point.",
+          "goal": "Sustain a connected, tactful exchange about tactful responses.",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_pragmatics",
+            "b1t_u01_skills"
+          ],
+          "constraints": [
+            "State both roles before beginning the exchange.",
+            "Use at most four tutor turns and stop after the learner summary."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Record the model about tactful responses in meaningful thought groups. Stress the main point and reason, then compare a second attempt with the first for clarity and rhythm.",
+          "goal": "Make connected speech about tactful responses easy to follow.",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_pragmatics",
+            "b1t_u01_skills"
+          ],
+          "target": "Thought groups and information stress for tactful responses",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write 90–120 words about tactful responses. State a position or experience, support it with a reason and example, and acknowledge another perspective. Submit your own draft before asking for feedback.",
+          "goal": "Produce a connected written response about tactful responses.",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_pragmatics",
+            "b1t_u01_skills"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u03-l04",
+      "title": "Relationship language",
+      "duration_minutes": 40,
+      "objective_target_ids": [
+        "b1t_u01_collocations",
+        "b1t_u01_functions",
+        "b1t_u01_skills"
+      ],
+      "objectives": [
+        "Use common opinion and relationship collocations in discussion.",
+        "Develop a connected response in a discussion about relationship language with a reason and relevant detail."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice the connected language (10 minutes)",
+          "body": "Read this model: 'I have considered relationship language, and my experience shows one useful reason for this view.' Identify the main point, the linking expression, and the supporting detail. Then explain how the wording helps the speaker achieve this objective: Use common opinion and relationship collocations in discussion.",
+          "target_ids": [
+            "b1t_u01_collocations",
+            "b1t_u01_functions",
+            "b1t_u01_skills"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided exchange (10 minutes)",
+          "body": "Work with a partner in a discussion about relationship language. Give a clear main point, support it with a specific reason, and respond to one follow-up question. Use tactful language when the other speaker presents a different perspective.",
+          "target_ids": [
+            "b1t_u01_collocations",
+            "b1t_u01_functions",
+            "b1t_u01_skills"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent connected response (8 minutes)",
+          "body": "Prepare a one-minute response about relationship language. Organize it into thought groups, stress the words that carry your main point, and finish with a concise conclusion rather than a list of isolated sentences.",
+          "target_ids": [
+            "b1t_u01_collocations",
+            "b1t_u01_functions",
+            "b1t_u01_skills"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "b1t_u01_collocations",
+            "b1t_u01_functions",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Choose the most connected and tactful response for a discussion about relationship language.",
+          "media_required": false,
+          "options": [
+            "I have considered relationship language, and my experience shows one useful reason for this view.",
+            "Relationship language is a topic, but I will not explain my view.",
+            "Several details exist about relationship language, perhaps."
+          ],
+          "correct_answer": "I have considered relationship language, and my experience shows one useful reason for this view."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "b1t_u01_collocations",
+            "b1t_u01_functions",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Complete this response about relationship language: 'My experience supports this view ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "because it offers evidence about relationship language"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "b1t_u01_collocations",
+            "b1t_u01_functions",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Read the short response about relationship language and identify how the writer handles another view.",
+          "media_required": false,
+          "stimulus": "Although another person may disagree about relationship language, I can respond politely and explain my reason.",
+          "questions": [
+            {
+              "question": "How does the writer respond to disagreement?",
+              "acceptable_answers": [
+                "The writer responds politely and gives a reason in the discussion of relationship language."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "b1t_u01_collocations",
+            "b1t_u01_functions",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Speak for 60–90 seconds in a discussion about relationship language. State your point, support it, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Presents a connected main point about relationship language with relevant support.",
+              "Responds clearly and tactfully to a follow-up question about relationship language."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short response about relationship language. Identify the view and supporting reason before the transcript is revealed, then listen again to check the linking language.",
+          "goal": "Follow the main point and support in spoken language about relationship language.",
+          "target_ids": [
+            "b1t_u01_collocations",
+            "b1t_u01_functions",
+            "b1t_u01_skills"
+          ],
+          "transcript": "I have considered relationship language, and my experience shows one useful reason for this view.",
+          "question": "What view and supporting reason does the speaker communicate?",
+          "answer": "The speaker connects a considered view about relationship language to a useful reason from experience.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a discussion about relationship language. Learner role: present and support a view. Tutor role: ask one probing question and offer a different perspective. End after the learner responds tactfully and summarizes the point.",
+          "goal": "Sustain a connected, tactful exchange about relationship language.",
+          "target_ids": [
+            "b1t_u01_collocations",
+            "b1t_u01_functions",
+            "b1t_u01_skills"
+          ],
+          "constraints": [
+            "State both roles before beginning the exchange.",
+            "Use at most four tutor turns and stop after the learner summary."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Record the model about relationship language in meaningful thought groups. Stress the main point and reason, then compare a second attempt with the first for clarity and rhythm.",
+          "goal": "Make connected speech about relationship language easy to follow.",
+          "target_ids": [
+            "b1t_u01_collocations",
+            "b1t_u01_functions",
+            "b1t_u01_skills"
+          ],
+          "target": "Thought groups and information stress for relationship language",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write 90–120 words about relationship language. State a position or experience, support it with a reason and example, and acknowledge another perspective. Submit your own draft before asking for feedback.",
+          "goal": "Produce a connected written response about relationship language.",
+          "target_ids": [
+            "b1t_u01_collocations",
+            "b1t_u01_functions",
+            "b1t_u01_skills"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u03-l05",
+      "title": "Review: relationships",
+      "duration_minutes": 40,
+      "objective_target_ids": [
+        "b1t_u01_grammar",
+        "b1t_u01_vocabulary_senses",
+        "b1t_u01_functions",
+        "b1t_u01_pronunciation",
+        "b1t_u01_discourse",
+        "b1t_u01_pragmatics",
+        "b1t_u01_collocations",
+        "b1t_u01_lexical_chunks",
+        "b1t_u01_topics",
+        "b1t_u01_skills"
+      ],
+      "objectives": [
+        "Review experience, concern, and tactful discussion language.",
+        "Develop a connected response in a discussion about review: relationships with a reason and relevant detail."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice the connected language (10 minutes)",
+          "body": "Read this model: 'I have considered review: relationships, and my experience shows one useful reason for this view.' Identify the main point, the linking expression, and the supporting detail. Then explain how the wording helps the speaker achieve this objective: Review experience, concern, and tactful discussion language.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided exchange (10 minutes)",
+          "body": "Work with a partner in a discussion about review: relationships. Give a clear main point, support it with a specific reason, and respond to one follow-up question. Use tactful language when the other speaker presents a different perspective.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent connected response (8 minutes)",
+          "body": "Prepare a one-minute response about review: relationships. Organize it into thought groups, stress the words that carry your main point, and finish with a concise conclusion rather than a list of isolated sentences.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Choose the most connected and tactful response for a discussion about review: relationships.",
+          "media_required": false,
+          "options": [
+            "I have considered review: relationships, and my experience shows one useful reason for this view.",
+            "Review: relationships is a topic, but I will not explain my view.",
+            "Several details exist about review: relationships, perhaps."
+          ],
+          "correct_answer": "I have considered review: relationships, and my experience shows one useful reason for this view."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Complete this response about review: relationships: 'My experience supports this view ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "because it offers evidence about review: relationships"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Read the short response about review: relationships and identify how the writer handles another view.",
+          "media_required": false,
+          "stimulus": "Although another person may disagree about review: relationships, I can respond politely and explain my reason.",
+          "questions": [
+            {
+              "question": "How does the writer respond to disagreement?",
+              "acceptable_answers": [
+                "The writer responds politely and gives a reason in the discussion of review: relationships."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Speak for 60–90 seconds in a discussion about review: relationships. State your point, support it, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Presents a connected main point about review: relationships with relevant support.",
+              "Responds clearly and tactfully to a follow-up question about review: relationships."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short response about review: relationships. Identify the view and supporting reason before the transcript is revealed, then listen again to check the linking language.",
+          "goal": "Follow the main point and support in spoken language about review: relationships.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "transcript": "I have considered review: relationships, and my experience shows one useful reason for this view.",
+          "question": "What view and supporting reason does the speaker communicate?",
+          "answer": "The speaker connects a considered view about review: relationships to a useful reason from experience.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a discussion about review: relationships. Learner role: present and support a view. Tutor role: ask one probing question and offer a different perspective. End after the learner responds tactfully and summarizes the point.",
+          "goal": "Sustain a connected, tactful exchange about review: relationships.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "constraints": [
+            "State both roles before beginning the exchange.",
+            "Use at most four tutor turns and stop after the learner summary."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Record the model about review: relationships in meaningful thought groups. Stress the main point and reason, then compare a second attempt with the first for clarity and rhythm.",
+          "goal": "Make connected speech about review: relationships easy to follow.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "target": "Thought groups and information stress for review: relationships",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write 90–120 words about review: relationships. State a position or experience, support it with a reason and example, and acknowledge another perspective. Submit your own draft before asking for feedback.",
+          "goal": "Produce a connected written response about review: relationships.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    }
+  ]
+}

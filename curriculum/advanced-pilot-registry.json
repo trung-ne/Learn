@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "record_type": "advanced_pilot_registry",
+  "pilots": [
+    {
+      "level": "B2",
+      "pilot_id": "b2pilot_629f58d74590d64edd0d8c53b3989760455f8b7454d395571cb9bab4ba298327",
+      "manifest_path": "curriculum/b2-pilot/v1/runs/b2pilot_629f58d74590d64edd0d8c53b3989760455f8b7454d395571cb9bab4ba298327/manifest.json",
+      "lesson_count": 10,
+      "tier": "B2.1",
+      "status": "UNREVIEWED",
+      "audit_path": "curriculum/b2-pilot/v1/reports/audit.json",
+      "sample_path": "curriculum/b2-pilot/v1/samples/sample.json"
+    },
+    {
+      "level": "C1",
+      "pilot_id": "c1pilot_64c1689853e399ffa8004af67e75eda7cab6a2f556e8ad9e3f38222012d8d5c8",
+      "manifest_path": "curriculum/c1-pilot/v1/runs/c1pilot_64c1689853e399ffa8004af67e75eda7cab6a2f556e8ad9e3f38222012d8d5c8/manifest.json",
+      "lesson_count": 10,
+      "tier": "C1.1",
+      "status": "UNREVIEWED",
+      "audit_path": "curriculum/c1-pilot/v1/reports/audit.json",
+      "sample_path": "curriculum/c1-pilot/v1/samples/sample.json"
+    },
+    {
+      "level": "C2",
+      "pilot_id": "c2pilot_64937b45e37320a11eb67458db538c6c98cfcf8175cd133eaa46005dbd915a54",
+      "manifest_path": "curriculum/c2-pilot/v1/runs/c2pilot_64937b45e37320a11eb67458db538c6c98cfcf8175cd133eaa46005dbd915a54/manifest.json",
+      "lesson_count": 10,
+      "tier": "C2.1",
+      "status": "UNREVIEWED",
+      "audit_path": "curriculum/c2-pilot/v1/reports/audit.json",
+      "sample_path": "curriculum/c2-pilot/v1/samples/sample.json"
+    }
+  ]
+}

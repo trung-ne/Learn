@@ -1,0 +1,993 @@
+{
+  "schema_version": "1.0",
+  "record_type": "b1_full_content_unit",
+  "unit_id": "m16b1-v1-b1-u04",
+  "tier": "B1.1",
+  "content_origin": "PROJECT_AUTHORED",
+  "lessons": [
+    {
+      "lesson_id": "m16b1-v1-b1-u04-l01",
+      "title": "Experience in the community",
+      "duration_minutes": 40,
+      "objective_target_ids": [
+        "b1t_u01_grammar",
+        "b1t_u01_vocabulary_senses",
+        "b1t_u01_topics"
+      ],
+      "objectives": [
+        "Connect a past community experience to a current issue.",
+        "Develop a connected response in a discussion about experience in the community with a reason and relevant detail."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice the connected language (10 minutes)",
+          "body": "Read this model: 'I have considered experience in the community, and my experience shows one useful reason for this view.' Identify the main point, the linking expression, and the supporting detail. Then explain how the wording helps the speaker achieve this objective: Connect a past community experience to a current issue.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_topics"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided exchange (10 minutes)",
+          "body": "Work with a partner in a discussion about experience in the community. Give a clear main point, support it with a specific reason, and respond to one follow-up question. Use tactful language when the other speaker presents a different perspective.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_topics"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent connected response (8 minutes)",
+          "body": "Prepare a one-minute response about experience in the community. Organize it into thought groups, stress the words that carry your main point, and finish with a concise conclusion rather than a list of isolated sentences.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_topics"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_topics"
+          ],
+          "prompt": "Choose the most connected and tactful response for a discussion about experience in the community.",
+          "media_required": false,
+          "options": [
+            "I have considered experience in the community, and my experience shows one useful reason for this view.",
+            "Experience in the community is a topic, but I will not explain my view.",
+            "Several details exist about experience in the community, perhaps."
+          ],
+          "correct_answer": "I have considered experience in the community, and my experience shows one useful reason for this view."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_topics"
+          ],
+          "prompt": "Complete this response about experience in the community: 'My experience supports this view ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "because it offers evidence about experience in the community"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_topics"
+          ],
+          "prompt": "Read the short response about experience in the community and identify how the writer handles another view.",
+          "media_required": false,
+          "stimulus": "Although another person may disagree about experience in the community, I can respond politely and explain my reason.",
+          "questions": [
+            {
+              "question": "How does the writer respond to disagreement?",
+              "acceptable_answers": [
+                "The writer responds politely and gives a reason in the discussion of experience in the community."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_topics"
+          ],
+          "prompt": "Speak for 60–90 seconds in a discussion about experience in the community. State your point, support it, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Presents a connected main point about experience in the community with relevant support.",
+              "Responds clearly and tactfully to a follow-up question about experience in the community."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short response about experience in the community. Identify the view and supporting reason before the transcript is revealed, then listen again to check the linking language.",
+          "goal": "Follow the main point and support in spoken language about experience in the community.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_topics"
+          ],
+          "transcript": "I have considered experience in the community, and my experience shows one useful reason for this view.",
+          "question": "What view and supporting reason does the speaker communicate?",
+          "answer": "The speaker connects a considered view about experience in the community to a useful reason from experience.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a discussion about experience in the community. Learner role: present and support a view. Tutor role: ask one probing question and offer a different perspective. End after the learner responds tactfully and summarizes the point.",
+          "goal": "Sustain a connected, tactful exchange about experience in the community.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_topics"
+          ],
+          "constraints": [
+            "State both roles before beginning the exchange.",
+            "Use at most four tutor turns and stop after the learner summary."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Record the model about experience in the community in meaningful thought groups. Stress the main point and reason, then compare a second attempt with the first for clarity and rhythm.",
+          "goal": "Make connected speech about experience in the community easy to follow.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_topics"
+          ],
+          "target": "Thought groups and information stress for experience in the community",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write 90–120 words about experience in the community. State a position or experience, support it with a reason and example, and acknowledge another perspective. Submit your own draft before asking for feedback.",
+          "goal": "Produce a connected written response about experience in the community.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_topics"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u04-l02",
+      "title": "Building a viewpoint",
+      "duration_minutes": 40,
+      "objective_target_ids": [
+        "b1t_u01_functions",
+        "b1t_u01_discourse",
+        "b1t_u01_skills"
+      ],
+      "objectives": [
+        "Organize a paragraph or short turn around one supported opinion.",
+        "Develop a connected response in a discussion about building a viewpoint with a reason and relevant detail."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice the connected language (10 minutes)",
+          "body": "Read this model: 'I have considered building a viewpoint, and my experience shows one useful reason for this view.' Identify the main point, the linking expression, and the supporting detail. Then explain how the wording helps the speaker achieve this objective: Organize a paragraph or short turn around one supported opinion.",
+          "target_ids": [
+            "b1t_u01_functions",
+            "b1t_u01_discourse",
+            "b1t_u01_skills"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided exchange (10 minutes)",
+          "body": "Work with a partner in a discussion about building a viewpoint. Give a clear main point, support it with a specific reason, and respond to one follow-up question. Use tactful language when the other speaker presents a different perspective.",
+          "target_ids": [
+            "b1t_u01_functions",
+            "b1t_u01_discourse",
+            "b1t_u01_skills"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent connected response (8 minutes)",
+          "body": "Prepare a one-minute response about building a viewpoint. Organize it into thought groups, stress the words that carry your main point, and finish with a concise conclusion rather than a list of isolated sentences.",
+          "target_ids": [
+            "b1t_u01_functions",
+            "b1t_u01_discourse",
+            "b1t_u01_skills"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "b1t_u01_functions",
+            "b1t_u01_discourse",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Choose the most connected and tactful response for a discussion about building a viewpoint.",
+          "media_required": false,
+          "options": [
+            "I have considered building a viewpoint, and my experience shows one useful reason for this view.",
+            "Building a viewpoint is a topic, but I will not explain my view.",
+            "Several details exist about building a viewpoint, perhaps."
+          ],
+          "correct_answer": "I have considered building a viewpoint, and my experience shows one useful reason for this view."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "b1t_u01_functions",
+            "b1t_u01_discourse",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Complete this response about building a viewpoint: 'My experience supports this view ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "because it offers evidence about building a viewpoint"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "b1t_u01_functions",
+            "b1t_u01_discourse",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Read the short response about building a viewpoint and identify how the writer handles another view.",
+          "media_required": false,
+          "stimulus": "Although another person may disagree about building a viewpoint, I can respond politely and explain my reason.",
+          "questions": [
+            {
+              "question": "How does the writer respond to disagreement?",
+              "acceptable_answers": [
+                "The writer responds politely and gives a reason in the discussion of building a viewpoint."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "b1t_u01_functions",
+            "b1t_u01_discourse",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Speak for 60–90 seconds in a discussion about building a viewpoint. State your point, support it, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Presents a connected main point about building a viewpoint with relevant support.",
+              "Responds clearly and tactfully to a follow-up question about building a viewpoint."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short response about building a viewpoint. Identify the view and supporting reason before the transcript is revealed, then listen again to check the linking language.",
+          "goal": "Follow the main point and support in spoken language about building a viewpoint.",
+          "target_ids": [
+            "b1t_u01_functions",
+            "b1t_u01_discourse",
+            "b1t_u01_skills"
+          ],
+          "transcript": "I have considered building a viewpoint, and my experience shows one useful reason for this view.",
+          "question": "What view and supporting reason does the speaker communicate?",
+          "answer": "The speaker connects a considered view about building a viewpoint to a useful reason from experience.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a discussion about building a viewpoint. Learner role: present and support a view. Tutor role: ask one probing question and offer a different perspective. End after the learner responds tactfully and summarizes the point.",
+          "goal": "Sustain a connected, tactful exchange about building a viewpoint.",
+          "target_ids": [
+            "b1t_u01_functions",
+            "b1t_u01_discourse",
+            "b1t_u01_skills"
+          ],
+          "constraints": [
+            "State both roles before beginning the exchange.",
+            "Use at most four tutor turns and stop after the learner summary."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Record the model about building a viewpoint in meaningful thought groups. Stress the main point and reason, then compare a second attempt with the first for clarity and rhythm.",
+          "goal": "Make connected speech about building a viewpoint easy to follow.",
+          "target_ids": [
+            "b1t_u01_functions",
+            "b1t_u01_discourse",
+            "b1t_u01_skills"
+          ],
+          "target": "Thought groups and information stress for building a viewpoint",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write 90–120 words about building a viewpoint. State a position or experience, support it with a reason and example, and acknowledge another perspective. Submit your own draft before asking for feedback.",
+          "goal": "Produce a connected written response about building a viewpoint.",
+          "target_ids": [
+            "b1t_u01_functions",
+            "b1t_u01_discourse",
+            "b1t_u01_skills"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u04-l03",
+      "title": "Emphasizing key contrasts",
+      "duration_minutes": 40,
+      "objective_target_ids": [
+        "b1t_u01_pronunciation",
+        "b1t_u01_lexical_chunks",
+        "b1t_u01_collocations"
+      ],
+      "objectives": [
+        "Use contrastive stress and opinion chunks to compare choices.",
+        "Develop a connected response in a discussion about emphasizing key contrasts with a reason and relevant detail."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice the connected language (10 minutes)",
+          "body": "Read this model: 'I have considered emphasizing key contrasts, and my experience shows one useful reason for this view.' Identify the main point, the linking expression, and the supporting detail. Then explain how the wording helps the speaker achieve this objective: Use contrastive stress and opinion chunks to compare choices.",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_collocations"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided exchange (10 minutes)",
+          "body": "Work with a partner in a discussion about emphasizing key contrasts. Give a clear main point, support it with a specific reason, and respond to one follow-up question. Use tactful language when the other speaker presents a different perspective.",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_collocations"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent connected response (8 minutes)",
+          "body": "Prepare a one-minute response about emphasizing key contrasts. Organize it into thought groups, stress the words that carry your main point, and finish with a concise conclusion rather than a list of isolated sentences.",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_collocations"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_collocations"
+          ],
+          "prompt": "Choose the most connected and tactful response for a discussion about emphasizing key contrasts.",
+          "media_required": false,
+          "options": [
+            "I have considered emphasizing key contrasts, and my experience shows one useful reason for this view.",
+            "Emphasizing key contrasts is a topic, but I will not explain my view.",
+            "Several details exist about emphasizing key contrasts, perhaps."
+          ],
+          "correct_answer": "I have considered emphasizing key contrasts, and my experience shows one useful reason for this view."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_collocations"
+          ],
+          "prompt": "Complete this response about emphasizing key contrasts: 'My experience supports this view ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "because it offers evidence about emphasizing key contrasts"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_collocations"
+          ],
+          "prompt": "Read the short response about emphasizing key contrasts and identify how the writer handles another view.",
+          "media_required": false,
+          "stimulus": "Although another person may disagree about emphasizing key contrasts, I can respond politely and explain my reason.",
+          "questions": [
+            {
+              "question": "How does the writer respond to disagreement?",
+              "acceptable_answers": [
+                "The writer responds politely and gives a reason in the discussion of emphasizing key contrasts."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_collocations"
+          ],
+          "prompt": "Speak for 60–90 seconds in a discussion about emphasizing key contrasts. State your point, support it, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Presents a connected main point about emphasizing key contrasts with relevant support.",
+              "Responds clearly and tactfully to a follow-up question about emphasizing key contrasts."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short response about emphasizing key contrasts. Identify the view and supporting reason before the transcript is revealed, then listen again to check the linking language.",
+          "goal": "Follow the main point and support in spoken language about emphasizing key contrasts.",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_collocations"
+          ],
+          "transcript": "I have considered emphasizing key contrasts, and my experience shows one useful reason for this view.",
+          "question": "What view and supporting reason does the speaker communicate?",
+          "answer": "The speaker connects a considered view about emphasizing key contrasts to a useful reason from experience.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a discussion about emphasizing key contrasts. Learner role: present and support a view. Tutor role: ask one probing question and offer a different perspective. End after the learner responds tactfully and summarizes the point.",
+          "goal": "Sustain a connected, tactful exchange about emphasizing key contrasts.",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_collocations"
+          ],
+          "constraints": [
+            "State both roles before beginning the exchange.",
+            "Use at most four tutor turns and stop after the learner summary."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Record the model about emphasizing key contrasts in meaningful thought groups. Stress the main point and reason, then compare a second attempt with the first for clarity and rhythm.",
+          "goal": "Make connected speech about emphasizing key contrasts easy to follow.",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_collocations"
+          ],
+          "target": "Thought groups and information stress for emphasizing key contrasts",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write 90–120 words about emphasizing key contrasts. State a position or experience, support it with a reason and example, and acknowledge another perspective. Submit your own draft before asking for feedback.",
+          "goal": "Produce a connected written response about emphasizing key contrasts.",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_collocations"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u04-l04",
+      "title": "Discussing alternatives",
+      "duration_minutes": 40,
+      "objective_target_ids": [
+        "b1t_u01_pragmatics",
+        "b1t_u01_functions",
+        "b1t_u01_skills"
+      ],
+      "objectives": [
+        "Disagree tactfully and propose a reasonable alternative.",
+        "Develop a connected response in a discussion about discussing alternatives with a reason and relevant detail."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice the connected language (10 minutes)",
+          "body": "Read this model: 'I have considered discussing alternatives, and my experience shows one useful reason for this view.' Identify the main point, the linking expression, and the supporting detail. Then explain how the wording helps the speaker achieve this objective: Disagree tactfully and propose a reasonable alternative.",
+          "target_ids": [
+            "b1t_u01_pragmatics",
+            "b1t_u01_functions",
+            "b1t_u01_skills"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided exchange (10 minutes)",
+          "body": "Work with a partner in a discussion about discussing alternatives. Give a clear main point, support it with a specific reason, and respond to one follow-up question. Use tactful language when the other speaker presents a different perspective.",
+          "target_ids": [
+            "b1t_u01_pragmatics",
+            "b1t_u01_functions",
+            "b1t_u01_skills"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent connected response (8 minutes)",
+          "body": "Prepare a one-minute response about discussing alternatives. Organize it into thought groups, stress the words that carry your main point, and finish with a concise conclusion rather than a list of isolated sentences.",
+          "target_ids": [
+            "b1t_u01_pragmatics",
+            "b1t_u01_functions",
+            "b1t_u01_skills"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "b1t_u01_pragmatics",
+            "b1t_u01_functions",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Choose the most connected and tactful response for a discussion about discussing alternatives.",
+          "media_required": false,
+          "options": [
+            "I have considered discussing alternatives, and my experience shows one useful reason for this view.",
+            "Discussing alternatives is a topic, but I will not explain my view.",
+            "Several details exist about discussing alternatives, perhaps."
+          ],
+          "correct_answer": "I have considered discussing alternatives, and my experience shows one useful reason for this view."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "b1t_u01_pragmatics",
+            "b1t_u01_functions",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Complete this response about discussing alternatives: 'My experience supports this view ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "because it offers evidence about discussing alternatives"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "b1t_u01_pragmatics",
+            "b1t_u01_functions",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Read the short response about discussing alternatives and identify how the writer handles another view.",
+          "media_required": false,
+          "stimulus": "Although another person may disagree about discussing alternatives, I can respond politely and explain my reason.",
+          "questions": [
+            {
+              "question": "How does the writer respond to disagreement?",
+              "acceptable_answers": [
+                "The writer responds politely and gives a reason in the discussion of discussing alternatives."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "b1t_u01_pragmatics",
+            "b1t_u01_functions",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Speak for 60–90 seconds in a discussion about discussing alternatives. State your point, support it, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Presents a connected main point about discussing alternatives with relevant support.",
+              "Responds clearly and tactfully to a follow-up question about discussing alternatives."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short response about discussing alternatives. Identify the view and supporting reason before the transcript is revealed, then listen again to check the linking language.",
+          "goal": "Follow the main point and support in spoken language about discussing alternatives.",
+          "target_ids": [
+            "b1t_u01_pragmatics",
+            "b1t_u01_functions",
+            "b1t_u01_skills"
+          ],
+          "transcript": "I have considered discussing alternatives, and my experience shows one useful reason for this view.",
+          "question": "What view and supporting reason does the speaker communicate?",
+          "answer": "The speaker connects a considered view about discussing alternatives to a useful reason from experience.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a discussion about discussing alternatives. Learner role: present and support a view. Tutor role: ask one probing question and offer a different perspective. End after the learner responds tactfully and summarizes the point.",
+          "goal": "Sustain a connected, tactful exchange about discussing alternatives.",
+          "target_ids": [
+            "b1t_u01_pragmatics",
+            "b1t_u01_functions",
+            "b1t_u01_skills"
+          ],
+          "constraints": [
+            "State both roles before beginning the exchange.",
+            "Use at most four tutor turns and stop after the learner summary."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Record the model about discussing alternatives in meaningful thought groups. Stress the main point and reason, then compare a second attempt with the first for clarity and rhythm.",
+          "goal": "Make connected speech about discussing alternatives easy to follow.",
+          "target_ids": [
+            "b1t_u01_pragmatics",
+            "b1t_u01_functions",
+            "b1t_u01_skills"
+          ],
+          "target": "Thought groups and information stress for discussing alternatives",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write 90–120 words about discussing alternatives. State a position or experience, support it with a reason and example, and acknowledge another perspective. Submit your own draft before asking for feedback.",
+          "goal": "Produce a connected written response about discussing alternatives.",
+          "target_ids": [
+            "b1t_u01_pragmatics",
+            "b1t_u01_functions",
+            "b1t_u01_skills"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u04-l05",
+      "title": "Review: community choices",
+      "duration_minutes": 40,
+      "objective_target_ids": [
+        "b1t_u01_grammar",
+        "b1t_u01_vocabulary_senses",
+        "b1t_u01_functions",
+        "b1t_u01_pronunciation",
+        "b1t_u01_discourse",
+        "b1t_u01_pragmatics",
+        "b1t_u01_collocations",
+        "b1t_u01_lexical_chunks",
+        "b1t_u01_topics",
+        "b1t_u01_skills"
+      ],
+      "objectives": [
+        "Review supported opinions and responses about community choices.",
+        "Develop a connected response in a discussion about review: community choices with a reason and relevant detail."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice the connected language (10 minutes)",
+          "body": "Read this model: 'I have considered review: community choices, and my experience shows one useful reason for this view.' Identify the main point, the linking expression, and the supporting detail. Then explain how the wording helps the speaker achieve this objective: Review supported opinions and responses about community choices.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided exchange (10 minutes)",
+          "body": "Work with a partner in a discussion about review: community choices. Give a clear main point, support it with a specific reason, and respond to one follow-up question. Use tactful language when the other speaker presents a different perspective.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent connected response (8 minutes)",
+          "body": "Prepare a one-minute response about review: community choices. Organize it into thought groups, stress the words that carry your main point, and finish with a concise conclusion rather than a list of isolated sentences.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Choose the most connected and tactful response for a discussion about review: community choices.",
+          "media_required": false,
+          "options": [
+            "I have considered review: community choices, and my experience shows one useful reason for this view.",
+            "Review: community choices is a topic, but I will not explain my view.",
+            "Several details exist about review: community choices, perhaps."
+          ],
+          "correct_answer": "I have considered review: community choices, and my experience shows one useful reason for this view."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Complete this response about review: community choices: 'My experience supports this view ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "because it offers evidence about review: community choices"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Read the short response about review: community choices and identify how the writer handles another view.",
+          "media_required": false,
+          "stimulus": "Although another person may disagree about review: community choices, I can respond politely and explain my reason.",
+          "questions": [
+            {
+              "question": "How does the writer respond to disagreement?",
+              "acceptable_answers": [
+                "The writer responds politely and gives a reason in the discussion of review: community choices."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Speak for 60–90 seconds in a discussion about review: community choices. State your point, support it, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Presents a connected main point about review: community choices with relevant support.",
+              "Responds clearly and tactfully to a follow-up question about review: community choices."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short response about review: community choices. Identify the view and supporting reason before the transcript is revealed, then listen again to check the linking language.",
+          "goal": "Follow the main point and support in spoken language about review: community choices.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "transcript": "I have considered review: community choices, and my experience shows one useful reason for this view.",
+          "question": "What view and supporting reason does the speaker communicate?",
+          "answer": "The speaker connects a considered view about review: community choices to a useful reason from experience.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a discussion about review: community choices. Learner role: present and support a view. Tutor role: ask one probing question and offer a different perspective. End after the learner responds tactfully and summarizes the point.",
+          "goal": "Sustain a connected, tactful exchange about review: community choices.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "constraints": [
+            "State both roles before beginning the exchange.",
+            "Use at most four tutor turns and stop after the learner summary."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Record the model about review: community choices in meaningful thought groups. Stress the main point and reason, then compare a second attempt with the first for clarity and rhythm.",
+          "goal": "Make connected speech about review: community choices easy to follow.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "target": "Thought groups and information stress for review: community choices",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write 90–120 words about review: community choices. State a position or experience, support it with a reason and example, and acknowledge another perspective. Submit your own draft before asking for feedback.",
+          "goal": "Produce a connected written response about review: community choices.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    }
+  ]
+}

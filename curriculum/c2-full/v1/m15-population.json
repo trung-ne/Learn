@@ -1,0 +1,2500 @@
+{
+  "content_status": "UNREVIEWED",
+  "dimensions": [
+    "grammar",
+    "vocabulary_senses",
+    "functions",
+    "pronunciation",
+    "discourse",
+    "pragmatics",
+    "collocations",
+    "lexical_chunks",
+    "topics",
+    "skills"
+  ],
+  "external_content_used": false,
+  "fixture_only": true,
+  "nodes": [
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [],
+      "description": "Original project-authored curriculum target: present simple. This A1.1 target is a planning node, not lesson content.",
+      "dimension": "grammar",
+      "id": "kg_a1_1_grammar",
+      "name": "present simple",
+      "prerequisites": [],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a1_1_grammar",
+          "target": "kg_a1_1_vocabulary_senses"
+        }
+      ],
+      "description": "Original project-authored curriculum target: adverbs of frequency. This A1.1 target is a planning node, not lesson content.",
+      "dimension": "vocabulary_senses",
+      "id": "kg_a1_1_vocabulary_senses",
+      "name": "adverbs of frequency",
+      "prerequisites": [
+        "kg_a1_1_grammar"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a1_1_topics",
+          "target": "kg_a1_1_functions"
+        }
+      ],
+      "description": "Original project-authored curriculum target: discussing habits. This A1.1 target is a planning node, not lesson content.",
+      "dimension": "functions",
+      "id": "kg_a1_1_functions",
+      "name": "discussing habits",
+      "prerequisites": [
+        "kg_a1_1_topics"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [],
+      "description": "Original project-authored curriculum target: final consonants and clear word stress. This A1.1 target is a planning node, not lesson content.",
+      "dimension": "pronunciation",
+      "id": "kg_a1_1_pronunciation",
+      "name": "final consonants and clear word stress",
+      "prerequisites": [],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [],
+      "description": "Original project-authored curriculum target: linking sentences with and, but, and because. This A1.1 target is a planning node, not lesson content.",
+      "dimension": "discourse",
+      "id": "kg_a1_1_discourse",
+      "name": "linking sentences with and, but, and because",
+      "prerequisites": [],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [],
+      "description": "Original project-authored curriculum target: polite greetings and personal boundaries. This A1.1 target is a planning node, not lesson content.",
+      "dimension": "pragmatics",
+      "id": "kg_a1_1_pragmatics",
+      "name": "polite greetings and personal boundaries",
+      "prerequisites": [],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [],
+      "description": "Original project-authored curriculum target: make and do with daily activities. This A1.1 target is a planning node, not lesson content.",
+      "dimension": "collocations",
+      "id": "kg_a1_1_collocations",
+      "name": "make and do with daily activities",
+      "prerequisites": [],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [],
+      "description": "Original project-authored curriculum target: How are you? and basic social openings. This A1.1 target is a planning node, not lesson content.",
+      "dimension": "lexical_chunks",
+      "id": "kg_a1_1_lexical_chunks",
+      "name": "How are you? and basic social openings",
+      "prerequisites": [],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a1_1_vocabulary_senses",
+          "target": "kg_a1_1_topics"
+        }
+      ],
+      "description": "Original project-authored curriculum target: daily routines. This A1.1 target is a planning node, not lesson content.",
+      "dimension": "topics",
+      "id": "kg_a1_1_topics",
+      "name": "daily routines",
+      "prerequisites": [
+        "kg_a1_1_vocabulary_senses"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [],
+      "description": "Original project-authored curriculum target: understand and produce short routine exchanges. This A1.1 target is a planning node, not lesson content.",
+      "dimension": "skills",
+      "id": "kg_a1_1_skills",
+      "name": "understand and produce short routine exchanges",
+      "prerequisites": [],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a1_1_grammar",
+          "target": "kg_a1_2_grammar"
+        }
+      ],
+      "description": "Original project-authored curriculum target: past simple of everyday events. This A1.2 target is a planning node, not lesson content.",
+      "dimension": "grammar",
+      "id": "kg_a1_2_grammar",
+      "name": "past simple of everyday events",
+      "prerequisites": [
+        "kg_a1_1_grammar"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a1_1_vocabulary_senses",
+          "target": "kg_a1_2_vocabulary_senses"
+        }
+      ],
+      "description": "Original project-authored curriculum target: home, food, and common services. This A1.2 target is a planning node, not lesson content.",
+      "dimension": "vocabulary_senses",
+      "id": "kg_a1_2_vocabulary_senses",
+      "name": "home, food, and common services",
+      "prerequisites": [
+        "kg_a1_1_vocabulary_senses"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a1_1_functions",
+          "target": "kg_a1_2_functions"
+        }
+      ],
+      "description": "Original project-authored curriculum target: describing routines and making simple requests. This A1.2 target is a planning node, not lesson content.",
+      "dimension": "functions",
+      "id": "kg_a1_2_functions",
+      "name": "describing routines and making simple requests",
+      "prerequisites": [
+        "kg_a1_1_functions"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a1_1_pronunciation",
+          "target": "kg_a1_2_pronunciation"
+        }
+      ],
+      "description": "Original project-authored curriculum target: sentence stress in short routine phrases. This A1.2 target is a planning node, not lesson content.",
+      "dimension": "pronunciation",
+      "id": "kg_a1_2_pronunciation",
+      "name": "sentence stress in short routine phrases",
+      "prerequisites": [
+        "kg_a1_1_pronunciation"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a1_1_discourse",
+          "target": "kg_a1_2_discourse"
+        }
+      ],
+      "description": "Original project-authored curriculum target: ordering a short description. This A1.2 target is a planning node, not lesson content.",
+      "dimension": "discourse",
+      "id": "kg_a1_2_discourse",
+      "name": "ordering a short description",
+      "prerequisites": [
+        "kg_a1_1_discourse"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a1_1_pragmatics",
+          "target": "kg_a1_2_pragmatics"
+        }
+      ],
+      "description": "Original project-authored curriculum target: requests with appropriate directness. This A1.2 target is a planning node, not lesson content.",
+      "dimension": "pragmatics",
+      "id": "kg_a1_2_pragmatics",
+      "name": "requests with appropriate directness",
+      "prerequisites": [
+        "kg_a1_1_pragmatics"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a1_1_collocations",
+          "target": "kg_a1_2_collocations"
+        }
+      ],
+      "description": "Original project-authored curriculum target: take, have, and get in services. This A1.2 target is a planning node, not lesson content.",
+      "dimension": "collocations",
+      "id": "kg_a1_2_collocations",
+      "name": "take, have, and get in services",
+      "prerequisites": [
+        "kg_a1_1_collocations"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a1_1_lexical_chunks",
+          "target": "kg_a1_2_lexical_chunks"
+        }
+      ],
+      "description": "Original project-authored curriculum target: Could you ...? and everyday request frames. This A1.2 target is a planning node, not lesson content.",
+      "dimension": "lexical_chunks",
+      "id": "kg_a1_2_lexical_chunks",
+      "name": "Could you ...? and everyday request frames",
+      "prerequisites": [
+        "kg_a1_1_lexical_chunks"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a1_1_topics",
+          "target": "kg_a1_2_topics"
+        }
+      ],
+      "description": "Original project-authored curriculum target: food, shopping, and neighborhood. This A1.2 target is a planning node, not lesson content.",
+      "dimension": "topics",
+      "id": "kg_a1_2_topics",
+      "name": "food, shopping, and neighborhood",
+      "prerequisites": [
+        "kg_a1_1_topics"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a1_1_skills",
+          "target": "kg_a1_2_skills"
+        }
+      ],
+      "description": "Original project-authored curriculum target: handle predictable everyday transactions. This A1.2 target is a planning node, not lesson content.",
+      "dimension": "skills",
+      "id": "kg_a1_2_skills",
+      "name": "handle predictable everyday transactions",
+      "prerequisites": [
+        "kg_a1_1_skills"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a1_2_grammar",
+          "target": "kg_a2_1_grammar"
+        }
+      ],
+      "description": "Original project-authored curriculum target: count and noncount noun phrases. This A2.1 target is a planning node, not lesson content.",
+      "dimension": "grammar",
+      "id": "kg_a2_1_grammar",
+      "name": "count and noncount noun phrases",
+      "prerequisites": [
+        "kg_a1_2_grammar"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a1_2_vocabulary_senses",
+          "target": "kg_a2_1_vocabulary_senses"
+        }
+      ],
+      "description": "Original project-authored curriculum target: shopping, travel, and health senses. This A2.1 target is a planning node, not lesson content.",
+      "dimension": "vocabulary_senses",
+      "id": "kg_a2_1_vocabulary_senses",
+      "name": "shopping, travel, and health senses",
+      "prerequisites": [
+        "kg_a1_2_vocabulary_senses"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a1_2_functions",
+          "target": "kg_a2_1_functions"
+        }
+      ],
+      "description": "Original project-authored curriculum target: narrating a recent event and asking follow-ups. This A2.1 target is a planning node, not lesson content.",
+      "dimension": "functions",
+      "id": "kg_a2_1_functions",
+      "name": "narrating a recent event and asking follow-ups",
+      "prerequisites": [
+        "kg_a1_2_functions"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a1_2_pronunciation",
+          "target": "kg_a2_1_pronunciation"
+        }
+      ],
+      "description": "Original project-authored curriculum target: past-tense endings and thought groups. This A2.1 target is a planning node, not lesson content.",
+      "dimension": "pronunciation",
+      "id": "kg_a2_1_pronunciation",
+      "name": "past-tense endings and thought groups",
+      "prerequisites": [
+        "kg_a1_2_pronunciation"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a1_2_discourse",
+          "target": "kg_a2_1_discourse"
+        }
+      ],
+      "description": "Original project-authored curriculum target: sequencing a personal account. This A2.1 target is a planning node, not lesson content.",
+      "dimension": "discourse",
+      "id": "kg_a2_1_discourse",
+      "name": "sequencing a personal account",
+      "prerequisites": [
+        "kg_a1_2_discourse"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a1_2_pragmatics",
+          "target": "kg_a2_1_pragmatics"
+        }
+      ],
+      "description": "Original project-authored curriculum target: apologies, thanks, and repair. This A2.1 target is a planning node, not lesson content.",
+      "dimension": "pragmatics",
+      "id": "kg_a2_1_pragmatics",
+      "name": "apologies, thanks, and repair",
+      "prerequisites": [
+        "kg_a1_2_pragmatics"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a1_2_collocations",
+          "target": "kg_a2_1_collocations"
+        }
+      ],
+      "description": "Original project-authored curriculum target: set phrases for travel and health. This A2.1 target is a planning node, not lesson content.",
+      "dimension": "collocations",
+      "id": "kg_a2_1_collocations",
+      "name": "set phrases for travel and health",
+      "prerequisites": [
+        "kg_a1_2_collocations"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a1_2_lexical_chunks",
+          "target": "kg_a2_1_lexical_chunks"
+        }
+      ],
+      "description": "Original project-authored curriculum target: I went ... and event-reporting frames. This A2.1 target is a planning node, not lesson content.",
+      "dimension": "lexical_chunks",
+      "id": "kg_a2_1_lexical_chunks",
+      "name": "I went ... and event-reporting frames",
+      "prerequisites": [
+        "kg_a1_2_lexical_chunks"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a1_2_topics",
+          "target": "kg_a2_1_topics"
+        }
+      ],
+      "description": "Original project-authored curriculum target: health, transport, and local services. This A2.1 target is a planning node, not lesson content.",
+      "dimension": "topics",
+      "id": "kg_a2_1_topics",
+      "name": "health, transport, and local services",
+      "prerequisites": [
+        "kg_a1_2_topics"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a1_2_skills",
+          "target": "kg_a2_1_skills"
+        }
+      ],
+      "description": "Original project-authored curriculum target: follow and retell a simple event. This A2.1 target is a planning node, not lesson content.",
+      "dimension": "skills",
+      "id": "kg_a2_1_skills",
+      "name": "follow and retell a simple event",
+      "prerequisites": [
+        "kg_a1_2_skills"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a2_1_grammar",
+          "target": "kg_a2_2_grammar"
+        }
+      ],
+      "description": "Original project-authored curriculum target: future plans with going to. This A2.2 target is a planning node, not lesson content.",
+      "dimension": "grammar",
+      "id": "kg_a2_2_grammar",
+      "name": "future plans with going to",
+      "prerequisites": [
+        "kg_a2_1_grammar"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a2_1_vocabulary_senses",
+          "target": "kg_a2_2_vocabulary_senses"
+        }
+      ],
+      "description": "Original project-authored curriculum target: work, study, and community senses. This A2.2 target is a planning node, not lesson content.",
+      "dimension": "vocabulary_senses",
+      "id": "kg_a2_2_vocabulary_senses",
+      "name": "work, study, and community senses",
+      "prerequisites": [
+        "kg_a2_1_vocabulary_senses"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a2_1_functions",
+          "target": "kg_a2_2_functions"
+        }
+      ],
+      "description": "Original project-authored curriculum target: making plans, offers, and arrangements. This A2.2 target is a planning node, not lesson content.",
+      "dimension": "functions",
+      "id": "kg_a2_2_functions",
+      "name": "making plans, offers, and arrangements",
+      "prerequisites": [
+        "kg_a2_1_functions"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a2_1_pronunciation",
+          "target": "kg_a2_2_pronunciation"
+        }
+      ],
+      "description": "Original project-authored curriculum target: weak forms in planned speech. This A2.2 target is a planning node, not lesson content.",
+      "dimension": "pronunciation",
+      "id": "kg_a2_2_pronunciation",
+      "name": "weak forms in planned speech",
+      "prerequisites": [
+        "kg_a2_1_pronunciation"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a2_1_discourse",
+          "target": "kg_a2_2_discourse"
+        }
+      ],
+      "description": "Original project-authored curriculum target: organizing plans and reasons. This A2.2 target is a planning node, not lesson content.",
+      "dimension": "discourse",
+      "id": "kg_a2_2_discourse",
+      "name": "organizing plans and reasons",
+      "prerequisites": [
+        "kg_a2_1_discourse"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a2_1_pragmatics",
+          "target": "kg_a2_2_pragmatics"
+        }
+      ],
+      "description": "Original project-authored curriculum target: offers and invitations with social fit. This A2.2 target is a planning node, not lesson content.",
+      "dimension": "pragmatics",
+      "id": "kg_a2_2_pragmatics",
+      "name": "offers and invitations with social fit",
+      "prerequisites": [
+        "kg_a2_1_pragmatics"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a2_1_collocations",
+          "target": "kg_a2_2_collocations"
+        }
+      ],
+      "description": "Original project-authored curriculum target: plan, attend, and achieve goals. This A2.2 target is a planning node, not lesson content.",
+      "dimension": "collocations",
+      "id": "kg_a2_2_collocations",
+      "name": "plan, attend, and achieve goals",
+      "prerequisites": [
+        "kg_a2_1_collocations"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a2_1_lexical_chunks",
+          "target": "kg_a2_2_lexical_chunks"
+        }
+      ],
+      "description": "Original project-authored curriculum target: Would you like ...? and arrangement frames. This A2.2 target is a planning node, not lesson content.",
+      "dimension": "lexical_chunks",
+      "id": "kg_a2_2_lexical_chunks",
+      "name": "Would you like ...? and arrangement frames",
+      "prerequisites": [
+        "kg_a2_1_lexical_chunks"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a2_1_topics",
+          "target": "kg_a2_2_topics"
+        }
+      ],
+      "description": "Original project-authored curriculum target: study, work, and future plans. This A2.2 target is a planning node, not lesson content.",
+      "dimension": "topics",
+      "id": "kg_a2_2_topics",
+      "name": "study, work, and future plans",
+      "prerequisites": [
+        "kg_a2_1_topics"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a2_1_skills",
+          "target": "kg_a2_2_skills"
+        }
+      ],
+      "description": "Original project-authored curriculum target: coordinate a plan in clear speech. This A2.2 target is a planning node, not lesson content.",
+      "dimension": "skills",
+      "id": "kg_a2_2_skills",
+      "name": "coordinate a plan in clear speech",
+      "prerequisites": [
+        "kg_a2_1_skills"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a2_2_grammar",
+          "target": "kg_b1_1_grammar"
+        }
+      ],
+      "description": "Original project-authored curriculum target: present perfect for life experience. This B1.1 target is a planning node, not lesson content.",
+      "dimension": "grammar",
+      "id": "kg_b1_1_grammar",
+      "name": "present perfect for life experience",
+      "prerequisites": [
+        "kg_a2_2_grammar"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a2_2_vocabulary_senses",
+          "target": "kg_b1_1_vocabulary_senses"
+        }
+      ],
+      "description": "Original project-authored curriculum target: change, experience, and opinion senses. This B1.1 target is a planning node, not lesson content.",
+      "dimension": "vocabulary_senses",
+      "id": "kg_b1_1_vocabulary_senses",
+      "name": "change, experience, and opinion senses",
+      "prerequisites": [
+        "kg_a2_2_vocabulary_senses"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a2_2_functions",
+          "target": "kg_b1_1_functions"
+        }
+      ],
+      "description": "Original project-authored curriculum target: giving opinions and supporting a reason. This B1.1 target is a planning node, not lesson content.",
+      "dimension": "functions",
+      "id": "kg_b1_1_functions",
+      "name": "giving opinions and supporting a reason",
+      "prerequisites": [
+        "kg_a2_2_functions"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a2_2_pronunciation",
+          "target": "kg_b1_1_pronunciation"
+        }
+      ],
+      "description": "Original project-authored curriculum target: contrastive stress for meaning. This B1.1 target is a planning node, not lesson content.",
+      "dimension": "pronunciation",
+      "id": "kg_b1_1_pronunciation",
+      "name": "contrastive stress for meaning",
+      "prerequisites": [
+        "kg_a2_2_pronunciation"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a2_2_discourse",
+          "target": "kg_b1_1_discourse"
+        }
+      ],
+      "description": "Original project-authored curriculum target: cohesive paragraphs with reference. This B1.1 target is a planning node, not lesson content.",
+      "dimension": "discourse",
+      "id": "kg_b1_1_discourse",
+      "name": "cohesive paragraphs with reference",
+      "prerequisites": [
+        "kg_a2_2_discourse"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a2_2_pragmatics",
+          "target": "kg_b1_1_pragmatics"
+        }
+      ],
+      "description": "Original project-authored curriculum target: agreement and disagreement tactfully. This B1.1 target is a planning node, not lesson content.",
+      "dimension": "pragmatics",
+      "id": "kg_b1_1_pragmatics",
+      "name": "agreement and disagreement tactfully",
+      "prerequisites": [
+        "kg_a2_2_pragmatics"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a2_2_collocations",
+          "target": "kg_b1_1_collocations"
+        }
+      ],
+      "description": "Original project-authored curriculum target: reach, raise, and express an opinion. This B1.1 target is a planning node, not lesson content.",
+      "dimension": "collocations",
+      "id": "kg_b1_1_collocations",
+      "name": "reach, raise, and express an opinion",
+      "prerequisites": [
+        "kg_a2_2_collocations"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a2_2_lexical_chunks",
+          "target": "kg_b1_1_lexical_chunks"
+        }
+      ],
+      "description": "Original project-authored curriculum target: In my view ... because ... opinion frames. This B1.1 target is a planning node, not lesson content.",
+      "dimension": "lexical_chunks",
+      "id": "kg_b1_1_lexical_chunks",
+      "name": "In my view ... because ... opinion frames",
+      "prerequisites": [
+        "kg_a2_2_lexical_chunks"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a2_2_topics",
+          "target": "kg_b1_1_topics"
+        }
+      ],
+      "description": "Original project-authored curriculum target: experiences, media, and relationships. This B1.1 target is a planning node, not lesson content.",
+      "dimension": "topics",
+      "id": "kg_b1_1_topics",
+      "name": "experiences, media, and relationships",
+      "prerequisites": [
+        "kg_a2_2_topics"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_a2_2_skills",
+          "target": "kg_b1_1_skills"
+        }
+      ],
+      "description": "Original project-authored curriculum target: explain an opinion in connected language. This B1.1 target is a planning node, not lesson content.",
+      "dimension": "skills",
+      "id": "kg_b1_1_skills",
+      "name": "explain an opinion in connected language",
+      "prerequisites": [
+        "kg_a2_2_skills"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b1_1_grammar",
+          "target": "kg_b1_2_grammar"
+        }
+      ],
+      "description": "Original project-authored curriculum target: narrative past with sequencing. This B1.2 target is a planning node, not lesson content.",
+      "dimension": "grammar",
+      "id": "kg_b1_2_grammar",
+      "name": "narrative past with sequencing",
+      "prerequisites": [
+        "kg_b1_1_grammar"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b1_1_vocabulary_senses",
+          "target": "kg_b1_2_vocabulary_senses"
+        }
+      ],
+      "description": "Original project-authored curriculum target: relationships, media, and events. This B1.2 target is a planning node, not lesson content.",
+      "dimension": "vocabulary_senses",
+      "id": "kg_b1_2_vocabulary_senses",
+      "name": "relationships, media, and events",
+      "prerequisites": [
+        "kg_b1_1_vocabulary_senses"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b1_1_functions",
+          "target": "kg_b1_2_functions"
+        }
+      ],
+      "description": "Original project-authored curriculum target: telling a coherent story and clarifying. This B1.2 target is a planning node, not lesson content.",
+      "dimension": "functions",
+      "id": "kg_b1_2_functions",
+      "name": "telling a coherent story and clarifying",
+      "prerequisites": [
+        "kg_b1_1_functions"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b1_1_pronunciation",
+          "target": "kg_b1_2_pronunciation"
+        }
+      ],
+      "description": "Original project-authored curriculum target: intonation for narrative structure. This B1.2 target is a planning node, not lesson content.",
+      "dimension": "pronunciation",
+      "id": "kg_b1_2_pronunciation",
+      "name": "intonation for narrative structure",
+      "prerequisites": [
+        "kg_b1_1_pronunciation"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b1_1_discourse",
+          "target": "kg_b1_2_discourse"
+        }
+      ],
+      "description": "Original project-authored curriculum target: topic development across a story. This B1.2 target is a planning node, not lesson content.",
+      "dimension": "discourse",
+      "id": "kg_b1_2_discourse",
+      "name": "topic development across a story",
+      "prerequisites": [
+        "kg_b1_1_discourse"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b1_1_pragmatics",
+          "target": "kg_b1_2_pragmatics"
+        }
+      ],
+      "description": "Original project-authored curriculum target: register choices in unfamiliar settings. This B1.2 target is a planning node, not lesson content.",
+      "dimension": "pragmatics",
+      "id": "kg_b1_2_pragmatics",
+      "name": "register choices in unfamiliar settings",
+      "prerequisites": [
+        "kg_b1_1_pragmatics"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b1_1_collocations",
+          "target": "kg_b1_2_collocations"
+        }
+      ],
+      "description": "Original project-authored curriculum target: build, maintain, and damage relationships. This B1.2 target is a planning node, not lesson content.",
+      "dimension": "collocations",
+      "id": "kg_b1_2_collocations",
+      "name": "build, maintain, and damage relationships",
+      "prerequisites": [
+        "kg_b1_1_collocations"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b1_1_lexical_chunks",
+          "target": "kg_b1_2_lexical_chunks"
+        }
+      ],
+      "description": "Original project-authored curriculum target: What I mean is ... repair frames. This B1.2 target is a planning node, not lesson content.",
+      "dimension": "lexical_chunks",
+      "id": "kg_b1_2_lexical_chunks",
+      "name": "What I mean is ... repair frames",
+      "prerequisites": [
+        "kg_b1_1_lexical_chunks"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b1_1_topics",
+          "target": "kg_b1_2_topics"
+        }
+      ],
+      "description": "Original project-authored curriculum target: community events and personal change. This B1.2 target is a planning node, not lesson content.",
+      "dimension": "topics",
+      "id": "kg_b1_2_topics",
+      "name": "community events and personal change",
+      "prerequisites": [
+        "kg_b1_1_topics"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b1_1_skills",
+          "target": "kg_b1_2_skills"
+        }
+      ],
+      "description": "Original project-authored curriculum target: participate in extended familiar discussion. This B1.2 target is a planning node, not lesson content.",
+      "dimension": "skills",
+      "id": "kg_b1_2_skills",
+      "name": "participate in extended familiar discussion",
+      "prerequisites": [
+        "kg_b1_1_skills"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b1_2_grammar",
+          "target": "kg_b2_1_grammar"
+        }
+      ],
+      "description": "Original project-authored curriculum target: reported statements and questions. This B2.1 target is a planning node, not lesson content.",
+      "dimension": "grammar",
+      "id": "kg_b2_1_grammar",
+      "name": "reported statements and questions",
+      "prerequisites": [
+        "kg_b1_2_grammar"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b1_2_vocabulary_senses",
+          "target": "kg_b2_1_vocabulary_senses"
+        }
+      ],
+      "description": "Original project-authored curriculum target: abstract value, evidence, and process senses. This B2.1 target is a planning node, not lesson content.",
+      "dimension": "vocabulary_senses",
+      "id": "kg_b2_1_vocabulary_senses",
+      "name": "abstract value, evidence, and process senses",
+      "prerequisites": [
+        "kg_b1_2_vocabulary_senses"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b1_2_functions",
+          "target": "kg_b2_1_functions"
+        }
+      ],
+      "description": "Original project-authored curriculum target: negotiating options and solving a problem. This B2.1 target is a planning node, not lesson content.",
+      "dimension": "functions",
+      "id": "kg_b2_1_functions",
+      "name": "negotiating options and solving a problem",
+      "prerequisites": [
+        "kg_b1_2_functions"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b1_2_pronunciation",
+          "target": "kg_b2_1_pronunciation"
+        }
+      ],
+      "description": "Original project-authored curriculum target: connected speech across word boundaries. This B2.1 target is a planning node, not lesson content.",
+      "dimension": "pronunciation",
+      "id": "kg_b2_1_pronunciation",
+      "name": "connected speech across word boundaries",
+      "prerequisites": [
+        "kg_b1_2_pronunciation"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b1_2_discourse",
+          "target": "kg_b2_1_discourse"
+        }
+      ],
+      "description": "Original project-authored curriculum target: claim-evidence-counterpoint structure. This B2.1 target is a planning node, not lesson content.",
+      "dimension": "discourse",
+      "id": "kg_b2_1_discourse",
+      "name": "claim-evidence-counterpoint structure",
+      "prerequisites": [
+        "kg_b1_2_discourse"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b1_2_pragmatics",
+          "target": "kg_b2_1_pragmatics"
+        }
+      ],
+      "description": "Original project-authored curriculum target: hedging advice and negotiating face. This B2.1 target is a planning node, not lesson content.",
+      "dimension": "pragmatics",
+      "id": "kg_b2_1_pragmatics",
+      "name": "hedging advice and negotiating face",
+      "prerequisites": [
+        "kg_b1_2_pragmatics"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b1_2_collocations",
+          "target": "kg_b2_1_collocations"
+        }
+      ],
+      "description": "Original project-authored curriculum target: pose, assess, and address a problem. This B2.1 target is a planning node, not lesson content.",
+      "dimension": "collocations",
+      "id": "kg_b2_1_collocations",
+      "name": "pose, assess, and address a problem",
+      "prerequisites": [
+        "kg_b1_2_collocations"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b1_2_lexical_chunks",
+          "target": "kg_b2_1_lexical_chunks"
+        }
+      ],
+      "description": "Original project-authored curriculum target: On the one hand ... negotiation frames. This B2.1 target is a planning node, not lesson content.",
+      "dimension": "lexical_chunks",
+      "id": "kg_b2_1_lexical_chunks",
+      "name": "On the one hand ... negotiation frames",
+      "prerequisites": [
+        "kg_b1_2_lexical_chunks"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b1_2_topics",
+          "target": "kg_b2_1_topics"
+        }
+      ],
+      "description": "Original project-authored curriculum target: technology, environment, and decision-making. This B2.1 target is a planning node, not lesson content.",
+      "dimension": "topics",
+      "id": "kg_b2_1_topics",
+      "name": "technology, environment, and decision-making",
+      "prerequisites": [
+        "kg_b1_2_topics"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b1_2_skills",
+          "target": "kg_b2_1_skills"
+        }
+      ],
+      "description": "Original project-authored curriculum target: evaluate information and respond strategically. This B2.1 target is a planning node, not lesson content.",
+      "dimension": "skills",
+      "id": "kg_b2_1_skills",
+      "name": "evaluate information and respond strategically",
+      "prerequisites": [
+        "kg_b1_2_skills"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b2_1_grammar",
+          "target": "kg_b2_2_grammar"
+        }
+      ],
+      "description": "Original project-authored curriculum target: conditionals for consequences. This B2.2 target is a planning node, not lesson content.",
+      "dimension": "grammar",
+      "id": "kg_b2_2_grammar",
+      "name": "conditionals for consequences",
+      "prerequisites": [
+        "kg_b2_1_grammar"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b2_1_vocabulary_senses",
+          "target": "kg_b2_2_vocabulary_senses"
+        }
+      ],
+      "description": "Original project-authored curriculum target: society, science, and policy senses. This B2.2 target is a planning node, not lesson content.",
+      "dimension": "vocabulary_senses",
+      "id": "kg_b2_2_vocabulary_senses",
+      "name": "society, science, and policy senses",
+      "prerequisites": [
+        "kg_b2_1_vocabulary_senses"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b2_1_functions",
+          "target": "kg_b2_2_functions"
+        }
+      ],
+      "description": "Original project-authored curriculum target: arguing a position and qualifying claims. This B2.2 target is a planning node, not lesson content.",
+      "dimension": "functions",
+      "id": "kg_b2_2_functions",
+      "name": "arguing a position and qualifying claims",
+      "prerequisites": [
+        "kg_b2_1_functions"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b2_1_pronunciation",
+          "target": "kg_b2_2_pronunciation"
+        }
+      ],
+      "description": "Original project-authored curriculum target: rhythm and reduction in extended turns. This B2.2 target is a planning node, not lesson content.",
+      "dimension": "pronunciation",
+      "id": "kg_b2_2_pronunciation",
+      "name": "rhythm and reduction in extended turns",
+      "prerequisites": [
+        "kg_b2_1_pronunciation"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b2_1_discourse",
+          "target": "kg_b2_2_discourse"
+        }
+      ],
+      "description": "Original project-authored curriculum target: signposting a multi-part argument. This B2.2 target is a planning node, not lesson content.",
+      "dimension": "discourse",
+      "id": "kg_b2_2_discourse",
+      "name": "signposting a multi-part argument",
+      "prerequisites": [
+        "kg_b2_1_discourse"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b2_1_pragmatics",
+          "target": "kg_b2_2_pragmatics"
+        }
+      ],
+      "description": "Original project-authored curriculum target: power, distance, and indirectness. This B2.2 target is a planning node, not lesson content.",
+      "dimension": "pragmatics",
+      "id": "kg_b2_2_pragmatics",
+      "name": "power, distance, and indirectness",
+      "prerequisites": [
+        "kg_b2_1_pragmatics"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b2_1_collocations",
+          "target": "kg_b2_2_collocations"
+        }
+      ],
+      "description": "Original project-authored curriculum target: conduct, implement, and evaluate policy. This B2.2 target is a planning node, not lesson content.",
+      "dimension": "collocations",
+      "id": "kg_b2_2_collocations",
+      "name": "conduct, implement, and evaluate policy",
+      "prerequisites": [
+        "kg_b2_1_collocations"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b2_1_lexical_chunks",
+          "target": "kg_b2_2_lexical_chunks"
+        }
+      ],
+      "description": "Original project-authored curriculum target: The evidence suggests ... argument frames. This B2.2 target is a planning node, not lesson content.",
+      "dimension": "lexical_chunks",
+      "id": "kg_b2_2_lexical_chunks",
+      "name": "The evidence suggests ... argument frames",
+      "prerequisites": [
+        "kg_b2_1_lexical_chunks"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b2_1_topics",
+          "target": "kg_b2_2_topics"
+        }
+      ],
+      "description": "Original project-authored curriculum target: society, education, and public policy. This B2.2 target is a planning node, not lesson content.",
+      "dimension": "topics",
+      "id": "kg_b2_2_topics",
+      "name": "society, education, and public policy",
+      "prerequisites": [
+        "kg_b2_1_topics"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b2_1_skills",
+          "target": "kg_b2_2_skills"
+        }
+      ],
+      "description": "Original project-authored curriculum target: sustain an evidence-based interaction. This B2.2 target is a planning node, not lesson content.",
+      "dimension": "skills",
+      "id": "kg_b2_2_skills",
+      "name": "sustain an evidence-based interaction",
+      "prerequisites": [
+        "kg_b2_1_skills"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b2_2_grammar",
+          "target": "kg_c1_1_grammar"
+        }
+      ],
+      "description": "Original project-authored curriculum target: passive and causative choices. This C1.1 target is a planning node, not lesson content.",
+      "dimension": "grammar",
+      "id": "kg_c1_1_grammar",
+      "name": "passive and causative choices",
+      "prerequisites": [
+        "kg_b2_2_grammar"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b2_2_vocabulary_senses",
+          "target": "kg_c1_1_vocabulary_senses"
+        }
+      ],
+      "description": "Original project-authored curriculum target: academic and professional abstraction. This C1.1 target is a planning node, not lesson content.",
+      "dimension": "vocabulary_senses",
+      "id": "kg_c1_1_vocabulary_senses",
+      "name": "academic and professional abstraction",
+      "prerequisites": [
+        "kg_b2_2_vocabulary_senses"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b2_2_functions",
+          "target": "kg_c1_1_functions"
+        }
+      ],
+      "description": "Original project-authored curriculum target: leading a formal discussion and synthesizing. This C1.1 target is a planning node, not lesson content.",
+      "dimension": "functions",
+      "id": "kg_c1_1_functions",
+      "name": "leading a formal discussion and synthesizing",
+      "prerequisites": [
+        "kg_b2_2_functions"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b2_2_pronunciation",
+          "target": "kg_c1_1_pronunciation"
+        }
+      ],
+      "description": "Original project-authored curriculum target: prosodic framing of complex claims. This C1.1 target is a planning node, not lesson content.",
+      "dimension": "pronunciation",
+      "id": "kg_c1_1_pronunciation",
+      "name": "prosodic framing of complex claims",
+      "prerequisites": [
+        "kg_b2_2_pronunciation"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b2_2_discourse",
+          "target": "kg_c1_1_discourse"
+        }
+      ],
+      "description": "Original project-authored curriculum target: synthesizing sources and viewpoints. This C1.1 target is a planning node, not lesson content.",
+      "dimension": "discourse",
+      "id": "kg_c1_1_discourse",
+      "name": "synthesizing sources and viewpoints",
+      "prerequisites": [
+        "kg_b2_2_discourse"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b2_2_pragmatics",
+          "target": "kg_c1_1_pragmatics"
+        }
+      ],
+      "description": "Original project-authored curriculum target: institutional politeness and stance. This C1.1 target is a planning node, not lesson content.",
+      "dimension": "pragmatics",
+      "id": "kg_c1_1_pragmatics",
+      "name": "institutional politeness and stance",
+      "prerequisites": [
+        "kg_b2_2_pragmatics"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b2_2_collocations",
+          "target": "kg_c1_1_collocations"
+        }
+      ],
+      "description": "Original project-authored curriculum target: draw, yield, and account for conclusions. This C1.1 target is a planning node, not lesson content.",
+      "dimension": "collocations",
+      "id": "kg_c1_1_collocations",
+      "name": "draw, yield, and account for conclusions",
+      "prerequisites": [
+        "kg_b2_2_collocations"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b2_2_lexical_chunks",
+          "target": "kg_c1_1_lexical_chunks"
+        }
+      ],
+      "description": "Original project-authored curriculum target: It is worth noting ... academic frames. This C1.1 target is a planning node, not lesson content.",
+      "dimension": "lexical_chunks",
+      "id": "kg_c1_1_lexical_chunks",
+      "name": "It is worth noting ... academic frames",
+      "prerequisites": [
+        "kg_b2_2_lexical_chunks"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b2_2_topics",
+          "target": "kg_c1_1_topics"
+        }
+      ],
+      "description": "Original project-authored curriculum target: research, institutions, and global issues. This C1.1 target is a planning node, not lesson content.",
+      "dimension": "topics",
+      "id": "kg_c1_1_topics",
+      "name": "research, institutions, and global issues",
+      "prerequisites": [
+        "kg_b2_2_topics"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_b2_2_skills",
+          "target": "kg_c1_1_skills"
+        }
+      ],
+      "description": "Original project-authored curriculum target: integrate sources in a formal task. This C1.1 target is a planning node, not lesson content.",
+      "dimension": "skills",
+      "id": "kg_c1_1_skills",
+      "name": "integrate sources in a formal task",
+      "prerequisites": [
+        "kg_b2_2_skills"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_c1_1_grammar",
+          "target": "kg_c1_2_grammar"
+        }
+      ],
+      "description": "Original project-authored curriculum target: advanced clause linking. This C1.2 target is a planning node, not lesson content.",
+      "dimension": "grammar",
+      "id": "kg_c1_2_grammar",
+      "name": "advanced clause linking",
+      "prerequisites": [
+        "kg_c1_1_grammar"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_c1_1_vocabulary_senses",
+          "target": "kg_c1_2_vocabulary_senses"
+        }
+      ],
+      "description": "Original project-authored curriculum target: figurative and evaluative senses. This C1.2 target is a planning node, not lesson content.",
+      "dimension": "vocabulary_senses",
+      "id": "kg_c1_2_vocabulary_senses",
+      "name": "figurative and evaluative senses",
+      "prerequisites": [
+        "kg_c1_1_vocabulary_senses"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_c1_1_functions",
+          "target": "kg_c1_2_functions"
+        }
+      ],
+      "description": "Original project-authored curriculum target: evaluating proposals and managing disagreement. This C1.2 target is a planning node, not lesson content.",
+      "dimension": "functions",
+      "id": "kg_c1_2_functions",
+      "name": "evaluating proposals and managing disagreement",
+      "prerequisites": [
+        "kg_c1_1_functions"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_c1_1_pronunciation",
+          "target": "kg_c1_2_pronunciation"
+        }
+      ],
+      "description": "Original project-authored curriculum target: fine-grained prominence and stance. This C1.2 target is a planning node, not lesson content.",
+      "dimension": "pronunciation",
+      "id": "kg_c1_2_pronunciation",
+      "name": "fine-grained prominence and stance",
+      "prerequisites": [
+        "kg_c1_1_pronunciation"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_c1_1_discourse",
+          "target": "kg_c1_2_discourse"
+        }
+      ],
+      "description": "Original project-authored curriculum target: managing long-form exposition. This C1.2 target is a planning node, not lesson content.",
+      "dimension": "discourse",
+      "id": "kg_c1_2_discourse",
+      "name": "managing long-form exposition",
+      "prerequisites": [
+        "kg_c1_1_discourse"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_c1_1_pragmatics",
+          "target": "kg_c1_2_pragmatics"
+        }
+      ],
+      "description": "Original project-authored curriculum target: irony, implication, and rapport. This C1.2 target is a planning node, not lesson content.",
+      "dimension": "pragmatics",
+      "id": "kg_c1_2_pragmatics",
+      "name": "irony, implication, and rapport",
+      "prerequisites": [
+        "kg_c1_1_pragmatics"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_c1_1_collocations",
+          "target": "kg_c1_2_collocations"
+        }
+      ],
+      "description": "Original project-authored curriculum target: deeply, highly, and broadly modified claims. This C1.2 target is a planning node, not lesson content.",
+      "dimension": "collocations",
+      "id": "kg_c1_2_collocations",
+      "name": "deeply, highly, and broadly modified claims",
+      "prerequisites": [
+        "kg_c1_1_collocations"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_c1_1_lexical_chunks",
+          "target": "kg_c1_2_lexical_chunks"
+        }
+      ],
+      "description": "Original project-authored curriculum target: That said ... concession frames. This C1.2 target is a planning node, not lesson content.",
+      "dimension": "lexical_chunks",
+      "id": "kg_c1_2_lexical_chunks",
+      "name": "That said ... concession frames",
+      "prerequisites": [
+        "kg_c1_1_lexical_chunks"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_c1_1_topics",
+          "target": "kg_c1_2_topics"
+        }
+      ],
+      "description": "Original project-authored curriculum target: culture, ethics, and competing values. This C1.2 target is a planning node, not lesson content.",
+      "dimension": "topics",
+      "id": "kg_c1_2_topics",
+      "name": "culture, ethics, and competing values",
+      "prerequisites": [
+        "kg_c1_1_topics"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_c1_1_skills",
+          "target": "kg_c1_2_skills"
+        }
+      ],
+      "description": "Original project-authored curriculum target: control precision across demanding tasks. This C1.2 target is a planning node, not lesson content.",
+      "dimension": "skills",
+      "id": "kg_c1_2_skills",
+      "name": "control precision across demanding tasks",
+      "prerequisites": [
+        "kg_c1_1_skills"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_c1_2_grammar",
+          "target": "kg_c2_1_grammar"
+        }
+      ],
+      "description": "Original project-authored curriculum target: stance and emphasis in complex clauses. This C2.1 target is a planning node, not lesson content.",
+      "dimension": "grammar",
+      "id": "kg_c2_1_grammar",
+      "name": "stance and emphasis in complex clauses",
+      "prerequisites": [
+        "kg_c1_2_grammar"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_c1_2_vocabulary_senses",
+          "target": "kg_c2_1_vocabulary_senses"
+        }
+      ],
+      "description": "Original project-authored curriculum target: rare polysemy and specialist distinctions. This C2.1 target is a planning node, not lesson content.",
+      "dimension": "vocabulary_senses",
+      "id": "kg_c2_1_vocabulary_senses",
+      "name": "rare polysemy and specialist distinctions",
+      "prerequisites": [
+        "kg_c1_2_vocabulary_senses"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_c1_2_functions",
+          "target": "kg_c2_1_functions"
+        }
+      ],
+      "description": "Original project-authored curriculum target: interpreting implied intent in debate. This C2.1 target is a planning node, not lesson content.",
+      "dimension": "functions",
+      "id": "kg_c2_1_functions",
+      "name": "interpreting implied intent in debate",
+      "prerequisites": [
+        "kg_c1_2_functions"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_c1_2_pronunciation",
+          "target": "kg_c2_1_pronunciation"
+        }
+      ],
+      "description": "Original project-authored curriculum target: variety-aware phonological flexibility. This C2.1 target is a planning node, not lesson content.",
+      "dimension": "pronunciation",
+      "id": "kg_c2_1_pronunciation",
+      "name": "variety-aware phonological flexibility",
+      "prerequisites": [
+        "kg_c1_2_pronunciation"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_c1_2_discourse",
+          "target": "kg_c2_1_discourse"
+        }
+      ],
+      "description": "Original project-authored curriculum target: rhetorical framing and inference. This C2.1 target is a planning node, not lesson content.",
+      "dimension": "discourse",
+      "id": "kg_c2_1_discourse",
+      "name": "rhetorical framing and inference",
+      "prerequisites": [
+        "kg_c1_2_discourse"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_c1_2_pragmatics",
+          "target": "kg_c2_1_pragmatics"
+        }
+      ],
+      "description": "Original project-authored curriculum target: cross-cultural interpretation of intent. This C2.1 target is a planning node, not lesson content.",
+      "dimension": "pragmatics",
+      "id": "kg_c2_1_pragmatics",
+      "name": "cross-cultural interpretation of intent",
+      "prerequisites": [
+        "kg_c1_2_pragmatics"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_c1_2_collocations",
+          "target": "kg_c2_1_collocations"
+        }
+      ],
+      "description": "Original project-authored curriculum target: fine lexical selection in formal prose. This C2.1 target is a planning node, not lesson content.",
+      "dimension": "collocations",
+      "id": "kg_c2_1_collocations",
+      "name": "fine lexical selection in formal prose",
+      "prerequisites": [
+        "kg_c1_2_collocations"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_c1_2_lexical_chunks",
+          "target": "kg_c2_1_lexical_chunks"
+        }
+      ],
+      "description": "Original project-authored curriculum target: Not so much X as Y ... reframing frames. This C2.1 target is a planning node, not lesson content.",
+      "dimension": "lexical_chunks",
+      "id": "kg_c2_1_lexical_chunks",
+      "name": "Not so much X as Y ... reframing frames",
+      "prerequisites": [
+        "kg_c1_2_lexical_chunks"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_c1_2_topics",
+          "target": "kg_c2_1_topics"
+        }
+      ],
+      "description": "Original project-authored curriculum target: specialist knowledge and uncertainty. This C2.1 target is a planning node, not lesson content.",
+      "dimension": "topics",
+      "id": "kg_c2_1_topics",
+      "name": "specialist knowledge and uncertainty",
+      "prerequisites": [
+        "kg_c1_2_topics"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_c1_2_skills",
+          "target": "kg_c2_1_skills"
+        }
+      ],
+      "description": "Original project-authored curriculum target: interpret nuanced expert communication. This C2.1 target is a planning node, not lesson content.",
+      "dimension": "skills",
+      "id": "kg_c2_1_skills",
+      "name": "interpret nuanced expert communication",
+      "prerequisites": [
+        "kg_c1_2_skills"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_c2_1_grammar",
+          "target": "kg_c2_2_grammar"
+        }
+      ],
+      "description": "Original project-authored curriculum target: subtle aspect and modality choices. This C2.2 target is a planning node, not lesson content.",
+      "dimension": "grammar",
+      "id": "kg_c2_2_grammar",
+      "name": "subtle aspect and modality choices",
+      "prerequisites": [
+        "kg_c2_1_grammar"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_c2_1_vocabulary_senses",
+          "target": "kg_c2_2_vocabulary_senses"
+        }
+      ],
+      "description": "Original project-authored curriculum target: precision across register and domain. This C2.2 target is a planning node, not lesson content.",
+      "dimension": "vocabulary_senses",
+      "id": "kg_c2_2_vocabulary_senses",
+      "name": "precision across register and domain",
+      "prerequisites": [
+        "kg_c2_1_vocabulary_senses"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_c2_1_functions",
+          "target": "kg_c2_2_functions"
+        }
+      ],
+      "description": "Original project-authored curriculum target: adapting persuasive communication to audience. This C2.2 target is a planning node, not lesson content.",
+      "dimension": "functions",
+      "id": "kg_c2_2_functions",
+      "name": "adapting persuasive communication to audience",
+      "prerequisites": [
+        "kg_c2_1_functions"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_c2_1_pronunciation",
+          "target": "kg_c2_2_pronunciation"
+        }
+      ],
+      "description": "Original project-authored curriculum target: controlled expressive prosody. This C2.2 target is a planning node, not lesson content.",
+      "dimension": "pronunciation",
+      "id": "kg_c2_2_pronunciation",
+      "name": "controlled expressive prosody",
+      "prerequisites": [
+        "kg_c2_1_pronunciation"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_c2_1_discourse",
+          "target": "kg_c2_2_discourse"
+        }
+      ],
+      "description": "Original project-authored curriculum target: genre-sensitive discourse architecture. This C2.2 target is a planning node, not lesson content.",
+      "dimension": "discourse",
+      "id": "kg_c2_2_discourse",
+      "name": "genre-sensitive discourse architecture",
+      "prerequisites": [
+        "kg_c2_1_discourse"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_c2_1_pragmatics",
+          "target": "kg_c2_2_pragmatics"
+        }
+      ],
+      "description": "Original project-authored curriculum target: strategic identity and audience alignment. This C2.2 target is a planning node, not lesson content.",
+      "dimension": "pragmatics",
+      "id": "kg_c2_2_pragmatics",
+      "name": "strategic identity and audience alignment",
+      "prerequisites": [
+        "kg_c2_1_pragmatics"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_c2_1_collocations",
+          "target": "kg_c2_2_collocations"
+        }
+      ],
+      "description": "Original project-authored curriculum target: domain-specific combinatorial precision. This C2.2 target is a planning node, not lesson content.",
+      "dimension": "collocations",
+      "id": "kg_c2_2_collocations",
+      "name": "domain-specific combinatorial precision",
+      "prerequisites": [
+        "kg_c2_1_collocations"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_c2_1_lexical_chunks",
+          "target": "kg_c2_2_lexical_chunks"
+        }
+      ],
+      "description": "Original project-authored curriculum target: Taken together ... synthesis frames. This C2.2 target is a planning node, not lesson content.",
+      "dimension": "lexical_chunks",
+      "id": "kg_c2_2_lexical_chunks",
+      "name": "Taken together ... synthesis frames",
+      "prerequisites": [
+        "kg_c2_1_lexical_chunks"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_c2_1_topics",
+          "target": "kg_c2_2_topics"
+        }
+      ],
+      "description": "Original project-authored curriculum target: complex systems, identity, and worldviews. This C2.2 target is a planning node, not lesson content.",
+      "dimension": "topics",
+      "id": "kg_c2_2_topics",
+      "name": "complex systems, identity, and worldviews",
+      "prerequisites": [
+        "kg_c2_1_topics"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_c2_1_skills",
+          "target": "kg_c2_2_skills"
+        }
+      ],
+      "description": "Original project-authored curriculum target: create and critique sophisticated communication. This C2.2 target is a planning node, not lesson content.",
+      "dimension": "skills",
+      "id": "kg_c2_2_skills",
+      "name": "create and critique sophisticated communication",
+      "prerequisites": [
+        "kg_c2_1_skills"
+      ],
+      "record_type": "m15_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.2"
+    }
+  ],
+  "population_id": "kgpop_c4dda95c776698cf9c5e862e7499bea8a081f40a00212d83a21843a3f1652248",
+  "record_type": "m15_knowledge_graph_population",
+  "schema_version": "1.0",
+  "tiers": [
+    "A1.1",
+    "A1.2",
+    "A2.1",
+    "A2.2",
+    "B1.1",
+    "B1.2",
+    "B2.1",
+    "B2.2",
+    "C1.1",
+    "C1.2",
+    "C2.1",
+    "C2.2"
+  ]
+}

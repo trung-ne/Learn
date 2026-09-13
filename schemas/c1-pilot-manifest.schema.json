@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/c1-pilot-manifest.schema.json",
+  "title": "English Master C1 pilot manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "record_type",
+    "pilot_id",
+    "built_at",
+    "content_status",
+    "source",
+    "lesson_ids",
+    "inventory",
+    "manifest_sha256"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "record_type": {
+      "const": "c1_pilot_manifest"
+    },
+    "pilot_id": {
+      "type": "string",
+      "pattern": "^c1pilot_[a-f0-9]{64}$"
+    },
+    "built_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "content_status": {
+      "const": "UNREVIEWED"
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "population_sha256",
+        "blueprint_sha256",
+        "content_input_sha256",
+        "built_at"
+      ],
+      "properties": {
+        "population_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "blueprint_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "content_input_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "built_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "lesson_ids": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "inventory": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "pattern": "^packets/c1pilot-packet-[0-9]{2}\\.json$"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        }
+      }
+    },
+    "manifest_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    }
+  }
+}

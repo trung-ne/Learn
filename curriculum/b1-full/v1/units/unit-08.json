@@ -1,0 +1,993 @@
+{
+  "schema_version": "1.0",
+  "record_type": "b1_full_content_unit",
+  "unit_id": "m16b1-v1-b1-u08",
+  "tier": "B1.2",
+  "content_origin": "PROJECT_AUTHORED",
+  "lessons": [
+    {
+      "lesson_id": "m16b1-v1-b1-u08-l01",
+      "title": "Retelling a media story",
+      "duration_minutes": 40,
+      "objective_target_ids": [
+        "b1t_u06_grammar",
+        "b1t_u06_vocabulary_senses",
+        "b1t_u06_discourse"
+      ],
+      "objectives": [
+        "Retell the main sequence of a familiar media story.",
+        "Develop a connected response in a discussion about retelling a media story with a reason and relevant detail."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice the connected language (10 minutes)",
+          "body": "Read this model: 'I have considered retelling a media story, and my experience shows one useful reason for this view.' Identify the main point, the linking expression, and the supporting detail. Then explain how the wording helps the speaker achieve this objective: Retell the main sequence of a familiar media story.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_discourse"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided exchange (10 minutes)",
+          "body": "Work with a partner in a discussion about retelling a media story. Give a clear main point, support it with a specific reason, and respond to one follow-up question. Use tactful language when the other speaker presents a different perspective.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_discourse"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent connected response (8 minutes)",
+          "body": "Prepare a one-minute response about retelling a media story. Organize it into thought groups, stress the words that carry your main point, and finish with a concise conclusion rather than a list of isolated sentences.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_discourse"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_discourse"
+          ],
+          "prompt": "Choose the most connected and tactful response for a discussion about retelling a media story.",
+          "media_required": false,
+          "options": [
+            "I have considered retelling a media story, and my experience shows one useful reason for this view.",
+            "Retelling a media story is a topic, but I will not explain my view.",
+            "Several details exist about retelling a media story, perhaps."
+          ],
+          "correct_answer": "I have considered retelling a media story, and my experience shows one useful reason for this view."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_discourse"
+          ],
+          "prompt": "Complete this response about retelling a media story: 'My experience supports this view ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "because it offers evidence about retelling a media story"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_discourse"
+          ],
+          "prompt": "Read the short response about retelling a media story and identify how the writer handles another view.",
+          "media_required": false,
+          "stimulus": "Although another person may disagree about retelling a media story, I can respond politely and explain my reason.",
+          "questions": [
+            {
+              "question": "How does the writer respond to disagreement?",
+              "acceptable_answers": [
+                "The writer responds politely and gives a reason in the discussion of retelling a media story."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_discourse"
+          ],
+          "prompt": "Speak for 60–90 seconds in a discussion about retelling a media story. State your point, support it, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Presents a connected main point about retelling a media story with relevant support.",
+              "Responds clearly and tactfully to a follow-up question about retelling a media story."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short response about retelling a media story. Identify the view and supporting reason before the transcript is revealed, then listen again to check the linking language.",
+          "goal": "Follow the main point and support in spoken language about retelling a media story.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_discourse"
+          ],
+          "transcript": "I have considered retelling a media story, and my experience shows one useful reason for this view.",
+          "question": "What view and supporting reason does the speaker communicate?",
+          "answer": "The speaker connects a considered view about retelling a media story to a useful reason from experience.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a discussion about retelling a media story. Learner role: present and support a view. Tutor role: ask one probing question and offer a different perspective. End after the learner responds tactfully and summarizes the point.",
+          "goal": "Sustain a connected, tactful exchange about retelling a media story.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_discourse"
+          ],
+          "constraints": [
+            "State both roles before beginning the exchange.",
+            "Use at most four tutor turns and stop after the learner summary."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Record the model about retelling a media story in meaningful thought groups. Stress the main point and reason, then compare a second attempt with the first for clarity and rhythm.",
+          "goal": "Make connected speech about retelling a media story easy to follow.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_discourse"
+          ],
+          "target": "Thought groups and information stress for retelling a media story",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write 90–120 words about retelling a media story. State a position or experience, support it with a reason and example, and acknowledge another perspective. Submit your own draft before asking for feedback.",
+          "goal": "Produce a connected written response about retelling a media story.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_discourse"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u08-l02",
+      "title": "Explaining a perspective",
+      "duration_minutes": 40,
+      "objective_target_ids": [
+        "b1t_u06_functions",
+        "b1t_u06_pragmatics",
+        "b1t_u06_skills"
+      ],
+      "objectives": [
+        "Clarify a viewpoint and add enough context for a listener.",
+        "Develop a connected response in a discussion about explaining a perspective with a reason and relevant detail."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice the connected language (10 minutes)",
+          "body": "Read this model: 'I have considered explaining a perspective, and my experience shows one useful reason for this view.' Identify the main point, the linking expression, and the supporting detail. Then explain how the wording helps the speaker achieve this objective: Clarify a viewpoint and add enough context for a listener.",
+          "target_ids": [
+            "b1t_u06_functions",
+            "b1t_u06_pragmatics",
+            "b1t_u06_skills"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided exchange (10 minutes)",
+          "body": "Work with a partner in a discussion about explaining a perspective. Give a clear main point, support it with a specific reason, and respond to one follow-up question. Use tactful language when the other speaker presents a different perspective.",
+          "target_ids": [
+            "b1t_u06_functions",
+            "b1t_u06_pragmatics",
+            "b1t_u06_skills"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent connected response (8 minutes)",
+          "body": "Prepare a one-minute response about explaining a perspective. Organize it into thought groups, stress the words that carry your main point, and finish with a concise conclusion rather than a list of isolated sentences.",
+          "target_ids": [
+            "b1t_u06_functions",
+            "b1t_u06_pragmatics",
+            "b1t_u06_skills"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "b1t_u06_functions",
+            "b1t_u06_pragmatics",
+            "b1t_u06_skills"
+          ],
+          "prompt": "Choose the most connected and tactful response for a discussion about explaining a perspective.",
+          "media_required": false,
+          "options": [
+            "I have considered explaining a perspective, and my experience shows one useful reason for this view.",
+            "Explaining a perspective is a topic, but I will not explain my view.",
+            "Several details exist about explaining a perspective, perhaps."
+          ],
+          "correct_answer": "I have considered explaining a perspective, and my experience shows one useful reason for this view."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "b1t_u06_functions",
+            "b1t_u06_pragmatics",
+            "b1t_u06_skills"
+          ],
+          "prompt": "Complete this response about explaining a perspective: 'My experience supports this view ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "because it offers evidence about explaining a perspective"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "b1t_u06_functions",
+            "b1t_u06_pragmatics",
+            "b1t_u06_skills"
+          ],
+          "prompt": "Read the short response about explaining a perspective and identify how the writer handles another view.",
+          "media_required": false,
+          "stimulus": "Although another person may disagree about explaining a perspective, I can respond politely and explain my reason.",
+          "questions": [
+            {
+              "question": "How does the writer respond to disagreement?",
+              "acceptable_answers": [
+                "The writer responds politely and gives a reason in the discussion of explaining a perspective."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "b1t_u06_functions",
+            "b1t_u06_pragmatics",
+            "b1t_u06_skills"
+          ],
+          "prompt": "Speak for 60–90 seconds in a discussion about explaining a perspective. State your point, support it, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Presents a connected main point about explaining a perspective with relevant support.",
+              "Responds clearly and tactfully to a follow-up question about explaining a perspective."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short response about explaining a perspective. Identify the view and supporting reason before the transcript is revealed, then listen again to check the linking language.",
+          "goal": "Follow the main point and support in spoken language about explaining a perspective.",
+          "target_ids": [
+            "b1t_u06_functions",
+            "b1t_u06_pragmatics",
+            "b1t_u06_skills"
+          ],
+          "transcript": "I have considered explaining a perspective, and my experience shows one useful reason for this view.",
+          "question": "What view and supporting reason does the speaker communicate?",
+          "answer": "The speaker connects a considered view about explaining a perspective to a useful reason from experience.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a discussion about explaining a perspective. Learner role: present and support a view. Tutor role: ask one probing question and offer a different perspective. End after the learner responds tactfully and summarizes the point.",
+          "goal": "Sustain a connected, tactful exchange about explaining a perspective.",
+          "target_ids": [
+            "b1t_u06_functions",
+            "b1t_u06_pragmatics",
+            "b1t_u06_skills"
+          ],
+          "constraints": [
+            "State both roles before beginning the exchange.",
+            "Use at most four tutor turns and stop after the learner summary."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Record the model about explaining a perspective in meaningful thought groups. Stress the main point and reason, then compare a second attempt with the first for clarity and rhythm.",
+          "goal": "Make connected speech about explaining a perspective easy to follow.",
+          "target_ids": [
+            "b1t_u06_functions",
+            "b1t_u06_pragmatics",
+            "b1t_u06_skills"
+          ],
+          "target": "Thought groups and information stress for explaining a perspective",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write 90–120 words about explaining a perspective. State a position or experience, support it with a reason and example, and acknowledge another perspective. Submit your own draft before asking for feedback.",
+          "goal": "Produce a connected written response about explaining a perspective.",
+          "target_ids": [
+            "b1t_u06_functions",
+            "b1t_u06_pragmatics",
+            "b1t_u06_skills"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u08-l03",
+      "title": "Narrative language patterns",
+      "duration_minutes": 40,
+      "objective_target_ids": [
+        "b1t_u06_lexical_chunks",
+        "b1t_u06_collocations",
+        "b1t_u06_pronunciation"
+      ],
+      "objectives": [
+        "Use narrative chunks, collocations, and intonation coherently.",
+        "Develop a connected response in a discussion about narrative language patterns with a reason and relevant detail."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice the connected language (10 minutes)",
+          "body": "Read this model: 'I have considered narrative language patterns, and my experience shows one useful reason for this view.' Identify the main point, the linking expression, and the supporting detail. Then explain how the wording helps the speaker achieve this objective: Use narrative chunks, collocations, and intonation coherently.",
+          "target_ids": [
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_collocations",
+            "b1t_u06_pronunciation"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided exchange (10 minutes)",
+          "body": "Work with a partner in a discussion about narrative language patterns. Give a clear main point, support it with a specific reason, and respond to one follow-up question. Use tactful language when the other speaker presents a different perspective.",
+          "target_ids": [
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_collocations",
+            "b1t_u06_pronunciation"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent connected response (8 minutes)",
+          "body": "Prepare a one-minute response about narrative language patterns. Organize it into thought groups, stress the words that carry your main point, and finish with a concise conclusion rather than a list of isolated sentences.",
+          "target_ids": [
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_collocations",
+            "b1t_u06_pronunciation"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_collocations",
+            "b1t_u06_pronunciation"
+          ],
+          "prompt": "Choose the most connected and tactful response for a discussion about narrative language patterns.",
+          "media_required": false,
+          "options": [
+            "I have considered narrative language patterns, and my experience shows one useful reason for this view.",
+            "Narrative language patterns is a topic, but I will not explain my view.",
+            "Several details exist about narrative language patterns, perhaps."
+          ],
+          "correct_answer": "I have considered narrative language patterns, and my experience shows one useful reason for this view."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_collocations",
+            "b1t_u06_pronunciation"
+          ],
+          "prompt": "Complete this response about narrative language patterns: 'My experience supports this view ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "because it offers evidence about narrative language patterns"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_collocations",
+            "b1t_u06_pronunciation"
+          ],
+          "prompt": "Read the short response about narrative language patterns and identify how the writer handles another view.",
+          "media_required": false,
+          "stimulus": "Although another person may disagree about narrative language patterns, I can respond politely and explain my reason.",
+          "questions": [
+            {
+              "question": "How does the writer respond to disagreement?",
+              "acceptable_answers": [
+                "The writer responds politely and gives a reason in the discussion of narrative language patterns."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_collocations",
+            "b1t_u06_pronunciation"
+          ],
+          "prompt": "Speak for 60–90 seconds in a discussion about narrative language patterns. State your point, support it, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Presents a connected main point about narrative language patterns with relevant support.",
+              "Responds clearly and tactfully to a follow-up question about narrative language patterns."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short response about narrative language patterns. Identify the view and supporting reason before the transcript is revealed, then listen again to check the linking language.",
+          "goal": "Follow the main point and support in spoken language about narrative language patterns.",
+          "target_ids": [
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_collocations",
+            "b1t_u06_pronunciation"
+          ],
+          "transcript": "I have considered narrative language patterns, and my experience shows one useful reason for this view.",
+          "question": "What view and supporting reason does the speaker communicate?",
+          "answer": "The speaker connects a considered view about narrative language patterns to a useful reason from experience.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a discussion about narrative language patterns. Learner role: present and support a view. Tutor role: ask one probing question and offer a different perspective. End after the learner responds tactfully and summarizes the point.",
+          "goal": "Sustain a connected, tactful exchange about narrative language patterns.",
+          "target_ids": [
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_collocations",
+            "b1t_u06_pronunciation"
+          ],
+          "constraints": [
+            "State both roles before beginning the exchange.",
+            "Use at most four tutor turns and stop after the learner summary."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Record the model about narrative language patterns in meaningful thought groups. Stress the main point and reason, then compare a second attempt with the first for clarity and rhythm.",
+          "goal": "Make connected speech about narrative language patterns easy to follow.",
+          "target_ids": [
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_collocations",
+            "b1t_u06_pronunciation"
+          ],
+          "target": "Thought groups and information stress for narrative language patterns",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write 90–120 words about narrative language patterns. State a position or experience, support it with a reason and example, and acknowledge another perspective. Submit your own draft before asking for feedback.",
+          "goal": "Produce a connected written response about narrative language patterns.",
+          "target_ids": [
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_collocations",
+            "b1t_u06_pronunciation"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u08-l04",
+      "title": "Comparing accounts",
+      "duration_minutes": 40,
+      "objective_target_ids": [
+        "b1t_u06_topics",
+        "b1t_u06_functions",
+        "b1t_u06_skills"
+      ],
+      "objectives": [
+        "Discuss two accounts and repair a misunderstanding when needed.",
+        "Develop a connected response in a discussion about comparing accounts with a reason and relevant detail."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice the connected language (10 minutes)",
+          "body": "Read this model: 'I have considered comparing accounts, and my experience shows one useful reason for this view.' Identify the main point, the linking expression, and the supporting detail. Then explain how the wording helps the speaker achieve this objective: Discuss two accounts and repair a misunderstanding when needed.",
+          "target_ids": [
+            "b1t_u06_topics",
+            "b1t_u06_functions",
+            "b1t_u06_skills"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided exchange (10 minutes)",
+          "body": "Work with a partner in a discussion about comparing accounts. Give a clear main point, support it with a specific reason, and respond to one follow-up question. Use tactful language when the other speaker presents a different perspective.",
+          "target_ids": [
+            "b1t_u06_topics",
+            "b1t_u06_functions",
+            "b1t_u06_skills"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent connected response (8 minutes)",
+          "body": "Prepare a one-minute response about comparing accounts. Organize it into thought groups, stress the words that carry your main point, and finish with a concise conclusion rather than a list of isolated sentences.",
+          "target_ids": [
+            "b1t_u06_topics",
+            "b1t_u06_functions",
+            "b1t_u06_skills"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "b1t_u06_topics",
+            "b1t_u06_functions",
+            "b1t_u06_skills"
+          ],
+          "prompt": "Choose the most connected and tactful response for a discussion about comparing accounts.",
+          "media_required": false,
+          "options": [
+            "I have considered comparing accounts, and my experience shows one useful reason for this view.",
+            "Comparing accounts is a topic, but I will not explain my view.",
+            "Several details exist about comparing accounts, perhaps."
+          ],
+          "correct_answer": "I have considered comparing accounts, and my experience shows one useful reason for this view."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "b1t_u06_topics",
+            "b1t_u06_functions",
+            "b1t_u06_skills"
+          ],
+          "prompt": "Complete this response about comparing accounts: 'My experience supports this view ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "because it offers evidence about comparing accounts"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "b1t_u06_topics",
+            "b1t_u06_functions",
+            "b1t_u06_skills"
+          ],
+          "prompt": "Read the short response about comparing accounts and identify how the writer handles another view.",
+          "media_required": false,
+          "stimulus": "Although another person may disagree about comparing accounts, I can respond politely and explain my reason.",
+          "questions": [
+            {
+              "question": "How does the writer respond to disagreement?",
+              "acceptable_answers": [
+                "The writer responds politely and gives a reason in the discussion of comparing accounts."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "b1t_u06_topics",
+            "b1t_u06_functions",
+            "b1t_u06_skills"
+          ],
+          "prompt": "Speak for 60–90 seconds in a discussion about comparing accounts. State your point, support it, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Presents a connected main point about comparing accounts with relevant support.",
+              "Responds clearly and tactfully to a follow-up question about comparing accounts."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short response about comparing accounts. Identify the view and supporting reason before the transcript is revealed, then listen again to check the linking language.",
+          "goal": "Follow the main point and support in spoken language about comparing accounts.",
+          "target_ids": [
+            "b1t_u06_topics",
+            "b1t_u06_functions",
+            "b1t_u06_skills"
+          ],
+          "transcript": "I have considered comparing accounts, and my experience shows one useful reason for this view.",
+          "question": "What view and supporting reason does the speaker communicate?",
+          "answer": "The speaker connects a considered view about comparing accounts to a useful reason from experience.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a discussion about comparing accounts. Learner role: present and support a view. Tutor role: ask one probing question and offer a different perspective. End after the learner responds tactfully and summarizes the point.",
+          "goal": "Sustain a connected, tactful exchange about comparing accounts.",
+          "target_ids": [
+            "b1t_u06_topics",
+            "b1t_u06_functions",
+            "b1t_u06_skills"
+          ],
+          "constraints": [
+            "State both roles before beginning the exchange.",
+            "Use at most four tutor turns and stop after the learner summary."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Record the model about comparing accounts in meaningful thought groups. Stress the main point and reason, then compare a second attempt with the first for clarity and rhythm.",
+          "goal": "Make connected speech about comparing accounts easy to follow.",
+          "target_ids": [
+            "b1t_u06_topics",
+            "b1t_u06_functions",
+            "b1t_u06_skills"
+          ],
+          "target": "Thought groups and information stress for comparing accounts",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write 90–120 words about comparing accounts. State a position or experience, support it with a reason and example, and acknowledge another perspective. Submit your own draft before asking for feedback.",
+          "goal": "Produce a connected written response about comparing accounts.",
+          "target_ids": [
+            "b1t_u06_topics",
+            "b1t_u06_functions",
+            "b1t_u06_skills"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u08-l05",
+      "title": "Review: media stories",
+      "duration_minutes": 40,
+      "objective_target_ids": [
+        "b1t_u06_grammar",
+        "b1t_u06_vocabulary_senses",
+        "b1t_u06_functions",
+        "b1t_u06_pronunciation",
+        "b1t_u06_discourse",
+        "b1t_u06_pragmatics",
+        "b1t_u06_collocations",
+        "b1t_u06_lexical_chunks",
+        "b1t_u06_topics",
+        "b1t_u06_skills"
+      ],
+      "objectives": [
+        "Review retelling, perspective, and repair targets.",
+        "Develop a connected response in a discussion about review: media stories with a reason and relevant detail."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice the connected language (10 minutes)",
+          "body": "Read this model: 'I have considered review: media stories, and my experience shows one useful reason for this view.' Identify the main point, the linking expression, and the supporting detail. Then explain how the wording helps the speaker achieve this objective: Review retelling, perspective, and repair targets.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided exchange (10 minutes)",
+          "body": "Work with a partner in a discussion about review: media stories. Give a clear main point, support it with a specific reason, and respond to one follow-up question. Use tactful language when the other speaker presents a different perspective.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent connected response (8 minutes)",
+          "body": "Prepare a one-minute response about review: media stories. Organize it into thought groups, stress the words that carry your main point, and finish with a concise conclusion rather than a list of isolated sentences.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ],
+          "prompt": "Choose the most connected and tactful response for a discussion about review: media stories.",
+          "media_required": false,
+          "options": [
+            "I have considered review: media stories, and my experience shows one useful reason for this view.",
+            "Review: media stories is a topic, but I will not explain my view.",
+            "Several details exist about review: media stories, perhaps."
+          ],
+          "correct_answer": "I have considered review: media stories, and my experience shows one useful reason for this view."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ],
+          "prompt": "Complete this response about review: media stories: 'My experience supports this view ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "because it offers evidence about review: media stories"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ],
+          "prompt": "Read the short response about review: media stories and identify how the writer handles another view.",
+          "media_required": false,
+          "stimulus": "Although another person may disagree about review: media stories, I can respond politely and explain my reason.",
+          "questions": [
+            {
+              "question": "How does the writer respond to disagreement?",
+              "acceptable_answers": [
+                "The writer responds politely and gives a reason in the discussion of review: media stories."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ],
+          "prompt": "Speak for 60–90 seconds in a discussion about review: media stories. State your point, support it, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Presents a connected main point about review: media stories with relevant support.",
+              "Responds clearly and tactfully to a follow-up question about review: media stories."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short response about review: media stories. Identify the view and supporting reason before the transcript is revealed, then listen again to check the linking language.",
+          "goal": "Follow the main point and support in spoken language about review: media stories.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ],
+          "transcript": "I have considered review: media stories, and my experience shows one useful reason for this view.",
+          "question": "What view and supporting reason does the speaker communicate?",
+          "answer": "The speaker connects a considered view about review: media stories to a useful reason from experience.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a discussion about review: media stories. Learner role: present and support a view. Tutor role: ask one probing question and offer a different perspective. End after the learner responds tactfully and summarizes the point.",
+          "goal": "Sustain a connected, tactful exchange about review: media stories.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ],
+          "constraints": [
+            "State both roles before beginning the exchange.",
+            "Use at most four tutor turns and stop after the learner summary."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Record the model about review: media stories in meaningful thought groups. Stress the main point and reason, then compare a second attempt with the first for clarity and rhythm.",
+          "goal": "Make connected speech about review: media stories easy to follow.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ],
+          "target": "Thought groups and information stress for review: media stories",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write 90–120 words about review: media stories. State a position or experience, support it with a reason and example, and acknowledge another perspective. Submit your own draft before asking for feedback.",
+          "goal": "Produce a connected written response about review: media stories.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,776 @@
+{
+  "schema_version": "1.0",
+  "record_type": "b2_pilot_content_input",
+  "lessons": [
+    {
+      "outline_id": "m16b2-v1-b2-u01-l01",
+      "title": "Framing reported information and evidence",
+      "duration_minutes": 30,
+      "objectives": [
+        "Frame reported information and evidence with controlled grammar, vocabulary, and pronunciation."
+      ],
+      "content_sections": [
+        {
+          "title": "Focus",
+          "body": "Explore B2 pilot lesson 1 with original project-authored guidance.",
+          "section_type": "explanation"
+        },
+        {
+          "title": "Practice",
+          "body": "Apply the target from B2 pilot lesson 1 in a new context.",
+          "section_type": "practice"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "instructions": "Choose the best option for B2 pilot lesson 1.",
+          "items": [
+            "option alpha",
+            "option beta",
+            "option gamma"
+          ],
+          "answer": "option alpha"
+        },
+        {
+          "type": "fill_blank",
+          "instructions": "Complete the sentence in B2 pilot lesson 1.",
+          "answer": "a clear answer"
+        },
+        {
+          "type": "writing",
+          "instructions": "Write one original sentence for B2 pilot lesson 1.",
+          "rubric": {
+            "criteria": [
+              "meaning is clear",
+              "target is used"
+            ]
+          }
+        }
+      ],
+      "prompts": {
+        "listening": {
+          "instruction": "Practise listening for B2 pilot lesson 1 using an original response.",
+          "goal": "Use the target in listening.",
+          "constraints": [
+            "No external media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Practise speaking for B2 pilot lesson 1 using an original response.",
+          "goal": "Use the target in speaking.",
+          "constraints": [
+            "No external media."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Practise pronunciation for B2 pilot lesson 1 using an original response.",
+          "goal": "Use the target in pronunciation.",
+          "constraints": [
+            "No external media."
+          ]
+        },
+        "writing": {
+          "instruction": "Practise writing for B2 pilot lesson 1 using an original response.",
+          "goal": "Use the target in writing.",
+          "constraints": [
+            "No external media."
+          ]
+        }
+      }
+    },
+    {
+      "outline_id": "m16b2-v1-b2-u01-l02",
+      "title": "Developing reported information and evidence",
+      "duration_minutes": 30,
+      "objectives": [
+        "Develop reported information and evidence through clear functions, discourse, and lexical framing."
+      ],
+      "content_sections": [
+        {
+          "title": "Focus",
+          "body": "Explore B2 pilot lesson 2 with original project-authored guidance.",
+          "section_type": "explanation"
+        },
+        {
+          "title": "Practice",
+          "body": "Apply the target from B2 pilot lesson 2 in a new context.",
+          "section_type": "practice"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "instructions": "Choose the best option for B2 pilot lesson 2.",
+          "items": [
+            "option alpha",
+            "option beta",
+            "option gamma"
+          ],
+          "answer": "option alpha"
+        },
+        {
+          "type": "fill_blank",
+          "instructions": "Complete the sentence in B2 pilot lesson 2.",
+          "answer": "a clear answer"
+        },
+        {
+          "type": "writing",
+          "instructions": "Write one original sentence for B2 pilot lesson 2.",
+          "rubric": {
+            "criteria": [
+              "meaning is clear",
+              "target is used"
+            ]
+          }
+        }
+      ],
+      "prompts": {
+        "listening": {
+          "instruction": "Practise listening for B2 pilot lesson 2 using an original response.",
+          "goal": "Use the target in listening.",
+          "constraints": [
+            "No external media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Practise speaking for B2 pilot lesson 2 using an original response.",
+          "goal": "Use the target in speaking.",
+          "constraints": [
+            "No external media."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Practise pronunciation for B2 pilot lesson 2 using an original response.",
+          "goal": "Use the target in pronunciation.",
+          "constraints": [
+            "No external media."
+          ]
+        },
+        "writing": {
+          "instruction": "Practise writing for B2 pilot lesson 2 using an original response.",
+          "goal": "Use the target in writing.",
+          "constraints": [
+            "No external media."
+          ]
+        }
+      }
+    },
+    {
+      "outline_id": "m16b2-v1-b2-u01-l03",
+      "title": "Responding in reported information and evidence",
+      "duration_minutes": 30,
+      "objectives": [
+        "Apply pragmatic, collocational, topical, and strategic choices to reported information and evidence."
+      ],
+      "content_sections": [
+        {
+          "title": "Focus",
+          "body": "Explore B2 pilot lesson 3 with original project-authored guidance.",
+          "section_type": "explanation"
+        },
+        {
+          "title": "Practice",
+          "body": "Apply the target from B2 pilot lesson 3 in a new context.",
+          "section_type": "practice"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "instructions": "Choose the best option for B2 pilot lesson 3.",
+          "items": [
+            "option alpha",
+            "option beta",
+            "option gamma"
+          ],
+          "answer": "option alpha"
+        },
+        {
+          "type": "fill_blank",
+          "instructions": "Complete the sentence in B2 pilot lesson 3.",
+          "answer": "a clear answer"
+        },
+        {
+          "type": "writing",
+          "instructions": "Write one original sentence for B2 pilot lesson 3.",
+          "rubric": {
+            "criteria": [
+              "meaning is clear",
+              "target is used"
+            ]
+          }
+        }
+      ],
+      "prompts": {
+        "listening": {
+          "instruction": "Practise listening for B2 pilot lesson 3 using an original response.",
+          "goal": "Use the target in listening.",
+          "constraints": [
+            "No external media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Practise speaking for B2 pilot lesson 3 using an original response.",
+          "goal": "Use the target in speaking.",
+          "constraints": [
+            "No external media."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Practise pronunciation for B2 pilot lesson 3 using an original response.",
+          "goal": "Use the target in pronunciation.",
+          "constraints": [
+            "No external media."
+          ]
+        },
+        "writing": {
+          "instruction": "Practise writing for B2 pilot lesson 3 using an original response.",
+          "goal": "Use the target in writing.",
+          "constraints": [
+            "No external media."
+          ]
+        }
+      }
+    },
+    {
+      "outline_id": "m16b2-v1-b2-u01-l04",
+      "title": "Integrating reported information and evidence",
+      "duration_minutes": 30,
+      "objectives": [
+        "Integrate the target dimensions in an extended task about reported information and evidence."
+      ],
+      "content_sections": [
+        {
+          "title": "Focus",
+          "body": "Explore B2 pilot lesson 4 with original project-authored guidance.",
+          "section_type": "explanation"
+        },
+        {
+          "title": "Practice",
+          "body": "Apply the target from B2 pilot lesson 4 in a new context.",
+          "section_type": "practice"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "instructions": "Choose the best option for B2 pilot lesson 4.",
+          "items": [
+            "option alpha",
+            "option beta",
+            "option gamma"
+          ],
+          "answer": "option alpha"
+        },
+        {
+          "type": "fill_blank",
+          "instructions": "Complete the sentence in B2 pilot lesson 4.",
+          "answer": "a clear answer"
+        },
+        {
+          "type": "writing",
+          "instructions": "Write one original sentence for B2 pilot lesson 4.",
+          "rubric": {
+            "criteria": [
+              "meaning is clear",
+              "target is used"
+            ]
+          }
+        }
+      ],
+      "prompts": {
+        "listening": {
+          "instruction": "Practise listening for B2 pilot lesson 4 using an original response.",
+          "goal": "Use the target in listening.",
+          "constraints": [
+            "No external media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Practise speaking for B2 pilot lesson 4 using an original response.",
+          "goal": "Use the target in speaking.",
+          "constraints": [
+            "No external media."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Practise pronunciation for B2 pilot lesson 4 using an original response.",
+          "goal": "Use the target in pronunciation.",
+          "constraints": [
+            "No external media."
+          ]
+        },
+        "writing": {
+          "instruction": "Practise writing for B2 pilot lesson 4 using an original response.",
+          "goal": "Use the target in writing.",
+          "constraints": [
+            "No external media."
+          ]
+        }
+      }
+    },
+    {
+      "outline_id": "m16b2-v1-b2-u01-l05",
+      "title": "Review: Evidence and reported information",
+      "duration_minutes": 30,
+      "objectives": [
+        "Review the target dimensions for reported information and evidence."
+      ],
+      "content_sections": [
+        {
+          "title": "Focus",
+          "body": "Explore B2 pilot lesson 5 with original project-authored guidance.",
+          "section_type": "explanation"
+        },
+        {
+          "title": "Practice",
+          "body": "Apply the target from B2 pilot lesson 5 in a new context.",
+          "section_type": "practice"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "instructions": "Choose the best option for B2 pilot lesson 5.",
+          "items": [
+            "option alpha",
+            "option beta",
+            "option gamma"
+          ],
+          "answer": "option alpha"
+        },
+        {
+          "type": "fill_blank",
+          "instructions": "Complete the sentence in B2 pilot lesson 5.",
+          "answer": "a clear answer"
+        },
+        {
+          "type": "writing",
+          "instructions": "Write one original sentence for B2 pilot lesson 5.",
+          "rubric": {
+            "criteria": [
+              "meaning is clear",
+              "target is used"
+            ]
+          }
+        }
+      ],
+      "prompts": {
+        "listening": {
+          "instruction": "Practise listening for B2 pilot lesson 5 using an original response.",
+          "goal": "Use the target in listening.",
+          "constraints": [
+            "No external media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Practise speaking for B2 pilot lesson 5 using an original response.",
+          "goal": "Use the target in speaking.",
+          "constraints": [
+            "No external media."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Practise pronunciation for B2 pilot lesson 5 using an original response.",
+          "goal": "Use the target in pronunciation.",
+          "constraints": [
+            "No external media."
+          ]
+        },
+        "writing": {
+          "instruction": "Practise writing for B2 pilot lesson 5 using an original response.",
+          "goal": "Use the target in writing.",
+          "constraints": [
+            "No external media."
+          ]
+        }
+      }
+    },
+    {
+      "outline_id": "m16b2-v1-b2-u02-l01",
+      "title": "Framing technology options and negotiation",
+      "duration_minutes": 30,
+      "objectives": [
+        "Frame technology options and negotiation with controlled grammar, vocabulary, and pronunciation."
+      ],
+      "content_sections": [
+        {
+          "title": "Focus",
+          "body": "Explore B2 pilot lesson 6 with original project-authored guidance.",
+          "section_type": "explanation"
+        },
+        {
+          "title": "Practice",
+          "body": "Apply the target from B2 pilot lesson 6 in a new context.",
+          "section_type": "practice"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "instructions": "Choose the best option for B2 pilot lesson 6.",
+          "items": [
+            "option alpha",
+            "option beta",
+            "option gamma"
+          ],
+          "answer": "option alpha"
+        },
+        {
+          "type": "fill_blank",
+          "instructions": "Complete the sentence in B2 pilot lesson 6.",
+          "answer": "a clear answer"
+        },
+        {
+          "type": "writing",
+          "instructions": "Write one original sentence for B2 pilot lesson 6.",
+          "rubric": {
+            "criteria": [
+              "meaning is clear",
+              "target is used"
+            ]
+          }
+        }
+      ],
+      "prompts": {
+        "listening": {
+          "instruction": "Practise listening for B2 pilot lesson 6 using an original response.",
+          "goal": "Use the target in listening.",
+          "constraints": [
+            "No external media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Practise speaking for B2 pilot lesson 6 using an original response.",
+          "goal": "Use the target in speaking.",
+          "constraints": [
+            "No external media."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Practise pronunciation for B2 pilot lesson 6 using an original response.",
+          "goal": "Use the target in pronunciation.",
+          "constraints": [
+            "No external media."
+          ]
+        },
+        "writing": {
+          "instruction": "Practise writing for B2 pilot lesson 6 using an original response.",
+          "goal": "Use the target in writing.",
+          "constraints": [
+            "No external media."
+          ]
+        }
+      }
+    },
+    {
+      "outline_id": "m16b2-v1-b2-u02-l02",
+      "title": "Developing technology options and negotiation",
+      "duration_minutes": 30,
+      "objectives": [
+        "Develop technology options and negotiation through clear functions, discourse, and lexical framing."
+      ],
+      "content_sections": [
+        {
+          "title": "Focus",
+          "body": "Explore B2 pilot lesson 7 with original project-authored guidance.",
+          "section_type": "explanation"
+        },
+        {
+          "title": "Practice",
+          "body": "Apply the target from B2 pilot lesson 7 in a new context.",
+          "section_type": "practice"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "instructions": "Choose the best option for B2 pilot lesson 7.",
+          "items": [
+            "option alpha",
+            "option beta",
+            "option gamma"
+          ],
+          "answer": "option alpha"
+        },
+        {
+          "type": "fill_blank",
+          "instructions": "Complete the sentence in B2 pilot lesson 7.",
+          "answer": "a clear answer"
+        },
+        {
+          "type": "writing",
+          "instructions": "Write one original sentence for B2 pilot lesson 7.",
+          "rubric": {
+            "criteria": [
+              "meaning is clear",
+              "target is used"
+            ]
+          }
+        }
+      ],
+      "prompts": {
+        "listening": {
+          "instruction": "Practise listening for B2 pilot lesson 7 using an original response.",
+          "goal": "Use the target in listening.",
+          "constraints": [
+            "No external media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Practise speaking for B2 pilot lesson 7 using an original response.",
+          "goal": "Use the target in speaking.",
+          "constraints": [
+            "No external media."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Practise pronunciation for B2 pilot lesson 7 using an original response.",
+          "goal": "Use the target in pronunciation.",
+          "constraints": [
+            "No external media."
+          ]
+        },
+        "writing": {
+          "instruction": "Practise writing for B2 pilot lesson 7 using an original response.",
+          "goal": "Use the target in writing.",
+          "constraints": [
+            "No external media."
+          ]
+        }
+      }
+    },
+    {
+      "outline_id": "m16b2-v1-b2-u02-l03",
+      "title": "Responding in technology options and negotiation",
+      "duration_minutes": 30,
+      "objectives": [
+        "Apply pragmatic, collocational, topical, and strategic choices to technology options and negotiation."
+      ],
+      "content_sections": [
+        {
+          "title": "Focus",
+          "body": "Explore B2 pilot lesson 8 with original project-authored guidance.",
+          "section_type": "explanation"
+        },
+        {
+          "title": "Practice",
+          "body": "Apply the target from B2 pilot lesson 8 in a new context.",
+          "section_type": "practice"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "instructions": "Choose the best option for B2 pilot lesson 8.",
+          "items": [
+            "option alpha",
+            "option beta",
+            "option gamma"
+          ],
+          "answer": "option alpha"
+        },
+        {
+          "type": "fill_blank",
+          "instructions": "Complete the sentence in B2 pilot lesson 8.",
+          "answer": "a clear answer"
+        },
+        {
+          "type": "writing",
+          "instructions": "Write one original sentence for B2 pilot lesson 8.",
+          "rubric": {
+            "criteria": [
+              "meaning is clear",
+              "target is used"
+            ]
+          }
+        }
+      ],
+      "prompts": {
+        "listening": {
+          "instruction": "Practise listening for B2 pilot lesson 8 using an original response.",
+          "goal": "Use the target in listening.",
+          "constraints": [
+            "No external media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Practise speaking for B2 pilot lesson 8 using an original response.",
+          "goal": "Use the target in speaking.",
+          "constraints": [
+            "No external media."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Practise pronunciation for B2 pilot lesson 8 using an original response.",
+          "goal": "Use the target in pronunciation.",
+          "constraints": [
+            "No external media."
+          ]
+        },
+        "writing": {
+          "instruction": "Practise writing for B2 pilot lesson 8 using an original response.",
+          "goal": "Use the target in writing.",
+          "constraints": [
+            "No external media."
+          ]
+        }
+      }
+    },
+    {
+      "outline_id": "m16b2-v1-b2-u02-l04",
+      "title": "Integrating technology options and negotiation",
+      "duration_minutes": 30,
+      "objectives": [
+        "Integrate the target dimensions in an extended task about technology options and negotiation."
+      ],
+      "content_sections": [
+        {
+          "title": "Focus",
+          "body": "Explore B2 pilot lesson 9 with original project-authored guidance.",
+          "section_type": "explanation"
+        },
+        {
+          "title": "Practice",
+          "body": "Apply the target from B2 pilot lesson 9 in a new context.",
+          "section_type": "practice"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "instructions": "Choose the best option for B2 pilot lesson 9.",
+          "items": [
+            "option alpha",
+            "option beta",
+            "option gamma"
+          ],
+          "answer": "option alpha"
+        },
+        {
+          "type": "fill_blank",
+          "instructions": "Complete the sentence in B2 pilot lesson 9.",
+          "answer": "a clear answer"
+        },
+        {
+          "type": "writing",
+          "instructions": "Write one original sentence for B2 pilot lesson 9.",
+          "rubric": {
+            "criteria": [
+              "meaning is clear",
+              "target is used"
+            ]
+          }
+        }
+      ],
+      "prompts": {
+        "listening": {
+          "instruction": "Practise listening for B2 pilot lesson 9 using an original response.",
+          "goal": "Use the target in listening.",
+          "constraints": [
+            "No external media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Practise speaking for B2 pilot lesson 9 using an original response.",
+          "goal": "Use the target in speaking.",
+          "constraints": [
+            "No external media."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Practise pronunciation for B2 pilot lesson 9 using an original response.",
+          "goal": "Use the target in pronunciation.",
+          "constraints": [
+            "No external media."
+          ]
+        },
+        "writing": {
+          "instruction": "Practise writing for B2 pilot lesson 9 using an original response.",
+          "goal": "Use the target in writing.",
+          "constraints": [
+            "No external media."
+          ]
+        }
+      }
+    },
+    {
+      "outline_id": "m16b2-v1-b2-u02-l05",
+      "title": "Review: Technology choices and negotiation",
+      "duration_minutes": 30,
+      "objectives": [
+        "Review the target dimensions for technology options and negotiation."
+      ],
+      "content_sections": [
+        {
+          "title": "Focus",
+          "body": "Explore B2 pilot lesson 10 with original project-authored guidance.",
+          "section_type": "explanation"
+        },
+        {
+          "title": "Practice",
+          "body": "Apply the target from B2 pilot lesson 10 in a new context.",
+          "section_type": "practice"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "instructions": "Choose the best option for B2 pilot lesson 10.",
+          "items": [
+            "option alpha",
+            "option beta",
+            "option gamma"
+          ],
+          "answer": "option alpha"
+        },
+        {
+          "type": "fill_blank",
+          "instructions": "Complete the sentence in B2 pilot lesson 10.",
+          "answer": "a clear answer"
+        },
+        {
+          "type": "writing",
+          "instructions": "Write one original sentence for B2 pilot lesson 10.",
+          "rubric": {
+            "criteria": [
+              "meaning is clear",
+              "target is used"
+            ]
+          }
+        }
+      ],
+      "prompts": {
+        "listening": {
+          "instruction": "Practise listening for B2 pilot lesson 10 using an original response.",
+          "goal": "Use the target in listening.",
+          "constraints": [
+            "No external media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Practise speaking for B2 pilot lesson 10 using an original response.",
+          "goal": "Use the target in speaking.",
+          "constraints": [
+            "No external media."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Practise pronunciation for B2 pilot lesson 10 using an original response.",
+          "goal": "Use the target in pronunciation.",
+          "constraints": [
+            "No external media."
+          ]
+        },
+        "writing": {
+          "instruction": "Practise writing for B2 pilot lesson 10 using an original response.",
+          "goal": "Use the target in writing.",
+          "constraints": [
+            "No external media."
+          ]
+        }
+      }
+    }
+  ]
+}

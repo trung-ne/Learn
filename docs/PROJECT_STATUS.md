@@ -6,7 +6,7 @@
 
 ## 1. Tóm tắt điều hành
 
-English Master hiện là một pipeline Python offline-first, có thể tái lập và kiểm chứng bằng schema, validator, provenance, hash binding, immutable artifacts và các bài kiểm thử tự động. Dự án đã xây dựng phần lớn hạ tầng phát triển từ M0 đến M14, cùng các workstream curriculum **M15-KG-FULL**, **M16-A1-BLUEPRINT** và **M16-A2-BLUEPRINT**.
+English Master hiện là một pipeline Python offline-first, có thể tái lập và kiểm chứng bằng schema, validator, provenance, hash binding, immutable artifacts và các bài kiểm thử tự động. Dự án đã xây dựng phần lớn hạ tầng phát triển từ M0 đến M14, cùng các workstream curriculum **M15-KG-FULL** và blueprint **M16-A1** đến **M16-C2**.
 
 Các artifact phát triển hiện có không đồng nghĩa với nội dung đã được phát hành. Nội dung sinh ra vẫn giữ trạng thái `UNREVIEWED`; bằng chứng AI hoặc máy chỉ có thể thiết lập các tầng phát triển như `MACHINE_VALIDATED`, `AI_REVIEWED` và `DEVELOPMENT_APPROVED`. Không có tuyên bố về phê duyệt phát hành, quyền phân phối công khai, hay xử lý media thực tế khi các điều kiện tương ứng chưa đạt.
 
@@ -38,16 +38,24 @@ Một `M9 DEVELOPMENT: PASS` trong phạm vi sample cho phép bước được y
 | M15-KG-FULL | Đã triển khai dưới dạng development population | Knowledge graph original-authored, 120 nodes, 12 tiers, typed prerequisites; không có lesson prose hay release authority. |
 | M16-A1-BLUEPRINT | Đã triển khai dưới dạng outline-only blueprint | Blueprint A1.1/A1.2 gồm 10 units và 50 lesson outlines; không có lesson prose, exercises hay M6 authorization. |
 | M16-A2-BLUEPRINT | Đã triển khai dưới dạng outline-only blueprint | Blueprint A2.1/A2.2 gồm 10 units, 50 lesson outlines, review lessons và unit-test blueprints; chỉ dùng M15 node/prerequisite references, không có authority bridge hay prose. |
+| M16-B1-BLUEPRINT | Đã triển khai dưới dạng outline-only blueprint | Blueprint B1.1/B1.2 gồm 10 units, 50 lesson outlines, review lessons và unit-test blueprints; chỉ dùng hash-bound M15 references và không có lesson-generation authority. |
+| M16-B2-BLUEPRINT | Đã triển khai dưới dạng outline-only blueprint | Blueprint B2.1/B2.2 gồm 10 units và 50 lesson outlines; dùng direct B1.2 M15 entry prerequisites. Full B2 là corpus development tách biệt, không thay thế blueprint hoặc tạo generation authority. |
+| M16-C1-BLUEPRINT | Đã triển khai dưới dạng outline-only blueprint | Blueprint C1.1/C1.2 gồm 10 units và 50 lesson outlines; dùng direct B2.2 M15 entry prerequisites. Full C1 là corpus development tách biệt, không thay thế blueprint hoặc tạo generation authority. |
+| M16-C2-BLUEPRINT | Đã triển khai dưới dạng outline-only blueprint | Blueprint C2.1/C2.2 gồm 10 units và 50 lesson outlines; dùng direct C1.2 M15 entry prerequisites. Full C2 là corpus development tách biệt, không thay thế blueprint hoặc tạo generation authority. |
 | A1 pilot | Đã build development pilot 10 lesson A1.1 | Mỗi packet có lesson, exercises và 4 prompt modalities; hash/inventory/prerequisite checks pass. Review template được tạo nhưng chưa có user/AI review hoàn chỉnh, vì vậy nội dung vẫn `UNREVIEWED`. |
 | Full A1 v2 | Đã build đủ 50 lesson A1.1/A1.2 | Allocation granular, 10 unit content files, 50 immutable packets, full-corpus lightweight audit `PASS`, và sample 12 lesson deterministic theo 10 unit. Giữ `UNREVIEWED`; không có human/release/provider/live-AI/network/media claim. |
 | Full A2 | Đã build đủ 50 lesson A2.1/A2.2 | 10 unit content files, 50 immutable packets, hash-bound verification, lightweight audit `PASS`, và sample 12 lesson theo 10 unit. Giữ `UNREVIEWED`; không có human/release/provider/live-AI/network/media claim. |
+| Full B1 | Đã build đủ 50 lesson B1.1/B1.2 | 10 unit content files, 50 immutable packets, source-derived verification, lightweight audit `PASS`, và deterministic sample 12 lesson phủ 10 unit. Giữ `UNREVIEWED`; không có human/release/provider/live-AI/network/media claim. |
+| Full B2 | Đã build đủ 50 lesson B2.1/B2.2 | 10 original-authored unit files, 50 immutable packets, source-derived verification, lightweight audit `PASS`, và deterministic sample 12 lesson phủ 10 unit. Giữ `UNREVIEWED`; không có human/release/provider/live-AI/network/media claim. |
+| Full C1 | Đã build đủ 50 lesson C1.1/C1.2 | 10 original-authored unit files, 50 immutable packets, source-derived verification, lightweight audit `PASS`, và deterministic sample 12 lesson phủ 10 unit. Giữ `UNREVIEWED`; không có human/release/provider/live-AI/network/media claim. |
+| Full C2 | Đã build đủ 50 lesson C2.1/C2.2 | 10 original-authored unit files, 50 immutable packets, source-derived verification, lightweight audit `PASS`, và deterministic sample 12 lesson phủ 10 unit. Giữ `UNREVIEWED`; không có human/release/provider/live-AI/network/media claim. |
 | M15 platform / M16 deployment | Chưa bắt đầu | Đây là các milestone tương lai, khác với hai workstream KG/blueprint ở trên. |
 
 > Tên M15/M16 hiện có hai ngữ cảnh: `M15-KG-FULL`/`M16-A1-BLUEPRINT` là workstream curriculum mới; M15 platform và M16 production deployment vẫn là các milestone tương lai riêng.
 
 ## 3. Những gì hệ thống đã có
 
-- JSON Schema và semantic validation cho dữ liệu lõi, taxonomy, curriculum, generation, QA, media, transcription, listening evidence, knowledge graph và A1 blueprint.
+- JSON Schema và semantic validation cho dữ liệu lõi, taxonomy, curriculum, generation, QA, media, transcription, listening evidence, knowledge graph và các A1–C2 blueprint artifacts cùng các full-corpus artifact hiện có.
 - Source registry với trạng thái nguồn, license, attribution và operation-specific permission.
 - Ingestion và normalization deterministic, lưu provenance và hash.
 - Curriculum graph có prerequisite ordering, review edges và coverage theo dimension.
@@ -57,7 +65,7 @@ Một `M9 DEVELOPMENT: PASS` trong phạm vi sample cho phép bước được y
 - AI-practice pilot giới hạn listening, speaking, pronunciation và writing; prompt review chỉ kiểm tra protocol tĩnh, không chứng minh runtime provider behavior.
 - Local M11 batch export JSON/CSV/static web/static mobile, với schema/hash/path/source-permission/inventory checks; print/IMS là tùy chọn.
 - Local M12 manifest validation, M13 caller-controlled ASR contract, và M14 basic transcript metrics. Các tool chưa xử lý media thật vì chưa có file/manifests/model path được cung cấp.
-- Knowledge graph và A1 blueprint mới nhất để hỗ trợ quy hoạch nội dung, không thay thế M5 lịch sử và không tự động cấp quyền M6.
+- Knowledge graph và các blueprint A1–C2 mới nhất hỗ trợ quy hoạch nội dung, không thay thế M5 lịch sử và không tự động cấp quyền M6.
 
 ## 4. Các artifact nội dung hiện tại
 
@@ -68,8 +76,15 @@ Một `M9 DEVELOPMENT: PASS` trong phạm vi sample cho phép bước được y
 - M15-KG-FULL: 120 graph nodes, phủ 12 internal tiers và các nhóm grammar, vocabulary senses, functions, pronunciation, discourse, pragmatics, collocations, lexical chunks, topics và skills.
 - M16-A1-BLUEPRINT: A1.1/A1.2, 10 units, 50 lessons, mục tiêu và prerequisite/review mappings.
 - M16-A2-BLUEPRINT: A2.1/A2.2, 10 units, 50 lesson outlines, review lessons, unit-test blueprints và M15 target coverage có kiểm chứng.
+- M16-B1-BLUEPRINT: B1.1/B1.2, 10 units, 50 lesson outlines, review lessons, unit-test blueprints và hash-bound M15 target coverage.
+- M16-B2/C2-BLUEPRINT: mỗi level có 10 units, 50 lesson outlines, review lessons, unit-test blueprints, exact M15 coverage và direct prior-tier entry prerequisites; Full B2 và Full C2 là các corpus development tách biệt.
+- M16-C1-BLUEPRINT: 10 units, 50 lesson outlines, review lessons, unit-test blueprints, exact M15 coverage và direct B2.2 entry prerequisites; Full C1 là corpus development tách biệt.
 - Full A1 v2: 10 original-authored unit files build thành 50 canonical packets; audit deterministic chạy trên toàn corpus và sample 12 lesson được hash-rank, stratify theo unit.
 - A2 pilot: 10 original-authored A2.1 packets from the first two blueprint units, each with exercises and four practice modalities; repaired successor run, deterministic audit, and five-lesson stratified sample pass. Content remains `UNREVIEWED`.
+- Full B1: 10 original-authored unit files build thành 50 canonical B1.1/B1.2 packets; source-derived verification và full-population audit `PASS`, với sample 12 lesson hash-ranked phủ đủ 10 unit.
+- Full B2: 10 original-authored unit files build thành 50 canonical B2.1/B2.2 packets; source-derived verification và full-population audit `PASS`, với sample 12 lesson hash-ranked phủ đủ 10 unit.
+- Full C1: 10 original-authored unit files build thành 50 canonical C1.1/C1.2 packets; source-derived verification và full-population audit `PASS`, với sample 12 lesson hash-ranked phủ đủ 10 unit.
+- Full C2: 10 original-authored unit files build thành 50 canonical C2.1/C2.2 packets; source-derived verification và full-population audit `PASS`, với sample 12 lesson hash-ranked phủ đủ 10 unit.
 
 Các con số trên là development fixtures/populations có giới hạn, không phải tuyên bố exhaustive coverage hay official CEFR endorsement.
 
@@ -99,10 +114,10 @@ python -m pytest
 
 Kết quả thực tế:
 
-- **413 tests collected**
-- **413 passed**
-- Thời gian: **225.80 giây**
-- Không có test failure trong lần chạy ngày 2026-09-12.
+- **477 tests collected**
+- **477 passed**
+- Thời gian: **212.00 giây**
+- Không có test failure trong lần chạy ngày 2026-09-13.
 
 ## 8. Kết luận
 

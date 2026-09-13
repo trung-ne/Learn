@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "record_type": "b1_full_content_manifest",
+  "allocation_sha256": "0fc6c5539a040d5bbf18cdce326b16e4ee53dc06f5c71a7b8e933dd941fabe18",
+  "content_origin": "PROJECT_AUTHORED",
+  "units": [
+    {
+      "unit_id": "m16b1-v1-b1-u01",
+      "tier": "B1.1",
+      "path": "units/unit-01.json",
+      "sha256": "76f07aa2439f06c4635a109246d49c6af3d356a1726de9097df6f611fd733a44"
+    },
+    {
+      "unit_id": "m16b1-v1-b1-u02",
+      "tier": "B1.1",
+      "path": "units/unit-02.json",
+      "sha256": "904d098a6831c4253db76a846cf8267b6e580632ffa251949d27ad3353f3a0bc"
+    },
+    {
+      "unit_id": "m16b1-v1-b1-u03",
+      "tier": "B1.1",
+      "path": "units/unit-03.json",
+      "sha256": "7aaedba9a5687575dda69353f614ed684d5c1a86a5cff937370168d329c22594"
+    },
+    {
+      "unit_id": "m16b1-v1-b1-u04",
+      "tier": "B1.1",
+      "path": "units/unit-04.json",
+      "sha256": "363be3e82c2108c372e2ea70f4c2d0297c053b97cea499689c5ca090d3f7b975"
+    },
+    {
+      "unit_id": "m16b1-v1-b1-u05",
+      "tier": "B1.1",
+      "path": "units/unit-05.json",
+      "sha256": "6241a588b48a990dd697a90c694a730bdbc771bde3269571400114d712e64071"
+    },
+    {
+      "unit_id": "m16b1-v1-b1-u06",
+      "tier": "B1.2",
+      "path": "units/unit-06.json",
+      "sha256": "bbb762f760128c8d78f3edb65ca029543a60c9675c3e02eebbbba352e223050e"
+    },
+    {
+      "unit_id": "m16b1-v1-b1-u07",
+      "tier": "B1.2",
+      "path": "units/unit-07.json",
+      "sha256": "39f161f9a4c4e82586fd6a4e5c266d04652621d4c711209ce3ee4c272929c4a0"
+    },
+    {
+      "unit_id": "m16b1-v1-b1-u08",
+      "tier": "B1.2",
+      "path": "units/unit-08.json",
+      "sha256": "2bc53c22871040c206be088aa8ca86732107c041922b76c7ac649941c70f30b2"
+    },
+    {
+      "unit_id": "m16b1-v1-b1-u09",
+      "tier": "B1.2",
+      "path": "units/unit-09.json",
+      "sha256": "0b57a9ff6895d5568d17f47e94d9c64b59c324e72962bcada4b87113f7c1c8b0"
+    },
+    {
+      "unit_id": "m16b1-v1-b1-u10",
+      "tier": "B1.2",
+      "path": "units/unit-10.json",
+      "sha256": "d35c6eb70be0e26b6a47ae79abde745f47423487937c45fe0c9d36c2940a7d9e"
+    }
+  ],
+  "manifest_sha256": "25462be6dfa3f8883be58d2b28f6b6e9b4ed015b349c6904bdc4e4ddaf3cb460"
+}

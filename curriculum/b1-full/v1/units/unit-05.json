@@ -1,0 +1,1185 @@
+{
+  "schema_version": "1.0",
+  "record_type": "b1_full_content_unit",
+  "unit_id": "m16b1-v1-b1-u05",
+  "tier": "B1.1",
+  "content_origin": "PROJECT_AUTHORED",
+  "lessons": [
+    {
+      "lesson_id": "m16b1-v1-b1-u05-l01",
+      "title": "Experiences across contexts",
+      "duration_minutes": 40,
+      "objective_target_ids": [
+        "b1t_u01_grammar",
+        "b1t_u01_vocabulary_senses",
+        "b1t_u01_functions",
+        "b1t_u01_pronunciation",
+        "b1t_u01_discourse",
+        "b1t_u01_pragmatics",
+        "b1t_u01_collocations",
+        "b1t_u01_lexical_chunks",
+        "b1t_u01_topics",
+        "b1t_u01_skills"
+      ],
+      "objectives": [
+        "Select suitable B1.1 language for experience and change.",
+        "Develop a connected response in a discussion about experiences across contexts with a reason and relevant detail."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice the connected language (10 minutes)",
+          "body": "Read this model: 'I have considered experiences across contexts, and my experience shows one useful reason for this view.' Identify the main point, the linking expression, and the supporting detail. Then explain how the wording helps the speaker achieve this objective: Select suitable B1.1 language for experience and change.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided exchange (10 minutes)",
+          "body": "Work with a partner in a discussion about experiences across contexts. Give a clear main point, support it with a specific reason, and respond to one follow-up question. Use tactful language when the other speaker presents a different perspective.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent connected response (8 minutes)",
+          "body": "Prepare a one-minute response about experiences across contexts. Organize it into thought groups, stress the words that carry your main point, and finish with a concise conclusion rather than a list of isolated sentences.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Choose the most connected and tactful response for a discussion about experiences across contexts.",
+          "media_required": false,
+          "options": [
+            "I have considered experiences across contexts, and my experience shows one useful reason for this view.",
+            "Experiences across contexts is a topic, but I will not explain my view.",
+            "Several details exist about experiences across contexts, perhaps."
+          ],
+          "correct_answer": "I have considered experiences across contexts, and my experience shows one useful reason for this view."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Complete this response about experiences across contexts: 'My experience supports this view ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "because it offers evidence about experiences across contexts"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Read the short response about experiences across contexts and identify how the writer handles another view.",
+          "media_required": false,
+          "stimulus": "Although another person may disagree about experiences across contexts, I can respond politely and explain my reason.",
+          "questions": [
+            {
+              "question": "How does the writer respond to disagreement?",
+              "acceptable_answers": [
+                "The writer responds politely and gives a reason in the discussion of experiences across contexts."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Speak for 60–90 seconds in a discussion about experiences across contexts. State your point, support it, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Presents a connected main point about experiences across contexts with relevant support.",
+              "Responds clearly and tactfully to a follow-up question about experiences across contexts."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short response about experiences across contexts. Identify the view and supporting reason before the transcript is revealed, then listen again to check the linking language.",
+          "goal": "Follow the main point and support in spoken language about experiences across contexts.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "transcript": "I have considered experiences across contexts, and my experience shows one useful reason for this view.",
+          "question": "What view and supporting reason does the speaker communicate?",
+          "answer": "The speaker connects a considered view about experiences across contexts to a useful reason from experience.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a discussion about experiences across contexts. Learner role: present and support a view. Tutor role: ask one probing question and offer a different perspective. End after the learner responds tactfully and summarizes the point.",
+          "goal": "Sustain a connected, tactful exchange about experiences across contexts.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "constraints": [
+            "State both roles before beginning the exchange.",
+            "Use at most four tutor turns and stop after the learner summary."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Record the model about experiences across contexts in meaningful thought groups. Stress the main point and reason, then compare a second attempt with the first for clarity and rhythm.",
+          "goal": "Make connected speech about experiences across contexts easy to follow.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "target": "Thought groups and information stress for experiences across contexts",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write 90–120 words about experiences across contexts. State a position or experience, support it with a reason and example, and acknowledge another perspective. Submit your own draft before asking for feedback.",
+          "goal": "Produce a connected written response about experiences across contexts.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u05-l02",
+      "title": "Connected opinion practice",
+      "duration_minutes": 40,
+      "objective_target_ids": [
+        "b1t_u01_discourse",
+        "b1t_u01_functions",
+        "b1t_u01_skills",
+        "b1t_u01_vocabulary_senses"
+      ],
+      "objectives": [
+        "Develop a clear opinion across several linked sentences.",
+        "Develop a connected response in a discussion about connected opinion practice with a reason and relevant detail."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice the connected language (10 minutes)",
+          "body": "Read this model: 'I have considered connected opinion practice, and my experience shows one useful reason for this view.' Identify the main point, the linking expression, and the supporting detail. Then explain how the wording helps the speaker achieve this objective: Develop a clear opinion across several linked sentences.",
+          "target_ids": [
+            "b1t_u01_discourse",
+            "b1t_u01_functions",
+            "b1t_u01_skills",
+            "b1t_u01_vocabulary_senses"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided exchange (10 minutes)",
+          "body": "Work with a partner in a discussion about connected opinion practice. Give a clear main point, support it with a specific reason, and respond to one follow-up question. Use tactful language when the other speaker presents a different perspective.",
+          "target_ids": [
+            "b1t_u01_discourse",
+            "b1t_u01_functions",
+            "b1t_u01_skills",
+            "b1t_u01_vocabulary_senses"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent connected response (8 minutes)",
+          "body": "Prepare a one-minute response about connected opinion practice. Organize it into thought groups, stress the words that carry your main point, and finish with a concise conclusion rather than a list of isolated sentences.",
+          "target_ids": [
+            "b1t_u01_discourse",
+            "b1t_u01_functions",
+            "b1t_u01_skills",
+            "b1t_u01_vocabulary_senses"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "b1t_u01_discourse",
+            "b1t_u01_functions",
+            "b1t_u01_skills",
+            "b1t_u01_vocabulary_senses"
+          ],
+          "prompt": "Choose the most connected and tactful response for a discussion about connected opinion practice.",
+          "media_required": false,
+          "options": [
+            "I have considered connected opinion practice, and my experience shows one useful reason for this view.",
+            "Connected opinion practice is a topic, but I will not explain my view.",
+            "Several details exist about connected opinion practice, perhaps."
+          ],
+          "correct_answer": "I have considered connected opinion practice, and my experience shows one useful reason for this view."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "b1t_u01_discourse",
+            "b1t_u01_functions",
+            "b1t_u01_skills",
+            "b1t_u01_vocabulary_senses"
+          ],
+          "prompt": "Complete this response about connected opinion practice: 'My experience supports this view ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "because it offers evidence about connected opinion practice"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "b1t_u01_discourse",
+            "b1t_u01_functions",
+            "b1t_u01_skills",
+            "b1t_u01_vocabulary_senses"
+          ],
+          "prompt": "Read the short response about connected opinion practice and identify how the writer handles another view.",
+          "media_required": false,
+          "stimulus": "Although another person may disagree about connected opinion practice, I can respond politely and explain my reason.",
+          "questions": [
+            {
+              "question": "How does the writer respond to disagreement?",
+              "acceptable_answers": [
+                "The writer responds politely and gives a reason in the discussion of connected opinion practice."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "b1t_u01_discourse",
+            "b1t_u01_functions",
+            "b1t_u01_skills",
+            "b1t_u01_vocabulary_senses"
+          ],
+          "prompt": "Speak for 60–90 seconds in a discussion about connected opinion practice. State your point, support it, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Presents a connected main point about connected opinion practice with relevant support.",
+              "Responds clearly and tactfully to a follow-up question about connected opinion practice."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short response about connected opinion practice. Identify the view and supporting reason before the transcript is revealed, then listen again to check the linking language.",
+          "goal": "Follow the main point and support in spoken language about connected opinion practice.",
+          "target_ids": [
+            "b1t_u01_discourse",
+            "b1t_u01_functions",
+            "b1t_u01_skills",
+            "b1t_u01_vocabulary_senses"
+          ],
+          "transcript": "I have considered connected opinion practice, and my experience shows one useful reason for this view.",
+          "question": "What view and supporting reason does the speaker communicate?",
+          "answer": "The speaker connects a considered view about connected opinion practice to a useful reason from experience.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a discussion about connected opinion practice. Learner role: present and support a view. Tutor role: ask one probing question and offer a different perspective. End after the learner responds tactfully and summarizes the point.",
+          "goal": "Sustain a connected, tactful exchange about connected opinion practice.",
+          "target_ids": [
+            "b1t_u01_discourse",
+            "b1t_u01_functions",
+            "b1t_u01_skills",
+            "b1t_u01_vocabulary_senses"
+          ],
+          "constraints": [
+            "State both roles before beginning the exchange.",
+            "Use at most four tutor turns and stop after the learner summary."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Record the model about connected opinion practice in meaningful thought groups. Stress the main point and reason, then compare a second attempt with the first for clarity and rhythm.",
+          "goal": "Make connected speech about connected opinion practice easy to follow.",
+          "target_ids": [
+            "b1t_u01_discourse",
+            "b1t_u01_functions",
+            "b1t_u01_skills",
+            "b1t_u01_vocabulary_senses"
+          ],
+          "target": "Thought groups and information stress for connected opinion practice",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write 90–120 words about connected opinion practice. State a position or experience, support it with a reason and example, and acknowledge another perspective. Submit your own draft before asking for feedback.",
+          "goal": "Produce a connected written response about connected opinion practice.",
+          "target_ids": [
+            "b1t_u01_discourse",
+            "b1t_u01_functions",
+            "b1t_u01_skills",
+            "b1t_u01_vocabulary_senses"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u05-l03",
+      "title": "Tactful discussion practice",
+      "duration_minutes": 40,
+      "objective_target_ids": [
+        "b1t_u01_pronunciation",
+        "b1t_u01_pragmatics",
+        "b1t_u01_lexical_chunks",
+        "b1t_u01_collocations"
+      ],
+      "objectives": [
+        "Use stress, chunks, and pragmatic choices in a short discussion.",
+        "Develop a connected response in a discussion about tactful discussion practice with a reason and relevant detail."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice the connected language (10 minutes)",
+          "body": "Read this model: 'I have considered tactful discussion practice, and my experience shows one useful reason for this view.' Identify the main point, the linking expression, and the supporting detail. Then explain how the wording helps the speaker achieve this objective: Use stress, chunks, and pragmatic choices in a short discussion.",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_pragmatics",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_collocations"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided exchange (10 minutes)",
+          "body": "Work with a partner in a discussion about tactful discussion practice. Give a clear main point, support it with a specific reason, and respond to one follow-up question. Use tactful language when the other speaker presents a different perspective.",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_pragmatics",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_collocations"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent connected response (8 minutes)",
+          "body": "Prepare a one-minute response about tactful discussion practice. Organize it into thought groups, stress the words that carry your main point, and finish with a concise conclusion rather than a list of isolated sentences.",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_pragmatics",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_collocations"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_pragmatics",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_collocations"
+          ],
+          "prompt": "Choose the most connected and tactful response for a discussion about tactful discussion practice.",
+          "media_required": false,
+          "options": [
+            "I have considered tactful discussion practice, and my experience shows one useful reason for this view.",
+            "Tactful discussion practice is a topic, but I will not explain my view.",
+            "Several details exist about tactful discussion practice, perhaps."
+          ],
+          "correct_answer": "I have considered tactful discussion practice, and my experience shows one useful reason for this view."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_pragmatics",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_collocations"
+          ],
+          "prompt": "Complete this response about tactful discussion practice: 'My experience supports this view ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "because it offers evidence about tactful discussion practice"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_pragmatics",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_collocations"
+          ],
+          "prompt": "Read the short response about tactful discussion practice and identify how the writer handles another view.",
+          "media_required": false,
+          "stimulus": "Although another person may disagree about tactful discussion practice, I can respond politely and explain my reason.",
+          "questions": [
+            {
+              "question": "How does the writer respond to disagreement?",
+              "acceptable_answers": [
+                "The writer responds politely and gives a reason in the discussion of tactful discussion practice."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_pragmatics",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_collocations"
+          ],
+          "prompt": "Speak for 60–90 seconds in a discussion about tactful discussion practice. State your point, support it, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Presents a connected main point about tactful discussion practice with relevant support.",
+              "Responds clearly and tactfully to a follow-up question about tactful discussion practice."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short response about tactful discussion practice. Identify the view and supporting reason before the transcript is revealed, then listen again to check the linking language.",
+          "goal": "Follow the main point and support in spoken language about tactful discussion practice.",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_pragmatics",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_collocations"
+          ],
+          "transcript": "I have considered tactful discussion practice, and my experience shows one useful reason for this view.",
+          "question": "What view and supporting reason does the speaker communicate?",
+          "answer": "The speaker connects a considered view about tactful discussion practice to a useful reason from experience.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a discussion about tactful discussion practice. Learner role: present and support a view. Tutor role: ask one probing question and offer a different perspective. End after the learner responds tactfully and summarizes the point.",
+          "goal": "Sustain a connected, tactful exchange about tactful discussion practice.",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_pragmatics",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_collocations"
+          ],
+          "constraints": [
+            "State both roles before beginning the exchange.",
+            "Use at most four tutor turns and stop after the learner summary."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Record the model about tactful discussion practice in meaningful thought groups. Stress the main point and reason, then compare a second attempt with the first for clarity and rhythm.",
+          "goal": "Make connected speech about tactful discussion practice easy to follow.",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_pragmatics",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_collocations"
+          ],
+          "target": "Thought groups and information stress for tactful discussion practice",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write 90–120 words about tactful discussion practice. State a position or experience, support it with a reason and example, and acknowledge another perspective. Submit your own draft before asking for feedback.",
+          "goal": "Produce a connected written response about tactful discussion practice.",
+          "target_ids": [
+            "b1t_u01_pronunciation",
+            "b1t_u01_pragmatics",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_collocations"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u05-l04",
+      "title": "B1.1 preparation",
+      "duration_minutes": 40,
+      "objective_target_ids": [
+        "b1t_u01_grammar",
+        "b1t_u01_vocabulary_senses",
+        "b1t_u01_functions",
+        "b1t_u01_pronunciation",
+        "b1t_u01_discourse",
+        "b1t_u01_pragmatics",
+        "b1t_u01_collocations",
+        "b1t_u01_lexical_chunks",
+        "b1t_u01_topics",
+        "b1t_u01_skills"
+      ],
+      "objectives": [
+        "Prepare to combine experience and supported opinion targets.",
+        "Develop a connected response in a discussion about b1.1 preparation with a reason and relevant detail."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice the connected language (10 minutes)",
+          "body": "Read this model: 'I have considered b1.1 preparation, and my experience shows one useful reason for this view.' Identify the main point, the linking expression, and the supporting detail. Then explain how the wording helps the speaker achieve this objective: Prepare to combine experience and supported opinion targets.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided exchange (10 minutes)",
+          "body": "Work with a partner in a discussion about b1.1 preparation. Give a clear main point, support it with a specific reason, and respond to one follow-up question. Use tactful language when the other speaker presents a different perspective.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent connected response (8 minutes)",
+          "body": "Prepare a one-minute response about b1.1 preparation. Organize it into thought groups, stress the words that carry your main point, and finish with a concise conclusion rather than a list of isolated sentences.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Choose the most connected and tactful response for a discussion about b1.1 preparation.",
+          "media_required": false,
+          "options": [
+            "I have considered b1.1 preparation, and my experience shows one useful reason for this view.",
+            "B1.1 preparation is a topic, but I will not explain my view.",
+            "Several details exist about b1.1 preparation, perhaps."
+          ],
+          "correct_answer": "I have considered b1.1 preparation, and my experience shows one useful reason for this view."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Complete this response about b1.1 preparation: 'My experience supports this view ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "because it offers evidence about b1.1 preparation"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Read the short response about b1.1 preparation and identify how the writer handles another view.",
+          "media_required": false,
+          "stimulus": "Although another person may disagree about b1.1 preparation, I can respond politely and explain my reason.",
+          "questions": [
+            {
+              "question": "How does the writer respond to disagreement?",
+              "acceptable_answers": [
+                "The writer responds politely and gives a reason in the discussion of b1.1 preparation."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Speak for 60–90 seconds in a discussion about b1.1 preparation. State your point, support it, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Presents a connected main point about b1.1 preparation with relevant support.",
+              "Responds clearly and tactfully to a follow-up question about b1.1 preparation."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short response about b1.1 preparation. Identify the view and supporting reason before the transcript is revealed, then listen again to check the linking language.",
+          "goal": "Follow the main point and support in spoken language about b1.1 preparation.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "transcript": "I have considered b1.1 preparation, and my experience shows one useful reason for this view.",
+          "question": "What view and supporting reason does the speaker communicate?",
+          "answer": "The speaker connects a considered view about b1.1 preparation to a useful reason from experience.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a discussion about b1.1 preparation. Learner role: present and support a view. Tutor role: ask one probing question and offer a different perspective. End after the learner responds tactfully and summarizes the point.",
+          "goal": "Sustain a connected, tactful exchange about b1.1 preparation.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "constraints": [
+            "State both roles before beginning the exchange.",
+            "Use at most four tutor turns and stop after the learner summary."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Record the model about b1.1 preparation in meaningful thought groups. Stress the main point and reason, then compare a second attempt with the first for clarity and rhythm.",
+          "goal": "Make connected speech about b1.1 preparation easy to follow.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "target": "Thought groups and information stress for b1.1 preparation",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write 90–120 words about b1.1 preparation. State a position or experience, support it with a reason and example, and acknowledge another perspective. Submit your own draft before asking for feedback.",
+          "goal": "Produce a connected written response about b1.1 preparation.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u05-l05",
+      "title": "Review: B1.1 consolidation",
+      "duration_minutes": 40,
+      "objective_target_ids": [
+        "b1t_u01_grammar",
+        "b1t_u01_vocabulary_senses",
+        "b1t_u01_functions",
+        "b1t_u01_pronunciation",
+        "b1t_u01_discourse",
+        "b1t_u01_pragmatics",
+        "b1t_u01_collocations",
+        "b1t_u01_lexical_chunks",
+        "b1t_u01_topics",
+        "b1t_u01_skills"
+      ],
+      "objectives": [
+        "Review all B1.1 target dimensions before the unit test.",
+        "Develop a connected response in a discussion about review: b1.1 consolidation with a reason and relevant detail."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice the connected language (10 minutes)",
+          "body": "Read this model: 'I have considered review: b1.1 consolidation, and my experience shows one useful reason for this view.' Identify the main point, the linking expression, and the supporting detail. Then explain how the wording helps the speaker achieve this objective: Review all B1.1 target dimensions before the unit test.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided exchange (10 minutes)",
+          "body": "Work with a partner in a discussion about review: b1.1 consolidation. Give a clear main point, support it with a specific reason, and respond to one follow-up question. Use tactful language when the other speaker presents a different perspective.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent connected response (8 minutes)",
+          "body": "Prepare a one-minute response about review: b1.1 consolidation. Organize it into thought groups, stress the words that carry your main point, and finish with a concise conclusion rather than a list of isolated sentences.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Choose the most connected and tactful response for a discussion about review: b1.1 consolidation.",
+          "media_required": false,
+          "options": [
+            "I have considered review: b1.1 consolidation, and my experience shows one useful reason for this view.",
+            "Review: B1.1 consolidation is a topic, but I will not explain my view.",
+            "Several details exist about review: b1.1 consolidation, perhaps."
+          ],
+          "correct_answer": "I have considered review: b1.1 consolidation, and my experience shows one useful reason for this view."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Complete this response about review: b1.1 consolidation: 'My experience supports this view ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "because it offers evidence about review: b1.1 consolidation"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Read the short response about review: b1.1 consolidation and identify how the writer handles another view.",
+          "media_required": false,
+          "stimulus": "Although another person may disagree about review: b1.1 consolidation, I can respond politely and explain my reason.",
+          "questions": [
+            {
+              "question": "How does the writer respond to disagreement?",
+              "acceptable_answers": [
+                "The writer responds politely and gives a reason in the discussion of review: b1.1 consolidation."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "prompt": "Speak for 60–90 seconds in a discussion about review: b1.1 consolidation. State your point, support it, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Presents a connected main point about review: b1.1 consolidation with relevant support.",
+              "Responds clearly and tactfully to a follow-up question about review: b1.1 consolidation."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short response about review: b1.1 consolidation. Identify the view and supporting reason before the transcript is revealed, then listen again to check the linking language.",
+          "goal": "Follow the main point and support in spoken language about review: b1.1 consolidation.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "transcript": "I have considered review: b1.1 consolidation, and my experience shows one useful reason for this view.",
+          "question": "What view and supporting reason does the speaker communicate?",
+          "answer": "The speaker connects a considered view about review: b1.1 consolidation to a useful reason from experience.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a discussion about review: b1.1 consolidation. Learner role: present and support a view. Tutor role: ask one probing question and offer a different perspective. End after the learner responds tactfully and summarizes the point.",
+          "goal": "Sustain a connected, tactful exchange about review: b1.1 consolidation.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "constraints": [
+            "State both roles before beginning the exchange.",
+            "Use at most four tutor turns and stop after the learner summary."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Record the model about review: b1.1 consolidation in meaningful thought groups. Stress the main point and reason, then compare a second attempt with the first for clarity and rhythm.",
+          "goal": "Make connected speech about review: b1.1 consolidation easy to follow.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "target": "Thought groups and information stress for review: b1.1 consolidation",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write 90–120 words about review: b1.1 consolidation. State a position or experience, support it with a reason and example, and acknowledge another perspective. Submit your own draft before asking for feedback.",
+          "goal": "Produce a connected written response about review: b1.1 consolidation.",
+          "target_ids": [
+            "b1t_u01_grammar",
+            "b1t_u01_vocabulary_senses",
+            "b1t_u01_functions",
+            "b1t_u01_pronunciation",
+            "b1t_u01_discourse",
+            "b1t_u01_pragmatics",
+            "b1t_u01_collocations",
+            "b1t_u01_lexical_chunks",
+            "b1t_u01_topics",
+            "b1t_u01_skills"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    }
+  ]
+}

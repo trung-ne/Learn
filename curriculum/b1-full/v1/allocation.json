@@ -1,0 +1,2208 @@
+{
+  "schema_version": "1.0",
+  "record_type": "b1_full_allocation",
+  "population_sha256": "04316d931c16ce32e90dbfed123c8fd9d85fb3b01c4e1e22f310a672bfae9ea1",
+  "blueprint_sha256": "52d35b07e381783b05156dbfdd570564aa41e639a1ea06400cc673e0b2bf5ecf",
+  "targets": [
+    {
+      "id": "b1t_u01_grammar",
+      "name": "B1 grammar target",
+      "tier": "B1.1",
+      "dimension": "grammar",
+      "broad_target_id": "kg_b1_1_grammar",
+      "prerequisites": []
+    },
+    {
+      "id": "b1t_u01_vocabulary_senses",
+      "name": "B1 vocabulary senses target",
+      "tier": "B1.1",
+      "dimension": "vocabulary_senses",
+      "broad_target_id": "kg_b1_1_vocabulary_senses",
+      "prerequisites": []
+    },
+    {
+      "id": "b1t_u01_pronunciation",
+      "name": "B1 pronunciation target",
+      "tier": "B1.1",
+      "dimension": "pronunciation",
+      "broad_target_id": "kg_b1_1_pronunciation",
+      "prerequisites": []
+    },
+    {
+      "id": "b1t_u01_functions",
+      "name": "B1 functions target",
+      "tier": "B1.1",
+      "dimension": "functions",
+      "broad_target_id": "kg_b1_1_functions",
+      "prerequisites": []
+    },
+    {
+      "id": "b1t_u01_discourse",
+      "name": "B1 discourse target",
+      "tier": "B1.1",
+      "dimension": "discourse",
+      "broad_target_id": "kg_b1_1_discourse",
+      "prerequisites": []
+    },
+    {
+      "id": "b1t_u01_lexical_chunks",
+      "name": "B1 lexical chunks target",
+      "tier": "B1.1",
+      "dimension": "lexical_chunks",
+      "broad_target_id": "kg_b1_1_lexical_chunks",
+      "prerequisites": []
+    },
+    {
+      "id": "b1t_u01_pragmatics",
+      "name": "B1 pragmatics target",
+      "tier": "B1.1",
+      "dimension": "pragmatics",
+      "broad_target_id": "kg_b1_1_pragmatics",
+      "prerequisites": []
+    },
+    {
+      "id": "b1t_u01_collocations",
+      "name": "B1 collocations target",
+      "tier": "B1.1",
+      "dimension": "collocations",
+      "broad_target_id": "kg_b1_1_collocations",
+      "prerequisites": []
+    },
+    {
+      "id": "b1t_u01_topics",
+      "name": "B1 topics target",
+      "tier": "B1.1",
+      "dimension": "topics",
+      "broad_target_id": "kg_b1_1_topics",
+      "prerequisites": []
+    },
+    {
+      "id": "b1t_u01_skills",
+      "name": "B1 skills target",
+      "tier": "B1.1",
+      "dimension": "skills",
+      "broad_target_id": "kg_b1_1_skills",
+      "prerequisites": []
+    },
+    {
+      "id": "b1t_u06_grammar",
+      "name": "B1 grammar target",
+      "tier": "B1.2",
+      "dimension": "grammar",
+      "broad_target_id": "kg_b1_2_grammar",
+      "prerequisites": []
+    },
+    {
+      "id": "b1t_u06_vocabulary_senses",
+      "name": "B1 vocabulary senses target",
+      "tier": "B1.2",
+      "dimension": "vocabulary_senses",
+      "broad_target_id": "kg_b1_2_vocabulary_senses",
+      "prerequisites": []
+    },
+    {
+      "id": "b1t_u06_discourse",
+      "name": "B1 discourse target",
+      "tier": "B1.2",
+      "dimension": "discourse",
+      "broad_target_id": "kg_b1_2_discourse",
+      "prerequisites": []
+    },
+    {
+      "id": "b1t_u06_functions",
+      "name": "B1 functions target",
+      "tier": "B1.2",
+      "dimension": "functions",
+      "broad_target_id": "kg_b1_2_functions",
+      "prerequisites": []
+    },
+    {
+      "id": "b1t_u06_lexical_chunks",
+      "name": "B1 lexical chunks target",
+      "tier": "B1.2",
+      "dimension": "lexical_chunks",
+      "broad_target_id": "kg_b1_2_lexical_chunks",
+      "prerequisites": []
+    },
+    {
+      "id": "b1t_u06_skills",
+      "name": "B1 skills target",
+      "tier": "B1.2",
+      "dimension": "skills",
+      "broad_target_id": "kg_b1_2_skills",
+      "prerequisites": []
+    },
+    {
+      "id": "b1t_u06_pronunciation",
+      "name": "B1 pronunciation target",
+      "tier": "B1.2",
+      "dimension": "pronunciation",
+      "broad_target_id": "kg_b1_2_pronunciation",
+      "prerequisites": []
+    },
+    {
+      "id": "b1t_u06_collocations",
+      "name": "B1 collocations target",
+      "tier": "B1.2",
+      "dimension": "collocations",
+      "broad_target_id": "kg_b1_2_collocations",
+      "prerequisites": []
+    },
+    {
+      "id": "b1t_u06_topics",
+      "name": "B1 topics target",
+      "tier": "B1.2",
+      "dimension": "topics",
+      "broad_target_id": "kg_b1_2_topics",
+      "prerequisites": []
+    },
+    {
+      "id": "b1t_u06_pragmatics",
+      "name": "B1 pragmatics target",
+      "tier": "B1.2",
+      "dimension": "pragmatics",
+      "broad_target_id": "kg_b1_2_pragmatics",
+      "prerequisites": []
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "m16b1-v1-b1-u01-l01",
+      "tier": "B1.1",
+      "unit_id": "m16b1-v1-b1-u01",
+      "sequence": 1,
+      "lesson_kind": "LEARN",
+      "topic": "experiences up to now",
+      "language_focus": "Describe a life experience and connect it to the present.",
+      "prerequisite_lesson_ids": [],
+      "target_usage": [
+        {
+          "target_id": "b1t_u01_grammar",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "b1t_u01_vocabulary_senses",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "b1t_u01_pronunciation",
+          "usage": "INTRODUCE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u01-l02",
+      "tier": "B1.1",
+      "unit_id": "m16b1-v1-b1-u01",
+      "sequence": 2,
+      "lesson_kind": "LEARN",
+      "topic": "explaining an opinion",
+      "language_focus": "State an opinion and support it with a clear reason.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u01-l01"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u01_functions",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "b1t_u01_discourse",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "b1t_u01_lexical_chunks",
+          "usage": "INTRODUCE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u01-l03",
+      "tier": "B1.1",
+      "unit_id": "m16b1-v1-b1-u01",
+      "sequence": 3,
+      "lesson_kind": "LEARN",
+      "topic": "agreeing and disagreeing tactfully",
+      "language_focus": "Respond to a different view without sounding abrupt.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u01-l02"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u01_pragmatics",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "b1t_u01_collocations",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "b1t_u01_topics",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "b1t_u01_skills",
+          "usage": "INTRODUCE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u01-l04",
+      "tier": "B1.1",
+      "unit_id": "m16b1-v1-b1-u01",
+      "sequence": 4,
+      "lesson_kind": "LEARN",
+      "topic": "a connected personal response",
+      "language_focus": "Combine experience and opinion in connected language.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u01-l03"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u01_grammar",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_vocabulary_senses",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_pronunciation",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_discourse",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_pragmatics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_collocations",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_lexical_chunks",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_topics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_skills",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u01-l05",
+      "tier": "B1.1",
+      "unit_id": "m16b1-v1-b1-u01",
+      "sequence": 5,
+      "lesson_kind": "REVIEW",
+      "topic": "review: experiences and change",
+      "language_focus": "Review experience, opinion, and tactful response targets.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u01-l04"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u01_grammar",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_vocabulary_senses",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_functions",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_pronunciation",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_discourse",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_pragmatics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_collocations",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_lexical_chunks",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_topics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_skills",
+          "usage": "REVIEW"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u02-l01",
+      "tier": "B1.1",
+      "unit_id": "m16b1-v1-b1-u02",
+      "sequence": 6,
+      "lesson_kind": "LEARN",
+      "topic": "media experiences",
+      "language_focus": "Relate media experiences and distinguish finished from current relevance.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u01-l05"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u01_grammar",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_vocabulary_senses",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_topics",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u02-l02",
+      "tier": "B1.1",
+      "unit_id": "m16b1-v1-b1-u02",
+      "sequence": 7,
+      "lesson_kind": "LEARN",
+      "topic": "reasons and examples",
+      "language_focus": "Develop an opinion with a reason and a relevant example.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u02-l01"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u01_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_discourse",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_skills",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u02-l03",
+      "tier": "B1.1",
+      "unit_id": "m16b1-v1-b1-u02",
+      "sequence": 8,
+      "lesson_kind": "LEARN",
+      "topic": "emphasis and viewpoint",
+      "language_focus": "Use contrastive stress and opinion frames to highlight a viewpoint.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u02-l02"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u01_pronunciation",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_lexical_chunks",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_collocations",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u02-l04",
+      "tier": "B1.1",
+      "unit_id": "m16b1-v1-b1-u02",
+      "sequence": 9,
+      "lesson_kind": "LEARN",
+      "topic": "discussing different views",
+      "language_focus": "Agree or disagree tactfully in a familiar media discussion.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u02-l03"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u01_pragmatics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_skills",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u02-l05",
+      "tier": "B1.1",
+      "unit_id": "m16b1-v1-b1-u02",
+      "sequence": 10,
+      "lesson_kind": "REVIEW",
+      "topic": "review: media opinions",
+      "language_focus": "Review connected opinions about familiar media.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u02-l04"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u01_grammar",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_vocabulary_senses",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_functions",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_pronunciation",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_discourse",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_pragmatics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_collocations",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_lexical_chunks",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_topics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_skills",
+          "usage": "REVIEW"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u03-l01",
+      "tier": "B1.1",
+      "unit_id": "m16b1-v1-b1-u03",
+      "sequence": 11,
+      "lesson_kind": "LEARN",
+      "topic": "changes in relationships",
+      "language_focus": "Describe an experience or change in a familiar relationship.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u02-l05"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u01_grammar",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_vocabulary_senses",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_topics",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u03-l02",
+      "tier": "B1.1",
+      "unit_id": "m16b1-v1-b1-u03",
+      "sequence": 12,
+      "lesson_kind": "LEARN",
+      "topic": "expressing a concern",
+      "language_focus": "Give a view and explain a relationship concern clearly.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u03-l01"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u01_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_discourse",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_lexical_chunks",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u03-l03",
+      "tier": "B1.1",
+      "unit_id": "m16b1-v1-b1-u03",
+      "sequence": 13,
+      "lesson_kind": "LEARN",
+      "topic": "tactful responses",
+      "language_focus": "Use suitable stress and pragmatic choices when views differ.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u03-l02"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u01_pronunciation",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_pragmatics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_skills",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u03-l04",
+      "tier": "B1.1",
+      "unit_id": "m16b1-v1-b1-u03",
+      "sequence": 14,
+      "lesson_kind": "LEARN",
+      "topic": "relationship language",
+      "language_focus": "Use common opinion and relationship collocations in discussion.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u03-l03"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u01_collocations",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_skills",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u03-l05",
+      "tier": "B1.1",
+      "unit_id": "m16b1-v1-b1-u03",
+      "sequence": 15,
+      "lesson_kind": "REVIEW",
+      "topic": "review: relationships",
+      "language_focus": "Review experience, concern, and tactful discussion language.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u03-l04"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u01_grammar",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_vocabulary_senses",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_functions",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_pronunciation",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_discourse",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_pragmatics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_collocations",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_lexical_chunks",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_topics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_skills",
+          "usage": "REVIEW"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u04-l01",
+      "tier": "B1.1",
+      "unit_id": "m16b1-v1-b1-u04",
+      "sequence": 16,
+      "lesson_kind": "LEARN",
+      "topic": "experience in the community",
+      "language_focus": "Connect a past community experience to a current issue.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u03-l05"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u01_grammar",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_vocabulary_senses",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_topics",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u04-l02",
+      "tier": "B1.1",
+      "unit_id": "m16b1-v1-b1-u04",
+      "sequence": 17,
+      "lesson_kind": "LEARN",
+      "topic": "building a viewpoint",
+      "language_focus": "Organize a paragraph or short turn around one supported opinion.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u04-l01"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u01_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_discourse",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_skills",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u04-l03",
+      "tier": "B1.1",
+      "unit_id": "m16b1-v1-b1-u04",
+      "sequence": 18,
+      "lesson_kind": "LEARN",
+      "topic": "emphasizing key contrasts",
+      "language_focus": "Use contrastive stress and opinion chunks to compare choices.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u04-l02"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u01_pronunciation",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_lexical_chunks",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_collocations",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u04-l04",
+      "tier": "B1.1",
+      "unit_id": "m16b1-v1-b1-u04",
+      "sequence": 19,
+      "lesson_kind": "LEARN",
+      "topic": "discussing alternatives",
+      "language_focus": "Disagree tactfully and propose a reasonable alternative.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u04-l03"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u01_pragmatics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_skills",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u04-l05",
+      "tier": "B1.1",
+      "unit_id": "m16b1-v1-b1-u04",
+      "sequence": 20,
+      "lesson_kind": "REVIEW",
+      "topic": "review: community choices",
+      "language_focus": "Review supported opinions and responses about community choices.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u04-l04"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u01_grammar",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_vocabulary_senses",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_functions",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_pronunciation",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_discourse",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_pragmatics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_collocations",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_lexical_chunks",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_topics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_skills",
+          "usage": "REVIEW"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u05-l01",
+      "tier": "B1.1",
+      "unit_id": "m16b1-v1-b1-u05",
+      "sequence": 21,
+      "lesson_kind": "LEARN",
+      "topic": "experiences across contexts",
+      "language_focus": "Select suitable B1.1 language for experience and change.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u04-l05"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u01_grammar",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_vocabulary_senses",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_pronunciation",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_discourse",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_pragmatics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_collocations",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_lexical_chunks",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_topics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_skills",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u05-l02",
+      "tier": "B1.1",
+      "unit_id": "m16b1-v1-b1-u05",
+      "sequence": 22,
+      "lesson_kind": "LEARN",
+      "topic": "connected opinion practice",
+      "language_focus": "Develop a clear opinion across several linked sentences.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u05-l01"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u01_discourse",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_skills",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_vocabulary_senses",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u05-l03",
+      "tier": "B1.1",
+      "unit_id": "m16b1-v1-b1-u05",
+      "sequence": 23,
+      "lesson_kind": "LEARN",
+      "topic": "tactful discussion practice",
+      "language_focus": "Use stress, chunks, and pragmatic choices in a short discussion.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u05-l02"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u01_pronunciation",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_pragmatics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_lexical_chunks",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_collocations",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u05-l04",
+      "tier": "B1.1",
+      "unit_id": "m16b1-v1-b1-u05",
+      "sequence": 24,
+      "lesson_kind": "LEARN",
+      "topic": "b1.1 preparation",
+      "language_focus": "Prepare to combine experience and supported opinion targets.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u05-l03"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u01_grammar",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_vocabulary_senses",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_pronunciation",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_discourse",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_pragmatics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_collocations",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_lexical_chunks",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_topics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u01_skills",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u05-l05",
+      "tier": "B1.1",
+      "unit_id": "m16b1-v1-b1-u05",
+      "sequence": 25,
+      "lesson_kind": "REVIEW",
+      "topic": "review: b1.1 consolidation",
+      "language_focus": "Review all B1.1 target dimensions before the unit test.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u05-l04"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u01_grammar",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_vocabulary_senses",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_functions",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_pronunciation",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_discourse",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_pragmatics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_collocations",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_lexical_chunks",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_topics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u01_skills",
+          "usage": "REVIEW"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u06-l01",
+      "tier": "B1.2",
+      "unit_id": "m16b1-v1-b1-u06",
+      "sequence": 26,
+      "lesson_kind": "LEARN",
+      "topic": "a sequenced past story",
+      "language_focus": "Sequence past events in a coherent account of change.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u05-l05"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u06_grammar",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "b1t_u06_vocabulary_senses",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "b1t_u06_discourse",
+          "usage": "INTRODUCE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u06-l02",
+      "tier": "B1.2",
+      "unit_id": "m16b1-v1-b1-u06",
+      "sequence": 27,
+      "lesson_kind": "LEARN",
+      "topic": "clarifying what happened",
+      "language_focus": "Clarify a detail when a listener does not understand.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u06-l01"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u06_functions",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "b1t_u06_lexical_chunks",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "b1t_u06_skills",
+          "usage": "INTRODUCE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u06-l03",
+      "tier": "B1.2",
+      "unit_id": "m16b1-v1-b1-u06",
+      "sequence": 28,
+      "lesson_kind": "LEARN",
+      "topic": "narrative intonation",
+      "language_focus": "Use intonation to mark stages and highlights in a story.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u06-l02"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u06_pronunciation",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "b1t_u06_collocations",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "b1t_u06_topics",
+          "usage": "INTRODUCE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u06-l04",
+      "tier": "B1.2",
+      "unit_id": "m16b1-v1-b1-u06",
+      "sequence": 29,
+      "lesson_kind": "LEARN",
+      "topic": "choosing an appropriate register",
+      "language_focus": "Adjust familiar language for a less familiar listener.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u06-l03"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u06_pragmatics",
+          "usage": "INTRODUCE"
+        },
+        {
+          "target_id": "b1t_u06_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_skills",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u06-l05",
+      "tier": "B1.2",
+      "unit_id": "m16b1-v1-b1-u06",
+      "sequence": 30,
+      "lesson_kind": "REVIEW",
+      "topic": "review: personal-change stories",
+      "language_focus": "Review sequence, clarification, and narrative delivery.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u06-l04"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u06_grammar",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_vocabulary_senses",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_functions",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_pronunciation",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_discourse",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_pragmatics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_collocations",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_lexical_chunks",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_topics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_skills",
+          "usage": "REVIEW"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u07-l01",
+      "tier": "B1.2",
+      "unit_id": "m16b1-v1-b1-u07",
+      "sequence": 31,
+      "lesson_kind": "LEARN",
+      "topic": "reporting an event",
+      "language_focus": "Tell a coherent story about a familiar community event.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u06-l05"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u06_grammar",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_vocabulary_senses",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_topics",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u07-l02",
+      "tier": "B1.2",
+      "unit_id": "m16b1-v1-b1-u07",
+      "sequence": 32,
+      "lesson_kind": "LEARN",
+      "topic": "developing the story",
+      "language_focus": "Link events and maintain a clear topic across the account.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u07-l01"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u06_discourse",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_skills",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u07-l03",
+      "tier": "B1.2",
+      "unit_id": "m16b1-v1-b1-u07",
+      "sequence": 33,
+      "lesson_kind": "LEARN",
+      "topic": "repairing and elaborating",
+      "language_focus": "Use repair frames and collocations to clarify or add detail.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u07-l02"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u06_lexical_chunks",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_collocations",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_pragmatics",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u07-l04",
+      "tier": "B1.2",
+      "unit_id": "m16b1-v1-b1-u07",
+      "sequence": 34,
+      "lesson_kind": "LEARN",
+      "topic": "engaging spoken delivery",
+      "language_focus": "Use narrative intonation to make event structure clear.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u07-l03"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u06_pronunciation",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_skills",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_functions",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u07-l05",
+      "tier": "B1.2",
+      "unit_id": "m16b1-v1-b1-u07",
+      "sequence": 35,
+      "lesson_kind": "REVIEW",
+      "topic": "review: community events",
+      "language_focus": "Review coherent event reporting and clarification.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u07-l04"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u06_grammar",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_vocabulary_senses",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_functions",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_pronunciation",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_discourse",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_pragmatics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_collocations",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_lexical_chunks",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_topics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_skills",
+          "usage": "REVIEW"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u08-l01",
+      "tier": "B1.2",
+      "unit_id": "m16b1-v1-b1-u08",
+      "sequence": 36,
+      "lesson_kind": "LEARN",
+      "topic": "retelling a media story",
+      "language_focus": "Retell the main sequence of a familiar media story.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u07-l05"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u06_grammar",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_vocabulary_senses",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_discourse",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u08-l02",
+      "tier": "B1.2",
+      "unit_id": "m16b1-v1-b1-u08",
+      "sequence": 37,
+      "lesson_kind": "LEARN",
+      "topic": "explaining a perspective",
+      "language_focus": "Clarify a viewpoint and add enough context for a listener.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u08-l01"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u06_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_pragmatics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_skills",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u08-l03",
+      "tier": "B1.2",
+      "unit_id": "m16b1-v1-b1-u08",
+      "sequence": 38,
+      "lesson_kind": "LEARN",
+      "topic": "narrative language patterns",
+      "language_focus": "Use narrative chunks, collocations, and intonation coherently.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u08-l02"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u06_lexical_chunks",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_collocations",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_pronunciation",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u08-l04",
+      "tier": "B1.2",
+      "unit_id": "m16b1-v1-b1-u08",
+      "sequence": 39,
+      "lesson_kind": "LEARN",
+      "topic": "comparing accounts",
+      "language_focus": "Discuss two accounts and repair a misunderstanding when needed.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u08-l03"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u06_topics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_skills",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u08-l05",
+      "tier": "B1.2",
+      "unit_id": "m16b1-v1-b1-u08",
+      "sequence": 40,
+      "lesson_kind": "REVIEW",
+      "topic": "review: media stories",
+      "language_focus": "Review retelling, perspective, and repair targets.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u08-l04"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u06_grammar",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_vocabulary_senses",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_functions",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_pronunciation",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_discourse",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_pragmatics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_collocations",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_lexical_chunks",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_topics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_skills",
+          "usage": "REVIEW"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u09-l01",
+      "tier": "B1.2",
+      "unit_id": "m16b1-v1-b1-u09",
+      "sequence": 41,
+      "lesson_kind": "LEARN",
+      "topic": "a relationship story",
+      "language_focus": "Sequence events that changed or maintained a relationship.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u08-l05"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u06_grammar",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_vocabulary_senses",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_collocations",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u09-l02",
+      "tier": "B1.2",
+      "unit_id": "m16b1-v1-b1-u09",
+      "sequence": 42,
+      "lesson_kind": "LEARN",
+      "topic": "topic development",
+      "language_focus": "Develop the people, events, and consequences in a clear account.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u09-l01"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u06_discourse",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_topics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_skills",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u09-l03",
+      "tier": "B1.2",
+      "unit_id": "m16b1-v1-b1-u09",
+      "sequence": 43,
+      "lesson_kind": "LEARN",
+      "topic": "clarifying sensitively",
+      "language_focus": "Repair meaning with register suitable for a less familiar setting.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u09-l02"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u06_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_pragmatics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_lexical_chunks",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u09-l04",
+      "tier": "B1.2",
+      "unit_id": "m16b1-v1-b1-u09",
+      "sequence": 44,
+      "lesson_kind": "LEARN",
+      "topic": "telling the story aloud",
+      "language_focus": "Use narrative intonation and connected language in discussion.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u09-l03"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u06_pronunciation",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_skills",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_functions",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u09-l05",
+      "tier": "B1.2",
+      "unit_id": "m16b1-v1-b1-u09",
+      "sequence": 45,
+      "lesson_kind": "REVIEW",
+      "topic": "review: relationships over time",
+      "language_focus": "Review relationship narratives and sensitive clarification.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u09-l04"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u06_grammar",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_vocabulary_senses",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_functions",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_pronunciation",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_discourse",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_pragmatics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_collocations",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_lexical_chunks",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_topics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_skills",
+          "usage": "REVIEW"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u10-l01",
+      "tier": "B1.2",
+      "unit_id": "m16b1-v1-b1-u10",
+      "sequence": 46,
+      "lesson_kind": "LEARN",
+      "topic": "narratives across contexts",
+      "language_focus": "Select suitable B1.2 language for stories and discussion.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u09-l05"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u06_grammar",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_vocabulary_senses",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_pronunciation",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_discourse",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_pragmatics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_collocations",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_lexical_chunks",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_topics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_skills",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u10-l02",
+      "tier": "B1.2",
+      "unit_id": "m16b1-v1-b1-u10",
+      "sequence": 47,
+      "lesson_kind": "LEARN",
+      "topic": "extended story practice",
+      "language_focus": "Develop and clarify a coherent story in connected language.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u10-l01"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u06_grammar",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_discourse",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_skills",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u10-l03",
+      "tier": "B1.2",
+      "unit_id": "m16b1-v1-b1-u10",
+      "sequence": 48,
+      "lesson_kind": "LEARN",
+      "topic": "spoken interaction practice",
+      "language_focus": "Use narrative intonation, repair frames, and relationship language.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u10-l02"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u06_pronunciation",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_vocabulary_senses",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_lexical_chunks",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_collocations",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u10-l04",
+      "tier": "B1.2",
+      "unit_id": "m16b1-v1-b1-u10",
+      "sequence": 49,
+      "lesson_kind": "LEARN",
+      "topic": "b1.2 preparation",
+      "language_focus": "Prepare to use all B1.2 targets in an extended familiar discussion.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u10-l03"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u06_grammar",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_vocabulary_senses",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_functions",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_pronunciation",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_discourse",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_pragmatics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_collocations",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_lexical_chunks",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_topics",
+          "usage": "PRACTISE"
+        },
+        {
+          "target_id": "b1t_u06_skills",
+          "usage": "PRACTISE"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u10-l05",
+      "tier": "B1.2",
+      "unit_id": "m16b1-v1-b1-u10",
+      "sequence": 50,
+      "lesson_kind": "REVIEW",
+      "topic": "review: b1.2 consolidation",
+      "language_focus": "Review all B1.2 target dimensions before the unit test.",
+      "prerequisite_lesson_ids": [
+        "m16b1-v1-b1-u10-l04"
+      ],
+      "target_usage": [
+        {
+          "target_id": "b1t_u06_grammar",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_vocabulary_senses",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_functions",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_pronunciation",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_discourse",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_pragmatics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_collocations",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_lexical_chunks",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_topics",
+          "usage": "REVIEW"
+        },
+        {
+          "target_id": "b1t_u06_skills",
+          "usage": "REVIEW"
+        }
+      ],
+      "allowed_exercise_types": [
+        "multiple_choice",
+        "fill_blank",
+        "reading",
+        "speaking"
+      ]
+    }
+  ]
+}

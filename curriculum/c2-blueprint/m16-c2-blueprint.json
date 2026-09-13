@@ -1,0 +1,2428 @@
+{
+  "edition": "m16c2-v1",
+  "entry_prerequisite_node_ids": [
+    "kg_c1_2_collocations",
+    "kg_c1_2_discourse",
+    "kg_c1_2_functions",
+    "kg_c1_2_grammar",
+    "kg_c1_2_lexical_chunks",
+    "kg_c1_2_pragmatics",
+    "kg_c1_2_pronunciation",
+    "kg_c1_2_skills",
+    "kg_c1_2_topics",
+    "kg_c1_2_vocabulary_senses"
+  ],
+  "lessons": [
+    {
+      "id": "m16c2-v1-c2-u01-l01",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Frame specialist claims and uncertainty with controlled grammar, vocabulary, and pronunciation."
+      ],
+      "prerequisite_lesson_ids": [],
+      "sequence": 1,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_c2_1_grammar",
+          "use": "INTRODUCE"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_c2_1_vocabulary_senses",
+          "use": "INTRODUCE"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_c2_1_pronunciation",
+          "use": "INTRODUCE"
+        }
+      ],
+      "tier": "C2.1",
+      "title": "Framing specialist claims and uncertainty",
+      "unit_id": "m16c2-v1-c2-u01"
+    },
+    {
+      "id": "m16c2-v1-c2-u01-l02",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Develop specialist claims and uncertainty through clear functions, discourse, and lexical framing."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u01-l01"
+      ],
+      "sequence": 2,
+      "targets": [
+        {
+          "dimension": "functions",
+          "node_id": "kg_c2_1_functions",
+          "use": "INTRODUCE"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_c2_1_discourse",
+          "use": "INTRODUCE"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_c2_1_lexical_chunks",
+          "use": "INTRODUCE"
+        }
+      ],
+      "tier": "C2.1",
+      "title": "Developing specialist claims and uncertainty",
+      "unit_id": "m16c2-v1-c2-u01"
+    },
+    {
+      "id": "m16c2-v1-c2-u01-l03",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Apply pragmatic, collocational, topical, and strategic choices to specialist claims and uncertainty."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u01-l02"
+      ],
+      "sequence": 3,
+      "targets": [
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_c2_1_pragmatics",
+          "use": "INTRODUCE"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_c2_1_collocations",
+          "use": "INTRODUCE"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_c2_1_topics",
+          "use": "INTRODUCE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_c2_1_skills",
+          "use": "INTRODUCE"
+        }
+      ],
+      "tier": "C2.1",
+      "title": "Responding in specialist claims and uncertainty",
+      "unit_id": "m16c2-v1-c2-u01"
+    },
+    {
+      "id": "m16c2-v1-c2-u01-l04",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Integrate the target dimensions in an extended task about specialist claims and uncertainty."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u01-l03"
+      ],
+      "sequence": 4,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_c2_1_grammar",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_c2_1_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_c2_1_discourse",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_c2_1_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.1",
+      "title": "Integrating specialist claims and uncertainty",
+      "unit_id": "m16c2-v1-c2-u01"
+    },
+    {
+      "id": "m16c2-v1-c2-u01-l05",
+      "lesson_kind": "REVIEW",
+      "objectives": [
+        "Review the target dimensions for specialist claims and uncertainty."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u01-l04"
+      ],
+      "sequence": 5,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_c2_1_grammar",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_c2_1_vocabulary_senses",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_c2_1_functions",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_c2_1_pronunciation",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_c2_1_discourse",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_c2_1_pragmatics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_c2_1_collocations",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_c2_1_lexical_chunks",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_c2_1_topics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_c2_1_skills",
+          "use": "REVIEW"
+        }
+      ],
+      "tier": "C2.1",
+      "title": "Review: Specialist claims and uncertainty",
+      "unit_id": "m16c2-v1-c2-u01"
+    },
+    {
+      "id": "m16c2-v1-c2-u02-l01",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Frame implied intent in expert debate with controlled grammar, vocabulary, and pronunciation."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u01-l05"
+      ],
+      "sequence": 1,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_c2_1_grammar",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_c2_1_vocabulary_senses",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_c2_1_pronunciation",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.1",
+      "title": "Framing implied intent in expert debate",
+      "unit_id": "m16c2-v1-c2-u02"
+    },
+    {
+      "id": "m16c2-v1-c2-u02-l02",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Develop implied intent in expert debate through clear functions, discourse, and lexical framing."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u02-l01"
+      ],
+      "sequence": 2,
+      "targets": [
+        {
+          "dimension": "functions",
+          "node_id": "kg_c2_1_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_c2_1_discourse",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_c2_1_lexical_chunks",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.1",
+      "title": "Developing implied intent in expert debate",
+      "unit_id": "m16c2-v1-c2-u02"
+    },
+    {
+      "id": "m16c2-v1-c2-u02-l03",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Apply pragmatic, collocational, topical, and strategic choices to implied intent in expert debate."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u02-l02"
+      ],
+      "sequence": 3,
+      "targets": [
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_c2_1_pragmatics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_c2_1_collocations",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_c2_1_topics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_c2_1_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.1",
+      "title": "Responding in implied intent in expert debate",
+      "unit_id": "m16c2-v1-c2-u02"
+    },
+    {
+      "id": "m16c2-v1-c2-u02-l04",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Integrate the target dimensions in an extended task about implied intent in expert debate."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u02-l03"
+      ],
+      "sequence": 4,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_c2_1_grammar",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_c2_1_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_c2_1_discourse",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_c2_1_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.1",
+      "title": "Integrating implied intent in expert debate",
+      "unit_id": "m16c2-v1-c2-u02"
+    },
+    {
+      "id": "m16c2-v1-c2-u02-l05",
+      "lesson_kind": "REVIEW",
+      "objectives": [
+        "Review the target dimensions for implied intent in expert debate."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u02-l04"
+      ],
+      "sequence": 5,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_c2_1_grammar",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_c2_1_vocabulary_senses",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_c2_1_functions",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_c2_1_pronunciation",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_c2_1_discourse",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_c2_1_pragmatics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_c2_1_collocations",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_c2_1_lexical_chunks",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_c2_1_topics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_c2_1_skills",
+          "use": "REVIEW"
+        }
+      ],
+      "tier": "C2.1",
+      "title": "Review: Nuanced expert debate",
+      "unit_id": "m16c2-v1-c2-u02"
+    },
+    {
+      "id": "m16c2-v1-c2-u03-l01",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Frame rhetorical framing and inference with controlled grammar, vocabulary, and pronunciation."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u02-l05"
+      ],
+      "sequence": 1,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_c2_1_grammar",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_c2_1_vocabulary_senses",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_c2_1_pronunciation",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.1",
+      "title": "Framing rhetorical framing and inference",
+      "unit_id": "m16c2-v1-c2-u03"
+    },
+    {
+      "id": "m16c2-v1-c2-u03-l02",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Develop rhetorical framing and inference through clear functions, discourse, and lexical framing."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u03-l01"
+      ],
+      "sequence": 2,
+      "targets": [
+        {
+          "dimension": "functions",
+          "node_id": "kg_c2_1_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_c2_1_discourse",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_c2_1_lexical_chunks",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.1",
+      "title": "Developing rhetorical framing and inference",
+      "unit_id": "m16c2-v1-c2-u03"
+    },
+    {
+      "id": "m16c2-v1-c2-u03-l03",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Apply pragmatic, collocational, topical, and strategic choices to rhetorical framing and inference."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u03-l02"
+      ],
+      "sequence": 3,
+      "targets": [
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_c2_1_pragmatics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_c2_1_collocations",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_c2_1_topics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_c2_1_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.1",
+      "title": "Responding in rhetorical framing and inference",
+      "unit_id": "m16c2-v1-c2-u03"
+    },
+    {
+      "id": "m16c2-v1-c2-u03-l04",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Integrate the target dimensions in an extended task about rhetorical framing and inference."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u03-l03"
+      ],
+      "sequence": 4,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_c2_1_grammar",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_c2_1_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_c2_1_discourse",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_c2_1_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.1",
+      "title": "Integrating rhetorical framing and inference",
+      "unit_id": "m16c2-v1-c2-u03"
+    },
+    {
+      "id": "m16c2-v1-c2-u03-l05",
+      "lesson_kind": "REVIEW",
+      "objectives": [
+        "Review the target dimensions for rhetorical framing and inference."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u03-l04"
+      ],
+      "sequence": 5,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_c2_1_grammar",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_c2_1_vocabulary_senses",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_c2_1_functions",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_c2_1_pronunciation",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_c2_1_discourse",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_c2_1_pragmatics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_c2_1_collocations",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_c2_1_lexical_chunks",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_c2_1_topics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_c2_1_skills",
+          "use": "REVIEW"
+        }
+      ],
+      "tier": "C2.1",
+      "title": "Review: Rhetorical framing and inference",
+      "unit_id": "m16c2-v1-c2-u03"
+    },
+    {
+      "id": "m16c2-v1-c2-u04-l01",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Frame cross-cultural intent and lexical precision with controlled grammar, vocabulary, and pronunciation."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u03-l05"
+      ],
+      "sequence": 1,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_c2_1_grammar",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_c2_1_vocabulary_senses",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_c2_1_pronunciation",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.1",
+      "title": "Framing cross-cultural intent and lexical precision",
+      "unit_id": "m16c2-v1-c2-u04"
+    },
+    {
+      "id": "m16c2-v1-c2-u04-l02",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Develop cross-cultural intent and lexical precision through clear functions, discourse, and lexical framing."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u04-l01"
+      ],
+      "sequence": 2,
+      "targets": [
+        {
+          "dimension": "functions",
+          "node_id": "kg_c2_1_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_c2_1_discourse",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_c2_1_lexical_chunks",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.1",
+      "title": "Developing cross-cultural intent and lexical precision",
+      "unit_id": "m16c2-v1-c2-u04"
+    },
+    {
+      "id": "m16c2-v1-c2-u04-l03",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Apply pragmatic, collocational, topical, and strategic choices to cross-cultural intent and lexical precision."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u04-l02"
+      ],
+      "sequence": 3,
+      "targets": [
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_c2_1_pragmatics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_c2_1_collocations",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_c2_1_topics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_c2_1_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.1",
+      "title": "Responding in cross-cultural intent and lexical precision",
+      "unit_id": "m16c2-v1-c2-u04"
+    },
+    {
+      "id": "m16c2-v1-c2-u04-l04",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Integrate the target dimensions in an extended task about cross-cultural intent and lexical precision."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u04-l03"
+      ],
+      "sequence": 4,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_c2_1_grammar",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_c2_1_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_c2_1_discourse",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_c2_1_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.1",
+      "title": "Integrating cross-cultural intent and lexical precision",
+      "unit_id": "m16c2-v1-c2-u04"
+    },
+    {
+      "id": "m16c2-v1-c2-u04-l05",
+      "lesson_kind": "REVIEW",
+      "objectives": [
+        "Review the target dimensions for cross-cultural intent and lexical precision."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u04-l04"
+      ],
+      "sequence": 5,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_c2_1_grammar",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_c2_1_vocabulary_senses",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_c2_1_functions",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_c2_1_pronunciation",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_c2_1_discourse",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_c2_1_pragmatics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_c2_1_collocations",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_c2_1_lexical_chunks",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_c2_1_topics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_c2_1_skills",
+          "use": "REVIEW"
+        }
+      ],
+      "tier": "C2.1",
+      "title": "Review: Cross-cultural intent and precision",
+      "unit_id": "m16c2-v1-c2-u04"
+    },
+    {
+      "id": "m16c2-v1-c2-u05-l01",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Frame all C2.1 targets with controlled grammar, vocabulary, and pronunciation."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u04-l05"
+      ],
+      "sequence": 1,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_c2_1_grammar",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_c2_1_vocabulary_senses",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_c2_1_pronunciation",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.1",
+      "title": "Framing all C2.1 targets",
+      "unit_id": "m16c2-v1-c2-u05"
+    },
+    {
+      "id": "m16c2-v1-c2-u05-l02",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Develop all C2.1 targets through clear functions, discourse, and lexical framing."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u05-l01"
+      ],
+      "sequence": 2,
+      "targets": [
+        {
+          "dimension": "functions",
+          "node_id": "kg_c2_1_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_c2_1_discourse",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_c2_1_lexical_chunks",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.1",
+      "title": "Developing all C2.1 targets",
+      "unit_id": "m16c2-v1-c2-u05"
+    },
+    {
+      "id": "m16c2-v1-c2-u05-l03",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Apply pragmatic, collocational, topical, and strategic choices to all C2.1 targets."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u05-l02"
+      ],
+      "sequence": 3,
+      "targets": [
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_c2_1_pragmatics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_c2_1_collocations",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_c2_1_topics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_c2_1_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.1",
+      "title": "Responding in all C2.1 targets",
+      "unit_id": "m16c2-v1-c2-u05"
+    },
+    {
+      "id": "m16c2-v1-c2-u05-l04",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Integrate the target dimensions in an extended task about all C2.1 targets."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u05-l03"
+      ],
+      "sequence": 4,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_c2_1_grammar",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_c2_1_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_c2_1_discourse",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_c2_1_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.1",
+      "title": "Integrating all C2.1 targets",
+      "unit_id": "m16c2-v1-c2-u05"
+    },
+    {
+      "id": "m16c2-v1-c2-u05-l05",
+      "lesson_kind": "REVIEW",
+      "objectives": [
+        "Review the target dimensions for all C2.1 targets."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u05-l04"
+      ],
+      "sequence": 5,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_c2_1_grammar",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_c2_1_vocabulary_senses",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_c2_1_functions",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_c2_1_pronunciation",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_c2_1_discourse",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_c2_1_pragmatics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_c2_1_collocations",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_c2_1_lexical_chunks",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_c2_1_topics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_c2_1_skills",
+          "use": "REVIEW"
+        }
+      ],
+      "tier": "C2.1",
+      "title": "Review: C2.1 consolidation",
+      "unit_id": "m16c2-v1-c2-u05"
+    },
+    {
+      "id": "m16c2-v1-c2-u06-l01",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Frame complex systems and worldviews with controlled grammar, vocabulary, and pronunciation."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u05-l05"
+      ],
+      "sequence": 1,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_c2_2_grammar",
+          "use": "INTRODUCE"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_c2_2_vocabulary_senses",
+          "use": "INTRODUCE"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_c2_2_pronunciation",
+          "use": "INTRODUCE"
+        }
+      ],
+      "tier": "C2.2",
+      "title": "Framing complex systems and worldviews",
+      "unit_id": "m16c2-v1-c2-u06"
+    },
+    {
+      "id": "m16c2-v1-c2-u06-l02",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Develop complex systems and worldviews through clear functions, discourse, and lexical framing."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u06-l01"
+      ],
+      "sequence": 2,
+      "targets": [
+        {
+          "dimension": "functions",
+          "node_id": "kg_c2_2_functions",
+          "use": "INTRODUCE"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_c2_2_discourse",
+          "use": "INTRODUCE"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_c2_2_lexical_chunks",
+          "use": "INTRODUCE"
+        }
+      ],
+      "tier": "C2.2",
+      "title": "Developing complex systems and worldviews",
+      "unit_id": "m16c2-v1-c2-u06"
+    },
+    {
+      "id": "m16c2-v1-c2-u06-l03",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Apply pragmatic, collocational, topical, and strategic choices to complex systems and worldviews."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u06-l02"
+      ],
+      "sequence": 3,
+      "targets": [
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_c2_2_pragmatics",
+          "use": "INTRODUCE"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_c2_2_collocations",
+          "use": "INTRODUCE"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_c2_2_topics",
+          "use": "INTRODUCE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_c2_2_skills",
+          "use": "INTRODUCE"
+        }
+      ],
+      "tier": "C2.2",
+      "title": "Responding in complex systems and worldviews",
+      "unit_id": "m16c2-v1-c2-u06"
+    },
+    {
+      "id": "m16c2-v1-c2-u06-l04",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Integrate the target dimensions in an extended task about complex systems and worldviews."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u06-l03"
+      ],
+      "sequence": 4,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_c2_2_grammar",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_c2_2_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_c2_2_discourse",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_c2_2_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.2",
+      "title": "Integrating complex systems and worldviews",
+      "unit_id": "m16c2-v1-c2-u06"
+    },
+    {
+      "id": "m16c2-v1-c2-u06-l05",
+      "lesson_kind": "REVIEW",
+      "objectives": [
+        "Review the target dimensions for complex systems and worldviews."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u06-l04"
+      ],
+      "sequence": 5,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_c2_2_grammar",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_c2_2_vocabulary_senses",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_c2_2_functions",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_c2_2_pronunciation",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_c2_2_discourse",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_c2_2_pragmatics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_c2_2_collocations",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_c2_2_lexical_chunks",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_c2_2_topics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_c2_2_skills",
+          "use": "REVIEW"
+        }
+      ],
+      "tier": "C2.2",
+      "title": "Review: Complex systems and worldviews",
+      "unit_id": "m16c2-v1-c2-u06"
+    },
+    {
+      "id": "m16c2-v1-c2-u07-l01",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Frame audience-adapted persuasion with controlled grammar, vocabulary, and pronunciation."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u06-l05"
+      ],
+      "sequence": 1,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_c2_2_grammar",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_c2_2_vocabulary_senses",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_c2_2_pronunciation",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.2",
+      "title": "Framing audience-adapted persuasion",
+      "unit_id": "m16c2-v1-c2-u07"
+    },
+    {
+      "id": "m16c2-v1-c2-u07-l02",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Develop audience-adapted persuasion through clear functions, discourse, and lexical framing."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u07-l01"
+      ],
+      "sequence": 2,
+      "targets": [
+        {
+          "dimension": "functions",
+          "node_id": "kg_c2_2_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_c2_2_discourse",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_c2_2_lexical_chunks",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.2",
+      "title": "Developing audience-adapted persuasion",
+      "unit_id": "m16c2-v1-c2-u07"
+    },
+    {
+      "id": "m16c2-v1-c2-u07-l03",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Apply pragmatic, collocational, topical, and strategic choices to audience-adapted persuasion."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u07-l02"
+      ],
+      "sequence": 3,
+      "targets": [
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_c2_2_pragmatics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_c2_2_collocations",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_c2_2_topics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_c2_2_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.2",
+      "title": "Responding in audience-adapted persuasion",
+      "unit_id": "m16c2-v1-c2-u07"
+    },
+    {
+      "id": "m16c2-v1-c2-u07-l04",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Integrate the target dimensions in an extended task about audience-adapted persuasion."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u07-l03"
+      ],
+      "sequence": 4,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_c2_2_grammar",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_c2_2_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_c2_2_discourse",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_c2_2_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.2",
+      "title": "Integrating audience-adapted persuasion",
+      "unit_id": "m16c2-v1-c2-u07"
+    },
+    {
+      "id": "m16c2-v1-c2-u07-l05",
+      "lesson_kind": "REVIEW",
+      "objectives": [
+        "Review the target dimensions for audience-adapted persuasion."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u07-l04"
+      ],
+      "sequence": 5,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_c2_2_grammar",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_c2_2_vocabulary_senses",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_c2_2_functions",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_c2_2_pronunciation",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_c2_2_discourse",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_c2_2_pragmatics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_c2_2_collocations",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_c2_2_lexical_chunks",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_c2_2_topics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_c2_2_skills",
+          "use": "REVIEW"
+        }
+      ],
+      "tier": "C2.2",
+      "title": "Review: Audience-adapted persuasion",
+      "unit_id": "m16c2-v1-c2-u07"
+    },
+    {
+      "id": "m16c2-v1-c2-u08-l01",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Frame genre-sensitive synthesis with controlled grammar, vocabulary, and pronunciation."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u07-l05"
+      ],
+      "sequence": 1,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_c2_2_grammar",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_c2_2_vocabulary_senses",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_c2_2_pronunciation",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.2",
+      "title": "Framing genre-sensitive synthesis",
+      "unit_id": "m16c2-v1-c2-u08"
+    },
+    {
+      "id": "m16c2-v1-c2-u08-l02",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Develop genre-sensitive synthesis through clear functions, discourse, and lexical framing."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u08-l01"
+      ],
+      "sequence": 2,
+      "targets": [
+        {
+          "dimension": "functions",
+          "node_id": "kg_c2_2_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_c2_2_discourse",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_c2_2_lexical_chunks",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.2",
+      "title": "Developing genre-sensitive synthesis",
+      "unit_id": "m16c2-v1-c2-u08"
+    },
+    {
+      "id": "m16c2-v1-c2-u08-l03",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Apply pragmatic, collocational, topical, and strategic choices to genre-sensitive synthesis."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u08-l02"
+      ],
+      "sequence": 3,
+      "targets": [
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_c2_2_pragmatics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_c2_2_collocations",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_c2_2_topics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_c2_2_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.2",
+      "title": "Responding in genre-sensitive synthesis",
+      "unit_id": "m16c2-v1-c2-u08"
+    },
+    {
+      "id": "m16c2-v1-c2-u08-l04",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Integrate the target dimensions in an extended task about genre-sensitive synthesis."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u08-l03"
+      ],
+      "sequence": 4,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_c2_2_grammar",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_c2_2_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_c2_2_discourse",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_c2_2_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.2",
+      "title": "Integrating genre-sensitive synthesis",
+      "unit_id": "m16c2-v1-c2-u08"
+    },
+    {
+      "id": "m16c2-v1-c2-u08-l05",
+      "lesson_kind": "REVIEW",
+      "objectives": [
+        "Review the target dimensions for genre-sensitive synthesis."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u08-l04"
+      ],
+      "sequence": 5,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_c2_2_grammar",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_c2_2_vocabulary_senses",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_c2_2_functions",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_c2_2_pronunciation",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_c2_2_discourse",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_c2_2_pragmatics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_c2_2_collocations",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_c2_2_lexical_chunks",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_c2_2_topics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_c2_2_skills",
+          "use": "REVIEW"
+        }
+      ],
+      "tier": "C2.2",
+      "title": "Review: Genre-sensitive synthesis",
+      "unit_id": "m16c2-v1-c2-u08"
+    },
+    {
+      "id": "m16c2-v1-c2-u09-l01",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Frame sophisticated creation and critique with controlled grammar, vocabulary, and pronunciation."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u08-l05"
+      ],
+      "sequence": 1,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_c2_2_grammar",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_c2_2_vocabulary_senses",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_c2_2_pronunciation",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.2",
+      "title": "Framing sophisticated creation and critique",
+      "unit_id": "m16c2-v1-c2-u09"
+    },
+    {
+      "id": "m16c2-v1-c2-u09-l02",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Develop sophisticated creation and critique through clear functions, discourse, and lexical framing."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u09-l01"
+      ],
+      "sequence": 2,
+      "targets": [
+        {
+          "dimension": "functions",
+          "node_id": "kg_c2_2_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_c2_2_discourse",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_c2_2_lexical_chunks",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.2",
+      "title": "Developing sophisticated creation and critique",
+      "unit_id": "m16c2-v1-c2-u09"
+    },
+    {
+      "id": "m16c2-v1-c2-u09-l03",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Apply pragmatic, collocational, topical, and strategic choices to sophisticated creation and critique."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u09-l02"
+      ],
+      "sequence": 3,
+      "targets": [
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_c2_2_pragmatics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_c2_2_collocations",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_c2_2_topics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_c2_2_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.2",
+      "title": "Responding in sophisticated creation and critique",
+      "unit_id": "m16c2-v1-c2-u09"
+    },
+    {
+      "id": "m16c2-v1-c2-u09-l04",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Integrate the target dimensions in an extended task about sophisticated creation and critique."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u09-l03"
+      ],
+      "sequence": 4,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_c2_2_grammar",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_c2_2_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_c2_2_discourse",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_c2_2_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.2",
+      "title": "Integrating sophisticated creation and critique",
+      "unit_id": "m16c2-v1-c2-u09"
+    },
+    {
+      "id": "m16c2-v1-c2-u09-l05",
+      "lesson_kind": "REVIEW",
+      "objectives": [
+        "Review the target dimensions for sophisticated creation and critique."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u09-l04"
+      ],
+      "sequence": 5,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_c2_2_grammar",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_c2_2_vocabulary_senses",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_c2_2_functions",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_c2_2_pronunciation",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_c2_2_discourse",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_c2_2_pragmatics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_c2_2_collocations",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_c2_2_lexical_chunks",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_c2_2_topics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_c2_2_skills",
+          "use": "REVIEW"
+        }
+      ],
+      "tier": "C2.2",
+      "title": "Review: Sophisticated creation and critique",
+      "unit_id": "m16c2-v1-c2-u09"
+    },
+    {
+      "id": "m16c2-v1-c2-u10-l01",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Frame all C2.2 targets with controlled grammar, vocabulary, and pronunciation."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u09-l05"
+      ],
+      "sequence": 1,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_c2_2_grammar",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_c2_2_vocabulary_senses",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_c2_2_pronunciation",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.2",
+      "title": "Framing all C2.2 targets",
+      "unit_id": "m16c2-v1-c2-u10"
+    },
+    {
+      "id": "m16c2-v1-c2-u10-l02",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Develop all C2.2 targets through clear functions, discourse, and lexical framing."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u10-l01"
+      ],
+      "sequence": 2,
+      "targets": [
+        {
+          "dimension": "functions",
+          "node_id": "kg_c2_2_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_c2_2_discourse",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_c2_2_lexical_chunks",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.2",
+      "title": "Developing all C2.2 targets",
+      "unit_id": "m16c2-v1-c2-u10"
+    },
+    {
+      "id": "m16c2-v1-c2-u10-l03",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Apply pragmatic, collocational, topical, and strategic choices to all C2.2 targets."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u10-l02"
+      ],
+      "sequence": 3,
+      "targets": [
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_c2_2_pragmatics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_c2_2_collocations",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_c2_2_topics",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_c2_2_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.2",
+      "title": "Responding in all C2.2 targets",
+      "unit_id": "m16c2-v1-c2-u10"
+    },
+    {
+      "id": "m16c2-v1-c2-u10-l04",
+      "lesson_kind": "LEARN",
+      "objectives": [
+        "Integrate the target dimensions in an extended task about all C2.2 targets."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u10-l03"
+      ],
+      "sequence": 4,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_c2_2_grammar",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_c2_2_functions",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_c2_2_discourse",
+          "use": "PRACTISE"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_c2_2_skills",
+          "use": "PRACTISE"
+        }
+      ],
+      "tier": "C2.2",
+      "title": "Integrating all C2.2 targets",
+      "unit_id": "m16c2-v1-c2-u10"
+    },
+    {
+      "id": "m16c2-v1-c2-u10-l05",
+      "lesson_kind": "REVIEW",
+      "objectives": [
+        "Review the target dimensions for all C2.2 targets."
+      ],
+      "prerequisite_lesson_ids": [
+        "m16c2-v1-c2-u10-l04"
+      ],
+      "sequence": 5,
+      "targets": [
+        {
+          "dimension": "grammar",
+          "node_id": "kg_c2_2_grammar",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "vocabulary_senses",
+          "node_id": "kg_c2_2_vocabulary_senses",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "functions",
+          "node_id": "kg_c2_2_functions",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pronunciation",
+          "node_id": "kg_c2_2_pronunciation",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "discourse",
+          "node_id": "kg_c2_2_discourse",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "pragmatics",
+          "node_id": "kg_c2_2_pragmatics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "collocations",
+          "node_id": "kg_c2_2_collocations",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "lexical_chunks",
+          "node_id": "kg_c2_2_lexical_chunks",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "topics",
+          "node_id": "kg_c2_2_topics",
+          "use": "REVIEW"
+        },
+        {
+          "dimension": "skills",
+          "node_id": "kg_c2_2_skills",
+          "use": "REVIEW"
+        }
+      ],
+      "tier": "C2.2",
+      "title": "Review: C2.2 consolidation",
+      "unit_id": "m16c2-v1-c2-u10"
+    }
+  ],
+  "record_type": "m16_c2_curriculum_blueprint",
+  "schema_version": "1.0",
+  "source_population_id": "kgpop_c4dda95c776698cf9c5e862e7499bea8a081f40a00212d83a21843a3f1652248",
+  "source_population_sha256": "04316d931c16ce32e90dbfed123c8fd9d85fb3b01c4e1e22f310a672bfae9ea1",
+  "status": "OUTLINE_ONLY",
+  "tiers": [
+    "C2.1",
+    "C2.2"
+  ],
+  "unit_tests": [
+    {
+      "assessed_lesson_ids": [
+        "m16c2-v1-c2-u01-l01",
+        "m16c2-v1-c2-u01-l02",
+        "m16c2-v1-c2-u01-l03",
+        "m16c2-v1-c2-u01-l04",
+        "m16c2-v1-c2-u01-l05"
+      ],
+      "id": "m16c2-v1-c2-unit-test-01",
+      "placement_after_lesson_id": "m16c2-v1-c2-u01-l05",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "tier": "C2.1",
+      "unit_id": "m16c2-v1-c2-u01"
+    },
+    {
+      "assessed_lesson_ids": [
+        "m16c2-v1-c2-u02-l01",
+        "m16c2-v1-c2-u02-l02",
+        "m16c2-v1-c2-u02-l03",
+        "m16c2-v1-c2-u02-l04",
+        "m16c2-v1-c2-u02-l05"
+      ],
+      "id": "m16c2-v1-c2-unit-test-02",
+      "placement_after_lesson_id": "m16c2-v1-c2-u02-l05",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "tier": "C2.1",
+      "unit_id": "m16c2-v1-c2-u02"
+    },
+    {
+      "assessed_lesson_ids": [
+        "m16c2-v1-c2-u03-l01",
+        "m16c2-v1-c2-u03-l02",
+        "m16c2-v1-c2-u03-l03",
+        "m16c2-v1-c2-u03-l04",
+        "m16c2-v1-c2-u03-l05"
+      ],
+      "id": "m16c2-v1-c2-unit-test-03",
+      "placement_after_lesson_id": "m16c2-v1-c2-u03-l05",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "tier": "C2.1",
+      "unit_id": "m16c2-v1-c2-u03"
+    },
+    {
+      "assessed_lesson_ids": [
+        "m16c2-v1-c2-u04-l01",
+        "m16c2-v1-c2-u04-l02",
+        "m16c2-v1-c2-u04-l03",
+        "m16c2-v1-c2-u04-l04",
+        "m16c2-v1-c2-u04-l05"
+      ],
+      "id": "m16c2-v1-c2-unit-test-04",
+      "placement_after_lesson_id": "m16c2-v1-c2-u04-l05",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "tier": "C2.1",
+      "unit_id": "m16c2-v1-c2-u04"
+    },
+    {
+      "assessed_lesson_ids": [
+        "m16c2-v1-c2-u05-l01",
+        "m16c2-v1-c2-u05-l02",
+        "m16c2-v1-c2-u05-l03",
+        "m16c2-v1-c2-u05-l04",
+        "m16c2-v1-c2-u05-l05"
+      ],
+      "id": "m16c2-v1-c2-unit-test-05",
+      "placement_after_lesson_id": "m16c2-v1-c2-u05-l05",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "tier": "C2.1",
+      "unit_id": "m16c2-v1-c2-u05"
+    },
+    {
+      "assessed_lesson_ids": [
+        "m16c2-v1-c2-u06-l01",
+        "m16c2-v1-c2-u06-l02",
+        "m16c2-v1-c2-u06-l03",
+        "m16c2-v1-c2-u06-l04",
+        "m16c2-v1-c2-u06-l05"
+      ],
+      "id": "m16c2-v1-c2-unit-test-06",
+      "placement_after_lesson_id": "m16c2-v1-c2-u06-l05",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "tier": "C2.2",
+      "unit_id": "m16c2-v1-c2-u06"
+    },
+    {
+      "assessed_lesson_ids": [
+        "m16c2-v1-c2-u07-l01",
+        "m16c2-v1-c2-u07-l02",
+        "m16c2-v1-c2-u07-l03",
+        "m16c2-v1-c2-u07-l04",
+        "m16c2-v1-c2-u07-l05"
+      ],
+      "id": "m16c2-v1-c2-unit-test-07",
+      "placement_after_lesson_id": "m16c2-v1-c2-u07-l05",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "tier": "C2.2",
+      "unit_id": "m16c2-v1-c2-u07"
+    },
+    {
+      "assessed_lesson_ids": [
+        "m16c2-v1-c2-u08-l01",
+        "m16c2-v1-c2-u08-l02",
+        "m16c2-v1-c2-u08-l03",
+        "m16c2-v1-c2-u08-l04",
+        "m16c2-v1-c2-u08-l05"
+      ],
+      "id": "m16c2-v1-c2-unit-test-08",
+      "placement_after_lesson_id": "m16c2-v1-c2-u08-l05",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "tier": "C2.2",
+      "unit_id": "m16c2-v1-c2-u08"
+    },
+    {
+      "assessed_lesson_ids": [
+        "m16c2-v1-c2-u09-l01",
+        "m16c2-v1-c2-u09-l02",
+        "m16c2-v1-c2-u09-l03",
+        "m16c2-v1-c2-u09-l04",
+        "m16c2-v1-c2-u09-l05"
+      ],
+      "id": "m16c2-v1-c2-unit-test-09",
+      "placement_after_lesson_id": "m16c2-v1-c2-u09-l05",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "tier": "C2.2",
+      "unit_id": "m16c2-v1-c2-u09"
+    },
+    {
+      "assessed_lesson_ids": [
+        "m16c2-v1-c2-u10-l01",
+        "m16c2-v1-c2-u10-l02",
+        "m16c2-v1-c2-u10-l03",
+        "m16c2-v1-c2-u10-l04",
+        "m16c2-v1-c2-u10-l05"
+      ],
+      "id": "m16c2-v1-c2-unit-test-10",
+      "placement_after_lesson_id": "m16c2-v1-c2-u10-l05",
+      "target_dimensions": [
+        "grammar",
+        "vocabulary_senses",
+        "functions",
+        "pronunciation",
+        "discourse",
+        "pragmatics",
+        "collocations",
+        "lexical_chunks",
+        "topics",
+        "skills"
+      ],
+      "tier": "C2.2",
+      "unit_id": "m16c2-v1-c2-u10"
+    }
+  ],
+  "units": [
+    {
+      "id": "m16c2-v1-c2-u01",
+      "lesson_ids": [
+        "m16c2-v1-c2-u01-l01",
+        "m16c2-v1-c2-u01-l02",
+        "m16c2-v1-c2-u01-l03",
+        "m16c2-v1-c2-u01-l04",
+        "m16c2-v1-c2-u01-l05"
+      ],
+      "review_lesson_id": "m16c2-v1-c2-u01-l05",
+      "sequence": 1,
+      "tier": "C2.1",
+      "title": "Specialist claims and uncertainty",
+      "unit_test_id": "m16c2-v1-c2-unit-test-01"
+    },
+    {
+      "id": "m16c2-v1-c2-u02",
+      "lesson_ids": [
+        "m16c2-v1-c2-u02-l01",
+        "m16c2-v1-c2-u02-l02",
+        "m16c2-v1-c2-u02-l03",
+        "m16c2-v1-c2-u02-l04",
+        "m16c2-v1-c2-u02-l05"
+      ],
+      "review_lesson_id": "m16c2-v1-c2-u02-l05",
+      "sequence": 2,
+      "tier": "C2.1",
+      "title": "Nuanced expert debate",
+      "unit_test_id": "m16c2-v1-c2-unit-test-02"
+    },
+    {
+      "id": "m16c2-v1-c2-u03",
+      "lesson_ids": [
+        "m16c2-v1-c2-u03-l01",
+        "m16c2-v1-c2-u03-l02",
+        "m16c2-v1-c2-u03-l03",
+        "m16c2-v1-c2-u03-l04",
+        "m16c2-v1-c2-u03-l05"
+      ],
+      "review_lesson_id": "m16c2-v1-c2-u03-l05",
+      "sequence": 3,
+      "tier": "C2.1",
+      "title": "Rhetorical framing and inference",
+      "unit_test_id": "m16c2-v1-c2-unit-test-03"
+    },
+    {
+      "id": "m16c2-v1-c2-u04",
+      "lesson_ids": [
+        "m16c2-v1-c2-u04-l01",
+        "m16c2-v1-c2-u04-l02",
+        "m16c2-v1-c2-u04-l03",
+        "m16c2-v1-c2-u04-l04",
+        "m16c2-v1-c2-u04-l05"
+      ],
+      "review_lesson_id": "m16c2-v1-c2-u04-l05",
+      "sequence": 4,
+      "tier": "C2.1",
+      "title": "Cross-cultural intent and precision",
+      "unit_test_id": "m16c2-v1-c2-unit-test-04"
+    },
+    {
+      "id": "m16c2-v1-c2-u05",
+      "lesson_ids": [
+        "m16c2-v1-c2-u05-l01",
+        "m16c2-v1-c2-u05-l02",
+        "m16c2-v1-c2-u05-l03",
+        "m16c2-v1-c2-u05-l04",
+        "m16c2-v1-c2-u05-l05"
+      ],
+      "review_lesson_id": "m16c2-v1-c2-u05-l05",
+      "sequence": 5,
+      "tier": "C2.1",
+      "title": "C2.1 consolidation",
+      "unit_test_id": "m16c2-v1-c2-unit-test-05"
+    },
+    {
+      "id": "m16c2-v1-c2-u06",
+      "lesson_ids": [
+        "m16c2-v1-c2-u06-l01",
+        "m16c2-v1-c2-u06-l02",
+        "m16c2-v1-c2-u06-l03",
+        "m16c2-v1-c2-u06-l04",
+        "m16c2-v1-c2-u06-l05"
+      ],
+      "review_lesson_id": "m16c2-v1-c2-u06-l05",
+      "sequence": 6,
+      "tier": "C2.2",
+      "title": "Complex systems and worldviews",
+      "unit_test_id": "m16c2-v1-c2-unit-test-06"
+    },
+    {
+      "id": "m16c2-v1-c2-u07",
+      "lesson_ids": [
+        "m16c2-v1-c2-u07-l01",
+        "m16c2-v1-c2-u07-l02",
+        "m16c2-v1-c2-u07-l03",
+        "m16c2-v1-c2-u07-l04",
+        "m16c2-v1-c2-u07-l05"
+      ],
+      "review_lesson_id": "m16c2-v1-c2-u07-l05",
+      "sequence": 7,
+      "tier": "C2.2",
+      "title": "Audience-adapted persuasion",
+      "unit_test_id": "m16c2-v1-c2-unit-test-07"
+    },
+    {
+      "id": "m16c2-v1-c2-u08",
+      "lesson_ids": [
+        "m16c2-v1-c2-u08-l01",
+        "m16c2-v1-c2-u08-l02",
+        "m16c2-v1-c2-u08-l03",
+        "m16c2-v1-c2-u08-l04",
+        "m16c2-v1-c2-u08-l05"
+      ],
+      "review_lesson_id": "m16c2-v1-c2-u08-l05",
+      "sequence": 8,
+      "tier": "C2.2",
+      "title": "Genre-sensitive synthesis",
+      "unit_test_id": "m16c2-v1-c2-unit-test-08"
+    },
+    {
+      "id": "m16c2-v1-c2-u09",
+      "lesson_ids": [
+        "m16c2-v1-c2-u09-l01",
+        "m16c2-v1-c2-u09-l02",
+        "m16c2-v1-c2-u09-l03",
+        "m16c2-v1-c2-u09-l04",
+        "m16c2-v1-c2-u09-l05"
+      ],
+      "review_lesson_id": "m16c2-v1-c2-u09-l05",
+      "sequence": 9,
+      "tier": "C2.2",
+      "title": "Sophisticated creation and critique",
+      "unit_test_id": "m16c2-v1-c2-unit-test-09"
+    },
+    {
+      "id": "m16c2-v1-c2-u10",
+      "lesson_ids": [
+        "m16c2-v1-c2-u10-l01",
+        "m16c2-v1-c2-u10-l02",
+        "m16c2-v1-c2-u10-l03",
+        "m16c2-v1-c2-u10-l04",
+        "m16c2-v1-c2-u10-l05"
+      ],
+      "review_lesson_id": "m16c2-v1-c2-u10-l05",
+      "sequence": 10,
+      "tier": "C2.2",
+      "title": "C2.2 consolidation",
+      "unit_test_id": "m16c2-v1-c2-unit-test-10"
+    }
+  ]
+}

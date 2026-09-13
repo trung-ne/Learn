@@ -1,0 +1,993 @@
+{
+  "schema_version": "1.0",
+  "record_type": "b1_full_content_unit",
+  "unit_id": "m16b1-v1-b1-u07",
+  "tier": "B1.2",
+  "content_origin": "PROJECT_AUTHORED",
+  "lessons": [
+    {
+      "lesson_id": "m16b1-v1-b1-u07-l01",
+      "title": "Reporting an event",
+      "duration_minutes": 40,
+      "objective_target_ids": [
+        "b1t_u06_grammar",
+        "b1t_u06_vocabulary_senses",
+        "b1t_u06_topics"
+      ],
+      "objectives": [
+        "Tell a coherent story about a familiar community event.",
+        "Develop a connected response in a discussion about reporting an event with a reason and relevant detail."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice the connected language (10 minutes)",
+          "body": "Read this model: 'I have considered reporting an event, and my experience shows one useful reason for this view.' Identify the main point, the linking expression, and the supporting detail. Then explain how the wording helps the speaker achieve this objective: Tell a coherent story about a familiar community event.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_topics"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided exchange (10 minutes)",
+          "body": "Work with a partner in a discussion about reporting an event. Give a clear main point, support it with a specific reason, and respond to one follow-up question. Use tactful language when the other speaker presents a different perspective.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_topics"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent connected response (8 minutes)",
+          "body": "Prepare a one-minute response about reporting an event. Organize it into thought groups, stress the words that carry your main point, and finish with a concise conclusion rather than a list of isolated sentences.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_topics"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_topics"
+          ],
+          "prompt": "Choose the most connected and tactful response for a discussion about reporting an event.",
+          "media_required": false,
+          "options": [
+            "I have considered reporting an event, and my experience shows one useful reason for this view.",
+            "Reporting an event is a topic, but I will not explain my view.",
+            "Several details exist about reporting an event, perhaps."
+          ],
+          "correct_answer": "I have considered reporting an event, and my experience shows one useful reason for this view."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_topics"
+          ],
+          "prompt": "Complete this response about reporting an event: 'My experience supports this view ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "because it offers evidence about reporting an event"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_topics"
+          ],
+          "prompt": "Read the short response about reporting an event and identify how the writer handles another view.",
+          "media_required": false,
+          "stimulus": "Although another person may disagree about reporting an event, I can respond politely and explain my reason.",
+          "questions": [
+            {
+              "question": "How does the writer respond to disagreement?",
+              "acceptable_answers": [
+                "The writer responds politely and gives a reason in the discussion of reporting an event."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_topics"
+          ],
+          "prompt": "Speak for 60–90 seconds in a discussion about reporting an event. State your point, support it, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Presents a connected main point about reporting an event with relevant support.",
+              "Responds clearly and tactfully to a follow-up question about reporting an event."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short response about reporting an event. Identify the view and supporting reason before the transcript is revealed, then listen again to check the linking language.",
+          "goal": "Follow the main point and support in spoken language about reporting an event.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_topics"
+          ],
+          "transcript": "I have considered reporting an event, and my experience shows one useful reason for this view.",
+          "question": "What view and supporting reason does the speaker communicate?",
+          "answer": "The speaker connects a considered view about reporting an event to a useful reason from experience.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a discussion about reporting an event. Learner role: present and support a view. Tutor role: ask one probing question and offer a different perspective. End after the learner responds tactfully and summarizes the point.",
+          "goal": "Sustain a connected, tactful exchange about reporting an event.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_topics"
+          ],
+          "constraints": [
+            "State both roles before beginning the exchange.",
+            "Use at most four tutor turns and stop after the learner summary."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Record the model about reporting an event in meaningful thought groups. Stress the main point and reason, then compare a second attempt with the first for clarity and rhythm.",
+          "goal": "Make connected speech about reporting an event easy to follow.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_topics"
+          ],
+          "target": "Thought groups and information stress for reporting an event",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write 90–120 words about reporting an event. State a position or experience, support it with a reason and example, and acknowledge another perspective. Submit your own draft before asking for feedback.",
+          "goal": "Produce a connected written response about reporting an event.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_topics"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u07-l02",
+      "title": "Developing the story",
+      "duration_minutes": 40,
+      "objective_target_ids": [
+        "b1t_u06_discourse",
+        "b1t_u06_functions",
+        "b1t_u06_skills"
+      ],
+      "objectives": [
+        "Link events and maintain a clear topic across the account.",
+        "Develop a connected response in a discussion about developing the story with a reason and relevant detail."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice the connected language (10 minutes)",
+          "body": "Read this model: 'I have considered developing the story, and my experience shows one useful reason for this view.' Identify the main point, the linking expression, and the supporting detail. Then explain how the wording helps the speaker achieve this objective: Link events and maintain a clear topic across the account.",
+          "target_ids": [
+            "b1t_u06_discourse",
+            "b1t_u06_functions",
+            "b1t_u06_skills"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided exchange (10 minutes)",
+          "body": "Work with a partner in a discussion about developing the story. Give a clear main point, support it with a specific reason, and respond to one follow-up question. Use tactful language when the other speaker presents a different perspective.",
+          "target_ids": [
+            "b1t_u06_discourse",
+            "b1t_u06_functions",
+            "b1t_u06_skills"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent connected response (8 minutes)",
+          "body": "Prepare a one-minute response about developing the story. Organize it into thought groups, stress the words that carry your main point, and finish with a concise conclusion rather than a list of isolated sentences.",
+          "target_ids": [
+            "b1t_u06_discourse",
+            "b1t_u06_functions",
+            "b1t_u06_skills"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "b1t_u06_discourse",
+            "b1t_u06_functions",
+            "b1t_u06_skills"
+          ],
+          "prompt": "Choose the most connected and tactful response for a discussion about developing the story.",
+          "media_required": false,
+          "options": [
+            "I have considered developing the story, and my experience shows one useful reason for this view.",
+            "Developing the story is a topic, but I will not explain my view.",
+            "Several details exist about developing the story, perhaps."
+          ],
+          "correct_answer": "I have considered developing the story, and my experience shows one useful reason for this view."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "b1t_u06_discourse",
+            "b1t_u06_functions",
+            "b1t_u06_skills"
+          ],
+          "prompt": "Complete this response about developing the story: 'My experience supports this view ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "because it offers evidence about developing the story"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "b1t_u06_discourse",
+            "b1t_u06_functions",
+            "b1t_u06_skills"
+          ],
+          "prompt": "Read the short response about developing the story and identify how the writer handles another view.",
+          "media_required": false,
+          "stimulus": "Although another person may disagree about developing the story, I can respond politely and explain my reason.",
+          "questions": [
+            {
+              "question": "How does the writer respond to disagreement?",
+              "acceptable_answers": [
+                "The writer responds politely and gives a reason in the discussion of developing the story."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "b1t_u06_discourse",
+            "b1t_u06_functions",
+            "b1t_u06_skills"
+          ],
+          "prompt": "Speak for 60–90 seconds in a discussion about developing the story. State your point, support it, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Presents a connected main point about developing the story with relevant support.",
+              "Responds clearly and tactfully to a follow-up question about developing the story."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short response about developing the story. Identify the view and supporting reason before the transcript is revealed, then listen again to check the linking language.",
+          "goal": "Follow the main point and support in spoken language about developing the story.",
+          "target_ids": [
+            "b1t_u06_discourse",
+            "b1t_u06_functions",
+            "b1t_u06_skills"
+          ],
+          "transcript": "I have considered developing the story, and my experience shows one useful reason for this view.",
+          "question": "What view and supporting reason does the speaker communicate?",
+          "answer": "The speaker connects a considered view about developing the story to a useful reason from experience.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a discussion about developing the story. Learner role: present and support a view. Tutor role: ask one probing question and offer a different perspective. End after the learner responds tactfully and summarizes the point.",
+          "goal": "Sustain a connected, tactful exchange about developing the story.",
+          "target_ids": [
+            "b1t_u06_discourse",
+            "b1t_u06_functions",
+            "b1t_u06_skills"
+          ],
+          "constraints": [
+            "State both roles before beginning the exchange.",
+            "Use at most four tutor turns and stop after the learner summary."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Record the model about developing the story in meaningful thought groups. Stress the main point and reason, then compare a second attempt with the first for clarity and rhythm.",
+          "goal": "Make connected speech about developing the story easy to follow.",
+          "target_ids": [
+            "b1t_u06_discourse",
+            "b1t_u06_functions",
+            "b1t_u06_skills"
+          ],
+          "target": "Thought groups and information stress for developing the story",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write 90–120 words about developing the story. State a position or experience, support it with a reason and example, and acknowledge another perspective. Submit your own draft before asking for feedback.",
+          "goal": "Produce a connected written response about developing the story.",
+          "target_ids": [
+            "b1t_u06_discourse",
+            "b1t_u06_functions",
+            "b1t_u06_skills"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u07-l03",
+      "title": "Repairing and elaborating",
+      "duration_minutes": 40,
+      "objective_target_ids": [
+        "b1t_u06_lexical_chunks",
+        "b1t_u06_collocations",
+        "b1t_u06_pragmatics"
+      ],
+      "objectives": [
+        "Use repair frames and collocations to clarify or add detail.",
+        "Develop a connected response in a discussion about repairing and elaborating with a reason and relevant detail."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice the connected language (10 minutes)",
+          "body": "Read this model: 'I have considered repairing and elaborating, and my experience shows one useful reason for this view.' Identify the main point, the linking expression, and the supporting detail. Then explain how the wording helps the speaker achieve this objective: Use repair frames and collocations to clarify or add detail.",
+          "target_ids": [
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_collocations",
+            "b1t_u06_pragmatics"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided exchange (10 minutes)",
+          "body": "Work with a partner in a discussion about repairing and elaborating. Give a clear main point, support it with a specific reason, and respond to one follow-up question. Use tactful language when the other speaker presents a different perspective.",
+          "target_ids": [
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_collocations",
+            "b1t_u06_pragmatics"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent connected response (8 minutes)",
+          "body": "Prepare a one-minute response about repairing and elaborating. Organize it into thought groups, stress the words that carry your main point, and finish with a concise conclusion rather than a list of isolated sentences.",
+          "target_ids": [
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_collocations",
+            "b1t_u06_pragmatics"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_collocations",
+            "b1t_u06_pragmatics"
+          ],
+          "prompt": "Choose the most connected and tactful response for a discussion about repairing and elaborating.",
+          "media_required": false,
+          "options": [
+            "I have considered repairing and elaborating, and my experience shows one useful reason for this view.",
+            "Repairing and elaborating is a topic, but I will not explain my view.",
+            "Several details exist about repairing and elaborating, perhaps."
+          ],
+          "correct_answer": "I have considered repairing and elaborating, and my experience shows one useful reason for this view."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_collocations",
+            "b1t_u06_pragmatics"
+          ],
+          "prompt": "Complete this response about repairing and elaborating: 'My experience supports this view ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "because it offers evidence about repairing and elaborating"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_collocations",
+            "b1t_u06_pragmatics"
+          ],
+          "prompt": "Read the short response about repairing and elaborating and identify how the writer handles another view.",
+          "media_required": false,
+          "stimulus": "Although another person may disagree about repairing and elaborating, I can respond politely and explain my reason.",
+          "questions": [
+            {
+              "question": "How does the writer respond to disagreement?",
+              "acceptable_answers": [
+                "The writer responds politely and gives a reason in the discussion of repairing and elaborating."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_collocations",
+            "b1t_u06_pragmatics"
+          ],
+          "prompt": "Speak for 60–90 seconds in a discussion about repairing and elaborating. State your point, support it, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Presents a connected main point about repairing and elaborating with relevant support.",
+              "Responds clearly and tactfully to a follow-up question about repairing and elaborating."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short response about repairing and elaborating. Identify the view and supporting reason before the transcript is revealed, then listen again to check the linking language.",
+          "goal": "Follow the main point and support in spoken language about repairing and elaborating.",
+          "target_ids": [
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_collocations",
+            "b1t_u06_pragmatics"
+          ],
+          "transcript": "I have considered repairing and elaborating, and my experience shows one useful reason for this view.",
+          "question": "What view and supporting reason does the speaker communicate?",
+          "answer": "The speaker connects a considered view about repairing and elaborating to a useful reason from experience.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a discussion about repairing and elaborating. Learner role: present and support a view. Tutor role: ask one probing question and offer a different perspective. End after the learner responds tactfully and summarizes the point.",
+          "goal": "Sustain a connected, tactful exchange about repairing and elaborating.",
+          "target_ids": [
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_collocations",
+            "b1t_u06_pragmatics"
+          ],
+          "constraints": [
+            "State both roles before beginning the exchange.",
+            "Use at most four tutor turns and stop after the learner summary."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Record the model about repairing and elaborating in meaningful thought groups. Stress the main point and reason, then compare a second attempt with the first for clarity and rhythm.",
+          "goal": "Make connected speech about repairing and elaborating easy to follow.",
+          "target_ids": [
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_collocations",
+            "b1t_u06_pragmatics"
+          ],
+          "target": "Thought groups and information stress for repairing and elaborating",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write 90–120 words about repairing and elaborating. State a position or experience, support it with a reason and example, and acknowledge another perspective. Submit your own draft before asking for feedback.",
+          "goal": "Produce a connected written response about repairing and elaborating.",
+          "target_ids": [
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_collocations",
+            "b1t_u06_pragmatics"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u07-l04",
+      "title": "Engaging spoken delivery",
+      "duration_minutes": 40,
+      "objective_target_ids": [
+        "b1t_u06_pronunciation",
+        "b1t_u06_skills",
+        "b1t_u06_functions"
+      ],
+      "objectives": [
+        "Use narrative intonation to make event structure clear.",
+        "Develop a connected response in a discussion about engaging spoken delivery with a reason and relevant detail."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice the connected language (10 minutes)",
+          "body": "Read this model: 'I have considered engaging spoken delivery, and my experience shows one useful reason for this view.' Identify the main point, the linking expression, and the supporting detail. Then explain how the wording helps the speaker achieve this objective: Use narrative intonation to make event structure clear.",
+          "target_ids": [
+            "b1t_u06_pronunciation",
+            "b1t_u06_skills",
+            "b1t_u06_functions"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided exchange (10 minutes)",
+          "body": "Work with a partner in a discussion about engaging spoken delivery. Give a clear main point, support it with a specific reason, and respond to one follow-up question. Use tactful language when the other speaker presents a different perspective.",
+          "target_ids": [
+            "b1t_u06_pronunciation",
+            "b1t_u06_skills",
+            "b1t_u06_functions"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent connected response (8 minutes)",
+          "body": "Prepare a one-minute response about engaging spoken delivery. Organize it into thought groups, stress the words that carry your main point, and finish with a concise conclusion rather than a list of isolated sentences.",
+          "target_ids": [
+            "b1t_u06_pronunciation",
+            "b1t_u06_skills",
+            "b1t_u06_functions"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "b1t_u06_pronunciation",
+            "b1t_u06_skills",
+            "b1t_u06_functions"
+          ],
+          "prompt": "Choose the most connected and tactful response for a discussion about engaging spoken delivery.",
+          "media_required": false,
+          "options": [
+            "I have considered engaging spoken delivery, and my experience shows one useful reason for this view.",
+            "Engaging spoken delivery is a topic, but I will not explain my view.",
+            "Several details exist about engaging spoken delivery, perhaps."
+          ],
+          "correct_answer": "I have considered engaging spoken delivery, and my experience shows one useful reason for this view."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "b1t_u06_pronunciation",
+            "b1t_u06_skills",
+            "b1t_u06_functions"
+          ],
+          "prompt": "Complete this response about engaging spoken delivery: 'My experience supports this view ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "because it offers evidence about engaging spoken delivery"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "b1t_u06_pronunciation",
+            "b1t_u06_skills",
+            "b1t_u06_functions"
+          ],
+          "prompt": "Read the short response about engaging spoken delivery and identify how the writer handles another view.",
+          "media_required": false,
+          "stimulus": "Although another person may disagree about engaging spoken delivery, I can respond politely and explain my reason.",
+          "questions": [
+            {
+              "question": "How does the writer respond to disagreement?",
+              "acceptable_answers": [
+                "The writer responds politely and gives a reason in the discussion of engaging spoken delivery."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "b1t_u06_pronunciation",
+            "b1t_u06_skills",
+            "b1t_u06_functions"
+          ],
+          "prompt": "Speak for 60–90 seconds in a discussion about engaging spoken delivery. State your point, support it, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Presents a connected main point about engaging spoken delivery with relevant support.",
+              "Responds clearly and tactfully to a follow-up question about engaging spoken delivery."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short response about engaging spoken delivery. Identify the view and supporting reason before the transcript is revealed, then listen again to check the linking language.",
+          "goal": "Follow the main point and support in spoken language about engaging spoken delivery.",
+          "target_ids": [
+            "b1t_u06_pronunciation",
+            "b1t_u06_skills",
+            "b1t_u06_functions"
+          ],
+          "transcript": "I have considered engaging spoken delivery, and my experience shows one useful reason for this view.",
+          "question": "What view and supporting reason does the speaker communicate?",
+          "answer": "The speaker connects a considered view about engaging spoken delivery to a useful reason from experience.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a discussion about engaging spoken delivery. Learner role: present and support a view. Tutor role: ask one probing question and offer a different perspective. End after the learner responds tactfully and summarizes the point.",
+          "goal": "Sustain a connected, tactful exchange about engaging spoken delivery.",
+          "target_ids": [
+            "b1t_u06_pronunciation",
+            "b1t_u06_skills",
+            "b1t_u06_functions"
+          ],
+          "constraints": [
+            "State both roles before beginning the exchange.",
+            "Use at most four tutor turns and stop after the learner summary."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Record the model about engaging spoken delivery in meaningful thought groups. Stress the main point and reason, then compare a second attempt with the first for clarity and rhythm.",
+          "goal": "Make connected speech about engaging spoken delivery easy to follow.",
+          "target_ids": [
+            "b1t_u06_pronunciation",
+            "b1t_u06_skills",
+            "b1t_u06_functions"
+          ],
+          "target": "Thought groups and information stress for engaging spoken delivery",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write 90–120 words about engaging spoken delivery. State a position or experience, support it with a reason and example, and acknowledge another perspective. Submit your own draft before asking for feedback.",
+          "goal": "Produce a connected written response about engaging spoken delivery.",
+          "target_ids": [
+            "b1t_u06_pronunciation",
+            "b1t_u06_skills",
+            "b1t_u06_functions"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": "m16b1-v1-b1-u07-l05",
+      "title": "Review: community events",
+      "duration_minutes": 40,
+      "objective_target_ids": [
+        "b1t_u06_grammar",
+        "b1t_u06_vocabulary_senses",
+        "b1t_u06_functions",
+        "b1t_u06_pronunciation",
+        "b1t_u06_discourse",
+        "b1t_u06_pragmatics",
+        "b1t_u06_collocations",
+        "b1t_u06_lexical_chunks",
+        "b1t_u06_topics",
+        "b1t_u06_skills"
+      ],
+      "objectives": [
+        "Review coherent event reporting and clarification.",
+        "Develop a connected response in a discussion about review: community events with a reason and relevant detail."
+      ],
+      "content_sections": [
+        {
+          "id": "notice",
+          "section_type": "explanation",
+          "title": "Notice the connected language (10 minutes)",
+          "body": "Read this model: 'I have considered review: community events, and my experience shows one useful reason for this view.' Identify the main point, the linking expression, and the supporting detail. Then explain how the wording helps the speaker achieve this objective: Review coherent event reporting and clarification.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ]
+        },
+        {
+          "id": "guided-dialogue",
+          "section_type": "dialogue",
+          "title": "Guided exchange (10 minutes)",
+          "body": "Work with a partner in a discussion about review: community events. Give a clear main point, support it with a specific reason, and respond to one follow-up question. Use tactful language when the other speaker presents a different perspective.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ]
+        },
+        {
+          "id": "independent",
+          "section_type": "pronunciation",
+          "title": "Independent connected response (8 minutes)",
+          "body": "Prepare a one-minute response about review: community events. Organize it into thought groups, stress the words that carry your main point, and finish with a concise conclusion rather than a list of isolated sentences.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "choose",
+          "type": "multiple_choice",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ],
+          "prompt": "Choose the most connected and tactful response for a discussion about review: community events.",
+          "media_required": false,
+          "options": [
+            "I have considered review: community events, and my experience shows one useful reason for this view.",
+            "Review: community events is a topic, but I will not explain my view.",
+            "Several details exist about review: community events, perhaps."
+          ],
+          "correct_answer": "I have considered review: community events, and my experience shows one useful reason for this view."
+        },
+        {
+          "id": "complete",
+          "type": "fill_blank",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ],
+          "prompt": "Complete this response about review: community events: 'My experience supports this view ____.'",
+          "media_required": false,
+          "acceptable_answers": [
+            "because it offers evidence about review: community events"
+          ]
+        },
+        {
+          "id": "read",
+          "type": "reading",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ],
+          "prompt": "Read the short response about review: community events and identify how the writer handles another view.",
+          "media_required": false,
+          "stimulus": "Although another person may disagree about review: community events, I can respond politely and explain my reason.",
+          "questions": [
+            {
+              "question": "How does the writer respond to disagreement?",
+              "acceptable_answers": [
+                "The writer responds politely and gives a reason in the discussion of review: community events."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speak",
+          "type": "speaking",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ],
+          "prompt": "Speak for 60–90 seconds in a discussion about review: community events. State your point, support it, and answer one follow-up question.",
+          "media_required": false,
+          "rubric": {
+            "criteria": [
+              "Presents a connected main point about review: community events with relevant support.",
+              "Responds clearly and tactfully to a follow-up question about review: community events."
+            ]
+          }
+        }
+      ],
+      "practice": {
+        "listening": {
+          "instruction": "Listen once to a short response about review: community events. Identify the view and supporting reason before the transcript is revealed, then listen again to check the linking language.",
+          "goal": "Follow the main point and support in spoken language about review: community events.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ],
+          "transcript": "I have considered review: community events, and my experience shows one useful reason for this view.",
+          "question": "What view and supporting reason does the speaker communicate?",
+          "answer": "The speaker connects a considered view about review: community events to a useful reason from experience.",
+          "media_required": false,
+          "constraints": [
+            "Keep the transcript private before the learner answers the first question.",
+            "Use only the supplied transcript; do not require media."
+          ]
+        },
+        "speaking": {
+          "instruction": "Roleplay a discussion about review: community events. Learner role: present and support a view. Tutor role: ask one probing question and offer a different perspective. End after the learner responds tactfully and summarizes the point.",
+          "goal": "Sustain a connected, tactful exchange about review: community events.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ],
+          "constraints": [
+            "State both roles before beginning the exchange.",
+            "Use at most four tutor turns and stop after the learner summary."
+          ]
+        },
+        "pronunciation": {
+          "instruction": "Record the model about review: community events in meaningful thought groups. Stress the main point and reason, then compare a second attempt with the first for clarity and rhythm.",
+          "goal": "Make connected speech about review: community events easy to follow.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ],
+          "target": "Thought groups and information stress for review: community events",
+          "without_audio": "NOT_ASSESSED",
+          "constraints": [
+            "Assess pronunciation only when learner audio is supplied.",
+            "Return NOT_ASSESSED when learner audio is unavailable."
+          ]
+        },
+        "writing": {
+          "instruction": "Write 90–120 words about review: community events. State a position or experience, support it with a reason and example, and acknowledge another perspective. Submit your own draft before asking for feedback.",
+          "goal": "Produce a connected written response about review: community events.",
+          "target_ids": [
+            "b1t_u06_grammar",
+            "b1t_u06_vocabulary_senses",
+            "b1t_u06_functions",
+            "b1t_u06_pronunciation",
+            "b1t_u06_discourse",
+            "b1t_u06_pragmatics",
+            "b1t_u06_collocations",
+            "b1t_u06_lexical_chunks",
+            "b1t_u06_topics",
+            "b1t_u06_skills"
+          ],
+          "feedback_boundary": "FEEDBACK_ONLY_NO_REPLACEMENT",
+          "constraints": [
+            "Wait for the learner draft before giving feedback.",
+            "Give concise feedback only; do not replace the learner draft."
+          ]
+        }
+      }
+    }
+  ]
+}

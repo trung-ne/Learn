@@ -573,6 +573,68 @@ Full A2 adds ten original-authored unit files and fifty immutable A2.1/A2.2 pack
 
 ---
 
+## M16-B1-BLUEPRINT — Build Full B1 Curriculum Outline
+
+**Status**: Implemented as an outline-only development blueprint
+
+M16-B1-BLUEPRINT maps the existing M15 B1.1/B1.2 nodes into ten units, fifty deterministic lesson outlines, explicit review lessons, and unit-test blueprints. It hash-binds the M15 population and uses only direct A2.2 entry prerequisites; it does not add an A2 authority bridge. Local validation resolves node IDs, checks target tier/dimension and introduction/review coverage, rejects broken or forward prerequisites, and detects cycles. It contains no lesson prose, exercises, answer keys, media, practice protocols, or generation authority. See [B1 documentation](B1_BLUEPRINT.md) and [B1 prompt](../prompts/B1_BLUEPRINT.md).
+
+The blueprint is planning material only and does not replace historical curriculum structures or establish generation authority.
+
+### Full B1 implementation follow-up
+
+**Status**: Implemented as a complete fifty-lesson development corpus
+
+Full B1 adds ten original-authored unit files and fifty immutable B1.1/B1.2 packets derived from the M16 B1 blueprint. Source hashes, references, prerequisites, exercise answer contracts, modality boundaries, duplicates, verification, and a 12-lesson ten-unit sample pass in the lightweight development workflow. Content remains `UNREVIEWED`; no live AI, human/release/provider, CEFR-endorsement, public-distribution, or real-media claim is made. See [Full B1](B1_FULL.md).
+
+### Next: direct use of the deterministic B1 sample
+
+---
+
+## M16-B2-BLUEPRINT — Build Full B2 Curriculum Outline
+
+**Status**: Implemented as an outline-only development blueprint
+
+M16-B2-BLUEPRINT maps the M15 B2.1/B2.2 nodes into ten units, fifty deterministic lesson outlines, explicit review lessons, and unit-test blueprints. It hash-binds the M15 population and uses direct B1.2 entry prerequisites without loading a B1 blueprint or creating an authority bridge. Validation checks references, exact target coverage, links, prerequisite order, and cycles. See [B2 documentation](B2_BLUEPRINT.md) and [B2 prompt](../prompts/B2_BLUEPRINT.md).
+
+### Full B2 implementation follow-up
+
+**Status**: Implemented as a complete fifty-lesson development corpus
+
+Full B2 adds ten original-authored unit files and fifty immutable B2.1/B2.2 packets derived from the M16 B2 blueprint. Source hashes, references, prerequisites, exercise answer contracts, modality boundaries, duplicates, verification, and a 12-lesson ten-unit sample pass in the lightweight development workflow. Content remains `UNREVIEWED`; no live AI, human/release/provider, CEFR-endorsement, public-distribution, or real-media claim is made. See [Full B2](B2_FULL.md).
+
+### Next: direct use of the deterministic B2 sample
+
+## M16-C1-BLUEPRINT — Build Full C1 Curriculum Outline
+
+**Status**: Implemented as an outline-only development blueprint
+
+M16-C1-BLUEPRINT maps the M15 C1.1/C1.2 nodes into ten units, fifty deterministic lesson outlines, explicit review lessons, and unit-test blueprints. It hash-binds the M15 population and uses direct B2.2 entry prerequisites without loading a B2 blueprint or creating an authority bridge. Validation checks references, exact target coverage, links, prerequisite order, and cycles. See [C1 documentation](C1_BLUEPRINT.md) and [C1 prompt](../prompts/C1_BLUEPRINT.md).
+
+### Full C1 implementation follow-up
+
+**Status**: Implemented as a complete fifty-lesson development corpus
+
+Full C1 adds ten original-authored unit files and fifty immutable C1.1/C1.2 packets derived from the M16 C1 blueprint. Source hashes, references, prerequisites, exercise answer contracts, modality boundaries, duplicates, verification, and a 12-lesson ten-unit sample pass in the lightweight development workflow. Content remains `UNREVIEWED`; no live AI, human/release/provider, CEFR-endorsement, public-distribution, or real-media claim is made. See [Full C1](C1_FULL.md).
+
+### Next: direct use of the deterministic C1 sample
+
+## M16-C2-BLUEPRINT — Build Full C2 Curriculum Outline
+
+**Status**: Implemented as an outline-only development blueprint
+
+M16-C2-BLUEPRINT maps the M15 C2.1/C2.2 nodes into ten units, fifty deterministic lesson outlines, explicit review lessons, and unit-test blueprints. It hash-binds the M15 population and uses direct C1.2 entry prerequisites without loading a C1 blueprint or creating an authority bridge. Validation checks references, exact target coverage, links, prerequisite order, and cycles. See [C2 documentation](C2_BLUEPRINT.md) and [C2 prompt](../prompts/C2_BLUEPRINT.md).
+
+### Full C2 implementation follow-up
+
+**Status**: Implemented as a complete fifty-lesson development corpus
+
+Full C2 adds ten original-authored unit files and fifty immutable C2.1/C2.2 packets derived from the M16 C2 blueprint. Source hashes, references, prerequisites, exercise answer contracts, modality boundaries, duplicates, verification, and a 12-lesson ten-unit sample pass in the lightweight development workflow. Content remains `UNREVIEWED`; no live AI, human/release/provider, CEFR-endorsement, public-distribution, or real-media claim is made. See [Full C2](C2_FULL.md).
+
+### Next: direct use of the deterministic C2 sample
+
+---
+
 ## M15 — Authorized Listening Assembly and Web Platform (Optional, Future)
 
 **Estimated Duration**: ~4-6 weeks

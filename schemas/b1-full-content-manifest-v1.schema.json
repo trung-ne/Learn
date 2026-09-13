@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/b1-full-content-manifest-v1.schema.json",
+  "title": "English Master full B1 content manifest v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "allocation_sha256", "content_origin", "units", "manifest_sha256"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "b1_full_content_manifest"},
+    "allocation_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "content_origin": {"const": "PROJECT_AUTHORED"},
+    "units": {
+      "type": "array", "minItems": 10, "maxItems": 10,
+      "items": {"type": "object", "additionalProperties": false, "required": ["unit_id", "tier", "path", "sha256"], "properties": {"unit_id": {"type": "string", "pattern": "^m16b1-v1-b1-u[0-9]{2}$"}, "tier": {"enum": ["B1.1", "B1.2"]}, "path": {"type": "string", "pattern": "^units/unit-[0-9]{2}\\.json$"}, "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}}}
+    },
+    "manifest_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+  }
+}

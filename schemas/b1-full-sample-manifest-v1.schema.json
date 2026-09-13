@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/b1-full-sample-manifest-v1.schema.json",
+  "title": "English Master full B1 sample manifest v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "run_id", "run_manifest_sha256", "audit_report_sha256", "algorithm_version", "seed", "sample_size", "input_hashes", "rankings", "selected_lesson_ids", "sample_manifest_sha256"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "b1_full_sample_manifest"},
+    "run_id": {"type": "string", "pattern": "^b1full_[a-f0-9]{64}$"},
+    "run_manifest_sha256": {"$ref": "#/$defs/sha256"},
+    "audit_report_sha256": {"$ref": "#/$defs/sha256"},
+    "algorithm_version": {"const": "B1_FULL_SHA256_UNIT_STRATIFIED_V1"},
+    "seed": {"type": "string", "minLength": 1, "maxLength": 128},
+    "sample_size": {"type": "integer", "minimum": 10, "maximum": 15},
+    "input_hashes": {"type": "object", "additionalProperties": false, "required": ["population_sha256", "blueprint_sha256", "allocation_sha256", "content_manifest_sha256"], "properties": {"population_sha256": {"$ref": "#/$defs/sha256"}, "blueprint_sha256": {"$ref": "#/$defs/sha256"}, "allocation_sha256": {"$ref": "#/$defs/sha256"}, "content_manifest_sha256": {"$ref": "#/$defs/sha256"}}},
+    "rankings": {"type": "array", "minItems": 50, "maxItems": 50, "items": {"type": "object", "additionalProperties": false, "required": ["lesson_id", "unit_id", "tier", "rank_hash", "selected"], "properties": {"lesson_id": {"type": "string"}, "unit_id": {"type": "string"}, "tier": {"enum": ["B1.1", "B1.2"]}, "rank_hash": {"$ref": "#/$defs/sha256"}, "selected": {"type": "boolean"}}}},
+    "selected_lesson_ids": {"type": "array", "minItems": 10, "maxItems": 15, "uniqueItems": true, "items": {"type": "string"}},
+    "sample_manifest_sha256": {"$ref": "#/$defs/sha256"}
+  },
+  "$defs": {"sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}}
+}

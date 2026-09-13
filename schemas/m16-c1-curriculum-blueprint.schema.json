@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "m16-c1-curriculum-blueprint.schema.json",
+  "title": "English Master M16 C1 Outline Blueprint",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "record_type",
+    "edition",
+    "status",
+    "source_population_id",
+    "source_population_sha256",
+    "tiers",
+    "entry_prerequisite_node_ids",
+    "units",
+    "lessons",
+    "unit_tests"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "m16_c1_curriculum_blueprint"},
+    "edition": {"const": "m16c1-v1"},
+    "status": {"const": "OUTLINE_ONLY"},
+    "source_population_id": {"type": "string", "minLength": 1},
+    "source_population_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "tiers": {"const": ["C1.1", "C1.2"]},
+    "entry_prerequisite_node_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/nodeId"}
+    },
+    "units": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": {"$ref": "#/$defs/unit"}
+    },
+    "lessons": {
+      "type": "array",
+      "minItems": 50,
+      "maxItems": 50,
+      "items": {"$ref": "#/$defs/lesson"}
+    },
+    "unit_tests": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": {"$ref": "#/$defs/unitTest"}
+    }
+  },
+  "$defs": {
+    "nodeId": {"type": "string", "pattern": "^kg_(b2_2|c1_[12])_(grammar|vocabulary_senses|functions|pronunciation|discourse|pragmatics|collocations|lexical_chunks|topics|skills)$"},
+    "lessonId": {"type": "string", "pattern": "^m16c1-v1-c1-u(0[1-9]|10)-l0[1-5]$"},
+    "unitId": {"type": "string", "pattern": "^m16c1-v1-c1-u(0[1-9]|10)$"},
+    "unit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "tier", "sequence", "title", "lesson_ids", "review_lesson_id", "unit_test_id"],
+      "properties": {
+        "id": {"$ref": "#/$defs/unitId"},
+        "tier": {"enum": ["C1.1", "C1.2"]},
+        "sequence": {"type": "integer", "minimum": 1, "maximum": 10},
+        "title": {"type": "string", "minLength": 1, "maxLength": 120},
+        "lesson_ids": {"type": "array", "minItems": 5, "maxItems": 5, "uniqueItems": true, "items": {"$ref": "#/$defs/lessonId"}},
+        "review_lesson_id": {"$ref": "#/$defs/lessonId"},
+        "unit_test_id": {"type": "string", "pattern": "^m16c1-v1-c1-unit-test-(0[1-9]|10)$"}
+      }
+    },
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["node_id", "dimension", "use"],
+      "properties": {
+        "node_id": {"$ref": "#/$defs/nodeId"},
+        "dimension": {"enum": ["grammar", "vocabulary_senses", "functions", "pronunciation", "discourse", "pragmatics", "collocations", "lexical_chunks", "topics", "skills"]},
+        "use": {"enum": ["INTRODUCE", "PRACTISE", "REVIEW"]}
+      }
+    },
+    "lesson": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "unit_id", "tier", "sequence", "lesson_kind", "title", "objectives", "targets", "prerequisite_lesson_ids"],
+      "properties": {
+        "id": {"$ref": "#/$defs/lessonId"},
+        "unit_id": {"$ref": "#/$defs/unitId"},
+        "tier": {"enum": ["C1.1", "C1.2"]},
+        "sequence": {"type": "integer", "minimum": 1, "maximum": 5},
+        "lesson_kind": {"enum": ["LEARN", "REVIEW"]},
+        "title": {"type": "string", "minLength": 1, "maxLength": 120},
+        "objectives": {"type": "array", "minItems": 1, "maxItems": 3, "items": {"type": "string", "minLength": 1, "maxLength": 240}},
+        "targets": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/target"}},
+        "prerequisite_lesson_ids": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/lessonId"}}
+      }
+    },
+    "unitTest": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "tier", "unit_id", "placement_after_lesson_id", "assessed_lesson_ids", "target_dimensions"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^m16c1-v1-c1-unit-test-(0[1-9]|10)$"},
+        "tier": {"enum": ["C1.1", "C1.2"]},
+        "unit_id": {"$ref": "#/$defs/unitId"},
+        "placement_after_lesson_id": {"$ref": "#/$defs/lessonId"},
+        "assessed_lesson_ids": {"type": "array", "minItems": 5, "maxItems": 5, "uniqueItems": true, "items": {"$ref": "#/$defs/lessonId"}},
+        "target_dimensions": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"enum": ["grammar", "vocabulary_senses", "functions", "pronunciation", "discourse", "pragmatics", "collocations", "lexical_chunks", "topics", "skills"]}}
+      }
+    }
+  }
+}
