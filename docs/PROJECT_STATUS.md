@@ -50,6 +50,7 @@ Một `M9 DEVELOPMENT: PASS` trong phạm vi sample cho phép bước được y
 | Full C1 | Đã build đủ 50 lesson C1.1/C1.2 | 10 original-authored unit files, 50 immutable packets, source-derived verification, lightweight audit `PASS`, và deterministic sample 12 lesson phủ 10 unit. Giữ `UNREVIEWED`; không có human/release/provider/live-AI/network/media claim. |
 | Full C2 | Đã build đủ 50 lesson C2.1/C2.2 | 10 original-authored unit files, 50 immutable packets, source-derived verification, lightweight audit `PASS`, và deterministic sample 12 lesson phủ 10 unit. Giữ `UNREVIEWED`; không có human/release/provider/live-AI/network/media claim. |
 | Cross-level QA | Đã triển khai deterministic A1–C2 package | Verify service/CLI re-runs all six source verifiers and checks report bindings; findings cover declared INTRODUCE linkage/order, expanded duplicate/topic candidates, and stratified no-API sampling. Active v2 artifacts: `curriculum/cross-level-qa/v2/request.json`, `report.json`, `flagged-region-sample.json`; v1 artifacts remain immutable. |
+| Assessment + Mastery | Đã triển khai offline deterministic | Re-verifies 300 Full A1–C2 packets and publishes 300 lesson quizzes, 60 unit tests, 6 band tests, and 1 placement package from objective no-media items. Local state has exactly seven per-concept fields; all packages remain `UNREVIEWED`, and placement is only a fixed local heuristic. |
 | M15 platform / M16 deployment | Chưa bắt đầu | Đây là các milestone tương lai, khác với hai workstream KG/blueprint ở trên. |
 
 > Tên M15/M16 hiện có hai ngữ cảnh: `M15-KG-FULL`/`M16-A1-BLUEPRINT` là workstream curriculum mới; M15 platform và M16 production deployment vẫn là các milestone tương lai riêng.
@@ -66,6 +67,7 @@ Một `M9 DEVELOPMENT: PASS` trong phạm vi sample cho phép bước được y
 - AI-practice pilot giới hạn listening, speaking, pronunciation và writing; prompt review chỉ kiểm tra protocol tĩnh, không chứng minh runtime provider behavior.
 - Local M11 batch export JSON/CSV/static web/static mobile, với schema/hash/path/source-permission/inventory checks; print/IMS là tùy chọn.
 - Local M12 manifest validation, M13 caller-controlled ASR contract, và M14 basic transcript metrics. Các tool chưa xử lý media thật vì chưa có file/manifests/model path được cung cấp.
+- Assessment + Mastery offline với immutable 367-package inventory, objective scoring, deterministic placement heuristic và caller-owned local concept state; không dùng provider, external data hay media.
 - Knowledge graph và các blueprint A1–C2 mới nhất hỗ trợ quy hoạch nội dung, không thay thế M5 lịch sử và không tự động cấp quyền M6.
 
 ## 4. Các artifact nội dung hiện tại
@@ -115,10 +117,10 @@ python -m pytest
 
 Kết quả thực tế:
 
-- **477 tests collected**
-- **477 passed**
-- Thời gian: **212.00 giây**
-- Không có test failure trong lần chạy ngày 2026-09-13.
+- **498 tests collected**
+- **498 passed**
+- Thời gian: **775.03 giây**
+- Không có test failure trong lần chạy ngày 2026-09-14.
 
 ## 8. Kết luận
 

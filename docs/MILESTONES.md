@@ -643,6 +643,16 @@ The cross-level QA package independently reuses the six Full A1–C2 verifiers, 
 
 ---
 
+## Assessment + Mastery
+
+**Status**: Implemented as an offline deterministic development layer.
+
+The assessment package reverifies the six Full A1–C2 corpora and common M15 binding, then projects existing objective no-media exercises without rewriting source content. Its immutable inventory contains exactly 300 lesson quizzes, 60 unit tests, six band tests, and one 24-item placement package. Objective scoring updates only caller-owned local JSON concept state with the seven fields documented in [Assessment and Mastery](ASSESSMENT_MASTERY.md).
+
+All packages and source content remain `UNREVIEWED`. The placement `suggested_start_tier` is a fixed offline heuristic, not a validated diagnostic, learner-proficiency claim, official CEFR endorsement, human/release decision, or provider/live-AI evidence. No external media or data is used.
+
+---
+
 ## M15 — Authorized Listening Assembly and Web Platform (Optional, Future)
 
 **Estimated Duration**: ~4-6 weeks

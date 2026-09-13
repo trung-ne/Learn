@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/learner-concept-state-v1.schema.json",
+  "title": "English Master local learner concept state v1",
+  "description": "A caller-owned JSON array sorted in ascending Unicode code-point order by concept_id. Each concept_id occurs once. Draft 2020-12 cannot compare adjacent item values, so sorting and per-concept uniqueness are mandatory semantic validation rules.",
+  "type": "array",
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "minProperties": 7,
+    "maxProperties": 7,
+    "required": [
+      "concept_id",
+      "attempts",
+      "correct",
+      "incorrect",
+      "mastery",
+      "last_seen",
+      "next_review"
+    ],
+    "properties": {
+      "concept_id": {"type": "string", "pattern": "^kg_[a-z0-9_]+$"},
+      "attempts": {"type": "integer", "minimum": 1},
+      "correct": {"type": "integer", "minimum": 0},
+      "incorrect": {"type": "integer", "minimum": 0},
+      "mastery": {"type": "number", "minimum": 0, "maximum": 1, "description": "correct / attempts rounded to four decimal places; the scorer enforces the cross-field arithmetic and precision invariant."},
+      "last_seen": {"$ref": "#/$defs/utcDateTime"},
+      "next_review": {"$ref": "#/$defs/utcDateTime"}
+    }
+  },
+  "$defs": {
+    "utcDateTime": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-5][0-9](?:\\.[0-9]+)?Z$"
+    }
+  }
+}

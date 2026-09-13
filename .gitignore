@@ -42,6 +42,8 @@ data/exports/*
 !data/exports/.gitkeep
 data/media/*
 !data/media/.gitkeep
+data/learner-state/*
+!data/learner-state/.gitkeep
 
 # Editor and operating-system files
 .vscode/

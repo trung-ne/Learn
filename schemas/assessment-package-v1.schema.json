@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/assessment-package-v1.schema.json",
+  "title": "English Master executable assessment package v1",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "record_type", "assessment_id", "assessment_type", "policy_version", "content_status", "scope", "items", "package_sha256"],
+  "properties": {
+    "schema_version": {"const": "1.0"}, "record_type": {"const": "assessment_package"},
+    "assessment_id": {"type": "string", "pattern": "^(lesson-quiz|unit-test|level-test|placement)-[a-z0-9._-]+$"},
+    "assessment_type": {"enum": ["LESSON_QUIZ", "UNIT_TEST", "LEVEL_TEST", "PLACEMENT"]},
+    "policy_version": {"const": "ASSESSMENT_MASTERY_V1"}, "content_status": {"const": "UNREVIEWED"},
+    "scope": {"$ref": "#/$defs/scope"},
+    "items": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/item"}},
+    "package_sha256": {"$ref": "#/$defs/sha256"}
+  },
+  "allOf": [
+    {"if": {"properties": {"assessment_type": {"const": "LESSON_QUIZ"}}}, "then": {"properties": {"scope": {"properties": {"levels": {"maxItems": 1}, "tiers": {"maxItems": 1}, "unit_ids": {"maxItems": 1}, "lesson_ids": {"maxItems": 1}}}}}},
+    {"if": {"properties": {"assessment_type": {"const": "UNIT_TEST"}}}, "then": {"properties": {"items": {"minItems": 10, "maxItems": 10}, "scope": {"required": ["outline_assessment_id", "target_dimensions"], "properties": {"levels": {"maxItems": 1}, "tiers": {"maxItems": 1}, "unit_ids": {"maxItems": 1}, "lesson_ids": {"minItems": 5, "maxItems": 5}}}}}},
+    {"if": {"properties": {"assessment_type": {"const": "LEVEL_TEST"}}}, "then": {"properties": {"items": {"minItems": 20, "maxItems": 20}, "scope": {"required": ["target_dimensions"], "properties": {"levels": {"maxItems": 1}, "tiers": {"minItems": 2, "maxItems": 2}, "unit_ids": {"minItems": 10, "maxItems": 10}, "lesson_ids": {"minItems": 50, "maxItems": 50}}}}}},
+    {"if": {"properties": {"assessment_type": {"const": "PLACEMENT"}}}, "then": {"properties": {"items": {"minItems": 24, "maxItems": 24}, "scope": {"required": ["items_per_tier", "passing_correct_per_tier", "output_field"], "properties": {"levels": {"minItems": 6}, "tiers": {"minItems": 12}, "unit_ids": {"minItems": 60}, "lesson_ids": {"minItems": 300}}}}}}
+  ],
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "level": {"enum": ["A1", "A2", "B1", "B2", "C1", "C2"]},
+    "tier": {"enum": ["A1.1", "A1.2", "A2.1", "A2.2", "B1.1", "B1.2", "B2.1", "B2.2", "C1.1", "C1.2", "C2.1", "C2.2"]},
+    "dimension": {"enum": ["grammar", "vocabulary_senses", "functions", "pronunciation", "discourse", "pragmatics", "collocations", "lexical_chunks", "topics", "skills"]},
+    "scope": {
+      "type": "object", "additionalProperties": false,
+      "required": ["levels", "tiers", "unit_ids", "lesson_ids"],
+      "properties": {
+        "levels": {"type": "array", "minItems": 1, "maxItems": 6, "uniqueItems": true, "items": {"$ref": "#/$defs/level"}},
+        "tiers": {"type": "array", "minItems": 1, "maxItems": 12, "uniqueItems": true, "items": {"$ref": "#/$defs/tier"}},
+        "unit_ids": {"type": "array", "minItems": 1, "maxItems": 60, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "lesson_ids": {"type": "array", "minItems": 1, "maxItems": 300, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "outline_assessment_id": {"type": "string", "minLength": 1},
+        "target_dimensions": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/dimension"}},
+        "items_per_tier": {"const": 2}, "passing_correct_per_tier": {"const": 2},
+        "output_field": {"const": "suggested_start_tier"}
+      }
+    },
+    "source": {
+      "type": "object", "additionalProperties": false,
+      "required": ["level", "tier", "unit_id", "lesson_id", "packet_id", "packet_sha256", "exercise_id"],
+      "properties": {
+        "level": {"$ref": "#/$defs/level"}, "tier": {"$ref": "#/$defs/tier"},
+        "unit_id": {"type": "string", "minLength": 1}, "lesson_id": {"type": "string", "minLength": 1},
+        "packet_id": {"type": "string", "minLength": 1}, "packet_sha256": {"$ref": "#/$defs/sha256"},
+        "exercise_id": {"type": "string", "minLength": 1}, "question_index": {"type": "integer", "minimum": 1}
+      }
+    },
+    "pair": {"type": "object", "additionalProperties": false, "required": ["left", "right"], "properties": {"left": {"type": "string", "minLength": 1}, "right": {"type": "string", "minLength": 1}}},
+    "answer": {
+      "oneOf": [
+        {"type": "object", "additionalProperties": false, "required": ["correct_answer"], "properties": {"correct_answer": {"type": "string", "minLength": 1}}},
+        {"type": "object", "additionalProperties": false, "required": ["acceptable_answers"], "properties": {"acceptable_answers": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}}}},
+        {"type": "object", "additionalProperties": false, "required": ["correct_order"], "properties": {"correct_order": {"type": "array", "minItems": 2, "items": {"type": "string", "minLength": 1}}}},
+        {"type": "object", "additionalProperties": false, "required": ["pairs"], "properties": {"pairs": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/pair"}}}}
+      ]
+    },
+    "item": {
+      "type": "object", "additionalProperties": false,
+      "required": ["item_id", "item_type", "media_required", "source", "target_ids", "target_dimensions", "concept_ids", "prompt", "answer_contract", "item_sha256"],
+      "properties": {
+        "item_id": {"type": "string", "pattern": "^item-[a-z0-9._-]+$"},
+        "item_type": {"enum": ["multiple_choice", "fill_blank", "matching", "ordering", "reading", "listening"]},
+        "media_required": {"const": false}, "source": {"$ref": "#/$defs/source"},
+        "target_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "target_dimensions": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/dimension"}},
+        "concept_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "pattern": "^kg_[a-z0-9_]+$"}},
+        "prompt": {"type": "string", "minLength": 1}, "stimulus": {"type": "string", "minLength": 1},
+        "question": {"type": "string", "minLength": 1},
+        "options": {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "items": {"type": "array", "minItems": 2, "items": {"type": "string", "minLength": 1}},
+        "answer_contract": {"$ref": "#/$defs/answer"}, "item_sha256": {"$ref": "#/$defs/sha256"}
+      },
+      "allOf": [
+        {"if": {"properties": {"item_type": {"const": "multiple_choice"}}}, "then": {"required": ["options"], "properties": {"answer_contract": {"type": "object", "required": ["correct_answer"]}}}},
+        {"if": {"properties": {"item_type": {"enum": ["reading", "listening"]}}}, "then": {"required": ["stimulus", "question"], "properties": {"source": {"required": ["question_index"]}, "answer_contract": {"type": "object", "required": ["acceptable_answers"]}}}},
+        {"if": {"properties": {"item_type": {"const": "fill_blank"}}}, "then": {"properties": {"answer_contract": {"type": "object", "required": ["acceptable_answers"]}}}},
+        {"if": {"properties": {"item_type": {"const": "ordering"}}}, "then": {"required": ["items"], "properties": {"answer_contract": {"type": "object", "required": ["correct_order"]}}}},
+        {"if": {"properties": {"item_type": {"const": "matching"}}}, "then": {"properties": {"answer_contract": {"type": "object", "required": ["pairs"]}}}}
+      ]
+    }
+  }
+}

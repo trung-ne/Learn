@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/assessment-build-request-v1.schema.json",
+  "title": "English Master assessment build request v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "policy_version", "content_status", "levels", "request_sha256"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "assessment_build_request"},
+    "policy_version": {"const": "ASSESSMENT_MASTERY_V1"},
+    "content_status": {"const": "UNREVIEWED"},
+    "levels": {
+      "type": "array", "minItems": 6, "maxItems": 6,
+      "prefixItems": [
+        {"$ref": "#/$defs/a1"}, {"$ref": "#/$defs/a2"}, {"$ref": "#/$defs/b1"},
+        {"$ref": "#/$defs/b2"}, {"$ref": "#/$defs/c1"}, {"$ref": "#/$defs/c2"}
+      ], "items": false
+    },
+    "request_sha256": {"$ref": "#/$defs/sha256"}
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "path": {"type": "string", "minLength": 1, "maxLength": 1024, "pattern": "^(?!.*(?:^|[/\\\\])\\.\\.(?:[/\\\\]|$))[^\\u0000]+$"},
+    "row": {
+      "type": "object", "additionalProperties": false,
+      "required": ["level", "run_dir", "population_path", "blueprint_path", "allocation_path", "content_manifest_path"],
+      "properties": {
+        "level": {"enum": ["A1", "A2", "B1", "B2", "C1", "C2"]},
+        "run_dir": {"$ref": "#/$defs/path"}, "population_path": {"$ref": "#/$defs/path"},
+        "blueprint_path": {"$ref": "#/$defs/path"}, "allocation_path": {"$ref": "#/$defs/path"},
+        "content_manifest_path": {"$ref": "#/$defs/path"}
+      }
+    },
+    "a1": {"allOf": [{"$ref": "#/$defs/row"}, {"properties": {"level": {"const": "A1"}}}]},
+    "a2": {"allOf": [{"$ref": "#/$defs/row"}, {"properties": {"level": {"const": "A2"}}}]},
+    "b1": {"allOf": [{"$ref": "#/$defs/row"}, {"properties": {"level": {"const": "B1"}}}]},
+    "b2": {"allOf": [{"$ref": "#/$defs/row"}, {"properties": {"level": {"const": "B2"}}}]},
+    "c1": {"allOf": [{"$ref": "#/$defs/row"}, {"properties": {"level": {"const": "C1"}}}]},
+    "c2": {"allOf": [{"$ref": "#/$defs/row"}, {"properties": {"level": {"const": "C2"}}}]}
+  }
+}
