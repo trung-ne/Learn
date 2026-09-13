@@ -635,6 +635,14 @@ Full C2 adds ten original-authored unit files and fifty immutable C2.1/C2.2 pack
 
 ---
 
+## Cross-level A1-C2 QA
+
+**Status**: Implemented as an offline deterministic development consistency check.
+
+The cross-level QA package independently reuses the six Full A1–C2 verifiers, requires the exact ordered 300-packet inventory and a common M15 population hash, and reports target linkage, global prerequisite/M15 ordering, learner-text duplicate candidates, topic candidates, modality boundaries, and structural difficulty-jump diagnostics. Its request, report, and deterministic flagged-region manifest are hash-bound and no-overwrite. The manifest makes no API call; all source and derived records remain `UNREVIEWED`. See [Cross-level QA](CROSS_LEVEL_QA.md).
+
+---
+
 ## M15 — Authorized Listening Assembly and Web Platform (Optional, Future)
 
 **Estimated Duration**: ~4-6 weeks

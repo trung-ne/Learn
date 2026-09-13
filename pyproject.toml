@@ -50,6 +50,7 @@ english-master-b1-full = "english_master.b1_full.cli:main"
 english-master-b2-full = "english_master.b2_full.cli:main"
 english-master-c1-full = "english_master.c1_full.cli:main"
 english-master-c2-full = "english_master.c2_full.cli:main"
+english-master-cross-level-qa = "english_master.cross_level_qa.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

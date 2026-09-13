@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/cross-level-qa-sample.schema.json",
+  "title": "English Master cross-level deterministic flagged-region sample",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "content_status", "report_sha256", "algorithm_version", "execution_mode", "seed", "sample_size", "rankings", "selected_region_ids", "sample_sha256"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "cross_level_qa_sample"},
+    "content_status": {"const": "UNREVIEWED"},
+    "report_sha256": {"$ref": "#/$defs/sha256"},
+    "algorithm_version": {"const": "CROSS_LEVEL_QA_FLAGGED_REGION_SAMPLE_V1"},
+    "execution_mode": {"const": "NO_API_DETERMINISTIC_FLAGGED_REGION_MANIFEST"},
+    "seed": {"type": "string", "minLength": 1, "maxLength": 128},
+    "sample_size": {"type": "integer", "minimum": 0, "maximum": 50},
+    "rankings": {"type": "array", "items": {"$ref": "#/$defs/ranking"}},
+    "selected_region_ids": {"type": "array", "items": {"type": "string", "pattern": "^clq-region-[a-f0-9]{64}$"}, "uniqueItems": true},
+    "sample_sha256": {"$ref": "#/$defs/sha256"}
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "ranking": {"type": "object", "additionalProperties": false, "required": ["region_id", "code", "lesson_id", "location", "severity", "rank_sha256", "selected"], "properties": {"region_id": {"type": "string", "pattern": "^clq-region-[a-f0-9]{64}$"}, "code": {"type": "string", "pattern": "^CLQ_[A-Z0-9_]+$"}, "lesson_id": {"type": ["string", "null"]}, "location": {"type": "string", "minLength": 1}, "severity": {"enum": ["BLOCKING", "FLAG"]}, "rank_sha256": {"$ref": "#/$defs/sha256"}, "selected": {"type": "boolean"}}}
+  }
+}

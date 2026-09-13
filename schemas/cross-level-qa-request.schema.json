@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/cross-level-qa-request.schema.json",
+  "title": "English Master cross-level A1-C2 QA request",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "ruleset_version", "content_status", "levels", "request_sha256"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "cross_level_qa_request"},
+    "ruleset_version": {"const": "CROSS_LEVEL_QA_V1"},
+    "content_status": {"const": "UNREVIEWED"},
+    "levels": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {"$ref": "#/$defs/level_input"}
+    },
+    "request_sha256": {"$ref": "#/$defs/sha256"}
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "path": {"type": "string", "minLength": 1, "maxLength": 1024},
+    "level_input": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["level", "run_dir", "population_path", "blueprint_path", "allocation_path", "content_manifest_path"],
+      "properties": {
+        "level": {"enum": ["A1", "A2", "B1", "B2", "C1", "C2"]},
+        "run_dir": {"$ref": "#/$defs/path"},
+        "population_path": {"$ref": "#/$defs/path"},
+        "blueprint_path": {"$ref": "#/$defs/path"},
+        "allocation_path": {"$ref": "#/$defs/path"},
+        "content_manifest_path": {"$ref": "#/$defs/path"}
+      }
+    }
+  }
+}
