@@ -50,7 +50,7 @@ Một `M9 DEVELOPMENT: PASS` trong phạm vi sample cho phép bước được y
 | Full C1 | Đã build đủ 50 lesson C1.1/C1.2 | 10 original-authored unit files, 50 immutable packets, source-derived verification, lightweight audit `PASS`, và deterministic sample 12 lesson phủ 10 unit. Giữ `UNREVIEWED`; không có human/release/provider/live-AI/network/media claim. |
 | Full C2 | Đã build đủ 50 lesson C2.1/C2.2 | 10 original-authored unit files, 50 immutable packets, source-derived verification, lightweight audit `PASS`, và deterministic sample 12 lesson phủ 10 unit. Giữ `UNREVIEWED`; không có human/release/provider/live-AI/network/media claim. |
 | Cross-level QA | Đã triển khai deterministic A1–C2 package | Verify service/CLI re-runs all six source verifiers and checks report bindings; findings cover declared INTRODUCE linkage/order, expanded duplicate/topic candidates, and stratified no-API sampling. Active v2 artifacts: `curriculum/cross-level-qa/v2/request.json`, `report.json`, `flagged-region-sample.json`; v1 artifacts remain immutable. |
-| Assessment + Mastery | Đã triển khai offline deterministic | Re-verifies 300 Full A1–C2 packets and publishes 300 lesson quizzes, 60 unit tests, 6 band tests, and 1 placement package from objective no-media items. Local state has exactly seven per-concept fields; all packages remain `UNREVIEWED`, and placement is only a fixed local heuristic. |
+| Assessment + Mastery | Đã triển khai offline deterministic | Re-verifies 300 Full A1–C2 packets and publishes 300 lesson quizzes, 60 unit tests, 6 band tests, and 1 placement package from objective no-media items. Local state has exactly seven per-concept fields; all packages remain `UNREVIEWED`, and placement is only a fixed local heuristic. Adaptive Review bổ sung plan tham chiếu lesson-quiz, recent-mistake state và ladder 1/3/7/14/30/60 ngày; không thay đổi inventory. |
 | M15 platform / M16 deployment | Chưa bắt đầu | Đây là các milestone tương lai, khác với hai workstream KG/blueprint ở trên. |
 
 > Tên M15/M16 hiện có hai ngữ cảnh: `M15-KG-FULL`/`M16-A1-BLUEPRINT` là workstream curriculum mới; M15 platform và M16 production deployment vẫn là các milestone tương lai riêng.
@@ -117,9 +117,9 @@ python -m pytest
 
 Kết quả thực tế:
 
-- **498 tests collected**
-- **498 passed**
-- Thời gian: **775.03 giây**
+- **501 tests collected**
+- **501 passed**
+- Thời gian: **569.49 giây**
 - Không có test failure trong lần chạy ngày 2026-09-14.
 
 ## 8. Kết luận

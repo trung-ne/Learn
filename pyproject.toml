@@ -52,6 +52,7 @@ english-master-c1-full = "english_master.c1_full.cli:main"
 english-master-c2-full = "english_master.c2_full.cli:main"
 english-master-cross-level-qa = "english_master.cross_level_qa.cli:main"
 english-master-assessment-mastery = "english_master.assessment_mastery.cli:main"
+english-master-adaptive-review = "english_master.adaptive_review.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

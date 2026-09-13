@@ -1,0 +1,9 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://english-master.local/schemas/adaptive-review-observation-v1.schema.json",
+  "title":"English Master adaptive review observation v1",
+  "type":"object","additionalProperties":false,
+  "required":["schema_version","record_type","policy_version","assessment_id","package_sha256","submission_sha256","seen_at","concept_outcomes","observation_sha256"],
+  "properties":{"schema_version":{"const":"1.0"},"record_type":{"const":"adaptive_review_observation"},"policy_version":{"const":"ADAPTIVE_REVIEW_V1"},"assessment_id":{"type":"string"},"package_sha256":{"type":"string","pattern":"^[0-9a-f]{64}$"},"submission_sha256":{"type":"string","pattern":"^[0-9a-f]{64}$"},"seen_at":{"$ref":"#/$defs/utc"},"concept_outcomes":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["concept_id","correct"],"properties":{"concept_id":{"type":"string","pattern":"^kg_[a-z0-9_]+$"},"correct":{"type":"boolean"}}}},"observation_sha256":{"type":"string","pattern":"^[0-9a-f]{64}$"}},
+  "$defs":{"utc":{"type":"string","pattern":"^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-5][0-9]Z$"}}
+}

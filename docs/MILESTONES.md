@@ -651,6 +651,8 @@ The assessment package reverifies the six Full A1–C2 corpora and common M15 bi
 
 All packages and source content remain `UNREVIEWED`. The placement `suggested_start_tier` is a fixed offline heuristic, not a validated diagnostic, learner-proficiency claim, official CEFR endorsement, human/release decision, or provider/live-AI evidence. No external media or data is used.
 
+Adaptive Review follow-up is implemented as a separate local planner. It references existing lesson-quiz items, persists recent mistakes and interval stages in caller-owned state, and uses the fixed 1/3/7/14/30/60-day ladder. It does not change the 367-package inventory or complete the future platform milestone.
+
 ---
 
 ## M15 — Authorized Listening Assembly and Web Platform (Optional, Future)
