@@ -39,6 +39,7 @@ SCHEMA_FILENAMES: dict[str, str] = {
     "m15-knowledge-graph-run-manifest": "m15-knowledge-graph-run-manifest.schema.json",
     "multilingual-knowledge-graph-node-v1": "multilingual-knowledge-graph-node-v1.schema.json",
     "multilingual-knowledge-graph-population-v1": "multilingual-knowledge-graph-population-v1.schema.json",
+    "german-a1-blueprint-v1": "german-a1-blueprint-v1.schema.json",
     "m16-a1-curriculum-blueprint": "m16-a1-curriculum-blueprint.schema.json",
     "m16-a2-curriculum-blueprint": "m16-a2-curriculum-blueprint.schema.json",
     "m16-b1-curriculum-blueprint": "m16-b1-curriculum-blueprint.schema.json",

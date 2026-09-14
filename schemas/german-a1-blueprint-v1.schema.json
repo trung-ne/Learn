@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/german-a1-blueprint-v1.schema.json",
+  "title": "English Master German A1.1 mini blueprint v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "edition", "language_code", "status", "source_population_id", "source_population_sha256", "tiers", "units"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "german_a1_bootstrap_blueprint"},
+    "edition": {"const": "de-a1-v1"},
+    "language_code": {"const": "de"},
+    "status": {"const": "OUTLINE_ONLY"},
+    "source_population_id": {"type": "string", "pattern": "^kgpop_[a-f0-9]{64}$"},
+    "source_population_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "tiers": {"type": "array", "const": ["A1.1"]},
+    "units": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"$ref": "#/$defs/unit"}}
+  },
+  "$defs": {
+    "target": {
+      "type": "object", "additionalProperties": false, "required": ["node_id", "use"],
+      "properties": {
+        "node_id": {"type": "string", "pattern": "^kg_de_a1_1_[a-z0-9_]+$"},
+        "use": {"type": "string", "enum": ["INTRODUCE", "PRACTISE", "REVIEW"]}
+      }
+    },
+    "lesson": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "unit_id", "tier", "sequence", "kind", "title", "objective", "targets", "prerequisites"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^de-a1-v1-u0[1-2]-l0[1-5]$"},
+        "unit_id": {"type": "string", "pattern": "^de-a1-v1-u0[1-2]$"},
+        "tier": {"const": "A1.1"},
+        "sequence": {"type": "integer", "minimum": 1, "maximum": 5},
+        "kind": {"type": "string", "enum": ["LEARN", "REVIEW"]},
+        "title": {"type": "string", "minLength": 1},
+        "objective": {"type": "string", "minLength": 1},
+        "targets": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/target"}},
+        "prerequisites": {"type": "array", "uniqueItems": true, "items": {"type": "string", "pattern": "^de-a1-v1-u0[1-2]-l0[1-5]$"}}
+      }
+    },
+    "unit": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "tier", "sequence", "title", "lesson_ids", "review_lesson_id", "lessons"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^de-a1-v1-u0[1-2]$"},
+        "tier": {"const": "A1.1"},
+        "sequence": {"type": "integer", "minimum": 1, "maximum": 2},
+        "title": {"type": "string", "minLength": 1},
+        "lesson_ids": {"type": "array", "minItems": 5, "maxItems": 5, "items": {"type": "string", "pattern": "^de-a1-v1-u0[1-2]-l0[1-5]$"}},
+        "review_lesson_id": {"type": "string", "pattern": "^de-a1-v1-u0[1-2]-l05$"},
+        "lessons": {"type": "array", "minItems": 5, "maxItems": 5, "items": {"$ref": "#/$defs/lesson"}}
+      }
+    }
+  }
+}

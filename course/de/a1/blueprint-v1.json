@@ -1,0 +1,352 @@
+{
+  "edition": "de-a1-v1",
+  "language_code": "de",
+  "record_type": "german_a1_bootstrap_blueprint",
+  "schema_version": "1.0",
+  "source_population_id": "kgpop_1347c3e35799ec734c0d4b43c8444cca4a088e8c517f31b74e4abbfe46f59685",
+  "source_population_sha256": "eadce1f43ef3148dafc586c9e93312446f45663b87b62602c7738e9d727c40d8",
+  "status": "OUTLINE_ONLY",
+  "tiers": [
+    "A1.1"
+  ],
+  "units": [
+    {
+      "id": "de-a1-v1-u01",
+      "lesson_ids": [
+        "de-a1-v1-u01-l01",
+        "de-a1-v1-u01-l02",
+        "de-a1-v1-u01-l03",
+        "de-a1-v1-u01-l04",
+        "de-a1-v1-u01-l05"
+      ],
+      "lessons": [
+        {
+          "id": "de-a1-v1-u01-l01",
+          "kind": "LEARN",
+          "objective": "Einfache deutsche Begrüßungen verwenden und Namen buchstabieren.",
+          "prerequisites": [],
+          "sequence": 1,
+          "targets": [
+            {
+              "node_id": "kg_de_a1_1_grammar",
+              "use": "INTRODUCE"
+            },
+            {
+              "node_id": "kg_de_a1_1_pronunciation",
+              "use": "INTRODUCE"
+            },
+            {
+              "node_id": "kg_de_a1_1_lexical_chunks",
+              "use": "INTRODUCE"
+            }
+          ],
+          "tier": "A1.1",
+          "title": "Begrüßen und buchstabieren",
+          "unit_id": "de-a1-v1-u01"
+        },
+        {
+          "id": "de-a1-v1-u01-l02",
+          "kind": "LEARN",
+          "objective": "Den eigenen Namen nennen und nach dem Namen fragen.",
+          "prerequisites": [
+            "de-a1-v1-u01-l01"
+          ],
+          "sequence": 2,
+          "targets": [
+            {
+              "node_id": "kg_de_a1_1_vocabulary_senses",
+              "use": "INTRODUCE"
+            },
+            {
+              "node_id": "kg_de_a1_1_functions",
+              "use": "INTRODUCE"
+            }
+          ],
+          "tier": "A1.1",
+          "title": "Sich vorstellen",
+          "unit_id": "de-a1-v1-u01"
+        },
+        {
+          "id": "de-a1-v1-u01-l03",
+          "kind": "LEARN",
+          "objective": "Einfache persönliche Angaben machen und verstehen.",
+          "prerequisites": [
+            "de-a1-v1-u01-l02"
+          ],
+          "sequence": 3,
+          "targets": [
+            {
+              "node_id": "kg_de_a1_1_topics",
+              "use": "INTRODUCE"
+            },
+            {
+              "node_id": "kg_de_a1_1_collocations",
+              "use": "INTRODUCE"
+            }
+          ],
+          "tier": "A1.1",
+          "title": "Name, Herkunft und Wohnort",
+          "unit_id": "de-a1-v1-u01"
+        },
+        {
+          "id": "de-a1-v1-u01-l04",
+          "kind": "LEARN",
+          "objective": "Ein kurzes Gespräch mit passenden Fragen und Antworten führen.",
+          "prerequisites": [
+            "de-a1-v1-u01-l03"
+          ],
+          "sequence": 4,
+          "targets": [
+            {
+              "node_id": "kg_de_a1_1_discourse",
+              "use": "INTRODUCE"
+            },
+            {
+              "node_id": "kg_de_a1_1_pragmatics",
+              "use": "INTRODUCE"
+            },
+            {
+              "node_id": "kg_de_a1_1_skills",
+              "use": "INTRODUCE"
+            }
+          ],
+          "tier": "A1.1",
+          "title": "Ein kurzes Kennenlerngespräch",
+          "unit_id": "de-a1-v1-u01"
+        },
+        {
+          "id": "de-a1-v1-u01-l05",
+          "kind": "REVIEW",
+          "objective": "Die Ziele der Einheit in einem kurzen Austausch wiederholen.",
+          "prerequisites": [
+            "de-a1-v1-u01-l04"
+          ],
+          "sequence": 5,
+          "targets": [
+            {
+              "node_id": "kg_de_a1_1_grammar",
+              "use": "REVIEW"
+            },
+            {
+              "node_id": "kg_de_a1_1_vocabulary_senses",
+              "use": "REVIEW"
+            },
+            {
+              "node_id": "kg_de_a1_1_functions",
+              "use": "REVIEW"
+            },
+            {
+              "node_id": "kg_de_a1_1_pronunciation",
+              "use": "REVIEW"
+            },
+            {
+              "node_id": "kg_de_a1_1_discourse",
+              "use": "REVIEW"
+            },
+            {
+              "node_id": "kg_de_a1_1_pragmatics",
+              "use": "REVIEW"
+            },
+            {
+              "node_id": "kg_de_a1_1_collocations",
+              "use": "REVIEW"
+            },
+            {
+              "node_id": "kg_de_a1_1_lexical_chunks",
+              "use": "REVIEW"
+            },
+            {
+              "node_id": "kg_de_a1_1_topics",
+              "use": "REVIEW"
+            },
+            {
+              "node_id": "kg_de_a1_1_skills",
+              "use": "REVIEW"
+            }
+          ],
+          "tier": "A1.1",
+          "title": "Wiederholung: Erste Kontakte",
+          "unit_id": "de-a1-v1-u01"
+        }
+      ],
+      "review_lesson_id": "de-a1-v1-u01-l05",
+      "sequence": 1,
+      "tier": "A1.1",
+      "title": "Erste Kontakte"
+    },
+    {
+      "id": "de-a1-v1-u02",
+      "lesson_ids": [
+        "de-a1-v1-u02-l01",
+        "de-a1-v1-u02-l02",
+        "de-a1-v1-u02-l03",
+        "de-a1-v1-u02-l04",
+        "de-a1-v1-u02-l05"
+      ],
+      "lessons": [
+        {
+          "id": "de-a1-v1-u02-l01",
+          "kind": "LEARN",
+          "objective": "Über eine Person mit einfachen Angaben sprechen.",
+          "prerequisites": [
+            "de-a1-v1-u01-l05"
+          ],
+          "sequence": 1,
+          "targets": [
+            {
+              "node_id": "kg_de_a1_1_grammar",
+              "use": "PRACTISE"
+            },
+            {
+              "node_id": "kg_de_a1_1_vocabulary_senses",
+              "use": "PRACTISE"
+            },
+            {
+              "node_id": "kg_de_a1_1_functions",
+              "use": "PRACTISE"
+            }
+          ],
+          "tier": "A1.1",
+          "title": "Über sich und andere sprechen",
+          "unit_id": "de-a1-v1-u02"
+        },
+        {
+          "id": "de-a1-v1-u02-l02",
+          "kind": "LEARN",
+          "objective": "Orte, Herkunft und Wohnort in kurzen Sätzen verbinden.",
+          "prerequisites": [
+            "de-a1-v1-u02-l01"
+          ],
+          "sequence": 2,
+          "targets": [
+            {
+              "node_id": "kg_de_a1_1_topics",
+              "use": "PRACTISE"
+            },
+            {
+              "node_id": "kg_de_a1_1_collocations",
+              "use": "PRACTISE"
+            },
+            {
+              "node_id": "kg_de_a1_1_discourse",
+              "use": "PRACTISE"
+            }
+          ],
+          "tier": "A1.1",
+          "title": "Orte und einfache Angaben",
+          "unit_id": "de-a1-v1-u02"
+        },
+        {
+          "id": "de-a1-v1-u02-l03",
+          "kind": "LEARN",
+          "objective": "Eine einfache Rückfrage stellen und höflich reagieren.",
+          "prerequisites": [
+            "de-a1-v1-u02-l02"
+          ],
+          "sequence": 3,
+          "targets": [
+            {
+              "node_id": "kg_de_a1_1_pragmatics",
+              "use": "PRACTISE"
+            },
+            {
+              "node_id": "kg_de_a1_1_lexical_chunks",
+              "use": "PRACTISE"
+            },
+            {
+              "node_id": "kg_de_a1_1_pronunciation",
+              "use": "PRACTISE"
+            }
+          ],
+          "tier": "A1.1",
+          "title": "Nachfragen und höflich reagieren",
+          "unit_id": "de-a1-v1-u02"
+        },
+        {
+          "id": "de-a1-v1-u02-l04",
+          "kind": "LEARN",
+          "objective": "Ein kurzes Gespräch über persönliche Angaben zusammenhängend führen.",
+          "prerequisites": [
+            "de-a1-v1-u02-l03"
+          ],
+          "sequence": 4,
+          "targets": [
+            {
+              "node_id": "kg_de_a1_1_skills",
+              "use": "PRACTISE"
+            },
+            {
+              "node_id": "kg_de_a1_1_functions",
+              "use": "PRACTISE"
+            },
+            {
+              "node_id": "kg_de_a1_1_discourse",
+              "use": "PRACTISE"
+            }
+          ],
+          "tier": "A1.1",
+          "title": "Ein erstes Gespräch führen",
+          "unit_id": "de-a1-v1-u02"
+        },
+        {
+          "id": "de-a1-v1-u02-l05",
+          "kind": "REVIEW",
+          "objective": "Alle A1.1-Ziele in einem ersten Gespräch wiederholen.",
+          "prerequisites": [
+            "de-a1-v1-u02-l04"
+          ],
+          "sequence": 5,
+          "targets": [
+            {
+              "node_id": "kg_de_a1_1_grammar",
+              "use": "REVIEW"
+            },
+            {
+              "node_id": "kg_de_a1_1_vocabulary_senses",
+              "use": "REVIEW"
+            },
+            {
+              "node_id": "kg_de_a1_1_functions",
+              "use": "REVIEW"
+            },
+            {
+              "node_id": "kg_de_a1_1_pronunciation",
+              "use": "REVIEW"
+            },
+            {
+              "node_id": "kg_de_a1_1_discourse",
+              "use": "REVIEW"
+            },
+            {
+              "node_id": "kg_de_a1_1_pragmatics",
+              "use": "REVIEW"
+            },
+            {
+              "node_id": "kg_de_a1_1_collocations",
+              "use": "REVIEW"
+            },
+            {
+              "node_id": "kg_de_a1_1_lexical_chunks",
+              "use": "REVIEW"
+            },
+            {
+              "node_id": "kg_de_a1_1_topics",
+              "use": "REVIEW"
+            },
+            {
+              "node_id": "kg_de_a1_1_skills",
+              "use": "REVIEW"
+            }
+          ],
+          "tier": "A1.1",
+          "title": "Wiederholung: Persönliche Angaben",
+          "unit_id": "de-a1-v1-u02"
+        }
+      ],
+      "review_lesson_id": "de-a1-v1-u02-l05",
+      "sequence": 2,
+      "tier": "A1.1",
+      "title": "Persönliche Angaben im Alltag"
+    }
+  ]
+}

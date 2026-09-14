@@ -126,6 +126,7 @@ def test_all_schema_files_are_loaded_and_metaschema_valid(schemas: dict[str, dic
         "exercise-generation-request.schema.json",
         "exercise-set.schema.json",
         "exercise.schema.json",
+        "german-a1-blueprint-v1.schema.json",
         "ingestion-pilot-authorization.schema.json",
         "ingestion-pilot-preparation-report.schema.json",
         "ingestion-pilot-receipt.schema.json",
