@@ -1,0 +1,14 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://english-master.local/schemas/multilingual-knowledge-graph-population-v1.schema.json",
+  "title":"English Master German bootstrap knowledge graph v1",
+  "type":"object","additionalProperties":false,
+  "required":["schema_version","record_type","population_id","language_code","nodes","tiers","dimensions","content_status","fixture_only","external_content_used"],
+  "properties":{
+    "schema_version":{"const":"1.0"},"record_type":{"const":"multilingual_knowledge_graph_population"},"population_id":{"type":"string","pattern":"^kgpop_[a-f0-9]{64}$"},"language_code":{"const":"de"},
+    "nodes":{"type":"array","minItems":120,"items":{"$ref":"multilingual-knowledge-graph-node-v1.schema.json"}},
+    "tiers":{"type":"array","const":["A1.1","A1.2","A2.1","A2.2","B1.1","B1.2","B2.1","B2.2","C1.1","C1.2","C2.1","C2.2"]},
+    "dimensions":{"type":"array","const":["grammar","vocabulary_senses","functions","pronunciation","discourse","pragmatics","collocations","lexical_chunks","topics","skills"]},
+    "content_status":{"const":"UNREVIEWED"},"fixture_only":{"const":true},"external_content_used":{"const":false}
+  }
+}

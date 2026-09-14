@@ -211,6 +211,8 @@ def test_all_schema_files_are_loaded_and_metaschema_valid(schemas: dict[str, dic
         "media-verification-report.schema.json",
         "multilingual-assessment-package-v1.schema.json",
         "multilingual-assessment-submission-v1.schema.json",
+        "multilingual-knowledge-graph-node-v1.schema.json",
+        "multilingual-knowledge-graph-population-v1.schema.json",
         "multilingual-source-registry-v1.schema.json",
         "multilingual-taxonomy-v1.schema.json",
         "normalization-record.schema.json",

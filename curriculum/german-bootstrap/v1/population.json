@@ -1,0 +1,2597 @@
+{
+  "content_status": "UNREVIEWED",
+  "dimensions": [
+    "grammar",
+    "vocabulary_senses",
+    "functions",
+    "pronunciation",
+    "discourse",
+    "pragmatics",
+    "collocations",
+    "lexical_chunks",
+    "topics",
+    "skills"
+  ],
+  "external_content_used": false,
+  "fixture_only": true,
+  "language_code": "de",
+  "nodes": [
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [],
+      "description": "Original project-authored German planning target for A1.1: sein und haben im Präsens.",
+      "dimension": "grammar",
+      "id": "kg_de_a1_1_grammar",
+      "language_code": "de",
+      "name": "sein und haben im Präsens",
+      "prerequisites": [],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [],
+      "description": "Original project-authored German planning target for A1.1: Begrüßung und persönliche Angaben.",
+      "dimension": "vocabulary_senses",
+      "id": "kg_de_a1_1_vocabulary_senses",
+      "language_code": "de",
+      "name": "Begrüßung und persönliche Angaben",
+      "prerequisites": [],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [],
+      "description": "Original project-authored German planning target for A1.1: begrüßen und sich verabschieden.",
+      "dimension": "functions",
+      "id": "kg_de_a1_1_functions",
+      "language_code": "de",
+      "name": "begrüßen und sich verabschieden",
+      "prerequisites": [],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [],
+      "description": "Original project-authored German planning target for A1.1: Alphabet, Vokallänge und Wortakzent.",
+      "dimension": "pronunciation",
+      "id": "kg_de_a1_1_pronunciation",
+      "language_code": "de",
+      "name": "Alphabet, Vokallänge und Wortakzent",
+      "prerequisites": [],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [],
+      "description": "Original project-authored German planning target for A1.1: kurze Aussagen mit und und aber verbinden.",
+      "dimension": "discourse",
+      "id": "kg_de_a1_1_discourse",
+      "language_code": "de",
+      "name": "kurze Aussagen mit und und aber verbinden",
+      "prerequisites": [],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [],
+      "description": "Original project-authored German planning target for A1.1: Begrüßung, Anrede und Distanz.",
+      "dimension": "pragmatics",
+      "id": "kg_de_a1_1_pragmatics",
+      "language_code": "de",
+      "name": "Begrüßung, Anrede und Distanz",
+      "prerequisites": [],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [],
+      "description": "Original project-authored German planning target for A1.1: heißen, wohnen und kommen aus.",
+      "dimension": "collocations",
+      "id": "kg_de_a1_1_collocations",
+      "language_code": "de",
+      "name": "heißen, wohnen und kommen aus",
+      "prerequisites": [],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [],
+      "description": "Original project-authored German planning target for A1.1: Guten Morgen und Auf Wiedersehen.",
+      "dimension": "lexical_chunks",
+      "id": "kg_de_a1_1_lexical_chunks",
+      "language_code": "de",
+      "name": "Guten Morgen und Auf Wiedersehen",
+      "prerequisites": [],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [],
+      "description": "Original project-authored German planning target for A1.1: Begrüßung und persönliche Welt.",
+      "dimension": "topics",
+      "id": "kg_de_a1_1_topics",
+      "language_code": "de",
+      "name": "Begrüßung und persönliche Welt",
+      "prerequisites": [],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [],
+      "description": "Original project-authored German planning target for A1.1: kurze deutsche Alltagskontakte verstehen und führen.",
+      "dimension": "skills",
+      "id": "kg_de_a1_1_skills",
+      "language_code": "de",
+      "name": "kurze deutsche Alltagskontakte verstehen und führen",
+      "prerequisites": [],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a1_1_grammar",
+          "target": "kg_de_a1_2_grammar"
+        }
+      ],
+      "description": "Original project-authored German planning target for A1.2: bestimmte und unbestimmte Artikel.",
+      "dimension": "grammar",
+      "id": "kg_de_a1_2_grammar",
+      "language_code": "de",
+      "name": "bestimmte und unbestimmte Artikel",
+      "prerequisites": [
+        "kg_de_a1_1_grammar"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a1_1_vocabulary_senses",
+          "target": "kg_de_a1_2_vocabulary_senses"
+        }
+      ],
+      "description": "Original project-authored German planning target for A1.2: Familie, Personen und Orte.",
+      "dimension": "vocabulary_senses",
+      "id": "kg_de_a1_2_vocabulary_senses",
+      "language_code": "de",
+      "name": "Familie, Personen und Orte",
+      "prerequisites": [
+        "kg_de_a1_1_vocabulary_senses"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a1_1_functions",
+          "target": "kg_de_a1_2_functions"
+        }
+      ],
+      "description": "Original project-authored German planning target for A1.2: sich vorstellen und Informationen erfragen.",
+      "dimension": "functions",
+      "id": "kg_de_a1_2_functions",
+      "language_code": "de",
+      "name": "sich vorstellen und Informationen erfragen",
+      "prerequisites": [
+        "kg_de_a1_1_functions"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a1_1_pronunciation",
+          "target": "kg_de_a1_2_pronunciation"
+        }
+      ],
+      "description": "Original project-authored German planning target for A1.2: Umlaute und ch-Laute unterscheiden.",
+      "dimension": "pronunciation",
+      "id": "kg_de_a1_2_pronunciation",
+      "language_code": "de",
+      "name": "Umlaute und ch-Laute unterscheiden",
+      "prerequisites": [
+        "kg_de_a1_1_pronunciation"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a1_1_discourse",
+          "target": "kg_de_a1_2_discourse"
+        }
+      ],
+      "description": "Original project-authored German planning target for A1.2: eine Person oder einen Ort ordnen.",
+      "dimension": "discourse",
+      "id": "kg_de_a1_2_discourse",
+      "language_code": "de",
+      "name": "eine Person oder einen Ort ordnen",
+      "prerequisites": [
+        "kg_de_a1_1_discourse"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a1_1_pragmatics",
+          "target": "kg_de_a1_2_pragmatics"
+        }
+      ],
+      "description": "Original project-authored German planning target for A1.2: direkte Bitten höflich formulieren.",
+      "dimension": "pragmatics",
+      "id": "kg_de_a1_2_pragmatics",
+      "language_code": "de",
+      "name": "direkte Bitten höflich formulieren",
+      "prerequisites": [
+        "kg_de_a1_1_pragmatics"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a1_1_collocations",
+          "target": "kg_de_a1_2_collocations"
+        }
+      ],
+      "description": "Original project-authored German planning target for A1.2: haben, machen und gehen im Alltag.",
+      "dimension": "collocations",
+      "id": "kg_de_a1_2_collocations",
+      "language_code": "de",
+      "name": "haben, machen und gehen im Alltag",
+      "prerequisites": [
+        "kg_de_a1_1_collocations"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a1_1_lexical_chunks",
+          "target": "kg_de_a1_2_lexical_chunks"
+        }
+      ],
+      "description": "Original project-authored German planning target for A1.2: Ich heiße ... und Woher kommen Sie?.",
+      "dimension": "lexical_chunks",
+      "id": "kg_de_a1_2_lexical_chunks",
+      "language_code": "de",
+      "name": "Ich heiße ... und Woher kommen Sie?",
+      "prerequisites": [
+        "kg_de_a1_1_lexical_chunks"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a1_1_topics",
+          "target": "kg_de_a1_2_topics"
+        }
+      ],
+      "description": "Original project-authored German planning target for A1.2: Familie, Zuhause und Umgebung.",
+      "dimension": "topics",
+      "id": "kg_de_a1_2_topics",
+      "language_code": "de",
+      "name": "Familie, Zuhause und Umgebung",
+      "prerequisites": [
+        "kg_de_a1_1_topics"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a1_1_skills",
+          "target": "kg_de_a1_2_skills"
+        }
+      ],
+      "description": "Original project-authored German planning target for A1.2: vorhersehbare Transaktionen bewältigen.",
+      "dimension": "skills",
+      "id": "kg_de_a1_2_skills",
+      "language_code": "de",
+      "name": "vorhersehbare Transaktionen bewältigen",
+      "prerequisites": [
+        "kg_de_a1_1_skills"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a1_2_grammar",
+          "target": "kg_de_a2_1_grammar"
+        }
+      ],
+      "description": "Original project-authored German planning target for A2.1: Akkusativ bei häufigen Verben.",
+      "dimension": "grammar",
+      "id": "kg_de_a2_1_grammar",
+      "language_code": "de",
+      "name": "Akkusativ bei häufigen Verben",
+      "prerequisites": [
+        "kg_de_a1_2_grammar"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a1_2_vocabulary_senses",
+          "target": "kg_de_a2_1_vocabulary_senses"
+        }
+      ],
+      "description": "Original project-authored German planning target for A2.1: Essen, Einkaufen und Mengen.",
+      "dimension": "vocabulary_senses",
+      "id": "kg_de_a2_1_vocabulary_senses",
+      "language_code": "de",
+      "name": "Essen, Einkaufen und Mengen",
+      "prerequisites": [
+        "kg_de_a1_2_vocabulary_senses"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a1_2_functions",
+          "target": "kg_de_a2_1_functions"
+        }
+      ],
+      "description": "Original project-authored German planning target for A2.1: etwas bestellen und bezahlen.",
+      "dimension": "functions",
+      "id": "kg_de_a2_1_functions",
+      "language_code": "de",
+      "name": "etwas bestellen und bezahlen",
+      "prerequisites": [
+        "kg_de_a1_2_functions"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a1_2_pronunciation",
+          "target": "kg_de_a2_1_pronunciation"
+        }
+      ],
+      "description": "Original project-authored German planning target for A2.1: Satzakzent in kurzen Aussagen.",
+      "dimension": "pronunciation",
+      "id": "kg_de_a2_1_pronunciation",
+      "language_code": "de",
+      "name": "Satzakzent in kurzen Aussagen",
+      "prerequisites": [
+        "kg_de_a1_2_pronunciation"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a1_2_discourse",
+          "target": "kg_de_a2_1_discourse"
+        }
+      ],
+      "description": "Original project-authored German planning target for A2.1: ein Ereignis zeitlich erzählen.",
+      "dimension": "discourse",
+      "id": "kg_de_a2_1_discourse",
+      "language_code": "de",
+      "name": "ein Ereignis zeitlich erzählen",
+      "prerequisites": [
+        "kg_de_a1_2_discourse"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a1_2_pragmatics",
+          "target": "kg_de_a2_1_pragmatics"
+        }
+      ],
+      "description": "Original project-authored German planning target for A2.1: Dank, Entschuldigung und Reparatur.",
+      "dimension": "pragmatics",
+      "id": "kg_de_a2_1_pragmatics",
+      "language_code": "de",
+      "name": "Dank, Entschuldigung und Reparatur",
+      "prerequisites": [
+        "kg_de_a1_2_pragmatics"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a1_2_collocations",
+          "target": "kg_de_a2_1_collocations"
+        }
+      ],
+      "description": "Original project-authored German planning target for A2.1: eine Bestellung aufgeben und bezahlen.",
+      "dimension": "collocations",
+      "id": "kg_de_a2_1_collocations",
+      "language_code": "de",
+      "name": "eine Bestellung aufgeben und bezahlen",
+      "prerequisites": [
+        "kg_de_a1_2_collocations"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a1_2_lexical_chunks",
+          "target": "kg_de_a2_1_lexical_chunks"
+        }
+      ],
+      "description": "Original project-authored German planning target for A2.1: Ich hätte gern ... und Was kostet das?.",
+      "dimension": "lexical_chunks",
+      "id": "kg_de_a2_1_lexical_chunks",
+      "language_code": "de",
+      "name": "Ich hätte gern ... und Was kostet das?",
+      "prerequisites": [
+        "kg_de_a1_2_lexical_chunks"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a1_2_topics",
+          "target": "kg_de_a2_1_topics"
+        }
+      ],
+      "description": "Original project-authored German planning target for A2.1: Essen, Einkaufen und Tagesablauf.",
+      "dimension": "topics",
+      "id": "kg_de_a2_1_topics",
+      "language_code": "de",
+      "name": "Essen, Einkaufen und Tagesablauf",
+      "prerequisites": [
+        "kg_de_a1_2_topics"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a1_2_skills",
+          "target": "kg_de_a2_1_skills"
+        }
+      ],
+      "description": "Original project-authored German planning target for A2.1: ein einfaches Ereignis erzählen.",
+      "dimension": "skills",
+      "id": "kg_de_a2_1_skills",
+      "language_code": "de",
+      "name": "ein einfaches Ereignis erzählen",
+      "prerequisites": [
+        "kg_de_a1_2_skills"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a2_1_grammar",
+          "target": "kg_de_a2_2_grammar"
+        }
+      ],
+      "description": "Original project-authored German planning target for A2.2: Modalverben im Alltag.",
+      "dimension": "grammar",
+      "id": "kg_de_a2_2_grammar",
+      "language_code": "de",
+      "name": "Modalverben im Alltag",
+      "prerequisites": [
+        "kg_de_a2_1_grammar"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a2_1_vocabulary_senses",
+          "target": "kg_de_a2_2_vocabulary_senses"
+        }
+      ],
+      "description": "Original project-authored German planning target for A2.2: Arbeit, Freizeit und Termine.",
+      "dimension": "vocabulary_senses",
+      "id": "kg_de_a2_2_vocabulary_senses",
+      "language_code": "de",
+      "name": "Arbeit, Freizeit und Termine",
+      "prerequisites": [
+        "kg_de_a2_1_vocabulary_senses"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a2_1_functions",
+          "target": "kg_de_a2_2_functions"
+        }
+      ],
+      "description": "Original project-authored German planning target for A2.2: Pläne vereinbaren und Hilfe anbieten.",
+      "dimension": "functions",
+      "id": "kg_de_a2_2_functions",
+      "language_code": "de",
+      "name": "Pläne vereinbaren und Hilfe anbieten",
+      "prerequisites": [
+        "kg_de_a2_1_functions"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a2_1_pronunciation",
+          "target": "kg_de_a2_2_pronunciation"
+        }
+      ],
+      "description": "Original project-authored German planning target for A2.2: Endungen und Konsonantenfolgen.",
+      "dimension": "pronunciation",
+      "id": "kg_de_a2_2_pronunciation",
+      "language_code": "de",
+      "name": "Endungen und Konsonantenfolgen",
+      "prerequisites": [
+        "kg_de_a2_1_pronunciation"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a2_1_discourse",
+          "target": "kg_de_a2_2_discourse"
+        }
+      ],
+      "description": "Original project-authored German planning target for A2.2: Pläne und Gründe strukturieren.",
+      "dimension": "discourse",
+      "id": "kg_de_a2_2_discourse",
+      "language_code": "de",
+      "name": "Pläne und Gründe strukturieren",
+      "prerequisites": [
+        "kg_de_a2_1_discourse"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a2_1_pragmatics",
+          "target": "kg_de_a2_2_pragmatics"
+        }
+      ],
+      "description": "Original project-authored German planning target for A2.2: Einladungen sozial passend machen.",
+      "dimension": "pragmatics",
+      "id": "kg_de_a2_2_pragmatics",
+      "language_code": "de",
+      "name": "Einladungen sozial passend machen",
+      "prerequisites": [
+        "kg_de_a2_1_pragmatics"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a2_1_collocations",
+          "target": "kg_de_a2_2_collocations"
+        }
+      ],
+      "description": "Original project-authored German planning target for A2.2: einen Termin vereinbaren und vorbereiten.",
+      "dimension": "collocations",
+      "id": "kg_de_a2_2_collocations",
+      "language_code": "de",
+      "name": "einen Termin vereinbaren und vorbereiten",
+      "prerequisites": [
+        "kg_de_a2_1_collocations"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a2_1_lexical_chunks",
+          "target": "kg_de_a2_2_lexical_chunks"
+        }
+      ],
+      "description": "Original project-authored German planning target for A2.2: Könnten Sie ...? und Wann passt es?.",
+      "dimension": "lexical_chunks",
+      "id": "kg_de_a2_2_lexical_chunks",
+      "language_code": "de",
+      "name": "Könnten Sie ...? und Wann passt es?",
+      "prerequisites": [
+        "kg_de_a2_1_lexical_chunks"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a2_1_topics",
+          "target": "kg_de_a2_2_topics"
+        }
+      ],
+      "description": "Original project-authored German planning target for A2.2: Arbeit, Freizeit und Termine.",
+      "dimension": "topics",
+      "id": "kg_de_a2_2_topics",
+      "language_code": "de",
+      "name": "Arbeit, Freizeit und Termine",
+      "prerequisites": [
+        "kg_de_a2_1_topics"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a2_1_skills",
+          "target": "kg_de_a2_2_skills"
+        }
+      ],
+      "description": "Original project-authored German planning target for A2.2: einen Plan auf Deutsch koordinieren.",
+      "dimension": "skills",
+      "id": "kg_de_a2_2_skills",
+      "language_code": "de",
+      "name": "einen Plan auf Deutsch koordinieren",
+      "prerequisites": [
+        "kg_de_a2_1_skills"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "A2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a2_2_grammar",
+          "target": "kg_de_b1_1_grammar"
+        }
+      ],
+      "description": "Original project-authored German planning target for B1.1: Perfekt mit haben und sein.",
+      "dimension": "grammar",
+      "id": "kg_de_b1_1_grammar",
+      "language_code": "de",
+      "name": "Perfekt mit haben und sein",
+      "prerequisites": [
+        "kg_de_a2_2_grammar"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a2_2_vocabulary_senses",
+          "target": "kg_de_b1_1_vocabulary_senses"
+        }
+      ],
+      "description": "Original project-authored German planning target for B1.1: Reisen, Gesundheit und Erfahrungen.",
+      "dimension": "vocabulary_senses",
+      "id": "kg_de_b1_1_vocabulary_senses",
+      "language_code": "de",
+      "name": "Reisen, Gesundheit und Erfahrungen",
+      "prerequisites": [
+        "kg_de_a2_2_vocabulary_senses"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a2_2_functions",
+          "target": "kg_de_b1_1_functions"
+        }
+      ],
+      "description": "Original project-authored German planning target for B1.1: über Erlebnisse berichten.",
+      "dimension": "functions",
+      "id": "kg_de_b1_1_functions",
+      "language_code": "de",
+      "name": "über Erlebnisse berichten",
+      "prerequisites": [
+        "kg_de_a2_2_functions"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a2_2_pronunciation",
+          "target": "kg_de_b1_1_pronunciation"
+        }
+      ],
+      "description": "Original project-authored German planning target for B1.1: Intonation in Erzählungen.",
+      "dimension": "pronunciation",
+      "id": "kg_de_b1_1_pronunciation",
+      "language_code": "de",
+      "name": "Intonation in Erzählungen",
+      "prerequisites": [
+        "kg_de_a2_2_pronunciation"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a2_2_discourse",
+          "target": "kg_de_b1_1_discourse"
+        }
+      ],
+      "description": "Original project-authored German planning target for B1.1: Absätze mit Verweisen verbinden.",
+      "dimension": "discourse",
+      "id": "kg_de_b1_1_discourse",
+      "language_code": "de",
+      "name": "Absätze mit Verweisen verbinden",
+      "prerequisites": [
+        "kg_de_a2_2_discourse"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a2_2_pragmatics",
+          "target": "kg_de_b1_1_pragmatics"
+        }
+      ],
+      "description": "Original project-authored German planning target for B1.1: Zustimmung und Widerspruch taktvoll äußern.",
+      "dimension": "pragmatics",
+      "id": "kg_de_b1_1_pragmatics",
+      "language_code": "de",
+      "name": "Zustimmung und Widerspruch taktvoll äußern",
+      "prerequisites": [
+        "kg_de_a2_2_pragmatics"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a2_2_collocations",
+          "target": "kg_de_b1_1_collocations"
+        }
+      ],
+      "description": "Original project-authored German planning target for B1.1: eine Reise machen und Erfahrung sammeln.",
+      "dimension": "collocations",
+      "id": "kg_de_b1_1_collocations",
+      "language_code": "de",
+      "name": "eine Reise machen und Erfahrung sammeln",
+      "prerequisites": [
+        "kg_de_a2_2_collocations"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a2_2_lexical_chunks",
+          "target": "kg_de_b1_1_lexical_chunks"
+        }
+      ],
+      "description": "Original project-authored German planning target for B1.1: Meiner Erfahrung nach ....",
+      "dimension": "lexical_chunks",
+      "id": "kg_de_b1_1_lexical_chunks",
+      "language_code": "de",
+      "name": "Meiner Erfahrung nach ...",
+      "prerequisites": [
+        "kg_de_a2_2_lexical_chunks"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a2_2_topics",
+          "target": "kg_de_b1_1_topics"
+        }
+      ],
+      "description": "Original project-authored German planning target for B1.1: Reisen, Gesundheit und Erfahrungen.",
+      "dimension": "topics",
+      "id": "kg_de_b1_1_topics",
+      "language_code": "de",
+      "name": "Reisen, Gesundheit und Erfahrungen",
+      "prerequisites": [
+        "kg_de_a2_2_topics"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_a2_2_skills",
+          "target": "kg_de_b1_1_skills"
+        }
+      ],
+      "description": "Original project-authored German planning target for B1.1: eine Meinung zusammenhängend erklären.",
+      "dimension": "skills",
+      "id": "kg_de_b1_1_skills",
+      "language_code": "de",
+      "name": "eine Meinung zusammenhängend erklären",
+      "prerequisites": [
+        "kg_de_a2_2_skills"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b1_1_grammar",
+          "target": "kg_de_b1_2_grammar"
+        }
+      ],
+      "description": "Original project-authored German planning target for B1.2: Präteritum häufiger Verben.",
+      "dimension": "grammar",
+      "id": "kg_de_b1_2_grammar",
+      "language_code": "de",
+      "name": "Präteritum häufiger Verben",
+      "prerequisites": [
+        "kg_de_b1_1_grammar"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b1_1_vocabulary_senses",
+          "target": "kg_de_b1_2_vocabulary_senses"
+        }
+      ],
+      "description": "Original project-authored German planning target for B1.2: Medien, Beziehungen und Ereignisse.",
+      "dimension": "vocabulary_senses",
+      "id": "kg_de_b1_2_vocabulary_senses",
+      "language_code": "de",
+      "name": "Medien, Beziehungen und Ereignisse",
+      "prerequisites": [
+        "kg_de_b1_1_vocabulary_senses"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b1_1_functions",
+          "target": "kg_de_b1_2_functions"
+        }
+      ],
+      "description": "Original project-authored German planning target for B1.2: Meinungen begründen und nachfragen.",
+      "dimension": "functions",
+      "id": "kg_de_b1_2_functions",
+      "language_code": "de",
+      "name": "Meinungen begründen und nachfragen",
+      "prerequisites": [
+        "kg_de_b1_1_functions"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b1_1_pronunciation",
+          "target": "kg_de_b1_2_pronunciation"
+        }
+      ],
+      "description": "Original project-authored German planning target for B1.2: Reduktion in flüssiger Alltagssprache.",
+      "dimension": "pronunciation",
+      "id": "kg_de_b1_2_pronunciation",
+      "language_code": "de",
+      "name": "Reduktion in flüssiger Alltagssprache",
+      "prerequisites": [
+        "kg_de_b1_1_pronunciation"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b1_1_discourse",
+          "target": "kg_de_b1_2_discourse"
+        }
+      ],
+      "description": "Original project-authored German planning target for B1.2: ein Thema über mehrere Beiträge entwickeln.",
+      "dimension": "discourse",
+      "id": "kg_de_b1_2_discourse",
+      "language_code": "de",
+      "name": "ein Thema über mehrere Beiträge entwickeln",
+      "prerequisites": [
+        "kg_de_b1_1_discourse"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b1_1_pragmatics",
+          "target": "kg_de_b1_2_pragmatics"
+        }
+      ],
+      "description": "Original project-authored German planning target for B1.2: Register in unbekannten Situationen wählen.",
+      "dimension": "pragmatics",
+      "id": "kg_de_b1_2_pragmatics",
+      "language_code": "de",
+      "name": "Register in unbekannten Situationen wählen",
+      "prerequisites": [
+        "kg_de_b1_1_pragmatics"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b1_1_collocations",
+          "target": "kg_de_b1_2_collocations"
+        }
+      ],
+      "description": "Original project-authored German planning target for B1.2: eine Beziehung pflegen und Ereignis erleben.",
+      "dimension": "collocations",
+      "id": "kg_de_b1_2_collocations",
+      "language_code": "de",
+      "name": "eine Beziehung pflegen und Ereignis erleben",
+      "prerequisites": [
+        "kg_de_b1_1_collocations"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b1_1_lexical_chunks",
+          "target": "kg_de_b1_2_lexical_chunks"
+        }
+      ],
+      "description": "Original project-authored German planning target for B1.2: Ich bin der Meinung, dass ....",
+      "dimension": "lexical_chunks",
+      "id": "kg_de_b1_2_lexical_chunks",
+      "language_code": "de",
+      "name": "Ich bin der Meinung, dass ...",
+      "prerequisites": [
+        "kg_de_b1_1_lexical_chunks"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b1_1_topics",
+          "target": "kg_de_b1_2_topics"
+        }
+      ],
+      "description": "Original project-authored German planning target for B1.2: Medien, Beziehungen und Veranstaltungen.",
+      "dimension": "topics",
+      "id": "kg_de_b1_2_topics",
+      "language_code": "de",
+      "name": "Medien, Beziehungen und Veranstaltungen",
+      "prerequisites": [
+        "kg_de_b1_1_topics"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b1_1_skills",
+          "target": "kg_de_b1_2_skills"
+        }
+      ],
+      "description": "Original project-authored German planning target for B1.2: an einem vertrauten Gespräch teilnehmen.",
+      "dimension": "skills",
+      "id": "kg_de_b1_2_skills",
+      "language_code": "de",
+      "name": "an einem vertrauten Gespräch teilnehmen",
+      "prerequisites": [
+        "kg_de_b1_1_skills"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b1_2_grammar",
+          "target": "kg_de_b2_1_grammar"
+        }
+      ],
+      "description": "Original project-authored German planning target for B2.1: Nebensätze mit weil und dass.",
+      "dimension": "grammar",
+      "id": "kg_de_b2_1_grammar",
+      "language_code": "de",
+      "name": "Nebensätze mit weil und dass",
+      "prerequisites": [
+        "kg_de_b1_2_grammar"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b1_2_vocabulary_senses",
+          "target": "kg_de_b2_1_vocabulary_senses"
+        }
+      ],
+      "description": "Original project-authored German planning target for B2.1: Gesellschaft, Umwelt und Entscheidungen.",
+      "dimension": "vocabulary_senses",
+      "id": "kg_de_b2_1_vocabulary_senses",
+      "language_code": "de",
+      "name": "Gesellschaft, Umwelt und Entscheidungen",
+      "prerequisites": [
+        "kg_de_b1_2_vocabulary_senses"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b1_2_functions",
+          "target": "kg_de_b2_1_functions"
+        }
+      ],
+      "description": "Original project-authored German planning target for B2.1: Optionen aushandeln und Probleme lösen.",
+      "dimension": "functions",
+      "id": "kg_de_b2_1_functions",
+      "language_code": "de",
+      "name": "Optionen aushandeln und Probleme lösen",
+      "prerequisites": [
+        "kg_de_b1_2_functions"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b1_2_pronunciation",
+          "target": "kg_de_b2_1_pronunciation"
+        }
+      ],
+      "description": "Original project-authored German planning target for B2.1: Rhythmus in längeren Äußerungen.",
+      "dimension": "pronunciation",
+      "id": "kg_de_b2_1_pronunciation",
+      "language_code": "de",
+      "name": "Rhythmus in längeren Äußerungen",
+      "prerequisites": [
+        "kg_de_b1_2_pronunciation"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b1_2_discourse",
+          "target": "kg_de_b2_1_discourse"
+        }
+      ],
+      "description": "Original project-authored German planning target for B2.1: Behauptung und Begründung verknüpfen.",
+      "dimension": "discourse",
+      "id": "kg_de_b2_1_discourse",
+      "language_code": "de",
+      "name": "Behauptung und Begründung verknüpfen",
+      "prerequisites": [
+        "kg_de_b1_2_discourse"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b1_2_pragmatics",
+          "target": "kg_de_b2_1_pragmatics"
+        }
+      ],
+      "description": "Original project-authored German planning target for B2.1: Rat abschwächen und Gesicht wahren.",
+      "dimension": "pragmatics",
+      "id": "kg_de_b2_1_pragmatics",
+      "language_code": "de",
+      "name": "Rat abschwächen und Gesicht wahren",
+      "prerequisites": [
+        "kg_de_b1_2_pragmatics"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b1_2_collocations",
+          "target": "kg_de_b2_1_collocations"
+        }
+      ],
+      "description": "Original project-authored German planning target for B2.1: eine Entscheidung treffen und Problem lösen.",
+      "dimension": "collocations",
+      "id": "kg_de_b2_1_collocations",
+      "language_code": "de",
+      "name": "eine Entscheidung treffen und Problem lösen",
+      "prerequisites": [
+        "kg_de_b1_2_collocations"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b1_2_lexical_chunks",
+          "target": "kg_de_b2_1_lexical_chunks"
+        }
+      ],
+      "description": "Original project-authored German planning target for B2.1: Einerseits ... andererseits ....",
+      "dimension": "lexical_chunks",
+      "id": "kg_de_b2_1_lexical_chunks",
+      "language_code": "de",
+      "name": "Einerseits ... andererseits ...",
+      "prerequisites": [
+        "kg_de_b1_2_lexical_chunks"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b1_2_topics",
+          "target": "kg_de_b2_1_topics"
+        }
+      ],
+      "description": "Original project-authored German planning target for B2.1: Umwelt, Technik und Entscheidungen.",
+      "dimension": "topics",
+      "id": "kg_de_b2_1_topics",
+      "language_code": "de",
+      "name": "Umwelt, Technik und Entscheidungen",
+      "prerequisites": [
+        "kg_de_b1_2_topics"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b1_2_skills",
+          "target": "kg_de_b2_1_skills"
+        }
+      ],
+      "description": "Original project-authored German planning target for B2.1: Informationen bewerten und reagieren.",
+      "dimension": "skills",
+      "id": "kg_de_b2_1_skills",
+      "language_code": "de",
+      "name": "Informationen bewerten und reagieren",
+      "prerequisites": [
+        "kg_de_b1_2_skills"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b2_1_grammar",
+          "target": "kg_de_b2_2_grammar"
+        }
+      ],
+      "description": "Original project-authored German planning target for B2.2: trennbare Verben in Hauptsätzen.",
+      "dimension": "grammar",
+      "id": "kg_de_b2_2_grammar",
+      "language_code": "de",
+      "name": "trennbare Verben in Hauptsätzen",
+      "prerequisites": [
+        "kg_de_b2_1_grammar"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b2_1_vocabulary_senses",
+          "target": "kg_de_b2_2_vocabulary_senses"
+        }
+      ],
+      "description": "Original project-authored German planning target for B2.2: Bildung, Beruf und öffentliche Dienste.",
+      "dimension": "vocabulary_senses",
+      "id": "kg_de_b2_2_vocabulary_senses",
+      "language_code": "de",
+      "name": "Bildung, Beruf und öffentliche Dienste",
+      "prerequisites": [
+        "kg_de_b2_1_vocabulary_senses"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b2_1_functions",
+          "target": "kg_de_b2_2_functions"
+        }
+      ],
+      "description": "Original project-authored German planning target for B2.2: eine Position erklären und einschränken.",
+      "dimension": "functions",
+      "id": "kg_de_b2_2_functions",
+      "language_code": "de",
+      "name": "eine Position erklären und einschränken",
+      "prerequisites": [
+        "kg_de_b2_1_functions"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b2_1_pronunciation",
+          "target": "kg_de_b2_2_pronunciation"
+        }
+      ],
+      "description": "Original project-authored German planning target for B2.2: Klangmuster in formellen Gesprächen.",
+      "dimension": "pronunciation",
+      "id": "kg_de_b2_2_pronunciation",
+      "language_code": "de",
+      "name": "Klangmuster in formellen Gesprächen",
+      "prerequisites": [
+        "kg_de_b2_1_pronunciation"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b2_1_discourse",
+          "target": "kg_de_b2_2_discourse"
+        }
+      ],
+      "description": "Original project-authored German planning target for B2.2: mehrteilige Argumente signalisieren.",
+      "dimension": "discourse",
+      "id": "kg_de_b2_2_discourse",
+      "language_code": "de",
+      "name": "mehrteilige Argumente signalisieren",
+      "prerequisites": [
+        "kg_de_b2_1_discourse"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b2_1_pragmatics",
+          "target": "kg_de_b2_2_pragmatics"
+        }
+      ],
+      "description": "Original project-authored German planning target for B2.2: Macht, Nähe und Indirektheit beachten.",
+      "dimension": "pragmatics",
+      "id": "kg_de_b2_2_pragmatics",
+      "language_code": "de",
+      "name": "Macht, Nähe und Indirektheit beachten",
+      "prerequisites": [
+        "kg_de_b2_1_pragmatics"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b2_1_collocations",
+          "target": "kg_de_b2_2_collocations"
+        }
+      ],
+      "description": "Original project-authored German planning target for B2.2: eine Rolle spielen und Verantwortung übernehmen.",
+      "dimension": "collocations",
+      "id": "kg_de_b2_2_collocations",
+      "language_code": "de",
+      "name": "eine Rolle spielen und Verantwortung übernehmen",
+      "prerequisites": [
+        "kg_de_b2_1_collocations"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b2_1_lexical_chunks",
+          "target": "kg_de_b2_2_lexical_chunks"
+        }
+      ],
+      "description": "Original project-authored German planning target for B2.2: Es spricht einiges dafür, dass ....",
+      "dimension": "lexical_chunks",
+      "id": "kg_de_b2_2_lexical_chunks",
+      "language_code": "de",
+      "name": "Es spricht einiges dafür, dass ...",
+      "prerequisites": [
+        "kg_de_b2_1_lexical_chunks"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b2_1_topics",
+          "target": "kg_de_b2_2_topics"
+        }
+      ],
+      "description": "Original project-authored German planning target for B2.2: Bildung, Beruf und Gesellschaft.",
+      "dimension": "topics",
+      "id": "kg_de_b2_2_topics",
+      "language_code": "de",
+      "name": "Bildung, Beruf und Gesellschaft",
+      "prerequisites": [
+        "kg_de_b2_1_topics"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b2_1_skills",
+          "target": "kg_de_b2_2_skills"
+        }
+      ],
+      "description": "Original project-authored German planning target for B2.2: eine begründete Interaktion aufrechterhalten.",
+      "dimension": "skills",
+      "id": "kg_de_b2_2_skills",
+      "language_code": "de",
+      "name": "eine begründete Interaktion aufrechterhalten",
+      "prerequisites": [
+        "kg_de_b2_1_skills"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "B2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b2_2_grammar",
+          "target": "kg_de_c1_1_grammar"
+        }
+      ],
+      "description": "Original project-authored German planning target for C1.1: Konjunktiv II für höfliche Bitten.",
+      "dimension": "grammar",
+      "id": "kg_de_c1_1_grammar",
+      "language_code": "de",
+      "name": "Konjunktiv II für höfliche Bitten",
+      "prerequisites": [
+        "kg_de_b2_2_grammar"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b2_2_vocabulary_senses",
+          "target": "kg_de_c1_1_vocabulary_senses"
+        }
+      ],
+      "description": "Original project-authored German planning target for C1.1: abstrakte Bewertung und Argumentation.",
+      "dimension": "vocabulary_senses",
+      "id": "kg_de_c1_1_vocabulary_senses",
+      "language_code": "de",
+      "name": "abstrakte Bewertung und Argumentation",
+      "prerequisites": [
+        "kg_de_b2_2_vocabulary_senses"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b2_2_functions",
+          "target": "kg_de_c1_1_functions"
+        }
+      ],
+      "description": "Original project-authored German planning target for C1.1: formell diskutieren und zusammenfassen.",
+      "dimension": "functions",
+      "id": "kg_de_c1_1_functions",
+      "language_code": "de",
+      "name": "formell diskutieren und zusammenfassen",
+      "prerequisites": [
+        "kg_de_b2_2_functions"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b2_2_pronunciation",
+          "target": "kg_de_c1_1_pronunciation"
+        }
+      ],
+      "description": "Original project-authored German planning target for C1.1: Prosodie für Haltung und Fokus.",
+      "dimension": "pronunciation",
+      "id": "kg_de_c1_1_pronunciation",
+      "language_code": "de",
+      "name": "Prosodie für Haltung und Fokus",
+      "prerequisites": [
+        "kg_de_b2_2_pronunciation"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b2_2_discourse",
+          "target": "kg_de_c1_1_discourse"
+        }
+      ],
+      "description": "Original project-authored German planning target for C1.1: Quellen und Sichtweisen zusammenführen.",
+      "dimension": "discourse",
+      "id": "kg_de_c1_1_discourse",
+      "language_code": "de",
+      "name": "Quellen und Sichtweisen zusammenführen",
+      "prerequisites": [
+        "kg_de_b2_2_discourse"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b2_2_pragmatics",
+          "target": "kg_de_c1_1_pragmatics"
+        }
+      ],
+      "description": "Original project-authored German planning target for C1.1: institutionelle Höflichkeit steuern.",
+      "dimension": "pragmatics",
+      "id": "kg_de_c1_1_pragmatics",
+      "language_code": "de",
+      "name": "institutionelle Höflichkeit steuern",
+      "prerequisites": [
+        "kg_de_b2_2_pragmatics"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b2_2_collocations",
+          "target": "kg_de_c1_1_collocations"
+        }
+      ],
+      "description": "Original project-authored German planning target for C1.1: eine Schlussfolgerung ziehen und These stützen.",
+      "dimension": "collocations",
+      "id": "kg_de_c1_1_collocations",
+      "language_code": "de",
+      "name": "eine Schlussfolgerung ziehen und These stützen",
+      "prerequisites": [
+        "kg_de_b2_2_collocations"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b2_2_lexical_chunks",
+          "target": "kg_de_c1_1_lexical_chunks"
+        }
+      ],
+      "description": "Original project-authored German planning target for C1.1: Es ist hervorzuheben, dass ....",
+      "dimension": "lexical_chunks",
+      "id": "kg_de_c1_1_lexical_chunks",
+      "language_code": "de",
+      "name": "Es ist hervorzuheben, dass ...",
+      "prerequisites": [
+        "kg_de_b2_2_lexical_chunks"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b2_2_topics",
+          "target": "kg_de_c1_1_topics"
+        }
+      ],
+      "description": "Original project-authored German planning target for C1.1: Institutionen, Forschung und globale Fragen.",
+      "dimension": "topics",
+      "id": "kg_de_c1_1_topics",
+      "language_code": "de",
+      "name": "Institutionen, Forschung und globale Fragen",
+      "prerequisites": [
+        "kg_de_b2_2_topics"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_b2_2_skills",
+          "target": "kg_de_c1_1_skills"
+        }
+      ],
+      "description": "Original project-authored German planning target for C1.1: Quellen in eine formelle Aufgabe integrieren.",
+      "dimension": "skills",
+      "id": "kg_de_c1_1_skills",
+      "language_code": "de",
+      "name": "Quellen in eine formelle Aufgabe integrieren",
+      "prerequisites": [
+        "kg_de_b2_2_skills"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_c1_1_grammar",
+          "target": "kg_de_c1_2_grammar"
+        }
+      ],
+      "description": "Original project-authored German planning target for C1.2: Passiv und unpersönliche Formen.",
+      "dimension": "grammar",
+      "id": "kg_de_c1_2_grammar",
+      "language_code": "de",
+      "name": "Passiv und unpersönliche Formen",
+      "prerequisites": [
+        "kg_de_c1_1_grammar"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_c1_1_vocabulary_senses",
+          "target": "kg_de_c1_2_vocabulary_senses"
+        }
+      ],
+      "description": "Original project-authored German planning target for C1.2: wissenschaftliche und institutionelle Begriffe.",
+      "dimension": "vocabulary_senses",
+      "id": "kg_de_c1_2_vocabulary_senses",
+      "language_code": "de",
+      "name": "wissenschaftliche und institutionelle Begriffe",
+      "prerequisites": [
+        "kg_de_c1_1_vocabulary_senses"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_c1_1_functions",
+          "target": "kg_de_c1_2_functions"
+        }
+      ],
+      "description": "Original project-authored German planning target for C1.2: Vorschläge bewerten und widersprechen.",
+      "dimension": "functions",
+      "id": "kg_de_c1_2_functions",
+      "language_code": "de",
+      "name": "Vorschläge bewerten und widersprechen",
+      "prerequisites": [
+        "kg_de_c1_1_functions"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_c1_1_pronunciation",
+          "target": "kg_de_c1_2_pronunciation"
+        }
+      ],
+      "description": "Original project-authored German planning target for C1.2: regionale Varianten einordnen.",
+      "dimension": "pronunciation",
+      "id": "kg_de_c1_2_pronunciation",
+      "language_code": "de",
+      "name": "regionale Varianten einordnen",
+      "prerequisites": [
+        "kg_de_c1_1_pronunciation"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_c1_1_discourse",
+          "target": "kg_de_c1_2_discourse"
+        }
+      ],
+      "description": "Original project-authored German planning target for C1.2: lange Erklärungen gliedern.",
+      "dimension": "discourse",
+      "id": "kg_de_c1_2_discourse",
+      "language_code": "de",
+      "name": "lange Erklärungen gliedern",
+      "prerequisites": [
+        "kg_de_c1_1_discourse"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_c1_1_pragmatics",
+          "target": "kg_de_c1_2_pragmatics"
+        }
+      ],
+      "description": "Original project-authored German planning target for C1.2: Ironie und Andeutung erkennen.",
+      "dimension": "pragmatics",
+      "id": "kg_de_c1_2_pragmatics",
+      "language_code": "de",
+      "name": "Ironie und Andeutung erkennen",
+      "prerequisites": [
+        "kg_de_c1_1_pragmatics"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_c1_1_collocations",
+          "target": "kg_de_c1_2_collocations"
+        }
+      ],
+      "description": "Original project-authored German planning target for C1.2: eine Untersuchung durchführen und Ergebnis bewerten.",
+      "dimension": "collocations",
+      "id": "kg_de_c1_2_collocations",
+      "language_code": "de",
+      "name": "eine Untersuchung durchführen und Ergebnis bewerten",
+      "prerequisites": [
+        "kg_de_c1_1_collocations"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_c1_1_lexical_chunks",
+          "target": "kg_de_c1_2_lexical_chunks"
+        }
+      ],
+      "description": "Original project-authored German planning target for C1.2: Allerdings ist zu beachten, dass ....",
+      "dimension": "lexical_chunks",
+      "id": "kg_de_c1_2_lexical_chunks",
+      "language_code": "de",
+      "name": "Allerdings ist zu beachten, dass ...",
+      "prerequisites": [
+        "kg_de_c1_1_lexical_chunks"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_c1_1_topics",
+          "target": "kg_de_c1_2_topics"
+        }
+      ],
+      "description": "Original project-authored German planning target for C1.2: Kultur, Ethik und Werte.",
+      "dimension": "topics",
+      "id": "kg_de_c1_2_topics",
+      "language_code": "de",
+      "name": "Kultur, Ethik und Werte",
+      "prerequisites": [
+        "kg_de_c1_1_topics"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_c1_1_skills",
+          "target": "kg_de_c1_2_skills"
+        }
+      ],
+      "description": "Original project-authored German planning target for C1.2: Genauigkeit in anspruchsvollen Aufgaben steuern.",
+      "dimension": "skills",
+      "id": "kg_de_c1_2_skills",
+      "language_code": "de",
+      "name": "Genauigkeit in anspruchsvollen Aufgaben steuern",
+      "prerequisites": [
+        "kg_de_c1_1_skills"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C1.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_c1_2_grammar",
+          "target": "kg_de_c2_1_grammar"
+        }
+      ],
+      "description": "Original project-authored German planning target for C2.1: Nominalisierung und komplexe Ergänzungen.",
+      "dimension": "grammar",
+      "id": "kg_de_c2_1_grammar",
+      "language_code": "de",
+      "name": "Nominalisierung und komplexe Ergänzungen",
+      "prerequisites": [
+        "kg_de_c1_2_grammar"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_c1_2_vocabulary_senses",
+          "target": "kg_de_c2_1_vocabulary_senses"
+        }
+      ],
+      "description": "Original project-authored German planning target for C2.1: fachsprachliche Bedeutungsunterscheidungen.",
+      "dimension": "vocabulary_senses",
+      "id": "kg_de_c2_1_vocabulary_senses",
+      "language_code": "de",
+      "name": "fachsprachliche Bedeutungsunterscheidungen",
+      "prerequisites": [
+        "kg_de_c1_2_vocabulary_senses"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_c1_2_functions",
+          "target": "kg_de_c2_1_functions"
+        }
+      ],
+      "description": "Original project-authored German planning target for C2.1: implizite Absichten erschließen.",
+      "dimension": "functions",
+      "id": "kg_de_c2_1_functions",
+      "language_code": "de",
+      "name": "implizite Absichten erschließen",
+      "prerequisites": [
+        "kg_de_c1_2_functions"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_c1_2_pronunciation",
+          "target": "kg_de_c2_1_pronunciation"
+        }
+      ],
+      "description": "Original project-authored German planning target for C2.1: präzise Laut-Buchstaben-Zuordnung.",
+      "dimension": "pronunciation",
+      "id": "kg_de_c2_1_pronunciation",
+      "language_code": "de",
+      "name": "präzise Laut-Buchstaben-Zuordnung",
+      "prerequisites": [
+        "kg_de_c1_2_pronunciation"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_c1_2_discourse",
+          "target": "kg_de_c2_1_discourse"
+        }
+      ],
+      "description": "Original project-authored German planning target for C2.1: rhetorische Rahmung und Schlussfolgerung.",
+      "dimension": "discourse",
+      "id": "kg_de_c2_1_discourse",
+      "language_code": "de",
+      "name": "rhetorische Rahmung und Schlussfolgerung",
+      "prerequisites": [
+        "kg_de_c1_2_discourse"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_c1_2_pragmatics",
+          "target": "kg_de_c2_1_pragmatics"
+        }
+      ],
+      "description": "Original project-authored German planning target for C2.1: kulturelle Absichten vorsichtig deuten.",
+      "dimension": "pragmatics",
+      "id": "kg_de_c2_1_pragmatics",
+      "language_code": "de",
+      "name": "kulturelle Absichten vorsichtig deuten",
+      "prerequisites": [
+        "kg_de_c1_2_pragmatics"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_c1_2_collocations",
+          "target": "kg_de_c2_1_collocations"
+        }
+      ],
+      "description": "Original project-authored German planning target for C2.1: eine feine Unterscheidung treffen.",
+      "dimension": "collocations",
+      "id": "kg_de_c2_1_collocations",
+      "language_code": "de",
+      "name": "eine feine Unterscheidung treffen",
+      "prerequisites": [
+        "kg_de_c1_2_collocations"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_c1_2_lexical_chunks",
+          "target": "kg_de_c2_1_lexical_chunks"
+        }
+      ],
+      "description": "Original project-authored German planning target for C2.1: Nicht X, sondern Y ....",
+      "dimension": "lexical_chunks",
+      "id": "kg_de_c2_1_lexical_chunks",
+      "language_code": "de",
+      "name": "Nicht X, sondern Y ...",
+      "prerequisites": [
+        "kg_de_c1_2_lexical_chunks"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_c1_2_topics",
+          "target": "kg_de_c2_1_topics"
+        }
+      ],
+      "description": "Original project-authored German planning target for C2.1: Spezialwissen und Unsicherheit.",
+      "dimension": "topics",
+      "id": "kg_de_c2_1_topics",
+      "language_code": "de",
+      "name": "Spezialwissen und Unsicherheit",
+      "prerequisites": [
+        "kg_de_c1_2_topics"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_c1_2_skills",
+          "target": "kg_de_c2_1_skills"
+        }
+      ],
+      "description": "Original project-authored German planning target for C2.1: nuancierte Fachkommunikation interpretieren.",
+      "dimension": "skills",
+      "id": "kg_de_c2_1_skills",
+      "language_code": "de",
+      "name": "nuancierte Fachkommunikation interpretieren",
+      "prerequisites": [
+        "kg_de_c1_2_skills"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.1"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_c2_1_grammar",
+          "target": "kg_de_c2_2_grammar"
+        }
+      ],
+      "description": "Original project-authored German planning target for C2.2: Register, Modus und Satzklammer präzise steuern.",
+      "dimension": "grammar",
+      "id": "kg_de_c2_2_grammar",
+      "language_code": "de",
+      "name": "Register, Modus und Satzklammer präzise steuern",
+      "prerequisites": [
+        "kg_de_c2_1_grammar"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_c2_1_vocabulary_senses",
+          "target": "kg_de_c2_2_vocabulary_senses"
+        }
+      ],
+      "description": "Original project-authored German planning target for C2.2: präzise Wortwahl über Register hinweg.",
+      "dimension": "vocabulary_senses",
+      "id": "kg_de_c2_2_vocabulary_senses",
+      "language_code": "de",
+      "name": "präzise Wortwahl über Register hinweg",
+      "prerequisites": [
+        "kg_de_c2_1_vocabulary_senses"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_c2_1_functions",
+          "target": "kg_de_c2_2_functions"
+        }
+      ],
+      "description": "Original project-authored German planning target for C2.2: adressatengerecht argumentieren.",
+      "dimension": "functions",
+      "id": "kg_de_c2_2_functions",
+      "language_code": "de",
+      "name": "adressatengerecht argumentieren",
+      "prerequisites": [
+        "kg_de_c2_1_functions"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_c2_1_pronunciation",
+          "target": "kg_de_c2_2_pronunciation"
+        }
+      ],
+      "description": "Original project-authored German planning target for C2.2: ausdrucksvolle Prosodie kontrollieren.",
+      "dimension": "pronunciation",
+      "id": "kg_de_c2_2_pronunciation",
+      "language_code": "de",
+      "name": "ausdrucksvolle Prosodie kontrollieren",
+      "prerequisites": [
+        "kg_de_c2_1_pronunciation"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_c2_1_discourse",
+          "target": "kg_de_c2_2_discourse"
+        }
+      ],
+      "description": "Original project-authored German planning target for C2.2: genresensible Diskursarchitektur.",
+      "dimension": "discourse",
+      "id": "kg_de_c2_2_discourse",
+      "language_code": "de",
+      "name": "genresensible Diskursarchitektur",
+      "prerequisites": [
+        "kg_de_c2_1_discourse"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_c2_1_pragmatics",
+          "target": "kg_de_c2_2_pragmatics"
+        }
+      ],
+      "description": "Original project-authored German planning target for C2.2: Identität und Publikum strategisch ausrichten.",
+      "dimension": "pragmatics",
+      "id": "kg_de_c2_2_pragmatics",
+      "language_code": "de",
+      "name": "Identität und Publikum strategisch ausrichten",
+      "prerequisites": [
+        "kg_de_c2_1_pragmatics"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_c2_1_collocations",
+          "target": "kg_de_c2_2_collocations"
+        }
+      ],
+      "description": "Original project-authored German planning target for C2.2: Bedeutung und Register präzise kombinieren.",
+      "dimension": "collocations",
+      "id": "kg_de_c2_2_collocations",
+      "language_code": "de",
+      "name": "Bedeutung und Register präzise kombinieren",
+      "prerequisites": [
+        "kg_de_c2_1_collocations"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_c2_1_lexical_chunks",
+          "target": "kg_de_c2_2_lexical_chunks"
+        }
+      ],
+      "description": "Original project-authored German planning target for C2.2: Zusammenfassend lässt sich sagen ....",
+      "dimension": "lexical_chunks",
+      "id": "kg_de_c2_2_lexical_chunks",
+      "language_code": "de",
+      "name": "Zusammenfassend lässt sich sagen ...",
+      "prerequisites": [
+        "kg_de_c2_1_lexical_chunks"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_c2_1_topics",
+          "target": "kg_de_c2_2_topics"
+        }
+      ],
+      "description": "Original project-authored German planning target for C2.2: komplexe Systeme und Weltbilder.",
+      "dimension": "topics",
+      "id": "kg_de_c2_2_topics",
+      "language_code": "de",
+      "name": "komplexe Systeme und Weltbilder",
+      "prerequisites": [
+        "kg_de_c2_1_topics"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.2"
+    },
+    {
+      "authorship": "PROJECT_AUTHORED",
+      "dependency_edges": [
+        {
+          "relation": "PREREQUISITE",
+          "source": "kg_de_c2_1_skills",
+          "target": "kg_de_c2_2_skills"
+        }
+      ],
+      "description": "Original project-authored German planning target for C2.2: anspruchsvolle Kommunikation gestalten und kritisieren.",
+      "dimension": "skills",
+      "id": "kg_de_c2_2_skills",
+      "language_code": "de",
+      "name": "anspruchsvolle Kommunikation gestalten und kritisieren",
+      "prerequisites": [
+        "kg_de_c2_1_skills"
+      ],
+      "record_type": "multilingual_knowledge_graph_node",
+      "schema_version": "1.0",
+      "status": "DRAFT",
+      "tier": "C2.2"
+    }
+  ],
+  "population_id": "kgpop_1347c3e35799ec734c0d4b43c8444cca4a088e8c517f31b74e4abbfe46f59685",
+  "record_type": "multilingual_knowledge_graph_population",
+  "schema_version": "1.0",
+  "tiers": [
+    "A1.1",
+    "A1.2",
+    "A2.1",
+    "A2.2",
+    "B1.1",
+    "B1.2",
+    "B2.1",
+    "B2.2",
+    "C1.1",
+    "C1.2",
+    "C2.1",
+    "C2.2"
+  ]
+}
