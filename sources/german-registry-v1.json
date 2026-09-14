@@ -1,0 +1,506 @@
+{
+  "language_scopes": [
+    {
+      "language_codes": [
+        "de"
+      ],
+      "source_id": "src_de_wiktionary_dump"
+    },
+    {
+      "language_codes": [
+        "de"
+      ],
+      "source_id": "src_de_wikibooks_dump"
+    },
+    {
+      "language_codes": [
+        "de"
+      ],
+      "source_id": "src_de_wikidata_lexemes"
+    },
+    {
+      "language_codes": [
+        "de"
+      ],
+      "source_id": "src_de_goethe_reference"
+    },
+    {
+      "language_codes": [
+        "de"
+      ],
+      "source_id": "src_de_deutsche_welle_reference"
+    }
+  ],
+  "record_type": "multilingual_source_registry",
+  "registry": {
+    "schema_version": "1.0",
+    "sources": [
+      {
+        "access": {
+          "api_url": null,
+          "crawl_allowed": false,
+          "dataset_url": "https://dumps.wikimedia.org/dewiktionary/",
+          "download_allowed": true,
+          "preferred_method": "official_dump"
+        },
+        "attribution": {
+          "format": "German Wiktionary official text dumps, {source_url}, {license_url}",
+          "required": true,
+          "requirements": "Retain source identity, URL, license, retrieval facts, and any required attribution."
+        },
+        "content_types": [
+          "text",
+          "metadata"
+        ],
+        "description": "German-language German Wiktionary official text dumps; this registration is a source-governance record only.",
+        "evidence": [
+          {
+            "checked_at": "2026-09-14T00:00:00Z",
+            "description": "Official source or terms locator recorded for later verification.",
+            "url": "https://dumps.wikimedia.org/dewiktionary/"
+          }
+        ],
+        "license": {
+          "name": "CC-BY-SA-4.0",
+          "notes": "Text dump lane only; preserve attribution and share-alike obligations. No webpage crawl.",
+          "reviewed_at": "2026-09-14T00:00:00Z",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+        },
+        "media_permissions": {
+          "audio": {
+            "clip_allowed": false,
+            "derived_redistribution_allowed": false,
+            "download_allowed": false,
+            "exercise_allowed": false,
+            "redistribute_allowed": false,
+            "store_allowed": false,
+            "timestamp_allowed": false,
+            "transcript_allowed": false,
+            "transform_allowed": false
+          },
+          "text": {
+            "derived_redistribution_allowed": true,
+            "exercise_allowed": true,
+            "ingest_allowed": true,
+            "redistribute_allowed": true,
+            "store_allowed": true,
+            "transcript_allowed": false,
+            "transform_allowed": true
+          },
+          "video": {
+            "audio_extraction_allowed": false,
+            "clip_allowed": false,
+            "derived_redistribution_allowed": false,
+            "download_allowed": false,
+            "exercise_allowed": false,
+            "redistribute_allowed": false,
+            "store_allowed": false,
+            "timestamp_allowed": false,
+            "transcript_allowed": false
+          }
+        },
+        "owner": "Wikimedia Foundation",
+        "permissions": {
+          "commercial_use_allowed": true,
+          "ingest_allowed": true,
+          "modify_allowed": true,
+          "redistribute_allowed": true,
+          "reference_allowed": true,
+          "store_allowed": true
+        },
+        "registered_at": "2026-09-14T00:00:00Z",
+        "registered_by": "12.5C German source-registry preparation",
+        "review_notes": "Text dump lane only; preserve attribution and share-alike obligations. No webpage crawl.",
+        "reviewed_at": "2026-09-14T00:00:00Z",
+        "schema_version": "2.0",
+        "source_id": "src_de_wiktionary_dump",
+        "source_name": "German Wiktionary official text dumps",
+        "source_type": "dump",
+        "source_url": "https://dumps.wikimedia.org/dewiktionary/",
+        "status": "APPROVED",
+        "taxonomy_reference_url_prefixes": [
+          "https://dumps.wikimedia.org/dewiktionary/"
+        ],
+        "technical": {
+          "official_api_available": false,
+          "official_dump_available": true,
+          "rate_limit_notes": "No network operation is performed by this milestone; respect source limits in any future authorized run.",
+          "robots_notes": "Do not crawl pages; use only the explicitly registered official route."
+        }
+      },
+      {
+        "access": {
+          "api_url": null,
+          "crawl_allowed": false,
+          "dataset_url": "https://dumps.wikimedia.org/dewikibooks/",
+          "download_allowed": true,
+          "preferred_method": "official_dump"
+        },
+        "attribution": {
+          "format": "German Wikibooks official text dumps, {source_url}, {license_url}",
+          "required": true,
+          "requirements": "Retain source identity, URL, license, retrieval facts, and any required attribution."
+        },
+        "content_types": [
+          "text",
+          "metadata"
+        ],
+        "description": "German-language German Wikibooks official text dumps; this registration is a source-governance record only.",
+        "evidence": [
+          {
+            "checked_at": "2026-09-14T00:00:00Z",
+            "description": "Official source or terms locator recorded for later verification.",
+            "url": "https://dumps.wikimedia.org/dewikibooks/"
+          }
+        ],
+        "license": {
+          "name": "CC-BY-SA-4.0",
+          "notes": "Text dump lane only; preserve attribution and share-alike obligations. No webpage crawl.",
+          "reviewed_at": "2026-09-14T00:00:00Z",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+        },
+        "media_permissions": {
+          "audio": {
+            "clip_allowed": false,
+            "derived_redistribution_allowed": false,
+            "download_allowed": false,
+            "exercise_allowed": false,
+            "redistribute_allowed": false,
+            "store_allowed": false,
+            "timestamp_allowed": false,
+            "transcript_allowed": false,
+            "transform_allowed": false
+          },
+          "text": {
+            "derived_redistribution_allowed": true,
+            "exercise_allowed": true,
+            "ingest_allowed": true,
+            "redistribute_allowed": true,
+            "store_allowed": true,
+            "transcript_allowed": false,
+            "transform_allowed": true
+          },
+          "video": {
+            "audio_extraction_allowed": false,
+            "clip_allowed": false,
+            "derived_redistribution_allowed": false,
+            "download_allowed": false,
+            "exercise_allowed": false,
+            "redistribute_allowed": false,
+            "store_allowed": false,
+            "timestamp_allowed": false,
+            "transcript_allowed": false
+          }
+        },
+        "owner": "Wikimedia Foundation",
+        "permissions": {
+          "commercial_use_allowed": true,
+          "ingest_allowed": true,
+          "modify_allowed": true,
+          "redistribute_allowed": true,
+          "reference_allowed": true,
+          "store_allowed": true
+        },
+        "registered_at": "2026-09-14T00:00:00Z",
+        "registered_by": "12.5C German source-registry preparation",
+        "review_notes": "Text dump lane only; preserve attribution and share-alike obligations. No webpage crawl.",
+        "reviewed_at": "2026-09-14T00:00:00Z",
+        "schema_version": "2.0",
+        "source_id": "src_de_wikibooks_dump",
+        "source_name": "German Wikibooks official text dumps",
+        "source_type": "dump",
+        "source_url": "https://dumps.wikimedia.org/dewikibooks/",
+        "status": "APPROVED",
+        "taxonomy_reference_url_prefixes": [
+          "https://dumps.wikimedia.org/dewikibooks/"
+        ],
+        "technical": {
+          "official_api_available": false,
+          "official_dump_available": true,
+          "rate_limit_notes": "No network operation is performed by this milestone; respect source limits in any future authorized run.",
+          "robots_notes": "Do not crawl pages; use only the explicitly registered official route."
+        }
+      },
+      {
+        "access": {
+          "api_url": null,
+          "crawl_allowed": false,
+          "dataset_url": "https://www.wikidata.org/wiki/Wikidata:Data_access",
+          "download_allowed": true,
+          "preferred_method": "manual_reference"
+        },
+        "attribution": {
+          "format": null,
+          "required": false,
+          "requirements": "Retain source identity, URL, license, retrieval facts, and any required attribution."
+        },
+        "content_types": [
+          "text",
+          "metadata"
+        ],
+        "description": "German-language Wikidata German lexeme metadata; this registration is a source-governance record only.",
+        "evidence": [
+          {
+            "checked_at": "2026-09-14T00:00:00Z",
+            "description": "Official source or terms locator recorded for later verification.",
+            "url": "https://www.wikidata.org/wiki/Wikidata:Data_access"
+          }
+        ],
+        "license": {
+          "name": "CC0-1.0",
+          "notes": "Structured metadata reference/API lane; query limits and exact record provenance remain required.",
+          "reviewed_at": "2026-09-14T00:00:00Z",
+          "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+        },
+        "media_permissions": {
+          "audio": {
+            "clip_allowed": false,
+            "derived_redistribution_allowed": false,
+            "download_allowed": false,
+            "exercise_allowed": false,
+            "redistribute_allowed": false,
+            "store_allowed": false,
+            "timestamp_allowed": false,
+            "transcript_allowed": false,
+            "transform_allowed": false
+          },
+          "text": {
+            "derived_redistribution_allowed": true,
+            "exercise_allowed": true,
+            "ingest_allowed": true,
+            "redistribute_allowed": true,
+            "store_allowed": true,
+            "transcript_allowed": false,
+            "transform_allowed": true
+          },
+          "video": {
+            "audio_extraction_allowed": false,
+            "clip_allowed": false,
+            "derived_redistribution_allowed": false,
+            "download_allowed": false,
+            "exercise_allowed": false,
+            "redistribute_allowed": false,
+            "store_allowed": false,
+            "timestamp_allowed": false,
+            "transcript_allowed": false
+          }
+        },
+        "owner": "Wikimedia Foundation",
+        "permissions": {
+          "commercial_use_allowed": true,
+          "ingest_allowed": true,
+          "modify_allowed": true,
+          "redistribute_allowed": true,
+          "reference_allowed": true,
+          "store_allowed": true
+        },
+        "registered_at": "2026-09-14T00:00:00Z",
+        "registered_by": "12.5C German source-registry preparation",
+        "review_notes": "Structured metadata reference/API lane; query limits and exact record provenance remain required.",
+        "reviewed_at": "2026-09-14T00:00:00Z",
+        "schema_version": "2.0",
+        "source_id": "src_de_wikidata_lexemes",
+        "source_name": "Wikidata German lexeme metadata",
+        "source_type": "api",
+        "source_url": "https://www.wikidata.org/wiki/Wikidata:Data_access",
+        "status": "APPROVED",
+        "taxonomy_reference_url_prefixes": [
+          "https://www.wikidata.org/wiki/Wikidata:Data_access"
+        ],
+        "technical": {
+          "official_api_available": false,
+          "official_dump_available": false,
+          "rate_limit_notes": "No network operation is performed by this milestone; respect source limits in any future authorized run.",
+          "robots_notes": "Do not crawl pages; use only the explicitly registered official route."
+        }
+      },
+      {
+        "access": {
+          "api_url": null,
+          "crawl_allowed": false,
+          "dataset_url": "https://www.goethe.de/",
+          "download_allowed": false,
+          "preferred_method": "manual_reference"
+        },
+        "attribution": {
+          "format": "Goethe-Institut German learning resources, {source_url}, {license_url}",
+          "required": true,
+          "requirements": "Retain source identity, URL, license, retrieval facts, and any required attribution."
+        },
+        "content_types": [
+          "text",
+          "metadata"
+        ],
+        "description": "German-language Goethe-Institut German learning resources; this registration is a source-governance record only.",
+        "evidence": [
+          {
+            "checked_at": "2026-09-14T00:00:00Z",
+            "description": "Official source or terms locator recorded for later verification.",
+            "url": "https://www.goethe.de/"
+          }
+        ],
+        "license": {
+          "name": "PROVIDER_TERMS_UNVERIFIED",
+          "notes": "Reference and taxonomy study only until affirmative reuse permission is documented; no copying or ingestion.",
+          "reviewed_at": "2026-09-14T00:00:00Z",
+          "url": "https://www.goethe.de/"
+        },
+        "media_permissions": {
+          "audio": {
+            "clip_allowed": false,
+            "derived_redistribution_allowed": false,
+            "download_allowed": false,
+            "exercise_allowed": false,
+            "redistribute_allowed": false,
+            "store_allowed": false,
+            "timestamp_allowed": false,
+            "transcript_allowed": false,
+            "transform_allowed": false
+          },
+          "text": {
+            "derived_redistribution_allowed": true,
+            "exercise_allowed": true,
+            "ingest_allowed": true,
+            "redistribute_allowed": true,
+            "store_allowed": true,
+            "transcript_allowed": false,
+            "transform_allowed": true
+          },
+          "video": {
+            "audio_extraction_allowed": false,
+            "clip_allowed": false,
+            "derived_redistribution_allowed": false,
+            "download_allowed": false,
+            "exercise_allowed": false,
+            "redistribute_allowed": false,
+            "store_allowed": false,
+            "timestamp_allowed": false,
+            "transcript_allowed": false
+          }
+        },
+        "owner": "Goethe-Institut",
+        "permissions": {
+          "commercial_use_allowed": false,
+          "ingest_allowed": false,
+          "modify_allowed": false,
+          "redistribute_allowed": false,
+          "reference_allowed": true,
+          "store_allowed": false
+        },
+        "registered_at": "2026-09-14T00:00:00Z",
+        "registered_by": "12.5C German source-registry preparation",
+        "review_notes": "Reference and taxonomy study only until affirmative reuse permission is documented; no copying or ingestion.",
+        "reviewed_at": "2026-09-14T00:00:00Z",
+        "schema_version": "2.0",
+        "source_id": "src_de_goethe_reference",
+        "source_name": "Goethe-Institut German learning resources",
+        "source_type": "other",
+        "source_url": "https://www.goethe.de/",
+        "status": "REFERENCE_ONLY",
+        "taxonomy_reference_url_prefixes": [
+          "https://www.goethe.de/"
+        ],
+        "technical": {
+          "official_api_available": false,
+          "official_dump_available": false,
+          "rate_limit_notes": "No network operation is performed by this milestone; respect source limits in any future authorized run.",
+          "robots_notes": "Do not crawl pages; use only the explicitly registered official route."
+        }
+      },
+      {
+        "access": {
+          "api_url": null,
+          "crawl_allowed": false,
+          "dataset_url": "https://www.dw.com/",
+          "download_allowed": false,
+          "preferred_method": "manual_reference"
+        },
+        "attribution": {
+          "format": "Deutsche Welle German learning resources, {source_url}, {license_url}",
+          "required": true,
+          "requirements": "Retain source identity, URL, license, retrieval facts, and any required attribution."
+        },
+        "content_types": [
+          "text",
+          "metadata"
+        ],
+        "description": "German-language Deutsche Welle German learning resources; this registration is a source-governance record only.",
+        "evidence": [
+          {
+            "checked_at": "2026-09-14T00:00:00Z",
+            "description": "Official source or terms locator recorded for later verification.",
+            "url": "https://www.dw.com/"
+          }
+        ],
+        "license": {
+          "name": "PROVIDER_TERMS_UNVERIFIED",
+          "notes": "Reference and taxonomy study only until affirmative reuse permission is documented; no copying or ingestion.",
+          "reviewed_at": "2026-09-14T00:00:00Z",
+          "url": "https://www.dw.com/"
+        },
+        "media_permissions": {
+          "audio": {
+            "clip_allowed": false,
+            "derived_redistribution_allowed": false,
+            "download_allowed": false,
+            "exercise_allowed": false,
+            "redistribute_allowed": false,
+            "store_allowed": false,
+            "timestamp_allowed": false,
+            "transcript_allowed": false,
+            "transform_allowed": false
+          },
+          "text": {
+            "derived_redistribution_allowed": true,
+            "exercise_allowed": true,
+            "ingest_allowed": true,
+            "redistribute_allowed": true,
+            "store_allowed": true,
+            "transcript_allowed": false,
+            "transform_allowed": true
+          },
+          "video": {
+            "audio_extraction_allowed": false,
+            "clip_allowed": false,
+            "derived_redistribution_allowed": false,
+            "download_allowed": false,
+            "exercise_allowed": false,
+            "redistribute_allowed": false,
+            "store_allowed": false,
+            "timestamp_allowed": false,
+            "transcript_allowed": false
+          }
+        },
+        "owner": "Deutsche Welle",
+        "permissions": {
+          "commercial_use_allowed": false,
+          "ingest_allowed": false,
+          "modify_allowed": false,
+          "redistribute_allowed": false,
+          "reference_allowed": true,
+          "store_allowed": false
+        },
+        "registered_at": "2026-09-14T00:00:00Z",
+        "registered_by": "12.5C German source-registry preparation",
+        "review_notes": "Reference and taxonomy study only until affirmative reuse permission is documented; no copying or ingestion.",
+        "reviewed_at": "2026-09-14T00:00:00Z",
+        "schema_version": "2.0",
+        "source_id": "src_de_deutsche_welle_reference",
+        "source_name": "Deutsche Welle German learning resources",
+        "source_type": "other",
+        "source_url": "https://www.dw.com/",
+        "status": "REFERENCE_ONLY",
+        "taxonomy_reference_url_prefixes": [
+          "https://www.dw.com/"
+        ],
+        "technical": {
+          "official_api_available": false,
+          "official_dump_available": false,
+          "rate_limit_notes": "No network operation is performed by this milestone; respect source limits in any future authorized run.",
+          "robots_notes": "Do not crawl pages; use only the explicitly registered official route."
+        }
+      }
+    ]
+  },
+  "schema_version": "1.0"
+}
