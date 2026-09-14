@@ -23,6 +23,14 @@ The `.1` and `.2` tiers are **internal curriculum subdivisions**. They are not o
 
 ---
 
+## Multilingual Core Boundary
+
+The existing English collections and historical artifacts retain their current paths and schemas. New course work uses a language-bound taxonomy wrapper with canonical `target_language_code` (`en` or `de` in the initial profile registry) and a language-scoped course namespace such as `course/de/...`. A learner-context language is separate from the target language. The wrapper validates that every vocabulary sense and vocabulary relationship belongs to the target language. Future collision-prone graph IDs use `kg_<language>_<tier>_<dimension>`.
+
+A language-scoped source-registry wrapper records explicit source-to-language bindings; an explicitly scoped source cannot support a taxonomy citation for another target language. Existing registry records remain backward compatible until a source-specific scope record is created. Language-bound assessment wrappers and learner-state v2 envelopes isolate mastery state by target language without changing existing v1 state.
+
+This core boundary creates no German linguistic model, source registry record, blueprint, lesson, exercise, or practice-prompt pilot.
+
 ## M2 Taxonomy Collections
 
 The representative M2 knowledge model is stored in:

@@ -95,9 +95,9 @@ def _next_review(*, correct: bool, mastery: float, attempts: int, seen: datetime
     return _utc(seen + timedelta(days=delay))
 
 
-def _atomic_write_state(path: Path, state: Sequence[Mapping[str, Any]]) -> None:
+def _atomic_write_state(path: Path, state: Any) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    payload = json.dumps(list(state), ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8") + b"\n"
+    payload = json.dumps(state, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8") + b"\n"
     descriptor, temporary_name = tempfile.mkstemp(prefix=f".{path.name}.", suffix=".tmp", dir=path.parent)
     temporary = Path(temporary_name)
     try:

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/multilingual-taxonomy-v1.schema.json",
+  "title": "English Master language-bound taxonomy v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "target_language_code", "learner_language_code", "taxonomy"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "multilingual_taxonomy"},
+    "target_language_code": {"type": "string", "enum": ["en", "de"]},
+    "learner_language_code": {"type": "string", "pattern": "^[a-z]{2,3}(?:-[A-Z]{2})?$"},
+    "taxonomy": {"$ref": "taxonomy.schema.json"}
+  }
+}

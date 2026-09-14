@@ -10,6 +10,8 @@ This document defines how external data is handled throughout the English Master
 
 Every external data source must be registered in `sources/` before ingestion.
 
+New multilingual work records exact target-language scope in a language-scoped source-registry wrapper. Its bindings are fail-closed for language-bound taxonomy and future ingestion work: a source cannot be assumed to authorize another language. Existing records remain unchanged and retain their documented scope until a source-specific wrapper binding is created.
+
 Registration includes:
 
 - source_name: human-readable name

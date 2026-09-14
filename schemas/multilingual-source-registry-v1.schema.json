@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/multilingual-source-registry-v1.schema.json",
+  "title": "English Master language-scoped source registry v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "registry", "language_scopes"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "multilingual_source_registry"},
+    "registry": {"$ref": "source-registry.schema.json"},
+    "language_scopes": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["source_id", "language_codes"],
+        "properties": {
+          "source_id": {"$ref": "common.schema.json#/$defs/sourceId"},
+          "language_codes": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {"type": "string", "enum": ["en", "de"]}
+          }
+        }
+      }
+    }
+  }
+}

@@ -70,6 +70,12 @@ SCHEMA_FILENAMES: dict[str, str] = {
     "assessment-run-manifest-v1": "assessment-run-manifest-v1.schema.json",
     "assessment-submission-v1": "assessment-submission-v1.schema.json",
     "learner-concept-state-v1": "learner-concept-state-v1.schema.json",
+    "language-profile-v1": "language-profile-v1.schema.json",
+    "multilingual-source-registry-v1": "multilingual-source-registry-v1.schema.json",
+    "multilingual-taxonomy-v1": "multilingual-taxonomy-v1.schema.json",
+    "multilingual-assessment-package-v1": "multilingual-assessment-package-v1.schema.json",
+    "multilingual-assessment-submission-v1": "multilingual-assessment-submission-v1.schema.json",
+    "learner-concept-state-v2": "learner-concept-state-v2.schema.json",
     "adaptive-review-state-v1": "adaptive-review-state-v1.schema.json",
     "adaptive-review-observation-v1": "adaptive-review-observation-v1.schema.json",
     "adaptive-review-plan-v1": "adaptive-review-plan-v1.schema.json",
@@ -714,6 +720,7 @@ def taxonomy_collection_issues(instance: dict[str, Any]) -> list[ValidationIssue
                         f"unknown {target_type or 'annotation'} target {target_id!r}",
                     )
                 )
+
     return sorted(issues, key=lambda issue: (issue.instance_path, issue.message))
 
 

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/language-profile-v1.schema.json",
+  "title": "English Master language profile v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "language_code", "display_name", "course_root"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "language_profile"},
+    "language_code": {"$ref": "#/$defs/supportedLanguageCode"},
+    "display_name": {"$ref": "common.schema.json#/$defs/nonEmptyString"},
+    "course_root": {"type": "string", "pattern": "^course/(en|de)$"}
+  },
+  "$defs": {
+    "supportedLanguageCode": {"type": "string", "enum": ["en", "de"]}
+  }
+}

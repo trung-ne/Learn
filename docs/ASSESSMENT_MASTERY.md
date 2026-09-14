@@ -60,6 +60,10 @@ There is no learner profile, account, database, attempt history, hidden metadata
 
 State is local single-writer data. A complete new state is schema-validated and written to a same-directory temporary file before atomic `os.replace`. Replaying a valid submission intentionally records another attempt because no event history or idempotency field exists.
 
+## Multilingual core boundary
+
+The original assessment and array-state contracts remain the backward-compatible English v1 lane. Future language-scoped packages use an explicit language-bound package/submission wrapper and a `learner-concept-state-v2` envelope at `data/learner-state/<language_code>/...`. The scorer rejects a package, submission, state, or `kg_<language_code>_...` concept identifier from another declared language. This v2 boundary establishes state isolation only; it does not migrate existing state, create German assessments, or change the fixed English inventory.
+
 ## CLI
 
 Run from the repository root:

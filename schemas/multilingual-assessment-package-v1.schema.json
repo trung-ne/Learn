@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/multilingual-assessment-package-v1.schema.json",
+  "title": "English Master language-bound assessment package v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "language_code", "assessment"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "multilingual_assessment_package"},
+    "language_code": {"$ref": "#/$defs/supportedLanguageCode"},
+    "assessment": {"$ref": "assessment-package-v1.schema.json"}
+  },
+  "$defs": {
+    "supportedLanguageCode": {"type": "string", "enum": ["en", "de"]}
+  }
+}
