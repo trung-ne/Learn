@@ -45,6 +45,12 @@ data/media/*
 data/learner-state/*
 !data/learner-state/.gitkeep
 
+# Web application dependencies and build outputs
+apps/web/node_modules/
+apps/web/.next/
+apps/web/out/
+apps/web/coverage/
+
 # Editor and operating-system files
 .vscode/
 .idea/
