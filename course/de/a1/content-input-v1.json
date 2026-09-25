@@ -1,0 +1,802 @@
+{
+  "authorship": "PROJECT_AUTHORED",
+  "content_status": "UNREVIEWED",
+  "edition": "de-a1-v1",
+  "external_materials": [],
+  "language_code": "de",
+  "lessons": [
+    {
+      "duration_minutes": 25,
+      "exercises": [
+        {
+          "answer": "Mila",
+          "id": "ex-1",
+          "prompt": "Wie heißt die Person in Modell 1? Mila oder Jonas?",
+          "type": "selection"
+        },
+        {
+          "answer": "Guten Morgen",
+          "id": "ex-2",
+          "prompt": "Ergänze Situation 1 mit „Guten Morgen“.",
+          "type": "completion"
+        },
+        {
+          "answer": "Begrüßung, Angabe, Frage",
+          "id": "ex-3",
+          "prompt": "Ordne für Aufgabe 1 Begrüßung, Angabe und Frage in eine sinnvolle Reihenfolge.",
+          "type": "ordering"
+        },
+        {
+          "id": "ex-4",
+          "prompt": "Schreibe für Übung 1 einen neuen Satz über dich oder eine erfundene Person.",
+          "rubric": "Ein verständlicher deutscher Satz mit einer passenden Angabe.",
+          "type": "writing"
+        }
+      ],
+      "objectives": [
+        "Begrüße jemanden, nenne deinen Namen und buchstabiere ihn."
+      ],
+      "outline_id": "de-a1-v1-u01-l01",
+      "prompts": [
+        {
+          "answer": "Mila",
+          "instruction": "Höre im Interface erst nach deiner Antwort auf den Text von Aufgabe 1. Beantworte dann eine Frage.",
+          "modality": "listening",
+          "mode": "TRANSCRIPT_ONLY",
+          "question": "Welche Angabe nennt die Person in Gespräch 1?",
+          "transcript": "Gespräch 1: Guten Morgen, ich heiße Mila. Die andere Person antwortet freundlich."
+        },
+        {
+          "checklist": [
+            "Nenne eine passende Angabe für Situation 1.",
+            "Stelle eine kurze Frage."
+          ],
+          "instruction": "Sprich eine eigene Version von Situation 1 laut. Wechsle nach zwei Sätzen die Rolle und prüfe deinen Ton.",
+          "modality": "speaking"
+        },
+        {
+          "assessment": "NOT_ASSESSED",
+          "checklist": [
+            "Kein Audio wird bewertet.",
+            "Höre auf deine eigene Aussprache."
+          ],
+          "instruction": "Sprich das Zielwort „Mila“ langsam und dann im Satz aus Situation 1. Achte auf deutliche Vokale oder Konsonanten.",
+          "modality": "pronunciation"
+        },
+        {
+          "checklist": [
+            "Beginne mit einem Großbuchstaben.",
+            "Nutze eine passende persönliche Angabe."
+          ],
+          "instruction": "Schreibe zuerst einen Entwurf mit zwei Sätzen für Situation 1. Prüfe ihn danach selbst; kein Ersatztext wird erzeugt.",
+          "modality": "writing"
+        }
+      ],
+      "sections": [
+        {
+          "body": "Beispiel 1: Guten Morgen, ich heiße Mila.",
+          "title": "Modell 1"
+        },
+        {
+          "body": "Nutze die Wörter „Mila“ und „Guten Morgen“ nur als Modell. Formuliere danach eine eigene kurze Aussage.",
+          "title": "Hinweis 1"
+        }
+      ],
+      "title": "Begrüßen und buchstabieren"
+    },
+    {
+      "duration_minutes": 25,
+      "exercises": [
+        {
+          "answer": "Jonas",
+          "id": "ex-1",
+          "prompt": "Wie heißt die Person in Modell 2? Jonas oder Mila?",
+          "type": "selection"
+        },
+        {
+          "answer": "Hallo",
+          "id": "ex-2",
+          "prompt": "Ergänze Situation 2 mit „Hallo“.",
+          "type": "completion"
+        },
+        {
+          "answer": "Begrüßung, Angabe, Frage",
+          "id": "ex-3",
+          "prompt": "Ordne für Aufgabe 2 Begrüßung, Angabe und Frage in eine sinnvolle Reihenfolge.",
+          "type": "ordering"
+        },
+        {
+          "id": "ex-4",
+          "prompt": "Schreibe für Übung 2 einen neuen Satz über dich oder eine erfundene Person.",
+          "rubric": "Ein verständlicher deutscher Satz mit einer passenden Angabe.",
+          "type": "writing"
+        }
+      ],
+      "objectives": [
+        "Stelle dich vor und frage nach einem Namen."
+      ],
+      "outline_id": "de-a1-v1-u01-l02",
+      "prompts": [
+        {
+          "answer": "Jonas",
+          "instruction": "Höre im Interface erst nach deiner Antwort auf den Text von Aufgabe 2. Beantworte dann eine Frage.",
+          "modality": "listening",
+          "mode": "TRANSCRIPT_ONLY",
+          "question": "Welche Angabe nennt die Person in Gespräch 2?",
+          "transcript": "Gespräch 2: Hallo, ich bin Jonas. Wie heißt du? Die andere Person antwortet freundlich."
+        },
+        {
+          "checklist": [
+            "Nenne eine passende Angabe für Situation 2.",
+            "Stelle eine kurze Frage."
+          ],
+          "instruction": "Sprich eine eigene Version von Situation 2 laut. Wechsle nach zwei Sätzen die Rolle und prüfe deinen Ton.",
+          "modality": "speaking"
+        },
+        {
+          "assessment": "NOT_ASSESSED",
+          "checklist": [
+            "Kein Audio wird bewertet.",
+            "Höre auf deine eigene Aussprache."
+          ],
+          "instruction": "Sprich das Zielwort „Jonas“ langsam und dann im Satz aus Situation 2. Achte auf deutliche Vokale oder Konsonanten.",
+          "modality": "pronunciation"
+        },
+        {
+          "checklist": [
+            "Beginne mit einem Großbuchstaben.",
+            "Nutze eine passende persönliche Angabe."
+          ],
+          "instruction": "Schreibe zuerst einen Entwurf mit zwei Sätzen für Situation 2. Prüfe ihn danach selbst; kein Ersatztext wird erzeugt.",
+          "modality": "writing"
+        }
+      ],
+      "sections": [
+        {
+          "body": "Beispiel 2: Hallo, ich bin Jonas. Wie heißt du?",
+          "title": "Modell 2"
+        },
+        {
+          "body": "Nutze die Wörter „Jonas“ und „Hallo“ nur als Modell. Formuliere danach eine eigene kurze Aussage.",
+          "title": "Hinweis 2"
+        }
+      ],
+      "title": "Sich vorstellen"
+    },
+    {
+      "duration_minutes": 25,
+      "exercises": [
+        {
+          "answer": "Wien",
+          "id": "ex-1",
+          "prompt": "Aus welcher Stadt kommt die Person in Modell 3? Wien oder Hamburg?",
+          "type": "selection"
+        },
+        {
+          "answer": "Hamburg",
+          "id": "ex-2",
+          "prompt": "Ergänze Situation 3 mit „Hamburg“.",
+          "type": "completion"
+        },
+        {
+          "answer": "Begrüßung, Angabe, Frage",
+          "id": "ex-3",
+          "prompt": "Ordne für Aufgabe 3 Begrüßung, Angabe und Frage in eine sinnvolle Reihenfolge.",
+          "type": "ordering"
+        },
+        {
+          "id": "ex-4",
+          "prompt": "Schreibe für Übung 3 einen neuen Satz über dich oder eine erfundene Person.",
+          "rubric": "Ein verständlicher deutscher Satz mit einer passenden Angabe.",
+          "type": "writing"
+        }
+      ],
+      "objectives": [
+        "Sage, woher du kommst und wo du wohnst."
+      ],
+      "outline_id": "de-a1-v1-u01-l03",
+      "prompts": [
+        {
+          "answer": "Wien",
+          "instruction": "Höre im Interface erst nach deiner Antwort auf den Text von Aufgabe 3. Beantworte dann eine Frage.",
+          "modality": "listening",
+          "mode": "TRANSCRIPT_ONLY",
+          "question": "Welche Angabe nennt die Person in Gespräch 3?",
+          "transcript": "Gespräch 3: Ich komme aus Wien und wohne in Hamburg. Die andere Person antwortet freundlich."
+        },
+        {
+          "checklist": [
+            "Nenne eine passende Angabe für Situation 3.",
+            "Stelle eine kurze Frage."
+          ],
+          "instruction": "Sprich eine eigene Version von Situation 3 laut. Wechsle nach zwei Sätzen die Rolle und prüfe deinen Ton.",
+          "modality": "speaking"
+        },
+        {
+          "assessment": "NOT_ASSESSED",
+          "checklist": [
+            "Kein Audio wird bewertet.",
+            "Höre auf deine eigene Aussprache."
+          ],
+          "instruction": "Sprich das Zielwort „Wien“ langsam und dann im Satz aus Situation 3. Achte auf deutliche Vokale oder Konsonanten.",
+          "modality": "pronunciation"
+        },
+        {
+          "checklist": [
+            "Beginne mit einem Großbuchstaben.",
+            "Nutze eine passende persönliche Angabe."
+          ],
+          "instruction": "Schreibe zuerst einen Entwurf mit zwei Sätzen für Situation 3. Prüfe ihn danach selbst; kein Ersatztext wird erzeugt.",
+          "modality": "writing"
+        }
+      ],
+      "sections": [
+        {
+          "body": "Beispiel 3: Ich komme aus Wien und wohne in Hamburg.",
+          "title": "Modell 3"
+        },
+        {
+          "body": "Nutze die Wörter „Wien“ und „Hamburg“ nur als Modell. Formuliere danach eine eigene kurze Aussage.",
+          "title": "Hinweis 3"
+        }
+      ],
+      "title": "Name, Herkunft und Wohnort"
+    },
+    {
+      "duration_minutes": 25,
+      "exercises": [
+        {
+          "answer": "Nora",
+          "id": "ex-1",
+          "prompt": "Wie heißt die Person in Modell 4? Nora oder Leon?",
+          "type": "selection"
+        },
+        {
+          "answer": "Guten Tag",
+          "id": "ex-2",
+          "prompt": "Ergänze Situation 4 mit „Guten Tag“.",
+          "type": "completion"
+        },
+        {
+          "answer": "Begrüßung, Angabe, Frage",
+          "id": "ex-3",
+          "prompt": "Ordne für Aufgabe 4 Begrüßung, Angabe und Frage in eine sinnvolle Reihenfolge.",
+          "type": "ordering"
+        },
+        {
+          "id": "ex-4",
+          "prompt": "Schreibe für Übung 4 einen neuen Satz über dich oder eine erfundene Person.",
+          "rubric": "Ein verständlicher deutscher Satz mit einer passenden Angabe.",
+          "type": "writing"
+        }
+      ],
+      "objectives": [
+        "Führe ein kurzes Gespräch mit einer neuen Person."
+      ],
+      "outline_id": "de-a1-v1-u01-l04",
+      "prompts": [
+        {
+          "answer": "Nora",
+          "instruction": "Höre im Interface erst nach deiner Antwort auf den Text von Aufgabe 4. Beantworte dann eine Frage.",
+          "modality": "listening",
+          "mode": "TRANSCRIPT_ONLY",
+          "question": "Welche Angabe nennt die Person in Gespräch 4?",
+          "transcript": "Gespräch 4: Guten Tag. Ich heiße Nora. Wie heißen Sie? Die andere Person antwortet freundlich."
+        },
+        {
+          "checklist": [
+            "Nenne eine passende Angabe für Situation 4.",
+            "Stelle eine kurze Frage."
+          ],
+          "instruction": "Sprich eine eigene Version von Situation 4 laut. Wechsle nach zwei Sätzen die Rolle und prüfe deinen Ton.",
+          "modality": "speaking"
+        },
+        {
+          "assessment": "NOT_ASSESSED",
+          "checklist": [
+            "Kein Audio wird bewertet.",
+            "Höre auf deine eigene Aussprache."
+          ],
+          "instruction": "Sprich das Zielwort „Nora“ langsam und dann im Satz aus Situation 4. Achte auf deutliche Vokale oder Konsonanten.",
+          "modality": "pronunciation"
+        },
+        {
+          "checklist": [
+            "Beginne mit einem Großbuchstaben.",
+            "Nutze eine passende persönliche Angabe."
+          ],
+          "instruction": "Schreibe zuerst einen Entwurf mit zwei Sätzen für Situation 4. Prüfe ihn danach selbst; kein Ersatztext wird erzeugt.",
+          "modality": "writing"
+        }
+      ],
+      "sections": [
+        {
+          "body": "Beispiel 4: Guten Tag. Ich heiße Nora. Wie heißen Sie?",
+          "title": "Modell 4"
+        },
+        {
+          "body": "Nutze die Wörter „Nora“ und „Guten Tag“ nur als Modell. Formuliere danach eine eigene kurze Aussage.",
+          "title": "Hinweis 4"
+        }
+      ],
+      "title": "Ein kurzes Kennenlerngespräch"
+    },
+    {
+      "duration_minutes": 25,
+      "exercises": [
+        {
+          "answer": "Leon",
+          "id": "ex-1",
+          "prompt": "Wie heißt die Person in Modell 5? Leon oder Nora?",
+          "type": "selection"
+        },
+        {
+          "answer": "Am Bahnhof",
+          "id": "ex-2",
+          "prompt": "Ergänze Situation 5 mit „Am Bahnhof“.",
+          "type": "completion"
+        },
+        {
+          "answer": "Begrüßung, Angabe, Frage",
+          "id": "ex-3",
+          "prompt": "Ordne für Aufgabe 5 Begrüßung, Angabe und Frage in eine sinnvolle Reihenfolge.",
+          "type": "ordering"
+        },
+        {
+          "id": "ex-4",
+          "prompt": "Schreibe für Übung 5 einen neuen Satz über dich oder eine erfundene Person.",
+          "rubric": "Ein verständlicher deutscher Satz mit einer passenden Angabe.",
+          "type": "writing"
+        }
+      ],
+      "objectives": [
+        "Verbinde Begrüßung, Name und Buchstabieren."
+      ],
+      "outline_id": "de-a1-v1-u01-l05",
+      "prompts": [
+        {
+          "answer": "Leon",
+          "instruction": "Höre im Interface erst nach deiner Antwort auf den Text von Aufgabe 5. Beantworte dann eine Frage.",
+          "modality": "listening",
+          "mode": "TRANSCRIPT_ONLY",
+          "question": "Welche Angabe nennt die Person in Gespräch 5?",
+          "transcript": "Gespräch 5: Am Bahnhof sagt Leon: Hallo, ich heiße Leon. Die andere Person antwortet freundlich."
+        },
+        {
+          "checklist": [
+            "Nenne eine passende Angabe für Situation 5.",
+            "Stelle eine kurze Frage."
+          ],
+          "instruction": "Sprich eine eigene Version von Situation 5 laut. Wechsle nach zwei Sätzen die Rolle und prüfe deinen Ton.",
+          "modality": "speaking"
+        },
+        {
+          "assessment": "NOT_ASSESSED",
+          "checklist": [
+            "Kein Audio wird bewertet.",
+            "Höre auf deine eigene Aussprache."
+          ],
+          "instruction": "Sprich das Zielwort „Leon“ langsam und dann im Satz aus Situation 5. Achte auf deutliche Vokale oder Konsonanten.",
+          "modality": "pronunciation"
+        },
+        {
+          "checklist": [
+            "Beginne mit einem Großbuchstaben.",
+            "Nutze eine passende persönliche Angabe."
+          ],
+          "instruction": "Schreibe zuerst einen Entwurf mit zwei Sätzen für Situation 5. Prüfe ihn danach selbst; kein Ersatztext wird erzeugt.",
+          "modality": "writing"
+        }
+      ],
+      "sections": [
+        {
+          "body": "Beispiel 5: Am Bahnhof sagt Leon: Hallo, ich heiße Leon.",
+          "title": "Modell 5"
+        },
+        {
+          "body": "Nutze die Wörter „Leon“ und „Am Bahnhof“ nur als Modell. Formuliere danach eine eigene kurze Aussage.",
+          "title": "Hinweis 5"
+        }
+      ],
+      "title": "Wiederholung: Erste Kontakte"
+    },
+    {
+      "duration_minutes": 25,
+      "exercises": [
+        {
+          "answer": "Sara",
+          "id": "ex-1",
+          "prompt": "Wie heißt die Person in Modell 6? Sara oder Tim?",
+          "type": "selection"
+        },
+        {
+          "answer": "Bonn",
+          "id": "ex-2",
+          "prompt": "Ergänze Situation 6 mit „Bonn“.",
+          "type": "completion"
+        },
+        {
+          "answer": "Begrüßung, Angabe, Frage",
+          "id": "ex-3",
+          "prompt": "Ordne für Aufgabe 6 Begrüßung, Angabe und Frage in eine sinnvolle Reihenfolge.",
+          "type": "ordering"
+        },
+        {
+          "id": "ex-4",
+          "prompt": "Schreibe für Übung 6 einen neuen Satz über dich oder eine erfundene Person.",
+          "rubric": "Ein verständlicher deutscher Satz mit einer passenden Angabe.",
+          "type": "writing"
+        }
+      ],
+      "objectives": [
+        "Sprich mit einfachen Sätzen über eine andere Person."
+      ],
+      "outline_id": "de-a1-v1-u02-l01",
+      "prompts": [
+        {
+          "answer": "Sara",
+          "instruction": "Höre im Interface erst nach deiner Antwort auf den Text von Aufgabe 6. Beantworte dann eine Frage.",
+          "modality": "listening",
+          "mode": "TRANSCRIPT_ONLY",
+          "question": "Welche Angabe nennt die Person in Gespräch 6?",
+          "transcript": "Gespräch 6: Das ist Sara. Sie heißt Sara und kommt aus Bonn. Die andere Person antwortet freundlich."
+        },
+        {
+          "checklist": [
+            "Nenne eine passende Angabe für Situation 6.",
+            "Stelle eine kurze Frage."
+          ],
+          "instruction": "Sprich eine eigene Version von Situation 6 laut. Wechsle nach zwei Sätzen die Rolle und prüfe deinen Ton.",
+          "modality": "speaking"
+        },
+        {
+          "assessment": "NOT_ASSESSED",
+          "checklist": [
+            "Kein Audio wird bewertet.",
+            "Höre auf deine eigene Aussprache."
+          ],
+          "instruction": "Sprich das Zielwort „Sara“ langsam und dann im Satz aus Situation 6. Achte auf deutliche Vokale oder Konsonanten.",
+          "modality": "pronunciation"
+        },
+        {
+          "checklist": [
+            "Beginne mit einem Großbuchstaben.",
+            "Nutze eine passende persönliche Angabe."
+          ],
+          "instruction": "Schreibe zuerst einen Entwurf mit zwei Sätzen für Situation 6. Prüfe ihn danach selbst; kein Ersatztext wird erzeugt.",
+          "modality": "writing"
+        }
+      ],
+      "sections": [
+        {
+          "body": "Beispiel 6: Das ist Sara. Sie heißt Sara und kommt aus Bonn.",
+          "title": "Modell 6"
+        },
+        {
+          "body": "Nutze die Wörter „Sara“ und „Bonn“ nur als Modell. Formuliere danach eine eigene kurze Aussage.",
+          "title": "Hinweis 6"
+        }
+      ],
+      "title": "Über sich und andere sprechen"
+    },
+    {
+      "duration_minutes": 25,
+      "exercises": [
+        {
+          "answer": "Tim",
+          "id": "ex-1",
+          "prompt": "Wie heißt die Person in Modell 7? Tim oder Ana?",
+          "type": "selection"
+        },
+        {
+          "answer": "Berlin",
+          "id": "ex-2",
+          "prompt": "Ergänze Situation 7 mit „Berlin“.",
+          "type": "completion"
+        },
+        {
+          "answer": "Begrüßung, Angabe, Frage",
+          "id": "ex-3",
+          "prompt": "Ordne für Aufgabe 7 Begrüßung, Angabe und Frage in eine sinnvolle Reihenfolge.",
+          "type": "ordering"
+        },
+        {
+          "id": "ex-4",
+          "prompt": "Schreibe für Übung 7 einen neuen Satz über dich oder eine erfundene Person.",
+          "rubric": "Ein verständlicher deutscher Satz mit einer passenden Angabe.",
+          "type": "writing"
+        }
+      ],
+      "objectives": [
+        "Verbinde zwei Angaben zu Orten und Personen."
+      ],
+      "outline_id": "de-a1-v1-u02-l02",
+      "prompts": [
+        {
+          "answer": "Tim",
+          "instruction": "Höre im Interface erst nach deiner Antwort auf den Text von Aufgabe 7. Beantworte dann eine Frage.",
+          "modality": "listening",
+          "mode": "TRANSCRIPT_ONLY",
+          "question": "Welche Angabe nennt die Person in Gespräch 7?",
+          "transcript": "Gespräch 7: Tim wohnt in Berlin, aber Ana kommt aus Köln. Die andere Person antwortet freundlich."
+        },
+        {
+          "checklist": [
+            "Nenne eine passende Angabe für Situation 7.",
+            "Stelle eine kurze Frage."
+          ],
+          "instruction": "Sprich eine eigene Version von Situation 7 laut. Wechsle nach zwei Sätzen die Rolle und prüfe deinen Ton.",
+          "modality": "speaking"
+        },
+        {
+          "assessment": "NOT_ASSESSED",
+          "checklist": [
+            "Kein Audio wird bewertet.",
+            "Höre auf deine eigene Aussprache."
+          ],
+          "instruction": "Sprich das Zielwort „Tim“ langsam und dann im Satz aus Situation 7. Achte auf deutliche Vokale oder Konsonanten.",
+          "modality": "pronunciation"
+        },
+        {
+          "checklist": [
+            "Beginne mit einem Großbuchstaben.",
+            "Nutze eine passende persönliche Angabe."
+          ],
+          "instruction": "Schreibe zuerst einen Entwurf mit zwei Sätzen für Situation 7. Prüfe ihn danach selbst; kein Ersatztext wird erzeugt.",
+          "modality": "writing"
+        }
+      ],
+      "sections": [
+        {
+          "body": "Beispiel 7: Tim wohnt in Berlin, aber Ana kommt aus Köln.",
+          "title": "Modell 7"
+        },
+        {
+          "body": "Nutze die Wörter „Tim“ und „Berlin“ nur als Modell. Formuliere danach eine eigene kurze Aussage.",
+          "title": "Hinweis 7"
+        }
+      ],
+      "title": "Orte und einfache Angaben"
+    },
+    {
+      "duration_minutes": 25,
+      "exercises": [
+        {
+          "answer": "Wie bitte?",
+          "id": "ex-1",
+          "prompt": "Welche höfliche Bitte hörst du in Modell 8? Wie bitte? oder Guten Morgen?",
+          "type": "selection"
+        },
+        {
+          "answer": "Wie bitte",
+          "id": "ex-2",
+          "prompt": "Ergänze Situation 8 mit „Wie bitte“.",
+          "type": "completion"
+        },
+        {
+          "answer": "Begrüßung, Angabe, Frage",
+          "id": "ex-3",
+          "prompt": "Ordne für Aufgabe 8 Begrüßung, Angabe und Frage in eine sinnvolle Reihenfolge.",
+          "type": "ordering"
+        },
+        {
+          "id": "ex-4",
+          "prompt": "Schreibe für Übung 8 einen neuen Satz über dich oder eine erfundene Person.",
+          "rubric": "Ein verständlicher deutscher Satz mit einer passenden Angabe.",
+          "type": "writing"
+        }
+      ],
+      "objectives": [
+        "Bitte höflich um Wiederholung und bedanke dich."
+      ],
+      "outline_id": "de-a1-v1-u02-l03",
+      "prompts": [
+        {
+          "answer": "Wie bitte?",
+          "instruction": "Höre im Interface erst nach deiner Antwort auf den Text von Aufgabe 8. Beantworte dann eine Frage.",
+          "modality": "listening",
+          "mode": "TRANSCRIPT_ONLY",
+          "question": "Welche höfliche Bitte hörst du in Gespräch 8?",
+          "transcript": "Gespräch 8: Wie bitte? Können Sie das bitte wiederholen? Die andere Person antwortet freundlich."
+        },
+        {
+          "checklist": [
+            "Nenne eine passende Angabe für Situation 8.",
+            "Stelle eine kurze Frage."
+          ],
+          "instruction": "Sprich eine eigene Version von Situation 8 laut. Wechsle nach zwei Sätzen die Rolle und prüfe deinen Ton.",
+          "modality": "speaking"
+        },
+        {
+          "assessment": "NOT_ASSESSED",
+          "checklist": [
+            "Kein Audio wird bewertet.",
+            "Höre auf deine eigene Aussprache."
+          ],
+          "instruction": "Sprich das Zielwort „Umlaut“ langsam und dann im Satz aus Situation 8. Achte auf deutliche Vokale oder Konsonanten.",
+          "modality": "pronunciation"
+        },
+        {
+          "checklist": [
+            "Beginne mit einem Großbuchstaben.",
+            "Nutze eine passende persönliche Angabe."
+          ],
+          "instruction": "Schreibe zuerst einen Entwurf mit zwei Sätzen für Situation 8. Prüfe ihn danach selbst; kein Ersatztext wird erzeugt.",
+          "modality": "writing"
+        }
+      ],
+      "sections": [
+        {
+          "body": "Beispiel 8: Wie bitte? Können Sie das bitte wiederholen?",
+          "title": "Modell 8"
+        },
+        {
+          "body": "Nutze die Wörter „Umlaut“ und „Wie bitte“ nur als Modell. Formuliere danach eine eigene kurze Aussage.",
+          "title": "Hinweis 8"
+        }
+      ],
+      "title": "Nachfragen und höflich reagieren"
+    },
+    {
+      "duration_minutes": 25,
+      "exercises": [
+        {
+          "answer": "Eda",
+          "id": "ex-1",
+          "prompt": "Wie heißt die Person in Modell 9? Eda oder Omar?",
+          "type": "selection"
+        },
+        {
+          "answer": "Leipzig",
+          "id": "ex-2",
+          "prompt": "Ergänze Situation 9 mit „Leipzig“.",
+          "type": "completion"
+        },
+        {
+          "answer": "Begrüßung, Angabe, Frage",
+          "id": "ex-3",
+          "prompt": "Ordne für Aufgabe 9 Begrüßung, Angabe und Frage in eine sinnvolle Reihenfolge.",
+          "type": "ordering"
+        },
+        {
+          "id": "ex-4",
+          "prompt": "Schreibe für Übung 9 einen neuen Satz über dich oder eine erfundene Person.",
+          "rubric": "Ein verständlicher deutscher Satz mit einer passenden Angabe.",
+          "type": "writing"
+        }
+      ],
+      "objectives": [
+        "Führe ein gelenktes Gespräch mit einer Rückfrage."
+      ],
+      "outline_id": "de-a1-v1-u02-l04",
+      "prompts": [
+        {
+          "answer": "Eda",
+          "instruction": "Höre im Interface erst nach deiner Antwort auf den Text von Aufgabe 9. Beantworte dann eine Frage.",
+          "modality": "listening",
+          "mode": "TRANSCRIPT_ONLY",
+          "question": "Welche Angabe nennt die Person in Gespräch 9?",
+          "transcript": "Gespräch 9: Hallo, mein Name ist Eda. Ich wohne in Leipzig. Die andere Person antwortet freundlich."
+        },
+        {
+          "checklist": [
+            "Nenne eine passende Angabe für Situation 9.",
+            "Stelle eine kurze Frage."
+          ],
+          "instruction": "Sprich eine eigene Version von Situation 9 laut. Wechsle nach zwei Sätzen die Rolle und prüfe deinen Ton.",
+          "modality": "speaking"
+        },
+        {
+          "assessment": "NOT_ASSESSED",
+          "checklist": [
+            "Kein Audio wird bewertet.",
+            "Höre auf deine eigene Aussprache."
+          ],
+          "instruction": "Sprich das Zielwort „Eda“ langsam und dann im Satz aus Situation 9. Achte auf deutliche Vokale oder Konsonanten.",
+          "modality": "pronunciation"
+        },
+        {
+          "checklist": [
+            "Beginne mit einem Großbuchstaben.",
+            "Nutze eine passende persönliche Angabe."
+          ],
+          "instruction": "Schreibe zuerst einen Entwurf mit zwei Sätzen für Situation 9. Prüfe ihn danach selbst; kein Ersatztext wird erzeugt.",
+          "modality": "writing"
+        }
+      ],
+      "sections": [
+        {
+          "body": "Beispiel 9: Hallo, mein Name ist Eda. Ich wohne in Leipzig.",
+          "title": "Modell 9"
+        },
+        {
+          "body": "Nutze die Wörter „Eda“ und „Leipzig“ nur als Modell. Formuliere danach eine eigene kurze Aussage.",
+          "title": "Hinweis 9"
+        }
+      ],
+      "title": "Ein erstes Gespräch führen"
+    },
+    {
+      "duration_minutes": 25,
+      "exercises": [
+        {
+          "answer": "Omar",
+          "id": "ex-1",
+          "prompt": "Wie heißt die Person in Modell 10? Omar oder Eda?",
+          "type": "selection"
+        },
+        {
+          "answer": "Dresden",
+          "id": "ex-2",
+          "prompt": "Ergänze Situation 10 mit „Dresden“.",
+          "type": "completion"
+        },
+        {
+          "answer": "Begrüßung, Angabe, Frage",
+          "id": "ex-3",
+          "prompt": "Ordne für Aufgabe 10 Begrüßung, Angabe und Frage in eine sinnvolle Reihenfolge.",
+          "type": "ordering"
+        },
+        {
+          "id": "ex-4",
+          "prompt": "Schreibe für Übung 10 einen neuen Satz über dich oder eine erfundene Person.",
+          "rubric": "Ein verständlicher deutscher Satz mit einer passenden Angabe.",
+          "type": "writing"
+        }
+      ],
+      "objectives": [
+        "Wiederhole persönliche Angaben in einem neuen Gespräch."
+      ],
+      "outline_id": "de-a1-v1-u02-l05",
+      "prompts": [
+        {
+          "answer": "Omar",
+          "instruction": "Höre im Interface erst nach deiner Antwort auf den Text von Aufgabe 10. Beantworte dann eine Frage.",
+          "modality": "listening",
+          "mode": "TRANSCRIPT_ONLY",
+          "question": "Welche Angabe nennt die Person in Gespräch 10?",
+          "transcript": "Gespräch 10: Im Kurs stellt sich Omar vor: Ich komme aus Dresden. Die andere Person antwortet freundlich."
+        },
+        {
+          "checklist": [
+            "Nenne eine passende Angabe für Situation 10.",
+            "Stelle eine kurze Frage."
+          ],
+          "instruction": "Sprich eine eigene Version von Situation 10 laut. Wechsle nach zwei Sätzen die Rolle und prüfe deinen Ton.",
+          "modality": "speaking"
+        },
+        {
+          "assessment": "NOT_ASSESSED",
+          "checklist": [
+            "Kein Audio wird bewertet.",
+            "Höre auf deine eigene Aussprache."
+          ],
+          "instruction": "Sprich das Zielwort „Omar“ langsam und dann im Satz aus Situation 10. Achte auf deutliche Vokale oder Konsonanten.",
+          "modality": "pronunciation"
+        },
+        {
+          "checklist": [
+            "Beginne mit einem Großbuchstaben.",
+            "Nutze eine passende persönliche Angabe."
+          ],
+          "instruction": "Schreibe zuerst einen Entwurf mit zwei Sätzen für Situation 10. Prüfe ihn danach selbst; kein Ersatztext wird erzeugt.",
+          "modality": "writing"
+        }
+      ],
+      "sections": [
+        {
+          "body": "Beispiel 10: Im Kurs stellt sich Omar vor: Ich komme aus Dresden.",
+          "title": "Modell 10"
+        },
+        {
+          "body": "Nutze die Wörter „Omar“ und „Dresden“ nur als Modell. Formuliere danach eine eigene kurze Aussage.",
+          "title": "Hinweis 10"
+        }
+      ],
+      "title": "Wiederholung: Persönliche Angaben"
+    }
+  ],
+  "media": [],
+  "record_type": "german_a1_pilot_content_input",
+  "schema_version": "1.0"
+}

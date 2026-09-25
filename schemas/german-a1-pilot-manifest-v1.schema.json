@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/german-a1-pilot-manifest-v1.schema.json",
+  "title": "English Master German A1 pilot manifest v1",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "record_type", "pilot_id", "language_code", "built_at", "content_status", "source", "lesson_ids", "inventory", "manifest_sha256"],
+  "properties": {
+    "schema_version": {"const": "1.0"}, "record_type": {"const": "german_a1_pilot_manifest"}, "pilot_id": {"type": "string", "pattern": "^dea1pilot_[a-f0-9]{64}$"}, "language_code": {"const": "de"}, "built_at": {"type": "string", "format": "date-time"}, "content_status": {"const": "UNREVIEWED"},
+    "source": {"type": "object", "additionalProperties": false, "required": ["population_sha256", "blueprint_sha256", "content_input_sha256"], "properties": {"population_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "blueprint_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "content_input_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}}},
+    "lesson_ids": {"type": "array", "minItems": 10, "maxItems": 10, "items": {"type": "string", "pattern": "^de-a1-v1-u0[1-2]-l0[1-5]$"}},
+    "inventory": {"type": "array", "minItems": 10, "maxItems": 10, "items": {"type": "object", "additionalProperties": false, "required": ["path", "sha256"], "properties": {"path": {"type": "string", "pattern": "^packets/dea1pilot-packet-(0[1-9]|10)\\.json$"}, "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}}}}, "manifest_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+  }
+}

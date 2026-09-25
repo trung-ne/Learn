@@ -29,7 +29,7 @@ The existing English collections and historical artifacts retain their current p
 
 A language-scoped source-registry wrapper records explicit source-to-language bindings; an explicitly scoped source cannot support a taxonomy citation for another target language. Existing registry records remain backward compatible until a source-specific scope record is created. Language-bound assessment wrappers and learner-state v2 envelopes isolate mastery state by target language without changing existing v1 state.
 
-The 12.5B German bootstrap and 12.5C German source registry are additive development records. The 12.5D German A1.1 mini blueprint is an outline-only, hash-bound planning artifact under `course/de/a1/`; it does not authorize lesson generation, source ingestion, or publication. No German lesson, exercise, or practice-prompt pilot exists in this boundary.
+The 12.5B German bootstrap and 12.5C German source registry are additive development records. The 12.5D German A1.1 mini blueprint is a hash-bound planning artifact under `course/de/a1/`. The bounded 12.5E German A1.1 pilot derives ten original project-authored, `UNREVIEWED` lesson packets from that blueprint under `course/de/a1/runs/`. It supplies static exercises and four practice protocols per lesson without external payloads, media, network access, live audio, provider invocation, human/release authority, or publication authority. It does not authorize source ingestion or further lesson generation.
 
 ## M2 Taxonomy Collections
 
