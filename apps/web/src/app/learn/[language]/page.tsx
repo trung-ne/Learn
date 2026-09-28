@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getLanguage, getLanguages } from "@/content/catalog";
+import { getAvailableCourses, getLanguage, getLanguages } from "@/content/catalog";
 import { getLanguageConfiguration, isLanguageCode } from "@/content/languages";
 import { learnHref, levelHref } from "@/lib/routes";
 
@@ -23,10 +23,11 @@ export default async function LanguageCoursePage({ params }: { params: Promise<{
   const summary = getLanguage(language);
   const configuration = getLanguageConfiguration(language);
   if (!summary || !configuration) notFound();
+  const courses = getAvailableCourses(language);
 
   return (
     <div className="page-shell catalog-page">
-      <nav aria-label="Breadcrumb"><Link href={learnHref()}>Learn</Link><span aria-hidden="true"> / </span><span>{configuration.name}</span></nav>
+      <nav aria-label="Breadcrumb"><Link href={learnHref()}>Learn</Link><span aria-hidden="true"> / </span><span aria-current="page">{configuration.name}</span></nav>
       <section className="catalog-hero">
         <div>
           <p className="eyebrow">{language.toUpperCase()} · {configuration.nativeName}</p>
@@ -36,14 +37,16 @@ export default async function LanguageCoursePage({ params }: { params: Promise<{
       </section>
 
       <section className="level-grid" aria-label={`${configuration.name} available levels`}>
-        {configuration.availableLevels.map((level) => (
-          <Link className="level-card" href={levelHref(language, level)} key={level}>
-            <span className="eyebrow">Course level</span>
-            <h2>{level}</h2>
-            <p>{summary.bands.includes(level) ? "Browse lessons and local practice." : "No lesson packets are currently available."}</p>
+        {courses.length ? courses.map((course) => (
+          <Link className="level-card" href={levelHref(language, course.level)} key={course.level}>
+            <span className="eyebrow">{course.availability === "PILOT" ? "Limited pilot" : "Course level"}</span>
+            <div>
+              <h2>{course.level}</h2>
+              <p>{course.lessonCount} available lessons{course.availability === "PILOT" ? "; this is a limited pilot." : " with local practice."}</p>
+            </div>
             <span aria-hidden="true">→</span>
           </Link>
-        ))}
+        )) : <p className="empty-state">No lesson packets are available for this language yet.</p>}
       </section>
     </div>
   );

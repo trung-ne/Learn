@@ -4,10 +4,11 @@ import { notFound } from "next/navigation";
 import { CatalogProgress } from "@/components/catalog-progress";
 import { ReviewNotice } from "@/components/review-notice";
 import {
+  getAvailableCourses,
   getLanguages,
   getLessonsForLanguageLevel,
   groupLessonsByTierAndUnit,
-  isAvailableLevel,
+  isAvailableCourse,
   isLanguageCode,
 } from "@/content/catalog";
 import { getLanguageConfiguration } from "@/content/languages";
@@ -24,7 +25,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ language: string; level: string }> }): Promise<Metadata> {
   const { language, level } = await params;
   const configuration = getLanguageConfiguration(language);
-  return { title: configuration && isLanguageCode(language) && isAvailableLevel(language, level) ? `${configuration.name} ${level}` : "Course level not found" };
+  return { title: configuration && isLanguageCode(language) && isAvailableCourse(language, level) ? `${configuration.name} ${level}` : "Course level not found" };
 }
 
 function unitLabel(unitId: string): string {
@@ -34,11 +35,12 @@ function unitLabel(unitId: string): string {
 
 export default async function LevelCatalogPage({ params }: { params: Promise<{ language: string; level: string }> }) {
   const { language, level } = await params;
-  if (!isLanguageCode(language) || !isAvailableLevel(language, level)) notFound();
+  if (!isLanguageCode(language) || !isAvailableCourse(language, level)) notFound();
   const configuration = getLanguageConfiguration(language);
   if (!configuration) notFound();
   const lessons = getLessonsForLanguageLevel(language, level);
-  if (lessons.length === 0) notFound();
+  const course = getAvailableCourses(language).find((item) => item.level === level);
+  if (lessons.length === 0 || !course) notFound();
   const grouped = groupLessonsByTierAndUnit(lessons);
 
   return (
@@ -46,15 +48,20 @@ export default async function LevelCatalogPage({ params }: { params: Promise<{ l
       <nav aria-label="Breadcrumb">
         <Link href={learnHref()}>Learn</Link><span aria-hidden="true"> / </span>
         <Link href={languageHref(language)}>{configuration.name}</Link><span aria-hidden="true"> / </span>
-        <span>{level}</span>
+        <span aria-current="page">{level}</span>
       </nav>
       <section className="catalog-hero">
         <div>
           <p className="eyebrow">{configuration.nativeName} · course level {level}</p>
           <h1>{configuration.name} {level}</h1>
-          <p className="lede">{lessons.length} static lesson packets, grouped by internal curriculum tier and unit.</p>
+          <p className="lede">{lessons.length} available lesson packets, grouped by internal curriculum tier and unit.{course.availability === "PILOT" ? " This is a limited pilot, not a complete course level." : ""}</p>
         </div>
-        <CatalogProgress language={language} languageName={configuration.name} />
+        <CatalogProgress
+          language={language}
+          course={level}
+          languageName={configuration.name}
+          lessons={lessons.map((lesson) => ({ lessonId: lesson.lessonId, unitId: lesson.unitId }))}
+        />
       </section>
 
       {[...grouped.entries()].map(([tier, units]) => (

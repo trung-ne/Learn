@@ -2,13 +2,14 @@ import type { CourseLevel, LanguageCode } from "./languages";
 
 export type { CourseLevel, LanguageCode } from "./languages";
 export type Band = CourseLevel;
-export type ContentStatus = "UNREVIEWED";
+export type CourseAvailability = "AVAILABLE" | "PILOT";
 
 export interface ContentSection {
   readonly id: string;
   readonly title: string;
   readonly type: string;
   readonly body: string;
+  readonly vietnameseTip?: string;
 }
 
 export interface Pair {
@@ -39,7 +40,7 @@ export interface DisplayExercise {
   readonly stimulus?: string;
   readonly questions?: readonly ExerciseQuestion[];
   readonly rubric?: ExerciseRubric | string;
-  readonly media_required?: boolean;
+  readonly explanation?: string;
 }
 
 export interface PracticeProtocol {
@@ -55,41 +56,34 @@ export interface PracticeProtocol {
   readonly checklist?: readonly string[];
   readonly feedback_boundary?: string;
   readonly mode?: string;
+  readonly situation?: string;
+  readonly learner_role?: string;
+  readonly ai_role?: string;
+  readonly useful_language?: readonly string[];
+  readonly examples?: readonly string[];
+  readonly explanation?: string;
 }
+
+export type PracticeModality = "listening" | "speaking" | "pronunciation" | "writing";
+export type LessonPractice = Readonly<Partial<Record<PracticeModality, PracticeProtocol>>>;
 
 export interface DisplayLesson {
   readonly language: LanguageCode;
-  readonly packetFamily: "english-full" | "german-pilot";
-  readonly recordType: string;
-  readonly languageName: string;
   readonly band: Band;
+  readonly courseAvailability: CourseAvailability;
   readonly tier: string;
   readonly unitId: string;
   readonly lessonId: string;
-  readonly packetId: string;
-  readonly packetPath: string;
-  readonly packetSha256: string;
   readonly sequence: number;
   readonly title: string;
   readonly topic: string;
   readonly durationMinutes: number;
-  readonly objectives: readonly string[];
-  readonly languageFocus: string;
-  readonly prerequisites: readonly string[];
-  readonly sections: readonly ContentSection[];
-  readonly exercises: readonly DisplayExercise[];
-  readonly practice: Readonly<Record<"listening" | "speaking" | "pronunciation" | "writing", PracticeProtocol>>;
-  readonly contentStatus: ContentStatus;
-  readonly provenance: Readonly<Record<string, string>>;
-}
-
-export interface SourceManifestReference {
-  readonly language: LanguageCode;
-  readonly band: Band;
-  readonly path: string;
-  readonly sha256: string;
-  readonly declaredManifestSha256: string;
-  readonly packetCount: number;
+  readonly objectives?: readonly string[];
+  readonly languageFocus?: string;
+  readonly prerequisites?: readonly string[];
+  readonly sections?: readonly ContentSection[];
+  readonly exercises?: readonly DisplayExercise[];
+  readonly practice?: LessonPractice;
 }
 
 export interface LanguageSummary {
@@ -100,10 +94,7 @@ export interface LanguageSummary {
 }
 
 export interface CurriculumSnapshot {
-  readonly schemaVersion: "1.0";
-  readonly contentStatus: ContentStatus;
-  readonly sourceManifests: readonly SourceManifestReference[];
+  readonly schemaVersion: "1.1";
   readonly languages: readonly LanguageSummary[];
   readonly lessons: readonly DisplayLesson[];
-  readonly snapshotSha256: string;
 }

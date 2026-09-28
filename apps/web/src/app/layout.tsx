@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { LanguageSwitcher } from "@/components/language-switcher";
+import { getAvailableCourses } from "@/content/catalog";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -15,11 +17,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <header className="site-header">
           <Link className="brand" href="/">English Master</Link>
           <nav className="header-nav" aria-label="Primary navigation"><Link href="/learn">Learn</Link></nav>
+          <LanguageSwitcher courses={getAvailableCourses().map(({ language, level }) => ({ language, level }))} />
           <span className="header-note">Static · local progress · no account</span>
         </header>
         <main id="main-content">{children}</main>
         <footer>
-          <p>Development learning materials remain <strong>UNREVIEWED</strong>. Internal tiers are curriculum subdivisions, not official CEFR levels.</p>
+          <p>These local learning materials are presented for self-study. Internal curriculum tiers are not official CEFR levels.</p>
           <p>This interface conveys no review, publication, provider-behavior, or learner-outcome authority.</p>
         </footer>
       </body>

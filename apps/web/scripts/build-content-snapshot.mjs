@@ -48,122 +48,310 @@ const fail = (message) => {
   throw new Error(`Snapshot build failed: ${message}`);
 };
 const requireString = (value, label) => {
-  if (typeof value !== "string" || value.length === 0) fail(`${label} must be a non-empty string`);
+  if (typeof value !== "string" || value.trim().length === 0) fail(`${label} must be a non-empty string`);
   return value;
 };
 const requireArray = (value, label) => {
   if (!Array.isArray(value)) fail(`${label} must be an array`);
   return value;
 };
+const requireRecord = (value, label) => {
+  if (typeof value !== "object" || value === null || Array.isArray(value)) fail(`${label} must be an object`);
+  return value;
+};
+const requirePositiveInteger = (value, label) => {
+  if (!Number.isInteger(value) || value < 1) fail(`${label} must be a positive integer`);
+  return value;
+};
+const requireStringArray = (value, label) =>
+  requireArray(value, label).map((item, index) => requireString(item, `${label}[${index}]`));
+const optionalString = (value, label) => value === undefined ? undefined : requireString(value, label);
+const optionalStringArray = (value, label) => value === undefined ? undefined : requireStringArray(value, label);
+const optionalArray = (value, label) => {
+  if (value === undefined) return undefined;
+  return requireArray(value, label);
+};
+const requireUniqueIds = (records, label) => {
+  const identities = new Set();
+  for (const record of records) {
+    if (identities.has(record.id)) fail(`${label} contains duplicate ${record.id} IDs`);
+    identities.add(record.id);
+  }
+  return records;
+};
+const optionalUniqueIds = (records, label) => records === undefined ? undefined : requireUniqueIds(records, label);
+const requireSafeSegment = (value, label) => {
+  const segment = requireString(value, label);
+  if (!/^[A-Za-z0-9][A-Za-z0-9._-]*$/.test(segment)) fail(`${label} contains an unsafe route segment`);
+  return segment;
+};
+const practiceStringFields = [
+  "goal",
+  "instruction",
+  "question",
+  "answer",
+  "transcript",
+  "target",
+  "without_audio",
+  "assessment",
+  "feedback_boundary",
+  "mode",
+  "situation",
+  "learner_role",
+  "ai_role",
+  "explanation",
+];
+const practiceArrayFields = ["constraints", "checklist", "useful_language", "examples"];
+export const projectPracticeProtocol = (protocol, label) => {
+  requireRecord(protocol, label);
+  const projected = {};
+  for (const field of practiceStringFields) {
+    if (protocol[field] === undefined || protocol[field] === null) continue;
+    projected[field] = requireString(protocol[field], `${label}.${field}`);
+  }
+  if (!projected.instruction) fail(`${label}.instruction must be supplied`);
+  for (const field of practiceArrayFields) {
+    if (protocol[field] === undefined || protocol[field] === null) continue;
+    projected[field] = requireStringArray(protocol[field], `${label}.${field}`);
+  }
+  return projected;
+};
+const optionalPractice = (value, label) => {
+  if (value === undefined || value === null) return undefined;
+  if (typeof value !== "object" || Array.isArray(value)) fail(`${label} must be an object when supplied`);
+  const result = {};
+  for (const modality of ["listening", "speaking", "pronunciation", "writing"]) {
+    const protocol = value[modality];
+    if (protocol === undefined || protocol === null) continue;
+    result[modality] = projectPracticeProtocol(protocol, `${label}.${modality}`);
+  }
+  return result;
+};
 
-function adaptEnglishPacket(packet, source, sourceRecord) {
+const VIETNAMESE_TIP_MARKER = "Mẹo tiếng Việt:";
+const projectEnglishSection = (section, packetId, source) => {
+  requireRecord(section, `${packetId}.section`);
+  const id = requireSafeSegment(section.id, `${packetId}.section.id`);
+  const type = requireString(section.section_type, `${packetId}.section.type`);
+  const title = requireString(section.title, `${packetId}.section.title`);
+  const originalBody = requireString(section.body, `${packetId}.section.body`);
+  if (source.vietnameseTipProjection !== "A1_V2_EXPLANATION_MARKER" || type !== "explanation") {
+    return { id, title, type, body: originalBody };
+  }
+  const markerCount = originalBody.split(VIETNAMESE_TIP_MARKER).length - 1;
+  if (markerCount !== 1) fail(`${packetId}.${id} must contain exactly one Vietnamese tip marker`);
+  const [body, vietnameseTip] = originalBody.split(VIETNAMESE_TIP_MARKER).map((part) => part.trim());
+  if (!body || !vietnameseTip) fail(`${packetId}.${id} has an empty Vietnamese tip boundary`);
+  return { id, title, type, body, vietnameseTip };
+};
+
+function adaptEnglishPacket(packet, source) {
+  requireRecord(packet, "English packet");
   requireArray(packet.content_sections, `${packet.packet_id}.content_sections`);
-  const practice = packet.practice ?? {};
   return {
     language: source.language,
-    packetFamily: "english-full",
-    recordType: packet.record_type,
-    languageName: source.languageName,
     band: source.band,
+    courseAvailability: source.courseAvailability,
     tier: requireString(packet.tier, `${packet.packet_id}.tier`),
-    unitId: requireString(packet.unit_id, `${packet.packet_id}.unit_id`),
-    lessonId: requireString(packet.lesson_id, `${packet.packet_id}.lesson_id`),
-    packetId: requireString(packet.packet_id, "packet_id"),
-    sequence: packet.sequence,
+    unitId: requireSafeSegment(packet.unit_id, `${packet.packet_id}.unit_id`),
+    lessonId: requireSafeSegment(packet.lesson_id, `${packet.packet_id}.lesson_id`),
+    sequence: requirePositiveInteger(packet.sequence, `${packet.packet_id}.sequence`),
     title: requireString(packet.title, `${packet.packet_id}.title`),
     topic: requireString(packet.topic, `${packet.packet_id}.topic`),
-    durationMinutes: packet.duration_minutes,
-    objectives: requireArray(packet.objectives, `${packet.packet_id}.objectives`),
-    languageFocus: requireString(packet.language_focus, `${packet.packet_id}.language_focus`),
-    prerequisites: requireArray(packet.prerequisite_lesson_ids, `${packet.packet_id}.prerequisites`),
-    sections: packet.content_sections.map((section) => ({
-      id: requireString(section.id, `${packet.packet_id}.section.id`),
-      title: requireString(section.title, `${packet.packet_id}.section.title`),
-      type: requireString(section.section_type, `${packet.packet_id}.section.type`),
-      body: requireString(section.body, `${packet.packet_id}.section.body`),
-    })),
-    exercises: requireArray(packet.exercises, `${packet.packet_id}.exercises`),
-    practice: {
-      listening: practice.listening ?? null,
-      speaking: practice.speaking ?? null,
-      pronunciation: practice.pronunciation ?? null,
-      writing: practice.writing ?? null,
-    },
-    contentStatus: packet.content_status,
-    provenance: packet.provenance,
-    packetPath: sourceRecord.path,
-    packetSha256: sourceRecord.sha256,
+    durationMinutes: requirePositiveInteger(packet.duration_minutes, `${packet.packet_id}.duration_minutes`),
+    objectives: optionalStringArray(packet.objectives, `${packet.packet_id}.objectives`),
+    languageFocus: optionalString(packet.language_focus, `${packet.packet_id}.language_focus`),
+    prerequisites: optionalStringArray(packet.prerequisite_lesson_ids, `${packet.packet_id}.prerequisites`),
+    sections: requireUniqueIds(
+      packet.content_sections.map((section) => projectEnglishSection(section, packet.packet_id, source)),
+      `${packet.packet_id}.sections`,
+    ),
+    exercises: optionalUniqueIds(
+      optionalArray(packet.exercises, `${packet.packet_id}.exercises`)?.map((exercise, index) =>
+        projectExercise(exercise, `${packet.packet_id}.exercises[${index}]`),
+      ),
+      `${packet.packet_id}.exercises`,
+    ),
+    practice: optionalPractice(packet.practice, `${packet.packet_id}.practice`),
   };
 }
 
-function adaptGermanExercise(exercise, packetId) {
-  requireString(exercise.id, `${packetId}.exercise.id`);
-  requireString(exercise.type, `${packetId}.exercise.type`);
-  requireString(exercise.prompt, `${packetId}.exercise.prompt`);
-  if (exercise.type !== "ordering") return exercise;
+export function projectExercise(exercise, label) {
+  requireRecord(exercise, label);
+  const projected = {
+    id: requireSafeSegment(exercise.id, `${label}.id`),
+    type: requireString(exercise.type, `${label}.type`),
+    prompt: requireString(exercise.prompt, `${label}.prompt`),
+  };
+  for (const field of ["options", "acceptable_answers", "items", "correct_order"]) {
+    const value = optionalStringArray(exercise[field], `${label}.${field}`);
+    if (value !== undefined) projected[field] = value;
+  }
+  for (const field of ["correct_answer", "answer", "stimulus", "explanation"]) {
+    const value = optionalString(exercise[field], `${label}.${field}`);
+    if (value !== undefined) projected[field] = value;
+  }
+  if (exercise.pairs !== undefined) {
+    projected.pairs = requireArray(exercise.pairs, `${label}.pairs`).map((pair, index) => {
+      requireRecord(pair, `${label}.pairs[${index}]`);
+      return {
+        left: requireString(pair.left, `${label}.pairs[${index}].left`),
+        right: requireString(pair.right, `${label}.pairs[${index}].right`),
+      };
+    });
+  }
+  if (exercise.questions !== undefined) {
+    projected.questions = requireArray(exercise.questions, `${label}.questions`).map((question, index) => {
+      requireRecord(question, `${label}.questions[${index}]`);
+      return {
+        question: requireString(question.question, `${label}.questions[${index}].question`),
+        acceptable_answers: requireStringArray(
+          question.acceptable_answers,
+          `${label}.questions[${index}].acceptable_answers`,
+        ),
+      };
+    });
+  }
+  if (exercise.rubric !== undefined) {
+    if (typeof exercise.rubric === "string") {
+      projected.rubric = requireString(exercise.rubric, `${label}.rubric`);
+    } else {
+      requireRecord(exercise.rubric, `${label}.rubric`);
+      const criteria = optionalStringArray(exercise.rubric.criteria, `${label}.rubric.criteria`);
+      if (criteria === undefined) fail(`${label}.rubric must be a string or contain criteria`);
+      projected.rubric = { criteria };
+    }
+  }
+  validateProjectedExercise(projected, label);
+  return projected;
+}
 
-  const correctOrder = requireString(exercise.answer, `${packetId}.${exercise.id}.answer`)
+const simpleObjectiveTypes = new Set(["multiple_choice", "fill_blank", "selection", "completion"]);
+const questionObjectiveTypes = new Set(["reading", "listening"]);
+
+const hasUniqueStrings = (values) => new Set(values).size === values.length;
+
+function validateProjectedExercise(exercise, label) {
+  if (simpleObjectiveTypes.has(exercise.type)) {
+    const answers = exercise.correct_answer
+      ? [exercise.correct_answer]
+      : exercise.acceptable_answers ?? (exercise.answer ? [exercise.answer] : []);
+    if (answers.length === 0) fail(`${label} requires supplied answer data`);
+    if (exercise.type === "multiple_choice") {
+      if (!exercise.options?.length || !hasUniqueStrings(exercise.options)) {
+        fail(`${label} requires unique multiple-choice options`);
+      }
+      if (!answers.every((answer) => exercise.options.includes(answer))) {
+        fail(`${label} answer data must be included in its multiple-choice options`);
+      }
+    }
+    return;
+  }
+  if (exercise.type === "matching") {
+    if (!exercise.pairs?.length || !hasUniqueStrings(exercise.pairs.map((pair) => pair.left)) ||
+      !hasUniqueStrings(exercise.pairs.map((pair) => pair.right))) {
+      fail(`${label} requires uniquely labeled matching pairs`);
+    }
+    return;
+  }
+  if (exercise.type === "ordering") {
+    if (!exercise.items?.length || !exercise.correct_order?.length ||
+      exercise.items.length !== exercise.correct_order.length ||
+      !hasUniqueStrings(exercise.items) || !hasUniqueStrings(exercise.correct_order) ||
+      JSON.stringify([...exercise.items].sort()) !== JSON.stringify([...exercise.correct_order].sort())) {
+      fail(`${label} requires compatible unique ordering items and answer data`);
+    }
+    return;
+  }
+  if (questionObjectiveTypes.has(exercise.type) &&
+    (!exercise.questions?.length || !hasUniqueStrings(exercise.questions.map((question) => question.question)) ||
+      exercise.questions.some((question) => !question.acceptable_answers.length))) {
+    fail(`${label} requires answerable, uniquely labeled questions`);
+  }
+}
+
+function adaptGermanExercise(exercise, packetId) {
+  const label = `${packetId}.exercise`;
+  requireString(exercise.id, `${label}.id`);
+  requireString(exercise.type, `${label}.type`);
+  requireString(exercise.prompt, `${label}.prompt`);
+  if (exercise.type !== "ordering") return projectExercise(exercise, label);
+
+  const correctOrder = requireString(exercise.answer, `${label}.${exercise.id}.answer`)
     .split(",")
     .map((item) => item.trim())
     .filter(Boolean);
   if (correctOrder.length < 2) fail(`${packetId}.${exercise.id} has an unusable ordering answer`);
-  return {
+  return projectExercise({
     ...exercise,
     items: [...correctOrder.slice(1), correctOrder[0]],
     correct_order: correctOrder,
-  };
+  }, label);
 }
 
-function adaptGermanPacket(packet, source, sourceRecord) {
+function germanSectionType(title) {
+  if (/^Modell\s+\d+/u.test(title)) return "example";
+  if (/^Hinweis\s+\d+/u.test(title)) return "explanation";
+  return "lesson";
+}
+
+export function adaptGermanPacket(packet, source) {
+  requireRecord(packet, "German packet");
   if (packet.language_code !== "de") fail(`${packet.packet_id} has an invalid language_code`);
-  const prompts = Object.fromEntries(
-    requireArray(packet.prompts, `${packet.packet_id}.prompts`).map((prompt) => [prompt.modality, prompt]),
-  );
-  for (const modality of ["listening", "speaking", "pronunciation", "writing"]) {
-    if (!prompts[modality]) fail(`${packet.packet_id} is missing ${modality} practice`);
+  const practices = {};
+  const seenModalities = new Set();
+  for (const prompt of optionalArray(packet.prompts, `${packet.packet_id}.prompts`) ?? []) {
+    requireRecord(prompt, `${packet.packet_id}.prompt`);
+    const modality = requireString(prompt.modality, `${packet.packet_id}.prompt.modality`);
+    if (!["listening", "speaking", "pronunciation", "writing"].includes(modality)) continue;
+    if (seenModalities.has(modality)) fail(`${packet.packet_id} has duplicate ${modality} practice`);
+    seenModalities.add(modality);
+    practices[modality] = projectPracticeProtocol(
+      prompt,
+      `${packet.packet_id}.prompts.${modality}`,
+    );
   }
-  const unitMatch = requireString(packet.lesson_id, `${packet.packet_id}.lesson_id`).match(/^(.*)-l\d+$/);
+  const lessonId = requireSafeSegment(packet.lesson_id, `${packet.packet_id}.lesson_id`);
+  const unitMatch = lessonId.match(/^(.*)-l\d+$/);
   if (!unitMatch) fail(`${packet.packet_id} lesson ID does not identify a unit`);
+  const objectives = optionalStringArray(packet.objectives, `${packet.packet_id}.objectives`);
   return {
     language: source.language,
-    packetFamily: "german-pilot",
-    recordType: packet.record_type,
-    languageName: source.languageName,
     band: source.band,
+    courseAvailability: source.courseAvailability,
     tier: requireString(packet.tier, `${packet.packet_id}.tier`),
-    unitId: unitMatch[1],
-    lessonId: packet.lesson_id,
-    packetId: requireString(packet.packet_id, "packet_id"),
-    sequence: packet.sequence,
+    unitId: requireSafeSegment(unitMatch[1], `${packet.packet_id}.unit_id`),
+    lessonId,
+    sequence: requirePositiveInteger(packet.sequence, `${packet.packet_id}.sequence`),
     title: requireString(packet.title, `${packet.packet_id}.title`),
-    topic: packet.title,
-    durationMinutes: packet.duration_minutes,
-    objectives: requireArray(packet.objectives, `${packet.packet_id}.objectives`),
-    languageFocus: packet.objectives.join(" "),
-    prerequisites: requireArray(packet.prerequisite_lesson_ids, `${packet.packet_id}.prerequisites`),
-    sections: requireArray(packet.sections, `${packet.packet_id}.sections`).map((section, index) => ({
-      id: `section-${index + 1}`,
-      title: requireString(section.title, `${packet.packet_id}.section.title`),
-      type: "explanation",
-      body: requireString(section.body, `${packet.packet_id}.section.body`),
-    })),
-    exercises: requireArray(packet.exercises, `${packet.packet_id}.exercises`).map((exercise) => adaptGermanExercise(exercise, packet.packet_id)),
-    practice: {
-      listening: prompts.listening,
-      speaking: prompts.speaking,
-      pronunciation: prompts.pronunciation,
-      writing: prompts.writing,
-    },
-    contentStatus: packet.content_status,
-    provenance: packet.provenance,
-    packetPath: sourceRecord.path,
-    packetSha256: sourceRecord.sha256,
+    topic: requireString(packet.title, `${packet.packet_id}.title`),
+    durationMinutes: requirePositiveInteger(packet.duration_minutes, `${packet.packet_id}.duration_minutes`),
+    objectives,
+    languageFocus: objectives?.join(" "),
+    prerequisites: optionalStringArray(packet.prerequisite_lesson_ids, `${packet.packet_id}.prerequisites`),
+    sections: requireUniqueIds(
+      requireArray(packet.sections, `${packet.packet_id}.sections`).map((section, index) => {
+        requireRecord(section, `${packet.packet_id}.section[${index}]`);
+        const title = requireString(section.title, `${packet.packet_id}.section.title`);
+        return {
+          id: `section-${index + 1}`,
+          title,
+          type: germanSectionType(title),
+          body: requireString(section.body, `${packet.packet_id}.section.body`),
+        };
+      }),
+      `${packet.packet_id}.sections`,
+    ),
+    exercises: optionalUniqueIds(
+      optionalArray(packet.exercises, `${packet.packet_id}.exercises`)?.map((exercise) => adaptGermanExercise(exercise, packet.packet_id)),
+      `${packet.packet_id}.exercises`,
+    ),
+    practice: Object.keys(practices).length ? practices : undefined,
   };
 }
 
 export async function buildSnapshot() {
   const lessons = [];
-  const sourceManifests = [];
   const seenLessonIds = new Set();
 
   for (const source of sources) {
@@ -225,35 +413,37 @@ export async function buildSnapshot() {
       addUniqueIdentity(seenLessonIds, source.language, packet.lesson_id);
       lessons.push(
         source.language === "de"
-          ? adaptGermanPacket(packet, source, record)
-          : adaptEnglishPacket(packet, source, record),
+          ? adaptGermanPacket(packet, source)
+          : adaptEnglishPacket(packet, source),
       );
     }
 
-    sourceManifests.push({
-      language: source.language,
-      band: source.band,
-      path: source.manifest.replaceAll("\\", "/"),
-      sha256: sha256(manifestBytes),
-      declaredManifestSha256: manifest.manifest_sha256,
-      packetCount: inventory.length,
-    });
   }
 
-  if (lessons.filter((lesson) => lesson.language === "en").length !== 300) fail("English inventory is not 300");
-  if (lessons.filter((lesson) => lesson.language === "de").length !== 10) fail("German inventory is not 10");
+  for (const source of sources.filter((item) => item.vietnameseTipProjection === "A1_V2_EXPLANATION_MARKER")) {
+    const tipCount = lessons
+      .filter((lesson) => lesson.language === source.language && lesson.band === source.band)
+      .flatMap((lesson) => lesson.sections ?? [])
+      .filter((section) => section.vietnameseTip).length;
+    if (tipCount !== source.expectedCount) fail(`${source.language} ${source.band} must contain ${source.expectedCount} supplied Vietnamese tips`);
+  }
 
-  const payload = {
-    schemaVersion: "1.0",
-    contentStatus: "UNREVIEWED",
-    sourceManifests,
-    languages: [
-      { code: "en", name: "English", lessonCount: 300, bands: ["A1", "A2", "B1", "B2", "C1", "C2"] },
-      { code: "de", name: "German", lessonCount: 10, bands: ["A1"] },
-    ],
+  const languages = [...new Set(sources.map((source) => source.language))].map((code) => {
+    const languageSources = sources.filter((source) => source.language === code);
+    const languageLessons = lessons.filter((lesson) => lesson.language === code);
+    return {
+      code,
+      name: languageSources[0].languageName,
+      lessonCount: languageLessons.length,
+      bands: [...new Set(languageSources.map((source) => source.band))],
+    };
+  });
+
+  return {
+    schemaVersion: "1.1",
+    languages,
     lessons,
   };
-  return { ...payload, snapshotSha256: sha256(JSON.stringify(payload)) };
 }
 
 async function main() {
@@ -267,11 +457,11 @@ async function main() {
       fail("generated snapshot is missing; run npm run snapshot");
     }
     if (current !== serialized) fail("generated snapshot is stale; run npm run snapshot");
-    console.log(`Verified deterministic snapshot ${snapshot.snapshotSha256} (${snapshot.lessons.length} lessons).`);
+    console.log(`Verified deterministic ${snapshot.lessons.length}-packet curriculum snapshot.`);
   } else {
     await mkdir(path.dirname(outputPath), { recursive: true });
     await writeFile(outputPath, serialized, "utf8");
-    console.log(`Built deterministic snapshot ${snapshot.snapshotSha256} (${snapshot.lessons.length} lessons).`);
+    console.log(`Built deterministic ${snapshot.lessons.length}-packet curriculum snapshot.`);
   }
 }
 

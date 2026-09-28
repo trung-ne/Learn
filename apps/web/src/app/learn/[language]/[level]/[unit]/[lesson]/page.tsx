@@ -2,11 +2,41 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { LessonInteractions } from "@/components/lesson-interactions";
+import type { ContentSection } from "@/content/types";
 import { getLesson, snapshot } from "@/content/catalog";
 import { getLanguageConfiguration } from "@/content/languages";
 import { languageHref, learnHref, levelHref } from "@/lib/routes";
 
 export const dynamicParams = false;
+
+const sectionGroups = [
+  { key: "vocabulary", eyebrow: "Words and phrases", heading: "Vocabulary" },
+  { key: "grammar", eyebrow: "Language patterns", heading: "Grammar" },
+  { key: "explanation", eyebrow: "Understand", heading: "Explanation" },
+  { key: "example", eyebrow: "Models", heading: "Examples" },
+  { key: "common_mistakes", eyebrow: "Watch out", heading: "Common mistakes" },
+  { key: "pronunciation", eyebrow: "Say it clearly", heading: "Pronunciation" },
+] as const;
+
+function SectionCards({
+  sections,
+  language,
+}: {
+  readonly sections: readonly ContentSection[];
+  readonly language: "en" | "de";
+}) {
+  return (
+    <div className="content-stack" lang={language}>
+      {sections.map((section) => (
+        <article key={section.id}>
+          <h3>{section.title}</h3>
+          <p>{section.body}</p>
+          {section.vietnameseTip && <aside className="vietnamese-tip" lang="vi"><strong>Gợi ý tiếng Việt</strong><p>{section.vietnameseTip}</p></aside>}
+        </article>
+      ))}
+    </div>
+  );
+}
 
 export function generateStaticParams() {
   return snapshot.lessons.map((item) => ({
@@ -29,7 +59,10 @@ export default async function LessonPage({ params }: { params: Promise<{ languag
   if (!lesson) notFound();
   const configuration = getLanguageConfiguration(lesson.language);
   if (!configuration) notFound();
-  const manifest = snapshot.sourceManifests.find((source) => source.language === lesson.language && source.band === lesson.band);
+
+  const sections = lesson.sections ?? [];
+  const groupedIds = new Set(sectionGroups.map((group) => group.key));
+  const generalSections = sections.filter((section) => !groupedIds.has(section.type));
 
   return (
     <div className="page-shell lesson-page">
@@ -37,47 +70,43 @@ export default async function LessonPage({ params }: { params: Promise<{ languag
         <Link href={learnHref()}>Learn</Link><span aria-hidden="true"> / </span>
         <Link href={languageHref(lesson.language)}>{configuration.name}</Link><span aria-hidden="true"> / </span>
         <Link href={levelHref(lesson.language, lesson.band)}>{lesson.band}</Link><span aria-hidden="true"> / </span>
-        <span>{lesson.title}</span>
+        <span aria-current="page">{lesson.title}</span>
       </nav>
 
       <header className="lesson-hero">
-        <div className="lesson-kicker"><span>{lesson.tier}</span><span>{lesson.durationMinutes} minutes</span><span>{lesson.contentStatus}</span></div>
-        <h1>{lesson.title}</h1>
-        <p className="lede">{lesson.languageFocus}</p>
-        <dl className="lesson-meta">
-          <div><dt>Topic</dt><dd>{lesson.topic}</dd></div>
-          <div><dt>Lesson ID</dt><dd><code>{lesson.lessonId}</code></dd></div>
-          <div><dt>Prerequisites</dt><dd>{lesson.prerequisites.length ? lesson.prerequisites.join(", ") : "None"}</dd></div>
-        </dl>
+        <div className="lesson-kicker"><span>CEFR {lesson.band}</span><span>{lesson.durationMinutes} minutes</span></div>
+        <h1 lang={lesson.language}>{lesson.title}</h1>
+        {lesson.languageFocus && <p className="lede" lang={lesson.language}>{lesson.languageFocus}</p>}
+        <dl className="lesson-meta"><div><dt>Topic</dt><dd lang={lesson.language}>{lesson.topic}</dd></div><div><dt>Target language</dt><dd>{configuration.nativeName}</dd></div></dl>
       </header>
 
-      <section className="page-section objectives" aria-labelledby="objectives-heading">
-        <p className="eyebrow">Lesson outcomes</p><h2 id="objectives-heading">Objectives</h2>
-        <ul>{lesson.objectives.map((objective) => <li key={objective}>{objective}</li>)}</ul>
-      </section>
+      {lesson.objectives?.length ? (
+        <section className="page-section objectives" aria-labelledby="objectives-heading">
+          <p className="eyebrow">Lesson outcomes</p><h2 id="objectives-heading">Objectives</h2>
+          <ul lang={lesson.language}>{lesson.objectives.map((objective) => <li key={objective}>{objective}</li>)}</ul>
+        </section>
+      ) : null}
 
-      <section className="page-section" aria-labelledby="lesson-content-heading">
-        <p className="eyebrow">Read and notice</p><h2 id="lesson-content-heading">Lesson content</h2>
-        <div className="content-stack">
-          {lesson.sections.map((section) => (
-            <article key={section.id}><span className="section-type">{section.type}</span><h3>{section.title}</h3><p>{section.body}</p></article>
-          ))}
-        </div>
-      </section>
+      {sectionGroups.map((group) => {
+        const matching = sections.filter((section) => section.type === group.key);
+        return matching.length ? (
+          <section className="page-section" aria-labelledby={`${group.key}-heading`} key={group.key}>
+            <p className="eyebrow">{group.eyebrow}</p><h2 id={`${group.key}-heading`}>{group.heading}</h2>
+            <SectionCards sections={matching} language={lesson.language} />
+          </section>
+        ) : null;
+      })}
+
+      {generalSections.length ? (
+        <section className="page-section" aria-labelledby="lesson-content-heading">
+          <p className="eyebrow">Read and notice</p><h2 id="lesson-content-heading">Lesson content</h2>
+          <SectionCards sections={generalSections} language={lesson.language} />
+        </section>
+      ) : sections.length === 0 ? (
+        <section className="page-section empty-state"><h2>Lesson content is not available</h2><p>This lesson packet does not currently include learner-facing explanation sections.</p></section>
+      ) : null}
 
       <LessonInteractions lesson={lesson} />
-
-      <details className="lineage">
-        <summary>Content lineage and status</summary>
-        <dl>
-          <div><dt>Packet family</dt><dd>{lesson.packetFamily}</dd></div>
-          <div><dt>Record type</dt><dd>{lesson.recordType}</dd></div>
-          <div><dt>Packet path</dt><dd><code>{lesson.packetPath}</code></dd></div>
-          <div><dt>Packet SHA-256</dt><dd><code>{lesson.packetSha256}</code></dd></div>
-          {manifest && <><div><dt>Source manifest</dt><dd><code>{manifest.path}</code></dd></div><div><dt>Manifest identity</dt><dd><code>{manifest.declaredManifestSha256}</code></dd></div></>}
-          <div><dt>Status</dt><dd>{lesson.contentStatus}</dd></div>
-        </dl>
-      </details>
     </div>
   );
 }
