@@ -5,15 +5,26 @@ import { useEffect, useState } from "react";
 import type { CourseAvailability, CourseLevel, LanguageCode } from "@/content/types";
 import { getLanguageConfiguration } from "@/content/languages";
 import { languageHref } from "@/lib/routes";
+import { TodayRecommendations } from "@/components/today-recommendations";
 import {
   loadLearner,
   loadProgress,
   setActiveLanguage,
   summarizeCourseProgress,
-  type CourseLessonInventory,
   type CourseProgressSummary,
   type LocalLearner,
 } from "@/lib/progress";
+
+export interface HomeLesson {
+  readonly lessonId: string;
+  readonly unitId: string;
+  readonly title: string;
+  readonly sequence: number;
+  readonly href: string;
+  readonly hasListeningPractice: boolean;
+  readonly hasPronunciationPractice: boolean;
+  readonly durationMinutes: number;
+}
 
 export interface HomeCourse {
   readonly language: LanguageCode;
@@ -21,7 +32,7 @@ export interface HomeCourse {
   readonly lessonCount: number;
   readonly availability: CourseAvailability;
   readonly firstLessonHref: string;
-  readonly lessons: readonly CourseLessonInventory[];
+  readonly lessons: readonly HomeLesson[];
   readonly lessonHrefs: Readonly<Record<string, string>>;
 }
 
@@ -31,6 +42,7 @@ interface HomeLearningProps {
 
 interface CourseDashboard {
   readonly course: HomeCourse;
+  readonly progress: ReturnType<typeof loadProgress>;
   readonly summary: CourseProgressSummary;
   readonly continueHref?: string;
 }
@@ -42,7 +54,7 @@ function loadDashboards(learner: LocalLearner, courses: readonly HomeCourse[]): 
     const continueHref = summary.currentLessonId
       ? course.lessonHrefs[summary.currentLessonId]
       : undefined;
-    return { course, summary, continueHref };
+    return { course, progress, summary, continueHref };
   });
 }
 
@@ -54,6 +66,13 @@ function latestDashboard(dashboards: readonly CourseDashboard[]): CourseDashboar
       if (timestampOrder !== 0) return timestampOrder;
       return `${left.course.language}-${left.course.level}`.localeCompare(`${right.course.language}-${right.course.level}`);
     })[0];
+}
+
+function todayDashboard(
+  learner: LocalLearner | undefined,
+  dashboards: readonly CourseDashboard[],
+): CourseDashboard | undefined {
+  return latestDashboard(dashboards) ?? dashboards.find((dashboard) => dashboard.course.language === learner?.activeLanguage) ?? dashboards[0];
 }
 
 export function HomeLearning({ courses }: HomeLearningProps) {
@@ -72,6 +91,7 @@ export function HomeLearning({ courses }: HomeLearningProps) {
   }
 
   const latest = latestDashboard(dashboards);
+  const today = todayDashboard(learner, dashboards);
 
   return (
     <section className="home-learning" aria-labelledby="start-learning-heading">
@@ -88,6 +108,8 @@ export function HomeLearning({ courses }: HomeLearningProps) {
       ) : (
         <p className="empty-resume">Choose a course to begin. A continue link appears after you open a lesson.</p>
       )}
+
+      {learner && today && <TodayRecommendations learner={learner} course={today.course} courseProgress={today.progress} />}
 
       <div className="home-course-grid">
         {dashboards.map(({ course, summary, continueHref }) => {

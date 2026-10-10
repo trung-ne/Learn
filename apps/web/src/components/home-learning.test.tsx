@@ -17,7 +17,7 @@ const courses: readonly HomeCourse[] = [
     lessonCount: 50,
     availability: "AVAILABLE",
     firstLessonHref: "/learn/en/A1/unit/lesson-1",
-    lessons: [{ lessonId: "lesson-1", unitId: "unit-1" }],
+    lessons: [{ lessonId: "lesson-1", unitId: "unit-1", title: "English lesson", sequence: 1, href: "/learn/en/A1/unit/lesson-1", hasListeningPractice: false, hasPronunciationPractice: false, durationMinutes: 15 }],
     lessonHrefs: { "lesson-1": "/learn/en/A1/unit/lesson-1" },
   },
   {
@@ -26,7 +26,7 @@ const courses: readonly HomeCourse[] = [
     lessonCount: 10,
     availability: "PILOT",
     firstLessonHref: "/learn/de/A1/unit/lesson-1",
-    lessons: [{ lessonId: "lesson-1", unitId: "unit-1" }],
+    lessons: [{ lessonId: "lesson-1", unitId: "unit-1", title: "German lesson", sequence: 1, href: "/learn/de/A1/unit/lesson-1", hasListeningPractice: false, hasPronunciationPractice: false, durationMinutes: 15 }],
     lessonHrefs: { "lesson-1": "/learn/de/A1/unit/lesson-1" },
   },
 ];

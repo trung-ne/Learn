@@ -1,17 +1,22 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
-import type { LessonPractice, PracticeProtocol } from "@/content/types";
+import type { LessonPractice, PracticeProtocol, LanguageCode } from "@/content/types";
+import { pronunciationHref, speakingHref, writingHref } from "@/lib/routes";
 
 export type Modality = "listening" | "speaking" | "pronunciation" | "writing";
 
 interface PracticePanelsProps {
   readonly practice: LessonPractice;
+  readonly language?: LanguageCode;
   readonly targetLevel?: string;
   readonly completed: Readonly<Partial<Record<Modality, boolean>>>;
-  readonly writingDraft: string;
+  /** Retained for callers with an unimported legacy local draft; the dedicated Writing workspace owns editing. */
+  readonly writingDraft?: string;
+  /** Retained for compatibility; dedicated Writing workspace owns editing. */
+  readonly onDraftChange?: (draft: string) => void;
   readonly onProtocolComplete: (modality: Modality, completed: boolean) => void;
-  readonly onDraftChange: (draft: string) => void;
 }
 
 const labels: Record<Modality, string> = {
@@ -23,11 +28,10 @@ const labels: Record<Modality, string> = {
 
 export function PracticePanels({
   practice,
+  language = "en",
   targetLevel,
   completed,
-  writingDraft,
   onProtocolComplete,
-  onDraftChange,
 }: PracticePanelsProps) {
   return (
     <div className="practice-grid">
@@ -41,6 +45,7 @@ export function PracticePanels({
       {practice.speaking && (
         <SpeakingPanel
           protocol={practice.speaking}
+          language={language}
           completed={Boolean(completed.speaking)}
           onComplete={(value) => onProtocolComplete("speaking", value)}
         />
@@ -48,6 +53,7 @@ export function PracticePanels({
       {practice.pronunciation && (
         <PronunciationPanel
           protocol={practice.pronunciation}
+          language={language}
           completed={Boolean(completed.pronunciation)}
           onComplete={(value) => onProtocolComplete("pronunciation", value)}
         />
@@ -55,10 +61,9 @@ export function PracticePanels({
       {practice.writing && (
         <WritingPanel
           protocol={practice.writing}
+          language={language}
           targetLevel={targetLevel}
           completed={Boolean(completed.writing)}
-          draft={writingDraft}
-          onDraftChange={onDraftChange}
           onComplete={(value) => onProtocolComplete("writing", value)}
         />
       )}
@@ -194,10 +199,12 @@ function ListeningPanel({
 
 function SpeakingPanel({
   protocol,
+  language,
   completed,
   onComplete,
 }: {
   readonly protocol: PracticeProtocol;
+  readonly language: LanguageCode;
   readonly completed: boolean;
   readonly onComplete: (value: boolean) => void;
 }) {
@@ -211,6 +218,7 @@ function SpeakingPanel({
       <SourceText label="AI role" value={protocol.ai_role} />
       <ProtocolGuidance protocol={protocol} />
       <SourceList label="Useful language" values={protocol.useful_language} />
+      <Link href={speakingHref(language)}>Browse supplied speaking protocols</Link>
       <CompletionToggle checked={completed} onChange={onComplete} />
     </section>
   );
@@ -218,10 +226,12 @@ function SpeakingPanel({
 
 function PronunciationPanel({
   protocol,
+  language,
   completed,
   onComplete,
 }: {
   readonly protocol: PracticeProtocol;
+  readonly language: LanguageCode;
   readonly completed: boolean;
   readonly onComplete: (value: boolean) => void;
 }) {
@@ -236,6 +246,7 @@ function PronunciationPanel({
       <SourceList label="Examples" values={protocol.examples} />
       <SourceText label="Pronunciation explanation" value={protocol.explanation} />
       {assessment && <p className="status-pill">{assessment}</p>}
+      <Link href={pronunciationHref(language)}>Browse supplied pronunciation protocols</Link>
       <CompletionToggle checked={completed} onChange={onComplete} />
     </section>
   );
@@ -268,17 +279,15 @@ function SourceList({
 
 function WritingPanel({
   protocol,
+  language,
   targetLevel,
   completed,
-  draft,
-  onDraftChange,
   onComplete,
 }: {
   readonly protocol: PracticeProtocol;
+  readonly language: LanguageCode;
   readonly targetLevel?: string;
   readonly completed: boolean;
-  readonly draft: string;
-  readonly onDraftChange: (value: string) => void;
   readonly onComplete: (value: boolean) => void;
 }) {
   return (
@@ -290,10 +299,11 @@ function WritingPanel({
       <PromptTools protocol={protocol} label="AI writing tutor prompt" />
       <ProtocolGuidance protocol={protocol} />
       <SourceList label="Useful language" values={protocol.useful_language} />
-      <label>
-        <span>Your local draft</span>
-        <textarea rows={7} value={draft} onChange={(event) => onDraftChange(event.target.value)} />
-      </label>
+      {language === "en" ? (
+        <Link href={writingHref("en")}>Open this task in the dedicated Writing workspace</Link>
+      ) : (
+        <p className="local-marker">A dedicated writing workspace is not available for this target language.</p>
+      )
       <CompletionToggle checked={completed} onChange={onComplete} />
     </section>
   );

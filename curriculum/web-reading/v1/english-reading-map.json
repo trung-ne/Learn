@@ -1,0 +1,1719 @@
+{
+  "schema_version": "1.0",
+  "inventory_version": "reading-en-current-v1",
+  "content_status": "UNREVIEWED",
+  "records": [
+    {
+      "id": "reader-en-a1-001",
+      "band": "A1",
+      "lesson_id": "m16a1-v1-a1-u01-l03",
+      "packet_sha256": "593bcf9f70ab3ae32d112577f121766657a0641995aee4fe0f58c4bccd359d93",
+      "source_kind": "exercise",
+      "source_id": "detail-check"
+    },
+    {
+      "id": "reader-en-a1-002",
+      "band": "A1",
+      "lesson_id": "m16a1-v1-a1-u02-l02",
+      "packet_sha256": "844d052ef7a5aabbc4f586a47718c018b2de969d2042ec8b4c6922a23318e74f",
+      "source_kind": "exercise",
+      "source_id": "detail-check"
+    },
+    {
+      "id": "reader-en-a1-003",
+      "band": "A1",
+      "lesson_id": "m16a1-v1-a1-u03-l01",
+      "packet_sha256": "0123049383b5af7f5df6cd9903c60145cd5237f2ae0d9c4613ed04ea6378c5db",
+      "source_kind": "exercise",
+      "source_id": "detail-check",
+      "word_sense_occurrences": [
+        {
+          "sense_id": "vocab-en-name-001",
+          "surface": "name",
+          "start": 23,
+          "end": 27
+        }
+      ]
+    },
+    {
+      "id": "reader-en-a1-004",
+      "band": "A1",
+      "lesson_id": "m16a1-v1-a1-u03-l05",
+      "packet_sha256": "a1e28d53044fd48b0365c9f9732709743f515baae58bf1f1a12026b186318625",
+      "source_kind": "exercise",
+      "source_id": "detail-check"
+    },
+    {
+      "id": "reader-en-a1-005",
+      "band": "A1",
+      "lesson_id": "m16a1-v1-a1-u04-l04",
+      "packet_sha256": "47986e51b7a17f236926ce00ecd346164567750a7650e12d19d266b11ceb28bd",
+      "source_kind": "exercise",
+      "source_id": "detail-check"
+    },
+    {
+      "id": "reader-en-a1-006",
+      "band": "A1",
+      "lesson_id": "m16a1-v1-a1-u05-l03",
+      "packet_sha256": "7d718d56082c08fb8b11944160a4b939be990d37a08a7a97005430feb2427062",
+      "source_kind": "exercise",
+      "source_id": "detail-check"
+    },
+    {
+      "id": "reader-en-a1-007",
+      "band": "A1",
+      "lesson_id": "m16a1-v1-a1-u06-l02",
+      "packet_sha256": "5c917182145294c6390c817a2c7a84fd0f953fb330883820e96fb4003bd939e2",
+      "source_kind": "exercise",
+      "source_id": "detail-check"
+    },
+    {
+      "id": "reader-en-a1-008",
+      "band": "A1",
+      "lesson_id": "m16a1-v1-a1-u07-l01",
+      "packet_sha256": "119e63ac17cbf19c519fb930963f40a3451a8186fdb34bb7e8b4bc0acd8e3ccd",
+      "source_kind": "exercise",
+      "source_id": "detail-check"
+    },
+    {
+      "id": "reader-en-a1-009",
+      "band": "A1",
+      "lesson_id": "m16a1-v1-a1-u07-l05",
+      "packet_sha256": "d75367524c54637baeae1173c1ec8bdc64b81f90f1009a870ba918218df79af9",
+      "source_kind": "exercise",
+      "source_id": "detail-check"
+    },
+    {
+      "id": "reader-en-a1-010",
+      "band": "A1",
+      "lesson_id": "m16a1-v1-a1-u08-l04",
+      "packet_sha256": "bde57711d165128a15fa6b08dc29b42725444698c0d4f933cd54fcbd6b897010",
+      "source_kind": "exercise",
+      "source_id": "detail-check"
+    },
+    {
+      "id": "reader-en-a1-011",
+      "band": "A1",
+      "lesson_id": "m16a1-v1-a1-u09-l03",
+      "packet_sha256": "be7f38e14e48d696c01aec2a5e722393bb9186ffeafab8c059a7aee58d651f96",
+      "source_kind": "exercise",
+      "source_id": "detail-check"
+    },
+    {
+      "id": "reader-en-a1-012",
+      "band": "A1",
+      "lesson_id": "m16a1-v1-a1-u10-l02",
+      "packet_sha256": "86f0aed28dc46c0c8c799860dd92bb4516eb3153cd8585b541bebdbb117acdcd",
+      "source_kind": "exercise",
+      "source_id": "detail-check"
+    },
+    {
+      "id": "reader-en-a2-001",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u01-l01",
+      "packet_sha256": "174b9059308baa7b397d2059821574adadf990cf845fe17e12d7d843c38853d8",
+      "source_kind": "exercise",
+      "source_id": "read",
+      "word_sense_occurrences": [
+        {
+          "sense_id": "vocab-en-number-001",
+          "surface": "number",
+          "start": 36,
+          "end": 42
+        }
+      ]
+    },
+    {
+      "id": "reader-en-a2-002",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u01-l02",
+      "packet_sha256": "29e0df5118e515adc3ffcf21eb427a99715c8031d7ff7ebc8a75fdba9f049ecf",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-003",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u01-l03",
+      "packet_sha256": "09d799521d663918217ace0652c8ad50df57733eaab801630ef6caad6a2158f9",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-004",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u01-l04",
+      "packet_sha256": "11d61f20fac5d6fdbff737abc3c2cba76cbe7f56547fa549da43b419211f65a1",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-005",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u01-l05",
+      "packet_sha256": "0deb2fde6eda2d67372b584dd8c6bba04b4add09a345bb1f63738db30a8b20ed",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-006",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u02-l01",
+      "packet_sha256": "0ffbb1073743150987ab2a1b52bf94ff2617ef494abd737945d7dd6b03bbc6e7",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-007",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u02-l02",
+      "packet_sha256": "c3ccb44221dec52b9cc3825f8cae9b667d73aa634c65ed403e4b40cc738db746",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-008",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u02-l03",
+      "packet_sha256": "650e634bfef77d650807c58ce567dddb4754080f9fe87f00c49dfb603d6d1620",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-009",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u02-l04",
+      "packet_sha256": "8e8a4d4198a5e989b720315e5eb4a84976016b1c30e30bb93ebe1000cd749d05",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-010",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u02-l05",
+      "packet_sha256": "a8d6fa434eeb070f14cdf478337ccce8ace2a17a3919d85c6a7f7455104998f1",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-011",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u03-l01",
+      "packet_sha256": "7181fe1dc6e58f5202236e924db03e4c7c52fdf0db91e8080a07bfda91631f4d",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-012",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u03-l02",
+      "packet_sha256": "3c6d771ad202fbbb447e3aa306ff0ebc6c85e77ed7bed01db107c96931103659",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-013",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u03-l03",
+      "packet_sha256": "ed28d5d0221b6caf8a2583880bc9456d6e332e48cc88f97e7309a0d45d14ad87",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-014",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u03-l04",
+      "packet_sha256": "08e0352a53d02dc7ac8a97be39403b39c88a34fcf84499a386f71a6456daa225",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-015",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u03-l05",
+      "packet_sha256": "586e90608e5c9a01cb3988ae5193caf44c54536e64d8202e284932114be7dfb9",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-016",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u04-l01",
+      "packet_sha256": "d465f34b102177a49a6cf17ce8588c3a7343cf70bc4adece3394737fbc364007",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-017",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u04-l02",
+      "packet_sha256": "2de2da214b4e2ef60d7ecb74038854675830d44b7924b05c3e2d82f9399a5ffd",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-018",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u04-l03",
+      "packet_sha256": "02460021f906dc788a3fcf004aee73bb288b33d7b07590fc475e30667d003442",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-019",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u04-l04",
+      "packet_sha256": "c7449ad15a96d9e0e5481b5808c06e1ad5714d440948a03fbc2f775259a56675",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-020",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u04-l05",
+      "packet_sha256": "c64d012d50da144ccb1ae33314a0023e5a8da435801f1947f0b73d54c3c7d8f5",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-021",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u05-l01",
+      "packet_sha256": "6b6f7c3f15b444e6d6bb5975a69a7ce6579dfed5aa9074acefdd1b5465da702f",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-022",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u05-l02",
+      "packet_sha256": "6c1c7f74c62174aca34606d18bdc7d843da79f48b08c15be2031fce1f3f3423b",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-023",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u05-l03",
+      "packet_sha256": "cf2731d8d9fa578943e5d06708521fea8b485f813fdb7ccb1e7ccd01db387ebc",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-024",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u05-l04",
+      "packet_sha256": "f173107c98c60298387504987e7d0dffa21867007a62cb484dd6387b40f0a97d",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-025",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u05-l05",
+      "packet_sha256": "faac75436cdc162ee766c2aa8929b6d68887310388b86e9c969878e821c70687",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-026",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u06-l01",
+      "packet_sha256": "59abc5b1c84a319afe3acc8a9c6244c3e93eaa29f63d8bc6a234587c2e847df6",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-027",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u06-l02",
+      "packet_sha256": "c9e1fbcf4e1f5cbe610012734ea634e51daa3f92f7220ca30fc36f4849cbc7f8",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-028",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u06-l03",
+      "packet_sha256": "1fdf92e234d1b0f83917d2e84938f51b0e9023b7db1e15e360b1b1a878947fb3",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-029",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u06-l04",
+      "packet_sha256": "6fa63c3b3acde3cc7a2f6cee4f07c73986a306a5755e20cfdaa7d0336fdb55d7",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-030",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u06-l05",
+      "packet_sha256": "2548f7e0bde40d7c3447679ce78e41d2b76e105c52d275925d97a785a435451e",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-031",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u07-l01",
+      "packet_sha256": "64760b02a9a6a76a82f3c31a5b02a6d6b94c990c7c26355f2883d0d4750bd0ad",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-032",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u07-l02",
+      "packet_sha256": "daa08ae8d4dd0ad20f084930d6161644a2365b60a021fd1b3112798448f57874",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-033",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u07-l03",
+      "packet_sha256": "f8373c029b6fa3f4a828ff80cd6ef4e15a35eac16486edae8cb439233e29640a",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-034",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u07-l04",
+      "packet_sha256": "1d091271675f55e5b6eadf6b18f032b5f80def12235a6c20c4c2e2425527d13c",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-035",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u07-l05",
+      "packet_sha256": "6a579ed750f2f222dd3ec2390b4a6673cfcf5e4b9100ba6189f7e6caa7d8422f",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-036",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u08-l01",
+      "packet_sha256": "bb36a51b0651b0d2d4f9e276d9edd2b105792b0c63d502b651ba3b56ee988997",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-037",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u08-l02",
+      "packet_sha256": "e914f5537c0fd1db715cbdd25eef32146ef44e1f847cdefa14aba1f5675781db",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-038",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u08-l03",
+      "packet_sha256": "43baf13eeb41a20c5db6533cf12afaf6ba40e74b0fdf9da09ce841602c1a468e",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-039",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u08-l04",
+      "packet_sha256": "9a63d4221081dbfabce43d4cf9ebd5dddc46b9875930f930a869565f109891f1",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-040",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u08-l05",
+      "packet_sha256": "aebc55a81c20a62452dbbe45ea136885bc68f2e07bad4269de0dfd93ec797a29",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-041",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u09-l01",
+      "packet_sha256": "9a8cb4b149efdb7e341171d8960064c2cc9b03819ba98fc934c448644aff7651",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-042",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u09-l02",
+      "packet_sha256": "05e5840e2e3413fa6539558f192a10cdce1c1442e93677c8ff142fab4d02ab8c",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-043",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u09-l03",
+      "packet_sha256": "1af229f3ac4be9ba8fa27f9b0cebc2db3ad19df5443198300e36db5afef73700",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-044",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u09-l04",
+      "packet_sha256": "43980a5b9ac8ec6edd97aa5969bb6da218993a2168c2c0939c5f2be9c62325d0",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-045",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u09-l05",
+      "packet_sha256": "981b18244cf75845c424b9e515ea850a9a6eff80fed8b49c6fce10772c71d276",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-046",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u10-l01",
+      "packet_sha256": "6faef47b9f22a977f08b00633e3e4a4c660f3ccb386c155d82d3df475cc04c58",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-047",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u10-l02",
+      "packet_sha256": "ab9c3085186ce3f980b80dfac50569e54d6279cb402bf76d933b3bbbece4ba4b",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-048",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u10-l03",
+      "packet_sha256": "5c7858eea4a71fe5e1ffbf999616d29e69ae7ecab0488ecdfce4eeec6a01687a",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-049",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u10-l04",
+      "packet_sha256": "019bce6dbbbeffdf44b4809e2ad44bafa44f0e08ab00f0ea73239b28e3a0abb4",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-a2-050",
+      "band": "A2",
+      "lesson_id": "m16a2-v1-a2-u10-l05",
+      "packet_sha256": "2401349b9350d8f3793b9d9d1773965ea68ba8edbeb7553f0594c21e2984dbde",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-001",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u01-l01",
+      "packet_sha256": "713a68864937c1081b83ed3a681a6e044a82df9886dc2ba644ff0a938615520f",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-002",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u01-l02",
+      "packet_sha256": "2b2357eee61f4824e1463530edfd23e64946a2bf4021733c372a422b369af042",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-003",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u01-l03",
+      "packet_sha256": "3897095e9452a44304f7dd388bf695bee7f7ba82e2fabc2d545e158197c1de83",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-004",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u01-l04",
+      "packet_sha256": "c34ab87df020da0e690b34cca0c9d8aac1db1e3fecea86b1fef787005e444de7",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-005",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u01-l05",
+      "packet_sha256": "69d3919a7548a31d4fee190662032680931f17dd2b25f1d87a6d314d8a658f37",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-006",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u02-l01",
+      "packet_sha256": "073738375fa230a1967b8035876224f9aad1f10191a3e7d329cc5491d91e591c",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-007",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u02-l02",
+      "packet_sha256": "82460210ca106f9be34b685984fe594926fd1eccfec68d49100261eb7fe84207",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-008",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u02-l03",
+      "packet_sha256": "61d04ad0f25baa5f06617d4273433e31d1653f6ba7f2d02e75cc54cbdd86ad3c",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-009",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u02-l04",
+      "packet_sha256": "72ff14ddf2b43982b09335a4d1f0001cc95f6ea5e21a66475b5b53140e65a66a",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-010",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u02-l05",
+      "packet_sha256": "70554d718918eabe4969875e89f27ab68e085f9763f6ceac2a190e43608349af",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-011",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u03-l01",
+      "packet_sha256": "3e145e5b6cbe1ba9af6154ddb07c446af97d0e33b449b334a0061333856a866b",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-012",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u03-l02",
+      "packet_sha256": "b0c0e607bedc8f53d0d326268e9560f4ebba8f36cfecfff6a2e05d6bbac9ba6c",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-013",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u03-l03",
+      "packet_sha256": "29b334092d1f5874e357ce1efc64528632ac6a170766da60ce3a6b60489d31f5",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-014",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u03-l04",
+      "packet_sha256": "0a364c9899544952aa3b92c6926abc503e81c74238d7db41402f376373c6a93c",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-015",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u03-l05",
+      "packet_sha256": "361e38fe66007a0d33bd2921d38c04dfa00b741ad437317c8fd992ddcaf77ce5",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-016",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u04-l01",
+      "packet_sha256": "f24582fc4f2a55bd769aa7159513438c498537a6289a822c047b6bf83a45e588",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-017",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u04-l02",
+      "packet_sha256": "2fe2521a6ffb712154395d1d806024fc3e2ec245634455f5132d7bd805f877b7",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-018",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u04-l03",
+      "packet_sha256": "c47b578a8e5f41050bedc6770a71d82db6daa2ae234f206f9cd5d0b13b60b10f",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-019",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u04-l04",
+      "packet_sha256": "3e3197b57c864f8c3829202a288d6cb5f6ce144ba4809965ff3b58c6547688b0",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-020",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u04-l05",
+      "packet_sha256": "b9a9df3ef34b743ce03dbbb55c6b2b23431a2c10d9b28a0679781a5092899334",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-021",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u05-l01",
+      "packet_sha256": "c0abedff8c7cb84280a5f2b5e22d42f0996bc1bf70d05e270a52c0d0bf09fff8",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-022",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u05-l02",
+      "packet_sha256": "e3b8729cde1c37b590b366e6a92508675023563dd0729000ce026b3683369e6c",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-023",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u05-l03",
+      "packet_sha256": "3fc411e3907f641104eb3c6fac4e6b2489c55874eeb82c6f4d2a9d8ddb4e88d4",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-024",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u05-l04",
+      "packet_sha256": "97c369b3dc91267bf0a3f135c08b23623945280fc14865d748026dabc70024b4",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-025",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u05-l05",
+      "packet_sha256": "282b1aee6302bc49e50de35981e909d1ac4831ef88a35d983b9558140e27c9bd",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-026",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u06-l01",
+      "packet_sha256": "9e75b30941ec0a5c867d0d6c9ef9abf3fb7c2669a262b00e071b4220810b8950",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-027",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u06-l02",
+      "packet_sha256": "6842fed4b1184c1174ef5eab6aa0d21750c9729f733e456e6d43c4d63ed8ea40",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-028",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u06-l03",
+      "packet_sha256": "147f178008e5216288651609170aea4094a3d89776081e2a42fb3d50e1f14731",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-029",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u06-l04",
+      "packet_sha256": "0171cb43d921c87ac7fe275652adce23dd64ae071c48880efc154f5c5ce8e772",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-030",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u06-l05",
+      "packet_sha256": "adfabc6b73eec8f248bdfb744cba9459bfe2bae65020fb3a0596f93934ee0d54",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-031",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u07-l01",
+      "packet_sha256": "82479373fdb65019728eca6593bf53a840201e23adae0c50d90cf1c34cbb531c",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-032",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u07-l02",
+      "packet_sha256": "21b2aea8aa6fe622c08fca7d0bd2985d26265039d4d79e747b2bb7ffff5629e8",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-033",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u07-l03",
+      "packet_sha256": "a436df55514785ba3869549b3e3fb11407e082b22902bff481d28ff56bd77104",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-034",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u07-l04",
+      "packet_sha256": "916c3c6549031bae023e017e0811bc9046224d2263956f85d47262fc56fd6299",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-035",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u07-l05",
+      "packet_sha256": "f66c4e4a431d0c83a868dfdae035776057a3e8676a2887cecc467e2882473a6c",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-036",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u08-l01",
+      "packet_sha256": "500ae82d799cce8f7d3c284e0e23d89514bdd45e96eb5bea3ad3952d88ffc4b4",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-037",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u08-l02",
+      "packet_sha256": "27a4d3a3d03dc6fd7955da0c7c8135276d30eead16de07a8659ca147576d197f",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-038",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u08-l03",
+      "packet_sha256": "17c3c7766934d383c5cc04777b2c35c9a8fa2e0d2298e53f0b3d381066a988dc",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-039",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u08-l04",
+      "packet_sha256": "dc04ee74325c8aff4bca9c94190f1feb6df791f8b64cbd5214d3f385cb96e319",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-040",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u08-l05",
+      "packet_sha256": "479f398ce90bb083f620700e3179dfc7fc5c8831136f6d614c6942893f362cb5",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-041",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u09-l01",
+      "packet_sha256": "ef51451be812042d532822ca687cef86a8987126aa3b95802921ec0dbfde2d21",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-042",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u09-l02",
+      "packet_sha256": "dd365ff633697e604c2784e54cf6e9c6ace73d8fc5eb2a1acc0f922278463dbd",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-043",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u09-l03",
+      "packet_sha256": "9fe567f32b08b222a782f9337df690039e665870b9dee441c5c64c88cae230db",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-044",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u09-l04",
+      "packet_sha256": "5d7cac685e4616e243caaad5df3c40045e3ea019d16c694f3d38e70282d5b49a",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-045",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u09-l05",
+      "packet_sha256": "790359db9c7291c70817dae726c8814a412f910dfee44f022d24fb89f03e5186",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-046",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u10-l01",
+      "packet_sha256": "f9cdd08aebc26a7c59a87632e5a36af9b9e5ec2c973d33c2610f1425be59f807",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-047",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u10-l02",
+      "packet_sha256": "58ca07235476c25c9ccb4ffb68aebe46dedd766dfffff9e19d2eb320678ede41",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-048",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u10-l03",
+      "packet_sha256": "34407abed928773692a9565d058d3c9abbb2843f5bb1b0f3dec010bd85db6397",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-049",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u10-l04",
+      "packet_sha256": "f884e50207f60b8b6dc9c92ce5341275c231b4216ab930015282a59a5f1062c8",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-b1-050",
+      "band": "B1",
+      "lesson_id": "m16b1-v1-b1-u10-l05",
+      "packet_sha256": "7f9820ccb907e3a48431a396fc5c6d547897583a163e431a95245c7028c10063",
+      "source_kind": "exercise",
+      "source_id": "read"
+    },
+    {
+      "id": "reader-en-c1-001",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u01-l01",
+      "packet_sha256": "7ccb15814912fc2048e069798f07530f706f283f458bc9ee67626c6eddd58f0a",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-002",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u01-l02",
+      "packet_sha256": "aac8ee743e15c7b35d9577045a45120fce893802258f48b0feef5731ddf5e678",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-003",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u01-l03",
+      "packet_sha256": "9f2ce2ba7f9c6d35178592cd9270062577627ac6870b626eb12d87814c7660c3",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-004",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u01-l04",
+      "packet_sha256": "2fa94465f7e78912279f166484defc426bc728b6a0ecec15b3b12985992a8684",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-005",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u01-l05",
+      "packet_sha256": "6bd04eaa897bb08fd4c970c81a7476320373747b29708184daf2a378c8864e54",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-006",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u02-l01",
+      "packet_sha256": "111167375cb1b4af69721a1a409df1dd8fdc2a664d160e9c1be0081f8c43c9fc",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-007",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u02-l02",
+      "packet_sha256": "ba0da80ef3858847a9372601117961ac9b9286277c3f82e1996f182bb8582af6",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-008",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u02-l03",
+      "packet_sha256": "c4a2ac2389cbe0d444b8dad5810af0b4c01ad759301a052b07e19a7af2e9051e",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-009",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u02-l04",
+      "packet_sha256": "6dbbb7f7f6ebc6cd88fda58aaffa416da8cbe415599ecfa7a769163db69aa238",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-010",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u02-l05",
+      "packet_sha256": "d64b47f305c61c6045555a49e2727185244b0e1b5aa42bd62b2f02b7f1334034",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-011",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u03-l01",
+      "packet_sha256": "da04e39fcb520c4f55ac47e6e3044c7c2cb138e4717ec37ea97eb0c7c678b4e8",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-012",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u03-l02",
+      "packet_sha256": "e573cc18df0bde7f597f89896575cb4476fd7685d678678084da8952b6637170",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-013",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u03-l03",
+      "packet_sha256": "fe71e449a6f51ad98461f18b0da24e2a73766d583326ed94b8c07b2d12d56d33",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-014",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u03-l04",
+      "packet_sha256": "f7684b89638f01e9c95a00aa29847bbfea71e8a0d1388d1df99b9c33b17326ac",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-015",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u03-l05",
+      "packet_sha256": "14da8fa5b77c44ad6569ea9089f47d795884e15dff0dc197e3ad0f4e98c4ae41",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-016",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u04-l01",
+      "packet_sha256": "a9ec1e0c666e0d619a1a2f39dac850293d0448e8ab273fd523658ed194a62142",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-017",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u04-l02",
+      "packet_sha256": "03754a01f2508757aac9fe09838539d912cc556923d86add2be7414b9e4e2fe8",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-018",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u04-l03",
+      "packet_sha256": "361c15b6f9964d5837188d5c237d0e603b810ef1332d84f847c69f56ccc685f3",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-019",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u04-l04",
+      "packet_sha256": "42edf736a3f006026dd77e811a17155ce5bf66e3c5bfec516cfaab9533ecc475",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-020",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u04-l05",
+      "packet_sha256": "ef33e539608b229a62e15c3d35e62f913e68944d99125c46ff7a9ea0c7ba74d0",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-021",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u05-l01",
+      "packet_sha256": "d985b07746dabd892c8fe6ae197dd27a95dfcaeb5cefba58b0614cae284a27e5",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-022",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u05-l02",
+      "packet_sha256": "33b44f2e200d8e6284534d4767aed1ae1b12e847f211188df5c0738f3016ddc1",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-023",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u05-l03",
+      "packet_sha256": "c66a52ab2c49beac0cdf11ef68207196ffb67ab774280f3106a32df6d8d3f945",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-024",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u05-l04",
+      "packet_sha256": "4eff635564b94a20b0c1addc364555d11e8802e9d973574773fc40265df3a034",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-025",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u05-l05",
+      "packet_sha256": "0b0b36fc29c25f492d8b5ac9b18fcca711bed57f5014e275933db21f88f5fd31",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-026",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u06-l01",
+      "packet_sha256": "b7d12efde5fb34c1cb34a662579831024ac0ae6acc0be7df578a6a087afb80c7",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-027",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u06-l02",
+      "packet_sha256": "23d0dd539a49167a755fdc1517761aeb884d8601e65aa936d1409448603f49da",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-028",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u06-l03",
+      "packet_sha256": "3419507d1c0bfab7f0b229c129c598118357dd358bba9d9bacb90ad468f61a9b",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-029",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u06-l04",
+      "packet_sha256": "bb823685c517a1db5f197666d1f64c7e4b1b11fea4675e1bdfa35bf44ba092a2",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-030",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u06-l05",
+      "packet_sha256": "49ae9460b0741ae99b41b05593aeace06991529668230bdd20c11995bb4cd89c",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-031",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u07-l01",
+      "packet_sha256": "c802f6eaae95ff513168bfac501b72d3d295d9fce8859052abee80be0ce6025d",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-032",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u07-l02",
+      "packet_sha256": "c4f9362a58c2ca249063dba0e325f8533031d142bd54ef6b6170b065f24f00d7",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-033",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u07-l03",
+      "packet_sha256": "e582d07f420150f0aea408f02fa83482c1cadef2bf0360aa40f23b7ec7aee9ef",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-034",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u07-l04",
+      "packet_sha256": "f36d8cb33fe3a18c691330db90264695574a885ba702ea7e65042c98bf3ca860",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-035",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u07-l05",
+      "packet_sha256": "8438d6a05be4de2c710a6ed15170159749396aa6d7dc38c769a873102c53d4c1",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-036",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u08-l01",
+      "packet_sha256": "fb54c8e77581e388d41fc0f1e5aa3d86c43ca7348d736ed9de477d31d4aecf38",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-037",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u08-l02",
+      "packet_sha256": "69b8d057e87c7e589c2009eb345a0b47189253f71f972948895b6aad65848ff5",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-038",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u08-l03",
+      "packet_sha256": "0b116451682b1079c133b11503514f2351b240dd0723034957bd26cd2c3263fb",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-039",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u08-l04",
+      "packet_sha256": "79e78b8a3c1af0d9c8ad101fbf1e277759750de829aff1cdc659b01781d0f74a",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-040",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u08-l05",
+      "packet_sha256": "eb877899053797b0476bf34da08c0453f3f6cb79468fde5edd1eeceb6bd13487",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-041",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u09-l01",
+      "packet_sha256": "4c78fa37d22a2dcd12133dcd38a37c752000148924b34134c67398a43274e8fe",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-042",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u09-l02",
+      "packet_sha256": "8c7fdc31f868422931477e66b9d653e9997c424db1b1935ddeaab0353847ac43",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-043",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u09-l03",
+      "packet_sha256": "be0dd598c6309387941af8a5925017a3a77bbc2eb8579c1f64bd809df636f028",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-044",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u09-l04",
+      "packet_sha256": "8747c3aeefee9265533d107d39418383aa45715145df294309e61b1810c1e471",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-045",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u09-l05",
+      "packet_sha256": "6e6e78415f36da45d9ace718fea79a172ec04d9d2120ec64008db8af593ead45",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-046",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u10-l01",
+      "packet_sha256": "d511f2996bb0d88abacca0330ec3b40475432cb04c5b88bc57076c62a5927222",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-047",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u10-l02",
+      "packet_sha256": "547d365cea3dd2f94cd1ba2a2b4eff5c1796fc51997df2ae1fe8538d6e0322fd",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-048",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u10-l03",
+      "packet_sha256": "d197332ffadd710d6b3715d0694cdac6f450e9307afab36b2b70dda2bd09fd2d",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-049",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u10-l04",
+      "packet_sha256": "35a2da9a2780035ea52ce490f6c00d4df726edc0bfcd567632829f4298e0a19b",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c1-050",
+      "band": "C1",
+      "lesson_id": "m16c1-v1-c1-u10-l05",
+      "packet_sha256": "6ecaaa2a6d8b5a5c20d3f6ef57264f195cc1ee99b733d368b51a54c6b426356d",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-001",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u01-l01",
+      "packet_sha256": "1245cbfbded97d30256013939d94913f1758ebbc1da49de5adcb65afb1d24795",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-002",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u01-l02",
+      "packet_sha256": "3fd8be1c27a1eef6c669827dfd822f4b0e9d272e753c54e26e72934c304c0859",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-003",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u01-l03",
+      "packet_sha256": "f0ba62cd6e7f1785db4406cd5c46781f527779583c8d82a461f6fe32c8c7fc7b",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-004",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u01-l04",
+      "packet_sha256": "b1640b9b26de78c6cd5c4949bc2c43433a60509bd4563e148450e214ea1001e0",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-005",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u01-l05",
+      "packet_sha256": "335a400a8c1b80fae78072f0909171e4f314582b0dfc04db1283ddace5166ff8",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-006",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u02-l01",
+      "packet_sha256": "d526def27c822845a8d50b80ae385b81366d943c6e8463d1f867108d87247e91",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-007",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u02-l02",
+      "packet_sha256": "6e01f66baf2cc4f4488dc093fcd198e7c5ef9f350f872c6d2777fa885afce059",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-008",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u02-l03",
+      "packet_sha256": "272e9ca64bbae23a7a14748b7256d7309387106a62191f561c91898170f8200a",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-009",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u02-l04",
+      "packet_sha256": "1661c82eda0f6b7e01a358157df640db1599992bf67b2c25eabe9db8983ebcbd",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-010",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u02-l05",
+      "packet_sha256": "1a004d57f26a18fa9a176b87f860fe36b906a9ee7213396521114acd40f03af6",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-011",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u03-l01",
+      "packet_sha256": "b89818a0300a3ce699fe804ad7991f3cda72502b8953e808bcaeb6a3ea86eed5",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-012",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u03-l02",
+      "packet_sha256": "6a9c50497d3f56ddfc2113509ec6ab0654831a2c4450f90a429aa032367f97c3",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-013",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u03-l03",
+      "packet_sha256": "beea4ca42b905be9a592575c0a9019faae990d8001430008159e7255d5b1483b",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-014",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u03-l04",
+      "packet_sha256": "9d24b7bbacedb779a13586b4329538ed8435b44f8410c757e0255c5656689e49",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-015",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u03-l05",
+      "packet_sha256": "aa02fa1c2e268636ff1cade6a039c7d2302bd51db76d009c349717668e270af3",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-016",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u04-l01",
+      "packet_sha256": "6c923f67f6fef1d2fb703c454f8d143414058abe06a8cae5c195629b954a6d9c",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-017",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u04-l02",
+      "packet_sha256": "ad9dbff90896d72cdebe40252793cc665c1ba92aac59508fab4c3fa73aa7cdc4",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-018",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u04-l03",
+      "packet_sha256": "a62ed7633d739b6f69fed3b6d53e52ff9856b405b6c797667a1282f4c41d34b6",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-019",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u04-l04",
+      "packet_sha256": "005f7fe1d045907e129efd5f452759dfd81a7a3d923ee4f6b33efd87f0608649",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-020",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u04-l05",
+      "packet_sha256": "1af04647eb350a63378f772397df854af85985983c5c5e30313107b7d8214918",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-021",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u05-l01",
+      "packet_sha256": "41ab682cc6c5e5229163f4e49da97d1fdd97203910115ab1363fc18b3616f6f0",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-022",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u05-l02",
+      "packet_sha256": "0c50cfcd05b4b64858e8056f6cedf1e5c51ae15223c345b6f3a37d025fecf9b6",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-023",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u05-l03",
+      "packet_sha256": "9d7d0ebb65252eedec80beb714be2d69aab42793e8752631259e8f4c2c2234e3",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-024",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u05-l04",
+      "packet_sha256": "1343124b72a5b9737eaea6169ce5b897d3e6ccbcfb3f3e4dc2713e396f2916e8",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-025",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u05-l05",
+      "packet_sha256": "14d44b8130e325072f2024bebb17f2e4a1d6a10dbe64d0f66d9edf1c3afd9b02",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-026",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u06-l01",
+      "packet_sha256": "daa9197f764d8bc751ddc826fa76868d23cbffe1baf4c1933d9336f4c709e4e9",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-027",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u06-l02",
+      "packet_sha256": "d467e7b08320a4bb29441c74620137794d23dc1e9f7e342e6e66d7adf3b8a660",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-028",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u06-l03",
+      "packet_sha256": "76811a71209c0fb73d22755c43519b24e477eaa04f092562112318fed21efd27",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-029",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u06-l04",
+      "packet_sha256": "46c4fca5cbfaaeb0b54fcaaa02eb1226882d1ccde5a314288d48492e7d2598db",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-030",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u06-l05",
+      "packet_sha256": "4534ca1153de00e052fac8444d4a233347bd8b130b55030226de1cadf2065f4c",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-031",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u07-l01",
+      "packet_sha256": "162d9535c1b0f8ae466354892a7d5e87489d3731aeff7d57e3aaacb4e718f318",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-032",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u07-l02",
+      "packet_sha256": "1c8fd973e09b84ba42f008b6d79763d32d4796cf703f8cf280fd5e0fb38440a5",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-033",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u07-l03",
+      "packet_sha256": "4af23862cc629143ae7e754167e3a8940c0764a4c2349c06a54cf89fe8559bd7",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-034",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u07-l04",
+      "packet_sha256": "559b8672836bc67a2838b49060b89d12100ee3c0851af5046982da3e1b2e818a",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-035",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u07-l05",
+      "packet_sha256": "80cfac0a5c1ab18ddab8818f040c7fdfd3373517b71c6de9716bdbe2611e8bd8",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-036",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u08-l01",
+      "packet_sha256": "2a90b66d31716ceadfd09e9d41252eaaea7f262a47cae2114dd7af626c637200",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-037",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u08-l02",
+      "packet_sha256": "0b2e3fbf4fc7cfa48c5eedf2554077d4d87fe5bf940cf1e5a6b69cfb1b6a17af",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-038",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u08-l03",
+      "packet_sha256": "b65400d319439fe6e8f5eaeac4f32eebb9ea3909c88225823c4ff865a3ec73d6",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-039",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u08-l04",
+      "packet_sha256": "c323bd649d82cf90dcbdd2a1d4ffeaf6faaed5729b2b3e2f796f56dd1fdc7240",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-040",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u08-l05",
+      "packet_sha256": "6a4afa37c006f7e8f12f2da667ae4b14e87d6634fde2e3ab53b30143a6e5ba2e",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-041",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u09-l01",
+      "packet_sha256": "24103c32aba80059e000ecfc52e0d58ad4a3fd2f2d802c2035723dc7964c9d5f",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-042",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u09-l02",
+      "packet_sha256": "f01a6564b773b6d25d677cf57f6fe8f5b989fff1bc5a5cdabbbbc4731231a917",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-043",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u09-l03",
+      "packet_sha256": "d964136c70ad56ece12ebad8ee6d27d37858d07e7456707ec1988e9b87e0af78",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-044",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u09-l04",
+      "packet_sha256": "87d3d0c100001f3d5d7ad69c96425c5a9d5bfc69d83c80f94adb56c02cc04e2d",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-045",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u09-l05",
+      "packet_sha256": "ecc29c482ce69491615b1dfc0783cd12ba5f00d876bb3b10a4242059614461b8",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-046",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u10-l01",
+      "packet_sha256": "1670ae6262da3f9f46edbcbab7b83a27df280dac42bf8e4986cf4953e1783a4e",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-047",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u10-l02",
+      "packet_sha256": "9f713b7fe9733b498483501f574a71365738cf8ac9e1156267e0cc99861112ff",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-048",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u10-l03",
+      "packet_sha256": "a20463110d6bb98faba786147419b0f6fc3ef384ba83eafb114d07a76d40463a",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-049",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u10-l04",
+      "packet_sha256": "27b789f6ba5a7e9a25f2671817b7c1101a78adae63cd6a76670c1959b234d128",
+      "source_kind": "section",
+      "source_id": "application"
+    },
+    {
+      "id": "reader-en-c2-050",
+      "band": "C2",
+      "lesson_id": "m16c2-v1-c2-u10-l05",
+      "packet_sha256": "05e28f96a4919858c22f69d9c4a0ee0afbebb75f5a550b58151caa7e4e72412b",
+      "source_kind": "section",
+      "source_id": "application"
+    }
+  ]
+}

@@ -11,8 +11,9 @@ import {
   isAvailableCourse,
   isLanguageCode,
 } from "@/content/catalog";
+import { getUnitTest } from "@/content/assessment-catalog";
 import { getLanguageConfiguration } from "@/content/languages";
-import { languageHref, learnHref, lessonHref } from "@/lib/routes";
+import { assessmentHref, assessmentPackageHref, languageHref, learnHref, lessonHref, progressDashboardHref, tutorHref } from "@/lib/routes";
 
 export const dynamicParams = false;
 
@@ -64,12 +65,43 @@ export default async function LevelCatalogPage({ params }: { params: Promise<{ l
         />
       </section>
 
+      <section className="progress-dashboard-notice" aria-labelledby="course-progress-heading">
+        <div>
+          <p className="eyebrow">Browser-local activity</p>
+          <h2 id="course-progress-heading">See progress across supplied course levels</h2>
+          <p>Course completion and local evidence are shown separately from proficiency, CEFR attainment, and lesson access.</p>
+        </div>
+        <Link className="secondary-button" href={progressDashboardHref(language)}>Open progress dashboard</Link>
+      </section>
+
+      <section className="tutor-course-notice" aria-labelledby="tutor-context-heading">
+        <div>
+          <p className="eyebrow">Tutor Context</p>
+          <h2 id="tutor-context-heading">Prepare a bounded AI practice prompt</h2>
+          <p>Choose a self-reported band and local practice goals, then explicitly copy a minimized context into an external AI tool.</p>
+        </div>
+        <Link className="secondary-button" href={tutorHref(language, level)}>Open Tutor Context</Link>
+      </section>
+
+      {language === "en" && <section className="assessment-course-notice" aria-labelledby="assessment-heading">
+        <div>
+          <p className="eyebrow">Assessment</p>
+          <h2 id="assessment-heading">Build local evidence beyond lesson completion</h2>
+          <p>Use supplied quizzes and checkpoints for factual browser-local results. They do not unlock, certify, or diagnose this level.</p>
+        </div>
+        <Link className="secondary-button" href={assessmentHref()}>Open assessment</Link>
+      </section>}
+
       {[...grouped.entries()].map(([tier, units]) => (
         <section className="tier-section" key={tier} aria-labelledby={`tier-${tier.replace(".", "-")}`}>
           <div className="tier-heading"><h2 id={`tier-${tier.replace(".", "-")}`}>{tier}</h2><span>Internal curriculum tier</span></div>
-          {[...units.entries()].map(([unitId, unitLessons]) => (
-            <section className="unit-section" key={unitId} aria-labelledby={unitId}>
-              <h3 id={unitId}>{unitLabel(unitId)}</h3>
+          {[...units.entries()].map(([unitId, unitLessons]) => {
+            const unitTest = language === "en" ? getUnitTest(unitId) : undefined;
+            return <section className="unit-section" key={unitId} aria-labelledby={unitId}>
+              <div className="unit-heading-row">
+                <h3 id={unitId}>{unitLabel(unitId)}</h3>
+                {unitTest && <Link className="text-button" href={assessmentPackageHref(unitTest.id)}>Unit checkpoint</Link>}
+              </div>
               <ol className="lesson-list">
                 {unitLessons.map((lesson) => (
                   <li key={lesson.lessonId}>
@@ -81,12 +113,12 @@ export default async function LevelCatalogPage({ params }: { params: Promise<{ l
                   </li>
                 ))}
               </ol>
-            </section>
-          ))}
+            </section>;
+          })}
         </section>
       ))}
 
-      <ReviewNotice />
+      <ReviewNotice language={language} course={level} />
     </div>
   );
 }

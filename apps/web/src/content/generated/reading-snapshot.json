@@ -1,0 +1,3036 @@
+{
+  "schemaVersion": "1.0",
+  "inventoryVersion": "reading-en-current-v1",
+  "readers": [
+    {
+      "id": "reader-en-a1-001",
+      "band": "A1",
+      "tier": "A1.1",
+      "title": "Countries and hometowns",
+      "topic": "personal origin",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Hoa is from Hue, and Ben is from Leeds.",
+      "questions": [
+        {
+          "prompt": "Where is Hoa from?",
+          "acceptedAnswers": [
+            "Hue"
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a1-002",
+      "band": "A1",
+      "tier": "A1.1",
+      "title": "Classroom instructions",
+      "topic": "teacher instructions",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Please open your book and look at page six.",
+      "questions": [
+        {
+          "prompt": "What should the learners open?",
+          "acceptedAnswers": [
+            "their books"
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a1-003",
+      "band": "A1",
+      "tier": "A1.1",
+      "title": "People in my family",
+      "topic": "family words",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "This is my sister. Her name is Anh.",
+      "questions": [
+        {
+          "prompt": "Who is Anh?",
+          "acceptedAnswers": [
+            "the speaker's sister"
+          ]
+        }
+      ],
+      "wordSenseRanges": [
+        {
+          "start": 23,
+          "end": 27,
+          "senseId": "vocab-en-name-001"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a1-004",
+      "band": "A1",
+      "tier": "A1.1",
+      "title": "A home tour",
+      "topic": "home-language review",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Welcome to our flat. My parents have a small room near the kitchen.",
+      "questions": [
+        {
+          "prompt": "Whose flat is it?",
+          "acceptedAnswers": [
+            "the speaker's family flat"
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a1-005",
+      "band": "A1",
+      "tier": "A1.1",
+      "title": "How much and how many",
+      "topic": "asking about quantity",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "How many bananas do you need, and how much rice do you want?",
+      "questions": [
+        {
+          "prompt": "Which noun follows how much?",
+          "acceptedAnswers": [
+            "rice"
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a1-006",
+      "band": "A1",
+      "tier": "A1.1",
+      "title": "Town opening times",
+      "topic": "simple schedules",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "The library opens at nine and closes at five.",
+      "questions": [
+        {
+          "prompt": "When does the library close?",
+          "acceptedAnswers": [
+            "at five"
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a1-007",
+      "band": "A1",
+      "tier": "A1.2",
+      "title": "Questions about routines",
+      "topic": "present simple questions",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Does Mai walk to work? Yes, she does.",
+      "questions": [
+        {
+          "prompt": "How does Mai travel to work?",
+          "acceptedAnswers": [
+            "she walks"
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a1-008",
+      "band": "A1",
+      "tier": "A1.2",
+      "title": "Clothes for today",
+      "topic": "clothing descriptions",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Mai wears a small green jacket and black shoes.",
+      "questions": [
+        {
+          "prompt": "What colour is Mai's jacket?",
+          "acceptedAnswers": [
+            "green"
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a1-009",
+      "band": "A1",
+      "tier": "A1.2",
+      "title": "A complete clothes purchase",
+      "topic": "practical shopping review",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "I would like the large red coat. It is twenty pounds. Thank you.",
+      "questions": [
+        {
+          "prompt": "What colour is the coat?",
+          "acceptedAnswers": [
+            "red"
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a1-010",
+      "band": "A1",
+      "tier": "A1.2",
+      "title": "Would you like to come?",
+      "topic": "simple invitations",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Would you like to walk in the park? Yes, that sounds good.",
+      "questions": [
+        {
+          "prompt": "What activity is suggested?",
+          "acceptedAnswers": [
+            "a walk in the park"
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a1-011",
+      "band": "A1",
+      "tier": "A1.2",
+      "title": "Timetables",
+      "topic": "departure and arrival times",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "The train leaves at nine fifteen and arrives at ten.",
+      "questions": [
+        {
+          "prompt": "When does the train arrive?",
+          "acceptedAnswers": [
+            "at ten"
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a1-012",
+      "band": "A1",
+      "tier": "A1.2",
+      "title": "Making an appointment",
+      "topic": "appointment requests",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Could I have an appointment on Friday at eleven, please?",
+      "questions": [
+        {
+          "prompt": "What time is requested?",
+          "acceptedAnswers": [
+            "eleven"
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-001",
+      "band": "A2",
+      "tier": "A2.1",
+      "title": "Past events: form and key words",
+      "topic": "a lost umbrella after a bus journey",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Yesterday I left my umbrella on the number 8 bus, then I called the bus office. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about a lost umbrella after a bus journey."
+          ]
+        }
+      ],
+      "wordSenseRanges": [
+        {
+          "start": 36,
+          "end": 42,
+          "senseId": "vocab-en-number-001"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-002",
+      "band": "A2",
+      "tier": "A2.1",
+      "title": "Event-reporting chunks",
+      "topic": "a Saturday market visit",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "On Saturday I bought tomatoes and asked the seller for a bag. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about a Saturday market visit."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-003",
+      "band": "A2",
+      "tier": "A2.1",
+      "title": "Follow-up questions and repair",
+      "topic": "a delayed train message",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "My train arrived late, so I sent my friend a message before dinner. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about a delayed train message."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-004",
+      "band": "A2",
+      "tier": "A2.1",
+      "title": "A short personal account",
+      "topic": "a clinic visit",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Yesterday I felt ill, visited the clinic, and followed the nurse's advice. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about a clinic visit."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-005",
+      "band": "A2",
+      "tier": "A2.1",
+      "title": "Review: recent experiences",
+      "topic": "a weekend story for a friend",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Last weekend I visited my aunt and told her about my new class. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about a weekend story for a friend."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-006",
+      "band": "A2",
+      "tier": "A2.1",
+      "title": "Choosing quantities",
+      "topic": "buying rice and water",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Could I have a bag of rice and two bottles of water, please? The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about buying rice and water."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-007",
+      "band": "A2",
+      "tier": "A2.1",
+      "title": "Clarifying a purchase",
+      "topic": "changing shoes at a shop",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "These shoes are too small; could I try the larger pair, please? The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about changing shoes at a shop."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-008",
+      "band": "A2",
+      "tier": "A2.1",
+      "title": "Pronouncing clear requests",
+      "topic": "buying an airport bus ticket",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "I need one ticket to the airport for tomorrow morning, please. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about buying an airport bus ticket."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-009",
+      "band": "A2",
+      "tier": "A2.1",
+      "title": "A useful local-service exchange",
+      "topic": "asking for help at a ticket machine",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "My card did not work at the machine, so I asked a staff member for help. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about asking for help at a ticket machine."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-010",
+      "band": "A2",
+      "tier": "A2.1",
+      "title": "Review: shopping and quantities",
+      "topic": "checking a shopping receipt",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "I compared two products, chose one, and checked the quantity and price. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about checking a shopping receipt."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-011",
+      "band": "A2",
+      "tier": "A2.1",
+      "title": "Describing a recent problem",
+      "topic": "explaining a headache",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "I have had a headache since yesterday, so I need some advice. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about explaining a headache."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-012",
+      "band": "A2",
+      "tier": "A2.1",
+      "title": "Asking for help politely",
+      "topic": "asking a neighbour for help",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Could you help me carry this box upstairs, please? The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about asking a neighbour for help."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-013",
+      "band": "A2",
+      "tier": "A2.1",
+      "title": "Clear event sequence",
+      "topic": "telling a pharmacist what happened",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "First I felt dizzy, then I sat down and called the pharmacy. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about telling a pharmacist what happened."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-014",
+      "band": "A2",
+      "tier": "A2.1",
+      "title": "Health and service follow-up",
+      "topic": "following up after a service call",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "The repair person came this morning; when will the machine be ready? The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about following up after a service call."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-015",
+      "band": "A2",
+      "tier": "A2.1",
+      "title": "Review: health and services",
+      "topic": "reviewing a health problem",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "I described the problem clearly, asked for advice, and wrote down the next step. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about reviewing a health problem."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-016",
+      "band": "A2",
+      "tier": "A2.1",
+      "title": "A completed journey",
+      "topic": "reporting a completed trip",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "I travelled to Hue by train last Friday and arrived before lunch. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about reporting a completed trip."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-017",
+      "band": "A2",
+      "tier": "A2.1",
+      "title": "Travel questions and answers",
+      "topic": "asking about a late coach",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "What time did the coach leave, and why was it late? The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about asking about a late coach."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-018",
+      "band": "A2",
+      "tier": "A2.1",
+      "title": "Past endings and key information",
+      "topic": "hearing travel details clearly",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "The bus stopped at River Road, and the driver explained the delay. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about hearing travel details clearly."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-019",
+      "band": "A2",
+      "tier": "A2.1",
+      "title": "Handling a travel problem",
+      "topic": "solving a missed connection",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "I missed my connection, so I asked the station worker for another route. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about solving a missed connection."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-020",
+      "band": "A2",
+      "tier": "A2.1",
+      "title": "Review: travel experiences",
+      "topic": "retelling a travel experience",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "I explained the journey in order and checked that my friend understood. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about retelling a travel experience."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-021",
+      "band": "A2",
+      "tier": "A2.1",
+      "title": "Comparing everyday situations",
+      "topic": "choosing language for daily situations",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "I can compare a shop problem, a journey, and a health appointment. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about choosing language for daily situations."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-022",
+      "band": "A2",
+      "tier": "A2.1",
+      "title": "Listening and retelling",
+      "topic": "retelling a short message",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "I listened for the main event, noted two details, and retold the sequence. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about retelling a short message."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-023",
+      "band": "A2",
+      "tier": "A2.1",
+      "title": "Practical interaction",
+      "topic": "handling a practical conversation",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "I made a request, answered a follow-up, and repaired one misunderstanding. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about handling a practical conversation."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-024",
+      "band": "A2",
+      "tier": "A2.1",
+      "title": "A2.1 preparation",
+      "topic": "preparing an A2.1 account",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "I can give a short account with time words, details, and a clear next step. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about preparing an A2.1 account."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-025",
+      "band": "A2",
+      "tier": "A2.1",
+      "title": "Review: A2.1 consolidation",
+      "topic": "reviewing A2.1 communication",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "I can choose language for stories, requests, and everyday problems. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about reviewing A2.1 communication."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-026",
+      "band": "A2",
+      "tier": "A2.2",
+      "title": "Future plans with going to",
+      "topic": "planning a study evening",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "I am going to revise vocabulary after dinner and practise speaking on Friday. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about planning a study evening."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-027",
+      "band": "A2",
+      "tier": "A2.2",
+      "title": "Planning language in speech",
+      "topic": "talking about a weekend plan",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "I am going to meet my cousin at the library on Saturday afternoon. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about talking about a weekend plan."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-028",
+      "band": "A2",
+      "tier": "A2.2",
+      "title": "Inviting and responding",
+      "topic": "inviting a classmate",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Would you like to study together after class on Thursday? The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about inviting a classmate."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-029",
+      "band": "A2",
+      "tier": "A2.2",
+      "title": "Study and future plans",
+      "topic": "making a study timetable",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "I am going to finish my homework first, then I am going to call my study partner. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about making a study timetable."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-030",
+      "band": "A2",
+      "tier": "A2.2",
+      "title": "Review: plans for study and life",
+      "topic": "reviewing plans and invitations",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "I can state a plan, invite someone, and respond politely to an invitation. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about reviewing plans and invitations."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-031",
+      "band": "A2",
+      "tier": "A2.2",
+      "title": "Work and study plans",
+      "topic": "describing a work goal",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "I am going to apply for a part-time job after I finish my course. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about describing a work goal."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-032",
+      "band": "A2",
+      "tier": "A2.2",
+      "title": "Talking about an achievement",
+      "topic": "sharing a small achievement",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "I completed my first presentation, and my teacher said it was clear. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about sharing a small achievement."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-033",
+      "band": "A2",
+      "tier": "A2.2",
+      "title": "Useful work and study chunks",
+      "topic": "using a workplace message",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Could we move the meeting to Tuesday because I have a class on Monday? The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about using a workplace message."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-034",
+      "band": "A2",
+      "tier": "A2.2",
+      "title": "Natural planned speech",
+      "topic": "saying plans naturally",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "I am going to start early, but I will message you if the bus is late. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about saying plans naturally."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-035",
+      "band": "A2",
+      "tier": "A2.2",
+      "title": "Review: work, routines, and achievements",
+      "topic": "reviewing work and study language",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "I can talk about a goal, an achievement, and a change to a plan. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about reviewing work and study language."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-036",
+      "band": "A2",
+      "tier": "A2.2",
+      "title": "Making an offer",
+      "topic": "offering help at an event",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Can I bring some drinks for the meeting on Saturday? The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about offering help at an event."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-037",
+      "band": "A2",
+      "tier": "A2.2",
+      "title": "Arranging a time and place",
+      "topic": "arranging a meeting place",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Let's meet outside the community centre at half past six. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about arranging a meeting place."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-038",
+      "band": "A2",
+      "tier": "A2.2",
+      "title": "Responding naturally",
+      "topic": "responding to an invitation",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "That sounds good, but could we meet a little later? The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about responding to an invitation."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-039",
+      "band": "A2",
+      "tier": "A2.2",
+      "title": "Changing a plan",
+      "topic": "changing a weekend arrangement",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "I need to change our plan because my sister is visiting on Sunday. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about changing a weekend arrangement."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-040",
+      "band": "A2",
+      "tier": "A2.2",
+      "title": "Review: offers and arrangements",
+      "topic": "reviewing arrangements",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "I can make an offer, arrange details, and explain a change politely. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about reviewing arrangements."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-041",
+      "band": "A2",
+      "tier": "A2.2",
+      "title": "Community plans",
+      "topic": "planning a community activity",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Our group is going to clean the park next Saturday morning. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about planning a community activity."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-042",
+      "band": "A2",
+      "tier": "A2.2",
+      "title": "Reasons and organization",
+      "topic": "organising volunteers",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "We need three people for the posters because the event starts at ten. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about organising volunteers."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-043",
+      "band": "A2",
+      "tier": "A2.2",
+      "title": "Inviting others",
+      "topic": "inviting neighbours",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Would you like to join our park clean-up and bring a pair of gloves? The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about inviting neighbours."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-044",
+      "band": "A2",
+      "tier": "A2.2",
+      "title": "Clear planned speech",
+      "topic": "speaking about a future activity",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "I am going to explain the plan slowly and stress the time and place. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about speaking about a future activity."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-045",
+      "band": "A2",
+      "tier": "A2.2",
+      "title": "Review: community participation",
+      "topic": "reviewing community participation",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "I can give a reason, invite others, and organize a simple activity. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about reviewing community participation."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-046",
+      "band": "A2",
+      "tier": "A2.2",
+      "title": "Planning across contexts",
+      "topic": "planning across several situations",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "I can choose suitable future language for study, work, and community plans. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about planning across several situations."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-047",
+      "band": "A2",
+      "tier": "A2.2",
+      "title": "Coordinating a plan",
+      "topic": "coordinating a group plan",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Let's agree on a time, a place, and one task for each person. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about coordinating a group plan."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-048",
+      "band": "A2",
+      "tier": "A2.2",
+      "title": "Listening and speaking preparation",
+      "topic": "listening before a planned conversation",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "I can identify the plan, the key detail, and the next action in a short message. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about listening before a planned conversation."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-049",
+      "band": "A2",
+      "tier": "A2.2",
+      "title": "A2.2 preparation",
+      "topic": "preparing an A2.2 exchange",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "I can make an arrangement, respond naturally, and change one detail if needed. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about preparing an A2.2 exchange."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-a2-050",
+      "band": "A2",
+      "tier": "A2.2",
+      "title": "Review: A2.2 consolidation",
+      "topic": "reviewing A2.2 communication",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "I can plan, invite, offer help, and explain a practical change clearly. The message gives one main point and one detail for the listener.",
+      "questions": [
+        {
+          "prompt": "What situation does the message describe?",
+          "acceptedAnswers": [
+            "The message is about reviewing A2.2 communication."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-001",
+      "band": "B1",
+      "tier": "B1.1",
+      "title": "Experiences up to now",
+      "topic": "experiences up to now",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about experiences up to now, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of experiences up to now."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-002",
+      "band": "B1",
+      "tier": "B1.1",
+      "title": "Explaining an opinion",
+      "topic": "explaining an opinion",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about explaining an opinion, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of explaining an opinion."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-003",
+      "band": "B1",
+      "tier": "B1.1",
+      "title": "Agreeing and disagreeing tactfully",
+      "topic": "agreeing and disagreeing tactfully",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about agreeing and disagreeing tactfully, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of agreeing and disagreeing tactfully."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-004",
+      "band": "B1",
+      "tier": "B1.1",
+      "title": "A connected personal response",
+      "topic": "a connected personal response",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about a connected personal response, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of a connected personal response."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-005",
+      "band": "B1",
+      "tier": "B1.1",
+      "title": "Review: experiences and change",
+      "topic": "review: experiences and change",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about review: experiences and change, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of review: experiences and change."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-006",
+      "band": "B1",
+      "tier": "B1.1",
+      "title": "Media experiences",
+      "topic": "media experiences",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about media experiences, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of media experiences."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-007",
+      "band": "B1",
+      "tier": "B1.1",
+      "title": "Reasons and examples",
+      "topic": "reasons and examples",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about reasons and examples, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of reasons and examples."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-008",
+      "band": "B1",
+      "tier": "B1.1",
+      "title": "Emphasis and viewpoint",
+      "topic": "emphasis and viewpoint",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about emphasis and viewpoint, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of emphasis and viewpoint."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-009",
+      "band": "B1",
+      "tier": "B1.1",
+      "title": "Discussing different views",
+      "topic": "discussing different views",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about discussing different views, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of discussing different views."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-010",
+      "band": "B1",
+      "tier": "B1.1",
+      "title": "Review: media opinions",
+      "topic": "review: media opinions",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about review: media opinions, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of review: media opinions."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-011",
+      "band": "B1",
+      "tier": "B1.1",
+      "title": "Changes in relationships",
+      "topic": "changes in relationships",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about changes in relationships, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of changes in relationships."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-012",
+      "band": "B1",
+      "tier": "B1.1",
+      "title": "Expressing a concern",
+      "topic": "expressing a concern",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about expressing a concern, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of expressing a concern."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-013",
+      "band": "B1",
+      "tier": "B1.1",
+      "title": "Tactful responses",
+      "topic": "tactful responses",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about tactful responses, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of tactful responses."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-014",
+      "band": "B1",
+      "tier": "B1.1",
+      "title": "Relationship language",
+      "topic": "relationship language",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about relationship language, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of relationship language."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-015",
+      "band": "B1",
+      "tier": "B1.1",
+      "title": "Review: relationships",
+      "topic": "review: relationships",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about review: relationships, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of review: relationships."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-016",
+      "band": "B1",
+      "tier": "B1.1",
+      "title": "Experience in the community",
+      "topic": "experience in the community",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about experience in the community, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of experience in the community."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-017",
+      "band": "B1",
+      "tier": "B1.1",
+      "title": "Building a viewpoint",
+      "topic": "building a viewpoint",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about building a viewpoint, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of building a viewpoint."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-018",
+      "band": "B1",
+      "tier": "B1.1",
+      "title": "Emphasizing key contrasts",
+      "topic": "emphasizing key contrasts",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about emphasizing key contrasts, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of emphasizing key contrasts."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-019",
+      "band": "B1",
+      "tier": "B1.1",
+      "title": "Discussing alternatives",
+      "topic": "discussing alternatives",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about discussing alternatives, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of discussing alternatives."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-020",
+      "band": "B1",
+      "tier": "B1.1",
+      "title": "Review: community choices",
+      "topic": "review: community choices",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about review: community choices, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of review: community choices."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-021",
+      "band": "B1",
+      "tier": "B1.1",
+      "title": "Experiences across contexts",
+      "topic": "experiences across contexts",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about experiences across contexts, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of experiences across contexts."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-022",
+      "band": "B1",
+      "tier": "B1.1",
+      "title": "Connected opinion practice",
+      "topic": "connected opinion practice",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about connected opinion practice, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of connected opinion practice."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-023",
+      "band": "B1",
+      "tier": "B1.1",
+      "title": "Tactful discussion practice",
+      "topic": "tactful discussion practice",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about tactful discussion practice, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of tactful discussion practice."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-024",
+      "band": "B1",
+      "tier": "B1.1",
+      "title": "B1.1 preparation",
+      "topic": "b1.1 preparation",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about b1.1 preparation, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of b1.1 preparation."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-025",
+      "band": "B1",
+      "tier": "B1.1",
+      "title": "Review: B1.1 consolidation",
+      "topic": "review: b1.1 consolidation",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about review: b1.1 consolidation, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of review: b1.1 consolidation."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-026",
+      "band": "B1",
+      "tier": "B1.2",
+      "title": "A sequenced past story",
+      "topic": "a sequenced past story",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about a sequenced past story, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of a sequenced past story."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-027",
+      "band": "B1",
+      "tier": "B1.2",
+      "title": "Clarifying what happened",
+      "topic": "clarifying what happened",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about clarifying what happened, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of clarifying what happened."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-028",
+      "band": "B1",
+      "tier": "B1.2",
+      "title": "Narrative intonation",
+      "topic": "narrative intonation",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about narrative intonation, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of narrative intonation."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-029",
+      "band": "B1",
+      "tier": "B1.2",
+      "title": "Choosing an appropriate register",
+      "topic": "choosing an appropriate register",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about choosing an appropriate register, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of choosing an appropriate register."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-030",
+      "band": "B1",
+      "tier": "B1.2",
+      "title": "Review: personal-change stories",
+      "topic": "review: personal-change stories",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about review: personal-change stories, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of review: personal-change stories."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-031",
+      "band": "B1",
+      "tier": "B1.2",
+      "title": "Reporting an event",
+      "topic": "reporting an event",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about reporting an event, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of reporting an event."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-032",
+      "band": "B1",
+      "tier": "B1.2",
+      "title": "Developing the story",
+      "topic": "developing the story",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about developing the story, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of developing the story."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-033",
+      "band": "B1",
+      "tier": "B1.2",
+      "title": "Repairing and elaborating",
+      "topic": "repairing and elaborating",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about repairing and elaborating, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of repairing and elaborating."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-034",
+      "band": "B1",
+      "tier": "B1.2",
+      "title": "Engaging spoken delivery",
+      "topic": "engaging spoken delivery",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about engaging spoken delivery, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of engaging spoken delivery."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-035",
+      "band": "B1",
+      "tier": "B1.2",
+      "title": "Review: community events",
+      "topic": "review: community events",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about review: community events, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of review: community events."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-036",
+      "band": "B1",
+      "tier": "B1.2",
+      "title": "Retelling a media story",
+      "topic": "retelling a media story",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about retelling a media story, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of retelling a media story."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-037",
+      "band": "B1",
+      "tier": "B1.2",
+      "title": "Explaining a perspective",
+      "topic": "explaining a perspective",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about explaining a perspective, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of explaining a perspective."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-038",
+      "band": "B1",
+      "tier": "B1.2",
+      "title": "Narrative language patterns",
+      "topic": "narrative language patterns",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about narrative language patterns, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of narrative language patterns."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-039",
+      "band": "B1",
+      "tier": "B1.2",
+      "title": "Comparing accounts",
+      "topic": "comparing accounts",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about comparing accounts, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of comparing accounts."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-040",
+      "band": "B1",
+      "tier": "B1.2",
+      "title": "Review: media stories",
+      "topic": "review: media stories",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about review: media stories, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of review: media stories."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-041",
+      "band": "B1",
+      "tier": "B1.2",
+      "title": "A relationship story",
+      "topic": "a relationship story",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about a relationship story, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of a relationship story."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-042",
+      "band": "B1",
+      "tier": "B1.2",
+      "title": "Topic development",
+      "topic": "topic development",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about topic development, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of topic development."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-043",
+      "band": "B1",
+      "tier": "B1.2",
+      "title": "Clarifying sensitively",
+      "topic": "clarifying sensitively",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about clarifying sensitively, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of clarifying sensitively."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-044",
+      "band": "B1",
+      "tier": "B1.2",
+      "title": "Telling the story aloud",
+      "topic": "telling the story aloud",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about telling the story aloud, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of telling the story aloud."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-045",
+      "band": "B1",
+      "tier": "B1.2",
+      "title": "Review: relationships over time",
+      "topic": "review: relationships over time",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about review: relationships over time, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of review: relationships over time."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-046",
+      "band": "B1",
+      "tier": "B1.2",
+      "title": "Narratives across contexts",
+      "topic": "narratives across contexts",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about narratives across contexts, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of narratives across contexts."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-047",
+      "band": "B1",
+      "tier": "B1.2",
+      "title": "Extended story practice",
+      "topic": "extended story practice",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about extended story practice, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of extended story practice."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-048",
+      "band": "B1",
+      "tier": "B1.2",
+      "title": "Spoken interaction practice",
+      "topic": "spoken interaction practice",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about spoken interaction practice, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of spoken interaction practice."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-049",
+      "band": "B1",
+      "tier": "B1.2",
+      "title": "B1.2 preparation",
+      "topic": "b1.2 preparation",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about b1.2 preparation, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of b1.2 preparation."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-b1-050",
+      "band": "B1",
+      "tier": "B1.2",
+      "title": "Review: B1.2 consolidation",
+      "topic": "review: b1.2 consolidation",
+      "mode": "GRADED_OBJECTIVE",
+      "sourceText": "Although another person may disagree about review: b1.2 consolidation, I can respond politely and explain my reason.",
+      "questions": [
+        {
+          "prompt": "How does the writer respond to disagreement?",
+          "acceptedAnswers": [
+            "The writer responds politely and gives a reason in the discussion of review: b1.2 consolidation."
+          ]
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-001",
+      "band": "C1",
+      "tier": "C1.1",
+      "title": "Framing research findings and source synthesis",
+      "topic": "Research findings and synthesis",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For research findings and synthesis, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 1.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-002",
+      "band": "C1",
+      "tier": "C1.1",
+      "title": "Developing research findings and source synthesis",
+      "topic": "Research findings and synthesis",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For research findings and synthesis, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 2.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-003",
+      "band": "C1",
+      "tier": "C1.1",
+      "title": "Responding in research findings and source synthesis",
+      "topic": "Research findings and synthesis",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For research findings and synthesis, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 3.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-004",
+      "band": "C1",
+      "tier": "C1.1",
+      "title": "Integrating research findings and source synthesis",
+      "topic": "Research findings and synthesis",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For research findings and synthesis, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 4.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-005",
+      "band": "C1",
+      "tier": "C1.1",
+      "title": "Review: Research findings and synthesis",
+      "topic": "Research findings and synthesis",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For research findings and synthesis, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 5.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-006",
+      "band": "C1",
+      "tier": "C1.1",
+      "title": "Framing institutional choices and formal discussion",
+      "topic": "Institutions and formal discussion",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For institutions and formal discussion, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 6.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-007",
+      "band": "C1",
+      "tier": "C1.1",
+      "title": "Developing institutional choices and formal discussion",
+      "topic": "Institutions and formal discussion",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For institutions and formal discussion, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 7.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-008",
+      "band": "C1",
+      "tier": "C1.1",
+      "title": "Responding in institutional choices and formal discussion",
+      "topic": "Institutions and formal discussion",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For institutions and formal discussion, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 8.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-009",
+      "band": "C1",
+      "tier": "C1.1",
+      "title": "Integrating institutional choices and formal discussion",
+      "topic": "Institutions and formal discussion",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For institutions and formal discussion, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 9.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-010",
+      "band": "C1",
+      "tier": "C1.1",
+      "title": "Review: Institutions and formal discussion",
+      "topic": "Institutions and formal discussion",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For institutions and formal discussion, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 10.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-011",
+      "band": "C1",
+      "tier": "C1.1",
+      "title": "Framing global issues and complex claims",
+      "topic": "Global issues and complex claims",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For global issues and complex claims, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 11.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-012",
+      "band": "C1",
+      "tier": "C1.1",
+      "title": "Developing global issues and complex claims",
+      "topic": "Global issues and complex claims",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For global issues and complex claims, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 12.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-013",
+      "band": "C1",
+      "tier": "C1.1",
+      "title": "Responding in global issues and complex claims",
+      "topic": "Global issues and complex claims",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For global issues and complex claims, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 13.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-014",
+      "band": "C1",
+      "tier": "C1.1",
+      "title": "Integrating global issues and complex claims",
+      "topic": "Global issues and complex claims",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For global issues and complex claims, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 14.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-015",
+      "band": "C1",
+      "tier": "C1.1",
+      "title": "Review: Global issues and complex claims",
+      "topic": "Global issues and complex claims",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For global issues and complex claims, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 15.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-016",
+      "band": "C1",
+      "tier": "C1.1",
+      "title": "Framing professional conclusions and stance",
+      "topic": "Professional conclusions and stance",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For professional conclusions and stance, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 16.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-017",
+      "band": "C1",
+      "tier": "C1.1",
+      "title": "Developing professional conclusions and stance",
+      "topic": "Professional conclusions and stance",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For professional conclusions and stance, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 17.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-018",
+      "band": "C1",
+      "tier": "C1.1",
+      "title": "Responding in professional conclusions and stance",
+      "topic": "Professional conclusions and stance",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For professional conclusions and stance, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 18.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-019",
+      "band": "C1",
+      "tier": "C1.1",
+      "title": "Integrating professional conclusions and stance",
+      "topic": "Professional conclusions and stance",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For professional conclusions and stance, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 19.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-020",
+      "band": "C1",
+      "tier": "C1.1",
+      "title": "Review: Professional conclusions and stance",
+      "topic": "Professional conclusions and stance",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For professional conclusions and stance, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 20.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-021",
+      "band": "C1",
+      "tier": "C1.1",
+      "title": "Framing all C1.1 targets",
+      "topic": "C1.1 consolidation",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For c1.1 consolidation, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 21.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-022",
+      "band": "C1",
+      "tier": "C1.1",
+      "title": "Developing all C1.1 targets",
+      "topic": "C1.1 consolidation",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For c1.1 consolidation, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 22.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-023",
+      "band": "C1",
+      "tier": "C1.1",
+      "title": "Responding in all C1.1 targets",
+      "topic": "C1.1 consolidation",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For c1.1 consolidation, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 23.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-024",
+      "band": "C1",
+      "tier": "C1.1",
+      "title": "Integrating all C1.1 targets",
+      "topic": "C1.1 consolidation",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For c1.1 consolidation, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 24.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-025",
+      "band": "C1",
+      "tier": "C1.1",
+      "title": "Review: C1.1 consolidation",
+      "topic": "C1.1 consolidation",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For c1.1 consolidation, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 25.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-026",
+      "band": "C1",
+      "tier": "C1.2",
+      "title": "Framing cultural interpretation and rapport",
+      "topic": "Culture and competing interpretations",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For culture and competing interpretations, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 26.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-027",
+      "band": "C1",
+      "tier": "C1.2",
+      "title": "Developing cultural interpretation and rapport",
+      "topic": "Culture and competing interpretations",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For culture and competing interpretations, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 27.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-028",
+      "band": "C1",
+      "tier": "C1.2",
+      "title": "Responding in cultural interpretation and rapport",
+      "topic": "Culture and competing interpretations",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For culture and competing interpretations, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 28.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-029",
+      "band": "C1",
+      "tier": "C1.2",
+      "title": "Integrating cultural interpretation and rapport",
+      "topic": "Culture and competing interpretations",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For culture and competing interpretations, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 29.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-030",
+      "band": "C1",
+      "tier": "C1.2",
+      "title": "Review: Culture and competing interpretations",
+      "topic": "Culture and competing interpretations",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For culture and competing interpretations, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 30.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-031",
+      "band": "C1",
+      "tier": "C1.2",
+      "title": "Framing ethical proposals and disagreement",
+      "topic": "Ethics and evaluated proposals",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For ethics and evaluated proposals, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 31.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-032",
+      "band": "C1",
+      "tier": "C1.2",
+      "title": "Developing ethical proposals and disagreement",
+      "topic": "Ethics and evaluated proposals",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For ethics and evaluated proposals, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 32.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-033",
+      "band": "C1",
+      "tier": "C1.2",
+      "title": "Responding in ethical proposals and disagreement",
+      "topic": "Ethics and evaluated proposals",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For ethics and evaluated proposals, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 33.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-034",
+      "band": "C1",
+      "tier": "C1.2",
+      "title": "Integrating ethical proposals and disagreement",
+      "topic": "Ethics and evaluated proposals",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For ethics and evaluated proposals, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 34.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-035",
+      "band": "C1",
+      "tier": "C1.2",
+      "title": "Review: Ethics and evaluated proposals",
+      "topic": "Ethics and evaluated proposals",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For ethics and evaluated proposals, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 35.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-036",
+      "band": "C1",
+      "tier": "C1.2",
+      "title": "Framing long-form exposition and concession",
+      "topic": "Long-form exposition and concession",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For long-form exposition and concession, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 36.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-037",
+      "band": "C1",
+      "tier": "C1.2",
+      "title": "Developing long-form exposition and concession",
+      "topic": "Long-form exposition and concession",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For long-form exposition and concession, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 37.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-038",
+      "band": "C1",
+      "tier": "C1.2",
+      "title": "Responding in long-form exposition and concession",
+      "topic": "Long-form exposition and concession",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For long-form exposition and concession, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 38.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-039",
+      "band": "C1",
+      "tier": "C1.2",
+      "title": "Integrating long-form exposition and concession",
+      "topic": "Long-form exposition and concession",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For long-form exposition and concession, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 39.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-040",
+      "band": "C1",
+      "tier": "C1.2",
+      "title": "Review: Long-form exposition and concession",
+      "topic": "Long-form exposition and concession",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For long-form exposition and concession, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 40.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-041",
+      "band": "C1",
+      "tier": "C1.2",
+      "title": "Framing precise demanding interaction",
+      "topic": "Precision in demanding interaction",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For precision in demanding interaction, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 41.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-042",
+      "band": "C1",
+      "tier": "C1.2",
+      "title": "Developing precise demanding interaction",
+      "topic": "Precision in demanding interaction",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For precision in demanding interaction, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 42.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-043",
+      "band": "C1",
+      "tier": "C1.2",
+      "title": "Responding in precise demanding interaction",
+      "topic": "Precision in demanding interaction",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For precision in demanding interaction, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 43.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-044",
+      "band": "C1",
+      "tier": "C1.2",
+      "title": "Integrating precise demanding interaction",
+      "topic": "Precision in demanding interaction",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For precision in demanding interaction, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 44.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-045",
+      "band": "C1",
+      "tier": "C1.2",
+      "title": "Review: Precision in demanding interaction",
+      "topic": "Precision in demanding interaction",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For precision in demanding interaction, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 45.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-046",
+      "band": "C1",
+      "tier": "C1.2",
+      "title": "Framing all C1.2 targets",
+      "topic": "C1.2 consolidation",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For c1.2 consolidation, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 46.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-047",
+      "band": "C1",
+      "tier": "C1.2",
+      "title": "Developing all C1.2 targets",
+      "topic": "C1.2 consolidation",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For c1.2 consolidation, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 47.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-048",
+      "band": "C1",
+      "tier": "C1.2",
+      "title": "Responding in all C1.2 targets",
+      "topic": "C1.2 consolidation",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For c1.2 consolidation, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 48.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-049",
+      "band": "C1",
+      "tier": "C1.2",
+      "title": "Integrating all C1.2 targets",
+      "topic": "C1.2 consolidation",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For c1.2 consolidation, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 49.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c1-050",
+      "band": "C1",
+      "tier": "C1.2",
+      "title": "Review: C1.2 consolidation",
+      "topic": "C1.2 consolidation",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For c1.2 consolidation, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 50.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-001",
+      "band": "C2",
+      "tier": "C2.1",
+      "title": "Framing research findings and source synthesis",
+      "topic": "Research findings and synthesis",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For research findings and synthesis, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 1.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-002",
+      "band": "C2",
+      "tier": "C2.1",
+      "title": "Developing research findings and source synthesis",
+      "topic": "Research findings and synthesis",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For research findings and synthesis, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 2.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-003",
+      "band": "C2",
+      "tier": "C2.1",
+      "title": "Responding in research findings and source synthesis",
+      "topic": "Research findings and synthesis",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For research findings and synthesis, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 3.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-004",
+      "band": "C2",
+      "tier": "C2.1",
+      "title": "Integrating research findings and source synthesis",
+      "topic": "Research findings and synthesis",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For research findings and synthesis, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 4.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-005",
+      "band": "C2",
+      "tier": "C2.1",
+      "title": "Review: Research findings and synthesis",
+      "topic": "Research findings and synthesis",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For research findings and synthesis, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 5.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-006",
+      "band": "C2",
+      "tier": "C2.1",
+      "title": "Framing institutional choices and formal discussion",
+      "topic": "Institutions and formal discussion",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For institutions and formal discussion, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 6.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-007",
+      "band": "C2",
+      "tier": "C2.1",
+      "title": "Developing institutional choices and formal discussion",
+      "topic": "Institutions and formal discussion",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For institutions and formal discussion, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 7.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-008",
+      "band": "C2",
+      "tier": "C2.1",
+      "title": "Responding in institutional choices and formal discussion",
+      "topic": "Institutions and formal discussion",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For institutions and formal discussion, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 8.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-009",
+      "band": "C2",
+      "tier": "C2.1",
+      "title": "Integrating institutional choices and formal discussion",
+      "topic": "Institutions and formal discussion",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For institutions and formal discussion, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 9.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-010",
+      "band": "C2",
+      "tier": "C2.1",
+      "title": "Review: Institutions and formal discussion",
+      "topic": "Institutions and formal discussion",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For institutions and formal discussion, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 10.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-011",
+      "band": "C2",
+      "tier": "C2.1",
+      "title": "Framing global issues and complex claims",
+      "topic": "Global issues and complex claims",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For global issues and complex claims, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 11.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-012",
+      "band": "C2",
+      "tier": "C2.1",
+      "title": "Developing global issues and complex claims",
+      "topic": "Global issues and complex claims",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For global issues and complex claims, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 12.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-013",
+      "band": "C2",
+      "tier": "C2.1",
+      "title": "Responding in global issues and complex claims",
+      "topic": "Global issues and complex claims",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For global issues and complex claims, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 13.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-014",
+      "band": "C2",
+      "tier": "C2.1",
+      "title": "Integrating global issues and complex claims",
+      "topic": "Global issues and complex claims",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For global issues and complex claims, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 14.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-015",
+      "band": "C2",
+      "tier": "C2.1",
+      "title": "Review: Global issues and complex claims",
+      "topic": "Global issues and complex claims",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For global issues and complex claims, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 15.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-016",
+      "band": "C2",
+      "tier": "C2.1",
+      "title": "Framing professional conclusions and stance",
+      "topic": "Professional conclusions and stance",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For professional conclusions and stance, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 16.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-017",
+      "band": "C2",
+      "tier": "C2.1",
+      "title": "Developing professional conclusions and stance",
+      "topic": "Professional conclusions and stance",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For professional conclusions and stance, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 17.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-018",
+      "band": "C2",
+      "tier": "C2.1",
+      "title": "Responding in professional conclusions and stance",
+      "topic": "Professional conclusions and stance",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For professional conclusions and stance, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 18.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-019",
+      "band": "C2",
+      "tier": "C2.1",
+      "title": "Integrating professional conclusions and stance",
+      "topic": "Professional conclusions and stance",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For professional conclusions and stance, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 19.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-020",
+      "band": "C2",
+      "tier": "C2.1",
+      "title": "Review: Professional conclusions and stance",
+      "topic": "Professional conclusions and stance",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For professional conclusions and stance, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 20.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-021",
+      "band": "C2",
+      "tier": "C2.1",
+      "title": "Framing all C2.1 targets",
+      "topic": "C2.1 consolidation",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For c2.1 consolidation, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 21.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-022",
+      "band": "C2",
+      "tier": "C2.1",
+      "title": "Developing all C2.1 targets",
+      "topic": "C2.1 consolidation",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For c2.1 consolidation, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 22.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-023",
+      "band": "C2",
+      "tier": "C2.1",
+      "title": "Responding in all C2.1 targets",
+      "topic": "C2.1 consolidation",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For c2.1 consolidation, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 23.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-024",
+      "band": "C2",
+      "tier": "C2.1",
+      "title": "Integrating all C2.1 targets",
+      "topic": "C2.1 consolidation",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For c2.1 consolidation, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 24.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-025",
+      "band": "C2",
+      "tier": "C2.1",
+      "title": "Review: C2.1 consolidation",
+      "topic": "C2.1 consolidation",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For c2.1 consolidation, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 25.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-026",
+      "band": "C2",
+      "tier": "C2.2",
+      "title": "Framing cultural interpretation and rapport",
+      "topic": "Culture and competing interpretations",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For culture and competing interpretations, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 26.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-027",
+      "band": "C2",
+      "tier": "C2.2",
+      "title": "Developing cultural interpretation and rapport",
+      "topic": "Culture and competing interpretations",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For culture and competing interpretations, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 27.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-028",
+      "band": "C2",
+      "tier": "C2.2",
+      "title": "Responding in cultural interpretation and rapport",
+      "topic": "Culture and competing interpretations",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For culture and competing interpretations, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 28.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-029",
+      "band": "C2",
+      "tier": "C2.2",
+      "title": "Integrating cultural interpretation and rapport",
+      "topic": "Culture and competing interpretations",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For culture and competing interpretations, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 29.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-030",
+      "band": "C2",
+      "tier": "C2.2",
+      "title": "Review: Culture and competing interpretations",
+      "topic": "Culture and competing interpretations",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For culture and competing interpretations, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 30.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-031",
+      "band": "C2",
+      "tier": "C2.2",
+      "title": "Framing ethical proposals and disagreement",
+      "topic": "Ethics and evaluated proposals",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For ethics and evaluated proposals, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 31.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-032",
+      "band": "C2",
+      "tier": "C2.2",
+      "title": "Developing ethical proposals and disagreement",
+      "topic": "Ethics and evaluated proposals",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For ethics and evaluated proposals, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 32.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-033",
+      "band": "C2",
+      "tier": "C2.2",
+      "title": "Responding in ethical proposals and disagreement",
+      "topic": "Ethics and evaluated proposals",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For ethics and evaluated proposals, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 33.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-034",
+      "band": "C2",
+      "tier": "C2.2",
+      "title": "Integrating ethical proposals and disagreement",
+      "topic": "Ethics and evaluated proposals",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For ethics and evaluated proposals, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 34.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-035",
+      "band": "C2",
+      "tier": "C2.2",
+      "title": "Review: Ethics and evaluated proposals",
+      "topic": "Ethics and evaluated proposals",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For ethics and evaluated proposals, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 35.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-036",
+      "band": "C2",
+      "tier": "C2.2",
+      "title": "Framing long-form exposition and concession",
+      "topic": "Long-form exposition and concession",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For long-form exposition and concession, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 36.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-037",
+      "band": "C2",
+      "tier": "C2.2",
+      "title": "Developing long-form exposition and concession",
+      "topic": "Long-form exposition and concession",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For long-form exposition and concession, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 37.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-038",
+      "band": "C2",
+      "tier": "C2.2",
+      "title": "Responding in long-form exposition and concession",
+      "topic": "Long-form exposition and concession",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For long-form exposition and concession, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 38.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-039",
+      "band": "C2",
+      "tier": "C2.2",
+      "title": "Integrating long-form exposition and concession",
+      "topic": "Long-form exposition and concession",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For long-form exposition and concession, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 39.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-040",
+      "band": "C2",
+      "tier": "C2.2",
+      "title": "Review: Long-form exposition and concession",
+      "topic": "Long-form exposition and concession",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For long-form exposition and concession, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 40.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-041",
+      "band": "C2",
+      "tier": "C2.2",
+      "title": "Framing precise demanding interaction",
+      "topic": "Precision in demanding interaction",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For precision in demanding interaction, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 41.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-042",
+      "band": "C2",
+      "tier": "C2.2",
+      "title": "Developing precise demanding interaction",
+      "topic": "Precision in demanding interaction",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For precision in demanding interaction, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 42.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-043",
+      "band": "C2",
+      "tier": "C2.2",
+      "title": "Responding in precise demanding interaction",
+      "topic": "Precision in demanding interaction",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For precision in demanding interaction, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 43.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-044",
+      "band": "C2",
+      "tier": "C2.2",
+      "title": "Integrating precise demanding interaction",
+      "topic": "Precision in demanding interaction",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For precision in demanding interaction, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 44.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-045",
+      "band": "C2",
+      "tier": "C2.2",
+      "title": "Review: Precision in demanding interaction",
+      "topic": "Precision in demanding interaction",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For precision in demanding interaction, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 45.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-046",
+      "band": "C2",
+      "tier": "C2.2",
+      "title": "Framing all C2.2 targets",
+      "topic": "C2.2 consolidation",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For c2.2 consolidation, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 46.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-047",
+      "band": "C2",
+      "tier": "C2.2",
+      "title": "Developing all C2.2 targets",
+      "topic": "C2.2 consolidation",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For c2.2 consolidation, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 47.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-048",
+      "band": "C2",
+      "tier": "C2.2",
+      "title": "Responding in all C2.2 targets",
+      "topic": "C2.2 consolidation",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For c2.2 consolidation, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 48.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-049",
+      "band": "C2",
+      "tier": "C2.2",
+      "title": "Integrating all C2.2 targets",
+      "topic": "C2.2 consolidation",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For c2.2 consolidation, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 49.",
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "reader-en-c2-050",
+      "band": "C2",
+      "tier": "C2.2",
+      "title": "Review: C2.2 consolidation",
+      "topic": "C2.2 consolidation",
+      "mode": "SUPPLIED_TEXT",
+      "sourceText": "For c2.2 consolidation, a strong contribution identifies a relevant tension, explains why it matters, and proposes a proportionate response. The wording in this model is original material for lesson 50.",
+      "contentStatus": "UNREVIEWED"
+    }
+  ]
+}

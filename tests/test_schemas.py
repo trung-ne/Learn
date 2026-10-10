@@ -94,6 +94,8 @@ def test_all_schema_files_are_loaded_and_metaschema_valid(schemas: dict[str, dic
         "c2-pilot-manifest.schema.json",
         "common.schema.json",
         "concept.schema.json",
+        "content-kg-quality-report-v1.schema.json",
+        "content-kg-quality-request-v1.schema.json",
         "coverage-matrix.schema.json",
         "cross-level-qa-report-v2.schema.json",
         "cross-level-qa-report.schema.json",
@@ -254,6 +256,13 @@ def test_all_schema_files_are_loaded_and_metaschema_valid(schemas: dict[str, dic
         "transcription-verification.schema.json",
         "vietnamese-learner-annotation.schema.json",
         "vocabulary-sense.schema.json",
+        "web-grammar-inventory.schema.json",
+        "web-listening-inventory.schema.json",
+        "web-pronunciation-inventory.schema.json",
+        "web-reading-inventory.schema.json",
+        "web-speaking-inventory.schema.json",
+        "web-vocabulary-inventory.schema.json",
+        "web-writing-inventory.schema.json",
     ]
     assert len(schemas) == len(files)
     for schema in schemas.values():

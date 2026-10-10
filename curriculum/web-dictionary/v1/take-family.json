@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0",
+  "inventory_version": "2026-10-take-family-01",
+  "content_status": "UNREVIEWED",
+  "records": [
+    {
+      "id": "dict-en-take-001",
+      "language": "en",
+      "kind": "word_sense",
+      "headword": "take",
+      "sense_number": 1,
+      "band": "A1",
+      "tier": "A1.2",
+      "part_of_speech": "verb",
+      "definition": "to carry or move something to another place",
+      "vietnamese_meaning": "mang; đem",
+      "ipa": "/teɪk/",
+      "examples": ["Please take this bag to the car."],
+      "collocations": ["take a bag", "take a photo"],
+      "relations": {
+        "sense_ids": ["dict-en-take-001", "dict-en-take-002", "dict-en-take-003", "dict-en-take-004"],
+        "phrasal_verb_ids": ["dict-en-take-off-001", "dict-en-take-over-001", "dict-en-take-up-001"],
+        "word_family_ids": ["dict-en-take-001", "dict-en-taking-001", "dict-en-taken-001"]
+      },
+      "recall": {"prompt": "Choose the word that means ‘mang; đem’.", "accepted_answers": ["take"], "distractors": ["give", "leave"]},
+      "authorship": "PROJECT_AUTHORED",
+      "content_status": "UNREVIEWED"
+    },
+    {
+      "id": "dict-en-take-002",
+      "language": "en",
+      "kind": "word_sense",
+      "headword": "take",
+      "sense_number": 2,
+      "band": "A2",
+      "tier": "A2.1",
+      "part_of_speech": "verb",
+      "definition": "to need or use an amount of time",
+      "vietnamese_meaning": "mất; cần (thời gian)",
+      "ipa": "/teɪk/",
+      "examples": ["The bus takes twenty minutes."],
+      "collocations": ["take time", "take a break"],
+      "relations": {
+        "sense_ids": ["dict-en-take-001", "dict-en-take-002", "dict-en-take-003", "dict-en-take-004"],
+        "phrasal_verb_ids": ["dict-en-take-off-001", "dict-en-take-over-001", "dict-en-take-up-001"],
+        "word_family_ids": ["dict-en-take-001", "dict-en-taking-001", "dict-en-taken-001"]
+      },
+      "recall": {"prompt": "Choose the verb meaning ‘cần thời gian’.", "accepted_answers": ["take"], "distractors": ["spend", "wait"]},
+      "authorship": "PROJECT_AUTHORED",
+      "content_status": "UNREVIEWED"
+    },
+    {
+      "id": "dict-en-take-003",
+      "language": "en",
+      "kind": "word_sense",
+      "headword": "take",
+      "sense_number": 3,
+      "band": "B1",
+      "tier": "B1.1",
+      "part_of_speech": "verb",
+      "definition": "to accept a duty or responsibility",
+      "vietnamese_meaning": "nhận; chịu (trách nhiệm)",
+      "ipa": "/teɪk/",
+      "examples": ["She took responsibility for the mistake."],
+      "collocations": ["take responsibility", "take action"],
+      "relations": {
+        "sense_ids": ["dict-en-take-001", "dict-en-take-002", "dict-en-take-003", "dict-en-take-004"],
+        "phrasal_verb_ids": ["dict-en-take-off-001", "dict-en-take-over-001", "dict-en-take-up-001"],
+        "word_family_ids": ["dict-en-take-001", "dict-en-taking-001", "dict-en-taken-001"]
+      },
+      "recall": {"prompt": "Choose the verb that fits ‘___ responsibility’.", "accepted_answers": ["take"], "distractors": ["make", "hold"]},
+      "authorship": "PROJECT_AUTHORED",
+      "content_status": "UNREVIEWED"
+    },
+    {
+      "id": "dict-en-take-004",
+      "language": "en",
+      "kind": "word_sense",
+      "headword": "take",
+      "sense_number": 4,
+      "band": "B2",
+      "tier": "B2.1",
+      "part_of_speech": "verb",
+      "definition": "to understand or react to something in a particular way",
+      "vietnamese_meaning": "hiểu; diễn giải",
+      "ipa": "/teɪk/",
+      "examples": ["Do not take her comment as an insult."],
+      "collocations": ["take something seriously", "take something as a sign"],
+      "relations": {
+        "sense_ids": ["dict-en-take-001", "dict-en-take-002", "dict-en-take-003", "dict-en-take-004"],
+        "phrasal_verb_ids": ["dict-en-take-off-001", "dict-en-take-over-001", "dict-en-take-up-001"],
+        "word_family_ids": ["dict-en-take-001", "dict-en-taking-001", "dict-en-taken-001"]
+      },
+      "recall": {"prompt": "Choose the verb that fits ‘___ something seriously’.", "accepted_answers": ["take"], "distractors": ["carry", "hold"]},
+      "authorship": "PROJECT_AUTHORED",
+      "content_status": "UNREVIEWED"
+    },
+    {
+      "id": "dict-en-take-off-001",
+      "language": "en",
+      "kind": "phrasal_verb",
+      "headword": "take off",
+      "band": "A2",
+      "tier": "A2.2",
+      "part_of_speech": "phrasal verb",
+      "definition": "to leave the ground and begin to fly",
+      "vietnamese_meaning": "cất cánh",
+      "examples": ["The plane takes off at six."],
+      "collocations": ["plane takes off"],
+      "relations": {"sense_ids": ["dict-en-take-001", "dict-en-take-002", "dict-en-take-003", "dict-en-take-004"], "phrasal_verb_ids": ["dict-en-take-off-001", "dict-en-take-over-001", "dict-en-take-up-001"], "word_family_ids": ["dict-en-take-001", "dict-en-taking-001", "dict-en-taken-001"]},
+      "recall": {"prompt": "Choose the phrasal verb for ‘cất cánh’.", "accepted_answers": ["take off"], "distractors": ["take over", "take up"]},
+      "authorship": "PROJECT_AUTHORED", "content_status": "UNREVIEWED"
+    },
+    {
+      "id": "dict-en-take-over-001",
+      "language": "en",
+      "kind": "phrasal_verb",
+      "headword": "take over",
+      "band": "B1",
+      "tier": "B1.2",
+      "part_of_speech": "phrasal verb",
+      "definition": "to begin to control or be responsible for something",
+      "vietnamese_meaning": "tiếp quản",
+      "examples": ["Mai will take over the project next week."],
+      "collocations": ["take over a project"],
+      "relations": {"sense_ids": ["dict-en-take-001", "dict-en-take-002", "dict-en-take-003", "dict-en-take-004"], "phrasal_verb_ids": ["dict-en-take-off-001", "dict-en-take-over-001", "dict-en-take-up-001"], "word_family_ids": ["dict-en-take-001", "dict-en-taking-001", "dict-en-taken-001"]},
+      "recall": {"prompt": "Choose the phrasal verb for ‘tiếp quản’.", "accepted_answers": ["take over"], "distractors": ["take off", "take up"]},
+      "authorship": "PROJECT_AUTHORED", "content_status": "UNREVIEWED"
+    },
+    {
+      "id": "dict-en-take-up-001",
+      "language": "en",
+      "kind": "phrasal_verb",
+      "headword": "take up",
+      "band": "B1",
+      "tier": "B1.1",
+      "part_of_speech": "phrasal verb",
+      "definition": "to begin a new activity or hobby",
+      "vietnamese_meaning": "bắt đầu (một hoạt động)",
+      "examples": ["He took up swimming last year."],
+      "collocations": ["take up a hobby"],
+      "relations": {"sense_ids": ["dict-en-take-001", "dict-en-take-002", "dict-en-take-003", "dict-en-take-004"], "phrasal_verb_ids": ["dict-en-take-off-001", "dict-en-take-over-001", "dict-en-take-up-001"], "word_family_ids": ["dict-en-take-001", "dict-en-taking-001", "dict-en-taken-001"]},
+      "recall": {"prompt": "Choose the phrasal verb for ‘bắt đầu một sở thích’.", "accepted_answers": ["take up"], "distractors": ["take off", "take over"]},
+      "authorship": "PROJECT_AUTHORED", "content_status": "UNREVIEWED"
+    },
+    {
+      "id": "dict-en-taking-001", "language": "en", "kind": "word_form", "headword": "taking", "band": "A1", "tier": "A1.2", "part_of_speech": "verb form", "definition": "the present participle form of take", "vietnamese_meaning": "dạng hiện tại phân từ của take", "examples": ["She is taking a photo."], "collocations": ["taking a photo"],
+      "relations": {"sense_ids": ["dict-en-take-001", "dict-en-take-002", "dict-en-take-003", "dict-en-take-004"], "phrasal_verb_ids": ["dict-en-take-off-001", "dict-en-take-over-001", "dict-en-take-up-001"], "word_family_ids": ["dict-en-take-001", "dict-en-taking-001", "dict-en-taken-001"]},
+      "recall": {"prompt": "Choose the -ing form of take.", "accepted_answers": ["taking"], "distractors": ["taken", "took"]}, "authorship": "PROJECT_AUTHORED", "content_status": "UNREVIEWED"
+    },
+    {
+      "id": "dict-en-taken-001", "language": "en", "kind": "word_form", "headword": "taken", "band": "A2", "tier": "A2.1", "part_of_speech": "past participle", "definition": "the past participle form of take", "vietnamese_meaning": "dạng quá khứ phân từ của take", "examples": ["The photo was taken yesterday."], "collocations": ["was taken"],
+      "relations": {"sense_ids": ["dict-en-take-001", "dict-en-take-002", "dict-en-take-003", "dict-en-take-004"], "phrasal_verb_ids": ["dict-en-take-off-001", "dict-en-take-over-001", "dict-en-take-up-001"], "word_family_ids": ["dict-en-take-001", "dict-en-taking-001", "dict-en-taken-001"]},
+      "recall": {"prompt": "Choose the past participle of take.", "accepted_answers": ["taken"], "distractors": ["taking", "took"]}, "authorship": "PROJECT_AUTHORED", "content_status": "UNREVIEWED"
+    }
+  ]
+}

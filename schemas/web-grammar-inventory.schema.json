@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/web-grammar-inventory.schema.json",
+  "title": "English Master web grammar inventory",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "inventoryVersion", "targets"],
+  "properties": {
+    "schemaVersion": { "const": "1.0" },
+    "inventoryVersion": { "type": "string", "minLength": 1 },
+    "targets": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/grammarTarget" }
+    }
+  },
+  "$defs": {
+    "identifier": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$"
+    },
+    "nonEmptyString": { "type": "string", "minLength": 1 },
+    "exerciseBinding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lessonId", "exerciseId"],
+      "properties": {
+        "lessonId": { "$ref": "#/$defs/identifier" },
+        "exerciseId": { "$ref": "#/$defs/identifier" }
+      }
+    },
+    "grammarTarget": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "language", "band", "tier", "title", "topic",
+        "introductionLessonId", "prerequisiteIds", "exerciseBindings", "contentStatus"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/identifier" },
+        "language": { "const": "en" },
+        "band": { "enum": ["A1", "A2", "B1", "B2", "C1", "C2"] },
+        "tier": { "type": "string", "pattern": "^(A1|A2|B1|B2|C1|C2)\\.[12]$" },
+        "title": { "$ref": "#/$defs/nonEmptyString" },
+        "topic": { "$ref": "#/$defs/nonEmptyString" },
+        "introductionLessonId": { "$ref": "#/$defs/identifier" },
+        "prerequisiteIds": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/identifier" },
+          "uniqueItems": true
+        },
+        "exerciseBindings": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/exerciseBinding" },
+          "uniqueItems": true
+        },
+        "contentStatus": { "const": "UNREVIEWED" }
+      }
+    }
+  }
+}

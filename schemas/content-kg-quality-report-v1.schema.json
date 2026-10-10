@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/content-kg-quality-report-v1.schema.json",
+  "title": "English Master content and knowledge-graph quality report v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "ruleset_version", "content_status", "request_sha256", "common_m15_population_sha256", "level_inputs", "lesson_count", "checks", "findings", "result", "limitations", "report_sha256"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "content_kg_quality_report"},
+    "ruleset_version": {"const": "CONTENT_KG_QUALITY_V1"},
+    "content_status": {"const": "UNREVIEWED"},
+    "request_sha256": {"$ref": "#/$defs/hash"},
+    "common_m15_population_sha256": {"$ref": "#/$defs/hash"},
+    "level_inputs": {"type": "array", "minItems": 6, "maxItems": 6, "items": {"$ref": "#/$defs/levelInput"}},
+    "lesson_count": {"const": 300},
+    "checks": {"type": "array", "minItems": 9, "items": {"$ref": "#/$defs/check"}},
+    "findings": {"type": "array", "items": {"$ref": "#/$defs/finding"}},
+    "result": {"enum": ["PASS", "PASS_WITH_FLAGS", "FAIL"]},
+    "limitations": {"type": "array", "minItems": 2, "items": {"type": "string", "minLength": 8}},
+    "report_sha256": {"$ref": "#/$defs/hash"}
+  },
+  "$defs": {
+    "hash": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "levelInput": {"type": "object", "additionalProperties": false, "required": ["level", "run_id", "run_manifest_sha256", "packet_count"], "properties": {"level": {"enum": ["A1", "A2", "B1", "B2", "C1", "C2"]}, "run_id": {"type": "string", "minLength": 3}, "run_manifest_sha256": {"$ref": "#/$defs/hash"}, "packet_count": {"const": 50}}},
+    "check": {"type": "object", "additionalProperties": false, "required": ["code", "checked_count", "finding_count", "result"], "properties": {"code": {"type": "string", "pattern": "^CKQ_[A-Z0-9_]+$"}, "checked_count": {"type": "integer", "minimum": 0}, "finding_count": {"type": "integer", "minimum": 0}, "result": {"enum": ["PASS", "FLAG", "FAIL", "INFO"]}}},
+    "finding": {"type": "object", "additionalProperties": false, "required": ["code", "severity", "disposition", "level", "lesson_id", "node_id", "location", "message", "finding_id"], "properties": {"code": {"type": "string", "pattern": "^CKQ_[A-Z0-9_]+$"}, "severity": {"enum": ["BLOCKING", "FLAG", "INFO"]}, "disposition": {"enum": ["DEFECT", "CANDIDATE", "EXPECTED", "UNAVAILABLE"]}, "level": {"anyOf": [{"enum": ["A1", "A2", "B1", "B2", "C1", "C2"]}, {"type": "null"}]}, "lesson_id": {"type": ["string", "null"]}, "node_id": {"type": ["string", "null"]}, "location": {"type": "string", "minLength": 1}, "message": {"type": "string", "minLength": 3}, "finding_id": {"type": "string", "pattern": "^ckq-[a-f0-9]{64}$"}}}
+  }
+}

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="English Master">
+  <rect width="256" height="256" fill="#0f6b61"/>
+  <path d="M45 42h81c18 0 34 14 34 34v138c-12-13-29-20-48-20H45z" fill="#f7f5ee"/>
+  <path d="M211 42h-81c-18 0-34 14-34 34v138c12-13 29-20 48-20h67z" fill="#e9ad52"/>
+  <path d="M128 76v138" stroke="#0f6b61" stroke-width="9"/>
+</svg>

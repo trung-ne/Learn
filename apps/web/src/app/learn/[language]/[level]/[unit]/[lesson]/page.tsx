@@ -4,8 +4,9 @@ import { notFound } from "next/navigation";
 import { LessonInteractions } from "@/components/lesson-interactions";
 import type { ContentSection } from "@/content/types";
 import { getLesson, snapshot } from "@/content/catalog";
+import { getLessonQuiz } from "@/content/assessment-catalog";
 import { getLanguageConfiguration } from "@/content/languages";
-import { languageHref, learnHref, levelHref } from "@/lib/routes";
+import { assessmentPackageHref, languageHref, learnHref, levelHref } from "@/lib/routes";
 
 export const dynamicParams = false;
 
@@ -63,6 +64,7 @@ export default async function LessonPage({ params }: { params: Promise<{ languag
   const sections = lesson.sections ?? [];
   const groupedIds = new Set(sectionGroups.map((group) => group.key));
   const generalSections = sections.filter((section) => !groupedIds.has(section.type));
+  const lessonQuiz = lesson.language === "en" ? getLessonQuiz(lesson.lessonId) : undefined;
 
   return (
     <div className="page-shell lesson-page">
@@ -105,6 +107,11 @@ export default async function LessonPage({ params }: { params: Promise<{ languag
       ) : sections.length === 0 ? (
         <section className="page-section empty-state"><h2>Lesson content is not available</h2><p>This lesson packet does not currently include learner-facing explanation sections.</p></section>
       ) : null}
+
+      {lessonQuiz && <section className="assessment-lesson-notice" aria-labelledby="lesson-quiz-heading">
+        <div><p className="eyebrow">Local assessment</p><h2 id="lesson-quiz-heading">Lesson quiz</h2><p>Use the supplied objective quiz for local evidence. It does not mark this lesson complete or certify learning.</p></div>
+        <Link className="secondary-button" href={assessmentPackageHref(lessonQuiz.id)}>Open lesson quiz</Link>
+      </section>}
 
       <LessonInteractions lesson={lesson} />
     </div>

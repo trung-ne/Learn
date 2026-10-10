@@ -14,6 +14,8 @@ For routine development, use [DEVELOPMENT_WORKFLOW.md](DEVELOPMENT_WORKFLOW.md):
 
 The detailed QA categories and historical M5–M11 contracts below are retained for understanding and verification of immutable historical records. They are not required as routine gates. A passing consistency audit does not claim content quality, human review, release approval, provider behavior, learner outcomes, or public-distribution authority.
 
+[Content/KG Quality System](CONTENT_KG_QUALITY.md) is an optional offline deterministic aggregate for explicitly declared Full A1–C2 inputs. Its `EXPECTED` and `UNAVAILABLE` findings record actual contract boundaries (including current transcript-only listening and legacy untyped examples); they are not defects or approval evidence.
+
 ## QA Categories
 
 ### 1. Schema Validation

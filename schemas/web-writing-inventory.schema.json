@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/web-writing-inventory.schema.json",
+  "title": "English Master web writing practice inventory",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "inventoryVersion", "protocols"],
+  "properties": {
+    "schemaVersion": { "const": "1.0" },
+    "inventoryVersion": { "type": "string", "minLength": 1 },
+    "protocols": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/protocol" },
+      "uniqueItems": true
+    }
+  },
+  "$defs": {
+    "identifier": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+    "nonEmptyString": { "type": "string", "minLength": 1 },
+    "textList": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/nonEmptyString" },
+      "uniqueItems": true
+    },
+    "protocol": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "language", "band", "tier", "unitId", "lessonId", "title", "topic",
+        "goal", "instruction", "constraints", "feedbackBoundary", "contentStatus"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/identifier" },
+        "language": { "const": "en" },
+        "band": { "enum": ["A1", "A2", "B1", "B2", "C1", "C2"] },
+        "tier": { "type": "string", "pattern": "^(A1|A2|B1|B2|C1|C2)\\.[12]$" },
+        "unitId": { "$ref": "#/$defs/identifier" },
+        "lessonId": { "$ref": "#/$defs/identifier" },
+        "title": { "$ref": "#/$defs/nonEmptyString" },
+        "topic": { "$ref": "#/$defs/nonEmptyString" },
+        "goal": { "$ref": "#/$defs/nonEmptyString" },
+        "instruction": { "$ref": "#/$defs/nonEmptyString" },
+        "constraints": { "$ref": "#/$defs/textList" },
+        "feedbackBoundary": { "const": "FEEDBACK_ONLY_NO_REPLACEMENT" },
+        "contentStatus": { "const": "UNREVIEWED" }
+      }
+    }
+  }
+}

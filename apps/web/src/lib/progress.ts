@@ -1,4 +1,5 @@
 import type { CourseLevel, LanguageCode } from "@/content/types";
+import { reportLocalStateAvailable, reportLocalStateIssue } from "./local-state";
 
 export const LEARNER_STORAGE_VERSION = 2 as const;
 export const PROGRESS_VERSION = 2 as const;
@@ -214,8 +215,10 @@ export function loadLearner(storage?: StorageLike): LocalLearner {
       activeLanguage: "en",
     };
     target.setItem(learnerProfileKey(), JSON.stringify(learner));
+    reportLocalStateAvailable();
     return learner;
-  } catch {
+  } catch (error) {
+    reportLocalStateIssue("write", error);
     return { version: LEARNER_STORAGE_VERSION, learnerId: "local-unavailable", activeLanguage: "en" };
   }
 }
@@ -228,8 +231,9 @@ export function setActiveLanguage(
   const next: LocalLearner = { ...learner, activeLanguage };
   try {
     (storage ?? browserStorage()).setItem(learnerProfileKey(), JSON.stringify(next));
-  } catch {
-    // The in-memory result remains usable when browser storage is unavailable.
+    reportLocalStateAvailable();
+  } catch (error) {
+    reportLocalStateIssue("write", error);
   }
   return next;
 }
@@ -276,8 +280,10 @@ export function loadProgress(scope: CourseScope, storage?: StorageLike): CourseP
 export function saveProgress(progress: CourseProgress, storage?: StorageLike): boolean {
   try {
     (storage ?? browserStorage()).setItem(progressKey(progress), JSON.stringify(progress));
+    reportLocalStateAvailable();
     return true;
-  } catch {
+  } catch (error) {
+    reportLocalStateIssue("write", error);
     return false;
   }
 }
@@ -285,8 +291,10 @@ export function saveProgress(progress: CourseProgress, storage?: StorageLike): b
 export function resetProgress(scope: CourseScope, storage?: StorageLike): boolean {
   try {
     (storage ?? browserStorage()).removeItem(progressKey(scope));
+    reportLocalStateAvailable();
     return true;
-  } catch {
+  } catch (error) {
+    reportLocalStateIssue("remove", error);
     return false;
   }
 }

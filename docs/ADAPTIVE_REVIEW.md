@@ -1,6 +1,6 @@
 # Adaptive Review
 
-Adaptive Review is a bounded, offline scheduling layer over the existing Assessment + Mastery artifacts. It references existing objective lesson-quiz items; it does not generate questions or alter the immutable 367-package assessment run.
+Adaptive Review is a bounded, offline scheduling layer over the existing Assessment + Mastery artifacts. It references existing objective lesson-quiz items; it does not generate questions or alter the immutable 367-package assessment run. The static web app's [Browser-Local Adaptive Learning Engine](ADAPTIVE_LEARNING_ENGINE.md) is a distinct TypeScript Home-page projection over browser-local state; it neither executes this Python workflow nor reads its file artifacts.
 
 ## Policy
 

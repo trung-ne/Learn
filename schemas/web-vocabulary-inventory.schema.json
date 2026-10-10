@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/web-vocabulary-inventory.schema.json",
+  "title": "English Master web vocabulary inventory",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "inventory_version", "content_status", "records"],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "inventory_version": { "type": "string", "minLength": 1 },
+    "content_status": { "const": "UNREVIEWED" },
+    "records": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/wordSense" }
+    }
+  },
+  "$defs": {
+    "identifier": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$"
+    },
+    "nonEmptyString": { "type": "string", "minLength": 1 },
+    "sourceTargetIdentifier": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$"
+    },
+    "wordSense": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "language", "band", "tier", "lemma", "sense_number", "part_of_speech",
+        "definition", "examples", "collocations", "introduction_lesson_id", "recall_prompt",
+        "accepted_answers", "distractors", "exercise_bindings", "content_status"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/identifier" },
+        "language": { "const": "en" },
+        "band": { "enum": ["A1", "A2", "B1", "B2", "C1", "C2"] },
+        "tier": { "type": "string", "pattern": "^(A1|A2|B1|B2|C1|C2)\\.[12]$" },
+        "lemma": { "$ref": "#/$defs/nonEmptyString" },
+        "sense_number": { "type": "integer", "minimum": 1 },
+        "part_of_speech": { "$ref": "#/$defs/nonEmptyString" },
+        "definition": { "$ref": "#/$defs/nonEmptyString" },
+        "vietnamese_meaning": { "$ref": "#/$defs/nonEmptyString" },
+        "ipa": { "$ref": "#/$defs/nonEmptyString" },
+        "examples": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/nonEmptyString" } },
+        "collocations": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/nonEmptyString" } },
+        "introduction_lesson_id": { "$ref": "#/$defs/identifier" },
+        "recall_prompt": { "$ref": "#/$defs/nonEmptyString" },
+        "accepted_answers": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/nonEmptyString" } },
+        "distractors": { "type": "array", "minItems": 2, "items": { "$ref": "#/$defs/nonEmptyString" } },
+        "exercise_bindings": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["lesson_id", "exercise_id", "source_target_id", "packet_sha256"],
+            "properties": {
+              "lesson_id": { "$ref": "#/$defs/identifier" },
+              "exercise_id": { "$ref": "#/$defs/identifier" },
+              "source_target_id": { "$ref": "#/$defs/sourceTargetIdentifier" },
+              "packet_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+            }
+          }
+        },
+        "content_status": { "const": "UNREVIEWED" }
+      }
+    }
+  }
+}

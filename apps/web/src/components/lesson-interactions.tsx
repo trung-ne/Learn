@@ -3,6 +3,31 @@
 import { useEffect, useState } from "react";
 import type { DisplayLesson } from "@/content/types";
 import { getLanguageConfiguration } from "@/content/languages";
+import { getVocabularySenseIdsForExercise, vocabularySnapshot } from "@/content/vocabulary-catalog";
+import { getGrammarTargetIdsForExercise, grammarSnapshot } from "@/content/grammar-catalog";
+import { LessonVocabularyPanel } from "./lesson-vocabulary-panel";
+import {
+  emptyVocabularyProgress,
+  loadVocabularyProgress,
+  recordWordSenseResult,
+  saveVocabularyProgress,
+  type VocabularyProgress,
+} from "@/lib/vocabulary-progress";
+import {
+  emptyGrammarProgress,
+  loadGrammarProgress,
+  recordGrammarTargetResult,
+  saveGrammarProgress,
+  type GrammarProgress,
+} from "@/lib/grammar-progress";
+import {
+  emptyReviewProgress,
+  isObjectiveExerciseType,
+  loadReviewProgress,
+  recordObjectiveReviewOutcome,
+  saveReviewProgress,
+  type ReviewProgress,
+} from "@/lib/review-progress";
 import { ExerciseList } from "./exercise-list";
 import { PracticePanels, type Modality } from "./practice-panels";
 import {
@@ -26,6 +51,15 @@ export function LessonInteractions({ lesson }: { readonly lesson: DisplayLesson 
     }),
   );
   const [ready, setReady] = useState(false);
+  const [reviewProgress, setReviewProgress] = useState<ReviewProgress>(() =>
+    emptyReviewProgress({ learnerId: "local-unavailable", language: lesson.language, course: lesson.band }),
+  );
+  const [vocabularyProgress, setVocabularyProgress] = useState<VocabularyProgress>(() =>
+    emptyVocabularyProgress({ learnerId: "local-unavailable", language: lesson.language }, vocabularySnapshot.inventoryVersion),
+  );
+  const [grammarProgress, setGrammarProgress] = useState<GrammarProgress>(() =>
+    emptyGrammarProgress({ learnerId: "local-unavailable", language: "en" }, grammarSnapshot.inventoryVersion),
+  );
 
   useEffect(() => {
     setReady(false);
@@ -41,6 +75,21 @@ export function LessonInteractions({ lesson }: { readonly lesson: DisplayLesson 
     });
     setProgress(accessed);
     saveProgress(accessed);
+    setVocabularyProgress(loadVocabularyProgress(
+      { learnerId: learner.learnerId, language: lesson.language },
+      vocabularySnapshot.inventoryVersion,
+    ));
+    if (lesson.language === "en") {
+      setGrammarProgress(loadGrammarProgress(
+        { learnerId: learner.learnerId, language: "en" },
+        grammarSnapshot.inventoryVersion,
+      ));
+    }
+    setReviewProgress(loadReviewProgress({
+      learnerId: learner.learnerId,
+      language: lesson.language,
+      course: lesson.band,
+    }));
     setReady(true);
   }, [lesson.band, lesson.language, lesson.lessonId]);
 
@@ -58,6 +107,21 @@ export function LessonInteractions({ lesson }: { readonly lesson: DisplayLesson 
   function commit(next: CourseProgress) {
     setProgress(next);
     saveProgress(next);
+  }
+
+  function commitVocabulary(next: VocabularyProgress) {
+    setVocabularyProgress(next);
+    saveVocabularyProgress(next);
+  }
+
+  function commitGrammar(next: GrammarProgress) {
+    setGrammarProgress(next);
+    saveGrammarProgress(next);
+  }
+
+  function commitReview(next: ReviewProgress) {
+    setReviewProgress(next);
+    saveReviewProgress(next);
   }
 
   function timestamp(): string {
@@ -87,10 +151,11 @@ export function LessonInteractions({ lesson }: { readonly lesson: DisplayLesson 
       ...lessonProgress.attempts,
       [exerciseId]: (lessonProgress.attempts[exerciseId] ?? 0) + 1,
     };
+    const checkedAt = timestamp();
     commit(
       updateLessonProgress(progress, lesson.lessonId, {
         attempts,
-        lastAccessedAt: timestamp(),
+        lastAccessedAt: checkedAt,
         exerciseRunner: {
           ...runner,
           currentExerciseId: exerciseId,
@@ -102,6 +167,33 @@ export function LessonInteractions({ lesson }: { readonly lesson: DisplayLesson 
         },
       }),
     );
+    const exercise = exercises.find((item) => item.id === exerciseId);
+    if (exercise && isObjectiveExerciseType(exercise.type)) {
+      commitReview(recordObjectiveReviewOutcome(reviewProgress, {
+        lessonId: lesson.lessonId,
+        exerciseId,
+        result,
+        reviewedAt: checkedAt,
+      }));
+      if (lesson.language === "en") {
+        const grammarTargetIds = getGrammarTargetIdsForExercise("en", lesson.lessonId, exerciseId);
+        if (grammarTargetIds.length) {
+          let nextGrammar = grammarProgress;
+          for (const targetId of grammarTargetIds) {
+            nextGrammar = recordGrammarTargetResult(nextGrammar, targetId, result === "correct", checkedAt);
+          }
+          commitGrammar(nextGrammar);
+        }
+      }
+    }
+    const senseIds = getVocabularySenseIdsForExercise(lesson.language, lesson.lessonId, exerciseId);
+    if (senseIds.length) {
+      let nextVocabulary = vocabularyProgress;
+      for (const senseId of senseIds) {
+        nextVocabulary = recordWordSenseResult(nextVocabulary, senseId, result === "correct", checkedAt);
+      }
+      commitVocabulary(nextVocabulary);
+    }
   }
 
   function advance(nextExerciseId: string | undefined) {
@@ -136,17 +228,9 @@ export function LessonInteractions({ lesson }: { readonly lesson: DisplayLesson 
     );
   }
 
-  function setDraft(draft: string) {
-    commit(
-      updateLessonProgress(progress, lesson.lessonId, {
-        drafts: { ...lessonProgress.drafts, writing: draft },
-        lastAccessedAt: timestamp(),
-      }),
-    );
-  }
-
   return (
     <>
+      <LessonVocabularyPanel language={lesson.language} lessonId={lesson.lessonId} />
       <section className="page-section" aria-labelledby="exercise-heading">
         <div className="section-heading">
           <div>
@@ -179,11 +263,10 @@ export function LessonInteractions({ lesson }: { readonly lesson: DisplayLesson 
           <div lang={lesson.language}>
             <PracticePanels
               practice={practice}
+              language={lesson.language}
               targetLevel={lesson.band}
               completed={lessonProgress.protocols}
-              writingDraft={lessonProgress.drafts.writing ?? ""}
               onProtocolComplete={setProtocol}
-              onDraftChange={setDraft}
             />
           </div>
         ) : (

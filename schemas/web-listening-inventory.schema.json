@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/web-listening-inventory.schema.json",
+  "title": "English Master web Listening Lab inventory",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "inventoryVersion", "availability", "sessions"],
+  "properties": {
+    "schemaVersion": { "const": "1.0" },
+    "inventoryVersion": { "type": "string", "minLength": 1 },
+    "availability": { "enum": ["NO_AUTHORIZED_MEDIA", "AUTHORIZED_MEDIA_AVAILABLE"] },
+    "sessions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/session" },
+      "uniqueItems": true
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "availability": { "const": "NO_AUTHORIZED_MEDIA" } } },
+      "then": { "properties": { "sessions": { "maxItems": 0 } } },
+      "else": { "properties": { "sessions": { "minItems": 1 } } }
+    }
+  ],
+  "$defs": {
+    "identifier": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+    "nonEmptyString": { "type": "string", "minLength": 1 },
+    "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "anonymousSpeaker": { "type": "string", "pattern": "^SPEAKER_[0-9]{2,}$" },
+    "sentence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "startSeconds", "endSeconds", "text", "speaker"],
+      "properties": {
+        "id": { "$ref": "#/$defs/identifier" },
+        "startSeconds": { "type": "number", "minimum": 0 },
+        "endSeconds": { "type": "number", "exclusiveMinimum": 0 },
+        "text": { "$ref": "#/$defs/nonEmptyString" },
+        "speaker": { "$ref": "#/$defs/anonymousSpeaker" }
+      }
+    },
+    "session": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "language", "band", "tier", "unitId", "lessonId", "title", "topic", "mediaKind", "mimeType",
+        "assetPath", "assetHash", "durationSeconds", "accent", "speakerLabels", "speed", "grammar", "vocabulary",
+        "phoneticFeatures", "meaningPrompt", "acceptedMeaningAnswers", "dictationPrompt", "transcript", "sentences", "contentStatus"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/identifier" },
+        "language": { "const": "en" },
+        "band": { "enum": ["A1", "A2", "B1", "B2", "C1", "C2"] },
+        "tier": { "type": "string", "pattern": "^(A1|A2|B1|B2|C1|C2)\\.[12]$" },
+        "unitId": { "$ref": "#/$defs/identifier" },
+        "lessonId": { "$ref": "#/$defs/identifier" },
+        "title": { "$ref": "#/$defs/nonEmptyString" },
+        "topic": { "$ref": "#/$defs/nonEmptyString" },
+        "mediaKind": { "enum": ["audio", "video"] },
+        "mimeType": { "enum": ["audio/mpeg", "audio/ogg", "audio/wav", "video/mp4", "video/webm"] },
+        "assetPath": { "type": "string", "pattern": "^/listening-lab/[a-z][a-z0-9-]*/[a-zA-Z0-9._-]+$" },
+        "assetHash": { "$ref": "#/$defs/sha256" },
+        "durationSeconds": { "type": "number", "exclusiveMinimum": 0 },
+        "accent": { "$ref": "#/$defs/nonEmptyString" },
+        "speakerLabels": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/anonymousSpeaker" }, "uniqueItems": true },
+        "speed": { "$ref": "#/$defs/nonEmptyString" },
+        "grammar": { "type": "array", "items": { "$ref": "#/$defs/nonEmptyString" }, "uniqueItems": true },
+        "vocabulary": { "type": "array", "items": { "$ref": "#/$defs/nonEmptyString" }, "uniqueItems": true },
+        "phoneticFeatures": { "type": "array", "items": { "$ref": "#/$defs/nonEmptyString" }, "uniqueItems": true },
+        "meaningPrompt": { "$ref": "#/$defs/nonEmptyString" },
+        "acceptedMeaningAnswers": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/nonEmptyString" }, "uniqueItems": true },
+        "dictationPrompt": { "$ref": "#/$defs/nonEmptyString" },
+        "transcript": { "$ref": "#/$defs/nonEmptyString" },
+        "sentences": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/sentence" }, "uniqueItems": true },
+        "contentStatus": { "const": "UNREVIEWED" }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "English Master",
+  "short_name": "English Master",
+  "description": "A local-first learner view of immutable English and German lesson packets.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f5ee",
+  "theme_color": "#0f6b61",
+  "icons": [
+    { "src": "/icons/english-master.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/icons/english-master-maskable.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}

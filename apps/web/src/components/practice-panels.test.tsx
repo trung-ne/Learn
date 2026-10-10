@@ -38,6 +38,7 @@ describe("practice protocol boundaries", () => {
     );
 
     expect(screen.getByText("Pronunciation")).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "Browse supplied pronunciation protocols" })).toHaveAttribute("href", "/learn/en/pronunciation");
     expect(screen.queryByText("Listening")).not.toBeInTheDocument();
     expect(screen.queryByText("Writing")).not.toBeInTheDocument();
   });
@@ -90,8 +91,7 @@ describe("practice protocol boundaries", () => {
     expect(screen.getByText("A transcript")).toBeInTheDocument();
   });
 
-  it("keeps writing task requirements source-backed and drafts local", () => {
-    const onDraftChange = vi.fn();
+  it("keeps writing task requirements source-backed and links English work to the dedicated workspace", () => {
     render(
       <PracticePanels
         practice={{ writing: { instruction: "Write three sentences about your day.", goal: "Describe a routine." } }}
@@ -99,7 +99,7 @@ describe("practice protocol boundaries", () => {
         completed={{}}
         writingDraft="A local draft"
         onProtocolComplete={() => {}}
-        onDraftChange={onDraftChange}
+        onDraftChange={() => {}}
       />,
     );
 
@@ -110,8 +110,8 @@ describe("practice protocol boundaries", () => {
     expect(screen.getByText("AI writing tutor prompt")).toBeInTheDocument();
     expect(screen.queryByText("Expected output", { selector: "strong" })).not.toBeInTheDocument();
     expect(screen.queryByText("Useful language", { selector: "strong" })).not.toBeInTheDocument();
-    fireEvent.change(screen.getByLabelText("Your local draft"), { target: { value: "Changed local draft" } });
-    expect(onDraftChange).toHaveBeenCalledWith("Changed local draft");
+    expect(screen.getByRole("link", { name: "Open this task in the dedicated Writing workspace" })).toHaveAttribute("href", "/learn/en/writing");
+    expect(screen.queryByLabelText("Your local draft")).not.toBeInTheDocument();
   });
 
   it("renders English speaking and pronunciation details only when explicitly supplied", () => {
@@ -149,6 +149,7 @@ describe("practice protocol boundaries", () => {
     const prompt = screen.getByText("Speak briefly.");
     const goal = screen.getByText("Exchange a greeting.");
     expect(prompt.compareDocumentPosition(goal) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    expect(screen.getByRole("link", { name: "Browse supplied speaking protocols" })).toHaveAttribute("href", "/learn/en/speaking");
     expect(container.querySelector("audio")).toBeNull();
   });
 

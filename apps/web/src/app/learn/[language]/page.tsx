@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAvailableCourses, getLanguage, getLanguages } from "@/content/catalog";
 import { getLanguageConfiguration, isLanguageCode } from "@/content/languages";
-import { learnHref, levelHref } from "@/lib/routes";
+import { dictionaryHref, learnHref, levelHref, personalStudyPlanHref, progressDashboardHref } from "@/lib/routes";
 
 export const dynamicParams = false;
 
@@ -35,6 +35,33 @@ export default async function LanguageCoursePage({ params }: { params: Promise<{
           <p className="lede">{summary.lessonCount} available lessons across the current course levels.</p>
         </div>
       </section>
+
+      <section className="progress-dashboard-notice" aria-labelledby="language-progress-heading">
+        <div>
+          <p className="eyebrow">Browser-local activity</p>
+          <h2 id="language-progress-heading">Progress dashboard</h2>
+          <p>View supplied course activity, local review outcomes, and clearly marked unavailable measures. It does not determine CEFR attainment or unlock lessons.</p>
+        </div>
+        <Link className="secondary-button" href={progressDashboardHref(language)}>Open progress dashboard</Link>
+      </section>
+
+      <section className="progress-dashboard-notice" aria-labelledby="study-plan-heading">
+        <div>
+          <p className="eyebrow">Browser-local planning</p>
+          <h2 id="study-plan-heading">Personal Study Plan</h2>
+          <p>Set learner-reported bands and a daily planning allocation to organize supplied packets and saved reviews. It does not predict pace or determine CEFR attainment.</p>
+        </div>
+        <Link className="secondary-button" href={personalStudyPlanHref(language)}>Open study plan</Link>
+      </section>
+
+      {language === "en" ? <section className="progress-dashboard-notice" aria-labelledby="dictionary-heading">
+        <div>
+          <p className="eyebrow">Browser-local lexical library</p>
+          <h2 id="dictionary-heading">Dictionary / Language Library</h2>
+          <p>Search the limited supplied English lexical inventory and inspect explicit relationships. Local status is not a proficiency or mastery result.</p>
+        </div>
+        <Link className="secondary-button" href={dictionaryHref()}>Open dictionary</Link>
+      </section> : null}
 
       <section className="level-grid" aria-label={`${configuration.name} available levels`}>
         {courses.length ? courses.map((course) => (

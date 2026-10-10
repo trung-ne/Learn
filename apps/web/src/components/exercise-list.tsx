@@ -3,18 +3,9 @@
 import { useEffect, useMemo, useRef, useState, type RefObject } from "react";
 import type { DisplayExercise } from "@/content/types";
 import { arraysMatch, matchesAnyAnswer } from "@/lib/answers";
+import { isObjectiveExerciseType } from "@/lib/review-progress";
 import type { ExerciseResult, ExerciseRunnerState } from "@/lib/progress";
 
-const objectiveTypes = new Set([
-  "multiple_choice",
-  "fill_blank",
-  "matching",
-  "ordering",
-  "reading",
-  "listening",
-  "selection",
-  "completion",
-]);
 const selfPracticeTypes = new Set(["speaking", "writing"]);
 
 interface ExerciseListProps {
@@ -93,7 +84,7 @@ export function ExerciseList({
           Activity {currentIndex + 1} of {exercises.length}
         </progress>
       </div>
-      {objectiveTypes.has(exercise.type) ? (
+      {isObjectiveExerciseType(exercise.type) ? (
         <ObjectiveExercise
           key={exercise.id}
           focusTarget={focusTarget}

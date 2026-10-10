@@ -641,6 +641,14 @@ Full C2 adds ten original-authored unit files and fifty immutable C2.1/C2.2 pack
 
 The cross-level QA package independently reuses the six Full A1–C2 verifiers, requires the exact ordered 300-packet inventory and a common M15 population hash, and reports target linkage, global prerequisite/M15 ordering, learner-text duplicate candidates, topic candidates, modality boundaries, and structural difficulty-jump diagnostics. Its request, report, and deterministic flagged-region manifest are hash-bound and no-overwrite. The manifest makes no API call; all source and derived records remain `UNREVIEWED`. See [Cross-level QA](CROSS_LEVEL_QA.md).
 
+### Step 13.16 — Content/KG Quality System
+
+An optional offline deterministic aggregate revalidates explicitly declared Full A1–C2/M15 inputs and reports KG links, grammar cycles, prerequisite order, target/orphan linkage, declared-tier consistency, bounded duplicate candidates, expected media boundaries, and deterministic exercise-answer contracts. Its hash-bound reports remain `UNREVIEWED`; they are consistency evidence only and do not establish content quality, CEFR suitability, approval, release authority, or learner outcomes. See [Content/KG Quality System](CONTENT_KG_QUALITY.md).
+
+### Step 13.17 — Production Hardening
+
+The static learner application now supplies local-only resilience: a deliberate PWA/offline-cache lifecycle, learner-initiated review caching, browser-local backup/restore/reset, storage-failure notice, recovery pages, static-preview cache/security headers, responsive corrections, and accessibility hardening. It adds no backend, account, AI/provider call, analytics, remote error monitoring, authorized media, public-distribution authority, or learner-data synchronization. Rate limiting, AI cost control, host monitoring, HSTS, and media delivery remain future infrastructure/authorization concerns. See [Production Hardening](PRODUCTION_HARDENING.md).
+
 ---
 
 ## Assessment + Mastery

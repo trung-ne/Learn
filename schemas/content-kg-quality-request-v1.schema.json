@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://english-master.local/schemas/content-kg-quality-request-v1.schema.json",
+  "title": "English Master content and knowledge-graph quality request v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "record_type", "ruleset_version", "content_status", "levels", "web_validation_scope", "request_sha256"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "content_kg_quality_request"},
+    "ruleset_version": {"const": "CONTENT_KG_QUALITY_V1"},
+    "content_status": {"const": "UNREVIEWED"},
+    "levels": {"type": "array", "minItems": 6, "maxItems": 6, "items": {"$ref": "#/$defs/level"}},
+    "web_validation_scope": {"type": "array", "uniqueItems": true, "items": {"enum": ["vocabulary", "dictionary"]}},
+    "request_sha256": {"$ref": "#/$defs/hash"}
+  },
+  "$defs": {
+    "hash": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "level": {
+      "type": "object", "additionalProperties": false,
+      "required": ["level", "run_dir", "population_path", "blueprint_path", "allocation_path", "content_manifest_path"],
+      "properties": {
+        "level": {"enum": ["A1", "A2", "B1", "B2", "C1", "C2"]},
+        "run_dir": {"type": "string", "minLength": 1},
+        "population_path": {"type": "string", "minLength": 1},
+        "blueprint_path": {"type": "string", "minLength": 1},
+        "allocation_path": {"type": "string", "minLength": 1},
+        "content_manifest_path": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

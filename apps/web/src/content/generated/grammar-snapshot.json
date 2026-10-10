@@ -1,0 +1,1390 @@
+{
+  "schemaVersion": "1.0",
+  "inventoryVersion": "grammar-3038798151072eb1",
+  "targets": [
+    {
+      "id": "grammar-en-05b276d38d616598fff9",
+      "language": "en",
+      "band": "A1",
+      "tier": "A1.1",
+      "title": "Ask and answer Where are you from? with be.",
+      "topic": "personal origin",
+      "introductionLessonId": "m16a1-v1-a1-u01-l03",
+      "prerequisiteIds": [],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16a1-v1-a1-u01-l03",
+          "exerciseId": "detail-check"
+        },
+        {
+          "lessonId": "m16a1-v1-a1-u01-l03",
+          "exerciseId": "form-match"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "grammar-en-b191da08bc82979b9c77",
+      "language": "en",
+      "band": "A1",
+      "tier": "A1.1",
+      "title": "Use this is, my, his, and her to identify family members.",
+      "topic": "family words",
+      "introductionLessonId": "m16a1-v1-a1-u02-l03",
+      "prerequisiteIds": [],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16a1-v1-a1-u02-l03",
+          "exerciseId": "detail-check"
+        },
+        {
+          "lessonId": "m16a1-v1-a1-u02-l03",
+          "exerciseId": "practice-order"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "grammar-en-3b8f99169c54b6700c07",
+      "language": "en",
+      "band": "A1",
+      "tier": "A1.1",
+      "title": "Name common rooms and objects in a home.",
+      "topic": "rooms and furniture",
+      "introductionLessonId": "m16a1-v1-a1-u03-l03",
+      "prerequisiteIds": [],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16a1-v1-a1-u03-l03",
+          "exerciseId": "form-match"
+        },
+        {
+          "lessonId": "m16a1-v1-a1-u03-l03",
+          "exerciseId": "meaning-check"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "grammar-en-6e0d606b8136eea9a7fd",
+      "language": "en",
+      "band": "A1",
+      "tier": "A1.1",
+      "title": "Use some in affirmative statements and any in simple questions.",
+      "topic": "basic quantities",
+      "introductionLessonId": "m16a1-v1-a1-u04-l03",
+      "prerequisiteIds": [],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16a1-v1-a1-u04-l03",
+          "exerciseId": "language-gap"
+        },
+        {
+          "lessonId": "m16a1-v1-a1-u04-l03",
+          "exerciseId": "practice-order"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "grammar-en-3dc64acca788d6483d92",
+      "language": "en",
+      "band": "A1",
+      "tier": "A1.1",
+      "title": "Ask when a familiar place opens and closes.",
+      "topic": "simple schedules",
+      "introductionLessonId": "m16a1-v1-a1-u05-l03",
+      "prerequisiteIds": [],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16a1-v1-a1-u05-l03",
+          "exerciseId": "detail-check"
+        },
+        {
+          "lessonId": "m16a1-v1-a1-u05-l03",
+          "exerciseId": "form-match"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "grammar-en-107c4aaa6fb6ab8fe135",
+      "language": "en",
+      "band": "A1",
+      "tier": "A1.2",
+      "title": "Use do not and does not to correct routine information.",
+      "topic": "present simple negatives",
+      "introductionLessonId": "m16a1-v1-a1-u06-l03",
+      "prerequisiteIds": [],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16a1-v1-a1-u06-l03",
+          "exerciseId": "detail-check"
+        },
+        {
+          "lessonId": "m16a1-v1-a1-u06-l03",
+          "exerciseId": "practice-order"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "grammar-en-4de43c4a9569ddd7553a",
+      "language": "en",
+      "band": "A1",
+      "tier": "A1.2",
+      "title": "Ask How much is or are and state a simple price.",
+      "topic": "prices and money",
+      "introductionLessonId": "m16a1-v1-a1-u07-l03",
+      "prerequisiteIds": [],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16a1-v1-a1-u07-l03",
+          "exerciseId": "form-match"
+        },
+        {
+          "lessonId": "m16a1-v1-a1-u07-l03",
+          "exerciseId": "meaning-check"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "grammar-en-746885588aed3eb20e70",
+      "language": "en",
+      "band": "A1",
+      "tier": "A1.2",
+      "title": "Use feel and have with a few common symptoms.",
+      "topic": "basic health words",
+      "introductionLessonId": "m16a1-v1-a1-u08-l03",
+      "prerequisiteIds": [],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16a1-v1-a1-u08-l03",
+          "exerciseId": "language-gap"
+        },
+        {
+          "lessonId": "m16a1-v1-a1-u08-l03",
+          "exerciseId": "practice-order"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "grammar-en-7040dc42a4379e766f2f",
+      "language": "en",
+      "band": "A1",
+      "tier": "A1.2",
+      "title": "Ask when transport leaves and arrives using present simple.",
+      "topic": "departure and arrival times",
+      "introductionLessonId": "m16a1-v1-a1-u09-l03",
+      "prerequisiteIds": [],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16a1-v1-a1-u09-l03",
+          "exerciseId": "detail-check"
+        },
+        {
+          "lessonId": "m16a1-v1-a1-u09-l03",
+          "exerciseId": "form-match"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "grammar-en-63f6dc2585f15c525aa4",
+      "language": "en",
+      "band": "A1",
+      "tier": "A1.2",
+      "title": "Use Would you like with short acceptance or refusal.",
+      "topic": "inviting and responding",
+      "introductionLessonId": "m16a1-v1-a1-u10-l03",
+      "prerequisiteIds": [],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16a1-v1-a1-u10-l03",
+          "exerciseId": "detail-check"
+        },
+        {
+          "lessonId": "m16a1-v1-a1-u10-l03",
+          "exerciseId": "practice-order"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "grammar-en-4c9cad30a95aad54b844",
+      "language": "en",
+      "band": "A2",
+      "tier": "A2.1",
+      "title": "Describe one finished event with simple past-time language.",
+      "topic": "a lost umbrella after a bus journey",
+      "introductionLessonId": "m16a2-v1-a2-u01-l01",
+      "prerequisiteIds": [],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16a2-v1-a2-u01-l01",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u01-l01",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u01-l01",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u01-l04",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u01-l04",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u01-l04",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u01-l05",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u01-l05",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u01-l05",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u02-l01",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u02-l01",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u02-l01",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u02-l05",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u02-l05",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u02-l05",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u03-l01",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u03-l01",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u03-l01",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u03-l05",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u03-l05",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u03-l05",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u04-l01",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u04-l01",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u04-l01",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u04-l05",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u04-l05",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u04-l05",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u05-l01",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u05-l01",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u05-l01",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u05-l04",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u05-l04",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u05-l04",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u05-l05",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u05-l05",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u05-l05",
+          "exerciseId": "read"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "grammar-en-2f9667031d5594df0566",
+      "language": "en",
+      "band": "A2",
+      "tier": "A2.2",
+      "title": "State a personal plan and give one reason for it.",
+      "topic": "planning a study evening",
+      "introductionLessonId": "m16a2-v1-a2-u06-l01",
+      "prerequisiteIds": [],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16a2-v1-a2-u06-l01",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u06-l01",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u06-l01",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u06-l05",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u06-l05",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u06-l05",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u07-l01",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u07-l01",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u07-l01",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u07-l05",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u07-l05",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u07-l05",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u08-l02",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u08-l02",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u08-l02",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u08-l05",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u08-l05",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u08-l05",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u09-l01",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u09-l01",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u09-l01",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u09-l05",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u09-l05",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u09-l05",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u10-l01",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u10-l01",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u10-l01",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u10-l04",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u10-l04",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u10-l04",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u10-l05",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u10-l05",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16a2-v1-a2-u10-l05",
+          "exerciseId": "read"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "grammar-en-1b609e78f700e071648c",
+      "language": "en",
+      "band": "B1",
+      "tier": "B1.1",
+      "title": "Describe a life experience and connect it to the present.",
+      "topic": "experiences up to now",
+      "introductionLessonId": "m16b1-v1-b1-u01-l01",
+      "prerequisiteIds": [],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16b1-v1-b1-u01-l01",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u01-l01",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u01-l01",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u01-l04",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u01-l04",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u01-l04",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u01-l05",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u01-l05",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u01-l05",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u02-l01",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u02-l01",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u02-l01",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u02-l05",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u02-l05",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u02-l05",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u03-l01",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u03-l01",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u03-l01",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u03-l05",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u03-l05",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u03-l05",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u04-l01",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u04-l01",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u04-l01",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u04-l05",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u04-l05",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u04-l05",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u05-l01",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u05-l01",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u05-l01",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u05-l04",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u05-l04",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u05-l04",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u05-l05",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u05-l05",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u05-l05",
+          "exerciseId": "read"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "grammar-en-462f8e343a22abfee0ba",
+      "language": "en",
+      "band": "B1",
+      "tier": "B1.2",
+      "title": "Sequence past events in a coherent account of change.",
+      "topic": "a sequenced past story",
+      "introductionLessonId": "m16b1-v1-b1-u06-l01",
+      "prerequisiteIds": [],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16b1-v1-b1-u06-l01",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u06-l01",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u06-l01",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u06-l05",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u06-l05",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u06-l05",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u07-l01",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u07-l01",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u07-l01",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u07-l05",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u07-l05",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u07-l05",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u08-l01",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u08-l01",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u08-l01",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u08-l05",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u08-l05",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u08-l05",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u09-l01",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u09-l01",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u09-l01",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u09-l05",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u09-l05",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u09-l05",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u10-l01",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u10-l01",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u10-l01",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u10-l02",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u10-l02",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u10-l02",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u10-l04",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u10-l04",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u10-l04",
+          "exerciseId": "read"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u10-l05",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u10-l05",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b1-v1-b1-u10-l05",
+          "exerciseId": "read"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "grammar-en-26dfe49f6216a6ffa477",
+      "language": "en",
+      "band": "B2",
+      "tier": "B2.1",
+      "title": "Framing reported information and evidence",
+      "topic": "Evidence and reported information",
+      "introductionLessonId": "m16b2-v1-b2-u01-l01",
+      "prerequisiteIds": [],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16b2-v1-b2-u01-l01",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u01-l01",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u01-l04",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u01-l04",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u01-l05",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u01-l05",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u02-l01",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u02-l01",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u02-l04",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u02-l04",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u02-l05",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u02-l05",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u03-l01",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u03-l01",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u03-l04",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u03-l04",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u03-l05",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u03-l05",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u04-l01",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u04-l01",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u04-l04",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u04-l04",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u04-l05",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u04-l05",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u05-l01",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u05-l01",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u05-l04",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u05-l04",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u05-l05",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u05-l05",
+          "exerciseId": "complete"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "grammar-en-b92b0762511c37d187dd",
+      "language": "en",
+      "band": "B2",
+      "tier": "B2.2",
+      "title": "Framing consequences and policy choices",
+      "topic": "Consequences and public choices",
+      "introductionLessonId": "m16b2-v1-b2-u06-l01",
+      "prerequisiteIds": [],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16b2-v1-b2-u06-l01",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u06-l01",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u06-l04",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u06-l04",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u06-l05",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u06-l05",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u07-l01",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u07-l01",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u07-l04",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u07-l04",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u07-l05",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u07-l05",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u08-l01",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u08-l01",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u08-l04",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u08-l04",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u08-l05",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u08-l05",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u09-l01",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u09-l01",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u09-l04",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u09-l04",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u09-l05",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u09-l05",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u10-l01",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u10-l01",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u10-l04",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u10-l04",
+          "exerciseId": "complete"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u10-l05",
+          "exerciseId": "choose"
+        },
+        {
+          "lessonId": "m16b2-v1-b2-u10-l05",
+          "exerciseId": "complete"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "grammar-en-73860e4be3d4041a1832",
+      "language": "en",
+      "band": "C1",
+      "tier": "C1.1",
+      "title": "Framing research findings and source synthesis",
+      "topic": "Research findings and synthesis",
+      "introductionLessonId": "m16c1-v1-c1-u01-l01",
+      "prerequisiteIds": [],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16c1-v1-c1-u01-l01",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c1-v1-c1-u01-l04",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c1-v1-c1-u01-l05",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c1-v1-c1-u02-l01",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c1-v1-c1-u02-l04",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c1-v1-c1-u02-l05",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c1-v1-c1-u03-l01",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c1-v1-c1-u03-l04",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c1-v1-c1-u03-l05",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c1-v1-c1-u04-l01",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c1-v1-c1-u04-l04",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c1-v1-c1-u04-l05",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c1-v1-c1-u05-l01",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c1-v1-c1-u05-l04",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c1-v1-c1-u05-l05",
+          "exerciseId": "select"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "grammar-en-d2c104e22a53057c6c91",
+      "language": "en",
+      "band": "C1",
+      "tier": "C1.2",
+      "title": "Framing cultural interpretation and rapport",
+      "topic": "Culture and competing interpretations",
+      "introductionLessonId": "m16c1-v1-c1-u06-l01",
+      "prerequisiteIds": [],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16c1-v1-c1-u06-l01",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c1-v1-c1-u06-l04",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c1-v1-c1-u06-l05",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c1-v1-c1-u07-l01",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c1-v1-c1-u07-l04",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c1-v1-c1-u07-l05",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c1-v1-c1-u08-l01",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c1-v1-c1-u08-l04",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c1-v1-c1-u08-l05",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c1-v1-c1-u09-l01",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c1-v1-c1-u09-l04",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c1-v1-c1-u09-l05",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c1-v1-c1-u10-l01",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c1-v1-c1-u10-l04",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c1-v1-c1-u10-l05",
+          "exerciseId": "select"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "grammar-en-1834cd7a52b52443da74",
+      "language": "en",
+      "band": "C2",
+      "tier": "C2.1",
+      "title": "Framing research findings and source synthesis",
+      "topic": "Research findings and synthesis",
+      "introductionLessonId": "m16c2-v1-c2-u01-l01",
+      "prerequisiteIds": [],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16c2-v1-c2-u01-l01",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c2-v1-c2-u01-l04",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c2-v1-c2-u01-l05",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c2-v1-c2-u02-l01",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c2-v1-c2-u02-l04",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c2-v1-c2-u02-l05",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c2-v1-c2-u03-l01",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c2-v1-c2-u03-l04",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c2-v1-c2-u03-l05",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c2-v1-c2-u04-l01",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c2-v1-c2-u04-l04",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c2-v1-c2-u04-l05",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c2-v1-c2-u05-l01",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c2-v1-c2-u05-l04",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c2-v1-c2-u05-l05",
+          "exerciseId": "select"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "grammar-en-5c6f9a40a57c555f22b1",
+      "language": "en",
+      "band": "C2",
+      "tier": "C2.2",
+      "title": "Framing cultural interpretation and rapport",
+      "topic": "Culture and competing interpretations",
+      "introductionLessonId": "m16c2-v1-c2-u06-l01",
+      "prerequisiteIds": [],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16c2-v1-c2-u06-l01",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c2-v1-c2-u06-l04",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c2-v1-c2-u06-l05",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c2-v1-c2-u07-l01",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c2-v1-c2-u07-l04",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c2-v1-c2-u07-l05",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c2-v1-c2-u08-l01",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c2-v1-c2-u08-l04",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c2-v1-c2-u08-l05",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c2-v1-c2-u09-l01",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c2-v1-c2-u09-l04",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c2-v1-c2-u09-l05",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c2-v1-c2-u10-l01",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c2-v1-c2-u10-l04",
+          "exerciseId": "select"
+        },
+        {
+          "lessonId": "m16c2-v1-c2-u10-l05",
+          "exerciseId": "select"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    }
+  ]
+}

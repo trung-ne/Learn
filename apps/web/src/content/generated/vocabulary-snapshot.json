@@ -1,0 +1,686 @@
+{
+  "schemaVersion": "1.0",
+  "inventoryVersion": "2026-10-a1-unit-01",
+  "senses": [
+    {
+      "id": "vocab-en-goodbye-001",
+      "language": "en",
+      "band": "A1",
+      "tier": "A1.1",
+      "lemma": "goodbye",
+      "senseNumber": 1,
+      "partOfSpeech": "interjection",
+      "definition": "a word used when you leave someone",
+      "vietnameseMeaning": "tạm biệt",
+      "ipa": "/ˌɡʊdˈbaɪ/",
+      "examples": [
+        "Goodbye. See you tomorrow."
+      ],
+      "collocations": [
+        "say goodbye"
+      ],
+      "introductionLessonId": "m16a1-v1-a1-u01-l01",
+      "recallPrompt": "Write the English word for ‘tạm biệt’. ",
+      "acceptedAnswers": [
+        "goodbye"
+      ],
+      "distractors": [
+        "hello",
+        "hi"
+      ],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16a1-v1-a1-u01-l01",
+          "exerciseId": "meaning-check"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "vocab-en-greeting-001",
+      "language": "en",
+      "band": "A1",
+      "tier": "A1.1",
+      "lemma": "greeting",
+      "senseNumber": 1,
+      "partOfSpeech": "noun",
+      "definition": "something you say when you meet a person",
+      "vietnameseMeaning": "lời chào",
+      "ipa": "/ˈɡriːtɪŋ/",
+      "examples": [
+        "Hello is a greeting."
+      ],
+      "collocations": [
+        "a friendly greeting"
+      ],
+      "introductionLessonId": "m16a1-v1-a1-u01-l01",
+      "recallPrompt": "Write the English noun for ‘lời chào’. ",
+      "acceptedAnswers": [
+        "greeting"
+      ],
+      "distractors": [
+        "goodbye",
+        "letter"
+      ],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16a1-v1-a1-u01-l01",
+          "exerciseId": "form-match"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "vocab-en-hello-001",
+      "language": "en",
+      "band": "A1",
+      "tier": "A1.1",
+      "lemma": "hello",
+      "senseNumber": 1,
+      "partOfSpeech": "interjection",
+      "definition": "a word used when you meet or speak to someone",
+      "vietnameseMeaning": "xin chào",
+      "ipa": "/həˈləʊ/",
+      "examples": [
+        "Hello, I am An."
+      ],
+      "collocations": [
+        "say hello"
+      ],
+      "introductionLessonId": "m16a1-v1-a1-u01-l01",
+      "recallPrompt": "Write the English greeting for ‘xin chào’. ",
+      "acceptedAnswers": [
+        "hello"
+      ],
+      "distractors": [
+        "goodbye",
+        "name"
+      ],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16a1-v1-a1-u01-l01",
+          "exerciseId": "meaning-check"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "vocab-en-hi-001",
+      "language": "en",
+      "band": "A1",
+      "tier": "A1.1",
+      "lemma": "hi",
+      "senseNumber": 1,
+      "partOfSpeech": "interjection",
+      "definition": "an informal word used to greet someone",
+      "vietnameseMeaning": "chào",
+      "ipa": "/haɪ/",
+      "examples": [
+        "Hi, Mai!"
+      ],
+      "collocations": [
+        "say hi"
+      ],
+      "introductionLessonId": "m16a1-v1-a1-u01-l01",
+      "recallPrompt": "Write the informal English greeting ‘chào’. ",
+      "acceptedAnswers": [
+        "hi"
+      ],
+      "distractors": [
+        "hello",
+        "goodbye"
+      ],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16a1-v1-a1-u01-l01",
+          "exerciseId": "form-match"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "vocab-en-introduce-001",
+      "language": "en",
+      "band": "A1",
+      "tier": "A1.1",
+      "lemma": "introduce",
+      "senseNumber": 1,
+      "partOfSpeech": "verb",
+      "definition": "to tell someone your name or another basic fact about you",
+      "vietnameseMeaning": "giới thiệu",
+      "ipa": "/ˌɪntrəˈdjuːs/",
+      "examples": [
+        "Please introduce yourself."
+      ],
+      "collocations": [
+        "introduce yourself"
+      ],
+      "introductionLessonId": "m16a1-v1-a1-u01-l02",
+      "recallPrompt": "Write the English verb for ‘giới thiệu’. ",
+      "acceptedAnswers": [
+        "introduce"
+      ],
+      "distractors": [
+        "spell",
+        "greet"
+      ],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16a1-v1-a1-u01-l02",
+          "exerciseId": "practice-order"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "vocab-en-name-001",
+      "language": "en",
+      "band": "A1",
+      "tier": "A1.1",
+      "lemma": "name",
+      "senseNumber": 1,
+      "partOfSpeech": "noun",
+      "definition": "the word or words that identify a person",
+      "vietnameseMeaning": "tên",
+      "ipa": "/neɪm/",
+      "examples": [
+        "My name is Phúc."
+      ],
+      "collocations": [
+        "your name"
+      ],
+      "introductionLessonId": "m16a1-v1-a1-u01-l02",
+      "recallPrompt": "Write the English word for ‘tên’. ",
+      "acceptedAnswers": [
+        "name"
+      ],
+      "distractors": [
+        "student",
+        "country"
+      ],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16a1-v1-a1-u01-l02",
+          "exerciseId": "language-gap"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "vocab-en-student-001",
+      "language": "en",
+      "band": "A1",
+      "tier": "A1.1",
+      "lemma": "student",
+      "senseNumber": 1,
+      "partOfSpeech": "noun",
+      "definition": "a person who studies at a school, college, or university",
+      "vietnameseMeaning": "học sinh; sinh viên",
+      "ipa": "/ˈstjuːdənt/",
+      "examples": [
+        "Linh is a student."
+      ],
+      "collocations": [
+        "a new student"
+      ],
+      "introductionLessonId": "m16a1-v1-a1-u01-l02",
+      "recallPrompt": "Write the English word for ‘học sinh; sinh viên’. ",
+      "acceptedAnswers": [
+        "student"
+      ],
+      "distractors": [
+        "teacher",
+        "name"
+      ],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16a1-v1-a1-u01-l02",
+          "exerciseId": "language-gap"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "vocab-en-yourself-001",
+      "language": "en",
+      "band": "A1",
+      "tier": "A1.1",
+      "lemma": "yourself",
+      "senseNumber": 1,
+      "partOfSpeech": "pronoun",
+      "definition": "the person that you are talking to or about",
+      "vietnameseMeaning": "bản thân bạn",
+      "ipa": "/jɔːˈself/",
+      "examples": [
+        "Introduce yourself, please."
+      ],
+      "collocations": [
+        "about yourself"
+      ],
+      "introductionLessonId": "m16a1-v1-a1-u01-l02",
+      "recallPrompt": "Write the English word for ‘bản thân bạn’. ",
+      "acceptedAnswers": [
+        "yourself"
+      ],
+      "distractors": [
+        "myself",
+        "student"
+      ],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16a1-v1-a1-u01-l02",
+          "exerciseId": "practice-order"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "vocab-en-country-001",
+      "language": "en",
+      "band": "A1",
+      "tier": "A1.1",
+      "lemma": "country",
+      "senseNumber": 1,
+      "partOfSpeech": "noun",
+      "definition": "an area of land with its own government",
+      "vietnameseMeaning": "đất nước; quốc gia",
+      "ipa": "/ˈkʌntri/",
+      "examples": [
+        "Vietnam is my country."
+      ],
+      "collocations": [
+        "your country"
+      ],
+      "introductionLessonId": "m16a1-v1-a1-u01-l03",
+      "recallPrompt": "Write the English noun for ‘đất nước; quốc gia’. ",
+      "acceptedAnswers": [
+        "country"
+      ],
+      "distractors": [
+        "hometown",
+        "number"
+      ],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16a1-v1-a1-u01-l03",
+          "exerciseId": "form-match"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "vocab-en-from-001",
+      "language": "en",
+      "band": "A1",
+      "tier": "A1.1",
+      "lemma": "from",
+      "senseNumber": 1,
+      "partOfSpeech": "preposition",
+      "definition": "used to show the place where someone begins or lives originally",
+      "vietnameseMeaning": "từ; đến từ",
+      "ipa": "/frɒm/",
+      "examples": [
+        "I am from Đà Nẵng."
+      ],
+      "collocations": [
+        "be from"
+      ],
+      "introductionLessonId": "m16a1-v1-a1-u01-l03",
+      "recallPrompt": "Write the English preposition for ‘đến từ’. ",
+      "acceptedAnswers": [
+        "from"
+      ],
+      "distractors": [
+        "where",
+        "country"
+      ],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16a1-v1-a1-u01-l03",
+          "exerciseId": "detail-check"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "vocab-en-hometown-001",
+      "language": "en",
+      "band": "A1",
+      "tier": "A1.1",
+      "lemma": "hometown",
+      "senseNumber": 1,
+      "partOfSpeech": "noun",
+      "definition": "the town or city where a person grew up or comes from",
+      "vietnameseMeaning": "quê nhà; quê quán",
+      "ipa": "/ˈhəʊmtaʊn/",
+      "examples": [
+        "Cần Thơ is my hometown."
+      ],
+      "collocations": [
+        "my hometown"
+      ],
+      "introductionLessonId": "m16a1-v1-a1-u01-l03",
+      "recallPrompt": "Write the English word for ‘quê nhà; quê quán’. ",
+      "acceptedAnswers": [
+        "hometown"
+      ],
+      "distractors": [
+        "country",
+        "student"
+      ],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16a1-v1-a1-u01-l03",
+          "exerciseId": "form-match"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "vocab-en-where-001",
+      "language": "en",
+      "band": "A1",
+      "tier": "A1.1",
+      "lemma": "where",
+      "senseNumber": 1,
+      "partOfSpeech": "adverb",
+      "definition": "used to ask about a place",
+      "vietnameseMeaning": "ở đâu",
+      "ipa": "/weə/",
+      "examples": [
+        "Where are you from?"
+      ],
+      "collocations": [
+        "where are you from"
+      ],
+      "introductionLessonId": "m16a1-v1-a1-u01-l03",
+      "recallPrompt": "Write the English question word for ‘ở đâu’. ",
+      "acceptedAnswers": [
+        "where"
+      ],
+      "distractors": [
+        "when",
+        "from"
+      ],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16a1-v1-a1-u01-l03",
+          "exerciseId": "detail-check"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "vocab-en-alphabet-001",
+      "language": "en",
+      "band": "A1",
+      "tier": "A1.1",
+      "lemma": "alphabet",
+      "senseNumber": 1,
+      "partOfSpeech": "noun",
+      "definition": "the complete set of letters used to write a language",
+      "vietnameseMeaning": "bảng chữ cái",
+      "ipa": "/ˈælfəbet/",
+      "examples": [
+        "We practise the alphabet together."
+      ],
+      "collocations": [
+        "the English alphabet"
+      ],
+      "introductionLessonId": "m16a1-v1-a1-u01-l04",
+      "recallPrompt": "Write the English noun for ‘bảng chữ cái’. ",
+      "acceptedAnswers": [
+        "alphabet"
+      ],
+      "distractors": [
+        "letter",
+        "number"
+      ],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16a1-v1-a1-u01-l04",
+          "exerciseId": "practice-order"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "vocab-en-letter-001",
+      "language": "en",
+      "band": "A1",
+      "tier": "A1.1",
+      "lemma": "letter",
+      "senseNumber": 1,
+      "partOfSpeech": "noun",
+      "definition": "one written symbol in an alphabet",
+      "vietnameseMeaning": "chữ cái",
+      "ipa": "/ˈletə/",
+      "examples": [
+        "B is the first letter in Ben."
+      ],
+      "collocations": [
+        "letter name"
+      ],
+      "introductionLessonId": "m16a1-v1-a1-u01-l04",
+      "recallPrompt": "Write the English noun for ‘chữ cái’. ",
+      "acceptedAnswers": [
+        "letter"
+      ],
+      "distractors": [
+        "number",
+        "alphabet"
+      ],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16a1-v1-a1-u01-l04",
+          "exerciseId": "practice-order"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "vocab-en-receptionist-001",
+      "language": "en",
+      "band": "A1",
+      "tier": "A1.1",
+      "lemma": "receptionist",
+      "senseNumber": 1,
+      "partOfSpeech": "noun",
+      "definition": "a person who welcomes visitors and answers questions at a front desk",
+      "vietnameseMeaning": "nhân viên lễ tân",
+      "ipa": "/rɪˈsepʃənɪst/",
+      "examples": [
+        "The receptionist asks for my name."
+      ],
+      "collocations": [
+        "hotel receptionist"
+      ],
+      "introductionLessonId": "m16a1-v1-a1-u01-l04",
+      "recallPrompt": "Write the English word for ‘nhân viên lễ tân’. ",
+      "acceptedAnswers": [
+        "receptionist"
+      ],
+      "distractors": [
+        "student",
+        "teacher"
+      ],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16a1-v1-a1-u01-l04",
+          "exerciseId": "detail-check"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "vocab-en-spell-001",
+      "language": "en",
+      "band": "A1",
+      "tier": "A1.1",
+      "lemma": "spell",
+      "senseNumber": 1,
+      "partOfSpeech": "verb",
+      "definition": "to say or write the letters of a word in order",
+      "vietnameseMeaning": "đánh vần",
+      "ipa": "/spel/",
+      "examples": [
+        "Can you spell your name?"
+      ],
+      "collocations": [
+        "spell a name"
+      ],
+      "introductionLessonId": "m16a1-v1-a1-u01-l04",
+      "recallPrompt": "Write the English verb for ‘đánh vần’. ",
+      "acceptedAnswers": [
+        "spell"
+      ],
+      "distractors": [
+        "write",
+        "introduce"
+      ],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16a1-v1-a1-u01-l04",
+          "exerciseId": "detail-check"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "vocab-en-number-001",
+      "language": "en",
+      "band": "A1",
+      "tier": "A1.1",
+      "lemma": "number",
+      "senseNumber": 1,
+      "partOfSpeech": "noun",
+      "definition": "a word or symbol used to show an amount or identify something",
+      "vietnameseMeaning": "số",
+      "ipa": "/ˈnʌmbə/",
+      "examples": [
+        "Please write the number."
+      ],
+      "collocations": [
+        "phone number"
+      ],
+      "introductionLessonId": "m16a1-v1-a1-u01-l05",
+      "recallPrompt": "Write the English word for ‘số’. ",
+      "acceptedAnswers": [
+        "number"
+      ],
+      "distractors": [
+        "letter",
+        "digit"
+      ],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16a1-v1-a1-u01-l05",
+          "exerciseId": "meaning-check"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "vocab-en-one-001",
+      "language": "en",
+      "band": "A1",
+      "tier": "A1.1",
+      "lemma": "one",
+      "senseNumber": 1,
+      "partOfSpeech": "other",
+      "definition": "the number 1",
+      "vietnameseMeaning": "số một",
+      "ipa": "/wʌn/",
+      "examples": [
+        "I need one ticket."
+      ],
+      "collocations": [
+        "one person"
+      ],
+      "introductionLessonId": "m16a1-v1-a1-u01-l05",
+      "recallPrompt": "Write the English number word for ‘số một’. ",
+      "acceptedAnswers": [
+        "one"
+      ],
+      "distractors": [
+        "zero",
+        "two"
+      ],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16a1-v1-a1-u01-l05",
+          "exerciseId": "form-match"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "vocab-en-two-001",
+      "language": "en",
+      "band": "A1",
+      "tier": "A1.1",
+      "lemma": "two",
+      "senseNumber": 1,
+      "partOfSpeech": "other",
+      "definition": "the number 2",
+      "vietnameseMeaning": "số hai",
+      "ipa": "/tuː/",
+      "examples": [
+        "We have two bags."
+      ],
+      "collocations": [
+        "two friends"
+      ],
+      "introductionLessonId": "m16a1-v1-a1-u01-l05",
+      "recallPrompt": "Write the English number word for ‘số hai’. ",
+      "acceptedAnswers": [
+        "two"
+      ],
+      "distractors": [
+        "one",
+        "three"
+      ],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16a1-v1-a1-u01-l05",
+          "exerciseId": "form-match"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    },
+    {
+      "id": "vocab-en-zero-001",
+      "language": "en",
+      "band": "A1",
+      "tier": "A1.1",
+      "lemma": "zero",
+      "senseNumber": 1,
+      "partOfSpeech": "other",
+      "definition": "the number 0",
+      "vietnameseMeaning": "số không",
+      "ipa": "/ˈzɪərəʊ/",
+      "examples": [
+        "The code starts with zero."
+      ],
+      "collocations": [
+        "zero points"
+      ],
+      "introductionLessonId": "m16a1-v1-a1-u01-l05",
+      "recallPrompt": "Write the English number word for ‘số không’. ",
+      "acceptedAnswers": [
+        "zero"
+      ],
+      "distractors": [
+        "one",
+        "two"
+      ],
+      "exerciseBindings": [
+        {
+          "lessonId": "m16a1-v1-a1-u01-l05",
+          "exerciseId": "meaning-check"
+        }
+      ],
+      "contentStatus": "UNREVIEWED"
+    }
+  ]
+}

@@ -94,3 +94,7 @@ python -m english_master.assessment_mastery score \
 All commands are local and make no network or provider call.
 
 Adaptive review planning and observation are documented in [ADAPTIVE_REVIEW.md](ADAPTIVE_REVIEW.md). They use a separate caller-owned schedule state and the fixed 1/3/7/14/30/60-day ladder without changing this assessment inventory or its seven-field aggregate learner state.
+
+## Static web projection
+
+The separate, English-only static web consumer is documented in [WEB_ASSESSMENT.md](WEB_ASSESSMENT.md). It verifies and projects the pinned immutable inventory into browser-local attempts; it neither replaces this Python scorer nor changes its file-backed learner-state contract.

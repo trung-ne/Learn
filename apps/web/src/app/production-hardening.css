@@ -1,0 +1,33 @@
+
+
+.local-state-notice, .pwa-update { position: fixed; z-index: 15; right: 1rem; bottom: 1rem; display: grid; gap: 0.4rem; width: min(30rem, calc(100vw - 2rem)); padding: 1rem; border: 1px solid var(--accent-dark); background: var(--surface); box-shadow: var(--shadow); color: var(--ink); }
+.local-state-notice strong { color: var(--danger); }
+.pwa-update { grid-template-columns: minmax(0, 1fr) auto; align-items: center; }
+.pwa-update .secondary-button { margin-top: 0; white-space: nowrap; }
+.local-data-workspace { max-width: 58rem; }
+.local-data-workspace > section { margin-top: 1.25rem; }
+.local-data-boundary, .local-data-card, .offline-review-control { padding: 1.25rem; border: 1px solid var(--line); background: var(--surface); }
+.local-data-boundary { border-left: 4px solid var(--accent); background: var(--soft); }
+.local-data-boundary h2, .local-data-card h2, .offline-review-control h2 { margin-top: 0; }
+.local-data-danger { border-left: 4px solid var(--danger); }
+.local-file-input { display: grid; gap: 0.45rem; margin-top: 1rem; font-weight: 700; }
+.local-file-input input { padding: 0.5rem; border: 1px solid var(--line); background: var(--paper); }
+.local-data-result { margin-top: 1rem; padding: 0.8rem 1rem; border-left: 4px solid; }
+.local-data-result.valid { border-color: var(--success); background: #e8f5ed; }
+.local-data-result.invalid { border-color: var(--danger); background: #faecea; }
+.local-data-status { margin-top: 1rem; padding: 0.8rem 1rem; border-left: 4px solid var(--accent); background: var(--soft); overflow-wrap: anywhere; }
+.offline-review-control { max-width: 48rem; margin-top: 2rem; }
+.offline-review-control p { color: var(--muted); }
+
+@media (max-width: 760px) {
+  .header-nav { grid-column: 1 / -1; display: flex; gap: 0.25rem; width: 100%; margin: 0; overflow-x: auto; overscroll-behavior-inline: contain; scrollbar-width: thin; }
+  .header-nav a { display: grid; flex: 0 0 auto; min-width: 44px; min-height: 44px; place-items: center; padding: 0.45rem 0.65rem; white-space: nowrap; }
+  .local-state-notice, .pwa-update { left: 1rem; right: 1rem; width: auto; }
+  .pwa-update { grid-template-columns: 1fr; }
+  .pwa-update .secondary-button { width: 100%; }
+}
+
+@media (forced-colors: active) {
+  .local-state-notice, .pwa-update, .local-data-boundary, .local-data-card, .offline-review-control { border: 1px solid CanvasText; forced-color-adjust: auto; }
+  :focus-visible { outline-color: Highlight; }
+}

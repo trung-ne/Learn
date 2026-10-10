@@ -13,7 +13,16 @@ function homeCourses(): readonly HomeCourse[] {
       lessonCount: course.lessonCount,
       availability: course.availability,
       firstLessonHref: lessonHref(course.firstLesson),
-      lessons: lessons.map((lesson) => ({ lessonId: lesson.lessonId, unitId: lesson.unitId })),
+      lessons: lessons.map((lesson) => ({
+        lessonId: lesson.lessonId,
+        unitId: lesson.unitId,
+        title: lesson.title,
+        sequence: lesson.sequence,
+        href: lessonHref(lesson),
+        hasListeningPractice: Boolean(lesson.practice?.listening),
+        hasPronunciationPractice: Boolean(lesson.practice?.pronunciation),
+        durationMinutes: lesson.durationMinutes,
+      })),
       lessonHrefs: Object.fromEntries(lessons.map((lesson) => [lesson.lessonId, lessonHref(lesson)])),
     };
   });

@@ -25,6 +25,8 @@ The completed foundation provides:
 - M15/M16 validate graph and blueprint IDs, references, prerequisite integrity, and population binding without requiring an exact regenerated-object match.
 - The bounded [A1 pilot](docs/A1_PILOT.md) contains ten original-authored A1.1 lesson packets, each with exercises and four learner-practice protocols. Its review template is deliberately incomplete until actual user/AI observations are recorded; all pilot content remains `UNREVIEWED`.
 - The isolated [Full A1 v2 pipeline](docs/A1_FULL.md) builds and verifies all fifty M16 A1.1/A1.2 packets, runs lightweight deterministic checks over the complete corpus, and creates a reproducible SHA-256-ranked 10–15 lesson unit-stratified sample. It preserves the legacy pilot unchanged and makes no human, release, provider, live-AI, network, or real-media claim.
+- The optional [Content/KG Quality System](docs/CONTENT_KG_QUALITY.md) hash-binds declared Full A1–C2 and M15 inputs for deterministic structural consistency checks; it preserves `UNREVIEWED` status and makes no quality, approval, or CEFR-suitability claim.
+- The static learner app has local-only [Production Hardening](docs/PRODUCTION_HARDENING.md): explicit offline-cache lifecycle, browser-local backup/recovery, preview security/cache headers, and responsive/accessibility resilience without a backend, telemetry, provider call, or release-authority claim.
 - Data-lifecycle directory scaffolding and Git protections.
 - Offline Assessment + Mastery with a closed 367-package inventory, objective scoring, and caller-owned concept state; [Adaptive Review](docs/ADAPTIVE_REVIEW.md) adds deterministic lesson/recent-mistake/due/weak prioritization with 1/3/7/14/30/60-day scheduling.
 
